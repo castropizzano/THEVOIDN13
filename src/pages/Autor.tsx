@@ -472,7 +472,7 @@ const Autor = () => {
               </a>
 
               <a 
-                href="https://behance.net/castropizzano"
+                href="https://www.behance.net/castropizzano"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group bg-card/50 border border-border rounded-lg p-6 hover:border-primary transition-colors"
