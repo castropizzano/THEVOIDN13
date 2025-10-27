@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
-import heroImage from "@/assets/hero-concept-art.png";
+import heroImage from "@/assets/castro-hero.png";
 import actionFigure from "@/assets/action-figure.png";
 import conceptFront from "@/assets/concept-front.png";
 import conceptBack from "@/assets/concept-back.png";
