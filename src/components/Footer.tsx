@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="bg-card border-t border-border py-8">
-      <div className="container mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <div>
             <h3 className="text-base font-bold tracking-wide">THE VOID N.13</h3>
