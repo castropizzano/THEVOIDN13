@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
 import heroImage from "@/assets/castro-hero-new.png";
+import antibrandImage from "@/assets/antibrand-hero.png";
 
 const Autor = () => {
   return (
@@ -374,6 +375,11 @@ const Autor = () => {
             </blockquote>
           </div>
         </BilingualSection>
+
+        {/* Anti-brand Hero Image */}
+        <section className="w-full h-screen overflow-hidden">
+          <img src={antibrandImage} alt="ЦЦАСТРО™ Anti-brand" className="w-full h-full object-contain" />
+        </section>
 
         {/* Anti-brand Section */}
         <BilingualSection bgClassName="bg-card/30">
