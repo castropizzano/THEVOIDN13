@@ -524,7 +524,7 @@ const Index = () => {
 
         {/* Documentação do Repositório */}
         <BilingualSection bgClassName="bg-card/50">
-          <div className="space-y-12">
+          <div className="space-y-16">
             <div>
               <h2 className="text-2xl font-bold mb-2">Documentação do Repositório</h2>
               <h3 className="text-2xl font-medium">Repository Documentation</h3>
@@ -547,61 +547,69 @@ const Index = () => {
               }
             />
 
-            <div className="bg-card p-6 rounded-lg border border-border space-y-4 mt-8">
-              <h3 className="text-base font-bold">Estrutura do Repositório / Repository Structure</h3>
-              <div className="font-mono text-sm space-y-1 text-foreground/80">
-                <p>/THEVOIDN13/</p>
-                <p className="ml-4">README.md — manifesto e visão geral</p>
-                <p className="ml-4">LICENSE.md — licença híbrida CC BY-NC-SA 4.0</p>
-                <p className="ml-4">docs/COMMIT_GUIDE.md — filosofia de versionamento</p>
-                <p className="ml-4">docs/TECH_STACK.md — stack tecnológica e workflow</p>
-                <p className="ml-4">src/ — código-fonte do portal web</p>
-                <p className="ml-4">public/ — assets públicos e builds</p>
-                <p className="ml-4">assets/ — exports visuais e documentação</p>
+            <div className="grid md:grid-cols-2 gap-12 mt-12">
+              <div className="space-y-8">
+                <h3 className="text-xl font-bold">Documentos Principais</h3>
+                
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="text-base font-bold mb-1">README.md</h4>
+                    <p className="text-sm text-muted-foreground">Manifesto e estrutura do projeto</p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-base font-bold mb-1">LICENSE.md</h4>
+                    <p className="text-sm text-muted-foreground">Licença CC BY-NC-SA 4.0</p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-base font-bold mb-1">CITATION.cff</h4>
+                    <p className="text-sm text-muted-foreground">Como citar academicamente</p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-base font-bold mb-1">METODOLOGIA_PESQUISA.md</h4>
+                    <p className="text-sm text-muted-foreground">Métodos e procedimentos</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="space-y-8">
+                <h3 className="text-xl font-bold">Documentação Técnica</h3>
+                
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="text-base font-bold mb-1">DIREITOS_AUTORAIS.md</h4>
+                    <p className="text-sm text-muted-foreground">Ética e transparência da co-criação</p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-base font-bold mb-1">COMO_CITAR.md</h4>
+                    <p className="text-sm text-muted-foreground">Guia de citação acadêmica</p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-base font-bold mb-1">REFERENCIAS_BIBLIOGRAFICAS.md</h4>
+                    <p className="text-sm text-muted-foreground">Bibliografia completa</p>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-base font-bold mb-1">Repositório Completo</h4>
+                    <p className="text-sm text-muted-foreground">Acesso a todos os arquivos no GitHub</p>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="bg-card p-6 rounded-lg border border-border space-y-4 mt-8">
-              <h3 className="text-base font-bold">Ferramentas Integradas / Integrated Tools</h3>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <p className="text-base font-bold">IA e Criação / AI and Creation</p>
-                  <p className="text-base">Google Gemini, Claude, ChatGPT, Midjourney, Adobe Firefly</p>
-                </div>
-                <div className="space-y-2">
-                  <p className="text-base font-bold">Design e Visual / Design and Visual</p>
-                  <p className="text-base">Adobe Creative Cloud, Figma, DaVinci Resolve</p>
-                </div>
-                <div className="space-y-2">
-                  <p className="text-base font-bold">Desenvolvimento / Development</p>
-                  <p className="text-base">React, TypeScript, Tailwind, Vite, Lovable</p>
-                </div>
-                <div className="space-y-2">
-                  <p className="text-base font-bold">Versionamento / Version Control</p>
-                  <p className="text-base">GitHub, Git LFS</p>
-                </div>
-              </div>
+            <div className="mt-16 pt-8 border-t border-border">
+              <p className="text-base text-justify leading-relaxed max-w-4xl mx-auto">
+                Este memorial não guarda o que passou. Guarda o que ainda pulsa. Três projetos matriciais mas LowMovie, LowPressure, CasaTrezeStudio mas funcionam como órgãos de um mesmo organismo criativo. Cada um respira de forma autônoma, mas todos compartilham do mesmo sangue simbólico.
+              </p>
             </div>
 
-            <div className="bg-card p-6 rounded-lg border border-border space-y-4 mt-8">
-              <BilingualContent
-                portugueseContent={
-                  <div className="space-y-4">
-                    <h3 className="text-base font-bold">Método Cíclico e Híbrido</h3>
-                    <p className="text-base text-justify leading-relaxed">
-                      1. Observação — ler o fluxo criativo e suas falhas como dados vivos. 2. Co-criação — interagir com IAs como extensões simbólicas do pensamento. 3. Documentação — registrar camadas, decisões e estados mentais. 4. Reflexão — transformar registros em narrativa estética e técnica. 5. Expansão — devolver o aprendizado ao mundo em forma de arte, código ou metodologia.
-                    </p>
-                  </div>
-                }
-                englishContent={
-                  <div className="space-y-4">
-                    <h3 className="text-base font-bold">Cyclical and Hybrid Method</h3>
-                    <p className="text-base text-justify leading-relaxed">
-                      1. Observation — reading the creative flow and its flaws as living data. 2. Co-creation — interacting with AI as symbolic extensions of thought. 3. Documentation — recording layers, decisions and mental states. 4. Reflection — transforming records into aesthetic and technical narrative. 5. Expansion — returning learning to the world as art, code or methodology.
-                    </p>
-                  </div>
-                }
-              />
+            <div className="text-center text-sm text-muted-foreground space-y-1 mt-12">
+              <p>THEVOIDN13 — Castro Pizzano (цастро™) — 2025</p>
+              <p>MIT License (code) | CC BY-NC-SA 4.0 (content)</p>
             </div>
           </div>
         </BilingualSection>

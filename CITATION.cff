@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "Se você usar este projeto em sua pesquisa, por favor cite-o como indicado abaixo."
+title: "THEVOIDN13: Memorial Artístico e Práxis Híbrida (Humano + Máquina)"
+abstract: "Projeto experimental e memorial artístico que investiga processos de co-criação entre humano e inteligência artificial no campo das artes visuais, cinema e videoarte. Integra pesquisa de mestrado sobre o filme LowMovie™ e o coletivo LowPressure™ Skate, explorando subjetividade, subcultura e estética em movimento."
+authors:
+  - family-names: Pizzano
+    given-names: Fernando Castro
+    alias: цастро™
+    email: fernando.pizzano@estudante.unespar.edu.br
+    affiliation: "Universidade Estadual do Paraná (Unespar) - Mestrado em Cinema e Artes do Vídeo"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+type: dataset
+keywords:
+  - "arte e tecnologia"
+  - "co-criação humano-IA"
+  - "inteligência artificial criativa"
+  - "videoarte"
+  - "cinema experimental"
+  - "cultura do skate"
+  - "processos criativos"
+  - "metodologia híbrida"
+  - "memorial artístico"
+  - "economia criativa"
+license: CC-BY-NC-SA-4.0
+repository-code: "https://github.com/castropizzano/THEVOIDN13"
+url: "https://thevoidn13.github.io"
+version: 0.1.0
+date-released: "2025-10-27"
