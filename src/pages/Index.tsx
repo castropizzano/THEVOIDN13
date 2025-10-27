@@ -488,7 +488,7 @@ const Index = () => {
         {/* Encerramento / Transmissão Final */}
         <BilingualSection>
           <div className="space-y-12">
-            <div className="text-center">
+            <div>
               <h2 className="text-base font-bold">Encerramento / Transmissão Final</h2>
               <h3 className="text-base font-medium mt-2">Closing Transmission</h3>
             </div>
