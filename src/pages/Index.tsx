@@ -532,31 +532,125 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Encerramento */}
-        <section className="py-20 px-6">
-          <div className="max-w-4xl mx-auto space-y-8 text-center">
-            <h2 className="text-base font-bold">Encerramento / Transmissão Final</h2>
-            <h3 className="text-base font-medium">Closing Transmission</h3>
+        {/* Encerramento / Transmissão Final */}
+        <BilingualSection>
+          <div className="space-y-12">
+            <div className="text-center">
+              <h2 className="text-base font-bold">Encerramento / Transmissão Final</h2>
+              <h3 className="text-base font-medium mt-2">Closing Transmission</h3>
+            </div>
             
-            <div className="space-y-6 mt-8">
-              <p className="text-base text-justify leading-relaxed">
-                O sinal começa a falhar. A imagem se fragmenta, o som respira pela última vez. O corpo se dissolve, mas a frequência permanece. THE VOID N.13 não termina, apenas muda de forma. O que você escuta agora não é voz, é memória.
-              </p>
-              <p className="text-base text-justify leading-relaxed">
-                The signal begins to fail. The image fragments, the sound takes one last breath. The body dissolves, but the frequency remains. THE VOID N.13 doesn't end, it only changes form. What you hear now isn't a voice, it's memory.
-              </p>
+            <BilingualContent
+              portugueseContent={
+                <div className="space-y-6">
+                  <p className="text-base text-justify leading-relaxed">
+                    O sinal começa a falhar. A imagem se fragmenta, o som respira pela última vez. O corpo se dissolve, mas a frequência permanece. THE VOID N.13 não termina, apenas muda de forma. O que você escuta agora não é voz, é memória.
+                  </p>
+                  <div className="mt-8 space-y-2 text-center">
+                    <p className="text-base">desligue as luzes.</p>
+                    <p className="text-base">respire fundo.</p>
+                    <p className="text-base">o vazio sabe o caminho de volta.</p>
+                  </div>
+                </div>
+              }
+              englishContent={
+                <div className="space-y-6">
+                  <p className="text-base text-justify leading-relaxed">
+                    The signal begins to fail. The image fragments, the sound takes one last breath. The body dissolves, but the frequency remains. THE VOID N.13 doesn't end, it only changes form. What you hear now isn't a voice, it's memory.
+                  </p>
+                  <div className="mt-8 space-y-2 text-center">
+                    <p className="text-base">turn off the lights.</p>
+                    <p className="text-base">breathe deeply.</p>
+                    <p className="text-base">the void knows the way back.</p>
+                  </div>
+                </div>
+              }
+            />
+          </div>
+        </BilingualSection>
 
-              <div className="mt-12 space-y-2">
-                <p className="text-base">desligue as luzes.</p>
-                <p className="text-base">turn off the lights.</p>
-                <p className="text-base">respire fundo.</p>
-                <p className="text-base">breathe deeply.</p>
-                <p className="text-base">o vazio sabe o caminho de volta.</p>
-                <p className="text-base">the void knows the way back.</p>
+        {/* Documentação do Repositório */}
+        <BilingualSection bgClassName="bg-card/50">
+          <div className="space-y-12">
+            <div>
+              <h2 className="text-2xl font-bold mb-2">Documentação do Repositório</h2>
+              <h3 className="text-2xl font-medium">Repository Documentation</h3>
+            </div>
+
+            <BilingualContent
+              portugueseContent={
+                <div className="space-y-6">
+                  <p className="text-base text-justify leading-relaxed">
+                    Este projeto experimental THE VOID N.13 é arquitetado como um ecossistema de Creative Operations (CreativeOps) automatizado, onde a pesquisa de mestrado e a experimentação artística se alimentam mutuamente. O GitHub atua como hub central, a Fonte Única da Verdade (Single Source of Truth), conectando ferramentas de design, plataformas de IA e sistemas de versionamento em um workflow unificado de co-criação homem × máquina.
+                  </p>
+                </div>
+              }
+              englishContent={
+                <div className="space-y-6">
+                  <p className="text-base text-justify leading-relaxed">
+                    This experimental project THE VOID N.13 is architected as an automated Creative Operations (CreativeOps) ecosystem, where master's research and artistic experimentation feed each other mutually. GitHub acts as the central hub, the Single Source of Truth, connecting design tools, AI platforms and versioning systems in a unified human × machine co-creation workflow.
+                  </p>
+                </div>
+              }
+            />
+
+            <div className="bg-card p-6 rounded-lg border border-border space-y-4 mt-8">
+              <h3 className="text-base font-bold">Estrutura do Repositório / Repository Structure</h3>
+              <div className="font-mono text-sm space-y-1 text-foreground/80">
+                <p>/THEVOIDN13—PROJETO/</p>
+                <p className="ml-4">docs/ — Documentação, práxis, teoria</p>
+                <p className="ml-4">assets/ — Arquivos de design (LFS)</p>
+                <p className="ml-4">src/ — Código-fonte e scripts</p>
+                <p className="ml-4">ai_experiments/ — Scripts de IA</p>
+                <p className="ml-4">prototypes_web/ — Protótipos</p>
+                <p className="ml-4">automation/ — Scripts de integração</p>
               </div>
             </div>
+
+            <div className="bg-card p-6 rounded-lg border border-border space-y-4 mt-8">
+              <h3 className="text-base font-bold">Ferramentas Integradas / Integrated Tools</h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <p className="text-base font-bold">IA e Criação / AI and Creation</p>
+                  <p className="text-base">Google AI Studio, Gemini, ChatGPT, Perchance AI Image</p>
+                </div>
+                <div className="space-y-2">
+                  <p className="text-base font-bold">Design e Visual / Design and Visual</p>
+                  <p className="text-base">Adobe Creative Cloud, Firefly Boards, Figma</p>
+                </div>
+                <div className="space-y-2">
+                  <p className="text-base font-bold">Desenvolvimento / Development</p>
+                  <p className="text-base">GitHub, Lovable, Google Labs</p>
+                </div>
+                <div className="space-y-2">
+                  <p className="text-base font-bold">Documentação / Documentation</p>
+                  <p className="text-base">Google NoteBook LM, Gamma.app</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-card p-6 rounded-lg border border-border space-y-4 mt-8">
+              <BilingualContent
+                portugueseContent={
+                  <div className="space-y-4">
+                    <h3 className="text-base font-bold">Metodologia Hub-and-Spoke</h3>
+                    <p className="text-base text-justify leading-relaxed">
+                      O GitHub funciona como hub central onde todas as ferramentas são spokes que leem ou escrevem. A automação via GitHub Actions e APIs reflete mudanças automaticamente nas plataformas integradas. Git LFS gerencia arquivos grandes (vídeos, PSDs, áudios) sem sobrecarregar o repositório.
+                    </p>
+                  </div>
+                }
+                englishContent={
+                  <div className="space-y-4">
+                    <h3 className="text-base font-bold">Hub-and-Spoke Methodology</h3>
+                    <p className="text-base text-justify leading-relaxed">
+                      GitHub functions as the central hub where all tools are spokes that read or write. Automation via GitHub Actions and APIs automatically reflects changes across integrated platforms. Git LFS manages large files (videos, PSDs, audio) without overloading the repository.
+                    </p>
+                  </div>
+                }
+              />
+            </div>
           </div>
-        </section>
+        </BilingualSection>
       </main>
 
       <Footer />
