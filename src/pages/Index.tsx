@@ -10,24 +10,18 @@ import roughs000 from "@/assets/roughs-000.png";
 import roughs001 from "@/assets/roughs-001.png";
 import roughs002 from "@/assets/roughs-002.png";
 import roughs003 from "@/assets/roughs-003.png";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-background text-foreground">
+  return <div className="min-h-screen bg-background text-foreground">
       <Header />
       
       <main>
         {/* Hero Section - Full screen image with tagline */}
         <section className="relative w-full h-screen overflow-hidden">
-          <img 
-            src={heroImage} 
-            alt="THE VOID N.13" 
-            className="w-full h-full object-contain"
-          />
+          <img src={heroImage} alt="THE VOID N.13" className="w-full h-full object-contain" />
           <div className="absolute inset-x-0 bottom-16 text-center px-6">
-            <p className="text-base font-light tracking-wide text-[#DADADA]/90 drop-shadow-lg" style={{ fontFamily: 'Manrope, sans-serif' }}>
-              [shadow_interface_bible] um corpo à deriva entre o ruído e o silêncio
-            </p>
+            <p style={{
+            fontFamily: 'Manrope, sans-serif'
+          }} className="text-base font-light tracking-wide text-[#DADADA]/90 drop-shadow-lg text-right">[um corpo à deriva entre o ruído e o silêncio]</p>
           </div>
         </section>
 
@@ -422,8 +416,6 @@ const Index = () => {
       </main>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
