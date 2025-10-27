@@ -561,7 +561,14 @@ const Autor = () => {
                 >
                   Currículo Lattes / Lattes CV
                 </a>
-                <p className="text-sm text-muted-foreground">Memorial Acadêmico / Academic Memorial</p>
+                <a 
+                  href="/documents/Memorial_Academico.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-primary hover:underline block"
+                >
+                  Memorial Acadêmico / Academic Memorial
+                </a>
               </div>
             </div>
           </div>
