@@ -22,8 +22,8 @@ const Dissertacao = () => {
         </section>
 
         <BilingualSection className="py-8">
-          <div className="space-y-8 text-center">
-            <h1 className="text-4xl md:text-6xl font-bold">
+          <div className="space-y-4">
+            <h1 className="text-sm font-medium tracking-wide uppercase">
               LOWMOVIE™ E O LABIRINTO CRIATIVO
             </h1>
           </div>

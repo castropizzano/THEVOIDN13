@@ -21,11 +21,11 @@ const Autor = () => {
         </section>
 
         <BilingualSection className="py-8">
-          <div className="space-y-8 text-center">
-            <h1 className="text-4xl md:text-6xl font-bold">
+          <div className="space-y-4">
+            <h1 className="text-sm font-medium tracking-wide uppercase">
               CASTRO PIZZANO
             </h1>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-[11px] text-muted-foreground uppercase tracking-wide">
               цастро™ / PUNK
             </p>
           </div>
