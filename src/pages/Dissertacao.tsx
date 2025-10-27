@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
-import heroImage from "@/assets/lowpressure-crew.png";
+import heroImage from "@/assets/lowmovie-hero-new.png";
 import conceptCrew from "@/assets/concept-crew.png";
 import conceptFront from "@/assets/concept-front.png";
 import conceptBack from "@/assets/concept-back.png";

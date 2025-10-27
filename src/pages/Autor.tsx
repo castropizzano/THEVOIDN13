@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
-import heroImage from "@/assets/castro-hero.png";
+import heroImage from "@/assets/castro-hero-new.png";
 
 const Autor = () => {
   return (
@@ -117,16 +117,16 @@ const Autor = () => {
                 <div className="mt-16 space-y-6">
                   <h3 className="text-sm font-medium tracking-wide uppercase text-primary">Trajetória / Journey</h3>
                   
-                  <div className="space-y-6 text-base text-justify leading-relaxed">
-                    <p>
+                  <div className="space-y-6 text-base leading-relaxed">
+                    <p className="text-justify">
                       A jornada começa no skate. Não como esporte, mas como modo de habitar o mundo. O corpo em movimento pelo espaço urbano. A apropriação criativa da cidade. Das manobras na rua às manobras no vídeo. Da câmera VHS à edição digital.
                     </p>
                     
-                    <p>
+                    <p className="text-justify">
                       2008: Funda CasaTrezeStudio. Começa a construir sua própria infraestrutura criativa. Design, vídeo, direção de arte. O coletivo como espaço de experimentação. 2014-2016: UDNFS no MuMA — primeira exposição institucional, democratização audiovisual DIY. 2019: Subtropikal Festival — criação de ID Visual do zero aplicando processos criativos ao vivo. 2020: LowPressure crew se formaliza. O skate ganha forma de movimento cultural. 2019-2022: Produção de LowMovie. O processo como obra.
                     </p>
                     
-                    <p>
+                    <p className="text-justify">
                       2023: Estreia de LowMovie no Cine Passeio. Do underground à tela grande. Ingresso no mestrado em Cinema e Artes do Vídeo (UNESPAR). A prática vira pesquisa. A pesquisa alimenta a prática. 2024: ⊂ødx — videoarte e instalação urbana sobre resistência e apagamento. 2024-2025: THE VOID N.13 emerge. A anti-marca que condensa tudo que veio antes.
                     </p>
                   </div>
@@ -284,16 +284,16 @@ const Autor = () => {
                 <div className="mt-16 space-y-6">
                   <h3 className="text-sm font-medium tracking-wide uppercase text-primary">Trajetória / Journey</h3>
                   
-                  <div className="space-y-6 text-base text-justify leading-relaxed">
-                    <p>
+                  <div className="space-y-6 text-base leading-relaxed">
+                    <p className="text-justify">
                       The journey begins with skateboarding. Not as a sport, but as a way of inhabiting the world. The body moving through urban space. The creative appropriation of the city. From tricks on the street to tricks on video. From VHS camera to digital editing.
                     </p>
                     
-                    <p>
+                    <p className="text-justify">
                       2008: Founds CasaTrezeStudio. Begins building his own creative infrastructure. Design, video, art direction. The collective as a space for experimentation. 2014-2016: UDNFS at MuMA — first institutional exhibition, DIY audiovisual democratization. 2019: Subtropikal Festival — creating visual ID from scratch applying creative processes live. 2020: LowPressure crew formalizes. Skateboarding takes shape as a cultural movement. 2019-2022: LowMovie production. Process as work.
                     </p>
                     
-                    <p>
+                    <p className="text-justify">
                       2023: LowMovie premiere at Cine Passeio. From underground to the big screen. Enters master's program in Cinema and Video Arts (UNESPAR). Practice becomes research. Research feeds practice. 2024: ⊂ødx — video art and urban installation about resistance and erasure. 2024-2025: THE VOID N.13 emerges. The anti-brand that condenses everything that came before.
                     </p>
                   </div>
