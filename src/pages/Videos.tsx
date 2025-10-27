@@ -63,35 +63,6 @@ const Videos = () => {
     return `${mins}:${secs.toString().padStart(2, '0')}`;
   };
 
-  const categorizeVideos = () => {
-    const categories: { [key: string]: Video[] } = {
-      'Curta-Metragem / Experimental': [],
-      'Videoperformance': [],
-      'Documentário': [],
-      'Brandbook / Comercial': [],
-      'Outros': []
-    };
-
-    catalogVideos.forEach(video => {
-      const name = video.name.toLowerCase();
-      const desc = video.description?.toLowerCase() || '';
-      
-      if (name.includes('curta-metragem') || name.includes('experimental') || desc.includes('curta-metragem')) {
-        categories['Curta-Metragem / Experimental'].push(video);
-      } else if (name.includes('videoperformance') || desc.includes('videoperformance') || desc.includes('performance')) {
-        categories['Videoperformance'].push(video);
-      } else if (name.includes('minidoc') || name.includes('documentário') || desc.includes('documentário')) {
-        categories['Documentário'].push(video);
-      } else if (name.includes('projeto') || name.includes('brandbook') || name.includes('transforme') || name.includes('envision')) {
-        categories['Brandbook / Comercial'].push(video);
-      } else {
-        categories['Outros'].push(video);
-      }
-    });
-
-    // Remove empty categories
-    return Object.entries(categories).filter(([_, videos]) => videos.length > 0);
-  };
 
   if (loading) {
     return (
@@ -111,7 +82,10 @@ const Videos = () => {
   }
 
   const featuredVideo = videos[0];
-  const catalogVideos = videos.slice(1);
+  // Sort remaining videos by upload date (most recent first)
+  const catalogVideos = videos.slice(1).sort((a, b) => 
+    new Date(b.createdTime).getTime() - new Date(a.createdTime).getTime()
+  );
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -190,55 +164,47 @@ const Videos = () => {
           </div>
         )}
 
-        {/* Video Catalog - Categorized by project type */}
+        {/* Video Catalog */}
         <BilingualSection bgClassName="bg-card/30">
-          <div className="space-y-16">
-            {categorizeVideos().map(([category, categoryVideos]) => (
-              <div key={category} className="space-y-8">
-                <h2 className="text-xl font-bold text-primary uppercase tracking-wide">{category}</h2>
-                
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                  {categoryVideos.map((video) => (
-                    <div
-                      key={video.id}
-                      className="group cursor-pointer"
-                      onClick={() => setSelectedVideo(video)}
-                    >
-                      <div className="relative aspect-video mb-3 overflow-hidden rounded-lg">
-                        <img
-                          src={video.thumbnail}
-                          alt={video.name}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                        />
-                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-all duration-300 flex items-center justify-center">
-                          <Play className="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity" />
-                        </div>
-                        <div className="absolute bottom-2 right-2 bg-black/80 px-2 py-1 rounded text-xs flex items-center gap-1">
-                          <Clock className="w-3 h-3" />
-                          {formatDuration(video.duration)}
-                        </div>
-                      </div>
-                      <h3 className="font-medium line-clamp-2 group-hover:text-primary transition-colors text-sm">
-                        {video.name}
-                      </h3>
-                      {video.description && (
-                        <p className="text-xs text-muted-foreground line-clamp-2 mt-1">
-                          {video.description}
-                        </p>
-                      )}
-                      <a
-                        href={video.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 text-xs text-primary hover:underline mt-2"
-                        onClick={(e) => e.stopPropagation()}
-                      >
-                        Ver no Vimeo
-                        <ExternalLink className="w-3 h-3" />
-                      </a>
-                    </div>
-                  ))}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {catalogVideos.map((video) => (
+              <div
+                key={video.id}
+                className="group cursor-pointer"
+                onClick={() => setSelectedVideo(video)}
+              >
+                <div className="relative aspect-video mb-3 overflow-hidden rounded-lg">
+                  <img
+                    src={video.thumbnail}
+                    alt={video.name}
+                    className="w-full h-full object-cover scale-[1.13] group-hover:scale-[1.18] transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-all duration-300 flex items-center justify-center">
+                    <Play className="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity" />
+                  </div>
+                  <div className="absolute bottom-2 right-2 bg-black/80 px-2 py-1 rounded text-xs flex items-center gap-1">
+                    <Clock className="w-3 h-3" />
+                    {formatDuration(video.duration)}
+                  </div>
                 </div>
+                <h3 className="font-medium line-clamp-2 group-hover:text-primary transition-colors text-sm">
+                  {video.name}
+                </h3>
+                {video.description && (
+                  <p className="text-xs text-muted-foreground line-clamp-2 mt-1">
+                    {video.description}
+                  </p>
+                )}
+                <a
+                  href={video.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-xs text-primary hover:underline mt-2"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  Ver no Vimeo
+                  <ExternalLink className="w-3 h-3" />
+                </a>
               </div>
             ))}
           </div>
