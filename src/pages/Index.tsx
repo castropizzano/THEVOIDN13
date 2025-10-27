@@ -30,6 +30,35 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Video Section */}
+        <section className="py-20 px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="aspect-video w-full bg-black/50 flex items-center justify-center border border-border">
+              <p className="text-muted-foreground">Vimeo Video Placeholder</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Introduction Text */}
+        <BilingualSection>
+          <BilingualContent
+            portugueseContent={
+              <div>
+                <p className="text-base text-justify leading-relaxed">
+                  Não foi uma fantasia. Foi um retorno. Um desses chamados que vêm de dentro, quando o inconsciente começa a bater na pele pedindo passagem. THE VOID N.13 nasceu no espaço entre o desejo e o cansaço — entre o fim da forma e o começo da presença. Um modo de existir sem precisar se exibir. Respirar sem ter que performar. Um corpo que se apaga para deixar a imagem viver.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div>
+                <p className="text-base text-justify leading-relaxed">
+                  It wasn't a fantasy. It was a return. One of those inner calls, when the unconscious starts knocking at the skin, asking to pass through. THE VOID N.13 was born in the space between desire and exhaustion — between the end of form and the beginning of presence. A way of existing without needing to be seen. To breathe without having to perform. A body that fades so the image can live.
+                </p>
+              </div>
+            }
+          />
+        </BilingualSection>
+
         {/* Quando o Inconsciente Ganha Corpo */}
         <BilingualSection>
           <BilingualContent
