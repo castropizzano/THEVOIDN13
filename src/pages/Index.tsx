@@ -22,7 +22,7 @@ const Index = () => {
           <img 
             src={heroImage} 
             alt="THE VOID N.13" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
           />
           <div className="absolute inset-x-0 bottom-16 text-center px-6">
             <p className="text-base font-light tracking-wide text-[#DADADA]/90 drop-shadow-lg" style={{ fontFamily: 'Manrope, sans-serif' }}>
