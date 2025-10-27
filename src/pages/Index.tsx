@@ -21,10 +21,10 @@ const Index = () => {
         </section>
 
         {/* Tagline below hero */}
-        <section className="py-6 px-6">
+        <section className="py-6">
           <p style={{
           fontFamily: 'Manrope, sans-serif'
-        }} className="text-xs font-light tracking-wide text-[#DADADA]/90 text-right">[um corpo à deriva entre o ruído e o silêncio]  [a body adrift between noise and silence]</p>
+        }} className="text-xs font-light tracking-wide text-[#DADADA]/90 text-right">[um corpo à deriva entre o ruído e o silêncio]  <span className="italic">[a body adrift between noise and silence]</span></p>
         </section>
 
         {/* Quando o Inconsciente Ganha Corpo */}
