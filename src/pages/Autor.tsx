@@ -114,6 +114,78 @@ const Autor = () => {
                     Transparência radical. Autoria compartilhada mas assinada. Pesquisa como criação.
                   </p>
                 </div>
+
+                <div className="mt-16 space-y-6">
+                  <h3 className="text-sm font-medium tracking-wide uppercase text-primary">Trajetória / Journey</h3>
+                  
+                  <div className="space-y-6 text-base text-justify leading-relaxed">
+                    <p>
+                      A jornada começa no skate. Não como esporte, mas como modo de habitar o mundo. O corpo em movimento pelo espaço urbano. A apropriação criativa da cidade. Das manobras na rua às manobras no vídeo. Da câmera VHS à edição digital.
+                    </p>
+                    
+                    <p>
+                      2008: Funda CasaTrezeStudio. Começa a construir sua própria infraestrutura criativa. Design, vídeo, direção de arte. O coletivo como espaço de experimentação. 2014-2016: UDNFS no MuMA — primeira exposição institucional, democratização audiovisual DIY. 2019: Subtropikal Festival — criação de ID Visual do zero aplicando processos criativos ao vivo. 2020: LowPressure crew se formaliza. O skate ganha forma de movimento cultural. 2019-2022: Produção de LowMovie. O processo como obra.
+                    </p>
+                    
+                    <p>
+                      2023: Estreia de LowMovie no Cine Passeio. Do underground à tela grande. Ingresso no mestrado em Cinema e Artes do Vídeo (UNESPAR). A prática vira pesquisa. A pesquisa alimenta a prática. 2024: ⊂ødx — videoarte e instalação urbana sobre resistência e apagamento. 2024-2025: THE VOID N.13 emerge. A anti-marca que condensa tudo que veio antes.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-16 space-y-8">
+                  <h3 className="text-sm font-medium tracking-wide uppercase text-primary">Formação Acadêmica / Academic Background</h3>
+                  
+                  <div className="space-y-8">
+                    <div className="border-l-2 border-primary pl-6">
+                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-2">2023-2025 (em curso)</p>
+                      <h4 className="text-base font-bold mb-2">Mestrado em Cinema e Artes do Vídeo</h4>
+                      <p className="text-base mb-3">UNESPAR - Universidade Estadual do Paraná</p>
+                      <p className="text-sm text-muted-foreground mb-4">Pesquisa: Processos criativos colaborativos, subcultura do skate, cinema documental</p>
+                      
+                      <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 mt-4">
+                        <div className="flex items-start gap-2 mb-2">
+                          <svg className="w-4 h-4 mt-0.5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                          <p className="text-sm font-medium">QUALIFICAÇÃO APROVADA</p>
+                        </div>
+                        <p className="text-xs text-muted-foreground">11 de julho de 2025 — PPG-CINEAV/UNESPAR</p>
+                        <p className="text-xs mt-2">Título: "LowMovie™ e o Labirinto Criativo: Subjetividade, Subcultura e a Construção de uma Estética em Movimento no Coletivo LowPressure™"</p>
+                      </div>
+                    </div>
+
+                    <div className="border-l-2 border-muted pl-6">
+                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-2">2005</p>
+                      <h4 className="text-base font-bold mb-2">Graduado em Comunicação Social — Publicidade e Propaganda</h4>
+                      <p className="text-base">UTP - Universidade Tuiuti do Paraná [2005]</p>
+                    </div>
+
+                    <div className="border-l-2 border-muted pl-6">
+                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-2">2019</p>
+                      <h4 className="text-base font-bold mb-2">MBA em Comunicação Digital e Marketing Online</h4>
+                      <p className="text-base">UTP - Universidade Tuiuti do Paraná [2019]</p>
+                    </div>
+
+                    <div className="border-l-2 border-muted pl-6">
+                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-2">2014</p>
+                      <h4 className="text-base font-bold mb-2">Pós Graduado em Direção de Arte e Estratégias Criativas</h4>
+                      <p className="text-base">Unicuritiba [2014]</p>
+                    </div>
+                  </div>
+
+                  <div className="mt-8 pt-8 border-t border-border">
+                    <h4 className="text-sm font-medium tracking-wide uppercase mb-4">Formação Complementar</h4>
+                    <div className="space-y-2 text-sm">
+                      <p>• Técnico em Design Gráfico — CEFET-PR [1999]</p>
+                      <p>• Direção de Arte em Cinema — AIC - Academia Internacional de Cinema [2004]</p>
+                      <p>• Graphic Journey Expert — Adobe Systems [2004]</p>
+                      <p>• Princípios e Ações para o Educador — CEJA - Centro de Educação de Jovens e Adultos [2004]</p>
+                      <p>• Jornada de Design Gráfico — Adobe Eng-DTP e Multimídia [2008]</p>
+                      <p>• Design 5.0 — Lemon School [2009]</p>
+                    </div>
+                  </div>
+                </div>
               </>
             }
             englishContent={
@@ -202,6 +274,78 @@ const Autor = () => {
                   <p className="text-base text-justify leading-relaxed mt-4">
                     Radical transparency. Shared but signed authorship. Research as creation.
                   </p>
+                </div>
+
+                <div className="mt-16 space-y-6">
+                  <h3 className="text-sm font-medium tracking-wide uppercase text-primary">Trajetória / Journey</h3>
+                  
+                  <div className="space-y-6 text-base text-justify leading-relaxed">
+                    <p>
+                      The journey begins with skateboarding. Not as a sport, but as a way of inhabiting the world. The body moving through urban space. The creative appropriation of the city. From tricks on the street to tricks on video. From VHS camera to digital editing.
+                    </p>
+                    
+                    <p>
+                      2008: Founds CasaTrezeStudio. Begins building his own creative infrastructure. Design, video, art direction. The collective as a space for experimentation. 2014-2016: UDNFS at MuMA — first institutional exhibition, DIY audiovisual democratization. 2019: Subtropikal Festival — creating visual ID from scratch applying creative processes live. 2020: LowPressure crew formalizes. Skateboarding takes shape as a cultural movement. 2019-2022: LowMovie production. Process as work.
+                    </p>
+                    
+                    <p>
+                      2023: LowMovie premiere at Cine Passeio. From underground to the big screen. Enters master's program in Cinema and Video Arts (UNESPAR). Practice becomes research. Research feeds practice. 2024: ⊂ødx — video art and urban installation about resistance and erasure. 2024-2025: THE VOID N.13 emerges. The anti-brand that condenses everything that came before.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-16 space-y-8">
+                  <h3 className="text-sm font-medium tracking-wide uppercase text-primary">Formação Acadêmica / Academic Background</h3>
+                  
+                  <div className="space-y-8">
+                    <div className="border-l-2 border-primary pl-6">
+                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-2">2023-2025 (ongoing)</p>
+                      <h4 className="text-base font-bold mb-2">Master's in Cinema and Video Arts</h4>
+                      <p className="text-base mb-3">UNESPAR - State University of Paraná</p>
+                      <p className="text-sm text-muted-foreground mb-4">Research: Collaborative creative processes, skate subculture, documentary cinema</p>
+                      
+                      <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 mt-4">
+                        <div className="flex items-start gap-2 mb-2">
+                          <svg className="w-4 h-4 mt-0.5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                          <p className="text-sm font-medium">QUALIFICATION APPROVED</p>
+                        </div>
+                        <p className="text-xs text-muted-foreground">July 11, 2025 — PPG-CINEAV/UNESPAR</p>
+                        <p className="text-xs mt-2">Title: "LowMovie™ and the Creative Labyrinth: Subjectivity, Subculture and the Construction of an Aesthetic in Motion in the LowPressure™ Collective"</p>
+                      </div>
+                    </div>
+
+                    <div className="border-l-2 border-muted pl-6">
+                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-2">2005</p>
+                      <h4 className="text-base font-bold mb-2">Bachelor's in Social Communication — Advertising</h4>
+                      <p className="text-base">UTP - Tuiuti University of Paraná [2005]</p>
+                    </div>
+
+                    <div className="border-l-2 border-muted pl-6">
+                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-2">2019</p>
+                      <h4 className="text-base font-bold mb-2">MBA Marketing Management and Integrated Communication</h4>
+                      <p className="text-base">UTP - Tuiuti University of Paraná [2019]</p>
+                    </div>
+
+                    <div className="border-l-2 border-muted pl-6">
+                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-2">2014</p>
+                      <h4 className="text-base font-bold mb-2">Postgraduate in Art Direction and Creative Strategies</h4>
+                      <p className="text-base">Unicuritiba [2014]</p>
+                    </div>
+                  </div>
+
+                  <div className="mt-8 pt-8 border-t border-border">
+                    <h4 className="text-sm font-medium tracking-wide uppercase mb-4">Complementary Education</h4>
+                    <div className="space-y-2 text-sm">
+                      <p>• Technician in Graphic Design — CEFET-PR [1999]</p>
+                      <p>• Art Direction in Cinema — AIC - International Cinema Academy [2004]</p>
+                      <p>• Graphic Journey Expert — Adobe Systems [2004]</p>
+                      <p>• Principles and Actions for the Educator — CEJA - Youth and Adult Education Center [2004]</p>
+                      <p>• Graphic Design Journey — Adobe Eng-DTP and Multimedia [2008]</p>
+                      <p>• Design 5.0 — Lemon School [2009]</p>
+                    </div>
+                  </div>
                 </div>
               </>
             }
