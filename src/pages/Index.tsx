@@ -499,11 +499,11 @@ const Index = () => {
                   <p className="text-base text-justify leading-relaxed">
                     O sinal começa a falhar. A imagem se fragmenta, o som respira pela última vez. O corpo se dissolve, mas a frequência permanece. THE VOID N.13 não termina, apenas muda de forma. O que você escuta agora não é voz, é memória.
                   </p>
-                  <div className="mt-8 space-y-2 text-center">
+                  <blockquote className="mt-8 border-l-2 border-primary pl-6 italic space-y-2">
                     <p className="text-base">desligue as luzes.</p>
                     <p className="text-base">respire fundo.</p>
                     <p className="text-base">o vazio sabe o caminho de volta.</p>
-                  </div>
+                  </blockquote>
                 </div>
               }
               englishContent={
@@ -511,11 +511,11 @@ const Index = () => {
                   <p className="text-base text-justify leading-relaxed">
                     The signal begins to fail. The image fragments, the sound takes one last breath. The body dissolves, but the frequency remains. THE VOID N.13 doesn't end, it only changes form. What you hear now isn't a voice, it's memory.
                   </p>
-                  <div className="mt-8 space-y-2 text-center">
+                  <blockquote className="mt-8 border-l-2 border-primary pl-6 italic space-y-2">
                     <p className="text-base">turn off the lights.</p>
                     <p className="text-base">breathe deeply.</p>
                     <p className="text-base">the void knows the way back.</p>
-                  </div>
+                  </blockquote>
                 </div>
               }
             />
@@ -533,7 +533,7 @@ const Index = () => {
             {/* Research Documents Grid */}
             <div className="grid md:grid-cols-2 gap-6">
               <a 
-                href="https://github.com/castropizzano/thevoidn13"
+                href="/documents/THEVOIDN13_ShadowInterfaceBible_v1.3.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-colors group"
@@ -554,8 +554,7 @@ const Index = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <p className="text-sm text-muted-foreground mb-2">Concept Art</p>
-                <p className="text-sm text-muted-foreground">MoodBoard</p>
+                <p className="text-sm text-muted-foreground">Concept Art / MoodBoard</p>
               </div>
             </div>
 
