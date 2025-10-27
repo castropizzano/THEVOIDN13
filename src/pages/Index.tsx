@@ -628,7 +628,7 @@ const Index = () => {
             {/* Main and Technical Documentation */}
             <div className="grid md:grid-cols-2 gap-12 mt-16">
               <div className="space-y-6">
-                <h3 className="text-xl font-bold">Documentos Principais</h3>
+                <h3 className="text-xl font-bold">Main Documents / Documentos Principais</h3>
                 
                 <div className="space-y-4">
                   <a 
@@ -638,7 +638,7 @@ const Index = () => {
                     className="block hover:text-primary transition-colors"
                   >
                     <h4 className="text-base font-bold">README.md</h4>
-                    <p className="text-sm text-muted-foreground">Manifesto e estrutura do projeto</p>
+                    <p className="text-sm text-muted-foreground">Manifesto e estrutura do projeto / Manifesto and project structure</p>
                   </a>
                   
                   <a 
@@ -648,7 +648,7 @@ const Index = () => {
                     className="block hover:text-primary transition-colors"
                   >
                     <h4 className="text-base font-bold">LICENSE.md</h4>
-                    <p className="text-sm text-muted-foreground">Licença CC BY-NC-SA 4.0</p>
+                    <p className="text-sm text-muted-foreground">Licença CC BY-NC-SA 4.0 / CC BY-NC-SA 4.0 License</p>
                   </a>
                   
                   <a 
@@ -658,76 +658,90 @@ const Index = () => {
                     className="block hover:text-primary transition-colors"
                   >
                     <h4 className="text-base font-bold">CITATION.cff</h4>
-                    <p className="text-sm text-muted-foreground">Citação automatizada GitHub</p>
+                    <p className="text-sm text-muted-foreground">Citação automatizada GitHub / GitHub automated citation</p>
                   </a>
                   
                   <a 
-                    href="https://github.com/castropizzano/thevoidn13/blob/main/docs/METODOLOGIA_PESQUISA.md"
+                    href="https://github.com/castropizzano/thevoidn13/blob/main/docs/METHODOLOGY.md"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block hover:text-primary transition-colors"
                   >
-                    <h4 className="text-base font-bold">METODOLOGIA_PESQUISA.md</h4>
-                    <p className="text-sm text-muted-foreground">Métodos e procedimentos de pesquisa</p>
+                    <h4 className="text-base font-bold">METHODOLOGY.md</h4>
+                    <p className="text-sm text-muted-foreground">Métodos e procedimentos de pesquisa / Research methods and procedures</p>
                   </a>
                 </div>
               </div>
 
               <div className="space-y-6">
-                <h3 className="text-xl font-bold">Documentação Técnica</h3>
+                <h3 className="text-xl font-bold">Technical Documentation / Documentação Técnica</h3>
                 
                 <div className="space-y-4">
                   <a 
-                    href="https://github.com/castropizzano/thevoidn13/blob/main/docs/FILOSOFIA_DO_PROJETO.md"
+                    href="https://github.com/castropizzano/thevoidn13/blob/main/docs/PHILOSOPHY.md"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block hover:text-primary transition-colors"
                   >
-                    <h4 className="text-base font-bold">FILOSOFIA_DO_PROJETO.md</h4>
-                    <p className="text-sm text-muted-foreground">Justificativa das escolhas conceituais</p>
+                    <h4 className="text-base font-bold">PHILOSOPHY.md</h4>
+                    <p className="text-sm text-muted-foreground">Justificativa das escolhas conceituais / Rationale for conceptual choices</p>
                   </a>
                   
                   <a 
-                    href="https://github.com/castropizzano/thevoidn13/blob/main/docs/DIREITOS_AUTORAIS.md"
+                    href="https://github.com/castropizzano/thevoidn13/blob/main/docs/COPYRIGHT.md"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block hover:text-primary transition-colors"
                   >
-                    <h4 className="text-base font-bold">DIREITOS_AUTORAIS.md</h4>
-                    <p className="text-sm text-muted-foreground">Ética e transparência da co-criação</p>
+                    <h4 className="text-base font-bold">COPYRIGHT.md</h4>
+                    <p className="text-sm text-muted-foreground">Ética e transparência da co-criação / Ethics and transparency of co-creation</p>
                   </a>
                   
                   <a 
-                    href="https://github.com/castropizzano/thevoidn13/blob/main/docs/COMO_CITAR.md"
+                    href="https://github.com/castropizzano/thevoidn13/blob/main/docs/HOW_TO_CITE.md"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block hover:text-primary transition-colors"
                   >
-                    <h4 className="text-base font-bold">COMO_CITAR.md</h4>
-                    <p className="text-sm text-muted-foreground">Guia completo de citação acadêmica</p>
+                    <h4 className="text-base font-bold">HOW_TO_CITE.md</h4>
+                    <p className="text-sm text-muted-foreground">Guia completo de citação acadêmica / Complete academic citation guide</p>
                   </a>
                   
                   <a 
-                    href="https://github.com/castropizzano/thevoidn13/blob/main/docs/REFERENCIAS_BIBLIOGRAFICAS.md"
+                    href="https://github.com/castropizzano/thevoidn13/blob/main/docs/REFERENCES.md"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block hover:text-primary transition-colors"
                   >
-                    <h4 className="text-base font-bold">REFERENCIAS_BIBLIOGRAFICAS.md</h4>
-                    <p className="text-sm text-muted-foreground">Bibliografia completa do projeto</p>
-                  </a>
-                  
-                  <a 
-                    href="https://github.com/castropizzano/thevoidn13"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block hover:text-primary transition-colors"
-                  >
-                    <h4 className="text-base font-bold">Repositório Completo</h4>
-                    <p className="text-sm text-muted-foreground">Acesso a todos os arquivos no GitHub</p>
+                    <h4 className="text-base font-bold">REFERENCES.md</h4>
+                    <p className="text-sm text-muted-foreground">Bibliografia completa do projeto / Complete project bibliography</p>
                   </a>
                 </div>
               </div>
+            </div>
+
+            {/* Complete Repository Card */}
+            <div className="mt-12">
+              <a 
+                href="https://github.com/castropizzano/thevoidn13"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-primary/5 border border-primary/20 rounded-lg p-8 hover:bg-primary/10 hover:border-primary transition-colors group"
+              >
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h3 className="text-2xl font-bold group-hover:text-primary transition-colors mb-2">
+                      Complete Repository / Repositório Completo
+                    </h3>
+                    <p className="text-base text-muted-foreground">
+                      Acesso a todos os arquivos no GitHub / Access all files on GitHub
+                    </p>
+                  </div>
+                  <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </div>
+              </a>
             </div>
           </div>
         </BilingualSection>
