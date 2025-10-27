@@ -27,13 +27,13 @@ export const BilingualContent = ({ portugueseContent, englishContent }: Bilingua
   return (
     <div className="grid md:grid-cols-2 gap-12 items-start">
       <div className="space-y-6 w-full text-justify">
-        <p className="text-xs uppercase tracking-wider text-foreground/60 font-medium">PORTUGUÊS</p>
+        <p className="text-[11px] uppercase tracking-wider text-foreground/60 font-medium">PORTUGUÊS</p>
         <div className="w-full">
           {portugueseContent}
         </div>
       </div>
       <div className="space-y-6 w-full text-justify">
-        <p className="text-xs uppercase tracking-wider text-foreground/60 font-medium">ENGLISH</p>
+        <p className="text-[11px] uppercase tracking-wider text-foreground/60 font-medium">ENGLISH</p>
         <div className="w-full">
           {englishContent}
         </div>

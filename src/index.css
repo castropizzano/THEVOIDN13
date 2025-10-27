@@ -104,14 +104,15 @@ All colors MUST be HSL.
   /* Typography hierarchy */
   h1, h2, h3, h4, h5, h6 {
     @apply uppercase text-foreground text-sm font-medium tracking-wide;
+    font-family: 'Manrope', sans-serif;
   }
   
   p {
-    @apply text-[hsl(var(--body-text))] text-[11px] leading-relaxed;
+    @apply text-[hsl(var(--body-text))] text-xs leading-relaxed;
   }
   
   blockquote p {
-    @apply text-[hsl(var(--body-text))] text-[11px] leading-relaxed;
+    @apply text-[hsl(var(--body-text))] text-xs leading-relaxed;
   }
   
   /* Link styles */
