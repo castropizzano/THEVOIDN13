@@ -26,13 +26,13 @@ interface BilingualContentProps {
 export const BilingualContent = ({ portugueseContent, englishContent }: BilingualContentProps) => {
   return (
     <div className="grid md:grid-cols-2 gap-12 items-start">
-      <div className="space-y-6 w-full">
+      <div className="space-y-6 w-full text-base leading-relaxed text-justify">
         <p className="text-xs uppercase tracking-wider text-foreground/60">PORTUGUÊS</p>
         <div className="w-full">
           {portugueseContent}
         </div>
       </div>
-      <div className="space-y-6 w-full">
+      <div className="space-y-6 w-full text-base leading-relaxed text-justify">
         <p className="text-xs uppercase tracking-wider text-foreground/60">ENGLISH</p>
         <div className="w-full">
           {englishContent}
