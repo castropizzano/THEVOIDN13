@@ -105,22 +105,25 @@ const Index = () => {
             }
             englishContent={
               <div className="space-y-6">
-                <h3 className="text-base font-medium">When the Unconscious Takes Shape</h3>
+                <h2 className="text-base font-bold">When the Unconscious Takes Shape</h2>
                 <p className="text-base text-justify leading-relaxed">
                   It wasn't born from an idea, but from inner pressure. I thought I was inventing a mask, and I ended up revealing a face that had always been there. THEVOIDN13 emerged from the friction between desire and exhaustion, from the urgency to empty oneself just to keep creating. It is neither character nor alter ego. It is a presence that breathes where the body fails. A matter that moves between the end and the beginning. The moment when the unconscious decides to exist.
                 </p>
                 <div className="space-y-6 mt-12">
                   <div>
+                    <h4 className="text-base font-bold">LowMovie™</h4>
                     <p className="text-base text-justify leading-relaxed mt-2">
                       The gesture that walks without rehearsal. The body as cinema, the mistake as truth. A film that doesn't represent, it breathes.
                     </p>
                   </div>
                   <div>
+                    <h4 className="text-base font-bold">цастро™</h4>
                     <p className="text-base text-justify leading-relaxed mt-2">
                       Refusal as signature. The creator disappears so the idea can speak. Anonymity as aesthetic resistance.
                     </p>
                   </div>
                   <div>
+                    <h4 className="text-base font-bold">CasaTrezeStudio®</h4>
                     <p className="text-base text-justify leading-relaxed mt-2">
                       The ethics of the underground. Thought that rises from the margin. Design that thinks like someone breathing concrete.
                     </p>
@@ -140,7 +143,7 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <div className="space-y-6">
-                <h2 className="text-base font-bold">A Máscara: Ceder Espaço ao Inconsciente</h2>
+                <h2 className="text-base font-bold">A Máscara / Ceder Espaço ao Inconsciente</h2>
                 <p className="text-base text-justify leading-relaxed">
                   A máscara veio antes do nome. Branca, lisa, silenciosa. Não era uma face, era uma pausa. Quando a olhei pela primeira vez, percebi que ela não me olhava de volta. Talvez fosse isso o que eu buscava: existir sem precisar me afirmar. Quando a vesti, o rosto deixou de importar. O espelho não devolveu imagem, apenas silêncio. Foi nesse instante que compreendi: não estava criando um personagem, mas cedendo espaço. Ceder espaço ao inconsciente, deixar que ele assumisse forma. A máscara é o pacto entre o que se apaga e o que retorna, o instante em que o corpo permite ser atravessado por algo maior do que ele mesmo.
                 </p>
@@ -148,7 +151,7 @@ const Index = () => {
             }
             englishContent={
               <div className="space-y-6">
-                <h3 className="text-base font-medium">The Mask: Yielding Space to the Unconscious</h3>
+                <h2 className="text-base font-bold">The Mask / Yielding Space to the Unconscious</h2>
                 <p className="text-base text-justify leading-relaxed">
                   The mask came before the name. White, smooth, silent. It wasn't a face, it was a pause. When I looked at it for the first time, I realized it didn't look back at me. Perhaps that was what I was seeking: to exist without needing to assert myself. When I wore it, the face ceased to matter. The mirror returned no image, only silence. It was in that moment I understood: I wasn't creating a character, I was yielding space. Yielding space to the unconscious, letting it take shape. The mask is the pact between what fades and what returns, the instant when the body allows itself to be crossed by something greater than itself.
                 </p>
@@ -189,21 +192,21 @@ const Index = () => {
             englishContent={
               <div className="space-y-8">
                 <div>
-                  <h3 className="text-base font-medium">The Void</h3>
+                  <h2 className="text-base font-bold">The Void</h2>
                   <p className="text-base text-justify leading-relaxed mt-2">
-                    The void that is not absence, but potential. An open field between what I think and what I cannot yet name. It is the interval where creation breathes, the place that exists before intention.
+                    The void that is not absence, but potential. An open field between what I think and what I cannot yet name. It is the interval where creation breathes, the place that exists before intention. The void is the womb of the invisible, what precedes the gesture, the instant when silence transforms into matter.
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-base font-medium">Number 13</h3>
+                  <h2 className="text-base font-bold">Number 13</h2>
                   <p className="text-base text-justify leading-relaxed mt-2">
-                    The number of symbolic death, the end that begins again. Thirteen is a crossing, the forbidden floor of the psyche, where fear turns into image.
+                    The number of symbolic death, the end that begins again. Thirteen is a crossing, the forbidden floor of the psyche, where fear turns into image. It is the call to descend, lose form and return as another. A dive into the unconscious that reveals what consciousness cannot bear to say.
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-base font-medium">The Collective</h3>
+                  <h2 className="text-base font-bold">CasaTrezeStudio</h2>
                   <p className="text-base text-justify leading-relaxed mt-2">
-                    The underground signature that has followed me for years. An invisible seal, born in the underground where all that's alive hides.
+                    The underground signature that has followed me for years. An invisible seal, born in the underground where all that's alive hides. CasaTreze is not a brand, it is ritual. A symbolic community of those who create in darkness and call it light.
                   </p>
                 </div>
               </div>
@@ -228,7 +231,7 @@ const Index = () => {
             }
             englishContent={
               <div className="space-y-6">
-                <h3 className="text-base font-medium">The Gesture</h3>
+                <h2 className="text-base font-bold">The Gesture</h2>
                 <p className="text-base text-justify leading-relaxed">
                   Each movement is a controlled noise, an echo of what the body hears within. To walk is to think, to stop is to listen. THEVOIDN13 doesn't represent, it embodies hesitation. Gesture is the breath of thought, a movement of exile and return. Every displacement is a form of listening: the body perceives what the mind silences.
                 </p>
@@ -263,13 +266,13 @@ const Index = () => {
             englishContent={
               <div className="space-y-8">
                 <div>
-                  <h3 className="text-base font-medium">The Voice of the Void</h3>
+                  <h2 className="text-base font-bold">The Voice of the Void</h2>
                   <p className="text-base text-justify leading-relaxed">
                     The voice doesn't come from the mouth, it comes from the body. It vibrates before sound, it breathes before words. When it speaks, it doesn't explain: it summons. Each phrase is a crack opened in the concrete of silence. What is spoken dies. What is silent lives. Sound is not a verb; it is presence in its rawest state, matter that pulses before meaning.
                   </p>
                 </div>
                 <div>
-                  <h5 className="text-base font-medium">The Frequency</h5>
+                  <h4 className="text-base font-bold">The Frequency</h4>
                   <p className="text-base text-justify leading-relaxed mt-2">
                     THEVOIDN13's voice is deep, without origin. It seems to come from inside the wall or from the ground itself. There is no anger, only density. It is the sound of the unconscious trying to breathe. The vibration precedes meaning: before it becomes word, it is impulse. The body becomes the resonant chamber of what the world silenced.
                   </p>
@@ -305,13 +308,13 @@ const Index = () => {
             englishContent={
               <div className="space-y-8">
                 <div>
-                  <h3 className="text-base font-medium">Aesthetic and Manifestation</h3>
+                  <h2 className="text-base font-bold">Aesthetic and Manifestation</h2>
                   <p className="text-base text-justify leading-relaxed">
                     The aesthetic of THEVOIDN13 wasn't designed, it emerged. It rose from the friction between error and silence, between exhaustion and the urge to exist. It's an aesthetic born from collapse, from urban noise and solitary introspection. Long takes, grain, blown-out lights, and wet streets are visual echoes of a mind in wakefulness. Each shadow is a memory; each reflection, a confession.
                   </p>
                 </div>
                 <div>
-                  <h5 className="text-base font-medium">Visual Atmosphere</h5>
+                  <h4 className="text-base font-bold">Visual Atmosphere</h4>
                   <p className="text-base text-justify leading-relaxed mt-2">
                     The atmosphere is urban, nocturnal, introspective, and rainy. The sound is low and distant, like restrained thunder. There's something post-life in the alleys and diffused lights, the trace of a presence already gone. The image is always body and absence at once: here, error becomes form.
                   </p>
@@ -336,7 +339,7 @@ const Index = () => {
                 <div>
                   <h4 className="text-base font-bold">Cinema</h4>
                   <p className="text-base text-justify leading-relaxed mt-2">
-                    Na estética cinematográfica que molda The Void No.13, percebem-se ecos de noites neon e heróis silenciosos. Das ruas molhadas e solitárias de Drive às angústias urbanas de Mr. Robot, o projeto absorve a linguagem visual de narrativas em que o vazio fala mais que as palavras. A violência ritualística e saturada de Only God Forgives encontra ressonância aqui como um poema visual de fúria contida, enquanto os futuros distópicos de Akira e Ghost in the Shell emprestam sua melancolia tecnológica.
+                    Na estética cinematográfica que molda THEVOIDN13, percebem-se ecos de noites neon e heróis silenciosos. Das ruas molhadas e solitárias de Drive às angústias urbanas de Mr. Robot, o projeto absorve a linguagem visual de narrativas em que o vazio fala mais que as palavras. A violência ritualística e saturada de Only God Forgives encontra ressonância aqui como um poema visual de fúria contida, enquanto os futuros distópicos de Akira e Ghost in the Shell emprestam sua melancolia tecnológica.
                   </p>
                 </div>
                 <div>
@@ -350,15 +353,16 @@ const Index = () => {
             englishContent={
               <div className="space-y-8">
                 <div>
-                  <h3 className="text-base font-medium">References</h3>
+                  <h2 className="text-base font-bold">References</h2>
                 </div>
                 <div>
+                  <h4 className="text-base font-bold">Cinema</h4>
                   <p className="text-base text-justify leading-relaxed mt-2">
-                    In the cinematic aesthetic shaping The Void No.13, one perceives echoes of neon-lit nights and silent anti-heroes. From the rain-slicked, lonely streets of Drive to the urban anxieties of Mr. Robot, the project absorbs the visual language of narratives where emptiness speaks louder than words. The ritualistic, saturated violence of Only God Forgives resonates here as a visual poem of contained fury, while the dystopian futures of Akira and Ghost in the Shell lend their technological melancholy.
+                    In the cinematic aesthetic shaping THEVOIDN13, one perceives echoes of neon-lit nights and silent anti-heroes. From the rain-slicked, lonely streets of Drive to the urban anxieties of Mr. Robot, the project absorbs the visual language of narratives where emptiness speaks louder than words. The ritualistic, saturated violence of Only God Forgives resonates here as a visual poem of contained fury, while the dystopian futures of Akira and Ghost in the Shell lend their technological melancholy.
                   </p>
                 </div>
                 <div>
-                  <h5 className="text-base font-medium">Music</h5>
+                  <h4 className="text-base font-bold">Music</h4>
                   <p className="text-base text-justify leading-relaxed mt-2">
                     Beneath the character's silence, an invisible soundtrack throbs, woven from dark rock and atmospheric electronic influences. The ethereal guitars and crushing riffs of Deftones blend with the industrial catharsis of Nine Inch Nails, composing a sonic echo of anguish and resistance. From Massive Attack's slow, hypnotic beats emerges a mood of urban suspense, while the introspective brutality of Loathe carries the weight of modern chaos in each chord.
                   </p>
@@ -377,21 +381,21 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <div className="space-y-8">
-                <h2 className="text-base font-bold">Coautoria Simbólica – Integração com IA</h2>
+                <h2 className="text-base font-bold">Coautoria Simbólica / Integração com IA</h2>
                 <p className="text-base text-justify leading-relaxed">
-                  Nos bastidores do THEVOIDN13, a inteligência artificial revelou-se uma cúmplice silenciosa e potente. Assumindo a lógica de um projeto homem-orquestra, abracei a IA como parte da metodologia criativa, uma extensão digital do meu processo solitário de criação.
+                  Nos bastidores do THEVOIDN13, a inteligência artificial revelou-se uma cúmplice silenciosa e potente. Assumindo a lógica de um projeto homem orquestra, abracei a IA como parte da metodologia criativa, uma extensão digital do meu processo solitário de criação. A IA permanece como coautora invisível que nunca ofusca a essência do projeto.
                 </p>
-                <div className="space-y-6">
+                <div className="space-y-6 mt-6">
                   <div>
                     <h4 className="text-base font-bold">Expansão Visual</h4>
                     <p className="text-base text-justify leading-relaxed mt-2">
-                      A IA generativa expandiu minha paleta visual de formas inimagináveis. Cada visual criado por esse diálogo humano-máquina carregava a mesma aura onírica e intensa do universo do Void.
+                      A IA generativa expandiu minha paleta visual de formas inimagináveis. Cada visual criado por esse diálogo humano máquina carregava a mesma aura onírica e intensa do universo do Void.
                     </p>
                   </div>
                   <div>
                     <h4 className="text-base font-bold">Voz e Ruído</h4>
                     <p className="text-base text-justify leading-relaxed mt-2">
-                      A IA também emprestou voz e ruído ao silêncio do projeto. Vozes sintéticas emergiram para dar fala ao indizível.
+                      A IA também emprestou voz e ruído ao silêncio do projeto. Vozes sintéticas emergiram para dar fala ao indizível, tornando-se reflexo binário do Vazio.
                     </p>
                   </div>
                 </div>
@@ -399,13 +403,24 @@ const Index = () => {
             }
             englishContent={
               <div className="space-y-8">
-                <h3 className="text-base font-medium">Symbolic Co-authorship – Integration with AI</h3>
+                <h2 className="text-base font-bold">Symbolic Co-authorship / Integration with AI</h2>
                 <p className="text-base text-justify leading-relaxed">
-                  Behind the scenes of THEVOIDN13, artificial intelligence has revealed itself as a silent yet potent accomplice. Adopting the logic of a one-man-band project, I embraced AI as part of my creative methodology, a digital extension of my solitary creative process.
+                  Behind the scenes of THEVOIDN13, artificial intelligence has revealed itself as a silent yet potent accomplice. Adopting the logic of a one-man-band project, I embraced AI as part of my creative methodology, a digital extension of my solitary creative process. AI remains an invisible co-author that never overshadows the project's essence.
                 </p>
-                <p className="text-base text-justify leading-relaxed mt-6">
-                  In this co-creation with the machine, AI remains an invisible co-author that never overshadows the project's essence. The artificial intelligence becomes a digital mirror of my creative impulse, a binary reflection of the Void.
-                </p>
+                <div className="space-y-6 mt-6">
+                  <div>
+                    <h4 className="text-base font-bold">Visual Expansion</h4>
+                    <p className="text-base text-justify leading-relaxed mt-2">
+                      Generative AI expanded my visual palette in unimaginable ways. Each visual created by this human machine dialogue carried the same dreamlike and intense aura of the Void universe.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="text-base font-bold">Voice and Noise</h4>
+                    <p className="text-base text-justify leading-relaxed mt-2">
+                      AI also lent voice and noise to the project's silence. Synthetic voices emerged to give speech to the unspeakable, becoming a binary reflection of the Void.
+                    </p>
+                  </div>
+                </div>
               </div>
             }
           />
@@ -428,7 +443,7 @@ const Index = () => {
             }
             englishContent={
               <div>
-                <h3 className="text-base font-medium">The Safe Place to Disappear</h3>
+                <h2 className="text-base font-bold">The Safe Place to Disappear</h2>
                 <p className="text-base text-justify leading-relaxed mt-4">
                   Now I understand: the Void wasn't born for a party. It was born because I needed a refuge, a place where silence could be shelter, not absence. THEVOIDN13 is the name I gave my own shadow, the myth I invented to keep breathing.
                 </p>
@@ -454,7 +469,7 @@ const Index = () => {
             }
             englishContent={
               <div className="space-y-6">
-                <h3 className="text-base font-medium">Integrated Manifesto</h3>
+                <h2 className="text-base font-bold">Integrated Manifesto</h2>
                 <p className="text-base text-justify leading-relaxed">
                   There is no beginning. There is only the moment when silence decides to breathe. THEVOIDN13 was born from that invisible breath, a gesture between death and return.
                 </p>
