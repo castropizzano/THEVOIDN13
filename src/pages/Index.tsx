@@ -23,7 +23,7 @@ const Index = () => {
         </section>
 
         {/* Video Section */}
-        <section className="py-20 px-6">
+        <section className="pt-20 pb-8 px-6">
           <div className="max-w-6xl mx-auto space-y-8">
             <h1 className="text-sm font-light tracking-wider uppercase">
               THEVOIDN13 [Shadow_Interface_Bible_v13]
