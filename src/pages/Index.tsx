@@ -16,15 +16,17 @@ const Index = () => {
       
       <main>
         {/* Hero Section - Full screen image */}
-        <section className="w-full h-screen overflow-hidden">
-          <img src={heroImage} alt="THE VOID N.13" className="w-full h-full object-contain" />
-        </section>
-
-        {/* Tagline below hero */}
-        <section className="py-6">
-          <p style={{
-          fontFamily: 'Manrope, sans-serif'
-        }} className="text-xs font-light tracking-wide text-[#DADADA]/90 text-right">[um corpo à deriva entre o ruído e o silêncio]  <span className="italic">[a body adrift between noise and silence]</span></p>
+        <section className="w-full overflow-hidden">
+          <div className="w-max mx-auto">
+            <img src={heroImage} alt="THE VOID N.13" className="h-screen w-auto object-contain block" />
+            <p
+              style={{ fontFamily: "Manrope, sans-serif" }}
+              className="pt-4 text-xs font-light tracking-wide text-[#DADADA]/90 text-right"
+            >
+              [um corpo à deriva entre o ruído e o silêncio]{" "}
+              <span className="italic">[a body adrift between noise and silence]</span>
+            </p>
+          </div>
         </section>
 
         {/* Quando o Inconsciente Ganha Corpo */}
