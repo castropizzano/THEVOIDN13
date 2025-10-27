@@ -525,52 +525,151 @@ const Index = () => {
         {/* Documentação do Repositório */}
         <BilingualSection bgClassName="bg-card/50">
           <div className="space-y-16">
-            <div>
-              <h2 className="text-2xl font-bold mb-2">Documentação do Repositório</h2>
-              <h3 className="text-2xl font-medium">Repository Documentation</h3>
+            <div className="space-y-4">
+              <h2 className="text-4xl font-bold">Documentation</h2>
+              <h3 className="text-xl text-primary">Documentos de Pesquisa / Research Documents</h3>
             </div>
 
-            <BilingualContent
-              portugueseContent={
-                <div className="space-y-6">
-                  <p className="text-base text-justify leading-relaxed">
-                    THEVOIDN13 é mais do que um projeto: é um organismo vivo de criação. Um sistema simbólico que une arte, filosofia e tecnologia em um fluxo contínuo de aprendizado, erro e reinvenção. O GitHub atua como arquivo vivo deste memorial artístico, onde cada commit é uma entrada de pesquisa — não uma nota técnica avulsa.
-                  </p>
+            {/* Research Documents Grid */}
+            <div className="grid md:grid-cols-3 gap-6">
+              <a 
+                href="https://github.com/castropizzano/thevoidn13"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-colors group"
+              >
+                <div className="flex justify-between items-start mb-4">
+                  <h4 className="text-lg font-bold group-hover:text-primary transition-colors">THEVOID N.13</h4>
+                  <svg className="w-5 h-5 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
                 </div>
-              }
-              englishContent={
-                <div className="space-y-6">
-                  <p className="text-base text-justify leading-relaxed">
-                    THEVOIDN13 is more than a project: it is a living organism of creation. A symbolic system that unites art, philosophy, and technology in a continuous flow of learning, error, and reinvention. GitHub acts as a living archive of this artistic memorial, where each commit is a research entry — not a random technical note.
-                  </p>
-                </div>
-              }
-            />
+                <p className="text-sm text-muted-foreground mb-2">Rascunho Apresentação</p>
+                <p className="text-sm text-muted-foreground">Manifesto e conceito completo</p>
+              </a>
 
-            <div className="grid md:grid-cols-2 gap-12 mt-12">
+              <a 
+                href="/autor"
+                className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-colors group"
+              >
+                <div className="flex justify-between items-start mb-4">
+                  <h4 className="text-lg font-bold group-hover:text-primary transition-colors">Jornada do Autor</h4>
+                  <svg className="w-5 h-5 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <p className="text-sm text-muted-foreground mb-2">Memorial Acadêmico</p>
+                <p className="text-sm text-muted-foreground">Trajetória e processos</p>
+              </a>
+
+              <a 
+                href="https://github.com/castropizzano/lowmovie"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-colors group"
+              >
+                <div className="flex justify-between items-start mb-4">
+                  <h4 className="text-lg font-bold group-hover:text-primary transition-colors">LowMovie</h4>
+                  <svg className="w-5 h-5 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <p className="text-sm text-muted-foreground mb-2">Brandbook</p>
+                <p className="text-sm text-muted-foreground">Identidade visual completa</p>
+              </a>
+
+              <a 
+                href="https://github.com/castropizzano/lowpressure"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-colors group"
+              >
+                <div className="flex justify-between items-start mb-4">
+                  <h4 className="text-lg font-bold group-hover:text-primary transition-colors">LowPressure™</h4>
+                  <svg className="w-5 h-5 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <p className="text-sm text-muted-foreground mb-2">Brandbook vPunk</p>
+                <p className="text-sm text-muted-foreground">Filosofia e identidade</p>
+              </a>
+
+              <a 
+                href="https://github.com/castropizzano/casatrezestudio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-colors group"
+              >
+                <div className="flex justify-between items-start mb-4">
+                  <h4 className="text-lg font-bold group-hover:text-primary transition-colors">CasaTrezeStudio</h4>
+                  <svg className="w-5 h-5 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <p className="text-sm text-muted-foreground mb-2">Release</p>
+                <p className="text-sm text-muted-foreground">Conceito e serviços</p>
+              </a>
+
+              <a 
+                href="/autor"
+                className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-colors group"
+              >
+                <div className="flex justify-between items-start mb-4">
+                  <h4 className="text-lg font-bold group-hover:text-primary transition-colors">Currículo Lattes</h4>
+                  <svg className="w-5 h-5 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <p className="text-sm text-muted-foreground mb-2">CV Acadêmico</p>
+                <p className="text-sm text-muted-foreground">Formação e produção</p>
+              </a>
+            </div>
+
+            {/* Main and Technical Documentation */}
+            <div className="grid md:grid-cols-2 gap-12 mt-16">
               <div className="space-y-8">
                 <h3 className="text-xl font-bold">Documentos Principais</h3>
                 
                 <div className="space-y-6">
-                  <div>
+                  <a 
+                    href="https://github.com/castropizzano/thevoidn13/blob/main/README.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block hover:text-primary transition-colors"
+                  >
                     <h4 className="text-base font-bold mb-1">README.md</h4>
                     <p className="text-sm text-muted-foreground">Manifesto e estrutura do projeto</p>
-                  </div>
+                  </a>
                   
-                  <div>
+                  <a 
+                    href="https://github.com/castropizzano/thevoidn13/blob/main/LICENSE.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block hover:text-primary transition-colors"
+                  >
                     <h4 className="text-base font-bold mb-1">LICENSE.md</h4>
                     <p className="text-sm text-muted-foreground">Licença CC BY-NC-SA 4.0</p>
-                  </div>
+                  </a>
                   
-                  <div>
+                  <a 
+                    href="https://github.com/castropizzano/thevoidn13/blob/main/CITATION.cff"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block hover:text-primary transition-colors"
+                  >
                     <h4 className="text-base font-bold mb-1">CITATION.cff</h4>
                     <p className="text-sm text-muted-foreground">Como citar academicamente</p>
-                  </div>
+                  </a>
                   
-                  <div>
+                  <a 
+                    href="https://github.com/castropizzano/thevoidn13/blob/main/docs/METODOLOGIA_PESQUISA.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block hover:text-primary transition-colors"
+                  >
                     <h4 className="text-base font-bold mb-1">METODOLOGIA_PESQUISA.md</h4>
                     <p className="text-sm text-muted-foreground">Métodos e procedimentos</p>
-                  </div>
+                  </a>
                 </div>
               </div>
 
@@ -578,38 +677,47 @@ const Index = () => {
                 <h3 className="text-xl font-bold">Documentação Técnica</h3>
                 
                 <div className="space-y-6">
-                  <div>
+                  <a 
+                    href="https://github.com/castropizzano/thevoidn13/blob/main/docs/DIREITOS_AUTORAIS.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block hover:text-primary transition-colors"
+                  >
                     <h4 className="text-base font-bold mb-1">DIREITOS_AUTORAIS.md</h4>
                     <p className="text-sm text-muted-foreground">Ética e transparência da co-criação</p>
-                  </div>
+                  </a>
                   
-                  <div>
+                  <a 
+                    href="https://github.com/castropizzano/thevoidn13/blob/main/docs/COMO_CITAR.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block hover:text-primary transition-colors"
+                  >
                     <h4 className="text-base font-bold mb-1">COMO_CITAR.md</h4>
                     <p className="text-sm text-muted-foreground">Guia de citação acadêmica</p>
-                  </div>
+                  </a>
                   
-                  <div>
+                  <a 
+                    href="https://github.com/castropizzano/thevoidn13/blob/main/docs/REFERENCIAS_BIBLIOGRAFICAS.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block hover:text-primary transition-colors"
+                  >
                     <h4 className="text-base font-bold mb-1">REFERENCIAS_BIBLIOGRAFICAS.md</h4>
                     <p className="text-sm text-muted-foreground">Bibliografia completa</p>
-                  </div>
+                  </a>
                   
-                  <div>
+                  <a 
+                    href="https://github.com/castropizzano/thevoidn13"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block hover:text-primary transition-colors"
+                  >
                     <h4 className="text-base font-bold mb-1">Repositório Completo</h4>
                     <p className="text-sm text-muted-foreground">Acesso a todos os arquivos no GitHub</p>
-                  </div>
+                  </a>
                 </div>
               </div>
-            </div>
-
-            <div className="mt-16 pt-8 border-t border-border">
-              <p className="text-base text-justify leading-relaxed max-w-4xl mx-auto">
-                Este memorial não guarda o que passou. Guarda o que ainda pulsa. Três projetos matriciais mas LowMovie, LowPressure, CasaTrezeStudio mas funcionam como órgãos de um mesmo organismo criativo. Cada um respira de forma autônoma, mas todos compartilham do mesmo sangue simbólico.
-              </p>
-            </div>
-
-            <div className="text-center text-sm text-muted-foreground space-y-1 mt-12">
-              <p>THEVOIDN13 — Castro Pizzano (цастро™) — 2025</p>
-              <p>MIT License (code) | CC BY-NC-SA 4.0 (content)</p>
             </div>
           </div>
         </BilingualSection>
