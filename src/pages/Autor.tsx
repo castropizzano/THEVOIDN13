@@ -45,7 +45,6 @@ const Autor = () => {
                 <p className="text-base text-justify leading-relaxed mt-6">
                   Membro do LowPressure™, coletivo de skatistas e produtores criativos que atuam nas interseções entre skate, cinema e videoarte contemporânea. Também colaboro com o TheWorkspace™, voltado à produção audiovisual colaborativa e independente. Navego por repertórios diversos, fluxos criativos múltiplos e práticas interdisciplinares, construindo minha bagagem intelectual a partir da prática, da escuta e da troca.
                 </p>
-                
                 <div className="mt-12 space-y-8">
                   <h3 className="text-sm font-medium tracking-wide uppercase">Habilidades Técnicas / Technical Skills</h3>
                   
@@ -213,7 +212,6 @@ const Autor = () => {
                 <p className="text-base text-justify leading-relaxed mt-6">
                   Member of LowPressure™, a collective of skateboarders and creative producers who work at the intersections between skateboarding, cinema and contemporary video art. I also collaborate with TheWorkspace™, focused on collaborative and independent audiovisual production. I navigate through diverse repertoires, multiple creative flows and interdisciplinary practices, building my intellectual background from practice, listening and exchange.
                 </p>
-                
                 <div className="mt-12 space-y-8">
                   <h3 className="text-sm font-medium tracking-wide uppercase">Habilidades Técnicas / Technical Skills</h3>
                   
@@ -384,7 +382,10 @@ const Autor = () => {
                   </svg>
                 </div>
                 <p className="text-sm text-muted-foreground mb-2">castropizzano.com</p>
-                <p className="text-xs text-muted-foreground">Portfólio completo e projetos / Complete portfolio and projects</p>
+                <p className="text-xs text-muted-foreground">
+                  Portfólio completo e projetos<br/>
+                  Complete portfolio and projects
+                </p>
               </a>
 
               <a 
@@ -400,7 +401,10 @@ const Autor = () => {
                   </svg>
                 </div>
                 <p className="text-sm text-muted-foreground mb-2">@castropizzano</p>
-                <p className="text-xs text-muted-foreground">Design gráfico e branding / Graphic design and branding</p>
+                <p className="text-xs text-muted-foreground">
+                  Design gráfico e branding<br/>
+                  Graphic design and branding
+                </p>
               </a>
 
               <a 
@@ -416,7 +420,10 @@ const Autor = () => {
                   </svg>
                 </div>
                 <p className="text-sm text-muted-foreground mb-2">@castropizzano</p>
-                <p className="text-xs text-muted-foreground">Cinema e vídeo arte / Cinema and video art</p>
+                <p className="text-xs text-muted-foreground">
+                  Cinema e vídeo arte<br/>
+                  Cinema and video art
+                </p>
               </a>
             </div>
           </div>
