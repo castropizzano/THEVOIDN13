@@ -103,14 +103,24 @@ All colors MUST be HSL.
   
   /* Typography hierarchy */
   h1, h2, h3, h4, h5, h6 {
-    @apply uppercase text-foreground;
+    @apply uppercase text-foreground text-sm font-medium tracking-wide;
   }
   
   p {
-    @apply text-[hsl(var(--body-text))];
+    @apply text-[hsl(var(--body-text))] text-[11px] leading-relaxed;
   }
   
   blockquote p {
-    @apply text-[hsl(var(--body-text))];
+    @apply text-[hsl(var(--body-text))] text-[11px] leading-relaxed;
+  }
+  
+  /* Link styles */
+  a {
+    @apply text-muted-foreground transition-colors;
+  }
+  
+  a:hover,
+  a:active {
+    @apply text-primary;
   }
 }
