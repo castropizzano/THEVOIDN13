@@ -15,22 +15,7 @@ Curitiba — 2025
 
 Este documento descreve a infraestrutura técnica do memorial THEVOIDN13.
 
-É o complemento técnico de [FILOSOFIA_DO_PROJETO.md](./FILOSOFIA_DO_PROJETO.md):
-- FILOSOFIA → explica o "POR QUÊ" (decisões artísticas)
-- TECH_STACK → explica o "COMO" (implementação técnica)
-
 **Público:** Banca de defesa, desenvolvedores, futuros colaboradores.
-
-───────────────────────────────────────────────────────────────  
-(EN) INTRODUCTION  
-
-This document describes the technical infrastructure of the THEVOIDN13 memorial.
-
-It is the technical complement to [FILOSOFIA_DO_PROJETO.md](./FILOSOFIA_DO_PROJETO.md):
-- FILOSOFIA → explains the "WHY" (artistic decisions)
-- TECH_STACK → explains the "HOW" (technical implementation)
-
-**Audience:** Defense committee, developers, future collaborators.
 
 ───────────────────────────────────────────────────────────────  
 ## VISÃO GERAL DA ARQUITETURA  
@@ -38,516 +23,460 @@ It is the technical complement to [FILOSOFIA_DO_PROJETO.md](./FILOSOFIA_DO_PROJE
 ```
 THEVOIDN13 Memorial
 │
-├─ [REPOSITÓRIO] GitHub
-│  └─ Versionamento, documentação, estrutura
+├─ [FRONTEND] React + TypeScript
+│  ├─ Vite (build tool)
+│  ├─ React Router (navegação)
+│  ├─ Tailwind CSS (design system)
+│  └─ shadcn/ui (componentes)
+│
+├─ [BACKEND] Lovable Cloud (Supabase)
+│  ├─ Edge Functions (Deno)
+│  ├─ Secrets Management
+│  └─ Vimeo API Integration
 │
 ├─ [CO-CRIAÇÃO] Humano + IA
-│  ├─ Google AI Studio (texto, prompts)
-│  ├─ Midjourney / Firefly (imagens)
-│  ├─ ElevenLabs (voz sintética)
+│  ├─ Lovable AI (Claude, Gemini)
+│  ├─ Midjourney (imagens)
 │  └─ Adobe Creative Cloud (edição)
 │
-├─ [ASSETS] Arquivos Otimizados
-│  ├─ Imagens < 25 MB (PNG, JPG, WebP)
-│  ├─ Vídeos via Vimeo (links)
-│  └─ Documentos (PDF, MD)
+├─ [HOSPEDAGEM] Lovable Platform
+│  ├─ Deploy automático
+│  ├─ Preview sandbox
+│  └─ Domain customizável
 │
-└─ [INTERFACE] Portal Web
-   ├─ HTML/CSS/JS vanilla
-   ├─ GitHub Pages (deploy)
-   └─ Estética neon-noir
+└─ [ASSETS] Vimeo + Local
+   ├─ Vídeos → Vimeo (streaming)
+   ├─ Imagens → /src/assets/
+   └─ Documentos → /public/documents/
 ```
 
 ───────────────────────────────────────────────────────────────  
-## CAMADA 1: VERSIONAMENTO E REPOSITÓRIO  
+## CAMADA 1: FRONTEND  
 ───────────────────────────────────────────────────────────────
 
-### GitHub
+### Stack Principal
 
-**Função:** Hub central (Single Source of Truth)
+**Framework:** React 18.3.1  
+**Language:** TypeScript  
+**Build Tool:** Vite  
+**Router:** React Router DOM 6.30.1
 
-**Por que GitHub:**
-- Versionamento completo com Git
-- Hospedagem gratuita via GitHub Pages
-- Interface web para edição (usado durante o projeto)
-- Histórico de commits como diário de bordo
+**Justificativa:**
+- Desenvolvimento ágil com componentes reutilizáveis
+- Type safety com TypeScript
+- Build otimizado com Vite (HMR, tree-shaking)
+- Navegação client-side fluida
 
-**Estrutura:**
+### Design System
+
+**Estilização:** Tailwind CSS 3.4.1  
+**Componentes:** shadcn/ui  
+**Animações:** tailwindcss-animate
+
+**Paleta Semântica:**
+```css
+/* Design System - index.css */
+:root {
+  --background: 0 0% 7%;       /* #0C0C0C - fundo escuro */
+  --foreground: 0 0% 85%;      /* #DADADA - texto claro */
+  --card: 0 0% 12%;            /* cards elevados */
+  --primary: 0 61% 39%;        /* #A32424 - vermelho canônico */
+  --muted: 210 14% 22%;        /* #323A46 - bordas, tons médios */
+}
 ```
-/THEVOIDN13/
-├── README.md (manifesto)
-├── LICENSE.md (CC BY-NC-SA 4.0)
-├── /docs/ (metodologia)
-├── /assets/ (exports visuais)
-├── /src/ (código)
-└── /public/ (interface web)
+
+**Hierarquia Tipográfica:**
+- `text-6xl/7xl` → Hero titles (h1)
+- `text-4xl` → Section titles (h2)  
+- `text-2xl` → Subsection titles (h3)
+- `text-xl` → Category titles (h4)
+- `text-base` → Body text (p)
+- `text-sm` → Metadata
+- `text-xs` → Labels, captions
+
+**Fontes:**
+- Manrope (interface)
+- Inter 500 (rótulos técnicos)
+
+### Estrutura de Páginas
+
+```
+/src/pages/
+├── Index.tsx          → Página inicial (hero + intro)
+├── Dissertacao.tsx    → LowMovie™ e metodologia
+├── Autor.tsx          → Castro Pizzano (autor)
+└── Videos.tsx         → Portfolio audiovisual
 ```
 
-Veja [STRUCTURE.md](../STRUCTURE.md) para detalhes.
-
-### Git LFS (Large File Storage)
-
-**Status:** NÃO utilizado
-
-**Justificativa:**  
-Optou-se por limitar arquivos a **25 MB** e usar **links externos** (Vimeo)  
-em vez de versionar arquivos grandes.
-
-**Vantagens desta escolha:**
-- Repositório leve e rápido
-- Sem custos de LFS
-- Fácil de clonar e navegar
-
-**Desvantagens:**
-- Dependência de serviços externos (Vimeo)
-- Arquivos brutos não versionados (mantidos localmente)
+**Componentes Compartilhados:**
+- `Header.tsx` → Navegação fixa
+- `Footer.tsx` → Rodapé com links
+- `BilingualSection.tsx` → Seções PT/EN
 
 ───────────────────────────────────────────────────────────────  
-## CAMADA 2: FERRAMENTAS DE CO-CRIAÇÃO (IA)  
+## CAMADA 2: BACKEND (LOVABLE CLOUD)  
 ───────────────────────────────────────────────────────────────
 
-### Pipeline de Co-Criação Humano-Máquina
-```
-1. CAPTURA REAL          → Fotografias, vídeos, sketches
-2. ANCORAGEM             → Reference images para IA
-3. GERAÇÃO (IA)          → Expansão via algoritmos
-4. CURADORIA (HUMANO)    → Seleção e refinamento
-5. EDIÇÃO FINAL          → Adobe Creative Cloud
-6. EXPORT OTIMIZADO      → Para /assets/
-```
+### Lovable Cloud (Supabase)
 
-### Google AI Studio
+**Project ID:** mkigpkfahuqkqxocsyjn
 
-**Função:** Geração de texto, prompts, narrativas
+**Recursos Utilizados:**
+- Edge Functions (serverless Deno)
+- Secrets Management
+- Environment Variables
 
-**Uso no projeto:**
-- Desenvolvimento de manifestos e textos conceituais
-- Prompts para geração de imagens
+### Edge Functions
+
+**Function:** `vimeo-videos`  
+**Runtime:** Deno  
+**Purpose:** Buscar vídeos da API do Vimeo
+
+**Workflow:**
+1. Frontend invoca função via Supabase client
+2. Edge function usa `VIMEO_ACCESS_TOKEN` (secret)
+3. Fetch à API do Vimeo (`/me/videos`)
+4. Transformação de dados
+5. Retorno JSON otimizado
+
+**Segurança:**
+- Token armazenado como secret
+- CORS habilitado
+- Rate limiting via Vimeo API
+
+### Secrets
+
+Configurados via Lovable Cloud:
+- `VIMEO_ACCESS_TOKEN` → API do Vimeo
+- `SUPABASE_*` → Auto-configurados
+
+───────────────────────────────────────────────────────────────  
+## CAMADA 3: CO-CRIAÇÃO COM IA  
+───────────────────────────────────────────────────────────────
+
+### Lovable AI
+
+**Plataforma:** ai.gateway.lovable.dev  
+**Modelos:**
+- `google/gemini-2.5-flash` (default)
+- `google/gemini-2.5-pro` (tarefas complexas)
+- `openai/gpt-5-mini` (quando necessário)
+
+**Uso no Projeto:**
+- Geração de textos conceituais
 - Estruturação de documentação
-- Co-autoria simbólica (humano orienta, IA expande)
+- Prompts para Midjourney
+- Co-autoria metodológica
 
-**Modelos utilizados:**
-- Gemini (texto e análise)
-- Bard experimental (brainstorming)
-
-**Declaração de Co-Autoria:**  
-Textos gerados com IA são sempre revisados, editados e contextualizados pelo autor.  
-A IA funciona como "cúmplice silenciosa", não como substituta.
+**Declaração:** Textos gerados com IA são sempre revisados e contextualizados pelo autor.
 
 ### Midjourney / Adobe Firefly
 
 **Função:** Geração de imagens (estética THEVOIDN13)
 
 **Workflow:**
-1. Captura de referência real (máscara, figurino)
-2. Upload como imagem-âncora
-3. Prompt detalhado baseado na Shadow Interface Bible:
+1. Captura de referência real
+2. Prompt baseado na Shadow Interface Bible
+3. Geração de variações
+4. Seleção manual
+5. Pós-produção (Photoshop/Illustrator)
+6. Export otimizado → `/src/assets/`
+
+**Prompts Padronizados:**
 ```
-   The Void No. 13 — expressionless white mask, 
-   olive-green parka, dim blue neon, red backlight, 
-   wet concrete, cinematic grain, high contrast
+The Void No. 13 — expressionless white mask,
+olive-green parka, dim blue neon, red backlight,
+wet concrete, cinematic grain, high contrast
 ```
-4. Geração de variações
-5. Seleção manual das melhores
-6. Pós-produção no Photoshop/Illustrator
-
-**Consistência visual mantida via:**
-- Reference images fixas
-- Prompts padronizados (veja Shadow Interface Bible)
-- Estilo-matriz documentado
-
-### ElevenLabs / Síntese de Voz
-
-**Função:** Geração de voz sintética para THEVOIDN13
-
-**Parâmetros:**
-- Tom: grave, andrógino
-- Velocidade: 0.85× (pausado)
-- Respiração: sutil, entre frases
-- Timbre: melancólico, contido
-
-**Uso:**
-- Narração de vídeos conceituais
-- Fragmentos para Instagram (@thevoidno13)
-- Experimentos de voz para o portal
 
 ### Adobe Creative Cloud
 
-**Função:** Edição final e produção de assets
+**Softwares:**
+- Photoshop → Tratamento de imagens
+- Illustrator → Identidade visual
+- Premiere Pro → Edição de vídeo
+- After Effects → Motion graphics
 
-**Softwares utilizados:**
-- **Photoshop:** Tratamento de imagens, composição
-- **Illustrator:** Identidade visual, diagramas
-- **Premiere Pro:** Edição de vídeo (quando necessário)
-- **After Effects:** Motion graphics, efeitos visuais
-
-**Nota:** Arquivos-fonte (.psd, .ai, .aep) são mantidos **localmente**.  
-Apenas exports otimizados vão para `/assets/`.
+**Nota:** Arquivos-fonte (.psd, .ai) mantidos localmente. Apenas exports otimizados em `/src/assets/`.
 
 ───────────────────────────────────────────────────────────────  
-## CAMADA 3: GESTÃO DE ASSETS  
+## CAMADA 4: GESTÃO DE ASSETS  
 ───────────────────────────────────────────────────────────────
 
-### Política de Arquivos
+### Vídeos (Vimeo)
 
-**Regra central:**  
-Bruto fica local. Export vai para Git.
-```
-LOCAL (não versionado):
-├── /raw/
-│   ├── *.psd (Photoshop)
-│   ├── *.ai (Illustrator)
-│   ├── *.aep (After Effects)
-│   └── *.mp4 (vídeos não editados)
-
-GIT (versionado):
-└── /assets/
-    ├── *.jpg (otimizado)
-    ├── *.png (otimizado)
-    └── *.webp (web-ready)
-```
-
-### Otimização de Imagens
-
-**Processo:**
-1. Export do Adobe em alta qualidade
-2. Redimensionamento (máx 2000px largura)
-3. Compressão inteligente (TinyPNG, Squoosh)
-4. Verificação de tamanho (< 25 MB)
-5. Upload para `/assets/`
-
-**Formatos:**
-- **JPG:** Fotografias, renders complexos
-- **PNG:** Logos, elementos com transparência
-- **WebP:** Para web (quando suportado)
-
-### Vídeos
-
-**Estratégia:** Hospedar externamente, linkar no repo
+**Estratégia:** Hospedagem externa + embedding
 
 **Workflow:**
-1. Edição final no Premiere Pro
-2. Export em H.264 (alta qualidade)
-3. Upload para **Vimeo** (conta Pro para privacidade)
-4. Criar arquivo `.md` em `/links/` com embed
+1. Edição final (Premiere Pro)
+2. Export H.264
+3. Upload para Vimeo
+4. API retorna metadata + embed URLs
+5. Frontend renderiza players
 
-**Exemplo:**
-```markdown
-# LowMovie™ — Corte Atual
+**Vantagens:**
+- Sem limitação de tamanho no repo
+- Streaming otimizado
+- Analytics do Vimeo
+- Thumbnails automáticos
 
-**Status:** Pós-qualificação (julho/2025)
+### Imagens
 
-**Vimeo:**  
-https://vimeo.com/XXXXXXX
+**Localização:** `/src/assets/`
 
-**Senha:** [se privado]
+**Formatos:**
+- PNG → Transparências, logos
+- JPG → Fotografias, renders
+- WebP → Web (quando suportado)
 
-<iframe src="https://player.vimeo.com/video/XXXXXXX" ...>
+**Otimização:**
+- Redimensionamento (máx 1920px)
+- Compressão via TinyPNG
+- Lazy loading (React)
+
+**Import ES6:**
+```typescript
+import heroImage from "@/assets/hero-concept-art.png";
+```
+
+### Documentos
+
+**Localização:** `/public/documents/`
+
+**Acesso direto:**
+```
+/documents/THEVOIDN13_ShadowInterfaceBible_v1.3.pdf
 ```
 
 ───────────────────────────────────────────────────────────────  
-## CAMADA 4: INTERFACE WEB (PORTAL)  
+## CAMADA 5: DEPLOY E HOSPEDAGEM  
 ───────────────────────────────────────────────────────────────
 
-### Stack Frontend
+### Lovable Platform
 
-**Decisão:** HTML/CSS/JS vanilla (sem frameworks)
-
-**Justificativa:**
-- Projeto artístico, não aplicação complexa
-- Performance máxima
-- Estética minimalista
-- Sem dependências externas
-
-**Estrutura planejada:**
-```
-/public/
-├── index.html          → Página principal
-├── styles.css          → Estética neon-noir
-├── app.js              → Navegação e interações
-└── /assets/            → Assets específicos da web
-    ├── favicon.ico
-    └── og-image.png
-```
-
-### Estética Visual
-
-Baseada na **Shadow Interface Bible**:
-
-**Paleta de cores:**
-```css
---tvn-bg: #0C0C0C;      /* fundo escuro */
---tvn-fg: #DADADA;      /* texto claro */
---tvn-muted: #323A46;   /* bordas, tons médios */
---tvn-accent: #A32424;  /* vermelho canônico */
-```
-
-**Tipografia:**
-- Manrope (base)
-- Inter 500 (rótulos técnicos)
-
-**Atmosfera:**
-- Neon-noir urbano
-- Grão 35mm
-- Alto contraste
-- Silêncio como ritmo
-
-### Deploy
-
-**Plataforma:** GitHub Pages
+**URL Sandbox:**  
+`https://77991fba-1759-4282-b7d4-1a8f89499483.lovableproject.com`
 
 **Processo:**
-1. Código em `/public/`
-2. Configurar GitHub Pages (Settings → Pages)
-3. Branch: `main`, folder: `/public/`
-4. URL gerada automaticamente
+1. Código commitado via Lovable
+2. Build automático (Vite)
+3. Deploy instantâneo
+4. Preview sandbox ativo
 
-**URL esperada:**  
-`https://castropizzano.github.io/THEVOIDN13/`
+**Recursos:**
+- Zero-config deployment
+- HTTPS automático
+- Hot reload durante dev
+- Domain customizável (futuro)
 
-**Status:** A desenvolver (Fase 4)
+### Build
+
+**Comando:** `npm run build`  
+**Output:** `/dist/`  
+**Otimizações:**
+- Code splitting
+- Tree shaking
+- Asset minification
+- Source maps (dev)
 
 ───────────────────────────────────────────────────────────────  
-## CAMADA 5: DOCUMENTAÇÃO E VERSIONAMENTO  
+## INTEGRAÇÃO VIMEO  
 ───────────────────────────────────────────────────────────────
 
-### Markdown
+### API Vimeo
 
-**Formato principal:** Markdown (.md)
+**Endpoint:** `https://api.vimeo.com/me/videos`  
+**Auth:** Bearer token (secret)  
+**Rate Limit:** ~1000 req/hour
 
-**Por quê:**
-- Legível como texto puro
-- Renderizado automaticamente no GitHub
-- Portável (pode ser convertido para HTML, PDF, etc)
-- Versionável linha por linha
+### Categorização de Vídeos
 
-**Convenções:**
-- Headers com `#` (não HTML)
-- Listas com `-` (não `*`)
-- Links relativos sempre que possível
-- Código com triple backticks
+**Lógica:** Cliente categoriza por keywords
 
-### Commits
+**Categorias:**
+- Curta-Metragem / Experimental
+- Videoperformance
+- Documentário
+- Brandbook / Comercial
+- Outros
 
-**Formato:** Conventional Commits (adaptado)
-
-Veja [COMMIT_GUIDE.md](./COMMIT_GUIDE.md) para detalhes.
-
-**Estrutura:**
-```
-tipo(escopo): TÍTULO EM MAIÚSCULAS / english title
-
-Descrição em português.
-Contexto adicional quando necessário.
-
-BREAKING CHANGE: se houver mudanças incompatíveis.
+**Algoritmo:**
+```typescript
+if (name.includes('curta-metragem') || desc.includes('experimental'))
+  → Curta-Metragem / Experimental
+else if (name.includes('videoperformance'))
+  → Videoperformance
+...
 ```
 
-**Tipos:**
-- `feat:` Nova funcionalidade/conteúdo
-- `fix:` Correção de erro
-- `docs:` Documentação
-- `style:` Formatação
-- `refactor:` Reestruturação
-- `chore:` Manutenção
+### Player Embedding
 
-### Branches
+**Featured Video:** Background autoplay  
+**Catalog:** Click-to-play modal
 
-**Estratégia:** Simples (projeto solo)
-```
-main          → produção (sempre estável)
-dev           → desenvolvimento (merge diário)
-feat/nome     → features específicas (opcional)
-```
-
-**Quando necessário:**
-- Criar branch para experimento
-- Testar localmente
-- Merge para `dev`
-- Quando estável, merge para `main`
+**Features:**
+- Responsive iframes
+- Metadata overlay (duração, título)
+- Link para Vimeo direto
+- Lazy loading
 
 ───────────────────────────────────────────────────────────────  
 ## WORKFLOW DIÁRIO  
 ───────────────────────────────────────────────────────────────
 
-### Processo Típico de Trabalho
+### Desenvolvimento
 
-**1. PLANEJAMENTO (Mental/Anotações)**
-- Definir foco do dia
-- Revisar STRUCTURE.md para contexto
+**Plataforma:** Lovable Editor
 
-**2. CO-CRIAÇÃO COM IA**
-- Gerar textos/imagens via Google AI Studio, Midjourney
-- Salvar outputs brutos em `/raw/` local
-- Iterar até satisfatório
-
-**3. CURADORIA E EDIÇÃO**
-- Selecionar melhores resultados
-- Editar no Adobe Creative Cloud
-- Otimizar para web
-
-**4. DOCUMENTAÇÃO**
-- Escrever/atualizar .md conforme necessário
-- Manter coerência com manifesto
-
-**5. COMMIT E PUSH**
-- Adicionar arquivos ao Git
-- Commit com mensagem descritiva
-- Push para GitHub
-
-**6. REFLEXÃO**
-- Registrar insights em `/docs/journal/` (futuro)
-- Atualizar roadmap se necessário
-
-### Ferramentas de Suporte
-
-**Editor de código:** VS Code, Sublime, ou GitHub web
-**Terminal Git:** (se local) Git Bash, Terminal
-**Otimização de imagens:** TinyPNG, Squoosh
-**Markdown preview:** Extensões de navegador ou VS Code
-
-───────────────────────────────────────────────────────────────  
-## DEPENDÊNCIAS E REQUISITOS  
-───────────────────────────────────────────────────────────────
-
-### Para Desenvolvimento Local (Opcional)
-
-Se quiser trabalhar localmente (não é obrigatório):
-
-**Requisitos mínimos:**
-- Git instalado
-- Editor de texto (VS Code recomendado)
-- Navegador moderno (Chrome, Firefox, Safari)
-
-**Comandos básicos:**
-```bash
-# Clonar repositório
-git clone https://github.com/castropizzano/THEVOIDN13.git
-
-# Navegar
-cd THEVOIDN13
-
-# Abrir no VS Code
-code .
-
-# Commit
-git add .
-git commit -m "docs: atualizar documentação"
-git push origin main
-```
-
-### Para Trabalho via GitHub Web (Atual)
-
-**Requisitos:**
-- Navegador moderno
-- Conta GitHub
-- Acesso ao repositório
+**Processo:**
+1. Chat com Lovable AI
+2. Code generation + preview
+3. Iteração em tempo real
+4. Testes visuais no sandbox
+5. Commit quando satisfatório
 
 **Vantagens:**
-- Zero setup
-- Funciona de qualquer lugar
-- Interface intuitiva
+- Zero setup local
+- AI-assisted development
+- Preview instantâneo
+- Versionamento automático
 
-**Desvantagens:**
-- Não pode testar localmente antes de commit
-- Sem preview de mudanças complexas
+### Co-Criação com IA
+
+**1. PLANEJAMENTO**
+- Definir objetivo da sessão
+- Revisar documentação
+
+**2. GERAÇÃO**
+- Textos via Lovable AI
+- Imagens via Midjourney
+- Salvar outputs brutos
+
+**3. CURADORIA**
+- Selecionar melhores resultados
+- Editar no Adobe CC
+- Otimizar para web
+
+**4. INTEGRAÇÃO**
+- Upload para Vimeo (vídeos)
+- Commit assets (imagens)
+- Update código (metadata)
+
+**5. DOCUMENTAÇÃO**
+- Atualizar README/TECH_STACK
+- Commit descritivo
+- Push para produção
+
+───────────────────────────────────────────────────────────────  
+## DEPENDÊNCIAS  
+───────────────────────────────────────────────────────────────
+
+### NPM Packages (package.json)
+
+**Core:**
+- react: ^18.3.1
+- react-dom: ^18.3.1
+- react-router-dom: ^6.30.1
+
+**Build:**
+- vite: ^5.0.0
+- typescript: ~5.6.2
+
+**Styling:**
+- tailwindcss: ^3.4.1
+- tailwindcss-animate: ^1.0.7
+- class-variance-authority: ^0.7.1
+
+**UI Components:**
+- @radix-ui/* (shadcn base)
+- lucide-react: ^0.462.0
+
+**Backend:**
+- @supabase/supabase-js: ^2.76.1
+- @tanstack/react-query: ^5.83.0
+
+### Browser Support
+
+**Target:**
+- Chrome/Edge (últimas 2 versões)
+- Firefox (últimas 2 versões)
+- Safari 14+
+
+**Features Utilizadas:**
+- CSS Grid / Flexbox
+- ES6+ (transpilado via Vite)
+- Web APIs modernas (Fetch, IntersectionObserver)
 
 ───────────────────────────────────────────────────────────────  
 ## PRÓXIMOS PASSOS TÉCNICOS  
 ───────────────────────────────────────────────────────────────
 
-### Fase Atual (Fundação)
+### Fase Atual (MVP)
 
-- ✅ Estruturar repositório
-- ✅ Documentar metodologia
-- ✅ Corrigir configurações (.gitignore, .gitattributes)
-- ✅ Criar documentos-chave (README, LICENSE, STRUCTURE, FILOSOFIA, TECH_STACK)
+- ✅ Estrutura de páginas
+- ✅ Design system base
+- ✅ Integração Vimeo
+- ✅ Deploy funcional
+- ✅ Hierarquia tipográfica
+- ✅ Categorização de vídeos
 
-### Fase 2 (Conteúdo)
+### Fase 2 (Refinamento)
 
-- [ ] Povoar `/01_lowmovie/` com material do mestrado
-- [ ] Criar `/00_thevoidn13/` com Shadow Interface Bible
-- [ ] Adicionar assets otimizados em `/assets/`
-- [ ] Documentar projetos em `/02_lowpressure/` e `/03_castro_pizzano/`
+- [ ] SEO optimization (meta tags, sitemap)
+- [ ] Performance audit (Lighthouse)
+- [ ] Accessibility review (WCAG)
+- [ ] Analytics (opcional)
 
-### Fase 3 (Interface)
+### Fase 3 (Expansão)
 
-- [ ] Desenvolver `/public/index.html` (portal navegável)
-- [ ] Implementar estética neon-noir em CSS
-- [ ] Adicionar navegação entre seções
-- [ ] Configurar GitHub Pages
+- [ ] Search dentro do portfolio
+- [ ] Filtros por categoria
+- [ ] Playlists customizadas
+- [ ] Domain customizado
 
-### Fase 4 (Refinamento)
+### Fase 4 (Defesa)
 
-- [ ] Testes de acessibilidade
-- [ ] Otimização de performance
-- [ ] Revisão de documentação
-- [ ] Preparação para defesa
+- [ ] Documentação técnica completa
+- [ ] Case study do processo
+- [ ] Backup de todos assets
+- [ ] Preparação de apresentação
 
 ───────────────────────────────────────────────────────────────  
 ## CONSIDERAÇÕES FINAIS  
 ───────────────────────────────────────────────────────────────
 
-### Princípios Técnicos do Projeto
+### Princípios Técnicos
 
-**1. Simplicidade sobre complexidade**  
-HTML/CSS/JS vanilla > frameworks pesados
+**1. AI-First Development**  
+Lovable AI como co-criador técnico
 
-**2. Portabilidade sobre dependências**  
-Markdown e assets otimizados > formatos proprietários
+**2. Simplicidade sobre complexidade**  
+React + TypeScript sem over-engineering
 
-**3. Versionamento como diário**  
-Git commits documentam o processo, não apenas o produto
+**3. Design System rigoroso**  
+Hierarquia tipográfica consistente
 
-**4. IA como cúmplice, não substituta**  
-Humano orienta, decide e assina; IA expande possibilidades
+**4. Assets otimizados**  
+Vimeo para vídeos, /assets para imagens
 
-**5. Performance artística > performance técnica**  
-Headers longos podem "pesar", mas carregam significado
+**5. Transparência metodológica**  
+Documentação como parte da obra
 
-### Stack Resumida
-```
-REPOSITÓRIO:    GitHub (Git)
-VERSIONAMENTO:  Conventional Commits (adaptado)
-DOCUMENTAÇÃO:   Markdown
-CO-CRIAÇÃO:     Google AI Studio, Midjourney, Adobe CC
-ASSETS:         JPG/PNG/WebP < 25 MB, Vimeo para vídeos
-INTERFACE:      HTML/CSS/JS vanilla
-DEPLOY:         GitHub Pages
-```
+### Limitações Conhecidas
 
-### Para Mais Informações
+- Dependência de Vimeo API
+- Sem backend database próprio
+- Categorização manual de vídeos
+- Sem versão mobile-first (ainda)
 
-- **Filosofia:** [FILOSOFIA_DO_PROJETO.md](./FILOSOFIA_DO_PROJETO.md)
-- **Estrutura:** [STRUCTURE.md](../STRUCTURE.md)
-- **Commits:** [COMMIT_GUIDE.md](./COMMIT_GUIDE.md)
-- **Manifesto:** [README.md](../README.md)
+### Conclusão Técnica
 
-───────────────────────────────────────────────────────────────  
-(EN) FINAL CONSIDERATIONS  
-───────────────────────────────────────────────────────────────
-
-### Technical Principles of the Project
-
-**1. Simplicity over complexity**  
-Vanilla HTML/CSS/JS > heavy frameworks
-
-**2. Portability over dependencies**  
-Markdown and optimized assets > proprietary formats
-
-**3. Versioning as diary**  
-Git commits document the process, not just the product
-
-**4. AI as accomplice, not substitute**  
-Human guides, decides, and signs; AI expands possibilities
-
-**5. Artistic performance > technical performance**  
-Long headers may "weigh", but carry meaning
+THEVOIDN13 é um memorial digital construído com tecnologias modernas, mas mantendo foco na essência: arte, filosofia e processo criativo. A stack técnica serve ao conceito, não o contrário.
 
 ───────────────────────────────────────────────────────────────
 
-© 2025 Castro Pizzano (цастро™)
-
-Este documento pode ser citado e adaptado sob licença CC BY-NC-SA 4.0.
+**Stack Version:** 1.0  
+**Last Update:** Janeiro 2025  
+**Maintainer:** Castro Pizzano (цастро™)
 
 ───────────────────────────────────────────────────────────────
