@@ -141,7 +141,10 @@ const Autor = () => {
                       <p className="text-xs text-muted-foreground uppercase tracking-wide mb-2">2023-2025 (em curso)</p>
                       <h4 className="text-base font-bold mb-2">Mestrado em Cinema e Artes do Vídeo</h4>
                       <p className="text-base mb-3">UNESPAR - Universidade Estadual do Paraná</p>
-                      <p className="text-sm text-muted-foreground mb-4">Pesquisa: Processos criativos colaborativos, subcultura do skate, cinema documental</p>
+                      <p className="text-sm text-muted-foreground mb-4">
+                        Pesquisa: Processos criativos colaborativos,<br/>
+                        subcultura do skate, cinema documental
+                      </p>
                       
                       <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 mt-4">
                         <div className="flex items-start gap-2 mb-2">
@@ -151,26 +154,30 @@ const Autor = () => {
                           <p className="text-sm font-medium">QUALIFICAÇÃO APROVADA</p>
                         </div>
                         <p className="text-xs text-muted-foreground">11 de julho de 2025 — PPG-CINEAV/UNESPAR</p>
-                        <p className="text-xs mt-2">Título: "LowMovie™ e o Labirinto Criativo: Subjetividade, Subcultura e a Construção de uma Estética em Movimento no Coletivo LowPressure™"</p>
+                        <p className="text-xs mt-2">
+                          Título: "LowMovie™ e o Labirinto Criativo:<br/>
+                          Subjetividade, Subcultura e a Construção de uma<br/>
+                          Estética em Movimento no Coletivo LowPressure™"
+                        </p>
                       </div>
                     </div>
 
                     <div className="border-l-2 border-muted pl-6">
-                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-2">2005</p>
-                      <h4 className="text-base font-bold mb-2">Graduado em Comunicação Social — Publicidade e Propaganda</h4>
-                      <p className="text-base">UTP - Universidade Tuiuti do Paraná [2005]</p>
-                    </div>
-
-                    <div className="border-l-2 border-muted pl-6">
-                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-2">2019</p>
-                      <h4 className="text-base font-bold mb-2">MBA em Comunicação Digital e Marketing Online</h4>
-                      <p className="text-base">UTP - Universidade Tuiuti do Paraná [2019]</p>
-                    </div>
-
-                    <div className="border-l-2 border-muted pl-6">
                       <p className="text-xs text-muted-foreground uppercase tracking-wide mb-2">2014</p>
-                      <h4 className="text-base font-bold mb-2">Pós Graduado em Direção de Arte e Estratégias Criativas</h4>
-                      <p className="text-base">Unicuritiba [2014]</p>
+                      <h4 className="text-base font-bold mb-2">
+                        Pós-Graduado em Direção de Arte e<br/>
+                        Estratégias Criativas
+                      </h4>
+                      <p className="text-base">Unicuritiba</p>
+                    </div>
+
+                    <div className="border-l-2 border-muted pl-6">
+                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-2">2005</p>
+                      <h4 className="text-base font-bold mb-2">
+                        Graduado em Comunicação Social —<br/>
+                        Publicidade e Propaganda
+                      </h4>
+                      <p className="text-base">UTP - Universidade Tuiuti do Paraná</p>
                     </div>
                   </div>
 
@@ -302,7 +309,10 @@ const Autor = () => {
                       <p className="text-xs text-muted-foreground uppercase tracking-wide mb-2">2023-2025 (ongoing)</p>
                       <h4 className="text-base font-bold mb-2">Master's in Cinema and Video Arts</h4>
                       <p className="text-base mb-3">UNESPAR - State University of Paraná</p>
-                      <p className="text-sm text-muted-foreground mb-4">Research: Collaborative creative processes, skate subculture, documentary cinema</p>
+                      <p className="text-sm text-muted-foreground mb-4">
+                        Research: Collaborative creative processes,<br/>
+                        skate subculture, documentary cinema
+                      </p>
                       
                       <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 mt-4">
                         <div className="flex items-start gap-2 mb-2">
@@ -312,26 +322,30 @@ const Autor = () => {
                           <p className="text-sm font-medium">QUALIFICATION APPROVED</p>
                         </div>
                         <p className="text-xs text-muted-foreground">July 11, 2025 — PPG-CINEAV/UNESPAR</p>
-                        <p className="text-xs mt-2">Title: "LowMovie™ and the Creative Labyrinth: Subjectivity, Subculture and the Construction of an Aesthetic in Motion in the LowPressure™ Collective"</p>
+                        <p className="text-xs mt-2">
+                          Title: "LowMovie™ and the Creative Labyrinth:<br/>
+                          Subjectivity, Subculture and the Construction of an<br/>
+                          Aesthetic in Motion in the LowPressure™ Collective"
+                        </p>
                       </div>
                     </div>
 
                     <div className="border-l-2 border-muted pl-6">
-                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-2">2005</p>
-                      <h4 className="text-base font-bold mb-2">Bachelor's in Social Communication — Advertising</h4>
-                      <p className="text-base">UTP - Tuiuti University of Paraná [2005]</p>
-                    </div>
-
-                    <div className="border-l-2 border-muted pl-6">
-                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-2">2019</p>
-                      <h4 className="text-base font-bold mb-2">MBA Marketing Management and Integrated Communication</h4>
-                      <p className="text-base">UTP - Tuiuti University of Paraná [2019]</p>
-                    </div>
-
-                    <div className="border-l-2 border-muted pl-6">
                       <p className="text-xs text-muted-foreground uppercase tracking-wide mb-2">2014</p>
-                      <h4 className="text-base font-bold mb-2">Postgraduate in Art Direction and Creative Strategies</h4>
-                      <p className="text-base">Unicuritiba [2014]</p>
+                      <h4 className="text-base font-bold mb-2">
+                        Postgraduate in Art Direction and<br/>
+                        Creative Strategies
+                      </h4>
+                      <p className="text-base">Unicuritiba</p>
+                    </div>
+
+                    <div className="border-l-2 border-muted pl-6">
+                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-2">2005</p>
+                      <h4 className="text-base font-bold mb-2">
+                        Bachelor's in Social Communication —<br/>
+                        Advertising
+                      </h4>
+                      <p className="text-base">UTP - Tuiuti University of Paraná</p>
                     </div>
                   </div>
 
@@ -353,46 +367,59 @@ const Autor = () => {
         </BilingualSection>
 
         <BilingualSection>
-          <BilingualContent
-            portugueseContent={
-              <>
-                <h2 className="text-base font-bold">Contato</h2>
-                <div className="space-y-2 mt-6">
-                  <p className="text-base text-justify leading-relaxed">
-                    <span className="font-medium">Website:</span> castropizzano.com
-                  </p>
-                  <p className="text-base text-justify leading-relaxed">
-                    <span className="font-medium">Portfolio:</span> behance.net/castropizzano
-                  </p>
-                  <p className="text-base text-justify leading-relaxed">
-                    <span className="font-medium">Filmes:</span> vimeo.com/castropizzano
-                  </p>
-                  <p className="text-base text-justify leading-relaxed">
-                    <span className="font-medium">Lattes:</span> lattes.cnpq.br/5523516994010198
-                  </p>
+          <div className="space-y-8">
+            <h2 className="text-sm font-medium tracking-wide uppercase text-primary">Portfolio & Links</h2>
+            
+            <div className="grid md:grid-cols-3 gap-6">
+              <a 
+                href="https://castropizzano.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-card/50 border border-border rounded-lg p-6 hover:border-primary transition-colors"
+              >
+                <div className="flex justify-between items-start mb-4">
+                  <h3 className="text-lg font-bold">Website</h3>
+                  <svg className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
                 </div>
-              </>
-            }
-            englishContent={
-              <>
-                <h2 className="text-base font-bold">Contact</h2>
-                <div className="space-y-2 mt-6">
-                  <p className="text-base text-justify leading-relaxed">
-                    <span className="font-medium">Website:</span> castropizzano.com
-                  </p>
-                  <p className="text-base text-justify leading-relaxed">
-                    <span className="font-medium">Portfolio:</span> behance.net/castropizzano
-                  </p>
-                  <p className="text-base text-justify leading-relaxed">
-                    <span className="font-medium">Films:</span> vimeo.com/castropizzano
-                  </p>
-                  <p className="text-base text-justify leading-relaxed">
-                    <span className="font-medium">Lattes:</span> lattes.cnpq.br/5523516994010198
-                  </p>
+                <p className="text-sm text-muted-foreground mb-2">castropizzano.com</p>
+                <p className="text-xs text-muted-foreground">Portfólio completo e projetos / Complete portfolio and projects</p>
+              </a>
+
+              <a 
+                href="https://behance.net/castropizzano"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-card/50 border border-border rounded-lg p-6 hover:border-primary transition-colors"
+              >
+                <div className="flex justify-between items-start mb-4">
+                  <h3 className="text-lg font-bold">Behance</h3>
+                  <svg className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
                 </div>
-              </>
-            }
-          />
+                <p className="text-sm text-muted-foreground mb-2">@castropizzano</p>
+                <p className="text-xs text-muted-foreground">Design gráfico e branding / Graphic design and branding</p>
+              </a>
+
+              <a 
+                href="https://vimeo.com/castropizzano"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-card/50 border border-border rounded-lg p-6 hover:border-primary transition-colors"
+              >
+                <div className="flex justify-between items-start mb-4">
+                  <h3 className="text-lg font-bold">Vimeo</h3>
+                  <svg className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+                <p className="text-sm text-muted-foreground mb-2">@castropizzano</p>
+                <p className="text-xs text-muted-foreground">Cinema e vídeo arte / Cinema and video art</p>
+              </a>
+            </div>
+          </div>
         </BilingualSection>
 
         {/* Documentation Section */}
