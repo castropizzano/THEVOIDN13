@@ -364,6 +364,58 @@ const Autor = () => {
           />
         </BilingualSection>
 
+        {/* Memorial Quote */}
+        <BilingualSection>
+          <div className="max-w-4xl mx-auto">
+            <blockquote className="text-sm text-muted-foreground leading-relaxed text-center italic border-l-0 pl-0">
+              <p>
+                Este memorial não guarda o que passou. Guarda o que ainda pulsa. Três projetos matriciais mas LowMovie, LowPressure, CasaTrezeStudio mas funcionam como órgãos de um mesmo organismo criativo. Cada um respira de forma autônoma, mas todos compartilham do mesmo sangue simbólico.
+              </p>
+            </blockquote>
+          </div>
+        </BilingualSection>
+
+        {/* Anti-brand Section */}
+        <BilingualSection bgClassName="bg-card/30">
+          <BilingualContent 
+            portugueseContent={
+              <div className="space-y-6">
+                <h2 className="text-sm font-medium tracking-wide uppercase text-primary">Anti-brand: ЦЦАСТРО™</h2>
+                
+                <p className="text-base leading-relaxed text-justify">
+                  <span className="font-medium">ЦЦАСТРО™</span> (LLACTPO) é uma identidade que rejeita a lógica publicitária da autopromoção. O uso do Cirílico (ЦЦАСТРО) e da fonte Journalist quebra distância e estranhamento, forçando a decodificação e o consumo consciente. É um manifesto a favor da autoria e da produção local.
+                </p>
+                
+                <p className="text-base leading-relaxed text-justify">
+                  Não é expansão de marca — é condensação de essência. Não busca visibilidade — busca ressonância. A anti-marca que emerge quando você abandona a performance identitária e habita o incômodo criativo. Um nome que força o espectador a desacelerar, questionar, decifrar.
+                </p>
+                
+                <p className="text-base leading-relaxed text-justify">
+                  Visual arts researcher, graphic designer, art direction, videomaker. Skate and underground culture. Aesthetic minimalist & op-art. Founder of CasaTrezeStudio and creative collaborator in LowPressure. Portfolio: Branding, films, video/cinema/experimentação.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="space-y-6">
+                <h2 className="text-sm font-medium tracking-wide uppercase text-primary">Anti-brand: ЦЦАСТРО™</h2>
+                
+                <p className="text-base leading-relaxed text-justify">
+                  <span className="font-medium">ЦЦАСТРО™</span> (LLACTPO) is an identity that rejects the advertising logic of self-promotion. The use of Cyrillic (ЦЦАСТРО) and the Journalist font creates distance and strangeness, forcing conscious decoding and consumption. It's a manifesto in favor of authorship and local production.
+                </p>
+                
+                <p className="text-base leading-relaxed text-justify">
+                  It's not brand expansion — it's essence condensation. It doesn't seek visibility — it seeks resonance. The anti-brand that emerges when you abandon identity performance and inhabit creative discomfort. A name that forces the viewer to slow down, question, decipher.
+                </p>
+                
+                <p className="text-base leading-relaxed text-justify">
+                  Visual arts researcher, graphic designer, art direction, videomaker. Skate and underground culture. Aesthetic minimalist & op-art. Founder of CasaTrezeStudio and creative collaborator in LowPressure. Portfolio: Branding, films, video/cinema/experimentation.
+                </p>
+              </div>
+            }
+          />
+        </BilingualSection>
+
+        {/* Portfolio & Links */}
         <BilingualSection>
           <div className="space-y-8">
             <h2 className="text-sm font-medium tracking-wide uppercase text-primary">Portfolio & Links</h2>
