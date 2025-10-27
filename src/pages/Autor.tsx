@@ -562,7 +562,7 @@ const Autor = () => {
                   Currículo Lattes / Lattes CV
                 </a>
                 <a 
-                  href="/documents/Memorial_Academico.pdf"
+                  href="/documents/Memorial_Academico_v3.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-primary hover:underline block"
