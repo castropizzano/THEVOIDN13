@@ -4,13 +4,16 @@
 
 **Name:** thevoidn13-memorial
 
-**Description (Short):**
-THEVOIDN13 — Artistic Memorial and Hybrid Praxis (Human + Machine) by Castro Pizzano (цастро™). Master's research in Cinema and Video Arts.
+## GitHub About Section Configuration
 
-**Description (Full):**
+### Description (use this in the "About" field)
+THEVOIDN13 — Artistic memorial and hybrid praxis (human + AI) exploring art, code, and consciousness. Master's research in Cinema & Video Arts by Castro Pizzano (цастро™).
+
+### Website
+https://thevoidn13.lovableproject.com
+
+### Full Description (for README/documentation)
 THEVOIDN13 is a living memorial and artistic research project that explores the intersection of art, code, and consciousness. Developed as part of a master's dissertation in Cinema and Video Arts at UNESPAR, this portal documents the creative ecosystem of Castro Pizzano (цастро™), including CasaTrezeStudio®, LowPressure™ crew, and the LowMovie™ process-film. Built with hybrid praxis (human-AI collaboration), this project serves as both academic memorial and symbolic interface between creator and machine.
-
-**Website:** https://thevoidn13.lovableproject.com
 
 **Topics/Tags:**
 - artistic-research
