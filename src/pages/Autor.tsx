@@ -25,37 +25,6 @@ const Autor = () => {
           </div>
         </BilingualSection>
 
-        <BilingualSection className="py-8">
-          <BilingualContent 
-            portugueseContent={
-              <>
-                <p className="text-base text-justify leading-relaxed">
-                  Mestrando em Cinema e Artes do Vídeo (UNESPAR). Diretor de arte, artista visual, designer gráfico e videomaker. Skatista. Do skate às artes visuais. Da pista de skate ao laboratório de criação. Da subcultura do skate às pesquisas em processos criativos colaborativos. Do analógico ao híbrido.
-                </p>
-                <div className="mt-6 pl-6 border-l-2 border-primary">
-                  <h3 className="text-sm font-medium tracking-wide uppercase mb-4">HYBRID PRAXIS / PRÁXIS HÍBRIDA</h3>
-                  <p className="text-base text-justify leading-relaxed">
-                    Criação autoral utilizando Adobe Creative Cloud (Photoshop, Illustrator, After Effects, Premiere Pro). Cocriação com Claude 3.5 Sonnet, GPT-4, Gemini, Midjourney, Adobe Firefly, Lovable. Documentação do processo. Transparência radical. Autoria compartilhada mas assinada.
-                  </p>
-                </div>
-              </>
-            }
-            englishContent={
-              <>
-                <p className="text-base text-justify leading-relaxed">
-                  Master's student in Cinema and Video Arts (UNESPAR). Art director, visual artist, graphic designer and videomaker. Skateboarder. From skateboarding to visual arts. From the skate park to the creation laboratory. From skate subculture to research in collaborative creative processes. From analog to hybrid.
-                </p>
-                <div className="mt-6 pl-6 border-l-2 border-primary">
-                  <h3 className="text-sm font-medium tracking-wide uppercase mb-4">HYBRID PRAXIS / PRÁXIS HÍBRIDA</h3>
-                  <p className="text-base text-justify leading-relaxed">
-                    Authorial creation using Adobe Creative Cloud (Photoshop, Illustrator, After Effects, Premiere Pro). Co-creation with Claude 3.5 Sonnet, GPT-4, Gemini, Midjourney, Adobe Firefly, Lovable. Process documentation. Radical transparency. Shared but signed authorship.
-                  </p>
-                </div>
-              </>
-            }
-          />
-        </BilingualSection>
-
         <BilingualSection>
           <BilingualContent 
             portugueseContent={
@@ -128,6 +97,13 @@ const Autor = () => {
                     <p className="text-base">Minimalista/Experimentação • Futurista/Construtivismo • Cibercultura/Semiótica • Tipografia/Infografia • Economia Criativa • Underground • Op-Art</p>
                   </div>
                 </div>
+                
+                <div className="mt-12 pl-6 border-l-2 border-primary">
+                  <h3 className="text-sm font-medium tracking-wide uppercase mb-4">HYBRID PRAXIS / PRÁXIS HÍBRIDA</h3>
+                  <p className="text-base text-justify leading-relaxed">
+                    Criação autoral utilizando Adobe Creative Cloud (Photoshop, Illustrator, After Effects, Premiere Pro). Cocriação com Claude 3.5 Sonnet, GPT-4, Gemini, Midjourney, Adobe Firefly, Lovable. Documentação do processo. Transparência radical. Autoria compartilhada mas assinada.
+                  </p>
+                </div>
               </>
             }
             englishContent={
@@ -199,6 +175,13 @@ const Autor = () => {
                     <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">Referencial / References</h4>
                     <p className="text-base">Minimalist/Experimentation • Futurist/Constructivism • Cyberculture/Semiotics • Typography/Infographics • Creative Economy • Underground • Op-Art</p>
                   </div>
+                </div>
+                
+                <div className="mt-12 pl-6 border-l-2 border-primary">
+                  <h3 className="text-sm font-medium tracking-wide uppercase mb-4">HYBRID PRAXIS / PRÁXIS HÍBRIDA</h3>
+                  <p className="text-base text-justify leading-relaxed">
+                    Authorial creation using Adobe Creative Cloud (Photoshop, Illustrator, After Effects, Premiere Pro). Co-creation with Claude 3.5 Sonnet, GPT-4, Gemini, Midjourney, Adobe Firefly, Lovable. Process documentation. Radical transparency. Shared but signed authorship.
+                  </p>
                 </div>
               </>
             }
