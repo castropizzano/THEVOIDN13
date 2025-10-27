@@ -365,17 +365,6 @@ const Autor = () => {
           />
         </BilingualSection>
 
-        {/* Memorial Quote */}
-        <BilingualSection>
-          <div className="max-w-4xl mx-auto">
-            <blockquote className="text-sm text-muted-foreground leading-relaxed text-center italic border-l-0 pl-0">
-              <p>
-                Este memorial não guarda o que passou. Guarda o que ainda pulsa. Três projetos matriciais mas LowMovie, LowPressure, CasaTrezeStudio mas funcionam como órgãos de um mesmo organismo criativo. Cada um respira de forma autônoma, mas todos compartilham do mesmo sangue simbólico.
-              </p>
-            </blockquote>
-          </div>
-        </BilingualSection>
-
         {/* Anti-brand Hero Image */}
         <section className="w-full h-screen overflow-hidden">
           <img src={antibrandImage} alt="ЦЦАСТРО™ Anti-brand" className="w-full h-full object-contain" />
@@ -416,6 +405,42 @@ const Autor = () => {
                 <p className="text-base leading-relaxed text-justify">
                   Visual arts researcher, graphic designer, art direction, videomaker. Skate and underground culture. Aesthetic minimalist & op-art. Founder of CasaTrezeStudio and creative collaborator in LowPressure. Portfolio: Branding, films, video/cinema/experimentation.
                 </p>
+              </div>
+            }
+          />
+        </BilingualSection>
+
+        {/* Memorial Quote - Creative Organism */}
+        <BilingualSection bgClassName="bg-card/50">
+          <BilingualContent 
+            portugueseContent={
+              <div className="max-w-4xl mx-auto py-12">
+                <blockquote className="text-sm text-muted-foreground leading-relaxed text-center italic">
+                  <p className="mb-6">
+                    Este memorial não guarda o que passou.
+                  </p>
+                  <p className="mb-6">
+                    Guarda o que ainda pulsa.
+                  </p>
+                  <p>
+                    <span className="font-medium text-foreground">LowMovie™</span>, <span className="font-medium text-foreground">LowPressure™</span>, <span className="font-medium text-foreground">CasaTrezeStudio®</span> — três projetos matriciais que funcionam como órgãos de um mesmo organismo criativo. Cada um respira de forma autônoma, mas todos compartilham do mesmo sangue simbólico.
+                  </p>
+                </blockquote>
+              </div>
+            }
+            englishContent={
+              <div className="max-w-4xl mx-auto py-12">
+                <blockquote className="text-sm text-muted-foreground leading-relaxed text-center italic">
+                  <p className="mb-6">
+                    This memorial does not keep what has passed.
+                  </p>
+                  <p className="mb-6">
+                    It keeps what still pulses.
+                  </p>
+                  <p>
+                    <span className="font-medium text-foreground">LowMovie™</span>, <span className="font-medium text-foreground">LowPressure™</span>, <span className="font-medium text-foreground">CasaTrezeStudio®</span> — three matrix projects that function as organs of the same creative organism. Each breathes autonomously, but all share the same symbolic blood.
+                  </p>
+                </blockquote>
               </div>
             }
           />
