@@ -539,24 +539,23 @@ const Index = () => {
                 className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-colors group"
               >
                 <div className="flex justify-between items-start mb-4">
-                  <h4 className="text-lg font-bold group-hover:text-primary transition-colors">THEVOID N.13</h4>
+                  <h4 className="text-lg font-bold group-hover:text-primary transition-colors">THEVOIDN13</h4>
                   <svg className="w-5 h-5 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <p className="text-sm text-muted-foreground mb-2">Rascunho Apresentação</p>
-                <p className="text-sm text-muted-foreground">Manifesto e conceito completo</p>
+                <p className="text-sm text-muted-foreground">Apresentação Conceitual / Conceptual Presentation</p>
               </a>
 
-              <div className="bg-card border border-border rounded-lg p-6 opacity-60">
+              <div className="bg-card border border-border rounded-lg p-6">
                 <div className="flex justify-between items-start mb-4">
-                  <h4 className="text-lg font-bold">Materiais Produzidos</h4>
+                  <h4 className="text-lg font-bold">Materiais Produzidos / Produced Materials</h4>
                   <svg className="w-5 h-5 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <p className="text-sm text-muted-foreground mb-2">Em breve</p>
-                <p className="text-sm text-muted-foreground">Materiais do projeto serão adicionados aqui</p>
+                <p className="text-sm text-muted-foreground mb-2">Concept Art</p>
+                <p className="text-sm text-muted-foreground">MoodBoard</p>
               </div>
             </div>
 

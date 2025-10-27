@@ -322,37 +322,41 @@ const Autor = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
-              <a 
-                href="https://github.com/castropizzano/casatrezestudio"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-colors group"
-              >
+              <div className="bg-card border border-border rounded-lg p-6">
                 <div className="flex justify-between items-start mb-4">
-                  <h4 className="text-lg font-bold group-hover:text-primary transition-colors">CasaTrezeStudio</h4>
+                  <h4 className="text-lg font-bold">CasaTrezeStudio®</h4>
                   <svg className="w-5 h-5 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <p className="text-sm text-muted-foreground mb-2">Release</p>
-                <p className="text-sm text-muted-foreground">Conceito e serviços</p>
-              </a>
+                <p className="text-sm text-muted-foreground mb-2">Release CasaTrezeStudio® / CasaTrezeStudio® Release</p>
+                <a 
+                  href="https://casatrezestudio.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-primary hover:underline"
+                >
+                  https://casatrezestudio.com/
+                </a>
+              </div>
 
-              <a 
-                href="http://lattes.cnpq.br/5523516994010198"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-colors group"
-              >
+              <div className="bg-card border border-border rounded-lg p-6">
                 <div className="flex justify-between items-start mb-4">
-                  <h4 className="text-lg font-bold group-hover:text-primary transition-colors">Currículo Lattes</h4>
+                  <h4 className="text-lg font-bold">Jornada do Autor / Author Journey</h4>
                   <svg className="w-5 h-5 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <p className="text-sm text-muted-foreground mb-2">CV Acadêmico</p>
-                <p className="text-sm text-muted-foreground">Formação e produção</p>
-              </a>
+                <a 
+                  href="http://lattes.cnpq.br/5523516994010198"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-primary hover:underline block mb-2"
+                >
+                  Currículo Lattes / Lattes CV
+                </a>
+                <p className="text-sm text-muted-foreground">Memorial Acadêmico / Academic Memorial</p>
+              </div>
             </div>
           </div>
         </BilingualSection>

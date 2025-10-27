@@ -199,37 +199,41 @@ const Dissertacao = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
-              <a 
-                href="https://github.com/castropizzano/lowpressure"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-colors group"
-              >
+              <div className="bg-card border border-border rounded-lg p-6">
                 <div className="flex justify-between items-start mb-4">
-                  <h4 className="text-lg font-bold group-hover:text-primary transition-colors">LowPressure™</h4>
+                  <h4 className="text-lg font-bold">LowPressure™</h4>
                   <svg className="w-5 h-5 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <p className="text-sm text-muted-foreground mb-2">Brandbook vPunk</p>
-                <p className="text-sm text-muted-foreground">Filosofia e identidade</p>
-              </a>
+                <p className="text-sm text-muted-foreground mb-2">Brandbook LowPressure™</p>
+                <a 
+                  href="https://castropizzano.com/lowpressure"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-primary hover:underline"
+                >
+                  Case Study
+                </a>
+              </div>
 
-              <a 
-                href="https://github.com/castropizzano/lowmovie"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-colors group"
-              >
+              <div className="bg-card border border-border rounded-lg p-6">
                 <div className="flex justify-between items-start mb-4">
-                  <h4 className="text-lg font-bold group-hover:text-primary transition-colors">LowMovie</h4>
+                  <h4 className="text-lg font-bold">LowMovie™</h4>
                   <svg className="w-5 h-5 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <p className="text-sm text-muted-foreground mb-2">Brandbook</p>
-                <p className="text-sm text-muted-foreground">Identidade visual completa</p>
-              </a>
+                <p className="text-sm text-muted-foreground mb-2">Brandbook LowMovie™</p>
+                <a 
+                  href="https://youtu.be/wcYBh6_DqO8?si=ioRD-YaWwjizwBg9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-primary hover:underline"
+                >
+                  Full Video LowMovie™ (2023)
+                </a>
+              </div>
             </div>
           </div>
         </BilingualSection>
