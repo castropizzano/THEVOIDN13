@@ -485,60 +485,6 @@ const Index = () => {
           />
         </BilingualSection>
 
-        {/* Documentação do Repositório */}
-        <section className="py-20 px-6">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <h2 className="text-base font-bold">Documentação do Repositório</h2>
-            <h3 className="text-base font-medium">Repository Documentation</h3>
-            
-            <p className="text-base text-justify leading-relaxed">
-              Este projeto experimental THE VOID N.13 é arquitetado como um ecossistema de Creative Operations (CreativeOps) automatizado, onde a pesquisa de mestrado e a experimentação artística se alimentam mutuamente. O GitHub atua como hub central, a Fonte Única da Verdade (Single Source of Truth), conectando ferramentas de design, plataformas de IA e sistemas de versionamento em um workflow unificado de co-criação homem × máquina.
-            </p>
-
-            <div className="bg-card p-6 rounded-lg border border-border space-y-4 mt-8">
-              <h3 className="text-base font-bold">Estrutura do Repositório</h3>
-              <div className="space-y-2 font-mono text-sm">
-                <p>/THEVOIDN13-PROJETO/</p>
-                <p className="ml-4">docs/ - Documentação, práxis, teoria</p>
-                <p className="ml-4">assets/ - Arquivos de design (LFS)</p>
-                <p className="ml-4">src/ - Código-fonte e scripts</p>
-                <p className="ml-4">ai_experiments/ - Scripts de IA</p>
-                <p className="ml-4">prototypes_web/ - Protótipos</p>
-                <p className="ml-4">automation/ - Scripts de integração</p>
-              </div>
-            </div>
-
-            <div className="bg-card p-6 rounded-lg border border-border space-y-4 mt-8">
-              <h3 className="text-base font-bold">Ferramentas Integradas</h3>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <p className="text-base font-bold">IA e Criação</p>
-                  <p className="text-base">Google AI Studio, Gemini, ChatGPT, Perchance AI Image</p>
-                </div>
-                <div className="space-y-2">
-                  <p className="text-base font-bold">Design e Visual</p>
-                  <p className="text-base">Adobe Creative Cloud, Firefly Boards, Figma</p>
-                </div>
-                <div className="space-y-2">
-                  <p className="text-base font-bold">Desenvolvimento</p>
-                  <p className="text-base">GitHub, Lovable, Google Labs</p>
-                </div>
-                <div className="space-y-2">
-                  <p className="text-base font-bold">Documentação</p>
-                  <p className="text-base">Google NoteBook LM, Gamma.app</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-card p-6 rounded-lg border border-border space-y-4 mt-8">
-              <h3 className="text-base font-bold">Metodologia Hub-and-Spoke</h3>
-              <p className="text-base text-justify leading-relaxed">
-                O GitHub funciona como hub central onde todas as ferramentas são spokes que leem ou escrevem. A automação via GitHub Actions e APIs reflete mudanças automaticamente nas plataformas integradas. Git LFS gerencia arquivos grandes (vídeos, PSDs, áudios) sem sobrecarregar o repositório.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* Encerramento / Transmissão Final */}
         <BilingualSection>
           <div className="space-y-12">
@@ -588,14 +534,14 @@ const Index = () => {
               portugueseContent={
                 <div className="space-y-6">
                   <p className="text-base text-justify leading-relaxed">
-                    Este projeto experimental THE VOID N.13 é arquitetado como um ecossistema de Creative Operations (CreativeOps) automatizado, onde a pesquisa de mestrado e a experimentação artística se alimentam mutuamente. O GitHub atua como hub central, a Fonte Única da Verdade (Single Source of Truth), conectando ferramentas de design, plataformas de IA e sistemas de versionamento em um workflow unificado de co-criação homem × máquina.
+                    THEVOIDN13 é mais do que um projeto: é um organismo vivo de criação. Um sistema simbólico que une arte, filosofia e tecnologia em um fluxo contínuo de aprendizado, erro e reinvenção. O GitHub atua como arquivo vivo deste memorial artístico, onde cada commit é uma entrada de pesquisa — não uma nota técnica avulsa.
                   </p>
                 </div>
               }
               englishContent={
                 <div className="space-y-6">
                   <p className="text-base text-justify leading-relaxed">
-                    This experimental project THE VOID N.13 is architected as an automated Creative Operations (CreativeOps) ecosystem, where master's research and artistic experimentation feed each other mutually. GitHub acts as the central hub, the Single Source of Truth, connecting design tools, AI platforms and versioning systems in a unified human × machine co-creation workflow.
+                    THEVOIDN13 is more than a project: it is a living organism of creation. A symbolic system that unites art, philosophy, and technology in a continuous flow of learning, error, and reinvention. GitHub acts as a living archive of this artistic memorial, where each commit is a research entry — not a random technical note.
                   </p>
                 </div>
               }
@@ -604,13 +550,14 @@ const Index = () => {
             <div className="bg-card p-6 rounded-lg border border-border space-y-4 mt-8">
               <h3 className="text-base font-bold">Estrutura do Repositório / Repository Structure</h3>
               <div className="font-mono text-sm space-y-1 text-foreground/80">
-                <p>/THEVOIDN13—PROJETO/</p>
-                <p className="ml-4">docs/ — Documentação, práxis, teoria</p>
-                <p className="ml-4">assets/ — Arquivos de design (LFS)</p>
-                <p className="ml-4">src/ — Código-fonte e scripts</p>
-                <p className="ml-4">ai_experiments/ — Scripts de IA</p>
-                <p className="ml-4">prototypes_web/ — Protótipos</p>
-                <p className="ml-4">automation/ — Scripts de integração</p>
+                <p>/THEVOIDN13/</p>
+                <p className="ml-4">README.md — manifesto e visão geral</p>
+                <p className="ml-4">LICENSE.md — licença híbrida CC BY-NC-SA 4.0</p>
+                <p className="ml-4">docs/COMMIT_GUIDE.md — filosofia de versionamento</p>
+                <p className="ml-4">docs/TECH_STACK.md — stack tecnológica e workflow</p>
+                <p className="ml-4">src/ — código-fonte do portal web</p>
+                <p className="ml-4">public/ — assets públicos e builds</p>
+                <p className="ml-4">assets/ — exports visuais e documentação</p>
               </div>
             </div>
 
@@ -619,19 +566,19 @@ const Index = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <p className="text-base font-bold">IA e Criação / AI and Creation</p>
-                  <p className="text-base">Google AI Studio, Gemini, ChatGPT, Perchance AI Image</p>
+                  <p className="text-base">Google Gemini, Claude, ChatGPT, Midjourney, Adobe Firefly</p>
                 </div>
                 <div className="space-y-2">
                   <p className="text-base font-bold">Design e Visual / Design and Visual</p>
-                  <p className="text-base">Adobe Creative Cloud, Firefly Boards, Figma</p>
+                  <p className="text-base">Adobe Creative Cloud, Figma, DaVinci Resolve</p>
                 </div>
                 <div className="space-y-2">
                   <p className="text-base font-bold">Desenvolvimento / Development</p>
-                  <p className="text-base">GitHub, Lovable, Google Labs</p>
+                  <p className="text-base">React, TypeScript, Tailwind, Vite, Lovable</p>
                 </div>
                 <div className="space-y-2">
-                  <p className="text-base font-bold">Documentação / Documentation</p>
-                  <p className="text-base">Google NoteBook LM, Gamma.app</p>
+                  <p className="text-base font-bold">Versionamento / Version Control</p>
+                  <p className="text-base">GitHub, Git LFS</p>
                 </div>
               </div>
             </div>
@@ -640,17 +587,17 @@ const Index = () => {
               <BilingualContent
                 portugueseContent={
                   <div className="space-y-4">
-                    <h3 className="text-base font-bold">Metodologia Hub-and-Spoke</h3>
+                    <h3 className="text-base font-bold">Método Cíclico e Híbrido</h3>
                     <p className="text-base text-justify leading-relaxed">
-                      O GitHub funciona como hub central onde todas as ferramentas são spokes que leem ou escrevem. A automação via GitHub Actions e APIs reflete mudanças automaticamente nas plataformas integradas. Git LFS gerencia arquivos grandes (vídeos, PSDs, áudios) sem sobrecarregar o repositório.
+                      1. Observação — ler o fluxo criativo e suas falhas como dados vivos. 2. Co-criação — interagir com IAs como extensões simbólicas do pensamento. 3. Documentação — registrar camadas, decisões e estados mentais. 4. Reflexão — transformar registros em narrativa estética e técnica. 5. Expansão — devolver o aprendizado ao mundo em forma de arte, código ou metodologia.
                     </p>
                   </div>
                 }
                 englishContent={
                   <div className="space-y-4">
-                    <h3 className="text-base font-bold">Hub-and-Spoke Methodology</h3>
+                    <h3 className="text-base font-bold">Cyclical and Hybrid Method</h3>
                     <p className="text-base text-justify leading-relaxed">
-                      GitHub functions as the central hub where all tools are spokes that read or write. Automation via GitHub Actions and APIs automatically reflects changes across integrated platforms. Git LFS manages large files (videos, PSDs, audio) without overloading the repository.
+                      1. Observation — reading the creative flow and its flaws as living data. 2. Co-creation — interacting with AI as symbolic extensions of thought. 3. Documentation — recording layers, decisions and mental states. 4. Reflection — transforming records into aesthetic and technical narrative. 5. Expansion — returning learning to the world as art, code or methodology.
                     </p>
                   </div>
                 }
