@@ -11,6 +11,7 @@ import roughs000 from "@/assets/roughs-000.png";
 import roughs001 from "@/assets/roughs-001.png";
 import roughs002 from "@/assets/roughs-002.png";
 import roughs003 from "@/assets/roughs-003.png";
+import meditationScene from "@/assets/meditation-scene.png";
 const Index = () => {
   return <div className="min-h-screen bg-background text-foreground">
       <Header />
@@ -23,7 +24,11 @@ const Index = () => {
 
         {/* Video Section */}
         <section className="py-20 px-6">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-6xl mx-auto space-y-8">
+            <h1 className="text-sm font-light tracking-wider uppercase">
+              THEVOIDN13 [Shadow_Interface_Bible_v13]
+            </h1>
+            
             <video 
               className="w-full aspect-video bg-black"
               controls
@@ -35,7 +40,7 @@ const Index = () => {
             
             <p
               style={{ fontFamily: "Manrope, sans-serif" }}
-              className="mt-6 text-xs font-light tracking-wide text-[#DADADA]/90"
+              className="text-xs font-light tracking-wide text-[#DADADA]/90"
             >
               [um corpo à deriva entre o ruído e o silêncio]{" "}
               <span className="italic">[a body adrift between noise and silence]</span>
@@ -44,7 +49,7 @@ const Index = () => {
         </section>
 
         {/* Introduction Text */}
-        <BilingualSection>
+        <BilingualSection className="py-12">
           <BilingualContent
             portugueseContent={
               <div>
@@ -62,6 +67,8 @@ const Index = () => {
             }
           />
         </BilingualSection>
+
+        <img src={meditationScene} alt="Meditation Scene" className="w-full h-auto" />
 
         {/* Quando o Inconsciente Ganha Corpo */}
         <BilingualSection>

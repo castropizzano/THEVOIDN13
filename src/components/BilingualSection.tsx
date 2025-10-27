@@ -5,9 +5,13 @@ interface BilingualSectionProps {
 }
 
 export const BilingualSection = ({ children, className = "", bgClassName = "" }: BilingualSectionProps) => {
+  // Extract custom py-* class from className if present, otherwise use default py-20
+  const customPadding = className.match(/py-\d+/)?.[0] || "py-20";
+  const otherClasses = className.replace(/py-\d+/g, "").trim();
+  
   return (
-    <section className={`py-20 px-6 ${bgClassName}`}>
-      <div className={`max-w-6xl mx-auto ${className}`}>
+    <section className={`${customPadding} px-6 ${bgClassName}`}>
+      <div className={`max-w-6xl mx-auto ${otherClasses}`}>
         {children}
       </div>
     </section>
