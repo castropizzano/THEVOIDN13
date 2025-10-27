@@ -102,8 +102,21 @@ const Autor = () => {
           />
         </BilingualSection>
 
-        <section className="w-full h-screen overflow-hidden">
-          <img src={conceptFront} alt="Concept" className="w-full h-full object-contain" />
+        {/* Character Sheet - Three Views */}
+        <section className="py-20 px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="aspect-[3/4] overflow-hidden border border-border rounded-lg">
+                <img src={conceptFront} alt="Front View" className="w-full h-full object-cover" />
+              </div>
+              <div className="aspect-[3/4] overflow-hidden border border-border rounded-lg">
+                <img src={conceptBack} alt="Side View" className="w-full h-full object-cover" />
+              </div>
+              <div className="aspect-[3/4] overflow-hidden border border-border rounded-lg">
+                <img src={actionFigure} alt="Back View" className="w-full h-full object-cover" />
+              </div>
+            </div>
+          </div>
         </section>
 
         <BilingualSection>
@@ -152,9 +165,6 @@ const Autor = () => {
           />
         </BilingualSection>
 
-        <section className="w-full h-screen overflow-hidden">
-          <img src={conceptBack} alt="Concept" className="w-full h-full object-contain" />
-        </section>
 
         <BilingualSection>
           <BilingualContent 
