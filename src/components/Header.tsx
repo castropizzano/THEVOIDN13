@@ -5,8 +5,8 @@ const Header = () => {
   
   const navItems = [
     { path: "/dissertacao", label: "LOWMOVIE™" },
-    { path: "/autor", label: "ORIGIN" },
-    { path: "/videos", label: "VIDEOS" },
+    { path: "/autor", label: "AUTHOR" },
+    { path: "/videos", label: "PORTFOLIO" },
   ];
   
   return (

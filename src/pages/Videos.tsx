@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
 import { supabase } from "@/integrations/supabase/client";
 import { Play, Clock, ExternalLink } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
@@ -62,20 +63,6 @@ const Videos = () => {
     return `${mins}:${secs.toString().padStart(2, '0')}`;
   };
 
-  const groupVideosByYear = () => {
-    const grouped: { [year: string]: Video[] } = {};
-    
-    videos.forEach(video => {
-      const year = new Date(video.createdTime).getFullYear().toString();
-      if (!grouped[year]) {
-        grouped[year] = [];
-      }
-      grouped[year].push(video);
-    });
-
-    return Object.entries(grouped).sort((a, b) => parseInt(b[0]) - parseInt(a[0]));
-  };
-
   if (loading) {
     return (
       <div className="min-h-screen bg-background text-foreground">
@@ -93,46 +80,60 @@ const Videos = () => {
     );
   }
 
-  const groupedVideos = groupVideosByYear();
+  const featuredVideo = videos[0];
+  const catalogVideos = videos.slice(1);
 
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />
       
-      <main className="pb-20">
-        {/* Hero Section */}
-        <section className="relative h-[70vh] overflow-hidden">
-          {videos[0] && (
-            <div className="absolute inset-0">
-              <img 
-                src={videos[0].thumbnail} 
-                alt={videos[0].name}
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
-            </div>
-          )}
-          <div className="relative container mx-auto px-4 h-full flex flex-col justify-end pb-20">
-            <h1 className="text-5xl md:text-7xl font-bold mb-4">Portfólio de Vídeos</h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mb-6">
-              Explore a coleção completa de trabalhos audiovisuais
-            </p>
-            {videos[0] && (
-              <button
-                onClick={() => setSelectedVideo(videos[0])}
-                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3 rounded-md hover:bg-primary/90 transition-colors w-fit"
-              >
-                <Play className="w-5 h-5" />
-                Assistir Agora
-              </button>
-            )}
-          </div>
-        </section>
+      <main>
+        {/* Featured Video - Full Screen */}
+        {featuredVideo && (
+          <section className="w-full h-screen overflow-hidden relative">
+            <iframe
+              src={`${featuredVideo.embedUrl}?background=1&autoplay=1&loop=1&byline=0&title=0`}
+              className="w-full h-full object-cover"
+              frameBorder="0"
+              allow="autoplay; fullscreen"
+              title={featuredVideo.name}
+            ></iframe>
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent pointer-events-none"></div>
+          </section>
+        )}
+
+        {/* Introduction Text */}
+        <BilingualSection>
+          <BilingualContent 
+            portugueseContent={
+              <>
+                <h2 className="text-base font-bold">Portfolio Audiovisual</h2>
+                <p className="text-base text-justify leading-relaxed mt-6">
+                  Uma coleção de trabalhos que atravessam design, cinema e videoarte. Cada projeto é um experimento em linguagem visual, onde a estética encontra a narrativa e o movimento se transforma em significado. Do comercial ao experimental, do documentário à performance, estas obras compartilham uma mesma busca: criar imagens que ressoam além da tela.
+                </p>
+                <p className="text-base text-justify leading-relaxed mt-6">
+                  Brandbooks, curtas-metragens, videoperformances, documentários e projetos autorais. Trabalhos produzidos entre 2019-2025, reunindo colaborações com CasaTrezeStudio®, LowPressure™ e projetos independentes. Cada vídeo carrega sua própria metodologia, seu próprio tempo, sua própria forma de existir.
+                </p>
+              </>
+            }
+            englishContent={
+              <>
+                <h2 className="text-base font-bold">Audiovisual Portfolio</h2>
+                <p className="text-base text-justify leading-relaxed mt-6">
+                  A collection of works that traverse design, cinema and video art. Each project is an experiment in visual language, where aesthetics meets narrative and movement transforms into meaning. From commercial to experimental, from documentary to performance, these works share the same quest: to create images that resonate beyond the screen.
+                </p>
+                <p className="text-base text-justify leading-relaxed mt-6">
+                  Brandbooks, short films, video performances, documentaries and authorial projects. Works produced between 2019-2025, bringing together collaborations with CasaTrezeStudio®, LowPressure™ and independent projects. Each video carries its own methodology, its own time, its own way of existing.
+                </p>
+              </>
+            }
+          />
+        </BilingualSection>
 
         {/* Video Modal */}
         {selectedVideo && (
           <div 
-            className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+            className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4"
             onClick={() => setSelectedVideo(null)}
           >
             <div 
@@ -159,66 +160,62 @@ const Videos = () => {
           </div>
         )}
 
-        {/* Video Rows by Year */}
-        <div className="container mx-auto px-4 space-y-12">
-          {groupedVideos.map(([year, yearVideos]) => (
-            <div key={year} className="space-y-6">
-              <h2 className="text-3xl font-bold text-primary">{year}</h2>
-              
-              <div className="relative">
-                <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-thin scrollbar-thumb-primary scrollbar-track-transparent">
-                  {yearVideos.map((video) => (
-                    <div
-                      key={video.id}
-                      className="flex-shrink-0 w-80 group cursor-pointer"
-                      onClick={() => setSelectedVideo(video)}
-                    >
-                      <div className="relative aspect-video mb-3 overflow-hidden rounded-lg">
-                        <img
-                          src={video.thumbnail}
-                          alt={video.name}
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                        />
-                        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
-                          <Play className="w-16 h-16 text-white opacity-0 group-hover:opacity-100 transition-opacity" />
-                        </div>
-                        <div className="absolute bottom-2 right-2 bg-black/80 px-2 py-1 rounded text-xs flex items-center gap-1">
-                          <Clock className="w-3 h-3" />
-                          {formatDuration(video.duration)}
-                        </div>
-                      </div>
-                      <h3 className="font-medium line-clamp-2 group-hover:text-primary transition-colors">
-                        {video.name}
-                      </h3>
-                      {video.description && (
-                        <p className="text-sm text-muted-foreground line-clamp-2 mt-1">
-                          {video.description}
-                        </p>
-                      )}
-                      <a
-                        href={video.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 text-xs text-primary hover:underline mt-2"
-                        onClick={(e) => e.stopPropagation()}
-                      >
-                        Ver no Vimeo
-                        <ExternalLink className="w-3 h-3" />
-                      </a>
+        {/* Video Catalog - 3 columns grid */}
+        <BilingualSection bgClassName="bg-card/30">
+          <div className="space-y-8">
+            <h2 className="text-2xl font-bold text-primary">Catálogo / Catalog</h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {catalogVideos.map((video) => (
+                <div
+                  key={video.id}
+                  className="group cursor-pointer"
+                  onClick={() => setSelectedVideo(video)}
+                >
+                  <div className="relative aspect-video mb-3 overflow-hidden rounded-lg">
+                    <img
+                      src={video.thumbnail}
+                      alt={video.name}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-all duration-300 flex items-center justify-center">
+                      <Play className="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity" />
                     </div>
-                  ))}
+                    <div className="absolute bottom-2 right-2 bg-black/80 px-2 py-1 rounded text-xs flex items-center gap-1">
+                      <Clock className="w-3 h-3" />
+                      {formatDuration(video.duration)}
+                    </div>
+                  </div>
+                  <h3 className="font-medium line-clamp-2 group-hover:text-primary transition-colors text-sm">
+                    {video.name}
+                  </h3>
+                  {video.description && (
+                    <p className="text-xs text-muted-foreground line-clamp-2 mt-1">
+                      {video.description}
+                    </p>
+                  )}
+                  <a
+                    href={video.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-xs text-primary hover:underline mt-2"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    Ver no Vimeo
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
                 </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {videos.length === 0 && !loading && (
-          <div className="container mx-auto px-4 py-20">
-            <div className="text-center space-y-4">
-              <p className="text-muted-foreground text-xl">Nenhum vídeo encontrado</p>
+              ))}
             </div>
           </div>
+        </BilingualSection>
+
+        {catalogVideos.length === 0 && !loading && (
+          <BilingualSection>
+            <div className="text-center space-y-4 py-20">
+              <p className="text-muted-foreground text-xl">Nenhum vídeo adicional encontrado</p>
+            </div>
+          </BilingualSection>
         )}
       </main>
 
