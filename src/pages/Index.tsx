@@ -16,20 +16,18 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       <Header />
       
-      <main className="pt-16">
-        {/* Hero Section - Image only, no overlay */}
-        <section className="relative w-full min-h-screen">
+      <main>
+        {/* Hero Section - Full screen image with tagline */}
+        <section className="relative w-full h-screen overflow-hidden">
           <img 
             src={heroImage} 
             alt="THE VOID N.13" 
-            className="w-full h-screen object-cover"
+            className="w-full h-full object-cover"
           />
-          <div className="absolute bottom-0 left-0 right-0 bg-background py-8">
-            <div className="container mx-auto px-6 text-center space-y-2">
-              <p className="text-base font-medium">[shadow_interface_bible]</p>
-              <p className="text-base">um corpo à deriva entre o ruído e o silêncio</p>
-              <p className="text-base">a body adrift between noise and silence</p>
-            </div>
+          <div className="absolute inset-x-0 bottom-16 text-center px-6">
+            <p className="text-base font-light tracking-wide text-[#DADADA]/90 drop-shadow-lg" style={{ fontFamily: 'Manrope, sans-serif' }}>
+              [shadow_interface_bible] um corpo à deriva entre o ruído e o silêncio
+            </p>
           </div>
         </section>
 
