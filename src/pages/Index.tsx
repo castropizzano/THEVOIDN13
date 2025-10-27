@@ -533,10 +533,10 @@ const Index = () => {
             {/* Research Documents Grid */}
             <div className="grid md:grid-cols-2 gap-6">
               <a 
-                href="/documents/THEVOIDN13_ShadowInterfaceBible_v1.3.pdf"
+                href="https://castropizzano.com/documents/THEVOIDN13_ShadowInterfaceBible_v1.3.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-card border border-border rounded-lg p-6 hover:border-primary transition-colors group"
+                className="block bg-card border border-border rounded-lg p-6 hover:border-primary transition-colors group cursor-pointer"
               >
                 <div className="flex justify-between items-start mb-4">
                   <h4 className="text-lg font-bold group-hover:text-primary transition-colors">THEVOIDN13</h4>
