@@ -44,6 +44,344 @@ const Dissertacao = () => {
           />
         </BilingualSection>
 
+        {/* Matrix Projects - Origins of the Dissertation */}
+        <BilingualSection bgClassName="bg-card/50">
+          <div className="space-y-4 mb-16">
+            <h2 className="text-2xl font-bold text-primary">Processos Matriciais / Matrix Processes</h2>
+            <BilingualContent 
+              portugueseContent={
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  Três projetos que originaram esta dissertação. Processos criativos que se entrelaçam e formam a base do Labirinto Criativo.
+                </p>
+              }
+              englishContent={
+                <p className="text-base text-muted-foreground leading-relaxed">
+                  Three projects that originated this dissertation. Creative processes that intertwine and form the basis of the Creative Labyrinth.
+                </p>
+              }
+            />
+          </div>
+        </BilingualSection>
+
+        {/* CasaTrezeStudio Section */}
+        <BilingualSection>
+          <div className="border-l-4 border-primary pl-6 space-y-8">
+            <div>
+              <h2 className="text-2xl font-bold mb-2">CasaTrezeStudio</h2>
+              <p className="text-sm text-muted-foreground mb-2">2008-Presente</p>
+              <p className="text-sm text-primary font-medium">Coletivo Criativo / Creative Lab</p>
+            </div>
+
+            <BilingualContent 
+              portugueseContent={
+                <div className="space-y-6">
+                  <p className="text-base leading-relaxed text-justify">
+                    Coletivo Criativo fundado em 2008. Estúdio pós-contemporâneo de design e vídeo. Associação de produtores criativos independentes que opera como laboratório de criação autoral, cultural e comercial, conectando pessoas, ideias e projetos. Onde o comercial e o experimental coexistem sob a persona цастро™.
+                  </p>
+
+                  <div className="space-y-4">
+                    <h3 className="text-base font-bold text-primary">Conceito / Concept</h3>
+                    <p className="text-base leading-relaxed text-justify">
+                      CasaTrezeStudio não é empresa. É organismo vivo. Laboratório onde criadores independentes se encontram para transformar ideias em matéria. Nasceu da necessidade de criar fora dos sistemas tradicionais, construindo sua própria infraestrutura criativa. 17 anos de resistência e reinvenção.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-base font-bold text-primary">Serviços / Services</h3>
+                    <div className="space-y-2">
+                      <p className="text-base"><span className="font-bold text-primary">Design Gráfico:</span> Identidades visuais, branding, editorial</p>
+                      <p className="text-base"><span className="font-bold text-primary">Vídeo:</span> Documentários, videoclipes, conteúdo digital</p>
+                      <p className="text-base"><span className="font-bold text-primary">Direção de Arte:</span> Projetos culturais, campanhas, eventos</p>
+                      <p className="text-base"><span className="font-bold text-primary">Curadoria:</span> Projetos experimentais e autorais</p>
+                    </div>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-base font-bold text-primary">Filosofia / Philosophy</h3>
+                    <p className="text-base leading-relaxed text-justify">
+                      A casa número 13 como símbolo de resistência ao convencional. O azar transformado em potência criativa. O estúdio opera na fronteira entre o comercial e o experimental, sem hierarquia entre ambos. Cada projeto — seja uma identidade visual para um cliente ou um filme autoral — recebe o mesmo rigor criativo.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-base font-bold text-primary">Reel / Showreel</h3>
+                    <a 
+                      href="https://vimeo.com/698870212"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-primary hover:underline text-base font-medium"
+                    >
+                      → Ver Reel Completo no Vimeo
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              }
+              englishContent={
+                <div className="space-y-6">
+                  <p className="text-base leading-relaxed text-justify">
+                    Creative Collective founded in 2008. Post-contemporary studio of design and video. Association of independent creative producers operating as a laboratory of authorial, cultural and commercial creation, connecting people, ideas and projects. Where commercial and experimental coexist under the persona цастро™.
+                  </p>
+
+                  <div className="space-y-4">
+                    <h3 className="text-base font-bold text-primary">Conceito / Concept</h3>
+                    <p className="text-base leading-relaxed text-justify">
+                      CasaTrezeStudio isn't a company. It's a living organism. Laboratory where independent creators meet to transform ideas into matter. Born from the need to create outside traditional systems, building its own creative infrastructure. 17 years of resistance and reinvention.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-base font-bold text-primary">Serviços / Services</h3>
+                    <div className="space-y-2">
+                      <p className="text-base"><span className="font-bold text-primary">Graphic Design:</span> Visual identities, branding, editorial</p>
+                      <p className="text-base"><span className="font-bold text-primary">Video:</span> Documentaries, music videos, digital content</p>
+                      <p className="text-base"><span className="font-bold text-primary">Art Direction:</span> Cultural projects, campaigns, events</p>
+                      <p className="text-base"><span className="font-bold text-primary">Curation:</span> Experimental and authorial projects</p>
+                    </div>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-base font-bold text-primary">Filosofia / Philosophy</h3>
+                    <p className="text-base leading-relaxed text-justify">
+                      House number 13 as a symbol of resistance to the conventional. Bad luck transformed into creative power. The studio operates on the border between commercial and experimental, without hierarchy between them. Each project — whether a visual identity for a client or an authorial film — receives the same creative rigor.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-base font-bold text-primary">Reel / Showreel</h3>
+                    <a 
+                      href="https://vimeo.com/698870212"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-primary hover:underline text-base font-medium"
+                    >
+                      → Watch Full Reel on Vimeo
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              }
+            />
+          </div>
+        </BilingualSection>
+
+        {/* LowPressure Section */}
+        <BilingualSection bgClassName="bg-card/30">
+          <div className="border-l-4 border-primary pl-6 space-y-8">
+            <div>
+              <h2 className="text-2xl font-bold mb-2">LowPressure™</h2>
+              <p className="text-sm text-muted-foreground mb-2">2020-Presente</p>
+              <p className="text-sm text-primary font-medium">Skate Crew / Movimento Cultural</p>
+            </div>
+
+            <BilingualContent 
+              portugueseContent={
+                <div className="space-y-6">
+                  <p className="text-base leading-relaxed text-justify">
+                    Crew de skate @lowpressure.fam estabelecida nas transições e ruas de Curitiba. Movimento que valoriza o skateboard e seu universo cultural. Uma crew de skatistas, músicos e artistas com diferentes visões e um mesmo ideal. A ética do subterrâneo. O pensamento que nasce da margem.
+                  </p>
+
+                  <div className="space-y-4">
+                    <h3 className="text-base font-bold text-primary">Filosofia / Philosophy</h3>
+                    <p className="text-base leading-relaxed text-justify">
+                      <span className="font-bold">LOW PRESSURE = BAIXA PRESSÃO.</span> Movimento atmosférico que precede tempestades. Instabilidade como potência. Tensão criativa que gera movimento. A crew não é grupo fechado — é campo de força que atrai quem vibra na mesma frequência.
+                    </p>
+                    <p className="text-base leading-relaxed text-justify mt-4">
+                      Skatistas, músicos, artistas, videomakers. Diferentes visões, mesmo ideal: fazer do skate um modo de vida autêntico, sem concessões ao mercado, sem domesticação da rebeldia. Punk ethics aplicada ao concreto urbano.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-base font-bold text-primary">História / History</h3>
+                    <p className="text-base leading-relaxed text-justify">
+                      Fundada em 2020, mas suas raízes mergulham mais fundo. A crew cristaliza anos de sessões, amizades, quedas e quedas que viram manobras. Curitiba como território afetivo. Cada pico é memória viva. Cada sessão é ritual de pertencimento. O skate como linguagem que não precisa de tradução.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-base font-bold text-primary">Propósito / Purpose</h3>
+                    <p className="text-base leading-relaxed text-justify">
+                      Não é sobre patrocínio. Não é sobre likes. É sobre manter viva a chama do skate como expressão genuína. Resistir à espetacularização. Preservar a autonomia criativa. Ser crew é ser família escolhida. É saber que, não importa o spot, sempre tem alguém que vai te buscar quando você cair.
+                    </p>
+                  </div>
+                </div>
+              }
+              englishContent={
+                <div className="space-y-6">
+                  <p className="text-base leading-relaxed text-justify">
+                    Skate crew @lowpressure.fam established in the transitions and streets of Curitiba. Movement that values skateboarding and its cultural universe. A crew of skaters, musicians and artists with different visions and the same ideal. The ethics of the underground. Thought that rises from the margin.
+                  </p>
+
+                  <div className="space-y-4">
+                    <h3 className="text-base font-bold text-primary">Filosofia / Philosophy</h3>
+                    <p className="text-base leading-relaxed text-justify">
+                      <span className="font-bold">LOW PRESSURE.</span> Atmospheric movement that precedes storms. Instability as power. Creative tension that generates movement. The crew isn't a closed group — it's a force field that attracts those who vibrate at the same frequency.
+                    </p>
+                    <p className="text-base leading-relaxed text-justify mt-4">
+                      Skaters, musicians, artists, videomakers. Different visions, same ideal: making skateboarding an authentic way of life, without concessions to the market, without domestication of rebellion. Punk ethics applied to urban concrete.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-base font-bold text-primary">História / History</h3>
+                    <p className="text-base leading-relaxed text-justify">
+                      Founded in 2020, but its roots run deeper. The crew crystallizes years of sessions, friendships, falls and falls that become tricks. Curitiba as affective territory. Each spot is living memory. Each session is a ritual of belonging. Skateboarding as a language that needs no translation.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-base font-bold text-primary">Propósito / Purpose</h3>
+                    <p className="text-base leading-relaxed text-justify">
+                      It's not about sponsorship. It's not about likes. It's about keeping alive the flame of skateboarding as genuine expression. Resisting spectacularization. Preserving creative autonomy. Being crew is being chosen family. It's knowing that, no matter the spot, there's always someone who'll pick you up when you fall.
+                    </p>
+                  </div>
+                </div>
+              }
+            />
+          </div>
+        </BilingualSection>
+
+        {/* LowMovie Section */}
+        <BilingualSection>
+          <div className="border-l-4 border-primary pl-6 space-y-8">
+            <div>
+              <h2 className="text-2xl font-bold mb-2">LowMovie</h2>
+              <p className="text-sm text-muted-foreground mb-2">2019-Presente</p>
+              <p className="text-sm text-primary font-medium">Full Video / Filme-Processo</p>
+            </div>
+
+            <BilingualContent 
+              portugueseContent={
+                <div className="space-y-6">
+                  <p className="text-base leading-relaxed text-justify">
+                    Full Video da crew LowPressure. Um filme-processo que documenta as vivências e o legado de uma crew de skatistas pelos spots de Curitiba. Obra produzida de maneira totalmente autoral, através de vídeo, design e trilhas sonoras únicas. Objeto central da pesquisa de mestrado em Cinema e Artes do Vídeo.
+                  </p>
+
+                  <div className="space-y-4">
+                    <h3 className="text-base font-bold text-primary">Conceito / Concept</h3>
+                    <p className="text-base leading-relaxed text-justify">
+                      LowMovie não é só um vídeo de skate. É um artefato cultural que cristaliza memória, identidade e resistência subcultural. Um documento vivo que captura o ethos de uma crew que fez do skate um modo de existir. Produzido entre 2019-2022, estreou em abril de 2023 no Cine Passeio em Curitiba.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-base font-bold text-primary">Simbolismo / Symbolism</h3>
+                    <p className="text-base leading-relaxed text-justify">
+                      O filme opera como labirinto criativo onde subjetividade e subcultura se encontram. Cada manobra é gesto simbólico. Cada spot é território de afeto. A estética DIY não é limitação — é escolha ética. LowMovie materializa a filosofia punk do "faça você mesmo" aplicada ao cinema de skate.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-base font-bold text-primary">Premiére / Premiere</h3>
+                    <p className="text-base leading-relaxed text-justify">
+                      07 de abril de 2023. Cine Passeio, Curitiba. Sessão lotada. Skatistas, amigos, família, pesquisadores. Do underground ao cinema. Da margem ao centro simbólico da cidade. Um momento de reconhecimento sem domesticação. A crew permanece crew, mas agora habita também a tela grande.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-base font-bold text-primary">Lowbyrinth™</h3>
+                    <p className="text-base leading-relaxed text-justify">
+                      O símbolo central de LowMovie. Um labirinto inspirado em geometria sagrada e princípios herméticos. Baseado na filosofia de Hermes Trismegistus, o Lowbyrinth™ materializa a ideia de que princípios organizam toda vida e criação no universo.
+                    </p>
+                    <p className="text-base leading-relaxed text-justify mt-4">
+                      O labirinto é a vida em seus encontros, transformações e realizações. Percursos colaborativos, improvisados e não-lineares. Cada volta representa a jornada da crew pelos picos de Curitiba. Cada linha é uma manobra, um gesto compartilhado. O centro é o encontro — onde todos os caminhos convergem.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-base font-bold text-primary">Assista / Watch</h3>
+                    <div className="space-y-3">
+                      <a 
+                        href="#"
+                        className="flex items-center gap-2 text-primary hover:underline text-base"
+                      >
+                        → Filme Completo no YouTube
+                        <span className="text-sm text-muted-foreground">Full Video disponível para assistir</span>
+                      </a>
+                      <a 
+                        href="#"
+                        className="flex items-center gap-2 text-primary hover:underline text-base"
+                      >
+                        → Case Completo
+                        <span className="text-sm text-muted-foreground">Processo criativo detalhado</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              }
+              englishContent={
+                <div className="space-y-6">
+                  <p className="text-base leading-relaxed text-justify">
+                    LowPressure crew's Full Video. A process-film documenting the experiences and legacy of a skate crew through Curitiba's spots. Work produced entirely independently, through video, design and unique soundtracks. Central object of master's research in Cinema and Video Arts.
+                  </p>
+
+                  <div className="space-y-4">
+                    <h3 className="text-base font-bold text-primary">Conceito / Concept</h3>
+                    <p className="text-base leading-relaxed text-justify">
+                      LowMovie isn't just a skate video. It's a cultural artifact that crystallizes memory, identity and subcultural resistance. A living document that captures the ethos of a crew that made skateboarding a way of existing. Produced between 2019-2022, premiered in April 2023 at Cine Passeio in Curitiba.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-base font-bold text-primary">Simbolismo / Symbolism</h3>
+                    <p className="text-base leading-relaxed text-justify">
+                      The film operates as a creative labyrinth where subjectivity and subculture meet. Each trick is symbolic gesture. Each spot is a territory of affection. The DIY aesthetic isn't a limitation — it's an ethical choice. LowMovie materializes the punk philosophy of "do it yourself" applied to skate cinema.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-base font-bold text-primary">Premiére / Premiere</h3>
+                    <p className="text-base leading-relaxed text-justify">
+                      April 7, 2023. Cine Passeio, Curitiba. Sold-out session. Skaters, friends, family, researchers. From underground to cinema. From margin to the symbolic center of the city. A moment of recognition without domestication. The crew remains a crew, but now also inhabits the big screen.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-base font-bold text-primary">Lowbyrinth™</h3>
+                    <p className="text-base leading-relaxed text-justify">
+                      The central symbol of LowMovie. A labyrinth inspired by sacred geometry and hermetic principles. Based on Hermes Trismegistus' philosophy, the Lowbyrinth™ materializes the idea that principles organize all life and creation in the universe.
+                    </p>
+                    <p className="text-base leading-relaxed text-justify mt-4">
+                      The labyrinth is life in its encounters, transformations, and realizations. Collaborative, improvised, and non-linear paths. Each turn represents the crew's journey through Curitiba's spots. Each line is a trick, a shared gesture. The center is the meeting point — where all paths converge.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4">
+                    <h3 className="text-base font-bold text-primary">Assista / Watch</h3>
+                    <div className="space-y-3">
+                      <a 
+                        href="#"
+                        className="flex items-center gap-2 text-primary hover:underline text-base"
+                      >
+                        → Full Film on YouTube
+                        <span className="text-sm text-muted-foreground">Complete video available to watch</span>
+                      </a>
+                      <a 
+                        href="#"
+                        className="flex items-center gap-2 text-primary hover:underline text-base"
+                      >
+                        → Full Case Study
+                        <span className="text-sm text-muted-foreground">Detailed creative process</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              }
+            />
+          </div>
+        </BilingualSection>
+
+        {/* Separator before dissertation content */}
+        <BilingualSection bgClassName="bg-card/50">
+          <div className="py-8">
+            <div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent"></div>
+          </div>
+        </BilingualSection>
+
         <BilingualSection>
           <BilingualContent 
             portugueseContent={
