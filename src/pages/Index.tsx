@@ -23,8 +23,8 @@ const Index = () => {
         {/* Tagline below hero */}
         <section className="py-6 px-6">
           <p style={{
-            fontFamily: 'Manrope, sans-serif'
-          }} className="text-xs font-light tracking-wide text-[#DADADA]/90 text-right">[um corpo à deriva entre o ruído e o silêncio]</p>
+          fontFamily: 'Manrope, sans-serif'
+        }} className="text-xs font-light tracking-wide text-[#DADADA]/90 text-right">[um corpo à deriva entre o ruído e o silêncio]  [a body adrift between noise and silence]</p>
         </section>
 
         {/* Quando o Inconsciente Ganha Corpo */}
