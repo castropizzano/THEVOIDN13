@@ -76,6 +76,58 @@ const Autor = () => {
                 <p className="text-base text-justify leading-relaxed mt-6">
                   Membro do LowPressure™, coletivo de skatistas e produtores criativos que atuam nas interseções entre skate, cinema e videoarte contemporânea. Também colaboro com o TheWorkspace™, voltado à produção audiovisual colaborativa e independente. Navego por repertórios diversos, fluxos criativos múltiplos e práticas interdisciplinares, construindo minha bagagem intelectual a partir da prática, da escuta e da troca.
                 </p>
+                
+                <div className="mt-12 space-y-8">
+                  <h3 className="text-sm font-medium tracking-wide uppercase">Habilidades Técnicas / Technical Skills</h3>
+                  
+                  <div className="grid md:grid-cols-2 gap-8">
+                    <div>
+                      <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">[DESIGN&ARTE]</h4>
+                      <ul className="space-y-1">
+                        <li className="text-base">• Adobe Illustrator</li>
+                        <li className="text-base">• Adobe InDesign</li>
+                        <li className="text-base">• Adobe Fresco</li>
+                        <li className="text-base">• Procreate</li>
+                      </ul>
+                    </div>
+                    
+                    <div>
+                      <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">[FOTO&EDIÇÃO]</h4>
+                      <ul className="space-y-1">
+                        <li className="text-base">• Adobe Photoshop</li>
+                        <li className="text-base">• Adobe Lightroom</li>
+                      </ul>
+                    </div>
+                    
+                    <div>
+                      <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">[VÍDEO&PÓS PRODUÇÃO]</h4>
+                      <ul className="space-y-1">
+                        <li className="text-base">• Blender</li>
+                        <li className="text-base">• Adobe Premiere</li>
+                        <li className="text-base">• Adobe After Effects</li>
+                      </ul>
+                    </div>
+                    
+                    <div>
+                      <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">[EXPERIMENTAL]</h4>
+                      <ul className="space-y-1">
+                        <li className="text-base">• Ultimaker Cura</li>
+                        <li className="text-base">• UCreality 3D</li>
+                        <li className="text-base">• Figma</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div className="pt-6 border-t border-border">
+                    <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">Idiomas / Languages</h4>
+                    <p className="text-base">Português (nativo) • Espanhol (intermediário) • Inglês (intermediário)</p>
+                  </div>
+                  
+                  <div className="pt-6 border-t border-border">
+                    <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">Referencial / References</h4>
+                    <p className="text-base">Minimalista/Experimentação • Futurista/Construtivismo • Cibercultura/Semiótica • Tipografia/Infografia • Economia Criativa • Underground • Op-Art</p>
+                  </div>
+                </div>
               </>
             }
             englishContent={
@@ -96,6 +148,58 @@ const Autor = () => {
                 <p className="text-base text-justify leading-relaxed mt-6">
                   Member of LowPressure™, a collective of skateboarders and creative producers who work at the intersections between skateboarding, cinema and contemporary video art. I also collaborate with TheWorkspace™, focused on collaborative and independent audiovisual production. I navigate through diverse repertoires, multiple creative flows and interdisciplinary practices, building my intellectual background from practice, listening and exchange.
                 </p>
+                
+                <div className="mt-12 space-y-8">
+                  <h3 className="text-sm font-medium tracking-wide uppercase">Habilidades Técnicas / Technical Skills</h3>
+                  
+                  <div className="grid md:grid-cols-2 gap-8">
+                    <div>
+                      <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">[DESIGN&ART]</h4>
+                      <ul className="space-y-1">
+                        <li className="text-base">• Adobe Illustrator</li>
+                        <li className="text-base">• Adobe InDesign</li>
+                        <li className="text-base">• Adobe Fresco</li>
+                        <li className="text-base">• Procreate</li>
+                      </ul>
+                    </div>
+                    
+                    <div>
+                      <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">[PHOTO&EDITING]</h4>
+                      <ul className="space-y-1">
+                        <li className="text-base">• Adobe Photoshop</li>
+                        <li className="text-base">• Adobe Lightroom</li>
+                      </ul>
+                    </div>
+                    
+                    <div>
+                      <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">[VIDEO&POST PRODUCTION]</h4>
+                      <ul className="space-y-1">
+                        <li className="text-base">• Blender</li>
+                        <li className="text-base">• Adobe Premiere</li>
+                        <li className="text-base">• Adobe After Effects</li>
+                      </ul>
+                    </div>
+                    
+                    <div>
+                      <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">[EXPERIMENTAL]</h4>
+                      <ul className="space-y-1">
+                        <li className="text-base">• Ultimaker Cura</li>
+                        <li className="text-base">• UCreality 3D</li>
+                        <li className="text-base">• Figma</li>
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  <div className="pt-6 border-t border-border">
+                    <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">Idiomas / Languages</h4>
+                    <p className="text-base">Portuguese (native) • Spanish (intermediate) • English (intermediate)</p>
+                  </div>
+                  
+                  <div className="pt-6 border-t border-border">
+                    <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">Referencial / References</h4>
+                    <p className="text-base">Minimalist/Experimentation • Futurist/Constructivism • Cyberculture/Semiotics • Typography/Infographics • Creative Economy • Underground • Op-Art</p>
+                  </div>
+                </div>
               </>
             }
           />
