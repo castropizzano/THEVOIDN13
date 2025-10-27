@@ -17,25 +17,29 @@ const Index = () => {
       
       <main>
         {/* Hero Section - Full screen image */}
-        <section className="w-full overflow-hidden">
-          <div className="w-max mx-auto">
-            <img src={heroImage} alt="THE VOID N.13" className="h-screen w-auto object-contain block" />
-            <p
-              style={{ fontFamily: "Manrope, sans-serif" }}
-              className="pt-4 text-xs font-light tracking-wide text-[#DADADA]/90 text-right"
-            >
-              [um corpo à deriva entre o ruído e o silêncio]{" "}
-              <span className="italic">[a body adrift between noise and silence]</span>
-            </p>
-          </div>
+        <section className="w-full h-screen overflow-hidden">
+          <img src={heroImage} alt="THE VOID N.13" className="w-full h-full object-contain" />
         </section>
 
         {/* Video Section */}
         <section className="py-20 px-6">
           <div className="max-w-6xl mx-auto">
-            <div className="aspect-video w-full bg-black/50 flex items-center justify-center border border-border">
-              <p className="text-muted-foreground">Vimeo Video Placeholder</p>
-            </div>
+            <video 
+              className="w-full aspect-video bg-black"
+              controls
+              playsInline
+            >
+              <source src="/videos/intro.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            
+            <p
+              style={{ fontFamily: "Manrope, sans-serif" }}
+              className="mt-6 text-xs font-light tracking-wide text-[#DADADA]/90"
+            >
+              [um corpo à deriva entre o ruído e o silêncio]{" "}
+              <span className="italic">[a body adrift between noise and silence]</span>
+            </p>
           </div>
         </section>
 
