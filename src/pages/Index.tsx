@@ -533,7 +533,7 @@ const Index = () => {
             {/* Research Documents Grid */}
             <div className="grid md:grid-cols-2 gap-6">
               <a 
-                href="https://castropizzano.com/documents/THEVOIDN13_ShadowInterfaceBible_v1.3.pdf"
+                href="/documents/THEVOIDN13_ShadowInterfaceBible_v13.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block bg-card border border-border rounded-lg p-6 hover:border-primary transition-colors group cursor-pointer"
