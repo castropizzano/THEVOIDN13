@@ -102,21 +102,6 @@ const Dissertacao = () => {
                       A casa número 13 como símbolo de resistência ao convencional. O azar transformado em potência criativa. O estúdio opera na fronteira entre o comercial e o experimental, sem hierarquia entre ambos. Cada projeto — seja uma identidade visual para um cliente ou um filme autoral — recebe o mesmo rigor criativo.
                     </p>
                   </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-base font-bold text-primary">Reel / Showreel</h3>
-                    <a 
-                      href="https://vimeo.com/698870212"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-primary hover:underline text-base font-medium"
-                    >
-                      → Ver Reel Completo no Vimeo
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                      </svg>
-                    </a>
-                  </div>
                 </div>
               }
               englishContent={
@@ -149,23 +134,23 @@ const Dissertacao = () => {
                     </p>
                   </div>
 
-                  <div className="space-y-4">
-                    <h3 className="text-base font-bold text-primary">Reel / Showreel</h3>
-                    <a 
-                      href="https://vimeo.com/698870212"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-primary hover:underline text-base font-medium"
-                    >
-                      → Watch Full Reel on Vimeo
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                      </svg>
-                    </a>
-                  </div>
                 </div>
               }
             />
+            
+            {/* Vimeo Reel Player */}
+            <div className="mt-8 w-full">
+              <div className="aspect-video w-full">
+                <iframe 
+                  src="https://player.vimeo.com/video/698870212?title=0&byline=0&portrait=0"
+                  className="w-full h-full"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                  title="CasaTrezeStudio Reel"
+                ></iframe>
+              </div>
+            </div>
           </div>
         </BilingualSection>
 
