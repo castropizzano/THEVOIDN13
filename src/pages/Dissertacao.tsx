@@ -100,6 +100,172 @@ const Dissertacao = () => {
           />
         </BilingualSection>
 
+        {/* Methodology Section */}
+        <BilingualSection bgClassName="bg-card/30">
+          <BilingualContent 
+            portugueseContent={
+              <div className="space-y-8">
+                <h2 className="text-base font-bold">Metodologia / Lowbyrinth™ como Método</h2>
+                
+                <div className="space-y-6">
+                  <div>
+                    <h3 className="text-sm font-medium tracking-wide uppercase mb-3">Pesquisa em Arte como Práxis Sensível</h3>
+                    <p className="text-base text-justify leading-relaxed">
+                      Esta pesquisa se configura como investigação artística situada e processual, em que criar e pesquisar operam em simultaneidade. O pesquisador está implicado nos modos de viver e criar que constituem o campo, atuando desde dentro dos fluxos da criação. Trata-se de uma práxis sensível que mobiliza o corpo em sua totalidade, articulando gesto, técnica, percepção e pensamento em uma ação simultaneamente material e reflexiva.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-sm font-medium tracking-wide uppercase mb-3">Estrutura em Três Movimentos</h3>
+                    <p className="text-base text-justify leading-relaxed mb-4">
+                      A dissertação organiza-se em três movimentos entrelaçados, em sintonia com os modos de fazer e pensar que atravessam o filme LowMovie™ e as práticas do coletivo LowPressure™. Uma lógica espiralada e fragmentária, afinada ao tempo das coisas:
+                    </p>
+                    <div className="pl-6 space-y-3">
+                      <div className="border-l-2 border-primary pl-4">
+                        <p className="text-base font-medium">Movimento I — Corpo em Deriva</p>
+                        <p className="text-base text-muted-foreground">Investiga o corpo do skatista em relação ao espaço urbano, explorando a dimensão performática e sensível do gesto.</p>
+                      </div>
+                      <div className="border-l-2 border-primary pl-4">
+                        <p className="text-base font-medium">Movimento II — Coletivo em Baixo Relevo</p>
+                        <p className="text-base text-muted-foreground">Examina as dinâmicas colaborativas da crew LowPressure™, seus modos de criação partilhada e pertencimento estético.</p>
+                      </div>
+                      <div className="border-l-2 border-primary pl-4">
+                        <p className="text-base font-medium">Movimento III — Obra em Expansão</p>
+                        <p className="text-base text-muted-foreground">Analisa o LowMovie™ como dispositivo audiovisual que transborda o formato convencional e se desdobra em outras materialidades.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-sm font-medium tracking-wide uppercase mb-3">Lowbyrinth™: O Labirinto como Orientação Metodológica</h3>
+                    <p className="text-base text-justify leading-relaxed">
+                      O conceito de Lowbyrinth™ emerge organicamente do processo criativo e atua como orientador metodológico desta pesquisa. Trata-se de uma imagem simbólica que expressa caminhos improvisados, não lineares e rizomáticos do fazer coletivo. O labirinto não é obstáculo, mas campo de possibilidades criativas que se desdobra em dobra, escuta e desvio. Uma travessia espiralada que acolhe o erro, o improviso e a reconfiguração constante dos percursos.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-sm font-medium tracking-wide uppercase mb-3">Três Procedimentos Metodológicos</h3>
+                    <div className="space-y-4">
+                      <div className="bg-background/50 p-4 rounded-lg border border-border/50">
+                        <p className="text-base font-medium mb-2">1. Vivência Situada em Processos Coletivos</p>
+                        <p className="text-base text-justify leading-relaxed text-muted-foreground">
+                          Participação ativa nas dinâmicas que geram imagens, vínculos e registros. Inserção cotidiana que sustenta uma atenção contínua, em que corpo, escuta e presença operam em afinação constante.
+                        </p>
+                      </div>
+                      <div className="bg-background/50 p-4 rounded-lg border border-border/50">
+                        <p className="text-base font-medium mb-2">2. Convivência Criativa no Campo</p>
+                        <p className="text-base text-justify leading-relaxed text-muted-foreground">
+                          Acompanhamento dos ritmos e camadas do processo desde dentro, em escuta com as imagens, os sons da cidade e os encontros entre corpos e câmeras. Registro contínuo em diário digital atento às nuances do processo.
+                        </p>
+                      </div>
+                      <div className="bg-background/50 p-4 rounded-lg border border-border/50">
+                        <p className="text-base font-medium mb-2">3. Escuta Compartilhada</p>
+                        <p className="text-base text-justify leading-relaxed text-muted-foreground">
+                          Conversas abertas com integrantes do coletivo (skatistas, videomakers, colaboradores artísticos) como encontros de sintonia, em que o vínculo ativa sentidos e reverbera no percurso investigativo. Coleta de materiais produzidos pelo coletivo (vídeos, zines, áudios, imagens) sempre com consentimento informado.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-sm font-medium tracking-wide uppercase mb-3">Escuta como Operação Epistemológica</h3>
+                    <p className="text-base text-justify leading-relaxed">
+                      A metodologia ancora-se na escuta como operação epistemológica e no afeto como vibração criadora. Uma presença encarnada que produz conhecimento em relação. Os afetos atuam como forças relacionais e mobilizadoras, deslocam certezas, ativam perguntas, redesenham caminhos. É o ser afetado que move a pesquisa, emergindo na vulnerabilidade partilhada, na escuta que acolhe o outro e o espaço.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-sm font-medium tracking-wide uppercase mb-3">Criação como Pesquisa</h3>
+                    <p className="text-base text-justify leading-relaxed">
+                      Toda ação praticada numa experiência modifica quem a pratica e quem a sofre. Pesquisar arte é também um momento de criação. O LowMovie™ atua como força propulsora, convocando outra escuta, outro modo de olhar, escrever e intervir. Um gesto comprometido com o risco, com o desconhecido e com as intensidades que apenas o encontro ativa. Pesquisa e criação acontecem em simultaneidade, como modos de olhar, agir e transformar o mundo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            }
+            englishContent={
+              <div className="space-y-8">
+                <h2 className="text-base font-bold">Methodology / Lowbyrinth™ as Method</h2>
+                
+                <div className="space-y-6">
+                  <div>
+                    <h3 className="text-sm font-medium tracking-wide uppercase mb-3">Research in Art as Sensitive Praxis</h3>
+                    <p className="text-base text-justify leading-relaxed">
+                      This research is configured as situated and processual artistic investigation, in which creating and researching operate simultaneously. The researcher is implicated in the ways of living and creating that constitute the field, acting from within the flows of creation. It is a sensitive praxis that mobilizes the body in its totality, articulating gesture, technique, perception and thought in an action simultaneously material and reflective.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-sm font-medium tracking-wide uppercase mb-3">Structure in Three Movements</h3>
+                    <p className="text-base text-justify leading-relaxed mb-4">
+                      The dissertation is organized in three interwoven movements, in tune with the ways of doing and thinking that traverse the LowMovie™ film and the practices of the LowPressure™ collective. A spiral and fragmentary logic, tuned to the time of things:
+                    </p>
+                    <div className="pl-6 space-y-3">
+                      <div className="border-l-2 border-primary pl-4">
+                        <p className="text-base font-medium">Movement I — Body in Drift</p>
+                        <p className="text-base text-muted-foreground">Investigates the skater's body in relation to urban space, exploring the performative and sensitive dimension of gesture.</p>
+                      </div>
+                      <div className="border-l-2 border-primary pl-4">
+                        <p className="text-base font-medium">Movement II — Collective in Low Relief</p>
+                        <p className="text-base text-muted-foreground">Examines the collaborative dynamics of the LowPressure™ crew, their modes of shared creation and aesthetic belonging.</p>
+                      </div>
+                      <div className="border-l-2 border-primary pl-4">
+                        <p className="text-base font-medium">Movement III — Work in Expansion</p>
+                        <p className="text-base text-muted-foreground">Analyzes LowMovie™ as an audiovisual device that overflows the conventional format and unfolds into other materialities.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-sm font-medium tracking-wide uppercase mb-3">Lowbyrinth™: The Labyrinth as Methodological Orientation</h3>
+                    <p className="text-base text-justify leading-relaxed">
+                      The concept of Lowbyrinth™ emerges organically from the creative process and acts as methodological guide for this research. It is a symbolic image that expresses improvised, non-linear and rhizomatic paths of collective making. The labyrinth is not an obstacle, but a field of creative possibilities that unfolds in fold, listening and deviation. A spiral crossing that welcomes error, improvisation and the constant reconfiguration of paths.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-sm font-medium tracking-wide uppercase mb-3">Three Methodological Procedures</h3>
+                    <div className="space-y-4">
+                      <div className="bg-background/50 p-4 rounded-lg border border-border/50">
+                        <p className="text-base font-medium mb-2">1. Situated Experience in Collective Processes</p>
+                        <p className="text-base text-justify leading-relaxed text-muted-foreground">
+                          Active participation in the dynamics that generate images, bonds and records. Daily insertion that sustains continuous attention, in which body, listening and presence operate in constant tuning.
+                        </p>
+                      </div>
+                      <div className="bg-background/50 p-4 rounded-lg border border-border/50">
+                        <p className="text-base font-medium mb-2">2. Creative Coexistence in the Field</p>
+                        <p className="text-base text-justify leading-relaxed text-muted-foreground">
+                          Following the rhythms and layers of the process from within, listening to images, city sounds and encounters between bodies and cameras. Continuous recording in digital diary attentive to the nuances of the process.
+                        </p>
+                      </div>
+                      <div className="bg-background/50 p-4 rounded-lg border border-border/50">
+                        <p className="text-base font-medium mb-2">3. Shared Listening</p>
+                        <p className="text-base text-justify leading-relaxed text-muted-foreground">
+                          Open conversations with collective members (skaters, videomakers, artistic collaborators) as tuning encounters, in which the bond activates meanings and reverberates in the investigative path. Collection of materials produced by the collective (videos, zines, audios, images) always with informed consent.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 className="text-sm font-medium tracking-wide uppercase mb-3">Listening as Epistemological Operation</h3>
+                    <p className="text-base text-justify leading-relaxed">
+                      The methodology is anchored in listening as an epistemological operation and in affect as creative vibration. An embodied presence that produces knowledge in relation. Affects act as relational and mobilizing forces, displace certainties, activate questions, redesign paths. It is being affected that moves research, emerging in shared vulnerability, in listening that welcomes the other and space.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-sm font-medium tracking-wide uppercase mb-3">Creation as Research</h3>
+                    <p className="text-base text-justify leading-relaxed">
+                      Every action practiced in an experience modifies both who practices it and who experiences it. Researching art is also a moment of creation. LowMovie™ acts as a propelling force, calling for another listening, another way of looking, writing and intervening. A gesture committed to risk, to the unknown and to the intensities that only the encounter activates. Research and creation happen simultaneously, as ways of looking, acting and transforming the world.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            }
+          />
+        </BilingualSection>
+
         {/* Character Sheet - Three Views */}
         <section className="py-20 px-6">
           <div className="max-w-7xl mx-auto">

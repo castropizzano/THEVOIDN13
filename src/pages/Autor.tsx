@@ -100,8 +100,18 @@ const Autor = () => {
                 
                 <div className="mt-12 pl-6 border-l-2 border-primary">
                   <h3 className="text-sm font-medium tracking-wide uppercase mb-4">HYBRID PRAXIS / PRÁXIS HÍBRIDA</h3>
-                  <p className="text-base text-justify leading-relaxed">
-                    Criação autoral utilizando Adobe Creative Cloud (Photoshop, Illustrator, After Effects, Premiere Pro). Cocriação com Claude 3.5 Sonnet, GPT-4, Gemini, Midjourney, Adobe Firefly, Lovable. Documentação do processo. Transparência radical. Autoria compartilhada mas assinada.
+                  <p className="text-base text-justify leading-relaxed mb-4">
+                    Metodologia processual, experimental e reflexiva do projeto THEVOIDN13. Um ciclo contínuo de cinco etapas:
+                  </p>
+                  <div className="space-y-2 text-base">
+                    <p><span className="font-medium">Observação:</span> Análise do fluxo criativo e documentação de padrões.</p>
+                    <p><span className="font-medium">Cocriação:</span> Interação com IAs (Claude, Gemini, Midjourney) como extensões simbólicas.</p>
+                    <p><span className="font-medium">Documentação:</span> Registro contínuo de camadas, decisões e estados mentais.</p>
+                    <p><span className="font-medium">Reflexão:</span> Transformação dos registros em narrativas estéticas, filosóficas e técnicas.</p>
+                    <p><span className="font-medium">Expansão:</span> Compartilhamento de aprendizados através de arte, código e metodologia.</p>
+                  </div>
+                  <p className="text-base text-justify leading-relaxed mt-4">
+                    Transparência radical. Autoria compartilhada mas assinada. Pesquisa como criação.
                   </p>
                 </div>
               </>
@@ -179,8 +189,18 @@ const Autor = () => {
                 
                 <div className="mt-12 pl-6 border-l-2 border-primary">
                   <h3 className="text-sm font-medium tracking-wide uppercase mb-4">HYBRID PRAXIS / PRÁXIS HÍBRIDA</h3>
-                  <p className="text-base text-justify leading-relaxed">
-                    Authorial creation using Adobe Creative Cloud (Photoshop, Illustrator, After Effects, Premiere Pro). Co-creation with Claude 3.5 Sonnet, GPT-4, Gemini, Midjourney, Adobe Firefly, Lovable. Process documentation. Radical transparency. Shared but signed authorship.
+                  <p className="text-base text-justify leading-relaxed mb-4">
+                    Processual, experimental and reflective methodology for THEVOIDN13 project. A continuous cycle of five stages:
+                  </p>
+                  <div className="space-y-2 text-base">
+                    <p><span className="font-medium">Observation:</span> Analysis of creative flow and pattern documentation.</p>
+                    <p><span className="font-medium">Co-creation:</span> Interaction with AIs (Claude, Gemini, Midjourney) as symbolic extensions.</p>
+                    <p><span className="font-medium">Documentation:</span> Continuous recording of layers, decisions and mental states.</p>
+                    <p><span className="font-medium">Reflection:</span> Transformation of records into aesthetic, philosophical and technical narratives.</p>
+                    <p><span className="font-medium">Expansion:</span> Sharing learnings through art, code and methodology.</p>
+                  </div>
+                  <p className="text-base text-justify leading-relaxed mt-4">
+                    Radical transparency. Shared but signed authorship. Research as creation.
                   </p>
                 </div>
               </>
