@@ -627,17 +627,17 @@ const Index = () => {
 
             {/* Main and Technical Documentation */}
             <div className="grid md:grid-cols-2 gap-12 mt-16">
-              <div className="space-y-8">
+              <div className="space-y-6">
                 <h3 className="text-xl font-bold">Documentos Principais</h3>
                 
-                <div className="space-y-6">
+                <div className="space-y-4">
                   <a 
                     href="https://github.com/castropizzano/thevoidn13/blob/main/README.md"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block hover:text-primary transition-colors"
                   >
-                    <h4 className="text-base font-bold mb-1">README.md</h4>
+                    <h4 className="text-base font-bold">README.md</h4>
                     <p className="text-sm text-muted-foreground">Manifesto e estrutura do projeto</p>
                   </a>
                   
@@ -647,7 +647,7 @@ const Index = () => {
                     rel="noopener noreferrer"
                     className="block hover:text-primary transition-colors"
                   >
-                    <h4 className="text-base font-bold mb-1">LICENSE.md</h4>
+                    <h4 className="text-base font-bold">LICENSE.md</h4>
                     <p className="text-sm text-muted-foreground">Licença CC BY-NC-SA 4.0</p>
                   </a>
                   
@@ -657,8 +657,8 @@ const Index = () => {
                     rel="noopener noreferrer"
                     className="block hover:text-primary transition-colors"
                   >
-                    <h4 className="text-base font-bold mb-1">CITATION.cff</h4>
-                    <p className="text-sm text-muted-foreground">Como citar academicamente</p>
+                    <h4 className="text-base font-bold">CITATION.cff</h4>
+                    <p className="text-sm text-muted-foreground">Citação automatizada GitHub</p>
                   </a>
                   
                   <a 
@@ -667,23 +667,33 @@ const Index = () => {
                     rel="noopener noreferrer"
                     className="block hover:text-primary transition-colors"
                   >
-                    <h4 className="text-base font-bold mb-1">METODOLOGIA_PESQUISA.md</h4>
-                    <p className="text-sm text-muted-foreground">Métodos e procedimentos</p>
+                    <h4 className="text-base font-bold">METODOLOGIA_PESQUISA.md</h4>
+                    <p className="text-sm text-muted-foreground">Métodos e procedimentos de pesquisa</p>
                   </a>
                 </div>
               </div>
 
-              <div className="space-y-8">
+              <div className="space-y-6">
                 <h3 className="text-xl font-bold">Documentação Técnica</h3>
                 
-                <div className="space-y-6">
+                <div className="space-y-4">
+                  <a 
+                    href="https://github.com/castropizzano/thevoidn13/blob/main/docs/FILOSOFIA_DO_PROJETO.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block hover:text-primary transition-colors"
+                  >
+                    <h4 className="text-base font-bold">FILOSOFIA_DO_PROJETO.md</h4>
+                    <p className="text-sm text-muted-foreground">Justificativa das escolhas conceituais</p>
+                  </a>
+                  
                   <a 
                     href="https://github.com/castropizzano/thevoidn13/blob/main/docs/DIREITOS_AUTORAIS.md"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block hover:text-primary transition-colors"
                   >
-                    <h4 className="text-base font-bold mb-1">DIREITOS_AUTORAIS.md</h4>
+                    <h4 className="text-base font-bold">DIREITOS_AUTORAIS.md</h4>
                     <p className="text-sm text-muted-foreground">Ética e transparência da co-criação</p>
                   </a>
                   
@@ -693,8 +703,8 @@ const Index = () => {
                     rel="noopener noreferrer"
                     className="block hover:text-primary transition-colors"
                   >
-                    <h4 className="text-base font-bold mb-1">COMO_CITAR.md</h4>
-                    <p className="text-sm text-muted-foreground">Guia de citação acadêmica</p>
+                    <h4 className="text-base font-bold">COMO_CITAR.md</h4>
+                    <p className="text-sm text-muted-foreground">Guia completo de citação acadêmica</p>
                   </a>
                   
                   <a 
@@ -703,8 +713,8 @@ const Index = () => {
                     rel="noopener noreferrer"
                     className="block hover:text-primary transition-colors"
                   >
-                    <h4 className="text-base font-bold mb-1">REFERENCIAS_BIBLIOGRAFICAS.md</h4>
-                    <p className="text-sm text-muted-foreground">Bibliografia completa</p>
+                    <h4 className="text-base font-bold">REFERENCIAS_BIBLIOGRAFICAS.md</h4>
+                    <p className="text-sm text-muted-foreground">Bibliografia completa do projeto</p>
                   </a>
                   
                   <a 
@@ -713,7 +723,7 @@ const Index = () => {
                     rel="noopener noreferrer"
                     className="block hover:text-primary transition-colors"
                   >
-                    <h4 className="text-base font-bold mb-1">Repositório Completo</h4>
+                    <h4 className="text-base font-bold">Repositório Completo</h4>
                     <p className="text-sm text-muted-foreground">Acesso a todos os arquivos no GitHub</p>
                   </a>
                 </div>
