@@ -291,26 +291,6 @@ const Dissertacao = () => {
                       O labirinto é a vida em seus encontros, transformações e realizações. Percursos colaborativos, improvisados e não-lineares. Cada volta representa a jornada da crew pelos picos de Curitiba. Cada linha é uma manobra, um gesto compartilhado. O centro é o encontro — onde todos os caminhos convergem.
                     </p>
                   </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-base font-bold text-primary">Assista / Watch</h3>
-                    <div className="space-y-3">
-                      <a 
-                        href="#"
-                        className="flex items-center gap-2 text-primary hover:underline text-base"
-                      >
-                        → Filme Completo no YouTube
-                        <span className="text-sm text-muted-foreground">Full Video disponível para assistir</span>
-                      </a>
-                      <a 
-                        href="#"
-                        className="flex items-center gap-2 text-primary hover:underline text-base"
-                      >
-                        → Case Completo
-                        <span className="text-sm text-muted-foreground">Processo criativo detalhado</span>
-                      </a>
-                    </div>
-                  </div>
                 </div>
               }
               englishContent={
@@ -348,26 +328,6 @@ const Dissertacao = () => {
                     <p className="text-base leading-relaxed text-justify mt-4">
                       The labyrinth is life in its encounters, transformations, and realizations. Collaborative, improvised, and non-linear paths. Each turn represents the crew's journey through Curitiba's spots. Each line is a trick, a shared gesture. The center is the meeting point — where all paths converge.
                     </p>
-                  </div>
-
-                  <div className="space-y-4">
-                    <h3 className="text-base font-bold text-primary">Assista / Watch</h3>
-                    <div className="space-y-3">
-                      <a 
-                        href="#"
-                        className="flex items-center gap-2 text-primary hover:underline text-base"
-                      >
-                        → Full Film on YouTube
-                        <span className="text-sm text-muted-foreground">Complete video available to watch</span>
-                      </a>
-                      <a 
-                        href="#"
-                        className="flex items-center gap-2 text-primary hover:underline text-base"
-                      >
-                        → Full Case Study
-                        <span className="text-sm text-muted-foreground">Detailed creative process</span>
-                      </a>
-                    </div>
                   </div>
                 </div>
               }
