@@ -131,13 +131,7 @@ Trajetória de Castro Pizzano (цастро™):
 - Portfolio profissional e links
 
 ### Portfolio (Vídeos)
-Catálogo completo de trabalhos audiovisuais integrado via Vimeo API:
-- **Curta-Metragem / Experimental** — obras autorais e narrativas conceituais
-- **Videoperformance** — performances corporais e videoarte
-- **Documentário** — registros e minidocs
-- **Brandbook / Comercial** — projetos de identidade visual e institucionais
-
-Vídeos organizados por categorias, com player integrado e metadata.
+Catálogo completo de trabalhos audiovisuais integrado via Vimeo API. Vídeos organizados por data de upload (mais recentes primeiro), com player integrado e metadata completa.
 
 ───────────────────────────────────────────────────────────────  
 ## ESTRUTURA TÉCNICA  
@@ -155,7 +149,7 @@ Vídeos organizados por categorias, com player integrado e metadata.
 /                  → Home
 /dissertacao       → LowMovie™ + Processos Matriciais
 /autor             → Castro Pizzano (цастро™)
-/portfolio         → Catálogo de Vídeos (Vimeo API)
+/videos            → Video Portfolio (Vimeo API)
 ```
 
 **Hierarquia Tipográfica:**
