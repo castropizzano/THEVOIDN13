@@ -15,14 +15,16 @@ const Index = () => {
       <Header />
       
       <main>
-        {/* Hero Section - Full screen image with tagline */}
-        <section className="relative w-full h-screen overflow-hidden">
+        {/* Hero Section - Full screen image */}
+        <section className="w-full h-screen overflow-hidden">
           <img src={heroImage} alt="THE VOID N.13" className="w-full h-full object-contain" />
-          <div className="absolute inset-x-0 bottom-16 text-center px-6">
-            <p style={{
+        </section>
+
+        {/* Tagline below hero */}
+        <section className="py-6 px-6">
+          <p style={{
             fontFamily: 'Manrope, sans-serif'
-          }} className="text-base font-light tracking-wide text-[#DADADA]/90 drop-shadow-lg text-right">[um corpo à deriva entre o ruído e o silêncio]</p>
-          </div>
+          }} className="text-xs font-light tracking-wide text-[#DADADA]/90 text-right">[um corpo à deriva entre o ruído e o silêncio]</p>
         </section>
 
         {/* Quando o Inconsciente Ganha Corpo */}
