@@ -10,8 +10,8 @@ export const BilingualSection = ({ children, className = "", bgClassName = "" }:
   const otherClasses = className.replace(/py-\d+/g, "").trim();
   
   return (
-    <section className={`${customPadding} px-6 ${bgClassName}`}>
-      <div className={`max-w-6xl mx-auto ${otherClasses}`}>
+    <section className={`${customPadding} ${bgClassName}`}>
+      <div className={`max-w-6xl mx-auto px-6 ${otherClasses}`}>
         {children}
       </div>
     </section>

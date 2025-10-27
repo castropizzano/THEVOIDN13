@@ -23,8 +23,8 @@ const Index = () => {
         </section>
 
         {/* Video Section */}
-        <section className="pt-20 pb-8 px-6">
-          <div className="max-w-6xl mx-auto space-y-8">
+        <section className="pt-20 pb-8">
+          <div className="max-w-6xl mx-auto px-6 space-y-8">
             <h1 className="text-sm font-light tracking-wider uppercase">
               THEVOIDN13 [Shadow_Interface_Bible_v13]
             </h1>
@@ -135,8 +135,8 @@ const Index = () => {
         </BilingualSection>
 
         {/* Character Sheet - Three Views */}
-        <section className="py-20 px-6">
-          <div className="max-w-7xl mx-auto">
+        <section className="py-20">
+          <div className="max-w-6xl mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="aspect-[3/4] overflow-hidden border border-border rounded-lg">
                 <img src={conceptFront} alt="Front View" className="w-full h-full object-cover" />
