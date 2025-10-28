@@ -292,6 +292,93 @@ const Index = () => {
           />
         </BilingualSection>
 
+        {/* Character Sheet Section */}
+        <BilingualSection className="py-16">
+          <div className="space-y-12">
+            {/* Title */}
+            <div className="space-y-1">
+              <h2 className="text-base font-bold">Character Sheet</h2>
+              <h3 className="text-sm font-medium text-foreground/80">THE VOID No. 13</h3>
+            </div>
+
+            {/* Three Character Views */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="border border-border rounded-lg overflow-hidden bg-background/50">
+                <img 
+                  src={conceptFront} 
+                  alt="THEVOIDN13 Front View" 
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+              <div className="border border-border rounded-lg overflow-hidden bg-background/50">
+                <img 
+                  src={conceptSide} 
+                  alt="THEVOIDN13 Side View" 
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+              <div className="border border-border rounded-lg overflow-hidden bg-background/50">
+                <img 
+                  src={conceptBack} 
+                  alt="THEVOIDN13 Back View" 
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+            </div>
+
+            {/* Three Descriptive Columns */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+              {/* Column 1: Name/Codename */}
+              <div className="border-2 border-primary/60 rounded-lg p-6 space-y-4">
+                <div className="space-y-1">
+                  <h4 className="text-sm font-bold">Nome / Codinome</h4>
+                  <p className="text-xs italic text-foreground/70">Name / Codename</p>
+                </div>
+                <div className="space-y-3 text-sm leading-relaxed">
+                  <p className="text-justify">
+                    THE VOID N.13 é o décimo-terceiro andar do inconsciente — um espaço entre mundos, onde o ego se apaga para que a imagem respire. Não é personagem nem avatar: é um estado de travessia. Um símbolo de ruptura, silêncio e renascimento. "The Void" é o nome que restou depois de todos os outros já morreram. O número treze é a assinatura do que retorna depois do fim. No décimo-terceiro andar, o corpo é só eco — e o eco, só memória.
+                  </p>
+                  <p className="text-justify italic text-foreground/80">
+                    THE VOID N.13 is the thirteenth floor of the unconscious — a space between worlds, where the ego fades so the image can breathe. It is neither character nor avatar: it is a state of crossing, a symbol of rupture, silence, and rebirth. "The Void" is the name that remains after all others have died. Thirteen is the signature of what returns after the end. On the thirteenth floor, the body is only echo — and the echo, only memory.
+                  </p>
+                </div>
+              </div>
+
+              {/* Column 2: Archetype/Nature */}
+              <div className="border-2 border-primary/60 rounded-lg p-6 space-y-4">
+                <div className="space-y-1">
+                  <h4 className="text-sm font-bold">Arquétipo / Natureza</h4>
+                  <p className="text-xs italic text-foreground/70">Archetype / Naturete</p>
+                </div>
+                <div className="space-y-3 text-sm leading-relaxed">
+                  <p className="text-justify">
+                    THE VOID N.13 encarna a Sombra Jungiana — não como vilão, mas como espelho do que foi reprimido. É o corpo caminhando entre a razão e o delírio, entre o controle e o colapso. Sua natureza é liminar: existe no intervalo entre o som e o silêncio, entre o gesto e o pensamento. É o Errante, o que não pertence a lugar algum, e o Redentor Subterrâneo, aquele que carrega a escuridão para devolvê-la transformada. Sua presença é ritual e resistência — um lembrete de que o inconsciente também cria, também respira, também grita.
+                  </p>
+                  <p className="text-justify italic text-foreground/80">
+                    THE VOID N.13 embodies the Jungian Shadow — not as a villain, but as a mirror of what has been repressed. It is the body walking between reason and delirium, between control and collapse. Its nature is liminal: existing in the space between sound and silence, between gesture and thought. It is the Wanderer, belonging nowhere, and the Subterranean Redeemer, carrying darkness only to return it transformed. Its presence is ritual and resistance — a reminder that the unconscious also creates, also breathes, also screams.
+                  </p>
+                </div>
+              </div>
+
+              {/* Column 3: Symbolic Function */}
+              <div className="border-2 border-primary/60 rounded-lg p-6 space-y-4">
+                <div className="space-y-1">
+                  <h4 className="text-sm font-bold">Função Simbólica</h4>
+                  <p className="text-xs italic text-foreground/70">Symbolic Function</p>
+                </div>
+                <div className="space-y-3 text-sm leading-relaxed">
+                  <p className="text-justify">
+                    A função simbólica de THE VOID N.13 é dar corpo ao invisível — traduzir o silêncio em gesto, o inconsciente em imagem. Ele é o espelho do caos contemporâneo: um ser que surge quando o verbo deixa de fazer sentido, quando a linguagem não sustenta mais o peso do real. Sua presença não explica — convoca. Cada aparição é um lembrete de que o vazio não é ausência, mas potência latente. Ele existe para revelar o que foi reprimido — devolver densidade ao que o mundo transformou em ruído. THE VOID N.13 é o instante em que o erro se torna ritual e o colapso, criação.
+                  </p>
+                  <p className="text-justify italic text-foreground/80">
+                    The symbolic function of THE VOID N.13 is to give body to the invisible — to translate silence into gesture, the unconscious into image. It is the mirror of contemporary chaos: a being that appears when words no longer hold the weight of the real. Its presence does not explain — it summons. Each appearance is a reminder that the void is not absence, but latent power. It exists to reveal what has been repressed — to return density to what the world has turned into noise. THE VOID N.13 is the moment when error becomes ritual and collapse becomes creation.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </BilingualSection>
+
         {/* Triad: Vazio, 13, Coletivo */}
         <BilingualSection>
           <BilingualContent
