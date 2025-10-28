@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { Button } from './ui/button';
-import { Dialog, DialogContent } from './ui/dialog';
+import { Dialog, DialogContent, DialogTitle, DialogDescription } from './ui/dialog';
 import { Volume2, VolumeX } from 'lucide-react';
 import voidCityFront from '@/assets/void-city-front.png';
 import voidCityBack from '@/assets/void-city-back.png';
@@ -206,6 +206,11 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
     return (
       <Dialog open={open} onOpenChange={onOpenChange}>
         <DialogContent className="max-w-6xl p-0 bg-black border-2 border-destructive/30 overflow-hidden">
+          <DialogTitle className="sr-only">Oráculo Criativo</DialogTitle>
+          <DialogDescription className="sr-only">
+            Descubra seu arquétipo criativo dominante através de seis perguntas
+          </DialogDescription>
+          
           <div className="relative min-h-[600px] flex items-center">
             {/* Background Image */}
             <div className="absolute inset-0">
@@ -283,10 +288,15 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
     
     return (
       <Dialog open={open} onOpenChange={onOpenChange}>
-        <DialogContent className="max-w-5xl p-0 bg-black border-2 border-destructive/30 overflow-hidden">
+        <DialogContent className="max-w-5xl max-h-[90vh] overflow-y-auto p-0 bg-black border-2 border-destructive/30">
+          <DialogTitle className="sr-only">Resultado do Oráculo Criativo</DialogTitle>
+          <DialogDescription className="sr-only">
+            Seu arquétipo criativo dominante foi revelado
+          </DialogDescription>
+          
           <div className="relative">
             {/* Background */}
-            <div className="absolute inset-0">
+            <div className="absolute inset-0 pointer-events-none">
               <img 
                 src={voidGuide.imageBack} 
                 alt="City"
@@ -295,22 +305,22 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
               <div className="absolute inset-0 bg-gradient-to-b from-black via-black/95 to-black"></div>
             </div>
 
-            <div className="relative z-10 p-12 space-y-8">
+            <div className="relative z-10 p-8 md:p-12 space-y-6">
               {/* Audio Control */}
               <button
                 onClick={toggleAudio}
-                className="absolute top-4 right-4 p-2 text-muted-foreground hover:text-foreground transition-colors"
+                className="absolute top-4 right-4 p-2 text-muted-foreground hover:text-foreground transition-colors z-20"
               >
                 {audioMuted ? <VolumeX size={20} /> : <Volume2 size={20} />}
               </button>
 
               <div className="text-center space-y-3">
-                <h2 className="text-5xl font-bold text-destructive tracking-tight">{result.name}</h2>
-                <h3 className="text-2xl text-muted-foreground/60 italic font-light">{result.nameEn}</h3>
+                <h2 className="text-4xl md:text-5xl font-bold text-destructive tracking-tight">{result.name}</h2>
+                <h3 className="text-xl md:text-2xl text-muted-foreground/60 italic font-light">{result.nameEn}</h3>
               </div>
 
               <div className="flex justify-center">
-                <div className="w-80 h-[500px] relative">
+                <div className="w-60 h-[350px] md:w-80 md:h-[450px] relative">
                   <div className="absolute inset-0 bg-destructive/10 blur-2xl"></div>
                   <img 
                     src={voidGuide.imageFront} 
@@ -322,31 +332,31 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
 
             <div className="space-y-6 max-w-3xl mx-auto">
               <div className="space-y-3 bg-black/40 p-6 rounded-lg border border-destructive/20">
-                <p className="text-lg text-foreground leading-relaxed">
+                <p className="text-base md:text-lg text-foreground leading-relaxed">
                   {result.description}
                 </p>
-                <p className="text-base text-muted-foreground/80 italic leading-relaxed">
+                <p className="text-sm md:text-base text-muted-foreground/80 italic leading-relaxed">
                   {result.descriptionEn}
                 </p>
               </div>
 
               <div className="p-6 bg-destructive/10 border-l-4 border-destructive rounded-r space-y-2">
-                <p className="text-base font-bold text-foreground">
+                <p className="text-sm md:text-base font-bold text-foreground">
                   {result.message}
                 </p>
-                <p className="text-sm text-muted-foreground italic">
+                <p className="text-xs md:text-sm text-muted-foreground italic">
                   {result.messageEn}
                 </p>
               </div>
 
               <div className="pt-4 space-y-3 bg-black/40 p-6 rounded-lg border border-destructive/20">
-                <p className="text-sm text-muted-foreground/70 uppercase tracking-wider">
+                <p className="text-xs md:text-sm text-muted-foreground/70 uppercase tracking-wider">
                   Distribuição dos arquétipos / Archetype distribution
                 </p>
                 <div className="space-y-3">
                   {Object.entries(scores).map(([key, value]) => (
                     <div key={key} className="flex items-center gap-4">
-                      <span className="text-sm text-foreground w-32 uppercase tracking-wide">
+                      <span className="text-xs md:text-sm text-foreground w-24 md:w-32 uppercase tracking-wide">
                         {archetypes[key as keyof typeof archetypes].name.split(' ').pop()}
                       </span>
                       <div className="flex-1 h-3 bg-muted/20 rounded-full overflow-hidden border border-destructive/20">
@@ -355,7 +365,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
                           style={{ width: `${(value / Math.max(...Object.values(scores))) * 100}%` }}
                         />
                       </div>
-                      <span className="text-sm text-muted-foreground/70 w-12 text-right">{value}</span>
+                      <span className="text-xs md:text-sm text-muted-foreground/70 w-12 text-right">{value}</span>
                     </div>
                   ))}
                 </div>
@@ -395,7 +405,12 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-6xl p-0 bg-black border-2 border-destructive/30 overflow-hidden">
+      <DialogContent className="max-w-6xl max-h-[90vh] overflow-y-auto p-0 bg-black border-2 border-destructive/30">
+        <DialogTitle className="sr-only">Oráculo Criativo - Pergunta {currentQuestion + 1}</DialogTitle>
+        <DialogDescription className="sr-only">
+          {question.textEn}
+        </DialogDescription>
+        
         <div className="relative">
           {/* Background */}
           <div className="absolute inset-0">
