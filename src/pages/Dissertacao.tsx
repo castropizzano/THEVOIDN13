@@ -357,9 +357,7 @@ const Dissertacao = () => {
         {/* Methodology Section */}
         <BilingualSection bgClassName="bg-card/30">
           <BilingualContent portugueseContent={<div className="space-y-8">
-                <h2 className="text-base font-bold">METODOLOGIA
-LOWBYRINTH™ COMO MÉTODO
-          </h2>
+                <h2 className="text-base font-bold">METODOLOGIA [LOWBYRINTH™ COMO MÉTODO]</h2>
                 
                 <div className="space-y-6">
                   <div>
