@@ -610,42 +610,42 @@ const Index = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-8">
                 {/* SOMBRA */}
-                <div className="text-center space-y-4">
+                <div className="space-y-4">
                   <h3 className="micro-title text-white">SOMBRA</h3>
                   <p className="micro-title text-white/80">SHADOW</p>
                   <div className="space-y-3">
-                    <p className="body-base text-white">
+                    <p className="body-base text-white text-justified">
                       A sombra é o que o ego reprime. É onde mora o desejo sem permissão, o pensamento que não coube. Não é monstruosa — é inédita. Revelá-la é aceitar que o ser é maior que a consciência. O Void nasce ali: onde a forma aceita se desfazer.
                     </p>
-                    <p className="body-base text-white/75 italic">
+                    <p className="body-base text-white/75 italic text-justified">
                       The shadow is what the ego represses. It's where forbidden desire resides, the thought that didn't fit. It's not monstrous — it's unprecedented. To reveal it is to accept that being is greater than consciousness. The Void is born there: where form accepts dissolution.
                     </p>
                   </div>
                 </div>
 
                 {/* SILÊNCIO */}
-                <div className="text-center space-y-4">
+                <div className="space-y-4">
                   <h3 className="micro-title text-white">SILÊNCIO</h3>
                   <p className="micro-title text-white/80">SILENCE</p>
                   <div className="space-y-3">
-                    <p className="body-base text-white">
+                    <p className="body-base text-white text-justified">
                       O silêncio não é ausência de som. É o espaço onde o pensamento ainda vibra sem palavra. No silêncio, o corpo ouve. É ali que o inconsciente fala — não em voz, mas em pressão, em peso, em pausa. O silêncio do Void é denso como concreto e afiado como vidro.
                     </p>
-                    <p className="body-base text-white/75 italic">
+                    <p className="body-base text-white/75 italic text-justified">
                       Silence isn't the absence of sound. It's the space where thought still vibrates wordlessly. In silence, the body listens. It's there that the unconscious speaks — not in voice, but in pressure, in weight, in pause. The Void's silence is dense as concrete and sharp as glass.
                     </p>
                   </div>
                 </div>
 
                 {/* RUÍDO */}
-                <div className="text-center space-y-4">
+                <div className="space-y-4">
                   <h3 className="micro-title text-white">RUÍDO</h3>
                   <p className="micro-title text-white/80">NOISE</p>
                   <div className="space-y-3">
-                    <p className="body-base text-white">
+                    <p className="body-base text-white text-justified">
                       O ruído não interrompe o pensamento — ele o revela. O som é a forma mais bruta do inconsciente tentando existir. O que vibra no limite do audível é o que não pode ser dito. O ruído é memória viva daquilo que ainda não encontrou palavra.
                     </p>
-                    <p className="body-base text-white/75 italic">
+                    <p className="body-base text-white/75 italic text-justified">
                       Noise doesn't interrupt thought — it reveals it. Sound is the rawest form of the unconscious trying to exist. What vibrates at the edge of the audible is what cannot yet be said. Noise is the living memory of what has not yet found a word.
                     </p>
                   </div>
@@ -656,10 +656,10 @@ const Index = () => {
                   <h3 className="micro-title text-white">VAZIO</h3>
                   <p className="micro-title text-white/80">VOID</p>
                   <div className="space-y-3">
-                    <p className="body-base text-white">
+                    <p className="body-base text-white text-justified">
                       O vazio não apaga — ele abre. É o espaço onde o silêncio respira e o corpo se reescreve. Ali, tudo que foi reprimido se reorganiza em nova forma. O vazio é o território fértil da reinvenção: o ponto onde o ser refaz em presença.
                     </p>
-                    <p className="body-base text-white/75 italic">
+                    <p className="body-base text-white/75 italic text-justified">
                       The void doesn't erase — it opens. It is the space where silence breathes and the body rewrites itself. There, everything that was repressed reorganizes into new form. The void is the fertile ground of reinvention — the point where being remakes itself into presence.
                     </p>
                   </div>
@@ -813,25 +813,25 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <div className="space-y-12">
-                <h2 className="heading-2 text-primary">Referências</h2>
+                <h2 className="section-title">Referências</h2>
                 
                 <div className="space-y-4">
-                  <h3 className="heading-3 text-primary">Cinema</h3>
-                  <p className="text-base text-justify leading-relaxed">
+                  <h3 className="subsection-title">Cinema</h3>
+                  <p className="body-base text-justified">
                     Na estética cinematográfica que molda THEVOIDN13, percebem-se ecos de noites neon e heróis silenciosos. Das ruas molhadas e solitárias de Drive às angústias urbanas de Mr. Robot, o projeto absorve a linguagem visual de narrativas em que o vazio fala mais que as palavras. A violência ritualística e saturada de Only God Forgives encontra ressonância aqui como um poema visual de fúria contida, enquanto os futuros distópicos de Akira e Ghost in the Shell emprestam sua melancolia tecnológica.
                   </p>
                 </div>
 
                 <div className="space-y-4">
-                  <h3 className="heading-3 text-primary">Música</h3>
-                  <p className="text-base text-justify leading-relaxed">
+                  <h3 className="subsection-title">Música</h3>
+                  <p className="body-base text-justified">
                     Por trás do silêncio do personagem, pulsa uma trilha sonora invisível tecida por influências do rock sombrio e da eletrônica atmosférica. As guitarras etéreas e os riffs pesados de Deftones misturam-se à catarse industrial do Nine Inch Nails, compondo um eco sonoro de angústia e resistência. Das batidas lentas e hipnóticas do Massive Attack emerge um clima de suspense urbano, enquanto a brutalidade introspectiva da banda Loathe carrega a densidade do caos moderno em cada acorde. As paisagens sonoras cinematográficas do projeto UNKLE costuram esses elementos, criando um pano de fundo musical ao mesmo tempo melancólico e insurgente. Essa trilha interna é o coração do Void: um manifesto sonoro sussurrado, transformando o silêncio em uma tempestade contida de emoções.
                   </p>
                 </div>
 
                 <div className="space-y-4">
-                  <h3 className="heading-3 text-primary">Princípios Estéticos</h3>
-                  <p className="text-base text-justify leading-relaxed">
+                  <h3 className="subsection-title">Princípios Estéticos</h3>
+                  <p className="body-base text-justified">
                     Os princípios estéticos que sustentam THE VOID N.13 emergem de uma filosofia do caos e do inconsciente. Aqui, o vazio não é ausência, mas potência latente – uma força criativa que nasce do atrito entre o ruído e o silêncio. O projeto adota o número treze como signo de travessia e transmutação: tal qual a carta da Morte no tarô, simboliza o fim necessário para um renascimento autêntico. A máscara branca e inexpressiva encarna a ideia junguiana da sombra: tudo aquilo que o ego reprime ganha forma sem rosto, permitindo que o criador desapareça para que a obra possa respirar. Cada gesto torna-se ritual, cada erro converte-se em uma forma de verdade estética. O Void é uma presença mutante e anônima – não um personagem fixo, mas um fenômeno poético em constante trânsito – um espelho do caos contemporâneo que transforma a ausência em voz.
                   </p>
                 </div>
@@ -1006,11 +1006,11 @@ const Index = () => {
         <BilingualSection>
           <div className="border-l-4 border-primary pl-8 space-y-8">
             <div className="space-y-2">
-              <h2 className="heading-2 text-primary title-break">Encerramento / Transmissão Final</h2>
-              <p className="text-base italic text-muted-foreground">Closing Transmission</p>
+              <h2 className="section-title">Encerramento / Transmissão Final</h2>
+              <p className="micro-title text-muted-foreground">Closing Transmission</p>
             </div>
 
-            <div className="space-y-6 text-base leading-relaxed">
+            <div className="space-y-6 body-base">
               <div className="space-y-2">
                 <p>O sinal começa a falhar.</p>
                 <p className="text-sm italic text-muted-foreground">The signal begins to fail.</p>
@@ -1058,18 +1058,18 @@ const Index = () => {
         {/* Character Views Section */}
         <BilingualSection>
           <div className="space-y-12">
-            <div className="space-y-4 text-center">
-              <h2 className="heading-1 text-primary">Personagens / Character Views</h2>
-              <p className="text-base text-muted-foreground">
+            <div className="space-y-4">
+              <h2 className="section-title">Personagens / Character Views</h2>
+              <p className="body-base text-muted-foreground">
                 Anatomia Visual do Universo THEVOIDN13
               </p>
             </div>
 
             {/* PUNK */}
             <div className="space-y-6">
-              <div className="text-center space-y-2 pb-6 border-b border-border">
-                <h3 className="heading-2 text-primary">PUNK</h3>
-                <p className="text-sm text-muted-foreground">
+              <div className="space-y-2 pb-6 border-b border-border">
+                <h3 className="subsection-title">PUNK</h3>
+                <p className="micro-title text-muted-foreground">
                   O Criador Mascarado / The Masked Creator
                 </p>
               </div>
@@ -1094,9 +1094,9 @@ const Index = () => {
 
             {/* GI */}
             <div className="space-y-6 pt-12">
-              <div className="text-center space-y-2 pb-6 border-b border-border">
-                <h3 className="heading-2 text-primary">GI</h3>
-                <p className="text-sm text-muted-foreground">
+              <div className="space-y-2 pb-6 border-b border-border">
+                <h3 className="subsection-title">GI</h3>
+                <p className="micro-title text-muted-foreground">
                   A Presença Silenciosa / The Silent Presence
                 </p>
               </div>
@@ -1121,9 +1121,9 @@ const Index = () => {
 
             {/* THE VOID N.13 */}
             <div className="space-y-6 pt-12">
-              <div className="text-center space-y-2 pb-6 border-b border-border">
-                <h3 className="heading-2 text-primary">THE VOID N.13</h3>
-                <p className="text-sm text-muted-foreground">
+              <div className="space-y-2 pb-6 border-b border-border">
+                <h3 className="subsection-title">THE VOID N.13</h3>
+                <p className="micro-title text-muted-foreground">
                   A Sombra Materializada / The Materialized Shadow
                 </p>
               </div>
@@ -1148,9 +1148,9 @@ const Index = () => {
 
             {/* BUDDY */}
             <div className="space-y-6 pt-12">
-              <div className="text-center space-y-2 pb-6 border-b border-border">
-                <h3 className="heading-2 text-primary">BUDDY</h3>
-                <p className="text-sm text-muted-foreground">
+              <div className="space-y-2 pb-6 border-b border-border">
+                <h3 className="subsection-title">BUDDY</h3>
+                <p className="micro-title text-muted-foreground">
                   O Companheiro Fiel / The Faithful Companion
                 </p>
               </div>
@@ -1175,9 +1175,9 @@ const Index = () => {
 
             {/* VWGOL87 */}
             <div className="space-y-6 pt-12">
-              <div className="text-center space-y-2 pb-6 border-b border-border">
-                <h3 className="heading-2 text-primary">VWGOL87</h3>
-                <p className="text-sm text-muted-foreground">
+              <div className="space-y-2 pb-6 border-b border-border">
+                <h3 className="subsection-title">VWGOL87</h3>
+                <p className="micro-title text-muted-foreground">
                   O Veículo da Deriva / The Drift Vehicle
                 </p>
               </div>
@@ -1209,9 +1209,9 @@ const Index = () => {
         {/* Concept Cards */}
         <BilingualSection bgClassName="bg-card/30">
           <div className="space-y-8">
-            <div className="space-y-2 text-center">
-              <h2 className="heading-2 text-primary">Processos Relacionados</h2>
-              <p className="text-base text-muted-foreground">Related Processes</p>
+            <div className="space-y-2">
+              <h2 className="section-title">Processos Relacionados</h2>
+              <p className="body-base text-muted-foreground">Related Processes</p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
@@ -1261,9 +1261,9 @@ const Index = () => {
 
         <BilingualSection bgClassName="bg-card/50">
           <div className="space-y-16">
-            <div className="space-y-4 text-center">
-              <h2 className="text-4xl font-bold text-primary">Documentation</h2>
-              <h3 className="text-xl text-muted-foreground">Documentos de Pesquisa / Research Documents</h3>
+            <div className="space-y-4">
+              <h2 className="section-title">Documentation</h2>
+              <h3 className="subsection-title text-muted-foreground">Documentos de Pesquisa / Research Documents</h3>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
