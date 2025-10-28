@@ -379,6 +379,118 @@ const Index = () => {
           </div>
         </BilingualSection>
 
+        {/* Psychology: The Shadow as Language */}
+        <section className="py-20 bg-gradient-to-b from-red-900/90 to-red-950/90">
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="space-y-8">
+              {/* Title */}
+              <div className="space-y-2">
+                <h2 className="text-base font-bold text-white">Psicologia: A Sombra Como Linguagem</h2>
+                <p className="text-sm italic text-white/90">Psychology: The Shadow as Language</p>
+              </div>
+
+              {/* Main Text - Portuguese */}
+              <p className="text-base leading-relaxed text-white/95 text-justify">
+                O Void é sombra, e a sombra é tudo o que o ego não consegue sustentar. Jung dizia que ela não é o mal — é o que ainda não foi vivido. Talvez o projeto seja exatamente isso: uma tentativa de viver o que eu vinha evitando. Dar forma àquilo que o mundo me ensinou a esconder. A sombra é a memória do que não se permitiu existir — e o cinema, aqui, é o corpo dessa revelação.
+              </p>
+
+              {/* Main Text - English */}
+              <p className="text-base leading-relaxed text-white/90 italic text-justify">
+                The Void is shadow, and the shadow is everything the ego cannot sustain. Jung said it is not evil — it is what has not yet been lived. Perhaps this project is exactly that: an attempt to live what I had been avoiding. To give shape to what the world taught me to hide. The shadow is the memory of what was never allowed to exist — and cinema, here, is the body of that revelation.
+              </p>
+
+              {/* Four Columns with Icons */}
+              <div className="pt-8">
+                {/* Connection Line with Dots */}
+                <div className="relative mb-12">
+                  <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-amber-500/50 via-amber-500 to-amber-500/50"></div>
+                  <div className="grid grid-cols-4 relative">
+                    <div className="flex justify-center">
+                      <div className="w-3 h-3 bg-amber-500 rounded-full -mt-[5px]"></div>
+                    </div>
+                    <div className="flex justify-center">
+                      <div className="w-3 h-3 bg-amber-500 rounded-full -mt-[5px]"></div>
+                    </div>
+                    <div className="flex justify-center">
+                      <div className="w-3 h-3 bg-amber-500 rounded-full -mt-[5px]"></div>
+                    </div>
+                    <div className="flex justify-center">
+                      <div className="w-3 h-3 bg-amber-500 rounded-full -mt-[5px]"></div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Four Columns */}
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                  {/* Column 1: ESTILO */}
+                  <div className="text-center space-y-4">
+                    <div className="space-y-1">
+                      <h3 className="text-sm font-bold text-white uppercase">ESTILO</h3>
+                      <p className="text-xs italic text-white/80">STYLE</p>
+                    </div>
+                    <div className="space-y-3">
+                      <p className="text-sm leading-relaxed text-white/90">
+                        Cada linha é um risco. Cada queda, uma confissão. Andar é uma forma de pensar. O movimento é pensamento bruto, impulso em estado de criação. O asfalto é o diário do corpo que insiste em continuar existindo.
+                      </p>
+                      <p className="text-xs leading-relaxed text-white/75 italic">
+                        Each line is a risk. Each fall, a confession. To ride is to think. Movement is raw thought, impulse in a state of creation. The asphalt is the diary of a body that insists on existing.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Column 2: PLANOS */}
+                  <div className="text-center space-y-4">
+                    <div className="space-y-1">
+                      <h3 className="text-sm font-bold text-white uppercase">PLANOS</h3>
+                      <p className="text-xs italic text-white/80">SHOTS</p>
+                    </div>
+                    <div className="space-y-3">
+                      <p className="text-sm leading-relaxed text-white/90">
+                        Planos longos, granulação, silêncios excessivos, luzes estouradas. O cinema é respiração estendida — o cerco que revela intenção. A câmera não observa: ela escuta. Cada imagem é uma tentativa de lembrar o que o corpo já sabia antes da linguagem.
+                      </p>
+                      <p className="text-xs leading-relaxed text-white/75 italic">
+                        Long takes, grain, excessive silences, blown-out lights. Cinema is extended breathing — the mistake that reveals intention. The camera doesn't watch: it listens. Each image is an attempt to remember what the body already knew before language.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Column 3: RUÍDO */}
+                  <div className="text-center space-y-4">
+                    <div className="space-y-1">
+                      <h3 className="text-sm font-bold text-white uppercase">RUÍDO</h3>
+                      <p className="text-xs italic text-white/80">NOISE</p>
+                    </div>
+                    <div className="space-y-3">
+                      <p className="text-sm leading-relaxed text-white/90">
+                        O ruído não interrompe o pensamento — ele o revela. O som é a forma mais bruta do inconsciente tentando existir. O que vibra no limite do audível é o que não pode ser dito. O ruído é memória viva daquilo que ainda não encontrou palavra.
+                      </p>
+                      <p className="text-xs leading-relaxed text-white/75 italic">
+                        Noise doesn't interrupt thought — it reveals it. Sound is the rawest form of the unconscious trying to exist. What vibrates at the edge of the audible is what cannot yet be said. Noise is the living memory of what has not yet found a word.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Column 4: VAZIO */}
+                  <div className="text-center space-y-4">
+                    <div className="space-y-1">
+                      <h3 className="text-sm font-bold text-white uppercase">VAZIO</h3>
+                      <p className="text-xs italic text-white/80">VOID</p>
+                    </div>
+                    <div className="space-y-3">
+                      <p className="text-sm leading-relaxed text-white/90">
+                        O vazio não apaga — ele abre. É o espaço onde o silêncio respira e o corpo se reserva. Ali, tudo que foi reprimido se reorganiza em nova forma. O vazio é o território fértil da reinvenção: o ponto onde o ser refaz em presença.
+                      </p>
+                      <p className="text-xs leading-relaxed text-white/75 italic">
+                        The void doesn't erase — it opens. It is the space where silence breathes and the body rewrites itself. There, everything that was repressed reorganizes into new form. The void is the fertile ground of reinvention — the point where being remakes itself into presence.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Triad: Vazio, 13, Coletivo */}
         <BilingualSection>
           <BilingualContent
