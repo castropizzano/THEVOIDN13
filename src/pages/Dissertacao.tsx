@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SEO, breadcrumbSchema } from "@/components/SEO";
 import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
+import { SectionDivider } from "@/components/SectionDivider";
 import { BackToTop } from "@/components/BackToTop";
 import { MusicPlayer } from "@/components/MusicPlayer";
 import { PodcastPlayer } from "@/components/PodcastPlayer";
@@ -73,7 +74,9 @@ const Dissertacao = () => {
         </BilingualSection>
 
         {/* Matrix Projects - Origins of the Dissertation */}
-        <BilingualSection bgClassName="bg-card/50">
+        <SectionDivider />
+        
+        <BilingualSection>
           <div className="space-y-4 mb-16">
             <h2 className="site-title">Processos Matriciais / Matrix Processes</h2>
             <BilingualContent portugueseContent={<p className="site-paragraph text-muted-foreground">
@@ -85,6 +88,8 @@ const Dissertacao = () => {
         </BilingualSection>
 
         {/* CasaTrezeStudio Section */}
+        <SectionDivider />
+        
         <BilingualSection>
           <div className="border-l-4 border-primary pl-6 space-y-8">
             <div>
@@ -162,7 +167,9 @@ const Dissertacao = () => {
         </BilingualSection>
 
         {/* LowPressure Section */}
-        <BilingualSection bgClassName="bg-card/30">
+        <SectionDivider />
+        
+        <BilingualSection>
           <div className="border-l-4 border-primary pl-6 space-y-8">
               <div>
                 <h2 className="site-title mb-2">LowPressure™</h2>
@@ -231,6 +238,8 @@ const Dissertacao = () => {
         </BilingualSection>
 
         {/* LowMovie Section */}
+        <SectionDivider />
+        
         <BilingualSection>
           <div className="border-l-4 border-primary pl-6 space-y-8">
             <div>
@@ -314,11 +323,7 @@ const Dissertacao = () => {
         </BilingualSection>
 
         {/* Separator before dissertation content */}
-        <BilingualSection bgClassName="bg-card/50">
-          <div className="py-8">
-            <div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent"></div>
-          </div>
-        </BilingualSection>
+        <SectionDivider />
 
         <BilingualSection>
           <BilingualContent portugueseContent={<>
@@ -355,7 +360,9 @@ const Dissertacao = () => {
         </BilingualSection>
 
         {/* Methodology Section */}
-        <BilingualSection bgClassName="bg-card/30">
+        <SectionDivider />
+        
+        <BilingualSection>
           <BilingualContent portugueseContent={<div className="space-y-8">
                 <h2 className="site-title">METODOLOGIA [LOWBYRINTH™ COMO MÉTODO]</h2>
                 
@@ -561,7 +568,9 @@ const Dissertacao = () => {
         </BilingualSection>
 
         {/* Documentation Section */}
-        <BilingualSection bgClassName="bg-card/50">
+        <SectionDivider />
+        
+        <BilingualSection>
           <div className="space-y-16">
             <div className="space-y-4">
               <h2 className="site-title">Documentation</h2>
@@ -622,7 +631,9 @@ const Dissertacao = () => {
         </BilingualSection>
 
         {/* Pesquisa Acadêmica / Academic Research */}
-        <BilingualSection bgClassName="bg-primary/5">
+        <SectionDivider />
+        
+        <BilingualSection>
           <div className="space-y-8">
             <div className="space-y-2">
               <h2 className="site-title">Pesquisa Acadêmica / Academic Research</h2>
@@ -647,6 +658,8 @@ const Dissertacao = () => {
         </BilingualSection>
 
         {/* Colaboração e Coletivos / Collaboration and Collectives */}
+        <SectionDivider />
+        
         <BilingualSection>
           <div className="space-y-8">
             <div className="space-y-2">
@@ -672,7 +685,9 @@ const Dissertacao = () => {
         </BilingualSection>
 
         {/* Documentation Section - Soundtracks, Podcast, Timeline */}
-        <BilingualSection bgClassName="bg-card/50">
+        <SectionDivider />
+        
+        <BilingualSection>
           <div className="space-y-16">
             <div className="space-y-4 border-b border-border pb-8">
               <h2 className="site-title">Documentação do Processo / Process Documentation</h2>
