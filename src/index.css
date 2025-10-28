@@ -8,25 +8,47 @@
 
 @layer components {
   /* ===============================================
-     PADRÃO "FORMAÇÃO ACADÊMICA" (REFERÊNCIA OFICIAL)
+     SISTEMA TIPOGRÁFICO PADRONIZADO THEVOIDN13
      =============================================== */
   
-  /* Títulos de Seção - Pequeno, Vermelho, Uppercase */
-  .section-title {
-    @apply text-xs md:text-sm font-medium uppercase tracking-wide text-primary;
+  /* LABELS BILÍNGUES - <PORTUGUÊS> / ENGLISH */
+  .label-bilingual {
+    @apply text-xs font-medium uppercase tracking-wider text-foreground/60;
     font-family: 'Manrope', sans-serif;
   }
   
-  /* Subtítulos - Médio, Negrito, Normal case */
-  .subsection-title {
-    @apply text-base font-bold leading-relaxed;
+  /* TÍTULOS PRINCIPAIS - Todo o site */
+  .site-title {
+    @apply text-base font-bold uppercase;
     font-family: 'Manrope', sans-serif;
   }
   
-  /* Micro títulos - Pequeno, Cinza, Uppercase */
-  .micro-title {
-    @apply text-xs text-muted-foreground uppercase tracking-wide;
+  /* SUBTÍTULOS - Todo o site */
+  .site-subtitle {
+    @apply text-sm font-medium uppercase;
     font-family: 'Manrope', sans-serif;
+  }
+  
+  /* PARÁGRAFOS - Todo o site */
+  .site-paragraph {
+    @apply text-sm font-normal text-justify leading-relaxed;
+    font-family: 'Manrope', sans-serif;
+    hyphens: auto;
+  }
+  
+  /* TEXTOS COM BORDA VERMELHA LATERAL */
+  .bordered-title {
+    @apply text-base font-medium leading-relaxed;
+    font-family: 'Manrope', sans-serif;
+  }
+  
+  .bordered-description {
+    @apply text-sm font-normal leading-relaxed text-muted-foreground;
+    font-family: 'Manrope', sans-serif;
+  }
+  
+  .border-red-left {
+    @apply border-l-2 border-primary pl-4;
   }
 
   /* Legacy headings (manter compatibilidade) */
@@ -54,7 +76,7 @@
     @apply text-sm font-semibold tracking-wide leading-[1.4];
   }
   
-  /* Corpo de Texto */
+  /* Corpo de Texto (backward compatibility) */
   .body-large {
     @apply text-lg leading-relaxed;
   }
@@ -67,7 +89,7 @@
     @apply text-sm leading-relaxed;
   }
   
-  /* Labels e Categorias */
+  /* Labels e Categorias (backward compatibility) */
   .label-large {
     @apply text-sm uppercase tracking-wider font-medium;
   }

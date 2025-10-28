@@ -29,14 +29,14 @@ export const BilingualContent = ({
 }: BilingualContentProps) => {
   return <div className={`grid md:grid-cols-2 gap-12 ${alignTop ? 'items-start' : 'items-stretch'}`}>
       <div className="content-spacing w-full">
-        <p className="label-small text-foreground/60">&lt;PORTUGUÊS&gt;</p>
-        <div className="w-full text-justified">
+        <p className="label-bilingual">&lt;PORTUGUÊS&gt;</p>
+        <div className="w-full">
           {portugueseContent}
         </div>
       </div>
       <div className="content-spacing w-full">
-        <p className="label-small text-foreground/60">ENGLISH</p>
-        <div className="w-full text-justified">
+        <p className="label-bilingual">ENGLISH</p>
+        <div className="w-full">
           {englishContent}
         </div>
       </div>
