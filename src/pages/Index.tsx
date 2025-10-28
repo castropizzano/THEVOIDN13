@@ -12,6 +12,7 @@ import roughs001 from "@/assets/roughs-001.png";
 import roughs002 from "@/assets/roughs-002.png";
 import roughs003 from "@/assets/roughs-003.png";
 import meditationScene from "@/assets/meditation-scene.png";
+import maskVoid from "@/assets/mask-void.png";
 const Index = () => {
   return <div className="min-h-screen bg-background text-foreground">
       <Header />
@@ -72,10 +73,12 @@ const Index = () => {
           <img src={meditationScene} alt="Meditation Scene" className="w-full h-full object-contain" />
         </section>
 
-        {/* Quando o Inconsciente Ganha Corpo */}
+        {/* Quando o Inconsciente Ganha Corpo - with mask */}
         <BilingualSection>
-          <BilingualContent
-            portugueseContent={
+          <div className="grid md:grid-cols-[1fr_auto_1fr] gap-8 lg:gap-12 items-start">
+            {/* Portuguese Column */}
+            <div className="space-y-6 w-full text-justify order-1">
+              <p className="text-[11px] uppercase tracking-wider text-foreground/60 font-medium">PORTUGUÊS</p>
               <div className="space-y-6">
                 <h2 className="text-base font-bold">Quando o Inconsciente Ganha Corpo</h2>
                 <p className="text-base text-justify leading-relaxed">
@@ -102,8 +105,20 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-            }
-            englishContent={
+            </div>
+
+            {/* Mask Image - Center */}
+            <div className="flex items-center justify-center order-2 md:order-2 md:sticky md:top-24">
+              <img 
+                src={maskVoid} 
+                alt="THEVOIDN13 Mask" 
+                className="w-48 h-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
+              />
+            </div>
+
+            {/* English Column */}
+            <div className="space-y-6 w-full text-justify order-3">
+              <p className="text-[11px] uppercase tracking-wider text-foreground/60 font-medium">ENGLISH</p>
               <div className="space-y-6">
                 <h2 className="text-base font-bold">When the Unconscious Takes Shape</h2>
                 <p className="text-base text-justify leading-relaxed">
@@ -130,8 +145,8 @@ const Index = () => {
                   </div>
                 </div>
               </div>
-            }
-          />
+            </div>
+          </div>
         </BilingualSection>
 
         {/* Character Sheet - Three Views */}
