@@ -10,6 +10,15 @@ import actionFigure from "@/assets/action-figure.png";
 import conceptFront from "@/assets/concept-front.png";
 import conceptBack from "@/assets/concept-back.png";
 import conceptSide from "@/assets/concept-side.png";
+import punkFront from "@/assets/punk-front.png";
+import punkRear from "@/assets/punk-rear.png";
+import punkSide from "@/assets/punk-side.png";
+import giFront from "@/assets/gi-front.png";
+import giRear from "@/assets/gi-rear.png";
+import giSide from "@/assets/gi-side.png";
+import voidFront from "@/assets/void-front.png";
+import voidRear from "@/assets/void-rear.png";
+import voidSide from "@/assets/void-side.png";
 import roughs000 from "@/assets/roughs-000.png";
 import roughs001 from "@/assets/roughs-001.png";
 import roughs002 from "@/assets/roughs-002.png";
@@ -853,6 +862,99 @@ const Index = () => {
                 
                 <p className="pt-2">o vazio sabe o caminho de volta.</p>
                 <p className="text-sm">the void knows the way back.</p>
+              </div>
+            </div>
+          </div>
+        </BilingualSection>
+
+        {/* Character Views Section */}
+        <BilingualSection>
+          <div className="space-y-12">
+            <div className="space-y-4 text-center">
+              <h2 className="text-3xl font-bold text-primary">Personagens / Character Views</h2>
+              <p className="text-base text-muted-foreground">
+                Anatomia Visual do Universo THEVOIDN13
+              </p>
+            </div>
+
+            {/* PUNK */}
+            <div className="space-y-6">
+              <div className="text-center space-y-2 pb-6 border-b border-border">
+                <h3 className="text-2xl font-bold text-primary">PUNK</h3>
+                <p className="text-sm text-muted-foreground">
+                  O Criador Mascarado / The Masked Creator
+                </p>
+              </div>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="space-y-3">
+                  <img src={punkFront} alt="PUNK - Front View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
+                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Front View / Vista Frontal</p>
+                </div>
+                <div className="space-y-3">
+                  <img src={punkSide} alt="PUNK - Side View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
+                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Side View / Vista Lateral</p>
+                </div>
+                <div className="space-y-3">
+                  <img src={punkRear} alt="PUNK - Rear View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
+                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Rear View / Vista Traseira</p>
+                </div>
+              </div>
+              <div className="text-center text-sm text-muted-foreground max-w-3xl mx-auto">
+                <p>Homem tatuado, boné vermelho, jaqueta militar verde desbotada com patch "Black Sabbath", camiseta preta oversized, calça moletom preta, Vans preto. Presença urbana, autenticidade do uso.</p>
+              </div>
+            </div>
+
+            {/* GI */}
+            <div className="space-y-6 pt-12">
+              <div className="text-center space-y-2 pb-6 border-b border-border">
+                <h3 className="text-2xl font-bold text-primary">GI</h3>
+                <p className="text-sm text-muted-foreground">
+                  A Presença Silenciosa / The Silent Presence
+                </p>
+              </div>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="space-y-3">
+                  <img src={giFront} alt="GI - Front View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
+                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Front View / Vista Frontal</p>
+                </div>
+                <div className="space-y-3">
+                  <img src={giSide} alt="GI - Side View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
+                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Side View / Vista Lateral</p>
+                </div>
+                <div className="space-y-3">
+                  <img src={giRear} alt="GI - Rear View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
+                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Rear View / Vista Traseira</p>
+                </div>
+              </div>
+              <div className="text-center text-sm text-muted-foreground max-w-3xl mx-auto">
+                <p>Mulher com cabelo curto escuro, moletom preto bomber com capuz, calça jeans escura, Vans preto. Olhar penetrante, postura contida, silêncio expressivo.</p>
+              </div>
+            </div>
+
+            {/* THE VOID N.13 */}
+            <div className="space-y-6 pt-12">
+              <div className="text-center space-y-2 pb-6 border-b border-border">
+                <h3 className="text-2xl font-bold text-primary">THE VOID N.13</h3>
+                <p className="text-sm text-muted-foreground">
+                  A Sombra Materializada / The Materialized Shadow
+                </p>
+              </div>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="space-y-3">
+                  <img src={voidFront} alt="THE VOID N.13 - Front View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
+                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Front View / Vista Frontal</p>
+                </div>
+                <div className="space-y-3">
+                  <img src={voidSide} alt="THE VOID N.13 - Side View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
+                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Side View / Vista Lateral</p>
+                </div>
+                <div className="space-y-3">
+                  <img src={voidRear} alt="THE VOID N.13 - Rear View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
+                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Rear View / Vista Traseira</p>
+                </div>
+              </div>
+              <div className="text-center text-sm text-muted-foreground max-w-3xl mx-auto">
+                <p>Máscara branca fosca com olhos vazios refletindo luz urbana, capuz preto, jaqueta militar verde desbotada com patch "Black Sabbath", moletom preto interno, calça moletom preta, Vans preto. Mãos tatuadas. Presença anônima, o criador desaparecido, a sombra encarnada.</p>
               </div>
             </div>
           </div>
