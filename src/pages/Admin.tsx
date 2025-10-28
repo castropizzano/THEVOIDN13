@@ -4,11 +4,12 @@ import { useAuth } from "@/hooks/useAuth";
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Settings, Image, Video, Type, Mail } from "lucide-react";
+import { Settings, Image, Video, Type, Mail, Layout } from "lucide-react";
 import { LoadingSpinner } from "@/components/LoadingSpinner";
 import ContentManager from "@/components/admin/ContentManager";
 import MediaManager from "@/components/admin/MediaManager";
 import VideoManager from "@/components/admin/VideoManager";
+import SectionManager from "@/components/admin/SectionManager";
 import { PromptManager } from "@/components/admin/PromptManager";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -67,8 +68,12 @@ const Admin = () => {
           </CardContent>
         </Card>
 
-        <Tabs defaultValue="content" className="w-full">
-          <TabsList className="grid w-full grid-cols-4 mb-8">
+        <Tabs defaultValue="sections" className="w-full">
+          <TabsList className="grid w-full grid-cols-5 mb-8">
+            <TabsTrigger value="sections" className="flex items-center gap-2">
+              <Layout className="w-4 h-4" />
+              Seções
+            </TabsTrigger>
             <TabsTrigger value="content" className="flex items-center gap-2">
               <Type className="w-4 h-4" />
               Textos
@@ -86,6 +91,10 @@ const Admin = () => {
               Prompts
             </TabsTrigger>
           </TabsList>
+
+          <TabsContent value="sections">
+            <SectionManager />
+          </TabsContent>
 
           <TabsContent value="content">
             <ContentManager />

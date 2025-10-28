@@ -131,6 +131,39 @@ export type Database = {
         }
         Relationships: []
       }
+      page_sections: {
+        Row: {
+          created_at: string
+          display_order: number
+          id: string
+          is_visible: boolean | null
+          page: string
+          section_key: string
+          section_title: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          display_order?: number
+          id?: string
+          is_visible?: boolean | null
+          page: string
+          section_key: string
+          section_title: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          display_order?: number
+          id?: string
+          is_visible?: boolean | null
+          page?: string
+          section_key?: string
+          section_title?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           created_at: string
@@ -196,6 +229,44 @@ export type Database = {
           updated_at?: string
         }
         Relationships: []
+      }
+      section_contents: {
+        Row: {
+          content_data: Json
+          content_type: string
+          created_at: string
+          display_order: number
+          id: string
+          section_id: string
+          updated_at: string
+        }
+        Insert: {
+          content_data: Json
+          content_type: string
+          created_at?: string
+          display_order?: number
+          id?: string
+          section_id: string
+          updated_at?: string
+        }
+        Update: {
+          content_data?: Json
+          content_type?: string
+          created_at?: string
+          display_order?: number
+          id?: string
+          section_id?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "section_contents_section_id_fkey"
+            columns: ["section_id"]
+            isOneToOne: false
+            referencedRelation: "page_sections"
+            referencedColumns: ["id"]
+          },
+        ]
       }
       user_roles: {
         Row: {
