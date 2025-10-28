@@ -1,4 +1,4 @@
-# RELATÓRIO DE AUDITORIA TÉCNICA — THEVOIDN13
+# RELATÓRIO DE AUDITORIA TÉCNICA — THEVØIDN13
 ## Comprehensive Project Audit Report
 
 **Data:** 28 de Outubro de 2025  
@@ -10,7 +10,7 @@
 
 ## 📋 SUMÁRIO EXECUTIVO
 
-O projeto THEVOIDN13 foi submetido a uma auditoria técnica completa para verificar:
+O projeto THEVØIDN13 foi submetido a uma auditoria técnica completa para verificar:
 - Integridade de código
 - Documentação
 - Assets e recursos

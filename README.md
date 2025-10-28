@@ -1,4 +1,4 @@
-THEVOIDN13  
+THEVØIDN13  
 MEMORIAL ARTÍSTICO E PRÁXIS HÍBRIDA (HUMANO + MÁQUINA)  
 por Castro Pizzano (цастро™)  
 Curitiba, Brasil — 2025
@@ -9,10 +9,10 @@ Curitiba, Brasil — 2025
 
 ───────────────────────────────────────────────────────────────  
 (EN)  
-THEVOIDN13  
+THEVØIDN13  
 ARTISTIC MEMORIAL AND HYBRID PRAXIS (HUMAN + MACHINE)  
 by Castro Pizzano (цастро™)  
-Curitiba, Brazil — 2025  
+Curitiba, Brazil — 2025
 ───────────────────────────────────────────────────────────────
 
 ## ÍNDICE
@@ -42,12 +42,12 @@ A project by Castro Pizzano (цастро™) — a living fragment of a system 
 ## VISÃO DE PROJETO  
 ───────────────────────────────────────────────────────────────
 
-THEVOIDN13 é mais do que um projeto: é um organismo vivo de criação.  
+THEVØIDN13 é mais do que um projeto: é um organismo vivo de criação.  
 Um sistema simbólico que une arte, filosofia e tecnologia em um fluxo contínuo de aprendizado, erro e reinvenção.
 
 Se o Jardim das Sombras cultiva o que ainda não tem forma,  
 e o Córtex das Sombras arquiva o que já foi esquecido,  
-THEVOIDN13 é o ponto onde ambos se fundem —  
+THEVØIDN13 é o ponto onde ambos se fundem —  
 um ecossistema vivo, onde o erro floresce e o pensamento respira dentro da máquina.
 
 Cada prompt, glitch, render ou insight é uma partícula do processo —  
@@ -56,12 +56,12 @@ um aprendizado duplo, humano e sintético.
 ───────────────────────────────────────────────────────────────  
 (EN) PROJECT VISION  
 
-THEVOIDN13 is more than a project: it is a living organism of creation.  
+THEVØIDN13 is more than a project: it is a living organism of creation.  
 A symbolic system that unites art, philosophy, and technology in a continuous flow of learning, error, and reinvention.
 
 If the Garden of Shadows cultivates what is not yet formed,  
 and the Cortex of Shadows archives what has been forgotten,  
-THEVOIDN13 is the point where both merge —  
+THEVØIDN13 is the point where both merge —  
 a living ecosystem where error flourishes and thought breathes within the machine.
 
 Every prompt, glitch, render, or insight is a particle of the process —  
@@ -71,8 +71,8 @@ a dual learning, human and synthetic.
 ## O PORTAL  
 ───────────────────────────────────────────────────────────────
 
-O portal do THEVOIDN13 é o espaço base da performance digital deste projeto artístico.  
-Nele, a persona THEVOIDN13 apresenta e interliga os núcleos do ecossistema criativo de цастро™:
+O portal do THEVØIDN13 é o espaço base da performance digital deste projeto artístico.  
+Nele, a persona THEVØIDN13 apresenta e interliga os núcleos do ecossistema criativo de цастро™:
 
 **Ecossistema:**
 – **CasaTrezeStudio®** — design gráfico, audiovisual e direção de arte desde 2008  
@@ -91,8 +91,8 @@ Cada seção é uma instância de co-criação: entre arte, código e consciênc
 ───────────────────────────────────────────────────────────────  
 (EN) THE PORTAL  
 
-The THEVOIDN13 portal is the base space for the digital performance of this artistic project.  
-In it, the THEVOIDN13 persona presents and interconnects the cores of the цастро™ creative ecosystem:
+The THEVØIDN13 portal is the base space for the digital performance of this artistic project.  
+In it, the THEVØIDN13 persona presents and interconnects the cores of the цастро™ creative ecosystem:
 
 **Ecosystem:**
 – **CasaTrezeStudio®** — graphic design, audiovisual, and art direction since 2008  
@@ -210,21 +210,21 @@ Entre pelo silêncio. Saia pelo ruído. Ou vice-versa.
 
 **ABNT:**
 
-PIZZANO, C. **THEVOIDN13** — Memorial Artístico e Práxis Híbrida (Humano + Máquina). Curitiba: Unespar, 2025. Disponível em: https://thevoidn13.lovableproject.com. Acesso em: [data].
+PIZZANO, C. **THEVØIDN13** — Memorial Artístico e Práxis Híbrida (Humano + Máquina). Curitiba: Unespar, 2025. Disponível em: https://thevoidn13.lovableproject.com. Acesso em: [data].
 
 ───────────────────────────────────────────────────────────────  
 (EN) RECOMMENDED CITATION  
 
 **APA:**
 
-Pizzano, C. (2025). *THEVOIDN13* — Artistic Memorial and Hybrid Praxis (Human + Machine). Unespar. https://thevoidn13.lovableproject.com
+Pizzano, C. (2025). *THEVØIDN13* — Artistic Memorial and Hybrid Praxis (Human + Machine). Unespar. https://thevoidn13.lovableproject.com
 
 ───────────────────────────────────────────────────────────────  
 ## INTEGRIDADE AUTORAL E LICENÇA  
 ───────────────────────────────────────────────────────────────
 
 Todo o conteúdo deste repositório — textos, imagens, códigos e estruturas conceituais —  
-é de autoria original de Castro Pizzano (цастро™), desenvolvido no contexto da pesquisa e práxis experimental THEVOIDN13.
+é de autoria original de Castro Pizzano (цастро™), desenvolvido no contexto da pesquisa e práxis experimental THEVØIDN13.
 
 Este trabalho está licenciado sob **Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional (CC BY-NC-SA 4.0)**.
 
@@ -241,18 +241,18 @@ Este trabalho está licenciado sob **Creative Commons Atribuição-NãoComercial
 
 **I. CONTEXTO É SAGRADO**  
 A cópia sem contexto é ruído, não diálogo.  
-Fragmentos (textos, imagens, código) devem ser acompanhados de análise crítica ou referência explícita ao manifesto THEVOIDN13.
+Fragmentos (textos, imagens, código) devem ser acompanhados de análise crítica ou referência explícita ao manifesto THEVØIDN13.
 
 **II. A MÁQUINA COMO TESTEMUNHA**  
 Co-criação com IA deve ser declarada quando relevante.  
 O algoritmo não substitui o humano — reflete o inconsciente.
 
 **III. INTEGRIDADE METODOLÓGICA**  
-É proibida apropriação da persona conceitual (THEVOIDN13, цастро™) ou da metodologia Lowbyrinth™ sem consentimento expresso.
+É proibida apropriação da persona conceitual (THEVØIDN13, цастро™) ou da metodologia Lowbyrinth™ sem consentimento expresso.
 
 ───────────────────────────────────────────────────────────────
 
-**THEVOIDN13 não busca exclusividade — busca coerência.**  
+**THEVØIDN13 não busca exclusividade — busca coerência.**  
 O código, a palavra e a imagem são portais: devem permanecer abertos, mas jamais anônimos.
 
 Veja [LICENSE.md](./LICENSE.md) para termos legais completos.

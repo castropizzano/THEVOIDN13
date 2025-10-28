@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "Se você usar este projeto em sua pesquisa, por favor cite-o como indicado abaixo."
-title: "THEVOIDN13: Memorial Artístico e Práxis Híbrida (Humano + Máquina)"
+title: "THEVØIDN13: Memorial Artístico e Práxis Híbrida (Humano + Máquina)"
 abstract: "Projeto experimental e memorial artístico que investiga processos de co-criação entre humano e inteligência artificial no campo das artes visuais, cinema e videoarte. Integra pesquisa de mestrado sobre o filme LowMovie™ e o coletivo LowPressure™ Skate, explorando subjetividade, subcultura e estética em movimento."
 authors:
   - family-names: Pizzano
@@ -22,7 +22,7 @@ keywords:
   - "memorial artístico"
   - "economia criativa"
 license: CC-BY-NC-SA-4.0
-repository-code: "https://github.com/castropizzano/THEVOIDN13"
+repository-code: "https://github.com/castropizzano/THEVØIDN13"
 url: "https://thevoidn13.github.io"
 version: 0.1.0
 date-released: "2025-10-27"

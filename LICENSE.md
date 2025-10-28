@@ -1,19 +1,19 @@
-THEVOIDN13 — LICENÇA HÍBRIDA  
+THEVØIDN13 — LICENÇA HÍBRIDA  
 Memorial Artístico e Práxis Híbrida (Humano + Máquina)  
 por Castro Pizzano (цастро™)  
 Curitiba — 2025
 
 ───────────────────────────────────────────────────────────────  
 (EN)  
-THEVOIDN13 — HYBRID LICENSE  
+THEVØIDN13 — HYBRID LICENSE  
 Artistic Memorial and Hybrid Praxis (Human + Machine)  
 by Castro Pizzano (цастро™)  
-Curitiba — 2025  
+Curitiba — 2025
 ───────────────────────────────────────────────────────────────
 
 ## PREÂMBULO
 
-Esta licença governa o uso do Memorial Artístico THEVOIDN13.
+Esta licença governa o uso do Memorial Artístico THEVØIDN13.
 
 Ela combina os termos legais da licença Creative Commons (CC BY-NC-SA 4.0)  
 com diretrizes artísticas e metodológicas específicas deste projeto,  
@@ -22,7 +22,7 @@ conforme definido no manifesto (README.md).
 ───────────────────────────────────────────────────────────────  
 (EN) PREAMBLE  
 
-This license governs the use of the THEVOIDN13 Artistic Memorial.
+This license governs the use of the THEVØIDN13 Artistic Memorial.
 
 It combines the legal terms of the Creative Commons license (CC BY-NC-SA 4.0)  
 with specific artistic and methodological guidelines from this project,  
@@ -93,7 +93,7 @@ Além dos termos da CC BY-NC-SA 4.0, o uso deste material está sujeito
 A cópia sem contexto é ruído, não diálogo.
 
 O uso de fragmentos (textos, imagens, códigos) DEVE ser acompanhado  
-de análise crítica ou referência explícita ao manifesto e à práxis THEVOIDN13.
+de análise crítica ou referência explícita ao manifesto e à práxis THEVØIDN13.
 
 A citação com intenção é diálogo.  
 A apropriação sem contexto é violação simbólica.
@@ -155,7 +155,7 @@ AI is accomplice, not author.
 ### III. METHODOLOGICAL INTEGRITY
 
 Improper appropriation of methodology, visual identity, or conceptual  
-persona (THEVOIDN13, цастро™, Lowbyrinth™, CasaTrezeStudio®, LowPressure™)  
+persona (THEVØIDN13, цастро™, Lowbyrinth™, CasaTrezeStudio®, LowPressure™)  
 without express consent is prohibited.
 
 The method is public. The persona is sacred.
@@ -164,7 +164,7 @@ The method is public. The persona is sacred.
 
 Use for academic, critical, and research purposes is encouraged,  
 PROVIDED THAT full citation of the authorship (Castro Pizzano) and  
-project (THEVOIDN13) is maintained.
+project (THEVØIDN13) is maintained.
 
 The code, the word, and the image are portals:  
 they must remain open, but never anonymous.
@@ -231,7 +231,7 @@ The code is body, and the body is consciousness.
 The Creative Commons license does not replace the author's moral rights.  
 It only defines how the work can be used and shared.
 
-THEVOIDN13 does not seek exclusivity — it seeks coherence.
+THEVØIDN13 does not seek exclusivity — it seeks coherence.
 
 ───────────────────────────────────────────────────────────────  
 ## EPÍLOGO  

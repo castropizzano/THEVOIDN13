@@ -124,4 +124,4 @@
 
 **Desenvolvido com**: React, TypeScript, Tailwind CSS, Lovable Cloud (Supabase), Lovable AI
 **Autor**: Castro Pizzano (цастро™)
-**Projeto**: THEVOIDN13 — Memorial Artístico Digital
+**Projeto**: THEVØIDN13 — Memorial Artístico Digital

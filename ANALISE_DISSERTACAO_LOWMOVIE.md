@@ -61,9 +61,9 @@
 
 ## ⚠️ PONTOS QUE PRECISAM DE ATENÇÃO / APRIMORAMENTO
 
-### 1. **FALTA: Conexão Explícita com THEVOIDN13**
+### 1. **FALTA: Conexão Explícita com THEVØIDN13**
 
-**PROBLEMA CRÍTICO:** A dissertação não menciona ou integra o projeto THEVOIDN13, que é claramente parte do seu processo criativo híbrido e da sua metodologia de co-criação com IAs.
+**PROBLEMA CRÍTICO:** A dissertação não menciona ou integra o projeto THEVØIDN13, que é claramente parte do seu processo criativo híbrido e da sua metodologia de co-criação com IAs.
 
 **O QUE FALTA:**
 - Não há menção ao portal digital que você está criando
@@ -72,7 +72,7 @@
 - Não há reflexão sobre as ferramentas digitais contemporâneas na produção audiovisual
 
 **POR QUE ISSO É IMPORTANTE:**
-1. THEVOIDN13 é uma extensão do seu trabalho com LowMovie™
+1. THEVØIDN13 é uma extensão do seu trabalho com LowMovie™
 2. Ambos compartilham:
    - Estética urbana
    - Processos colaborativos
@@ -86,7 +86,7 @@
 #### A) Na Introdução:
 Adicionar uma nota sobre a expansão do processo criativo para o digital:
 
-> "Esta pesquisa se desdobra também em experimentações digitais, onde a metodologia híbrida de criação se expande para plataformas web e interações com inteligências artificiais como ferramentas de co-criação. O projeto THEVOIDN13, memorial visual performático desenvolvido em paralelo, opera como laboratório complementar dessa práxis expandida."
+> "Esta pesquisa se desdobra também em experimentações digitais, onde a metodologia híbrida de criação se expande para plataformas web e interações com inteligências artificiais como ferramentas de co-criação. O projeto THEVØIDN13, memorial visual performático desenvolvido em paralelo, opera como laboratório complementar dessa práxis expandida."
 
 #### B) No Movimento III - Obra em Expansão:
 Criar uma subseção sobre "Processos Híbridos e Criação Digital":
@@ -98,7 +98,7 @@ Criar uma subseção sobre "Processos Híbridos e Criação Digital":
 - Diálogo com conceitos de arte generativa e cinema expandido digital
 
 #### C) Nas Considerações Finais:
-Mencionar THEVOIDN13 como desdobramento futuro:
+Mencionar THEVØIDN13 como desdobramento futuro:
 
 > "O processo criativo documentado nesta pesquisa já encontra novos territórios de expansão: na construção de um portal digital que performa a memória do coletivo, na experimentação com inteligências artificiais como parceiras de criação, na dissolução de fronteiras entre o analógico e o digital, entre a rua e a interface."
 
@@ -150,7 +150,7 @@ O glossário (página 152+) é fundamental, mas poderia incluir:
 ## 🎯 PARA A APRESENTAÇÃO DA BANCA
 
 ### 1. **SLIDE INICIAL: O Portal Como Extensão**
-Comece mostrando o site THEVOIDN13 como "obra em expansão"
+Comece mostrando o site THEVØIDN13 como "obra em expansão"
 - Demonstre que sua pesquisa NÃO está apenas no papel
 - Mostre que você está praticando o que teoriza
 - Use o portal como exemplo de "pesquisa performativa"
@@ -210,7 +210,7 @@ A referência é estrutural, não superficial."
 
 ### PRIORIDADE ALTA:
 
-1. **✅ INTEGRAR THEVOIDN13 E O PROCESSO HÍBRIDO**
+1. **✅ INTEGRAR THEVØIDN13 E O PROCESSO HÍBRIDO**
    - Adicione 5-10 páginas sobre experimentação digital
    - Discuta co-criação com IAs como extensão do coletivo
    - Reflita sobre autoria distribuída
@@ -256,7 +256,7 @@ A referência é estrutural, não superficial."
 
 ---
 
-## 🎬 SUGESTÃO DE ESTRUTURA PARA INTEGRAÇÃO DO THEVOIDN13
+## 🎬 SUGESTÃO DE ESTRUTURA PARA INTEGRAÇÃO DO THEVØIDN13
 
 ### Adicionar Seção no Movimento III:
 
@@ -269,7 +269,7 @@ A referência é estrutural, não superficial."
    - IAs como Gemini, Claude, Midjourney operam como "colaboradores não-humanos"
    - O portal web como memorial performático
 
-2. **THEVOIDN13 Como Extensão do LowMovie™:**
+2. **THEVØIDN13 Como Extensão do LowMovie™:**
    - Ambos compartilham estética urbana, processos colaborativos
    - O personagem mascarado como extensão simbólica do skatista anônimo
    - A máscara como apagamento do rosto / foco no gesto
@@ -379,7 +379,7 @@ te. O filme não termina. O portal permanece aberto. A sessão continua."
 ## 🎯 CHECKLIST FINAL PARA DEFESA
 
 ### 1 SEMANA ANTES:
-- [ ] Portal THEVOIDN13 finalizado e online
+- [ ] Portal THEVØIDN13 finalizado e online
 - [ ] Slides preparados (máximo 20 slides)
 - [ ] Clipes do LowMovie™ editados para apresentação
 - [ ] Respostas preparadas para perguntas prováveis

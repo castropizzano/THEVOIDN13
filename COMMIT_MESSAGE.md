@@ -159,5 +159,5 @@ All colors use HSL semantic tokens:
 
 **Commit Author:** Castro Pizzano (цастро™)  
 **Date:** 2025-01-27  
-**Project:** THEVOIDN13 — Artistic Memorial & Hybrid Praxis  
+**Project:** THEVØIDN13 — Artistic Memorial & Hybrid Praxis  
 **Institution:** UNESPAR — Cinema & Video Arts
