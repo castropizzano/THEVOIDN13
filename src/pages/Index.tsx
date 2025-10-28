@@ -131,10 +131,6 @@ const Index = () => {
           />
         </BilingualSection>
 
-        <section className="w-full h-screen overflow-hidden">
-          <img src={meditationRainScene} alt="THEVOIDN13 Meditation in Rain" className="w-full h-full object-contain" />
-        </section>
-
         {/* Quando o Inconsciente Ganha Corpo - with mask */}
         <BilingualSection>
           <div className="grid md:grid-cols-[1fr_auto] gap-8 lg:gap-12 items-stretch">
@@ -590,10 +586,6 @@ const Index = () => {
 
         <section className="w-full h-screen overflow-hidden">
           <img src={voidStreetScene} alt="The Void N.13 Street Scene" className="w-full h-full object-contain" />
-        </section>
-
-        <section className="w-full h-screen overflow-hidden">
-          <img src={roughs001} alt="Sketches" className="w-full h-full object-contain" />
         </section>
 
         {/* Estética e Manifestação */}
