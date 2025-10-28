@@ -103,7 +103,10 @@ export const AccessGate = ({
   if (hasAccess) return null;
   return <div className="fixed inset-0 z-50 bg-background/95 backdrop-blur-md flex items-center justify-center p-4">
       <Card className="w-full max-w-md border-2 border-primary/30 shadow-2xl">
-        <CardHeader className="space-y-4 text-center">
+        <CardHeader className="space-y-4 text-center relative">
+          <div className="absolute top-4 right-4 text-xs text-foreground/60 tracking-wider font-medium">
+            v1.3
+          </div>
           <div className="text-center space-y-1">
             <CardTitle className="site-title text-primary text-2xl leading-tight">
               O VAZIO CHAMA
