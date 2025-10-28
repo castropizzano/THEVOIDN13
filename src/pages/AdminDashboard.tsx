@@ -148,10 +148,10 @@ const AdminDashboard = () => {
           {/* Header */}
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div>
-              <h1 className="text-4xl font-bold text-foreground mb-2">
+               <h1 className="site-title text-foreground mb-2">
                 Dashboard Admin
               </h1>
-              <p className="text-muted-foreground">
+              <p className="site-paragraph text-muted-foreground">
                 Gerencie os inscritos da newsletter do THEVOIDN13
               </p>
             </div>
@@ -164,21 +164,21 @@ const AdminDashboard = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Card>
               <CardHeader className="flex flex-row items-center justify-between pb-2">
-                <CardTitle className="text-sm font-medium">Total de Inscritos</CardTitle>
+                <CardTitle className="site-subtitle">Total de Inscritos</CardTitle>
                 <Mail className="h-4 w-4 text-muted-foreground" />
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold">{subscribers.length}</div>
+                <div className="site-title">{subscribers.length}</div>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader className="flex flex-row items-center justify-between pb-2">
-                <CardTitle className="text-sm font-medium">Novos Hoje</CardTitle>
+                <CardTitle className="site-subtitle">Novos Hoje</CardTitle>
                 <Calendar className="h-4 w-4 text-muted-foreground" />
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold">
+                <div className="site-title">
                   {
                     subscribers.filter(
                       (sub) =>
@@ -191,11 +191,11 @@ const AdminDashboard = () => {
 
             <Card>
               <CardHeader className="flex flex-row items-center justify-between pb-2">
-                <CardTitle className="text-sm font-medium">Taxa de Consentimento</CardTitle>
+                <CardTitle className="site-subtitle">Taxa de Consentimento</CardTitle>
                 <User className="h-4 w-4 text-muted-foreground" />
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold">
+                <div className="site-title">
                   {subscribers.length > 0
                     ? Math.round(
                         (subscribers.filter((sub) => sub.consent_given).length / subscribers.length) *

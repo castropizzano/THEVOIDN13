@@ -646,34 +646,6 @@ const Dissertacao = () => {
           </div>
         </BilingualSection>
 
-        {/* Documentation Section - Soundtracks, Podcast, Timeline */}
-        <BilingualSection bgClassName="bg-card/50">
-          <div className="space-y-16">
-            <div className="space-y-4 border-b border-border pb-8">
-              <h2 className="section-title">Documentação do Processo / Process Documentation</h2>
-              <p className="subsection-title text-muted-foreground">
-                Trilhas sonoras, entrevistas e timeline da pesquisa / Soundtracks, interviews and research timeline
-              </p>
-            </div>
-
-            {/* Music Player - LowMovie Soundtracks */}
-            <div>
-              <MusicPlayer />
-            </div>
-
-            {/* Podcast Player - Skate Punk Interview */}
-            <div className="mt-8">
-              <PodcastPlayer />
-            </div>
-
-            {/* Timeline - Creative Journey */}
-            <div className="mt-8">
-              <Timeline />
-            </div>
-          </div>
-        </BilingualSection>
-
-
         {/* Colaboração e Coletivos / Collaboration and Collectives */}
         <BilingualSection>
           <div className="space-y-8">
@@ -696,6 +668,33 @@ const Dissertacao = () => {
                     The collective isn't a sum of individuals — it's a force field. Each project generates its own collaborative configuration. Some permanent (crew), others ephemeral (specific projects). But all share the same ethics: creative autonomy, radical transparency, shared but signed authorship.
                   </p>
                 </div>} />
+          </div>
+        </BilingualSection>
+
+        {/* Documentation Section - Soundtracks, Podcast, Timeline */}
+        <BilingualSection bgClassName="bg-card/50">
+          <div className="space-y-16">
+            <div className="space-y-4 border-b border-border pb-8">
+              <h2 className="site-title">Documentação do Processo / Process Documentation</h2>
+              <p className="site-subtitle text-muted-foreground">
+                Trilhas sonoras, entrevistas e timeline da pesquisa / Soundtracks, interviews and research timeline
+              </p>
+            </div>
+
+            {/* Music Player - LowMovie Soundtracks */}
+            <div>
+              <MusicPlayer />
+            </div>
+
+            {/* Podcast Player - Skate Punk Interview */}
+            <div className="mt-8">
+              <PodcastPlayer />
+            </div>
+
+            {/* Timeline - Creative Journey */}
+            <div className="mt-8">
+              <Timeline />
+            </div>
           </div>
         </BilingualSection>
       </main>
