@@ -8,7 +8,9 @@ import { ComicGenerator } from "@/components/ComicGenerator";
 import { MindMap } from "@/components/MindMap";
 import { CreativeOracle } from "@/components/CreativeOracle";
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 import heroImage from "@/assets/hero-concept-art.png";
+import voidFront from "@/assets/void-front.png";
 import conceptCrew from "@/assets/concept-crew.png";
 import actionFigure from "@/assets/action-figure.png";
 import conceptFront from "@/assets/concept-front.png";
@@ -20,7 +22,6 @@ import punkSide from "@/assets/punk-side.png";
 import giFront from "@/assets/gi-front.png";
 import giRear from "@/assets/gi-rear.png";
 import giSide from "@/assets/gi-side.png";
-import voidFront from "@/assets/void-front.png";
 import voidRear from "@/assets/void-rear.png";
 import voidSide from "@/assets/void-side.png";
 import buddyFront from "@/assets/buddy-front.png";
@@ -1222,7 +1223,60 @@ const Index = () => {
               <MindMap />
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12">
+            {/* Creative Oracle - Interactive Experience */}
+            <div className="mt-12">
+              <Card className="p-8 bg-gradient-to-br from-primary/5 to-background border-2 border-primary/30 hover:border-primary/50 transition-all cursor-pointer group"
+                onClick={() => setOracleOpen(true)}>
+                <div className="flex flex-col md:flex-row items-center gap-8">
+                  <div className="w-32 h-32 relative flex-shrink-0">
+                    <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl animate-pulse"></div>
+                    <img 
+                      src={voidFront} 
+                      alt="THEVOIDN13"
+                      className="relative w-full h-full object-cover rounded-lg border-2 border-primary shadow-lg"
+                    />
+                  </div>
+                  
+                  <div className="flex-1 space-y-4 text-center md:text-left">
+                    <div>
+                      <h3 className="heading-2 text-primary group-hover:scale-105 transition-transform">
+                        ORÁCULO CRIATIVO
+                      </h3>
+                      <p className="label-base text-muted-foreground italic mt-1">CREATIVE ORACLE</p>
+                    </div>
+                    
+                    <div className="space-y-2">
+                      <p className="body-base text-foreground">
+                        Uma jornada interativa de autodescoberta guiada por THEVOIDN13.
+                        Seis perguntas filosóficas sobre processo criativo revelam seu arquétipo dominante.
+                      </p>
+                      <p className="body-small text-muted-foreground italic">
+                        An interactive journey of self-discovery guided by THEVOIDN13.
+                        Six philosophical questions about creative process reveal your dominant archetype.
+                      </p>
+                    </div>
+                    
+                    <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+                      <span className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full border border-primary/30">
+                        Introspectivo / Introspective
+                      </span>
+                      <span className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full border border-primary/30">
+                        Filosófico / Philosophical
+                      </span>
+                      <span className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full border border-primary/30">
+                        RPG Conceitual / Conceptual RPG
+                      </span>
+                    </div>
+                    
+                    <Button className="mt-4" size="lg">
+                      INICIAR JORNADA / START JOURNEY →
+                    </Button>
+                  </div>
+                </div>
+              </Card>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-12 mt-16">
               <div className="space-y-6">
                 <h3 className="text-xl font-bold text-primary">Main Documents / Documentos Principais</h3>
                 
@@ -1316,7 +1370,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="mt-12 space-y-4">
+            <div className="mt-12">
               <a 
                 href="https://github.com/castropizzano/thevoidn13"
                 target="_blank"
@@ -1337,18 +1391,6 @@ const Index = () => {
                   </svg>
                 </div>
               </a>
-              
-              {/* Easter Egg - Creative Oracle */}
-              <div className="flex justify-end">
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={() => setOracleOpen(true)}
-                  className="text-xs text-muted-foreground/40 hover:text-primary transition-colors"
-                >
-                  [creative_oracle.exe]
-                </Button>
-              </div>
             </div>
           </div>
         </BilingualSection>

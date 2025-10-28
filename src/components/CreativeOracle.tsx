@@ -3,34 +3,27 @@ import { Button } from './ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './ui/dialog';
 import { Card } from './ui/card';
 import voidFront from '@/assets/void-front.png';
-import punkFront from '@/assets/punk-front.png';
-import buddyFront from '@/assets/buddy-front.png';
-import giFront from '@/assets/gi-front.png';
 
 interface CreativeOracleProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
 }
 
-type Character = 'void' | 'punk' | 'buddy' | 'gi';
-
 type Question = {
-  character: Character;
   text: string;
   textEn: string;
   options: { text: string; textEn: string; archetype: string; value: number }[];
 };
 
-const characters = {
-  void: { name: 'VOID', image: voidFront, description: 'A sombra que observa', descriptionEn: 'The shadow that observes' },
-  punk: { name: 'PUNK', image: punkFront, description: 'O caos criativo', descriptionEn: 'Creative chaos' },
-  buddy: { name: 'BUDDY', image: buddyFront, description: 'A conexão humana', descriptionEn: 'Human connection' },
-  gi: { name: 'GI', image: giFront, description: 'A estrutura disciplinada', descriptionEn: 'Disciplined structure' },
+const voidGuide = { 
+  name: 'THEVOIDN13', 
+  image: voidFront, 
+  description: 'A sombra que observa e questiona', 
+  descriptionEn: 'The shadow that observes and questions' 
 };
 
 const questions: Question[] = [
   {
-    character: 'void',
     text: 'Quando você cria, de onde vem o impulso inicial?',
     textEn: 'When you create, where does the initial impulse come from?',
     options: [
@@ -41,7 +34,6 @@ const questions: Question[] = [
     ],
   },
   {
-    character: 'punk',
     text: 'O que você faz quando o processo criativo trava?',
     textEn: 'What do you do when the creative process gets stuck?',
     options: [
@@ -52,7 +44,6 @@ const questions: Question[] = [
     ],
   },
   {
-    character: 'buddy',
     text: 'Como você sabe que um trabalho está terminado?',
     textEn: 'How do you know when a work is finished?',
     options: [
@@ -63,7 +54,6 @@ const questions: Question[] = [
     ],
   },
   {
-    character: 'gi',
     text: 'Qual é a parte mais importante do processo criativo?',
     textEn: 'What is the most important part of the creative process?',
     options: [
@@ -74,7 +64,6 @@ const questions: Question[] = [
     ],
   },
   {
-    character: 'void',
     text: 'O que você mais teme no ato de criar?',
     textEn: 'What do you fear most in the act of creating?',
     options: [
@@ -85,7 +74,6 @@ const questions: Question[] = [
     ],
   },
   {
-    character: 'punk',
     text: 'Onde você encontra sua identidade criativa?',
     textEn: 'Where do you find your creative identity?',
     options: [
@@ -139,10 +127,6 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
   const [revealed, setRevealed] = useState(false);
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [animatingOut, setAnimatingOut] = useState(false);
-  
-  const currentChar = started && currentQuestion < questions.length 
-    ? questions[currentQuestion].character 
-    : 'void';
 
   useEffect(() => {
     if (!open) {
@@ -203,29 +187,26 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
               <h3 className="heading-3 text-muted-foreground">CREATIVE ORACLE</h3>
             </div>
             
-            <div className="space-y-4 max-w-xl mx-auto">
-              <p className="body-large text-foreground">
-                Uma jornada de autodescoberta através do processo criativo.
-                Seis perguntas. Quatro arquétipos. Um caminho revelado.
-              </p>
-              <p className="body-base text-muted-foreground italic">
-                A journey of self-discovery through the creative process.
-                Six questions. Four archetypes. One path revealed.
-              </p>
+            <div className="flex justify-center py-8">
+              <div className="w-64 h-64 relative">
+                <div className="absolute inset-0 bg-primary/20 rounded-full blur-2xl animate-pulse"></div>
+                <img 
+                  src={voidGuide.image} 
+                  alt={voidGuide.name}
+                  className="relative w-full h-full object-cover rounded-lg border-2 border-primary shadow-lg"
+                />
+              </div>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 py-6">
-              {Object.entries(characters).map(([key, char]) => (
-                <div key={key} className="space-y-2">
-                  <div className="aspect-square overflow-hidden rounded-lg border-2 border-primary/20">
-                    <img src={char.image} alt={char.name} className="w-full h-full object-cover" />
-                  </div>
-                  <div className="text-center">
-                    <p className="label-large text-primary">{char.name}</p>
-                    <p className="label-small text-muted-foreground">{char.description}</p>
-                  </div>
-                </div>
-              ))}
+            <div className="space-y-4 max-w-xl mx-auto">
+              <p className="body-large text-foreground text-center">
+                {voidGuide.name} te guiará por seis perguntas sobre seu processo criativo.
+                Não existe resposta certa. Apenas verdades que você ainda não disse em voz alta.
+              </p>
+              <p className="body-base text-muted-foreground text-center italic">
+                {voidGuide.name} will guide you through six questions about your creative process.
+                There are no right answers. Only truths you haven't spoken aloud yet.
+              </p>
             </div>
 
             <Button onClick={handleStart} size="lg" className="px-12">
@@ -254,7 +235,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
               <div className="w-64 h-64 relative">
                 <div className="absolute inset-0 bg-primary/10 rounded-full blur-xl animate-pulse"></div>
                 <img 
-                  src={characters[archetype === 'shadow' ? 'void' : archetype].image} 
+                  src={voidGuide.image} 
                   alt={result.name}
                   className="relative w-full h-full object-cover rounded-lg border-2 border-primary"
                 />
@@ -314,7 +295,6 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
   }
 
   const question = questions[currentQuestion];
-  const character = characters[currentChar];
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -340,19 +320,16 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
             <div className="w-48 h-48 relative flex-shrink-0">
               <div className="absolute inset-0 bg-primary/10 rounded-full blur-xl animate-pulse"></div>
               <img 
-                src={character.image} 
-                alt={character.name}
+                src={voidGuide.image} 
+                alt={voidGuide.name}
                 className="relative w-full h-full object-cover rounded-lg border-2 border-primary/50"
               />
             </div>
 
             <div className="flex-1 space-y-6">
               <div className="space-y-2">
-                <div className="flex items-center gap-3">
-                  <h3 className="heading-3 text-primary">{character.name}</h3>
-                  <span className="label-small text-muted-foreground">— {character.description}</span>
-                </div>
-                <p className="label-small text-muted-foreground italic">{character.descriptionEn}</p>
+                <h3 className="heading-3 text-primary">{voidGuide.name}</h3>
+                <p className="label-small text-muted-foreground">{voidGuide.description} / {voidGuide.descriptionEn}</p>
               </div>
 
               <div className="space-y-3">
