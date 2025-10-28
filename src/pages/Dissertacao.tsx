@@ -64,7 +64,7 @@ const Dissertacao = () => {
 
         <BilingualSection className="py-8">
           <div className="space-y-4">
-            <h1 className="text-sm font-medium tracking-wide uppercase">
+            <h1 className="micro-title">
               LOWMOVIE™ E O LABIRINTO CRIATIVO
             </h1>
           </div>
@@ -147,30 +147,30 @@ const Dissertacao = () => {
               }
               englishContent={
                 <div className="space-y-6">
-                  <p className="text-base leading-relaxed text-justify">
+                  <p className="body-base text-justified">
                     Creative Collective founded in 2008. Post-contemporary studio of design and video. Association of independent creative producers operating as a laboratory of authorial, cultural and commercial creation, connecting people, ideas and projects. Where commercial and experimental coexist under the persona цастро™.
                   </p>
 
                   <div className="space-y-4">
-                    <h3 className="text-base font-bold text-primary">Conceito / Concept</h3>
-                    <p className="text-base leading-relaxed text-justify">
+                    <h3 className="subsection-title text-primary">Conceito / Concept</h3>
+                    <p className="body-base text-justified">
                       CasaTrezeStudio isn't a company. It's a living organism. Laboratory where independent creators meet to transform ideas into matter. Born from the need to create outside traditional systems, building its own creative infrastructure. 17 years of resistance and reinvention.
                     </p>
                   </div>
 
                   <div className="space-y-4">
-                    <h3 className="text-base font-bold text-primary">Serviços / Services</h3>
-                    <div className="space-y-2">
-                      <p className="text-base"><span className="font-bold text-primary">Graphic Design:</span> Visual identities, branding, editorial</p>
-                      <p className="text-base"><span className="font-bold text-primary">Video:</span> Documentaries, music videos, digital content</p>
-                      <p className="text-base"><span className="font-bold text-primary">Art Direction:</span> Cultural projects, campaigns, events</p>
-                      <p className="text-base"><span className="font-bold text-primary">Curation:</span> Experimental and authorial projects</p>
-                    </div>
+                    <h3 className="subsection-title text-primary">Serviços / Services</h3>
+                      <div className="space-y-2">
+                        <p className="body-base"><span className="font-bold text-primary">Graphic Design:</span> Visual identities, branding, editorial</p>
+                        <p className="body-base"><span className="font-bold text-primary">Video:</span> Documentaries, music videos, digital content</p>
+                        <p className="body-base"><span className="font-bold text-primary">Art Direction:</span> Cultural projects, campaigns, events</p>
+                        <p className="body-base"><span className="font-bold text-primary">Curation:</span> Experimental and authorial projects</p>
+                      </div>
                   </div>
 
                   <div className="space-y-4">
-                    <h3 className="text-base font-bold text-primary">Filosofia / Philosophy</h3>
-                    <p className="text-base leading-relaxed text-justify">
+                    <h3 className="subsection-title text-primary">Filosofia / Philosophy</h3>
+                    <p className="body-base text-justified">
                       House number 13 as a symbol of resistance to the conventional. Bad luck transformed into creative power. The studio operates on the border between commercial and experimental, without hierarchy between them. Each project — whether a visual identity for a client or an authorial film — receives the same creative rigor.
                     </p>
                   </div>
@@ -198,32 +198,32 @@ const Dissertacao = () => {
         {/* LowPressure Section */}
         <BilingualSection bgClassName="bg-card/30">
           <div className="border-l-4 border-primary pl-6 space-y-8">
-            <div>
-              <h2 className="section-title mb-2">LowPressure™</h2>
-              <p className="text-sm text-muted-foreground mb-2">2020-Presente</p>
-              <p className="text-sm text-primary font-medium">Skate Crew / Movimento Cultural</p>
-            </div>
+              <div>
+                <h2 className="section-title mb-2">LowPressure™</h2>
+                <p className="micro-title text-muted-foreground mb-2">2020-Presente</p>
+                <p className="micro-title text-primary">Skate Crew / Movimento Cultural</p>
+              </div>
 
             <BilingualContent 
               portugueseContent={
                 <div className="space-y-6">
-                  <p className="text-base leading-relaxed text-justify">
+                    <p className="body-base text-justified">
                     Crew de skate @lowpressure.fam estabelecida nas transições e ruas de Curitiba. Movimento que valoriza o skateboard e seu universo cultural. Uma crew de skatistas, músicos e artistas com diferentes visões e um mesmo ideal. A ética do subterrâneo. O pensamento que nasce da margem.
                   </p>
 
                   <div className="space-y-4">
-                    <h3 className="text-base font-bold text-primary">Filosofia / Philosophy</h3>
-                    <p className="text-base leading-relaxed text-justify">
+                    <h3 className="subsection-title text-primary">Filosofia / Philosophy</h3>
+                    <p className="body-base text-justified">
                       <span className="font-bold">LOW PRESSURE = BAIXA PRESSÃO.</span> Movimento atmosférico que precede tempestades. Instabilidade como potência. Tensão criativa que gera movimento. A crew não é grupo fechado — é campo de força que atrai quem vibra na mesma frequência.
                     </p>
-                    <p className="text-base leading-relaxed text-justify mt-4">
+                    <p className="body-base text-justified mt-4">
                       Skatistas, músicos, artistas, videomakers. Diferentes visões, mesmo ideal: fazer do skate um modo de vida autêntico, sem concessões ao mercado, sem domesticação da rebeldia. Punk ethics aplicada ao concreto urbano.
                     </p>
                   </div>
 
                   <div className="space-y-4">
-                    <h3 className="text-base font-bold text-primary">História / History</h3>
-                    <p className="text-base leading-relaxed text-justify">
+                    <h3 className="subsection-title text-primary">História / History</h3>
+                    <p className="body-base text-justified">
                       Fundada em 2020, mas suas raízes mergulham mais fundo. A crew cristaliza anos de sessões, amizades, quedas e quedas que viram manobras. Curitiba como território afetivo. Cada pico é memória viva. Cada sessão é ritual de pertencimento. O skate como linguagem que não precisa de tradução.
                     </p>
                   </div>
@@ -238,23 +238,23 @@ const Dissertacao = () => {
               }
               englishContent={
                 <div className="space-y-6">
-                  <p className="text-base leading-relaxed text-justify">
+                    <p className="body-base text-justified">
                     Skate crew @lowpressure.fam established in the transitions and streets of Curitiba. Movement that values skateboarding and its cultural universe. A crew of skaters, musicians and artists with different visions and the same ideal. The ethics of the underground. Thought that rises from the margin.
                   </p>
 
                   <div className="space-y-4">
-                    <h3 className="text-base font-bold text-primary">Filosofia / Philosophy</h3>
-                    <p className="text-base leading-relaxed text-justify">
+                    <h3 className="subsection-title text-primary">Filosofia / Philosophy</h3>
+                    <p className="body-base text-justified">
                       <span className="font-bold">LOW PRESSURE.</span> Atmospheric movement that precedes storms. Instability as power. Creative tension that generates movement. The crew isn't a closed group — it's a force field that attracts those who vibrate at the same frequency.
                     </p>
-                    <p className="text-base leading-relaxed text-justify mt-4">
+                    <p className="body-base text-justified mt-4">
                       Skaters, musicians, artists, videomakers. Different visions, same ideal: making skateboarding an authentic way of life, without concessions to the market, without domestication of rebellion. Punk ethics applied to urban concrete.
                     </p>
                   </div>
 
                   <div className="space-y-4">
-                    <h3 className="text-base font-bold text-primary">História / History</h3>
-                    <p className="text-base leading-relaxed text-justify">
+                    <h3 className="subsection-title text-primary">História / History</h3>
+                    <p className="body-base text-justified">
                       Founded in 2020, but its roots run deeper. The crew crystallizes years of sessions, friendships, falls and falls that become tricks. Curitiba as affective territory. Each spot is living memory. Each session is a ritual of belonging. Skateboarding as a language that needs no translation.
                     </p>
                   </div>

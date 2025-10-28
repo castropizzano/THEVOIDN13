@@ -239,11 +239,11 @@ const Videos = () => {
                     {formatDuration(video.duration)}
                   </div>
                 </div>
-                <h3 className="font-medium line-clamp-2 group-hover:text-primary transition-colors text-sm">
+                <h3 className="body-base font-medium line-clamp-2 group-hover:text-primary transition-colors">
                   {video.name}
                 </h3>
                 {video.description && (
-                  <p className="text-xs text-muted-foreground line-clamp-2 mt-1">
+                  <p className="body-small text-muted-foreground line-clamp-2 mt-1">
                     {video.description}
                   </p>
                 )}
@@ -251,7 +251,7 @@ const Videos = () => {
                   href={video.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-xs text-primary hover:underline mt-2"
+                  className="inline-flex items-center gap-1 body-small text-primary hover:underline mt-2"
                   onClick={(e) => e.stopPropagation()}
                 >
                   Ver no Vimeo

@@ -92,11 +92,11 @@ const Index = () => {
               Your browser does not support the video tag.
             </video>
             
-            <div className="space-y-2 text-center">
-              <h1 className="text-sm font-light tracking-wider uppercase">
+            <div className="space-y-2">
+              <h1 className="micro-title">
                 THEVOIDN13 [Shadow_Interface_Bible_v13]
               </h1>
-              <p className="text-xs font-light tracking-wide text-muted-foreground">
+              <p className="body-small text-muted-foreground">
                 [um corpo à deriva entre o ruído e o silêncio]{" "}
                 <span className="italic">[a body adrift between noise and silence]</span>
               </p>
@@ -308,7 +308,7 @@ const Index = () => {
                   </p>
                 </div>
 
-                <div className="text-center py-8">
+                <div className="py-8">
                   <p className="subsection-title text-primary">
                     THE VOID N.13 não é um personagem.<br />
                     É o lugar onde o criador se dissolve para que a imagem respire.
@@ -322,18 +322,14 @@ const Index = () => {
                     <div className="grid grid-cols-3 gap-4 mt-4">
                       <div className="space-y-2">
                         <div className="w-full h-20 rounded-lg" style={{ backgroundColor: '#0C0C0C' }}></div>
-                        <p className="micro-title text-center">#0C0C0C</p>
-                        <p className="micro-title text-center">Deep Void</p>
-                      </div>
-                      <div className="space-y-2">
-                        <div className="w-full h-20 rounded-lg" style={{ backgroundColor: '#A32424' }}></div>
-                        <p className="micro-title text-center">#A32424</p>
-                        <p className="micro-title text-center">Blood Trauma</p>
-                      </div>
-                      <div className="space-y-2">
-                        <div className="w-full h-20 rounded-lg" style={{ backgroundColor: '#657C8C' }}></div>
-                        <p className="micro-title text-center">#657C8C</p>
-                        <p className="micro-title text-center">Urban Haze</p>
+                        <p className="micro-title">#0C0C0C</p>
+                        <p className="micro-title">Deep Void</p>
+...
+                        <p className="micro-title">#A32424</p>
+                        <p className="micro-title">Blood Trauma</p>
+...
+                        <p className="micro-title">#657C8C</p>
+                        <p className="micro-title">Urban Haze</p>
                       </div>
                     </div>
                   </div>
@@ -569,7 +565,7 @@ const Index = () => {
                   <p className="text-justify">
                     A função simbólica de THE VOID N.13 é dar corpo ao invisível — traduzir o silêncio em gesto, o inconsciente em imagem. Ele é o espelho do caos contemporâneo: um ser que surge quando o verbo deixa de fazer sentido. Sua presença não explica — convoca. THE VOID N.13 é o instante em que o erro se torna ritual e o colapso, criação.
                   </p>
-                  <p className="text-justify italic text-muted-foreground">
+                  <p className="body-base text-justified italic text-muted-foreground">
                     The symbolic function is to give body to the invisible — to translate silence into gesture. It is the mirror of contemporary chaos: a being that appears when words no longer hold meaning. THE VOID N.13 is the moment when error becomes ritual and collapse becomes creation.
                   </p>
                 </div>
@@ -583,7 +579,7 @@ const Index = () => {
         {/* Psychology: The Shadow as Language */}
         <section className="py-20 bg-red-900">
           <div className="max-w-6xl mx-auto px-6 space-y-12">
-              <div className="space-y-4 text-center">
+              <div className="space-y-4">
                 <h2 className="section-title text-white">PSICOLOGIA: A SOMBRA COMO LINGUAGEM</h2>
                 <p className="micro-title text-white/90">Psychology: The Shadow as Language</p>
               </div>
