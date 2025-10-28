@@ -455,14 +455,14 @@ const Autor = () => {
             portugueseContent={
               <div className="space-y-12">
                 <div className="space-y-6">
-                  <h2 className="text-2xl font-bold text-primary">ЦЦАСТРО™ como Anti-Brand</h2>
+                  <h2 className="heading-2 text-primary title-break">ЦЦАСТРО™ como Anti-Brand</h2>
                   <p className="text-lg italic text-muted-foreground">
                     Uma identidade que rejeita a lógica publicitária de autopromoção, e se afirma como linguagem, não logotipo.
                   </p>
                 </div>
 
                 <div className="space-y-4">
-                  <h3 className="text-xl font-bold text-primary">O Contexto: Uma Recusa ao Branding Tradicional</h3>
+                  <h3 className="heading-3 text-primary title-break">O Contexto: Uma Recusa ao Branding Tradicional</h3>
                   <p className="text-base leading-relaxed text-justify">
                     Vivemos na era do excesso de identidade. Marcas falam mais de si do que de seus propósitos, buscam reconhecimento pelo algoritmo e não pela substância. Como criador de branding, minha resposta foi criar uma anti-marca — uma identidade que rejeita a lógica publicitária de autopromoção, e se afirma como linguagem, não logotipo.
                   </p>
@@ -477,7 +477,7 @@ const Autor = () => {
                 </div>
 
                 <div className="space-y-4">
-                  <h3 className="text-xl font-bold text-primary">A Escolha da Fonte Journalism (Cirílica)</h3>
+                  <h3 className="heading-3 text-primary title-break">A Escolha da Fonte Journalism (Cirílica)</h3>
                   <p className="text-base leading-relaxed text-justify">
                     A tipografia Journalism, inspirada no alfabeto russo e em estruturas construtivistas, carrega memórias gráficas de resistência, imprensa alternativa e ideologia visual. Adotar essa forma é assumir uma postura editorial, subversiva e crítica: é como se cada letra dissesse "isto não é um logotipo — é um manifesto".
                   </p>
@@ -487,7 +487,7 @@ const Autor = () => {
                 </div>
 
                 <div className="space-y-4">
-                  <h3 className="text-xl font-bold text-primary">Identidade como Espelho e Ruído</h3>
+                  <h3 className="heading-3 text-primary">Identidade como Espelho e Ruído</h3>
                   <p className="text-base leading-relaxed text-justify">
                     O uso de tipografia em corpo alto, tons frios (rosa-pálido sobre preto), e elementos de arquivo como "1984" e o símbolo # cria uma tensão entre o institucional e o subversivo. Essa ironia visual ecoa Orwell, glitch estético e ruído pós-soviético — um statement sobre o branding em colapso.
                   </p>
@@ -502,7 +502,7 @@ const Autor = () => {
                 </div>
 
                 <div className="space-y-4 bg-primary/5 border border-primary/20 rounded-lg p-6">
-                  <h3 className="text-xl font-bold text-primary">Conheçam o Trabalho, Não o Rosto</h3>
+                  <h3 className="heading-3 text-primary title-break">Conheçam o Trabalho, Não o Rosto</h3>
                   <p className="text-base leading-relaxed text-justify">
                     A proposta central é o anonimato como ética criativa. Num mundo saturado de criadores-influencers, a ideia é inverter a equação: não se trata de vender a imagem do artista, mas de expandir o campo simbólico do que ele cria.
                   </p>
@@ -517,7 +517,7 @@ const Autor = () => {
                 </div>
 
                 <div className="space-y-4">
-                  <h3 className="text-xl font-bold text-primary">Filosofia LowPressure™ e Estética de Resistência</h3>
+                  <h3 className="heading-3 text-primary title-break">Filosofia LowPressure™ e Estética de Resistência</h3>
                   <p className="text-base leading-relaxed text-justify">
                     Essa construção anti-brand dialoga diretamente com a filosofia LowPressure™ — onde a autenticidade vem da marginalidade, e o valor nasce da não-adesão. É o mesmo raciocínio que permeia o skate, o cinema independente, o underground design e as poéticas urbanas.
                   </p>
@@ -538,7 +538,7 @@ const Autor = () => {
                 </div>
 
                 <div className="space-y-4">
-                  <h3 className="text-xl font-bold text-primary">A Semiótica do Símbolo</h3>
+                  <h3 className="heading-3 text-primary">A Semiótica do Símbolo</h3>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="border-l-2 border-primary pl-4">
                       <h4 className="text-sm font-bold uppercase mb-2">ЦЦАСТРО</h4>
@@ -560,7 +560,7 @@ const Autor = () => {
                 </div>
 
                 <div className="bg-red-900 -mx-6 px-6 py-8 rounded-lg">
-                  <h3 className="text-xl font-bold text-white mb-4">Conclusão</h3>
+                  <h3 className="heading-3 text-white mb-4">Conclusão</h3>
                   <p className="text-base leading-relaxed text-white text-justify mb-4">
                     A identidade ЦЦАСТРО é um exercício de negação criativa. É o avesso do branding para relembrar o que o design pode ser: linguagem, manifesto, resistência.
                   </p>
@@ -573,14 +573,14 @@ const Autor = () => {
             englishContent={
               <div className="space-y-12">
                 <div className="space-y-6">
-                  <h2 className="text-2xl font-bold text-primary">ЦЦАСТРО™ as Anti-Brand</h2>
+                  <h2 className="heading-2 text-primary title-break">ЦЦАСТРО™ as Anti-Brand</h2>
                   <p className="text-lg italic text-muted-foreground">
                     An identity that rejects the advertising logic of self-promotion, asserting itself as language, not logo.
                   </p>
                 </div>
 
                 <div className="space-y-4">
-                  <h3 className="text-xl font-bold text-primary">The Context: A Refusal of Traditional Branding</h3>
+                  <h3 className="heading-3 text-primary title-break">The Context: A Refusal of Traditional Branding</h3>
                   <p className="text-base leading-relaxed text-justify">
                     We live in an era of excess identity. Brands talk more about themselves than their purposes, seeking algorithmic recognition rather than substance. As a branding creator, my response was to create an anti-brand — an identity that rejects the advertising logic of self-promotion and asserts itself as language, not logo.
                   </p>
@@ -595,7 +595,7 @@ const Autor = () => {
                 </div>
 
                 <div className="space-y-4">
-                  <h3 className="text-xl font-bold text-primary">The Choice of Journalism Font (Cyrillic)</h3>
+                  <h3 className="heading-3 text-primary title-break">The Choice of Journalism Font (Cyrillic)</h3>
                   <p className="text-base leading-relaxed text-justify">
                     The Journalism typography, inspired by the Russian alphabet and constructivist structures, carries graphic memories of resistance, alternative press, and visual ideology. Adopting this form means assuming an editorial, subversive, and critical stance: as if each letter said "this is not a logo — it's a manifesto".
                   </p>
@@ -605,7 +605,7 @@ const Autor = () => {
                 </div>
 
                 <div className="space-y-4">
-                  <h3 className="text-xl font-bold text-primary">Identity as Mirror and Noise</h3>
+                  <h3 className="heading-3 text-primary">Identity as Mirror and Noise</h3>
                   <p className="text-base leading-relaxed text-justify">
                     The use of large typography, cool tones (pale pink on black), and archival elements like "1984" and the # symbol creates tension between institutional and subversive. This visual irony echoes Orwell, aesthetic glitch, and post-Soviet noise — a statement about branding in collapse.
                   </p>
@@ -620,7 +620,7 @@ const Autor = () => {
                 </div>
 
                 <div className="space-y-4 bg-primary/5 border border-primary/20 rounded-lg p-6">
-                  <h3 className="text-xl font-bold text-primary">Know the Work, Not the Face</h3>
+                  <h3 className="heading-3 text-primary title-break">Know the Work, Not the Face</h3>
                   <p className="text-base leading-relaxed text-justify">
                     The central proposition is anonymity as creative ethics. In a world saturated with creator-influencers, the idea is to reverse the equation: it's not about selling the artist's image, but expanding the symbolic field of what they create.
                   </p>
@@ -635,7 +635,7 @@ const Autor = () => {
                 </div>
 
                 <div className="space-y-4">
-                  <h3 className="text-xl font-bold text-primary">LowPressure™ Philosophy and Resistance Aesthetics</h3>
+                  <h3 className="heading-3 text-primary title-break">LowPressure™ Philosophy and Resistance Aesthetics</h3>
                   <p className="text-base leading-relaxed text-justify">
                     This anti-brand construction dialogues directly with the LowPressure™ philosophy — where authenticity comes from marginality, and value is born from non-adherence. It's the same reasoning that permeates skateboarding, independent cinema, underground design, and urban poetics.
                   </p>
@@ -656,7 +656,7 @@ const Autor = () => {
                 </div>
 
                 <div className="space-y-4">
-                  <h3 className="text-xl font-bold text-primary">The Semiotics of the Symbol</h3>
+                  <h3 className="heading-3 text-primary">The Semiotics of the Symbol</h3>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="border-l-2 border-primary pl-4">
                       <h4 className="text-sm font-bold uppercase mb-2">ЦЦАСТРО</h4>
@@ -678,7 +678,7 @@ const Autor = () => {
                 </div>
 
                 <div className="bg-red-900 -mx-6 px-6 py-8 rounded-lg">
-                  <h3 className="text-xl font-bold text-white mb-4">Conclusion</h3>
+                  <h3 className="heading-3 text-white mb-4">Conclusion</h3>
                   <p className="text-base leading-relaxed text-white text-justify mb-4">
                     The ЦЦАСТРО identity is an exercise in creative negation. It's the reverse of branding to remind us what design can be: language, manifesto, resistance.
                   </p>
@@ -797,8 +797,8 @@ const Autor = () => {
         <BilingualSection bgClassName="bg-card/50">
           <div className="space-y-16">
             <div className="space-y-4">
-              <h2 className="text-4xl font-bold">Documentation</h2>
-              <h3 className="text-xl text-primary">Documentos de Pesquisa / Research Documents</h3>
+              <h2 className="heading-1">Documentation</h2>
+              <h3 className="heading-4 text-primary">Documentos de Pesquisa / Research Documents</h3>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
@@ -871,7 +871,7 @@ const Autor = () => {
               portugueseContent={
                 <div className="space-y-8">
                   <div className="space-y-6">
-                    <h3 className="text-2xl font-bold text-primary">O Portal Como Objeto de Pesquisa</h3>
+                    <h3 className="heading-2 text-primary">O Portal Como Objeto de Pesquisa</h3>
                     
                     <p className="text-base leading-relaxed text-justify">
                       Este website não é apenas uma apresentação — é o próprio objeto de pesquisa. Um memorial visual e performático onde cada linha de código, cada imagem gerada, cada texto co-escrito com inteligências artificiais, torna-se evidência material de um processo híbrido de criação. Aqui, a interface não explica o projeto: ela <span className="font-bold italic">é</span> o projeto.
@@ -883,7 +883,7 @@ const Autor = () => {
                   </div>
 
                   <div className="space-y-6 pt-6 border-t border-border">
-                    <h3 className="text-2xl font-bold text-primary">Desmistificar a Máquina, Amplificar o Humano</h3>
+                    <h3 className="heading-2 text-primary title-break">Desmistificar a Máquina, Amplificar o Humano</h3>
                     
                     <p className="text-base leading-relaxed text-justify">
                       Havia medo. Medo de perder autoria, medo de diluir o gesto criativo, medo de que a inteligência artificial substituísse o que há de singular no ato de criar. Mas o processo me ensinou o contrário: a IA não substitui — ela revela. Revela padrões que eu não via, expande horizontes conceituais que eu não alcançaria sozinho, questiona minhas certezas estéticas.
@@ -895,7 +895,7 @@ const Autor = () => {
                   </div>
 
                   <div className="space-y-6 pt-6 border-t border-border">
-                    <h3 className="text-2xl font-bold text-primary">Do Personagem ao Universo ao Código</h3>
+                    <h3 className="heading-2 text-primary title-break">Do Personagem ao Universo ao Código</h3>
                     
                     <p className="text-base leading-relaxed text-justify">
                       THEVOIDN13 começou como um corpo mascarado. Depois virou conceito. Depois virou universo transmídia. Depois virou metodologia de pesquisa. E agora é também código, interface, plataforma. Cada camada não substitui a anterior — todas coexistem, todas se informam.
@@ -911,7 +911,7 @@ const Autor = () => {
                   </div>
 
                   <div className="space-y-6 pt-6 border-t border-border">
-                    <h3 className="text-2xl font-bold text-primary">Futuro Distópico, Prática Utópica</h3>
+                    <h3 className="heading-2 text-primary">Futuro Distópico, Prática Utópica</h3>
                     
                     <p className="text-base leading-relaxed text-justify">
                       Vivemos tempos estranhos. Distópicos em muitos sentidos — vigilância algorítmica, erosão das certezas, aceleração sem direção. Mas também tempos de potência inédita. Nunca foi tão possível criar universos complexos sozinho-mas-não-sozinho. Nunca foi tão viável pensar o impossível e materializá-lo em horas.
@@ -923,7 +923,7 @@ const Autor = () => {
                   </div>
 
                   <div className="space-y-6 pt-6 border-t border-border">
-                    <h3 className="text-2xl font-bold text-primary">Relevância do Processo</h3>
+                    <h3 className="heading-2 text-primary">Relevância do Processo</h3>
                     
                     <p className="text-base leading-relaxed text-justify">
                       Este memorial visual importa porque ele não apenas <span className="italic">documenta</span> o processo — ele <span className="italic">performa</span> o processo. Cada visitante que navega por estas páginas não está lendo sobre co-criação: está experienciando co-criação. Não está aprendendo teoria: está vendo a teoria aplicada.
@@ -935,7 +935,7 @@ const Autor = () => {
                   </div>
 
                   <div className="space-y-6 pt-8 border-t border-primary/30">
-                    <h3 className="text-2xl font-bold text-primary">Experimentação Permanente</h3>
+                    <h3 className="heading-2 text-primary">Experimentação Permanente</h3>
                     
                     <p className="text-base leading-relaxed text-justify">
                       Este não é um trabalho concluído. Este é um trabalho <span className="italic">em conclusão perpétua</span>. O portal será atualizado. Novos prompts serão testados. Novos capítulos do universo THEVOIDN13 surgirão. A metodologia será refinada enquanto permanece aberta.
