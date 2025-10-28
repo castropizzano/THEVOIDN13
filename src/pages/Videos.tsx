@@ -163,22 +163,22 @@ const Videos = () => {
           <BilingualContent 
             portugueseContent={
               <>
-                <h2 className="text-base font-bold">Portfolio Audiovisual</h2>
-                <p className="text-base text-justify leading-relaxed mt-6">
+                <h2 className="subsection-title">Portfolio Audiovisual</h2>
+                <p className="body-base text-justified mt-6">
                   Uma coleção de trabalhos que atravessam design, cinema e videoarte. Cada projeto é um experimento em linguagem visual, onde a estética encontra a narrativa e o movimento se transforma em significado. Do comercial ao experimental, do documentário à performance, estas obras compartilham uma mesma busca: criar imagens que ressoam além da tela.
                 </p>
-                <p className="text-base text-justify leading-relaxed mt-6">
+                <p className="body-base text-justified mt-6">
                   Brandbooks, curtas-metragens, videoperformances, documentários e projetos autorais. Trabalhos produzidos entre 2019-2025, reunindo colaborações com CasaTrezeStudio®, LowPressure™ e projetos independentes. Cada vídeo carrega sua própria metodologia, seu próprio tempo, sua própria forma de existir.
                 </p>
               </>
             }
             englishContent={
               <>
-                <h2 className="text-base font-bold">Audiovisual Portfolio</h2>
-                <p className="text-base text-justify leading-relaxed mt-6">
+                <h2 className="subsection-title">Audiovisual Portfolio</h2>
+                <p className="body-base text-justified mt-6">
                   A collection of works that traverse design, cinema and video art. Each project is an experiment in visual language, where aesthetics meets narrative and movement transforms into meaning. From commercial to experimental, from documentary to performance, these works share the same quest: to create images that resonate beyond the screen.
                 </p>
-                <p className="text-base text-justify leading-relaxed mt-6">
+                <p className="body-base text-justified mt-6">
                   Brandbooks, short films, video performances, documentaries and authorial projects. Works produced between 2019-2025, bringing together collaborations with CasaTrezeStudio®, LowPressure™ and independent projects. Each video carries its own methodology, its own time, its own way of existing.
                 </p>
               </>
