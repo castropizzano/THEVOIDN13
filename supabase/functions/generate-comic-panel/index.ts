@@ -12,13 +12,12 @@ Visual: High contrast, strong shadows, film grain texture, illustration style.
 Color Palette: Deep void black (#0C0C0C), blood trauma red (#A32424), urban haze blue (#657C8C).
 Mood: Introspective, mysterious, cinematic framing with clean linework and balanced chiaroscuro.
 Aspect ratio: Cinema widescreen 16:9 format MANDATORY (1920x1080 or 1280x720).
-CRITICAL: Include THEVØIDN13 logo watermark in bottom-right corner with 50% transparency.
-CRITICAL: DO NOT generate any text, titles, or captions in the image. Only visual elements.`;
+CRITICAL: DO NOT generate any text, titles, captions, numbers, or logos in the image.`;
 
 const WATERMARK_INSTRUCTIONS = `
 CRITICAL: Image MUST be in 16:9 cinema aspect ratio (1920x1080 or 1280x720).
-CRITICAL: Include THEVØIDN13 logo watermark in bottom-right corner with 50% transparency (semi-transparent).
-CRITICAL: DO NOT add any text, scene numbers, titles, or captions to the image. Pure visual storytelling only.`;
+CRITICAL: Do NOT add any text, scene numbers, titles, captions, glyphs, or logos. No typography. Pure visual storytelling only.
+Note: Watermark is applied downstream by the application.`;
 
 serve(async (req) => {
   if (req.method === 'OPTIONS') {

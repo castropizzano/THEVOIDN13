@@ -119,7 +119,7 @@ export const PromptManager = () => {
         <div>
           <h2 className="text-2xl font-bold">Gerenciar Prompts</h2>
           <p className="text-muted-foreground">
-            Biblioteca de templates para geração de imagens THEVOIDN13
+            Biblioteca de templates para geração de imagens THEVØIDN13
           </p>
         </div>
         <Button onClick={startCreating}>
