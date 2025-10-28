@@ -931,6 +931,209 @@ const Autor = () => {
             </div>
           </div>
         </BilingualSection>
+
+        {/* Conclusion Section */}
+        <BilingualSection bgClassName="bg-gradient-to-b from-background via-primary/5 to-background" className="py-32">
+          <div className="space-y-16">
+            <div className="text-center space-y-4 border-b border-primary/20 pb-8">
+              <h2 className="text-4xl font-bold text-primary tracking-tight">
+                Conclusão em Processo
+              </h2>
+              <h3 className="text-xl text-muted-foreground">
+                Conclusion in Process
+              </h3>
+            </div>
+
+            <BilingualContent
+              portugueseContent={
+                <div className="space-y-8">
+                  <div className="space-y-6">
+                    <h3 className="text-2xl font-bold text-primary">O Portal Como Objeto de Pesquisa</h3>
+                    
+                    <p className="text-base leading-relaxed text-justify">
+                      Este website não é apenas uma apresentação — é o próprio objeto de pesquisa. Um memorial visual e performático onde cada linha de código, cada imagem gerada, cada texto co-escrito com inteligências artificiais, torna-se evidência material de um processo híbrido de criação. Aqui, a interface não explica o projeto: ela <span className="font-bold italic">é</span> o projeto.
+                    </p>
+
+                    <p className="text-base leading-relaxed text-justify">
+                      O que começou como uma necessidade de apresentar THEVOIDN13 ao programa de mestrado em Cinema e Artes do Vídeo transformou-se em laboratório vivo. Cada seção, cada componente interativo — o gerador de HQs, a biblioteca de prompts, o mapa mental creative-ops — opera como registro metodológico e experimento estético simultâneo.
+                    </p>
+                  </div>
+
+                  <div className="space-y-6 pt-6 border-t border-border">
+                    <h3 className="text-2xl font-bold text-primary">Desmistificar a Máquina, Amplificar o Humano</h3>
+                    
+                    <p className="text-base leading-relaxed text-justify">
+                      Havia medo. Medo de perder autoria, medo de diluir o gesto criativo, medo de que a inteligência artificial substituísse o que há de singular no ato de criar. Mas o processo me ensinou o contrário: a IA não substitui — ela revela. Revela padrões que eu não via, expande horizontes conceituais que eu não alcançaria sozinho, questiona minhas certezas estéticas.
+                    </p>
+
+                    <p className="text-base leading-relaxed text-justify">
+                      Trabalhar com Claude, Gemini, Midjourney, GPT não foi abrir mão do controle criativo. Foi descobrir que controle criativo nunca foi sobre fazer tudo sozinho. Foi aprender a <span className="font-bold">orquestrar vozes</span> — humanas e não-humanas — em um diálogo onde a autoria se distribui sem se dissolver. A máquina não pensa por mim; ela pensa <span className="italic">comigo</span>.
+                    </p>
+                  </div>
+
+                  <div className="space-y-6 pt-6 border-t border-border">
+                    <h3 className="text-2xl font-bold text-primary">Do Personagem ao Universo ao Código</h3>
+                    
+                    <p className="text-base leading-relaxed text-justify">
+                      THEVOIDN13 começou como um corpo mascarado. Depois virou conceito. Depois virou universo transmídia. Depois virou metodologia de pesquisa. E agora é também código, interface, plataforma. Cada camada não substitui a anterior — todas coexistem, todas se informam.
+                    </p>
+
+                    <p className="text-base leading-relaxed text-justify">
+                      Criar o portal foi perceber que não há mais separação entre o pensar, o fazer e o documentar. Escrever o texto, gerar a imagem e programar a interface são gestos contínuos de um mesmo fluxo criativo. O GitHub vira caderno de campo. O commit vira diário. A build vira performance.
+                    </p>
+
+                    <p className="text-base leading-relaxed text-justify">
+                      E quando você lê este texto, não está apenas consumindo uma obra — está testemunhando um método. Um método que não separa arte de ciência, intuição de algoritmo, subjetividade de processamento.
+                    </p>
+                  </div>
+
+                  <div className="space-y-6 pt-6 border-t border-border">
+                    <h3 className="text-2xl font-bold text-primary">Futuro Distópico, Prática Utópica</h3>
+                    
+                    <p className="text-base leading-relaxed text-justify">
+                      Vivemos tempos estranhos. Distópicos em muitos sentidos — vigilância algorítmica, erosão das certezas, aceleração sem direção. Mas também tempos de potência inédita. Nunca foi tão possível criar universos complexos sozinho-mas-não-sozinho. Nunca foi tão viável pensar o impossível e materializá-lo em horas.
+                    </p>
+
+                    <p className="text-base leading-relaxed text-justify">
+                      Este projeto é uma aposta. A aposta de que a colaboração humano-máquina não precisa ser uma rendição à automação, mas pode ser uma <span className="font-bold">insurgência criativa</span>. Que podemos usar as ferramentas do futuro sem abrir mão da ética do presente. Que podemos programar sem deixar de poetizar. Que podemos render frames sem perder o gesto.
+                    </p>
+                  </div>
+
+                  <div className="space-y-6 pt-6 border-t border-border">
+                    <h3 className="text-2xl font-bold text-primary">Relevância do Processo</h3>
+                    
+                    <p className="text-base leading-relaxed text-justify">
+                      Este memorial visual importa porque ele não apenas <span className="italic">documenta</span> o processo — ele <span className="italic">performa</span> o processo. Cada visitante que navega por estas páginas não está lendo sobre co-criação: está experienciando co-criação. Não está aprendendo teoria: está vendo a teoria aplicada.
+                    </p>
+
+                    <p className="text-base leading-relaxed text-justify">
+                      A relevância está em provar que é possível fazer pesquisa acadêmica rigorosa sem abrir mão da experimentação radical. Que é possível ser metodologicamente sólido e esteticamente arriscado ao mesmo tempo. Que o mestrado pode ser dissertação <span className="font-bold">e</span> obra. Que o memorial pode ser texto <span className="font-bold">e</span> experiência.
+                    </p>
+                  </div>
+
+                  <div className="space-y-6 pt-8 border-t border-primary/30">
+                    <h3 className="text-2xl font-bold text-primary">Experimentação Permanente</h3>
+                    
+                    <p className="text-base leading-relaxed text-justify">
+                      Este não é um trabalho concluído. Este é um trabalho <span className="italic">em conclusão perpétua</span>. O portal será atualizado. Novos prompts serão testados. Novos capítulos do universo THEVOIDN13 surgirão. A metodologia será refinada enquanto permanece aberta.
+                    </p>
+
+                    <p className="text-base leading-relaxed text-justify">
+                      Porque o que aprendi neste processo é que a verdadeira inteligência — humana ou artificial — não está em chegar a respostas definitivas. Está em continuar fazendo perguntas melhores. E fazer perguntas melhores exige coragem para experimentar, falhar, recalibrar, tentar de novo.
+                    </p>
+
+                    <p className="text-base leading-relaxed text-justify font-medium mt-8 p-6 bg-primary/5 rounded-lg border-l-4 border-primary">
+                      O portal está vivo. A pesquisa está em movimento. O futuro está sendo criado agora — um prompt, uma imagem, um commit de cada vez.
+                    </p>
+
+                    <p className="text-base leading-relaxed text-justify italic text-muted-foreground mt-6">
+                      E quando você fecha esta página, o processo continua. Porque este não é o fim. É apenas o próximo começo.
+                    </p>
+                  </div>
+
+                  <div className="pt-12 text-center">
+                    <p className="text-sm font-mono text-muted-foreground tracking-wide">
+                      [continua...]
+                    </p>
+                  </div>
+                </div>
+              }
+              englishContent={
+                <div className="space-y-8">
+                  <div className="space-y-6">
+                    <h3 className="text-2xl font-bold text-primary">The Portal As Research Object</h3>
+                    
+                    <p className="text-base leading-relaxed text-justify">
+                      This website is not just a presentation — it is the research object itself. A visual and performative memorial where every line of code, every generated image, every text co-written with artificial intelligences, becomes material evidence of a hybrid creative process. Here, the interface doesn&apos;t explain the project: it <span className="font-bold italic">is</span> the project.
+                    </p>
+
+                    <p className="text-base leading-relaxed text-justify">
+                      What began as a need to present THEVOIDN13 to the Master&apos;s program in Cinema and Video Arts transformed into a living laboratory. Each section, each interactive component — the comic generator, the prompt library, the creative-ops mind map — operates as both methodological record and aesthetic experiment simultaneously.
+                    </p>
+                  </div>
+
+                  <div className="space-y-6 pt-6 border-t border-border">
+                    <h3 className="text-2xl font-bold text-primary">Demystify the Machine, Amplify the Human</h3>
+                    
+                    <p className="text-base leading-relaxed text-justify">
+                      There was fear. Fear of losing authorship, fear of diluting the creative gesture, fear that artificial intelligence would replace what is singular in the act of creating. But the process taught me otherwise: AI doesn&apos;t replace — it reveals. It reveals patterns I didn&apos;t see, expands conceptual horizons I wouldn&apos;t reach alone, questions my aesthetic certainties.
+                    </p>
+
+                    <p className="text-base leading-relaxed text-justify">
+                      Working with Claude, Gemini, Midjourney, GPT wasn&apos;t giving up creative control. It was discovering that creative control was never about doing everything alone. It was learning to <span className="font-bold">orchestrate voices</span> — human and non-human — in a dialogue where authorship distributes without dissolving. The machine doesn&apos;t think for me; it thinks <span className="italic">with me</span>.
+                    </p>
+                  </div>
+
+                  <div className="space-y-6 pt-6 border-t border-border">
+                    <h3 className="text-2xl font-bold text-primary">From Character to Universe to Code</h3>
+                    
+                    <p className="text-base leading-relaxed text-justify">
+                      THEVOIDN13 started as a masked body. Then became a concept. Then a transmedia universe. Then a research methodology. And now it&apos;s also code, interface, platform. Each layer doesn&apos;t replace the previous — all coexist, all inform each other.
+                    </p>
+
+                    <p className="text-base leading-relaxed text-justify">
+                      Creating the portal meant realizing there&apos;s no separation between thinking, making, and documenting. Writing text, generating images, and programming the interface are continuous gestures of the same creative flow. GitHub becomes a field notebook. The commit becomes a diary. The build becomes performance.
+                    </p>
+
+                    <p className="text-base leading-relaxed text-justify">
+                      And when you read this text, you&apos;re not just consuming a work — you&apos;re witnessing a method. A method that doesn&apos;t separate art from science, intuition from algorithm, subjectivity from processing.
+                    </p>
+                  </div>
+
+                  <div className="space-y-6 pt-6 border-t border-border">
+                    <h3 className="text-2xl font-bold text-primary">Dystopian Future, Utopian Practice</h3>
+                    
+                    <p className="text-base leading-relaxed text-justify">
+                      We live in strange times. Dystopian in many ways — algorithmic surveillance, erosion of certainties, acceleration without direction. But also times of unprecedented potential. It&apos;s never been so possible to create complex universes alone-but-not-alone. It&apos;s never been so viable to think the impossible and materialize it in hours.
+                    </p>
+
+                    <p className="text-base leading-relaxed text-justify">
+                      This project is a bet. The bet that human-machine collaboration doesn&apos;t need to be a surrender to automation, but can be a <span className="font-bold">creative insurgency</span>. That we can use the tools of the future without abandoning the ethics of the present. That we can code without ceasing to poeticize. That we can render frames without losing the gesture.
+                    </p>
+                  </div>
+
+                  <div className="space-y-6 pt-6 border-t border-border">
+                    <h3 className="text-2xl font-bold text-primary">Relevance of the Process</h3>
+                    
+                    <p className="text-base leading-relaxed text-justify">
+                      This visual memorial matters because it doesn&apos;t just <span className="italic">document</span> the process — it <span className="italic">performs</span> the process. Every visitor navigating these pages isn&apos;t reading about co-creation: they&apos;re experiencing co-creation. They&apos;re not learning theory: they&apos;re seeing theory applied.
+                    </p>
+
+                    <p className="text-base leading-relaxed text-justify">
+                      The relevance lies in proving that it&apos;s possible to do rigorous academic research without abandoning radical experimentation. That it&apos;s possible to be methodologically solid and aesthetically risky at the same time. That the Master&apos;s can be dissertation <span className="font-bold">and</span> artwork. That the memorial can be text <span className="font-bold">and</span> experience.
+                    </p>
+                  </div>
+
+                  <div className="space-y-6 pt-8 border-t border-primary/30">
+                    <h3 className="text-2xl font-bold text-primary">Permanent Experimentation</h3>
+                    
+                    <p className="text-base leading-relaxed text-justify">
+                      This is not a finished work. This is a work <span className="italic">in perpetual conclusion</span>. The portal will be updated. New prompts will be tested. New chapters of the THEVOIDN13 universe will emerge. The methodology will be refined while remaining open.
+                    </p>
+
+                    <p className="text-base leading-relaxed text-justify">
+                      Because what I learned in this process is that true intelligence — human or artificial — isn&apos;t in arriving at definitive answers. It&apos;s in continuing to ask better questions. And asking better questions requires courage to experiment, fail, recalibrate, try again.
+                    </p>
+
+                    <p className="text-base leading-relaxed text-justify font-medium mt-8 p-6 bg-primary/5 rounded-lg border-l-4 border-primary">
+                      The portal is alive. The research is in motion. The future is being created now — one prompt, one image, one commit at a time.
+                    </p>
+
+                    <p className="text-base leading-relaxed text-justify italic text-muted-foreground mt-6">
+                      And when you close this page, the process continues. Because this isn&apos;t the end. It&apos;s just the next beginning.
+                    </p>
+                  </div>
+
+                  <div className="pt-12 text-center">
+                    <p className="text-sm font-mono text-muted-foreground tracking-wide">
+                      [to be continued...]
+                    </p>
+                  </div>
+                </div>
+              }
+            />
+          </div>
+        </BilingualSection>
       </main>
 
       <Footer />
