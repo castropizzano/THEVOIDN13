@@ -4,6 +4,7 @@ import { BilingualSection, BilingualContent } from "@/components/BilingualSectio
 import { PromptLibrary } from "@/components/PromptLibrary";
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { ComicGenerator } from "@/components/ComicGenerator";
+import { MindMap } from "@/components/MindMap";
 import heroImage from "@/assets/hero-concept-art.png";
 import conceptCrew from "@/assets/concept-crew.png";
 import actionFigure from "@/assets/action-figure.png";
@@ -19,6 +20,12 @@ import giSide from "@/assets/gi-side.png";
 import voidFront from "@/assets/void-front.png";
 import voidRear from "@/assets/void-rear.png";
 import voidSide from "@/assets/void-side.png";
+import buddyFront from "@/assets/buddy-front.png";
+import buddyRear from "@/assets/buddy-rear.png";
+import buddySide from "@/assets/buddy-side.png";
+import vwgol87Front from "@/assets/vwgol87-front.png";
+import vwgol87Rear from "@/assets/vwgol87-rear.png";
+import vwgol87Side from "@/assets/vwgol87-side.png";
 import roughs000 from "@/assets/roughs-000.png";
 import roughs001 from "@/assets/roughs-001.png";
 import roughs002 from "@/assets/roughs-002.png";
@@ -957,6 +964,60 @@ const Index = () => {
                 <p>Máscara branca fosca com olhos vazios refletindo luz urbana, capuz preto, jaqueta militar verde desbotada com patch "Black Sabbath", moletom preto interno, calça moletom preta, Vans preto. Mãos tatuadas. Presença anônima, o criador desaparecido, a sombra encarnada.</p>
               </div>
             </div>
+
+            {/* BUDDY */}
+            <div className="space-y-6 pt-12">
+              <div className="text-center space-y-2 pb-6 border-b border-border">
+                <h3 className="text-2xl font-bold text-primary">BUDDY</h3>
+                <p className="text-sm text-muted-foreground">
+                  O Companheiro Fiel / The Faithful Companion
+                </p>
+              </div>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="space-y-3">
+                  <img src={buddyFront} alt="BUDDY - Front View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
+                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Front View / Vista Frontal</p>
+                </div>
+                <div className="space-y-3">
+                  <img src={buddySide} alt="BUDDY - Side View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
+                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Side View / Vista Lateral</p>
+                </div>
+                <div className="space-y-3">
+                  <img src={buddyRear} alt="BUDDY - Rear View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
+                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Rear View / Vista Traseira</p>
+                </div>
+              </div>
+              <div className="text-center text-sm text-muted-foreground max-w-3xl mx-auto">
+                <p>Cachorro companheiro de pelagem marrom e branca, olhar atento e leal. Presença constante nas jornadas urbanas, guardião silencioso do crew.</p>
+              </div>
+            </div>
+
+            {/* VWGOL87 */}
+            <div className="space-y-6 pt-12">
+              <div className="text-center space-y-2 pb-6 border-b border-border">
+                <h3 className="text-2xl font-bold text-primary">VWGOL87</h3>
+                <p className="text-sm text-muted-foreground">
+                  O Veículo da Deriva / The Drift Vehicle
+                </p>
+              </div>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="space-y-3">
+                  <img src={vwgol87Front} alt="VWGOL87 - Front View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
+                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Front View / Vista Frontal</p>
+                </div>
+                <div className="space-y-3">
+                  <img src={vwgol87Side} alt="VWGOL87 - Side View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
+                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Side View / Vista Lateral</p>
+                </div>
+                <div className="space-y-3">
+                  <img src={vwgol87Rear} alt="VWGOL87 - Rear View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
+                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Rear View / Vista Traseira</p>
+                </div>
+              </div>
+              <div className="text-center text-sm text-muted-foreground max-w-3xl mx-auto">
+                <p>Volkswagen Gol 1987 cinza, desgastado pelo tempo e pelas ruas. Mais que transporte — um personagem. Extensão do corpo nômade, refúgio urbano, testemunha silenciosa das derivas noturnas.</p>
+              </div>
+            </div>
           </div>
         </BilingualSection>
 
@@ -1068,6 +1129,11 @@ const Index = () => {
             {/* Comic Generator - Experimental */}
             <div className="mt-8">
               <ComicGenerator />
+            </div>
+
+            {/* Mind Map - Creative-Ops Process */}
+            <div className="mt-8">
+              <MindMap />
             </div>
 
             <div className="grid md:grid-cols-2 gap-12">
