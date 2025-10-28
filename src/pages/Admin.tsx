@@ -8,6 +8,7 @@ import { Settings, Image, Video, Type } from "lucide-react";
 import ContentManager from "@/components/admin/ContentManager";
 import MediaManager from "@/components/admin/MediaManager";
 import VideoManager from "@/components/admin/VideoManager";
+import { PromptManager } from "@/components/admin/PromptManager";
 
 const Admin = () => {
   const navigate = useNavigate();
@@ -47,7 +48,7 @@ const Admin = () => {
         </div>
 
         <Tabs defaultValue="content" className="w-full">
-          <TabsList className="grid w-full grid-cols-3 mb-8">
+          <TabsList className="grid w-full grid-cols-4 mb-8">
             <TabsTrigger value="content" className="flex items-center gap-2">
               <Type className="w-4 h-4" />
               Textos
@@ -59,6 +60,10 @@ const Admin = () => {
             <TabsTrigger value="videos" className="flex items-center gap-2">
               <Video className="w-4 h-4" />
               Vídeos
+            </TabsTrigger>
+            <TabsTrigger value="prompts" className="flex items-center gap-2">
+              <Settings className="w-4 h-4" />
+              Prompts
             </TabsTrigger>
           </TabsList>
 
@@ -72,6 +77,10 @@ const Admin = () => {
 
           <TabsContent value="videos">
             <VideoManager />
+          </TabsContent>
+
+          <TabsContent value="prompts">
+            <PromptManager />
           </TabsContent>
         </Tabs>
       </main>

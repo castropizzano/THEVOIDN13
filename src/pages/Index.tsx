@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
+import { PromptLibrary } from "@/components/PromptLibrary";
 import heroImage from "@/assets/hero-concept-art.png";
 import conceptCrew from "@/assets/concept-crew.png";
 import actionFigure from "@/assets/action-figure.png";
@@ -933,6 +934,11 @@ const Index = () => {
                 </div>
                 <p className="text-sm text-muted-foreground">Concept Art / MoodBoard</p>
               </div>
+            </div>
+
+            {/* Prompt Library Card */}
+            <div className="mt-8">
+              <PromptLibrary />
             </div>
 
             <div className="grid md:grid-cols-2 gap-12">
