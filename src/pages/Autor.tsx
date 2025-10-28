@@ -96,6 +96,84 @@ const Autor = () => {
                     <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">Referencial / References</h4>
                     <p className="text-base">Minimalista/Experimentação • Futurista/Construtivismo • Cibercultura/Semiótica • Tipografia/Infografia • Economia Criativa • Underground • Op-Art</p>
                   </div>
+
+                  {/* THEVOIDN13 Visual Identity Elements */}
+                  <div className="pt-6 border-t border-border">
+                    <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">THEVOIDN13 — Paleta de Cores / Color Palette</h4>
+                    <div className="grid grid-cols-3 gap-4 mt-4">
+                      <div className="space-y-2">
+                        <div className="w-full h-20 rounded-lg" style={{ backgroundColor: '#0C0C0C' }}></div>
+                        <p className="text-xs text-center">#0C0C0C</p>
+                        <p className="text-xs text-center text-muted-foreground">Deep Void</p>
+                      </div>
+                      <div className="space-y-2">
+                        <div className="w-full h-20 rounded-lg" style={{ backgroundColor: '#A32424' }}></div>
+                        <p className="text-xs text-center">#A32424</p>
+                        <p className="text-xs text-center text-muted-foreground">Blood Trauma</p>
+                      </div>
+                      <div className="space-y-2">
+                        <div className="w-full h-20 rounded-lg" style={{ backgroundColor: '#657C8C' }}></div>
+                        <p className="text-xs text-center">#657C8C</p>
+                        <p className="text-xs text-center text-muted-foreground">Urban Haze</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="pt-6 border-t border-border">
+                    <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">Matriz de Identidade / Identity Matrix</h4>
+                    <div className="space-y-3 text-sm">
+                      <p><span className="font-medium">Codename:</span> O Décimo-Terceiro Andar</p>
+                      <p><span className="font-medium">Archetype:</span> A Sombra</p>
+                      <p><span className="font-medium">Nature:</span> Anti-herói introspectivo</p>
+                      <p><span className="font-medium">Function:</span> Tornar visível o invisível</p>
+                    </div>
+                  </div>
+
+                  <div className="pt-6 border-t border-border">
+                    <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">Anatomia Visual / Visual Anatomy</h4>
+                    <div className="space-y-3 text-sm">
+                      <p><span className="font-medium">Máscara:</span> Branca fosca, traços humanos mínimos, olhos vazios refletindo luz urbana</p>
+                      <p><span className="font-medium">Capuz/Boné:</span> Preto, estrutura geométrica simples</p>
+                      <p><span className="font-medium">Jaqueta:</span> Verde militar desbotada, textura de uso, bolsos funcionais</p>
+                      <p><span className="font-medium">Camiseta:</span> Preta oversized, tecido pesado</p>
+                      <p><span className="font-medium">Calça:</span> Moletom preto, corte reto, conforto urbano</p>
+                      <p><span className="font-medium">Tênis:</span> Vans preto, sola gasta, autenticidade do uso</p>
+                      <p><span className="font-medium">Postura:</span> Contida, peso no silêncio, presença por ausência</p>
+                    </div>
+                  </div>
+
+                  <div className="pt-6 border-t border-border">
+                    <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">Paisagem Sonora / Sonic Landscape</h4>
+                    <p className="text-sm mb-4">
+                      Ambiente urbano noturno: ruído branco da cidade, respiração controlada, passos em asfalto molhado, 
+                      sirenes distantes, reverb de vielas, chiado analógico, frequências graves contínuas
+                    </p>
+                    <div className="grid grid-cols-3 gap-4 text-xs">
+                      <div>
+                        <p className="font-medium mb-2">Visual</p>
+                        <p className="text-muted-foreground">Grão de filme / Textura ink / Contraste alto</p>
+                      </div>
+                      <div>
+                        <p className="font-medium mb-2">Sônico</p>
+                        <p className="text-muted-foreground">Chiado analógico / Reverb urbano / Frequências graves</p>
+                      </div>
+                      <div>
+                        <p className="font-medium mb-2">Tátil</p>
+                        <p className="text-muted-foreground">Asfalto molhado / Concreto frio / Metal oxidado</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="pt-6 border-t border-border">
+                    <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">Aforismos / Aphorisms</h4>
+                    <div className="space-y-2 text-sm italic">
+                      <p>"O silêncio também fala"</p>
+                      <p>"Entre o glitch e o grão, existo"</p>
+                      <p>"O corpo é a câmera"</p>
+                      <p>"Toda criação é autocriação"</p>
+                      <p>"O ruído é a mensagem"</p>
+                    </div>
+                  </div>
                 </div>
                 
                 <div className="mt-12 pl-6 border-l-2 border-primary">
@@ -262,6 +340,84 @@ const Autor = () => {
                   <div className="pt-6 border-t border-border">
                     <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">Referencial / References</h4>
                     <p className="text-base">Minimalist/Experimentation • Futurist/Constructivism • Cyberculture/Semiotics • Typography/Infographics • Creative Economy • Underground • Op-Art</p>
+                  </div>
+
+                  {/* THEVOIDN13 Visual Identity Elements */}
+                  <div className="pt-6 border-t border-border">
+                    <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">THEVOIDN13 — Color Palette / Paleta de Cores</h4>
+                    <div className="grid grid-cols-3 gap-4 mt-4">
+                      <div className="space-y-2">
+                        <div className="w-full h-20 rounded-lg" style={{ backgroundColor: '#0C0C0C' }}></div>
+                        <p className="text-xs text-center">#0C0C0C</p>
+                        <p className="text-xs text-center text-muted-foreground">Deep Void</p>
+                      </div>
+                      <div className="space-y-2">
+                        <div className="w-full h-20 rounded-lg" style={{ backgroundColor: '#A32424' }}></div>
+                        <p className="text-xs text-center">#A32424</p>
+                        <p className="text-xs text-center text-muted-foreground">Blood Trauma</p>
+                      </div>
+                      <div className="space-y-2">
+                        <div className="w-full h-20 rounded-lg" style={{ backgroundColor: '#657C8C' }}></div>
+                        <p className="text-xs text-center">#657C8C</p>
+                        <p className="text-xs text-center text-muted-foreground">Urban Haze</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="pt-6 border-t border-border">
+                    <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">Identity Matrix / Matriz de Identidade</h4>
+                    <div className="space-y-3 text-sm">
+                      <p><span className="font-medium">Codename:</span> The Thirteenth Floor</p>
+                      <p><span className="font-medium">Archetype:</span> The Shadow</p>
+                      <p><span className="font-medium">Nature:</span> Introspective anti-hero</p>
+                      <p><span className="font-medium">Function:</span> Make the invisible visible</p>
+                    </div>
+                  </div>
+
+                  <div className="pt-6 border-t border-border">
+                    <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">Visual Anatomy / Anatomia Visual</h4>
+                    <div className="space-y-3 text-sm">
+                      <p><span className="font-medium">Mask:</span> Matte white, minimal human features, hollow eyes reflecting urban light</p>
+                      <p><span className="font-medium">Hood/Cap:</span> Black, simple geometric structure</p>
+                      <p><span className="font-medium">Jacket:</span> Faded military green, worn texture, functional pockets</p>
+                      <p><span className="font-medium">T-shirt:</span> Oversized black, heavy fabric</p>
+                      <p><span className="font-medium">Pants:</span> Black sweatpants, straight cut, urban comfort</p>
+                      <p><span className="font-medium">Sneakers:</span> Black Vans, worn sole, authenticity of use</p>
+                      <p><span className="font-medium">Posture:</span> Contained, weight in silence, presence through absence</p>
+                    </div>
+                  </div>
+
+                  <div className="pt-6 border-t border-border">
+                    <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">Sonic Landscape / Paisagem Sonora</h4>
+                    <p className="text-sm mb-4">
+                      Nocturnal urban environment: city white noise, controlled breathing, footsteps on wet asphalt, 
+                      distant sirens, alley reverb, analog hiss, continuous bass frequencies
+                    </p>
+                    <div className="grid grid-cols-3 gap-4 text-xs">
+                      <div>
+                        <p className="font-medium mb-2">Visual</p>
+                        <p className="text-muted-foreground">Film grain / Ink texture / High contrast</p>
+                      </div>
+                      <div>
+                        <p className="font-medium mb-2">Sonic</p>
+                        <p className="text-muted-foreground">Analog hiss / Urban reverb / Bass frequencies</p>
+                      </div>
+                      <div>
+                        <p className="font-medium mb-2">Tactile</p>
+                        <p className="text-muted-foreground">Wet asphalt / Cold concrete / Oxidized metal</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="pt-6 border-t border-border">
+                    <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">Aphorisms / Aforismos</h4>
+                    <div className="space-y-2 text-sm italic">
+                      <p>"Silence also speaks"</p>
+                      <p>"Between glitch and grain, I exist"</p>
+                      <p>"The body is the camera"</p>
+                      <p>"All creation is self-creation"</p>
+                      <p>"Noise is the message"</p>
+                    </div>
                   </div>
                 </div>
                 

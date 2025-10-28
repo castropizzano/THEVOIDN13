@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
 import { PromptLibrary } from "@/components/PromptLibrary";
 import { AudioPlayer } from "@/components/AudioPlayer";
+import { ComicGenerator } from "@/components/ComicGenerator";
 import heroImage from "@/assets/hero-concept-art.png";
 import conceptCrew from "@/assets/concept-crew.png";
 import actionFigure from "@/assets/action-figure.png";
@@ -960,6 +961,11 @@ const Index = () => {
                 title="THEVOIDN13 — Áudio Resumo"
                 description="Síntese executiva do projeto / Executive project summary"
               />
+            </div>
+
+            {/* Comic Generator - Experimental */}
+            <div className="mt-8">
+              <ComicGenerator />
             </div>
 
             <div className="grid md:grid-cols-2 gap-12">

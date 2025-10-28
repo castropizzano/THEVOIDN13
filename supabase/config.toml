@@ -1,1 +1,4 @@
 project_id = "mkigpkfahuqkqxocsyjn"
+
+[functions.generate-comic-panel]
+verify_jwt = false

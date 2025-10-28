@@ -1,0 +1,99 @@
+import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
+
+const corsHeaders = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
+};
+
+const MASTER_PROMPT_BASE = `Cinematic comic illustration in the visual style of "THE VOID N.13" neo-noir project.
+Style: Neo-noir atmosphere, analog 35mm grain, ink texture and painterly lighting.
+Lighting: Low key with cyan-blue + deep red + muted amber tones.
+Visual: High contrast, strong shadows, film grain texture, comic book illustration style.
+Color Palette: Deep void black (#0C0C0C), blood trauma red (#A32424), urban haze blue (#657C8C).
+Mood: Introspective, mysterious, cinematic framing with clean linework and balanced chiaroscuro.
+Aspect ratio: Widescreen 16:9.`;
+
+serve(async (req) => {
+  if (req.method === 'OPTIONS') {
+    return new Response(null, { headers: corsHeaders });
+  }
+
+  try {
+    const { script } = await req.json();
+    
+    if (!script) {
+      throw new Error("Script is required");
+    }
+
+    const LOVABLE_API_KEY = Deno.env.get('LOVABLE_API_KEY');
+    if (!LOVABLE_API_KEY) {
+      throw new Error('LOVABLE_API_KEY is not configured');
+    }
+
+    // Combine master prompt with user script
+    const fullPrompt = `${MASTER_PROMPT_BASE}\n\nScene: ${script}`;
+
+    console.log("Generating comic panel with Nano Banana...");
+    
+    const response = await fetch('https://ai.gateway.lovable.dev/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${LOVABLE_API_KEY}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        model: 'google/gemini-2.5-flash-image-preview',
+        messages: [
+          {
+            role: 'user',
+            content: fullPrompt
+          }
+        ],
+        modalities: ['image', 'text']
+      }),
+    });
+
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error('AI Gateway error:', response.status, errorText);
+      
+      if (response.status === 429) {
+        throw new Error("Rate limit exceeded. Please try again later.");
+      }
+      if (response.status === 402) {
+        throw new Error("Payment required. Please add credits to your workspace.");
+      }
+      
+      throw new Error(`AI Gateway error: ${response.status}`);
+    }
+
+    const data = await response.json();
+    const imageUrl = data.choices?.[0]?.message?.images?.[0]?.image_url?.url;
+
+    if (!imageUrl) {
+      throw new Error("No image generated");
+    }
+
+    console.log("Comic panel generated successfully");
+
+    return new Response(
+      JSON.stringify({ imageUrl }),
+      { 
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+        status: 200
+      }
+    );
+
+  } catch (error) {
+    console.error('Error in generate-comic-panel:', error);
+    return new Response(
+      JSON.stringify({ 
+        error: error instanceof Error ? error.message : 'Unknown error occurred' 
+      }),
+      { 
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+        status: 500
+      }
+    );
+  }
+});
