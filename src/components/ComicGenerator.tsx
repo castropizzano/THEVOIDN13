@@ -41,7 +41,7 @@ export const ComicGenerator = () => {
 
       if (data?.imageUrl) {
         setGeneratedImage(data.imageUrl);
-        toast.success("Tirinha gerada! / Comic panel generated!");
+        toast.success("Still gerado! / Still generated!");
       } else {
         throw new Error("No image generated");
       }
@@ -51,7 +51,7 @@ export const ComicGenerator = () => {
       } else if (error.message?.includes("Payment required")) {
         toast.error("Créditos insuficientes / Insufficient credits");
       } else {
-        toast.error(error.message || "Erro ao gerar tirinha / Error generating comic panel");
+        toast.error(error.message || "Erro ao gerar still / Error generating still");
       }
     } finally {
       setIsGenerating(false);
@@ -63,7 +63,7 @@ export const ComicGenerator = () => {
     
     const link = document.createElement('a');
     link.href = generatedImage;
-    link.download = `thevoidn13-panel-${Date.now()}.png`;
+    link.download = `thevoidn13-still-${Date.now()}.png`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -79,10 +79,10 @@ export const ComicGenerator = () => {
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-primary">
           <Sparkles className="w-5 h-5" />
-          Gerador Experimental de Tirinhas
+          Gerador Experimental de Still
         </CardTitle>
         <CardDescription>
-          Comic Panel Generator — Powered by Nano Banana (Gemini 2.5 Flash Image)
+          Still Generator — Powered by Nano Banana (Gemini 2.5 Flash Image)
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
@@ -101,7 +101,7 @@ export const ComicGenerator = () => {
             </Button>
           </div>
           <Textarea
-            placeholder="Descreva a cena usando o estilo THEVOIDN13: Neo-noir atmosphere, analog 35 mm grain, ink texture and painterly lighting..."
+            placeholder="Descreva a cena usando o estilo THEVØIDN13: Neo-noir atmosphere, analog 35 mm grain, ink texture and painterly lighting..."
             value={script}
             onChange={(e) => setScript(e.target.value)}
             className="min-h-[150px] font-mono text-sm"
@@ -123,7 +123,7 @@ export const ComicGenerator = () => {
           ) : (
             <>
               <Sparkles className="w-4 h-4 mr-2" />
-              Gerar Tirinha / Generate Panel
+              Gerar Still / Generate Still
             </>
           )}
         </Button>
@@ -133,7 +133,7 @@ export const ComicGenerator = () => {
             <div className="relative rounded-lg overflow-hidden border-2 border-primary/50">
               <img
                 src={generatedImage}
-                alt="Generated comic panel"
+                alt="Generated still from THEVØIDN13"
                 className="w-full h-auto"
               />
             </div>
@@ -150,8 +150,9 @@ export const ComicGenerator = () => {
 
         <div className="pt-4 border-t border-border">
           <p className="text-xs text-muted-foreground">
-            <span className="font-medium">Nota Experimental:</span> Este gerador usa prompts mestres do projeto THEVOIDN13 
-            combinados com roteiros criativos para produzir arte visual neo-noir no estilo do universo. 
+            <span className="font-medium">Nota Experimental:</span> Este gerador usa prompts mestres do projeto THEVØIDN13 
+            combinados com roteiros criativos para produzir stills neo-noir no estilo do universo. 
+            Cada imagem é gerada em 16:9 com marca d'água do logo THEVØIDN13 em 50% de transparência.
             A consistência visual é mantida através dos parâmetros definidos na Shadow Interface Bible.
           </p>
         </div>

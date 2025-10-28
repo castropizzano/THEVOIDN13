@@ -5,18 +5,20 @@ const corsHeaders = {
   'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
 };
 
-const MASTER_PROMPT_BASE = `Cinematic comic illustration in the visual style of "THE VOID N.13" neo-noir project.
+const MASTER_PROMPT_BASE = `Cinematic still illustration in the visual style of "THEVØIDN13" neo-noir project.
 Style: Neo-noir atmosphere, analog 35mm grain, ink texture and painterly lighting.
 Lighting: Low key with cyan-blue + deep red + muted amber tones.
-Visual: High contrast, strong shadows, film grain texture, comic book illustration style.
+Visual: High contrast, strong shadows, film grain texture, illustration style.
 Color Palette: Deep void black (#0C0C0C), blood trauma red (#A32424), urban haze blue (#657C8C).
 Mood: Introspective, mysterious, cinematic framing with clean linework and balanced chiaroscuro.
-Aspect ratio: Cinema widescreen 16:9 format MANDATORY.
-Watermark: Include subtle "THE VOID N13" text watermark in bottom right corner, semi-transparent white/cyan text.`;
+Aspect ratio: Cinema widescreen 16:9 format MANDATORY (1920x1080 or 1280x720).
+CRITICAL: Include THEVØIDN13 logo watermark in bottom-right corner with 50% transparency.
+CRITICAL: DO NOT generate any text, titles, or captions in the image. Only visual elements.`;
 
 const WATERMARK_INSTRUCTIONS = `
-CRITICAL: Image must be in 16:9 cinema aspect ratio (1920x1080 or 1280x720).
-CRITICAL: Include "THE VOID N13" watermark in bottom-right corner, semi-transparent cyan/white text, small but visible.`;
+CRITICAL: Image MUST be in 16:9 cinema aspect ratio (1920x1080 or 1280x720).
+CRITICAL: Include THEVØIDN13 logo watermark in bottom-right corner with 50% transparency (semi-transparent).
+CRITICAL: DO NOT add any text, scene numbers, titles, or captions to the image. Pure visual storytelling only.`;
 
 serve(async (req) => {
   if (req.method === 'OPTIONS') {
