@@ -179,7 +179,7 @@ const Index = () => {
 
         {/* THE VOID Street Scene */}
         <section className="w-full h-screen overflow-hidden">
-          <img src={voidStreet} alt="THEVOIDN13 Street" className="w-full h-full object-contain" />
+          <img src={voidStreetScene} alt="THEVOIDN13 Street" className="w-full h-full object-contain" />
         </section>
 
         {/* A Máscara */}
@@ -599,7 +599,7 @@ const Index = () => {
         </BilingualSection>
 
         <section className="w-full h-screen overflow-hidden">
-          <img src={voidStreet} alt="The Void N.13 Street Scene" className="w-full h-full object-contain" />
+          <img src={voidStreetScene} alt="The Void N.13 Street Scene" className="w-full h-full object-contain" />
         </section>
 
         <section className="w-full h-screen overflow-hidden">
