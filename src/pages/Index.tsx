@@ -13,6 +13,7 @@ import roughs002 from "@/assets/roughs-002.png";
 import roughs003 from "@/assets/roughs-003.png";
 import meditationScene from "@/assets/meditation-scene.png";
 import maskVoid from "@/assets/mask-void.png";
+import voidStreet from "@/assets/void-street.png";
 const Index = () => {
   return <div className="min-h-screen bg-background text-foreground">
       <Header />
@@ -164,6 +165,11 @@ const Index = () => {
               </div>
             </div>
           </div>
+        </section>
+
+        {/* THE VOID Street Scene */}
+        <section className="w-full h-screen overflow-hidden">
+          <img src={voidStreet} alt="THEVOIDN13 Street" className="w-full h-full object-contain" />
         </section>
 
         {/* A Máscara */}
