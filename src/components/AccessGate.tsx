@@ -116,14 +116,14 @@ export const AccessGate = ({
           </div>
           <CardDescription className="site-paragraph space-y-3 leading-relaxed">
             <p className="leading-relaxed">
-              Entre no limiar entre luz e sombra onde a memória
+              Entre no limiar entre luz e sombra onde a memória artística se transforma
               <br />
-              artística se transforma em experiência viva.
+              em experiência viva e o vazio revela seus segredos aos que ousam adentrar.
             </p>
             <p className="text-xs leading-relaxed">
-              Step into the threshold between light and shadow where
+              Step into the threshold between light and shadow where artistic memory
               <br />
-              artistic memory transforms into living experience.
+              transforms into living experience and the void reveals its secrets to those who dare.
             </p>
           </CardDescription>
         </CardHeader>
@@ -149,18 +149,18 @@ export const AccessGate = ({
                 <a href="/privacy-policy" className="text-primary hover:underline">
                   Política de Privacidade
                 </a>
-                {" "}e concorda em receber
+                {" "}e concorda em receber transmissões sobre
                 <br />
-                transmissões sobre a jornada no vazio.
+                a jornada no vazio e as manifestações artísticas que emergem das sombras.
               </p>
               <p className="text-xs text-muted-foreground leading-relaxed">
                 By entering, you accept our{" "}
                 <a href="/privacy-policy" className="text-primary hover:underline">
                   Privacy Policy
                 </a>
-                {" "}and agree to receive
+                {" "}and agree to receive transmissions
                 <br />
-                transmissions about the journey into the void.
+                about the journey into the void and the artistic manifestations that emerge from shadows.
               </p>
             </div>
 
