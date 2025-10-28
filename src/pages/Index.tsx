@@ -9,6 +9,8 @@ import { ComicGenerator } from "@/components/ComicGenerator";
 import { MindMap } from "@/components/MindMap";
 import { CreativeOracle } from "@/components/CreativeOracle";
 import { BackToTop } from "@/components/BackToTop";
+import { AccessGate } from "@/components/AccessGate";
+import { CookieConsent } from "@/components/CookieConsent";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import heroImage from "@/assets/hero-concept-art.png";
@@ -44,6 +46,9 @@ import voidStreetScene from "@/assets/void-street-scene.png";
 
 const Index = () => {
   const [oracleOpen, setOracleOpen] = useState(false);
+  const [hasAccess, setHasAccess] = useState(() => {
+    return localStorage.getItem("thevoidn13_access_granted") === "true";
+  });
   
   const schemaData = {
     "@context": "https://schema.org",
@@ -52,6 +57,8 @@ const Index = () => {
   
   return (
     <div className="min-h-screen bg-background text-foreground">
+      {!hasAccess && <AccessGate onAccessGranted={() => setHasAccess(true)} />}
+      <CookieConsent />
       <SEO 
         title="THEVOIDN13 — Memorial Artístico e Práxis Híbrida | Castro Pizzano"
         description="Memorial artístico digital explorando arte, código e consciência através de co-criação humano-máquina. Projeto de pesquisa em Cinema e Artes do Vídeo — CasaTrezeStudio®, LowPressure™, LowMovie™"

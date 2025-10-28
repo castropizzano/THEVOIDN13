@@ -12,6 +12,7 @@ import Videos from "./pages/Videos";
 import Auth from "./pages/Auth";
 import Admin from "./pages/Admin";
 import NotFound from "./pages/NotFound";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 const queryClient = new QueryClient();
 
@@ -25,11 +26,15 @@ const App = () => (
           <ScrollToTop />
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/dissertacao" element={<Dissertacao />} />
-            <Route path="/autor" element={<Autor />} />
-            <Route path="/videos" element={<Videos />} />
+            <Route path="/lowmovie" element={<Dissertacao />} />
+            <Route path="/dissertacao" element={<Dissertacao />} /> {/* legacy redirect */}
+            <Route path="/sobre" element={<Autor />} />
+            <Route path="/autor" element={<Autor />} /> {/* legacy redirect */}
+            <Route path="/galeria" element={<Videos />} />
+            <Route path="/videos" element={<Videos />} /> {/* legacy redirect */}
             <Route path="/auth" element={<Auth />} />
             <Route path="/admin" element={<Admin />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

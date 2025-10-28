@@ -98,6 +98,39 @@ export type Database = {
         }
         Relationships: []
       }
+      newsletter_subscribers: {
+        Row: {
+          consent_given: boolean | null
+          consent_timestamp: string | null
+          email: string
+          full_name: string
+          id: string
+          ip_address: string | null
+          subscribed_at: string | null
+          user_agent: string | null
+        }
+        Insert: {
+          consent_given?: boolean | null
+          consent_timestamp?: string | null
+          email: string
+          full_name: string
+          id?: string
+          ip_address?: string | null
+          subscribed_at?: string | null
+          user_agent?: string | null
+        }
+        Update: {
+          consent_given?: boolean | null
+          consent_timestamp?: string | null
+          email?: string
+          full_name?: string
+          id?: string
+          ip_address?: string | null
+          subscribed_at?: string | null
+          user_agent?: string | null
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           created_at: string

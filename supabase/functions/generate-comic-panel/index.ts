@@ -11,7 +11,12 @@ Lighting: Low key with cyan-blue + deep red + muted amber tones.
 Visual: High contrast, strong shadows, film grain texture, comic book illustration style.
 Color Palette: Deep void black (#0C0C0C), blood trauma red (#A32424), urban haze blue (#657C8C).
 Mood: Introspective, mysterious, cinematic framing with clean linework and balanced chiaroscuro.
-Aspect ratio: Widescreen 16:9.`;
+Aspect ratio: Cinema widescreen 16:9 format MANDATORY.
+Watermark: Include subtle "THE VOID N13" text watermark in bottom right corner, semi-transparent white/cyan text.`;
+
+const WATERMARK_INSTRUCTIONS = `
+CRITICAL: Image must be in 16:9 cinema aspect ratio (1920x1080 or 1280x720).
+CRITICAL: Include "THE VOID N13" watermark in bottom-right corner, semi-transparent cyan/white text, small but visible.`;
 
 serve(async (req) => {
   if (req.method === 'OPTIONS') {
@@ -59,8 +64,8 @@ serve(async (req) => {
       throw new Error('LOVABLE_API_KEY is not configured');
     }
 
-    // Combine master prompt with user script
-    const fullPrompt = `${MASTER_PROMPT_BASE}\n\nScene: ${trimmedScript}`;
+    // Combine master prompt with user script and watermark instructions
+    const fullPrompt = `${MASTER_PROMPT_BASE}\n\n${WATERMARK_INSTRUCTIONS}\n\nScene: ${trimmedScript}`;
 
     console.log("Generating comic panel with Nano Banana...");
     

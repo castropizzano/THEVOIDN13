@@ -6,9 +6,9 @@ const Header = () => {
   const { isAdmin } = useAuth();
   
   const navItems = [
-    { path: "/dissertacao", label: "LOWMOVIE™" },
-    { path: "/autor", label: "AUTHOR" },
-    { path: "/videos", label: "VIDEO PORTFOLIO" },
+    { path: "/lowmovie", label: "LOWMOVIE™" },
+    { path: "/sobre", label: "AUTHOR" },
+    { path: "/galeria", label: "VIDEO PORTFOLIO" },
   ];
   
   if (isAdmin) {
