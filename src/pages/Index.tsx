@@ -6,7 +6,7 @@ import { PromptLibrary } from "@/components/PromptLibrary";
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { ComicGenerator } from "@/components/ComicGenerator";
 import { MindMap } from "@/components/MindMap";
-import { SkateGame } from "@/components/SkateGame";
+import { CreativeOracle } from "@/components/CreativeOracle";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-concept-art.png";
 import conceptCrew from "@/assets/concept-crew.png";
@@ -39,12 +39,12 @@ import maskVoid from "@/assets/mask-void.png";
 import voidStreetScene from "@/assets/void-street-scene.png";
 
 const Index = () => {
-  const [gameOpen, setGameOpen] = useState(false);
+  const [oracleOpen, setOracleOpen] = useState(false);
   
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />
-      <SkateGame open={gameOpen} onOpenChange={setGameOpen} />
+      <CreativeOracle open={oracleOpen} onOpenChange={setOracleOpen} />
       
       <main>
         {/* ===== HERO & INTRODUCTION ===== */}
@@ -1338,15 +1338,15 @@ const Index = () => {
                 </div>
               </a>
               
-              {/* Easter Egg - Hidden Game */}
+              {/* Easter Egg - Creative Oracle */}
               <div className="flex justify-end">
                 <Button
                   variant="ghost"
                   size="sm"
-                  onClick={() => setGameOpen(true)}
+                  onClick={() => setOracleOpen(true)}
                   className="text-xs text-muted-foreground/40 hover:text-primary transition-colors"
                 >
-                  [void_skater.exe]
+                  [creative_oracle.exe]
                 </Button>
               </div>
             </div>
