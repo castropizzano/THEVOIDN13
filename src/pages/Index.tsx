@@ -10,7 +10,7 @@ import { CreativeOracle } from "@/components/CreativeOracle";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import heroImage from "@/assets/hero-concept-art.png";
-import voidFront from "@/assets/void-front.png";
+import voidCityFront from "@/assets/void-city-front.png";
 import conceptCrew from "@/assets/concept-crew.png";
 import actionFigure from "@/assets/action-figure.png";
 import conceptFront from "@/assets/concept-front.png";
@@ -22,6 +22,7 @@ import punkSide from "@/assets/punk-side.png";
 import giFront from "@/assets/gi-front.png";
 import giRear from "@/assets/gi-rear.png";
 import giSide from "@/assets/gi-side.png";
+import voidFront from "@/assets/void-front.png";
 import voidRear from "@/assets/void-rear.png";
 import voidSide from "@/assets/void-side.png";
 import buddyFront from "@/assets/buddy-front.png";
@@ -1225,50 +1226,57 @@ const Index = () => {
 
             {/* Creative Oracle - Interactive Experience */}
             <div className="mt-12">
-              <Card className="p-8 bg-gradient-to-br from-primary/5 to-background border-2 border-primary/30 hover:border-primary/50 transition-all cursor-pointer group"
-                onClick={() => setOracleOpen(true)}>
-                <div className="flex flex-col md:flex-row items-center gap-8">
-                  <div className="w-32 h-32 relative flex-shrink-0">
-                    <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl animate-pulse"></div>
+              <Card 
+                className="relative p-0 bg-black border-2 border-destructive/30 hover:border-destructive/60 transition-all cursor-pointer group overflow-hidden"
+                onClick={() => setOracleOpen(true)}
+              >
+                <div className="grid md:grid-cols-[350px_1fr] gap-0">
+                  {/* Character Side */}
+                  <div className="relative h-[400px] md:h-auto">
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/50"></div>
                     <img 
-                      src={voidFront} 
+                      src={voidCityFront} 
                       alt="THEVOIDN13"
-                      className="relative w-full h-full object-cover rounded-lg border-2 border-primary shadow-lg"
+                      className="w-full h-full object-cover object-center"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
                   </div>
                   
-                  <div className="flex-1 space-y-4 text-center md:text-left">
-                    <div>
-                      <h3 className="heading-2 text-primary group-hover:scale-105 transition-transform">
+                  {/* Text Side */}
+                  <div className="flex flex-col justify-center p-8 md:p-12 space-y-6">
+                    <div className="space-y-2">
+                      <h3 className="text-4xl md:text-5xl font-bold text-destructive tracking-tight group-hover:scale-105 transition-transform">
                         ORÁCULO CRIATIVO
                       </h3>
-                      <p className="label-base text-muted-foreground italic mt-1">CREATIVE ORACLE</p>
+                      <p className="text-xl text-muted-foreground/60 italic font-light">CREATIVE ORACLE</p>
                     </div>
+
+                    <div className="h-px bg-gradient-to-r from-destructive/50 to-transparent"></div>
                     
-                    <div className="space-y-2">
-                      <p className="body-base text-foreground">
+                    <div className="space-y-3">
+                      <p className="text-base text-foreground/90 leading-relaxed">
                         Uma jornada interativa de autodescoberta guiada por THEVOIDN13.
                         Seis perguntas filosóficas sobre processo criativo revelam seu arquétipo dominante.
                       </p>
-                      <p className="body-small text-muted-foreground italic">
+                      <p className="text-sm text-muted-foreground/70 italic leading-relaxed">
                         An interactive journey of self-discovery guided by THEVOIDN13.
                         Six philosophical questions about creative process reveal your dominant archetype.
                       </p>
                     </div>
                     
-                    <div className="flex flex-wrap gap-3 justify-center md:justify-start">
-                      <span className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full border border-primary/30">
-                        Introspectivo / Introspective
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-destructive/10 text-destructive text-xs rounded border border-destructive/30 uppercase tracking-wider">
+                        Introspectivo
                       </span>
-                      <span className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full border border-primary/30">
-                        Filosófico / Philosophical
+                      <span className="px-3 py-1 bg-destructive/10 text-destructive text-xs rounded border border-destructive/30 uppercase tracking-wider">
+                        Filosófico
                       </span>
-                      <span className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full border border-primary/30">
-                        RPG Conceitual / Conceptual RPG
+                      <span className="px-3 py-1 bg-destructive/10 text-destructive text-xs rounded border border-destructive/30 uppercase tracking-wider">
+                        RPG Conceitual
                       </span>
                     </div>
                     
-                    <Button className="mt-4" size="lg">
+                    <Button className="mt-4 bg-destructive hover:bg-destructive/90 text-white font-bold" size="lg">
                       INICIAR JORNADA / START JOURNEY →
                     </Button>
                   </div>

@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Button } from './ui/button';
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from './ui/dialog';
-import { Card } from './ui/card';
-import voidFront from '@/assets/void-front.png';
+import { Dialog, DialogContent } from './ui/dialog';
+import { Volume2, VolumeX } from 'lucide-react';
+import voidCityFront from '@/assets/void-city-front.png';
+import voidCityBack from '@/assets/void-city-back.png';
 
 interface CreativeOracleProps {
   open: boolean;
@@ -17,7 +18,8 @@ type Question = {
 
 const voidGuide = { 
   name: 'THEVOIDN13', 
-  image: voidFront, 
+  imageFront: voidCityFront,
+  imageBack: voidCityBack,
   description: 'A sombra que observa e questiona', 
   descriptionEn: 'The shadow that observes and questions' 
 };
@@ -127,6 +129,8 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
   const [revealed, setRevealed] = useState(false);
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [animatingOut, setAnimatingOut] = useState(false);
+  const [audioMuted, setAudioMuted] = useState(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
     if (!open) {
@@ -136,8 +140,29 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
       setRevealed(false);
       setSelectedOption(null);
       setAnimatingOut(false);
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.currentTime = 0;
+      }
     }
   }, [open]);
+
+  useEffect(() => {
+    if (started && audioRef.current) {
+      audioRef.current.play().catch(() => {});
+    }
+  }, [started]);
+
+  const toggleAudio = () => {
+    if (audioRef.current) {
+      if (audioMuted) {
+        audioRef.current.play();
+      } else {
+        audioRef.current.pause();
+      }
+      setAudioMuted(!audioMuted);
+    }
+  };
 
   const handleAnswer = (archetype: string, value: number) => {
     setScores(prev => ({
@@ -180,39 +205,73 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
   if (!started) {
     return (
       <Dialog open={open} onOpenChange={onOpenChange}>
-        <DialogContent className="max-w-3xl p-8 bg-background/95 backdrop-blur">
-          <div className="space-y-8 text-center">
-            <div className="space-y-4">
-              <h2 className="heading-1 text-primary">ORÁCULO CRIATIVO</h2>
-              <h3 className="heading-3 text-muted-foreground">CREATIVE ORACLE</h3>
+        <DialogContent className="max-w-6xl p-0 bg-black border-2 border-destructive/30 overflow-hidden">
+          <div className="relative min-h-[600px] flex items-center">
+            {/* Background Image */}
+            <div className="absolute inset-0">
+              <img 
+                src={voidGuide.imageBack} 
+                alt="City"
+                className="w-full h-full object-cover opacity-40"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-transparent"></div>
             </div>
-            
-            <div className="flex justify-center py-8">
-              <div className="w-64 h-64 relative">
-                <div className="absolute inset-0 bg-primary/20 rounded-full blur-2xl animate-pulse"></div>
-                <img 
-                  src={voidGuide.image} 
-                  alt={voidGuide.name}
-                  className="relative w-full h-full object-cover rounded-lg border-2 border-primary shadow-lg"
-                />
+
+            <div className="relative z-10 grid md:grid-cols-2 gap-0 w-full">
+              {/* Character Side */}
+              <div className="relative flex items-end justify-center p-8">
+                <div className="relative w-full max-w-md">
+                  <div className="absolute inset-0 bg-destructive/10 blur-3xl"></div>
+                  <img 
+                    src={voidGuide.imageFront} 
+                    alt={voidGuide.name}
+                    className="relative w-full h-auto object-contain drop-shadow-2xl"
+                  />
+                </div>
+              </div>
+
+              {/* Text Side */}
+              <div className="flex flex-col justify-center p-12 space-y-8">
+                <div className="space-y-3">
+                  <h2 className="text-6xl font-bold text-destructive tracking-tight">
+                    ORÁCULO<br/>CRIATIVO
+                  </h2>
+                  <h3 className="text-2xl text-muted-foreground/60 italic font-light tracking-wide">
+                    CREATIVE ORACLE
+                  </h3>
+                </div>
+
+                <div className="h-px bg-gradient-to-r from-destructive/50 to-transparent"></div>
+
+                <div className="space-y-4">
+                  <p className="text-lg text-foreground/90 leading-relaxed">
+                    {voidGuide.name} te guiará por seis perguntas sobre seu processo criativo.
+                    Não existe resposta certa. Apenas verdades que você ainda não disse em voz alta.
+                  </p>
+                  <p className="text-base text-muted-foreground/70 italic leading-relaxed">
+                    {voidGuide.name} will guide you through six questions about your creative process.
+                    There are no right answers. Only truths you haven't spoken aloud yet.
+                  </p>
+                </div>
+
+                <Button 
+                  onClick={handleStart} 
+                  size="lg" 
+                  className="w-full bg-destructive hover:bg-destructive/90 text-white font-bold text-lg py-6"
+                >
+                  COMEÇAR / START
+                </Button>
               </div>
             </div>
-
-            <div className="space-y-4 max-w-xl mx-auto">
-              <p className="body-large text-foreground text-center">
-                {voidGuide.name} te guiará por seis perguntas sobre seu processo criativo.
-                Não existe resposta certa. Apenas verdades que você ainda não disse em voz alta.
-              </p>
-              <p className="body-base text-muted-foreground text-center italic">
-                {voidGuide.name} will guide you through six questions about your creative process.
-                There are no right answers. Only truths you haven't spoken aloud yet.
-              </p>
-            </div>
-
-            <Button onClick={handleStart} size="lg" className="px-12">
-              COMEÇAR / START
-            </Button>
           </div>
+
+          {/* Hidden audio element */}
+          <audio 
+            ref={audioRef} 
+            loop 
+            src="/audio/thevoidn13-projeto.mp3"
+            className="hidden"
+          />
         </DialogContent>
       </Dialog>
     );
@@ -224,70 +283,108 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
     
     return (
       <Dialog open={open} onOpenChange={onOpenChange}>
-        <DialogContent className="max-w-4xl p-8 bg-background/95 backdrop-blur">
-          <div className="space-y-8 animate-fade-in">
-            <div className="text-center space-y-4">
-              <h2 className="heading-1 text-primary">{result.name}</h2>
-              <h3 className="heading-3 text-muted-foreground">{result.nameEn}</h3>
+        <DialogContent className="max-w-5xl p-0 bg-black border-2 border-destructive/30 overflow-hidden">
+          <div className="relative">
+            {/* Background */}
+            <div className="absolute inset-0">
+              <img 
+                src={voidGuide.imageBack} 
+                alt="City"
+                className="w-full h-full object-cover opacity-30"
+              />
+              <div className="absolute inset-0 bg-gradient-to-b from-black via-black/95 to-black"></div>
             </div>
 
-            <div className="flex justify-center">
-              <div className="w-64 h-64 relative">
-                <div className="absolute inset-0 bg-primary/10 rounded-full blur-xl animate-pulse"></div>
-                <img 
-                  src={voidGuide.image} 
-                  alt={result.name}
-                  className="relative w-full h-full object-cover rounded-lg border-2 border-primary"
-                />
+            <div className="relative z-10 p-12 space-y-8">
+              {/* Audio Control */}
+              <button
+                onClick={toggleAudio}
+                className="absolute top-4 right-4 p-2 text-muted-foreground hover:text-foreground transition-colors"
+              >
+                {audioMuted ? <VolumeX size={20} /> : <Volume2 size={20} />}
+              </button>
+
+              <div className="text-center space-y-3">
+                <h2 className="text-5xl font-bold text-destructive tracking-tight">{result.name}</h2>
+                <h3 className="text-2xl text-muted-foreground/60 italic font-light">{result.nameEn}</h3>
               </div>
-            </div>
 
-            <div className="space-y-6 max-w-2xl mx-auto">
-              <div className="space-y-3">
-                <p className="body-large text-foreground text-justify">
+              <div className="flex justify-center">
+                <div className="w-80 h-[500px] relative">
+                  <div className="absolute inset-0 bg-destructive/10 blur-2xl"></div>
+                  <img 
+                    src={voidGuide.imageFront} 
+                    alt={result.name}
+                    className="relative w-full h-full object-contain drop-shadow-2xl"
+                  />
+                </div>
+              </div>
+
+            <div className="space-y-6 max-w-3xl mx-auto">
+              <div className="space-y-3 bg-black/40 p-6 rounded-lg border border-destructive/20">
+                <p className="text-lg text-foreground leading-relaxed">
                   {result.description}
                 </p>
-                <p className="body-base text-muted-foreground text-justify italic">
+                <p className="text-base text-muted-foreground/80 italic leading-relaxed">
                   {result.descriptionEn}
                 </p>
               </div>
 
-              <div className="p-6 bg-primary/5 border-l-4 border-primary rounded-r space-y-2">
-                <p className="body-base font-bold text-foreground">
+              <div className="p-6 bg-destructive/10 border-l-4 border-destructive rounded-r space-y-2">
+                <p className="text-base font-bold text-foreground">
                   {result.message}
                 </p>
-                <p className="body-small text-muted-foreground italic">
+                <p className="text-sm text-muted-foreground italic">
                   {result.messageEn}
                 </p>
               </div>
 
-              <div className="pt-4 space-y-2">
-                <p className="label-base text-muted-foreground">Distribuição dos arquétipos / Archetype distribution:</p>
-                <div className="space-y-2">
+              <div className="pt-4 space-y-3 bg-black/40 p-6 rounded-lg border border-destructive/20">
+                <p className="text-sm text-muted-foreground/70 uppercase tracking-wider">
+                  Distribuição dos arquétipos / Archetype distribution
+                </p>
+                <div className="space-y-3">
                   {Object.entries(scores).map(([key, value]) => (
-                    <div key={key} className="flex items-center gap-3">
-                      <span className="label-small text-foreground w-20">{archetypes[key as keyof typeof archetypes].name.split(' ')[1]}</span>
-                      <div className="flex-1 h-2 bg-muted rounded-full overflow-hidden">
+                    <div key={key} className="flex items-center gap-4">
+                      <span className="text-sm text-foreground w-32 uppercase tracking-wide">
+                        {archetypes[key as keyof typeof archetypes].name.split(' ').pop()}
+                      </span>
+                      <div className="flex-1 h-3 bg-muted/20 rounded-full overflow-hidden border border-destructive/20">
                         <div 
-                          className="h-full bg-primary transition-all duration-1000"
+                          className="h-full bg-gradient-to-r from-destructive to-destructive/60 transition-all duration-1000"
                           style={{ width: `${(value / Math.max(...Object.values(scores))) * 100}%` }}
                         />
                       </div>
-                      <span className="label-small text-muted-foreground w-8 text-right">{value}</span>
+                      <span className="text-sm text-muted-foreground/70 w-12 text-right">{value}</span>
                     </div>
                   ))}
                 </div>
               </div>
             </div>
 
-            <div className="flex justify-center gap-4">
-              <Button onClick={handleReset} variant="outline">
+            <div className="flex justify-center gap-4 pt-4">
+              <Button 
+                onClick={handleReset} 
+                variant="outline" 
+                className="border-destructive/30 text-foreground hover:bg-destructive/10"
+              >
                 REFAZER / RESTART
               </Button>
-              <Button onClick={() => onOpenChange(false)}>
+              <Button 
+                onClick={() => onOpenChange(false)}
+                className="bg-destructive hover:bg-destructive/90"
+              >
                 FECHAR / CLOSE
               </Button>
             </div>
+          </div>
+
+          <audio 
+            ref={audioRef} 
+            loop 
+            src="/audio/thevoidn13-projeto.mp3"
+            className="hidden"
+          />
           </div>
         </DialogContent>
       </Dialog>
@@ -298,68 +395,106 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-4xl p-8 bg-background/95 backdrop-blur">
-        <div className={`space-y-8 transition-all duration-500 ${animatingOut ? 'opacity-0 scale-95' : 'opacity-100 scale-100'}`}>
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              {questions.map((_, idx) => (
-                <div
-                  key={idx}
-                  className={`h-2 w-8 rounded-full transition-all ${
-                    idx === currentQuestion ? 'bg-primary' : idx < currentQuestion ? 'bg-primary/50' : 'bg-muted'
-                  }`}
-                />
-              ))}
-            </div>
-            <p className="label-base text-muted-foreground">
-              {currentQuestion + 1} / {questions.length}
-            </p>
+      <DialogContent className="max-w-6xl p-0 bg-black border-2 border-destructive/30 overflow-hidden">
+        <div className="relative">
+          {/* Background */}
+          <div className="absolute inset-0">
+            <img 
+              src={voidGuide.imageBack} 
+              alt="City"
+              className="w-full h-full object-cover opacity-30"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/95 to-transparent"></div>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-8 items-center">
-            <div className="w-48 h-48 relative flex-shrink-0">
-              <div className="absolute inset-0 bg-primary/10 rounded-full blur-xl animate-pulse"></div>
-              <img 
-                src={voidGuide.image} 
-                alt={voidGuide.name}
-                className="relative w-full h-full object-cover rounded-lg border-2 border-primary/50"
-              />
-            </div>
+          <div className="relative z-10">
+            {/* Audio Control */}
+            <button
+              onClick={toggleAudio}
+              className="absolute top-4 right-4 p-2 text-muted-foreground hover:text-foreground transition-colors z-20"
+            >
+              {audioMuted ? <VolumeX size={20} /> : <Volume2 size={20} />}
+            </button>
 
-            <div className="flex-1 space-y-6">
-              <div className="space-y-2">
-                <h3 className="heading-3 text-primary">{voidGuide.name}</h3>
-                <p className="label-small text-muted-foreground">{voidGuide.description} / {voidGuide.descriptionEn}</p>
+            <div className={`transition-all duration-500 ${animatingOut ? 'opacity-0 scale-95' : 'opacity-100 scale-100'}`}>
+              {/* Progress Bar */}
+              <div className="p-6 pb-0">
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center gap-2">
+                    {questions.map((_, idx) => (
+                      <div
+                        key={idx}
+                        className={`h-1.5 w-12 rounded-full transition-all ${
+                          idx === currentQuestion ? 'bg-destructive' : idx < currentQuestion ? 'bg-destructive/50' : 'bg-muted/30'
+                        }`}
+                      />
+                    ))}
+                  </div>
+                  <p className="text-sm text-muted-foreground/70 uppercase tracking-wider">
+                    {currentQuestion + 1} / {questions.length}
+                  </p>
+                </div>
               </div>
 
-              <div className="space-y-3">
-                <p className="body-large text-foreground font-medium">
-                  {question.text}
-                </p>
-                <p className="body-base text-muted-foreground italic">
-                  {question.textEn}
-                </p>
-              </div>
+              <div className="grid md:grid-cols-[400px_1fr] gap-0 min-h-[600px]">
+                {/* Character Side */}
+                <div className="relative flex items-end justify-center p-6">
+                  <div className="relative w-full">
+                    <div className="absolute inset-0 bg-destructive/10 blur-2xl"></div>
+                    <img 
+                      src={voidGuide.imageFront} 
+                      alt={voidGuide.name}
+                      className="relative w-full h-auto object-contain drop-shadow-2xl"
+                    />
+                  </div>
+                </div>
 
-              <div className="space-y-3">
-                {question.options.map((option, idx) => (
-                  <button
-                    key={idx}
-                    onClick={() => handleAnswer(option.archetype, option.value)}
-                    className="w-full text-left p-4 rounded-lg border-2 border-border hover:border-primary hover:bg-primary/5 transition-all group"
-                  >
-                    <p className="body-base text-foreground group-hover:text-primary transition-colors">
-                      {option.text}
+                {/* Questions Side */}
+                <div className="flex flex-col justify-center p-12 space-y-8">
+                  <div className="space-y-2">
+                    <h3 className="text-2xl font-bold text-destructive tracking-tight">{voidGuide.name}</h3>
+                    <p className="text-sm text-muted-foreground/60 italic">{voidGuide.description}</p>
+                  </div>
+
+                  <div className="h-px bg-gradient-to-r from-destructive/50 to-transparent"></div>
+
+                  <div className="space-y-4">
+                    <p className="text-xl text-foreground font-medium leading-relaxed">
+                      {question.text}
                     </p>
-                    <p className="body-small text-muted-foreground italic mt-1">
-                      {option.textEn}
+                    <p className="text-base text-muted-foreground/70 italic leading-relaxed">
+                      {question.textEn}
                     </p>
-                  </button>
-                ))}
+                  </div>
+
+                  <div className="space-y-3">
+                    {question.options.map((option, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => handleAnswer(option.archetype, option.value)}
+                        className="w-full text-left p-4 rounded-lg bg-black/40 border border-destructive/20 hover:border-destructive hover:bg-destructive/10 transition-all group"
+                      >
+                        <p className="text-base text-foreground group-hover:text-destructive transition-colors">
+                          {option.text}
+                        </p>
+                        <p className="text-sm text-muted-foreground/60 italic mt-1">
+                          {option.textEn}
+                        </p>
+                      </button>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        <audio 
+          ref={audioRef} 
+          loop 
+          src="/audio/thevoidn13-projeto.mp3"
+          className="hidden"
+        />
       </DialogContent>
     </Dialog>
   );
