@@ -12,3 +12,12 @@ Allow: /
 
 User-agent: *
 Allow: /
+Disallow: /admin
+Disallow: /auth
+
+# Sitemap
+Sitemap: https://thevoidn13.lovableproject.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+

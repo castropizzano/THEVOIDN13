@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://thevoidn13.lovableproject.com/</loc>
+    <lastmod>2025-01-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://thevoidn13.lovableproject.com/assets/hero-concept-art.png</image:loc>
+      <image:title>THEVOIDN13 Concept Art</image:title>
+    </image:image>
+  </url>
+
+  <!-- Dissertação -->
+  <url>
+    <loc>https://thevoidn13.lovableproject.com/dissertacao</loc>
+    <lastmod>2025-01-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Autor -->
+  <url>
+    <loc>https://thevoidn13.lovableproject.com/autor</loc>
+    <lastmod>2025-01-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Videos Portfolio -->
+  <url>
+    <loc>https://thevoidn13.lovableproject.com/videos</loc>
+    <lastmod>2025-01-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Documents -->
+  <url>
+    <loc>https://thevoidn13.lovableproject.com/documents/THEVOIDN13_ShadowInterfaceBible_v13.pdf</loc>
+    <lastmod>2025-01-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://thevoidn13.lovableproject.com/documents/LowMovie_brandbook.pdf</loc>
+    <lastmod>2025-01-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://thevoidn13.lovableproject.com/documents/LowPressure_brandbook.pdf</loc>
+    <lastmod>2025-01-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://thevoidn13.lovableproject.com/documents/Memorial_Academico_v3.pdf</loc>
+    <lastmod>2025-01-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

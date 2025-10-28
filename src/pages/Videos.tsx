@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { SEO, breadcrumbSchema } from "@/components/SEO";
 import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
 import { supabase } from "@/integrations/supabase/client";
 import { Play, Clock, ExternalLink } from "lucide-react";
@@ -25,6 +26,27 @@ const Videos = () => {
   const [loading, setLoading] = useState(true);
   const [selectedVideo, setSelectedVideo] = useState<Video | null>(null);
   const { toast } = useToast();
+
+  const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "https://thevoidn13.lovableproject.com/" },
+    { name: "Portfolio de Vídeos", url: "https://thevoidn13.lovableproject.com/videos" }
+  ]);
+
+  const videoCollectionSchema = {
+    "@context": "https://schema.org",
+    "@type": "VideoGallery",
+    "name": "Portfolio Audiovisual — Castro Pizzano",
+    "description": "Catálogo completo de trabalhos audiovisuais: curtas-metragens, videoperformance, documentários e comerciais",
+    "author": {
+      "@type": "Person",
+      "name": "Castro Pizzano"
+    }
+  };
+
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@graph": [videoCollectionSchema, breadcrumbs]
+  };
 
   useEffect(() => {
     fetchVideos();
@@ -111,6 +133,11 @@ const Videos = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO 
+        title="Portfolio de Vídeos — Audiovisual | Castro Pizzano"
+        description="Catálogo completo de trabalhos audiovisuais: curtas-metragens experimentais, videoperformance, documentários e projetos comerciais por Castro Pizzano (цастро™) — CasaTrezeStudio®"
+        schemaData={schemaData}
+      />
       <Header />
       
       <main>

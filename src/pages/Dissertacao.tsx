@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { SEO, breadcrumbSchema } from "@/components/SEO";
 import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
 import { MusicPlayer } from "@/components/MusicPlayer";
 import { PodcastPlayer } from "@/components/PodcastPlayer";
@@ -14,8 +15,43 @@ import roughs001 from "@/assets/roughs-001.png";
 import meditationScene from "@/assets/meditation-scene.png";
 
 const Dissertacao = () => {
+  const thesisSchema = {
+    "@context": "https://schema.org",
+    "@type": "Thesis",
+    "name": "LowMovie™ e o Labirinto Criativo: Subjetividade, Subcultura e a Construção de uma Estética em Movimento",
+    "author": {
+      "@type": "Person",
+      "name": "Castro Pizzano"
+    },
+    "datePublished": "2025",
+    "inLanguage": ["pt-BR", "en-US"],
+    "publisher": {
+      "@type": "EducationalOrganization",
+      "name": "UNESPAR",
+      "department": "PPG-CINEAV"
+    },
+    "educationalLevel": "Master's Degree",
+    "about": "Cinema Experimental, Skate Culture, Processos Criativos, Arte Audiovisual",
+    "inSupportOf": "Cinema e Artes do Vídeo"
+  };
+
+  const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "https://thevoidn13.lovableproject.com/" },
+    { name: "LowMovie™ — Dissertação", url: "https://thevoidn13.lovableproject.com/dissertacao" }
+  ]);
+
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@graph": [thesisSchema, breadcrumbs]
+  };
+
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO 
+        title="LowMovie™ — Dissertação de Mestrado | THEVOIDN13"
+        description="Dissertação de mestrado em Cinema e Artes do Vídeo explorando subjetividade, subcultura e processos criativos no skate através do filme LowMovie™. CasaTrezeStudio®, LowPressure™ crew por Castro Pizzano"
+        schemaData={schemaData}
+      />
       <Header />
       
       <main>

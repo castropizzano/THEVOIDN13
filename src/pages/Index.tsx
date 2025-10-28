@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { SEO, creativeWorkSchema, personSchema, organizationSchema } from "@/components/SEO";
 import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
 import { PromptLibrary } from "@/components/PromptLibrary";
 import { AudioPlayer } from "@/components/AudioPlayer";
@@ -43,8 +44,18 @@ import voidStreetScene from "@/assets/void-street-scene.png";
 const Index = () => {
   const [oracleOpen, setOracleOpen] = useState(false);
   
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@graph": [creativeWorkSchema, personSchema, organizationSchema]
+  };
+  
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO 
+        title="THEVOIDN13 — Memorial Artístico e Práxis Híbrida | Castro Pizzano"
+        description="Memorial artístico digital explorando arte, código e consciência através de co-criação humano-máquina. Projeto de pesquisa em Cinema e Artes do Vídeo — CasaTrezeStudio®, LowPressure™, LowMovie™"
+        schemaData={schemaData}
+      />
       <Header />
       <CreativeOracle open={oracleOpen} onOpenChange={setOracleOpen} />
       

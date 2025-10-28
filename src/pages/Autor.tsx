@@ -1,12 +1,29 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { SEO, personSchema, breadcrumbSchema } from "@/components/SEO";
 import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
 import heroImage from "@/assets/castro-hero-new.png";
 import antibrandImage from "@/assets/antibrand-hero.png";
 
 const Autor = () => {
+  const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: "https://thevoidn13.lovableproject.com/" },
+    { name: "Autor", url: "https://thevoidn13.lovableproject.com/autor" }
+  ]);
+
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@graph": [personSchema, breadcrumbs]
+  };
+
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SEO 
+        title="Castro Pizzano (цастро™) — Artista e Pesquisador | THEVOIDN13"
+        description="Castro Pizzano (цастро™): Artista visual, designer e cineasta experimental. Fundador da CasaTrezeStudio®, co-criador LowPressure™ crew. Mestrado em Cinema e Artes do Vídeo — UNESPAR"
+        schemaData={schemaData}
+        type="profile"
+      />
       <Header />
       
       <main>
