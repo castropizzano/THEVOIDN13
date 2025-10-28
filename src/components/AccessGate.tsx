@@ -7,6 +7,7 @@ import { toast } from "sonner";
 import { z } from "zod";
 import { Loader2 } from "lucide-react";
 import { LoadingSpinner } from "@/components/LoadingSpinner";
+import { PrivacyPolicyDialog } from "@/components/PrivacyPolicyDialog";
 const subscribeSchema = z.object({
   email: z.string().trim().email("Email inválido / Invalid email").max(255, "Email muito longo / Email too long"),
   full_name: z.string().trim().min(2, "Nome muito curto (mín. 2 caracteres) / Name too short (min 2 chars)").max(100, "Nome muito longo (máx. 100 caracteres) / Name too long (max 100 chars)")
@@ -142,16 +143,20 @@ export const AccessGate = ({
             <div className="space-y-2">
               <p className="text-xs text-muted-foreground leading-relaxed">
                 Ao adentrar, você aceita nossa{" "}
-                <a href="/privacy-policy" className="text-primary hover:underline">
-                  Política de Privacidade
-                </a>
+                <PrivacyPolicyDialog>
+                  <button type="button" className="text-primary hover:underline">
+                    Política de Privacidade
+                  </button>
+                </PrivacyPolicyDialog>
                 {" "}e concorda em receber transmissões sobre a jornada no vazio e as manifestações artísticas que emergem das sombras.
               </p>
               <p className="text-xs text-muted-foreground leading-relaxed">
                 By entering, you accept our{" "}
-                <a href="/privacy-policy" className="text-primary hover:underline">
-                  Privacy Policy
-                </a>
+                <PrivacyPolicyDialog>
+                  <button type="button" className="text-primary hover:underline">
+                    Privacy Policy
+                  </button>
+                </PrivacyPolicyDialog>
                 {" "}and agree to receive transmissions about the journey into the void and the artistic manifestations that emerge from shadows.
               </p>
             </div>

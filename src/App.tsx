@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "@/hooks/useAuth";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
+import { ProtectedRoute } from "@/components/ProtectedRoute";
 import ScrollToTop from "@/components/ScrollToTop";
 import Index from "./pages/Index";
 import Dissertacao from "./pages/Dissertacao";
@@ -14,7 +15,6 @@ import Auth from "./pages/Auth";
 import Admin from "./pages/Admin";
 import AdminDashboard from "./pages/AdminDashboard";
 import NotFound from "./pages/NotFound";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 const queryClient = new QueryClient();
 
@@ -28,19 +28,18 @@ const App = () => (
           <BrowserRouter>
             <ScrollToTop />
             <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/lowmovie" element={<Dissertacao />} />
-              <Route path="/dissertacao" element={<Dissertacao />} /> {/* legacy redirect */}
-              <Route path="/sobre" element={<Autor />} />
-              <Route path="/autor" element={<Autor />} /> {/* legacy redirect */}
-              <Route path="/galeria" element={<Videos />} />
-              <Route path="/videos" element={<Videos />} /> {/* legacy redirect */}
-              <Route path="/auth" element={<Auth />} />
-              <Route path="/admin" element={<Admin />} />
-              <Route path="/admin/dashboard" element={<AdminDashboard />} />
-              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/" element={<ProtectedRoute><Index /></ProtectedRoute>} />
+              <Route path="/lowmovie" element={<ProtectedRoute><Dissertacao /></ProtectedRoute>} />
+              <Route path="/dissertacao" element={<ProtectedRoute><Dissertacao /></ProtectedRoute>} /> {/* legacy redirect */}
+              <Route path="/sobre" element={<ProtectedRoute><Autor /></ProtectedRoute>} />
+              <Route path="/autor" element={<ProtectedRoute><Autor /></ProtectedRoute>} /> {/* legacy redirect */}
+              <Route path="/galeria" element={<ProtectedRoute><Videos /></ProtectedRoute>} />
+              <Route path="/videos" element={<ProtectedRoute><Videos /></ProtectedRoute>} /> {/* legacy redirect */}
+              <Route path="/auth" element={<ProtectedRoute><Auth /></ProtectedRoute>} />
+              <Route path="/admin" element={<ProtectedRoute><Admin /></ProtectedRoute>} />
+              <Route path="/admin/dashboard" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<NotFound />} />
+              <Route path="*" element={<ProtectedRoute><NotFound /></ProtectedRoute>} />
             </Routes>
           </BrowserRouter>
         </TooltipProvider>
