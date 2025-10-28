@@ -297,8 +297,8 @@ const Index = () => {
           <div className="space-y-12">
             {/* Title */}
             <div className="space-y-1">
-              <h2 className="text-base font-bold">Character Sheet</h2>
-              <h3 className="text-sm font-medium text-foreground/80">THE VOID No. 13</h3>
+              <h2 className="text-base font-bold">um corpo à deriva entre o ruído e o silêncio</h2>
+              <h3 className="text-sm font-medium text-foreground/80 italic">a body adrift between noise and silence</h3>
             </div>
 
             {/* Three Character Views */}
