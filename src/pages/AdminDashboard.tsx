@@ -9,7 +9,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@
 import { Badge } from "@/components/ui/badge";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import { Search, Download, Trash2, Mail, Calendar, User } from "lucide-react";
+import { Search, Download, Trash2, Mail, Calendar, User, ArrowLeft } from "lucide-react";
 import { LoadingSpinner } from "@/components/LoadingSpinner";
 import {
   AlertDialog,
@@ -147,8 +147,17 @@ const AdminDashboard = () => {
         <div className="max-w-7xl mx-auto space-y-8">
           {/* Header */}
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-            <div>
-               <h1 className="site-title text-foreground mb-2">
+            <div className="space-y-2">
+              <Button 
+                onClick={() => navigate("/admin")} 
+                variant="ghost" 
+                size="sm"
+                className="site-subtitle text-muted-foreground hover:text-foreground -ml-2"
+              >
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                Voltar ao Admin
+              </Button>
+              <h1 className="site-title text-foreground mb-2">
                 Dashboard Admin
               </h1>
               <p className="site-paragraph text-muted-foreground">
