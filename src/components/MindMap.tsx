@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useState } from "react";
+import { Button } from "@/components/ui/button";
 
 export const MindMap = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -16,12 +17,13 @@ export const MindMap = () => {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <button
+        <Button
           onClick={() => setIsExpanded(!isExpanded)}
-          className="w-full mb-6 px-4 py-2 bg-primary/10 hover:bg-primary/20 border border-primary/30 rounded-md transition-colors text-sm font-medium"
+          variant="outline"
+          className="w-full mb-6"
         >
           {isExpanded ? "Colapsar / Collapse" : "Expandir / Expand"} Mapa Interativo
-        </button>
+        </Button>
 
         {isExpanded && (
           <div className="space-y-8">
