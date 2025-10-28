@@ -45,6 +45,7 @@ import maskVoid from "@/assets/mask-void.png";
 import voidStreetScene from "@/assets/void-street-scene.png";
 import logoBlackAlpha from "@/assets/logo-black-alpha.png";
 import logoWhiteOnBlack from "@/assets/logo-white-on-black.png";
+import logoWhiteAlpha from "@/assets/logo-white-alpha.png";
 
 const Index = () => {
   const [oracleOpen, setOracleOpen] = useState(false);
@@ -278,7 +279,7 @@ const Index = () => {
             <div className="space-y-12">
               <div className="flex justify-center mb-12">
                 <img 
-                  src={logoWhiteOnBlack} 
+                  src={logoWhiteAlpha} 
                   alt="THEVØIDN13 Logo" 
                   className="w-64 md:w-80 h-auto"
                 />
