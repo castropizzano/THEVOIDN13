@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
@@ -5,6 +6,8 @@ import { PromptLibrary } from "@/components/PromptLibrary";
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { ComicGenerator } from "@/components/ComicGenerator";
 import { MindMap } from "@/components/MindMap";
+import { SkateGame } from "@/components/SkateGame";
+import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-concept-art.png";
 import conceptCrew from "@/assets/concept-crew.png";
 import actionFigure from "@/assets/action-figure.png";
@@ -36,9 +39,12 @@ import maskVoid from "@/assets/mask-void.png";
 import voidStreetScene from "@/assets/void-street-scene.png";
 
 const Index = () => {
+  const [gameOpen, setGameOpen] = useState(false);
+  
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />
+      <SkateGame open={gameOpen} onOpenChange={setGameOpen} />
       
       <main>
         {/* ===== HERO & INTRODUCTION ===== */}
@@ -1310,7 +1316,7 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="mt-12">
+            <div className="mt-12 space-y-4">
               <a 
                 href="https://github.com/castropizzano/thevoidn13"
                 target="_blank"
@@ -1331,6 +1337,18 @@ const Index = () => {
                   </svg>
                 </div>
               </a>
+              
+              {/* Easter Egg - Hidden Game */}
+              <div className="flex justify-end">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => setGameOpen(true)}
+                  className="text-xs text-muted-foreground/40 hover:text-primary transition-colors"
+                >
+                  [void_skater.exe]
+                </Button>
+              </div>
             </div>
           </div>
         </BilingualSection>
