@@ -12,8 +12,8 @@ export const BilingualSection = ({
   const customPadding = className.match(/py-\d+/)?.[0] || "py-20";
   const otherClasses = className.replace(/py-\d+/g, "").trim();
   
-  // Ignore bgClassName - always use pure black background
-  return <section className={`${customPadding}`}>
+  // Sempre usar fundo preto padrão #0C0C0C
+  return <section className={`${customPadding} bg-background`}>
       <div className={`max-w-6xl mx-auto px-6 ${otherClasses}`}>
         {children}
       </div>
@@ -29,18 +29,14 @@ export const BilingualContent = ({
   englishContent,
   alignTop = false
 }: BilingualContentProps) => {
-  return <div className={`grid md:grid-cols-2 gap-12 ${alignTop ? 'items-start' : 'items-stretch'}`}>
-      <div className="content-spacing w-full">
-        <p className="label-bilingual">&lt;PORTUGUÊS&gt;</p>
-        <div className="w-full">
-          {portugueseContent}
-        </div>
+  return <div className="bilingual-grid">
+      <div className="bilingual-col">
+        <p className="lang-pill">&lt;PORTUGUÊS&gt;</p>
+        {portugueseContent}
       </div>
-      <div className="content-spacing w-full">
-        <p className="label-bilingual">ENGLISH</p>
-        <div className="w-full">
-          {englishContent}
-        </div>
+      <div className="bilingual-col">
+        <p className="lang-pill">&lt;ENGLISH&gt;</p>
+        {englishContent}
       </div>
     </div>;
 };

@@ -8,47 +8,95 @@
 
 @layer components {
   /* ===============================================
-     SISTEMA TIPOGRÁFICO PADRONIZADO THEVOIDN13
+     SISTEMA TIPOGRÁFICO PADRONIZADO THEVOIDN13 v1.3b
      =============================================== */
   
-  /* LABELS BILÍNGUES - <PORTUGUÊS> / ENGLISH */
-  .label-bilingual {
+  /* LABELS BILÍNGUES - <PORTUGUÊS> <INGLÊS> */
+  .lang-pill {
     @apply text-xs font-medium uppercase tracking-wider text-foreground/60;
     font-family: 'Manrope', sans-serif;
+    font-weight: 500;
   }
   
   /* TÍTULOS PRINCIPAIS - Todo o site */
-  .site-title {
+  .title {
     @apply text-base font-bold uppercase;
     font-family: 'Manrope', sans-serif;
+    font-weight: 700;
   }
   
   /* SUBTÍTULOS - Todo o site */
-  .site-subtitle {
+  .subtitle {
     @apply text-sm font-medium uppercase;
     font-family: 'Manrope', sans-serif;
+    font-weight: 500;
   }
   
   /* PARÁGRAFOS - Todo o site */
-  .site-paragraph {
+  .body-small {
     @apply text-sm font-normal text-justify leading-relaxed;
     font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    line-height: 1.625;
     hyphens: auto;
   }
   
-  /* TEXTOS COM BORDA VERMELHA LATERAL */
-  .bordered-title {
+  /* CORPO DE TEXTO PADRÃO - text-base */
+  .body-base {
     @apply text-base font-medium leading-relaxed;
     font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    line-height: 1.625;
   }
   
-  .bordered-description {
-    @apply text-sm font-normal leading-relaxed text-muted-foreground;
-    font-family: 'Manrope', sans-serif;
-  }
-  
-  .border-red-left {
+  /* TEXTOS COM BORDA VERMELHA LATERAL */
+  .left-red {
     @apply border-l-2 border-primary pl-4;
+  }
+  
+  .left-red .body-base {
+    @apply font-medium;
+    font-weight: 500;
+  }
+  
+  .left-red .body-small {
+    @apply font-normal text-muted-foreground;
+    font-weight: 400;
+  }
+  
+  /* DIVISÓRIA DE SEÇÃO */
+  .section-divider {
+    @apply border-t border-primary/90 my-0;
+  }
+  
+  /* GRID BILÍNGUE */
+  .bilingual-grid {
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-12 items-start;
+  }
+  
+  .bilingual-col {
+    @apply flex flex-col gap-4;
+  }
+  
+  .bilingual-col > *:first-child {
+    margin-top: 0 !important;
+  }
+  
+  /* Compatibilidade com classes antigas */
+  .site-title {
+    @apply title;
+  }
+  
+  .site-subtitle {
+    @apply subtitle;
+  }
+  
+  .site-paragraph {
+    @apply body-small;
+  }
+  
+  .label-bilingual {
+    @apply lang-pill;
   }
 
   /* Legacy headings (manter compatibilidade) */
@@ -124,8 +172,8 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 5%;
-    --foreground: 0 0% 95%;
+    --background: 0 0% 4.9%; /* #0C0C0C */
+    --foreground: 0 0% 85.5%; /* #DADADA */
 
     --card: 0 0% 8%;
     --card-foreground: 0 0% 95%;
@@ -133,14 +181,14 @@ All colors MUST be HSL.
     --popover: 0 0% 8%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 0 70% 25%;
+    --primary: 0 73% 39%; /* #A32424 */
     --primary-foreground: 0 0% 95%;
 
     --secondary: 0 0% 15%;
     --secondary-foreground: 0 0% 95%;
 
     --muted: 0 0% 20%;
-    --muted-foreground: 0 0% 60%;
+    --muted-foreground: 0 0% 85.5% / 64%; /* rgba(218,218,218,0.64) */
     
     --body-text: 0 0% 70%;
 
@@ -167,8 +215,8 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 0 0% 5%;
-    --foreground: 0 0% 95%;
+    --background: 0 0% 4.9%; /* #0C0C0C */
+    --foreground: 0 0% 85.5%; /* #DADADA */
 
     --card: 0 0% 8%;
     --card-foreground: 0 0% 95%;
@@ -176,14 +224,14 @@ All colors MUST be HSL.
     --popover: 0 0% 8%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 0 70% 25%;
+    --primary: 0 73% 39%; /* #A32424 */
     --primary-foreground: 0 0% 95%;
 
     --secondary: 0 0% 15%;
     --secondary-foreground: 0 0% 95%;
 
     --muted: 0 0% 20%;
-    --muted-foreground: 0 0% 60%;
+    --muted-foreground: 0 0% 85.5% / 64%; /* rgba(218,218,218,0.64) */
     
     --body-text: 0 0% 70%;
 
@@ -215,6 +263,7 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    background-color: #0C0C0C;
   }
   
   /* Typography hierarchy */
