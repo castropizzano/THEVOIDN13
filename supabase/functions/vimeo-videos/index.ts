@@ -22,31 +22,52 @@ serve(async (req) => {
       );
     }
 
-    console.log('Fetching videos from Vimeo API...');
+    console.log('Fetching all videos from Vimeo API...');
 
-    // Fetch user's videos from Vimeo API
-    const response = await fetch('https://api.vimeo.com/me/videos?per_page=50&sort=date', {
-      headers: {
-        'Authorization': `Bearer ${vimeoToken}`,
-        'Accept': 'application/vnd.vimeo.*+json;version=3.4',
-      },
-    });
+    // Fetch ALL user's videos with pagination
+    let allVideos: any[] = [];
+    let page = 1;
+    let hasMore = true;
+    const perPage = 100; // Maximum allowed by Vimeo API
 
-    if (!response.ok) {
-      console.error('[VIMEO] API request failed:', response.status, response.statusText);
-      const errorText = await response.text();
-      console.error('[VIMEO] Response details:', errorText);
-      return new Response(
-        JSON.stringify({ error: 'Unable to load videos' }),
-        { status: 503, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
-      );
+    while (hasMore) {
+      const response = await fetch(`https://api.vimeo.com/me/videos?per_page=${perPage}&page=${page}&sort=date`, {
+        headers: {
+          'Authorization': `Bearer ${vimeoToken}`,
+          'Accept': 'application/vnd.vimeo.*+json;version=3.4',
+        },
+      });
+
+      if (!response.ok) {
+        console.error('[VIMEO] API request failed:', response.status, response.statusText);
+        const errorText = await response.text();
+        console.error('[VIMEO] Response details:', errorText);
+        return new Response(
+          JSON.stringify({ error: 'Unable to load videos' }),
+          { status: 503, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+        );
+      }
+
+      const data = await response.json();
+      allVideos = allVideos.concat(data.data || []);
+      
+      console.log(`Fetched page ${page}: ${data.data?.length || 0} videos (Total: ${allVideos.length})`);
+      
+      // Check if there are more pages
+      hasMore = data.paging?.next !== null && data.data?.length === perPage;
+      page++;
+      
+      // Safety limit to prevent infinite loops
+      if (page > 10) {
+        console.log('Reached maximum page limit (10 pages, 1000 videos)');
+        hasMore = false;
+      }
     }
 
-    const data = await response.json();
-    console.log(`Successfully fetched ${data.data?.length || 0} videos`);
+    console.log(`Successfully fetched total of ${allVideos.length} videos`);
 
     // Transform the data to a simpler format
-    const videos = data.data.map((video: any) => ({
+    const videos = allVideos.map((video: any) => ({
       id: video.uri.split('/').pop(),
       name: video.name,
       description: video.description,
