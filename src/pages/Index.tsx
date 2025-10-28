@@ -76,79 +76,89 @@ const Index = () => {
 
         {/* Quando o Inconsciente Ganha Corpo - with mask */}
         <BilingualSection>
-          <div className="grid md:grid-cols-[1fr_auto_1fr] gap-8 lg:gap-12 items-start">
-            {/* Portuguese Column */}
-            <div className="space-y-6 w-full text-justify order-1">
-              <p className="text-[11px] uppercase tracking-wider text-foreground/60 font-medium">PORTUGUÊS</p>
+          <div className="grid md:grid-cols-[1fr_auto] gap-8 lg:gap-12 items-start">
+            {/* Text Columns - Stacked PT/EN */}
+            <div className="space-y-12">
+              {/* Portuguese */}
               <div className="space-y-6">
+                <p className="text-[11px] uppercase tracking-wider text-foreground/60 font-medium">PORTUGUÊS</p>
                 <h2 className="text-base font-bold">Quando o Inconsciente Ganha Corpo</h2>
                 <p className="text-base text-justify leading-relaxed">
                   Não nasceu de uma ideia, mas de uma pressão interna. Pensei em inventar uma máscara, e acabei revelando um rosto que sempre esteve ali. THEVOIDN13 surgiu do atrito entre o desejo e o cansaço, da urgência de se esvaziar para continuar criando. Não é personagem nem alter ego. É uma presença que respira onde o corpo falha. Uma matéria que se move entre o fim e o recomeço. O instante em que o inconsciente decide existir.
                 </p>
-                <div className="space-y-6 mt-12">
-                  <div>
-                    <h4 className="text-base font-bold">LowMovie™</h4>
-                    <p className="text-base text-justify leading-relaxed mt-2">
-                      O gesto que caminha sem ensaio. O corpo como cinema, o erro como verdade. Um filme que não representa, respira.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="text-base font-bold">цастро™</h4>
-                    <p className="text-base text-justify leading-relaxed mt-2">
-                      A recusa como assinatura. O criador desaparece para que a ideia fale. O anonimato como resistência estética.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="text-base font-bold">CasaTrezeStudio®</h4>
-                    <p className="text-base text-justify leading-relaxed mt-2">
-                      A ética do subterrâneo. O pensamento que nasce da margem. O design que pensa como quem respira concreto.
-                    </p>
-                  </div>
-                </div>
               </div>
-            </div>
 
-            {/* Mask Image - Center */}
-            <div className="flex items-center justify-center order-2 md:order-2 md:sticky md:top-24">
-              <img 
-                src={maskVoid} 
-                alt="THEVOIDN13 Mask" 
-                className="w-48 h-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
-              />
-            </div>
-
-            {/* English Column */}
-            <div className="space-y-6 w-full text-justify order-3">
-              <p className="text-[11px] uppercase tracking-wider text-foreground/60 font-medium">ENGLISH</p>
+              {/* English */}
               <div className="space-y-6">
+                <p className="text-[11px] uppercase tracking-wider text-foreground/60 font-medium">ENGLISH</p>
                 <h2 className="text-base font-bold">When the Unconscious Takes Shape</h2>
                 <p className="text-base text-justify leading-relaxed">
                   It wasn't born from an idea, but from inner pressure. I thought I was inventing a mask, and I ended up revealing a face that had always been there. THEVOIDN13 emerged from the friction between desire and exhaustion, from the urgency to empty oneself just to keep creating. It is neither character nor alter ego. It is a presence that breathes where the body fails. A matter that moves between the end and the beginning. The moment when the unconscious decides to exist.
                 </p>
-                <div className="space-y-6 mt-12">
-                  <div>
-                    <h4 className="text-base font-bold">LowMovie™</h4>
-                    <p className="text-base text-justify leading-relaxed mt-2">
-                      The gesture that walks without rehearsal. The body as cinema, the mistake as truth. A film that doesn't represent, it breathes.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="text-base font-bold">цастро™</h4>
-                    <p className="text-base text-justify leading-relaxed mt-2">
-                      Refusal as signature. The creator disappears so the idea can speak. Anonymity as aesthetic resistance.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="text-base font-bold">CasaTrezeStudio®</h4>
-                    <p className="text-base text-justify leading-relaxed mt-2">
-                      The ethics of the underground. Thought that rises from the margin. Design that thinks like someone breathing concrete.
-                    </p>
-                  </div>
-                </div>
+              </div>
+            </div>
+
+            {/* Mask Image - Right Side in Square Frame */}
+            <div className="flex items-start justify-center">
+              <div className="w-80 h-80 border border-border rounded-lg overflow-hidden flex items-center justify-center bg-background/50">
+                <img 
+                  src={maskVoid} 
+                  alt="THEVOIDN13 Mask" 
+                  className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-300"
+                />
               </div>
             </div>
           </div>
         </BilingualSection>
+
+        {/* Concept Cards - LowMovie, Castro, CasaTreze */}
+        <section className="py-20">
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* LowMovie Card */}
+              <a 
+                href="#lowmovie" 
+                className="group border border-border rounded-lg p-8 hover:border-foreground/40 transition-all duration-300"
+              >
+                <h3 className="text-xl font-bold mb-4 group-hover:text-foreground/80">LowMovie™</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  O gesto que caminha sem ensaio. O corpo como cinema, o erro como verdade.
+                </p>
+                <p className="text-sm text-muted-foreground italic">
+                  The gesture that walks without rehearsal. The body as cinema, the mistake as truth.
+                </p>
+              </a>
+
+              {/* Castro Card */}
+              <a 
+                href="/autor" 
+                className="group border border-border rounded-lg p-8 hover:border-foreground/40 transition-all duration-300"
+              >
+                <h3 className="text-xl font-bold mb-4 group-hover:text-foreground/80">цастро™</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  A recusa como assinatura. O criador desaparece para que a ideia fale.
+                </p>
+                <p className="text-sm text-muted-foreground italic">
+                  Refusal as signature. The creator disappears so the idea can speak.
+                </p>
+              </a>
+
+              {/* CasaTrezeStudio Card */}
+              <a 
+                href="#casatrezestudio" 
+                className="group border border-border rounded-lg p-8 hover:border-foreground/40 transition-all duration-300"
+              >
+                <h3 className="text-xl font-bold mb-4 group-hover:text-foreground/80">CasaTrezeStudio®</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  A ética do subterrâneo. O pensamento que nasce da margem.
+                </p>
+                <p className="text-sm text-muted-foreground italic">
+                  The ethics of the underground. Thought that rises from the margin.
+                </p>
+              </a>
+            </div>
+          </div>
+        </section>
 
         {/* Character Sheet - Three Views */}
         <section className="py-20">
