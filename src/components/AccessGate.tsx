@@ -125,16 +125,21 @@ export const AccessGate = ({ onAccessGranted }: AccessGateProps) => {
     <div className="fixed inset-0 z-50 bg-background/95 backdrop-blur-md flex items-center justify-center p-4">
       <Card className="w-full max-w-md border-2 border-primary/30 shadow-2xl">
         <CardHeader className="space-y-4 text-center">
-          <CardTitle className="site-title text-primary text-2xl">
-            BEM-VINDO / WELCOME
-          </CardTitle>
-          <CardDescription className="site-paragraph space-y-2">
+          <div className="flex items-center justify-center gap-3">
+            <CardTitle className="site-title text-primary text-2xl">
+              O VAZIO CHAMA / THE VOID CALLS
+            </CardTitle>
+            <span className="text-xs text-muted-foreground font-mono">v1.3</span>
+          </div>
+          <CardDescription className="site-paragraph space-y-3 leading-relaxed">
             <p>
-              Cadastre-se para acessar o memorial artístico THEVOIDN13. 
+              Cadastre-se para acessar o memorial artístico THEVOIDN13.
+              <br />
               Você receberá um email de confirmação.
             </p>
             <p className="text-xs">
-              Register to access the THEVOIDN13 artistic memorial. 
+              Register to access the THEVOIDN13 artistic memorial.
+              <br />
               You will receive a confirmation email.
             </p>
           </CardDescription>
@@ -166,7 +171,7 @@ export const AccessGate = ({ onAccessGranted }: AccessGateProps) => {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="seu@email.com"
+                placeholder="seu@email.com / your@email.com"
                 required
                 disabled={isSubmitting}
                 className="h-12"
@@ -174,19 +179,23 @@ export const AccessGate = ({ onAccessGranted }: AccessGateProps) => {
             </div>
 
             <div className="space-y-2">
-              <p className="text-xs text-muted-foreground">
+              <p className="text-xs text-muted-foreground leading-relaxed">
                 Ao cadastrar-se, você concorda com nossa{" "}
                 <a href="/privacy-policy" className="text-primary hover:underline">
                   Política de Privacidade
                 </a>
-                {" "}e aceita receber comunicações sobre o projeto.
+                {" "}e aceita receber
+                <br />
+                comunicações sobre o projeto.
               </p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-xs text-muted-foreground leading-relaxed">
                 By registering, you agree to our{" "}
                 <a href="/privacy-policy" className="text-primary hover:underline">
                   Privacy Policy
                 </a>
-                {" "}and consent to receive communications about the project.
+                {" "}and consent to receive
+                <br />
+                communications about the project.
               </p>
             </div>
 
@@ -202,7 +211,7 @@ export const AccessGate = ({ onAccessGranted }: AccessGateProps) => {
                   Processando... / Processing...
                 </>
               ) : (
-                <>Acessar / Enter</>
+                <>ENTRE NO VAZIO / ENTER THE VOID</>
               )}
             </Button>
           </form>
