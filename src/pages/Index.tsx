@@ -248,7 +248,7 @@ const Index = () => {
               <div className="space-y-6">
                 <h2 className="section-title">A MÁSCARA | CEDER ESPAÇO AO INCONSCIENTE</h2>
                 <p className="body-base text-justified">
-                  A máscara veio antes do nome. Branca, lisa, silenciosa. Não era uma face, era uma pausa. Quando a olhei pela primeira vez, percebi que ela não me olhava de volta. Talvez fosse isso o que eu buscava: existir sem precisar me afirmar. Quando a vesti, o rosto deixou de importar. O espelho não devolveu imagem, apenas silêncio. Foi nesse instante que compreendi: não estava criando um personagem, mas cedendo espaço. Ceder espaço ao inconsciente, deixar que ele assumisse forma. A máscara é o pacto entre o que se apaga e o que retorna, o instante em que o corpo permite ser atravessado por algo maior do que ele mesmo.
+                  A máscara veio antes do nome. Vazia, lisa, silenciosa. Não era uma face, era uma pausa. Quando a olhei pela primeira vez, percebi que ela não me olhava de volta. Talvez fosse isso o que eu buscava: existir sem precisar me afirmar. Quando a vesti, o rosto deixou de importar. O espelho não devolveu imagem, apenas silêncio. Foi nesse instante que compreendi: não estava criando um personagem, mas cedendo espaço. Ceder espaço ao inconsciente, deixar que ele assumisse forma. A máscara é o pacto entre o que se apaga e o que retorna, o instante em que o corpo permite ser atravessado por algo maior do que ele mesmo.
                 </p>
               </div>
             }
@@ -256,7 +256,7 @@ const Index = () => {
               <div className="space-y-6">
                 <h2 className="section-title">THE MASK | YIELDING SPACE TO THE UNCONSCIOUS</h2>
                 <p className="body-base text-justified">
-                  The mask came before the name. White, smooth, silent. It wasn't a face, it was a pause. When I looked at it for the first time, I realized it didn't look back at me. Perhaps that was what I was seeking: to exist without needing to assert myself. When I wore it, the face ceased to matter. The mirror returned no image, only silence. It was in that moment I understood: I wasn't creating a character, I was yielding space. Yielding space to the unconscious, letting it take shape. The mask is the pact between what fades and what returns, the instant when the body allows itself to be crossed by something greater than itself.
+                  The mask came before the name. Empty, smooth, silent. It wasn't a face, it was a pause. When I looked at it for the first time, I realized it didn't look back at me. Perhaps that was what I was seeking: to exist without needing to assert myself. When I wore it, the face ceased to matter. The mirror returned no image, only silence. It was in that moment I understood: I wasn't creating a character, I was yielding space. Yielding space to the unconscious, letting it take shape. The mask is the pact between what fades and what returns, the instant when the body allows itself to be crossed by something greater than itself.
                 </p>
               </div>
             }
@@ -313,154 +313,6 @@ const Index = () => {
                     THE VOID N.13 não é um personagem.<br />
                     É o lugar onde o criador se dissolve para que a imagem respire.
                   </p>
-                </div>
-
-                {/* Technical Specifications */}
-                <div className="pt-6 border-t border-border space-y-12">
-                  <div>
-                    <h4 className="micro-title mb-4">THEVOIDN13 — Paleta de Cores / Color Palette</h4>
-                    <div className="grid grid-cols-3 gap-4 mt-4">
-                      <div className="space-y-2">
-                        <div className="w-full h-20 rounded-lg" style={{ backgroundColor: '#0C0C0C' }}></div>
-                        <p className="micro-title">#0C0C0C</p>
-                        <p className="micro-title">Deep Void</p>
-...
-                        <p className="micro-title">#A32424</p>
-                        <p className="micro-title">Blood Trauma</p>
-...
-                        <p className="micro-title">#657C8C</p>
-                        <p className="micro-title">Urban Haze</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="space-y-6">
-                    <h4 className="section-title">MATRIZ DE IDENTIDADE / IDENTITY MATRIX</h4>
-                    <div className="grid md:grid-cols-2 gap-12">
-                      <div className="space-y-3">
-                        <p className="body-base">
-                          <span className="micro-title text-primary">Codename:</span> O Décimo-Terceiro Andar
-                        </p>
-                        <p className="body-base">
-                          <span className="micro-title text-primary">Archetype:</span> A Sombra
-                        </p>
-                        <p className="body-base">
-                          <span className="micro-title text-primary">Nature:</span> Anti-herói introspectivo
-                        </p>
-                        <p className="body-base">
-                          <span className="micro-title text-primary">Function:</span> Tornar visível o invisível
-                        </p>
-                      </div>
-                      <div className="space-y-3">
-                        <p className="body-base text-muted-foreground italic">
-                          <span className="micro-title text-primary">Codename:</span> The Thirteenth Floor
-                        </p>
-                        <p className="body-base text-muted-foreground italic">
-                          <span className="micro-title text-primary">Archetype:</span> The Shadow
-                        </p>
-                        <p className="body-base text-muted-foreground italic">
-                          <span className="micro-title text-primary">Nature:</span> Introspective anti-hero
-                        </p>
-                        <p className="body-base text-muted-foreground italic">
-                          <span className="micro-title text-primary">Function:</span> Make visible the invisible
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="space-y-6">
-                    <h4 className="section-title">ANATOMIA VISUAL / VISUAL ANATOMY</h4>
-                    <div className="grid md:grid-cols-2 gap-12">
-                      <div className="space-y-3">
-                        <p className="body-base">
-                          <span className="micro-title text-primary">Máscara:</span> Branca fosca, traços humanos mínimos, olhos vazios refletindo luz urbana
-                        </p>
-                        <p className="body-base">
-                          <span className="micro-title text-primary">Capuz/Boné:</span> Preto, estrutura geométrica simples
-                        </p>
-                        <p className="body-base">
-                          <span className="micro-title text-primary">Jaqueta:</span> Verde militar desbotada, textura de uso, bolsos funcionais
-                        </p>
-                        <p className="body-base">
-                          <span className="micro-title text-primary">Camiseta:</span> Preta oversized, tecido pesado
-                        </p>
-                        <p className="body-base">
-                          <span className="micro-title text-primary">Calça:</span> Moletom preto, corte reto, conforto urbano
-                        </p>
-                        <p className="body-base">
-                          <span className="micro-title text-primary">Tênis:</span> Vans preto, sola gasta, autenticidade do uso
-                        </p>
-                        <p className="body-base">
-                          <span className="micro-title text-primary">Postura:</span> Contida, peso no silêncio, presença por ausência
-                        </p>
-                      </div>
-                      <div className="space-y-3">
-                        <p className="body-base text-muted-foreground italic">
-                          <span className="micro-title text-primary">Mask:</span> Matte white, minimal human features, empty eyes reflecting urban light
-                        </p>
-                        <p className="body-base text-muted-foreground italic">
-                          <span className="micro-title text-primary">Hood/Cap:</span> Black, simple geometric structure
-                        </p>
-                        <p className="body-base text-muted-foreground italic">
-                          <span className="micro-title text-primary">Jacket:</span> Faded military green, worn texture, functional pockets
-                        </p>
-                        <p className="body-base text-muted-foreground italic">
-                          <span className="micro-title text-primary">T-Shirt:</span> Black oversized, heavy fabric
-                        </p>
-                        <p className="body-base text-muted-foreground italic">
-                          <span className="micro-title text-primary">Pants:</span> Black sweatpants, straight cut, urban comfort
-                        </p>
-                        <p className="body-base text-muted-foreground italic">
-                          <span className="micro-title text-primary">Sneakers:</span> Black Vans, worn sole, authenticity of use
-                        </p>
-                        <p className="body-base text-muted-foreground italic">
-                          <span className="micro-title text-primary">Posture:</span> Restrained, weight in silence, presence through absence
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div className="space-y-6">
-                      <h4 className="section-title">PAISAGEM SONORA / SONIC LANDSCAPE</h4>
-                      <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
-                        <p className="body-base">
-                          Ambiente urbano noturno: ruído branco da cidade, respiração controlada, passos em asfalto molhado, 
-                          sirenes distantes, reverb de vielas, chiado analógico, frequências graves contínuas
-                        </p>
-                        <p className="body-base text-muted-foreground italic">
-                          Nocturnal urban environment: white noise of the city, controlled breathing, steps on wet asphalt, 
-                          distant sirens, alley reverb, analog hiss, continuous low frequencies
-                        </p>
-                      </div>
-                    </div>
-
-                    <div className="space-y-6">
-                      <h4 className="section-title">AFORISMOS / APHORISMS</h4>
-                      <div className="space-y-4">
-                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
-                          <p className="body-base italic">"O silêncio também fala"</p>
-                          <p className="body-base text-muted-foreground italic">"Silence also speaks"</p>
-                        </div>
-                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
-                          <p className="body-base italic">"Entre o glitch e o grão, existo"</p>
-                          <p className="body-base text-muted-foreground italic">"Between glitch and grain, I exist"</p>
-                        </div>
-                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
-                          <p className="body-base italic">"O corpo é a câmera"</p>
-                          <p className="body-base text-muted-foreground italic">"The body is the camera"</p>
-                        </div>
-                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
-                          <p className="body-base italic">"Toda criação é autocriação"</p>
-                          <p className="body-base text-muted-foreground italic">"All creation is self-creation"</p>
-                        </div>
-                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
-                          <p className="body-base italic">"O ruído é a mensagem"</p>
-                          <p className="body-base text-muted-foreground italic">"Noise is the message"</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             }
@@ -719,21 +571,17 @@ const Index = () => {
 
               {/* Treze Label Society */}
               <div className="space-y-4">
-                <h3 className="subsection-title text-white">TREZE LABEL SOCIETY</h3>
-                <p className="micro-title text-white/80">Treze Label Society</p>
+                <h3 className="subsection-title text-white">CASATREZESTUDIO®</h3>
+                <p className="micro-title text-white/80">CasaTrezeStudio®</p>
                 <p className="body-base text-white text-justified">
-                  O número 13 não é apenas símbolo de THE VOID N.13 — é assinatura de um movimento maior. Treze Label Society é a comunidade invisível de quem cria no subsolo, de quem habita as margens, de quem faz do vazio um território fértil. É o selo de quem não pertence, mas se reconhece. Uma aliança subterrânea entre criadores que recusam a lógica do mercado e abraçam a estética do erro, da fragmentação, do inacabado. Quem carrega o 13 não busca sorte — busca travessia. Treze Label Society é a rebelião silenciosa de quem transforma o interdito em linguagem. Não é grupo, é frequência. Não é marca, é modo de respirar.
+                  O número 13 não é apenas símbolo de THE VOID N.13 — é assinatura de um movimento maior. CasaTrezeStudio® é a comunidade invisível de quem cria no subsolo, de quem habita as margens, de quem faz do vazio um território fértil. É o selo de quem não pertence, mas se reconhece. Uma aliança subterrânea entre criadores que recusam a lógica do mercado e abraçam a estética do erro, da fragmentação, do inacabado. Quem carrega o 13 não busca sorte — busca travessia. CasaTrezeStudio® é a rebelião silenciosa de quem transforma o interdito em linguagem. Não é grupo, é frequência. Não é marca, é modo de respirar.
                 </p>
                 <p className="body-base italic text-white/75 text-justified">
-                  The number 13 is not just a symbol of THE VOID N.13 — it's the signature of a larger movement. Treze Label Society is the invisible community of those who create underground, who inhabit the margins, who make the void a fertile territory. It is the seal of those who don't belong, but recognize each other. An underground alliance between creators who refuse the logic of the market and embrace the aesthetic of error, of fragmentation, of the unfinished. Those who carry the 13 don't seek luck — they seek crossing. Treze Label Society is the silent rebellion of those who transform the forbidden into language. It's not a group, it's a frequency. It's not a brand, it's a way of breathing.
+                  The number 13 is not just a symbol of THE VOID N.13 — it's the signature of a larger movement. CasaTrezeStudio® is the invisible community of those who create underground, who inhabit the margins, who make the void a fertile territory. It is the seal of those who don't belong, but recognize each other. An underground alliance between creators who refuse the logic of the market and embrace the aesthetic of error, of fragmentation, of the unfinished. Those who carry the 13 don't seek luck — they seek crossing. CasaTrezeStudio® is the silent rebellion of those who transform the forbidden into language. It's not a group, it's a frequency. It's not a brand, it's a way of breathing.
                 </p>
               </div>
             </div>
           </div>
-        </section>
-
-        <section className="w-full h-screen overflow-hidden">
-          <img src={roughs001} alt="Sketches" className="w-full h-full object-contain" />
         </section>
 
         {/* ===== SEÇÃO V: RENASCIMENTO ===== */}
@@ -756,10 +604,6 @@ const Index = () => {
               </p>
             </div>
           </div>
-        </section>
-
-        <section className="w-full h-screen overflow-hidden">
-          <img src={roughs002} alt="Sketches" className="w-full h-full object-contain" />
         </section>
 
         {/* ===== SEÇÃO VI: ESTÉTICA E REFERÊNCIAS ===== */}
@@ -828,7 +672,7 @@ const Index = () => {
                 <div className="space-y-4">
                   <h3 className="subsection-title">Princípios Estéticos</h3>
                   <p className="body-base text-justified">
-                    Os princípios estéticos que sustentam THE VOID N.13 emergem de uma filosofia do caos e do inconsciente. Aqui, o vazio não é ausência, mas potência latente – uma força criativa que nasce do atrito entre o ruído e o silêncio. O projeto adota o número treze como signo de travessia e transmutação: tal qual a carta da Morte no tarô, simboliza o fim necessário para um renascimento autêntico. A máscara branca e inexpressiva encarna a ideia junguiana da sombra: tudo aquilo que o ego reprime ganha forma sem rosto, permitindo que o criador desapareça para que a obra possa respirar. Cada gesto torna-se ritual, cada erro converte-se em uma forma de verdade estética. O Void é uma presença mutante e anônima – não um personagem fixo, mas um fenômeno poético em constante trânsito – um espelho do caos contemporâneo que transforma a ausência em voz.
+                    Os princípios estéticos que sustentam THE VOID N.13 emergem de uma filosofia do caos e do inconsciente. Aqui, o vazio não é ausência, mas potência latente – uma força criativa que nasce do atrito entre o ruído e o silêncio. O projeto adota o número treze como signo de travessia e transmutação: tal qual a carta da Morte no tarô, simboliza o fim necessário para um renascimento autêntico. A máscara vazia e inexpressiva encarna a ideia junguiana da sombra: tudo aquilo que o ego reprime ganha forma sem rosto, permitindo que o criador desapareça para que a obra possa respirar. Cada gesto torna-se ritual, cada erro converte-se em uma forma de verdade estética. O Void é uma presença mutante e anônima – não um personagem fixo, mas um fenômeno poético em constante trânsito – um espelho do caos contemporâneo que transforma a ausência em voz.
                   </p>
                 </div>
               </div>
@@ -908,10 +752,6 @@ const Index = () => {
               </p>
             </div>
           </div>
-        </section>
-
-        <section className="w-full h-screen overflow-hidden">
-          <img src={roughs003} alt="Sketches" className="w-full h-full object-contain" />
         </section>
 
         {/* ===== SEÇÃO VIII: MANIFESTOS E ENCERRAMENTOS ===== */}
@@ -1137,8 +977,8 @@ const Index = () => {
                   <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Rear View / Vista Traseira</p>
                 </div>
               </div>
-              <div className="text-center text-sm text-muted-foreground max-w-3xl mx-auto">
-                <p>Máscara branca fosca com olhos vazios refletindo luz urbana, capuz preto, jaqueta militar verde desbotada com patch "Black Sabbath", moletom preto interno, calça moletom preta, Vans preto. Mãos tatuadas. Presença anônima, o criador desaparecido, a sombra encarnada.</p>
+              <div className="body-base text-muted-foreground max-w-3xl mx-auto">
+                <p>Máscara vazia fosca com olhos vazios refletindo luz urbana, capuz preto, jaqueta militar verde desbotada com patch "Black Sabbath", moletom preto interno, calça moletom preta, Vans preto. Mãos tatuadas. Presença anônima, o criador desaparecido, a sombra encarnada.</p>
               </div>
             </div>
 
@@ -1164,8 +1004,8 @@ const Index = () => {
                   <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Rear View / Vista Traseira</p>
                 </div>
               </div>
-              <div className="text-center text-sm text-muted-foreground max-w-3xl mx-auto">
-                <p>Cachorro companheiro de pelagem marrom e branca, olhar atento e leal. Presença constante nas jornadas urbanas, guardião silencioso do crew.</p>
+              <div className="body-base text-muted-foreground max-w-3xl mx-auto">
+                <p>Cachorro companheiro de pelagem marrom e vazia, olhar atento e leal. Presença constante nas jornadas urbanas, guardião silencioso do crew.</p>
               </div>
             </div>
 
