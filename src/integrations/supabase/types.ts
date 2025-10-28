@@ -14,16 +14,180 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      content_settings: {
+        Row: {
+          content_en: string
+          content_key: string
+          content_pt: string
+          content_type: string
+          created_at: string
+          display_order: number | null
+          id: string
+          page: string
+          section: string
+          updated_at: string
+        }
+        Insert: {
+          content_en: string
+          content_key: string
+          content_pt: string
+          content_type?: string
+          created_at?: string
+          display_order?: number | null
+          id?: string
+          page: string
+          section: string
+          updated_at?: string
+        }
+        Update: {
+          content_en?: string
+          content_key?: string
+          content_pt?: string
+          content_type?: string
+          created_at?: string
+          display_order?: number | null
+          id?: string
+          page?: string
+          section?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      media_assets: {
+        Row: {
+          alt_text_en: string | null
+          alt_text_pt: string | null
+          asset_key: string
+          asset_type: string
+          created_at: string
+          display_order: number | null
+          file_url: string
+          height: number | null
+          id: string
+          is_visible: boolean | null
+          updated_at: string
+          width: number | null
+        }
+        Insert: {
+          alt_text_en?: string | null
+          alt_text_pt?: string | null
+          asset_key: string
+          asset_type: string
+          created_at?: string
+          display_order?: number | null
+          file_url: string
+          height?: number | null
+          id?: string
+          is_visible?: boolean | null
+          updated_at?: string
+          width?: number | null
+        }
+        Update: {
+          alt_text_en?: string | null
+          alt_text_pt?: string | null
+          asset_key?: string
+          asset_type?: string
+          created_at?: string
+          display_order?: number | null
+          file_url?: string
+          height?: number | null
+          id?: string
+          is_visible?: boolean | null
+          updated_at?: string
+          width?: number | null
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          created_at: string
+          email: string
+          full_name: string | null
+          id: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          full_name?: string | null
+          id: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          full_name?: string | null
+          id?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      user_roles: {
+        Row: {
+          created_at: string
+          id: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id?: string
+        }
+        Relationships: []
+      }
+      video_settings: {
+        Row: {
+          created_at: string
+          display_order: number | null
+          id: string
+          is_featured: boolean | null
+          is_visible: boolean | null
+          updated_at: string
+          vimeo_id: string
+        }
+        Insert: {
+          created_at?: string
+          display_order?: number | null
+          id?: string
+          is_featured?: boolean | null
+          is_visible?: boolean | null
+          updated_at?: string
+          vimeo_id: string
+        }
+        Update: {
+          created_at?: string
+          display_order?: number | null
+          id?: string
+          is_featured?: boolean | null
+          is_visible?: boolean | null
+          updated_at?: string
+          vimeo_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      has_role: {
+        Args: {
+          _role: Database["public"]["Enums"]["app_role"]
+          _user_id: string
+        }
+        Returns: boolean
+      }
     }
     Enums: {
-      [_ in never]: never
+      app_role: "admin" | "user"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -150,6 +314,8 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      app_role: ["admin", "user"],
+    },
   },
 } as const
