@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Link } from "react-router-dom";
+import { PrivacyPolicyDialog } from "@/components/PrivacyPolicyDialog";
 
 export const CookieConsent = () => {
   const [showBanner, setShowBanner] = useState(false);
@@ -34,14 +34,11 @@ export const CookieConsent = () => {
             <h3 className="site-title text-primary">
               POLÍTICA DE COOKIES / COOKIE POLICY
             </h3>
-            <p className="site-paragraph text-muted-foreground">
-              Este site utiliza cookies essenciais para garantir funcionalidade básica e armazenamento local 
-              para melhorar sua experiência. Não coletamos dados pessoais além do necessário para o cadastro.
-              <br />
-              <span className="text-xs">
-                This site uses essential cookies to ensure basic functionality and local storage to improve 
-                your experience. We do not collect personal data beyond what is necessary for registration.
-              </span>
+            <p className="site-paragraph text-muted-foreground leading-relaxed">
+              Este site utiliza cookies essenciais para garantir funcionalidade básica e armazenamento local para melhorar sua experiência de navegação. Não coletamos dados pessoais além do necessário para o cadastro, respeitando sua privacidade e segurança em cada etapa do processo.
+            </p>
+            <p className="site-paragraph text-muted-foreground text-xs leading-relaxed">
+              This site uses essential cookies to ensure basic functionality and local storage to improve your browsing experience. We do not collect personal data beyond what is necessary for registration, respecting your privacy and security at every step of the process.
             </p>
           </div>
 
@@ -61,16 +58,15 @@ export const CookieConsent = () => {
             >
               Recusar / Decline
             </Button>
-            <Button
-              variant="ghost"
-              asChild
-              className="flex-1"
-              size="lg"
-            >
-              <Link to="/privacy-policy">
+            <PrivacyPolicyDialog>
+              <Button
+                variant="ghost"
+                className="flex-1"
+                size="lg"
+              >
                 Política de Privacidade / Privacy Policy
-              </Link>
-            </Button>
+              </Button>
+            </PrivacyPolicyDialog>
           </div>
         </div>
       </Card>
