@@ -438,16 +438,16 @@ const Dissertacao = () => {
                     </p>
                     <div className="pl-6 space-y-3">
                       <div className="border-l-2 border-primary pl-4">
-                        <p className="text-base font-medium">Movimento I — Corpo em Deriva</p>
-                        <p className="text-base text-muted-foreground">Investiga o corpo do skatista em relação ao espaço urbano, explorando a dimensão performática e sensível do gesto.</p>
+                        <p className="body-base font-medium">Movimento I — Corpo em Deriva</p>
+                        <p className="body-small text-muted-foreground">Investiga o corpo do skatista em relação ao espaço urbano, explorando a dimensão performática e sensível do gesto.</p>
                       </div>
                       <div className="border-l-2 border-primary pl-4">
-                        <p className="text-base font-medium">Movimento II — Coletivo em Baixo Relevo</p>
-                        <p className="text-base text-muted-foreground">Examina as dinâmicas colaborativas da crew LowPressure™, seus modos de criação partilhada e pertencimento estético.</p>
+                        <p className="body-base font-medium">Movimento II — Coletivo em Baixo Relevo</p>
+                        <p className="body-small text-muted-foreground">Examina as dinâmicas colaborativas da crew LowPressure™, seus modos de criação partilhada e pertencimento estético.</p>
                       </div>
                       <div className="border-l-2 border-primary pl-4">
-                        <p className="text-base font-medium">Movimento III — Obra em Expansão</p>
-                        <p className="text-base text-muted-foreground">Analisa o LowMovie™ como dispositivo audiovisual que transborda o formato convencional e se desdobra em outras materialidades.</p>
+                        <p className="body-base font-medium">Movimento III — Obra em Expansão</p>
+                        <p className="body-small text-muted-foreground">Analisa o LowMovie™ como dispositivo audiovisual que transborda o formato convencional e se desdobra em outras materialidades.</p>
                       </div>
                     </div>
                   </div>
@@ -518,16 +518,16 @@ const Dissertacao = () => {
                     </p>
                     <div className="pl-6 space-y-3">
                       <div className="border-l-2 border-primary pl-4">
-                        <p className="text-base font-medium">Movement I — Body in Drift</p>
-                        <p className="text-base text-muted-foreground">Investigates the skater's body in relation to urban space, exploring the performative and sensitive dimension of gesture.</p>
+                        <p className="body-base font-medium">Movement I — Body in Drift</p>
+                        <p className="body-small text-muted-foreground">Investigates the skater's body in relation to urban space, exploring the performative and sensitive dimension of gesture.</p>
                       </div>
                       <div className="border-l-2 border-primary pl-4">
-                        <p className="text-base font-medium">Movement II — Collective in Low Relief</p>
-                        <p className="text-base text-muted-foreground">Examines the collaborative dynamics of the LowPressure™ crew, their modes of shared creation and aesthetic belonging.</p>
+                        <p className="body-base font-medium">Movement II — Collective in Low Relief</p>
+                        <p className="body-small text-muted-foreground">Examines the collaborative dynamics of the LowPressure™ crew, their modes of shared creation and aesthetic belonging.</p>
                       </div>
                       <div className="border-l-2 border-primary pl-4">
-                        <p className="text-base font-medium">Movement III — Work in Expansion</p>
-                        <p className="text-base text-muted-foreground">Analyzes LowMovie™ as an audiovisual device that overflows the conventional format and unfolds into other materialities.</p>
+                        <p className="body-base font-medium">Movement III — Work in Expansion</p>
+                        <p className="body-small text-muted-foreground">Analyzes LowMovie™ as an audiovisual device that overflows the conventional format and unfolds into other materialities.</p>
                       </div>
                     </div>
                   </div>
