@@ -73,12 +73,12 @@ const Dissertacao = () => {
         <BilingualSection className="py-8">
           <BilingualContent 
             portugueseContent={
-              <p className="text-base text-justify leading-relaxed">
+              <p className="body-base text-justified">
                 Subjetividade, Subcultura e a Construção de uma Estética em Movimento no Coletivo LowPressure™
               </p>
             }
             englishContent={
-              <p className="text-base text-justify leading-relaxed">
+              <p className="body-base text-justified">
                 Subjectivity, Subculture and the Construction of an Aesthetic in Motion in the LowPressure™ Collective
               </p>
             }
@@ -91,12 +91,12 @@ const Dissertacao = () => {
             <h2 className="section-title">Processos Matriciais / Matrix Processes</h2>
             <BilingualContent 
               portugueseContent={
-                <p className="text-base text-muted-foreground leading-relaxed">
+                <p className="body-base text-muted-foreground">
                   Três projetos que originaram esta dissertação. Processos criativos que se entrelaçam e formam a base do Labirinto Criativo.
                 </p>
               }
               englishContent={
-                <p className="text-base text-muted-foreground leading-relaxed">
+                <p className="body-base text-muted-foreground">
                   Three projects that originated this dissertation. Creative processes that intertwine and form the basis of the Creative Labyrinth.
                 </p>
               }
@@ -116,30 +116,30 @@ const Dissertacao = () => {
             <BilingualContent 
               portugueseContent={
                 <div className="space-y-6">
-                  <p className="text-base leading-relaxed text-justify">
+                  <p className="body-base text-justified">
                     Coletivo Criativo fundado em 2008. Estúdio pós-contemporâneo de design e vídeo. Associação de produtores criativos independentes que opera como laboratório de criação autoral, cultural e comercial, conectando pessoas, ideias e projetos. Onde o comercial e o experimental coexistem sob a persona цастро™.
                   </p>
 
                   <div className="space-y-4">
-                    <h3 className="text-base font-bold text-primary">Conceito / Concept</h3>
-                    <p className="text-base leading-relaxed text-justify">
+                    <h3 className="subsection-title text-primary">Conceito / Concept</h3>
+                    <p className="body-base text-justified">
                       CasaTrezeStudio não é empresa. É organismo vivo. Laboratório onde criadores independentes se encontram para transformar ideias em matéria. Nasceu da necessidade de criar fora dos sistemas tradicionais, construindo sua própria infraestrutura criativa. 17 anos de resistência e reinvenção.
                     </p>
                   </div>
 
                   <div className="space-y-4">
-                    <h3 className="text-base font-bold text-primary">Serviços / Services</h3>
+                    <h3 className="subsection-title text-primary">Serviços / Services</h3>
                     <div className="space-y-2">
-                      <p className="text-base"><span className="font-bold text-primary">Design Gráfico:</span> Identidades visuais, branding, editorial</p>
-                      <p className="text-base"><span className="font-bold text-primary">Vídeo:</span> Documentários, videoclipes, conteúdo digital</p>
-                      <p className="text-base"><span className="font-bold text-primary">Direção de Arte:</span> Projetos culturais, campanhas, eventos</p>
-                      <p className="text-base"><span className="font-bold text-primary">Curadoria:</span> Projetos experimentais e autorais</p>
+                      <p className="body-base"><span className="font-bold text-primary">Design Gráfico:</span> Identidades visuais, branding, editorial</p>
+                      <p className="body-base"><span className="font-bold text-primary">Vídeo:</span> Documentários, videoclipes, conteúdo digital</p>
+                      <p className="body-base"><span className="font-bold text-primary">Direção de Arte:</span> Projetos culturais, campanhas, eventos</p>
+                      <p className="body-base"><span className="font-bold text-primary">Curadoria:</span> Projetos experimentais e autorais</p>
                     </div>
                   </div>
 
                   <div className="space-y-4">
-                    <h3 className="text-base font-bold text-primary">Filosofia / Philosophy</h3>
-                    <p className="text-base leading-relaxed text-justify">
+                    <h3 className="subsection-title text-primary">Filosofia / Philosophy</h3>
+                    <p className="body-base text-justified">
                       A casa número 13 como símbolo de resistência ao convencional. O azar transformado em potência criativa. O estúdio opera na fronteira entre o comercial e o experimental, sem hierarquia entre ambos. Cada projeto — seja uma identidade visual para um cliente ou um filme autoral — recebe o mesmo rigor criativo.
                     </p>
                   </div>

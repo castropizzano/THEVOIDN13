@@ -512,7 +512,7 @@ const Index = () => {
         {/* Character Sheet */}
         <BilingualSection>
           <div className="space-y-12">
-            <div className="space-y-2 text-center">
+            <div className="space-y-2">
               <h2 className="section-title">UM CORPO À DERIVA ENTRE O RUÍDO E O SILÊNCIO</h2>
               <h3 className="micro-title text-muted-foreground">a body adrift between noise and silence</h3>
             </div>

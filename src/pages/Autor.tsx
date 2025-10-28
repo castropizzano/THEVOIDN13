@@ -49,119 +49,119 @@ const Autor = () => {
           <BilingualContent 
             portugueseContent={
               <>
-                <h2 className="text-sm font-medium tracking-wide uppercase">Quem Fala e De Onde Falo</h2>
-                <p className="text-base text-justify leading-relaxed mt-6">
+                <h2 className="subsection-title">Quem Fala e De Onde Falo</h2>
+                <p className="body-base text-justified mt-6">
                   Profissional criativo multidisciplinar, atuo entre as artes visuais, o design e a produção audiovisual. Minha trajetória é guiada pela criação de identidades visuais e narrativas semióticas, explorando linguagens como fotografia, vídeo, design gráfico e multiartes digitais. Transito entre processos individuais e colaborações coletivas, com base em laboratórios criativos, imersões referenciais e desenvolvimento conceitual.
                 </p>
-                <p className="text-base text-justify leading-relaxed mt-6">
+                <p className="body-base text-justified mt-6">
                   Atualmente, mestrando em Cinema e Artes do Vídeo pelo PPG-CINEAV da Universidade Estadual do Paraná (Unespar – Curitiba II/FAP), na linha de pesquisa em Processos de Criação no Cinema e nas Artes do Vídeo. Integro o grupo de pesquisa CineCriare – Cinema: Criação e Reflexão (Unespar/CNPq).
                 </p>
-                <p className="text-base text-justify leading-relaxed mt-6">
+                <p className="body-base text-justified mt-6">
                   Graduado em Publicidade e Propaganda (Universidade Tuiuti do Paraná, 2010) e pós-graduado em Direção de Arte e Estratégias Criativas (Unicuritiba, 2016).
                 </p>
-                <p className="text-base text-justify leading-relaxed mt-6">
+                <p className="body-base text-justified mt-6">
                   Fundador da CasaTrezeStudio® (2008), coletivo criativo que funciona como laboratório independente de produção cultural, autoral e comercial, conectando pessoas, ideias e projetos. Entre 2017 e 2020, professor de Economia Criativa na Universidade Positivo; atualmente, docente nas disciplinas de Branding e Produção Audiovisual na Universidade Isulpar.
                 </p>
-                <p className="text-base text-justify leading-relaxed mt-6">
+                <p className="body-base text-justified mt-6">
                   Membro do LowPressure™, coletivo de skatistas e produtores criativos que atuam nas interseções entre skate, cinema e videoarte contemporânea. Também colaboro com o TheWorkspace™, voltado à produção audiovisual colaborativa e independente. Navego por repertórios diversos, fluxos criativos múltiplos e práticas interdisciplinares, construindo minha bagagem intelectual a partir da prática, da escuta e da troca.
                 </p>
                 <div className="mt-12 space-y-8">
-                  <h3 className="text-sm font-medium tracking-wide uppercase">Habilidades Técnicas / Technical Skills</h3>
+                  <h3 className="subsection-title">Habilidades Técnicas / Technical Skills</h3>
                   
                   <div className="grid md:grid-cols-2 gap-8">
                     <div>
-                      <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">[DESIGN&ARTE]</h4>
+                      <h4 className="micro-title text-foreground/80">[DESIGN&ARTE]</h4>
                       <ul className="space-y-1">
-                        <li className="text-base">• Adobe Illustrator</li>
-                        <li className="text-base">• Adobe InDesign</li>
-                        <li className="text-base">• Adobe Fresco</li>
-                        <li className="text-base">• Procreate</li>
+                        <li className="body-base">• Adobe Illustrator</li>
+                        <li className="body-base">• Adobe InDesign</li>
+                        <li className="body-base">• Adobe Fresco</li>
+                        <li className="body-base">• Procreate</li>
                       </ul>
                     </div>
                     
                     <div>
-                      <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">[FOTO&EDIÇÃO]</h4>
+                      <h4 className="micro-title text-foreground/80">[FOTO&EDIÇÃO]</h4>
                       <ul className="space-y-1">
-                        <li className="text-base">• Adobe Photoshop</li>
-                        <li className="text-base">• Adobe Lightroom</li>
+                        <li className="body-base">• Adobe Photoshop</li>
+                        <li className="body-base">• Adobe Lightroom</li>
                       </ul>
                     </div>
                     
                     <div>
-                      <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">[VÍDEO&PÓS PRODUÇÃO]</h4>
+                      <h4 className="micro-title text-foreground/80">[VÍDEO&PÓS PRODUÇÃO]</h4>
                       <ul className="space-y-1">
-                        <li className="text-base">• Blender</li>
-                        <li className="text-base">• Adobe Premiere</li>
-                        <li className="text-base">• Adobe After Effects</li>
+                        <li className="body-base">• Blender</li>
+                        <li className="body-base">• Adobe Premiere</li>
+                        <li className="body-base">• Adobe After Effects</li>
                       </ul>
                     </div>
                     
                     <div>
-                      <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">[EXPERIMENTAL]</h4>
+                      <h4 className="micro-title text-foreground/80">[EXPERIMENTAL]</h4>
                       <ul className="space-y-1">
-                        <li className="text-base">• Ultimaker Cura</li>
-                        <li className="text-base">• UCreality 3D</li>
-                        <li className="text-base">• Figma</li>
+                        <li className="body-base">• Ultimaker Cura</li>
+                        <li className="body-base">• UCreality 3D</li>
+                        <li className="body-base">• Figma</li>
                       </ul>
                     </div>
                   </div>
                   
                   <div className="pt-6 border-t border-border">
-                    <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">Idiomas / Languages</h4>
-                    <p className="text-base">Português (nativo) • Espanhol (intermediário) • Inglês (intermediário)</p>
+                    <h4 className="micro-title text-foreground/80">Idiomas / Languages</h4>
+                    <p className="body-base">Português (nativo) • Espanhol (intermediário) • Inglês (intermediário)</p>
                   </div>
                   
                   <div className="pt-6 border-t border-border">
-                    <h4 className="text-xs uppercase tracking-wide mb-3 text-foreground/80">Referencial / References</h4>
-                    <p className="text-base">Minimalista/Experimentação • Futurista/Construtivismo • Cibercultura/Semiótica • Tipografia/Infografia • Economia Criativa • Underground • Op-Art</p>
+                    <h4 className="micro-title text-foreground/80">Referencial / References</h4>
+                    <p className="body-base">Minimalista/Experimentação • Futurista/Construtivismo • Cibercultura/Semiótica • Tipografia/Infografia • Economia Criativa • Underground • Op-Art</p>
                   </div>
 
                 </div>
                 
                 <div className="mt-12 pl-6 border-l-2 border-primary">
-                  <h3 className="text-sm font-medium tracking-wide uppercase mb-4">HYBRID PRAXIS / PRÁXIS HÍBRIDA</h3>
-                  <p className="text-base text-justify leading-relaxed mb-4">
+                  <h3 className="subsection-title mb-4">HYBRID PRAXIS / PRÁXIS HÍBRIDA</h3>
+                  <p className="body-base text-justified mb-4">
                     Metodologia processual, experimental e reflexiva do projeto THEVOIDN13. Um ciclo contínuo de cinco etapas:
                   </p>
-                  <div className="space-y-2 text-base">
-                    <p><span className="font-medium">Observação:</span> Análise do fluxo criativo e documentação de padrões.</p>
-                    <p><span className="font-medium">Cocriação:</span> Interação com IAs (Claude, Gemini, Midjourney) como extensões simbólicas.</p>
-                    <p><span className="font-medium">Documentação:</span> Registro contínuo de camadas, decisões e estados mentais.</p>
-                    <p><span className="font-medium">Reflexão:</span> Transformação dos registros em narrativas estéticas, filosóficas e técnicas.</p>
-                    <p><span className="font-medium">Expansão:</span> Compartilhamento de aprendizados através de arte, código e metodologia.</p>
+                  <div className="space-y-2">
+                    <p className="body-base"><span className="font-medium">Observação:</span> Análise do fluxo criativo e documentação de padrões.</p>
+                    <p className="body-base"><span className="font-medium">Cocriação:</span> Interação com IAs (Claude, Gemini, Midjourney) como extensões simbólicas.</p>
+                    <p className="body-base"><span className="font-medium">Documentação:</span> Registro contínuo de camadas, decisões e estados mentais.</p>
+                    <p className="body-base"><span className="font-medium">Reflexão:</span> Transformação dos registros em narrativas estéticas, filosóficas e técnicas.</p>
+                    <p className="body-base"><span className="font-medium">Expansão:</span> Compartilhamento de aprendizados através de arte, código e metodologia.</p>
                   </div>
-                  <p className="text-base text-justify leading-relaxed mt-4">
+                  <p className="body-base text-justified mt-4">
                     Transparência radical. Autoria compartilhada mas assinada. Pesquisa como criação.
                   </p>
                 </div>
 
                 <div className="mt-16 space-y-6">
-                  <h3 className="text-sm font-medium tracking-wide uppercase text-primary">Trajetória / Journey</h3>
+                  <h3 className="subsection-title text-primary">Trajetória / Journey</h3>
                   
-                  <div className="space-y-6 text-base leading-relaxed">
-                    <p className="text-justify">
+                  <div className="space-y-6">
+                    <p className="body-base text-justified">
                       A jornada começa no skate. Não como esporte, mas como modo de habitar o mundo. O corpo em movimento pelo espaço urbano. A apropriação criativa da cidade. Das manobras na rua às manobras no vídeo. Da câmera VHS à edição digital.
                     </p>
                     
-                    <p className="text-justify">
+                    <p className="body-base text-justified">
                       2008: Funda CasaTrezeStudio. Começa a construir sua própria infraestrutura criativa. Design, vídeo, direção de arte. O coletivo como espaço de experimentação. 2014-2016: UDNFS no MuMA — primeira exposição institucional, democratização audiovisual DIY. 2019: Subtropikal Festival — criação de ID Visual do zero aplicando processos criativos ao vivo. 2020: LowPressure crew se formaliza. O skate ganha forma de movimento cultural. 2019-2022: Produção de LowMovie. O processo como obra.
                     </p>
                     
-                    <p className="text-justify">
+                    <p className="body-base text-justified">
                       2023: Estreia de LowMovie no Cine Passeio. Do underground à tela grande. Ingresso no mestrado em Cinema e Artes do Vídeo (UNESPAR). A prática vira pesquisa. A pesquisa alimenta a prática. 2024: ⊂ødx — videoarte e instalação urbana sobre resistência e apagamento. 2024-2025: THE VOID N.13 emerge. A anti-marca que condensa tudo que veio antes.
                     </p>
                   </div>
                 </div>
 
                 <div className="mt-16 space-y-8">
-                  <h3 className="text-sm font-medium tracking-wide uppercase text-primary">Formação Acadêmica / Academic Background</h3>
+                  <h3 className="subsection-title text-primary">Formação Acadêmica / Academic Background</h3>
                   
                   <div className="space-y-8">
                     <div className="border-l-2 border-primary pl-6">
-                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-2">2023-2025 (em curso)</p>
-                      <h4 className="text-base font-bold mb-2">Mestrado em Cinema e Artes do Vídeo</h4>
-                      <p className="text-base mb-3">UNESPAR - Universidade Estadual do Paraná</p>
-                      <p className="text-sm text-muted-foreground mb-4">
+                      <p className="micro-title text-muted-foreground mb-2">2023-2025 (em curso)</p>
+                      <h4 className="body-base font-bold mb-2">Mestrado em Cinema e Artes do Vídeo</h4>
+                      <p className="body-base mb-3">UNESPAR - Universidade Estadual do Paraná</p>
+                      <p className="body-base text-muted-foreground mb-4">
                         Pesquisa: Processos criativos colaborativos,<br/>
                         subcultura do skate, cinema documental
                       </p>
@@ -183,21 +183,21 @@ const Autor = () => {
                     </div>
 
                     <div className="border-l-2 border-muted pl-6">
-                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-2">2014</p>
-                      <h4 className="text-base font-bold mb-2">
+                      <p className="micro-title text-muted-foreground mb-2">2014</p>
+                      <h4 className="body-base font-bold mb-2">
                         Pós-Graduado em Direção de Arte e<br/>
                         Estratégias Criativas
                       </h4>
-                      <p className="text-base">Unicuritiba</p>
+                      <p className="body-base">Unicuritiba</p>
                     </div>
 
                     <div className="border-l-2 border-muted pl-6">
-                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-2">2005</p>
-                      <h4 className="text-base font-bold mb-2">
+                      <p className="micro-title text-muted-foreground mb-2">2005</p>
+                      <h4 className="body-base font-bold mb-2">
                         Graduado em Comunicação Social —<br/>
                         Publicidade e Propaganda
                       </h4>
-                      <p className="text-base">UTP - Universidade Tuiuti do Paraná</p>
+                      <p className="body-base">UTP - Universidade Tuiuti do Paraná</p>
                     </div>
                   </div>
 
@@ -216,21 +216,21 @@ const Autor = () => {
               </>
             }
             englishContent={
-              <>
-                <h2 className="text-sm font-medium tracking-wide uppercase">Who Speaks and From Where</h2>
-                <p className="text-base text-justify leading-relaxed mt-6">
+                <>
+                <h2 className="subsection-title">Who Speaks and From Where</h2>
+                <p className="body-base text-justified mt-6">
                   Multidisciplinary creative professional, I work between visual arts, design and audiovisual production. My trajectory is guided by the creation of visual identities and semiotic narratives, exploring languages such as photography, video, graphic design and digital multi-arts. I move between individual processes and collective collaborations, based on creative laboratories, referential immersions and conceptual development.
                 </p>
-                <p className="text-base text-justify leading-relaxed mt-6">
+                <p className="body-base text-justified mt-6">
                   Currently, master's student in Cinema and Video Arts at PPG-CINEAV of Paraná State University (Unespar – Curitiba II/FAP), in the research line on Creation Processes in Cinema and Video Arts. I am part of the CineCriare research group – Cinema: Creation and Reflection (Unespar/CNPq).
                 </p>
-                <p className="text-base text-justify leading-relaxed mt-6">
+                <p className="body-base text-justified mt-6">
                   Bachelor's degree in Advertising (Tuiuti University of Paraná, 2010) and postgraduate degree in Art Direction and Creative Strategies (Unicuritiba, 2016).
                 </p>
-                <p className="text-base text-justify leading-relaxed mt-6">
+                <p className="body-base text-justified mt-6">
                   Founder of CasaTrezeStudio® (2008), a creative collective that works as an independent laboratory for cultural, authorial and commercial production, connecting people, ideas and projects. Between 2017 and 2020, professor of Creative Economy at Positivo University; currently, professor in the subjects of Branding and Audiovisual Production at Isulpar University.
                 </p>
-                <p className="text-base text-justify leading-relaxed mt-6">
+                <p className="body-base text-justified mt-6">
                   Member of LowPressure™, a collective of skateboarders and creative producers who work at the intersections between skateboarding, cinema and contemporary video art. I also collaborate with TheWorkspace™, focused on collaborative and independent audiovisual production. I navigate through diverse repertoires, multiple creative flows and interdisciplinary practices, building my intellectual background from practice, listening and exchange.
                 </p>
                 <div className="mt-12 space-y-8">
@@ -521,14 +521,14 @@ const Autor = () => {
                 </div>
 
                 <div className="space-y-4 bg-primary/5 border border-primary/20 rounded-lg p-6">
-                  <h3 className="heading-3 text-primary title-break">Conheçam o Trabalho, Não o Rosto</h3>
-                  <p className="text-base leading-relaxed text-justify">
+                  <h3 className="subsection-title">Conheçam o Trabalho, Não o Rosto</h3>
+                  <p className="body-base text-justified">
                     A proposta central é o anonimato como ética criativa. Num mundo saturado de criadores-influencers, a ideia é inverter a equação: não se trata de vender a imagem do artista, mas de expandir o campo simbólico do que ele cria.
                   </p>
-                  <p className="text-base leading-relaxed text-justify">
+                  <p className="body-base text-justified">
                     Assim, "CASTRO" torna-se um agente conceitual, não uma pessoa. Uma entidade de linguagem, um selo de pensamento, uma assinatura invisível.
                   </p>
-                  <div className="my-4 py-4 text-center">
+                  <div className="my-4 py-4">
                     <p className="text-lg font-bold italic text-primary">
                       "O criador desaparece para que a obra fale."
                     </p>
@@ -536,8 +536,8 @@ const Autor = () => {
                 </div>
 
                 <div className="space-y-4">
-                  <h3 className="heading-3 text-primary title-break">Filosofia LowPressure™ e Estética de Resistência</h3>
-                  <p className="text-base leading-relaxed text-justify">
+                  <h3 className="subsection-title">Filosofia LowPressure™ e Estética de Resistência</h3>
+                  <p className="body-base text-justified">
                     Essa construção anti-brand dialoga diretamente com a filosofia LowPressure™ — onde a autenticidade vem da marginalidade, e o valor nasce da não-adesão. É o mesmo raciocínio que permeia o skate, o cinema independente, o underground design e as poéticas urbanas.
                   </p>
                   <div className="grid md:grid-cols-3 gap-4 mt-6">
@@ -557,7 +557,7 @@ const Autor = () => {
                 </div>
 
                 <div className="space-y-4">
-                  <h3 className="heading-3 text-primary">A Semiótica do Símbolo</h3>
+                  <h3 className="subsection-title text-primary">A Semiótica do Símbolo</h3>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="border-l-2 border-primary pl-4">
                       <h4 className="text-sm font-bold uppercase mb-2">ЦЦАСТРО</h4>
@@ -579,8 +579,8 @@ const Autor = () => {
                 </div>
 
                 <div className="bg-red-900 -mx-6 px-6 py-8 rounded-lg">
-                  <h3 className="heading-3 text-white mb-4">Conclusão</h3>
-                  <p className="text-base leading-relaxed text-white text-justify mb-4">
+                  <h3 className="subsection-title text-white mb-4">Conclusão</h3>
+                  <p className="body-base text-white text-justified mb-4">
                     A identidade ЦЦАСТРО é um exercício de negação criativa. É o avesso do branding para relembrar o que o design pode ser: linguagem, manifesto, resistência.
                   </p>
                   <p className="text-lg italic text-white/90 text-center">
