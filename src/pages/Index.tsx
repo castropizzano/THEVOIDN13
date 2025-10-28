@@ -76,7 +76,7 @@ const Index = () => {
 
         {/* Quando o Inconsciente Ganha Corpo - with mask */}
         <BilingualSection>
-          <div className="grid md:grid-cols-[1fr_auto] gap-8 lg:gap-12 items-start">
+          <div className="grid md:grid-cols-[1fr_auto] gap-8 lg:gap-12 items-stretch">
             {/* Text Columns - Stacked PT/EN */}
             <div className="space-y-12">
               {/* Portuguese */}
@@ -98,9 +98,9 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Mask Image - Right Side in Square Frame */}
-            <div className="flex items-start justify-center">
-              <div className="w-80 h-80 border border-border rounded-lg overflow-hidden flex items-center justify-center bg-background/50">
+            {/* Mask Image - Right Side Matching Text Height */}
+            <div className="flex items-stretch justify-center min-w-[300px]">
+              <div className="w-full border border-border rounded-lg overflow-hidden flex items-center justify-center bg-background/50">
                 <img 
                   src={maskVoid} 
                   alt="THEVOIDN13 Mask" 
@@ -117,7 +117,7 @@ const Index = () => {
             <div className="grid md:grid-cols-3 gap-8">
               {/* LowMovie Card */}
               <a 
-                href="#lowmovie" 
+                href="/dissertacao" 
                 className="group border border-border rounded-lg p-8 hover:border-foreground/40 transition-all duration-300"
               >
                 <h3 className="text-xl font-bold mb-4 group-hover:text-foreground/80">LowMovie™</h3>
@@ -145,7 +145,7 @@ const Index = () => {
 
               {/* CasaTrezeStudio Card */}
               <a 
-                href="#casatrezestudio" 
+                href="/videos" 
                 className="group border border-border rounded-lg p-8 hover:border-foreground/40 transition-all duration-300"
               >
                 <h3 className="text-xl font-bold mb-4 group-hover:text-foreground/80">CasaTrezeStudio®</h3>
