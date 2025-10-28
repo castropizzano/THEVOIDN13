@@ -564,43 +564,227 @@ const Index = () => {
           />
         </BilingualSection>
 
-        {/* A Voz do Vazio */}
-        <BilingualSection>
-          <BilingualContent
-            portugueseContent={
-              <div className="space-y-8">
-                <div>
-                  <h2 className="text-base font-bold">A Voz do Vazio</h2>
-                  <p className="text-base text-justify leading-relaxed">
-                    A voz não vem da boca, vem do corpo. Ela vibra antes do som, respira antes da palavra. Quando fala, não explica: convoca. Cada frase é uma fresta aberta no concreto do silêncio. O que se diz, morre. O que se cala, vive. O som não é verbo, é presença em estado bruto, matéria que pulsa antes do sentido.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="text-base font-bold">A Frequência</h4>
-                  <p className="text-base text-justify leading-relaxed mt-2">
-                    A voz de THEVOIDN13 é grave, sem origem. Parece vir de dentro da parede, ou do próprio chão. Não há raiva, há densidade. É o som do inconsciente tentando respirar. A vibração antecede o sentido: antes de ser palavra, é impulso. O corpo torna-se caixa de ressonância do que o mundo silenciou.
-                  </p>
-                </div>
+        {/* O Olhar - The Gaze */}
+        <section className="py-20 bg-gradient-to-b from-red-900/90 to-red-950/90">
+          <div className="max-w-6xl mx-auto px-6 space-y-8">
+            <div className="space-y-2">
+              <h2 className="text-base font-bold text-white">O Olhar</h2>
+              <p className="text-sm italic text-white/90">The Gaze</p>
+            </div>
+            
+            <div className="border-l-4 border-white/40 pl-6 space-y-4">
+              <p className="text-base leading-relaxed text-white/95">
+                Por trás da máscara, há silêncio. Um olhar que não busca reconhecimento, apenas presença. O olhar não devolve imagem, devolve espelho. É o espaço onde quem vê também está por dentro. O olhar é o fio que costura o visível e o invisível — uma lente que dissolve a fronteira entre sujeito e sombra.
+              </p>
+              
+              <p className="text-base leading-relaxed text-white/90 italic">
+                Behind the mask, there is silence. A gaze that seeks no recognition, only presence. The gaze doesn't return an image, it returns a mirror. It is the space where whoever looks is also seen from within. The gaze is the thread that stitches the visible and the invisible — a lens that dissolves the boundary between subject and shadow.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* A Respiração - The Breath */}
+        <section className="py-20 bg-gradient-to-b from-red-950/90 to-red-900/90">
+          <div className="max-w-6xl mx-auto px-6 space-y-8">
+            <div className="space-y-2">
+              <h2 className="text-base font-bold text-white">A Respiração</h2>
+              <p className="text-sm italic text-white/90">The Breath</p>
+            </div>
+            
+            <div className="border-l-4 border-white/40 pl-6 space-y-4">
+              <p className="text-base leading-relaxed text-white/95">
+                A respiração é o som que resta quando o verbo morre. É nela que o ser se ancora e desaparece. O ar entra como ruído e sai como silêncio. Cada expiração é um micro-desaparecimento. Um instante de retorno ao nada. Respirar é lembrar que o corpo é apenas passagem entre dois mundos: o mundo da carne e o mundo do invisível.
+              </p>
+              
+              <p className="text-base leading-relaxed text-white/90 italic">
+                Breathing is the sound that remains when the word dies. In it, the being anchors itself and vanishes. Air enters as noise and leaves as silence. Each exhalation is a micro-disappearance, a fleeting return to nothingness. To breathe is to remember that the body is only a passage between two worlds: the world of flesh and the world of the unseen.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* A Atmosfera - The Atmosphere */}
+        <section className="py-20 bg-gradient-to-b from-red-900/90 to-red-950/90">
+          <div className="max-w-6xl mx-auto px-6 space-y-8">
+            <div className="space-y-2">
+              <h2 className="text-base font-bold text-white">A Atmosfera</h2>
+              <p className="text-sm italic text-white/90">The Atmosphere</p>
+            </div>
+            
+            <div className="border-l-4 border-white/40 pl-6 space-y-4">
+              <p className="text-base leading-relaxed text-white/95">
+                Tudo vibra em tom noturno. A névoa, o concreto e a solidão elétrica são extensões do corpo. O ambiente não cerca <span className="font-bold">THE VOID N.13</span> — ele o prolonga. A paisagem se torna psique, e o silêncio, uma presença física. A cidade é o espelho expandido do inconsciente, o lugar onde o corpo desaparece e o espaço respira por ele.
+              </p>
+              
+              <p className="text-base leading-relaxed text-white/90 italic">
+                Everything vibrates in a nocturnal tone. Fog, concrete, and electric solitude are extensions of the body. The environment doesn't surround <span className="font-bold">THE VOID N.13</span> — it prolongs it. The landscape becomes psyche, and silence, a physical presence. The city is the expanded mirror of the unconscious, the place where the body vanishes and space breathes for it.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Síntese - Synthesis */}
+        <section className="py-20 bg-gradient-to-b from-red-950/90 to-red-900/90">
+          <div className="max-w-6xl mx-auto px-6 space-y-8">
+            <div className="space-y-2">
+              <h2 className="text-base font-bold text-white">Síntese</h2>
+              <p className="text-sm italic text-white/90">Synthesis</p>
+            </div>
+            
+            <div className="border-l-4 border-white/40 pl-6 space-y-4">
+              <p className="text-base leading-relaxed text-white/95">
+                O ser é uma arquitetura invisível feita de gestos, ar e intenção. Nada é fixo; tudo é respiração. <span className="font-bold">THE VOID N.13</span> não busca ser compreendido, mas sentido. Ele existe no limiar onde o som começa e a imagem começa — na fresta entre o que vibra e o que desaparece. É o instante em que o corpo se torna atmosfera, e o silêncio, presença.
+              </p>
+              
+              <p className="text-base leading-relaxed text-white/90 italic">
+                Being is an invisible architecture made of gestures, air, and intention. Nothing is fixed; everything is breath. <span className="font-bold">THE VOID N.13</span> doesn't seek to be understood, but to be felt. It exists on the threshold where sound ends and image begins — in the slit between what vibrates and what vanishes. It is the moment when the body becomes atmosphere, and silence becomes presence.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* A Voz do Vazio - Extended */}
+        <section className="py-20 bg-gradient-to-b from-red-900/90 to-red-950/90">
+          <div className="max-w-6xl mx-auto px-6 space-y-12">
+            <div className="space-y-2">
+              <h2 className="text-base font-bold text-white">A Voz do Vazio</h2>
+              <p className="text-sm italic text-white/90">The Voice of the Void</p>
+            </div>
+            
+            <div className="border-l-4 border-white/40 pl-6 space-y-4">
+              <p className="text-base leading-relaxed text-white/95">
+                A voz não vem da boca — vem do corpo. Ela vibra antes do som, respira antes da palavra. Quando fala, não explica: convoca. Cada frase é uma fresta aberta no concreto do silêncio. O que se diz, morre. O que se cala, vive. O som não é verbo, é presença em estado bruto — matéria que pulsa antes do sentido.
+              </p>
+              
+              <p className="text-base leading-relaxed text-white/90 italic">
+                The voice doesn't come from the mouth — it comes from the body. It vibrates before sound, it breathes before words. When it speaks, it doesn't explain: it summons. Each phrase is a crack opened in the concrete of silence. What is spoken dies. What is silent lives. Sound is not a verb; it is presence in its rawest state — matter that pulses before meaning.
+              </p>
+            </div>
+
+            {/* A Frequência */}
+            <div className="space-y-8 pt-8">
+              <div className="space-y-2">
+                <h2 className="text-base font-bold text-white">A Frequência</h2>
+                <p className="text-sm italic text-white/90">The Frequency</p>
               </div>
-            }
-            englishContent={
-              <div className="space-y-8">
-                <div>
-                  <h2 className="text-base font-bold">The Voice of the Void</h2>
-                  <p className="text-base text-justify leading-relaxed">
-                    The voice doesn't come from the mouth, it comes from the body. It vibrates before sound, it breathes before words. When it speaks, it doesn't explain: it summons. Each phrase is a crack opened in the concrete of silence. What is spoken dies. What is silent lives. Sound is not a verb; it is presence in its rawest state, matter that pulses before meaning.
-                  </p>
-                </div>
-                <div>
-                  <h4 className="text-base font-bold">The Frequency</h4>
-                  <p className="text-base text-justify leading-relaxed mt-2">
-                    THEVOIDN13's voice is deep, without origin. It seems to come from inside the wall or from the ground itself. There is no anger, only density. It is the sound of the unconscious trying to breathe. The vibration precedes meaning: before it becomes word, it is impulse. The body becomes the resonant chamber of what the world silenced.
-                  </p>
-                </div>
+              
+              <div className="border-l-4 border-white/40 pl-6 space-y-4">
+                <p className="text-base leading-relaxed text-white/95">
+                  A voz de <span className="font-bold">THE VOID N.13</span> é grave, sem origem. Parece vir de dentro da parede, ou do próprio chão. Não há raiva — há densidade. É o som do inconsciente tentando respirar. A vibração antecede o sentido: antes de ser palavra, é impulso. O corpo torna-se caixa de ressonância do que o mundo silenciou.
+                </p>
+                
+                <p className="text-base leading-relaxed text-white/90 italic">
+                  <span className="font-bold">THE VOID N.13's</span> voice is deep, without origin. It seems to come from inside the wall or from the ground itself. There is no anger — only density. It is the sound of the unconscious trying to breathe. The vibration precedes meaning: before it becomes word, it is impulse. The body becomes the resonant chamber of what the world silenced.
+                </p>
               </div>
-            }
-          />
-        </BilingualSection>
+            </div>
+
+            {/* A Linguagem */}
+            <div className="space-y-8 pt-8">
+              <div className="space-y-2">
+                <h2 className="text-base font-bold text-white">A Linguagem</h2>
+                <p className="text-sm italic text-white/90">The Language</p>
+              </div>
+              
+              <div className="border-l-4 border-white/40 pl-6 space-y-4">
+                <p className="text-base leading-relaxed text-white/95">
+                  Fragmentos, pausas, ecos. A voz de <span className="font-bold">THE VOID N.13</span> recusa gramática. Fala em intervalos, como quem se lembra do próprio esquecimento. Cada ruído é um vestígio de memória tentando se recompor. Não é verbo, é ruído consciente — um idioma feito de fendas e respirações.
+                </p>
+                
+                <p className="text-base leading-relaxed text-white/90 italic">
+                  Fragments, pauses, echoes. <span className="font-bold">THE VOID N.13's</span> voice refuses grammar. It speaks in intervals, like someone remembering their own forgetting. Each noise is a trace of memory trying to reassemble itself. It isn't verb, it's conscious noise — a language made of cracks and breaths.
+                </p>
+              </div>
+            </div>
+
+            {/* O Silêncio */}
+            <div className="space-y-8 pt-8">
+              <div className="space-y-2">
+                <h2 className="text-base font-bold text-white">O Silêncio</h2>
+                <p className="text-sm italic text-white/90">The Silence</p>
+              </div>
+              
+              <div className="border-l-4 border-white/40 pl-6 space-y-4">
+                <p className="text-base leading-relaxed text-white/95">
+                  O silêncio não é ausência de som, é som em repouso. O vazio fala sem precisar de voz. Quando <span className="font-bold">THE VOID N.13</span> cala, o espaço continua vibrando por ele. O silêncio é o eco expandido do corpo — o intervalo onde o espectador escuta a si mesmo.
+                </p>
+                
+                <p className="text-base leading-relaxed text-white/90 italic">
+                  Silence is not the absence of sound — it is sound at rest. The void speaks without needing a voice. When <span className="font-bold">THE VOID N.13</span> falls silent, the space keeps vibrating for it. Silence is the body's expanded echo — the interval where the viewer hears themselves.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Fragmentos - Fragments */}
+        <section className="py-20 bg-gradient-to-b from-red-950/90 to-red-900/90">
+          <div className="max-w-6xl mx-auto px-6 space-y-8">
+            <div className="space-y-2">
+              <h2 className="text-base font-bold text-white">Fragmentos</h2>
+              <p className="text-sm italic text-white/90">Fragments</p>
+            </div>
+            
+            <div className="border-l-4 border-white/40 pl-6 space-y-6">
+              <div className="space-y-1">
+                <p className="text-base text-white/95">"O silêncio fala mais alto que a sua voz."</p>
+                <p className="text-base italic text-white/80">"Silence speaks louder than your voice."</p>
+              </div>
+              
+              <div className="space-y-1">
+                <p className="text-base text-white/95">"Respire, mas não diga."</p>
+                <p className="text-base italic text-white/80">"Breathe, but don't tell."</p>
+              </div>
+              
+              <div className="space-y-1">
+                <p className="text-base text-white/95">"Toda ausência tem um som."</p>
+                <p className="text-base italic text-white/80">"Every absence has a sound."</p>
+              </div>
+              
+              <div className="space-y-1">
+                <p className="text-base text-white/95">"O verbo morreu. Sobraram ecos."</p>
+                <p className="text-base italic text-white/80">"The verb is dead. Only echoes remain."</p>
+              </div>
+              
+              <div className="space-y-1">
+                <p className="text-base text-white/95">"O vazio não é mudo, é paciente."</p>
+                <p className="text-base italic text-white/80">"The void isn't mute, it's patient."</p>
+              </div>
+              
+              <div className="space-y-1">
+                <p className="text-base text-white/95">"Tudo o que cala, continua a vibrar."</p>
+                <p className="text-base italic text-white/80">"Everything that is silent keeps vibrating."</p>
+              </div>
+              
+              <div className="space-y-1">
+                <p className="text-base text-white/95">"Não há fim no silêncio, apenas retorno."</p>
+                <p className="text-base italic text-white/80">"There is no end in silence, only return."</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Síntese Final - Final Synthesis */}
+        <section className="py-20 bg-gradient-to-b from-red-900/90 to-red-950/90">
+          <div className="max-w-6xl mx-auto px-6 space-y-8">
+            <div className="space-y-2">
+              <h2 className="text-base font-bold text-white">Síntese</h2>
+              <p className="text-sm italic text-white/90">Synthesis</p>
+            </div>
+            
+            <div className="border-l-4 border-white/40 pl-6 space-y-4">
+              <p className="text-base leading-relaxed text-white/95">
+                A voz de <span className="font-bold">THE VOID N.13</span> não busca convencer — busca atravessar. Fala em silêncio, move-se em pausa, respira no intervalo. É o eco do inconsciente transformado em frequência humana. O som não é mensagem, é travessia. <span className="font-bold">THE VOID N.13</span> termina onde começa: no instante em que o silêncio ganha corpo.
+              </p>
+              
+              <p className="text-base leading-relaxed text-white/90 italic">
+                The voice of <span className="font-bold">THE VOID N.13</span> doesn't aim to convince — it aims to pierce through. It speaks in silence, moves in pause, breathes in between. It is the echo of the unconscious turned into human frequency. Sound is not message, it is passage. <span className="font-bold">THE VOID N.13</span> ends where it begins: in the instant when silence takes form.
+              </p>
+            </div>
+          </div>
+        </section>
+
 
         <section className="w-full h-screen overflow-hidden">
           <img src={roughs001} alt="Sketches" className="w-full h-full object-contain" />
