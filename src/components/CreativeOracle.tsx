@@ -492,7 +492,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
         <audio 
           ref={audioRef} 
           loop 
-          src="/audio/thevoidn13-projeto.mp3"
+          src="/audio/Shadow_In_The_Dark.mp3"
           className="hidden"
         />
       </DialogContent>
