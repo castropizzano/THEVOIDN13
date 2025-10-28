@@ -88,7 +88,7 @@ const Dissertacao = () => {
         {/* Matrix Projects - Origins of the Dissertation */}
         <BilingualSection bgClassName="bg-card/50">
           <div className="space-y-4 mb-16">
-            <h2 className="heading-2 text-primary">Processos Matriciais / Matrix Processes</h2>
+            <h2 className="section-title">Processos Matriciais / Matrix Processes</h2>
             <BilingualContent 
               portugueseContent={
                 <p className="text-base text-muted-foreground leading-relaxed">
@@ -108,7 +108,7 @@ const Dissertacao = () => {
         <BilingualSection>
           <div className="border-l-4 border-primary pl-6 space-y-8">
             <div>
-              <h2 className="heading-2 mb-2 title-break">CasaTrezeStudio</h2>
+              <h2 className="section-title mb-2">CasaTrezeStudio</h2>
               <p className="text-sm text-muted-foreground mb-2">2008-Presente</p>
               <p className="text-sm text-primary font-medium">Coletivo Criativo / Creative Lab</p>
             </div>
@@ -199,7 +199,7 @@ const Dissertacao = () => {
         <BilingualSection bgClassName="bg-card/30">
           <div className="border-l-4 border-primary pl-6 space-y-8">
             <div>
-              <h2 className="heading-2 mb-2">LowPressure™</h2>
+              <h2 className="section-title mb-2">LowPressure™</h2>
               <p className="text-sm text-muted-foreground mb-2">2020-Presente</p>
               <p className="text-sm text-primary font-medium">Skate Crew / Movimento Cultural</p>
             </div>
@@ -275,7 +275,7 @@ const Dissertacao = () => {
         <BilingualSection>
           <div className="border-l-4 border-primary pl-6 space-y-8">
             <div>
-              <h2 className="heading-2 mb-2">LowMovie</h2>
+              <h2 className="section-title mb-2">LowMovie</h2>
               <p className="text-sm text-muted-foreground mb-2">2019-Presente</p>
               <p className="text-sm text-primary font-medium">Full Video / Filme-Processo</p>
             </div>
@@ -647,8 +647,8 @@ const Dissertacao = () => {
         <BilingualSection bgClassName="bg-card/50">
           <div className="space-y-16">
             <div className="space-y-4">
-              <h2 className="heading-1">Documentation</h2>
-              <h3 className="heading-4 text-primary">Documentos de Pesquisa / Research Documents</h3>
+              <h2 className="section-title">Documentation</h2>
+              <h3 className="subsection-title text-primary">Documentos de Pesquisa / Research Documents</h3>
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
@@ -735,7 +735,7 @@ const Dissertacao = () => {
         <BilingualSection bgClassName="bg-primary/5">
           <div className="space-y-8">
             <div className="space-y-2">
-              <h2 className="heading-2 text-primary title-break">Pesquisa Acadêmica / Academic Research</h2>
+              <h2 className="section-title">Pesquisa Acadêmica / Academic Research</h2>
             </div>
 
             <BilingualContent
@@ -766,9 +766,9 @@ const Dissertacao = () => {
         {/* Documentation Section - Soundtracks, Podcast, Timeline */}
         <BilingualSection bgClassName="bg-card/50">
           <div className="space-y-16">
-            <div className="space-y-4 text-center border-b border-border pb-8">
-              <h2 className="heading-1 text-primary title-break">Documentação do Processo / Process Documentation</h2>
-              <p className="heading-4 text-muted-foreground">
+            <div className="space-y-4 border-b border-border pb-8">
+              <h2 className="section-title">Documentação do Processo / Process Documentation</h2>
+              <p className="subsection-title text-muted-foreground">
                 Trilhas sonoras, entrevistas e timeline da pesquisa / Soundtracks, interviews and research timeline
               </p>
             </div>
@@ -795,7 +795,7 @@ const Dissertacao = () => {
         <BilingualSection>
           <div className="space-y-8">
             <div className="space-y-2">
-              <h2 className="heading-2 text-primary title-break">Colaboração e Coletivos / Collaboration and Collectives</h2>
+              <h2 className="section-title">Colaboração e Coletivos / Collaboration and Collectives</h2>
             </div>
 
             <BilingualContent
