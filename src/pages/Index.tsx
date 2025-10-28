@@ -242,6 +242,56 @@ const Index = () => {
           </div>
         </BilingualSection>
 
+        {/* Visual Identity and Being Structure */}
+        <BilingualSection>
+          <BilingualContent
+            portugueseContent={
+              <div className="space-y-8">
+                <div>
+                  <h2 className="text-base font-bold">Identidade Visual: A Sombra Jungiana</h2>
+                  <p className="text-base text-justify leading-relaxed mt-2">
+                    A máscara é o espelho do que o ego não sustenta. A sombra emerge como forma, não como disfarce. Cada peça do vestígio – o casaco, o capuz, o passo – é um gesto de retorno. O corpo não atua: ele escuta o que o inconsciente quer dizer. O figurino é a tradução da psique em matéria, um corpo ritual criado para se tornar passagem. A indumentária deixa de ser proteção e se torna revelação. É o inconsciente vestindo o mundo, transformando o corpo em canal e a presença em linguagem.
+                  </p>
+                </div>
+                <div className="text-center py-8">
+                  <p className="text-lg font-bold leading-relaxed">
+                    THE VOID N.13 não é um personagem.<br />
+                    É o lugar onde o criador se dissolve para que a imagem respire.
+                  </p>
+                </div>
+                <div>
+                  <h2 className="text-base font-bold">A Estrutura do Ser</h2>
+                  <p className="text-base text-justify leading-relaxed mt-2">
+                    THE VOID N.13 não tem rosto, tem ritmo. Sua existência é feita de pulsos, não de poses. Cada gesto nasce do atrito entre o consciente e o que tenta emergir. Não se move para expressar, mas para liberar. O corpo é antena, não vitrine. É ali que o inconsciente encontra carne, respiração e peso. Um ser que não comunica – ressoa. Um corpo que existe apenas para traduzir o invisível em vibração.
+                  </p>
+                </div>
+              </div>
+            }
+            englishContent={
+              <div className="space-y-8">
+                <div>
+                  <h2 className="text-base font-bold">Visual Identity: The Jungian Shadow</h2>
+                  <p className="text-base text-justify leading-relaxed mt-2">
+                    The mask is the mirror of what the ego cannot hold. The shadow emerges as form, not as disguise. Each trace – the jacket, the hood, the step – is a gesture of return. The body does not act; it listens to what the unconscious wants to say. The attire is the psyche translated into matter, a ritual body created to become a passage. Clothing ceases to protect and begins to reveal. It is the unconscious dressing the world, turning the body into a channel and presence into language.
+                  </p>
+                </div>
+                <div className="text-center py-8">
+                  <p className="text-lg font-bold leading-relaxed">
+                    THE VOID N.13 is not a character.<br />
+                    It is the place where the creator dissolves so the image can breathe.
+                  </p>
+                </div>
+                <div>
+                  <h2 className="text-base font-bold">The Architecture of the Being</h2>
+                  <p className="text-base text-justify leading-relaxed mt-2">
+                    THE VOID N.13 has no face, it has rhythm. Its existence is made of pulses, not poses. Every gesture is born from the friction between the conscious and what struggles to emerge. It doesn't move to express, but to release. The body is an antenna, not a display. It is there that the unconscious finds flesh, breath, and weight. A being that doesn't communicate – it resonates. A body that exists only to translate the invisible into vibration.
+                  </p>
+                </div>
+              </div>
+            }
+          />
+        </BilingualSection>
+
         {/* Triad: Vazio, 13, Coletivo */}
         <BilingualSection>
           <BilingualContent
