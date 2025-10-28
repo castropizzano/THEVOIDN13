@@ -65,7 +65,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
       setIsAdmin(!!data && !error);
     } catch (error) {
-      console.error('Error checking admin status:', error);
       setIsAdmin(false);
     }
   };

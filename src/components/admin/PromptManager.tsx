@@ -44,7 +44,6 @@ export const PromptManager = () => {
       if (error) throw error;
       setPrompts(data || []);
     } catch (error) {
-      console.error('Error fetching prompts:', error);
       toast.error('Erro ao carregar prompts');
     } finally {
       setLoading(false);
@@ -75,7 +74,6 @@ export const PromptManager = () => {
       setIsCreating(false);
       fetchPrompts();
     } catch (error) {
-      console.error('Error saving prompt:', error);
       toast.error('Erro ao salvar prompt');
     }
   };
@@ -89,7 +87,6 @@ export const PromptManager = () => {
       toast.success('Prompt excluído com sucesso!');
       fetchPrompts();
     } catch (error) {
-      console.error('Error deleting prompt:', error);
       toast.error('Erro ao excluir prompt');
     }
   };
