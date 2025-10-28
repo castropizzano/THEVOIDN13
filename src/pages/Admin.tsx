@@ -4,11 +4,12 @@ import { useAuth } from "@/hooks/useAuth";
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Settings, Image, Video, Type } from "lucide-react";
+import { Settings, Image, Video, Type, Mail } from "lucide-react";
 import ContentManager from "@/components/admin/ContentManager";
 import MediaManager from "@/components/admin/MediaManager";
 import VideoManager from "@/components/admin/VideoManager";
 import { PromptManager } from "@/components/admin/PromptManager";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Admin = () => {
   const navigate = useNavigate();
@@ -46,6 +47,24 @@ const Admin = () => {
             Sair
           </Button>
         </div>
+
+        {/* Quick Access Card */}
+        <Card className="mb-8">
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Mail className="h-5 w-5 text-primary" />
+              Newsletter Dashboard
+            </CardTitle>
+            <CardDescription>
+              Gerencie os inscritos da newsletter e visualize estatísticas
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <Button onClick={() => navigate("/admin/dashboard")} className="w-full md:w-auto">
+              Abrir Dashboard de Inscritos
+            </Button>
+          </CardContent>
+        </Card>
 
         <Tabs defaultValue="content" className="w-full">
           <TabsList className="grid w-full grid-cols-4 mb-8">
