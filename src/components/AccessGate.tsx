@@ -6,6 +6,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { z } from "zod";
 import { Loader2 } from "lucide-react";
+import { LoadingSpinner } from "@/components/LoadingSpinner";
 
 const subscribeSchema = z.object({
   email: z.string()

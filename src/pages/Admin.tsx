@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Settings, Image, Video, Type, Mail } from "lucide-react";
+import { LoadingSpinner } from "@/components/LoadingSpinner";
 import ContentManager from "@/components/admin/ContentManager";
 import MediaManager from "@/components/admin/MediaManager";
 import VideoManager from "@/components/admin/VideoManager";
@@ -24,7 +25,7 @@ const Admin = () => {
   if (loading) {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
-        <div className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
+        <LoadingSpinner size="xl" text="Carregando painel..." />
       </div>
     );
   }
