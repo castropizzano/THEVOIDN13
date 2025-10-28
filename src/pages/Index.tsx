@@ -596,66 +596,66 @@ const Index = () => {
 
             {/* Four Pillars */}
             <div className="mt-12">
-              <div className="relative mb-12">
-                <div className="absolute top-0 left-0 right-0 h-[2px] bg-amber-500"></div>
-                <div className="absolute top-0 left-0 w-3 h-3 bg-amber-500 rounded-full -translate-y-1/2"></div>
-                <div className="absolute top-0 left-1/3 w-3 h-3 bg-amber-500 rounded-full -translate-y-1/2 -translate-x-1/2"></div>
-                <div className="absolute top-0 left-2/3 w-3 h-3 bg-amber-500 rounded-full -translate-y-1/2 -translate-x-1/2"></div>
-                <div className="absolute top-0 right-0 w-3 h-3 bg-amber-500 rounded-full -translate-y-1/2"></div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-8">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pt-12 border-t border-white/20">
                 {/* SOMBRA */}
-                <div className="space-y-4">
-                  <h3 className="micro-title text-white">SOMBRA</h3>
-                  <p className="micro-title text-white/80">SHADOW</p>
-                  <div className="space-y-3">
+                <div className="space-y-6">
+                  <div className="space-y-2">
+                    <h3 className="micro-title text-white">SOMBRA</h3>
+                    <p className="micro-title text-white/60">SHADOW</p>
+                  </div>
+                  <div className="space-y-4">
                     <p className="body-base text-white text-justified">
                       A sombra é o que o ego reprime. É onde mora o desejo sem permissão, o pensamento que não coube. Não é monstruosa — é inédita. Revelá-la é aceitar que o ser é maior que a consciência. O Void nasce ali: onde a forma aceita se desfazer.
                     </p>
-                    <p className="body-base text-white/75 italic text-justified">
+                    <p className="body-base text-white/70 italic text-justified">
                       The shadow is what the ego represses. It's where forbidden desire resides, the thought that didn't fit. It's not monstrous — it's unprecedented. To reveal it is to accept that being is greater than consciousness. The Void is born there: where form accepts dissolution.
                     </p>
                   </div>
                 </div>
 
                 {/* SILÊNCIO */}
-                <div className="space-y-4">
-                  <h3 className="micro-title text-white">SILÊNCIO</h3>
-                  <p className="micro-title text-white/80">SILENCE</p>
-                  <div className="space-y-3">
+                <div className="space-y-6">
+                  <div className="space-y-2">
+                    <h3 className="micro-title text-white">SILÊNCIO</h3>
+                    <p className="micro-title text-white/60">SILENCE</p>
+                  </div>
+                  <div className="space-y-4">
                     <p className="body-base text-white text-justified">
                       O silêncio não é ausência de som. É o espaço onde o pensamento ainda vibra sem palavra. No silêncio, o corpo ouve. É ali que o inconsciente fala — não em voz, mas em pressão, em peso, em pausa. O silêncio do Void é denso como concreto e afiado como vidro.
                     </p>
-                    <p className="body-base text-white/75 italic text-justified">
+                    <p className="body-base text-white/70 italic text-justified">
                       Silence isn't the absence of sound. It's the space where thought still vibrates wordlessly. In silence, the body listens. It's there that the unconscious speaks — not in voice, but in pressure, in weight, in pause. The Void's silence is dense as concrete and sharp as glass.
                     </p>
                   </div>
                 </div>
 
                 {/* RUÍDO */}
-                <div className="space-y-4">
-                  <h3 className="micro-title text-white">RUÍDO</h3>
-                  <p className="micro-title text-white/80">NOISE</p>
-                  <div className="space-y-3">
+                <div className="space-y-6">
+                  <div className="space-y-2">
+                    <h3 className="micro-title text-white">RUÍDO</h3>
+                    <p className="micro-title text-white/60">NOISE</p>
+                  </div>
+                  <div className="space-y-4">
                     <p className="body-base text-white text-justified">
                       O ruído não interrompe o pensamento — ele o revela. O som é a forma mais bruta do inconsciente tentando existir. O que vibra no limite do audível é o que não pode ser dito. O ruído é memória viva daquilo que ainda não encontrou palavra.
                     </p>
-                    <p className="body-base text-white/75 italic text-justified">
+                    <p className="body-base text-white/70 italic text-justified">
                       Noise doesn't interrupt thought — it reveals it. Sound is the rawest form of the unconscious trying to exist. What vibrates at the edge of the audible is what cannot yet be said. Noise is the living memory of what has not yet found a word.
                     </p>
                   </div>
                 </div>
 
                 {/* VAZIO */}
-                <div className="space-y-4">
-                  <h3 className="micro-title text-white">VAZIO</h3>
-                  <p className="micro-title text-white/80">VOID</p>
-                  <div className="space-y-3">
+                <div className="space-y-6">
+                  <div className="space-y-2">
+                    <h3 className="micro-title text-white">VAZIO</h3>
+                    <p className="micro-title text-white/60">VOID</p>
+                  </div>
+                  <div className="space-y-4">
                     <p className="body-base text-white text-justified">
                       O vazio não apaga — ele abre. É o espaço onde o silêncio respira e o corpo se reescreve. Ali, tudo que foi reprimido se reorganiza em nova forma. O vazio é o território fértil da reinvenção: o ponto onde o ser refaz em presença.
                     </p>
-                    <p className="body-base text-white/75 italic text-justified">
+                    <p className="body-base text-white/70 italic text-justified">
                       The void doesn't erase — it opens. It is the space where silence breathes and the body rewrites itself. There, everything that was repressed reorganizes into new form. The void is the fertile ground of reinvention — the point where being remakes itself into presence.
                     </p>
                   </div>
