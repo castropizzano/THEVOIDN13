@@ -1,6 +1,9 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
+import { MusicPlayer } from "@/components/MusicPlayer";
+import { PodcastPlayer } from "@/components/PodcastPlayer";
+import { Timeline } from "@/components/Timeline";
 import heroImage from "@/assets/lowmovie-hero-new.png";
 import conceptCrew from "@/assets/concept-crew.png";
 import conceptFront from "@/assets/concept-front.png";
@@ -719,6 +722,33 @@ const Dissertacao = () => {
                 </div>
               }
             />
+          </div>
+        </BilingualSection>
+
+        {/* Documentation Section - Soundtracks, Podcast, Timeline */}
+        <BilingualSection bgClassName="bg-card/50">
+          <div className="space-y-16">
+            <div className="space-y-4 text-center border-b border-border pb-8">
+              <h2 className="text-4xl font-bold text-primary">Documentação do Processo / Process Documentation</h2>
+              <p className="text-xl text-muted-foreground">
+                Trilhas sonoras, entrevistas e timeline da pesquisa / Soundtracks, interviews and research timeline
+              </p>
+            </div>
+
+            {/* Music Player - LowMovie Soundtracks */}
+            <div>
+              <MusicPlayer />
+            </div>
+
+            {/* Podcast Player - Skate Punk Interview */}
+            <div className="mt-8">
+              <PodcastPlayer />
+            </div>
+
+            {/* Timeline - Creative Journey */}
+            <div className="mt-8">
+              <Timeline />
+            </div>
           </div>
         </BilingualSection>
 

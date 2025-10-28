@@ -5,9 +5,6 @@ import { PromptLibrary } from "@/components/PromptLibrary";
 import { AudioPlayer } from "@/components/AudioPlayer";
 import { ComicGenerator } from "@/components/ComicGenerator";
 import { MindMap } from "@/components/MindMap";
-import { MusicPlayer } from "@/components/MusicPlayer";
-import { PodcastPlayer } from "@/components/PodcastPlayer";
-import { Timeline } from "@/components/Timeline";
 import heroImage from "@/assets/hero-concept-art.png";
 import conceptCrew from "@/assets/concept-crew.png";
 import actionFigure from "@/assets/action-figure.png";
@@ -1132,21 +1129,6 @@ const Index = () => {
             {/* Comic Generator - Experimental */}
             <div className="mt-8">
               <ComicGenerator />
-            </div>
-
-            {/* Music Player - LowMovie Soundtracks */}
-            <div className="mt-8">
-              <MusicPlayer />
-            </div>
-
-            {/* Podcast Player - Skate Punk Interview */}
-            <div className="mt-8">
-              <PodcastPlayer />
-            </div>
-
-            {/* Timeline - Creative Journey */}
-            <div className="mt-8">
-              <Timeline />
             </div>
 
             {/* Mind Map - Creative-Ops Process */}
