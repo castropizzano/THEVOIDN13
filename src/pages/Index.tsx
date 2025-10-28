@@ -652,14 +652,14 @@ const Index = () => {
                 </div>
 
                 {/* VAZIO */}
-                <div className="text-center space-y-4">
-                  <h3 className="text-sm font-bold text-white uppercase">VAZIO</h3>
-                  <p className="text-xs italic text-white/80">VOID</p>
+                <div className="space-y-4">
+                  <h3 className="micro-title text-white">VAZIO</h3>
+                  <p className="micro-title text-white/80">VOID</p>
                   <div className="space-y-3">
-                    <p className="text-sm leading-relaxed text-white">
+                    <p className="body-base text-white">
                       O vazio não apaga — ele abre. É o espaço onde o silêncio respira e o corpo se reescreve. Ali, tudo que foi reprimido se reorganiza em nova forma. O vazio é o território fértil da reinvenção: o ponto onde o ser refaz em presença.
                     </p>
-                    <p className="text-xs leading-relaxed text-white/75 italic">
+                    <p className="body-base text-white/75 italic">
                       The void doesn't erase — it opens. It is the space where silence breathes and the body rewrites itself. There, everything that was repressed reorganizes into new form. The void is the fertile ground of reinvention — the point where being remakes itself into presence.
                     </p>
                   </div>
@@ -678,9 +678,9 @@ const Index = () => {
         {/* O Número 13 - Símbolo de Travessia */}
         <section className="py-20 bg-red-900">
           <div className="max-w-6xl mx-auto px-6 space-y-12">
-            <div className="space-y-4 text-center">
-              <h2 className="heading-1 text-white uppercase title-break">O Número 13 – Símbolo de Travessia</h2>
-              <p className="text-base italic text-white/90">The Number 13 – Symbol of Crossing</p>
+            <div className="space-y-4">
+              <h2 className="section-title text-white">O NÚMERO 13 – SÍMBOLO DE TRAVESSIA</h2>
+              <p className="micro-title text-white/90">The Number 13 – Symbol of Crossing</p>
             </div>
 
             <div className="w-full overflow-hidden rounded-lg border border-white/20">
@@ -688,10 +688,10 @@ const Index = () => {
             </div>
 
             <div className="border-l-4 border-amber-500 pl-6 py-4">
-              <p className="text-base text-white leading-relaxed">
+              <p className="body-base text-white">
                 "[Ruído estático]. Registro treze. Chove sobre o concreto e dentro de mim. Cada batida é um erro que ainda respira. Não sou o fim, apenas o eco dele. Se ouvir com atenção, vai perceber: o silêncio ainda está vivo."
               </p>
-              <p className="text-sm italic text-white/80 mt-3 leading-relaxed">
+              <p className="body-base italic text-white/80 mt-3">
                 [Static noise]. Record thirteen. It rains on the concrete and inside me. Every pulse is a mistake still breathing. I am not the end — only its echo. If you listen closely, you'll notice: silence is still alive.
               </p>
             </div>
@@ -699,36 +699,36 @@ const Index = () => {
             <div className="grid gap-12">
               {/* A Carta da Morte */}
               <div className="space-y-4">
-                <h3 className="heading-3 text-white">A Carta da Morte</h3>
-                <p className="text-sm italic text-white/80">The Death Card</p>
-                <p className="text-base text-white text-justify leading-relaxed">
+                <h3 className="subsection-title text-white">A CARTA DA MORTE</h3>
+                <p className="micro-title text-white/80">The Death Card</p>
+                <p className="body-base text-white text-justified">
                   A carta XIII do Tarô, a Morte, ergue sua foice como quem abre caminho em meio ao campo estéril, ceifando o que já não vive para que o novo possa brotar. Sua imagem não anuncia um fim definitivo mas sim uma transição inevitável – a porta secreta entre um mundo e outro. Nessa travessia, há uma renúncia silenciosa do ego: antigas identidades desabam como folhas secas, dando lugar a uma verdade mais crua e essencial. O número 13, tantas vezes temido, revela-se aqui como emblema dessa metamorfose subversiva – um lembrete de que na morte simbólica reside a semente do renascimento.
                 </p>
-                <p className="text-sm italic text-white/75 leading-relaxed">
+                <p className="body-base italic text-white/75 text-justified">
                   The Tarot's XIII card, Death, raises its scythe like one who clears a path through a barren field, cutting away what no longer lives so the new can take root. Its grim image does not herald a final end but an inevitable transition – a secret passageway bridging one world to the next. The number 13, so often feared, reveals itself here as an emblem of subversive metamorphosis – a reminder that within symbolic death lies the seed of rebirth.
                 </p>
               </div>
 
               {/* O Andar Interditado */}
               <div className="space-y-4">
-                <h3 className="heading-3 text-white">O Andar Interditado</h3>
-                <p className="text-sm italic text-white/80">The Forbidden Floor</p>
-                <p className="text-base text-white text-justify leading-relaxed">
+                <h3 className="subsection-title text-white">O ANDAR INTERDITADO</h3>
+                <p className="micro-title text-white/80">The Forbidden Floor</p>
+                <p className="body-base text-white text-justified">
                   Em muitos edifícios, o décimo-terceiro andar é omitido. O elevador salta do 12 ao 14, como se apagar o número pudesse apagar o medo. Mas THE VOID N.13 habita exatamente esse andar — o lugar que nunca foi construído, o espaço que só existe como fenda. É o símbolo do que a sociedade prefere não olhar: a melancolia, a incerteza, o descontrole. Habitar o décimo-terceiro andar é aceitar o risco de desabar. É escolher o interdito como morada. No décimo-terceiro andar, ninguém sobe esperando encontrar luz. Lá, o que se encontra é o peso do que nunca foi dito — e a chance de transformá-lo em som.
                 </p>
-                <p className="text-sm italic text-white/75 leading-relaxed">
+                <p className="body-base italic text-white/75 text-justified">
                   In many buildings, the thirteenth floor is omitted. The elevator jumps from 12 to 14, as if erasing the number could erase the fear. But THE VOID N.13 inhabits exactly this floor — the place that was never built, the space that only exists as a crack. It is the symbol of what society prefers not to look at: melancholy, uncertainty, lack of control. To inhabit the thirteenth floor is to accept the risk of collapse. It is to choose the forbidden as home. On the thirteenth floor, no one goes up expecting to find light. There, what is found is the weight of what was never said — and the chance to transform it into sound.
                 </p>
               </div>
 
               {/* Treze Label Society */}
               <div className="space-y-4">
-                <h3 className="heading-3 text-white">Treze Label Society</h3>
-                <p className="text-sm italic text-white/80">Treze Label Society</p>
-                <p className="text-base text-white text-justify leading-relaxed">
+                <h3 className="subsection-title text-white">TREZE LABEL SOCIETY</h3>
+                <p className="micro-title text-white/80">Treze Label Society</p>
+                <p className="body-base text-white text-justified">
                   O número 13 não é apenas símbolo de THE VOID N.13 — é assinatura de um movimento maior. Treze Label Society é a comunidade invisível de quem cria no subsolo, de quem habita as margens, de quem faz do vazio um território fértil. É o selo de quem não pertence, mas se reconhece. Uma aliança subterrânea entre criadores que recusam a lógica do mercado e abraçam a estética do erro, da fragmentação, do inacabado. Quem carrega o 13 não busca sorte — busca travessia. Treze Label Society é a rebelião silenciosa de quem transforma o interdito em linguagem. Não é grupo, é frequência. Não é marca, é modo de respirar.
                 </p>
-                <p className="text-sm italic text-white/75 leading-relaxed">
+                <p className="body-base italic text-white/75 text-justified">
                   The number 13 is not just a symbol of THE VOID N.13 — it's the signature of a larger movement. Treze Label Society is the invisible community of those who create underground, who inhabit the margins, who make the void a fertile territory. It is the seal of those who don't belong, but recognize each other. An underground alliance between creators who refuse the logic of the market and embrace the aesthetic of error, of fragmentation, of the unfinished. Those who carry the 13 don't seek luck — they seek crossing. Treze Label Society is the silent rebellion of those who transform the forbidden into language. It's not a group, it's a frequency. It's not a brand, it's a way of breathing.
                 </p>
               </div>
@@ -745,17 +745,17 @@ const Index = () => {
         {/* Renascimento */}
         <section className="py-20 bg-red-900">
           <div className="max-w-6xl mx-auto px-6 space-y-12">
-            <div className="space-y-4 text-center">
-              <h2 className="heading-1 text-white uppercase">Renascimento</h2>
-              <p className="text-base italic text-white/90">Rebirth</p>
+            <div className="space-y-4">
+              <h2 className="section-title text-white">RENASCIMENTO</h2>
+              <p className="micro-title text-white/90">Rebirth</p>
             </div>
 
             <div className="space-y-6">
-              <p className="text-base leading-relaxed text-white text-justify">
+              <p className="body-base text-white text-justified">
                 Cada renascimento dentro do projeto é como atravessar um limiar invisível e voltar transformado. Cada vez que visto a máscara do Void, sinto que estou cruzando uma porta secreta que separa o real do imaginário – e, ao atravessar essa fronteira, vou deixando peles antigas para trás. Não é disfarce, é ritual de morte e retorno: a identidade anterior se dissolve no silêncio para que algo genuíno possa emergir. Renascer aqui é morrer um pouco a cada sessão, descascar camadas de ego até restar apenas o gesto. É recusar a permanência, abraçar a mutação. O renascimento não é glorioso — é doloroso, silencioso, imperfeito. É aceitar que o corpo sempre foi passagem, e que o Void é o nome que dei à travessia.
               </p>
               
-              <p className="text-sm italic text-white/75 leading-relaxed">
+              <p className="body-base italic text-white/75 text-justified">
                 Each rebirth within the project is like crossing an invisible threshold and returning transformed. Every time I put on the Void's mask, I feel I am walking through a secret door that separates the real from the imaginary – and by crossing that boundary, I shed old skins. It is not a disguise, but a ritual of death and return: the old identity dissolves into silence so that something genuine can emerge. To be reborn here is to die a little with each session, to peel back layers of ego until only the gesture remains. It is to refuse permanence, to embrace mutation. Rebirth is not glorious — it is painful, silent, imperfect. It is to accept that the body has always been a passage, and that the Void is the name I gave to that crossing. To be reborn here is the beginning of a new way of being alive without needing to be seen – a renewed existence that carries its own quiet light within the shadow.
               </p>
             </div>
@@ -774,15 +774,15 @@ const Index = () => {
             portugueseContent={
               <div className="space-y-8">
                 <div className="space-y-4">
-                  <h2 className="heading-2 text-primary">Estética e Manifestação</h2>
-                  <p className="text-base text-justify leading-relaxed">
+                  <h2 className="section-title">ESTÉTICA E MANIFESTAÇÃO</h2>
+                  <p className="body-base text-justified">
                     A estética de THEVOIDN13 não foi desenhada, ela emergiu. Surgiu da fricção entre o erro e o silêncio, entre o cansaço e o impulso de existir. É uma estética que nasce do colapso, do ruído urbano e da introspecção solitária. Planos longos, granulação, luzes estouradas e ruas molhadas são ecos visuais de uma mente em vigília. Cada sombra é uma memória, cada reflexo, uma confissão.
                   </p>
                 </div>
 
                 <div className="space-y-4">
-                  <h3 className="heading-3 text-primary">Atmosfera Visual</h3>
-                  <p className="text-base text-justify leading-relaxed">
+                  <h3 className="subsection-title">ATMOSFERA VISUAL</h3>
+                  <p className="body-base text-justified">
                     A atmosfera é urbana, noturna, introspectiva e chuvosa. O som é grave e distante, como trovão contido. Há algo de pós-vida nos becos e nas luzes difusas, o rastro de uma presença que já partiu. A imagem é sempre corpo e ausência ao mesmo tempo: o erro, aqui, é forma. Planos longos, granulação, silêncios excessivos, luzes estouradas. O cinema é respiração estendida — o erro que revela intenção. A câmera não observa: ela escuta. Cada imagem é uma tentativa de lembrar o que o corpo já sabia antes da linguagem.
                   </p>
                 </div>
@@ -791,15 +791,15 @@ const Index = () => {
             englishContent={
               <div className="space-y-8">
                 <div className="space-y-4">
-                  <h2 className="heading-2 text-primary">Aesthetic and Manifestation</h2>
-                  <p className="text-base text-justify leading-relaxed">
+                  <h2 className="section-title">AESTHETIC AND MANIFESTATION</h2>
+                  <p className="body-base text-justified">
                     The aesthetic of THEVOIDN13 wasn't designed, it emerged. It rose from the friction between error and silence, between exhaustion and the urge to exist. It's an aesthetic born from collapse, from urban noise and solitary introspection. Long takes, grain, blown-out lights, and wet streets are visual echoes of a mind in wakefulness. Each shadow is a memory; each reflection, a confession.
                   </p>
                 </div>
 
                 <div className="space-y-4">
-                  <h3 className="heading-3 text-primary">Visual Atmosphere</h3>
-                  <p className="text-base text-justify leading-relaxed">
+                  <h3 className="subsection-title">VISUAL ATMOSPHERE</h3>
+                  <p className="body-base text-justified">
                     The atmosphere is urban, nocturnal, introspective, and rainy. The sound is low and distant, like restrained thunder. There's something post-life in the alleys and diffused lights, the trace of a presence already gone. The image is always body and absence at once: here, error becomes form. Long takes, grain, excessive silences, blown-out lights. Cinema is extended breathing — the mistake that reveals intention. The camera doesn't watch: it listens. Each image is an attempt to remember what the body already knew before language.
                   </p>
                 </div>
@@ -871,12 +871,12 @@ const Index = () => {
         {/* Coautoria Simbólica com IA */}
         <section className="py-20 bg-red-900">
           <div className="max-w-6xl mx-auto px-6 space-y-12">
-            <div className="space-y-4 text-center">
-              <h2 className="heading-1 text-white uppercase title-break">Coautoria Simbólica - Integração com IA</h2>
-              <p className="text-base italic text-white/90">Symbolic Co-authorship - Integration with AI</p>
+            <div className="space-y-4">
+              <h2 className="section-title text-white">COAUTORIA SIMBÓLICA - INTEGRAÇÃO COM IA</h2>
+              <p className="micro-title text-white/90">Symbolic Co-authorship - Integration with AI</p>
             </div>
 
-            <div className="space-y-8 text-base text-justify leading-relaxed text-white">
+            <div className="space-y-8 body-base text-justified text-white">
               <p>
                 Nos bastidores do THE VOID N13, a inteligência artificial revelou-se uma cúmplice silenciosa e potente. Assumindo a lógica de um projeto <span className="font-semibold">homem-orquestra</span>, abracei a IA como parte da metodologia criativa — uma extensão digital do meu processo solitário de criação. Por meio de plataformas de vanguarda — especialmente o <span className="font-semibold">Google AI Studio</span> e ferramentas afins — integrei algoritmos generativos em cada etapa do processo artístico, ampliando as fronteiras do possível em minha arte.
               </p>
@@ -898,7 +898,7 @@ const Index = () => {
               </p>
             </div>
 
-            <div className="border-t border-white/20 pt-8 mt-8 space-y-6 text-sm leading-relaxed italic text-white/90">
+            <div className="border-t border-white/20 pt-8 mt-8 space-y-6 body-base italic text-white/90 text-justified">
               <p>
                 Behind the scenes of THE VOID N13, artificial intelligence has revealed itself as a silent yet potent accomplice. Adopting the logic of a <span className="font-semibold">one-man-band project</span>, I embraced AI as part of my creative methodology — a digital extension of my solitary creative process. By leveraging cutting-edge platforms — especially <span className="font-semibold">Google AI Studio</span> and similar tools — I integrated generative algorithms at every stage of creation, expanding the boundaries of what was possible in my art.
               </p>
