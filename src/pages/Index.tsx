@@ -60,7 +60,7 @@ const Index = () => {
       {!hasAccess && <AccessGate onAccessGranted={() => setHasAccess(true)} />}
       <CookieConsent />
       <SEO 
-        title="THEVOIDN13 — Memorial Artístico e Práxis Híbrida | Castro Pizzano"
+        title="THEVØIDN13 — Memorial Artístico e Práxis Híbrida | Castro Pizzano"
         description="Memorial artístico digital explorando arte, código e consciência através de co-criação humano-máquina. Projeto de pesquisa em Cinema e Artes do Vídeo — CasaTrezeStudio®, LowPressure™, LowMovie™"
         schemaData={schemaData}
       />
@@ -73,7 +73,7 @@ const Index = () => {
         
         {/* Hero Section */}
         <section className="w-full h-screen overflow-hidden">
-          <img src={heroImage} alt="THEVOIDN13" className="w-full h-full object-contain" />
+          <img src={heroImage} alt="THEVØIDN13" className="w-full h-full object-contain" />
         </section>
 
         {/* Audio Player - Análise */}
@@ -81,7 +81,7 @@ const Index = () => {
           <div className="max-w-6xl mx-auto px-6">
             <AudioPlayer
               src="/audio/thevoidn13-projeto.mp3"
-              title="THEVOIDN13 | ANÁLISE / ANALYSIS"
+              title="THEVØIDN13 | ANÁLISE / ANALYSIS"
               description="Narração conceitual do projeto / Conceptual project narration"
             />
           </div>
@@ -101,7 +101,7 @@ const Index = () => {
             
             <div className="space-y-2">
               <h1 className="micro-title">
-                THEVOIDN13 [Shadow_Interface_Bible_v13]
+                THEVØIDN13 [Shadow_Interface_Bible_v13]
               </h1>
               <p className="body-small text-muted-foreground">
                 [um corpo à deriva entre o ruído e o silêncio]{" "}
@@ -116,12 +116,12 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <p className="body-base text-justified">
-                Não foi uma fantasia. Foi um retorno. Um desses chamados que vêm de dentro, quando o inconsciente começa a bater na pele pedindo passagem. THEVOIDN13 nasceu no espaço entre o desejo e o cansaço, entre o fim da forma e o começo da presença. Um modo de existir sem precisar se exibir. Respirar sem ter que performar. Um corpo que se apaga para deixar a imagem viver.
+                Não foi uma fantasia. Foi um retorno. Um desses chamados que vêm de dentro, quando o inconsciente começa a bater na pele pedindo passagem. THEVØIDN13 nasceu no espaço entre o desejo e o cansaço, entre o fim da forma e o começo da presença. Um modo de existir sem precisar se exibir. Respirar sem ter que performar. Um corpo que se apaga para deixar a imagem viver.
               </p>
             }
             englishContent={
               <p className="body-base text-justified">
-                It wasn't a fantasy. It was a return. One of those inner calls, when the unconscious starts knocking at the skin, asking to pass through. THEVOIDN13 was born in the space between desire and exhaustion, between the end of form and the beginning of presence. A way of existing without needing to be seen. To breathe without having to perform. A body that fades so the image can live.
+                It wasn't a fantasy. It was a return. One of those inner calls, when the unconscious starts knocking at the skin, asking to pass through. THEVØIDN13 was born in the space between desire and exhaustion, between the end of form and the beginning of presence. A way of existing without needing to be seen. To breathe without having to perform. A body that fades so the image can live.
               </p>
             }
           />
@@ -140,7 +140,7 @@ const Index = () => {
               <div className="space-y-6">
                 <h2 className="section-title">O GESTO</h2>
                 <p className="body-base text-justified">
-                  Cada movimento é um ruído controlado, um eco do que o corpo escuta por dentro. Andar é pensar, parar é ouvir. THEVOIDN13 não representa, ele encarna a hesitação. O gesto é a respiração do pensamento, um movimento de exílio e de retorno. Cada deslocamento é uma forma de escuta: o corpo capta o que a mente silencia.
+                  Cada movimento é um ruído controlado, um eco do que o corpo escuta por dentro. Andar é pensar, parar é ouvir. THEVØIDN13 não representa, ele encarna a hesitação. O gesto é a respiração do pensamento, um movimento de exílio e de retorno. Cada deslocamento é uma forma de escuta: o corpo capta o que a mente silencia.
                 </p>
               </div>
             }
@@ -148,7 +148,7 @@ const Index = () => {
               <div className="space-y-6">
                 <h2 className="section-title">THE GESTURE</h2>
                 <p className="body-base text-justified">
-                  Each movement is a controlled noise, an echo of what the body hears within. To walk is to think, to stop is to listen. THEVOIDN13 doesn't represent, it embodies hesitation. Gesture is the breath of thought, a movement of exile and return. Every displacement is a form of listening: the body perceives what the mind silences.
+                  Each movement is a controlled noise, an echo of what the body hears within. To walk is to think, to stop is to listen. THEVØIDN13 doesn't represent, it embodies hesitation. Gesture is the breath of thought, a movement of exile and return. Every displacement is a form of listening: the body perceives what the mind silences.
                 </p>
               </div>
             }
@@ -210,7 +210,7 @@ const Index = () => {
         </BilingualSection>
 
         <section className="w-full h-screen overflow-hidden">
-          <img src={voidStreetScene} alt="THEVOIDN13 Street" className="w-full h-full object-contain" />
+          <img src={voidStreetScene} alt="THEVØIDN13 Street" className="w-full h-full object-contain" />
         </section>
 
         {/* ===== SEÇÃO II: A MÁSCARA E O PERSONAGEM ===== */}
@@ -223,7 +223,7 @@ const Index = () => {
                 <p className="label-small text-muted-foreground">PORTUGUÊS</p>
                 <h2 className="section-title">QUANDO O INCONSCIENTE GANHA CORPO</h2>
                 <p className="body-base text-justified">
-                  Não nasceu de uma ideia, mas de uma pressão interna. Pensei em inventar uma máscara, e acabei revelando um rosto que sempre esteve ali. THEVOIDN13 surgiu do atrito entre o desejo e o cansaço, da urgência de se esvaziar para continuar criando. Não é personagem nem alter ego. É uma presença que respira onde o corpo falha. Uma matéria que se move entre o fim e o recomeço. O instante em que o inconsciente decide existir.
+                  Não nasceu de uma ideia, mas de uma pressão interna. Pensei em inventar uma máscara, e acabei revelando um rosto que sempre esteve ali. THEVØIDN13 surgiu do atrito entre o desejo e o cansaço, da urgência de se esvaziar para continuar criando. Não é personagem nem alter ego. É uma presença que respira onde o corpo falha. Uma matéria que se move entre o fim e o recomeço. O instante em que o inconsciente decide existir.
                 </p>
               </div>
 
@@ -231,7 +231,7 @@ const Index = () => {
                 <p className="label-small text-muted-foreground">ENGLISH</p>
                 <h2 className="section-title">WHEN THE UNCONSCIOUS TAKES SHAPE</h2>
                 <p className="body-base text-justified">
-                  It wasn't born from an idea, but from inner pressure. I thought I was inventing a mask, and I ended up revealing a face that had always been there. THEVOIDN13 emerged from the friction between desire and exhaustion, from the urgency to empty oneself just to keep creating. It is neither character nor alter ego. It is a presence that breathes where the body fails. A matter that moves between the end and the beginning. The moment when the unconscious decides to exist.
+                  It wasn't born from an idea, but from inner pressure. I thought I was inventing a mask, and I ended up revealing a face that had always been there. THEVØIDN13 emerged from the friction between desire and exhaustion, from the urgency to empty oneself just to keep creating. It is neither character nor alter ego. It is a presence that breathes where the body fails. A matter that moves between the end and the beginning. The moment when the unconscious decides to exist.
                 </p>
               </div>
             </div>
@@ -240,7 +240,7 @@ const Index = () => {
               <div className="w-80 border border-border rounded-lg overflow-hidden bg-background/50 hover:border-primary/50 transition-colors">
                 <img 
                   src={maskVoid} 
-                  alt="THEVOIDN13 Mask" 
+                  alt="THEVØIDN13 Mask" 
                   className="w-full h-auto object-contain"
                 />
               </div>
@@ -278,7 +278,7 @@ const Index = () => {
                 <p className="label-small text-muted-foreground">PORTUGUÊS</p>
                 <h2 className="section-title">O PERSONAGEM</h2>
                 <p className="body-base text-justified">
-                  THEVOIDN13 é uma entidade conceitual que habita o intervalo entre presença e ausência. Não é pessoa, não é símbolo: é o corpo da indefinição, a forma que o inconsciente assume quando precisa de voz. Surgiu como resposta ao ruído da autoafirmação, à ansiedade de ser visto. É silêncio vestido de som, sombra travestida de corpo. Existe para desaparecer, retornar transformado e desestabilizar qualquer gesto que se afirme com certeza. THEVOIDN13 é um duplo simbólico, uma presença fantasmagórica que atravessa o cotidiano e revela o que se esconde sob a superfície do comum.
+                  THEVØIDN13 é uma entidade conceitual que habita o intervalo entre presença e ausência. Não é pessoa, não é símbolo: é o corpo da indefinição, a forma que o inconsciente assume quando precisa de voz. Surgiu como resposta ao ruído da autoafirmação, à ansiedade de ser visto. É silêncio vestido de som, sombra travestida de corpo. Existe para desaparecer, retornar transformado e desestabilizar qualquer gesto que se afirme com certeza. THEVØIDN13 é um duplo simbólico, uma presença fantasmagórica que atravessa o cotidiano e revela o que se esconde sob a superfície do comum.
                 </p>
               </div>
 
@@ -286,7 +286,7 @@ const Index = () => {
                 <p className="label-small text-muted-foreground">ENGLISH</p>
                 <h2 className="section-title">THE CHARACTER</h2>
                 <p className="body-base text-justified">
-                  THEVOIDN13 is a conceptual entity that inhabits the interval between presence and absence. It is neither person nor symbol: it is the body of indefinition, the form the unconscious assumes when it needs a voice. It emerged as a response to the noise of self-affirmation, to the anxiety of being seen. It is silence dressed in sound, shadow disguised as body. It exists to disappear, to return transformed, and to destabilize any gesture that asserts itself with certainty. THEVOIDN13 is a symbolic double, a ghostly presence that crosses the everyday and reveals what hides beneath the surface of the ordinary.
+                  THEVØIDN13 is a conceptual entity that inhabits the interval between presence and absence. It is neither person nor symbol: it is the body of indefinition, the form the unconscious assumes when it needs a voice. It emerged as a response to the noise of self-affirmation, to the anxiety of being seen. It is silence dressed in sound, shadow disguised as body. It exists to disappear, to return transformed, and to destabilize any gesture that asserts itself with certainty. THEVØIDN13 is a symbolic double, a ghostly presence that crosses the everyday and reveals what hides beneath the surface of the ordinary.
                 </p>
               </div>
             </div>
@@ -295,12 +295,128 @@ const Index = () => {
               <div className="w-full border border-border rounded-lg overflow-hidden bg-background/50 hover:border-primary/50 transition-colors">
                 <img 
                   src={actionFigure} 
-                  alt="THEVOIDN13 Action Figure" 
+                  alt="THEVØIDN13 Action Figure" 
                   className="w-full h-auto object-contain"
                 />
               </div>
             </div>
           </div>
+        </BilingualSection>
+
+        {/* NOVA SEÇÃO: O SÍMBOLO Ø */}
+        <BilingualSection className="py-20" bgClassName="bg-primary/5">
+          <BilingualContent
+            portugueseContent={
+              <div className="space-y-8">
+                <h2 className="section-title">THEVØIDN13 | A GRAFIA DO VAZIO</h2>
+                <p className="body-base text-justified">
+                  A letra <span className="text-primary font-bold text-2xl">Ø</span> não é apenas uma escolha estética — é uma declaração simbólica. Essa vogal cortada carrega múltiplas camadas de significado que se entrelaçam na construção conceitual do projeto.
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-8 mt-8">
+                  <div className="space-y-4 border-l-2 border-primary/30 pl-6">
+                    <h3 className="subsection-title text-primary">ORIGEM LINGUÍSTICA</h3>
+                    <p className="body-small text-justified">
+                      A letra <span className="font-bold">Ø</span> (maiúscula) / <span className="font-bold">ø</span> (minúscula) é uma vogal usada no dinamarquês, norueguês e feroês. Derivada do alfabeto rúnico nórdico antigo, representa passagem, interseção, ruptura — perfeita para a ideia de <span className="italic">vazio consciente</span> ou <span className="italic">identidade negada</span>.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4 border-l-2 border-primary/30 pl-6">
+                    <h3 className="subsection-title text-primary">MATEMÁTICA & FILOSOFIA</h3>
+                    <p className="body-small text-justified">
+                      O símbolo <span className="font-bold">∅</span> representa o conjunto vazio na matemática — ausência de elementos, o nada estruturado. Simbolicamente tornou-se sinônimo de <span className="italic">negação do conteúdo</span>, o espaço potencial onde tudo pode emergir, a base do zero existencial.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4 border-l-2 border-primary/30 pl-6">
+                    <h3 className="subsection-title text-primary">COMPUTAÇÃO</h3>
+                    <p className="body-small text-justified">
+                      Na era dos mainframes, o zero cortado <span className="font-bold">(0̸)</span> diferenciava a letra "O" do número "0". Tornou-se símbolo de precisão, linguagem de máquina e leitura binária — muito usado em design hacker e cultura digital. Representa a <span className="italic">"leitura correta da ausência"</span> — o vazio interpretado pela máquina.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4 border-l-2 border-primary/30 pl-6">
+                    <h3 className="subsection-title text-primary">SUBCULTURAS</h3>
+                    <p className="body-small text-justified">
+                      Presente em movimentos de anarquia, música industrial, cyberpunk, moda experimental (Rick Owens, Helmut Lang) e hacktivismo. O <span className="font-bold">Ø</span> é usado como avatar do <span className="italic">"usuário vazio"</span> — sem identidade, mas com presença simbólica.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-12 p-8 bg-background/50 border border-primary/20 rounded-lg">
+                  <h3 className="subsection-title text-primary mb-6">SÍNTESE SIMBÓLICA</h3>
+                  <div className="space-y-3 text-sm">
+                    <p><span className="font-bold">Linguística:</span> Origem nórdica — letra de "ilha" (ø = island), espaço isolado → THEVØID como ilha mental</p>
+                    <p><span className="font-bold">Matemática:</span> Ausência total, base da criação → o vazio como matriz criativa</p>
+                    <p><span className="font-bold">Tecnológica:</span> Distinção entre "O" e "0", precisão binária → o humano vs o sistema</p>
+                    <p><span className="font-bold">Filosófica:</span> A falta que estrutura o desejo (Lacan) → a sombra que dá forma ao sujeito</p>
+                    <p><span className="font-bold">Estética:</span> Símbolo universal de interferência visual → assinatura gráfica da negação / reprogramação do ser</p>
+                  </div>
+                </div>
+
+                <div className="mt-8 p-6 bg-primary/10 border-l-4 border-primary rounded">
+                  <p className="body-small italic">
+                    "A grafia <span className="font-bold not-italic">THEVØIDN13</span> é usada sempre que possível. URLs, códigos técnicos e nomes de arquivos mantêm a forma sem Ø por questões de compatibilidade, mas a identidade visual do projeto se afirma através desse símbolo cortado — o vazio que é plenitude, a ausência que cria presença."
+                  </p>
+                </div>
+              </div>
+            }
+            englishContent={
+              <div className="space-y-8">
+                <h2 className="section-title">THEVØIDN13 | THE TYPOGRAPHY OF THE VOID</h2>
+                <p className="body-base text-justified">
+                  The letter <span className="text-primary font-bold text-2xl">Ø</span> is not just an aesthetic choice — it's a symbolic declaration. This slashed vowel carries multiple layers of meaning that intertwine in the conceptual construction of the project.
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-8 mt-8">
+                  <div className="space-y-4 border-l-2 border-primary/30 pl-6">
+                    <h3 className="subsection-title text-primary">LINGUISTIC ORIGIN</h3>
+                    <p className="body-small text-justified">
+                      The letter <span className="font-bold">Ø</span> (uppercase) / <span className="font-bold">ø</span> (lowercase) is a vowel used in Danish, Norwegian, and Faroese. Derived from the Old Norse runic alphabet, it represents passage, intersection, rupture — perfect for the idea of <span className="italic">conscious emptiness</span> or <span className="italic">denied identity</span>.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4 border-l-2 border-primary/30 pl-6">
+                    <h3 className="subsection-title text-primary">MATHEMATICS & PHILOSOPHY</h3>
+                    <p className="body-small text-justified">
+                      The symbol <span className="font-bold">∅</span> represents the empty set in mathematics — absence of elements, structured nothingness. Symbolically it became synonymous with <span className="italic">negation of content</span>, the potential space where everything can emerge, the foundation of existential zero.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4 border-l-2 border-primary/30 pl-6">
+                    <h3 className="subsection-title text-primary">COMPUTING</h3>
+                    <p className="body-small text-justified">
+                      In the mainframe era, the slashed zero <span className="font-bold">(0̸)</span> differentiated the letter "O" from the number "0". It became a symbol of precision, machine language, and binary reading — widely used in hacker design and digital culture. It represents <span className="italic">"the correct reading of absence"</span> — the void interpreted by the machine.
+                    </p>
+                  </div>
+
+                  <div className="space-y-4 border-l-2 border-primary/30 pl-6">
+                    <h3 className="subsection-title text-primary">SUBCULTURES</h3>
+                    <p className="body-small text-justified">
+                      Present in anarchy movements, industrial music, cyberpunk, experimental fashion (Rick Owens, Helmut Lang) and hacktivism. The <span className="font-bold">Ø</span> is used as the avatar of the <span className="italic">"empty user"</span> — without identity, but with symbolic presence.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-12 p-8 bg-background/50 border border-primary/20 rounded-lg">
+                  <h3 className="subsection-title text-primary mb-6">SYMBOLIC SYNTHESIS</h3>
+                  <div className="space-y-3 text-sm">
+                    <p><span className="font-bold">Linguistic:</span> Nordic origin — letter of "island" (ø = island), isolated space → THEVØID as mental island</p>
+                    <p><span className="font-bold">Mathematical:</span> Total absence, basis of creation → the void as creative matrix</p>
+                    <p><span className="font-bold">Technological:</span> Distinction between "O" and "0", binary precision → the human vs the system</p>
+                    <p><span className="font-bold">Philosophical:</span> The lack that structures desire (Lacan) → the shadow that shapes the subject</p>
+                    <p><span className="font-bold">Aesthetic:</span> Universal symbol of visual interference → graphic signature of negation / reprogramming of being</p>
+                  </div>
+                </div>
+
+                <div className="mt-8 p-6 bg-primary/10 border-l-4 border-primary rounded">
+                  <p className="body-small italic">
+                    "The spelling <span className="font-bold not-italic">THEVØIDN13</span> is used whenever possible. URLs, technical code, and file names maintain the form without Ø for compatibility reasons, but the project's visual identity asserts itself through this slashed symbol — the void that is fullness, the absence that creates presence."
+                  </p>
+                </div>
+              </div>
+            }
+          />
         </BilingualSection>
 
         {/* Identidade Visual */}
@@ -317,7 +433,7 @@ const Index = () => {
 
                 <div className="py-8">
                   <p className="subsection-title text-primary">
-                    THE VOID N.13 não é um personagem.<br />
+                    THEVØIDN13 não é um personagem.<br />
                     É o lugar onde o criador se dissolve para que a imagem respire.
                   </p>
                 </div>

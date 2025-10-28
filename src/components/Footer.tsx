@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <div>
-            <h3 className="text-base font-bold tracking-wide">THE VOID N.13</h3>
+            <h3 className="text-base font-bold tracking-wide">THEVØIDN13</h3>
             <p className="text-sm text-muted-foreground">Memorial Artístico e Práxis Híbrida</p>
           </div>
           <div className="text-left md:text-right">

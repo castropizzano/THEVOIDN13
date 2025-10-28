@@ -10,7 +10,7 @@ interface SEOProps {
 }
 
 export const SEO = ({ 
-  title = "THEVOIDN13 — Memorial Artístico e Práxis Híbrida",
+  title = "THEVØIDN13 — Memorial Artístico e Práxis Híbrida",
   description = "Memorial artístico digital explorando arte, código e consciência através de co-criação humano-máquina por Castro Pizzano (цастро™)",
   image = "https://storage.googleapis.com/gpt-engineer-file-uploads/dpNDyX5RGxTrFXnXvKMoxZ7zPGQ2/social-images/social-1761609148119-THEVOIDN13_Concept_Art_Web.png",
   type = "website",
@@ -130,7 +130,7 @@ export const organizationSchema = {
 export const creativeWorkSchema = {
   "@context": "https://schema.org",
   "@type": "CreativeWork",
-  "name": "THEVOIDN13",
+  "name": "THEVØIDN13",
   "alternateName": "The Void Number 13",
   "creator": {
     "@type": "Person",

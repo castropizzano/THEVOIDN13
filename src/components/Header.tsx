@@ -24,7 +24,7 @@ const Header = () => {
             className="text-sm font-medium tracking-wide text-[#DADADA] hover:text-[#DADADA]/80 transition-colors"
             style={{ fontFamily: 'Manrope, sans-serif' }}
           >
-            THEVOIDN13
+            THEVØIDN13
           </Link>
           
           <ul className="flex gap-12 items-center">

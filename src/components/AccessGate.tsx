@@ -91,7 +91,7 @@ export const AccessGate = ({
       // Grant access
       localStorage.setItem("thevoidn13_access_granted", "true");
       setHasAccess(true);
-      toast.success("Bem-vindo ao THEVOIDN13! Verifique seu email para confirmar o cadastro. / " + "Welcome to THEVOIDN13! Check your email to confirm registration.");
+      toast.success("Bem-vindo ao THEVØIDN13! Verifique seu email para confirmar o cadastro. / " + "Welcome to THEVØIDN13! Check your email to confirm registration.");
       onAccessGranted();
     } catch (error: any) {
       console.error("Access gate error:", error);

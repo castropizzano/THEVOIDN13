@@ -17,7 +17,7 @@ type Question = {
 };
 
 const voidGuide = { 
-  name: 'THEVOIDN13', 
+  name: 'THEVØIDN13', 
   imageFront: voidCityFront,
   imageBack: voidCityBack,
   description: 'A sombra que observa e questiona', 
