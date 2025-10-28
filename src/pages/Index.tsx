@@ -293,7 +293,87 @@ const Index = () => {
                   </p>
                 </div>
 
-                <div className="space-y-4">
+                {/* Technical Specifications */}
+                <div className="pt-6 border-t border-border space-y-8">
+                  <div>
+                    <h4 className="text-sm uppercase tracking-wide mb-4 text-primary">THEVOIDN13 — Paleta de Cores / Color Palette</h4>
+                    <div className="grid grid-cols-3 gap-4 mt-4">
+                      <div className="space-y-2">
+                        <div className="w-full h-20 rounded-lg" style={{ backgroundColor: '#0C0C0C' }}></div>
+                        <p className="text-xs text-center">#0C0C0C</p>
+                        <p className="text-xs text-center text-muted-foreground">Deep Void</p>
+                      </div>
+                      <div className="space-y-2">
+                        <div className="w-full h-20 rounded-lg" style={{ backgroundColor: '#A32424' }}></div>
+                        <p className="text-xs text-center">#A32424</p>
+                        <p className="text-xs text-center text-muted-foreground">Blood Trauma</p>
+                      </div>
+                      <div className="space-y-2">
+                        <div className="w-full h-20 rounded-lg" style={{ backgroundColor: '#657C8C' }}></div>
+                        <p className="text-xs text-center">#657C8C</p>
+                        <p className="text-xs text-center text-muted-foreground">Urban Haze</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="pt-6 border-t border-border">
+                    <h4 className="text-sm uppercase tracking-wide mb-3 text-primary">Matriz de Identidade / Identity Matrix</h4>
+                    <div className="space-y-3 text-sm">
+                      <p><span className="font-medium">Codename:</span> O Décimo-Terceiro Andar</p>
+                      <p><span className="font-medium">Archetype:</span> A Sombra</p>
+                      <p><span className="font-medium">Nature:</span> Anti-herói introspectivo</p>
+                      <p><span className="font-medium">Function:</span> Tornar visível o invisível</p>
+                    </div>
+                  </div>
+
+                  <div className="pt-6 border-t border-border">
+                    <h4 className="text-sm uppercase tracking-wide mb-3 text-primary">Anatomia Visual / Visual Anatomy</h4>
+                    <div className="space-y-3 text-sm">
+                      <p><span className="font-medium">Máscara:</span> Branca fosca, traços humanos mínimos, olhos vazios refletindo luz urbana</p>
+                      <p><span className="font-medium">Capuz/Boné:</span> Preto, estrutura geométrica simples</p>
+                      <p><span className="font-medium">Jaqueta:</span> Verde militar desbotada, textura de uso, bolsos funcionais</p>
+                      <p><span className="font-medium">Camiseta:</span> Preta oversized, tecido pesado</p>
+                      <p><span className="font-medium">Calça:</span> Moletom preto, corte reto, conforto urbano</p>
+                      <p><span className="font-medium">Tênis:</span> Vans preto, sola gasta, autenticidade do uso</p>
+                      <p><span className="font-medium">Postura:</span> Contida, peso no silêncio, presença por ausência</p>
+                    </div>
+                  </div>
+
+                  <div className="pt-6 border-t border-border">
+                    <h4 className="text-sm uppercase tracking-wide mb-3 text-primary">Paisagem Sonora / Sonic Landscape</h4>
+                    <p className="text-sm mb-4">
+                      Ambiente urbano noturno: ruído branco da cidade, respiração controlada, passos em asfalto molhado, 
+                      sirenes distantes, reverb de vielas, chiado analógico, frequências graves contínuas
+                    </p>
+                    <div className="grid grid-cols-3 gap-4 text-xs">
+                      <div>
+                        <p className="font-medium mb-2">Visual</p>
+                        <p className="text-muted-foreground">Grão de filme / Textura ink / Contraste alto</p>
+                      </div>
+                      <div>
+                        <p className="font-medium mb-2">Sônico</p>
+                        <p className="text-muted-foreground">Chiado analógico / Reverb urbano / Frequências graves</p>
+                      </div>
+                      <div>
+                        <p className="font-medium mb-2">Tátil</p>
+                        <p className="text-muted-foreground">Asfalto molhado / Concreto frio / Metal oxidado</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="pt-6 border-t border-border">
+                    <h4 className="text-sm uppercase tracking-wide mb-3 text-primary">Aforismos / Aphorisms</h4>
+                    <div className="space-y-2 text-sm italic">
+                      <p>"O silêncio também fala"</p>
+                      <p>"Entre o glitch e o grão, existo"</p>
+                      <p>"O corpo é a câmera"</p>
+                      <p>"Toda criação é autocriação"</p>
+                      <p>"O ruído é a mensagem"</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="space-y-4 pt-8">
                   <h2 className="text-2xl font-bold text-primary">A Estrutura do Ser</h2>
                   <p className="text-base text-justify leading-relaxed">
                     THE VOID N.13 não tem rosto, tem ritmo. Sua existência é feita de pulsos, não de poses. Cada gesto nasce do atrito entre o consciente e o que tenta emergir. Não se move para expressar, mas para liberar. O corpo é antena, não vitrine. É ali que o inconsciente encontra carne, respiração e peso. Um ser que não comunica – ressoa. Um corpo que existe apenas para traduzir o invisível em vibração.
