@@ -641,7 +641,13 @@ const Index = () => {
                 <div>
                   <h4 className="text-base font-bold">Música</h4>
                   <p className="text-base text-justify leading-relaxed mt-2">
-                    Por trás do silêncio do personagem, pulsa uma trilha sonora invisível tecida por influências do rock sombrio e da eletrônica atmosférica. As guitarras etéreas e os riffs pesados de Deftones misturam-se à catarse industrial do Nine Inch Nails, compondo um eco sonoro de angústia e resistência. Das batidas lentas e hipnóticas do Massive Attack emerge um clima de suspense urbano, enquanto a brutalidade introspectiva da banda Loathe carrega a densidade do caos moderno em cada acorde.
+                    Por trás do silêncio do personagem, pulsa uma trilha sonora invisível tecida por influências do rock sombrio e da eletrônica atmosférica. As guitarras etéreas e os riffs pesados de Deftones misturam-se à catarse industrial do Nine Inch Nails, compondo um eco sonoro de angústia e resistência. Das batidas lentas e hipnóticas do Massive Attack emerge um clima de suspense urbano, enquanto a brutalidade introspectiva da banda Loathe carrega a densidade do caos moderno em cada acorde. As paisagens sonoras cinematográficas do projeto UNKLE costuram esses elementos, criando um pano de fundo musical ao mesmo tempo melancólico e insurgente. Essa trilha interna é o coração do Void: um manifesto sonoro sussurrado, transformando o silêncio em uma tempestade contida de emoções.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-base font-bold">Princípios Estéticos</h4>
+                  <p className="text-base text-justify leading-relaxed mt-2">
+                    Os princípios estéticos que sustentam THE VOID N.13 emergem de uma filosofia do caos e do inconsciente. Aqui, o vazio não é ausência, mas potência latente – uma força criativa que nasce do atrito entre o ruído e o silêncio. O projeto adota o número treze como signo de travessia e transmutação: tal qual a carta da Morte no tarô, simboliza o fim necessário para um renascimento autêntico. A máscara branca e inexpressiva encarna a ideia junguiana da sombra: tudo aquilo que o ego reprime ganha forma sem rosto, permitindo que o criador desapareça para que a obra possa respirar. Cada gesto torna-se ritual, cada erro converte-se em uma forma de verdade estética. Entre a luz estourada e o clichê da película analógica, entre a luz estourada e a escuridão, consolida-se uma linguagem própria. O Void é uma presença mutante e anônima – não um personagem fixo, mas um fenômeno poético em constante trânsito – um espelho do caos contemporâneo que transforma a ausência em voz.
                   </p>
                 </div>
               </div>
@@ -660,13 +666,86 @@ const Index = () => {
                 <div>
                   <h4 className="text-base font-bold">Music</h4>
                   <p className="text-base text-justify leading-relaxed mt-2">
-                    Beneath the character's silence, an invisible soundtrack throbs, woven from dark rock and atmospheric electronic influences. The ethereal guitars and crushing riffs of Deftones blend with the industrial catharsis of Nine Inch Nails, composing a sonic echo of anguish and resistance. From Massive Attack's slow, hypnotic beats emerges a mood of urban suspense, while the introspective brutality of Loathe carries the weight of modern chaos in each chord.
+                    Beneath the character's silence, an invisible soundtrack throbs, woven from dark rock and atmospheric electronic influences. The ethereal guitars and crushing riffs of Deftones blend with the industrial catharsis of Nine Inch Nails, composing a sonic echo of anguish and resistance. From Massive Attack's slow, hypnotic beats emerges a mood of urban suspense, while the introspective brutality of Loathe carries the weight of modern chaos in each chord. The cinematic soundscapes of UNKLE stitch these elements together, crafting a musical backdrop that is at once melancholic and insurgent. This internal soundtrack is the heart of the Void: a whispered sonic manifesto, turning silence into a contained storm of emotions.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-base font-bold">Aesthetic Principles</h4>
+                  <p className="text-base text-justify leading-relaxed mt-2">
+                    The aesthetic principles underpinning THE VOID N.13 emerge from a philosophy of chaos and the unconscious. Here, the void is not absence but latent power – a creative force born from the friction between noise and silence. The project embraces the number thirteen as a symbol of crossing and transmutation: like the Death card in Tarot, it signifies the end necessary for authentic rebirth. The blank, expressionless mask embodies Jung's concept of the Shadow: everything the ego represses is given a faceless form, allowing the creator to disappear so that the work may breathe. Each action becomes ritual, each mistake converts into a form of aesthetic truth. Between overexposed light and darkness, a language of its own takes shape. The Void is a mutant, anonymous presence – not a fixed character but a poetic phenomenon in constant transit – a mirror of contemporary chaos that transforms absence into a voice.
                   </p>
                 </div>
               </div>
             }
           />
         </BilingualSection>
+
+        {/* O Número 13 - Símbolo de Travessia */}
+        <section className="py-20 bg-red-900">
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="space-y-8">
+              {/* Title */}
+              <div className="space-y-2">
+                <h2 className="text-base font-bold text-white uppercase">O Número 13 – Símbolo de Travessia</h2>
+                <p className="text-sm italic text-white/90">The Number 13 – Symbol of Crossing</p>
+              </div>
+
+              {/* Meditation Rain Scene Image */}
+              <div className="w-full overflow-hidden rounded-lg border border-white/20">
+                <img src={meditationRainScene} alt="THEVOIDN13 Meditation in Rain" className="w-full h-auto object-contain" />
+              </div>
+
+              {/* Quote */}
+              <div className="border-l-4 border-amber-500 pl-6 py-2">
+                <p className="text-base text-white">
+                  "[Ruído estático]. Registro treze. Chove sobre o concreto e dentro de mim. Cada batida é um erro que ainda respira. Não sou o fim, apenas o eco dele. Se ouvir com atenção, vai perceber: o silêncio ainda está vivo."
+                </p>
+                <p className="text-sm italic text-white/80 mt-2">
+                  [Static noise]. Record thirteen. It rains on the concrete and inside me. Every pulse is a mistake still breathing. I am not the end — only its echo. If you listen closely, you'll notice: silence is still alive.
+                </p>
+              </div>
+
+              {/* Three Sections */}
+              <div className="grid gap-8 mt-8">
+                {/* A Carta da Morte */}
+                <div className="space-y-4">
+                  <h3 className="text-base font-bold text-white">A Carta da Morte</h3>
+                  <p className="text-sm italic text-white/80">The Death Card</p>
+                  <p className="text-base text-white text-justify leading-relaxed">
+                    A carta XIII do Tarô, a Morte, ergue sua foice como quem abre caminho em meio ao campo estéril, ceifando o que já não vive para que o novo possa brotar. Sua imagem não anuncia um fim definitivo mas sim uma transição inevitável – a porta secreta entre um mundo e outro. Nessa travessia, há uma renúncia silenciosa do ego: antigas identidades desabam como folhas secas, dando lugar a uma verdade mais crua e essencial. O número 13, tantas vezes temido, revela-se aqui como emblema dessa metamorfose subversiva – um lembrete de que na morte simbólica reside a semente do renascimento.
+                  </p>
+                  <p className="text-sm italic text-white/75 leading-relaxed">
+                    The Tarot's XIII card, Death, raises its scythe like one who clears a path through a barren field, cutting away what no longer lives so the new can take root. Its grim image does not herald a final end but an inevitable transition – a secret passageway bridging one world to the next. In that crossing, there is a silent renunciation of the ego: old identities crumble like dry leaves, making room for a more raw and essential truth. The number 13, so often feared, reveals itself here as an emblem of subversive metamorphosis – a reminder that within symbolic death lies the seed of rebirth.
+                  </p>
+                </div>
+
+                {/* O Andar Interditado */}
+                <div className="space-y-4">
+                  <h3 className="text-base font-bold text-white">O Andar Interditado</h3>
+                  <p className="text-sm italic text-white/80">The Forbidden Floor</p>
+                  <p className="text-base text-white text-justify leading-relaxed">
+                    Em muitos edifícios, o elevador salta do 12º para o 14º andar, deixando o 13º como um vazio fantasma – um andar interditado pela superstição. Na arquitetura da psique, porém, não há como pular essa dimensão oculta: o décimo-terceiro andar do meu inconsciente existe, ainda que não conste nos mapas oficiais de consciência. É ali, nesse pavimento silencioso e esquecido, que a psique se reúne e o silêncio finalmente ganha voz. Essa camada proibida de ser é uma arquitetura invisível da transformação – um espaço liminar onde a realidade cotidiana se dobra e onde verdades soterradas esperam a superfície.
+                  </p>
+                  <p className="text-sm italic text-white/75 leading-relaxed">
+                    In many buildings, the elevator skips from the 12th to the 14th floor, leaving the 13th as a phantom void – a floor forbidden by superstition. In the architecture of the psyche, however, there is no way to bypass that hidden dimension: the thirteenth floor of my unconscious exists even if it appears on no official map of consciousness. It is there, on that silent, forsaken level, that the psyche congregates and silence at last finds a voice. This forbidden layer of being forms an invisible architecture of transformation – a liminal space where everyday reality folds in on itself and where buried truths wait to surface.
+                  </p>
+                </div>
+
+                {/* Treze Label Society */}
+                <div className="space-y-4">
+                  <h3 className="text-base font-bold text-white">Treze Label Society</h3>
+                  <p className="text-sm italic text-white/80">Treze Label Society</p>
+                  <p className="text-base text-white text-justify leading-relaxed">
+                    O termo Treze Label Society evoca uma espécie de irmandade subterrânea à qual pertenço – uma linhagem secreta costurada pelo fio invisível do número 13. Essa "sociedade" não se reúne em salas iluminadas, mas nas frestas e catacumbas do mundo, onde o que é vivo e autêntico prefere se esconder. É uma forma de coalizão no silêncio compartilhado, um pacto invisível de subversão e silêncio: treze como assinatura clandestina, sinalizando essa conexão silenciosa com todos que veem no oculto não uma ameaça, mas um refúgio de potência.
+                  </p>
+                  <p className="text-sm italic text-white/75 leading-relaxed">
+                    The term Treze Label Society evokes a kind of underground brotherhood to which I belong – a secret lineage stitched together by the invisible thread of the number 13. This "society" does not meet in well-lit rooms but in the cracks and catacombs of the world, where whatever is alive and authentic prefers to hide. It is a form of coalition in shared subversion and silence: a pact in whispers. Thirteen as a clandestine signature, signaling this silent kinship with all who see in the hidden not an emptiness, but a refuge of potency.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <section className="w-full h-screen overflow-hidden">
           <img src={roughs003} alt="Sketches" className="w-full h-full object-contain" />
