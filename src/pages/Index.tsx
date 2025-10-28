@@ -582,12 +582,6 @@ const Index = () => {
           />
         </BilingualSection>
 
-
-
-        <section className="w-full h-screen overflow-hidden">
-          <img src={voidStreetScene} alt="The Void N.13 Street Scene" className="w-full h-full object-contain" />
-        </section>
-
         {/* Estética e Manifestação */}
         <BilingualSection>
           <BilingualContent
@@ -753,10 +747,6 @@ const Index = () => {
             }
           />
         </BilingualSection>
-
-        <section className="w-full h-screen overflow-hidden">
-          <img src={actionFigure} alt="Action Figure" className="w-full h-full object-contain" />
-        </section>
 
         {/* Manifesto Integrado */}
         <BilingualSection bgClassName="bg-accent text-accent-foreground">
