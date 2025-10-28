@@ -620,10 +620,6 @@ const Index = () => {
           />
         </BilingualSection>
 
-        <section className="w-full h-screen overflow-hidden">
-          <img src={roughs002} alt="Sketches" className="w-full h-full object-contain" />
-        </section>
-
         {/* Referências */}
         <BilingualSection>
           <BilingualContent
@@ -763,10 +759,6 @@ const Index = () => {
               </p>
             </div>
           </div>
-        </section>
-
-        <section className="w-full h-screen overflow-hidden">
-          <img src={roughs003} alt="Sketches" className="w-full h-full object-contain" />
         </section>
 
         {/* Coautoria Simbólica com IA */}

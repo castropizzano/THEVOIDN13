@@ -689,6 +689,70 @@ const Dissertacao = () => {
             </div>
           </div>
         </BilingualSection>
+
+        {/* Pesquisa Acadêmica / Academic Research */}
+        <BilingualSection bgClassName="bg-primary/5">
+          <div className="space-y-8">
+            <div className="space-y-2">
+              <h2 className="text-3xl font-bold text-primary">Pesquisa Acadêmica / Academic Research</h2>
+            </div>
+
+            <BilingualContent
+              portugueseContent={
+                <div className="space-y-6">
+                  <p className="text-base text-justify leading-relaxed">
+                    A pesquisa de mestrado investiga processos criativos colaborativos a partir da produção de LowMovie. Como uma crew de skate se torna coletivo criativo? Como a subcultura do skate gera modos específicos de fazer cinema? Como documentar sem domesticar?
+                  </p>
+                  <p className="text-base text-justify leading-relaxed">
+                    Metodologia autoetnográfica. Análise fílmica. Entrevistas em profundidade. Diário de campo. Mas também: skate sessions como coleta de dados. Edição de vídeo como análise. Montagem como pensamento. A forma da dissertação questiona a forma acadêmica tradicional.
+                  </p>
+                </div>
+              }
+              englishContent={
+                <div className="space-y-6">
+                  <p className="text-base text-justify leading-relaxed">
+                    The master's research investigates collaborative creative processes from LowMovie's production. How does a skate crew become a creative collective? How does skate subculture generate specific ways of making cinema? How to document without domesticating?
+                  </p>
+                  <p className="text-base text-justify leading-relaxed">
+                    Autoethnographic methodology. Film analysis. In-depth interviews. Field diary. But also: skate sessions as data collection. Video editing as analysis. Montage as thought. The dissertation's form questions the traditional academic form.
+                  </p>
+                </div>
+              }
+            />
+          </div>
+        </BilingualSection>
+
+        {/* Colaboração e Coletivos / Collaboration and Collectives */}
+        <BilingualSection>
+          <div className="space-y-8">
+            <div className="space-y-2">
+              <h2 className="text-3xl font-bold text-primary">Colaboração e Coletivos / Collaboration and Collectives</h2>
+            </div>
+
+            <BilingualContent
+              portugueseContent={
+                <div className="space-y-6">
+                  <p className="text-base text-justify leading-relaxed">
+                    Criação sempre foi coletiva. CasaTrezeStudio (desde 2008), LowPressure (desde 2020), colaborações com músicos, skatistas, designers. Mas a práxis híbrida expande o conceito de coletivo: agora inclui agentes não-humanos. IA como colaboradora, não como ferramenta.
+                  </p>
+                  <p className="text-base text-justify leading-relaxed">
+                    O coletivo não é soma de indivíduos — é campo de forças. Cada projeto gera sua própria configuração colaborativa. Algumas permanentes (crew), outras efêmeras (projetos específicos). Mas todas compartilham da mesma ética: autonomia criativa, transparência radical, autoria compartilhada mas assinada.
+                  </p>
+                </div>
+              }
+              englishContent={
+                <div className="space-y-6">
+                  <p className="text-base text-justify leading-relaxed">
+                    Creation has always been collective. CasaTrezeStudio (since 2008), LowPressure (since 2020), collaborations with musicians, skaters, designers. But hybrid praxis expands the concept of collective: now it includes non-human agents. AI as collaborator, not as tool.
+                  </p>
+                  <p className="text-base text-justify leading-relaxed">
+                    The collective isn't a sum of individuals — it's a force field. Each project generates its own collaborative configuration. Some permanent (crew), others ephemeral (specific projects). But all share the same ethics: creative autonomy, radical transparency, shared but signed authorship.
+                  </p>
+                </div>
+              }
+            />
+          </div>
+        </BilingualSection>
       </main>
 
       <Footer />
