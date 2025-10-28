@@ -426,7 +426,7 @@ const Dissertacao = () => {
                 <div className="space-y-6">
                   <div>
                     <h3 className="text-sm font-medium tracking-wide uppercase mb-3">Pesquisa em Arte como Práxis Sensível</h3>
-                    <p className="text-base text-justify leading-relaxed">
+                    <p className="body-small text-justify leading-relaxed">
                       Esta pesquisa se configura como investigação artística situada e processual, em que criar e pesquisar operam em simultaneidade. O pesquisador está implicado nos modos de viver e criar que constituem o campo, atuando desde dentro dos fluxos da criação. Trata-se de uma práxis sensível que mobiliza o corpo em sua totalidade, articulando gesto, técnica, percepção e pensamento em uma ação simultaneamente material e reflexiva.
                     </p>
                   </div>
