@@ -747,6 +747,24 @@ const Index = () => {
           </div>
         </section>
 
+        {/* Renascimento / Rebirth */}
+        <section className="py-20 bg-red-900">
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="space-y-6">
+              <h2 className="text-base font-bold text-white uppercase">Renascimento</h2>
+              <p className="text-sm italic text-white/90">Rebirth</p>
+              
+              <p className="text-base text-white text-justify leading-relaxed">
+                Cada renascimento dentro do projeto é como atravessar um limiar invisível e voltar transformado. Toda vez que coloco a máscara do Void, sinto que atravesso uma porta secreta que separa o real do imaginário – e ao transpor essa fronteira, deixo para trás velhas peles. Não se trata de um disfarce, é sim de um rito de morte e retorno: a identidade antiga se dissolve em silêncio para que algo genuíno possa emergir. Renascer, aqui, é o começo de uma nova forma de estar vivo sem precisar ser visto – uma existência renovada que carrega na sombra a sua própria luz quieta.
+              </p>
+              
+              <p className="text-sm italic text-white/75 leading-relaxed">
+                Each rebirth within the project is like crossing an invisible threshold and returning transformed. Every time I put on the Void's mask, I feel I am walking through a secret door that separates the real from the imaginary – and by crossing that boundary, I shed old skins. It is not a disguise, but a ritual of death and return: the old identity dissolves into silence so that something genuine can emerge. To be reborn here is the beginning of a new way of being alive without needing to be seen – a renewed existence that carries its own quiet light within the shadow.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section className="w-full h-screen overflow-hidden">
           <img src={roughs003} alt="Sketches" className="w-full h-full object-contain" />
         </section>
@@ -807,24 +825,27 @@ const Index = () => {
 
         {/* O Lugar Seguro para Desaparecer */}
         <BilingualSection>
-          <BilingualContent
-            portugueseContent={
-              <div>
-                <h2 className="text-base font-bold">O Lugar Seguro para Desaparecer</h2>
-                <p className="text-base text-justify leading-relaxed mt-4">
-                  Hoje entendo: o Void não nasceu para uma festa. Ele nasceu porque eu precisava de um refúgio, um lugar onde o silêncio não fosse ausência, mas abrigo. THEVOIDN13 é o nome que dei à minha própria sombra, o mito que inventei para continuar respirando.
-                </p>
-              </div>
-            }
-            englishContent={
-              <div>
-                <h2 className="text-base font-bold">The Safe Place to Disappear</h2>
-                <p className="text-base text-justify leading-relaxed mt-4">
-                  Now I understand: the Void wasn't born for a party. It was born because I needed a refuge, a place where silence could be shelter, not absence. THEVOIDN13 is the name I gave my own shadow, the myth I invented to keep breathing.
-                </p>
-              </div>
-            }
-          />
+          <div className="space-y-8">
+            <div className="space-y-2">
+              <h2 className="text-base font-bold">O Lugar Seguro para Desaparecer</h2>
+              <p className="text-sm italic text-foreground/80">The Safe Place to Disappear</p>
+            </div>
+            
+            <p className="text-base text-justify leading-relaxed">
+              Hoje entendo: o Void não nasceu para uma festa. Ele nasceu porque eu precisava de um refúgio — um lugar onde o silêncio não fosse ausência, mas abrigo. Um espaço para desaparecer sem deixar de criar. Um modo de continuar respirando quando tudo o resto parecia saturado. O projeto cresceu como tudo o que é orgânico: pelas frestas, pelos ruídos, pelos becos da cidade. E se alguém pergunta o que é, eu respondo: não é personagem, é vestígio. É o que restou de mim depois que todas as máscaras sociais caíram. THE VOID No. 13 é o nome que dei à minha própria sombra — o mito que inventei para continuar respirando. Talvez — só talvez — seja o começo de uma nova forma de estar vivo sem precisar ser visto.
+            </p>
+            
+            <p className="text-sm italic text-foreground/70 leading-relaxed">
+              Now I understand: the Void wasn't born for a party. It was born because I needed a refuge — a place where silence could be shelter, not absence. A space to disappear without ceasing to create. A way to keep breathing when everything else felt saturated. The project grew as all organic things do: through cracks, through noise, through the alleys of the city. And if someone asks what it is, I say: it's not a character, it's a residue. It's what was left of me after all the social masks had fallen. THE VOID No. 13 is the name I gave my own shadow — the myth I invented to keep breathing. And perhaps — just perhaps — it's the beginning of a new way of being alive without being seen.
+            </p>
+
+            <div className="border-t border-border pt-8 mt-12">
+              <p className="text-right text-sm text-foreground/60">
+                цастро™ / Castro Pizzano / THE VOID N.13<br />
+                Curitiba - Brasil · 2025
+              </p>
+            </div>
+          </div>
         </BilingualSection>
 
         {/* Manifesto Integrado */}
