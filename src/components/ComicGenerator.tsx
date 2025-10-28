@@ -6,6 +6,7 @@ import { Loader2, Sparkles, Download } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { z } from "zod";
+import watermarkLogo from "@/assets/logo-white-alpha.png";
 
 const EXAMPLE_SCRIPT = `CENA 1 — O CAMINHO FRIO
 Tattooed man with black cap (no hood), green military jacket, oversized black t-shirt, black sweatpants and black Vans sneakers walks beside a short-haired woman in dark jacket and jeans at night. Between them, a small Jack Russell puppy in a yellow raincoat trots along the wet street. Empty urban alley, amber streetlights reflecting on soaked asphalt, blue mist drifting through distant buildings, soft rain haze.`;
@@ -40,7 +41,8 @@ export const ComicGenerator = () => {
       if (error) throw error;
 
       if (data?.imageUrl) {
-        setGeneratedImage(data.imageUrl);
+        const processed = await postProcessTo16x9WithWatermark(data.imageUrl);
+        setGeneratedImage(processed);
         toast.success("Still gerado! / Still generated!");
       } else {
         throw new Error("No image generated");
@@ -148,15 +150,64 @@ export const ComicGenerator = () => {
           </div>
         )}
 
-        <div className="pt-4 border-t border-border">
-          <p className="text-xs text-muted-foreground">
-            <span className="font-medium">Nota Experimental:</span> Este gerador usa prompts mestres do projeto THEVØIDN13 
-            combinados com roteiros criativos para produzir stills neo-noir no estilo do universo. 
-            Cada imagem é gerada em 16:9 com marca d'água do logo THEVØIDN13 em 50% de transparência.
-            A consistência visual é mantida através dos parâmetros definidos na Shadow Interface Bible.
-          </p>
-        </div>
+      <div className="pt-4 border-t border-border">
+        <p className="text-xs text-muted-foreground">
+          <span className="font-medium">Nota Experimental:</span> Este gerador usa prompts mestres do projeto THEVØIDN13 
+          combinados com roteiros criativos para produzir stills neo-noir no estilo do universo. 
+          Cada imagem é gerada em 16:9 e recebe marca d'água oficial do logo THEVØIDN13 em 50% de transparência.
+          A consistência visual é mantida através dos parâmetros definidos na Shadow Interface Bible.
+        </p>
+      </div>
       </CardContent>
     </Card>
   );
 };
+
+// Post-process: enforce 16:9 and add 50% watermark
+async function postProcessTo16x9WithWatermark(imageUrl: string): Promise<string> {
+  const img = await loadImage(imageUrl);
+  const wm = await loadImage(watermarkLogo);
+
+  const width = 1920;
+  const height = 1080;
+  const canvas = document.createElement('canvas');
+  canvas.width = width;
+  canvas.height = height;
+  const ctx = canvas.getContext('2d');
+  if (!ctx) return imageUrl;
+
+  // Fill background (matte) using theme background approximation (black matte)
+  ctx.fillStyle = '#000000';
+  ctx.fillRect(0, 0, width, height);
+
+  // Draw image with cover to fill 16:9
+  const scale = Math.max(width / img.width, height / img.height);
+  const drawW = img.width * scale;
+  const drawH = img.height * scale;
+  const dx = (width - drawW) / 2;
+  const dy = (height - drawH) / 2;
+  ctx.drawImage(img, dx, dy, drawW, drawH);
+
+  // Watermark bottom-right at ~18% width, keep aspect
+  const padding = Math.round(width * 0.02);
+  const wmTargetW = Math.round(width * 0.18);
+  const ratio = wm.height / wm.width;
+  const wmTargetH = Math.round(wmTargetW * ratio);
+
+  ctx.globalAlpha = 0.5; // 50% transparency
+  ctx.imageSmoothingEnabled = true;
+  ctx.drawImage(wm, width - wmTargetW - padding, height - wmTargetH - padding, wmTargetW, wmTargetH);
+  ctx.globalAlpha = 1;
+
+  return canvas.toDataURL('image/png');
+}
+
+function loadImage(src: string): Promise<HTMLImageElement> {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    img.onload = () => resolve(img);
+    img.onerror = reject;
+    img.src = src;
+  });
+}
+

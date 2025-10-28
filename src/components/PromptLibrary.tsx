@@ -95,7 +95,7 @@ export const PromptLibrary = () => {
           </CardHeader>
           <CardContent>
             <p className="text-sm text-muted-foreground">
-              Acesse templates de prompts otimizados para gerar imagens no universo THEVOIDN13. 
+              Acesse templates de prompts otimizados para gerar imagens no universo THEVØIDN13. 
               Inclui instruções de sistema, personagens e cenas cinematográficas.
             </p>
           </CardContent>
@@ -106,7 +106,7 @@ export const PromptLibrary = () => {
         <DialogHeader>
           <DialogTitle className="text-2xl flex items-center gap-2">
             <FileCode className="w-6 h-6 text-primary" />
-            Biblioteca de Prompts THEVOIDN13
+            Biblioteca de Prompts THEVØIDN13
           </DialogTitle>
           <DialogDescription>
             Templates padronizados para geração de imagens com estética Neo-Noir

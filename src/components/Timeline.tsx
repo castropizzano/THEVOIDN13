@@ -58,7 +58,7 @@ const timelineEvents: TimelineEvent[] = [
   },
   {
     year: "2025",
-    title: "Criação do Portal THEVOIDN13",
+    title: "Criação do Portal THEVØIDN13",
     description: "Expansão da metodologia híbrida para processos digitais. Memorial visual performático que integra co-criação humano-máquina. Experimentação com IAs como parceiras criativas.",
     icon: <Sparkles className="w-5 h-5" />,
     highlight: true,

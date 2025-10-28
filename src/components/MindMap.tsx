@@ -53,7 +53,7 @@ export const MindMap = () => {
                   <g>
                     <rect x="450" y="20" width="300" height="60" fill="hsl(var(--primary))" rx="8" />
                     <text x="600" y="55" textAnchor="middle" fill="hsl(var(--primary-foreground))" fontSize="16" fontWeight="bold">
-                      THEVOIDN13
+                      THEVØIDN13
                     </text>
                   </g>
 

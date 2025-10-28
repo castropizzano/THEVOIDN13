@@ -36,7 +36,7 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
                 <p className="site-paragraph text-sm">
                   Coletamos apenas informações essenciais: nome completo e endereço de email. 
                   Estes dados são utilizados exclusivamente para controle de acesso ao memorial 
-                  e comunicações relacionadas ao projeto THEVOIDN13.
+                  e comunicações relacionadas ao projeto THEVØIDN13.
                 </p>
               </div>
 
@@ -92,7 +92,7 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
                 <p className="site-paragraph text-sm">
                   We only collect essential information: full name and email address. 
                   This data is used exclusively for access control to the memorial 
-                  and communications related to the THEVOIDN13 project.
+                  and communications related to the THEVØIDN13 project.
                 </p>
               </div>
 

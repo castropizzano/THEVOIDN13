@@ -161,7 +161,7 @@ const AdminDashboard = () => {
                 Dashboard Admin
               </h1>
               <p className="site-paragraph text-muted-foreground">
-                Gerencie os inscritos da newsletter do THEVOIDN13
+                Gerencie os inscritos da newsletter do THEVØIDN13
               </p>
             </div>
             <Button onClick={signOut} variant="outline">
