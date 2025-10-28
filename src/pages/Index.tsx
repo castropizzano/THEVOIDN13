@@ -337,89 +337,83 @@ const Index = () => {
 
                   <div className="pt-8 space-y-8">
                     <div className="space-y-6 p-6 bg-card/30 rounded-lg border border-primary/20">
-                      <h4 className="heading-4 text-primary">MATRIZ DE IDENTIDADE / IDENTITY MATRIX</h4>
-                      <div className="grid md:grid-cols-2 gap-x-8 gap-y-3 text-base">
-                        <p className="text-foreground">
-                          <span className="text-primary font-medium">Codename:</span> O Décimo-Terceiro Andar
-                        </p>
-                        <p className="text-muted-foreground italic">
-                          <span className="text-primary/70 font-medium">Codename:</span> The Thirteenth Floor
-                        </p>
-                        <p className="text-foreground">
-                          <span className="text-primary font-medium">Archetype:</span> A Sombra
-                        </p>
-                        <p className="text-muted-foreground italic">
-                          <span className="text-primary/70 font-medium">Archetype:</span> The Shadow
-                        </p>
-                        <p className="text-foreground">
-                          <span className="text-primary font-medium">Nature:</span> Anti-herói introspectivo
-                        </p>
-                        <p className="text-muted-foreground italic">
-                          <span className="text-primary/70 font-medium">Nature:</span> Introspective anti-hero
-                        </p>
-                        <p className="text-foreground">
-                          <span className="text-primary font-medium">Function:</span> Tornar visível o invisível
-                        </p>
-                        <p className="text-muted-foreground italic">
-                          <span className="text-primary/70 font-medium">Function:</span> Make visible the invisible
-                        </p>
+                      <h4 className="heading-4 text-primary mb-6">MATRIZ DE IDENTIDADE / IDENTITY MATRIX</h4>
+                      <div className="grid md:grid-cols-2 gap-12">
+                        <div className="space-y-3 text-base">
+                          <p className="text-foreground">
+                            <span className="text-primary font-medium">Codename:</span> O Décimo-Terceiro Andar
+                          </p>
+                          <p className="text-foreground">
+                            <span className="text-primary font-medium">Archetype:</span> A Sombra
+                          </p>
+                          <p className="text-foreground">
+                            <span className="text-primary font-medium">Nature:</span> Anti-herói introspectivo
+                          </p>
+                          <p className="text-foreground">
+                            <span className="text-primary font-medium">Function:</span> Tornar visível o invisível
+                          </p>
+                        </div>
+                        <div className="space-y-3 text-base">
+                          <p className="text-muted-foreground italic">
+                            <span className="text-primary/70 font-medium">Codename:</span> The Thirteenth Floor
+                          </p>
+                          <p className="text-muted-foreground italic">
+                            <span className="text-primary/70 font-medium">Archetype:</span> The Shadow
+                          </p>
+                          <p className="text-muted-foreground italic">
+                            <span className="text-primary/70 font-medium">Nature:</span> Introspective anti-hero
+                          </p>
+                          <p className="text-muted-foreground italic">
+                            <span className="text-primary/70 font-medium">Function:</span> Make visible the invisible
+                          </p>
+                        </div>
                       </div>
                     </div>
 
                     <div className="space-y-6 p-6 bg-card/30 rounded-lg border border-primary/20">
-                      <h4 className="heading-4 text-primary">ANATOMIA VISUAL / VISUAL ANATOMY</h4>
-                      <div className="space-y-4 text-base">
-                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
+                      <h4 className="heading-4 text-primary mb-6">ANATOMIA VISUAL / VISUAL ANATOMY</h4>
+                      <div className="grid md:grid-cols-2 gap-12">
+                        <div className="space-y-3 text-base">
                           <p className="text-foreground">
                             <span className="text-primary font-medium">Máscara:</span> Branca fosca, traços humanos mínimos, olhos vazios refletindo luz urbana
                           </p>
-                          <p className="text-muted-foreground italic">
-                            <span className="text-primary/70 font-medium">Mask:</span> Matte white, minimal human features, empty eyes reflecting urban light
-                          </p>
-                        </div>
-                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
                           <p className="text-foreground">
                             <span className="text-primary font-medium">Capuz/Boné:</span> Preto, estrutura geométrica simples
+                          </p>
+                          <p className="text-foreground">
+                            <span className="text-primary font-medium">Jaqueta:</span> Verde militar desbotada, textura de uso, bolsos funcionais
+                          </p>
+                          <p className="text-foreground">
+                            <span className="text-primary font-medium">Camiseta:</span> Preta oversized, tecido pesado
+                          </p>
+                          <p className="text-foreground">
+                            <span className="text-primary font-medium">Calça:</span> Moletom preto, corte reto, conforto urbano
+                          </p>
+                          <p className="text-foreground">
+                            <span className="text-primary font-medium">Tênis:</span> Vans preto, sola gasta, autenticidade do uso
+                          </p>
+                          <p className="text-foreground">
+                            <span className="text-primary font-medium">Postura:</span> Contida, peso no silêncio, presença por ausência
+                          </p>
+                        </div>
+                        <div className="space-y-3 text-base">
+                          <p className="text-muted-foreground italic">
+                            <span className="text-primary/70 font-medium">Mask:</span> Matte white, minimal human features, empty eyes reflecting urban light
                           </p>
                           <p className="text-muted-foreground italic">
                             <span className="text-primary/70 font-medium">Hood/Cap:</span> Black, simple geometric structure
                           </p>
-                        </div>
-                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
-                          <p className="text-foreground">
-                            <span className="text-primary font-medium">Jaqueta:</span> Verde militar desbotada, textura de uso, bolsos funcionais
-                          </p>
                           <p className="text-muted-foreground italic">
                             <span className="text-primary/70 font-medium">Jacket:</span> Faded military green, worn texture, functional pockets
-                          </p>
-                        </div>
-                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
-                          <p className="text-foreground">
-                            <span className="text-primary font-medium">Camiseta:</span> Preta oversized, tecido pesado
                           </p>
                           <p className="text-muted-foreground italic">
                             <span className="text-primary/70 font-medium">T-Shirt:</span> Black oversized, heavy fabric
                           </p>
-                        </div>
-                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
-                          <p className="text-foreground">
-                            <span className="text-primary font-medium">Calça:</span> Moletom preto, corte reto, conforto urbano
-                          </p>
                           <p className="text-muted-foreground italic">
                             <span className="text-primary/70 font-medium">Pants:</span> Black sweatpants, straight cut, urban comfort
                           </p>
-                        </div>
-                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
-                          <p className="text-foreground">
-                            <span className="text-primary font-medium">Tênis:</span> Vans preto, sola gasta, autenticidade do uso
-                          </p>
                           <p className="text-muted-foreground italic">
                             <span className="text-primary/70 font-medium">Sneakers:</span> Black Vans, worn sole, authenticity of use
-                          </p>
-                        </div>
-                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
-                          <p className="text-foreground">
-                            <span className="text-primary font-medium">Postura:</span> Contida, peso no silêncio, presença por ausência
                           </p>
                           <p className="text-muted-foreground italic">
                             <span className="text-primary/70 font-medium">Posture:</span> Restrained, weight in silence, presence through absence
