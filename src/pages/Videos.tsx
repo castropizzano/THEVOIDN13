@@ -81,11 +81,17 @@ const Videos = () => {
     );
   }
 
-  const featuredVideo = videos[0];
-  // Sort remaining videos by upload date (most recent first)
-  const catalogVideos = videos.slice(1).sort((a, b) => 
-    new Date(b.createdTime).getTime() - new Date(a.createdTime).getTime()
-  );
+  // Select random video for featured section
+  const featuredVideo = videos.length > 0 
+    ? videos[Math.floor(Math.random() * videos.length)]
+    : null;
+  
+  // Catalog shows all videos except the featured one, sorted by date
+  const catalogVideos = videos.length > 1 
+    ? videos
+        .filter(v => v.id !== featuredVideo?.id)
+        .sort((a, b) => new Date(b.createdTime).getTime() - new Date(a.createdTime).getTime())
+    : [];
 
   return (
     <div className="min-h-screen bg-background text-foreground">
