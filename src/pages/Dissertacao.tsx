@@ -14,7 +14,6 @@ import conceptSide from "@/assets/concept-side.png";
 import roughs000 from "@/assets/roughs-000.png";
 import roughs001 from "@/assets/roughs-001.png";
 import meditationScene from "@/assets/meditation-scene.png";
-
 const Dissertacao = () => {
   const thesisSchema = {
     "@context": "https://schema.org",
@@ -35,24 +34,19 @@ const Dissertacao = () => {
     "about": "Cinema Experimental, Skate Culture, Processos Criativos, Arte Audiovisual",
     "inSupportOf": "Cinema e Artes do Vídeo"
   };
-
-  const breadcrumbs = breadcrumbSchema([
-    { name: "Home", url: "https://thevoidn13.lovableproject.com/" },
-    { name: "LowMovie™ — Dissertação", url: "https://thevoidn13.lovableproject.com/dissertacao" }
-  ]);
-
+  const breadcrumbs = breadcrumbSchema([{
+    name: "Home",
+    url: "https://thevoidn13.lovableproject.com/"
+  }, {
+    name: "LowMovie™ — Dissertação",
+    url: "https://thevoidn13.lovableproject.com/dissertacao"
+  }]);
   const schemaData = {
     "@context": "https://schema.org",
     "@graph": [thesisSchema, breadcrumbs]
   };
-
-  return (
-    <div className="min-h-screen bg-background text-foreground">
-      <SEO 
-        title="LowMovie™ — Dissertação de Mestrado | THEVOIDN13"
-        description="Dissertação de mestrado em Cinema e Artes do Vídeo explorando subjetividade, subcultura e processos criativos no skate através do filme LowMovie™. CasaTrezeStudio®, LowPressure™ crew por Castro Pizzano"
-        schemaData={schemaData}
-      />
+  return <div className="min-h-screen bg-background text-foreground">
+      <SEO title="LowMovie™ — Dissertação de Mestrado | THEVOIDN13" description="Dissertação de mestrado em Cinema e Artes do Vídeo explorando subjetividade, subcultura e processos criativos no skate através do filme LowMovie™. CasaTrezeStudio®, LowPressure™ crew por Castro Pizzano" schemaData={schemaData} />
       <Header />
       <BackToTop />
       
@@ -71,36 +65,22 @@ const Dissertacao = () => {
         </BilingualSection>
 
         <BilingualSection className="py-8">
-          <BilingualContent 
-            portugueseContent={
-              <p className="body-base text-justified">
+          <BilingualContent portugueseContent={<p className="body-base text-justified">
                 Subjetividade, Subcultura e a Construção de uma Estética em Movimento no Coletivo LowPressure™
-              </p>
-            }
-            englishContent={
-              <p className="body-base text-justified">
+              </p>} englishContent={<p className="body-base text-justified">
                 Subjectivity, Subculture and the Construction of an Aesthetic in Motion in the LowPressure™ Collective
-              </p>
-            }
-          />
+              </p>} />
         </BilingualSection>
 
         {/* Matrix Projects - Origins of the Dissertation */}
         <BilingualSection bgClassName="bg-card/50">
           <div className="space-y-4 mb-16">
             <h2 className="section-title">Processos Matriciais / Matrix Processes</h2>
-            <BilingualContent 
-              portugueseContent={
-                <p className="body-base text-muted-foreground">
+            <BilingualContent portugueseContent={<p className="body-base text-muted-foreground">
                   Três projetos que originaram esta dissertação. Processos criativos que se entrelaçam e formam a base do Labirinto Criativo.
-                </p>
-              }
-              englishContent={
-                <p className="body-base text-muted-foreground">
+                </p>} englishContent={<p className="body-base text-muted-foreground">
                   Three projects that originated this dissertation. Creative processes that intertwine and form the basis of the Creative Labyrinth.
-                </p>
-              }
-            />
+                </p>} />
           </div>
         </BilingualSection>
 
@@ -113,9 +93,7 @@ const Dissertacao = () => {
               <p className="text-sm text-primary font-medium">Coletivo Criativo / Creative Lab</p>
             </div>
 
-            <BilingualContent 
-              portugueseContent={
-                <div className="space-y-6">
+            <BilingualContent portugueseContent={<div className="space-y-6">
                   <p className="body-base text-justified">
                     Coletivo Criativo fundado em 2008. Estúdio pós-contemporâneo de design e vídeo. Associação de produtores criativos independentes que opera como laboratório de criação autoral, cultural e comercial, conectando pessoas, ideias e projetos. Onde o comercial e o experimental coexistem sob a persona цастро™.
                   </p>
@@ -143,10 +121,7 @@ const Dissertacao = () => {
                       A casa número 13 como símbolo de resistência ao convencional. O azar transformado em potência criativa. O estúdio opera na fronteira entre o comercial e o experimental, sem hierarquia entre ambos. Cada projeto — seja uma identidade visual para um cliente ou um filme autoral — recebe o mesmo rigor criativo.
                     </p>
                   </div>
-                </div>
-              }
-              englishContent={
-                <div className="space-y-6">
+                </div>} englishContent={<div className="space-y-6">
                   <p className="body-base text-justified">
                     Creative Collective founded in 2008. Post-contemporary studio of design and video. Association of independent creative producers operating as a laboratory of authorial, cultural and commercial creation, connecting people, ideas and projects. Where commercial and experimental coexist under the persona цастро™.
                   </p>
@@ -175,21 +150,12 @@ const Dissertacao = () => {
                     </p>
                   </div>
 
-                </div>
-              }
-            />
+                </div>} />
             
             {/* Vimeo Reel Player */}
             <div className="mt-8 w-full">
               <div className="aspect-video w-full">
-                <iframe 
-                  src="https://player.vimeo.com/video/698870212?title=0&byline=0&portrait=0"
-                  className="w-full h-full"
-                  frameBorder="0"
-                  allow="autoplay; fullscreen; picture-in-picture"
-                  allowFullScreen
-                  title="CasaTrezeStudio Reel"
-                ></iframe>
+                <iframe src="https://player.vimeo.com/video/698870212?title=0&byline=0&portrait=0" className="w-full h-full" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen title="CasaTrezeStudio Reel"></iframe>
               </div>
             </div>
           </div>
@@ -204,9 +170,7 @@ const Dissertacao = () => {
                 <p className="micro-title text-primary">Skate Crew / Movimento Cultural</p>
               </div>
 
-            <BilingualContent 
-              portugueseContent={
-                <div className="space-y-6">
+            <BilingualContent portugueseContent={<div className="space-y-6">
                     <p className="body-base text-justified">
                     Crew de skate @lowpressure.fam estabelecida nas transições e ruas de Curitiba. Movimento que valoriza o skateboard e seu universo cultural. Uma crew de skatistas, músicos e artistas com diferentes visões e um mesmo ideal. A ética do subterrâneo. O pensamento que nasce da margem.
                   </p>
@@ -234,10 +198,7 @@ const Dissertacao = () => {
                       Não é sobre patrocínio. Não é sobre likes. É sobre manter viva a chama do skate como expressão genuína. Resistir à espetacularização. Preservar a autonomia criativa. Ser crew é ser família escolhida. É saber que, não importa o spot, sempre tem alguém que vai te buscar quando você cair.
                     </p>
                   </div>
-                </div>
-              }
-              englishContent={
-                <div className="space-y-6">
+                </div>} englishContent={<div className="space-y-6">
                     <p className="body-base text-justified">
                     Skate crew @lowpressure.fam established in the transitions and streets of Curitiba. Movement that values skateboarding and its cultural universe. A crew of skaters, musicians and artists with different visions and the same ideal. The ethics of the underground. Thought that rises from the margin.
                   </p>
@@ -265,9 +226,7 @@ const Dissertacao = () => {
                       It's not about sponsorship. It's not about likes. It's about keeping alive the flame of skateboarding as genuine expression. Resisting spectacularization. Preserving creative autonomy. Being crew is being chosen family. It's knowing that, no matter the spot, there's always someone who'll pick you up when you fall.
                     </p>
                   </div>
-                </div>
-              }
-            />
+                </div>} />
           </div>
         </BilingualSection>
 
@@ -280,9 +239,7 @@ const Dissertacao = () => {
               <p className="text-sm text-primary font-medium">Full Video / Filme-Processo</p>
             </div>
 
-            <BilingualContent 
-              portugueseContent={
-                <div className="space-y-6">
+            <BilingualContent portugueseContent={<div className="space-y-6">
                   <p className="text-base leading-relaxed text-justify">
                     Full Video da crew LowPressure. Um filme-processo que documenta as vivências e o legado de uma crew de skatistas pelos spots de Curitiba. Obra produzida de maneira totalmente autoral, através de vídeo, design e trilhas sonoras únicas. Objeto central da pesquisa de mestrado em Cinema e Artes do Vídeo.
                   </p>
@@ -317,10 +274,7 @@ const Dissertacao = () => {
                       O labirinto é a vida em seus encontros, transformações e realizações. Percursos colaborativos, improvisados e não-lineares. Cada volta representa a jornada da crew pelos picos de Curitiba. Cada linha é uma manobra, um gesto compartilhado. O centro é o encontro — onde todos os caminhos convergem.
                     </p>
                   </div>
-                </div>
-              }
-              englishContent={
-                <div className="space-y-6">
+                </div>} englishContent={<div className="space-y-6">
                   <p className="text-base leading-relaxed text-justify">
                     LowPressure crew's Full Video. A process-film documenting the experiences and legacy of a skate crew through Curitiba's spots. Work produced entirely independently, through video, design and unique soundtracks. Central object of master's research in Cinema and Video Arts.
                   </p>
@@ -355,9 +309,7 @@ const Dissertacao = () => {
                       The labyrinth is life in its encounters, transformations, and realizations. Collaborative, improvised, and non-linear paths. Each turn represents the crew's journey through Curitiba's spots. Each line is a trick, a shared gesture. The center is the meeting point — where all paths converge.
                     </p>
                   </div>
-                </div>
-              }
-            />
+                </div>} />
           </div>
         </BilingualSection>
 
@@ -369,9 +321,7 @@ const Dissertacao = () => {
         </BilingualSection>
 
         <BilingualSection>
-          <BilingualContent 
-            portugueseContent={
-              <>
+          <BilingualContent portugueseContent={<>
                 <h2 className="text-base font-bold">Introdução / Rastros nas Ruas</h2>
                 <p className="text-base text-justify leading-relaxed mt-6">
                   Esta pesquisa se constrói como travessia em primeira pessoa, um deslizamento entre o skate, o vídeo e a escrita, ativando formas de escuta, presença e invenção. O ato de escrever aqui é corpo em movimento, gesto que se arrisca, que se lança como quem dropa uma borda, um corrimão, uma escada. Drop é esse instante inaugural em que o skatista se projeta de um ponto mais alto e inicia o percurso com risco e intuição, abrindo caminho no concreto.
@@ -379,10 +329,7 @@ const Dissertacao = () => {
                 <p className="text-base text-justify leading-relaxed mt-6">
                   O processo criativo delineado neste trabalho emerge da convivência com o coletivo LowPressure™, organismo em vibração, movido por sintonia estética e prática. No vocabulário do skate, trata-se de uma crew, mas também de uma forma de vida em rede, em que o pertencimento se inscreve nos gestos, nas imagens e nos vínculos forjados em movimento. É nesse território que nasce o LowMovie™, dispositivo audiovisual de criação partilhada que atravessa toda esta pesquisa.
                 </p>
-              </>
-            }
-            englishContent={
-              <>
+              </>} englishContent={<>
                 <h2 className="text-base font-bold">Introduction / Traces in the Streets</h2>
                 <p className="text-base text-justify leading-relaxed mt-6">
                   This research is constructed as a first-person journey, a drift between skateboarding, video and writing, activating forms of listening, presence and invention. The act of writing here is body in movement, gesture that takes risks, that launches itself like someone dropping a ledge, a handrail, a staircase. Drop is that inaugural instant in which the skater projects themselves from a higher point and begins the course with risk and intuition, opening a path in the concrete.
@@ -390,38 +337,29 @@ const Dissertacao = () => {
                 <p className="text-base text-justify leading-relaxed mt-6">
                   The creative process outlined in this work emerges from coexistence with the LowPressure™ collective, an organism in vibration, moved by aesthetic and practical syntony. In skateboarding vocabulary, it is a crew, but also a networked form of life, in which belonging is inscribed in gestures, images and bonds forged in movement. It is in this territory that LowMovie™ is born, an audiovisual device of shared creation that runs through all this research.
                 </p>
-              </>
-            }
-          />
+              </>} />
         </BilingualSection>
 
         <BilingualSection>
-          <BilingualContent 
-            portugueseContent={
-              <>
+          <BilingualContent portugueseContent={<>
                 <h2 className="text-base font-bold">A VideoParte como Linguagem</h2>
                 <p className="text-base text-justify leading-relaxed mt-6">
                   Os vídeos de skate registram a evolução técnica e criativa dos skatistas e desempenham um papel central na construção de sua identidade cultural. A VideoParte destaca não apenas as habilidades dos skatistas, mas também a integração entre seus movimentos e o ambiente urbano. A VideoParte é linguagem estética em movimento, expressão que transforma a paisagem urbana em território simbólico. O corpo e a cidade dialogam em fricção constante, produzindo imagens que são ao mesmo tempo documento e ficção.
                 </p>
-              </>
-            }
-            englishContent={
-              <>
+              </>} englishContent={<>
                 <h2 className="text-base font-bold">The VideoPart as Language</h2>
                 <p className="text-base text-justify leading-relaxed mt-6">
                   Skateboarding videos record the technical and creative evolution of skaters and play a central role in constructing their cultural identity. The VideoPart highlights not only the skaters' skills, but also the integration between their movements and the urban environment. The VideoPart is aesthetic language in movement, expression that transforms the urban landscape into symbolic territory. Body and city dialogue in constant friction, producing images that are simultaneously document and fiction.
                 </p>
-              </>
-            }
-          />
+              </>} />
         </BilingualSection>
 
         {/* Methodology Section */}
         <BilingualSection bgClassName="bg-card/30">
-          <BilingualContent 
-            portugueseContent={
-              <div className="space-y-8">
-                <h2 className="text-base font-bold">Metodologia / Lowbyrinth™ como Método</h2>
+          <BilingualContent portugueseContent={<div className="space-y-8">
+                <h2 className="text-base font-bold">METODOLOGIA
+LOWBYRINTH™ COMO MÉTODO
+          </h2>
                 
                 <div className="space-y-6">
                   <div>
@@ -497,10 +435,7 @@ const Dissertacao = () => {
                     </p>
                   </div>
                 </div>
-              </div>
-            }
-            englishContent={
-              <div className="space-y-8">
+              </div>} englishContent={<div className="space-y-8">
                 <h2 className="text-base font-bold">Methodology / Lowbyrinth™ as Method</h2>
                 
                 <div className="space-y-6">
@@ -577,37 +512,26 @@ const Dissertacao = () => {
                     </p>
                   </div>
                 </div>
-              </div>
-            }
-          />
+              </div>} />
         </BilingualSection>
 
         <BilingualSection>
-          <BilingualContent 
-            portugueseContent={
-              <>
+          <BilingualContent portugueseContent={<>
                 <h2 className="text-base font-bold">Corpo e Cidade</h2>
                 <p className="text-base text-justify leading-relaxed mt-6">
                   A cidade se apresenta como campo de criação no entre: entre corpo e espaço, manobra e erro, presença e imagem. No percurso de criação do LowMovie™ emergiu organicamente o conceito de Lowbyrinth™, uma imagem simbólica que expressa caminhos improvisados, não lineares e rizomáticos do fazer coletivo. Essa metáfora orienta a estrutura metodológica do estudo, traçando um percurso que se desdobra em dobra, escuta e desvio. O labirinto não é obstáculo, mas campo de possibilidades criativas e narrativas.
                 </p>
-              </>
-            }
-            englishContent={
-              <>
+              </>} englishContent={<>
                 <h2 className="text-base font-bold">Body and City</h2>
                 <p className="text-base text-justify leading-relaxed mt-6">
                   The city presents itself as a field of creation in the between: between body and space, maneuver and error, presence and image. In the creation process of LowMovie™, the concept of Lowbyrinth™ emerged organically, a symbolic image that expresses improvised, non-linear and rhizomatic paths of collective making. This metaphor guides the methodological structure of the study, tracing a path that unfolds in fold, listening and deviation. The labyrinth is not an obstacle, but a field of creative and narrative possibilities.
                 </p>
-              </>
-            }
-          />
+              </>} />
         </BilingualSection>
 
 
         <BilingualSection>
-          <BilingualContent 
-            portugueseContent={
-              <>
+          <BilingualContent portugueseContent={<>
                 <h2 className="text-base font-bold">Mestrado em Cinema e Artes do Vídeo</h2>
                 <p className="text-base text-justify leading-relaxed mt-6">
                   Dissertação apresentada ao Programa de Pós-Graduação em Cinema e Artes do Vídeo da Universidade Estadual do Paraná, Linha de Pesquisa (2) Processos de Criação no Cinema e nas Artes do Vídeo, como requisito parcial para a obtenção do título de Mestre em Cinema e Artes do Vídeo.
@@ -621,10 +545,7 @@ const Dissertacao = () => {
                 <p className="text-base text-justify leading-relaxed font-medium">
                   Curitiba, 2025
                 </p>
-              </>
-            }
-            englishContent={
-              <>
+              </>} englishContent={<>
                 <h2 className="text-base font-bold">Master's in Cinema and Video Arts</h2>
                 <p className="text-base text-justify leading-relaxed mt-6">
                   Dissertation presented to the Graduate Program in Cinema and Video Arts at Paraná State University, Research Line (2) Creation Processes in Cinema and Video Arts, as a partial requirement for obtaining the Master's degree in Cinema and Video Arts.
@@ -638,9 +559,7 @@ const Dissertacao = () => {
                 <p className="text-base text-justify leading-relaxed font-medium">
                   Curitiba, 2025
                 </p>
-              </>
-            }
-          />
+              </>} />
         </BilingualSection>
 
         {/* Documentation Section */}
@@ -660,20 +579,10 @@ const Dissertacao = () => {
                   </svg>
                 </div>
                 <p className="text-sm text-muted-foreground mb-2">Brandbook LowPressure™</p>
-                <a 
-                  href="/documents/LowPressure_brandbook.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-primary hover:underline block mb-2"
-                >
+                <a href="/documents/LowPressure_brandbook.pdf" target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline block mb-2">
                   Download Brandbook (PDF)
                 </a>
-                <a 
-                  href="https://castropizzano.com/lowpressure"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-primary hover:underline block"
-                >
+                <a href="https://castropizzano.com/lowpressure" target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline block">
                   Case Study
                 </a>
               </div>
@@ -686,20 +595,10 @@ const Dissertacao = () => {
                   </svg>
                 </div>
                 <p className="text-sm text-muted-foreground mb-2">Brandbook LowMovie™</p>
-                <a 
-                  href="/documents/LowMovie_brandbook.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-primary hover:underline block mb-2"
-                >
+                <a href="/documents/LowMovie_brandbook.pdf" target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline block mb-2">
                   Download Brandbook (PDF)
                 </a>
-                <a 
-                  href="https://youtu.be/wcYBh6_DqO8"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-primary hover:underline block"
-                >
+                <a href="https://youtu.be/wcYBh6_DqO8" target="_blank" rel="noopener noreferrer" className="text-sm text-primary hover:underline block">
                   Full Video LowMovie™ (2023)
                 </a>
               </div>
@@ -714,18 +613,11 @@ const Dissertacao = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                   </svg>
                 </div>
-                <BilingualContent 
-                  portugueseContent={
-                    <p className="text-base text-muted-foreground leading-relaxed">
+                <BilingualContent portugueseContent={<p className="text-base text-muted-foreground leading-relaxed">
                       Depósito da dissertação de mestrado após aprovação em breve.
-                    </p>
-                  }
-                  englishContent={
-                    <p className="text-base text-muted-foreground leading-relaxed">
+                    </p>} englishContent={<p className="text-base text-muted-foreground leading-relaxed">
                       Master's dissertation deposit after approval coming soon.
-                    </p>
-                  }
-                />
+                    </p>} />
               </div>
             </div>
           </div>
@@ -738,28 +630,21 @@ const Dissertacao = () => {
               <h2 className="section-title">Pesquisa Acadêmica / Academic Research</h2>
             </div>
 
-            <BilingualContent
-              portugueseContent={
-                <div className="space-y-6">
+            <BilingualContent portugueseContent={<div className="space-y-6">
                   <p className="text-base text-justify leading-relaxed">
                     A pesquisa de mestrado investiga processos criativos colaborativos a partir da produção de LowMovie. Como uma crew de skate se torna coletivo criativo? Como a subcultura do skate gera modos específicos de fazer cinema? Como documentar sem domesticar?
                   </p>
                   <p className="text-base text-justify leading-relaxed">
                     Metodologia autoetnográfica. Análise fílmica. Entrevistas em profundidade. Diário de campo. Mas também: skate sessions como coleta de dados. Edição de vídeo como análise. Montagem como pensamento. A forma da dissertação questiona a forma acadêmica tradicional.
                   </p>
-                </div>
-              }
-              englishContent={
-                <div className="space-y-6">
+                </div>} englishContent={<div className="space-y-6">
                   <p className="text-base text-justify leading-relaxed">
                     The master's research investigates collaborative creative processes from LowMovie's production. How does a skate crew become a creative collective? How does skate subculture generate specific ways of making cinema? How to document without domesticating?
                   </p>
                   <p className="text-base text-justify leading-relaxed">
                     Autoethnographic methodology. Film analysis. In-depth interviews. Field diary. But also: skate sessions as data collection. Video editing as analysis. Montage as thought. The dissertation's form questions the traditional academic form.
                   </p>
-                </div>
-              }
-            />
+                </div>} />
           </div>
         </BilingualSection>
 
@@ -798,35 +683,26 @@ const Dissertacao = () => {
               <h2 className="section-title">Colaboração e Coletivos / Collaboration and Collectives</h2>
             </div>
 
-            <BilingualContent
-              portugueseContent={
-                <div className="space-y-6">
+            <BilingualContent portugueseContent={<div className="space-y-6">
                   <p className="text-base text-justify leading-relaxed">
                     Criação sempre foi coletiva. CasaTrezeStudio (desde 2008), LowPressure (desde 2020), colaborações com músicos, skatistas, designers. Mas a práxis híbrida expande o conceito de coletivo: agora inclui agentes não-humanos. IA como colaboradora, não como ferramenta.
                   </p>
                   <p className="text-base text-justify leading-relaxed">
                     O coletivo não é soma de indivíduos — é campo de forças. Cada projeto gera sua própria configuração colaborativa. Algumas permanentes (crew), outras efêmeras (projetos específicos). Mas todas compartilham da mesma ética: autonomia criativa, transparência radical, autoria compartilhada mas assinada.
                   </p>
-                </div>
-              }
-              englishContent={
-                <div className="space-y-6">
+                </div>} englishContent={<div className="space-y-6">
                   <p className="text-base text-justify leading-relaxed">
                     Creation has always been collective. CasaTrezeStudio (since 2008), LowPressure (since 2020), collaborations with musicians, skaters, designers. But hybrid praxis expands the concept of collective: now it includes non-human agents. AI as collaborator, not as tool.
                   </p>
                   <p className="text-base text-justify leading-relaxed">
                     The collective isn't a sum of individuals — it's a force field. Each project generates its own collaborative configuration. Some permanent (crew), others ephemeral (specific projects). But all share the same ethics: creative autonomy, radical transparency, shared but signed authorship.
                   </p>
-                </div>
-              }
-            />
+                </div>} />
           </div>
         </BilingualSection>
       </main>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Dissertacao;
