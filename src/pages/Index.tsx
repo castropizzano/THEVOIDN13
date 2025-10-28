@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
 import { PromptLibrary } from "@/components/PromptLibrary";
+import { AudioPlayer } from "@/components/AudioPlayer";
 import heroImage from "@/assets/hero-concept-art.png";
 import conceptCrew from "@/assets/concept-crew.png";
 import actionFigure from "@/assets/action-figure.png";
@@ -28,6 +29,17 @@ const Index = () => {
         {/* Hero Section */}
         <section className="w-full h-screen overflow-hidden">
           <img src={heroImage} alt="THEVOIDN13" className="w-full h-full object-contain" />
+        </section>
+
+        {/* Audio Player - Projeto */}
+        <section className="py-12 bg-card/30">
+          <div className="max-w-4xl mx-auto px-6">
+            <AudioPlayer
+              src="/audio/thevoidn13-projeto.mp3"
+              title="THEVOIDN13 — Áudio Projeto"
+              description="Narração conceitual do projeto / Conceptual project narration"
+            />
+          </div>
         </section>
 
         {/* Video Section */}
@@ -939,6 +951,15 @@ const Index = () => {
             {/* Prompt Library Card */}
             <div className="mt-8">
               <PromptLibrary />
+            </div>
+
+            {/* Audio Player - Resumo */}
+            <div className="mt-8">
+              <AudioPlayer
+                src="/audio/thevoidn13-resumo.mp3"
+                title="THEVOIDN13 — Áudio Resumo"
+                description="Síntese executiva do projeto / Executive project summary"
+              />
             </div>
 
             <div className="grid md:grid-cols-2 gap-12">
