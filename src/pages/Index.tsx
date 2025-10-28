@@ -99,12 +99,12 @@ const Index = () => {
             </div>
 
             {/* Mask Image - Right Side Matching Text Height */}
-            <div className="flex items-stretch justify-center min-w-[300px]">
-              <div className="w-full border border-border rounded-lg overflow-hidden flex items-center justify-center bg-background/50">
+            <div className="flex items-center justify-center">
+              <div className="w-80 border border-border rounded-lg overflow-hidden flex items-center justify-center bg-background/50">
                 <img 
                   src={maskVoid} 
                   alt="THEVOIDN13 Mask" 
-                  className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity duration-300"
+                  className="w-full h-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
                 />
               </div>
             </div>
@@ -245,7 +245,7 @@ const Index = () => {
                   </p>
                 </div>
                 <div>
-                  <h2 className="text-base font-bold">CASATREZESTUDIO</h2>
+                  <h2 className="text-base font-bold">UNDERGROUND AND INDEPENDENT</h2>
                   <p className="text-base text-justify leading-relaxed mt-2">
                     The underground signature that has followed me for years. An invisible seal, born in the underground where all that's alive hides. A symbolic community of those who create in darkness and call it light.
                   </p>
