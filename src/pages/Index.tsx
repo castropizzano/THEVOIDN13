@@ -223,9 +223,9 @@ const Index = () => {
                   </p>
                 </div>
                 <div>
-                  <h2 className="text-base font-bold">CasaTrezeStudio</h2>
+                  <h2 className="text-base font-bold">UNDERGROUND E INDEPENDENTE</h2>
                   <p className="text-base text-justify leading-relaxed mt-2">
-                    A assinatura subterrânea que me acompanha há anos. Um selo invisível, criado no subsolo onde tudo o que é vivo se esconde. A CasaTreze não é marca, é rito. Uma comunidade simbólica de quem cria no escuro e chama isso de luz.
+                    A assinatura subterrânea que me acompanha há anos. Um selo invisível, criado no subsolo onde tudo o que é vivo se esconde. Uma comunidade simbólica de quem cria no escuro e chama isso de luz.
                   </p>
                 </div>
               </div>
