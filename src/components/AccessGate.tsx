@@ -116,14 +116,10 @@ export const AccessGate = ({
           </div>
           <CardDescription className="site-paragraph space-y-3 leading-relaxed">
             <p className="leading-relaxed">
-              Entre no limiar entre luz e sombra onde a memória artística se transforma
-              <br />
-              em experiência viva e o vazio revela seus segredos aos que ousam adentrar.
+              Entre no limiar entre luz e sombra onde a memória artística se transforma em experiência viva e o vazio revela seus segredos aos que ousam adentrar.
             </p>
             <p className="text-xs leading-relaxed">
-              Step into the threshold between light and shadow where artistic memory
-              <br />
-              transforms into living experience and the void reveals its secrets to those who dare.
+              Step into the threshold between light and shadow where artistic memory transforms into living experience and the void reveals its secrets to those who dare.
             </p>
           </CardDescription>
         </CardHeader>
@@ -149,18 +145,14 @@ export const AccessGate = ({
                 <a href="/privacy-policy" className="text-primary hover:underline">
                   Política de Privacidade
                 </a>
-                {" "}e concorda em receber transmissões sobre
-                <br />
-                a jornada no vazio e as manifestações artísticas que emergem das sombras.
+                {" "}e concorda em receber transmissões sobre a jornada no vazio e as manifestações artísticas que emergem das sombras.
               </p>
               <p className="text-xs text-muted-foreground leading-relaxed">
                 By entering, you accept our{" "}
                 <a href="/privacy-policy" className="text-primary hover:underline">
                   Privacy Policy
                 </a>
-                {" "}and agree to receive transmissions
-                <br />
-                about the journey into the void and the artistic manifestations that emerge from shadows.
+                {" "}and agree to receive transmissions about the journey into the void and the artistic manifestations that emerge from shadows.
               </p>
             </div>
 
