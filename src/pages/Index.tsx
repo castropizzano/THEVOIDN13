@@ -105,15 +105,15 @@ const Index = () => {
         </section>
 
         {/* Introduction */}
-        <BilingualSection>
+        <BilingualSection className="py-20">
           <BilingualContent
             portugueseContent={
-              <p className="text-base text-justify leading-relaxed">
+              <p className="body-base text-justified">
                 Não foi uma fantasia. Foi um retorno. Um desses chamados que vêm de dentro, quando o inconsciente começa a bater na pele pedindo passagem. THEVOIDN13 nasceu no espaço entre o desejo e o cansaço, entre o fim da forma e o começo da presença. Um modo de existir sem precisar se exibir. Respirar sem ter que performar. Um corpo que se apaga para deixar a imagem viver.
               </p>
             }
             englishContent={
-              <p className="text-base text-justify leading-relaxed">
+              <p className="body-base text-justified">
                 It wasn't a fantasy. It was a return. One of those inner calls, when the unconscious starts knocking at the skin, asking to pass through. THEVOIDN13 was born in the space between desire and exhaustion, between the end of form and the beginning of presence. A way of existing without needing to be seen. To breathe without having to perform. A body that fades so the image can live.
               </p>
             }
@@ -127,20 +127,20 @@ const Index = () => {
         {/* ===== SEÇÃO I: FUNDAMENTOS DO VOID ===== */}
 
         {/* O Gesto */}
-        <BilingualSection>
+        <BilingualSection className="py-20">
           <BilingualContent
             portugueseContent={
-              <div className="space-y-4">
-                <h2 className="heading-2 text-primary">O Gesto</h2>
-                <p className="text-base text-justify leading-relaxed">
+              <div className="space-y-6">
+                <h2 className="section-title">O GESTO</h2>
+                <p className="body-base text-justified">
                   Cada movimento é um ruído controlado, um eco do que o corpo escuta por dentro. Andar é pensar, parar é ouvir. THEVOIDN13 não representa, ele encarna a hesitação. O gesto é a respiração do pensamento, um movimento de exílio e de retorno. Cada deslocamento é uma forma de escuta: o corpo capta o que a mente silencia.
                 </p>
               </div>
             }
             englishContent={
-              <div className="space-y-4">
-                <h2 className="heading-2 text-primary">The Gesture</h2>
-                <p className="text-base text-justify leading-relaxed">
+              <div className="space-y-6">
+                <h2 className="section-title">THE GESTURE</h2>
+                <p className="body-base text-justified">
                   Each movement is a controlled noise, an echo of what the body hears within. To walk is to think, to stop is to listen. THEVOIDN13 doesn't represent, it embodies hesitation. Gesture is the breath of thought, a movement of exile and return. Every displacement is a form of listening: the body perceives what the mind silences.
                 </p>
               </div>
@@ -149,27 +149,27 @@ const Index = () => {
         </BilingualSection>
 
         {/* Fundamentos: Olhar, Respiração, Atmosfera */}
-        <BilingualSection bgClassName="bg-card/30">
+        <BilingualSection className="py-20" bgClassName="bg-card/30">
           <BilingualContent
             portugueseContent={
               <div className="space-y-12">
                 <div className="space-y-4">
-                  <h3 className="heading-3 text-primary">O Olhar</h3>
-                  <p className="text-base text-justify leading-relaxed">
+                  <h3 className="section-title">O OLHAR</h3>
+                  <p className="body-base text-justified">
                     Por trás da máscara, há silêncio. Um olhar que não busca reconhecimento, apenas presença. O olhar não devolve imagem, devolve espelho. É o espaço onde quem vê também está por dentro. O olhar é o fio que costura o visível e o invisível — uma lente que dissolve a fronteira entre sujeito e sombra.
                   </p>
                 </div>
 
                 <div className="space-y-4">
-                  <h3 className="heading-3 text-primary">A Respiração</h3>
-                  <p className="text-base text-justify leading-relaxed">
+                  <h3 className="section-title">A RESPIRAÇÃO</h3>
+                  <p className="body-base text-justified">
                     A respiração é o som que resta quando o verbo morre. É nela que o ser se ancora e desaparece. O ar entra como ruído e sai como silêncio. Cada expiração é um micro-desaparecimento. Um instante de retorno ao nada. Respirar é lembrar que o corpo é apenas passagem entre dois mundos: o mundo da carne e o mundo do invisível.
                   </p>
                 </div>
 
                 <div className="space-y-4">
-                  <h3 className="heading-3 text-primary">A Atmosfera</h3>
-                  <p className="text-base text-justify leading-relaxed">
+                  <h3 className="section-title">A ATMOSFERA</h3>
+                  <p className="body-base text-justified">
                     Tudo vibra em tom noturno. A névoa, o concreto e a solidão elétrica são extensões do corpo. O ambiente não cerca THE VOID N.13 — ele o prolonga. A paisagem se torna psique, e o silêncio, uma presença física. A cidade é o espelho expandido do inconsciente, o lugar onde o corpo desaparece e o espaço respira por ele.
                   </p>
                 </div>
@@ -178,22 +178,22 @@ const Index = () => {
             englishContent={
               <div className="space-y-12">
                 <div className="space-y-4">
-                  <h3 className="heading-3 text-primary">The Gaze</h3>
-                  <p className="text-base text-justify leading-relaxed">
+                  <h3 className="section-title">THE GAZE</h3>
+                  <p className="body-base text-justified">
                     Behind the mask, there is silence. A gaze that seeks no recognition, only presence. The gaze doesn't return an image, it returns a mirror. It is the space where whoever looks is also seen from within. The gaze is the thread that stitches the visible and the invisible — a lens that dissolves the boundary between subject and shadow.
                   </p>
                 </div>
 
                 <div className="space-y-4">
-                  <h3 className="heading-3 text-primary">The Breath</h3>
-                  <p className="text-base text-justify leading-relaxed">
+                  <h3 className="section-title">THE BREATH</h3>
+                  <p className="body-base text-justified">
                     Breathing is the sound that remains when the word dies. In it, the being anchors itself and vanishes. Air enters as noise and leaves as silence. Each exhalation is a micro-disappearance, a fleeting return to nothingness. To breathe is to remember that the body is only a passage between two worlds: the world of flesh and the world of the unseen.
                   </p>
                 </div>
 
                 <div className="space-y-4">
-                  <h3 className="heading-3 text-primary">The Atmosphere</h3>
-                  <p className="text-base text-justify leading-relaxed">
+                  <h3 className="section-title">THE ATMOSPHERE</h3>
+                  <p className="body-base text-justified">
                     Everything vibrates in a nocturnal tone. Fog, concrete, and electric solitude are extensions of the body. The environment doesn't surround THE VOID N.13 — it prolongs it. The landscape becomes psyche, and silence, a physical presence. The city is the expanded mirror of the unconscious, the place where the body vanishes and space breathes for it.
                   </p>
                 </div>
@@ -209,21 +209,21 @@ const Index = () => {
         {/* ===== SEÇÃO II: A MÁSCARA E O PERSONAGEM ===== */}
 
         {/* Quando o Inconsciente Ganha Corpo */}
-        <BilingualSection>
+        <BilingualSection className="py-20">
           <div className="grid md:grid-cols-[1fr_auto] gap-12 items-stretch">
             <div className="space-y-12">
               <div className="space-y-6">
-                <p className="text-xs uppercase tracking-wider text-muted-foreground">PORTUGUÊS</p>
-                <h2 className="heading-2 text-primary title-break">Quando o Inconsciente Ganha Corpo</h2>
-                <p className="text-base text-justify leading-relaxed">
+                <p className="label-small text-muted-foreground">PORTUGUÊS</p>
+                <h2 className="section-title">QUANDO O INCONSCIENTE GANHA CORPO</h2>
+                <p className="body-base text-justified">
                   Não nasceu de uma ideia, mas de uma pressão interna. Pensei em inventar uma máscara, e acabei revelando um rosto que sempre esteve ali. THEVOIDN13 surgiu do atrito entre o desejo e o cansaço, da urgência de se esvaziar para continuar criando. Não é personagem nem alter ego. É uma presença que respira onde o corpo falha. Uma matéria que se move entre o fim e o recomeço. O instante em que o inconsciente decide existir.
                 </p>
               </div>
 
               <div className="space-y-6">
-                <p className="text-xs uppercase tracking-wider text-muted-foreground">ENGLISH</p>
-                <h2 className="heading-2 text-primary title-break">When the Unconscious Takes Shape</h2>
-                <p className="text-base text-justify leading-relaxed">
+                <p className="label-small text-muted-foreground">ENGLISH</p>
+                <h2 className="section-title">WHEN THE UNCONSCIOUS TAKES SHAPE</h2>
+                <p className="body-base text-justified">
                   It wasn't born from an idea, but from inner pressure. I thought I was inventing a mask, and I ended up revealing a face that had always been there. THEVOIDN13 emerged from the friction between desire and exhaustion, from the urgency to empty oneself just to keep creating. It is neither character nor alter ego. It is a presence that breathes where the body fails. A matter that moves between the end and the beginning. The moment when the unconscious decides to exist.
                 </p>
               </div>
@@ -242,20 +242,20 @@ const Index = () => {
         </BilingualSection>
 
         {/* A Máscara */}
-        <BilingualSection bgClassName="bg-card/30">
+        <BilingualSection className="py-20" bgClassName="bg-card/30">
           <BilingualContent
             portugueseContent={
-              <div className="space-y-4">
-                <h2 className="heading-2 text-primary title-break">A Máscara / Ceder Espaço ao Inconsciente</h2>
-                <p className="text-base text-justify leading-relaxed">
+              <div className="space-y-6">
+                <h2 className="section-title">A MÁSCARA | CEDER ESPAÇO AO INCONSCIENTE</h2>
+                <p className="body-base text-justified">
                   A máscara veio antes do nome. Branca, lisa, silenciosa. Não era uma face, era uma pausa. Quando a olhei pela primeira vez, percebi que ela não me olhava de volta. Talvez fosse isso o que eu buscava: existir sem precisar me afirmar. Quando a vesti, o rosto deixou de importar. O espelho não devolveu imagem, apenas silêncio. Foi nesse instante que compreendi: não estava criando um personagem, mas cedendo espaço. Ceder espaço ao inconsciente, deixar que ele assumisse forma. A máscara é o pacto entre o que se apaga e o que retorna, o instante em que o corpo permite ser atravessado por algo maior do que ele mesmo.
                 </p>
               </div>
             }
             englishContent={
-              <div className="space-y-4">
-                <h2 className="heading-2 text-primary title-break">The Mask / Yielding Space to the Unconscious</h2>
-                <p className="text-base text-justify leading-relaxed">
+              <div className="space-y-6">
+                <h2 className="section-title">THE MASK | YIELDING SPACE TO THE UNCONSCIOUS</h2>
+                <p className="body-base text-justified">
                   The mask came before the name. White, smooth, silent. It wasn't a face, it was a pause. When I looked at it for the first time, I realized it didn't look back at me. Perhaps that was what I was seeking: to exist without needing to assert myself. When I wore it, the face ceased to matter. The mirror returned no image, only silence. It was in that moment I understood: I wasn't creating a character, I was yielding space. Yielding space to the unconscious, letting it take shape. The mask is the pact between what fades and what returns, the instant when the body allows itself to be crossed by something greater than itself.
                 </p>
               </div>
@@ -264,21 +264,21 @@ const Index = () => {
         </BilingualSection>
 
         {/* O Personagem */}
-        <BilingualSection>
+        <BilingualSection className="py-20">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-12">
               <div className="space-y-6">
-                <p className="text-xs uppercase tracking-wider text-muted-foreground">PORTUGUÊS</p>
-                <h2 className="heading-2 text-primary">O Personagem</h2>
-                <p className="text-base text-justify leading-relaxed">
+                <p className="label-small text-muted-foreground">PORTUGUÊS</p>
+                <h2 className="section-title">O PERSONAGEM</h2>
+                <p className="body-base text-justified">
                   THEVOIDN13 é uma entidade conceitual que habita o intervalo entre presença e ausência. Não é pessoa, não é símbolo: é o corpo da indefinição, a forma que o inconsciente assume quando precisa de voz. Surgiu como resposta ao ruído da autoafirmação, à ansiedade de ser visto. É silêncio vestido de som, sombra travestida de corpo. Existe para desaparecer, retornar transformado e desestabilizar qualquer gesto que se afirme com certeza. THEVOIDN13 é um duplo simbólico, uma presença fantasmagórica que atravessa o cotidiano e revela o que se esconde sob a superfície do comum.
                 </p>
               </div>
 
               <div className="space-y-6">
-                <p className="text-xs uppercase tracking-wider text-muted-foreground">ENGLISH</p>
-                <h2 className="heading-2 text-primary">The Character</h2>
-                <p className="text-base text-justify leading-relaxed">
+                <p className="label-small text-muted-foreground">ENGLISH</p>
+                <h2 className="section-title">THE CHARACTER</h2>
+                <p className="body-base text-justified">
                   THEVOIDN13 is a conceptual entity that inhabits the interval between presence and absence. It is neither person nor symbol: it is the body of indefinition, the form the unconscious assumes when it needs a voice. It emerged as a response to the noise of self-affirmation, to the anxiety of being seen. It is silence dressed in sound, shadow disguised as body. It exists to disappear, to return transformed, and to destabilize any gesture that asserts itself with certainty. THEVOIDN13 is a symbolic double, a ghostly presence that crosses the everyday and reveals what hides beneath the surface of the ordinary.
                 </p>
               </div>
