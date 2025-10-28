@@ -417,59 +417,61 @@ const Index = () => {
                       </div>
                     </div>
 
-                    <div className="space-y-6 p-6 bg-card/30 rounded-lg border border-primary/20">
-                      <h4 className="heading-4 text-primary">PAISAGEM SONORA / SONIC LANDSCAPE</h4>
-                      <div className="grid md:grid-cols-2 gap-x-8 gap-y-2 text-base mb-6">
-                        <p className="text-foreground leading-relaxed">
-                          Ambiente urbano noturno: ruído branco da cidade, respiração controlada, passos em asfalto molhado, 
-                          sirenes distantes, reverb de vielas, chiado analógico, frequências graves contínuas
-                        </p>
-                        <p className="text-muted-foreground italic leading-relaxed">
-                          Nocturnal urban environment: white noise of the city, controlled breathing, steps on wet asphalt, 
-                          distant sirens, alley reverb, analog hiss, continuous low frequencies
-                        </p>
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div className="space-y-6 p-6 bg-card/30 rounded-lg border border-primary/20 h-full flex flex-col">
+                        <h4 className="heading-4 text-primary">PAISAGEM SONORA / SONIC LANDSCAPE</h4>
+                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-2 text-base mb-6">
+                          <p className="text-foreground leading-relaxed">
+                            Ambiente urbano noturno: ruído branco da cidade, respiração controlada, passos em asfalto molhado, 
+                            sirenes distantes, reverb de vielas, chiado analógico, frequências graves contínuas
+                          </p>
+                          <p className="text-muted-foreground italic leading-relaxed">
+                            Nocturnal urban environment: white noise of the city, controlled breathing, steps on wet asphalt, 
+                            distant sirens, alley reverb, analog hiss, continuous low frequencies
+                          </p>
+                        </div>
+                        <div className="grid grid-cols-3 gap-4 flex-1">
+                          <div className="space-y-2">
+                            <p className="font-medium text-primary">Visual</p>
+                            <p className="text-sm text-foreground">Grão de filme / Textura ink / Contraste alto</p>
+                            <p className="text-sm text-muted-foreground italic">Film grain / Ink texture / High contrast</p>
+                          </div>
+                          <div className="space-y-2">
+                            <p className="font-medium text-primary">Sônico</p>
+                            <p className="text-sm text-foreground">Chiado analógico / Reverb urbano / Frequências graves</p>
+                            <p className="text-sm text-muted-foreground italic">Analog hiss / Urban reverb / Low frequencies</p>
+                          </div>
+                          <div className="space-y-2">
+                            <p className="font-medium text-primary">Tátil</p>
+                            <p className="text-sm text-foreground">Asfalto molhado / Concreto frio / Metal oxidado</p>
+                            <p className="text-sm text-muted-foreground italic">Wet asphalt / Cold concrete / Oxidized metal</p>
+                          </div>
+                        </div>
                       </div>
-                      <div className="grid grid-cols-3 gap-6">
-                        <div className="space-y-2">
-                          <p className="font-medium text-primary">Visual</p>
-                          <p className="text-sm text-foreground">Grão de filme / Textura ink / Contraste alto</p>
-                          <p className="text-sm text-muted-foreground italic">Film grain / Ink texture / High contrast</p>
-                        </div>
-                        <div className="space-y-2">
-                          <p className="font-medium text-primary">Sônico</p>
-                          <p className="text-sm text-foreground">Chiado analógico / Reverb urbano / Frequências graves</p>
-                          <p className="text-sm text-muted-foreground italic">Analog hiss / Urban reverb / Low frequencies</p>
-                        </div>
-                        <div className="space-y-2">
-                          <p className="font-medium text-primary">Tátil</p>
-                          <p className="text-sm text-foreground">Asfalto molhado / Concreto frio / Metal oxidado</p>
-                          <p className="text-sm text-muted-foreground italic">Wet asphalt / Cold concrete / Oxidized metal</p>
-                        </div>
-                      </div>
-                    </div>
 
-                    <div className="space-y-6 p-6 bg-card/30 rounded-lg border border-primary/20">
-                      <h4 className="heading-4 text-primary">AFORISMOS / APHORISMS</h4>
-                      <div className="space-y-3 text-base">
-                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
-                          <p className="text-foreground italic">"O silêncio também fala"</p>
-                          <p className="text-muted-foreground italic">"Silence also speaks"</p>
-                        </div>
-                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
-                          <p className="text-foreground italic">"Entre o glitch e o grão, existo"</p>
-                          <p className="text-muted-foreground italic">"Between glitch and grain, I exist"</p>
-                        </div>
-                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
-                          <p className="text-foreground italic">"O corpo é a câmera"</p>
-                          <p className="text-muted-foreground italic">"The body is the camera"</p>
-                        </div>
-                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
-                          <p className="text-foreground italic">"Toda criação é autocriação"</p>
-                          <p className="text-muted-foreground italic">"All creation is self-creation"</p>
-                        </div>
-                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
-                          <p className="text-foreground italic">"O ruído é a mensagem"</p>
-                          <p className="text-muted-foreground italic">"Noise is the message"</p>
+                      <div className="space-y-6 p-6 bg-card/30 rounded-lg border border-primary/20 h-full flex flex-col">
+                        <h4 className="heading-4 text-primary">AFORISMOS / APHORISMS</h4>
+                        <div className="space-y-4 text-base flex-1 flex flex-col justify-center">
+                          <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
+                            <p className="text-foreground italic">"O silêncio também fala"</p>
+                            <p className="text-muted-foreground italic">"Silence also speaks"</p>
+                          </div>
+                          <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
+                            <p className="text-foreground italic">"Entre o glitch e o grão, existo"</p>
+                            <p className="text-muted-foreground italic">"Between glitch and grain, I exist"</p>
+                          </div>
+                          <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
+                            <p className="text-foreground italic">"O corpo é a câmera"</p>
+                            <p className="text-muted-foreground italic">"The body is the camera"</p>
+                          </div>
+                          <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
+                            <p className="text-foreground italic">"Toda criação é autocriação"</p>
+                            <p className="text-muted-foreground italic">"All creation is self-creation"</p>
+                          </div>
+                          <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
+                            <p className="text-foreground italic">"O ruído é a mensagem"</p>
+                            <p className="text-muted-foreground italic">"Noise is the message"</p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -497,22 +499,24 @@ const Index = () => {
           />
 
           {/* Shared Section - Architecture of Being */}
-          <div className="space-y-4 pt-12">
+          <div className="space-y-6 pt-12">
             <h2 className="heading-2 text-primary title-break">
               A Estrutura do Ser / The Architecture of the Being
             </h2>
-            <BilingualContent
-              portugueseContent={
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="space-y-2">
+                <p className="text-xs uppercase tracking-wider text-muted-foreground">PORTUGUÊS</p>
                 <p className="text-base text-justify leading-relaxed">
                   THE VOID N.13 não tem rosto, tem ritmo. Sua existência é feita de pulsos, não de poses. Cada gesto nasce do atrito entre o consciente e o que tenta emergir. Não se move para expressar, mas para liberar. O corpo é antena, não vitrine. É ali que o inconsciente encontra carne, respiração e peso. Um ser que não comunica – ressoa. Um corpo que existe apenas para traduzir o invisível em vibração.
                 </p>
-              }
-              englishContent={
+              </div>
+              <div className="space-y-2">
+                <p className="text-xs uppercase tracking-wider text-muted-foreground">ENGLISH</p>
                 <p className="text-base text-justify leading-relaxed">
                   THE VOID N.13 has no face, only rhythm. Its existence is made of pulses, not poses. Each gesture is born from the friction between the conscious and what tries to emerge. It doesn't move to express, but to release. The body is an antenna, not a showcase. There the unconscious finds flesh, breath and weight. A being that doesn't communicate – it resonates. A body that exists only to translate the invisible into vibration.
                 </p>
-              }
-            />
+              </div>
+            </div>
           </div>
         </BilingualSection>
 
