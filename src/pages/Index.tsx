@@ -204,6 +204,43 @@ const Index = () => {
           />
         </BilingualSection>
 
+        {/* Character Section with Action Figure */}
+        <BilingualSection>
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Text Content - Left Side */}
+            <div className="space-y-8">
+              <div className="space-y-6">
+                <p className="text-[11px] uppercase tracking-wider text-foreground/60 font-medium">PORTUGUÊS</p>
+                <div>
+                  <h2 className="text-base font-bold">O Personagem</h2>
+                  <p className="text-base text-justify leading-relaxed mt-2">
+                    THEVOIDN13 é uma entidade conceitual que habita o intervalo entre presença e ausência. Não é pessoa, não é símbolo: é o corpo da indefinição, a forma que o inconsciente assume quando precisa de voz. Surgiu como resposta ao ruído da autoafirmação, à ansiedade de ser visto. É silêncio vestido de som, sombra travestida de corpo. Existe para desaparecer, retornar transformado e desestabilizar qualquer gesto que se afirme com certeza. THEVOIDN13 é um duplo simbólico, uma presença fantasmagórica que atravessa o cotidiano e revela o que se esconde sob a superfície do comum.
+                  </p>
+                </div>
+              </div>
+              <div className="space-y-6">
+                <p className="text-[11px] uppercase tracking-wider text-foreground/60 font-medium">ENGLISH</p>
+                <div>
+                  <h2 className="text-base font-bold">The Character</h2>
+                  <p className="text-base text-justify leading-relaxed mt-2">
+                    THEVOIDN13 is a conceptual entity that inhabits the interval between presence and absence. It is neither person nor symbol: it is the body of indefinition, the form the unconscious assumes when it needs a voice. It emerged as a response to the noise of self-affirmation, to the anxiety of being seen. It is silence dressed in sound, shadow disguised as body. It exists to disappear, to return transformed, and to destabilize any gesture that asserts itself with certainty. THEVOIDN13 is a symbolic double, a ghostly presence that crosses the everyday and reveals what hides beneath the surface of the ordinary.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Action Figure Image - Right Side */}
+            <div className="flex items-center justify-center">
+              <div className="w-full border border-border rounded-lg overflow-hidden bg-background/50">
+                <img 
+                  src={actionFigure} 
+                  alt="THEVOIDN13 Action Figure" 
+                  className="w-full h-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-300"
+                />
+              </div>
+            </div>
+          </div>
+        </BilingualSection>
 
         {/* Triad: Vazio, 13, Coletivo */}
         <BilingualSection>
