@@ -302,184 +302,165 @@ const Index = () => {
             portugueseContent={
               <div className="space-y-12">
                 <div className="space-y-4">
-                  <h2 className="heading-2 text-primary title-break">Identidade Visual: A Sombra Jungiana</h2>
-                  <p className="text-base text-justify leading-relaxed">
+                  <h2 className="section-title">IDENTIDADE VISUAL: A SOMBRA JUNGIANA</h2>
+                  <p className="body-base text-justified">
                     A máscara é o espelho do que o ego não sustenta. A sombra emerge como forma, não como disfarce. Cada peça do vestígio – o casaco, o capuz, o passo – é um gesto de retorno. O corpo não atua: ele escuta o que o inconsciente quer dizer. O figurino é a tradução da psique em matéria, um corpo ritual criado para se tornar passagem. A indumentária deixa de ser proteção e se torna revelação. É o inconsciente vestindo o mundo, transformando o corpo em canal e a presença em linguagem.
                   </p>
                 </div>
 
-                <div className="text-center py-8 border-y border-primary/20">
-                  <p className="text-xl font-bold leading-relaxed text-primary">
+                <div className="text-center py-8">
+                  <p className="subsection-title text-primary">
                     THE VOID N.13 não é um personagem.<br />
                     É o lugar onde o criador se dissolve para que a imagem respire.
                   </p>
                 </div>
 
                 {/* Technical Specifications */}
-                <div className="pt-6 border-t border-border space-y-8">
+                <div className="pt-6 border-t border-border space-y-12">
                   <div>
-                    <h4 className="text-sm uppercase tracking-wide mb-4 text-primary">THEVOIDN13 — Paleta de Cores / Color Palette</h4>
+                    <h4 className="micro-title mb-4">THEVOIDN13 — Paleta de Cores / Color Palette</h4>
                     <div className="grid grid-cols-3 gap-4 mt-4">
                       <div className="space-y-2">
                         <div className="w-full h-20 rounded-lg" style={{ backgroundColor: '#0C0C0C' }}></div>
-                        <p className="text-xs text-center">#0C0C0C</p>
-                        <p className="text-xs text-center text-muted-foreground">Deep Void</p>
+                        <p className="micro-title text-center">#0C0C0C</p>
+                        <p className="micro-title text-center">Deep Void</p>
                       </div>
                       <div className="space-y-2">
                         <div className="w-full h-20 rounded-lg" style={{ backgroundColor: '#A32424' }}></div>
-                        <p className="text-xs text-center">#A32424</p>
-                        <p className="text-xs text-center text-muted-foreground">Blood Trauma</p>
+                        <p className="micro-title text-center">#A32424</p>
+                        <p className="micro-title text-center">Blood Trauma</p>
                       </div>
                       <div className="space-y-2">
                         <div className="w-full h-20 rounded-lg" style={{ backgroundColor: '#657C8C' }}></div>
-                        <p className="text-xs text-center">#657C8C</p>
-                        <p className="text-xs text-center text-muted-foreground">Urban Haze</p>
+                        <p className="micro-title text-center">#657C8C</p>
+                        <p className="micro-title text-center">Urban Haze</p>
                       </div>
                     </div>
                   </div>
 
-                  <div className="pt-8 space-y-8">
-                    <div className="space-y-6 p-6 bg-card/30 rounded-lg border border-primary/20">
-                      <h4 className="heading-4 text-primary mb-6">MATRIZ DE IDENTIDADE / IDENTITY MATRIX</h4>
-                      <div className="grid md:grid-cols-2 gap-12">
-                        <div className="space-y-3 text-base">
-                          <p className="text-foreground">
-                            <span className="text-primary font-medium">Codename:</span> O Décimo-Terceiro Andar
-                          </p>
-                          <p className="text-foreground">
-                            <span className="text-primary font-medium">Archetype:</span> A Sombra
-                          </p>
-                          <p className="text-foreground">
-                            <span className="text-primary font-medium">Nature:</span> Anti-herói introspectivo
-                          </p>
-                          <p className="text-foreground">
-                            <span className="text-primary font-medium">Function:</span> Tornar visível o invisível
-                          </p>
-                        </div>
-                        <div className="space-y-3 text-base">
-                          <p className="text-muted-foreground italic">
-                            <span className="text-primary/70 font-medium">Codename:</span> The Thirteenth Floor
-                          </p>
-                          <p className="text-muted-foreground italic">
-                            <span className="text-primary/70 font-medium">Archetype:</span> The Shadow
-                          </p>
-                          <p className="text-muted-foreground italic">
-                            <span className="text-primary/70 font-medium">Nature:</span> Introspective anti-hero
-                          </p>
-                          <p className="text-muted-foreground italic">
-                            <span className="text-primary/70 font-medium">Function:</span> Make visible the invisible
-                          </p>
-                        </div>
+                  <div className="space-y-6">
+                    <h4 className="section-title">MATRIZ DE IDENTIDADE / IDENTITY MATRIX</h4>
+                    <div className="grid md:grid-cols-2 gap-12">
+                      <div className="space-y-3">
+                        <p className="body-base">
+                          <span className="micro-title text-primary">Codename:</span> O Décimo-Terceiro Andar
+                        </p>
+                        <p className="body-base">
+                          <span className="micro-title text-primary">Archetype:</span> A Sombra
+                        </p>
+                        <p className="body-base">
+                          <span className="micro-title text-primary">Nature:</span> Anti-herói introspectivo
+                        </p>
+                        <p className="body-base">
+                          <span className="micro-title text-primary">Function:</span> Tornar visível o invisível
+                        </p>
+                      </div>
+                      <div className="space-y-3">
+                        <p className="body-base text-muted-foreground italic">
+                          <span className="micro-title text-primary">Codename:</span> The Thirteenth Floor
+                        </p>
+                        <p className="body-base text-muted-foreground italic">
+                          <span className="micro-title text-primary">Archetype:</span> The Shadow
+                        </p>
+                        <p className="body-base text-muted-foreground italic">
+                          <span className="micro-title text-primary">Nature:</span> Introspective anti-hero
+                        </p>
+                        <p className="body-base text-muted-foreground italic">
+                          <span className="micro-title text-primary">Function:</span> Make visible the invisible
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="space-y-6">
+                    <h4 className="section-title">ANATOMIA VISUAL / VISUAL ANATOMY</h4>
+                    <div className="grid md:grid-cols-2 gap-12">
+                      <div className="space-y-3">
+                        <p className="body-base">
+                          <span className="micro-title text-primary">Máscara:</span> Branca fosca, traços humanos mínimos, olhos vazios refletindo luz urbana
+                        </p>
+                        <p className="body-base">
+                          <span className="micro-title text-primary">Capuz/Boné:</span> Preto, estrutura geométrica simples
+                        </p>
+                        <p className="body-base">
+                          <span className="micro-title text-primary">Jaqueta:</span> Verde militar desbotada, textura de uso, bolsos funcionais
+                        </p>
+                        <p className="body-base">
+                          <span className="micro-title text-primary">Camiseta:</span> Preta oversized, tecido pesado
+                        </p>
+                        <p className="body-base">
+                          <span className="micro-title text-primary">Calça:</span> Moletom preto, corte reto, conforto urbano
+                        </p>
+                        <p className="body-base">
+                          <span className="micro-title text-primary">Tênis:</span> Vans preto, sola gasta, autenticidade do uso
+                        </p>
+                        <p className="body-base">
+                          <span className="micro-title text-primary">Postura:</span> Contida, peso no silêncio, presença por ausência
+                        </p>
+                      </div>
+                      <div className="space-y-3">
+                        <p className="body-base text-muted-foreground italic">
+                          <span className="micro-title text-primary">Mask:</span> Matte white, minimal human features, empty eyes reflecting urban light
+                        </p>
+                        <p className="body-base text-muted-foreground italic">
+                          <span className="micro-title text-primary">Hood/Cap:</span> Black, simple geometric structure
+                        </p>
+                        <p className="body-base text-muted-foreground italic">
+                          <span className="micro-title text-primary">Jacket:</span> Faded military green, worn texture, functional pockets
+                        </p>
+                        <p className="body-base text-muted-foreground italic">
+                          <span className="micro-title text-primary">T-Shirt:</span> Black oversized, heavy fabric
+                        </p>
+                        <p className="body-base text-muted-foreground italic">
+                          <span className="micro-title text-primary">Pants:</span> Black sweatpants, straight cut, urban comfort
+                        </p>
+                        <p className="body-base text-muted-foreground italic">
+                          <span className="micro-title text-primary">Sneakers:</span> Black Vans, worn sole, authenticity of use
+                        </p>
+                        <p className="body-base text-muted-foreground italic">
+                          <span className="micro-title text-primary">Posture:</span> Restrained, weight in silence, presence through absence
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="space-y-6">
+                      <h4 className="section-title">PAISAGEM SONORA / SONIC LANDSCAPE</h4>
+                      <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
+                        <p className="body-base">
+                          Ambiente urbano noturno: ruído branco da cidade, respiração controlada, passos em asfalto molhado, 
+                          sirenes distantes, reverb de vielas, chiado analógico, frequências graves contínuas
+                        </p>
+                        <p className="body-base text-muted-foreground italic">
+                          Nocturnal urban environment: white noise of the city, controlled breathing, steps on wet asphalt, 
+                          distant sirens, alley reverb, analog hiss, continuous low frequencies
+                        </p>
                       </div>
                     </div>
 
-                    <div className="space-y-6 p-6 bg-card/30 rounded-lg border border-primary/20">
-                      <h4 className="heading-4 text-primary mb-6">ANATOMIA VISUAL / VISUAL ANATOMY</h4>
-                      <div className="grid md:grid-cols-2 gap-12">
-                        <div className="space-y-3 text-base">
-                          <p className="text-foreground">
-                            <span className="text-primary font-medium">Máscara:</span> Branca fosca, traços humanos mínimos, olhos vazios refletindo luz urbana
-                          </p>
-                          <p className="text-foreground">
-                            <span className="text-primary font-medium">Capuz/Boné:</span> Preto, estrutura geométrica simples
-                          </p>
-                          <p className="text-foreground">
-                            <span className="text-primary font-medium">Jaqueta:</span> Verde militar desbotada, textura de uso, bolsos funcionais
-                          </p>
-                          <p className="text-foreground">
-                            <span className="text-primary font-medium">Camiseta:</span> Preta oversized, tecido pesado
-                          </p>
-                          <p className="text-foreground">
-                            <span className="text-primary font-medium">Calça:</span> Moletom preto, corte reto, conforto urbano
-                          </p>
-                          <p className="text-foreground">
-                            <span className="text-primary font-medium">Tênis:</span> Vans preto, sola gasta, autenticidade do uso
-                          </p>
-                          <p className="text-foreground">
-                            <span className="text-primary font-medium">Postura:</span> Contida, peso no silêncio, presença por ausência
-                          </p>
+                    <div className="space-y-6">
+                      <h4 className="section-title">AFORISMOS / APHORISMS</h4>
+                      <div className="space-y-4">
+                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
+                          <p className="body-base italic">"O silêncio também fala"</p>
+                          <p className="body-base text-muted-foreground italic">"Silence also speaks"</p>
                         </div>
-                        <div className="space-y-3 text-base">
-                          <p className="text-muted-foreground italic">
-                            <span className="text-primary/70 font-medium">Mask:</span> Matte white, minimal human features, empty eyes reflecting urban light
-                          </p>
-                          <p className="text-muted-foreground italic">
-                            <span className="text-primary/70 font-medium">Hood/Cap:</span> Black, simple geometric structure
-                          </p>
-                          <p className="text-muted-foreground italic">
-                            <span className="text-primary/70 font-medium">Jacket:</span> Faded military green, worn texture, functional pockets
-                          </p>
-                          <p className="text-muted-foreground italic">
-                            <span className="text-primary/70 font-medium">T-Shirt:</span> Black oversized, heavy fabric
-                          </p>
-                          <p className="text-muted-foreground italic">
-                            <span className="text-primary/70 font-medium">Pants:</span> Black sweatpants, straight cut, urban comfort
-                          </p>
-                          <p className="text-muted-foreground italic">
-                            <span className="text-primary/70 font-medium">Sneakers:</span> Black Vans, worn sole, authenticity of use
-                          </p>
-                          <p className="text-muted-foreground italic">
-                            <span className="text-primary/70 font-medium">Posture:</span> Restrained, weight in silence, presence through absence
-                          </p>
+                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
+                          <p className="body-base italic">"Entre o glitch e o grão, existo"</p>
+                          <p className="body-base text-muted-foreground italic">"Between glitch and grain, I exist"</p>
                         </div>
-                      </div>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 gap-6">
-                      <div className="space-y-6 p-6 bg-card/30 rounded-lg border border-primary/20 h-full flex flex-col">
-                        <h4 className="heading-4 text-primary">PAISAGEM SONORA / SONIC LANDSCAPE</h4>
-                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-2 text-base mb-6">
-                          <p className="text-foreground leading-relaxed">
-                            Ambiente urbano noturno: ruído branco da cidade, respiração controlada, passos em asfalto molhado, 
-                            sirenes distantes, reverb de vielas, chiado analógico, frequências graves contínuas
-                          </p>
-                          <p className="text-muted-foreground italic leading-relaxed">
-                            Nocturnal urban environment: white noise of the city, controlled breathing, steps on wet asphalt, 
-                            distant sirens, alley reverb, analog hiss, continuous low frequencies
-                          </p>
+                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
+                          <p className="body-base italic">"O corpo é a câmera"</p>
+                          <p className="body-base text-muted-foreground italic">"The body is the camera"</p>
                         </div>
-                        <div className="grid grid-cols-3 gap-4 flex-1">
-                          <div className="space-y-2">
-                            <p className="font-medium text-primary">Visual</p>
-                            <p className="text-sm text-foreground">Grão de filme / Textura ink / Contraste alto</p>
-                            <p className="text-sm text-muted-foreground italic">Film grain / Ink texture / High contrast</p>
-                          </div>
-                          <div className="space-y-2">
-                            <p className="font-medium text-primary">Sônico</p>
-                            <p className="text-sm text-foreground">Chiado analógico / Reverb urbano / Frequências graves</p>
-                            <p className="text-sm text-muted-foreground italic">Analog hiss / Urban reverb / Low frequencies</p>
-                          </div>
-                          <div className="space-y-2">
-                            <p className="font-medium text-primary">Tátil</p>
-                            <p className="text-sm text-foreground">Asfalto molhado / Concreto frio / Metal oxidado</p>
-                            <p className="text-sm text-muted-foreground italic">Wet asphalt / Cold concrete / Oxidized metal</p>
-                          </div>
+                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
+                          <p className="body-base italic">"Toda criação é autocriação"</p>
+                          <p className="body-base text-muted-foreground italic">"All creation is self-creation"</p>
                         </div>
-                      </div>
-
-                      <div className="space-y-6 p-6 bg-card/30 rounded-lg border border-primary/20 h-full flex flex-col">
-                        <h4 className="heading-4 text-primary">AFORISMOS / APHORISMS</h4>
-                        <div className="space-y-4 text-base flex-1 flex flex-col justify-center">
-                          <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
-                            <p className="text-foreground italic">"O silêncio também fala"</p>
-                            <p className="text-muted-foreground italic">"Silence also speaks"</p>
-                          </div>
-                          <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
-                            <p className="text-foreground italic">"Entre o glitch e o grão, existo"</p>
-                            <p className="text-muted-foreground italic">"Between glitch and grain, I exist"</p>
-                          </div>
-                          <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
-                            <p className="text-foreground italic">"O corpo é a câmera"</p>
-                            <p className="text-muted-foreground italic">"The body is the camera"</p>
-                          </div>
-                          <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
-                            <p className="text-foreground italic">"Toda criação é autocriação"</p>
-                            <p className="text-muted-foreground italic">"All creation is self-creation"</p>
-                          </div>
-                          <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
-                            <p className="text-foreground italic">"O ruído é a mensagem"</p>
-                            <p className="text-muted-foreground italic">"Noise is the message"</p>
-                          </div>
+                        <div className="grid md:grid-cols-2 gap-x-8 gap-y-2">
+                          <p className="body-base italic">"O ruído é a mensagem"</p>
+                          <p className="body-base text-muted-foreground italic">"Noise is the message"</p>
                         </div>
                       </div>
                     </div>
@@ -490,14 +471,14 @@ const Index = () => {
             englishContent={
               <div className="space-y-12">
                 <div className="space-y-4">
-                  <h2 className="heading-2 text-primary title-break">Visual Identity: The Jungian Shadow</h2>
-                  <p className="text-base text-justify leading-relaxed">
+                  <h2 className="section-title">VISUAL IDENTITY: THE JUNGIAN SHADOW</h2>
+                  <p className="body-base text-justified">
                     The mask is the mirror of what the ego cannot hold. The shadow emerges as form, not as disguise. Each trace – the jacket, the hood, the step – is a gesture of return. The body does not act; it listens to what the unconscious wants to say. The attire is the psyche translated into matter, a ritual body created to become a passage. Clothing ceases to protect and begins to reveal. It is the unconscious dressing the world, turning the body into a channel and presence into language.
                   </p>
                 </div>
 
-                <div className="text-center py-8 border-y border-primary/20">
-                  <p className="text-xl font-bold leading-relaxed text-primary">
+                <div className="text-center py-8">
+                  <p className="subsection-title text-primary">
                     THE VOID N.13 is not a character.<br />
                     It is the place where the creator dissolves so the image can breathe.
                   </p>
@@ -508,19 +489,19 @@ const Index = () => {
 
           {/* Shared Section - Architecture of Being */}
           <div className="space-y-6 pt-12">
-            <h2 className="heading-2 text-primary title-break">
-              A Estrutura do Ser / The Architecture of the Being
+            <h2 className="section-title">
+              A ESTRUTURA DO SER / THE ARCHITECTURE OF THE BEING
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-2">
-                <p className="text-xs uppercase tracking-wider text-muted-foreground">PORTUGUÊS</p>
-                <p className="text-base text-justify leading-relaxed">
+                <p className="label-small text-muted-foreground">PORTUGUÊS</p>
+                <p className="body-base text-justified">
                   THE VOID N.13 não tem rosto, tem ritmo. Sua existência é feita de pulsos, não de poses. Cada gesto nasce do atrito entre o consciente e o que tenta emergir. Não se move para expressar, mas para liberar. O corpo é antena, não vitrine. É ali que o inconsciente encontra carne, respiração e peso. Um ser que não comunica – ressoa. Um corpo que existe apenas para traduzir o invisível em vibração.
                 </p>
               </div>
               <div className="space-y-2">
-                <p className="text-xs uppercase tracking-wider text-muted-foreground">ENGLISH</p>
-                <p className="text-base text-justify leading-relaxed">
+                <p className="label-small text-muted-foreground">ENGLISH</p>
+                <p className="body-base text-justified">
                   THE VOID N.13 has no face, only rhythm. Its existence is made of pulses, not poses. Each gesture is born from the friction between the conscious and what tries to emerge. It doesn't move to express, but to release. The body is an antenna, not a showcase. There the unconscious finds flesh, breath and weight. A being that doesn't communicate – it resonates. A body that exists only to translate the invisible into vibration.
                 </p>
               </div>
@@ -532,8 +513,8 @@ const Index = () => {
         <BilingualSection>
           <div className="space-y-12">
             <div className="space-y-2 text-center">
-              <h2 className="heading-2 text-primary title-break">um corpo à deriva entre o ruído e o silêncio</h2>
-              <h3 className="text-base text-muted-foreground italic">a body adrift between noise and silence</h3>
+              <h2 className="section-title">UM CORPO À DERIVA ENTRE O RUÍDO E O SILÊNCIO</h2>
+              <h3 className="micro-title text-muted-foreground">a body adrift between noise and silence</h3>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -602,20 +583,20 @@ const Index = () => {
         {/* Psychology: The Shadow as Language */}
         <section className="py-20 bg-red-900">
           <div className="max-w-6xl mx-auto px-6 space-y-12">
-            <div className="space-y-4 text-center">
-              <h2 className="heading-1 text-white uppercase title-break">Psicologia: A Sombra Como Linguagem</h2>
-              <p className="text-base italic text-white/90">Psychology: The Shadow as Language</p>
-            </div>
+              <div className="space-y-4 text-center">
+                <h2 className="section-title text-white">PSICOLOGIA: A SOMBRA COMO LINGUAGEM</h2>
+                <p className="micro-title text-white/90">Psychology: The Shadow as Language</p>
+              </div>
 
-            <div className="space-y-6">
-              <p className="text-base leading-relaxed text-white text-justify">
-                O Void é sombra, e a sombra é tudo o que o ego não consegue sustentar. Jung dizia que ela não é o mal — é o que ainda não foi vivido. Talvez o projeto seja exatamente isso: uma tentativa de viver o que eu vinha evitando. Dar forma àquilo que o mundo me ensinou a esconder. A sombra é a memória do que não se permitiu existir — e o cinema, aqui, é o corpo dessa revelação.
-              </p>
+              <div className="space-y-6">
+                <p className="body-base text-justified text-white">
+                  O Void é sombra, e a sombra é tudo o que o ego não consegue sustentar. Jung dizia que ela não é o mal — é o que ainda não foi vivido. Talvez o projeto seja exatamente isso: uma tentativa de viver o que eu vinha evitando. Dar forma àquilo que o mundo me ensinou a esconder. A sombra é a memória do que não se permitiu existir — e o cinema, aqui, é o corpo dessa revelação.
+                </p>
 
-              <p className="text-base leading-relaxed text-white/90 italic text-justify">
-                The Void is shadow, and the shadow is everything the ego cannot sustain. Jung said it is not evil — it is what has not yet been lived. Perhaps this project is exactly that: an attempt to live what I had been avoiding. The shadow is the memory of what was never allowed to exist — and cinema, here, is the body of that revelation.
-              </p>
-            </div>
+                <p className="body-base text-justified text-white/90 italic">
+                  The Void is shadow, and the shadow is everything the ego cannot sustain. Jung said it is not evil — it is what has not yet been lived. Perhaps this project is exactly that: an attempt to live what I had been avoiding. The shadow is the memory of what was never allowed to exist — and cinema, here, is the body of that revelation.
+                </p>
+              </div>
 
             {/* Four Pillars */}
             <div className="mt-12">
@@ -630,13 +611,13 @@ const Index = () => {
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mt-8">
                 {/* SOMBRA */}
                 <div className="text-center space-y-4">
-                  <h3 className="text-sm font-bold text-white uppercase">SOMBRA</h3>
-                  <p className="text-xs italic text-white/80">SHADOW</p>
+                  <h3 className="micro-title text-white">SOMBRA</h3>
+                  <p className="micro-title text-white/80">SHADOW</p>
                   <div className="space-y-3">
-                    <p className="text-sm leading-relaxed text-white">
+                    <p className="body-base text-white">
                       A sombra é o que o ego reprime. É onde mora o desejo sem permissão, o pensamento que não coube. Não é monstruosa — é inédita. Revelá-la é aceitar que o ser é maior que a consciência. O Void nasce ali: onde a forma aceita se desfazer.
                     </p>
-                    <p className="text-xs leading-relaxed text-white/75 italic">
+                    <p className="body-base text-white/75 italic">
                       The shadow is what the ego represses. It's where forbidden desire resides, the thought that didn't fit. It's not monstrous — it's unprecedented. To reveal it is to accept that being is greater than consciousness. The Void is born there: where form accepts dissolution.
                     </p>
                   </div>
@@ -644,13 +625,13 @@ const Index = () => {
 
                 {/* SILÊNCIO */}
                 <div className="text-center space-y-4">
-                  <h3 className="text-sm font-bold text-white uppercase">SILÊNCIO</h3>
-                  <p className="text-xs italic text-white/80">SILENCE</p>
+                  <h3 className="micro-title text-white">SILÊNCIO</h3>
+                  <p className="micro-title text-white/80">SILENCE</p>
                   <div className="space-y-3">
-                    <p className="text-sm leading-relaxed text-white">
+                    <p className="body-base text-white">
                       O silêncio não é ausência de som. É o espaço onde o pensamento ainda vibra sem palavra. No silêncio, o corpo ouve. É ali que o inconsciente fala — não em voz, mas em pressão, em peso, em pausa. O silêncio do Void é denso como concreto e afiado como vidro.
                     </p>
-                    <p className="text-xs leading-relaxed text-white/75 italic">
+                    <p className="body-base text-white/75 italic">
                       Silence isn't the absence of sound. It's the space where thought still vibrates wordlessly. In silence, the body listens. It's there that the unconscious speaks — not in voice, but in pressure, in weight, in pause. The Void's silence is dense as concrete and sharp as glass.
                     </p>
                   </div>
@@ -658,13 +639,13 @@ const Index = () => {
 
                 {/* RUÍDO */}
                 <div className="text-center space-y-4">
-                  <h3 className="text-sm font-bold text-white uppercase">RUÍDO</h3>
-                  <p className="text-xs italic text-white/80">NOISE</p>
+                  <h3 className="micro-title text-white">RUÍDO</h3>
+                  <p className="micro-title text-white/80">NOISE</p>
                   <div className="space-y-3">
-                    <p className="text-sm leading-relaxed text-white">
+                    <p className="body-base text-white">
                       O ruído não interrompe o pensamento — ele o revela. O som é a forma mais bruta do inconsciente tentando existir. O que vibra no limite do audível é o que não pode ser dito. O ruído é memória viva daquilo que ainda não encontrou palavra.
                     </p>
-                    <p className="text-xs leading-relaxed text-white/75 italic">
+                    <p className="body-base text-white/75 italic">
                       Noise doesn't interrupt thought — it reveals it. Sound is the rawest form of the unconscious trying to exist. What vibrates at the edge of the audible is what cannot yet be said. Noise is the living memory of what has not yet found a word.
                     </p>
                   </div>
