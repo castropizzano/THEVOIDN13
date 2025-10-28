@@ -5,9 +5,16 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Loader2, Sparkles, Download } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
+import { z } from "zod";
 
 const EXAMPLE_SCRIPT = `CENA 1 — O CAMINHO FRIO
 Tattooed man with black cap (no hood), green military jacket, oversized black t-shirt, black sweatpants and black Vans sneakers walks beside a short-haired woman in dark jacket and jeans at night. Between them, a small Jack Russell puppy in a yellow raincoat trots along the wet street. Empty urban alley, amber streetlights reflecting on soaked asphalt, blue mist drifting through distant buildings, soft rain haze.`;
+
+const scriptSchema = z.string()
+  .trim()
+  .min(10, "Roteiro muito curto (mín. 10 caracteres) / Script too short (min 10 chars)")
+  .max(2000, "Roteiro muito longo (máx. 2000 caracteres) / Script too long (max 2000 chars)")
+  .regex(/^[\w\s.,!?'"\-—()áéíóúâêôãõçÁÉÍÓÚÂÊÔÃÕÇ]+$/, "Caracteres inválidos no roteiro / Invalid characters in script");
 
 export const ComicGenerator = () => {
   const [script, setScript] = useState("");
@@ -15,8 +22,10 @@ export const ComicGenerator = () => {
   const [isGenerating, setIsGenerating] = useState(false);
 
   const handleGenerate = async () => {
-    if (!script.trim()) {
-      toast.error("Por favor, insira um roteiro / Please enter a script");
+    // Validate input
+    const validation = scriptSchema.safeParse(script);
+    if (!validation.success) {
+      toast.error(validation.error.errors[0].message);
       return;
     }
 
@@ -25,7 +34,7 @@ export const ComicGenerator = () => {
 
     try {
       const { data, error } = await supabase.functions.invoke("generate-comic-panel", {
-        body: { script: script.trim() }
+        body: { script: validation.data }
       });
 
       if (error) throw error;
@@ -37,8 +46,13 @@ export const ComicGenerator = () => {
         throw new Error("No image generated");
       }
     } catch (error: any) {
-      console.error("Error generating comic:", error);
-      toast.error(error.message || "Erro ao gerar tirinha / Error generating comic panel");
+      if (error.message?.includes("Rate limit")) {
+        toast.error("Limite de requisições excedido / Rate limit exceeded");
+      } else if (error.message?.includes("Payment required")) {
+        toast.error("Créditos insuficientes / Insufficient credits");
+      } else {
+        toast.error(error.message || "Erro ao gerar tirinha / Error generating comic panel");
+      }
     } finally {
       setIsGenerating(false);
     }

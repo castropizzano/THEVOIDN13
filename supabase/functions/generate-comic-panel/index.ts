@@ -21,8 +21,37 @@ serve(async (req) => {
   try {
     const { script } = await req.json();
     
-    if (!script) {
-      throw new Error("Script is required");
+    // Server-side validation
+    if (!script || typeof script !== 'string') {
+      return new Response(
+        JSON.stringify({ error: "Script is required and must be a string" }),
+        { headers: { ...corsHeaders, 'Content-Type': 'application/json' }, status: 400 }
+      );
+    }
+
+    const trimmedScript = script.trim();
+    
+    if (trimmedScript.length < 10) {
+      return new Response(
+        JSON.stringify({ error: "Script too short (minimum 10 characters)" }),
+        { headers: { ...corsHeaders, 'Content-Type': 'application/json' }, status: 400 }
+      );
+    }
+
+    if (trimmedScript.length > 2000) {
+      return new Response(
+        JSON.stringify({ error: "Script too long (maximum 2000 characters)" }),
+        { headers: { ...corsHeaders, 'Content-Type': 'application/json' }, status: 400 }
+      );
+    }
+
+    // Validate characters (allow common characters including Portuguese)
+    const validCharPattern = /^[\w\s.,!?'"\-—()áéíóúâêôãõçÁÉÍÓÚÂÊÔÃÕÇ]+$/;
+    if (!validCharPattern.test(trimmedScript)) {
+      return new Response(
+        JSON.stringify({ error: "Script contains invalid characters" }),
+        { headers: { ...corsHeaders, 'Content-Type': 'application/json' }, status: 400 }
+      );
     }
 
     const LOVABLE_API_KEY = Deno.env.get('LOVABLE_API_KEY');
@@ -31,7 +60,7 @@ serve(async (req) => {
     }
 
     // Combine master prompt with user script
-    const fullPrompt = `${MASTER_PROMPT_BASE}\n\nScene: ${script}`;
+    const fullPrompt = `${MASTER_PROMPT_BASE}\n\nScene: ${trimmedScript}`;
 
     console.log("Generating comic panel with Nano Banana...");
     
