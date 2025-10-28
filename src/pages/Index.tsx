@@ -245,9 +245,9 @@ const Index = () => {
                   </p>
                 </div>
                 <div>
-                  <h2 className="text-base font-bold">CasaTrezeStudio</h2>
+                  <h2 className="text-base font-bold">CASATREZESTUDIO</h2>
                   <p className="text-base text-justify leading-relaxed mt-2">
-                    The underground signature that has followed me for years. An invisible seal, born in the underground where all that's alive hides. CasaTreze is not a brand, it is ritual. A symbolic community of those who create in darkness and call it light.
+                    The underground signature that has followed me for years. An invisible seal, born in the underground where all that's alive hides. A symbolic community of those who create in darkness and call it light.
                   </p>
                 </div>
               </div>
@@ -277,10 +277,6 @@ const Index = () => {
             }
           />
         </BilingualSection>
-
-        <section className="w-full h-screen overflow-hidden">
-          <img src={roughs000} alt="Sketches" className="w-full h-full object-contain" />
-        </section>
 
         {/* A Voz do Vazio */}
         <BilingualSection>
