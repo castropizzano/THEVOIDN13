@@ -1,13 +1,19 @@
 import { Link, useLocation } from "react-router-dom";
+import { useAuth } from "@/hooks/useAuth";
 
 const Header = () => {
   const location = useLocation();
+  const { isAdmin } = useAuth();
   
   const navItems = [
     { path: "/dissertacao", label: "LOWMOVIE™" },
     { path: "/autor", label: "AUTHOR" },
     { path: "/videos", label: "VIDEO PORTFOLIO" },
   ];
+  
+  if (isAdmin) {
+    navItems.push({ path: "/admin", label: "ADMIN" });
+  }
   
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm">

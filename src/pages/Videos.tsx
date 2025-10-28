@@ -21,6 +21,7 @@ interface Video {
 
 const Videos = () => {
   const [videos, setVideos] = useState<Video[]>([]);
+  const [videoSettings, setVideoSettings] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedVideo, setSelectedVideo] = useState<Video | null>(null);
   const { toast } = useToast();
@@ -44,7 +45,14 @@ const Videos = () => {
         return;
       }
 
+      const { data: settings } = await supabase
+        .from('video_settings')
+        .select('vimeo_id, is_visible, is_featured, display_order')
+        .eq('is_visible', true)
+        .order('display_order', { ascending: true });
+
       setVideos(data.videos || []);
+      setVideoSettings(settings || []);
     } catch (error) {
       console.error('Error:', error);
       toast({
@@ -81,17 +89,25 @@ const Videos = () => {
     );
   }
 
-  // Select random video for featured section
-  const featuredVideo = videos.length > 0 
-    ? videos[Math.floor(Math.random() * videos.length)]
-    : null;
+  // Apply video settings
+  const visibleVideoIds = new Set(videoSettings.map(v => v.vimeo_id));
+  const featuredSetting = videoSettings.find(v => v.is_featured);
   
-  // Catalog shows all videos except the featured one, sorted by date
-  const catalogVideos = videos.length > 1 
-    ? videos
-        .filter(v => v.id !== featuredVideo?.id)
-        .sort((a, b) => new Date(b.createdTime).getTime() - new Date(a.createdTime).getTime())
-    : [];
+  const visibleVideos = videoSettings.length > 0
+    ? videos.filter(v => visibleVideoIds.has(v.id))
+    : videos;
+
+  const featuredVideo = featuredSetting
+    ? visibleVideos.find(v => v.id === featuredSetting.vimeo_id) || visibleVideos[0]
+    : visibleVideos[Math.floor(Math.random() * visibleVideos.length)];
+
+  const catalogVideos = visibleVideos
+    .filter(v => v.id !== featuredVideo?.id)
+    .sort((a, b) => {
+      const orderA = videoSettings.find(s => s.vimeo_id === a.id)?.display_order ?? 999;
+      const orderB = videoSettings.find(s => s.vimeo_id === b.id)?.display_order ?? 999;
+      return orderA - orderB;
+    });
 
   return (
     <div className="min-h-screen bg-background text-foreground">
