@@ -1,7 +1,7 @@
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";
 
 const corsHeaders = {
-  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Origin': 'https://thevoidn13.lovableproject.com',
   'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
 };
 
@@ -15,10 +15,10 @@ serve(async (req) => {
     const vimeoToken = Deno.env.get('VIMEO_ACCESS_TOKEN');
     
     if (!vimeoToken) {
-      console.error('VIMEO_ACCESS_TOKEN not found');
+      console.error('[VIMEO] Configuration error: Access token not found');
       return new Response(
-        JSON.stringify({ error: 'Vimeo token not configured' }),
-        { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+        JSON.stringify({ error: 'Unable to load videos' }),
+        { status: 503, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
       );
     }
 
@@ -33,12 +33,12 @@ serve(async (req) => {
     });
 
     if (!response.ok) {
-      console.error('Vimeo API error:', response.status, response.statusText);
+      console.error('[VIMEO] API request failed:', response.status, response.statusText);
       const errorText = await response.text();
-      console.error('Error details:', errorText);
+      console.error('[VIMEO] Response details:', errorText);
       return new Response(
-        JSON.stringify({ error: 'Failed to fetch videos from Vimeo' }),
-        { status: response.status, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+        JSON.stringify({ error: 'Unable to load videos' }),
+        { status: 503, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
       );
     }
 
@@ -68,12 +68,13 @@ serve(async (req) => {
     );
 
   } catch (error) {
-    console.error('Error in vimeo-videos function:', error);
-    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+    console.error('[VIMEO] Function error:', error);
+    const errorDetails = error instanceof Error ? error.message : 'Unknown error';
+    console.error('[VIMEO] Error details:', errorDetails);
     return new Response(
-      JSON.stringify({ error: errorMessage }),
+      JSON.stringify({ error: 'Unable to load videos' }),
       { 
-        status: 500, 
+        status: 503, 
         headers: { ...corsHeaders, 'Content-Type': 'application/json' } 
       }
     );
