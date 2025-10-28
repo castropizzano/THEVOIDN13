@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SEO, breadcrumbSchema } from "@/components/SEO";
 import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
+import { BackToTop } from "@/components/BackToTop";
 import { supabase } from "@/integrations/supabase/client";
 import { Play, Clock, ExternalLink } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
@@ -98,6 +99,7 @@ const Videos = () => {
     return (
       <div className="min-h-screen bg-background text-foreground">
         <Header />
+        <BackToTop />
         <main className="container mx-auto px-4 py-20">
           <div className="flex items-center justify-center min-h-[60vh]">
             <div className="text-center space-y-4">
@@ -139,6 +141,7 @@ const Videos = () => {
         schemaData={schemaData}
       />
       <Header />
+      <BackToTop />
       
       <main>
         {/* Featured Video - Full Screen */}

@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SEO, breadcrumbSchema } from "@/components/SEO";
 import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
+import { BackToTop } from "@/components/BackToTop";
 import { MusicPlayer } from "@/components/MusicPlayer";
 import { PodcastPlayer } from "@/components/PodcastPlayer";
 import { Timeline } from "@/components/Timeline";
@@ -53,6 +54,7 @@ const Dissertacao = () => {
         schemaData={schemaData}
       />
       <Header />
+      <BackToTop />
       
       <main>
         {/* Hero Image */}

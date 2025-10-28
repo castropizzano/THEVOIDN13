@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SEO, personSchema, breadcrumbSchema } from "@/components/SEO";
 import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
+import { BackToTop } from "@/components/BackToTop";
 import heroImage from "@/assets/castro-hero-new.png";
 import antibrandImage from "@/assets/antibrand-hero.png";
 
@@ -25,6 +26,7 @@ const Autor = () => {
         type="profile"
       />
       <Header />
+      <BackToTop />
       
       <main>
         {/* Hero Image */}

@@ -8,6 +8,7 @@ import { AudioPlayer } from "@/components/AudioPlayer";
 import { ComicGenerator } from "@/components/ComicGenerator";
 import { MindMap } from "@/components/MindMap";
 import { CreativeOracle } from "@/components/CreativeOracle";
+import { BackToTop } from "@/components/BackToTop";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import heroImage from "@/assets/hero-concept-art.png";
@@ -58,6 +59,7 @@ const Index = () => {
       />
       <Header />
       <CreativeOracle open={oracleOpen} onOpenChange={setOracleOpen} />
+      <BackToTop />
       
       <main>
         {/* ===== HERO & INTRODUCTION ===== */}
@@ -67,12 +69,12 @@ const Index = () => {
           <img src={heroImage} alt="THEVOIDN13" className="w-full h-full object-contain" />
         </section>
 
-        {/* Audio Player - Projeto */}
+        {/* Audio Player - Análise */}
         <section className="py-12 bg-card/30">
-          <div className="max-w-4xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6">
             <AudioPlayer
               src="/audio/thevoidn13-projeto.mp3"
-              title="THEVOIDN13 — Áudio Projeto"
+              title="THEVOIDN13 | ANÁLISE / ANALYSIS"
               description="Narração conceitual do projeto / Conceptual project narration"
             />
           </div>
@@ -80,11 +82,7 @@ const Index = () => {
 
         {/* Video Section */}
         <section className="py-20">
-          <div className="max-w-6xl mx-auto px-6 space-y-8">
-            <h1 className="text-sm font-light tracking-wider uppercase">
-              THEVOIDN13 [Shadow_Interface_Bible_v13]
-            </h1>
-            
+          <div className="max-w-6xl mx-auto px-6 space-y-6">
             <video 
               className="w-full aspect-video bg-black rounded-lg overflow-hidden"
               controls
@@ -94,10 +92,15 @@ const Index = () => {
               Your browser does not support the video tag.
             </video>
             
-            <p className="text-xs font-light tracking-wide text-muted-foreground text-center">
-              [um corpo à deriva entre o ruído e o silêncio]{" "}
-              <span className="italic">[a body adrift between noise and silence]</span>
-            </p>
+            <div className="space-y-2 text-center">
+              <h1 className="text-sm font-light tracking-wider uppercase">
+                THEVOIDN13 [Shadow_Interface_Bible_v13]
+              </h1>
+              <p className="text-xs font-light tracking-wide text-muted-foreground">
+                [um corpo à deriva entre o ruído e o silêncio]{" "}
+                <span className="italic">[a body adrift between noise and silence]</span>
+              </p>
+            </div>
           </div>
         </section>
 
