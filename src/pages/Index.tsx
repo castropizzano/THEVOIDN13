@@ -43,6 +43,8 @@ import meditationScene from "@/assets/meditation-scene.png";
 import meditationRainScene from "@/assets/meditation-rain-scene.png";
 import maskVoid from "@/assets/mask-void.png";
 import voidStreetScene from "@/assets/void-street-scene.png";
+import logoBlackAlpha from "@/assets/logo-black-alpha.png";
+import logoWhiteOnBlack from "@/assets/logo-white-on-black.png";
 
 const Index = () => {
   const [oracleOpen, setOracleOpen] = useState(false);
@@ -274,6 +276,14 @@ const Index = () => {
         <BilingualSection className="py-20">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-12">
+              <div className="flex justify-center mb-12">
+                <img 
+                  src={logoWhiteOnBlack} 
+                  alt="THEVØIDN13 Logo" 
+                  className="w-64 md:w-80 h-auto"
+                />
+              </div>
+              
               <div className="space-y-6">
                 <p className="label-small text-muted-foreground">PORTUGUÊS</p>
                 <h2 className="section-title">O PERSONAGEM</h2>
