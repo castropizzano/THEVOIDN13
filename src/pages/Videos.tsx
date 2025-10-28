@@ -239,14 +239,9 @@ const Videos = () => {
                     {formatDuration(video.duration)}
                   </div>
                 </div>
-                <h3 className="body-base font-medium line-clamp-2 group-hover:text-primary transition-colors">
+                <h3 className="body-base font-medium truncate group-hover:text-primary transition-colors">
                   {video.name}
                 </h3>
-                {video.description && (
-                  <p className="body-small text-muted-foreground line-clamp-2 mt-1">
-                    {video.description}
-                  </p>
-                )}
                 <a
                   href={video.link}
                   target="_blank"
