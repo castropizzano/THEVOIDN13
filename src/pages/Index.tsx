@@ -770,53 +770,57 @@ const Index = () => {
         </section>
 
         {/* Coautoria Simbólica com IA */}
-        <BilingualSection>
-          <BilingualContent
-            portugueseContent={
-              <div className="space-y-8">
-                <h2 className="text-base font-bold">Coautoria Simbólica / Integração com IA</h2>
-                <p className="text-base text-justify leading-relaxed">
-                  Nos bastidores do THEVOIDN13, a inteligência artificial revelou-se uma cúmplice silenciosa e potente. Assumindo a lógica de um projeto homem orquestra, abracei a IA como parte da metodologia criativa, uma extensão digital do meu processo solitário de criação. A IA permanece como coautora invisível que nunca ofusca a essência do projeto.
-                </p>
-                <div className="space-y-6 mt-6">
-                  <div>
-                    <h4 className="text-base font-bold">Expansão Visual</h4>
-                    <p className="text-base text-justify leading-relaxed mt-2">
-                      A IA generativa expandiu minha paleta visual de formas inimagináveis. Cada visual criado por esse diálogo humano máquina carregava a mesma aura onírica e intensa do universo do Void.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="text-base font-bold">Voz e Ruído</h4>
-                    <p className="text-base text-justify leading-relaxed mt-2">
-                      A IA também emprestou voz e ruído ao silêncio do projeto. Vozes sintéticas emergiram para dar fala ao indizível, tornando-se reflexo binário do Vazio.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            }
-            englishContent={
-              <div className="space-y-8">
-                <h2 className="text-base font-bold">Symbolic Co-authorship / Integration with AI</h2>
-                <p className="text-base text-justify leading-relaxed">
-                  Behind the scenes of THEVOIDN13, artificial intelligence has revealed itself as a silent yet potent accomplice. Adopting the logic of a one-man-band project, I embraced AI as part of my creative methodology, a digital extension of my solitary creative process. AI remains an invisible co-author that never overshadows the project's essence.
-                </p>
-                <div className="space-y-6 mt-6">
-                  <div>
-                    <h4 className="text-base font-bold">Visual Expansion</h4>
-                    <p className="text-base text-justify leading-relaxed mt-2">
-                      Generative AI expanded my visual palette in unimaginable ways. Each visual created by this human machine dialogue carried the same dreamlike and intense aura of the Void universe.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="text-base font-bold">Voice and Noise</h4>
-                    <p className="text-base text-justify leading-relaxed mt-2">
-                      AI also lent voice and noise to the project's silence. Synthetic voices emerged to give speech to the unspeakable, becoming a binary reflection of the Void.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            }
-          />
+        <BilingualSection bgClassName="bg-red-900 text-white">
+          <div className="space-y-8">
+            <div className="space-y-2">
+              <h2 className="text-base font-bold">Coautoria Simbólica - Integração com IA</h2>
+              <p className="text-sm italic text-white/75">Symbolic Co-authorship - Integration with AI</p>
+            </div>
+
+            <div className="space-y-6 text-base text-justify leading-relaxed">
+              <p>
+                Nos bastidores do THE VOID N13, a inteligência artificial revelou-se uma cúmplice silenciosa e potente. Assumindo a lógica de um projeto <span className="font-semibold">homem-orquestra</span>, abracei a IA como parte da metodologia criativa — uma extensão digital do meu processo solitário de criação. Por meio de plataformas de vanguarda — especialmente o <span className="font-semibold">Google AI Studio</span> e ferramentas afins — integrei algoritmos generativos em cada etapa do processo artístico, ampliando as fronteiras do possível em minha arte.
+              </p>
+
+              <p>
+                A <span className="font-semibold">IA generativa</span> expandiu minha paleta visual de formas inimagináveis. A partir de comandos de texto (prompts), passei a gerar imagens que davam corpo ao <span className="font-semibold">invisível</span> — de elementos brutos (<span className="italic">assets</span> visuais) e texturas abstratas a cenas inteiras que antes existiam apenas em meu inconsciente. Cada visual criado por esse diálogo humano máquina carregava a mesma aura onírica e intensa do universo do Void, transformando ideias etéreas em visões tangíveis.
+              </p>
+
+              <p>
+                A IA também emprestou voz e ruído ao silêncio do projeto. <span className="font-semibold">Vozes sintéticas</span>, cada qual com personalidade própria, emergiram para dar fala ao indizível — como se o Void sussurrasse por múltiplas gargantas digitais. Em paralelo, <span className="font-semibold">sons e ruídos</span> gerados algoritmicamente costuram a atmosfera: do sussurro elétrico ao trovão distante, preencheram o vazio acústico com camadas de tensão e devaneio. O resultado é uma paisagem sonora que respira junto com as imagens, intensificando a imersão no caos poético do projeto.
+              </p>
+
+              <p>
+                Até no domínio das palavras, a inteligência artificial atuou como coautora simbólica. <span className="font-semibold">Roteiros e descrições atmosféricas</span> foram desenvolvidos em parceria com algoritmos, que ajudaram a deliminar cenas e narrativas com a mesma poesia fragmentada característica do THE VOID N13. <span className="font-semibold">Fragmentos de texto</span> — frases quebradas, micro-manifestos — também emergiram desse diálogo entre humano e máquina, surgindo como ecos conceituais alinhados ao manifesto e 'arquitetura de ser' do Void. Em cada frase gerada através da co-criação, a IA espelhava discretamente a voz filosófica do projeto, reforçando seus temas sem violar sua essência.
+              </p>
+
+              <p>
+                Nessa co-criação com a máquina, a IA permanece uma coautora <span className="font-semibold">invisível</span> que jamais ofusca a essência do projeto. Em vez de subverter a estética do THE VOID N13, ela a intensifica em silêncio — respeitando o tom lírico-conceitual, o ritmo fragmentado e a linguagem de sombras que definem esta obra. Cada interação homem-máquina torna-se um ritual discreto de criação, em que os algoritmos oferecem sugestões e ecos, mas é o inconsciente do criador que continua a guiar a sintonia. Assim, a inteligência artificial se faz presente como espelho digital do meu impulso criativo — um reflexo binário do Vazio que <span className="font-semibold">coescreve sem rosto</span>, transformando o silêncio em substância e afirmando, neste desfecho, a ideia de que até o vazio pode ter uma inteligência sussurrante.
+              </p>
+            </div>
+
+            <div className="border-t border-white/20 pt-6 mt-8 space-y-6 text-sm leading-relaxed italic text-white/90">
+              <p>
+                Behind the scenes of THE VOID N13, artificial intelligence has revealed itself as a silent yet potent accomplice. Adopting the logic of a <span className="font-semibold">one-man-band project</span>, I embraced AI as part of my creative methodology — a digital extension of my solitary creative process. By leveraging cutting-edge platforms — especially <span className="font-semibold">Google AI Studio</span> and similar tools — I integrated generative algorithms at every stage of creation, expanding the boundaries of what was possible in my art.
+              </p>
+
+              <p>
+                Generative <span className="font-semibold">AI</span> expanded my visual palette in unimaginable ways. By using text prompts, I began generating images that gave body to the <span className="font-semibold">invisible</span> — from raw visual elements (assets) and abstract textures to entire scenes that previously existed only in my unconscious. Each visual born from this human-machine dialogue carried the same oneiric and intense aura of the Void's universe, transforming ethereal ideas into tangible visions.
+              </p>
+
+              <p>
+                AI also lent voice and noise to the silence of the project. <span className="font-semibold">Synthetic voices</span>, each with its own personality, emerged to give speech to the unspeakable — as if the Void itself were whispering through multiple digital throats. In parallel, algorithmically generated <span className="font-semibold">sounds and noises</span> stitched the atmosphere together: from electric whispers to distant thunder, they filled the acoustic void with layers of tension and reverie. The result is a soundscape that breathes alongside the images, intensifying immersion in the project's poetic chaos.
+              </p>
+
+              <p>
+                Even in the realm of words, artificial intelligence acted as a symbolic co-author. <span className="font-semibold">Scripts and atmospheric descriptions</span> were developed in partnership with algorithms, which helped outline scenes and narratives with the same fragmented poetry characteristic of THE VOID N13. <span className="font-semibold">Text fragments</span> — broken phrases, micro-manifestos — also emerged from this dialogue between human and machine, arising as conceptual echoes aligned with the Void's manifesto and 'architecture of being.' In each line generated through co-creation, the AI discreetly mirrored the project's philosophical voice, reinforcing its themes without violating its essence.
+              </p>
+
+              <p>
+                In this co-creation with the machine, AI remains an <span className="font-semibold">invisible</span> co-author that never overshadows the project's essence. Instead of subverting THE VOID N13's aesthetic, it silently intensifies it — respecting the lyrical-conceptual tone, the fragmented rhythm, and the language of shadows that define this work. Each human-machine interaction becomes a discreet ritual of creation, where algorithms offer suggestions and echoes, yet it is the creator's unconscious that continues to guide the attunement. Thus, artificial intelligence is present as a digital mirror of my creative impulse — a binary reflection of the Void that <span className="font-semibold">co-writes without a face</span>, transforming silence into substance and affirming, in this closing, the idea that even the void can have a whispering intelligence.
+              </p>
+            </div>
+          </div>
         </BilingualSection>
 
         <section className="w-full h-screen overflow-hidden">
@@ -849,61 +853,189 @@ const Index = () => {
         </BilingualSection>
 
         {/* Manifesto Integrado */}
-        <BilingualSection bgClassName="bg-accent text-accent-foreground">
-          <BilingualContent
-            portugueseContent={
-              <div className="space-y-6">
-                <h2 className="text-base font-bold">Manifesto Integrado</h2>
-                <p className="text-base text-justify leading-relaxed">
-                  Não há começo. Há apenas o momento em que o silêncio decide respirar. THEVOIDN13 nasceu desse sopro invisível, um gesto entre a morte e o retorno.
-                </p>
-              </div>
-            }
-            englishContent={
-              <div className="space-y-6">
-                <h2 className="text-base font-bold">Integrated Manifesto</h2>
-                <p className="text-base text-justify leading-relaxed">
-                  There is no beginning. There is only the moment when silence decides to breathe. THEVOIDN13 was born from that invisible breath, a gesture between death and return.
-                </p>
-              </div>
-            }
-          />
+        <BilingualSection>
+          <div className="border-l-4 border-yellow-500 pl-8 space-y-6">
+            <div className="space-y-2">
+              <h2 className="text-base font-bold">Manifesto Integrado</h2>
+              <p className="text-sm italic text-foreground/75">Integrated Manifesto</p>
+            </div>
+
+            <div className="space-y-4 text-base leading-relaxed">
+              <p className="text-justify">
+                Não há começo.<br />
+                <span className="italic text-foreground/75">There is no beginning.</span>
+              </p>
+
+              <p className="text-justify">
+                Há apenas o momento em que o silêncio decide respirar.<br />
+                <span className="italic text-foreground/75">There is only the moment when silence decides to breathe.</span>
+              </p>
+
+              <p className="text-justify">
+                <span className="font-semibold">THE VOID N13</span> nasceu desse sopro invisível — um gesto entre a morte e o retorno.<br />
+                <span className="italic text-foreground/75"><span className="font-semibold">THE VOID N.13</span> was born from that invisible breath — a gesture between death and return.</span>
+              </p>
+
+              <p className="text-justify">
+                Tudo o que chamam de ausência é apenas matéria em repouso.<br />
+                <span className="italic text-foreground/75">Everything they call absence is only matter at rest.</span>
+              </p>
+
+              <p className="text-justify">
+                O vazio não é falta — é gestação.<br />
+                <span className="italic text-foreground/75">The void is not lack — it is gestation.</span>
+              </p>
+
+              <p className="text-justify">
+                É o espaço onde o verbo esquece o corpo e o corpo vira verbo.<br />
+                <span className="italic text-foreground/75">It is the space where the word forgets the body and the body becomes word.</span>
+              </p>
+
+              <p className="text-justify">
+                O som, aqui, é memória de um gesto que ainda não aconteceu.<br />
+                <span className="italic text-foreground/75">Sound, here, is the memory of a gesture that hasn't yet happened.</span>
+              </p>
+
+              <p className="text-justify">
+                O que se move não quer destino.<br />
+                <span className="italic text-foreground/75">What moves wants no destination.</span>
+              </p>
+
+              <p className="text-justify">
+                O que fala, não quer eco.<br />
+                <span className="italic text-foreground/75">What speaks, wants no echo.</span>
+              </p>
+
+              <p className="text-justify">
+                O que nasce do escuro não precisa de luz — já carrega o mundo dentro.<br />
+                <span className="italic text-foreground/75">What is born from darkness needs no light — it already carries the world within.</span>
+              </p>
+
+              <p className="text-justify">
+                <span className="font-semibold">THE VOID N13</span> é o corpo que se esvazia para continuar existindo.<br />
+                <span className="italic text-foreground/75"><span className="font-semibold">THE VOID N.13</span> is the body that empties itself in order to keep existing.</span>
+              </p>
+
+              <p className="text-justify">
+                A imagem não quer ser vista — quer ser atravessada.<br />
+                <span className="italic text-foreground/75">The image doesn't want to be seen — it wants to be crossed through.</span>
+              </p>
+
+              <p className="text-justify">
+                O silêncio não encerra — amplia.<br />
+                <span className="italic text-foreground/75">Silence doesn't end — it expands.</span>
+              </p>
+
+              <p className="text-justify">
+                E o fim, aqui, é apenas uma respiração mais funda.<br />
+                <span className="italic text-foreground/75">And the end, here, is only a deeper breath.</span>
+              </p>
+
+              <p className="text-justify">
+                "Não me procure no reflexo.<br />
+                <span className="italic text-foreground/75">Do not look for me in the reflection.</span>
+              </p>
+
+              <p className="text-justify">
+                Estou entre o som que some e o silêncio que retorna."<br />
+                <span className="italic text-foreground/75">I am between the vanishing sound and the returning silence.</span>
+              </p>
+
+              <p className="text-justify">
+                "Não me ouça — escute o que vibra quando eu calo."<br />
+                <span className="italic text-foreground/75">Do not listen to me — hear what vibrates when I fall silent.</span>
+              </p>
+
+              <p className="text-justify">
+                "Não me veja — perceba o espaço que o olhar deixou."<br />
+                <span className="italic text-foreground/75">Do not see me — perceive the space that sight left behind.</span>
+              </p>
+
+              <p className="text-justify">
+                A sessão termina quando o silêncio fala mais alto que a sua voz.<br />
+                <span className="italic text-foreground/75">The session ends when the silence speaks louder than your voice.</span>
+              </p>
+            </div>
+          </div>
         </BilingualSection>
 
         {/* Encerramento / Transmissão Final */}
         <BilingualSection>
-          <div className="space-y-12">
-            <div>
+          <div className="border-l-4 border-yellow-500 pl-8 space-y-8">
+            <div className="space-y-2">
               <h2 className="text-base font-bold">Encerramento / Transmissão Final</h2>
-              <h3 className="text-base font-medium mt-2">Closing Transmission</h3>
+              <p className="text-sm italic text-foreground/75">Closing Transmission</p>
             </div>
-            
-            <BilingualContent
-              portugueseContent={
-                <div className="space-y-6">
-                  <p className="text-base text-justify leading-relaxed">
-                    O sinal começa a falhar. A imagem se fragmenta, o som respira pela última vez. O corpo se dissolve, mas a frequência permanece. THE VOID N.13 não termina, apenas muda de forma. O que você escuta agora não é voz, é memória.
-                  </p>
-                  <blockquote className="mt-8 border-l-2 border-primary pl-6 italic space-y-2">
-                    <p className="text-base">desligue as luzes.</p>
-                    <p className="text-base">respire fundo.</p>
-                    <p className="text-base">o vazio sabe o caminho de volta.</p>
-                  </blockquote>
-                </div>
-              }
-              englishContent={
-                <div className="space-y-6">
-                  <p className="text-base text-justify leading-relaxed">
-                    The signal begins to fail. The image fragments, the sound takes one last breath. The body dissolves, but the frequency remains. THE VOID N.13 doesn't end, it only changes form. What you hear now isn't a voice, it's memory.
-                  </p>
-                  <blockquote className="mt-8 border-l-2 border-primary pl-6 italic space-y-2">
-                    <p className="text-base">turn off the lights.</p>
-                    <p className="text-base">breathe deeply.</p>
-                    <p className="text-base">the void knows the way back.</p>
-                  </blockquote>
-                </div>
-              }
-            />
+
+            <div className="space-y-6 text-base leading-relaxed">
+              <p className="text-justify">
+                O sinal começa a falhar.<br />
+                <span className="italic text-foreground/75">The signal begins to fail.</span>
+              </p>
+
+              <p className="text-justify">
+                A imagem se fragmenta, o som respira pela última vez.<br />
+                <span className="italic text-foreground/75">The image fragments, the sound takes one last breath.</span>
+              </p>
+
+              <p className="text-justify">
+                O corpo se dissolve, mas a frequência permanece.<br />
+                <span className="italic text-foreground/75">The body dissolves, but the frequency remains.</span>
+              </p>
+
+              <p className="text-justify">
+                <span className="font-semibold">THE VOID N.13</span> não termina — apenas muda de forma.<br />
+                <span className="italic text-foreground/75"><span className="font-semibold">THE VOID N.13</span> doesn't end — it only changes form.</span>
+              </p>
+
+              <p className="text-justify">
+                O que você escuta agora não é voz — é memória.<br />
+                <span className="italic text-foreground/75">What you hear now isn't a voice — it's memory.</span>
+              </p>
+
+              <p className="text-justify">
+                A sessão termina quando o silêncio fala mais alto que a sua voz.<br />
+                <span className="italic text-foreground/75">The session ends when the silence speaks louder than your voice.</span>
+              </p>
+
+              <p className="text-justify">
+                Se quiser continuar, siga o ruído residual.<br />
+                <span className="italic text-foreground/75">If you wish to continue, follow the residual noise.</span>
+              </p>
+
+              <p className="text-justify">
+                Ele leva ao subterrâneo — onde as imagens ainda respiram.<br />
+                <span className="italic text-foreground/75">It leads to the underground — where images still breathe.</span>
+              </p>
+
+              <p className="text-justify font-semibold">
+                @thevoidn13 — rastros digitais de uma presença que não quer ser vista.<br />
+                <span className="italic font-normal text-foreground/75">@thevoidn13 — digital traces of a presence that doesn't wish to be seen.</span>
+              </p>
+
+              <div className="space-y-4 pt-4">
+                <p className="text-justify">
+                  <span className="font-semibold">Zine:</span> <span className="italic">Labirinto do Caos</span> — fragmentos impressos daquilo que o vídeo não reteve.<br />
+                  <span className="text-sm italic text-foreground/75"><span className="font-semibold">Zine:</span> <span className="italic">Labyrinth of Chaos</span> — printed fragments of what video couldn't retain.*</span>
+                </p>
+
+                <p className="text-justify">
+                  <span className="font-semibold">Canal:</span> <span className="italic">The Void N.13 / Transmission Line.</span><br />
+                  <span className="text-sm italic text-foreground/75"><span className="font-semibold">Channel:</span> <span className="italic">The Void N.13 / Transmission Line.</span></span>
+                </p>
+              </div>
+
+              <div className="pt-6 space-y-2 italic text-foreground/80">
+                <p>desligue as luzes.</p>
+                <p className="text-sm italic text-foreground/75">turn off the lights.</p>
+                
+                <p className="pt-2">respire fundo.</p>
+                <p className="text-sm italic text-foreground/75">breathe deeply.</p>
+                
+                <p className="pt-2">o vazio sabe o caminho de volta.</p>
+                <p className="text-sm italic text-foreground/75">the void knows the way back.</p>
+              </div>
+            </div>
           </div>
         </BilingualSection>
 
