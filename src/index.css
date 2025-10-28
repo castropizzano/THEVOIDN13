@@ -2,6 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ============================================
+   SISTEMA TIPOGRÁFICO PADRONIZADO
+   ============================================ */
+
+@layer components {
+  /* Hierarquia de Títulos */
+  .heading-hero {
+    @apply text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1];
+  }
+  
+  .heading-1 {
+    @apply text-3xl md:text-4xl font-bold tracking-tight leading-[1.2];
+  }
+  
+  .heading-2 {
+    @apply text-2xl md:text-3xl font-bold tracking-tight leading-[1.25];
+  }
+  
+  .heading-3 {
+    @apply text-xl md:text-2xl font-semibold tracking-tight leading-[1.3];
+  }
+  
+  .heading-4 {
+    @apply text-lg md:text-xl font-semibold tracking-tight leading-[1.35];
+  }
+  
+  .heading-5 {
+    @apply text-base md:text-lg font-medium tracking-wide leading-[1.4];
+  }
+  
+  /* Corpo de Texto */
+  .body-large {
+    @apply text-lg leading-relaxed;
+  }
+  
+  .body-base {
+    @apply text-base leading-relaxed;
+  }
+  
+  .body-small {
+    @apply text-sm leading-relaxed;
+  }
+  
+  /* Labels e Categorias */
+  .label-large {
+    @apply text-sm uppercase tracking-wider font-medium;
+  }
+  
+  .label-small {
+    @apply text-xs uppercase tracking-wider font-medium;
+  }
+  
+  /* Texto Justificado */
+  .text-justified {
+    @apply text-justify hyphens-auto;
+  }
+  
+  /* Títulos com Quebra Responsiva */
+  .title-break {
+    @apply max-w-full break-words;
+  }
+  
+  /* Espaçamento Vertical Consistente */
+  .content-spacing {
+    @apply space-y-6;
+  }
+  
+  .section-spacing {
+    @apply space-y-12;
+  }
+}
+
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
 */
