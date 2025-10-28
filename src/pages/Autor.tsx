@@ -374,37 +374,239 @@ const Autor = () => {
         <BilingualSection bgClassName="bg-card/30">
           <BilingualContent 
             portugueseContent={
-              <div className="space-y-6">
-                <h2 className="text-sm font-medium tracking-wide uppercase text-primary">Anti-brand: ЦЦАСТРО™</h2>
-                
-                <p className="text-base leading-relaxed text-justify">
-                  <span className="font-medium">ЦЦАСТРО™</span> (LLACTPO) é uma identidade que rejeita a lógica publicitária da autopromoção. O uso do Cirílico (ЦЦАСТРО) e da fonte Journalist quebra distância e estranhamento, forçando a decodificação e o consumo consciente. É um manifesto a favor da autoria e da produção local.
-                </p>
-                
-                <p className="text-base leading-relaxed text-justify">
-                  Não é expansão de marca — é condensação de essência. Não busca visibilidade — busca ressonância. A anti-marca que emerge quando você abandona a performance identitária e habita o incômodo criativo. Um nome que força o espectador a desacelerar, questionar, decifrar.
-                </p>
-                
-                <p className="text-base leading-relaxed text-justify">
-                  Visual arts researcher, graphic designer, art direction, videomaker. Skate and underground culture. Aesthetic minimalist & op-art. Founder of CasaTrezeStudio and creative collaborator in LowPressure. Portfolio: Branding, films, video/cinema/experimentação.
-                </p>
+              <div className="space-y-12">
+                <div className="space-y-6">
+                  <h2 className="text-2xl font-bold text-primary">ЦЦАСТРО™ como Anti-Brand</h2>
+                  <p className="text-lg italic text-muted-foreground">
+                    Uma identidade que rejeita a lógica publicitária de autopromoção, e se afirma como linguagem, não logotipo.
+                  </p>
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-xl font-bold text-primary">O Contexto: Uma Recusa ao Branding Tradicional</h3>
+                  <p className="text-base leading-relaxed text-justify">
+                    Vivemos na era do excesso de identidade. Marcas falam mais de si do que de seus propósitos, buscam reconhecimento pelo algoritmo e não pela substância. Como criador de branding, minha resposta foi criar uma anti-marca — uma identidade que rejeita a lógica publicitária de autopromoção, e se afirma como linguagem, não logotipo.
+                  </p>
+                  <div className="my-6 py-6 border-y border-primary/20 text-center">
+                    <p className="text-lg font-bold italic text-primary">
+                      "A marca é um gesto, não uma assinatura."
+                    </p>
+                  </div>
+                  <p className="text-base leading-relaxed text-justify">
+                    Ao contrário de um símbolo que busca reconhecimento imediato, o projeto ЦЦАСТРО (transliteração cirílica de CASTRO) propõe o anonimato como força estética. A ausência de identificação direta — o nome distorcido, o alfabeto estrangeiro, a paleta contida — é uma crítica à cultura do ego-branding.
+                  </p>
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-xl font-bold text-primary">A Escolha da Fonte Journalism (Cirílica)</h3>
+                  <p className="text-base leading-relaxed text-justify">
+                    A tipografia Journalism, inspirada no alfabeto russo e em estruturas construtivistas, carrega memórias gráficas de resistência, imprensa alternativa e ideologia visual. Adotar essa forma é assumir uma postura editorial, subversiva e crítica: é como se cada letra dissesse "isto não é um logotipo — é um manifesto".
+                  </p>
+                  <p className="text-base leading-relaxed text-justify">
+                    Cirílico cria distância e estranhamento. O espectador precisa decifrar, não consumir. Isso o desloca da lógica do mercado e o coloca no campo do pensamento. Evoca imprensa, dissidência, contrainformação. O nome da fonte torna-se parte do discurso: sou "jornalista" visual do meu próprio tempo.
+                  </p>
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-xl font-bold text-primary">Identidade como Espelho e Ruído</h3>
+                  <p className="text-base leading-relaxed text-justify">
+                    O uso de tipografia em corpo alto, tons frios (rosa-pálido sobre preto), e elementos de arquivo como "1984" e o símbolo # cria uma tensão entre o institucional e o subversivo. Essa ironia visual ecoa Orwell, glitch estético e ruído pós-soviético — um statement sobre o branding em colapso.
+                  </p>
+                  <div className="my-6 py-6 border-y border-primary/20 text-center">
+                    <p className="text-lg font-bold italic text-primary">
+                      "O branding morreu quando começou a se explicar demais."
+                    </p>
+                  </div>
+                  <p className="text-base leading-relaxed text-justify">
+                    A anti-marca CASTRO não busca legibilidade comercial, mas reconhecimento conceitual. Quem entende o código, entende o autor. Quem não entende, está fora da tribo — e tudo bem.
+                  </p>
+                </div>
+
+                <div className="space-y-4 bg-primary/5 border border-primary/20 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-primary">Conheçam o Trabalho, Não o Rosto</h3>
+                  <p className="text-base leading-relaxed text-justify">
+                    A proposta central é o anonimato como ética criativa. Num mundo saturado de criadores-influencers, a ideia é inverter a equação: não se trata de vender a imagem do artista, mas de expandir o campo simbólico do que ele cria.
+                  </p>
+                  <p className="text-base leading-relaxed text-justify">
+                    Assim, "CASTRO" torna-se um agente conceitual, não uma pessoa. Uma entidade de linguagem, um selo de pensamento, uma assinatura invisível.
+                  </p>
+                  <div className="my-4 py-4 text-center">
+                    <p className="text-lg font-bold italic text-primary">
+                      "O criador desaparece para que a obra fale."
+                    </p>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-xl font-bold text-primary">Filosofia LowPressure™ e Estética de Resistência</h3>
+                  <p className="text-base leading-relaxed text-justify">
+                    Essa construção anti-brand dialoga diretamente com a filosofia LowPressure™ — onde a autenticidade vem da marginalidade, e o valor nasce da não-adesão. É o mesmo raciocínio que permeia o skate, o cinema independente, o underground design e as poéticas urbanas.
+                  </p>
+                  <div className="grid md:grid-cols-3 gap-4 mt-6">
+                    <div className="border border-primary/20 rounded-lg p-4 text-center">
+                      <h4 className="text-sm font-bold uppercase mb-2 text-primary">Minimalismo Tenso</h4>
+                      <p className="text-xs text-muted-foreground">o vazio comunica mais do que o excesso</p>
+                    </div>
+                    <div className="border border-primary/20 rounded-lg p-4 text-center">
+                      <h4 className="text-sm font-bold uppercase mb-2 text-primary">Anonimato como Potência</h4>
+                      <p className="text-xs text-muted-foreground">o autor se dilui no coletivo, mas deixa rastros simbólicos</p>
+                    </div>
+                    <div className="border border-primary/20 rounded-lg p-4 text-center">
+                      <h4 className="text-sm font-bold uppercase mb-2 text-primary">Design como Ruído</h4>
+                      <p className="text-xs text-muted-foreground">o ruído é linguagem, não erro</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-xl font-bold text-primary">A Semiótica do Símbolo</h3>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="border-l-2 border-primary pl-4">
+                      <h4 className="text-sm font-bold uppercase mb-2">ЦЦАСТРО</h4>
+                      <p className="text-sm text-muted-foreground">Transliteração que cria ruído e nega a leitura imediata — uma máscara estética</p>
+                    </div>
+                    <div className="border-l-2 border-primary pl-4">
+                      <h4 className="text-sm font-bold uppercase mb-2">"1984"</h4>
+                      <p className="text-sm text-muted-foreground">Referência ao controle cultural, à vigilância e à resistência autoral</p>
+                    </div>
+                    <div className="border-l-2 border-primary pl-4">
+                      <h4 className="text-sm font-bold uppercase mb-2">#</h4>
+                      <p className="text-sm text-muted-foreground">Ironia: o símbolo do mercado aplicado a uma anti-marca</p>
+                    </div>
+                    <div className="border-l-2 border-primary pl-4">
+                      <h4 className="text-sm font-bold uppercase mb-2">Paleta</h4>
+                      <p className="text-sm text-muted-foreground">Preto e rosa-pálido = choque entre dureza e sensibilidade; brutalismo afetivo</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-red-900 -mx-6 px-6 py-8 rounded-lg">
+                  <h3 className="text-xl font-bold text-white mb-4">Conclusão</h3>
+                  <p className="text-base leading-relaxed text-white text-justify mb-4">
+                    A identidade ЦЦАСТРО é um exercício de negação criativa. É o avesso do branding para relembrar o que o design pode ser: linguagem, manifesto, resistência.
+                  </p>
+                  <p className="text-lg italic text-white/90 text-center">
+                    Não é um logo para ser lembrado, é uma ideia para ser compreendida — tarde demais.
+                  </p>
+                </div>
               </div>
             }
             englishContent={
-              <div className="space-y-6">
-                <h2 className="text-sm font-medium tracking-wide uppercase text-primary">Anti-brand: ЦЦАСТРО™</h2>
-                
-                <p className="text-base leading-relaxed text-justify">
-                  <span className="font-medium">ЦЦАСТРО™</span> (LLACTPO) is an identity that rejects the advertising logic of self-promotion. The use of Cyrillic (ЦЦАСТРО) and the Journalist font creates distance and strangeness, forcing conscious decoding and consumption. It's a manifesto in favor of authorship and local production.
-                </p>
-                
-                <p className="text-base leading-relaxed text-justify">
-                  It's not brand expansion — it's essence condensation. It doesn't seek visibility — it seeks resonance. The anti-brand that emerges when you abandon identity performance and inhabit creative discomfort. A name that forces the viewer to slow down, question, decipher.
-                </p>
-                
-                <p className="text-base leading-relaxed text-justify">
-                  Visual arts researcher, graphic designer, art direction, videomaker. Skate and underground culture. Aesthetic minimalist & op-art. Founder of CasaTrezeStudio and creative collaborator in LowPressure. Portfolio: Branding, films, video/cinema/experimentation.
-                </p>
+              <div className="space-y-12">
+                <div className="space-y-6">
+                  <h2 className="text-2xl font-bold text-primary">ЦЦАСТРО™ as Anti-Brand</h2>
+                  <p className="text-lg italic text-muted-foreground">
+                    An identity that rejects the advertising logic of self-promotion, asserting itself as language, not logo.
+                  </p>
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-xl font-bold text-primary">The Context: A Refusal of Traditional Branding</h3>
+                  <p className="text-base leading-relaxed text-justify">
+                    We live in an era of excess identity. Brands talk more about themselves than their purposes, seeking algorithmic recognition rather than substance. As a branding creator, my response was to create an anti-brand — an identity that rejects the advertising logic of self-promotion and asserts itself as language, not logo.
+                  </p>
+                  <div className="my-6 py-6 border-y border-primary/20 text-center">
+                    <p className="text-lg font-bold italic text-primary">
+                      "The brand is a gesture, not a signature."
+                    </p>
+                  </div>
+                  <p className="text-base leading-relaxed text-justify">
+                    Unlike a symbol seeking immediate recognition, the ЦЦАСТРО project (Cyrillic transliteration of CASTRO) proposes anonymity as aesthetic force. The absence of direct identification — the distorted name, foreign alphabet, restrained palette — is a critique of ego-branding culture.
+                  </p>
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-xl font-bold text-primary">The Choice of Journalism Font (Cyrillic)</h3>
+                  <p className="text-base leading-relaxed text-justify">
+                    The Journalism typography, inspired by the Russian alphabet and constructivist structures, carries graphic memories of resistance, alternative press, and visual ideology. Adopting this form means assuming an editorial, subversive, and critical stance: as if each letter said "this is not a logo — it's a manifesto".
+                  </p>
+                  <p className="text-base leading-relaxed text-justify">
+                    Cyrillic creates distance and strangeness. The viewer must decipher, not consume. This displaces them from market logic and places them in the field of thought. It evokes press, dissent, counter-information. The font name becomes part of the discourse: I am a visual "journalist" of my own time.
+                  </p>
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-xl font-bold text-primary">Identity as Mirror and Noise</h3>
+                  <p className="text-base leading-relaxed text-justify">
+                    The use of large typography, cool tones (pale pink on black), and archival elements like "1984" and the # symbol creates tension between institutional and subversive. This visual irony echoes Orwell, aesthetic glitch, and post-Soviet noise — a statement about branding in collapse.
+                  </p>
+                  <div className="my-6 py-6 border-y border-primary/20 text-center">
+                    <p className="text-lg font-bold italic text-primary">
+                      "Branding died when it began to over-explain itself."
+                    </p>
+                  </div>
+                  <p className="text-base leading-relaxed text-justify">
+                    The CASTRO anti-brand doesn't seek commercial legibility, but conceptual recognition. Those who understand the code understand the author. Those who don't are outside the tribe — and that's okay.
+                  </p>
+                </div>
+
+                <div className="space-y-4 bg-primary/5 border border-primary/20 rounded-lg p-6">
+                  <h3 className="text-xl font-bold text-primary">Know the Work, Not the Face</h3>
+                  <p className="text-base leading-relaxed text-justify">
+                    The central proposition is anonymity as creative ethics. In a world saturated with creator-influencers, the idea is to reverse the equation: it's not about selling the artist's image, but expanding the symbolic field of what they create.
+                  </p>
+                  <p className="text-base leading-relaxed text-justify">
+                    Thus, "CASTRO" becomes a conceptual agent, not a person. A language entity, a thought seal, an invisible signature.
+                  </p>
+                  <div className="my-4 py-4 text-center">
+                    <p className="text-lg font-bold italic text-primary">
+                      "The creator disappears so the work can speak."
+                    </p>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-xl font-bold text-primary">LowPressure™ Philosophy and Resistance Aesthetics</h3>
+                  <p className="text-base leading-relaxed text-justify">
+                    This anti-brand construction dialogues directly with the LowPressure™ philosophy — where authenticity comes from marginality, and value is born from non-adherence. It's the same reasoning that permeates skateboarding, independent cinema, underground design, and urban poetics.
+                  </p>
+                  <div className="grid md:grid-cols-3 gap-4 mt-6">
+                    <div className="border border-primary/20 rounded-lg p-4 text-center">
+                      <h4 className="text-sm font-bold uppercase mb-2 text-primary">Tense Minimalism</h4>
+                      <p className="text-xs text-muted-foreground">emptiness communicates more than excess</p>
+                    </div>
+                    <div className="border border-primary/20 rounded-lg p-4 text-center">
+                      <h4 className="text-sm font-bold uppercase mb-2 text-primary">Anonymity as Power</h4>
+                      <p className="text-xs text-muted-foreground">the author dissolves into the collective but leaves symbolic traces</p>
+                    </div>
+                    <div className="border border-primary/20 rounded-lg p-4 text-center">
+                      <h4 className="text-sm font-bold uppercase mb-2 text-primary">Design as Noise</h4>
+                      <p className="text-xs text-muted-foreground">noise is language, not error</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-xl font-bold text-primary">The Semiotics of the Symbol</h3>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div className="border-l-2 border-primary pl-4">
+                      <h4 className="text-sm font-bold uppercase mb-2">ЦЦАСТРО</h4>
+                      <p className="text-sm text-muted-foreground">Transliteration that creates noise and denies immediate reading — an aesthetic mask</p>
+                    </div>
+                    <div className="border-l-2 border-primary pl-4">
+                      <h4 className="text-sm font-bold uppercase mb-2">"1984"</h4>
+                      <p className="text-sm text-muted-foreground">Reference to cultural control, surveillance, and authorial resistance</p>
+                    </div>
+                    <div className="border-l-2 border-primary pl-4">
+                      <h4 className="text-sm font-bold uppercase mb-2">#</h4>
+                      <p className="text-sm text-muted-foreground">Irony: the market symbol applied to an anti-brand</p>
+                    </div>
+                    <div className="border-l-2 border-primary pl-4">
+                      <h4 className="text-sm font-bold uppercase mb-2">Palette</h4>
+                      <p className="text-sm text-muted-foreground">Black and pale pink = clash between hardness and sensitivity; affective brutalism</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-red-900 -mx-6 px-6 py-8 rounded-lg">
+                  <h3 className="text-xl font-bold text-white mb-4">Conclusion</h3>
+                  <p className="text-base leading-relaxed text-white text-justify mb-4">
+                    The ЦЦАСТРО identity is an exercise in creative negation. It's the reverse of branding to remind us what design can be: language, manifesto, resistance.
+                  </p>
+                  <p className="text-lg italic text-white/90 text-center">
+                    It's not a logo to be remembered, it's an idea to be understood — too late.
+                  </p>
+                </div>
               </div>
             }
           />
