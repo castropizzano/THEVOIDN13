@@ -76,7 +76,40 @@ const MediaManager = () => {
   };
 
   if (loading) {
-    return <div>Carregando...</div>;
+    return (
+      <div className="flex items-center justify-center p-12">
+        <div className="text-center space-y-4">
+          <div className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto"></div>
+          <p className="text-muted-foreground">Carregando mídias...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (assets.length === 0) {
+    return (
+      <Card>
+        <CardHeader>
+          <CardTitle>Gerenciar Mídias</CardTitle>
+          <CardDescription>
+            Edite URLs de imagens/vídeos e textos alternativos
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="text-center py-12 space-y-4">
+            <p className="text-muted-foreground">
+              Nenhuma mídia cadastrada ainda.
+            </p>
+            <p className="text-sm text-muted-foreground">
+              Para adicionar mídias editáveis, você precisa inserir registros na tabela <code className="bg-muted px-2 py-1 rounded">media_assets</code> do banco de dados.
+            </p>
+            <Button onClick={() => window.open('https://docs.lovable.dev/features/cloud', '_blank')} variant="outline">
+              Ver Documentação do Backend
+            </Button>
+          </div>
+        </CardContent>
+      </Card>
+    );
   }
 
   return (

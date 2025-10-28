@@ -152,7 +152,37 @@ const VideoManager = () => {
   }));
 
   if (loading) {
-    return <div>Carregando...</div>;
+    return (
+      <div className="flex items-center justify-center p-12">
+        <div className="text-center space-y-4">
+          <div className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto"></div>
+          <p className="text-muted-foreground">Carregando vídeos...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (videos.length === 0) {
+    return (
+      <Card>
+        <CardHeader>
+          <CardTitle>Gerenciar Vídeos do Vimeo</CardTitle>
+          <CardDescription>
+            Controle visibilidade, destaque e ordem dos vídeos
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="text-center py-12 space-y-4">
+            <p className="text-muted-foreground">
+              Nenhum vídeo encontrado no Vimeo.
+            </p>
+            <p className="text-sm text-muted-foreground">
+              Verifique se o token do Vimeo está configurado corretamente e se há vídeos na sua conta.
+            </p>
+          </div>
+        </CardContent>
+      </Card>
+    );
   }
 
   return (

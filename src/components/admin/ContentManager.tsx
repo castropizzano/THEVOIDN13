@@ -84,7 +84,40 @@ const ContentManager = () => {
   }, {} as Record<string, ContentSetting[]>);
 
   if (loading) {
-    return <div>Carregando...</div>;
+    return (
+      <div className="flex items-center justify-center p-12">
+        <div className="text-center space-y-4">
+          <div className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto"></div>
+          <p className="text-muted-foreground">Carregando conteúdos...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (contents.length === 0) {
+    return (
+      <Card>
+        <CardHeader>
+          <CardTitle>Gerenciar Textos do Site</CardTitle>
+          <CardDescription>
+            Edite os textos em português e inglês para cada seção do site.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="text-center py-12 space-y-4">
+            <p className="text-muted-foreground">
+              Nenhum conteúdo cadastrado ainda.
+            </p>
+            <p className="text-sm text-muted-foreground">
+              Para adicionar textos editáveis, você precisa inserir registros na tabela <code className="bg-muted px-2 py-1 rounded">content_settings</code> do banco de dados.
+            </p>
+            <Button onClick={() => window.open('https://docs.lovable.dev/features/cloud', '_blank')} variant="outline">
+              Ver Documentação do Backend
+            </Button>
+          </div>
+        </CardContent>
+      </Card>
+    );
   }
 
   // Mapear páginas para URLs
