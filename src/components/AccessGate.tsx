@@ -104,23 +104,24 @@ export const AccessGate = ({
   return <div className="fixed inset-0 z-50 bg-background/95 backdrop-blur-md flex items-center justify-center p-4">
       <Card className="w-full max-w-md border-2 border-primary/30 shadow-2xl">
         <CardHeader className="space-y-4 text-center">
-          <div className="flex items-center justify-center gap-3">
-            <div className="text-center">
-              <CardTitle className="site-title text-primary text-2xl leading-tight">
-                O VAZIO CHAMA
-              </CardTitle>
-              <CardTitle className="site-title text-primary text-2xl leading-tight">
-                THE VOID CALLS
-              </CardTitle>
-            </div>
-            <span className="text-xs text-muted-foreground font-mono">v1.3</span>
+          <div className="text-center space-y-1">
+            <CardTitle className="site-title text-primary text-2xl leading-tight">
+              O VAZIO CHAMA
+            </CardTitle>
+            <CardTitle className="site-title text-primary text-2xl leading-tight">
+              THE VOID CALLS
+            </CardTitle>
           </div>
-          <CardDescription className="site-paragraph space-y-3 leading-relaxed">
+          <CardDescription className="site-paragraph space-y-4 leading-relaxed">
             <p className="leading-relaxed">
-              Entre no limiar entre luz e sombra onde a memória artística se transforma em experiência viva e o vazio revela seus segredos aos que ousam adentrar.
+              Há um ponto onde o tempo desacelera e a consciência escuta o ruído do próprio silêncio.
+              Luz e sombra se confundem — e o que era apenas lembrança começa a pulsar.
+              Nada aqui é linear. Cada passo dentro do vazio é uma lembrança futura tentando se materializar.
             </p>
             <p className="text-xs leading-relaxed">
-              Step into the threshold between light and shadow where artistic memory transforms into living experience and the void reveals its secrets to those who dare.
+              There's a point where time slows down and awareness hears the noise of its own silence.
+              Light and shadow blur — and what was once memory begins to pulse.
+              Nothing here is linear. Each step inside the void is a future memory trying to take form.
             </p>
           </CardDescription>
         </CardHeader>
@@ -142,22 +143,22 @@ export const AccessGate = ({
 
             <div className="space-y-2">
               <p className="text-xs text-muted-foreground leading-relaxed">
-                Ao adentrar, você aceita nossa{" "}
+                Ao seguir adiante, você aceita nossa{" "}
                 <PrivacyPolicyDialog>
                   <button type="button" className="text-primary hover:underline">
                     Política de Privacidade
                   </button>
                 </PrivacyPolicyDialog>
-                {" "}e concorda em receber transmissões sobre a jornada no vazio e as manifestações artísticas que emergem das sombras.
+                {" "}e permite que o vazio lhe envie ecos — fragmentos, imagens e sinais sobre o que emerge das sombras.
               </p>
               <p className="text-xs text-muted-foreground leading-relaxed">
-                By entering, you accept our{" "}
+                By proceeding, you accept our{" "}
                 <PrivacyPolicyDialog>
                   <button type="button" className="text-primary hover:underline">
                     Privacy Policy
                   </button>
                 </PrivacyPolicyDialog>
-                {" "}and agree to receive transmissions about the journey into the void and the artistic manifestations that emerge from shadows.
+                {" "}and allow the void to send you echoes — fragments, images, and signals of what rises from the shadows.
               </p>
             </div>
 
@@ -165,7 +166,7 @@ export const AccessGate = ({
               {isSubmitting ? <>
                   <Loader2 className="w-4 h-4 mr-2 animate-spin" />
                   Processando... / Processing...
-                </> : <>ENTRE NO VAZIO / ENTER THE VOID</>}
+                </> : <>ENTRAR / ENTER THE VOID</>}
             </Button>
           </form>
         </CardContent>
