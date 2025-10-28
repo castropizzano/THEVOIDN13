@@ -104,21 +104,26 @@ export const AccessGate = ({
       <Card className="w-full max-w-md border-2 border-primary/30 shadow-2xl">
         <CardHeader className="space-y-4 text-center">
           <div className="flex items-center justify-center gap-3">
-            <CardTitle className="site-title text-primary text-2xl">O VAZIO CHAMA
-THE VOID CALLS
-          </CardTitle>
+            <div className="text-center">
+              <CardTitle className="site-title text-primary text-2xl leading-tight">
+                O VAZIO CHAMA
+              </CardTitle>
+              <CardTitle className="site-title text-primary text-2xl leading-tight">
+                THE VOID CALLS
+              </CardTitle>
+            </div>
             <span className="text-xs text-muted-foreground font-mono">v1.3</span>
           </div>
           <CardDescription className="site-paragraph space-y-3 leading-relaxed">
-            <p>
-              Cadastre-se para acessar o memorial artístico THEVOIDN13.
+            <p className="leading-relaxed">
+              Entre no limiar entre luz e sombra onde a memória
               <br />
-              Você receberá um email de confirmação.
+              artística se transforma em experiência viva.
             </p>
-            <p className="text-xs">
-              Register to access the THEVOIDN13 artistic memorial.
+            <p className="text-xs leading-relaxed">
+              Step into the threshold between light and shadow where
               <br />
-              You will receive a confirmation email.
+              artistic memory transforms into living experience.
             </p>
           </CardDescription>
         </CardHeader>
@@ -128,7 +133,7 @@ THE VOID CALLS
               <label htmlFor="fullName" className="site-subtitle">
                 Nome Completo / Full Name
               </label>
-              <Input id="fullName" type="text" value={fullName} onChange={e => setFullName(e.target.value)} placeholder="Seu nome / Your name" required disabled={isSubmitting} className="h-12" />
+              <Input id="fullName" type="text" value={fullName} onChange={e => setFullName(e.target.value)} placeholder="seu nome / your name" required disabled={isSubmitting} className="h-12" />
             </div>
 
             <div className="space-y-2">
@@ -140,22 +145,22 @@ THE VOID CALLS
 
             <div className="space-y-2">
               <p className="text-xs text-muted-foreground leading-relaxed">
-                Ao cadastrar-se, você concorda com nossa{" "}
+                Ao adentrar, você aceita nossa{" "}
                 <a href="/privacy-policy" className="text-primary hover:underline">
                   Política de Privacidade
                 </a>
-                {" "}e aceita receber
+                {" "}e concorda em receber
                 <br />
-                comunicações sobre o projeto.
+                transmissões sobre a jornada no vazio.
               </p>
               <p className="text-xs text-muted-foreground leading-relaxed">
-                By registering, you agree to our{" "}
+                By entering, you accept our{" "}
                 <a href="/privacy-policy" className="text-primary hover:underline">
                   Privacy Policy
                 </a>
-                {" "}and consent to receive
+                {" "}and agree to receive
                 <br />
-                communications about the project.
+                transmissions about the journey into the void.
               </p>
             </div>
 
