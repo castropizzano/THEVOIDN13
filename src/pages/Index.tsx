@@ -12,6 +12,7 @@ import roughs001 from "@/assets/roughs-001.png";
 import roughs002 from "@/assets/roughs-002.png";
 import roughs003 from "@/assets/roughs-003.png";
 import meditationScene from "@/assets/meditation-scene.png";
+import meditationRainScene from "@/assets/meditation-rain-scene.png";
 import maskVoid from "@/assets/mask-void.png";
 import voidStreetScene from "@/assets/void-street-scene.png";
 const Index = () => {
@@ -72,6 +73,66 @@ const Index = () => {
 
         <section className="w-full h-screen overflow-hidden">
           <img src={meditationScene} alt="Meditation Scene" className="w-full h-full object-contain" />
+        </section>
+
+        {/* O Gesto */}
+        <BilingualSection>
+          <BilingualContent
+            portugueseContent={
+              <div className="space-y-6">
+                <h2 className="text-base font-bold">O Gesto</h2>
+                <p className="text-base text-justify leading-relaxed">
+                  Cada movimento é um ruído controlado, um eco do que o corpo escuta por dentro. Andar é pensar, parar é ouvir. THEVOIDN13 não representa, ele encarna a hesitação. O gesto é a respiração do pensamento, um movimento de exílio e de retorno. Cada deslocamento é uma forma de escuta: o corpo capta o que a mente silencia.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="space-y-6">
+                <h2 className="text-base font-bold">The Gesture</h2>
+                <p className="text-base text-justify leading-relaxed">
+                  Each movement is a controlled noise, an echo of what the body hears within. To walk is to think, to stop is to listen. THEVOIDN13 doesn't represent, it embodies hesitation. Gesture is the breath of thought, a movement of exile and return. Every displacement is a form of listening: the body perceives what the mind silences.
+                </p>
+              </div>
+            }
+          />
+        </BilingualSection>
+
+        {/* Complete Voice and Being Section - Single Block */}
+        <BilingualSection>
+          <BilingualContent
+            portugueseContent={
+              <div className="space-y-8">
+                <div><h2 className="text-base font-bold">O Olhar</h2><p className="text-base text-justify leading-relaxed mt-2">Por trás da máscara, há silêncio. Um olhar que não busca reconhecimento, apenas presença. O olhar não devolve imagem, devolve espelho. É o espaço onde quem vê também está por dentro. O olhar é o fio que costura o visível e o invisível — uma lente que dissolve a fronteira entre sujeito e sombra.</p></div>
+                <div><h2 className="text-base font-bold">A Respiração</h2><p className="text-base text-justify leading-relaxed mt-2">A respiração é o som que resta quando o verbo morre. É nela que o ser se ancora e desaparece. O ar entra como ruído e sai como silêncio. Cada expiração é um micro-desaparecimento. Um instante de retorno ao nada. Respirar é lembrar que o corpo é apenas passagem entre dois mundos: o mundo da carne e o mundo do invisível.</p></div>
+                <div><h2 className="text-base font-bold">A Atmosfera</h2><p className="text-base text-justify leading-relaxed mt-2">Tudo vibra em tom noturno. A névoa, o concreto e a solidão elétrica são extensões do corpo. O ambiente não cerca THE VOID N.13 — ele o prolonga. A paisagem se torna psique, e o silêncio, uma presença física. A cidade é o espelho expandido do inconsciente, o lugar onde o corpo desaparece e o espaço respira por ele.</p></div>
+                <div><h2 className="text-base font-bold">Síntese</h2><p className="text-base text-justify leading-relaxed mt-2">O ser é uma arquitetura invisível feita de gestos, ar e intenção. Nada é fixo; tudo é respiração. THE VOID N.13 não busca ser compreendido, mas sentido. Ele existe no limiar onde o som começa e a imagem começa — na fresta entre o que vibra e o que desaparece. É o instante em que o corpo se torna atmosfera, e o silêncio, presença.</p></div>
+                <div><h2 className="text-base font-bold">A Voz do Vazio</h2><p className="text-base text-justify leading-relaxed mt-2">A voz não vem da boca — vem do corpo. Ela vibra antes do som, respira antes da palavra. Quando fala, não explica: convoca. Cada frase é uma fresta aberta no concreto do silêncio. O que se diz, morre. O que se cala, vive. O som não é verbo, é presença em estado bruto — matéria que pulsa antes do sentido.</p></div>
+                <div><h4 className="text-base font-bold">A Frequência</h4><p className="text-base text-justify leading-relaxed mt-2">A voz de THE VOID N.13 é grave, sem origem. Parece vir de dentro da parede, ou do próprio chão. Não há raiva — há densidade. É o som do inconsciente tentando respirar. A vibração antecede o sentido: antes de ser palavra, é impulso. O corpo torna-se caixa de ressonância do que o mundo silenciou.</p></div>
+                <div><h4 className="text-base font-bold">A Linguagem</h4><p className="text-base text-justify leading-relaxed mt-2">Fragmentos, pausas, ecos. A voz de THE VOID N.13 recusa gramática. Fala em intervalos, como quem se lembra do próprio esquecimento. Cada ruído é um vestígio de memória tentando se recompor. Não é verbo, é ruído consciente — um idioma feito de fendas e respirações.</p></div>
+                <div><h4 className="text-base font-bold">O Silêncio</h4><p className="text-base text-justify leading-relaxed mt-2">O silêncio não é ausência de som, é som em repouso. O vazio fala sem precisar de voz. Quando THE VOID N.13 cala, o espaço continua vibrando por ele. O silêncio é o eco expandido do corpo — o intervalo onde o espectador escuta a si mesmo.</p></div>
+                <div><h4 className="text-base font-bold">Fragmentos</h4><div className="space-y-2 mt-2"><p className="text-sm">"O silêncio fala mais alto que a sua voz."</p><p className="text-sm">"Respire, mas não diga."</p><p className="text-sm">"Toda ausência tem um som."</p><p className="text-sm">"O verbo morreu. Sobraram ecos."</p><p className="text-sm">"O vazio não é mudo, é paciente."</p><p className="text-sm">"Tudo o que cala, continua a vibrar."</p><p className="text-sm">"Não há fim no silêncio, apenas retorno."</p></div></div>
+                <div><h2 className="text-base font-bold">Síntese</h2><p className="text-base text-justify leading-relaxed mt-2">A voz de THE VOID N.13 não busca convencer — busca atravessar. Fala em silêncio, move-se em pausa, respira no intervalo. É o eco do inconsciente transformado em frequência humana. O som não é mensagem, é travessia. THE VOID N.13 termina onde começa: no instante em que o silêncio ganha corpo.</p></div>
+              </div>
+            }
+            englishContent={
+              <div className="space-y-8">
+                <div><h2 className="text-base font-bold">The Gaze</h2><p className="text-base text-justify leading-relaxed mt-2">Behind the mask, there is silence. A gaze that seeks no recognition, only presence. The gaze doesn't return an image, it returns a mirror. It is the space where whoever looks is also seen from within. The gaze is the thread that stitches the visible and the invisible — a lens that dissolves the boundary between subject and shadow.</p></div>
+                <div><h2 className="text-base font-bold">The Breath</h2><p className="text-base text-justify leading-relaxed mt-2">Breathing is the sound that remains when the word dies. In it, the being anchors itself and vanishes. Air enters as noise and leaves as silence. Each exhalation is a micro-disappearance, a fleeting return to nothingness. To breathe is to remember that the body is only a passage between two worlds: the world of flesh and the world of the unseen.</p></div>
+                <div><h2 className="text-base font-bold">The Atmosphere</h2><p className="text-base text-justify leading-relaxed mt-2">Everything vibrates in a nocturnal tone. Fog, concrete, and electric solitude are extensions of the body. The environment doesn't surround THE VOID N.13 — it prolongs it. The landscape becomes psyche, and silence, a physical presence. The city is the expanded mirror of the unconscious, the place where the body vanishes and space breathes for it.</p></div>
+                <div><h2 className="text-base font-bold">Synthesis</h2><p className="text-base text-justify leading-relaxed mt-2">Being is an invisible architecture made of gestures, air, and intention. Nothing is fixed; everything is breath. THE VOID N.13 doesn't seek to be understood, but to be felt. It exists on the threshold where sound ends and image begins — in the slit between what vibrates and what vanishes. It is the moment when the body becomes atmosphere, and silence becomes presence.</p></div>
+                <div><h2 className="text-base font-bold">The Voice of the Void</h2><p className="text-base text-justify leading-relaxed mt-2">The voice doesn't come from the mouth — it comes from the body. It vibrates before sound, it breathes before words. When it speaks, it doesn't explain: it summons. Each phrase is a crack opened in the concrete of silence. What is spoken dies. What is silent lives. Sound is not a verb; it is presence in its rawest state — matter that pulses before meaning.</p></div>
+                <div><h4 className="text-base font-bold">The Frequency</h4><p className="text-base text-justify leading-relaxed mt-2">THE VOID N.13's voice is deep, without origin. It seems to come from inside the wall or from the ground itself. There is no anger — only density. It is the sound of the unconscious trying to breathe. The vibration precedes meaning: before it becomes word, it is impulse. The body becomes the resonant chamber of what the world silenced.</p></div>
+                <div><h4 className="text-base font-bold">The Language</h4><p className="text-base text-justify leading-relaxed mt-2">Fragments, pauses, echoes. THE VOID N.13's voice refuses grammar. It speaks in intervals, like someone remembering their own forgetting. Each noise is a trace of memory trying to reassemble itself. It isn't verb, it's conscious noise — a language made of cracks and breaths.</p></div>
+                <div><h4 className="text-base font-bold">The Silence</h4><p className="text-base text-justify leading-relaxed mt-2">Silence is not the absence of sound — it is sound at rest. The void speaks without needing a voice. When THE VOID N.13 falls silent, the space keeps vibrating for it. Silence is the body's expanded echo — the interval where the viewer hears themselves.</p></div>
+                <div><h4 className="text-base font-bold">Fragments</h4><div className="space-y-2 mt-2"><p className="text-sm italic">"Silence speaks louder than your voice."</p><p className="text-sm italic">"Breathe, but don't tell."</p><p className="text-sm italic">"Every absence has a sound."</p><p className="text-sm italic">"The verb is dead. Only echoes remain."</p><p className="text-sm italic">"The void isn't mute, it's patient."</p><p className="text-sm italic">"Everything that is silent keeps vibrating."</p><p className="text-sm italic">"There is no end in silence, only return."</p></div></div>
+                <div><h2 className="text-base font-bold">Synthesis</h2><p className="text-base text-justify leading-relaxed mt-2">The voice of THE VOID N.13 doesn't aim to convince — it aims to pierce through. It speaks in silence, moves in pause, breathes in between. It is the echo of the unconscious turned into human frequency. Sound is not message, it is passage. THE VOID N.13 ends where it begins: in the instant when silence takes form.</p></div>
+              </div>
+            }
+          />
+        </BilingualSection>
+
+        <section className="w-full h-screen overflow-hidden">
+          <img src={meditationRainScene} alt="THEVOIDN13 Meditation in Rain" className="w-full h-full object-contain" />
         </section>
 
         {/* Quando o Inconsciente Ganha Corpo - with mask */}
@@ -160,22 +221,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Character Sheet - Three Views */}
-        <section className="py-20">
-          <div className="max-w-6xl mx-auto px-6">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="aspect-[3/4] overflow-hidden border border-border rounded-lg">
-                <img src={conceptFront} alt="Front View" className="w-full h-full object-cover" />
-              </div>
-              <div className="aspect-[3/4] overflow-hidden border border-border rounded-lg">
-                <img src={conceptSide} alt="Side View" className="w-full h-full object-cover" />
-              </div>
-              <div className="aspect-[3/4] overflow-hidden border border-border rounded-lg">
-                <img src={conceptBack} alt="Back View" className="w-full h-full object-cover" />
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* THE VOID Street Scene */}
         <section className="w-full h-screen overflow-hidden">
@@ -542,61 +587,6 @@ const Index = () => {
         </BilingualSection>
 
 
-        {/* O Gesto */}
-        <BilingualSection>
-          <BilingualContent
-            portugueseContent={
-              <div className="space-y-6">
-                <h2 className="text-base font-bold">O Gesto</h2>
-                <p className="text-base text-justify leading-relaxed">
-                  Cada movimento é um ruído controlado, um eco do que o corpo escuta por dentro. Andar é pensar, parar é ouvir. THEVOIDN13 não representa, ele encarna a hesitação. O gesto é a respiração do pensamento, um movimento de exílio e de retorno. Cada deslocamento é uma forma de escuta: o corpo capta o que a mente silencia.
-                </p>
-              </div>
-            }
-            englishContent={
-              <div className="space-y-6">
-                <h2 className="text-base font-bold">The Gesture</h2>
-                <p className="text-base text-justify leading-relaxed">
-                  Each movement is a controlled noise, an echo of what the body hears within. To walk is to think, to stop is to listen. THEVOIDN13 doesn't represent, it embodies hesitation. Gesture is the breath of thought, a movement of exile and return. Every displacement is a form of listening: the body perceives what the mind silences.
-                </p>
-              </div>
-            }
-          />
-        </BilingualSection>
-
-        {/* Complete Voice and Being Section - Single Block */}
-        <BilingualSection>
-          <BilingualContent
-            portugueseContent={
-              <div className="space-y-8">
-                <div><h2 className="text-base font-bold">O Olhar</h2><p className="text-base text-justify leading-relaxed mt-2">Por trás da máscara, há silêncio. Um olhar que não busca reconhecimento, apenas presença. O olhar não devolve imagem, devolve espelho. É o espaço onde quem vê também está por dentro. O olhar é o fio que costura o visível e o invisível — uma lente que dissolve a fronteira entre sujeito e sombra.</p></div>
-                <div><h2 className="text-base font-bold">A Respiração</h2><p className="text-base text-justify leading-relaxed mt-2">A respiração é o som que resta quando o verbo morre. É nela que o ser se ancora e desaparece. O ar entra como ruído e sai como silêncio. Cada expiração é um micro-desaparecimento. Um instante de retorno ao nada. Respirar é lembrar que o corpo é apenas passagem entre dois mundos: o mundo da carne e o mundo do invisível.</p></div>
-                <div><h2 className="text-base font-bold">A Atmosfera</h2><p className="text-base text-justify leading-relaxed mt-2">Tudo vibra em tom noturno. A névoa, o concreto e a solidão elétrica são extensões do corpo. O ambiente não cerca THE VOID N.13 — ele o prolonga. A paisagem se torna psique, e o silêncio, uma presença física. A cidade é o espelho expandido do inconsciente, o lugar onde o corpo desaparece e o espaço respira por ele.</p></div>
-                <div><h2 className="text-base font-bold">Síntese</h2><p className="text-base text-justify leading-relaxed mt-2">O ser é uma arquitetura invisível feita de gestos, ar e intenção. Nada é fixo; tudo é respiração. THE VOID N.13 não busca ser compreendido, mas sentido. Ele existe no limiar onde o som começa e a imagem começa — na fresta entre o que vibra e o que desaparece. É o instante em que o corpo se torna atmosfera, e o silêncio, presença.</p></div>
-                <div><h2 className="text-base font-bold">A Voz do Vazio</h2><p className="text-base text-justify leading-relaxed mt-2">A voz não vem da boca — vem do corpo. Ela vibra antes do som, respira antes da palavra. Quando fala, não explica: convoca. Cada frase é uma fresta aberta no concreto do silêncio. O que se diz, morre. O que se cala, vive. O som não é verbo, é presença em estado bruto — matéria que pulsa antes do sentido.</p></div>
-                <div><h4 className="text-base font-bold">A Frequência</h4><p className="text-base text-justify leading-relaxed mt-2">A voz de THE VOID N.13 é grave, sem origem. Parece vir de dentro da parede, ou do próprio chão. Não há raiva — há densidade. É o som do inconsciente tentando respirar. A vibração antecede o sentido: antes de ser palavra, é impulso. O corpo torna-se caixa de ressonância do que o mundo silenciou.</p></div>
-                <div><h4 className="text-base font-bold">A Linguagem</h4><p className="text-base text-justify leading-relaxed mt-2">Fragmentos, pausas, ecos. A voz de THE VOID N.13 recusa gramática. Fala em intervalos, como quem se lembra do próprio esquecimento. Cada ruído é um vestígio de memória tentando se recompor. Não é verbo, é ruído consciente — um idioma feito de fendas e respirações.</p></div>
-                <div><h4 className="text-base font-bold">O Silêncio</h4><p className="text-base text-justify leading-relaxed mt-2">O silêncio não é ausência de som, é som em repouso. O vazio fala sem precisar de voz. Quando THE VOID N.13 cala, o espaço continua vibrando por ele. O silêncio é o eco expandido do corpo — o intervalo onde o espectador escuta a si mesmo.</p></div>
-                <div><h4 className="text-base font-bold">Fragmentos</h4><div className="space-y-2 mt-2"><p className="text-sm">"O silêncio fala mais alto que a sua voz."</p><p className="text-sm">"Respire, mas não diga."</p><p className="text-sm">"Toda ausência tem um som."</p><p className="text-sm">"O verbo morreu. Sobraram ecos."</p><p className="text-sm">"O vazio não é mudo, é paciente."</p><p className="text-sm">"Tudo o que cala, continua a vibrar."</p><p className="text-sm">"Não há fim no silêncio, apenas retorno."</p></div></div>
-                <div><h2 className="text-base font-bold">Síntese</h2><p className="text-base text-justify leading-relaxed mt-2">A voz de THE VOID N.13 não busca convencer — busca atravessar. Fala em silêncio, move-se em pausa, respira no intervalo. É o eco do inconsciente transformado em frequência humana. O som não é mensagem, é travessia. THE VOID N.13 termina onde começa: no instante em que o silêncio ganha corpo.</p></div>
-              </div>
-            }
-            englishContent={
-              <div className="space-y-8">
-                <div><h2 className="text-base font-bold">The Gaze</h2><p className="text-base text-justify leading-relaxed mt-2">Behind the mask, there is silence. A gaze that seeks no recognition, only presence. The gaze doesn't return an image, it returns a mirror. It is the space where whoever looks is also seen from within. The gaze is the thread that stitches the visible and the invisible — a lens that dissolves the boundary between subject and shadow.</p></div>
-                <div><h2 className="text-base font-bold">The Breath</h2><p className="text-base text-justify leading-relaxed mt-2">Breathing is the sound that remains when the word dies. In it, the being anchors itself and vanishes. Air enters as noise and leaves as silence. Each exhalation is a micro-disappearance, a fleeting return to nothingness. To breathe is to remember that the body is only a passage between two worlds: the world of flesh and the world of the unseen.</p></div>
-                <div><h2 className="text-base font-bold">The Atmosphere</h2><p className="text-base text-justify leading-relaxed mt-2">Everything vibrates in a nocturnal tone. Fog, concrete, and electric solitude are extensions of the body. The environment doesn't surround THE VOID N.13 — it prolongs it. The landscape becomes psyche, and silence, a physical presence. The city is the expanded mirror of the unconscious, the place where the body vanishes and space breathes for it.</p></div>
-                <div><h2 className="text-base font-bold">Synthesis</h2><p className="text-base text-justify leading-relaxed mt-2">Being is an invisible architecture made of gestures, air, and intention. Nothing is fixed; everything is breath. THE VOID N.13 doesn't seek to be understood, but to be felt. It exists on the threshold where sound ends and image begins — in the slit between what vibrates and what vanishes. It is the moment when the body becomes atmosphere, and silence becomes presence.</p></div>
-                <div><h2 className="text-base font-bold">The Voice of the Void</h2><p className="text-base text-justify leading-relaxed mt-2">The voice doesn't come from the mouth — it comes from the body. It vibrates before sound, it breathes before words. When it speaks, it doesn't explain: it summons. Each phrase is a crack opened in the concrete of silence. What is spoken dies. What is silent lives. Sound is not a verb; it is presence in its rawest state — matter that pulses before meaning.</p></div>
-                <div><h4 className="text-base font-bold">The Frequency</h4><p className="text-base text-justify leading-relaxed mt-2">THE VOID N.13's voice is deep, without origin. It seems to come from inside the wall or from the ground itself. There is no anger — only density. It is the sound of the unconscious trying to breathe. The vibration precedes meaning: before it becomes word, it is impulse. The body becomes the resonant chamber of what the world silenced.</p></div>
-                <div><h4 className="text-base font-bold">The Language</h4><p className="text-base text-justify leading-relaxed mt-2">Fragments, pauses, echoes. THE VOID N.13's voice refuses grammar. It speaks in intervals, like someone remembering their own forgetting. Each noise is a trace of memory trying to reassemble itself. It isn't verb, it's conscious noise — a language made of cracks and breaths.</p></div>
-                <div><h4 className="text-base font-bold">The Silence</h4><p className="text-base text-justify leading-relaxed mt-2">Silence is not the absence of sound — it is sound at rest. The void speaks without needing a voice. When THE VOID N.13 falls silent, the space keeps vibrating for it. Silence is the body's expanded echo — the interval where the viewer hears themselves.</p></div>
-                <div><h4 className="text-base font-bold">Fragments</h4><div className="space-y-2 mt-2"><p className="text-sm italic">"Silence speaks louder than your voice."</p><p className="text-sm italic">"Breathe, but don't tell."</p><p className="text-sm italic">"Every absence has a sound."</p><p className="text-sm italic">"The verb is dead. Only echoes remain."</p><p className="text-sm italic">"The void isn't mute, it's patient."</p><p className="text-sm italic">"Everything that is silent keeps vibrating."</p><p className="text-sm italic">"There is no end in silence, only return."</p></div></div>
-                <div><h2 className="text-base font-bold">Synthesis</h2><p className="text-base text-justify leading-relaxed mt-2">The voice of THE VOID N.13 doesn't aim to convince — it aims to pierce through. It speaks in silence, moves in pause, breathes in between. It is the echo of the unconscious turned into human frequency. Sound is not message, it is passage. THE VOID N.13 ends where it begins: in the instant when silence takes form.</p></div>
-              </div>
-            }
-          />
-        </BilingualSection>
 
         <section className="w-full h-screen overflow-hidden">
           <img src={voidStreetScene} alt="The Void N.13 Street Scene" className="w-full h-full object-contain" />
