@@ -23,12 +23,15 @@ export const AccessGate = ({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [hasAccess, setHasAccess] = useState(false);
   useEffect(() => {
-    // Check if user already has access
-    const accessGranted = localStorage.getItem("thevoidn13_access_granted");
-    if (accessGranted === "true") {
-      setHasAccess(true);
-      onAccessGranted();
-    }
+    const checkAuth = async () => {
+      const { data } = await supabase.auth.getSession();
+      if (data.session?.user) {
+        setHasAccess(true);
+        onAccessGranted();
+      }
+    };
+
+    checkAuth();
   }, [onAccessGranted]);
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -88,11 +91,11 @@ export const AccessGate = ({
         throw insertError;
       }
 
-      // Grant access
-      localStorage.setItem("thevoidn13_access_granted", "true");
+      // User is now authenticated, grant access
       setHasAccess(true);
-      toast.success("Bem-vindo ao THEVØIDN13! Verifique seu email para confirmar o cadastro. / " + "Welcome to THEVØIDN13! Check your email to confirm registration.");
       onAccessGranted();
+
+      toast.success("Welcome to THEVØIDN13 — Your account has been created. Enjoy the experience.");
     } catch (error: any) {
       console.error("Access gate error:", error);
       toast.error(error.message || "Erro ao processar cadastro / Error processing registration");

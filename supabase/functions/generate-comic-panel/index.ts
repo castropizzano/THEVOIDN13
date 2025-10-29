@@ -27,7 +27,7 @@ serve(async (req) => {
   try {
     const { script } = await req.json();
     
-    // Server-side validation
+    // Enhanced server-side validation
     if (!script || typeof script !== 'string') {
       return new Response(
         JSON.stringify({ error: "Script is required and must be a string" }),
@@ -37,6 +37,7 @@ serve(async (req) => {
 
     const trimmedScript = script.trim();
     
+    // Enforce strict length limits to prevent resource exhaustion
     if (trimmedScript.length < 10) {
       return new Response(
         JSON.stringify({ error: "Script too short (minimum 10 characters)" }),
@@ -44,21 +45,25 @@ serve(async (req) => {
       );
     }
 
-    if (trimmedScript.length > 2000) {
+    if (trimmedScript.length > 1000) {
       return new Response(
-        JSON.stringify({ error: "Script too long (maximum 2000 characters)" }),
+        JSON.stringify({ error: "Script too long (maximum 1000 characters)" }),
         { headers: { ...corsHeaders, 'Content-Type': 'application/json' }, status: 400 }
       );
     }
 
     // Validate characters (allow common characters including Portuguese)
+    // Restrict to safe character set to prevent prompt injection
     const validCharPattern = /^[\w\s.,!?'"\-—()áéíóúâêôãõçÁÉÍÓÚÂÊÔÃÕÇ]+$/;
     if (!validCharPattern.test(trimmedScript)) {
       return new Response(
-        JSON.stringify({ error: "Script contains invalid characters" }),
+        JSON.stringify({ error: "Script contains invalid characters. Use only letters, numbers, and basic punctuation." }),
         { headers: { ...corsHeaders, 'Content-Type': 'application/json' }, status: 400 }
       );
     }
+
+    // Log generation request for abuse detection
+    console.log(`Comic panel generation requested. Script length: ${trimmedScript.length} chars`);
 
     const LOVABLE_API_KEY = Deno.env.get('LOVABLE_API_KEY');
     if (!LOVABLE_API_KEY) {

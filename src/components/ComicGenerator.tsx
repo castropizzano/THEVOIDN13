@@ -14,7 +14,7 @@ Tattooed man with black cap (no hood), green military jacket, oversized black t-
 const scriptSchema = z.string()
   .trim()
   .min(10, "Roteiro muito curto (mín. 10 caracteres) / Script too short (min 10 chars)")
-  .max(2000, "Roteiro muito longo (máx. 2000 caracteres) / Script too long (max 2000 chars)")
+  .max(1000, "Roteiro muito longo (máx. 1000 caracteres) / Script too long (max 1000 chars)")
   .regex(/^[\w\s.,!?'"\-—()áéíóúâêôãõçÁÉÍÓÚÂÊÔÃÕÇ]+$/, "Caracteres inválidos no roteiro / Invalid characters in script");
 
 export const ComicGenerator = () => {
