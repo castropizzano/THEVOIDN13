@@ -2,15 +2,21 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { z } from "zod";
 import { Loader2 } from "lucide-react";
-import { LoadingSpinner } from "@/components/LoadingSpinner";
 import { PrivacyPolicyDialog } from "@/components/PrivacyPolicyDialog";
-const subscribeSchema = z.object({
+const loginSchema = z.object({
+  email: z.string().trim().email("Email inválido / Invalid email"),
+  password: z.string().min(6, "Senha deve ter no mínimo 6 caracteres / Password must be at least 6 characters")
+});
+
+const signupSchema = z.object({
   email: z.string().trim().email("Email inválido / Invalid email").max(255, "Email muito longo / Email too long"),
-  full_name: z.string().trim().min(2, "Nome muito curto (mín. 2 caracteres) / Name too short (min 2 chars)").max(100, "Nome muito longo (máx. 100 caracteres) / Name too long (max 100 chars)")
+  full_name: z.string().trim().min(2, "Nome muito curto (mín. 2 caracteres) / Name too short (min 2 chars)").max(100, "Nome muito longo (máx. 100 caracteres) / Name too long (max 100 chars)"),
+  password: z.string().min(6, "Senha deve ter no mínimo 6 caracteres / Password must be at least 6 characters")
 });
 interface AccessGateProps {
   onAccessGranted: () => void;
@@ -19,9 +25,11 @@ export const AccessGate = ({
   onAccessGranted
 }: AccessGateProps) => {
   const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [fullName, setFullName] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [hasAccess, setHasAccess] = useState(false);
+  const [activeTab, setActiveTab] = useState<"login" | "signup">("login");
   useEffect(() => {
     const checkAuth = async () => {
       const { data } = await supabase.auth.getSession();
@@ -33,78 +41,96 @@ export const AccessGate = ({
 
     checkAuth();
   }, [onAccessGranted]);
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Validate input
-    const validation = subscribeSchema.safeParse({
-      email,
-      full_name: fullName
-    });
+    const validation = loginSchema.safeParse({ email, password });
     if (!validation.success) {
       toast.error(validation.error.errors[0].message);
       return;
     }
+
     setIsSubmitting(true);
     try {
-      // Check if user already exists
-      const {
-        data: session
-      } = await supabase.auth.getSession();
-      if (!session.session) {
-        // Sign up new user
-        const {
-          data: signUpData,
-          error: signUpError
-        } = await supabase.auth.signUp({
-          email: validation.data.email,
-          password: crypto.randomUUID(),
-          // Generate random password
-          options: {
-            data: {
-              full_name: validation.data.full_name
-            },
-            emailRedirectTo: `${window.location.origin}/`
-          }
-        });
-        if (signUpError) {
-          // User might already exist, try to sign in
-          if (signUpError.message.includes("already registered")) {
-            toast.error("Este email já está cadastrado. Verifique sua caixa de entrada. / " + "This email is already registered. Check your inbox.");
-            return;
-          }
-          throw signUpError;
+      const { data, error } = await supabase.auth.signInWithPassword({
+        email: validation.data.email,
+        password: validation.data.password,
+      });
+
+      if (error) {
+        toast.error("Email ou senha incorretos / Incorrect email or password");
+        return;
+      }
+
+      setHasAccess(true);
+      onAccessGranted();
+      toast.success("Bem-vindo de volta ao vazio / Welcome back to the void");
+    } catch (error: any) {
+      console.error("Login error:", error);
+      toast.error(error.message || "Erro ao fazer login / Login error");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleSignup = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const validation = signupSchema.safeParse({ email, password, full_name: fullName });
+    if (!validation.success) {
+      toast.error(validation.error.errors[0].message);
+      return;
+    }
+
+    setIsSubmitting(true);
+    try {
+      const { data, error: signUpError } = await supabase.auth.signUp({
+        email: validation.data.email,
+        password: validation.data.password,
+        options: {
+          data: {
+            full_name: validation.data.full_name
+          },
+          emailRedirectTo: `${window.location.origin}/`
         }
+      });
+
+      if (signUpError) {
+        if (signUpError.message.includes("already registered")) {
+          toast.error("Email já cadastrado. Use a aba 'Entrar' / Email already registered. Use 'Login' tab");
+          setActiveTab("login");
+          return;
+        }
+        throw signUpError;
       }
 
       // Save to newsletter
-      const {
-        error: insertError
-      } = await supabase.from("newsletter_subscribers").insert({
+      const { error: insertError } = await supabase.from("newsletter_subscribers").insert({
         email: validation.data.email,
         full_name: validation.data.full_name,
         ip_address: await fetch("https://api.ipify.org?format=json").then(r => r.json()).then(data => data.ip).catch(() => null),
         user_agent: navigator.userAgent,
         consent_given: true
       });
+
       if (insertError && !insertError.message.includes("duplicate")) {
-        throw insertError;
+        console.error("Newsletter error:", insertError);
       }
 
-      // User is now authenticated, grant access
       setHasAccess(true);
       onAccessGranted();
-
-      toast.success("Welcome to THEVØIDN13 — Your account has been created. Enjoy the experience.");
+      toast.success("Conta criada! Bem-vindo ao vazio / Account created! Welcome to the void");
     } catch (error: any) {
-      console.error("Access gate error:", error);
-      toast.error(error.message || "Erro ao processar cadastro / Error processing registration");
+      console.error("Signup error:", error);
+      toast.error(error.message || "Erro ao criar conta / Signup error");
     } finally {
       setIsSubmitting(false);
     }
   };
   if (hasAccess) return null;
-  return <div className="fixed inset-0 z-50 bg-background/95 backdrop-blur-md flex items-center justify-center p-4">
+
+  return (
+    <div className="fixed inset-0 z-50 bg-background/95 backdrop-blur-md flex items-center justify-center p-4">
       <Card className="w-full max-w-md border-2 border-primary/30 shadow-2xl">
         <CardHeader className="space-y-4 text-center relative">
           <div className="absolute top-4 right-4 text-xs text-foreground/60 tracking-wider font-medium">
@@ -118,64 +144,154 @@ export const AccessGate = ({
               THE VOID CALLS
             </CardTitle>
           </div>
-          <CardDescription className="site-paragraph space-y-4 leading-relaxed">
-            <p className="leading-relaxed">
-              Há um ponto onde o tempo desacelera e a consciência escuta o ruído do próprio silêncio.
-              Luz e sombra se confundem — e o que era apenas lembrança começa a pulsar.
-              Nada aqui é linear. Cada passo dentro do vazio é uma lembrança futura tentando se materializar.
-            </p>
-            <p className="text-xs leading-relaxed">
+          <CardDescription className="site-paragraph text-sm leading-relaxed">
+            Há um ponto onde o tempo desacelera e a consciência escuta o ruído do próprio silêncio.
+            <br />
+            <span className="text-xs">
               There's a point where time slows down and awareness hears the noise of its own silence.
-              Light and shadow blur — and what was once memory begins to pulse.
-              Nothing here is linear. Each step inside the void is a future memory trying to take form.
-            </p>
+            </span>
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div className="space-y-2">
-              <label htmlFor="fullName" className="site-subtitle">
-                Nome Completo / Full Name
-              </label>
-              <Input id="fullName" type="text" value={fullName} onChange={e => setFullName(e.target.value)} placeholder="seu nome / your name" required disabled={isSubmitting} className="h-12" />
-            </div>
+          <Tabs value={activeTab} onValueChange={(v) => setActiveTab(v as "login" | "signup")}>
+            <TabsList className="grid w-full grid-cols-2 mb-4">
+              <TabsTrigger value="login">Entrar / Login</TabsTrigger>
+              <TabsTrigger value="signup">Cadastrar / Sign Up</TabsTrigger>
+            </TabsList>
 
-            <div className="space-y-2">
-              <label htmlFor="email" className="site-subtitle">
-                Email
-              </label>
-              <Input id="email" type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="seu@email.com / your@email.com" required disabled={isSubmitting} className="h-12" />
-            </div>
+            <TabsContent value="login">
+              <form onSubmit={handleLogin} className="space-y-4">
+                <div className="space-y-2">
+                  <label htmlFor="login-email" className="site-subtitle text-sm">
+                    Email
+                  </label>
+                  <Input
+                    id="login-email"
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="seu@email.com / your@email.com"
+                    required
+                    disabled={isSubmitting}
+                    className="h-11"
+                  />
+                </div>
 
-            <div className="space-y-2">
-              <p className="text-xs text-muted-foreground leading-relaxed">
-                Ao seguir adiante, você aceita nossa{" "}
-                <PrivacyPolicyDialog>
-                  <button type="button" className="text-primary hover:underline">
-                    Política de Privacidade
-                  </button>
-                </PrivacyPolicyDialog>
-                {" "}e permite que o vazio lhe envie ecos — fragmentos, imagens e sinais sobre o que emerge das sombras.
-              </p>
-              <p className="text-xs text-muted-foreground leading-relaxed">
-                By proceeding, you accept our{" "}
-                <PrivacyPolicyDialog>
-                  <button type="button" className="text-primary hover:underline">
-                    Privacy Policy
-                  </button>
-                </PrivacyPolicyDialog>
-                {" "}and allow the void to send you echoes — fragments, images, and signals of what rises from the shadows.
-              </p>
-            </div>
+                <div className="space-y-2">
+                  <label htmlFor="login-password" className="site-subtitle text-sm">
+                    Senha / Password
+                  </label>
+                  <Input
+                    id="login-password"
+                    type="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    placeholder="••••••"
+                    required
+                    disabled={isSubmitting}
+                    className="h-11"
+                  />
+                </div>
 
-            <Button type="submit" disabled={isSubmitting} className="w-full h-12" size="lg">
-              {isSubmitting ? <>
-                  <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                  Processando... / Processing...
-                </> : <>ENTRAR / ENTER THE VOID</>}
-            </Button>
-          </form>
+                <Button type="submit" disabled={isSubmitting} className="w-full h-11" size="lg">
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                      Entrando... / Logging in...
+                    </>
+                  ) : (
+                    <>ENTRAR / LOGIN</>
+                  )}
+                </Button>
+              </form>
+            </TabsContent>
+
+            <TabsContent value="signup">
+              <form onSubmit={handleSignup} className="space-y-4">
+                <div className="space-y-2">
+                  <label htmlFor="signup-name" className="site-subtitle text-sm">
+                    Nome Completo / Full Name
+                  </label>
+                  <Input
+                    id="signup-name"
+                    type="text"
+                    value={fullName}
+                    onChange={(e) => setFullName(e.target.value)}
+                    placeholder="seu nome / your name"
+                    required
+                    disabled={isSubmitting}
+                    className="h-11"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <label htmlFor="signup-email" className="site-subtitle text-sm">
+                    Email
+                  </label>
+                  <Input
+                    id="signup-email"
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="seu@email.com / your@email.com"
+                    required
+                    disabled={isSubmitting}
+                    className="h-11"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <label htmlFor="signup-password" className="site-subtitle text-sm">
+                    Senha / Password
+                  </label>
+                  <Input
+                    id="signup-password"
+                    type="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    placeholder="mínimo 6 caracteres / min 6 chars"
+                    required
+                    disabled={isSubmitting}
+                    className="h-11"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    Ao cadastrar, você aceita nossa{" "}
+                    <PrivacyPolicyDialog>
+                      <button type="button" className="text-primary hover:underline">
+                        Política de Privacidade
+                      </button>
+                    </PrivacyPolicyDialog>
+                    {" "}e permite que o vazio envie ecos.
+                  </p>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    By signing up, you accept our{" "}
+                    <PrivacyPolicyDialog>
+                      <button type="button" className="text-primary hover:underline">
+                        Privacy Policy
+                      </button>
+                    </PrivacyPolicyDialog>
+                    {" "}and allow the void to send echoes.
+                  </p>
+                </div>
+
+                <Button type="submit" disabled={isSubmitting} className="w-full h-11" size="lg">
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                      Criando conta... / Creating account...
+                    </>
+                  ) : (
+                    <>CADASTRAR / SIGN UP</>
+                  )}
+                </Button>
+              </form>
+            </TabsContent>
+          </Tabs>
         </CardContent>
       </Card>
-    </div>;
+    </div>
+  );
 };
