@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Brain, Palette, Code, Film, BookOpen, Sparkles } from "lucide-react";
+import { BookOpen } from "lucide-react";
 
 export const MindMap = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -9,8 +9,7 @@ export const MindMap = () => {
   return (
     <Card className="bg-card/80 border-primary/30 hover:border-primary transition-colors">
       <CardHeader>
-        <CardTitle className="text-2xl font-bold text-primary flex items-center gap-3">
-          <Brain className="w-7 h-7" />
+        <CardTitle className="text-2xl font-bold text-primary">
           Creative-Ops Mind Map / Mapa Mental Creative-Ops
         </CardTitle>
         <CardDescription className="text-base">
@@ -31,8 +30,7 @@ export const MindMap = () => {
           <div className="space-y-8">
             {/* Asimov's Creative Laws */}
             <div className="p-6 bg-primary/5 rounded-lg border border-primary/20">
-              <h3 className="text-lg font-bold mb-4 text-primary flex items-center gap-2">
-                <Sparkles className="w-5 h-5" />
+              <h3 className="text-lg font-bold mb-4 text-primary">
                 As Três Leis da Robótica Criativa / The Three Laws of Creative Robotics
               </h3>
               <div className="space-y-3 text-sm">
@@ -68,21 +66,21 @@ export const MindMap = () => {
 
                 {/* Central Node */}
                 <g>
-                  <ellipse cx="600" cy="80" rx="180" ry="60" fill="url(#primaryGrad)" />
+                  <rect x="420" y="40" width="360" height="80" fill="url(#primaryGrad)" rx="6" />
                   <text x="600" y="75" textAnchor="middle" fill="hsl(var(--primary-foreground))" fontSize="22" fontWeight="bold">
                     THEVØIDN13
                   </text>
-                  <text x="600" y="92" textAnchor="middle" fill="hsl(var(--primary-foreground))" fontSize="10" opacity="0.8">
+                  <text x="600" y="95" textAnchor="middle" fill="hsl(var(--primary-foreground))" fontSize="10" opacity="0.8">
                     Memorial Artístico • Artistic Memorial
                   </text>
                 </g>
 
                 {/* 4 Main Branches */}
                 {/* Top Left - CONCEITUAL */}
-                <line x1="480" y1="110" x2="200" y2="220" stroke="hsl(var(--primary))" strokeWidth="2" opacity="0.5" />
-                <rect x="50" y="200" width="300" height="55" fill="url(#primaryGrad)" rx="8" />
+                <line x1="420" y1="120" x2="200" y2="220" stroke="hsl(var(--primary))" strokeWidth="2" opacity="0.5" />
+                <rect x="50" y="200" width="300" height="55" fill="url(#primaryGrad)" rx="6" />
                 <text x="200" y="225" textAnchor="middle" fill="hsl(var(--primary-foreground))" fontSize="16" fontWeight="bold">
-                  🧠 CONCEITUAL
+                  CONCEITUAL
                 </text>
                 <text x="200" y="242" textAnchor="middle" fill="hsl(var(--primary-foreground))" fontSize="9" opacity="0.8">
                   Foundations • Fundamentos
@@ -108,10 +106,10 @@ export const MindMap = () => {
                 <line x1="200" y1="255" x2="275" y2="275" stroke="hsl(var(--primary))" strokeWidth="1" opacity="0.4" />
 
                 {/* Top Right - METODOLÓGICO */}
-                <line x1="720" y1="110" x2="1000" y2="220" stroke="hsl(var(--accent))" strokeWidth="2" opacity="0.5" />
-                <rect x="850" y="200" width="300" height="55" fill="url(#accentGrad)" rx="8" />
+                <line x1="780" y1="120" x2="1000" y2="220" stroke="hsl(var(--accent))" strokeWidth="2" opacity="0.5" />
+                <rect x="850" y="200" width="300" height="55" fill="url(#accentGrad)" rx="6" />
                 <text x="1000" y="225" textAnchor="middle" fill="hsl(var(--accent-foreground))" fontSize="16" fontWeight="bold">
-                  🔬 METODOLÓGICO
+                  METODOLÓGICO
                 </text>
                 <text x="1000" y="242" textAnchor="middle" fill="hsl(var(--accent-foreground))" fontSize="9" opacity="0.8">
                   Process • Processo
@@ -138,10 +136,10 @@ export const MindMap = () => {
                 <line x1="1000" y1="255" x2="1075" y2="275" stroke="hsl(var(--accent))" strokeWidth="1" opacity="0.4" />
 
                 {/* Bottom Left - TÉCNICO */}
-                <line x1="480" y1="140" x2="200" y2="430" stroke="hsl(var(--secondary))" strokeWidth="2" opacity="0.5" />
-                <rect x="50" y="410" width="300" height="55" fill="url(#secondaryGrad)" rx="8" />
+                <line x1="420" y1="120" x2="200" y2="430" stroke="hsl(var(--secondary))" strokeWidth="2" opacity="0.5" />
+                <rect x="50" y="410" width="300" height="55" fill="url(#secondaryGrad)" rx="6" />
                 <text x="200" y="435" textAnchor="middle" fill="hsl(var(--secondary-foreground))" fontSize="16" fontWeight="bold">
-                  ⚙️ TÉCNICO
+                  TÉCNICO
                 </text>
                 <text x="200" y="452" textAnchor="middle" fill="hsl(var(--secondary-foreground))" fontSize="9" opacity="0.8">
                   Technology • Tecnologia
@@ -180,10 +178,10 @@ export const MindMap = () => {
                 <line x1="200" y1="465" x2="300" y2="485" stroke="hsl(var(--secondary))" strokeWidth="1" opacity="0.4" />
 
                 {/* Bottom Right - OUTPUTS */}
-                <line x1="720" y1="140" x2="1000" y2="430" stroke="hsl(var(--primary))" strokeWidth="2" opacity="0.5" />
-                <rect x="850" y="410" width="300" height="55" fill="url(#primaryGrad)" rx="8" />
+                <line x1="780" y1="120" x2="1000" y2="430" stroke="hsl(var(--primary))" strokeWidth="2" opacity="0.5" />
+                <rect x="850" y="410" width="300" height="55" fill="url(#primaryGrad)" rx="6" />
                 <text x="1000" y="435" textAnchor="middle" fill="hsl(var(--primary-foreground))" fontSize="16" fontWeight="bold">
-                  🎨 OUTPUTS
+                  OUTPUTS
                 </text>
                 <text x="1000" y="452" textAnchor="middle" fill="hsl(var(--primary-foreground))" fontSize="9" opacity="0.8">
                   Deliverables • Entregas
@@ -230,22 +228,22 @@ export const MindMap = () => {
                   
                   <line x1="150" y1="710" x2="1050" y2="710" stroke="hsl(var(--primary))" strokeWidth="2" opacity="0.4" />
                   
-                  <circle cx="200" cy="710" r="6" fill="hsl(var(--primary))" />
+                  <rect x="194" y="704" width="12" height="12" fill="hsl(var(--primary))" />
                   <text x="200" y="732" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="9" fontWeight="bold">2023</text>
                   
-                  <circle cx="350" cy="710" r="6" fill="hsl(var(--primary))" />
+                  <rect x="344" y="704" width="12" height="12" fill="hsl(var(--primary))" />
                   <text x="350" y="732" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="9" fontWeight="bold">2024 Q1</text>
                   
-                  <circle cx="500" cy="710" r="6" fill="hsl(var(--primary))" />
+                  <rect x="494" y="704" width="12" height="12" fill="hsl(var(--primary))" />
                   <text x="500" y="732" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="9" fontWeight="bold">2024 Q3</text>
                   
-                  <circle cx="650" cy="710" r="7" fill="hsl(var(--accent))" />
+                  <rect x="643" y="703" width="14" height="14" fill="hsl(var(--accent))" />
                   <text x="650" y="732" textAnchor="middle" fill="hsl(var(--accent))" fontSize="9" fontWeight="bold">2025 Q1</text>
                   
-                  <circle cx="800" cy="710" r="6" fill="hsl(var(--secondary))" />
+                  <rect x="794" y="704" width="12" height="12" fill="hsl(var(--secondary))" />
                   <text x="800" y="732" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="9" fontWeight="bold">2025+</text>
                   
-                  <circle cx="950" cy="710" r="5" fill="hsl(var(--muted-foreground))" opacity="0.5" />
+                  <rect x="945" y="705" width="10" height="10" fill="hsl(var(--muted-foreground))" opacity="0.5" />
                   <text x="950" y="732" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="9">Futuro</text>
                 </g>
 
@@ -264,7 +262,7 @@ export const MindMap = () => {
                   <rect x="650" y="815" width="25" height="15" fill="url(#secondaryGrad)" rx="3" />
                   <text x="683" y="827" fill="hsl(var(--foreground))" fontSize="9">Técnico</text>
 
-                  <circle cx="887" cy="822" r="5" fill="hsl(var(--primary))" />
+                  <rect x="882" y="817" width="10" height="10" fill="hsl(var(--primary))" />
                   <text x="898" y="827" fill="hsl(var(--foreground))" fontSize="9">Marco-chave</text>
                 </g>
 
