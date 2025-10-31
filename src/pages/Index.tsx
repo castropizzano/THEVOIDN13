@@ -1309,20 +1309,6 @@ const Index = () => {
               }
             />
           </div>
-
-          <div className="space-y-16">
-            {/* CONCEPT SCENE */}
-            <div className="mt-16">
-              <h3 className="subsection-title mb-8 text-left">THEVØIDN13 (CENA CONCEITO | CONCEPT SCENE)</h3>
-              <div className="my-8">
-                <img 
-                  src={corsaRender} 
-                  alt="THEVØIDN13 Concept Scene" 
-                  className="w-full max-w-6xl mx-auto rounded-lg"
-                />
-              </div>
-            </div>
-          </div>
         </BilingualSection>
 
         {/* ===== PROCESSOS RELACIONADOS ===== */}
