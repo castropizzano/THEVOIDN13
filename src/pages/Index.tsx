@@ -1457,15 +1457,6 @@ const Index = () => {
 
         {/* ===== THEVØIDN13 STUDY ===== */}
         <BilingualSection>
-          <h3 className="subsection-title mb-8 text-left">THEVØIDN13 (ESTUDO INICIAL | EXPLORATORY STUDY)</h3>
-          <div className="my-8">
-            <img 
-              src={charactersStudy} 
-              alt="THEVØIDN13 Characters Study" 
-              className="w-full max-w-6xl mx-auto rounded-lg"
-            />
-          </div>
-
           {/* FIM DA TRANSMISSÃO */}
           <div className="mt-16">
             <h3 className="subsection-title mb-8">[FIM DA TRANSMISSÃO]</h3>
