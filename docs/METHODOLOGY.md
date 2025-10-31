@@ -1,5 +1,5 @@
 # METODOLOGIA DE PESQUISA
-## THEVOIDN13 - Memorial Artístico e Práxis Híbrida
+## THEVØIDN13 - Memorial Artístico e Práxis Híbrida
 
 ---
 
@@ -90,4 +90,4 @@ Consulte o arquivo completo de referências bibliográficas em:
 ---
 
 **© 2025 Castro Pizzano (цастро™)**  
-Projeto THEVOIDN13 - Memorial Artístico e Práxis Híbrida
+Projeto THEVØIDN13 - Memorial Artístico e Práxis Híbrida

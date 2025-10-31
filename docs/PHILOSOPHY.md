@@ -1,11 +1,11 @@
-FILOSOFIA DO PROJETO — THEVOIDN13  
+FILOSOFIA DO PROJETO — THEVØIDN13  
 Justificativa das Escolhas Não-Convencionais  
 por Castro Pizzano (цастро™)  
 Curitiba — 2025
 
 ───────────────────────────────────────────────────────────────  
 (EN)  
-PROJECT PHILOSOPHY — THEVOIDN13  
+PROJECT PHILOSOPHY — THEVØIDN13  
 Rationale for Non-Conventional Choices  
 by Castro Pizzano (цастро™)  
 Curitiba — 2025  
@@ -15,7 +15,7 @@ Curitiba — 2025
 
 Este documento existe para evitar mal-entendidos.
 
-THEVOIDN13 não é um repositório técnico convencional.  
+THEVØIDN13 não é um repositório técnico convencional.  
 É um **memorial artístico performático** — onde código é corpo, estrutura é poesia,  
 e cada escolha técnica é gesto conceitual.
 
@@ -30,7 +30,7 @@ Este texto serve como ponte entre dois mundos:
 
 This document exists to avoid misunderstandings.
 
-THEVOIDN13 is not a conventional technical repository.  
+THEVØIDN13 is not a conventional technical repository.  
 It is a **performative artistic memorial** — where code is body, structure is poetry,  
 and each technical choice is a conceptual gesture.
 
@@ -66,7 +66,7 @@ Cada arquivo de código começa com um header de ~25 linhas:
 ```
 /*
 ==============================================================
-THEVOIDN13 — MEMORIAL ARTÍSTICO E PRÁXIS HÍBRIDA...
+THEVØIDN13 — MEMORIAL ARTÍSTICO E PRÁXIS HÍBRIDA...
 (texto completo do copyright, licença, manifesto)
 ==============================================================
 */
@@ -223,7 +223,7 @@ Nomenclatura numérica sugere ordem de leitura (01 → 02 → 03).
 
 ### Por Que É Certo
 
-**1. THEVOIDN13 É Simultaneamente:**
+**1. THEVØIDN13 É Simultaneamente:**
 - **Origem** (nasce do burnout no mestrado)
 - **Portal** (apresenta os outros núcleos)
 - **Síntese** (integra tudo)
@@ -324,7 +324,7 @@ O projeto provoca reflexão sobre co-criação humano-máquina?
 ## CONCLUSÃO: CÓDIGO COMO CORPO  
 ───────────────────────────────────────────────────────────────
 
-THEVOIDN13 propõe que **código pode ser corpo**.
+THEVØIDN13 propõe que **código pode ser corpo**.
 
 Não apenas ferramenta, mas **matéria de expressão**.  
 Não apenas estrutura, mas **gesto simbólico**.
@@ -346,7 +346,7 @@ Se o projeto incomoda convenções,
 (EN) CONCLUSION: CODE AS BODY  
 ───────────────────────────────────────────────────────────────
 
-THEVOIDN13 proposes that **code can be body**.
+THEVØIDN13 proposes that **code can be body**.
 
 Not just a tool, but **material of expression**.  
 Not just structure, but **symbolic gesture**.
@@ -372,7 +372,7 @@ Este documento pode ser citado, copiado e adaptado
 sob licença CC BY-NC-SA 4.0.
 
 Citação sugerida:  
-PIZZANO, C. Filosofia do Projeto — THEVOIDN13. 2025.  
-Disponível em: https://github.com/castropizzano/THEVOIDN13
+PIZZANO, C. Filosofia do Projeto — THEVØIDN13. 2025.  
+Disponível em: https://github.com/castropizzano/thevoidn13
 
 ───────────────────────────────────────────────────────────────
