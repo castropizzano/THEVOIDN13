@@ -3,7 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Loader2, Sparkles, Download } from "lucide-react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Loader2, Sparkles, Download, FileCode, Edit } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { z } from "zod";
@@ -28,6 +29,8 @@ export const ComicGenerator = () => {
   const [prompts, setPrompts] = useState<Prompt[]>([]);
   const [selectedPromptId, setSelectedPromptId] = useState<string>("");
   const [systemPrompt, setSystemPrompt] = useState<string>("");
+  const [promptMode, setPromptMode] = useState<"library" | "custom">("library");
+  const [customScript, setCustomScript] = useState("");
 
   useEffect(() => {
     fetchPrompts();
@@ -69,8 +72,11 @@ export const ComicGenerator = () => {
   };
 
   const handleGenerate = async () => {
+    // Choose the appropriate script based on mode
+    const scriptToValidate = promptMode === "library" ? script : customScript;
+    
     // Validate input
-    const validation = scriptSchema.safeParse(script);
+    const validation = scriptSchema.safeParse(scriptToValidate);
     if (!validation.success) {
       toast.error(validation.error.errors[0].message);
       return;
@@ -85,8 +91,11 @@ export const ComicGenerator = () => {
     setGeneratedImage(null);
 
     try {
-      // Combine system prompt with user script
-      const fullPrompt = `${systemPrompt}\n\n---\n\n${validation.data}`;
+      // For custom mode, combine system prompt with custom script
+      // For library mode, the script already includes the full scene prompt
+      const fullPrompt = promptMode === "custom" 
+        ? `${systemPrompt}\n\n---\n\n${validation.data}`
+        : `${systemPrompt}\n\n---\n\n${validation.data}`;
 
       const { data, error } = await supabase.functions.invoke("generate-comic-panel", {
         body: { 
@@ -149,40 +158,85 @@ export const ComicGenerator = () => {
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
-        <div className="space-y-2">
-          <label className="text-sm font-medium">
-            Selecionar Prompt Base / Select Base Prompt
-          </label>
-          <Select value={selectedPromptId} onValueChange={handlePromptChange}>
-            <SelectTrigger>
-              <SelectValue placeholder="Escolha um prompt da biblioteca / Choose from library" />
-            </SelectTrigger>
-            <SelectContent>
-              {prompts.map((prompt) => (
-                <SelectItem key={prompt.id} value={prompt.id}>
-                  {prompt.title}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-        </div>
+        <Tabs value={promptMode} onValueChange={(v) => setPromptMode(v as "library" | "custom")}>
+          <TabsList className="grid w-full grid-cols-2">
+            <TabsTrigger value="library" className="flex items-center gap-2">
+              <FileCode className="w-4 h-4" />
+              Biblioteca / Library
+            </TabsTrigger>
+            <TabsTrigger value="custom" className="flex items-center gap-2">
+              <Edit className="w-4 h-4" />
+              Personalizado / Custom
+            </TabsTrigger>
+          </TabsList>
 
-        <div className="space-y-2">
-          <label className="text-sm font-medium">
-            Roteiro da Cena / Scene Script
-          </label>
-          <Textarea
-            placeholder="Edite o prompt selecionado ou crie seu próprio roteiro usando as diretrizes THEVØIDN13..."
-            value={script}
-            onChange={(e) => setScript(e.target.value)}
-            className="min-h-[200px] font-mono text-sm"
-            disabled={isGenerating}
-          />
-        </div>
+          <TabsContent value="library" className="space-y-4 mt-4">
+            <div className="space-y-2">
+              <label className="text-sm font-medium">
+                Selecionar Prompt Base / Select Base Prompt
+              </label>
+              <Select value={selectedPromptId} onValueChange={handlePromptChange}>
+                <SelectTrigger>
+                  <SelectValue placeholder="Escolha um prompt da biblioteca / Choose from library" />
+                </SelectTrigger>
+                <SelectContent>
+                  {prompts.map((prompt) => (
+                    <SelectItem key={prompt.id} value={prompt.id}>
+                      {prompt.title}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+
+            <div className="space-y-2">
+              <label className="text-sm font-medium">
+                Prompt Selecionado / Selected Prompt
+              </label>
+              <Textarea
+                placeholder="Selecione um prompt da biblioteca acima..."
+                value={script}
+                onChange={(e) => setScript(e.target.value)}
+                className="min-h-[200px] font-mono text-sm"
+                disabled={isGenerating}
+              />
+              <p className="text-xs text-muted-foreground">
+                Você pode editar o prompt selecionado ou usá-lo como está / You can edit the selected prompt or use it as is
+              </p>
+            </div>
+          </TabsContent>
+
+          <TabsContent value="custom" className="space-y-4 mt-4">
+            <div className="space-y-2">
+              <label className="text-sm font-medium">
+                Criar Prompt Personalizado / Create Custom Prompt
+              </label>
+              <Textarea
+                placeholder="Descreva sua cena seguindo o estilo THEVØIDN13. As System Instructions (Shadow Interface Bible v13) serão aplicadas automaticamente..."
+                value={customScript}
+                onChange={(e) => setCustomScript(e.target.value)}
+                className="min-h-[200px] font-mono text-sm"
+                disabled={isGenerating}
+              />
+              <p className="text-xs text-muted-foreground">
+                <strong>Dica:</strong> Descreva a cena, personagens, iluminação e atmosfera. 
+                As regras canônicas do universo THEVØIDN13 serão automaticamente aplicadas.
+              </p>
+              <p className="text-xs text-muted-foreground">
+                <strong>Tip:</strong> Describe the scene, characters, lighting and atmosphere. 
+                The canonical THEVØIDN13 universe rules will be automatically applied.
+              </p>
+            </div>
+          </TabsContent>
+        </Tabs>
 
         <Button
           onClick={handleGenerate}
-          disabled={isGenerating || !script.trim()}
+          disabled={
+            isGenerating || 
+            (promptMode === "library" && !script.trim()) ||
+            (promptMode === "custom" && !customScript.trim())
+          }
           className="w-full"
           size="lg"
         >
@@ -222,7 +276,11 @@ export const ComicGenerator = () => {
       <div className="pt-4 border-t border-border space-y-2">
         <p className="text-xs text-muted-foreground">
           <span className="font-medium">Nota Experimental:</span> Este gerador usa a Shadow Interface Bible v13 
-          como system prompt base, combinada com os prompts oficiais da biblioteca do projeto. 
+          como system prompt base, aplicada automaticamente a {promptMode === "library" ? "todos os prompts da biblioteca" : "prompts personalizados"}.
+        </p>
+        <p className="text-xs text-muted-foreground">
+          <strong>Modo Biblioteca:</strong> Use prompts oficiais pré-configurados para máxima fidelidade visual. 
+          <strong className="ml-1">Modo Personalizado:</strong> Crie suas próprias cenas mantendo as diretrizes canônicas do universo.
         </p>
         <p className="text-xs text-muted-foreground">
           Todas as imagens são geradas em <strong>aspect ratio 16:9 horizontal</strong>, 
@@ -230,7 +288,7 @@ export const ComicGenerator = () => {
           THEVØIDN13 em 50% de transparência no canto inferior direito.
         </p>
         <p className="text-xs text-muted-foreground">
-          A consistência visual é garantida pelos parâmetros canônicos: Temperature 0.2, Top P 0.5, 
+          Parâmetros canônicos: Temperature 0.2, Top P 0.5, 
           estilo dirty comic book art com heavy inks e analog print grain.
         </p>
       </div>
