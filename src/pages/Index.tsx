@@ -62,6 +62,7 @@ import corsaRender from "@/assets/corsa-render.png";
 import charactersStudyV2 from "@/assets/characters-study-v2.png";
 import charactersStudyInitial from "@/assets/characters-study-initial.png";
 import corsaRender2 from "@/assets/corsa-render-2.png";
+import sideRender from "@/assets/side-render.png";
 
 const Index = () => {
   const [oracleOpen, setOracleOpen] = useState(false);
@@ -1461,6 +1462,14 @@ const Index = () => {
           <div className="mt-16">
             <h3 className="subsection-title mb-8">[FIM DA TRANSMISSÃO]</h3>
             
+            <div className="my-8">
+              <img 
+                src={sideRender} 
+                alt="THEVØIDN13 Final Scene" 
+                className="w-full max-w-6xl mx-auto rounded-lg"
+              />
+            </div>
+
             <BilingualContent
               portugueseContent={
                 <div className="section-spacing">
