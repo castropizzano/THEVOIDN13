@@ -44,6 +44,7 @@ import meditationRainScene from "@/assets/meditation-rain-scene.png";
 import maskVoid from "@/assets/mask-void.png";
 import voidStreetScene from "@/assets/void-street-scene.png";
 import logoWhiteAlpha from "@/assets/logo-white-alpha.png";
+import paradoxRender from "@/assets/paradox-render.png";
 
 const Index = () => {
   const [oracleOpen, setOracleOpen] = useState(false);
@@ -118,6 +119,17 @@ const Index = () => {
             <p className="micro-title">[INÍCIO DA TRANSMISSÃO]</p>
           </div>
         </BilingualSection>
+
+        {/* ===== PARADOX RENDER ===== */}
+        <section className="py-12">
+          <div className="max-w-6xl mx-auto px-6">
+            <img 
+              src={paradoxRender} 
+              alt="THEVØIDN13 — Paradox Render" 
+              className="w-full rounded-lg"
+            />
+          </div>
+        </section>
 
         {/* ===== MANIFESTO INTEGRADO ===== */}
         <BilingualSection>
