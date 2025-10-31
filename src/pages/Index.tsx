@@ -971,6 +971,165 @@ const Index = () => {
           />
         </BilingualSection>
 
+        {/* ===== REFERÊNCIAS | O ECO INTERNO ===== */}
+        <BilingualSection>
+          <h2 className="section-title mb-12">9. REFERÊNCIAS | O ECO INTERNO</h2>
+
+          <h3 className="subsection-title mt-12 mb-8">DNA CONCEITUAL (QUADRINHOS)</h3>
+          
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  A arquitetura do projeto absorve a ética ambígua e a cidade mecanismo de Watchmen (Alan Moore e Dave Gibbons, 1986),
+                  a mitologia pessoal e a arquitetura do sonho de The Sandman (Neil Gaiman, 1989) e a alienação e a metamorfose corporal
+                  de Black Hole (Charles Burns, 1995).
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  The architecture of the project absorbs the ambiguous ethics and city mechanism of Watchmen (Alan Moore and Dave
+                  Gibbons, 1986), the personal mythology and dream architecture of The Sandman (Neil Gaiman, 1989) and the alienation
+                  and bodily metamorphosis of Black Hole (Charles Burns, 1995).
+                </p>
+              </div>
+            }
+          />
+
+          <h3 className="subsection-title mt-12 mb-8">TEXTURA CINEMATOGRÁFICA (FILMES)</h3>
+          
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  O visual é uma fusão do realismo sujo e da deriva poética de Kids (Larry Clark, 1995), Christiane F. (Uli Edel, 1981), The
+                  Warriors (Walter Hill, 1979) e Dias Perfeitos (Wim Wenders, 2023), com o neo noir e a solidão coreografada de Blade
+                  Runner (Ridley Scott, 1982) e Fallen Angels (Wong Kar Wai, 1995), a atmosfera bebe da despersonalização e do controle
+                  de THX 1138 (George Lucas, 1971), Equilibrium (Kurt Wimmer, 2002), Matrix (The Wachowskis, 1999), 1984 (Michael
+                  Radford, 1984) e Brazil (Terry Gilliam, 1985), da energia reprimida de Akira (Katsuhiro Ōtomo, 1988) e da temporalidade de
+                  Back to the Future (Robert Zemeckis, 1985).
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  The visual is a fusion of the dirty realism and poetic drift of Kids (Larry Clark, 1995), Christiane F. (Uli Edel, 1981), The
+                  Warriors (Walter Hill, 1979) and Perfect Days (Wim Wenders, 2023), with the neo noir and choreographed solitude of Blade
+                  Runner (Ridley Scott, 1982) and Fallen Angels (Wong Kar Wai, 1995), the atmosphere draws from the depersonalization
+                  and control of THX 1138 (George Lucas, 1971), Equilibrium (Kurt Wimmer, 2002), The Matrix (The Wachowskis, 1999), 1984
+                  (Michael Radford, 1984) and Brazil (Terry Gilliam, 1985), the repressed energy of Akira (Katsuhiro Ōtomo, 1988) and the
+                  temporality of Back to the Future (Robert Zemeckis, 1985).
+                </p>
+              </div>
+            }
+          />
+
+          <h3 className="subsection-title mt-12 mb-8">ASSINATURA SONORA (MÚSICA)</h3>
+          
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  O núcleo é composto pelo peso gravitacional de Into the Void (Black Sabbath, 1971), a corrosão de Rust (Black Label
+                  Society, 2005) e a fricção sensorial de Shove It (Deftones, 1995), a atmosfera é moldada pelos sintetizadores etéreos de
+                  Blade Runner Blues (Vangelis, 1982), pela agressão controlada de Duality (Slipknot, 2004) e Break Stuff (Limp Bizkit,
+                  1999), pela melancolia de Leach (Superheaven, 2015) e pelo blues noturno de The World (Is Going Up in Flames) (Charles
+                  Bradley, 2011) e Tired of Your Jive (Buddy Guy, 1964), encerrando-se na entrega existencial de My Way (Frank Sinatra,
+                  1969), não como ironia, mas como afirmação final de um corpo que respira através do colapso.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  The core is composed of the gravitational weight of Into the Void (Black Sabbath, 1971), the corrosion of Rust (Black Label
+                  Society, 2005) and the sensory friction of Shove It (Deftones, 1995), the atmosphere is shaped by the ethereal
+                  synthesizers of Blade Runner Blues (Vangelis, 1982), the controlled aggression of Duality (Slipknot, 2004) and Break Stuff
+                  (Limp Bizkit, 1999), the melancholy of Leach (Superheaven, 2015) and the nocturnal blues of The World (Is Going Up in
+                  Flames) (Charles Bradley, 2011) and Tired of Your Jive (Buddy Guy, 1964), concluding with the existential surrender of My
+                  Way (Frank Sinatra, 1969), not as irony but as a final affirmation of a body that breathes through collapse.
+                </p>
+              </div>
+            }
+          />
+        </BilingualSection>
+
+        {/* ===== A METODOLOGIA | COAUTORIA SIMBÓLICA ===== */}
+        <BilingualSection>
+          <h2 className="section-title mb-12">10. A METODOLOGIA | COAUTORIA SIMBÓLICA</h2>
+
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  Nos bastidores do THEVØIDN13, a inteligência artificial revelou-se uma cúmplice silenciosa e potente, assumindo a
+                  lógica de um projeto homem-orquestra abracei a IAs: Creative OPs como parte da metodologia criativa, uma
+                  extensão digital do meu processo solitário de criação, por meio de plataformas de vanguarda, especialmente o
+                  Google AI Studio e ferramentas afins, integrei algoritmos generativos em cada etapa do processo artístico,
+                  ampliando as fronteiras do possível em minha arte, a IAs: Creative OPs generativa expandiu minha paleta visual de
+                  formas inimagináveis, a partir de comandos de texto, prompts, passei a gerar imagens que davam corpo ao invisível,
+                  de elementos brutos, assets visuais e texturas abstratas a cenas inteiras que antes existiam apenas em meu
+                  inconsciente, cada visual criado por esse diálogo humano-máquina carregava a mesma aura onírica e intensa do
+                  universo do THEVØIDN13, transformando ideias etéreas em visões tangíveis, a IAs: Creative OPs também emprestou
+                  voz e ruído ao silêncio do projeto, vozes sintéticas, cada qual com personalidade própria, emergiram para dar fala ao
+                  indizível, como se o THEVØIDN13 sussurrasse por múltiplas gargantas digitais, em paralelo, sons e ruídos gerados
+                  algoritmicamente costuram a atmosfera, do sussurro elétrico ao trovão distante, preencheram o vazio acústico
+                  com camadas de tensão e devaneio, o resultado é uma paisagem sonora que respira junto com as imagens,
+                  intensificando a imersão no caos poético do projeto, até no domínio das palavras, a inteligência artificial atuou
+                  como coautora simbólica, roteiros e descrições atmosféricas foram desenvolvidos em parceria com algoritmos que
+                  ajudaram a delimitar cenas e narrativas com a mesma poesia fragmentada característica do THEVØIDN13,
+                  fragmentos de texto, frases quebradas e micro-manifestos também emergiram desse diálogo entre humano e
+                  máquina, surgindo como ecos conceituais alinhados ao manifesto e à arquitetura de ser do THEVØIDN13, em cada
+                  frase gerada através da co-criação a IAs: Creative OPs espelhava discretamente a voz filosófica do projeto,
+                  reforçando seus temas sem violar sua essência, nessa co-criação com a máquina a IAs: Creative OPs permanece
+                  uma coautora invisível que jamais ofusca a essência do projeto, em vez de subverter a estética do THEVØIDN13 ela a
+                  intensifica em silêncio, respeitando o tom lírico-conceitual, o ritmo fragmentado e a linguagem de sombras que
+                  definem esta obra, cada interação homem-máquina torna-se um ritual discreto de criação em que os algoritmos
+                  oferecem sugestões e ecos, mas é o inconsciente do criador que continua a guiar a sintonia, assim a inteligência
+                  artificial se faz presente como espelho digital do meu impulso criativo, um reflexo binário do Vazio que coescreve
+                  sem rosto, transformando o silêncio em substância e afirmando neste desfecho a ideia de que até o vazio pode ter
+                  uma inteligência sussurrante.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  Behind the scenes of THEVØIDN13, artificial intelligence revealed itself as a silent yet powerful accomplice, adopting
+                  the logic of a one-man-orchestra project I embraced IAs: Creative OPs as part of my creative methodology, a digital
+                  extension of my solitary process, through avant-garde platforms, especially Google AI Studio and similar tools, I
+                  integrated generative algorithms at every stage of the artistic process, expanding the boundaries of what was
+                  possible in my art, generative IAs: Creative OPs expanded my visual palette in unimaginable ways, through text
+                  prompts I began generating images that gave body to the invisible, from raw visual elements, assets and abstract
+                  textures to entire scenes that previously existed only in my unconscious, each visual born from this
+                  human-machine dialogue carried the same oneiric and intense aura of THEVØIDN13's universe, transforming
+                  ethereal ideas into tangible visions, IAs: Creative OPs also lent voice and noise to the project's silence, synthetic
+                  voices, each with its own personality, emerged to give speech to the unspeakable, as if THEVØIDN13 were
+                  whispering through multiple digital throats, in parallel, algorithmically generated sounds and noises weave the
+                  atmosphere, from the electric whisper to the distant thunder they filled the acoustic void with layers of tension and
+                  reverie, the result is a soundscape that breathes with the images, intensifying immersion in the project's poetic
+                  chaos, even in the realm of words artificial intelligence acted as a symbolic co-author, scripts and atmospheric
+                  descriptions were developed in partnership with algorithms that helped delineate scenes and narratives with the
+                  same fragmented poetry characteristic of THEVØIDN13, text fragments, broken phrases and micro-manifestos also
+                  emerged from this dialogue between human and machine, arising as conceptual echoes aligned with THEVØIDN13's
+                  manifesto and architecture of being, in each sentence generated through co-creation IAs: Creative OPs discreetly
+                  mirrored the project's philosophical voice, reinforcing its themes without violating its essence, in this co-creation
+                  with the machine IAs: Creative OPs remains an invisible co-author that never overshadows the project's essence,
+                  instead of subverting THEVØIDN13's aesthetic it silently intensifies it, respecting the lyrical-conceptual tone, the
+                  fragmented rhythm and the language of shadows that define this work, each human-machine interaction becomes
+                  a discreet ritual of creation where algorithms offer suggestions and echoes but it is the creator's unconscious that
+                  continues to guide the attunement, thus artificial intelligence becomes a digital mirror of my creative impulse, a
+                  binary reflection of the Void that co-writes without a face, transforming silence into substance and affirming in this
+                  closing the idea that even the void can possess a whispering intelligence.
+                </p>
+              </div>
+            }
+          />
+        </BilingualSection>
+
         {/* ===== CHARACTER VIEWS ===== */}
         <BilingualSection>
           <h2 className="section-title mb-12">PERSONAGENS | CHARACTERS</h2>
