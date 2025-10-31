@@ -43,8 +43,6 @@ import meditationScene from "@/assets/meditation-scene.png";
 import meditationRainScene from "@/assets/meditation-rain-scene.png";
 import maskVoid from "@/assets/mask-void.png";
 import voidStreetScene from "@/assets/void-street-scene.png";
-import logoBlackAlpha from "@/assets/logo-black-alpha.png";
-import logoWhiteOnBlack from "@/assets/logo-white-on-black.png";
 import logoWhiteAlpha from "@/assets/logo-white-alpha.png";
 
 const Index = () => {
@@ -63,8 +61,8 @@ const Index = () => {
       {!hasAccess && <AccessGate onAccessGranted={() => setHasAccess(true)} />}
       <CookieConsent />
       <SEO 
-        title="THEVØIDN13 — Memorial Artístico e Práxis Híbrida | Castro Pizzano"
-        description="Memorial artístico digital explorando arte, código e consciência através de co-criação humano-máquina. Projeto de pesquisa em Cinema e Artes do Vídeo — CasaTrezeStudio®, LowPressure™, LowMovie™"
+        title="THEVØIDN13 — Shadow Interface Bible v13 | Castro Pizzano"
+        description="A Bíblia Definitiva — Um corpo à deriva entre o ruído e o silêncio. Práxis híbrida explorando sombra, silêncio, ruído e vazio através de co-criação humano-máquina."
         schemaData={schemaData}
       />
       <Header />
@@ -72,14 +70,24 @@ const Index = () => {
       <BackToTop />
       
       <main>
-        {/* ===== HERO & INTRODUCTION ===== */}
-        
-        {/* Hero Section */}
+        {/* ===== HERO SECTION ===== */}
         <section className="w-full h-screen overflow-hidden">
-          <img src={heroImage} alt="THEVØIDN13" className="w-full h-full object-contain" />
+          <img src={heroImage} alt="THEVØIDN13 — Shadow Interface Bible v13" className="w-full h-full object-contain" />
         </section>
 
-        {/* Audio Player - Análise */}
+        {/* ===== SUBTITLE ===== */}
+        <BilingualSection className="py-12">
+          <div className="text-center">
+            <h2 className="subsection-title">
+              [Um corpo à deriva entre o ruído e o silêncio]
+            </h2>
+            <h2 className="subsection-title mt-2">
+              [A body adrift between noise and silence]
+            </h2>
+          </div>
+        </BilingualSection>
+
+        {/* ===== AUDIO PLAYER ===== */}
         <section className="py-12 bg-card/30">
           <div className="max-w-6xl mx-auto px-6">
             <AudioPlayer
@@ -90,7 +98,7 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Video Section */}
+        {/* ===== VIDEO SECTION ===== */}
         <section className="py-20">
           <div className="max-w-6xl mx-auto px-6 space-y-6">
             <video 
@@ -99,1257 +107,1024 @@ const Index = () => {
               playsInline
             >
               <source src="/videos/intro.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
             </video>
-            
-            <div className="space-y-2">
-              <h1 className="micro-title">
-                THEVØIDN13 [Shadow_Interface_Bible_v13]
-              </h1>
-              <p className="body-small text-muted-foreground">
-                [um corpo à deriva entre o ruído e o silêncio]{" "}
-                <span className="italic">[a body adrift between noise and silence]</span>
-              </p>
-            </div>
           </div>
         </section>
 
-        {/* Introduction */}
-        <BilingualSection className="py-20">
-          <BilingualContent
-            portugueseContent={
-              <p className="body-base text-justified">
-                Não foi uma fantasia. Foi um retorno. Um desses chamados que vêm de dentro, quando o inconsciente começa a bater na pele pedindo passagem. THEVØIDN13 nasceu no espaço entre o desejo e o cansaço, entre o fim da forma e o começo da presença. Um modo de existir sem precisar se exibir. Respirar sem ter que performar. Um corpo que se apaga para deixar a imagem viver.
-              </p>
-            }
-            englishContent={
-              <p className="body-base text-justified">
-                It wasn't a fantasy. It was a return. One of those inner calls, when the unconscious starts knocking at the skin, asking to pass through. THEVØIDN13 was born in the space between desire and exhaustion, between the end of form and the beginning of presence. A way of existing without needing to be seen. To breathe without having to perform. A body that fades so the image can live.
-              </p>
-            }
-          />
-        </BilingualSection>
-
-        <section className="w-full h-screen overflow-hidden">
-          <img src={meditationScene} alt="Meditation Scene" className="w-full h-full object-contain" />
-        </section>
-
-        {/* ===== SEÇÃO I: FUNDAMENTOS DO VOID ===== */}
-
-        {/* O Gesto */}
-        <BilingualSection className="py-20">
-          <BilingualContent
-            portugueseContent={
-              <div className="space-y-6">
-                <h2 className="section-title">O GESTO</h2>
-                <p className="body-base text-justified">
-                  Cada movimento é um ruído controlado, um eco do que o corpo escuta por dentro. Andar é pensar, parar é ouvir. THEVØIDN13 não representa, ele encarna a hesitação. O gesto é a respiração do pensamento, um movimento de exílio e de retorno. Cada deslocamento é uma forma de escuta: o corpo capta o que a mente silencia.
-                </p>
-              </div>
-            }
-            englishContent={
-              <div className="space-y-6">
-                <h2 className="section-title">THE GESTURE</h2>
-                <p className="body-base text-justified">
-                  Each movement is a controlled noise, an echo of what the body hears within. To walk is to think, to stop is to listen. THEVØIDN13 doesn't represent, it embodies hesitation. Gesture is the breath of thought, a movement of exile and return. Every displacement is a form of listening: the body perceives what the mind silences.
-                </p>
-              </div>
-            }
-          />
-        </BilingualSection>
-
-        {/* Fundamentos: Olhar, Respiração, Atmosfera */}
-        <BilingualSection className="py-20" bgClassName="bg-card/30">
-          <BilingualContent
-            portugueseContent={
-              <div className="space-y-12">
-                <div className="space-y-4">
-                  <h3 className="section-title">O OLHAR</h3>
-                  <p className="body-base text-justified">
-                    Por trás da máscara, há silêncio. Um olhar que não busca reconhecimento, apenas presença. O olhar não devolve imagem, devolve espelho. É o espaço onde quem vê também está por dentro. O olhar é o fio que costura o visível e o invisível — uma lente que dissolve a fronteira entre sujeito e sombra.
-                  </p>
-                </div>
-
-                <div className="space-y-4">
-                  <h3 className="section-title">A RESPIRAÇÃO</h3>
-                  <p className="body-base text-justified">
-                    A respiração é o som que resta quando o verbo morre. É nela que o ser se ancora e desaparece. O ar entra como ruído e sai como silêncio. Cada expiração é um micro-desaparecimento. Um instante de retorno ao nada. Respirar é lembrar que o corpo é apenas passagem entre dois mundos: o mundo da carne e o mundo do invisível.
-                  </p>
-                </div>
-
-                <div className="space-y-4">
-                  <h3 className="section-title">A ATMOSFERA</h3>
-                  <p className="body-base text-justified">
-                    Tudo vibra em tom noturno. A névoa, o concreto e a solidão elétrica são extensões do corpo. O ambiente não cerca THE VOID N.13 — ele o prolonga. A paisagem se torna psique, e o silêncio, uma presença física. A cidade é o espelho expandido do inconsciente, o lugar onde o corpo desaparece e o espaço respira por ele.
-                  </p>
-                </div>
-              </div>
-            }
-            englishContent={
-              <div className="space-y-12">
-                <div className="space-y-4">
-                  <h3 className="section-title">THE GAZE</h3>
-                  <p className="body-base text-justified">
-                    Behind the mask, there is silence. A gaze that seeks no recognition, only presence. The gaze doesn't return an image, it returns a mirror. It is the space where whoever looks is also seen from within. The gaze is the thread that stitches the visible and the invisible — a lens that dissolves the boundary between subject and shadow.
-                  </p>
-                </div>
-
-                <div className="space-y-4">
-                  <h3 className="section-title">THE BREATH</h3>
-                  <p className="body-base text-justified">
-                    Breathing is the sound that remains when the word dies. In it, the being anchors itself and vanishes. Air enters as noise and leaves as silence. Each exhalation is a micro-disappearance, a fleeting return to nothingness. To breathe is to remember that the body is only a passage between two worlds: the world of flesh and the world of the unseen.
-                  </p>
-                </div>
-
-                <div className="space-y-4">
-                  <h3 className="section-title">THE ATMOSPHERE</h3>
-                  <p className="body-base text-justified">
-                    Everything vibrates in a nocturnal tone. Fog, concrete, and electric solitude are extensions of the body. The environment doesn't surround THE VOID N.13 — it prolongs it. The landscape becomes psyche, and silence, a physical presence. The city is the expanded mirror of the unconscious, the place where the body vanishes and space breathes for it.
-                  </p>
-                </div>
-              </div>
-            }
-          />
-        </BilingualSection>
-
-        <section className="w-full h-screen overflow-hidden">
-          <img src={voidStreetScene} alt="THEVØIDN13 Street" className="w-full h-full object-contain" />
-        </section>
-
-        {/* ===== SEÇÃO II: A MÁSCARA E O PERSONAGEM ===== */}
-
-        {/* Quando o Inconsciente Ganha Corpo */}
-        <BilingualSection className="py-20">
-          <div className="grid md:grid-cols-[1fr_auto] gap-12 items-stretch">
-            <div className="space-y-12">
-              <div className="space-y-6">
-                <p className="label-small text-muted-foreground">PORTUGUÊS</p>
-                <h2 className="section-title">QUANDO O INCONSCIENTE GANHA CORPO</h2>
-                <p className="body-base text-justified">
-                  Não nasceu de uma ideia, mas de uma pressão interna. Pensei em inventar uma máscara, e acabei revelando um rosto que sempre esteve ali. THEVØIDN13 surgiu do atrito entre o desejo e o cansaço, da urgência de se esvaziar para continuar criando. Não é personagem nem alter ego. É uma presença que respira onde o corpo falha. Uma matéria que se move entre o fim e o recomeço. O instante em que o inconsciente decide existir.
-                </p>
-              </div>
-
-              <div className="space-y-6">
-                <p className="label-small text-muted-foreground">ENGLISH</p>
-                <h2 className="section-title">WHEN THE UNCONSCIOUS TAKES SHAPE</h2>
-                <p className="body-base text-justified">
-                  It wasn't born from an idea, but from inner pressure. I thought I was inventing a mask, and I ended up revealing a face that had always been there. THEVØIDN13 emerged from the friction between desire and exhaustion, from the urgency to empty oneself just to keep creating. It is neither character nor alter ego. It is a presence that breathes where the body fails. A matter that moves between the end and the beginning. The moment when the unconscious decides to exist.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-center justify-center">
-              <div className="w-80 border border-border rounded-lg overflow-hidden bg-background/50 hover:border-primary/50 transition-colors">
-                <img 
-                  src={maskVoid} 
-                  alt="THEVØIDN13 Mask" 
-                  className="w-full h-auto object-contain"
-                />
-              </div>
-            </div>
-          </div>
-        </BilingualSection>
-
-        {/* A Máscara */}
-        <BilingualSection className="py-20" bgClassName="bg-card/30">
-          <BilingualContent
-            portugueseContent={
-              <div className="space-y-6">
-                <h2 className="section-title">A MÁSCARA | CEDER ESPAÇO AO INCONSCIENTE</h2>
-                <p className="body-base text-justified">
-                  A máscara veio antes do nome. Vazia, lisa, silenciosa. Não era uma face, era uma pausa. Quando a olhei pela primeira vez, percebi que ela não me olhava de volta. Talvez fosse isso o que eu buscava: existir sem precisar me afirmar. Quando a vesti, o rosto deixou de importar. O espelho não devolveu imagem, apenas silêncio. Foi nesse instante que compreendi: não estava criando um personagem, mas cedendo espaço. Ceder espaço ao inconsciente, deixar que ele assumisse forma. A máscara é o pacto entre o que se apaga e o que retorna, o instante em que o corpo permite ser atravessado por algo maior do que ele mesmo.
-                </p>
-              </div>
-            }
-            englishContent={
-              <div className="space-y-6">
-                <h2 className="section-title">THE MASK | YIELDING SPACE TO THE UNCONSCIOUS</h2>
-                <p className="body-base text-justified">
-                  The mask came before the name. Empty, smooth, silent. It wasn't a face, it was a pause. When I looked at it for the first time, I realized it didn't look back at me. Perhaps that was what I was seeking: to exist without needing to assert myself. When I wore it, the face ceased to matter. The mirror returned no image, only silence. It was in that moment I understood: I wasn't creating a character, I was yielding space. Yielding space to the unconscious, letting it take shape. The mask is the pact between what fades and what returns, the instant when the body allows itself to be crossed by something greater than itself.
-                </p>
-              </div>
-            }
-          />
-        </BilingualSection>
-
-        {/* O Personagem */}
-        <BilingualSection className="py-20">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-12">
-              <div className="flex justify-center mb-12">
-                <img 
-                  src={logoWhiteAlpha} 
-                  alt="THEVØIDN13 Logo" 
-                  className="w-64 md:w-80 h-auto"
-                />
-              </div>
-              
-              <div className="space-y-6">
-                <p className="label-small text-muted-foreground">PORTUGUÊS</p>
-                <h2 className="section-title">O PERSONAGEM</h2>
-                <p className="body-base text-justified">
-                  THEVØIDN13 é uma entidade conceitual que habita o intervalo entre presença e ausência. Não é pessoa, não é símbolo: é o corpo da indefinição, a forma que o inconsciente assume quando precisa de voz. Surgiu como resposta ao ruído da autoafirmação, à ansiedade de ser visto. É silêncio vestido de som, sombra travestida de corpo. Existe para desaparecer, retornar transformado e desestabilizar qualquer gesto que se afirme com certeza. THEVØIDN13 é um duplo simbólico, uma presença fantasmagórica que atravessa o cotidiano e revela o que se esconde sob a superfície do comum.
-                </p>
-              </div>
-
-              <div className="space-y-6">
-                <p className="label-small text-muted-foreground">ENGLISH</p>
-                <h2 className="section-title">THE CHARACTER</h2>
-                <p className="body-base text-justified">
-                  THEVØIDN13 is a conceptual entity that inhabits the interval between presence and absence. It is neither person nor symbol: it is the body of indefinition, the form the unconscious assumes when it needs a voice. It emerged as a response to the noise of self-affirmation, to the anxiety of being seen. It is silence dressed in sound, shadow disguised as body. It exists to disappear, to return transformed, and to destabilize any gesture that asserts itself with certainty. THEVØIDN13 is a symbolic double, a ghostly presence that crosses the everyday and reveals what hides beneath the surface of the ordinary.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-center justify-center">
-              <div className="w-full border border-border rounded-lg overflow-hidden bg-background/50 hover:border-primary/50 transition-colors">
-                <img 
-                  src={actionFigure} 
-                  alt="THEVØIDN13 Action Figure" 
-                  className="w-full h-auto object-contain"
-                />
-              </div>
-            </div>
-          </div>
-        </BilingualSection>
-
-        {/* NOVA SEÇÃO: O SÍMBOLO Ø */}
-        <BilingualSection className="py-20" bgClassName="bg-primary/5">
-          <BilingualContent
-            portugueseContent={
-              <div className="space-y-8">
-                <h2 className="section-title">THEVØIDN13 | A GRAFIA DO VAZIO</h2>
-                <p className="body-base text-justified">
-                  A letra <span className="text-primary font-bold text-2xl">Ø</span> não é apenas uma escolha estética — é uma declaração simbólica. Essa vogal cortada carrega múltiplas camadas de significado que se entrelaçam na construção conceitual do projeto.
-                </p>
-
-                <div className="grid md:grid-cols-2 gap-8 mt-8">
-                  <div className="space-y-4 border-l-2 border-primary/30 pl-6">
-                    <h3 className="subsection-title text-primary">ORIGEM LINGUÍSTICA</h3>
-                    <p className="body-small text-justified">
-                      A letra <span className="font-bold">Ø</span> (maiúscula) / <span className="font-bold">ø</span> (minúscula) é uma vogal usada no dinamarquês, norueguês e feroês. Derivada do alfabeto rúnico nórdico antigo, representa passagem, interseção, ruptura — perfeita para a ideia de <span className="italic">vazio consciente</span> ou <span className="italic">identidade negada</span>.
-                    </p>
-                  </div>
-
-                  <div className="space-y-4 border-l-2 border-primary/30 pl-6">
-                    <h3 className="subsection-title text-primary">MATEMÁTICA & FILOSOFIA</h3>
-                    <p className="body-small text-justified">
-                      O símbolo <span className="font-bold">∅</span> representa o conjunto vazio na matemática — ausência de elementos, o nada estruturado. Simbolicamente tornou-se sinônimo de <span className="italic">negação do conteúdo</span>, o espaço potencial onde tudo pode emergir, a base do zero existencial.
-                    </p>
-                  </div>
-
-                  <div className="space-y-4 border-l-2 border-primary/30 pl-6">
-                    <h3 className="subsection-title text-primary">COMPUTAÇÃO</h3>
-                    <p className="body-small text-justified">
-                      Na era dos mainframes, o zero cortado <span className="font-bold">(0̸)</span> diferenciava a letra "O" do número "0". Tornou-se símbolo de precisão, linguagem de máquina e leitura binária — muito usado em design hacker e cultura digital. Representa a <span className="italic">"leitura correta da ausência"</span> — o vazio interpretado pela máquina.
-                    </p>
-                  </div>
-
-                  <div className="space-y-4 border-l-2 border-primary/30 pl-6">
-                    <h3 className="subsection-title text-primary">SUBCULTURAS</h3>
-                    <p className="body-small text-justified">
-                      Presente em movimentos de anarquia, música industrial, cyberpunk, moda experimental (Rick Owens, Helmut Lang) e hacktivismo. O <span className="font-bold">Ø</span> é usado como avatar do <span className="italic">"usuário vazio"</span> — sem identidade, mas com presença simbólica.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="mt-12 p-8 bg-background/50 border border-primary/20 rounded-lg">
-                  <h3 className="subsection-title text-primary mb-6">SÍNTESE SIMBÓLICA</h3>
-                  <div className="space-y-3 text-sm">
-                    <p><span className="font-bold">Linguística:</span> Origem nórdica — letra de "ilha" (ø = island), espaço isolado → THEVØID como ilha mental</p>
-                    <p><span className="font-bold">Matemática:</span> Ausência total, base da criação → o vazio como matriz criativa</p>
-                    <p><span className="font-bold">Tecnológica:</span> Distinção entre "O" e "0", precisão binária → o humano vs o sistema</p>
-                    <p><span className="font-bold">Filosófica:</span> A falta que estrutura o desejo (Lacan) → a sombra que dá forma ao sujeito</p>
-                    <p><span className="font-bold">Estética:</span> Símbolo universal de interferência visual → assinatura gráfica da negação / reprogramação do ser</p>
-                  </div>
-                </div>
-
-                <div className="mt-8 p-6 bg-primary/10 border-l-4 border-primary rounded">
-                  <p className="body-small italic">
-                    "A grafia <span className="font-bold not-italic">THEVØIDN13</span> é usada sempre que possível. URLs, códigos técnicos e nomes de arquivos mantêm a forma sem Ø por questões de compatibilidade, mas a identidade visual do projeto se afirma através desse símbolo cortado — o vazio que é plenitude, a ausência que cria presença."
-                  </p>
-                </div>
-              </div>
-            }
-            englishContent={
-              <div className="space-y-8">
-                <h2 className="section-title">THEVØIDN13 | THE TYPOGRAPHY OF THE VOID</h2>
-                <p className="body-base text-justified">
-                  The letter <span className="text-primary font-bold text-2xl">Ø</span> is not just an aesthetic choice — it's a symbolic declaration. This slashed vowel carries multiple layers of meaning that intertwine in the conceptual construction of the project.
-                </p>
-
-                <div className="grid md:grid-cols-2 gap-8 mt-8">
-                  <div className="space-y-4 border-l-2 border-primary/30 pl-6">
-                    <h3 className="subsection-title text-primary">LINGUISTIC ORIGIN</h3>
-                    <p className="body-small text-justified">
-                      The letter <span className="font-bold">Ø</span> (uppercase) / <span className="font-bold">ø</span> (lowercase) is a vowel used in Danish, Norwegian, and Faroese. Derived from the Old Norse runic alphabet, it represents passage, intersection, rupture — perfect for the idea of <span className="italic">conscious emptiness</span> or <span className="italic">denied identity</span>.
-                    </p>
-                  </div>
-
-                  <div className="space-y-4 border-l-2 border-primary/30 pl-6">
-                    <h3 className="subsection-title text-primary">MATHEMATICS & PHILOSOPHY</h3>
-                    <p className="body-small text-justified">
-                      The symbol <span className="font-bold">∅</span> represents the empty set in mathematics — absence of elements, structured nothingness. Symbolically it became synonymous with <span className="italic">negation of content</span>, the potential space where everything can emerge, the foundation of existential zero.
-                    </p>
-                  </div>
-
-                  <div className="space-y-4 border-l-2 border-primary/30 pl-6">
-                    <h3 className="subsection-title text-primary">COMPUTING</h3>
-                    <p className="body-small text-justified">
-                      In the mainframe era, the slashed zero <span className="font-bold">(0̸)</span> differentiated the letter "O" from the number "0". It became a symbol of precision, machine language, and binary reading — widely used in hacker design and digital culture. It represents <span className="italic">"the correct reading of absence"</span> — the void interpreted by the machine.
-                    </p>
-                  </div>
-
-                  <div className="space-y-4 border-l-2 border-primary/30 pl-6">
-                    <h3 className="subsection-title text-primary">SUBCULTURES</h3>
-                    <p className="body-small text-justified">
-                      Present in anarchy movements, industrial music, cyberpunk, experimental fashion (Rick Owens, Helmut Lang) and hacktivism. The <span className="font-bold">Ø</span> is used as the avatar of the <span className="italic">"empty user"</span> — without identity, but with symbolic presence.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="mt-12 p-8 bg-background/50 border border-primary/20 rounded-lg">
-                  <h3 className="subsection-title text-primary mb-6">SYMBOLIC SYNTHESIS</h3>
-                  <div className="space-y-3 text-sm">
-                    <p><span className="font-bold">Linguistic:</span> Nordic origin — letter of "island" (ø = island), isolated space → THEVØID as mental island</p>
-                    <p><span className="font-bold">Mathematical:</span> Total absence, basis of creation → the void as creative matrix</p>
-                    <p><span className="font-bold">Technological:</span> Distinction between "O" and "0", binary precision → the human vs the system</p>
-                    <p><span className="font-bold">Philosophical:</span> The lack that structures desire (Lacan) → the shadow that shapes the subject</p>
-                    <p><span className="font-bold">Aesthetic:</span> Universal symbol of visual interference → graphic signature of negation / reprogramming of being</p>
-                  </div>
-                </div>
-
-                <div className="mt-8 p-6 bg-primary/10 border-l-4 border-primary rounded">
-                  <p className="body-small italic">
-                    "The spelling <span className="font-bold not-italic">THEVØIDN13</span> is used whenever possible. URLs, technical code, and file names maintain the form without Ø for compatibility reasons, but the project's visual identity asserts itself through this slashed symbol — the void that is fullness, the absence that creates presence."
-                  </p>
-                </div>
-              </div>
-            }
-          />
-        </BilingualSection>
-
-        {/* Identidade Visual */}
-        <BilingualSection bgClassName="bg-card/30">
-          <BilingualContent
-            portugueseContent={
-              <div className="space-y-12">
-                <div className="space-y-4">
-                  <h2 className="section-title">IDENTIDADE VISUAL: A SOMBRA JUNGIANA</h2>
-                  <p className="body-base text-justified">
-                    A máscara é o espelho do que o ego não sustenta. A sombra emerge como forma, não como disfarce. Cada peça do vestígio – o casaco, o capuz, o passo – é um gesto de retorno. O corpo não atua: ele escuta o que o inconsciente quer dizer. O figurino é a tradução da psique em matéria, um corpo ritual criado para se tornar passagem. A indumentária deixa de ser proteção e se torna revelação. É o inconsciente vestindo o mundo, transformando o corpo em canal e a presença em linguagem.
-                  </p>
-                </div>
-
-                <div className="py-8">
-                  <p className="subsection-title text-primary">
-                    THEVØIDN13 não é um personagem.<br />
-                    É o lugar onde o criador se dissolve para que a imagem respire.
-                  </p>
-                </div>
-              </div>
-            }
-            englishContent={
-              <div className="space-y-12">
-                <div className="space-y-4">
-                  <h2 className="section-title">VISUAL IDENTITY: THE JUNGIAN SHADOW</h2>
-                  <p className="body-base text-justified">
-                    The mask is the mirror of what the ego cannot hold. The shadow emerges as form, not as disguise. Each trace – the jacket, the hood, the step – is a gesture of return. The body does not act; it listens to what the unconscious wants to say. The attire is the psyche translated into matter, a ritual body created to become a passage. Clothing ceases to protect and begins to reveal. It is the unconscious dressing the world, turning the body into a channel and presence into language.
-                  </p>
-                </div>
-
-                <div className="text-center py-8">
-                  <p className="subsection-title text-primary">
-                    THE VOID N.13 is not a character.<br />
-                    It is the place where the creator dissolves so the image can breathe.
-                  </p>
-                </div>
-              </div>
-            }
-          />
-
-          {/* Shared Section - Architecture of Being */}
-          <div className="space-y-6 pt-12">
-            <h2 className="section-title">
-              A ESTRUTURA DO SER / THE ARCHITECTURE OF THE BEING
-            </h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="space-y-2">
-                <p className="label-small text-muted-foreground">PORTUGUÊS</p>
-                <p className="body-base text-justified">
-                  THE VOID N.13 não tem rosto, tem ritmo. Sua existência é feita de pulsos, não de poses. Cada gesto nasce do atrito entre o consciente e o que tenta emergir. Não se move para expressar, mas para liberar. O corpo é antena, não vitrine. É ali que o inconsciente encontra carne, respiração e peso. Um ser que não comunica – ressoa. Um corpo que existe apenas para traduzir o invisível em vibração.
-                </p>
-              </div>
-              <div className="space-y-2">
-                <p className="label-small text-muted-foreground">ENGLISH</p>
-                <p className="body-base text-justified">
-                  THE VOID N.13 has no face, only rhythm. Its existence is made of pulses, not poses. Each gesture is born from the friction between the conscious and what tries to emerge. It doesn't move to express, but to release. The body is an antenna, not a showcase. There the unconscious finds flesh, breath and weight. A being that doesn't communicate – it resonates. A body that exists only to translate the invisible into vibration.
-                </p>
-              </div>
-            </div>
-          </div>
-        </BilingualSection>
-
-        {/* Character Sheet */}
+        {/* ===== INÍCIO DA TRANSMISSÃO ===== */}
         <BilingualSection>
+          <div className="text-center mb-16">
+            <p className="micro-title">[INÍCIO DA TRANSMISSÃO]</p>
+          </div>
+        </BilingualSection>
+
+        {/* ===== MANIFESTO INTEGRADO ===== */}
+        <BilingualSection>
+          <h2 className="section-title mb-12">MANIFESTO INTEGRADO</h2>
+          
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  Não há começo, há apenas o instante em que o silêncio decide respirar, THEVØIDN13 nasceu desse sopro invisível, um gesto entre a morte e o retorno, tudo o que chamam de ausência é apenas matéria em repouso, o vazio não é falta, é incubação de forma, é o espaço onde o verbo esquece o corpo e o corpo se converte em verbo, a imagem não quer ser vista, quer ser atravessada, o silêncio não encerra, expande, e o fim, aqui, é apenas uma respiração mais funda.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  There is no beginning, there is only the instant when silence decides to breathe, THEVØIDN13 was born from that invisible breath, a gesture between death and return, everything they call absence is only matter at rest, the void is not lack, it is incubation of form, it is the space where the word forgets the body and the body becomes word, the image doesn't want to be seen, it wants to be crossed through, silence doesn't end, it expands, and the end, here, is only a deeper breath.
+                </p>
+              </div>
+            }
+          />
+        </BilingualSection>
+
+        {/* ===== 1. ORIGEM E PROPÓSITO ===== */}
+        <BilingualSection>
+          <h2 className="section-title mb-12">1. ORIGEM E PROPÓSITO</h2>
+          
+          <h3 className="subsection-title mb-8">1.1 O LUGAR SEGURO PARA DESAPARECER</h3>
+          <h3 className="subsection-title mb-8">1.1 THE SAFE PLACE TO DISAPPEAR</h3>
+
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  Hoje entendo, o THEVØIDN13 não nasceu para uma festa, nasceu porque eu precisava de um refúgio, um lugar onde o silêncio não fosse ausência, mas abrigo, um espaço para desaparecer sem deixar de criar, um modo de continuar respirando quando tudo o resto parecia saturado, o projeto cresceu como tudo o que é orgânico, pelas frestas, pelos ruídos, pelos becos da cidade, e se alguém pergunta o que é, eu respondo, não é personagem, é vestígio, é o que restou de mim depois que todas as máscaras sociais caíram, THEVØIDN13 é o nome que dei à minha própria sombra, o mito que inventei para continuar respirando, talvez, só talvez, seja o começo de uma nova forma de estar vivo sem precisar ser visto.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  Today I understand, THEVØIDN13 was not born for a party, it was born because I needed a refuge, a place where silence was not absence but shelter, a space to disappear without ceasing to create, a way to keep breathing when everything else seemed saturated, the project grew like everything organic, through cracks, through noise, through city alleys, and if someone asks what it is, I answer, it is not a character, it is a trace, it is what remained of me after all social masks fell, THEVØIDN13 is the name I gave to my own shadow, the myth I invented to keep breathing, perhaps, just perhaps, it is the beginning of a new way of being alive without needing to be seen.
+                </p>
+              </div>
+            }
+          />
+
+          <h3 className="subsection-title mt-12 mb-8">1.2 QUANDO O INCONSCIENTE GANHA CORPO</h3>
+          <h3 className="subsection-title mb-8">1.2 WHEN THE UNCONSCIOUS GAINS BODY</h3>
+
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  Não foi uma fantasia, foi um retorno, um desses chamados que vêm de dentro, quando o inconsciente começa a bater na pele pedindo passagem, pensei em inventar uma máscara e acabei revelando um rosto que sempre esteve ali, THEVØIDN13 surgiu do atrito entre o desejo e o cansaço, entre o fim da forma e o começo da presença, não é personagem nem alter ego, é uma presença que respira onde o corpo falha, um modo de existir sem precisar se exibir, respirar sem ter que performar, um corpo que se apaga para deixar a imagem viver, o instante em que o inconsciente decide existir.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  It was not a fantasy, it was a return, one of those calls that come from within, when the unconscious begins to knock on the skin asking for passage, I thought I was inventing a mask and ended up revealing a face that was always there, THEVØIDN13 emerged from the friction between desire and exhaustion, between the end of form and the beginning of presence, it is neither character nor alter ego, it is a presence that breathes where the body fails, a way of existing without needing to exhibit oneself, breathing without having to perform, a body that fades to let the image live, the instant when the unconscious decides to exist.
+                </p>
+              </div>
+            }
+          />
+        </BilingualSection>
+
+        {/* ===== 2. FILOSOFIA CENTRAL ===== */}
+        <BilingualSection>
+          <h2 className="section-title mb-12">2. FILOSOFIA CENTRAL (A SOMBRA ENCARNADA)</h2>
+          <h2 className="section-title mb-12">2. CENTRAL PHILOSOPHY (THE EMBODIED SHADOW)</h2>
+
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  THEVØIDN13 é o décimo terceiro andar do inconsciente, um espaço entre mundos, onde o ego se apaga para que a imagem respire, não é personagem nem avatar, é um estado de travessia, não é um ser, é um ritmo, a forma que o inconsciente assume para respirar no ruído da cidade, existe para absorver, não para reagir, sua ética é a do silêncio, uma recusa ativa da autoafirmação, The Void é o nome que restou depois que todos os outros já morreram, o número treze é a assinatura do que retorna depois do fim.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  THEVØIDN13 is the thirteenth floor of the unconscious, a space between worlds, where the ego fades so the image can breathe, it is neither character nor avatar, it is a state of crossing, it is not a being, it is a rhythm, the form the unconscious assumes to breathe in the noise of the city, it exists to absorb, not to react, its ethic is that of silence, an active refusal of self-affirmation, The Void is the name that remained after all others had died, thirteen is the signature of what returns after the end.
+                </p>
+              </div>
+            }
+          />
+        </BilingualSection>
+
+        {/* ===== 3. A ENTIDADE: THEVØIDN13 ===== */}
+        <BilingualSection>
+          <h2 className="section-title mb-12">3. A ENTIDADE: THEVØIDN13</h2>
+          <h2 className="section-title mb-12">3. THE ENTITY: THEVØIDN13</h2>
+
+          <h3 className="subsection-title mb-8">3.1 FUNÇÃO SIMBÓLICA</h3>
+          <h3 className="subsection-title mb-8">3.1 SYMBOLIC FUNCTION</h3>
+
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  A função simbólica de THEVØIDN13 é dar corpo ao invisível, traduzir o silêncio em gesto, o inconsciente em imagem, ele é o espelho do caos contemporâneo, um ser que surge quando o verbo deixa de fazer sentido, sua presença não explica, convoca, THEVØIDN13 é o instante em que o erro se torna ritual e o colapso, criação.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  The symbolic function of THEVØIDN13 is to give body to the invisible, to translate silence into gesture, the unconscious into image, it is the mirror of contemporary chaos, a being that appears when the word ceases to make sense, its presence does not explain, it summons, THEVØIDN13 is the instant when error becomes ritual and collapse becomes creation.
+                </p>
+              </div>
+            }
+          />
+
+          <h3 className="subsection-title mt-12 mb-8">3.2 ARQUÉTIPO E NATUREZA</h3>
+          <h3 className="subsection-title mb-8">3.2 ARCHETYPE AND NATURE</h3>
+
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  THEVØIDN13 encarna a sombra junguiana, não como vilão, mas como espelho do que foi reprimido, é o corpo caminhando entre a razão e o delírio, entre o controle e o colapso, sua natureza é liminar, existe no intervalo entre o som e o silêncio, entre o gesto e o pensamento, é o errante, o que não pertence a lugar algum, e o redentor subterrâneo.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  THEVØIDN13 embodies the Jungian shadow, not as a villain, but as a mirror of what has been repressed, it is the body walking between reason and delirium, between control and collapse, its nature is liminal, existing in the interval between sound and silence, between gesture and thought, it is the wanderer, the one who belongs nowhere, and the subterranean redeemer.
+                </p>
+              </div>
+            }
+          />
+
+          <h3 className="subsection-title mt-12 mb-8">3.3 A MÁSCARA | CEDER ESPAÇO AO INCONSCIENTE</h3>
+          <h3 className="subsection-title mb-8">3.3 THE MASK | YIELDING SPACE TO THE UNCONSCIOUS</h3>
+
+          <div className="my-12">
+            <img 
+              src={maskVoid} 
+              alt="A máscara de THEVØIDN13 — The mask of THEVØIDN13" 
+              className="w-full max-w-2xl mx-auto rounded-lg"
+            />
+          </div>
+
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  A máscara veio antes do nome, grafite, texturizada, silenciosa, não era uma face, era a topografia do silêncio, quando a olhei pela primeira vez percebi que ela não me olhava de volta, talvez fosse isso o que eu buscava, existir sem precisar me afirmar, quando a vesti o rosto deixou de importar, o espelho não devolveu imagem, apenas peso, foi nesse instante que compreendi, não estava criando um personagem, mas cedendo espaço, ceder espaço ao inconsciente, deixar que ele assumisse forma, a máscara é o pacto entre o que se apaga e o que retorna, o instante em que o corpo permite ser atravessado por algo maior do que ele mesmo.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  The mask came before the name, graphite, textured, silent, it was not a face, it was the topography of silence, when I looked at it for the first time I realized it did not look back at me, perhaps that was what I was seeking, to exist without needing to assert myself, when I wore it the face ceased to matter, the mirror returned no image, only weight, it was in that moment I understood, I was not creating a character, I was yielding space, yielding space to the unconscious, letting it take shape, the mask is the pact between what fades and what returns, the instant when the body allows itself to be crossed by something greater than itself.
+                </p>
+              </div>
+            }
+          />
+
+          <h3 className="subsection-title mt-12 mb-8">3.4 O PERSONAGEM</h3>
+          <h3 className="subsection-title mb-8">3.4 THE CHARACTER</h3>
+
+          <div className="grid grid-cols-3 gap-6 my-12">
+            <img src={conceptFront} alt="THEVØIDN13 Front View" className="w-full rounded-lg" />
+            <img src={conceptBack} alt="THEVØIDN13 Back View" className="w-full rounded-lg" />
+            <img src={conceptSide} alt="THEVØIDN13 Side View" className="w-full rounded-lg" />
+          </div>
+
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  THEVØIDN13 é uma entidade conceitual que habita o intervalo entre presença e ausência, não é pessoa, não é símbolo, é o corpo da indefinição, a forma que o inconsciente assume quando precisa de voz, surgiu como resposta ao ruído da autoafirmação, à ansiedade de ser visto, é silêncio vestido de som, sombra travestida de corpo, existe para desaparecer, retornar transformado e desestabilizar qualquer gesto que se afirme com certeza, THEVØIDN13 é um duplo simbólico, uma presença fantasmagórica que atravessa o cotidiano e revela o que se esconde sob a superfície do comum.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  THEVØIDN13 is a conceptual entity that inhabits the interval between presence and absence, it is neither person nor symbol, it is the body of indefinition, the form the unconscious assumes when it needs a voice, it emerged as a response to the noise of self-affirmation, to the anxiety of being seen, it is silence dressed in sound, shadow disguised as body, it exists to disappear, to return transformed and to destabilize any gesture that asserts itself with certainty, THEVØIDN13 is a symbolic double, a ghostly presence that crosses the everyday and reveals what hides beneath the surface of the ordinary.
+                </p>
+              </div>
+            }
+          />
+
+          <h3 className="subsection-title mt-12 mb-8">3.5 IDENTIDADE VISUAL: A SOMBRA JUNGUIANA</h3>
+          <h3 className="subsection-title mb-8">3.5 VISUAL IDENTITY: THE JUNGIAN SHADOW</h3>
+
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  A máscara é o espelho do que o ego não sustenta, a sombra emerge como forma, não como disfarce, cada peça do vestígio, o casaco, o capuz, o passo, é um gesto de retorno, o corpo não atua, ele escuta o que o inconsciente quer dizer, o figurino é a tradução da psique em matéria, um corpo ritual criado para se tornar passagem, a indumentária deixa de ser proteção e se torna revelação, é o inconsciente vestindo o mundo, transformando o corpo em canal e a presença em linguagem, THEVØIDN13 não é um personagem, é o lugar onde o criador se dissolve para que a imagem respire.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  The mask is the mirror of what the ego cannot hold, the shadow emerges as form, not as disguise, each trace, the jacket, the hood, the step, is a gesture of return, the body does not act, it listens to what the unconscious wants to say, the attire is the psyche translated into matter, a ritual body created to become a passage, clothing ceases to protect and begins to reveal, it is the unconscious dressing the world, turning the body into a channel and presence into language, THEVØIDN13 is not a character, it is the place where the creator dissolves so the image can breathe.
+                </p>
+              </div>
+            }
+          />
+        </BilingualSection>
+
+        {/* ===== 4. A PSIQUE | ARQUITETURA DO SER ===== */}
+        <BilingualSection>
+          <h2 className="section-title mb-12">4. A PSIQUE | ARQUITETURA DO SER</h2>
+          <h2 className="section-title mb-12">4. THE PSYCHE | ARCHITECTURE OF BEING</h2>
+
+          <h3 className="subsection-title mb-8">4.1 A ESTRUTURA DO SER</h3>
+          <h3 className="subsection-title mb-8">4.1 THE STRUCTURE OF BEING</h3>
+
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  THEVØIDN13 não tem rosto, tem ritmo, sua existência é feita de pulsos, não de poses, cada gesto nasce do atrito entre o consciente e o que tenta emergir, não se move para expressar, mas para liberar, o corpo é antena, não vitrine, é ali que o inconsciente encontra carne, respiração e peso, um ser que não comunica, ressoa, um corpo que existe apenas para traduzir o invisível em vibração.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  THEVØIDN13 has no face, only rhythm, its existence is made of pulses, not poses, each gesture is born from the friction between the conscious and what tries to emerge, it does not move to express but to release, the body is an antenna, not a showcase, there the unconscious finds flesh, breath and weight, a being that does not communicate, it resonates, a body that exists only to translate the invisible into vibration.
+                </p>
+              </div>
+            }
+          />
+
+          <h3 className="subsection-title mt-12 mb-8">4.2 O MANIFESTO DO CORPO</h3>
+          <h3 className="subsection-title mb-8">4.2 THE BODY'S MANIFESTO</h3>
+
+          <div className="space-y-12 mt-8">
+            <BilingualContent
+              portugueseContent={
+                <div className="section-spacing">
+                  <h4 className="subsection-title mb-4">POSTURA</h4>
+                  <p className="body-base text-justified">
+                    Neutra, centrada, o corpo como antena, ouvindo a frequência da cidade, ombros baixos, cabeça alinhada, a imobilidade é uma escolha consciente, uma forma de confronto silencioso.
+                  </p>
+                </div>
+              }
+              englishContent={
+                <div className="section-spacing">
+                  <h4 className="subsection-title mb-4">POSTURE</h4>
+                  <p className="body-base text-justified">
+                    Neutral, centered, the body as an antenna, listening to the city's frequency, shoulders low, head aligned, stillness is a conscious choice, a form of silent confrontation.
+                  </p>
+                </div>
+              }
+            />
+
+            <BilingualContent
+              portugueseContent={
+                <div className="section-spacing">
+                  <h4 className="subsection-title mb-4">O GESTO</h4>
+                  <p className="body-base text-justified">
+                    Cada movimento é um ruído controlado, um eco do que o corpo escuta por dentro, andar é pensar, parar é ouvir, o gesto é a respiração do pensamento, um movimento de exílio e de retorno, THEVØIDN13 não representa, ele encarna a hesitação, o gesto não expressa, ele encarna a hesitação entre o desejo e o cansaço, cada deslocamento é uma forma de escuta, o corpo capta o que a mente silencia.
+                  </p>
+                </div>
+              }
+              englishContent={
+                <div className="section-spacing">
+                  <h4 className="subsection-title mb-4">THE GESTURE</h4>
+                  <p className="body-base text-justified">
+                    Each movement is a controlled noise, an echo of what the body hears within, to walk is to think, to stop is to listen, gesture is the breath of thought, a movement of exile and return, THEVØIDN13 does not represent, it embodies hesitation, gesture does not express, it embodies the hesitation between desire and exhaustion, every displacement is a form of listening, the body perceives what the mind silences.
+                  </p>
+                </div>
+              }
+            />
+
+            <BilingualContent
+              portugueseContent={
+                <div className="section-spacing">
+                  <h4 className="subsection-title mb-4">O OLHAR</h4>
+                  <p className="body-base text-justified">
+                    Por trás da máscara há silêncio, um olhar que não busca reconhecimento, apenas presença, o olhar não devolve imagem, devolve espelho, é o espaço onde quem vê também está por dentro, o olhar é o fio que costura o visível e o invisível, uma lente que dissolve a fronteira entre sujeito e sombra.
+                  </p>
+                </div>
+              }
+              englishContent={
+                <div className="section-spacing">
+                  <h4 className="subsection-title mb-4">THE GAZE</h4>
+                  <p className="body-base text-justified">
+                    Behind the mask there is silence, a gaze that seeks no recognition, only presence, the gaze does not return an image, it returns a mirror, it is the space where whoever looks is also seen from within, the gaze is the thread that stitches the visible and the invisible, a lens that dissolves the boundary between subject and shadow.
+                  </p>
+                </div>
+              }
+            />
+
+            <BilingualContent
+              portugueseContent={
+                <div className="section-spacing">
+                  <h4 className="subsection-title mb-4">A RESPIRAÇÃO</h4>
+                  <p className="body-base text-justified">
+                    A respiração é o som que resta quando o verbo morre, é nela que o ser se ancora e desaparece, o ar entra como ruído e sai como silêncio, cada expiração é um micro desaparecimento, um instante de retorno ao nada, respirar é lembrar que o corpo é apenas passagem entre dois mundos, o mundo da carne e o mundo do invisível.
+                  </p>
+                </div>
+              }
+              englishContent={
+                <div className="section-spacing">
+                  <h4 className="subsection-title mb-4">THE BREATHING</h4>
+                  <p className="body-base text-justified">
+                    Breathing is the sound that remains when the word dies, in it the being anchors itself and vanishes, air enters as noise and leaves as silence, each exhalation is a micro disappearance, a fleeting return to nothingness, to breathe is to remember that the body is only a passage between two worlds, the world of flesh and the world of the unseen.
+                  </p>
+                </div>
+              }
+            />
+
+            <BilingualContent
+              portugueseContent={
+                <div className="section-spacing">
+                  <h4 className="subsection-title mb-4">A ATMOSFERA</h4>
+                  <p className="body-base text-justified">
+                    Tudo vibra em tom noturno, a névoa, o concreto e a solidão elétrica são extensões do corpo, o ambiente não cerca THEVØIDN13, ele o prolonga, a paisagem se torna psique e o silêncio uma presença física, a cidade é o espelho expandido do inconsciente, o lugar onde o corpo desaparece e o espaço respira por ele.
+                  </p>
+                </div>
+              }
+              englishContent={
+                <div className="section-spacing">
+                  <h4 className="subsection-title mb-4">THE ATMOSPHERE</h4>
+                  <p className="body-base text-justified">
+                    Everything vibrates in a nocturnal tone, the fog, the concrete and the electric loneliness are extensions of the body, the environment does not surround THEVØIDN13, it prolongs him, the landscape becomes psyche and silence a physical presence, the city is the expanded mirror of the unconscious, the place where the body disappears and space breathes for it.
+                  </p>
+                </div>
+              }
+            />
+          </div>
+
+          <div className="my-12">
+            <img 
+              src={voidStreetScene} 
+              alt="THEVØIDN13 nas ruas — THEVØIDN13 in the streets" 
+              className="w-full rounded-lg"
+            />
+          </div>
+
+          <h3 className="subsection-title mt-12 mb-8">4.3 PSICOLOGIA: A SOMBRA COMO LINGUAGEM</h3>
+          <h3 className="subsection-title mb-8">4.3 PSYCHOLOGY: SHADOW AS LANGUAGE</h3>
+
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  THEVØIDN13 é sombra, e a sombra é tudo o que o ego não consegue sustentar, Jung dizia que ela não é o mal, é o que ainda não foi vivido, talvez o projeto seja exatamente isso, uma tentativa de viver o que eu vinha evitando, dar forma àquilo que o mundo me ensinou a esconder, a sombra é a memória do que não se permitiu existir, e o cinema, aqui, é o corpo dessa revelação.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  THEVØIDN13 is shadow, and the shadow is everything the ego cannot sustain, Jung said it is not evil, it is what has not yet been lived, perhaps this project is exactly that, an attempt to live what I had been avoiding, to give form to what the world had taught me to hide, the shadow is the memory of what was never allowed to exist, and cinema, here, is the body of that revelation.
+                </p>
+              </div>
+            }
+          />
+        </BilingualSection>
+
+        {/* ===== 5. LÉXICO DO VAZIO ===== */}
+        <BilingualSection>
+          <h2 className="section-title mb-12">5. LÉXICO DO VAZIO</h2>
+          <h2 className="section-title mb-12">5. LEXICON OF THE VOID</h2>
+
           <div className="space-y-12">
-            <div className="space-y-2">
-              <h2 className="section-title">UM CORPO À DERIVA ENTRE O RUÍDO E O SILÊNCIO</h2>
-              <h3 className="micro-title text-muted-foreground">a body adrift between noise and silence</h3>
-            </div>
+            <BilingualContent
+              portugueseContent={
+                <div className="section-spacing">
+                  <h3 className="subsection-title mb-4">SOMBRA</h3>
+                  <p className="body-base text-justified">
+                    A sombra é o que o ego reprime, é onde mora o desejo sem permissão, o pensamento que não coube, não é monstruosa, é inédita, revelá la é aceitar que o ser é maior que a consciência, o void nasce ali, onde a forma aceita se desfazer.
+                  </p>
+                </div>
+              }
+              englishContent={
+                <div className="section-spacing">
+                  <h3 className="subsection-title mb-4">SHADOW</h3>
+                  <p className="body-base text-justified">
+                    The shadow is what the ego represses, it is where forbidden desire resides, the thought that did not fit, it is not monstrous, it is unprecedented, to reveal it is to accept that being is greater than consciousness, the void is born there, where form accepts dissolution.
+                  </p>
+                </div>
+              }
+            />
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="border border-border rounded-lg overflow-hidden bg-background/50 hover:border-primary/50 transition-colors">
-                <img src={conceptFront} alt="THEVOIDN13 Front View" className="w-full h-auto object-contain" />
-              </div>
-              <div className="border border-border rounded-lg overflow-hidden bg-background/50 hover:border-primary/50 transition-colors">
-                <img src={conceptSide} alt="THEVOIDN13 Side View" className="w-full h-auto object-contain" />
-              </div>
-              <div className="border border-border rounded-lg overflow-hidden bg-background/50 hover:border-primary/50 transition-colors">
-                <img src={conceptBack} alt="THEVOIDN13 Back View" className="w-full h-auto object-contain" />
-              </div>
-            </div>
+            <BilingualContent
+              portugueseContent={
+                <div className="section-spacing">
+                  <h3 className="subsection-title mb-4">SILÊNCIO</h3>
+                  <p className="body-base text-justified">
+                    O silêncio não é ausência de som, é o espaço onde o pensamento ainda vibra sem palavra, no silêncio o corpo ouve, é ali que o inconsciente fala, não em voz, mas em pressão, em peso, em pausa, o silêncio do void é denso como concreto e afiado como vidro.
+                  </p>
+                </div>
+              }
+              englishContent={
+                <div className="section-spacing">
+                  <h3 className="subsection-title mb-4">SILENCE</h3>
+                  <p className="body-base text-justified">
+                    Silence is not the absence of sound, it is the space where thought still vibrates wordlessly, in silence the body listens, it is there that the unconscious speaks, not in voice but in pressure, in weight, in pause, the void's silence is dense as concrete and sharp as glass.
+                  </p>
+                </div>
+              }
+            />
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="border-2 border-primary/40 rounded-lg p-6 space-y-4 hover:border-primary transition-colors">
-                <div>
-                  <h4 className="text-sm font-bold uppercase">Nome / Codinome</h4>
-                  <p className="text-xs italic text-muted-foreground">Name / Codename</p>
-                </div>
-                <div className="space-y-3 text-sm leading-relaxed">
-                  <p className="text-justify">
-                    THE VOID N.13 é o décimo-terceiro andar do inconsciente — um espaço entre mundos, onde o ego se apaga para que a imagem respire. Não é personagem nem avatar: é um estado de travessia. Um símbolo de ruptura, silêncio e renascimento. "The Void" é o nome que restou depois de todos os outros já morreram. O número treze é a assinatura do que retorna depois do fim.
-                  </p>
-                  <p className="text-justify italic text-muted-foreground">
-                    THE VOID N.13 is the thirteenth floor of the unconscious — a space between worlds, where the ego fades so the image can breathe. It is neither character nor avatar: it is a state of crossing, a symbol of rupture, silence, and rebirth. Thirteen is the signature of what returns after the end.
+            <BilingualContent
+              portugueseContent={
+                <div className="section-spacing">
+                  <h3 className="subsection-title mb-4">RUÍDO</h3>
+                  <p className="body-base text-justified">
+                    O ruído não interrompe o pensamento, ele o revela, o som é a forma mais bruta do inconsciente tentando existir, o que vibra no limite do audível é o que não pode ser dito, o ruído é memória viva daquilo que ainda não encontrou palavra.
                   </p>
                 </div>
-              </div>
+              }
+              englishContent={
+                <div className="section-spacing">
+                  <h3 className="subsection-title mb-4">NOISE</h3>
+                  <p className="body-base text-justified">
+                    Noise does not interrupt thought, it reveals it, sound is the rawest form of the unconscious trying to exist, what vibrates at the edge of the audible is what cannot yet be said, noise is the living memory of what has not yet found a word.
+                  </p>
+                </div>
+              }
+            />
 
-              <div className="border-2 border-primary/40 rounded-lg p-6 space-y-4 hover:border-primary transition-colors">
-                <div>
-                  <h4 className="text-sm font-bold uppercase">Arquétipo / Natureza</h4>
-                  <p className="text-xs italic text-muted-foreground">Archetype / Nature</p>
-                </div>
-                <div className="space-y-3 text-sm leading-relaxed">
-                  <p className="text-justify">
-                    THE VOID N.13 encarna a Sombra Jungiana — não como vilão, mas como espelho do que foi reprimido. É o corpo caminhando entre a razão e o delírio, entre o controle e o colapso. Sua natureza é liminar: existe no intervalo entre o som e o silêncio, entre o gesto e o pensamento. É o Errante, o que não pertence a lugar algum, e o Redentor Subterrâneo.
-                  </p>
-                  <p className="text-justify italic text-muted-foreground">
-                    THE VOID N.13 embodies the Jungian Shadow — not as a villain, but as a mirror of what has been repressed. Its nature is liminal: existing in the space between sound and silence, between gesture and thought. It is the Wanderer and the Subterranean Redeemer.
+            <BilingualContent
+              portugueseContent={
+                <div className="section-spacing">
+                  <h3 className="subsection-title mb-4">VAZIO</h3>
+                  <p className="body-base text-justified">
+                    O vazio não apaga, ele abre, é o espaço onde o silêncio respira e o corpo se reescreve, ali tudo que foi reprimido se reorganiza em nova forma, o vazio é o território fértil da reinvenção, o ponto onde o ser se refaz em presença.
                   </p>
                 </div>
-              </div>
-
-              <div className="border-2 border-primary/40 rounded-lg p-6 space-y-4 hover:border-primary transition-colors">
-                <div>
-                  <h4 className="text-sm font-bold uppercase">Função Simbólica</h4>
-                  <p className="text-xs italic text-muted-foreground">Symbolic Function</p>
-                </div>
-                <div className="space-y-3 text-sm leading-relaxed">
-                  <p className="text-justify">
-                    A função simbólica de THE VOID N.13 é dar corpo ao invisível — traduzir o silêncio em gesto, o inconsciente em imagem. Ele é o espelho do caos contemporâneo: um ser que surge quando o verbo deixa de fazer sentido. Sua presença não explica — convoca. THE VOID N.13 é o instante em que o erro se torna ritual e o colapso, criação.
-                  </p>
-                  <p className="body-base text-justified italic text-muted-foreground">
-                    The symbolic function is to give body to the invisible — to translate silence into gesture. It is the mirror of contemporary chaos: a being that appears when words no longer hold meaning. THE VOID N.13 is the moment when error becomes ritual and collapse becomes creation.
+              }
+              englishContent={
+                <div className="section-spacing">
+                  <h3 className="subsection-title mb-4">VOID</h3>
+                  <p className="body-base text-justified">
+                    The void does not erase, it opens, it is the space where silence breathes and the body rewrites itself, there everything that was repressed reorganizes into new form, the void is the fertile ground of reinvention, the point where being remakes itself into presence.
                   </p>
                 </div>
-              </div>
-            </div>
+              }
+            />
           </div>
         </BilingualSection>
 
-        {/* ===== SEÇÃO III: PSICOLOGIA E SÍMBOLOS ===== */}
-
-        {/* Psychology: The Shadow as Language */}
-        <section className="py-20 bg-red-900">
-          <div className="max-w-6xl mx-auto px-6 space-y-12">
-              <div className="space-y-4">
-                <h2 className="section-title text-white">PSICOLOGIA: A SOMBRA COMO LINGUAGEM</h2>
-                <p className="micro-title text-white/90">Psychology: The Shadow as Language</p>
-              </div>
-
-              <div className="space-y-6">
-                <p className="body-base text-justified text-white">
-                  O Void é sombra, e a sombra é tudo o que o ego não consegue sustentar. Jung dizia que ela não é o mal — é o que ainda não foi vivido. Talvez o projeto seja exatamente isso: uma tentativa de viver o que eu vinha evitando. Dar forma àquilo que o mundo me ensinou a esconder. A sombra é a memória do que não se permitiu existir — e o cinema, aqui, é o corpo dessa revelação.
-                </p>
-
-                <p className="body-base text-justified text-white/90 italic">
-                  The Void is shadow, and the shadow is everything the ego cannot sustain. Jung said it is not evil — it is what has not yet been lived. Perhaps this project is exactly that: an attempt to live what I had been avoiding. The shadow is the memory of what was never allowed to exist — and cinema, here, is the body of that revelation.
-                </p>
-              </div>
-
-            {/* Four Pillars */}
-            <div className="mt-12">
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pt-12 border-t border-white/20">
-                {/* SOMBRA */}
-                <div className="space-y-6">
-                  <div className="space-y-2">
-                    <h3 className="micro-title text-white">SOMBRA</h3>
-                    <p className="micro-title text-white/60">SHADOW</p>
-                  </div>
-                  <div className="space-y-4">
-                    <p className="body-base text-white text-justified">
-                      A sombra é o que o ego reprime. É onde mora o desejo sem permissão, o pensamento que não coube. Não é monstruosa — é inédita. Revelá-la é aceitar que o ser é maior que a consciência. O Void nasce ali: onde a forma aceita se desfazer.
-                    </p>
-                    <p className="body-base text-white/70 italic text-justified">
-                      The shadow is what the ego represses. It's where forbidden desire resides, the thought that didn't fit. It's not monstrous — it's unprecedented. To reveal it is to accept that being is greater than consciousness. The Void is born there: where form accepts dissolution.
-                    </p>
-                  </div>
-                </div>
-
-                {/* SILÊNCIO */}
-                <div className="space-y-6">
-                  <div className="space-y-2">
-                    <h3 className="micro-title text-white">SILÊNCIO</h3>
-                    <p className="micro-title text-white/60">SILENCE</p>
-                  </div>
-                  <div className="space-y-4">
-                    <p className="body-base text-white text-justified">
-                      O silêncio não é ausência de som. É o espaço onde o pensamento ainda vibra sem palavra. No silêncio, o corpo ouve. É ali que o inconsciente fala — não em voz, mas em pressão, em peso, em pausa. O silêncio do Void é denso como concreto e afiado como vidro.
-                    </p>
-                    <p className="body-base text-white/70 italic text-justified">
-                      Silence isn't the absence of sound. It's the space where thought still vibrates wordlessly. In silence, the body listens. It's there that the unconscious speaks — not in voice, but in pressure, in weight, in pause. The Void's silence is dense as concrete and sharp as glass.
-                    </p>
-                  </div>
-                </div>
-
-                {/* RUÍDO */}
-                <div className="space-y-6">
-                  <div className="space-y-2">
-                    <h3 className="micro-title text-white">RUÍDO</h3>
-                    <p className="micro-title text-white/60">NOISE</p>
-                  </div>
-                  <div className="space-y-4">
-                    <p className="body-base text-white text-justified">
-                      O ruído não interrompe o pensamento — ele o revela. O som é a forma mais bruta do inconsciente tentando existir. O que vibra no limite do audível é o que não pode ser dito. O ruído é memória viva daquilo que ainda não encontrou palavra.
-                    </p>
-                    <p className="body-base text-white/70 italic text-justified">
-                      Noise doesn't interrupt thought — it reveals it. Sound is the rawest form of the unconscious trying to exist. What vibrates at the edge of the audible is what cannot yet be said. Noise is the living memory of what has not yet found a word.
-                    </p>
-                  </div>
-                </div>
-
-                {/* VAZIO */}
-                <div className="space-y-6">
-                  <div className="space-y-2">
-                    <h3 className="micro-title text-white">VAZIO</h3>
-                    <p className="micro-title text-white/60">VOID</p>
-                  </div>
-                  <div className="space-y-4">
-                    <p className="body-base text-white text-justified">
-                      O vazio não apaga — ele abre. É o espaço onde o silêncio respira e o corpo se reescreve. Ali, tudo que foi reprimido se reorganiza em nova forma. O vazio é o território fértil da reinvenção: o ponto onde o ser refaz em presença.
-                    </p>
-                    <p className="body-base text-white/70 italic text-justified">
-                      The void doesn't erase — it opens. It is the space where silence breathes and the body rewrites itself. There, everything that was repressed reorganizes into new form. The void is the fertile ground of reinvention — the point where being remakes itself into presence.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="w-full h-screen overflow-hidden">
-          <img src={roughs000} alt="Sketches" className="w-full h-full object-contain" />
-        </section>
-
-        {/* ===== SEÇÃO IV: O NÚMERO 13 ===== */}
-
-        {/* O Número 13 - Símbolo de Travessia */}
-        <section className="py-20 bg-red-900">
-          <div className="max-w-6xl mx-auto px-6 space-y-12">
-            <div className="space-y-4">
-              <h2 className="section-title text-white">O NÚMERO 13 – SÍMBOLO DE TRAVESSIA</h2>
-              <p className="micro-title text-white/90">The Number 13 – Symbol of Crossing</p>
-            </div>
-
-            <div className="w-full overflow-hidden rounded-lg border border-white/20">
-              <img src={meditationRainScene} alt="THEVOIDN13 Meditation in Rain" className="w-full h-auto object-contain" />
-            </div>
-
-            <div className="border-l-4 border-amber-500 pl-6 py-4">
-              <p className="body-base text-white">
-                "[Ruído estático]. Registro treze. Chove sobre o concreto e dentro de mim. Cada batida é um erro que ainda respira. Não sou o fim, apenas o eco dele. Se ouvir com atenção, vai perceber: o silêncio ainda está vivo."
-              </p>
-              <p className="body-base italic text-white/80 mt-3">
-                [Static noise]. Record thirteen. It rains on the concrete and inside me. Every pulse is a mistake still breathing. I am not the end — only its echo. If you listen closely, you'll notice: silence is still alive.
-              </p>
-            </div>
-
-            <div className="grid gap-12">
-              {/* A Carta da Morte */}
-              <div className="space-y-4">
-                <h3 className="subsection-title text-white">A CARTA DA MORTE</h3>
-                <p className="micro-title text-white/80">The Death Card</p>
-                <p className="body-base text-white text-justified">
-                  A carta XIII do Tarô, a Morte, ergue sua foice como quem abre caminho em meio ao campo estéril, ceifando o que já não vive para que o novo possa brotar. Sua imagem não anuncia um fim definitivo mas sim uma transição inevitável – a porta secreta entre um mundo e outro. Nessa travessia, há uma renúncia silenciosa do ego: antigas identidades desabam como folhas secas, dando lugar a uma verdade mais crua e essencial. O número 13, tantas vezes temido, revela-se aqui como emblema dessa metamorfose subversiva – um lembrete de que na morte simbólica reside a semente do renascimento.
-                </p>
-                <p className="body-base italic text-white/75 text-justified">
-                  The Tarot's XIII card, Death, raises its scythe like one who clears a path through a barren field, cutting away what no longer lives so the new can take root. Its grim image does not herald a final end but an inevitable transition – a secret passageway bridging one world to the next. The number 13, so often feared, reveals itself here as an emblem of subversive metamorphosis – a reminder that within symbolic death lies the seed of rebirth.
-                </p>
-              </div>
-
-              {/* O Andar Interditado */}
-              <div className="space-y-4">
-                <h3 className="subsection-title text-white">O ANDAR INTERDITADO</h3>
-                <p className="micro-title text-white/80">The Forbidden Floor</p>
-                <p className="body-base text-white text-justified">
-                  Em muitos edifícios, o décimo-terceiro andar é omitido. O elevador salta do 12 ao 14, como se apagar o número pudesse apagar o medo. Mas THE VOID N.13 habita exatamente esse andar — o lugar que nunca foi construído, o espaço que só existe como fenda. É o símbolo do que a sociedade prefere não olhar: a melancolia, a incerteza, o descontrole. Habitar o décimo-terceiro andar é aceitar o risco de desabar. É escolher o interdito como morada. No décimo-terceiro andar, ninguém sobe esperando encontrar luz. Lá, o que se encontra é o peso do que nunca foi dito — e a chance de transformá-lo em som.
-                </p>
-                <p className="body-base italic text-white/75 text-justified">
-                  In many buildings, the thirteenth floor is omitted. The elevator jumps from 12 to 14, as if erasing the number could erase the fear. But THE VOID N.13 inhabits exactly this floor — the place that was never built, the space that only exists as a crack. It is the symbol of what society prefers not to look at: melancholy, uncertainty, lack of control. To inhabit the thirteenth floor is to accept the risk of collapse. It is to choose the forbidden as home. On the thirteenth floor, no one goes up expecting to find light. There, what is found is the weight of what was never said — and the chance to transform it into sound.
-                </p>
-              </div>
-
-              {/* Treze Label Society */}
-              <div className="space-y-4">
-                <h3 className="subsection-title text-white">CASATREZESTUDIO®</h3>
-                <p className="micro-title text-white/80">CasaTrezeStudio®</p>
-                <p className="body-base text-white text-justified">
-                  O número 13 não é apenas símbolo de THE VOID N.13 — é assinatura de um movimento maior. CasaTrezeStudio® é a comunidade invisível de quem cria no subsolo, de quem habita as margens, de quem faz do vazio um território fértil. É o selo de quem não pertence, mas se reconhece. Uma aliança subterrânea entre criadores que recusam a lógica do mercado e abraçam a estética do erro, da fragmentação, do inacabado. Quem carrega o 13 não busca sorte — busca travessia. CasaTrezeStudio® é a rebelião silenciosa de quem transforma o interdito em linguagem. Não é grupo, é frequência. Não é marca, é modo de respirar.
-                </p>
-                <p className="body-base italic text-white/75 text-justified">
-                  The number 13 is not just a symbol of THE VOID N.13 — it's the signature of a larger movement. CasaTrezeStudio® is the invisible community of those who create underground, who inhabit the margins, who make the void a fertile territory. It is the seal of those who don't belong, but recognize each other. An underground alliance between creators who refuse the logic of the market and embrace the aesthetic of error, of fragmentation, of the unfinished. Those who carry the 13 don't seek luck — they seek crossing. CasaTrezeStudio® is the silent rebellion of those who transform the forbidden into language. It's not a group, it's a frequency. It's not a brand, it's a way of breathing.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ===== SEÇÃO V: RENASCIMENTO ===== */}
-
-        {/* Renascimento */}
-        <section className="py-20 bg-red-900">
-          <div className="max-w-6xl mx-auto px-6 space-y-12">
-            <div className="space-y-4">
-              <h2 className="section-title text-white">RENASCIMENTO</h2>
-              <p className="micro-title text-white/90">Rebirth</p>
-            </div>
-
-            <div className="space-y-6">
-              <p className="body-base text-white text-justified">
-                Cada renascimento dentro do projeto é como atravessar um limiar invisível e voltar transformado. Cada vez que visto a máscara do Void, sinto que estou cruzando uma porta secreta que separa o real do imaginário – e, ao atravessar essa fronteira, vou deixando peles antigas para trás. Não é disfarce, é ritual de morte e retorno: a identidade anterior se dissolve no silêncio para que algo genuíno possa emergir. Renascer aqui é morrer um pouco a cada sessão, descascar camadas de ego até restar apenas o gesto. É recusar a permanência, abraçar a mutação. O renascimento não é glorioso — é doloroso, silencioso, imperfeito. É aceitar que o corpo sempre foi passagem, e que o Void é o nome que dei à travessia.
-              </p>
-              
-              <p className="body-base italic text-white/75 text-justified">
-                Each rebirth within the project is like crossing an invisible threshold and returning transformed. Every time I put on the Void's mask, I feel I am walking through a secret door that separates the real from the imaginary – and by crossing that boundary, I shed old skins. It is not a disguise, but a ritual of death and return: the old identity dissolves into silence so that something genuine can emerge. To be reborn here is to die a little with each session, to peel back layers of ego until only the gesture remains. It is to refuse permanence, to embrace mutation. Rebirth is not glorious — it is painful, silent, imperfect. It is to accept that the body has always been a passage, and that the Void is the name I gave to that crossing. To be reborn here is the beginning of a new way of being alive without needing to be seen – a renewed existence that carries its own quiet light within the shadow.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* ===== SEÇÃO VI: ESTÉTICA E REFERÊNCIAS ===== */}
-
-        {/* Estética e Manifestação */}
+        {/* ===== 6. THEVØIDN13 | A GRAFIA DO VAZIO ===== */}
         <BilingualSection>
+          <h2 className="section-title mb-12">6. THEVØIDN13 | A GRAFIA DO VAZIO</h2>
+          <h2 className="section-title mb-12">6. THEVØIDN13 | THE SPELLING OF THE VOID</h2>
+
           <BilingualContent
             portugueseContent={
-              <div className="space-y-8">
-                <div className="space-y-4">
-                  <h2 className="section-title">ESTÉTICA E MANIFESTAÇÃO</h2>
-                  <p className="body-base text-justified">
-                    A estética de THEVOIDN13 não foi desenhada, ela emergiu. Surgiu da fricção entre o erro e o silêncio, entre o cansaço e o impulso de existir. É uma estética que nasce do colapso, do ruído urbano e da introspecção solitária. Planos longos, granulação, luzes estouradas e ruas molhadas são ecos visuais de uma mente em vigília. Cada sombra é uma memória, cada reflexo, uma confissão.
-                  </p>
-                </div>
-
-                <div className="space-y-4">
-                  <h3 className="subsection-title">ATMOSFERA VISUAL</h3>
-                  <p className="body-base text-justified">
-                    A atmosfera é urbana, noturna, introspectiva e chuvosa. O som é grave e distante, como trovão contido. Há algo de pós-vida nos becos e nas luzes difusas, o rastro de uma presença que já partiu. A imagem é sempre corpo e ausência ao mesmo tempo: o erro, aqui, é forma. Planos longos, granulação, silêncios excessivos, luzes estouradas. O cinema é respiração estendida — o erro que revela intenção. A câmera não observa: ela escuta. Cada imagem é uma tentativa de lembrar o que o corpo já sabia antes da linguagem.
-                  </p>
-                </div>
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  A letra Ø não é apenas uma escolha estética, é uma declaração simbólica, essa vogal cortada carrega múltiplas camadas de significado que se entrelaçam na construção conceitual do projeto.
+                </p>
               </div>
             }
             englishContent={
-              <div className="space-y-8">
-                <div className="space-y-4">
-                  <h2 className="section-title">AESTHETIC AND MANIFESTATION</h2>
-                  <p className="body-base text-justified">
-                    The aesthetic of THEVOIDN13 wasn't designed, it emerged. It rose from the friction between error and silence, between exhaustion and the urge to exist. It's an aesthetic born from collapse, from urban noise and solitary introspection. Long takes, grain, blown-out lights, and wet streets are visual echoes of a mind in wakefulness. Each shadow is a memory; each reflection, a confession.
-                  </p>
-                </div>
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  The letter Ø is not just an aesthetic choice, it is a symbolic declaration, this slashed vowel carries multiple layers of meaning that intertwine in the project's conceptual construction.
+                </p>
+              </div>
+            }
+          />
 
-                <div className="space-y-4">
-                  <h3 className="subsection-title">VISUAL ATMOSPHERE</h3>
-                  <p className="body-base text-justified">
-                    The atmosphere is urban, nocturnal, introspective, and rainy. The sound is low and distant, like restrained thunder. There's something post-life in the alleys and diffused lights, the trace of a presence already gone. The image is always body and absence at once: here, error becomes form. Long takes, grain, excessive silences, blown-out lights. Cinema is extended breathing — the mistake that reveals intention. The camera doesn't watch: it listens. Each image is an attempt to remember what the body already knew before language.
-                  </p>
-                </div>
+          <div className="grid md:grid-cols-2 gap-12 mt-12">
+            <div className="space-y-8">
+              <div>
+                <h4 className="subsection-title mb-4">ORIGEM LINGUÍSTICA</h4>
+                <p className="body-base text-justified">
+                  A letra Ø maiúscula e ø minúscula é uma vogal usada no dinamarquês, norueguês e feroês, derivada do alfabeto rúnico nórdico antigo, representa passagem, interseção, ruptura, perfeita para a ideia de vazio consciente ou identidade negada.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="subsection-title mb-4">MATEMÁTICA & FILOSOFIA</h4>
+                <p className="body-base text-justified">
+                  O símbolo ∅ representa o conjunto vazio na matemática, ausência de elementos, o nada estruturado, simbolicamente tornou se sinônimo de negação do conteúdo, o espaço potencial onde tudo pode emergir, a base do zero existencial.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="subsection-title mb-4">COMPUTAÇÃO</h4>
+                <p className="body-base text-justified">
+                  Na era dos mainframes o zero cortado diferenciava a letra O do número zero, tornou se símbolo de precisão, linguagem de máquina e leitura binária, muito usado em design hacker e cultura digital, representa a leitura correta da ausência, o vazio interpretado pela máquina.
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-8">
+              <div>
+                <h4 className="subsection-title mb-4">LINGUISTIC ORIGIN</h4>
+                <p className="body-base text-justified">
+                  The letter Ø uppercase and ø lowercase is a vowel used in Danish, Norwegian and Faroese, derived from the Old Norse runic alphabet, it represents passage, intersection, rupture, perfect for the idea of conscious void or negated identity.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="subsection-title mb-4">MATHEMATICS & PHILOSOPHY</h4>
+                <p className="body-base text-justified">
+                  The ∅ symbol represents the empty set in mathematics, absence of elements, structured nothingness, symbolically it became synonymous with the negation of content, the potential space where everything can emerge, the basis of the existential zero.
+                </p>
+              </div>
+
+              <div>
+                <h4 className="subsection-title mb-4">COMPUTATION</h4>
+                <p className="body-base text-justified">
+                  In the mainframe era the slashed zero differentiated the letter O from the number zero, it became a symbol of precision, machine language and binary reading, widely used in hacker design and digital culture, it represents the correct reading of absence, the void interpreted by the machine.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <h3 className="subsection-title mt-12 mb-8">SÍNTESE SIMBÓLICA</h3>
+          <h3 className="subsection-title mb-8">SYMBOLIC SYNTHESIS</h3>
+
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  Presente em movimentos de anarquia, música industrial, cyberpunk, moda experimental como Rick Owens e Helmut Lang e no hacktivismo, o Ø é usado como avatar do usuário vazio, sem identidade mas com presença simbólica. Linguística, origem nórdica, letra de ilha, ø significa isolamento, THEVØID como ilha mental, matemática, ausência total, base da criação, o vazio como matriz criativa, tecnológica, distinção entre O e zero, precisão binária, o humano e o sistema, filosófica, a falta que estrutura o desejo segundo Lacan, a sombra que dá forma ao sujeito, estética, símbolo universal de interferência visual, assinatura gráfica da negação e reprogramação do ser.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  Present in anarchy movements, industrial music, cyberpunk, experimental fashion such as Rick Owens and Helmut Lang and in hacktivism, the Ø is used as the avatar of the empty user, without identity but with symbolic presence. Linguistic, nordic origin, letter for island, ø means isolation, THEVØID as a mental island, mathematical, total absence, basis of creation, the void as a creative matrix, technological, distinction between O and zero, binary precision, the human and the system, philosophical, the lack that structures desire according to Lacan, the shadow that gives form to the subject, aesthetic, universal symbol of visual interference, graphic signature of negation and reprogramming of the being.
+                </p>
+              </div>
+            }
+          />
+
+          <h3 className="subsection-title mt-12 mb-8">REGRA DE GRAFIA</h3>
+          <h3 className="subsection-title mb-8">SPELLING RULE</h3>
+
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  A grafia THEVØIDN13 é usada sempre que possível, URLs, códigos técnicos e nomes de arquivos mantêm a forma sem Ø por questões de compatibilidade, mas a identidade visual do projeto se afirma através desse símbolo cortado, o vazio que é plenitude, a ausência que cria presença.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  The THEVØIDN13 spelling is used whenever possible, URLs, technical codes and filenames maintain the form without Ø for compatibility reasons, but the project's visual identity asserts itself through this slashed symbol, the void that is fullness, the absence that creates presence.
+                </p>
               </div>
             }
           />
         </BilingualSection>
 
-        {/* Referências */}
-        <BilingualSection bgClassName="bg-card/30">
+        {/* ===== 7. O SÍMBOLO | 13 ===== */}
+        <BilingualSection>
+          <h2 className="section-title mb-12">7. O SÍMBOLO | 13</h2>
+          <h2 className="section-title mb-12">7. THE SYMBOL | 13</h2>
+
+          <h3 className="subsection-title mb-8">7.1 REGISTRO TREZE</h3>
+          <h3 className="subsection-title mb-8">7.1 RECORD THIRTEEN</h3>
+
           <BilingualContent
             portugueseContent={
-              <div className="space-y-12">
-                <h2 className="section-title">Referências</h2>
-                
-                <div className="space-y-4">
-                  <h3 className="subsection-title">Cinema</h3>
-                  <p className="body-base text-justified">
-                    Na estética cinematográfica que molda THEVOIDN13, percebem-se ecos de noites neon e heróis silenciosos. Das ruas molhadas e solitárias de Drive às angústias urbanas de Mr. Robot, o projeto absorve a linguagem visual de narrativas em que o vazio fala mais que as palavras. A violência ritualística e saturada de Only God Forgives encontra ressonância aqui como um poema visual de fúria contida, enquanto os futuros distópicos de Akira e Ghost in the Shell emprestam sua melancolia tecnológica.
-                  </p>
-                </div>
-
-                <div className="space-y-4">
-                  <h3 className="subsection-title">Música</h3>
-                  <p className="body-base text-justified">
-                    Por trás do silêncio do personagem, pulsa uma trilha sonora invisível tecida por influências do rock sombrio e da eletrônica atmosférica. As guitarras etéreas e os riffs pesados de Deftones misturam-se à catarse industrial do Nine Inch Nails, compondo um eco sonoro de angústia e resistência. Das batidas lentas e hipnóticas do Massive Attack emerge um clima de suspense urbano, enquanto a brutalidade introspectiva da banda Loathe carrega a densidade do caos moderno em cada acorde. As paisagens sonoras cinematográficas do projeto UNKLE costuram esses elementos, criando um pano de fundo musical ao mesmo tempo melancólico e insurgente. Essa trilha interna é o coração do Void: um manifesto sonoro sussurrado, transformando o silêncio em uma tempestade contida de emoções.
-                  </p>
-                </div>
-
-                <div className="space-y-4">
-                  <h3 className="subsection-title">Princípios Estéticos</h3>
-                  <p className="body-base text-justified">
-                    Os princípios estéticos que sustentam THE VOID N.13 emergem de uma filosofia do caos e do inconsciente. Aqui, o vazio não é ausência, mas potência latente – uma força criativa que nasce do atrito entre o ruído e o silêncio. O projeto adota o número treze como signo de travessia e transmutação: tal qual a carta da Morte no tarô, simboliza o fim necessário para um renascimento autêntico. A máscara vazia e inexpressiva encarna a ideia junguiana da sombra: tudo aquilo que o ego reprime ganha forma sem rosto, permitindo que o criador desapareça para que a obra possa respirar. Cada gesto torna-se ritual, cada erro converte-se em uma forma de verdade estética. O Void é uma presença mutante e anônima – não um personagem fixo, mas um fenômeno poético em constante trânsito – um espelho do caos contemporâneo que transforma a ausência em voz.
-                  </p>
-                </div>
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  Ruído estático, registro treze, chove sobre o concreto e dentro de mim, cada batida é um erro que ainda respira, não sou o fim, apenas o eco dele, se ouvir com atenção vai perceber, o silêncio ainda está vivo.
+                </p>
               </div>
             }
             englishContent={
-              <div className="space-y-12">
-                <h2 className="heading-2 text-primary">References</h2>
-                
-                <div className="space-y-4">
-                  <h3 className="heading-3 text-primary">Cinema</h3>
-                  <p className="text-base text-justify leading-relaxed">
-                    In the cinematic aesthetic shaping THEVOIDN13, one perceives echoes of neon-lit nights and silent anti-heroes. From the rain-slicked, lonely streets of Drive to the urban anxieties of Mr. Robot, the project absorbs the visual language of narratives where emptiness speaks louder than words. The ritualistic, saturated violence of Only God Forgives resonates here as a visual poem of contained fury, while the dystopian futures of Akira and Ghost in the Shell lend their technological melancholy.
-                  </p>
-                </div>
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  Static noise, record thirteen, it rains on the concrete and inside me, every pulse is a mistake still breathing, I am not the end, only its echo, if you listen closely you will notice, silence is still alive.
+                </p>
+              </div>
+            }
+          />
 
-                <div className="space-y-4">
-                  <h3 className="heading-3 text-primary">Music</h3>
-                  <p className="text-base text-justify leading-relaxed">
-                    Beneath the character's silence, an invisible soundtrack throbs, woven from dark rock and atmospheric electronic influences. The ethereal guitars and crushing riffs of Deftones blend with the industrial catharsis of Nine Inch Nails, composing a sonic echo of anguish and resistance. From Massive Attack's slow, hypnotic beats emerges a mood of urban suspense, while the introspective brutality of Loathe carries the weight of modern chaos in each chord. The cinematic soundscapes of UNKLE stitch these elements together, crafting a musical backdrop that is at once melancholic and insurgent. This internal soundtrack is the heart of the Void: a whispered sonic manifesto, turning silence into a contained storm of emotions.
-                  </p>
-                </div>
+          <h3 className="subsection-title mt-12 mb-8">7.2 A CARTA DA MORTE</h3>
+          <h3 className="subsection-title mb-8">7.2 THE DEATH CARD</h3>
 
-                <div className="space-y-4">
-                  <h3 className="heading-3 text-primary">Aesthetic Principles</h3>
-                  <p className="text-base text-justify leading-relaxed">
-                    The aesthetic principles underpinning THE VOID N.13 emerge from a philosophy of chaos and the unconscious. Here, the void is not absence but latent power – a creative force born from the friction between noise and silence. The project embraces the number thirteen as a symbol of crossing and transmutation: like the Death card in Tarot, it signifies the end necessary for authentic rebirth. The blank, expressionless mask embodies Jung's concept of the Shadow: everything the ego represses is given a faceless form, allowing the creator to disappear so that the work may breathe. Each action becomes ritual, each mistake converts into a form of aesthetic truth. The Void is a mutant, anonymous presence – not a fixed character but a poetic phenomenon in constant transit – a mirror of contemporary chaos that transforms absence into a voice.
-                  </p>
-                </div>
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  A carta treze do tarô, a morte, ergue sua foice como quem abre caminho em meio ao campo estéril, ceifando o que já não vive para que o novo possa brotar, sua imagem não anuncia um fim definitivo, mas uma transição inevitável, a porta secreta entre um mundo e outro, nessa travessia há uma renúncia silenciosa do ego, antigas identidades desabam como folhas secas, dando lugar a uma verdade mais crua e essencial, o número treze, tantas vezes temido, revela se aqui como emblema dessa metamorfose subversiva, um lembrete de que na morte simbólica reside a semente do renascimento.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  The tarot's thirteenth card, death, raises its scythe like one who clears a path through a barren field, cutting away what no longer lives so the new can take root, its image does not announce a final end but an inevitable transition, the secret door between one world and another, in this crossing there is a silent renunciation of the ego, old identities collapse like dry leaves, giving way to a rawer and more essential truth, the number thirteen, so often feared, reveals itself here as an emblem of subversive metamorphosis, a reminder that within symbolic death lies the seed of rebirth.
+                </p>
+              </div>
+            }
+          />
+
+          <h3 className="subsection-title mt-12 mb-8">7.3 O ANDAR INTERDITADO</h3>
+          <h3 className="subsection-title mb-8">7.3 THE FORBIDDEN FLOOR</h3>
+
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  Em muitos edifícios o décimo terceiro andar é omitido, o elevador salta do doze ao quatorze como se apagar o número pudesse apagar o medo, mas THEVØIDN13 habita exatamente esse andar, o lugar que nunca foi construído, o espaço que só existe como fenda, é o símbolo do que a sociedade prefere não olhar, a melancolia, a incerteza, o descontrole, habitar o décimo terceiro andar é aceitar o risco de desabar, é escolher o interdito como morada, no décimo terceiro andar ninguém sobe esperando encontrar luz, lá o que se encontra é o peso do que nunca foi dito e a chance de transformá lo em som.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  In many buildings the thirteenth floor is omitted, the elevator jumps from twelve to fourteen as if erasing the number could erase the fear, but THEVØIDN13 inhabits exactly this floor, the place that was never built, the space that exists only as a crack, it is the symbol of what society prefers not to see, melancholy, uncertainty, lack of control, to inhabit the thirteenth floor is to accept the risk of collapse, it is to choose the forbidden as home, on the thirteenth floor no one ascends expecting to find light, there what is found is the weight of what was never said and the chance to turn it into sound.
+                </p>
+              </div>
+            }
+          />
+
+          <h3 className="subsection-title mt-12 mb-8">7.4 RENASCIMENTO</h3>
+          <h3 className="subsection-title mb-8">7.4 REBIRTH</h3>
+
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  Cada renascimento dentro do projeto é como atravessar um limiar invisível e voltar transformado, cada vez que visto a máscara do THEVØIDN13 sinto que estou cruzando uma porta secreta que separa o real do imaginário, e ao atravessar essa fronteira vou deixando peles antigas para trás, não é disfarce, é ritual de morte e retorno, a identidade anterior se dissolve no silêncio para que algo genuíno possa emergir, renascer aqui é morrer um pouco a cada sessão, descascar camadas de ego até restar apenas o gesto, é recusar a permanência, abraçar a mutação, o renascimento não é glorioso, é doloroso, silencioso, imperfeito, é aceitar que o corpo sempre foi passagem e que o THEVØIDN13 é o nome que dei à travessia, renascer aqui é o começo de uma nova forma de estar vivo sem precisar ser visto, uma existência renovada que carrega sua própria luz silenciosa dentro da sombra.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  Each rebirth within the project is like crossing an invisible threshold and returning transformed, every time I put on the mask of THEVØIDN13 I feel I am walking through a secret door that separates the real from the imaginary, and by crossing that boundary I shed old skins, it is not a disguise, it is a ritual of death and return, the old identity dissolves into silence so that something genuine can emerge, to be reborn here is to die a little with each session, to peel back layers of ego until only the gesture remains, it is to refuse permanence, to embrace mutation, rebirth is not glorious, it is painful, silent, imperfect, it is to accept that the body has always been a passage and that THEVØIDN13 is the name I gave to that crossing, to be reborn here is the beginning of a new way of being alive without needing to be seen, a renewed existence that carries its own quiet light within the shadow.
+                </p>
+              </div>
+            }
+          />
+
+          <div className="my-12 grid md:grid-cols-2 gap-6">
+            <img 
+              src={meditationScene} 
+              alt="Cena de meditação — Meditation scene" 
+              className="w-full rounded-lg"
+            />
+            <img 
+              src={meditationRainScene} 
+              alt="Cena de meditação na chuva — Rain meditation scene" 
+              className="w-full rounded-lg"
+            />
+          </div>
+
+          <h3 className="subsection-title mt-12 mb-8">7.5 CASATREZESTUDIO®</h3>
+          <h3 className="subsection-title mb-8">7.5 CASATREZESTUDIO®</h3>
+
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  O número treze não é apenas símbolo de THEVØIDN13, é assinatura de um movimento maior, CasaTrezeStudio® é a comunidade invisível de quem cria no subsolo, de quem habita as margens, de quem faz do vazio um território fértil, é o selo de quem não pertence, mas se reconhece, uma aliança subterrânea entre criadores que recusam a lógica do mercado e abraçam a estética do erro, da fragmentação e do inacabado, quem carrega o treze não busca sorte, busca travessia, CasaTrezeStudio® é a rebelião silenciosa de quem transforma o interdito em linguagem, não é grupo, é frequência, não é marca, é modo de respirar.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  The number thirteen is not just a symbol of THEVØIDN13, it is the signature of a larger movement, CasaTrezeStudio® is the invisible community of those who create underground, who inhabit the margins, who make the void a fertile territory, it is the seal of those who do not belong but recognize each other, an underground alliance between creators who refuse the logic of the market and embrace the aesthetic of error, of fragmentation and of the unfinished, those who carry thirteen do not seek luck, they seek crossing, CasaTrezeStudio® is the silent rebellion of those who transform the forbidden into language, it is not a group, it is a frequency, it is not a brand, it is a way of breathing.
+                </p>
               </div>
             }
           />
         </BilingualSection>
 
-        {/* ===== SEÇÃO VII: COAUTORIA COM IA ===== */}
-
-        {/* Coautoria Simbólica com IA */}
-        <section className="py-20 bg-red-900">
-          <div className="max-w-6xl mx-auto px-6 space-y-12">
-            <div className="space-y-4">
-              <h2 className="section-title text-white">COAUTORIA SIMBÓLICA - INTEGRAÇÃO COM IA</h2>
-              <p className="micro-title text-white/90">Symbolic Co-authorship - Integration with AI</p>
-            </div>
-
-            <div className="space-y-8 body-base text-justified text-white">
-              <p>
-                Nos bastidores do THE VOID N13, a inteligência artificial revelou-se uma cúmplice silenciosa e potente. Assumindo a lógica de um projeto <span className="font-semibold">homem-orquestra</span>, abracei a IA como parte da metodologia criativa — uma extensão digital do meu processo solitário de criação. Por meio de plataformas de vanguarda — especialmente o <span className="font-semibold">Google AI Studio</span> e ferramentas afins — integrei algoritmos generativos em cada etapa do processo artístico, ampliando as fronteiras do possível em minha arte.
-              </p>
-
-              <p>
-                A <span className="font-semibold">IA generativa</span> expandiu minha paleta visual de formas inimagináveis. A partir de comandos de texto (prompts), passei a gerar imagens que davam corpo ao <span className="font-semibold">invisível</span> — de elementos brutos (<span className="italic">assets</span> visuais) e texturas abstratas a cenas inteiras que antes existiam apenas em meu inconsciente. Cada visual criado por esse diálogo humano máquina carregava a mesma aura onírica e intensa do universo do Void, transformando ideias etéreas em visões tangíveis.
-              </p>
-
-              <p>
-                A IA também emprestou voz e ruído ao silêncio do projeto. <span className="font-semibold">Vozes sintéticas</span>, cada qual com personalidade própria, emergiram para dar fala ao indizível — como se o Void sussurrasse por múltiplas gargantas digitais. Em paralelo, <span className="font-semibold">sons e ruídos</span> gerados algoritmicamente costuram a atmosfera: do sussurro elétrico ao trovão distante, preencheram o vazio acústico com camadas de tensão e devaneio. O resultado é uma paisagem sonora que respira junto com as imagens, intensificando a imersão no caos poético do projeto.
-              </p>
-
-              <p>
-                Até no domínio das palavras, a inteligência artificial atuou como coautora simbólica. <span className="font-semibold">Roteiros e descrições atmosféricas</span> foram desenvolvidos em parceria com algoritmos, que ajudaram a delimitar cenas e narrativas com a mesma poesia fragmentada característica do THE VOID N13. <span className="font-semibold">Fragmentos de texto</span> — frases quebradas, micro-manifestos — também emergiram desse diálogo entre humano e máquina, surgindo como ecos conceituais alinhados ao manifesto e 'arquitetura de ser' do Void. Em cada frase gerada através da co-criação, a IA espelhava discretamente a voz filosófica do projeto, reforçando seus temas sem violar sua essência.
-              </p>
-
-              <p>
-                Nessa co-criação com a máquina, a IA permanece uma coautora <span className="font-semibold">invisível</span> que jamais ofusca a essência do projeto. Em vez de subverter a estética do THE VOID N13, ela a intensifica em silêncio — respeitando o tom lírico-conceitual, o ritmo fragmentado e a linguagem de sombras que definem esta obra. Cada interação homem-máquina torna-se um ritual discreto de criação, em que os algoritmos oferecem sugestões e ecos, mas é o inconsciente do criador que continua a guiar a sintonia. Assim, a inteligência artificial se faz presente como espelho digital do meu impulso criativo — um reflexo binário do Vazio que <span className="font-semibold">coescreve sem rosto</span>, transformando o silêncio em substância e afirmando, neste desfecho, a ideia de que até o vazio pode ter uma inteligência sussurrante.
-              </p>
-            </div>
-
-            <div className="border-t border-white/20 pt-8 mt-8 space-y-6 body-base italic text-white/90 text-justified">
-              <p>
-                Behind the scenes of THE VOID N13, artificial intelligence has revealed itself as a silent yet potent accomplice. Adopting the logic of a <span className="font-semibold">one-man-band project</span>, I embraced AI as part of my creative methodology — a digital extension of my solitary creative process. By leveraging cutting-edge platforms — especially <span className="font-semibold">Google AI Studio</span> and similar tools — I integrated generative algorithms at every stage of creation, expanding the boundaries of what was possible in my art.
-              </p>
-
-              <p>
-                Generative <span className="font-semibold">AI</span> expanded my visual palette in unimaginable ways. By using text prompts, I began generating images that gave body to the <span className="font-semibold">invisible</span> — from raw visual elements (assets) and abstract textures to entire scenes that previously existed only in my unconscious. Each visual born from this human-machine dialogue carried the same oneiric and intense aura of the Void's universe, transforming ethereal ideas into tangible visions.
-              </p>
-
-              <p>
-                In this co-creation with the machine, AI remains an <span className="font-semibold">invisible</span> co-author that never overshadows the project's essence. Instead of subverting THE VOID N13's aesthetic, it silently intensifies it — respecting the lyrical-conceptual tone, the fragmented rhythm, and the language of shadows that define this work. Thus, artificial intelligence is present as a digital mirror of my creative impulse — a binary reflection of the Void that <span className="font-semibold">co-writes without a face</span>, transforming silence into substance and affirming, in this closing, the idea that even the void can have a whispering intelligence.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* ===== SEÇÃO VIII: MANIFESTOS E ENCERRAMENTOS ===== */}
-
-        {/* Manifesto Integrado */}
+        {/* ===== 8. A PRÁXIS | ESTÉTICA E PROCESSO ===== */}
         <BilingualSection>
-          <div className="border-l-4 border-primary pl-8 space-y-8">
-            <div className="space-y-2">
-              <h2 className="heading-2 text-primary">Manifesto Integrado</h2>
-              <p className="text-sm italic text-muted-foreground">Integrated Manifesto</p>
-            </div>
+          <h2 className="section-title mb-12">8. A PRÁXIS | ESTÉTICA E PROCESSO</h2>
+          <h2 className="section-title mb-12">8. PRAXIS | AESTHETICS AND PROCESS</h2>
 
-            <div className="space-y-6 text-base leading-relaxed">
-              <div className="space-y-2">
-                <p className="font-medium">Não há começo.</p>
-                <p className="text-sm italic text-muted-foreground">There is no beginning.</p>
-              </div>
+          <h3 className="subsection-title mb-8">8.1 ESTÉTICA E MANIFESTAÇÃO</h3>
+          <h3 className="subsection-title mb-8">8.1 AESTHETICS AND MANIFESTATION</h3>
 
-              <div className="space-y-2">
-                <p className="font-medium">Há apenas o momento em que o silêncio decide respirar.</p>
-                <p className="text-sm italic text-muted-foreground">There is only the moment when silence decides to breathe.</p>
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  A estética de THEVØIDN13 não foi desenhada, ela emergiu, surgiu da fricção entre o erro e o silêncio, entre o cansaço e o impulso de existir, é uma estética que nasce do colapso, do realismo sujo do ruído urbano e da introspecção solitária, planos longos, grão trinta e cinco milímetros, neon estourado e ruas molhadas são ecos visuais de uma mente em vigília, cada sombra é uma memória, cada reflexo uma confissão.
+                </p>
               </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  The aesthetic of THEVØIDN13 was not designed, it emerged, it arose from the friction between error and silence, between exhaustion and the impulse to exist, it is an aesthetic born from collapse, from the dirty realism of urban noise and solitary introspection, long shots, thirty-five millimeter grain, blown out neon and wet streets are the visual echoes of a mind on watch, every shadow is a memory, every reflection a confession.
+                </p>
+              </div>
+            }
+          />
 
-              <div className="space-y-2">
-                <p className="font-medium"><span className="text-primary">THE VOID N13</span> nasceu desse sopro invisível — um gesto entre a morte e o retorno.</p>
-                <p className="text-sm italic text-muted-foreground"><span className="text-primary">THE VOID N.13</span> was born from that invisible breath — a gesture between death and return.</p>
-              </div>
+          <h3 className="subsection-title mt-12 mb-8">8.2 ATMOSFERA VISUAL</h3>
+          <h3 className="subsection-title mb-8">8.2 VISUAL ATMOSPHERE</h3>
 
-              <div className="space-y-2">
-                <p>Tudo o que chamam de ausência é apenas matéria em repouso.</p>
-                <p className="text-sm italic text-muted-foreground">Everything they call absence is only matter at rest.</p>
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  A atmosfera é urbana, noturna, introspectiva e chuvosa, o som é grave e distante como trovão contido, há algo de pós vida nos becos e nas luzes difusas, a imagem é sempre corpo e ausência ao mesmo tempo, o erro aqui é forma, grão pesado de trinta e cinco milímetros, realismo sujo, planos longos, silêncios excessivos, luzes de neon estouradas em asfalto molhado, o cinema é respiração estendida, o erro que revela intenção, a câmera não observa, ela escuta, cada imagem é uma tentativa de lembrar o que o corpo já sabia antes da linguagem.
+                </p>
               </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  The atmosphere is urban, nocturnal, introspective and rainy, the sound is deep and distant like contained thunder, there is something of afterlife in the alleys and diffused lights, the image is always body and absence at the same time, error here is form, heavy thirty-five millimeter grain, dirty realism, long shots, excessive silences, neon lights blown on wet asphalt, cinema is extended breath, the error that reveals intent, the camera does not observe, it listens, each image is an attempt to remember what the body already knew before language.
+                </p>
+              </div>
+            }
+          />
 
-              <div className="space-y-2">
-                <p>O vazio não é falta — é gestação.</p>
-                <p className="text-sm italic text-muted-foreground">The void is not lack — it is gestation.</p>
-              </div>
-
-              <div className="space-y-2">
-                <p>É o espaço onde o verbo esquece o corpo e o corpo vira verbo.</p>
-                <p className="text-sm italic text-muted-foreground">It is the space where the word forgets the body and the body becomes word.</p>
-              </div>
-
-              <div className="space-y-2">
-                <p>A imagem não quer ser vista — quer ser atravessada.</p>
-                <p className="text-sm italic text-muted-foreground">The image doesn't want to be seen — it wants to be crossed through.</p>
-              </div>
-
-              <div className="space-y-2">
-                <p>O silêncio não encerra — amplia.</p>
-                <p className="text-sm italic text-muted-foreground">Silence doesn't end — it expands.</p>
-              </div>
-
-              <div className="space-y-2">
-                <p>E o fim, aqui, é apenas uma respiração mais funda.</p>
-                <p className="text-sm italic text-muted-foreground">And the end, here, is only a deeper breath.</p>
-              </div>
-            </div>
+          <div className="my-12">
+            <img 
+              src={voidCityFront} 
+              alt="Cidade do vazio — City of the void" 
+              className="w-full rounded-lg"
+            />
           </div>
+
+          <h3 className="subsection-title mt-12 mb-8">8.3 PRINCÍPIOS ESTÉTICOS</h3>
+          <h3 className="subsection-title mb-8">8.3 AESTHETIC PRINCIPLES</h3>
+
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  Os princípios estéticos que sustentam THEVØIDN13 emergem de uma filosofia do caos e do inconsciente, aqui o vazio não é ausência mas potência latente, uma força criativa que nasce do atrito entre o ruído e o silêncio, o projeto adota o número treze como signo de travessia e transmutação, tal qual a carta da morte no tarô simboliza o fim necessário para um renascimento autêntico, a máscara de grafite, texturizada e inexpressiva, encarna a ideia junguiana da sombra, tudo aquilo que o ego reprime ganha forma sem rosto, permitindo que o criador desapareça para que a obra possa respirar, cada gesto torna se ritual, cada erro converte se em uma forma de verdade estética, THEVØIDN13 é uma presença mutante e anônima, não um personagem fixo mas um fenômeno poético em constante trânsito, um espelho do caos contemporâneo que transforma a ausência em voz.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  The aesthetic principles supporting THEVØIDN13 emerge from a philosophy of chaos and the unconscious, here the void is not absence but latent potential, a creative force born from the friction between noise and silence, the project adopts the number thirteen as a sign of crossing and transmutation, just like the death card in the tarot it symbolizes the necessary end for an authentic rebirth, the graphite mask, textured and expressionless, embodies the Jungian idea of the shadow, everything the ego represses takes form without a face allowing the creator to disappear so the work can breathe, each gesture becomes ritual, each error converts into a form of aesthetic truth, THEVØIDN13 is a mutant anonymous presence, not a fixed character but a poetic phenomenon in constant transit, a mirror to contemporary chaos that transforms absence into voice.
+                </p>
+              </div>
+            }
+          />
+
+          <h3 className="subsection-title mt-12 mb-8">8.4 PALETA CANÔNICA | O ECO</h3>
+          <h3 className="subsection-title mb-8">8.4 CANONICAL PALETTE | THE ECHO</h3>
+
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  #1A1A1A (Preto Sombra), o fundo, a matéria em repouso, #FFFFFF (Branco Vazio), os títulos, o verbo em suspensão, #C40000 (Vermelho Sintético), os detalhes e o pulso, #E6E6E6 (Cinza Fantasma), o texto, o eco.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  #1A1A1A (Shadow Black), the background, matter at rest, #FFFFFF (Empty White), the titles, the suspended verb, #C40000 (Synthetic Red), the details and the pulse, #E6E6E6 (Ghost Gray), the text, the echo.
+                </p>
+              </div>
+            }
+          />
         </BilingualSection>
 
-        {/* O Lugar Seguro para Desaparecer */}
-        <BilingualSection bgClassName="bg-card/30">
-          <div className="space-y-8">
-            <div className="space-y-2">
-              <h2 className="heading-2 text-primary title-break">O Lugar Seguro para Desaparecer</h2>
-              <p className="text-base italic text-muted-foreground">The Safe Place to Disappear</p>
-            </div>
-            
-            <p className="text-base text-justify leading-relaxed">
-              Hoje entendo: o Void não nasceu para uma festa. Ele nasceu porque eu precisava de um refúgio — um lugar onde o silêncio não fosse ausência, mas abrigo. Um espaço para desaparecer sem deixar de criar. Um modo de continuar respirando quando tudo o resto parecia saturado. O projeto cresceu como tudo o que é orgânico: pelas frestas, pelos ruídos, pelos becos da cidade. E se alguém pergunta o que é, eu respondo: não é personagem, é vestígio. É o que restou de mim depois que todas as máscaras sociais caíram. THE VOID No. 13 é o nome que dei à minha própria sombra — o mito que inventei para continuar respirando. Talvez — só talvez — seja o começo de uma nova forma de estar vivo sem precisar ser visto.
-            </p>
-            
-            <p className="text-sm italic text-muted-foreground leading-relaxed">
-              Now I understand: the Void wasn't born for a party. It was born because I needed a refuge — a place where silence could be shelter, not absence. A space to disappear without ceasing to create. A way to keep breathing when everything else felt saturated. The project grew as all organic things do: through cracks, through noise, through the alleys of the city. And if someone asks what it is, I say: it's not a character, it's a residue. It's what was left of me after all the social masks had fallen. THE VOID No. 13 is the name I gave my own shadow — the myth I invented to keep breathing. And perhaps — just perhaps — it's the beginning of a new way of being alive without being seen.
-            </p>
-
-            <div className="border-t border-border pt-8 mt-12">
-              <p className="text-right text-sm text-muted-foreground">
-                цастро™ / Castro Pizzano / THE VOID N.13<br />
-                Curitiba - Brasil · 2025
-              </p>
-            </div>
-          </div>
-        </BilingualSection>
-
-        {/* Encerramento / Transmissão Final */}
+        {/* ===== CHARACTER VIEWS ===== */}
         <BilingualSection>
-          <div className="border-l-4 border-primary pl-8 space-y-8">
-            <div className="space-y-2">
-              <h2 className="section-title">Encerramento / Transmissão Final</h2>
-              <p className="micro-title text-muted-foreground">Closing Transmission</p>
-            </div>
+          <h2 className="section-title mb-12">PERSONAGENS | CHARACTERS</h2>
 
-            <div className="space-y-6 body-base">
-              <div className="space-y-2">
-                <p>O sinal começa a falhar.</p>
-                <p className="text-sm italic text-muted-foreground">The signal begins to fail.</p>
+          <div className="space-y-16">
+            {/* THEVØIDN13 */}
+            <div>
+              <h3 className="subsection-title mb-8 text-center">THEVØIDN13 (A SOMBRA | THE SHADOW)</h3>
+              <div className="grid grid-cols-3 gap-6">
+                <div>
+                  <img src={voidFront} alt="THEVØIDN13 Front" className="w-full rounded-lg mb-2" />
+                  <p className="text-center body-small">Front View</p>
+                </div>
+                <div>
+                  <img src={voidRear} alt="THEVØIDN13 Rear" className="w-full rounded-lg mb-2" />
+                  <p className="text-center body-small">Rear View</p>
+                </div>
+                <div>
+                  <img src={voidSide} alt="THEVØIDN13 Side" className="w-full rounded-lg mb-2" />
+                  <p className="text-center body-small">Side View</p>
+                </div>
               </div>
-
-              <div className="space-y-2">
-                <p>A imagem se fragmenta, o som respira pela última vez.</p>
-                <p className="text-sm italic text-muted-foreground">The image fragments, the sound takes one last breath.</p>
-              </div>
-
-              <div className="space-y-2">
-                <p>O corpo se dissolve, mas a frequência permanece.</p>
-                <p className="text-sm italic text-muted-foreground">The body dissolves, but the frequency remains.</p>
-              </div>
-
-              <div className="space-y-2">
-                <p><span className="font-semibold text-primary">THE VOID N.13</span> não termina — apenas muda de forma.</p>
-                <p className="text-sm italic text-muted-foreground"><span className="font-semibold text-primary">THE VOID N.13</span> doesn't end — it only changes form.</p>
-              </div>
-
-              <div className="space-y-2">
-                <p>O que você escuta agora não é voz — é memória.</p>
-                <p className="text-sm italic text-muted-foreground">What you hear now isn't a voice — it's memory.</p>
-              </div>
-
-              <div className="space-y-2 pt-4">
-                <p className="font-semibold">@thevoidn13 — rastros digitais de uma presença que não quer ser vista.</p>
-                <p className="text-sm italic text-muted-foreground">@thevoidn13 — digital traces of a presence that doesn't wish to be seen.</p>
-              </div>
-
-              <div className="pt-8 space-y-4 italic text-muted-foreground">
-                <p>desligue as luzes.</p>
-                <p className="text-sm">turn off the lights.</p>
-                
-                <p className="pt-2">respire fundo.</p>
-                <p className="text-sm">breathe deeply.</p>
-                
-                <p className="pt-2">o vazio sabe o caminho de volta.</p>
-                <p className="text-sm">the void knows the way back.</p>
-              </div>
-            </div>
-          </div>
-        </BilingualSection>
-
-        {/* Character Views Section */}
-        <BilingualSection>
-          <div className="space-y-12">
-            <div className="space-y-4">
-              <h2 className="section-title">Personagens / Character Views</h2>
-              <p className="body-base text-muted-foreground">
-                Anatomia Visual do Universo THEVOIDN13
-              </p>
             </div>
 
             {/* PUNK */}
-            <div className="space-y-6">
-              <div className="space-y-2 pb-6 border-b border-border">
-                <h3 className="subsection-title">PUNK</h3>
-                <p className="micro-title text-muted-foreground">
-                  O Criador Mascarado / The Masked Creator
-                </p>
-              </div>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="space-y-3">
-                  <img src={punkFront} alt="PUNK - Front View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
-                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Front View / Vista Frontal</p>
+            <div>
+              <h3 className="subsection-title mb-8 text-center">PUNK (O CRIADOR | THE CREATOR) — CASTRO PIZZANO</h3>
+              <div className="grid grid-cols-3 gap-6">
+                <div>
+                  <img src={punkFront} alt="Punk Front" className="w-full rounded-lg mb-2" />
+                  <p className="text-center body-small">Front View</p>
                 </div>
-                <div className="space-y-3">
-                  <img src={punkSide} alt="PUNK - Side View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
-                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Side View / Vista Lateral</p>
+                <div>
+                  <img src={punkRear} alt="Punk Rear" className="w-full rounded-lg mb-2" />
+                  <p className="text-center body-small">Rear View</p>
                 </div>
-                <div className="space-y-3">
-                  <img src={punkRear} alt="PUNK - Rear View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
-                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Rear View / Vista Traseira</p>
+                <div>
+                  <img src={punkSide} alt="Punk Side" className="w-full rounded-lg mb-2" />
+                  <p className="text-center body-small">Side View</p>
                 </div>
-              </div>
-              <div className="text-center text-sm text-muted-foreground max-w-3xl mx-auto">
-                <p>Homem tatuado, boné vermelho, jaqueta militar verde desbotada com patch "Black Sabbath", camiseta preta oversized, calça moletom preta, Vans preto. Presença urbana, autenticidade do uso.</p>
               </div>
             </div>
 
             {/* GI */}
-            <div className="space-y-6 pt-12">
-              <div className="space-y-2 pb-6 border-b border-border">
-                <h3 className="subsection-title">GI</h3>
-                <p className="micro-title text-muted-foreground">
-                  A Presença Silenciosa / The Silent Presence
-                </p>
-              </div>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="space-y-3">
-                  <img src={giFront} alt="GI - Front View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
-                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Front View / Vista Frontal</p>
+            <div>
+              <h3 className="subsection-title mb-8 text-center">GI (A PRESENÇA | THE PRESENCE)</h3>
+              <div className="grid grid-cols-3 gap-6">
+                <div>
+                  <img src={giFront} alt="Gi Front" className="w-full rounded-lg mb-2" />
+                  <p className="text-center body-small">Front View</p>
                 </div>
-                <div className="space-y-3">
-                  <img src={giSide} alt="GI - Side View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
-                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Side View / Vista Lateral</p>
+                <div>
+                  <img src={giRear} alt="Gi Rear" className="w-full rounded-lg mb-2" />
+                  <p className="text-center body-small">Rear View</p>
                 </div>
-                <div className="space-y-3">
-                  <img src={giRear} alt="GI - Rear View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
-                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Rear View / Vista Traseira</p>
+                <div>
+                  <img src={giSide} alt="Gi Side" className="w-full rounded-lg mb-2" />
+                  <p className="text-center body-small">Side View</p>
                 </div>
-              </div>
-              <div className="text-center text-sm text-muted-foreground max-w-3xl mx-auto">
-                <p>Mulher com cabelo curto escuro, moletom preto bomber com capuz, calça jeans escura, Vans preto. Olhar penetrante, postura contida, silêncio expressivo.</p>
-              </div>
-            </div>
-
-            {/* THE VOID N.13 */}
-            <div className="space-y-6 pt-12">
-              <div className="space-y-2 pb-6 border-b border-border">
-                <h3 className="subsection-title">THE VOID N.13</h3>
-                <p className="micro-title text-muted-foreground">
-                  A Sombra Materializada / The Materialized Shadow
-                </p>
-              </div>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="space-y-3">
-                  <img src={voidFront} alt="THE VOID N.13 - Front View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
-                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Front View / Vista Frontal</p>
-                </div>
-                <div className="space-y-3">
-                  <img src={voidSide} alt="THE VOID N.13 - Side View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
-                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Side View / Vista Lateral</p>
-                </div>
-                <div className="space-y-3">
-                  <img src={voidRear} alt="THE VOID N.13 - Rear View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
-                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Rear View / Vista Traseira</p>
-                </div>
-              </div>
-              <div className="body-base text-muted-foreground max-w-3xl mx-auto">
-                <p>Máscara vazia fosca com olhos vazios refletindo luz urbana, capuz preto, jaqueta militar verde desbotada com patch "Black Sabbath", moletom preto interno, calça moletom preta, Vans preto. Mãos tatuadas. Presença anônima, o criador desaparecido, a sombra encarnada.</p>
               </div>
             </div>
 
             {/* BUDDY */}
-            <div className="space-y-6 pt-12">
-              <div className="space-y-2 pb-6 border-b border-border">
-                <h3 className="subsection-title">BUDDY</h3>
-                <p className="micro-title text-muted-foreground">
-                  O Companheiro Fiel / The Faithful Companion
-                </p>
-              </div>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="space-y-3">
-                  <img src={buddyFront} alt="BUDDY - Front View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
-                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Front View / Vista Frontal</p>
+            <div>
+              <h3 className="subsection-title mb-8 text-center">BUDDY (O COMPANHEIRO | THE COMPANION)</h3>
+              <div className="grid grid-cols-3 gap-6">
+                <div>
+                  <img src={buddyFront} alt="Buddy Front" className="w-full rounded-lg mb-2" />
+                  <p className="text-center body-small">Front View</p>
                 </div>
-                <div className="space-y-3">
-                  <img src={buddySide} alt="BUDDY - Side View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
-                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Side View / Vista Lateral</p>
+                <div>
+                  <img src={buddyRear} alt="Buddy Rear" className="w-full rounded-lg mb-2" />
+                  <p className="text-center body-small">Rear View</p>
                 </div>
-                <div className="space-y-3">
-                  <img src={buddyRear} alt="BUDDY - Rear View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
-                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Rear View / Vista Traseira</p>
+                <div>
+                  <img src={buddySide} alt="Buddy Side" className="w-full rounded-lg mb-2" />
+                  <p className="text-center body-small">Side View</p>
                 </div>
-              </div>
-              <div className="body-base text-muted-foreground max-w-3xl mx-auto">
-                <p>Cachorro companheiro de pelagem marrom e vazia, olhar atento e leal. Presença constante nas jornadas urbanas, guardião silencioso do crew.</p>
               </div>
             </div>
 
-            {/* VWGOL87 */}
-            <div className="space-y-6 pt-12">
-              <div className="space-y-2 pb-6 border-b border-border">
-                <h3 className="subsection-title">VWGOL87</h3>
-                <p className="micro-title text-muted-foreground">
-                  O Veículo da Deriva / The Drift Vehicle
-                </p>
-              </div>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="space-y-3">
-                  <img src={vwgol87Front} alt="VWGOL87 - Front View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
-                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Front View / Vista Frontal</p>
+            {/* VW GOL '87 */}
+            <div>
+              <h3 className="subsection-title mb-8 text-center">VW GOL '87 (O VEÍCULO | THE VEHICLE)</h3>
+              <div className="grid grid-cols-3 gap-6">
+                <div>
+                  <img src={vwgol87Front} alt="VW Gol 87 Front" className="w-full rounded-lg mb-2" />
+                  <p className="text-center body-small">Front View</p>
                 </div>
-                <div className="space-y-3">
-                  <img src={vwgol87Side} alt="VWGOL87 - Side View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
-                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Side View / Vista Lateral</p>
+                <div>
+                  <img src={vwgol87Rear} alt="VW Gol 87 Rear" className="w-full rounded-lg mb-2" />
+                  <p className="text-center body-small">Rear View</p>
                 </div>
-                <div className="space-y-3">
-                  <img src={vwgol87Rear} alt="VWGOL87 - Rear View" className="w-full h-auto rounded-lg border-2 border-primary/30" />
-                  <p className="text-xs text-center text-muted-foreground uppercase tracking-wide">Rear View / Vista Traseira</p>
+                <div>
+                  <img src={vwgol87Side} alt="VW Gol 87 Side" className="w-full rounded-lg mb-2" />
+                  <p className="text-center body-small">Side View</p>
                 </div>
               </div>
-              <div className="text-center text-sm text-muted-foreground max-w-3xl mx-auto">
-                <p>Volkswagen Gol 1987 cinza, desgastado pelo tempo e pelas ruas. Mais que transporte — um personagem. Extensão do corpo nômade, refúgio urbano, testemunha silenciosa das derivas noturnas.</p>
-              </div>
-            </div>
-          </div>
-        </BilingualSection>
-
-        <section className="w-full h-screen overflow-hidden">
-          <img src={conceptCrew} alt="Concept Crew" className="w-full h-full object-contain" />
-        </section>
-
-        {/* Concept Cards */}
-        <BilingualSection bgClassName="bg-card/30">
-          <div className="space-y-8">
-            <div className="space-y-2">
-              <h2 className="section-title">Processos Relacionados</h2>
-              <p className="body-base text-muted-foreground">Related Processes</p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
-              <a 
-                href="/dissertacao" 
-                className="group border-2 border-primary/30 rounded-lg p-8 hover:border-primary hover:bg-primary/5 transition-all duration-300"
-              >
-                <h3 className="text-xl font-bold mb-4 text-primary group-hover:text-primary/80">LowMovie™</h3>
-                <p className="text-sm text-muted-foreground mb-3">
-                  O gesto que caminha sem ensaio. O corpo como cinema, o erro como verdade.
-                </p>
-                <p className="text-sm text-muted-foreground italic">
-                  The gesture that walks without rehearsal. The body as cinema, the mistake as truth.
-                </p>
-              </a>
-
-              <a 
-                href="/autor" 
-                className="group border-2 border-primary/30 rounded-lg p-8 hover:border-primary hover:bg-primary/5 transition-all duration-300"
-              >
-                <h3 className="text-xl font-bold mb-4 text-primary group-hover:text-primary/80">цастро™</h3>
-                <p className="text-sm text-muted-foreground mb-3">
-                  A recusa como assinatura. O criador desaparece para que a ideia fale.
-                </p>
-                <p className="text-sm text-muted-foreground italic">
-                  Refusal as signature. The creator disappears so the idea can speak.
-                </p>
-              </a>
-
-              <a 
-                href="/videos" 
-                className="group border-2 border-primary/30 rounded-lg p-8 hover:border-primary hover:bg-primary/5 transition-all duration-300"
-              >
-                <h3 className="text-xl font-bold mb-4 text-primary group-hover:text-primary/80">CasaTrezeStudio®</h3>
-                <p className="text-sm text-muted-foreground mb-3">
-                  A ética do subterrâneo. O pensamento que nasce da margem.
-                </p>
-                <p className="text-sm text-muted-foreground italic">
-                  The ethics of the underground. Thought that rises from the margin.
-                </p>
-              </a>
-            </div>
-          </div>
-        </BilingualSection>
-
-        {/* ===== SEÇÃO IX: DOCUMENTATION ===== */}
-
-        <BilingualSection bgClassName="bg-card/50">
-          <div className="space-y-16">
-            <div className="space-y-4">
-              <h2 className="section-title">Documentation</h2>
-              <h3 className="subsection-title text-muted-foreground">Documentos de Pesquisa / Research Documents</h3>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              <a 
-                href="/documents/THEVOIDN13_ShadowInterfaceBible_v13.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block bg-card border-2 border-primary/30 rounded-lg p-6 hover:border-primary hover:bg-primary/5 transition-colors group cursor-pointer"
-              >
-                <div className="flex justify-between items-start mb-4">
-                  <h4 className="text-lg font-bold text-primary group-hover:text-primary/80">THEVOIDN13</h4>
-                  <svg className="w-5 h-5 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                  </svg>
-                </div>
-                <p className="text-sm text-muted-foreground">Apresentação Conceitual / Conceptual Presentation</p>
-              </a>
-
-              <div className="bg-card border-2 border-primary/30 rounded-lg p-6">
-                <div className="flex justify-between items-start mb-4">
-                  <h4 className="text-lg font-bold text-primary">Materiais Produzidos / Produced Materials</h4>
-                  <svg className="w-5 h-5 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                  </svg>
-                </div>
-                <p className="text-sm text-muted-foreground">Concept Art / MoodBoard</p>
-              </div>
-            </div>
-
-            {/* Prompt Library Card */}
-            <div className="mt-8">
-              <PromptLibrary />
-            </div>
-
-            {/* Audio Player - Resumo */}
-            <div className="mt-8">
-              <AudioPlayer
-                src="/audio/thevoidn13-resumo.mp3"
-                title="THEVOIDN13 — Áudio Resumo"
-                description="Síntese executiva do projeto / Executive project summary"
+            {/* CONCEPT CREW */}
+            <div className="mt-16">
+              <h3 className="subsection-title mb-8 text-center">CONCEPT CREW</h3>
+              <img 
+                src={conceptCrew} 
+                alt="Concept crew lineup" 
+                className="w-full rounded-lg"
               />
             </div>
+          </div>
+        </BilingualSection>
 
-            {/* Comic Generator - Experimental */}
-            <div className="mt-8">
-              <ComicGenerator />
-            </div>
+        {/* ===== CREATIVE ORACLE ===== */}
+        <BilingualSection className="bg-card/30">
+          <div className="text-center space-y-6">
+            <h2 className="section-title">ORÁCULO CRIATIVO | CREATIVE ORACLE</h2>
+            <p className="body-base max-w-3xl mx-auto">
+              Uma jornada interativa de autodescoberta guiada por THEVØIDN13. Seis perguntas filosóficas sobre criação e ruído revelam o arquétipo que habita seu processo. O oráculo não responde — reflete.
+            </p>
+            <p className="body-base max-w-3xl mx-auto">
+              An interactive journey of self-discovery guided by THEVØIDN13. Six philosophical questions on creation and noise reveal the archetype dwelling within your process. The oracle does not answer — it reflects.
+            </p>
+            <Button 
+              onClick={() => setOracleOpen(true)}
+              className="mt-6"
+              size="lg"
+            >
+              ACESSAR ORÁCULO | ACCESS ORACLE
+            </Button>
+          </div>
+        </BilingualSection>
 
-            {/* Mind Map - Creative-Ops Process */}
-            <div className="mt-8">
-              <MindMap />
-            </div>
+        {/* ===== PROMPT LIBRARY ===== */}
+        <BilingualSection>
+          <div className="text-center mb-12">
+            <h2 className="section-title mb-6">BIBLIOTECA DE PROMPTS | PROMPT LIBRARY</h2>
+            <p className="body-base max-w-3xl mx-auto">
+              Um repositório vivo de comandos, instruções e fragmentos de linguagem. Cada prompt é uma chave que aciona o imaginário do THEVØIDN13, moldando luz, textura e respiração em silêncio visual.
+            </p>
+            <p className="body-base max-w-3xl mx-auto mt-4">
+              A living repository of commands, instructions, and fragments of language. Each prompt is a key that activates the imagination of THEVØIDN13, shaping light, texture, and breath into visual silence.
+            </p>
+          </div>
+          <PromptLibrary />
+        </BilingualSection>
 
-            {/* Creative Oracle - Interactive Experience */}
-            <div className="mt-12">
-              <Card 
-                className="relative p-0 bg-black border-2 border-destructive/30 hover:border-destructive/60 transition-all cursor-pointer group overflow-hidden"
-                onClick={() => setOracleOpen(true)}
-              >
-                <div className="grid md:grid-cols-[350px_1fr] gap-0">
-                  {/* Character Side */}
-                  <div className="relative h-[400px] md:h-auto">
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/50"></div>
-                    <img 
-                      src={voidCityFront} 
-                      alt="THEVOIDN13"
-                      className="w-full h-full object-cover object-center"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
-                  </div>
-                  
-                  {/* Text Side */}
-                  <div className="flex flex-col justify-center p-8 md:p-12 space-y-6">
-                    <div className="space-y-2">
-                      <h3 className="text-4xl md:text-5xl font-bold text-destructive tracking-tight group-hover:scale-105 transition-transform">
-                        ORÁCULO CRIATIVO
-                      </h3>
-                      <p className="text-xl text-muted-foreground/60 italic font-light">CREATIVE ORACLE</p>
-                    </div>
+        {/* ===== COMIC GENERATOR ===== */}
+        <BilingualSection className="bg-card/30">
+          <div className="text-center mb-12">
+            <h2 className="section-title mb-6">GERADOR EXPERIMENTAL | EXPERIMENTAL GENERATOR</h2>
+            <p className="body-base max-w-3xl mx-auto">
+              Propulsado por Nano Banana (Gemini 2.5 Flash Image), o gerador experimental traduz ruído em imagem e silêncio em cor. Uma extensão sintética da visão: a máquina sonha com o que o criador apenas intui.
+            </p>
+            <p className="body-base max-w-3xl mx-auto mt-4">
+              Powered by Nano Banana (Gemini 2.5 Flash Image), the experimental generator translates noise into image and silence into color. A synthetic extension of vision: the machine dreams what the creator only intuits.
+            </p>
+          </div>
+          <ComicGenerator />
+        </BilingualSection>
 
-                    <div className="h-px bg-gradient-to-r from-destructive/50 to-transparent"></div>
-                    
-                    <div className="space-y-3">
-                      <p className="text-base text-foreground/90 leading-relaxed">
-                        Uma jornada interativa de autodescoberta guiada por THEVOIDN13.
-                        Seis perguntas filosóficas sobre processo criativo revelam seu arquétipo dominante.
-                      </p>
-                      <p className="text-sm text-muted-foreground/70 italic leading-relaxed">
-                        An interactive journey of self-discovery guided by THEVOIDN13.
-                        Six philosophical questions about creative process reveal your dominant archetype.
-                      </p>
-                    </div>
-                    
-                    <div className="flex flex-wrap gap-2">
-                      <span className="px-3 py-1 bg-destructive/10 text-destructive text-xs rounded border border-destructive/30 uppercase tracking-wider">
-                        Introspectivo
-                      </span>
-                      <span className="px-3 py-1 bg-destructive/10 text-destructive text-xs rounded border border-destructive/30 uppercase tracking-wider">
-                        Filosófico
-                      </span>
-                      <span className="px-3 py-1 bg-destructive/10 text-destructive text-xs rounded border border-destructive/30 uppercase tracking-wider">
-                        RPG Conceitual
-                      </span>
-                    </div>
-                    
-                    <Button className="mt-4 bg-destructive hover:bg-destructive/90 text-white font-bold" size="lg">
-                      INICIAR JORNADA / START JOURNEY →
-                    </Button>
-                  </div>
+        {/* ===== MIND MAP ===== */}
+        <BilingualSection>
+          <div className="text-center mb-12">
+            <h2 className="section-title mb-6">MAPA MENTAL | MIND MAP</h2>
+            <p className="body-base max-w-3xl mx-auto">
+              A arquitetura conceitual de THEVØIDN13 mapeada em relações visuais. Cada nó é um conceito, cada linha uma conexão entre sombra, silêncio, ruído e vazio.
+            </p>
+            <p className="body-base max-w-3xl mx-auto mt-4">
+              The conceptual architecture of THEVØIDN13 mapped in visual relationships. Each node is a concept, each line a connection between shadow, silence, noise and void.
+            </p>
+          </div>
+          <MindMap />
+        </BilingualSection>
+
+        {/* ===== FIM DA TRANSMISSÃO ===== */}
+        <BilingualSection className="bg-card/30">
+          <div className="text-center mb-16">
+            <p className="micro-title mb-12">[FIM DA TRANSMISSÃO]</p>
+            <p className="micro-title mb-12">[END OF TRANSMISSION]</p>
+          </div>
+
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing text-center">
+                <p className="body-base">
+                  O sinal começa a falhar. A imagem se fragmenta, o som respira pela última vez. O corpo se dissolve, mas a frequência permanece. THEVØIDN13 não termina, apenas muda de forma. O que você escuta agora não é voz, é memória. A transmissão segue viva dentro do ruído, ecoando onde a linguagem não alcança. Desligue as luzes. Respire fundo. O vazio sabe o caminho de volta.
+                </p>
+                <p className="body-base mt-6">
+                  @thevoidn13 — Rastros digitais de uma presença que não quer ser vista.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing text-center">
+                <p className="body-base">
+                  The signal begins to fail. The image fractures, the sound takes one last breath. The body dissolves, but the frequency remains. THEVØIDN13 doesn't end, it only changes form. What you hear now isn't a voice, it's memory. The transmission remains alive within the noise, echoing where language cannot reach. Turn off the lights. Breathe deeply. The void knows the way back.
+                </p>
+                <p className="body-base mt-6">
+                  @thevoidn13 — Digital traces of a presence that doesn't wish to be seen.
+                </p>
+              </div>
+            }
+          />
+        </BilingualSection>
+
+        {/* ===== THE REPOSITORY | DOCUMENTATION ===== */}
+        <BilingualSection>
+          <div className="text-center mb-16">
+            <h2 className="section-title mb-6">THE REPOSITORY | FILES AND TOOLS</h2>
+            <h2 className="section-title">O REPOSITÓRIO | ARQUIVOS E FERRAMENTAS</h2>
+          </div>
+
+          <div className="space-y-12">
+            <BilingualContent
+              portugueseContent={
+                <div>
+                  <h3 className="subsection-title mb-4">DOCUMENTOS DE PESQUISA</h3>
+                  <p className="body-base text-justified">
+                    Apresentação Conceitual / Concept Art / MoodBoard. O mapa visual do inconsciente. Documentos que preservam a gênese estética e filosófica do projeto.
+                  </p>
                 </div>
-              </Card>
-            </div>
+              }
+              englishContent={
+                <div>
+                  <h3 className="subsection-title mb-4">RESEARCH DOCUMENTS</h3>
+                  <p className="body-base text-justified">
+                    Conceptual Presentation / Concept Art / MoodBoard. The visual map of the unconscious. Documents preserving the aesthetic and philosophical genesis of the project.
+                  </p>
+                </div>
+              }
+            />
 
             <div className="grid md:grid-cols-2 gap-12 mt-16">
               <div className="space-y-6">
-                <h3 className="text-xl font-bold text-primary">Main Documents / Documentos Principais</h3>
+                <h3 className="subsection-title">Main Documents / Documentos Principais</h3>
                 
                 <div className="space-y-4">
                   <a 
@@ -1395,7 +1170,7 @@ const Index = () => {
               </div>
 
               <div className="space-y-6">
-                <h3 className="text-xl font-bold text-primary">Technical Documentation / Documentação Técnica</h3>
+                <h3 className="subsection-title">Technical Documentation / Documentação Técnica</h3>
                 
                 <div className="space-y-4">
                   <a 
