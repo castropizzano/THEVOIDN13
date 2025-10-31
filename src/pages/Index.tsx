@@ -51,6 +51,7 @@ import meditationRender from "@/assets/meditation-render.png";
 import mirrorRender from "@/assets/mirror-render.png";
 import thinkRender from "@/assets/think-render.png";
 import maskVoidNew from "@/assets/mask-void-new.png";
+import voidLogoVisual from "@/assets/void-logo-visual.png";
 
 const Index = () => {
   const [oracleOpen, setOracleOpen] = useState(false);
@@ -366,6 +367,15 @@ const Index = () => {
 
           <h3 className="subsection-title mt-12 mb-8">3.5 IDENTIDADE VISUAL: A SOMBRA JUNGUIANA</h3>
           <h3 className="subsection-title mb-8">3.5 VISUAL IDENTITY: THE JUNGIAN SHADOW</h3>
+
+          {/* ===== VOID LOGO VISUAL ===== */}
+          <div className="my-12">
+            <img 
+              src={voidLogoVisual} 
+              alt="THEVØIDN13 — Visual Identity" 
+              className="w-full max-w-4xl mx-auto rounded-lg"
+            />
+          </div>
 
           <BilingualContent
             portugueseContent={
