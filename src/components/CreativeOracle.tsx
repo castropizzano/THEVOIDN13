@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Button } from './ui/button';
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from './ui/dialog';
-import { Volume2, VolumeX, Brain } from 'lucide-react';
+import { Volume2, VolumeX } from 'lucide-react';
 
 interface CreativeOracleProps {
   open: boolean;
@@ -203,19 +203,16 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
           </DialogDescription>
           
           <div className="space-y-8 p-8">
-            <div className="flex items-center justify-center gap-3 pb-6 border-b border-primary/20">
-              <Brain className="w-8 h-8 text-primary" />
-              <div>
-                <h2 className="text-4xl font-bold text-primary tracking-tight">
-                  ORÁCULO CRIATIVO
-                </h2>
-                <p className="text-sm text-muted-foreground uppercase tracking-wide">
-                  Creative Oracle
-                </p>
-              </div>
+            <div className="pb-6 border-b border-primary/20">
+              <h2 className="text-4xl font-bold text-primary tracking-tight text-left">
+                ORÁCULO CRIATIVO
+              </h2>
+              <p className="text-sm text-muted-foreground uppercase tracking-wide text-left">
+                Creative Oracle
+              </p>
             </div>
 
-            <div className="space-y-4 text-center max-w-2xl mx-auto">
+            <div className="space-y-4 text-left">
               <p className="text-lg text-foreground/90 leading-relaxed">
                 Seis perguntas sobre seu processo criativo. Não existe resposta certa. 
                 Apenas verdades que você ainda não disse em voz alta.
@@ -227,13 +224,13 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
             </div>
 
             <div className="space-y-3 pt-4">
-              <div className="grid grid-cols-4 gap-2 text-center text-xs text-muted-foreground/60 uppercase tracking-wider">
+              <div className="grid grid-cols-4 gap-2 text-left text-xs text-muted-foreground/60 uppercase tracking-wider">
                 <div>Sombras</div>
                 <div>Ruptura</div>
                 <div>Conexão</div>
                 <div>Método</div>
               </div>
-              <div className="grid grid-cols-4 gap-2 text-center text-xs text-muted-foreground/40">
+              <div className="grid grid-cols-4 gap-2 text-left text-xs text-muted-foreground/40">
                 <div>Shadow</div>
                 <div>Rupture</div>
                 <div>Connection</div>
@@ -286,14 +283,14 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
             </button>
 
             {/* Header */}
-            <div className="text-center space-y-2 pb-6 border-b border-primary/20">
+            <div className="text-left space-y-2 pb-6 border-b border-primary/20">
               <h2 className="text-4xl font-bold text-primary tracking-tight uppercase">{result.name}</h2>
               <p className="text-xl text-muted-foreground/60 italic font-light">{result.nameEn}</p>
             </div>
 
             {/* Description */}
-            <div className="space-y-4 max-w-2xl mx-auto">
-              <div className="space-y-3 p-6 rounded-lg border border-primary/20 bg-card/50">
+            <div className="space-y-4">
+              <div className="space-y-3 p-6 rounded-lg border border-primary/20 bg-card/50 text-left">
                 <p className="text-base text-foreground leading-relaxed">
                   {result.description}
                 </p>
@@ -302,7 +299,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
                 </p>
               </div>
 
-              <div className="p-5 bg-primary/10 border-l-4 border-primary rounded-r space-y-2">
+              <div className="p-5 bg-primary/10 border-l-4 border-primary rounded-r space-y-2 text-left">
                 <p className="text-sm font-bold text-foreground">
                   {result.message}
                 </p>
@@ -314,7 +311,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
 
             {/* Statistics */}
             <div className="space-y-4 pt-4">
-              <div className="text-center">
+              <div className="text-left">
                 <p className="text-xs text-muted-foreground/70 uppercase tracking-wider mb-4">
                   Distribuição dos Arquétipos / Archetype Distribution
                 </p>
@@ -360,7 +357,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
               </div>
 
               {/* Total Score */}
-              <div className="text-center pt-4 border-t border-border">
+              <div className="text-left pt-4 border-t border-border">
                 <p className="text-xs text-muted-foreground/50 uppercase tracking-wider">
                   Pontuação Total / Total Score: <span className="font-bold text-foreground/70">{totalScore}</span>
                 </p>
@@ -368,7 +365,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
             </div>
 
             {/* Actions */}
-            <div className="flex justify-center gap-4 pt-6">
+            <div className="flex justify-start gap-4 pt-6">
               <Button 
                 onClick={handleReset} 
                 variant="outline" 
@@ -437,8 +434,8 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
             </div>
 
             {/* Question */}
-            <div className="space-y-6 max-w-2xl mx-auto">
-              <div className="space-y-3 text-center pb-4 border-b border-primary/20">
+            <div className="space-y-6">
+              <div className="space-y-3 text-left pb-4 border-b border-primary/20">
                 <p className="text-xl font-medium text-foreground leading-relaxed">
                   {question.text}
                 </p>
