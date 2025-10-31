@@ -53,6 +53,7 @@ import thinkRender from "@/assets/think-render.png";
 import maskVoidNew from "@/assets/mask-void-new.png";
 import voidLogoVisual from "@/assets/void-logo-visual.png";
 import golRender from "@/assets/gol-render.png";
+import lovecityRender from "@/assets/lovecity-render.png";
 
 const Index = () => {
   const [oracleOpen, setOracleOpen] = useState(false);
@@ -532,6 +533,15 @@ const Index = () => {
 
           <h3 className="subsection-title mt-12 mb-8">4.3 PSICOLOGIA: A SOMBRA COMO LINGUAGEM</h3>
           <h3 className="subsection-title mb-8">4.3 PSYCHOLOGY: SHADOW AS LANGUAGE</h3>
+
+          {/* ===== LOVECITY RENDER ===== */}
+          <div className="my-12">
+            <img 
+              src={lovecityRender} 
+              alt="THEVØIDN13 — LOVECITY" 
+              className="w-full max-w-6xl mx-auto rounded-lg"
+            />
+          </div>
 
           <BilingualContent
             portugueseContent={
