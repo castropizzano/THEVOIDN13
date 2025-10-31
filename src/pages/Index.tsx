@@ -124,6 +124,7 @@ const Index = () => {
         <BilingualSection>
           <div className="mb-8">
             <h3 className="subsection-title">[INÍCIO DA TRANSMISSÃO]</h3>
+            <h3 className="subsection-title mt-2">[BEGINNING OF TRANSMISSION]</h3>
           </div>
         </BilingualSection>
 
@@ -984,6 +985,7 @@ const Index = () => {
           <h2 className="section-title mb-12">9. REFERENCES | THE INTERNAL ECHO</h2>
 
           <h3 className="subsection-title mt-12 mb-8">DNA CONCEITUAL (QUADRINHOS)</h3>
+          <h3 className="subsection-title mb-8">CONCEPTUAL DNA (COMICS)</h3>
           
           <BilingualContent
             portugueseContent={
@@ -1007,6 +1009,7 @@ const Index = () => {
           />
 
           <h3 className="subsection-title mt-12 mb-8">TEXTURA CINEMATOGRÁFICA (FILMES)</h3>
+          <h3 className="subsection-title mb-8">CINEMATIC TEXTURE (FILMS)</h3>
           
           <BilingualContent
             portugueseContent={
@@ -1036,6 +1039,7 @@ const Index = () => {
           />
 
           <h3 className="subsection-title mt-12 mb-8">ASSINATURA SONORA (MÚSICA)</h3>
+          <h3 className="subsection-title mb-8">SONIC SIGNATURE (MUSIC)</h3>
           
           <BilingualContent
             portugueseContent={
@@ -1469,6 +1473,7 @@ const Index = () => {
           {/* FIM DA TRANSMISSÃO */}
           <div className="mt-16">
             <h3 className="subsection-title mb-8">[FIM DA TRANSMISSÃO]</h3>
+            <h3 className="subsection-title mb-8">[END OF TRANSMISSION]</h3>
             
             <div className="my-8">
               <img 
@@ -1508,6 +1513,7 @@ const Index = () => {
         <BilingualSection>
           <div className="mt-16">
             <h3 className="subsection-title mb-8">PROTÓTIPO Nº13</h3>
+            <h3 className="subsection-title mb-8">PROTOTYPE Nº13</h3>
             
             <div className="grid md:grid-cols-2 gap-8 items-start">
               <div className="space-y-6">
