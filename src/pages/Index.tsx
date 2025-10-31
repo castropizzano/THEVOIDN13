@@ -976,7 +976,7 @@ const Index = () => {
           <div className="space-y-16">
             {/* THEVØIDN13 */}
             <div>
-              <h3 className="subsection-title mb-8 text-center">THEVØIDN13 (ESTUDO INICIAL | EXPLORATORY STUDY)</h3>
+              <h3 className="subsection-title mb-8 text-left">THEVØIDN13 (ESTUDO INICIAL | EXPLORATORY STUDY)</h3>
               <div className="my-8">
                 <img 
                   src={charactersStudy} 
@@ -986,85 +986,9 @@ const Index = () => {
               </div>
             </div>
 
-            {/* PUNK */}
-            <div>
-              <h3 className="subsection-title mb-8 text-center">PUNK (O CRIADOR | THE CREATOR) — CASTRO PIZZANO</h3>
-              <div className="grid grid-cols-3 gap-6">
-                <div>
-                  <img src={punkFront} alt="Punk Front" className="w-full rounded-lg mb-2" />
-                  <p className="text-center body-small">Front View</p>
-                </div>
-                <div>
-                  <img src={punkRear} alt="Punk Rear" className="w-full rounded-lg mb-2" />
-                  <p className="text-center body-small">Rear View</p>
-                </div>
-                <div>
-                  <img src={punkSide} alt="Punk Side" className="w-full rounded-lg mb-2" />
-                  <p className="text-center body-small">Side View</p>
-                </div>
-              </div>
-            </div>
-
-            {/* GI */}
-            <div>
-              <h3 className="subsection-title mb-8 text-center">GI (A PRESENÇA | THE PRESENCE)</h3>
-              <div className="grid grid-cols-3 gap-6">
-                <div>
-                  <img src={giFront} alt="Gi Front" className="w-full rounded-lg mb-2" />
-                  <p className="text-center body-small">Front View</p>
-                </div>
-                <div>
-                  <img src={giRear} alt="Gi Rear" className="w-full rounded-lg mb-2" />
-                  <p className="text-center body-small">Rear View</p>
-                </div>
-                <div>
-                  <img src={giSide} alt="Gi Side" className="w-full rounded-lg mb-2" />
-                  <p className="text-center body-small">Side View</p>
-                </div>
-              </div>
-            </div>
-
-            {/* BUDDY */}
-            <div>
-              <h3 className="subsection-title mb-8 text-center">BUDDY (O COMPANHEIRO | THE COMPANION)</h3>
-              <div className="grid grid-cols-3 gap-6">
-                <div>
-                  <img src={buddyFront} alt="Buddy Front" className="w-full rounded-lg mb-2" />
-                  <p className="text-center body-small">Front View</p>
-                </div>
-                <div>
-                  <img src={buddyRear} alt="Buddy Rear" className="w-full rounded-lg mb-2" />
-                  <p className="text-center body-small">Rear View</p>
-                </div>
-                <div>
-                  <img src={buddySide} alt="Buddy Side" className="w-full rounded-lg mb-2" />
-                  <p className="text-center body-small">Side View</p>
-                </div>
-              </div>
-            </div>
-
-            {/* VW GOL '87 */}
-            <div>
-              <h3 className="subsection-title mb-8 text-center">VW GOL '87 (O VEÍCULO | THE VEHICLE)</h3>
-              <div className="grid grid-cols-3 gap-6">
-                <div>
-                  <img src={vwgol87Front} alt="VW Gol 87 Front" className="w-full rounded-lg mb-2" />
-                  <p className="text-center body-small">Front View</p>
-                </div>
-                <div>
-                  <img src={vwgol87Rear} alt="VW Gol 87 Rear" className="w-full rounded-lg mb-2" />
-                  <p className="text-center body-small">Rear View</p>
-                </div>
-                <div>
-                  <img src={vwgol87Side} alt="VW Gol 87 Side" className="w-full rounded-lg mb-2" />
-                  <p className="text-center body-small">Side View</p>
-                </div>
-              </div>
-            </div>
-
             {/* CONCEPT CREW */}
             <div className="mt-16">
-              <h3 className="subsection-title mb-8 text-center">CONCEPT CREW</h3>
+              <h3 className="subsection-title mb-8 text-left">THEVØIDN13 (ESTUDO FINAL | FINAL STUDY)</h3>
               <img 
                 src={conceptCrew} 
                 alt="Concept crew lineup" 
