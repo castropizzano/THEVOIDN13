@@ -45,6 +45,7 @@ import maskVoid from "@/assets/mask-void.png";
 import voidStreetScene from "@/assets/void-street-scene.png";
 import logoWhiteAlpha from "@/assets/logo-white-alpha.png";
 import paradoxRender from "@/assets/paradox-render.png";
+import fallRender from "@/assets/fall-render.png";
 
 const Index = () => {
   const [oracleOpen, setOracleOpen] = useState(false);
@@ -152,6 +153,17 @@ const Index = () => {
             }
           />
         </BilingualSection>
+
+        {/* ===== FALL RENDER ===== */}
+        <section className="py-12">
+          <div className="max-w-6xl mx-auto px-6">
+            <img 
+              src={fallRender} 
+              alt="THEVØIDN13 — Fall Render" 
+              className="w-full rounded-lg"
+            />
+          </div>
+        </section>
 
         {/* ===== 1. ORIGEM E PROPÓSITO ===== */}
         <BilingualSection>
