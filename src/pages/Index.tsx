@@ -47,6 +47,7 @@ import logoWhiteAlpha from "@/assets/logo-white-alpha.png";
 import paradoxRender from "@/assets/paradox-render.png";
 import fallRender from "@/assets/fall-render.png";
 import maskStudy from "@/assets/mask-study.png";
+import meditationRender from "@/assets/meditation-render.png";
 
 const Index = () => {
   const [oracleOpen, setOracleOpen] = useState(false);
@@ -218,6 +219,15 @@ const Index = () => {
               </div>
             }
           />
+
+          {/* ===== MEDITATION RENDER ===== */}
+          <div className="my-12">
+            <img 
+              src={meditationRender} 
+              alt="THEVØIDN13 — Meditation Render" 
+              className="w-full max-w-4xl mx-auto rounded-lg"
+            />
+          </div>
         </BilingualSection>
 
         {/* ===== 2. FILOSOFIA CENTRAL ===== */}
