@@ -50,6 +50,7 @@ import maskStudy from "@/assets/mask-study.png";
 import meditationRender from "@/assets/meditation-render.png";
 import mirrorRender from "@/assets/mirror-render.png";
 import thinkRender from "@/assets/think-render.png";
+import maskVoidNew from "@/assets/mask-void-new.png";
 
 const Index = () => {
   const [oracleOpen, setOracleOpen] = useState(false);
@@ -314,7 +315,7 @@ const Index = () => {
 
           <div className="my-12">
             <img 
-              src={maskVoid} 
+              src={maskVoidNew} 
               alt="A máscara de THEVØIDN13 — The mask of THEVØIDN13" 
               className="w-full max-w-2xl mx-auto rounded-lg"
             />
