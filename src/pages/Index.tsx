@@ -52,6 +52,7 @@ import mirrorRender from "@/assets/mirror-render.png";
 import thinkRender from "@/assets/think-render.png";
 import maskVoidNew from "@/assets/mask-void-new.png";
 import voidLogoVisual from "@/assets/void-logo-visual.png";
+import golRender from "@/assets/gol-render.png";
 
 const Index = () => {
   const [oracleOpen, setOracleOpen] = useState(false);
@@ -399,6 +400,15 @@ const Index = () => {
         <BilingualSection>
           <h2 className="section-title mb-12">4. A PSIQUE | ARQUITETURA DO SER</h2>
           <h2 className="section-title mb-12">4. THE PSYCHE | ARCHITECTURE OF BEING</h2>
+
+          {/* ===== GOL RENDER ===== */}
+          <div className="my-12">
+            <img 
+              src={golRender} 
+              alt="THEVØIDN13 — VW GOL 87 Render" 
+              className="w-full max-w-4xl mx-auto rounded-lg"
+            />
+          </div>
 
           <h3 className="subsection-title mb-8">4.1 A ESTRUTURA DO SER</h3>
           <h3 className="subsection-title mb-8">4.1 THE STRUCTURE OF BEING</h3>
