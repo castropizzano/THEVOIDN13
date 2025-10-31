@@ -57,6 +57,7 @@ import lovecityRender from "@/assets/lovecity-render.png";
 import hotelRender from "@/assets/hotel-render.png";
 import gol2Render from "@/assets/gol2-render.png";
 import charactersStudy from "@/assets/characters-study.png";
+import charactersStudyFinal from "@/assets/characters-study-final.png";
 
 const Index = () => {
   const [oracleOpen, setOracleOpen] = useState(false);
@@ -989,11 +990,13 @@ const Index = () => {
             {/* CONCEPT CREW */}
             <div className="mt-16">
               <h3 className="subsection-title mb-8 text-left">THEVØIDN13 (ESTUDO FINAL | FINAL STUDY)</h3>
-              <img 
-                src={conceptCrew} 
-                alt="Concept crew lineup" 
-                className="w-full rounded-lg"
-              />
+              <div className="my-8">
+                <img 
+                  src={charactersStudyFinal} 
+                  alt="THEVØIDN13 Characters Final Study" 
+                  className="w-full max-w-6xl mx-auto rounded-lg"
+                />
+              </div>
             </div>
           </div>
         </BilingualSection>
