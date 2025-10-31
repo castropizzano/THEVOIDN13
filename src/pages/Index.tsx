@@ -46,6 +46,7 @@ import voidStreetScene from "@/assets/void-street-scene.png";
 import logoWhiteAlpha from "@/assets/logo-white-alpha.png";
 import paradoxRender from "@/assets/paradox-render.png";
 import fallRender from "@/assets/fall-render.png";
+import maskStudy from "@/assets/mask-study.png";
 
 const Index = () => {
   const [oracleOpen, setOracleOpen] = useState(false);
@@ -188,6 +189,15 @@ const Index = () => {
               </div>
             }
           />
+
+          {/* ===== MASK STUDY ===== */}
+          <div className="my-12">
+            <img 
+              src={maskStudy} 
+              alt="THEVØIDN13 — Mask Study" 
+              className="w-full max-w-4xl mx-auto rounded-lg"
+            />
+          </div>
 
           <h3 className="subsection-title mt-12 mb-8">1.2 QUANDO O INCONSCIENTE GANHA CORPO</h3>
           <h3 className="subsection-title mb-8">1.2 WHEN THE UNCONSCIOUS GAINS BODY</h3>
