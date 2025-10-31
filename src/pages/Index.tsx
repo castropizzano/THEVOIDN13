@@ -49,6 +49,7 @@ import fallRender from "@/assets/fall-render.png";
 import maskStudy from "@/assets/mask-study.png";
 import meditationRender from "@/assets/meditation-render.png";
 import mirrorRender from "@/assets/mirror-render.png";
+import thinkRender from "@/assets/think-render.png";
 
 const Index = () => {
   const [oracleOpen, setOracleOpen] = useState(false);
@@ -192,11 +193,11 @@ const Index = () => {
             }
           />
 
-          {/* ===== MASK STUDY ===== */}
+          {/* ===== THINK RENDER ===== */}
           <div className="my-12">
             <img 
-              src={maskStudy} 
-              alt="THEVØIDN13 — Mask Study" 
+              src={thinkRender} 
+              alt="THEVØIDN13 — Contemplation" 
               className="w-full max-w-4xl mx-auto rounded-lg"
             />
           </div>
