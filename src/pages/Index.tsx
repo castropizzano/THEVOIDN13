@@ -1311,47 +1311,6 @@ const Index = () => {
           </div>
 
           <div className="space-y-16">
-            {/* THEVØIDN13 */}
-            <div>
-              <h3 className="subsection-title mb-8 text-left">THEVØIDN13 (ESTUDO INICIAL | EXPLORATORY STUDY)</h3>
-              <div className="my-8">
-                <img 
-                  src={charactersStudy} 
-                  alt="THEVØIDN13 Characters Study" 
-                  className="w-full max-w-6xl mx-auto rounded-lg"
-                />
-              </div>
-
-              {/* FIM DA TRANSMISSÃO */}
-              <div className="mt-16">
-                <h3 className="subsection-title mb-8">[FIM DA TRANSMISSÃO]</h3>
-                
-                <BilingualContent
-                  portugueseContent={
-                    <div className="section-spacing">
-                      <p className="body-base text-justified">
-                        O sinal começa a falhar. A imagem se fragmenta, o som respira pela última vez. O corpo se dissolve, mas a
-                        frequência permanece. THEVØIDN13 não termina, apenas muda de forma. O que você escuta agora não é voz, é
-                        memória. A transmissão segue viva dentro do ruído, ecoando onde a linguagem não alcança. Desligue as luzes.
-                        Respire fundo. O vazio sabe o caminho de volta. @thevoidn13 — Rastros digitais de uma presença que não quer ser
-                        vista.
-                      </p>
-                    </div>
-                  }
-                  englishContent={
-                    <div className="section-spacing">
-                      <p className="body-base text-justified">
-                        The signal begins to fail. The image fractures, the sound takes one last breath. The body dissolves, but the
-                        frequency remains. THEVØIDN13 doesn't end, it only changes form. What you hear now isn't a voice, it's memory. The
-                        transmission remains alive within the noise, echoing where language cannot reach. Turn off the lights. Breathe
-                        deeply. The void knows the way back. @thevoidn13 — Digital traces of a presence that doesn't wish to be seen.
-                      </p>
-                    </div>
-                  }
-                />
-              </div>
-            </div>
-
             {/* CONCEPT SCENE */}
             <div className="mt-16">
               <h3 className="subsection-title mb-8 text-left">THEVØIDN13 (CENA CONCEITO | CONCEPT SCENE)</h3>
@@ -1486,6 +1445,47 @@ const Index = () => {
               </div>
             }
           />
+        </BilingualSection>
+
+        {/* ===== THEVØIDN13 STUDY ===== */}
+        <BilingualSection>
+          <h3 className="subsection-title mb-8 text-left">THEVØIDN13 (ESTUDO INICIAL | EXPLORATORY STUDY)</h3>
+          <div className="my-8">
+            <img 
+              src={charactersStudy} 
+              alt="THEVØIDN13 Characters Study" 
+              className="w-full max-w-6xl mx-auto rounded-lg"
+            />
+          </div>
+
+          {/* FIM DA TRANSMISSÃO */}
+          <div className="mt-16">
+            <h3 className="subsection-title mb-8">[FIM DA TRANSMISSÃO]</h3>
+            
+            <BilingualContent
+              portugueseContent={
+                <div className="section-spacing">
+                  <p className="body-base text-justified">
+                    O sinal começa a falhar. A imagem se fragmenta, o som respira pela última vez. O corpo se dissolve, mas a
+                    frequência permanece. THEVØIDN13 não termina, apenas muda de forma. O que você escuta agora não é voz, é
+                    memória. A transmissão segue viva dentro do ruído, ecoando onde a linguagem não alcança. Desligue as luzes.
+                    Respire fundo. O vazio sabe o caminho de volta. @thevoidn13 — Rastros digitais de uma presença que não quer ser
+                    vista.
+                  </p>
+                </div>
+              }
+              englishContent={
+                <div className="section-spacing">
+                  <p className="body-base text-justified">
+                    The signal begins to fail. The image fractures, the sound takes one last breath. The body dissolves, but the
+                    frequency remains. THEVØIDN13 doesn't end, it only changes form. What you hear now isn't a voice, it's memory. The
+                    transmission remains alive within the noise, echoing where language cannot reach. Turn off the lights. Breathe
+                    deeply. The void knows the way back. @thevoidn13 — Digital traces of a presence that doesn't wish to be seen.
+                  </p>
+                </div>
+              }
+            />
+          </div>
         </BilingualSection>
 
         {/* ===== CREATIVE ORACLE ===== */}
