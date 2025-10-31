@@ -59,6 +59,7 @@ import gol2Render from "@/assets/gol2-render.png";
 import charactersStudy from "@/assets/characters-study.png";
 import charactersStudyFinal from "@/assets/characters-study-final.png";
 import corsaRender from "@/assets/corsa-render.png";
+import charactersStudyV2 from "@/assets/characters-study-v2.png";
 
 const Index = () => {
   const [oracleOpen, setOracleOpen] = useState(false);
@@ -1134,10 +1135,19 @@ const Index = () => {
         <BilingualSection>
           <h2 className="section-title mb-12">11. ANATOMIA DO UNIVERSO | PERSONAGENS</h2>
 
+          {/* Characters Study Image */}
+          <div className="my-8 mb-16">
+            <img 
+              src={charactersStudyV2} 
+              alt="THEVØIDN13 Characters Study" 
+              className="w-full max-w-6xl mx-auto rounded-lg"
+            />
+          </div>
+
           {/* THEVØIDN13 Description */}
           <div className="mb-16">
             <h3 className="subsection-title mb-8">THEVØIDN13</h3>
-            <h4 className="body-base font-semibold mb-4">A Sombra Materializada / The Materialized Shadow</h4>
+            <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">A Sombra Materializada / The Materialized Shadow</h4>
             
             <BilingualContent
               portugueseContent={
@@ -1170,7 +1180,7 @@ const Index = () => {
           {/* PUNK Description */}
           <div className="mb-16">
             <h3 className="subsection-title mb-8">PUNK</h3>
-            <h4 className="body-base font-semibold mb-4">O Criador Mascarado / The Masked Creator</h4>
+            <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">O Criador Mascarado / The Masked Creator</h4>
             
             <BilingualContent
               portugueseContent={
@@ -1203,7 +1213,7 @@ const Index = () => {
           {/* GI Description */}
           <div className="mb-16">
             <h3 className="subsection-title mb-8">GI (GISELE)</h3>
-            <h4 className="body-base font-semibold mb-4">A Presença Silenciosa / The Silent Presence</h4>
+            <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">A Presença Silenciosa / The Silent Presence</h4>
             
             <BilingualContent
               portugueseContent={
@@ -1236,7 +1246,7 @@ const Index = () => {
           {/* BUDDY Description */}
           <div className="mb-16">
             <h3 className="subsection-title mb-8">BUDDY</h3>
-            <h4 className="body-base font-semibold mb-4">O Companheiro Fiel / The Faithful Companion</h4>
+            <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">O Companheiro Fiel / The Faithful Companion</h4>
             
             <BilingualContent
               portugueseContent={
@@ -1269,7 +1279,7 @@ const Index = () => {
           {/* VW GOL '87 Description */}
           <div className="mb-16">
             <h3 className="subsection-title mb-8">VW GOL '87</h3>
-            <h4 className="body-base font-semibold mb-4">O Veículo da Deriva / The Drift Vehicle</h4>
+            <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">O Veículo da Deriva / The Drift Vehicle</h4>
             
             <BilingualContent
               portugueseContent={
