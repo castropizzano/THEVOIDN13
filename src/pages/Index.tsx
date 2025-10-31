@@ -1132,7 +1132,173 @@ const Index = () => {
 
         {/* ===== CHARACTER VIEWS ===== */}
         <BilingualSection>
-          <h2 className="section-title mb-12">PERSONAGENS | CHARACTERS</h2>
+          <h2 className="section-title mb-12">11. ANATOMIA DO UNIVERSO | PERSONAGENS</h2>
+
+          {/* THEVØIDN13 Description */}
+          <div className="mb-16">
+            <h3 className="subsection-title mb-8">THEVØIDN13</h3>
+            <h4 className="body-base font-semibold mb-4">A Sombra Materializada / The Materialized Shadow</h4>
+            
+            <BilingualContent
+              portugueseContent={
+                <div className="section-spacing">
+                  <p className="body-base text-justified">
+                    THEVØIDN13 é o corpo que o inconsciente construiu para existir no mundo físico. Uma presença que não se impõe,
+                    mas se infiltra, como um eco em busca de superfície. Cada centímetro do traje, cada dobra da máscara, é memória
+                    condensada do silêncio. A sombra aqui não é ausência: é matéria encarnada, pulsante, viva. Seu corpo é antena,
+                    sua máscara é espelho. Não há rosto, há ritmo. THEVØIDN13 não representa nada: ele manifesta o que ainda não
+                    encontrou forma, o intervalo entre o humano e o abismo, onde o gesto substitui a palavra e o vazio se converte em
+                    linguagem.
+                  </p>
+                </div>
+              }
+              englishContent={
+                <div className="section-spacing">
+                  <p className="body-base text-justified">
+                    THEVØIDN13 is the body the unconscious built to exist in the physical world. A presence that doesn't impose but
+                    infiltrates, like an echo searching for surface. Every inch of the attire, every crease of the mask, is condensed
+                    memory of silence. The shadow here is not absence; it is embodied matter, pulsing, alive. Its body is an antenna, its
+                    mask a mirror. There is no face, only rhythm. THEVØIDN13 does not represent anything: it manifests what has yet
+                    to take shape, the threshold between the human and the void, where gesture replaces speech and emptiness
+                    becomes language.
+                  </p>
+                </div>
+              }
+            />
+          </div>
+
+          {/* PUNK Description */}
+          <div className="mb-16">
+            <h3 className="subsection-title mb-8">PUNK</h3>
+            <h4 className="body-base font-semibold mb-4">O Criador Mascarado / The Masked Creator</h4>
+            
+            <BilingualContent
+              portugueseContent={
+                <div className="section-spacing">
+                  <p className="body-base text-justified">
+                    PUNK é o arquiteto do ruído, o corpo que ainda acredita no gesto como forma de respiração. O Criador Mascarado não
+                    fabrica ícones, ele reconstrói ruínas. Cada tatuagem é uma cicatriz de pensamento, cada silêncio, um manifesto não dito.
+                    Seu olhar é o de quem viu a cidade queimar e decidiu continuar filmando mesmo assim. Carrega no corpo o peso do ofício
+                    e a leveza do delírio. A máscara não o esconde: o protege de se tornar previsível. PUNK é o último elo entre o humano e o
+                    sintético, o operador de um cinema feito à unha, onde o erro é o verdadeiro enquadramento. Em sua deriva, cria para
+                    desaparecer e desaparece criando.
+                  </p>
+                </div>
+              }
+              englishContent={
+                <div className="section-spacing">
+                  <p className="body-base text-justified">
+                    PUNK is the architect of noise, the body that still believes gesture is a way to breathe. The Masked Creator doesn't build
+                    icons, he rebuilds ruins. Every tattoo is a scar of thought, every silence an unspoken manifesto. His gaze is that of
+                    someone who has seen the city burn and decided to keep filming anyway. He carries both the weight of craft and the
+                    lightness of delirium. The mask doesn't hide him; it protects him from becoming predictable. PUNK is the last link between
+                    the human and the synthetic, the operator of a handmade cinema where error becomes the true frame. In his drift, he
+                    creates to disappear, and disappears by creating.
+                  </p>
+                </div>
+              }
+            />
+          </div>
+
+          {/* GI Description */}
+          <div className="mb-16">
+            <h3 className="subsection-title mb-8">GI (GISELE)</h3>
+            <h4 className="body-base font-semibold mb-4">A Presença Silenciosa / The Silent Presence</h4>
+            
+            <BilingualContent
+              portugueseContent={
+                <div className="section-spacing">
+                  <p className="body-base text-justified">
+                    GI é a quietude que sustenta o caos, a frequência constante no meio do ruído. Sua força não vem do gesto, mas da
+                    ausência dele. Onde PUNK provoca e THEVØIDN13 se dissolve, ela observa — e ao observar, transforma. É a testemunha do
+                    invisível, o eixo que impede a queda. Cada olhar é uma tradução do não-dito, cada respiração, uma forma de resistência.
+                    Sua presença é quase imperceptível, mas quando se manifesta, muda o ar em volta. GI é o intervalo entre o verbo e o eco,
+                    o instante em que o silêncio se torna linguagem. Não atua, reverbera. É o espelho calmo onde o inconsciente dos outros
+                    se reflete sem defesa.
+                  </p>
+                </div>
+              }
+              englishContent={
+                <div className="section-spacing">
+                  <p className="body-base text-justified">
+                    GI is the stillness that sustains chaos, the constant frequency within the noise. Her strength does not come from action
+                    but from the absence of it. Where PUNK provokes and THEVØIDN13 dissolves, she observes — and through observing,
+                    transforms. She is the witness of the unseen, the axis that prevents collapse. Every gaze is a translation of the unspoken,
+                    every breath a form of resistance. Her presence is almost imperceptible, yet when it manifests, it alters the air around her.
+                    GI is the interval between the word and the echo, the moment when silence becomes language. She does not act, she
+                    resonates. She is the calm mirror where the unconscious of others reflects without defense.
+                  </p>
+                </div>
+              }
+            />
+          </div>
+
+          {/* BUDDY Description */}
+          <div className="mb-16">
+            <h3 className="subsection-title mb-8">BUDDY</h3>
+            <h4 className="body-base font-semibold mb-4">O Companheiro Fiel / The Faithful Companion</h4>
+            
+            <BilingualContent
+              portugueseContent={
+                <div className="section-spacing">
+                  <p className="body-base text-justified">
+                    BUDDY é a centelha viva dentro do labirinto, o fio que ancora o humano no meio da deriva. Não é apenas um cão, é o
+                    guardião silencioso que pressente o que o olhar não alcança. Sua presença corta a escuridão como um farol modesto, um
+                    lembrete de que ainda existe afeto dentro do ruído. Move-se com a precisão de quem escuta frequências invisíveis, como
+                    se seguisse o pulso secreto da cidade. Cada passo é uma tradução instintiva do invisível, cada olhar, uma pergunta sem
+                    palavra. BUDDY é o coração do projeto, a alma que observa quando todos os outros se perdem. Sua fidelidade não é
+                    obediência, é sintonia. Onde o humano hesita, ele age. Onde o silêncio pesa, ele respira.
+                  </p>
+                </div>
+              }
+              englishContent={
+                <div className="section-spacing">
+                  <p className="body-base text-justified">
+                    BUDDY is the living spark within the labyrinth, the thread that anchors the human amid the drift. He is not merely a dog, he
+                    is the silent guardian who senses what the eyes cannot reach. His presence cuts through the darkness like a modest
+                    beacon, a reminder that affection still exists within the noise. He moves with the precision of one who hears invisible
+                    frequencies, as if following the city's hidden pulse. Each step is an instinctive translation of the unseen, each gaze a
+                    question without words. BUDDY is the heart of the project, the soul that watches when all others lose themselves. His
+                    loyalty is not obedience, it is attunement. Where the human hesitates, he acts. Where silence grows heavy, he breathes.
+                  </p>
+                </div>
+              }
+            />
+          </div>
+
+          {/* VW GOL '87 Description */}
+          <div className="mb-16">
+            <h3 className="subsection-title mb-8">VW GOL '87</h3>
+            <h4 className="body-base font-semibold mb-4">O Veículo da Deriva / The Drift Vehicle</h4>
+            
+            <BilingualContent
+              portugueseContent={
+                <div className="section-spacing">
+                  <p className="body-base text-justified">
+                    O VW Gol '87 é mais do que um carro, é um fragmento de memória sobre rodas, uma cápsula de ruído e ferrugem movida
+                    por silêncio. É o veículo da deriva, o corpo mecânico do esquecimento. O motor respira como quem sonha com outra vida,
+                    e a lataria, coberta de cicatrizes do tempo, reflete o mundo sem jamais pertencer-lhe. Nas madrugadas molhadas, ele
+                    corta a cidade como um fantasma de metal, carregando dentro de si os ecos de quem partiu e nunca chegou. Cada farol
+                    apagado é um olho cansado, cada ruído do escapamento, um pensamento insistente tentando existir. O Gol conduz o
+                    tempo, transforma o trajeto em travessia. No universo de THEVØIDN13, é o altar móvel da solidão, um santuário
+                    enferrujado onde o vazio encontra velocidade.
+                  </p>
+                </div>
+              }
+              englishContent={
+                <div className="section-spacing">
+                  <p className="body-base text-justified">
+                    The VW Gol '87 is more than a car, it is a fragment of memory on wheels, a capsule of noise and rust moved by silence. It is
+                    the drift vehicle, the mechanical body of forgetting. Its engine breathes like one dreaming of another life, and its
+                    weathered chassis mirrors the world without ever belonging to it. On wet nights, it cuts through the city like a ghost of
+                    metal, carrying within itself the echoes of those who left and never arrived. Every dim headlight is a tired eye, every
+                    exhaust rattle a stubborn thought trying to exist. The Gol drives time itself, turning motion into passage. Within the
+                    universe of THEVØIDN13, it is the moving altar of solitude, a rusted sanctuary where the void finds velocity.
+                  </p>
+                </div>
+              }
+            />
+          </div>
 
           <div className="space-y-16">
             {/* THEVØIDN13 */}
