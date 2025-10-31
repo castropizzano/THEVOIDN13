@@ -61,6 +61,7 @@ import charactersStudyFinal from "@/assets/characters-study-final.png";
 import corsaRender from "@/assets/corsa-render.png";
 import charactersStudyV2 from "@/assets/characters-study-v2.png";
 import charactersStudyInitial from "@/assets/characters-study-initial.png";
+import corsaRender2 from "@/assets/corsa-render-2.png";
 
 const Index = () => {
   const [oracleOpen, setOracleOpen] = useState(false);
@@ -1417,6 +1418,14 @@ const Index = () => {
         {/* ===== PARADOXO EXISTENCIAL ===== */}
         <BilingualSection>
           <h2 className="section-title mb-12">13. PARADOXO EXISTENCIAL (O CRIADOR E A SOMBRA)</h2>
+
+          <div className="my-8">
+            <img 
+              src={corsaRender2} 
+              alt="THEVØIDN13 Paradox Scene" 
+              className="w-full max-w-6xl mx-auto rounded-lg"
+            />
+          </div>
 
           <BilingualContent
             portugueseContent={
