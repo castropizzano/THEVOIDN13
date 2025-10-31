@@ -173,6 +173,261 @@ const Index = () => {
           />
         </BilingualSection>
 
+        {/* ===== O REPOSITÓRIO | ARQUIVOS E FERRAMENTAS ===== */}
+        <BilingualSection>
+          <div className="mb-16">
+            <h2 className="section-title mb-12">[O REPOSITÓRIO | ARQUIVOS E FERRAMENTAS]</h2>
+            <h2 className="section-title mb-12">The Repository | Files and Tools</h2>
+          </div>
+
+          {/* DOCUMENTOS DE PESQUISA */}
+          <div className="space-y-8 mb-16">
+            <BilingualContent
+              portugueseContent={
+                <div>
+                  <h3 className="subsection-title mb-4">DOCUMENTOS DE PESQUISA / RESEARCH DOCUMENTS</h3>
+                  <p className="body-base text-justified">
+                    Apresentação Conceitual / Concept Art / MoodBoard. O mapa visual do inconsciente. Documentos que preservam a gênese estética e filosófica do projeto.
+                  </p>
+                </div>
+              }
+              englishContent={
+                <div>
+                  <p className="body-base text-justified mt-8">
+                    Conceptual Presentation / Concept Art / MoodBoard. The visual map of the unconscious. Documents preserving the aesthetic and philosophical genesis of the project.
+                  </p>
+                </div>
+              }
+            />
+          </div>
+
+          {/* MATERIAIS PRODUZIDOS */}
+          <div className="mt-16 mb-8">
+            <h3 className="subsection-title mb-8">MATERIAIS PRODUZIDOS / PRODUCED MATERIALS</h3>
+          </div>
+
+          {/* BIBLIOTECA DE PROMPTS */}
+          <div className="mb-16">
+            <h3 className="subsection-title mb-8">BIBLIOTECA DE PROMPTS / PROMPT LIBRARY</h3>
+            <BilingualContent
+              portugueseContent={
+                <div>
+                  <p className="body-base text-justified">
+                    Um repositório vivo de comandos, instruções e fragmentos de linguagem. Cada prompt é uma chave que aciona o imaginário do THEVØIDN13, moldando luz, textura e respiração em silêncio visual. Inclui instruções de sistema, arquétipos, personagens e cenas cinematográficas.
+                  </p>
+                </div>
+              }
+              englishContent={
+                <div>
+                  <p className="body-base text-justified">
+                    A living repository of commands, instructions, and fragments of language. Each prompt is a key that activates the imagination of THEVØIDN13, shaping light, texture, and breath into visual silence. Includes system directives, archetypes, characters, and cinematic scenes.
+                  </p>
+                </div>
+              }
+            />
+            <div className="mt-8">
+              <PromptLibrary />
+            </div>
+          </div>
+
+          {/* GERADOR EXPERIMENTAL */}
+          <div className="mb-16 bg-card/30 p-8 rounded-lg">
+            <h3 className="subsection-title mb-8">GERADOR EXPERIMENTAL DE STILL / STILL GENERATOR</h3>
+            <BilingualContent
+              portugueseContent={
+                <div>
+                  <p className="body-base text-justified">
+                    Propulsado por Nano Banana (Gemini 2.5 Flash Image), o gerador experimental traduz ruído em imagem e silêncio em cor. Uma extensão sintética da visão: a máquina sonha com o que o criador apenas intui.
+                  </p>
+                </div>
+              }
+              englishContent={
+                <div>
+                  <p className="body-base text-justified">
+                    Powered by Nano Banana (Gemini 2.5 Flash Image), the experimental generator translates noise into image and silence into color. A synthetic extension of vision: the machine dreams what the creator only intuits.
+                  </p>
+                </div>
+              }
+            />
+            <div className="mt-8">
+              <ComicGenerator />
+            </div>
+          </div>
+
+          {/* ORÁCULO CRIATIVO */}
+          <div className="mb-16">
+            <h3 className="subsection-title mb-8">ORÁCULO CRIATIVO / CREATIVE ORACLE</h3>
+            <BilingualContent
+              portugueseContent={
+                <div>
+                  <p className="body-base text-justified">
+                    Uma jornada interativa de autodescoberta guiada por THEVØIDN13. Seis perguntas filosóficas sobre criação e ruído revelam o arquétipo que habita seu processo. O oráculo não responde — reflete.
+                  </p>
+                </div>
+              }
+              englishContent={
+                <div>
+                  <p className="body-base text-justified">
+                    An interactive journey of self-discovery guided by THEVØIDN13. Six philosophical questions on creation and noise reveal the archetype dwelling within your process. The oracle does not answer — it reflects.
+                  </p>
+                </div>
+              }
+            />
+            <div className="mt-8 text-center">
+              <Button 
+                onClick={() => setOracleOpen(true)}
+                className="mt-6"
+                size="lg"
+              >
+                ACESSAR ORÁCULO | ACCESS ORACLE
+              </Button>
+            </div>
+          </div>
+
+          {/* MAPA MENTAL */}
+          <div className="mb-16">
+            <h3 className="subsection-title mb-8">Creative-Ops Mind Map / Mapa Mental Creative-Ops</h3>
+            <BilingualContent
+              portugueseContent={
+                <div>
+                  <p className="body-base text-justified">
+                    A arquitetura conceitual de THEVØIDN13 mapeada em relações visuais. Cada nó é um conceito, cada linha uma conexão entre sombra, silêncio, ruído e vazio.
+                  </p>
+                </div>
+              }
+              englishContent={
+                <div>
+                  <p className="body-base text-justified">
+                    The conceptual architecture of THEVØIDN13 mapped in visual relationships. Each node is a concept, each line a connection between shadow, silence, noise and void.
+                  </p>
+                </div>
+              }
+            />
+            <div className="mt-8">
+              <MindMap />
+            </div>
+          </div>
+
+          {/* DOCUMENTAÇÃO TÉCNICA */}
+          <div className="grid md:grid-cols-2 gap-12 mt-16">
+            <div className="space-y-6">
+              <h3 className="subsection-title">Main Documents / Documentos Principais</h3>
+              
+              <div className="space-y-4">
+                <a 
+                  href="https://github.com/castropizzano/thevoidn13/blob/main/README.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block hover:text-primary transition-colors"
+                >
+                  <h4 className="text-base font-bold">README.md</h4>
+                  <p className="text-sm text-muted-foreground">Manifesto e estrutura do projeto / Manifesto and project structure</p>
+                </a>
+                
+                <a 
+                  href="https://github.com/castropizzano/thevoidn13/blob/main/LICENSE.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block hover:text-primary transition-colors"
+                >
+                  <h4 className="text-base font-bold">LICENSE.md</h4>
+                  <p className="text-sm text-muted-foreground">Licença CC BY-NC-SA 4.0 / CC BY-NC-SA 4.0 License</p>
+                </a>
+                
+                <a 
+                  href="https://github.com/castropizzano/thevoidn13/blob/main/CITATION.cff"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block hover:text-primary transition-colors"
+                >
+                  <h4 className="text-base font-bold">CITATION.cff</h4>
+                  <p className="text-sm text-muted-foreground">Citação automatizada GitHub / GitHub automated citation</p>
+                </a>
+                
+                <a 
+                  href="https://github.com/castropizzano/thevoidn13/blob/main/docs/METHODOLOGY.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block hover:text-primary transition-colors"
+                >
+                  <h4 className="text-base font-bold">METHODOLOGY.md</h4>
+                  <p className="text-sm text-muted-foreground">Métodos e procedimentos de pesquisa / Research methods and procedures</p>
+                </a>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <h3 className="subsection-title">Technical Documentation / Documentação Técnica</h3>
+              
+              <div className="space-y-4">
+                <a 
+                  href="https://github.com/castropizzano/thevoidn13/blob/main/docs/PHILOSOPHY.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block hover:text-primary transition-colors"
+                >
+                  <h4 className="text-base font-bold">PHILOSOPHY.md</h4>
+                  <p className="text-sm text-muted-foreground">Justificativa das escolhas conceituais / Rationale for conceptual choices</p>
+                </a>
+                
+                <a 
+                  href="https://github.com/castropizzano/thevoidn13/blob/main/docs/COPYRIGHT.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block hover:text-primary transition-colors"
+                >
+                  <h4 className="text-base font-bold">COPYRIGHT.md</h4>
+                  <p className="text-sm text-muted-foreground">Ética e transparência da co-criação / Ethics and transparency of co-creation</p>
+                </a>
+                
+                <a 
+                  href="https://github.com/castropizzano/thevoidn13/blob/main/docs/HOW_TO_CITE.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block hover:text-primary transition-colors"
+                >
+                  <h4 className="text-base font-bold">HOW_TO_CITE.md</h4>
+                  <p className="text-sm text-muted-foreground">Guia completo de citação acadêmica / Complete academic citation guide</p>
+                </a>
+                
+                <a 
+                  href="https://github.com/castropizzano/thevoidn13/blob/main/docs/REFERENCES.md"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block hover:text-primary transition-colors"
+                >
+                  <h4 className="text-base font-bold">REFERENCES.md</h4>
+                  <p className="text-sm text-muted-foreground">Bibliografia completa do projeto / Complete project bibliography</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* COMPLETE REPOSITORY */}
+          <div className="mt-12">
+            <a 
+              href="https://github.com/castropizzano/thevoidn13"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-primary/5 border-2 border-primary/30 rounded-lg p-8 hover:bg-primary/10 hover:border-primary transition-colors group"
+            >
+              <div className="flex items-center justify-between">
+                <div>
+                  <h3 className="text-2xl font-bold group-hover:text-primary transition-colors mb-2">
+                    Complete Repository / Repositório Completo
+                  </h3>
+                  <p className="text-base text-muted-foreground">
+                    Acesso a todos os arquivos no GitHub / Access all files on GitHub
+                  </p>
+                </div>
+                <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </div>
+            </a>
+          </div>
+        </BilingualSection>
+
         {/* ===== FALL RENDER ===== */}
         <section className="py-12">
           <div className="max-w-6xl mx-auto px-6">
@@ -1508,6 +1763,66 @@ const Index = () => {
         <BilingualSection>
           <div className="mt-16">
             <h3 className="subsection-title mb-8">PROTÓTIPO Nº13</h3>
+            
+            <div className="grid md:grid-cols-2 gap-8 items-start">
+              <div className="space-y-6">
+                <div className="section-spacing">
+                  <p className="lang-pill">&lt;PORTUGUÊS&gt;</p>
+                  <p className="body-base text-justified mt-4">
+                    Esta visualização representa o modelo imaginado para o action figure do personagem e define o mood visual das filmagens que serão realizadas pelo autor do projeto. A estética, iluminação e atmosfera foram desenvolvidas para traduzir o universo conceitual de THEVØIDN13.
+                  </p>
+                </div>
+                <div className="section-spacing">
+                  <p className="lang-pill">&lt;ENGLISH&gt;</p>
+                  <p className="body-base text-justified mt-4">
+                    This visualization represents the envisioned model for the character's action figure and defines the visual mood for filming to be carried out by the project's author. The aesthetics, lighting, and atmosphere were developed to translate the conceptual universe of THEVØIDN13.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <img 
+                  src={actionFigureNew} 
+                  alt="THEVØIDN13 Action Figure Prototype" 
+                  className="w-full rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </BilingualSection>
+
+        {/* ===== FIM DA TRANSMISSÃO ===== */}
+        <BilingualSection className="bg-card/30">
+          <div className="text-center mb-16">
+            <p className="micro-title mb-12">[FIM DA TRANSMISSÃO]</p>
+            <p className="micro-title mb-12">[END OF TRANSMISSION]</p>
+          </div>
+
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing text-center">
+                <p className="body-base">
+                  O sinal começa a falhar. A imagem se fragmenta, o som respira pela última vez. O corpo se dissolve, mas a frequência permanece. THEVØIDN13 não termina, apenas muda de forma. O que você escuta agora não é voz, é memória. A transmissão segue viva dentro do ruído, ecoando onde a linguagem não alcança. Desligue as luzes. Respire fundo. O vazio sabe o caminho de volta.
+                </p>
+                <p className="body-base mt-6">
+                  @thevoidn13 — Rastros digitais de uma presença que não quer ser vista.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing text-center">
+                <p className="body-base">
+                  The signal begins to fail. The image fractures, the sound takes one last breath. The body dissolves, but the frequency remains. THEVØIDN13 doesn't end, it only changes form. What you hear now isn't a voice, it's memory. The transmission remains alive within the noise, echoing where language cannot reach. Turn off the lights. Breathe deeply. The void knows the way back.
+                </p>
+                <p className="body-base mt-6">
+                  @thevoidn13 — Digital traces of a presence that doesn't wish to be seen.
+                </p>
+              </div>
+            }
+          />
+        </BilingualSection>
+      </main>
+
+      <Footer />
             
             <div className="grid md:grid-cols-2 gap-8 items-start">
               <div className="space-y-6">
