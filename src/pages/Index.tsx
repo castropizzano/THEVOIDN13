@@ -55,6 +55,7 @@ import voidLogoVisual from "@/assets/void-logo-visual.png";
 import golRender from "@/assets/gol-render.png";
 import lovecityRender from "@/assets/lovecity-render.png";
 import hotelRender from "@/assets/hotel-render.png";
+import gol2Render from "@/assets/gol2-render.png";
 
 const Index = () => {
   const [oracleOpen, setOracleOpen] = useState(false);
@@ -770,6 +771,15 @@ const Index = () => {
         <BilingualSection>
           <h2 className="section-title mb-12">7. O SÍMBOLO | 13</h2>
           <h2 className="section-title mb-12">7. THE SYMBOL | 13</h2>
+
+          {/* ===== GOL 2 RENDER ===== */}
+          <div className="my-12">
+            <img 
+              src={gol2Render} 
+              alt="THEVØIDN13 — VW GOL 87 Interior" 
+              className="w-full max-w-6xl mx-auto rounded-lg"
+            />
+          </div>
 
           <h3 className="subsection-title mb-8">7.1 REGISTRO TREZE</h3>
           <h3 className="subsection-title mb-8">7.1 RECORD THIRTEEN</h3>
