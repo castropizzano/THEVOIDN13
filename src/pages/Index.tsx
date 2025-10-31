@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import { SEO, creativeWorkSchema, personSchema, organizationSchema } from "@/components/SEO";
 import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
 import { PromptLibrary } from "@/components/PromptLibrary";
-import { AudioPlayer } from "@/components/AudioPlayer";
+import { BilingualAudioPlayer } from "@/components/BilingualAudioPlayer";
 import { ComicGenerator } from "@/components/ComicGenerator";
 import { MindMap } from "@/components/MindMap";
 import { CreativeOracle } from "@/components/CreativeOracle";
@@ -90,9 +90,10 @@ const Index = () => {
         {/* ===== AUDIO PLAYER ===== */}
         <section className="py-12 bg-card/30">
           <div className="max-w-6xl mx-auto px-6">
-            <AudioPlayer
-              src="/audio/thevoidn13-projeto.mp3"
-              title="THEVØIDN13 | ANÁLISE / ANALYSIS"
+            <BilingualAudioPlayer
+              srcPt="/audio/thevoidn13-manifesto-pt.mp3"
+              srcEn="/audio/thevoidn13-manifesto-en.mp3"
+              title="THEVØIDN13 | INTRO"
               description="Narração conceitual do projeto / Conceptual project narration"
             />
           </div>
