@@ -89,18 +89,6 @@ const Index = () => {
           </div>
         </BilingualSection>
 
-        {/* ===== AUDIO PLAYER ===== */}
-        <section className="py-12 bg-card/30">
-          <div className="max-w-6xl mx-auto px-6">
-            <BilingualAudioPlayer
-              srcPt="/audio/thevoidn13-manifesto-pt.mp3"
-              srcEn="/audio/thevoidn13-manifesto-en.mp3"
-              title="THEVØIDN13 | INTRO"
-              description="Narração conceitual do projeto / Conceptual project narration"
-            />
-          </div>
-        </section>
-
         {/* ===== VIDEO SECTION ===== */}
         <section className="py-20">
           <div className="max-w-6xl mx-auto px-6 space-y-6">
@@ -128,6 +116,18 @@ const Index = () => {
               src={paradoxRender} 
               alt="THEVØIDN13 — Paradox Render" 
               className="w-full rounded-lg"
+            />
+          </div>
+        </section>
+
+        {/* ===== AUDIO PLAYER ===== */}
+        <section className="py-12 bg-card/30">
+          <div className="max-w-6xl mx-auto px-6">
+            <BilingualAudioPlayer
+              srcPt="/audio/thevoidn13-manifesto-pt.mp3"
+              srcEn="/audio/thevoidn13-manifesto-en.mp3"
+              title="THEVØIDN13 | INTRO"
+              description="Narração conceitual do projeto / Conceptual project narration"
             />
           </div>
         </section>
