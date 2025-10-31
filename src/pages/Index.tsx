@@ -530,14 +530,6 @@ const Index = () => {
             />
           </div>
 
-          <div className="my-12">
-            <img 
-              src={voidStreetScene} 
-              alt="THEVØIDN13 nas ruas — THEVØIDN13 in the streets" 
-              className="w-full rounded-lg"
-            />
-          </div>
-
           <h3 className="subsection-title mt-12 mb-8">4.3 PSICOLOGIA: A SOMBRA COMO LINGUAGEM</h3>
           <h3 className="subsection-title mb-8">4.3 PSYCHOLOGY: SHADOW AS LANGUAGE</h3>
 
