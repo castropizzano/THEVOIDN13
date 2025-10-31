@@ -215,7 +215,7 @@ const Index = () => {
             <img 
               src={thinkRender} 
               alt="THEVØIDN13 — Contemplation" 
-              className="w-full max-w-4xl mx-auto rounded-lg"
+              className="w-full max-w-6xl mx-auto rounded-lg"
             />
           </div>
 
@@ -244,7 +244,7 @@ const Index = () => {
             <img 
               src={meditationRender} 
               alt="THEVØIDN13 — Meditation Render" 
-              className="w-full max-w-4xl mx-auto rounded-lg"
+              className="w-full max-w-6xl mx-auto rounded-lg"
             />
           </div>
         </BilingualSection>
@@ -276,7 +276,7 @@ const Index = () => {
             <img 
               src={mirrorRender} 
               alt="THEVØIDN13 — Mirror Reflection" 
-              className="w-full max-w-4xl mx-auto rounded-lg"
+              className="w-full max-w-6xl mx-auto rounded-lg"
             />
           </div>
         </BilingualSection>
@@ -333,7 +333,7 @@ const Index = () => {
             <img 
               src={maskVoidNew} 
               alt="A máscara de THEVØIDN13 — The mask of THEVØIDN13" 
-              className="w-full max-w-2xl mx-auto rounded-lg"
+              className="w-full max-w-6xl mx-auto rounded-lg"
             />
           </div>
 
@@ -357,10 +357,12 @@ const Index = () => {
           <h3 className="subsection-title mt-12 mb-8">3.4 O PERSONAGEM</h3>
           <h3 className="subsection-title mb-8">3.4 THE CHARACTER</h3>
 
-          <div className="grid grid-cols-3 gap-6 my-12">
-            <img src={conceptFront} alt="THEVØIDN13 Front View" className="w-full rounded-lg" />
-            <img src={conceptBack} alt="THEVØIDN13 Back View" className="w-full rounded-lg" />
-            <img src={conceptSide} alt="THEVØIDN13 Side View" className="w-full rounded-lg" />
+          <div className="max-w-6xl mx-auto my-12">
+            <div className="grid grid-cols-3 gap-6">
+              <img src={conceptFront} alt="THEVØIDN13 Front View" className="w-full rounded-lg" />
+              <img src={conceptBack} alt="THEVØIDN13 Back View" className="w-full rounded-lg" />
+              <img src={conceptSide} alt="THEVØIDN13 Side View" className="w-full rounded-lg" />
+            </div>
           </div>
 
           <BilingualContent
@@ -388,7 +390,7 @@ const Index = () => {
             <img 
               src={voidLogoVisual} 
               alt="THEVØIDN13 — Visual Identity" 
-              className="w-full max-w-4xl mx-auto rounded-lg"
+              className="w-full max-w-6xl mx-auto rounded-lg"
             />
           </div>
 
@@ -420,7 +422,7 @@ const Index = () => {
             <img 
               src={golRender} 
               alt="THEVØIDN13 — VW GOL 87 Render" 
-              className="w-full max-w-4xl mx-auto rounded-lg"
+              className="w-full max-w-6xl mx-auto rounded-lg"
             />
           </div>
 
