@@ -1492,7 +1492,38 @@ const Index = () => {
                   </p>
                 </div>
               }
-            />
+             />
+          </div>
+        </BilingualSection>
+
+        {/* ===== PROTÓTIPO Nº13 ===== */}
+        <BilingualSection>
+          <div className="mt-16">
+            <h3 className="subsection-title mb-8">PROTÓTIPO Nº13</h3>
+            
+            <div className="grid md:grid-cols-2 gap-8 items-start">
+              <div className="space-y-6">
+                <div className="section-spacing">
+                  <p className="lang-pill">&lt;PORTUGUÊS&gt;</p>
+                  <p className="body-base text-justified mt-4">
+                    Esta visualização representa o modelo imaginado para o action figure do personagem e define o mood visual das filmagens que serão realizadas pelo autor do projeto. A estética, iluminação e atmosfera foram desenvolvidas para traduzir o universo conceitual de THEVØIDN13.
+                  </p>
+                </div>
+                <div className="section-spacing">
+                  <p className="lang-pill">&lt;ENGLISH&gt;</p>
+                  <p className="body-base text-justified mt-4">
+                    This visualization represents the envisioned model for the character's action figure and defines the visual mood for filming to be carried out by the project's author. The aesthetics, lighting, and atmosphere were developed to translate the conceptual universe of THEVØIDN13.
+                  </p>
+                </div>
+              </div>
+              <div>
+                <img 
+                  src={actionFigure} 
+                  alt="THEVØIDN13 Action Figure Prototype" 
+                  className="w-full rounded-lg"
+                />
+              </div>
+            </div>
           </div>
         </BilingualSection>
 
