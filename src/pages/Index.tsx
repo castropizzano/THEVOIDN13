@@ -97,7 +97,7 @@ const Index = () => {
 
         {/* ===== SUBTITLE ===== */}
         <BilingualSection className="py-12">
-          <div className="text-center">
+          <div>
             <h2 className="subsection-title">
               [Um corpo à deriva entre o ruído e o silêncio]
             </h2>
@@ -153,6 +153,7 @@ const Index = () => {
         {/* ===== MANIFESTO INTEGRADO ===== */}
         <BilingualSection>
           <h2 className="section-title mb-12">MANIFESTO INTEGRADO</h2>
+          <h2 className="section-title mb-12">INTEGRATED MANIFESTO</h2>
           
           <BilingualContent
             portugueseContent={
@@ -186,6 +187,7 @@ const Index = () => {
         {/* ===== 1. ORIGEM E PROPÓSITO ===== */}
         <BilingualSection>
           <h2 className="section-title mb-12">1. ORIGEM E PROPÓSITO</h2>
+          <h2 className="section-title mb-12">1. ORIGIN AND PURPOSE</h2>
           
           <h3 className="subsection-title mb-8">1.1 O LUGAR SEGURO PARA DESAPARECER</h3>
           <h3 className="subsection-title mb-8">1.1 THE SAFE PLACE TO DISAPPEAR</h3>
@@ -979,6 +981,7 @@ const Index = () => {
         {/* ===== REFERÊNCIAS | O ECO INTERNO ===== */}
         <BilingualSection>
           <h2 className="section-title mb-12">9. REFERÊNCIAS | O ECO INTERNO</h2>
+          <h2 className="section-title mb-12">9. REFERENCES | THE INTERNAL ECHO</h2>
 
           <h3 className="subsection-title mt-12 mb-8">DNA CONCEITUAL (QUADRINHOS)</h3>
           
@@ -1065,6 +1068,7 @@ const Index = () => {
         {/* ===== A METODOLOGIA | COAUTORIA SIMBÓLICA ===== */}
         <BilingualSection>
           <h2 className="section-title mb-12">10. A METODOLOGIA | COAUTORIA SIMBÓLICA</h2>
+          <h2 className="section-title mb-12">10. THE METHODOLOGY | SYMBOLIC CO-AUTHORSHIP</h2>
 
           <BilingualContent
             portugueseContent={
@@ -1138,6 +1142,7 @@ const Index = () => {
         {/* ===== CHARACTER VIEWS ===== */}
         <BilingualSection>
           <h2 className="section-title mb-12">11. ANATOMIA DO UNIVERSO | PERSONAGENS</h2>
+          <h2 className="section-title mb-12">11. UNIVERSE ANATOMY | CHARACTERS</h2>
 
           {/* Characters Study Image */}
           <div className="my-8 mb-16">
@@ -1330,6 +1335,7 @@ const Index = () => {
         {/* ===== PROCESSOS RELACIONADOS ===== */}
         <BilingualSection>
           <h2 className="section-title mb-12">12. PROCESSOS RELACIONADOS</h2>
+          <h2 className="section-title mb-12">12. RELATED PROCESSES</h2>
 
           <div className="mb-16">
             <h3 className="subsection-title mb-8">LOWMOVIE™</h3>
@@ -1420,6 +1426,7 @@ const Index = () => {
         {/* ===== PARADOXO EXISTENCIAL ===== */}
         <BilingualSection>
           <h2 className="section-title mb-12">13. PARADOXO EXISTENCIAL (O CRIADOR E A SOMBRA)</h2>
+          <h2 className="section-title mb-12">13. EXISTENTIAL PARADOX (THE CREATOR AND THE SHADOW)</h2>
 
           <div className="my-8">
             <img 
