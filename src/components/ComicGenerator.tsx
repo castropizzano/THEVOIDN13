@@ -1,26 +1,72 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Loader2, Sparkles, Download } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { z } from "zod";
-import watermarkLogo from "@/assets/logo-white-alpha.png";
+import watermarkLogo from "@/assets/thevoidn13-watermark.png";
 
-const EXAMPLE_SCRIPT = `CENA 1 — O CAMINHO FRIO
-Tattooed man with black cap (no hood), green military jacket, oversized black t-shirt, black sweatpants and black Vans sneakers walks beside a short-haired woman in dark jacket and jeans at night. Between them, a small Jack Russell puppy in a yellow raincoat trots along the wet street. Empty urban alley, amber streetlights reflecting on soaked asphalt, blue mist drifting through distant buildings, soft rain haze.`;
+interface Prompt {
+  id: string;
+  category: string;
+  title: string;
+  prompt_text: string;
+}
 
 const scriptSchema = z.string()
   .trim()
   .min(10, "Roteiro muito curto (mín. 10 caracteres) / Script too short (min 10 chars)")
-  .max(1000, "Roteiro muito longo (máx. 1000 caracteres) / Script too long (max 1000 chars)")
-  .regex(/^[\w\s.,!?'"\-—()áéíóúâêôãõçÁÉÍÓÚÂÊÔÃÕÇ]+$/, "Caracteres inválidos no roteiro / Invalid characters in script");
+  .max(2000, "Roteiro muito longo (máx. 2000 caracteres) / Script too long (max 2000 chars)");
 
 export const ComicGenerator = () => {
   const [script, setScript] = useState("");
   const [generatedImage, setGeneratedImage] = useState<string | null>(null);
   const [isGenerating, setIsGenerating] = useState(false);
+  const [prompts, setPrompts] = useState<Prompt[]>([]);
+  const [selectedPromptId, setSelectedPromptId] = useState<string>("");
+  const [systemPrompt, setSystemPrompt] = useState<string>("");
+
+  useEffect(() => {
+    fetchPrompts();
+  }, []);
+
+  const fetchPrompts = async () => {
+    try {
+      // Fetch system prompt (bible)
+      const { data: systemData } = await supabase
+        .from('prompts')
+        .select('*')
+        .eq('category', 'system')
+        .eq('is_active', true)
+        .single();
+      
+      if (systemData) {
+        setSystemPrompt(systemData.prompt_text);
+      }
+
+      // Fetch scene prompts for user selection
+      const { data: sceneData } = await supabase
+        .from('prompts')
+        .select('*')
+        .eq('category', 'scene')
+        .eq('is_active', true)
+        .order('display_order');
+
+      if (sceneData) {
+        setPrompts(sceneData);
+        if (sceneData.length > 0) {
+          setSelectedPromptId(sceneData[0].id);
+          setScript(sceneData[0].prompt_text);
+        }
+      }
+    } catch (error) {
+      console.error('Error fetching prompts:', error);
+      toast.error('Erro ao carregar prompts / Error loading prompts');
+    }
+  };
 
   const handleGenerate = async () => {
     // Validate input
@@ -30,12 +76,23 @@ export const ComicGenerator = () => {
       return;
     }
 
+    if (!systemPrompt) {
+      toast.error("System prompt não carregado / System prompt not loaded");
+      return;
+    }
+
     setIsGenerating(true);
     setGeneratedImage(null);
 
     try {
+      // Combine system prompt with user script
+      const fullPrompt = `${systemPrompt}\n\n---\n\n${validation.data}`;
+
       const { data, error } = await supabase.functions.invoke("generate-comic-panel", {
-        body: { script: validation.data }
+        body: { 
+          script: fullPrompt,
+          aspectRatio: "16:9"
+        }
       });
 
       if (error) throw error;
@@ -71,9 +128,13 @@ export const ComicGenerator = () => {
     document.body.removeChild(link);
   };
 
-  const loadExample = () => {
-    setScript(EXAMPLE_SCRIPT);
-    toast.info("Roteiro de exemplo carregado / Example script loaded");
+  const handlePromptChange = (promptId: string) => {
+    setSelectedPromptId(promptId);
+    const selected = prompts.find(p => p.id === promptId);
+    if (selected) {
+      setScript(selected.prompt_text);
+      toast.info(`Prompt "${selected.title}" carregado / Prompt loaded`);
+    }
   };
 
   return (
@@ -89,24 +150,32 @@ export const ComicGenerator = () => {
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="space-y-2">
-          <div className="flex justify-between items-center">
-            <label className="text-sm font-medium">
-              Roteiro da Cena / Scene Script
-            </label>
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={loadExample}
-              className="text-xs"
-            >
-              Carregar Exemplo / Load Example
-            </Button>
-          </div>
+          <label className="text-sm font-medium">
+            Selecionar Prompt Base / Select Base Prompt
+          </label>
+          <Select value={selectedPromptId} onValueChange={handlePromptChange}>
+            <SelectTrigger>
+              <SelectValue placeholder="Escolha um prompt da biblioteca / Choose from library" />
+            </SelectTrigger>
+            <SelectContent>
+              {prompts.map((prompt) => (
+                <SelectItem key={prompt.id} value={prompt.id}>
+                  {prompt.title}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
+
+        <div className="space-y-2">
+          <label className="text-sm font-medium">
+            Roteiro da Cena / Scene Script
+          </label>
           <Textarea
-            placeholder="Descreva a cena usando o estilo THEVØIDN13: Neo-noir atmosphere, analog 35 mm grain, ink texture and painterly lighting..."
+            placeholder="Edite o prompt selecionado ou crie seu próprio roteiro usando as diretrizes THEVØIDN13..."
             value={script}
             onChange={(e) => setScript(e.target.value)}
-            className="min-h-[150px] font-mono text-sm"
+            className="min-h-[200px] font-mono text-sm"
             disabled={isGenerating}
           />
         </div>
@@ -150,12 +219,19 @@ export const ComicGenerator = () => {
           </div>
         )}
 
-      <div className="pt-4 border-t border-border">
+      <div className="pt-4 border-t border-border space-y-2">
         <p className="text-xs text-muted-foreground">
-          <span className="font-medium">Nota Experimental:</span> Este gerador usa prompts mestres do projeto THEVØIDN13 
-          combinados com roteiros criativos para produzir stills neo-noir no estilo do universo. 
-          Cada imagem é gerada em 16:9 e recebe marca d'água oficial do logo THEVØIDN13 em 50% de transparência.
-          A consistência visual é mantida através dos parâmetros definidos na Shadow Interface Bible.
+          <span className="font-medium">Nota Experimental:</span> Este gerador usa a Shadow Interface Bible v13 
+          como system prompt base, combinada com os prompts oficiais da biblioteca do projeto. 
+        </p>
+        <p className="text-xs text-muted-foreground">
+          Todas as imagens são geradas em <strong>aspect ratio 16:9 horizontal</strong>, 
+          ocupando todo o espaço disponível e recebem automaticamente a marca d'água oficial 
+          THEVØIDN13 em 50% de transparência no canto inferior direito.
+        </p>
+        <p className="text-xs text-muted-foreground">
+          A consistência visual é garantida pelos parâmetros canônicos: Temperature 0.2, Top P 0.5, 
+          estilo dirty comic book art com heavy inks e analog print grain.
         </p>
       </div>
       </CardContent>
