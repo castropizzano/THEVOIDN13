@@ -1789,37 +1789,6 @@ const Index = () => {
             </a>
           </div>
         </BilingualSection>
-
-        {/* ===== FIM DA TRANSMISSÃO ===== */}
-        <BilingualSection className="bg-card/30">
-          <div className="text-center mb-16">
-            <p className="micro-title mb-12">[FIM DA TRANSMISSÃO]</p>
-            <p className="micro-title mb-12">[END OF TRANSMISSION]</p>
-          </div>
-
-          <BilingualContent
-            portugueseContent={
-              <div className="section-spacing text-center">
-                <p className="body-base">
-                  O sinal começa a falhar. A imagem se fragmenta, o som respira pela última vez. O corpo se dissolve, mas a frequência permanece. THEVØIDN13 não termina, apenas muda de forma. O que você escuta agora não é voz, é memória. A transmissão segue viva dentro do ruído, ecoando onde a linguagem não alcança. Desligue as luzes. Respire fundo. O vazio sabe o caminho de volta.
-                </p>
-                <p className="body-base mt-6">
-                  @thevoidn13 — Rastros digitais de uma presença que não quer ser vista.
-                </p>
-              </div>
-            }
-            englishContent={
-              <div className="section-spacing text-center">
-                <p className="body-base">
-                  The signal begins to fail. The image fractures, the sound takes one last breath. The body dissolves, but the frequency remains. THEVØIDN13 doesn't end, it only changes form. What you hear now isn't a voice, it's memory. The transmission remains alive within the noise, echoing where language cannot reach. Turn off the lights. Breathe deeply. The void knows the way back.
-                </p>
-                <p className="body-base mt-6">
-                  @thevoidn13 — Digital traces of a presence that doesn't wish to be seen.
-                </p>
-              </div>
-            }
-          />
-        </BilingualSection>
       </main>
 
       <Footer />
