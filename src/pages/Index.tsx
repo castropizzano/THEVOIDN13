@@ -56,6 +56,7 @@ import golRender from "@/assets/gol-render.png";
 import lovecityRender from "@/assets/lovecity-render.png";
 import hotelRender from "@/assets/hotel-render.png";
 import gol2Render from "@/assets/gol2-render.png";
+import charactersStudy from "@/assets/characters-study.png";
 
 const Index = () => {
   const [oracleOpen, setOracleOpen] = useState(false);
@@ -975,20 +976,13 @@ const Index = () => {
           <div className="space-y-16">
             {/* THEVØIDN13 */}
             <div>
-              <h3 className="subsection-title mb-8 text-center">THEVØIDN13 (A SOMBRA | THE SHADOW)</h3>
-              <div className="grid grid-cols-3 gap-6">
-                <div>
-                  <img src={voidFront} alt="THEVØIDN13 Front" className="w-full rounded-lg mb-2" />
-                  <p className="text-center body-small">Front View</p>
-                </div>
-                <div>
-                  <img src={voidRear} alt="THEVØIDN13 Rear" className="w-full rounded-lg mb-2" />
-                  <p className="text-center body-small">Rear View</p>
-                </div>
-                <div>
-                  <img src={voidSide} alt="THEVØIDN13 Side" className="w-full rounded-lg mb-2" />
-                  <p className="text-center body-small">Side View</p>
-                </div>
+              <h3 className="subsection-title mb-8 text-center">THEVØIDN13 (ESTUDO INICIAL | EXPLORATORY STUDY)</h3>
+              <div className="my-8">
+                <img 
+                  src={charactersStudy} 
+                  alt="THEVØIDN13 Characters Study" 
+                  className="w-full max-w-6xl mx-auto rounded-lg"
+                />
               </div>
             </div>
 
