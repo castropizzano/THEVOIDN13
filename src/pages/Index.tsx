@@ -54,6 +54,7 @@ import maskVoidNew from "@/assets/mask-void-new.png";
 import voidLogoVisual from "@/assets/void-logo-visual.png";
 import golRender from "@/assets/gol-render.png";
 import lovecityRender from "@/assets/lovecity-render.png";
+import hotelRender from "@/assets/hotel-render.png";
 
 const Index = () => {
   const [oracleOpen, setOracleOpen] = useState(false);
@@ -649,6 +650,15 @@ const Index = () => {
         <BilingualSection>
           <h2 className="section-title mb-12">6. THEVØIDN13 | A GRAFIA DO VAZIO</h2>
           <h2 className="section-title mb-12">6. THEVØIDN13 | THE SPELLING OF THE VOID</h2>
+
+          {/* ===== HOTEL RENDER ===== */}
+          <div className="my-12">
+            <img 
+              src={hotelRender} 
+              alt="THEVØIDN13 — HOTEL" 
+              className="w-full max-w-6xl mx-auto rounded-lg"
+            />
+          </div>
 
           <BilingualContent
             portugueseContent={
