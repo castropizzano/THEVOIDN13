@@ -122,8 +122,8 @@ const Index = () => {
 
         {/* ===== INÍCIO DA TRANSMISSÃO ===== */}
         <BilingualSection>
-          <div className="text-center mb-16">
-            <p className="micro-title">[INÍCIO DA TRANSMISSÃO]</p>
+          <div className="mb-8">
+            <h3 className="subsection-title">[INÍCIO DA TRANSMISSÃO]</h3>
           </div>
         </BilingualSection>
 
