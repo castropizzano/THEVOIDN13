@@ -60,6 +60,7 @@ import charactersStudy from "@/assets/characters-study.png";
 import charactersStudyFinal from "@/assets/characters-study-final.png";
 import corsaRender from "@/assets/corsa-render.png";
 import charactersStudyV2 from "@/assets/characters-study-v2.png";
+import charactersStudyInitial from "@/assets/characters-study-initial.png";
 
 const Index = () => {
   const [oracleOpen, setOracleOpen] = useState(false);
@@ -1308,6 +1309,18 @@ const Index = () => {
                 </div>
               }
             />
+          </div>
+
+          {/* THEVØIDN13 STUDY */}
+          <div className="mt-16">
+            <h3 className="subsection-title mb-8 text-left">THEVØIDN13 (ESTUDO INICIAL | EXPLORATORY STUDY)</h3>
+            <div className="my-8">
+              <img 
+                src={charactersStudyInitial} 
+                alt="THEVØIDN13 Characters Initial Study" 
+                className="w-full max-w-6xl mx-auto rounded-lg"
+              />
+            </div>
           </div>
         </BilingualSection>
 
