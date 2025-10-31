@@ -93,10 +93,12 @@ export const PromptLibrary = () => {
               </Badge>
             </div>
           </CardHeader>
-          <CardContent>
+          <CardContent className="space-y-2">
             <p className="text-sm text-muted-foreground">
-              Acesse templates de prompts otimizados para gerar imagens no universo THEVØIDN13. 
-              Inclui instruções de sistema, personagens e cenas cinematográficas.
+              Acesse os prompts desenvolvidos para o projeto THEVØIDN13, criados de forma experimental e em constante atualização. Cada entrada reflete o processo de construção visual e narrativa do universo.
+            </p>
+            <p className="text-sm text-muted-foreground">
+              Access the prompts developed for THEVØIDN13, built experimentally and in continuous evolution. Each entry reflects the visual and narrative construction process of the universe.
             </p>
           </CardContent>
         </Card>
