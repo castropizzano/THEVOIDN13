@@ -13,7 +13,7 @@ import { AccessGate } from "@/components/AccessGate";
 import { CookieConsent } from "@/components/CookieConsent";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import heroImage from "@/assets/hero-main.png";
+import heroImage from "@/assets/hero-rain-wide.png";
 import voidCityFront from "@/assets/void-city-front.png";
 import conceptCrew from "@/assets/concept-crew.png";
 import actionFigure from "@/assets/action-figure.png";
