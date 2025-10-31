@@ -58,7 +58,7 @@ const Index = () => {
   
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {!hasAccess && <AccessGate onAccessGranted={() => setHasAccess(true)} />}
+      {/* {!hasAccess && <AccessGate onAccessGranted={() => setHasAccess(true)} />} */}
       <CookieConsent />
       <SEO 
         title="THEVØIDN13 — Shadow Interface Bible v13 | Castro Pizzano"
