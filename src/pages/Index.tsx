@@ -16,6 +16,7 @@ import { Card } from "@/components/ui/card";
 import heroImage from "@/assets/hero-rain-wide.png";
 import voidCityFront from "@/assets/void-city-front.png";
 import conceptCrew from "@/assets/concept-crew.png";
+import actionFigureNew from "@/assets/action-figure-new.png";
 import actionFigure from "@/assets/action-figure.png";
 import conceptFront from "@/assets/concept-front.png";
 import conceptBack from "@/assets/concept-back.png";
@@ -1518,7 +1519,7 @@ const Index = () => {
               </div>
               <div>
                 <img 
-                  src={actionFigure} 
+                  src={actionFigureNew} 
                   alt="THEVØIDN13 Action Figure Prototype" 
                   className="w-full rounded-lg"
                 />
