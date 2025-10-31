@@ -927,14 +927,6 @@ const Index = () => {
             }
           />
 
-          <div className="my-12">
-            <img 
-              src={voidCityFront} 
-              alt="Cidade do vazio — City of the void" 
-              className="w-full rounded-lg"
-            />
-          </div>
-
           <h3 className="subsection-title mt-12 mb-8">8.3 PRINCÍPIOS ESTÉTICOS</h3>
           <h3 className="subsection-title mb-8">8.3 AESTHETIC PRINCIPLES</h3>
 
