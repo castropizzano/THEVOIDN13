@@ -861,19 +861,6 @@ const Index = () => {
             }
           />
 
-          <div className="my-12 grid md:grid-cols-2 gap-6">
-            <img 
-              src={meditationScene} 
-              alt="Cena de meditação — Meditation scene" 
-              className="w-full rounded-lg"
-            />
-            <img 
-              src={meditationRainScene} 
-              alt="Cena de meditação na chuva — Rain meditation scene" 
-              className="w-full rounded-lg"
-            />
-          </div>
-
           <h3 className="subsection-title mt-12 mb-8">7.5 CASATREZESTUDIO®</h3>
           <h3 className="subsection-title mb-8">7.5 CASATREZESTUDIO®</h3>
 
