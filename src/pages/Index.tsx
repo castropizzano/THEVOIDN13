@@ -58,6 +58,7 @@ import hotelRender from "@/assets/hotel-render.png";
 import gol2Render from "@/assets/gol2-render.png";
 import charactersStudy from "@/assets/characters-study.png";
 import charactersStudyFinal from "@/assets/characters-study-final.png";
+import corsaRender from "@/assets/corsa-render.png";
 
 const Index = () => {
   const [oracleOpen, setOracleOpen] = useState(false);
@@ -994,6 +995,18 @@ const Index = () => {
                 <img 
                   src={charactersStudyFinal} 
                   alt="THEVØIDN13 Characters Final Study" 
+                  className="w-full max-w-6xl mx-auto rounded-lg"
+                />
+              </div>
+            </div>
+
+            {/* CONCEPT SCENE */}
+            <div className="mt-16">
+              <h3 className="subsection-title mb-8 text-left">THEVØIDN13 (CENA CONCEITO | CONCEPT SCENE)</h3>
+              <div className="my-8">
+                <img 
+                  src={corsaRender} 
+                  alt="THEVØIDN13 Concept Scene" 
                   className="w-full max-w-6xl mx-auto rounded-lg"
                 />
               </div>
