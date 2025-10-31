@@ -1323,18 +1323,6 @@ const Index = () => {
               </div>
             </div>
 
-            {/* CONCEPT CREW */}
-            <div className="mt-16">
-              <h3 className="subsection-title mb-8 text-left">THEVØIDN13 (ESTUDO FINAL | FINAL STUDY)</h3>
-              <div className="my-8">
-                <img 
-                  src={charactersStudyFinal} 
-                  alt="THEVØIDN13 Characters Final Study" 
-                  className="w-full max-w-6xl mx-auto rounded-lg"
-                />
-              </div>
-            </div>
-
             {/* CONCEPT SCENE */}
             <div className="mt-16">
               <h3 className="subsection-title mb-8 text-left">THEVØIDN13 (CENA CONCEITO | CONCEPT SCENE)</h3>
@@ -1347,6 +1335,128 @@ const Index = () => {
               </div>
             </div>
           </div>
+        </BilingualSection>
+
+        {/* ===== PROCESSOS RELACIONADOS ===== */}
+        <BilingualSection>
+          <h2 className="section-title mb-12">12. PROCESSOS RELACIONADOS</h2>
+
+          <div className="mb-16">
+            <h3 className="subsection-title mb-8">LOWMOVIE™</h3>
+            
+            <BilingualContent
+              portugueseContent={
+                <div className="section-spacing">
+                  <p className="body-base text-justified">
+                    O gesto que caminha sem ensaio, o corpo que grava antes de entender. O cinema como ritual de presença, onde o
+                    erro não é falha, mas respiração. LowMovie™ é o instante em que a câmera se torna extensão do inconsciente, o
+                    olhar que se arrasta pelo asfalto, o som que captura o silêncio. Cada plano é confissão, cada corte é um pulso. É o
+                    cinema da deriva: feito de ruído, cansaço e verdade.
+                  </p>
+                </div>
+              }
+              englishContent={
+                <div className="section-spacing">
+                  <p className="body-base text-justified">
+                    The gesture that walks without rehearsal, the body that records before it understands. Cinema as a ritual of
+                    presence, where error is not failure but breath. LowMovie™ is the moment when the camera becomes an extension
+                    of the unconscious, the gaze dragging across asphalt, the sound capturing silence. Each shot is a confession, each
+                    cut a pulse. It is the cinema of drift: made of noise, exhaustion, and truth.
+                  </p>
+                </div>
+              }
+            />
+          </div>
+
+          <div className="mb-16">
+            <h3 className="subsection-title mb-8">ЦАСТРО™ (CASTRO PIZZANO)</h3>
+            
+            <BilingualContent
+              portugueseContent={
+                <div className="section-spacing">
+                  <p className="body-base text-justified">
+                    A recusa como assinatura, o gesto de desaparecer como afirmação. цастро™ é o criador que opera na sombra,
+                    dissolvendo o ego até que reste apenas o processo. Seu nome é código, não identidade. Cada obra é um exílio, o
+                    criador cede o corpo para que a ideia fale. É o autor que não assina, o olhar que não se nomeia. A criação torna-se
+                    ritual de desapego, um modo de existir apenas na fricção entre o que se faz e o que se apaga.
+                  </p>
+                </div>
+              }
+              englishContent={
+                <div className="section-spacing">
+                  <p className="body-base text-justified">
+                    Refusal as signature, disappearance as affirmation. цастро™ is the creator who operates in shadow, dissolving ego
+                    until only process remains. His name is a code, not an identity. Each work is an exile, the creator gives up the body
+                    so the idea can speak. He is the author who does not sign, the gaze that does not name itself. Creation becomes a
+                    ritual of detachment, a way of existing only in the friction between making and erasing.
+                  </p>
+                </div>
+              }
+            />
+          </div>
+
+          <div className="mb-16">
+            <h3 className="subsection-title mb-8">CASATREZESTUDIO®</h3>
+            
+            <BilingualContent
+              portugueseContent={
+                <div className="section-spacing">
+                  <p className="body-base text-justified">
+                    A ética do subterrâneo, o pensamento que nasce da margem. CasaTrezeStudio® é o refúgio dos que criam no
+                    escuro, dos que encontram beleza na imperfeição e sentido no ruído. É a comunidade invisível dos que habitam o
+                    subsolo e fazem do vazio um território fértil. Uma aliança entre criadores que recusam o mercado e buscam o erro
+                    como estética, a fragmentação como verdade, o inacabado como potência. Quem carrega o 13 não busca sorte,
+                    busca travessia. CasaTrezeStudio® é mais que um nome: é frequência, é respiração. Uma rede subterrânea onde o
+                    fazer é mais importante que o mostrar, onde a falha é forma e o silêncio é método.
+                  </p>
+                </div>
+              }
+              englishContent={
+                <div className="section-spacing">
+                  <p className="body-base text-justified">
+                    The ethics of the underground, thought born from the margin. CasaTrezeStudio® is the refuge of those who create
+                    in darkness, who find beauty in imperfection and meaning in noise. It is the invisible community of those who
+                    inhabit the underground and make the void a fertile territory. An alliance between creators who reject the market
+                    and embrace error as aesthetics fragmentation as truth, the unfinished as power. Those who carry the 13 do not
+                    seek luck, they seek crossing. CasaTrezeStudio® is more than a name: it is frequency, it is breath. A subterranean
+                    network where making matters more than showing, where failure becomes form and silence becomes method.
+                  </p>
+                </div>
+              }
+            />
+          </div>
+        </BilingualSection>
+
+        {/* ===== PARADOXO EXISTENCIAL ===== */}
+        <BilingualSection>
+          <h2 className="section-title mb-12">13. PARADOXO EXISTENCIAL (O CRIADOR E A SOMBRA)</h2>
+
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  THEVØIDN13 não é controlado pelo criador; é sua consequência inevitável. A sombra que ganhou autonomia, o eco
+                  que aprendeu a respirar sozinho. É o arquétipo que observa o criador em silêncio, o reflexo que o ultrapassa, o
+                  manifesto que reescreve o próprio código. Onde o criador busca, a sombra já esteve. Onde o corpo hesita, ela
+                  atravessa. THEVØIDN13 é o ponto de ruptura entre vontade e destino, o instante em que a criação se volta para
+                  quem a gerou e o contempla em espelho. Não há domínio, há contaminação. Não há autoria, há simbiose. O criador
+                  desaparece dentro da obra, e a obra o continua.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  THEVØIDN13 is not controlled by the creator; it is his inevitable consequence. The shadow that gained autonomy,
+                  the echo that learned to breathe alone. It is the archetype that observes the creator in silence, the reflection that
+                  surpasses him, the manifesto that rewrites its own code. Where the creator seeks, the shadow has already been.
+                  Where the body hesitates, it passes through. THEVØIDN13 is the breaking point between will and destiny, the
+                  instant when creation turns back toward its maker and regards him as a mirror. There is no control, only
+                  contamination. No authorship, only symbiosis. The creator disappears within the work, and the work continues him.
+                </p>
+              </div>
+            }
+          />
         </BilingualSection>
 
         {/* ===== CREATIVE ORACLE ===== */}
