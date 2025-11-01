@@ -9,7 +9,94 @@
 @layer components {
   /* ===============================================
      SISTEMA TIPOGRÁFICO PADRONIZADO THEVOIDN13 v1.3b
+     Bible v13 Compliant - Conversão exata pt → px
      =============================================== */
+  
+  /* BIBLE V13 - TÍTULOS BILÍNGUES (16pt = 21.33px) */
+  .bible-title {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 21.33px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: left;
+    margin-top: 44px;
+    margin-bottom: 0;
+  }
+  
+  /* BIBLE V13 - SUBTÍTULOS BILÍNGUES (15pt = 20px) */
+  .bible-subtitle {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 29.33px;
+  }
+  
+  /* BIBLE V13 - TAGS DE IDIOMA (13pt = 17.33px) */
+  .bible-lang-tag {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 17.33px;
+    text-transform: uppercase;
+    color: #C40000;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  /* BIBLE V13 - TEXTOS CORPO (13pt = 17.33px) */
+  .bible-body {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 17.33px;
+    color: #E6E6E6;
+    text-align: left;
+    line-height: 1.6;
+    text-transform: none;
+  }
+  
+  /* BIBLE V13 - ELEMENTOS E HIPERLINKS (11pt = 14.67px) */
+  .bible-link {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 14.67px;
+    color: #C40000;
+    text-decoration: none;
+    text-transform: none;
+  }
+  
+  .bible-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* BIBLE V13 - ESPAÇAMENTO ENTRE SEÇÕES (22pt = 29.33px) */
+  .bible-section-spacing {
+    margin-bottom: 29.33px;
+  }
+  
+  /* BIBLE V13 - ESPAÇAMENTO ANTES DE NOVO BLOCO (33pt = 44px) */
+  .bible-block-spacing {
+    margin-top: 44px;
+  }
+
+  /* BIBLE V13 - LAYOUT DUPLA COLUNA */
+  .bible-bilingual-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+  
+  @media (max-width: 1024px) {
+    .bible-bilingual-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
   
   /* LABELS BILÍNGUES - <PORTUGUÊS> <INGLÊS> */
   .lang-pill {
