@@ -73,30 +73,43 @@ THEVOIDN13 Memorial
 **Componentes:** shadcn/ui  
 **Animações:** tailwindcss-animate
 
-**Paleta Semântica:**
+**Paleta Semântica (Shadow Interface Bible v13):**
 ```css
-/* Design System - index.css */
+/* Design System - index.css (Bible v13) */
 :root {
-  --background: 0 0% 7%;       /* #0C0C0C - fundo escuro */
-  --foreground: 0 0% 85%;      /* #DADADA - texto claro */
-  --card: 0 0% 12%;            /* cards elevados */
-  --primary: 0 61% 39%;        /* #A32424 - vermelho canônico */
-  --muted: 210 14% 22%;        /* #323A46 - bordas, tons médios */
+  --background: 0 0% 10.2%;    /* #1A1A1A - Preto Sombra */
+  --foreground: 0 0% 90%;      /* #E6E6E6 - Cinza Fantasma */
+  --card: 0 0% 12%;            /* #1F1F1F - Elevação */
+  --primary: 0 100% 38.4%;     /* #C40000 - Vermelho Sintético */
+  --muted: 0 0% 20%;           /* #333333 - Bordas, elementos muted */
 }
 ```
 
-**Hierarquia Tipográfica:**
-- `text-6xl/7xl` → Hero titles (h1)
-- `text-4xl` → Section titles (h2)  
-- `text-2xl` → Subsection titles (h3)
-- `text-xl` → Category titles (h4)
-- `text-base` → Body text (p)
-- `text-sm` → Metadata
-- `text-xs` → Labels, captions
+**Cores Canônicas (Bible v13):**  
+Preto Sombra: `#1A1A1A` (fundo global)  
+Branco Vazio: `#FFFFFF` (títulos)  
+Cinza Fantasma: `#E6E6E6` (texto corpo)  
+Vermelho Sintético: `#C40000` (primária, tags, links)
+
+**Hierarquia Tipográfica (Shadow Interface Bible v13):**  
+Fonte: Manrope (peso variável)
+
+- Títulos: Bold 16pt uppercase (#FFFFFF - Branco Vazio)
+- Subtítulos: Semibold 15pt uppercase (#FFFFFF)
+- Tags: Medium 13pt uppercase (#C40000 - Vermelho Sintético)
+- Textos: Regular 13pt normal case (#E6E6E6 - Cinza Fantasma)
+- Links: Regular 11pt normal case (#C40000)
+
+**Implementação Web:**
+- `.title` → 16px/1rem font-bold uppercase
+- `.subtitle` → 15px/0.9375rem font-semibold uppercase  
+- `.lang-pill` → 13px/0.8125rem font-medium uppercase text-primary
+- `.body-base` → 13px/0.8125rem font-regular
+- `.body-small` → 13px/0.8125rem font-regular leading-relaxed
 
 **Fontes:**
-- Manrope (interface)
-- Inter 500 (rótulos técnicos)
+- Manrope (única fonte oficial - Bible v13)
+- Fonte Google Fonts, SIL Open Font License
 
 ### Estrutura de Páginas
 
