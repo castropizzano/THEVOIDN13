@@ -11,6 +11,9 @@ import { CreativeOracle } from "@/components/CreativeOracle";
 import { BackToTop } from "@/components/BackToTop";
 import { AccessGate } from "@/components/AccessGate";
 import { CookieConsent } from "@/components/CookieConsent";
+import SpotifyPlaylist from "@/components/SpotifyPlaylist";
+import FilmGallery from "@/components/FilmGallery";
+import ComicsShowcase from "@/components/ComicsShowcase";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
@@ -1307,6 +1310,14 @@ const Index = () => {
           />
         </BilingualSection>
 
+        {/* ===== VISUAL REFERENCES COMPONENTS ===== */}
+        <ComicsShowcase />
+        <Separator className="bg-border/30" />
+        
+        <FilmGallery />
+        <Separator className="bg-border/30" />
+        
+        <SpotifyPlaylist />
         <Separator className="bg-border/30" />
 
         {/* ===== A METODOLOGIA | COAUTORIA SIMBÓLICA ===== */}
