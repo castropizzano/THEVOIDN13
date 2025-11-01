@@ -308,7 +308,7 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <>
-                <h2 className="bible-title">2. FILOSOFIA CENTRAL (A SOMBRA ENCARNADA)</h2>
+                <h2 className="bible-title">2. FILOSOFIA CENTRAL</h2>
                 <p className="bible-body bible-section-spacing">
                   THEVØIDN13 é o décimo terceiro andar do inconsciente um espaço entre mundos onde o ego se apaga para que a imagem respire, não é personagem nem avatar é um estado de travessia, não é um ser é um ritmo, a forma que o inconsciente assume para respirar no ruído da cidade, existe para absorver não para reagir, sua ética é a do silêncio uma recusa ativa da autoafirmação, The Void é o nome que restou depois que todos os outros já morreram o número treze é a assinatura do que retorna depois do fim.
                 </p>
@@ -316,7 +316,7 @@ const Index = () => {
             }
             englishContent={
               <>
-                <h2 className="bible-title">2. CENTRAL PHILOSOPHY (THE EMBODIED SHADOW)</h2>
+                <h2 className="bible-title">2. CENTRAL PHILOSOPHY</h2>
                 <p className="bible-body bible-section-spacing">
                   THEVØIDN13 is the thirteenth floor of the unconscious a space between worlds where the ego fades so the image can breathe, it is neither character nor avatar it is a state of crossing, it is not a being it is a rhythm, the form the unconscious assumes to breathe in the noise of the city, it exists to absorb not to react, its ethic is that of silence an active refusal of self-affirmation, The Void is the name that remained after all others had died thirteen is the signature of what returns after the end.
                 </p>
