@@ -261,6 +261,9 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    --lov-text-margin-bottom: 0;
+    --lov-block-gap: 0;
+    
     --background: 0 0% 10.2%; /* #1A1A1A - Preto Sombra (Bible v13) */
     --foreground: 0 0% 90%; /* #E6E6E6 - Cinza Fantasma (Bible v13) */
 
@@ -377,5 +380,35 @@ All colors MUST be HSL.
   a:hover,
   a:active {
     @apply text-primary;
+  }
+
+  /* === GLOBAL TEXT ALIGNMENT & FLOW === */
+  p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 1.6;
+    text-align: justify;
+    text-align-last: left;
+    widows: 1;
+    orphans: 1;
+  }
+
+  /* === BLOCO DE TEXTO / CONTAINER === */
+  .text-block, .manifesto-section, .lov-text {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 0 !important;
+  }
+
+  /* === TÍTULOS / SUBTÍTULOS === */
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.3em;
+  }
+
+  /* === CORREÇÃO FINAL GLOBAL === */
+  * {
+    line-break: auto;
+    overflow-wrap: break-word;
   }
 }
