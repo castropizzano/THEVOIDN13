@@ -101,7 +101,7 @@ const Dissertacao = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing mt-8">
             <div>
-              <p className="bible-lang-tag">PORTUGUÊS</p>
+              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Coletivo Criativo fundado em 2008. Estúdio pós-contemporâneo de design e vídeo. Associação de produtores criativos independentes que opera como laboratório de criação autoral, cultural e comercial, conectando pessoas, ideias e projetos. Onde o comercial e o experimental coexistem sob a persona цастро™.</p>
                 
@@ -120,7 +120,7 @@ const Dissertacao = () => {
             </div>
 
             <div>
-              <p className="bible-lang-tag">ENGLISH</p>
+              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Creative Collective founded in 2008. Post-contemporary studio of design and video. Association of independent creative producers operating as a laboratory of authorial, cultural and commercial creation, connecting people, ideas and projects. Where commercial and experimental coexist under the persona цастро™.</p>
                 
@@ -166,7 +166,7 @@ const Dissertacao = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing mt-8">
             <div>
-              <p className="bible-lang-tag">PORTUGUÊS</p>
+              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Crew de skate @lowpressure.fam estabelecida nas transições e ruas de Curitiba. Movimento que valoriza o skateboard e seu universo cultural. Uma crew de skatistas, músicos e artistas com diferentes visões e um mesmo ideal. A ética do subterrâneo. O pensamento que nasce da margem.</p>
                 
@@ -183,7 +183,7 @@ const Dissertacao = () => {
             </div>
 
             <div>
-              <p className="bible-lang-tag">ENGLISH</p>
+              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Skate crew @lowpressure.fam established in the transitions and streets of Curitiba. Movement that values skateboarding and its cultural universe. A crew of skaters, musicians and artists with different visions and the same ideal. The ethics of the underground. Thought that rises from the margin.</p>
                 
@@ -213,7 +213,7 @@ const Dissertacao = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing mt-8">
             <div>
-              <p className="bible-lang-tag">PORTUGUÊS</p>
+              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Full Video da crew LowPressure. Um filme-processo que documenta as vivências e o legado de uma crew de skatistas pelos spots de Curitiba. Obra produzida de maneira totalmente autoral, através de vídeo, design e trilhas sonoras únicas. Objeto central da pesquisa de mestrado em Cinema e Artes do Vídeo.</p>
                 
@@ -233,7 +233,7 @@ const Dissertacao = () => {
             </div>
 
             <div>
-              <p className="bible-lang-tag">ENGLISH</p>
+              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">LowPressure crew's Full Video. A process-film documenting the experiences and legacy of a skate crew through Curitiba's spots. Work produced entirely independently, through video, design and unique soundtracks. Central object of master's research in Cinema and Video Arts.</p>
                 
