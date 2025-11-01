@@ -311,7 +311,7 @@ export const ComicGenerator = () => {
         </p>
         <p className="body-small text-muted-foreground">
           Todas as imagens são geradas em <strong>aspect ratio 16:9 horizontal</strong>, 
-          ocupando todo o espaço disponível e recebem automaticamente a marca d'água oficial 
+          preservando todo o conteúdo sem cortes e recebem automaticamente a marca d'água oficial 
           THEVØIDN13 em 50% de transparência no canto inferior direito.
         </p>
         <p className="body-small text-muted-foreground">
@@ -341,8 +341,8 @@ async function postProcessTo16x9WithWatermark(imageUrl: string): Promise<string>
   ctx.fillStyle = '#000000';
   ctx.fillRect(0, 0, width, height);
 
-  // Draw image with cover to fill 16:9
-  const scale = Math.max(width / img.width, height / img.height);
+  // Draw image with CONTAIN to preserve full content without cropping
+  const scale = Math.min(width / img.width, height / img.height);
   const drawW = img.width * scale;
   const drawH = img.height * scale;
   const dx = (width - drawW) / 2;

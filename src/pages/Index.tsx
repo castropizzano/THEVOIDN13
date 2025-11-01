@@ -1595,7 +1595,7 @@ const Index = () => {
           </div>
 
           {/* GERADOR EXPERIMENTAL */}
-          <div className="mb-12 bg-card/30 p-8 rounded-lg">
+          <div className="mb-12">
             <h3 className="subsection-title mb-6">GERADOR EXPERIMENTAL DE STILL / STILL GENERATOR</h3>
             <BilingualContent
               portugueseContent={
