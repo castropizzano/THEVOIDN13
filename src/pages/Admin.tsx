@@ -45,7 +45,7 @@ const Admin = () => {
       <main className="container mx-auto px-4 py-20">
         <div className="flex justify-between items-center mb-8">
           <div>
-            <h1 className="site-title mb-2">Painel Administrativo</h1>
+            <h1 className="bible-title mb-2">Painel Administrativo</h1>
             <p className="text-muted-foreground">Gerencie o conteúdo do site THEVØIDN13</p>
           </div>
           <Button variant="outline" onClick={signOut}>

@@ -5,16 +5,16 @@ export const PodcastPlayer = () => {
   return (
     <Card className="bg-card/80 border-primary/30 hover:border-primary transition-colors">
       <CardHeader>
-        <CardTitle className="section-title text-primary">
+        <CardTitle className="bible-title text-primary">
           Skate Punk — Processos Criativos
         </CardTitle>
-        <CardDescription className="body-base">
+        <CardDescription className="bible-body">
           Entrevista sobre o LowMovie™ e processos de criação / Interview about creative processes
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="space-y-2">
-          <p className="body-base text-muted-foreground">
+          <p className="bible-body text-muted-foreground">
             Podcast Chiclé Vídeos — Conversa sobre a trajetória criativa, os bastidores do LowMovie™, 
             a relação entre skate e audiovisual, e os processos colaborativos do coletivo LowPressure™.
           </p>
@@ -40,8 +40,8 @@ export const PodcastPlayer = () => {
         </div>
 
         <div className="p-4 bg-primary/5 rounded-lg">
-          <p className="subsection-title mb-3">Tópicos da conversa:</p>
-          <ul className="body-base text-muted-foreground space-y-1">
+          <p className="bible-subtitle mb-3">Tópicos da conversa:</p>
+          <ul className="bible-body text-muted-foreground space-y-1">
             <li>• Trajetória entre a rua e a academia</li>
             <li>• CasaTrezeStudio como laboratório criativo</li>
             <li>• Coletivo LowPressure™ e práticas colaborativas</li>

@@ -152,15 +152,15 @@ const AdminDashboard = () => {
                 onClick={() => navigate("/admin")} 
                 variant="ghost" 
                 size="sm"
-                className="site-subtitle text-muted-foreground hover:text-foreground -ml-2"
+                className="bible-subtitle text-muted-foreground hover:text-foreground -ml-2"
               >
                 <ArrowLeft className="mr-2 h-4 w-4" />
                 Voltar ao Admin
               </Button>
-              <h1 className="site-title text-foreground mb-2">
+              <h1 className="bible-title text-foreground mb-2">
                 Dashboard Admin
               </h1>
-              <p className="site-paragraph text-muted-foreground">
+              <p className="bible-body text-muted-foreground">
                 Gerencie os inscritos da newsletter do THEVØIDN13
               </p>
             </div>
@@ -173,21 +173,21 @@ const AdminDashboard = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Card>
               <CardHeader className="flex flex-row items-center justify-between pb-2">
-                <CardTitle className="site-subtitle">Total de Inscritos</CardTitle>
+                <CardTitle className="bible-subtitle">Total de Inscritos</CardTitle>
                 <Mail className="h-4 w-4 text-muted-foreground" />
               </CardHeader>
               <CardContent>
-                <div className="site-title">{subscribers.length}</div>
+                <div className="bible-title">{subscribers.length}</div>
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader className="flex flex-row items-center justify-between pb-2">
-                <CardTitle className="site-subtitle">Novos Hoje</CardTitle>
+                <CardTitle className="bible-subtitle">Novos Hoje</CardTitle>
                 <Calendar className="h-4 w-4 text-muted-foreground" />
               </CardHeader>
               <CardContent>
-                <div className="site-title">
+                <div className="bible-title">
                   {
                     subscribers.filter(
                       (sub) =>
@@ -200,11 +200,11 @@ const AdminDashboard = () => {
 
             <Card>
               <CardHeader className="flex flex-row items-center justify-between pb-2">
-                <CardTitle className="site-subtitle">Taxa de Consentimento</CardTitle>
+                <CardTitle className="bible-subtitle">Taxa de Consentimento</CardTitle>
                 <User className="h-4 w-4 text-muted-foreground" />
               </CardHeader>
               <CardContent>
-                <div className="site-title">
+                <div className="bible-title">
                   {subscribers.length > 0
                     ? Math.round(
                         (subscribers.filter((sub) => sub.consent_given).length / subscribers.length) *

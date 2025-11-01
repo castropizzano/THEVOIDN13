@@ -137,14 +137,14 @@ export const AccessGate = ({
             v1.3
           </div>
           <div className="text-center space-y-1">
-            <CardTitle className="site-title text-primary text-2xl leading-tight">
+            <CardTitle className="bible-title text-primary text-2xl leading-tight">
               O VAZIO CHAMA
             </CardTitle>
-            <CardTitle className="site-title text-primary text-2xl leading-tight">
+            <CardTitle className="bible-title text-primary text-2xl leading-tight">
               THE VOID CALLS
             </CardTitle>
           </div>
-          <CardDescription className="site-paragraph text-sm leading-relaxed">
+          <CardDescription className="bible-body text-sm leading-relaxed">
             Há um ponto onde o tempo desacelera e a consciência escuta o ruído do próprio silêncio.
             <br />
             <span className="text-xs">
@@ -162,7 +162,7 @@ export const AccessGate = ({
             <TabsContent value="login">
               <form onSubmit={handleLogin} className="space-y-4">
                 <div className="space-y-2">
-                  <label htmlFor="login-email" className="site-subtitle text-sm">
+                  <label htmlFor="login-email" className="bible-subtitle text-sm">
                     Email
                   </label>
                   <Input
@@ -178,7 +178,7 @@ export const AccessGate = ({
                 </div>
 
                 <div className="space-y-2">
-                  <label htmlFor="login-password" className="site-subtitle text-sm">
+                  <label htmlFor="login-password" className="bible-subtitle text-sm">
                     Senha / Password
                   </label>
                   <Input
@@ -209,7 +209,7 @@ export const AccessGate = ({
             <TabsContent value="signup">
               <form onSubmit={handleSignup} className="space-y-4">
                 <div className="space-y-2">
-                  <label htmlFor="signup-name" className="site-subtitle text-sm">
+                  <label htmlFor="signup-name" className="bible-subtitle text-sm">
                     Nome Completo / Full Name
                   </label>
                   <Input
@@ -225,7 +225,7 @@ export const AccessGate = ({
                 </div>
 
                 <div className="space-y-2">
-                  <label htmlFor="signup-email" className="site-subtitle text-sm">
+                  <label htmlFor="signup-email" className="bible-subtitle text-sm">
                     Email
                   </label>
                   <Input
@@ -241,7 +241,7 @@ export const AccessGate = ({
                 </div>
 
                 <div className="space-y-2">
-                  <label htmlFor="signup-password" className="site-subtitle text-sm">
+                  <label htmlFor="signup-password" className="bible-subtitle text-sm">
                     Senha / Password
                   </label>
                   <Input

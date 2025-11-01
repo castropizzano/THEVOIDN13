@@ -31,13 +31,13 @@ export const CookieConsent = () => {
       <Card className="max-w-4xl mx-auto bg-card/95 backdrop-blur border-2 border-primary/30 shadow-2xl">
         <div className="p-6 space-y-4">
           <div className="space-y-2">
-            <h3 className="site-title text-primary">
+            <h3 className="bible-title text-primary">
               POLÍTICA DE COOKIES / COOKIE POLICY
             </h3>
-            <p className="site-paragraph text-muted-foreground leading-relaxed">
+            <p className="bible-body text-muted-foreground leading-relaxed">
               Este site utiliza cookies essenciais para garantir funcionalidade básica e armazenamento local para melhorar sua experiência de navegação. Não coletamos dados pessoais além do necessário para o cadastro, respeitando sua privacidade e segurança em cada etapa do processo.
             </p>
-            <p className="site-paragraph text-muted-foreground text-xs leading-relaxed">
+            <p className="bible-body text-muted-foreground text-xs leading-relaxed">
               This site uses essential cookies to ensure basic functionality and local storage to improve your browsing experience. We do not collect personal data beyond what is necessary for registration, respecting your privacy and security at every step of the process.
             </p>
           </div>
