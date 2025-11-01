@@ -5,7 +5,6 @@ import { SEO, breadcrumbSchema } from "@/components/SEO";
 import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
 import { BackToTop } from "@/components/BackToTop";
 import { supabase } from "@/integrations/supabase/client";
-import { Play, Clock, ExternalLink } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 interface Video {
@@ -231,11 +230,8 @@ const Videos = () => {
                     alt={video.name}
                     className="w-full h-full object-cover scale-[2.00] grayscale group-hover:grayscale-0 group-hover:scale-[2.05] transition-all duration-500"
                   />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
-                    <Play className="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity" />
-                  </div>
-                  <div className="absolute bottom-2 right-2 bg-black/80 px-2 py-1 rounded text-xs flex items-center gap-1">
-                    <Clock className="w-3 h-3" />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300"></div>
+                  <div className="absolute bottom-2 right-2 bg-black/80 px-2 py-1 rounded text-xs">
                     {formatDuration(video.duration)}
                   </div>
                 </div>
@@ -246,11 +242,10 @@ const Videos = () => {
                   href={video.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 body-small text-primary hover:underline mt-2"
+                  className="body-small text-primary hover:underline mt-2 inline-block"
                   onClick={(e) => e.stopPropagation()}
                 >
-                  Ver no Vimeo
-                  <ExternalLink className="w-3 h-3" />
+                  Ver no Vimeo →
                 </a>
               </div>
             ))}

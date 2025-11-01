@@ -1,32 +1,24 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Music, Radio } from "lucide-react";
 
 export const MusicPlayer = () => {
   return (
     <Card className="bg-card/80 border-primary/30 hover:border-primary transition-colors">
       <CardHeader>
-        <div className="flex items-center gap-3">
-          <Music className="w-6 h-6 text-primary" />
-          <div>
-            <CardTitle className="text-2xl font-bold text-primary">
-              LowMovie™ Original Soundtrack
-            </CardTitle>
-            <CardDescription className="text-base">
-              Trilhas sonoras originais do filme / Original motion picture soundtracks
-            </CardDescription>
-          </div>
-        </div>
+        <CardTitle className="text-2xl font-bold text-primary">
+          LowMovie™ Original Soundtrack
+        </CardTitle>
+        <CardDescription className="text-base">
+          Trilhas sonoras originais do filme / Original motion picture soundtracks
+        </CardDescription>
       </CardHeader>
       <CardContent>
         <Tabs defaultValue="instrumental" className="w-full">
           <TabsList className="grid w-full grid-cols-2 mb-6">
-            <TabsTrigger value="instrumental" className="flex items-center gap-2">
-              <Radio className="w-4 h-4" />
+            <TabsTrigger value="instrumental">
               Like Rats on Hostile Paths
             </TabsTrigger>
-            <TabsTrigger value="videopartes" className="flex items-center gap-2">
-              <Radio className="w-4 h-4" />
+            <TabsTrigger value="videopartes">
               Lowbyrinth EP
             </TabsTrigger>
           </TabsList>
