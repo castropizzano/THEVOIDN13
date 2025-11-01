@@ -664,71 +664,6 @@ const Autor = () => {
           />
         </BilingualSection>
 
-        {/* Portfolio & Links */}
-        <BilingualSection>
-          <div className="space-y-8">
-            <h2 className="text-sm font-medium tracking-wide uppercase text-primary">Portfolio & Links</h2>
-            
-            <div className="grid md:grid-cols-3 gap-6">
-              <a 
-                href="https://castropizzano.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group bg-card/50 border border-border rounded-lg p-6 hover:border-primary transition-colors"
-              >
-                <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-lg font-bold">Website</h3>
-                  <svg className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-                <p className="text-sm text-muted-foreground mb-2">castropizzano.com</p>
-                <p className="text-xs text-muted-foreground">
-                  Portfólio completo e projetos<br/>
-                  Complete portfolio and projects
-                </p>
-              </a>
-
-              <a 
-                href="https://www.behance.net/castropizzano"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group bg-card/50 border border-border rounded-lg p-6 hover:border-primary transition-colors"
-              >
-                <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-lg font-bold">Behance</h3>
-                  <svg className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-                <p className="text-sm text-muted-foreground mb-2">@castropizzano</p>
-                <p className="text-xs text-muted-foreground">
-                  Design gráfico e branding<br/>
-                  Graphic design and branding
-                </p>
-              </a>
-
-              <a 
-                href="https://vimeo.com/castropizzano"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group bg-card/50 border border-border rounded-lg p-6 hover:border-primary transition-colors"
-              >
-                <div className="flex justify-between items-start mb-4">
-                  <h3 className="text-lg font-bold">Vimeo</h3>
-                  <svg className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-                <p className="text-sm text-muted-foreground mb-2">@castropizzano</p>
-                <p className="text-xs text-muted-foreground">
-                  Cinema e vídeo arte<br/>
-                  Cinema and video art
-                </p>
-              </a>
-            </div>
-          </div>
-        </BilingualSection>
 
         {/* Conclusion Section */}
         <BilingualSection bgClassName="bg-gradient-to-b from-background via-primary/5 to-background" className="py-32">
@@ -989,6 +924,70 @@ const Autor = () => {
                   className="text-sm text-primary hover:underline block"
                 >
                   Memorial Acadêmico / Academic Memorial
+                </a>
+              </div>
+            </div>
+
+            {/* Portfolio & Links */}
+            <div className="space-y-8 pt-8 border-t border-border">
+              <h3 className="text-sm font-medium tracking-wide uppercase text-primary">Portfolio & Links</h3>
+              
+              <div className="grid md:grid-cols-3 gap-6">
+                <a 
+                  href="https://castropizzano.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group bg-card/50 border border-border rounded-lg p-6 hover:border-primary transition-colors"
+                >
+                  <div className="flex justify-between items-start mb-4">
+                    <h3 className="text-lg font-bold">Website</h3>
+                    <svg className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-2">castropizzano.com</p>
+                  <p className="text-xs text-muted-foreground">
+                    Portfólio completo e projetos<br/>
+                    Complete portfolio and projects
+                  </p>
+                </a>
+
+                <a 
+                  href="https://www.behance.net/castropizzano"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group bg-card/50 border border-border rounded-lg p-6 hover:border-primary transition-colors"
+                >
+                  <div className="flex justify-between items-start mb-4">
+                    <h3 className="text-lg font-bold">Behance</h3>
+                    <svg className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-2">@castropizzano</p>
+                  <p className="text-xs text-muted-foreground">
+                    Design gráfico e branding<br/>
+                    Graphic design and branding
+                  </p>
+                </a>
+
+                <a 
+                  href="https://vimeo.com/castropizzano"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group bg-card/50 border border-border rounded-lg p-6 hover:border-primary transition-colors"
+                >
+                  <div className="flex justify-between items-start mb-4">
+                    <h3 className="text-lg font-bold">Vimeo</h3>
+                    <svg className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                  <p className="text-sm text-muted-foreground mb-2">@castropizzano</p>
+                  <p className="text-xs text-muted-foreground">
+                    Cinema e vídeo arte<br/>
+                    Cinema and video art
+                  </p>
                 </a>
               </div>
             </div>
