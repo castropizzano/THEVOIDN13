@@ -32,7 +32,7 @@ const Dissertacao = () => {
 
   const breadcrumbs = breadcrumbSchema([
     { name: "Home", url: "https://thevoidn13.com/" },
-    { name: "LowMovie™ — Dissertação", url: "https://thevoidn13.com/dissertacao" }
+    { name: "LowMovie™, Dissertação", url: "https://thevoidn13.com/dissertacao" }
   ]);
 
   const schemaData = {
@@ -147,7 +147,7 @@ const Dissertacao = () => {
                 <p className="bible-body"><span className="font-semibold">Curadoria:</span> Projetos experimentais e autorais</p>
                 
                 <h3 className="bible-subtitle">Filosofia</h3>
-                <p className="bible-body">A casa número 13 como símbolo de resistência ao convencional. O azar transformado em potência criativa. O estúdio opera na fronteira entre o comercial e o experimental, sem hierarquia entre ambos. Cada projeto — seja uma identidade visual para um cliente ou um filme autoral — recebe o mesmo rigor criativo.</p>
+                <p className="bible-body">A casa número 13 como símbolo de resistência ao convencional. O azar transformado em potência criativa. O estúdio opera na fronteira entre o comercial e o experimental, sem hierarquia entre ambos. Cada projeto, seja uma identidade visual para um cliente ou um filme autoral, recebe o mesmo rigor criativo.</p>
               </div>
             </div>
 
@@ -166,7 +166,7 @@ const Dissertacao = () => {
                 <p className="bible-body"><span className="font-semibold">Curation:</span> Experimental and authorial projects</p>
                 
                 <h3 className="bible-subtitle">Philosophy</h3>
-                <p className="bible-body">House number 13 as a symbol of resistance to the conventional. Bad luck transformed into creative power. The studio operates on the border between commercial and experimental, without hierarchy between them. Each project — whether a visual identity for a client or an authorial film — receives the same creative rigor.</p>
+                <p className="bible-body">House number 13 as a symbol of resistance to the conventional. Bad luck transformed into creative power. The studio operates on the border between commercial and experimental, without hierarchy between them. Each project, whether a visual identity for a client or an authorial film, receives the same creative rigor.</p>
               </div>
             </div>
           </div>
@@ -203,7 +203,7 @@ const Dissertacao = () => {
                 <p className="bible-body">Crew de skate @lowpressure.fam estabelecida nas transições e ruas de Curitiba. Movimento que valoriza o skateboard e seu universo cultural. Uma crew de skatistas, músicos e artistas com diferentes visões e um mesmo ideal. A ética do subterrâneo. O pensamento que nasce da margem.</p>
                 
                 <h3 className="bible-subtitle">Filosofia</h3>
-                <p className="bible-body"><span className="font-bold">LOW PRESSURE = BAIXA PRESSÃO.</span> Movimento atmosférico que precede tempestades. Instabilidade como potência. Tensão criativa que gera movimento. A crew não é grupo fechado — é campo de força que atrai quem vibra na mesma frequência.</p>
+                <p className="bible-body"><span className="font-bold">LOW PRESSURE = BAIXA PRESSÃO.</span> Movimento atmosférico que precede tempestades. Instabilidade como potência. Tensão criativa que gera movimento. A crew não é grupo fechado, é campo de força que atrai quem vibra na mesma frequência.</p>
                 <p className="bible-body">Skatistas, músicos, artistas, videomakers. Diferentes visões, mesmo ideal: fazer do skate um modo de vida autêntico, sem concessões ao mercado, sem domesticação da rebeldia. Punk ethics aplicada ao concreto urbano.</p>
                 
                 <h3 className="bible-subtitle">História</h3>
@@ -220,7 +220,7 @@ const Dissertacao = () => {
                 <p className="bible-body">Skate crew @lowpressure.fam established in the transitions and streets of Curitiba. Movement that values skateboarding and its cultural universe. A crew of skaters, musicians and artists with different visions and the same ideal. The ethics of the underground. Thought that rises from the margin.</p>
                 
                 <h3 className="bible-subtitle">Philosophy</h3>
-                <p className="bible-body"><span className="font-bold">LOW PRESSURE.</span> Atmospheric movement that precedes storms. Instability as power. Creative tension that generates movement. The crew isn't a closed group — it's a force field that attracts those who vibrate at the same frequency.</p>
+                <p className="bible-body"><span className="font-bold">LOW PRESSURE.</span> Atmospheric movement that precedes storms. Instability as power. Creative tension that generates movement. The crew isn't a closed group, it's a force field that attracts those who vibrate at the same frequency.</p>
                 <p className="bible-body">Skaters, musicians, artists, videomakers. Different visions, same ideal: making skateboarding an authentic way of life, without concessions to the market, without domestication of rebellion. Punk ethics applied to urban concrete.</p>
                 
                 <h3 className="bible-subtitle">History</h3>
@@ -253,14 +253,14 @@ const Dissertacao = () => {
                 <p className="bible-body">LowMovie não é só um vídeo de skate. É um artefato cultural que cristaliza memória, identidade e resistência subcultural. Um documento vivo que captura o ethos de uma crew que fez do skate um modo de existir. Produzido entre 2019-2022, estreou em abril de 2023 no Cine Passeio em Curitiba.</p>
                 
                 <h3 className="bible-subtitle">Simbolismo</h3>
-                <p className="bible-body">O filme opera como labirinto criativo onde subjetividade e subcultura se encontram. Cada manobra é gesto simbólico. Cada spot é território de afeto. A estética DIY não é limitação — é escolha ética. LowMovie materializa a filosofia punk do "faça você mesmo" aplicada ao cinema de skate.</p>
+                <p className="bible-body">O filme opera como labirinto criativo onde subjetividade e subcultura se encontram. Cada manobra é gesto simbólico. Cada spot é território de afeto. A estética DIY não é limitação, é escolha ética. LowMovie materializa a filosofia punk do "faça você mesmo" aplicada ao cinema de skate.</p>
                 
                 <h3 className="bible-subtitle">Premiére</h3>
                 <p className="bible-body">07 de abril de 2023. Cine Passeio, Curitiba. Sessão lotada. Skatistas, amigos, família, pesquisadores. Do underground ao cinema. Da margem ao centro simbólico da cidade. Um momento de reconhecimento sem domesticação. A crew permanece crew, mas agora habita também a tela grande.</p>
                 
                 <h3 className="bible-subtitle">Lowbyrinth™</h3>
                 <p className="bible-body">O símbolo central de LowMovie. Um labirinto inspirado em geometria sagrada e princípios herméticos. Baseado na filosofia de Hermes Trismegistus, o Lowbyrinth™ materializa a ideia de que princípios organizam toda vida e criação no universo.</p>
-                <p className="bible-body">O labirinto é a vida em seus encontros, transformações e realizações. Percursos colaborativos, improvisados e não-lineares. Cada volta representa a jornada da crew pelos picos de Curitiba. Cada linha é uma manobra, um gesto compartilhado. O centro é o encontro — onde todos os caminhos convergem.</p>
+                <p className="bible-body">O labirinto é a vida em seus encontros, transformações e realizações. Percursos colaborativos, improvisados e não-lineares. Cada volta representa a jornada da crew pelos picos de Curitiba. Cada linha é uma manobra, um gesto compartilhado. O centro é o encontro, onde todos os caminhos convergem.</p>
               </div>
             </div>
 
@@ -273,14 +273,14 @@ const Dissertacao = () => {
                 <p className="bible-body">LowMovie isn't just a skate video. It's a cultural artifact that crystallizes memory, identity and subcultural resistance. A living document that captures the ethos of a crew that made skateboarding a way of existing. Produced between 2019-2022, premiered in April 2023 at Cine Passeio in Curitiba.</p>
                 
                 <h3 className="bible-subtitle">Symbolism</h3>
-                <p className="bible-body">The film operates as a creative labyrinth where subjectivity and subculture meet. Each trick is symbolic gesture. Each spot is a territory of affection. The DIY aesthetic isn't a limitation — it's an ethical choice. LowMovie materializes the punk philosophy of "do it yourself" applied to skate cinema.</p>
+                <p className="bible-body">The film operates as a creative labyrinth where subjectivity and subculture meet. Each trick is symbolic gesture. Each spot is a territory of affection. The DIY aesthetic isn't a limitation, it's an ethical choice. LowMovie materializes the punk philosophy of "do it yourself" applied to skate cinema.</p>
                 
                 <h3 className="bible-subtitle">Premiere</h3>
                 <p className="bible-body">April 7, 2023. Cine Passeio, Curitiba. Sold-out session. Skaters, friends, family, researchers. From underground to cinema. From margin to the symbolic center of the city. A moment of recognition without domestication. The crew remains a crew, but now also inhabits the big screen.</p>
                 
                 <h3 className="bible-subtitle">Lowbyrinth™</h3>
                 <p className="bible-body">The central symbol of LowMovie. A labyrinth inspired by sacred geometry and hermetic principles. Based on Hermes Trismegistus' philosophy, the Lowbyrinth™ materializes the idea that principles organize all life and creation in the universe.</p>
-                <p className="bible-body">The labyrinth is life in its encounters, transformations, and realizations. Collaborative, improvised, and non-linear paths. Each turn represents the crew's journey through Curitiba's spots. Each line is a trick, a shared gesture. The center is the meeting point — where all paths converge.</p>
+                <p className="bible-body">The labyrinth is life in its encounters, transformations, and realizations. Collaborative, improvised, and non-linear paths. Each turn represents the crew's journey through Curitiba's spots. Each line is a trick, a shared gesture. The center is the meeting point, where all paths converge.</p>
               </div>
             </div>
           </div>
@@ -292,10 +292,10 @@ const Dissertacao = () => {
         <BilingualSection className="py-16">
           <div className="bible-bilingual-grid bible-block-spacing">
             <div>
-              <h2 className="bible-title">INTRODUÇÃO — RASTROS NAS RUAS</h2>
+              <h2 className="bible-title">INTRODUÇÃO, RASTROS NAS RUAS</h2>
             </div>
             <div>
-              <h2 className="bible-title">INTRODUCTION — TRACES IN THE STREETS</h2>
+              <h2 className="bible-title">INTRODUCTION, TRACES IN THE STREETS</h2>
             </div>
           </div>
 
@@ -375,15 +375,15 @@ const Dissertacao = () => {
                 
                 <div className="space-y-3 border-l-2 border-primary pl-4">
                   <div>
-                    <p className="bible-body font-semibold">Movimento I — Corpo em Deriva</p>
+                    <p className="bible-body font-semibold">Movimento I, Corpo em Deriva</p>
                     <p className="bible-body">Investiga o corpo do skatista em relação ao espaço urbano, explorando a dimensão performática e sensível do gesto.</p>
                   </div>
                   <div>
-                    <p className="bible-body font-semibold">Movimento II — Coletivo em Baixo Relevo</p>
+                    <p className="bible-body font-semibold">Movimento II, Coletivo em Baixo Relevo</p>
                     <p className="bible-body">Examina as dinâmicas colaborativas da crew LowPressure™, seus modos de criação partilhada e pertencimento estético.</p>
                   </div>
                   <div>
-                    <p className="bible-body font-semibold">Movimento III — Obra em Expansão</p>
+                    <p className="bible-body font-semibold">Movimento III, Obra em Expansão</p>
                     <p className="bible-body">Analisa o LowMovie™ como dispositivo audiovisual que transborda o formato convencional em outras materialidades.</p>
                   </div>
                 </div>
@@ -426,15 +426,15 @@ const Dissertacao = () => {
                 
                 <div className="space-y-3 border-l-2 border-primary pl-4">
                   <div>
-                    <p className="bible-body font-semibold">Movement I — Body in Drift</p>
+                    <p className="bible-body font-semibold">Movement I, Body in Drift</p>
                     <p className="bible-body">Investigates the skater's body in relation to urban space, exploring the performative and sensitive dimension of gesture.</p>
                   </div>
                   <div>
-                    <p className="bible-body font-semibold">Movement II — Collective in Low Relief</p>
+                    <p className="bible-body font-semibold">Movement II, Collective in Low Relief</p>
                     <p className="bible-body">Examines the collaborative dynamics of the LowPressure™ crew, their modes of shared creation and aesthetic belonging.</p>
                   </div>
                   <div>
-                    <p className="bible-body font-semibold">Movement III — Work in Expansion</p>
+                    <p className="bible-body font-semibold">Movement III, Work in Expansion</p>
                     <p className="bible-body">Analyzes LowMovie™ as an audiovisual device that overflows the conventional format into other materialities.</p>
                   </div>
                 </div>
@@ -554,7 +554,7 @@ const Dissertacao = () => {
               <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Criação sempre foi coletiva. CasaTrezeStudio (desde 2008), LowPressure (desde 2020), colaborações com músicos, skatistas, designers. Mas a práxis híbrida expande o conceito de coletivo: agora inclui agentes não-humanos. IA como colaboradora, não como ferramenta.</p>
-                <p className="bible-body">O coletivo não é soma de indivíduos — é campo de forças. Cada projeto gera sua própria configuração colaborativa. Algumas permanentes (crew), outras efêmeras (projetos específicos). Mas todas compartilham da mesma ética: autonomia criativa, transparência radical, autoria compartilhada mas assinada.</p>
+                <p className="bible-body">O coletivo não é soma de indivíduos, é campo de forças. Cada projeto gera sua própria configuração colaborativa. Algumas permanentes (crew), outras efêmeras (projetos específicos). Mas todas compartilham da mesma ética: autonomia criativa, transparência radical, autoria compartilhada mas assinada.</p>
               </div>
             </div>
 
@@ -562,7 +562,7 @@ const Dissertacao = () => {
               <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Creation has always been collective. CasaTrezeStudio (since 2008), LowPressure (since 2020), collaborations with musicians, skaters, designers. But hybrid praxis expands the concept of collective: now it includes non-human agents. AI as collaborator, not as tool.</p>
-                <p className="bible-body">The collective isn't a sum of individuals — it's a force field. Each project generates its own collaborative configuration. Some permanent (crew), others ephemeral (specific projects). But all share the same ethics: creative autonomy, radical transparency, shared but signed authorship.</p>
+                <p className="bible-body">The collective isn't a sum of individuals, it's a force field. Each project generates its own collaborative configuration. Some permanent (crew), others ephemeral (specific projects). But all share the same ethics: creative autonomy, radical transparency, shared but signed authorship.</p>
               </div>
             </div>
           </div>

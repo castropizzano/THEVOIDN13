@@ -12,7 +12,7 @@ const NotFound = () => {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background">
       <div className="text-left max-w-2xl px-6">
-        <h1 className="bible-title mb-4">404 — PÁGINA NÃO ENCONTRADA</h1>
+        <h1 className="bible-title mb-4">404, PÁGINA NÃO ENCONTRADA</h1>
         <p className="bible-body text-muted-foreground mb-6">
           A página que você procura não existe ou foi movida.
         </p>

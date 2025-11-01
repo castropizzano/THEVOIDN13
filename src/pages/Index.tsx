@@ -96,7 +96,7 @@ const Index = () => {
       <main>
         {/* ===== HERO SECTION ===== */}
         <section className="w-full h-screen overflow-hidden">
-          <img src={heroImage} alt="THEVØIDN13 — Shadow Interface Bible v13" className="w-full h-full object-contain" />
+          <img src={heroImage} alt="THEVØIDN13, Shadow Interface Bible v13" className="w-full h-full object-contain" />
         </section>
 
         {/* ===== SUBTITLE ===== */}
@@ -157,7 +157,7 @@ const Index = () => {
           <div className="max-w-6xl mx-auto px-6">
             <img 
               src={paradoxRender} 
-              alt="THEVØIDN13 — Paradox Render" 
+              alt="THEVØIDN13, Paradox Render" 
               className="w-full rounded-lg"
             />
           </div>
@@ -219,7 +219,7 @@ const Index = () => {
           <div className="max-w-6xl mx-auto px-6">
             <img 
               src={fallRender} 
-              alt="THEVØIDN13 — Fall Render" 
+              alt="THEVØIDN13, Fall Render" 
               className="w-full rounded-lg"
             />
           </div>
@@ -267,7 +267,7 @@ const Index = () => {
           <div className="my-8">
             <img 
               src={thinkRender} 
-              alt="THEVØIDN13 — Contemplation" 
+              alt="THEVØIDN13, Contemplation" 
               className="w-full max-w-6xl mx-auto rounded-lg"
             />
           </div>
@@ -295,7 +295,7 @@ const Index = () => {
           <div className="my-8">
             <img 
               src={meditationRender} 
-              alt="THEVØIDN13 — Meditation Render" 
+              alt="THEVØIDN13, Meditation Render" 
               className="w-full max-w-6xl mx-auto rounded-lg"
             />
           </div>
@@ -328,7 +328,7 @@ const Index = () => {
           <div className="my-8">
             <img 
               src={mirrorRender} 
-              alt="THEVØIDN13 — Mirror Reflection" 
+              alt="THEVØIDN13, Mirror Reflection" 
               className="w-full max-w-6xl mx-auto rounded-lg"
             />
           </div>
@@ -381,7 +381,7 @@ const Index = () => {
           <div className="my-8">
             <img 
               src={maskVoidNew} 
-              alt="A máscara de THEVØIDN13 — The mask of THEVØIDN13" 
+              alt="A máscara de THEVØIDN13, The mask of THEVØIDN13" 
               className="w-full max-w-6xl mx-auto rounded-lg"
             />
           </div>
@@ -436,7 +436,7 @@ const Index = () => {
           <div className="my-12">
             <img 
               src={voidLogoVisual} 
-              alt="THEVØIDN13 — Visual Identity" 
+              alt="THEVØIDN13, Visual Identity" 
               className="w-full max-w-6xl mx-auto rounded-lg"
             />
           </div>
@@ -480,7 +480,7 @@ const Index = () => {
           <div className="my-8">
             <img 
               src={golRender} 
-              alt="THEVØIDN13 — VW GOL 87 Render" 
+              alt="THEVØIDN13, VW GOL 87 Render" 
               className="w-full max-w-6xl mx-auto rounded-lg"
             />
           </div>
@@ -632,7 +632,7 @@ const Index = () => {
           <div className="my-8">
             <img 
               src={lovecityRender} 
-              alt="THEVØIDN13 — LOVECITY" 
+              alt="THEVØIDN13, LOVECITY" 
               className="w-full max-w-6xl mx-auto rounded-lg"
             />
           </div>
@@ -772,7 +772,7 @@ const Index = () => {
           <div className="my-8">
             <img 
               src={hotelRender} 
-              alt="THEVØIDN13 — HOTEL" 
+              alt="THEVØIDN13, HOTEL" 
               className="w-full max-w-6xl mx-auto rounded-lg"
             />
           </div>
@@ -924,7 +924,7 @@ const Index = () => {
           <div className="my-8">
             <img 
               src={gol2Render} 
-              alt="THEVØIDN13 — VW GOL 87 Interior" 
+              alt="THEVØIDN13, VW GOL 87 Interior" 
               className="w-full max-w-6xl mx-auto rounded-lg"
             />
           </div>
@@ -1544,7 +1544,7 @@ const Index = () => {
                 <>
                   <p className="bible-body">
                     GI é a quietude que sustenta o caos, a frequência constante no meio do ruído. Sua força não vem do gesto, mas da
-                    ausência dele. Onde PUNK provoca e THEVØIDN13 se dissolve, ela observa — e ao observar, transforma. É a testemunha do
+                    ausência dele. Onde PUNK provoca e THEVØIDN13 se dissolve, ela observa, e ao observar, transforma. É a testemunha do
                     invisível, o eixo que impede a queda. Cada olhar é uma tradução do não-dito, cada respiração, uma forma de resistência.
                     Sua presença é quase imperceptível, mas quando se manifesta, muda o ar em volta. GI é o intervalo entre o verbo e o eco,
                     o instante em que o silêncio se torna linguagem. Não atua, reverbera. É o espelho calmo onde o inconsciente dos outros
@@ -1556,7 +1556,7 @@ const Index = () => {
                 <>
                   <p className="bible-body">
                     GI is the stillness that sustains chaos, the constant frequency within the noise. Her strength does not come from action
-                    but from the absence of it. Where PUNK provokes and THEVØIDN13 dissolves, she observes — and through observing,
+                    but from the absence of it. Where PUNK provokes and THEVØIDN13 dissolves, she observes, and through observing,
                     transforms. She is the witness of the unseen, the axis that prevents collapse. Every gaze is a translation of the unspoken,
                     every breath a form of resistance. Her presence is almost imperceptible, yet when it manifests, it alters the air around her.
                     GI is the interval between the word and the echo, the moment when silence becomes language. She does not act, she
@@ -1869,7 +1869,7 @@ const Index = () => {
                     O sinal começa a falhar. A imagem se fragmenta, o som respira pela última vez. O corpo se dissolve, mas a
                     frequência permanece. THEVØIDN13 não termina, apenas muda de forma. O que você escuta agora não é voz, é
                     memória. A transmissão segue viva dentro do ruído, ecoando onde a linguagem não alcança. Desligue as luzes.
-                    Respire fundo. O vazio sabe o caminho de volta. @thevoidn13 — Rastros digitais de uma presença que não quer ser
+                    Respire fundo. O vazio sabe o caminho de volta. @thevoidn13, Rastros digitais de uma presença que não quer ser
                     vista.
                   </p>
                 </>
@@ -1880,7 +1880,7 @@ const Index = () => {
                     The signal begins to fail. The image fractures, the sound takes one last breath. The body dissolves, but the
                     frequency remains. THEVØIDN13 doesn't end, it only changes form. What you hear now isn't a voice, it's memory. The
                     transmission remains alive within the noise, echoing where language cannot reach. Turn off the lights. Breathe
-                    deeply. The void knows the way back. @thevoidn13 — Digital traces of a presence that doesn't wish to be seen.
+                    deeply. The void knows the way back. @thevoidn13, Digital traces of a presence that doesn't wish to be seen.
                   </p>
                 </>
               }
@@ -1915,10 +1915,10 @@ const Index = () => {
                     Esta visualização representa o modelo imaginado para o action figure do personagem e define o mood visual das filmagens que serão realizadas pelo autor do projeto. A estética, iluminação e atmosfera foram desenvolvidas para traduzir o universo conceitual de THEVØIDN13.
                   </p>
                   <p className="bible-body mt-4">
-                    O protótipo funciona como materialização física da persona THEVØIDN13 — uma presença que habita o limiar entre o visível e o invisível, entre a carne e o código. A máscara branca, o capuz negro e a jaqueta de couro não são apenas elementos estéticos, mas símbolos de uma identidade que recusa a exposição total.
+                    O protótipo funciona como materialização física da persona THEVØIDN13, uma presença que habita o limiar entre o visível e o invisível, entre a carne e o código. A máscara branca, o capuz negro e a jaqueta de couro não são apenas elementos estéticos, mas símbolos de uma identidade que recusa a exposição total.
                   </p>
                   <p className="bible-body mt-4">
-                    Esta figura será utilizada em futuras produções audiovisuais como referência de iluminação, composição e atmosfera. O protótipo é tanto documento quanto performance — um objeto que existe simultaneamente como conceito artístico e ferramenta técnica de produção.
+                    Esta figura será utilizada em futuras produções audiovisuais como referência de iluminação, composição e atmosfera. O protótipo é tanto documento quanto performance, um objeto que existe simultaneamente como conceito artístico e ferramenta técnica de produção.
                   </p>
                 </>
                 <>
@@ -1927,10 +1927,10 @@ const Index = () => {
                     This visualization represents the envisioned model for the character's action figure and defines the visual mood for filming to be carried out by the project's author. The aesthetics, lighting, and atmosphere were developed to translate the conceptual universe of THEVØIDN13.
                   </p>
                   <p className="bible-body mt-4">
-                    The prototype functions as a physical materialization of the THEVØIDN13 persona — a presence that inhabits the threshold between visible and invisible, between flesh and code. The white mask, black hood, and leather jacket are not merely aesthetic elements, but symbols of an identity that refuses total exposure.
+                    The prototype functions as a physical materialization of the THEVØIDN13 persona, a presence that inhabits the threshold between visible and invisible, between flesh and code. The white mask, black hood, and leather jacket are not merely aesthetic elements, but symbols of an identity that refuses total exposure.
                   </p>
                   <p className="bible-body mt-4">
-                    This figure will be used in future audiovisual productions as a reference for lighting, composition, and atmosphere. The prototype is both document and performance — an object that exists simultaneously as artistic concept and technical production tool.
+                    This figure will be used in future audiovisual productions as a reference for lighting, composition, and atmosphere. The prototype is both document and performance, an object that exists simultaneously as artistic concept and technical production tool.
                   </p>
                 </>
               </div>

@@ -35,7 +35,7 @@ const Videos = () => {
   const videoCollectionSchema = {
     "@context": "https://schema.org",
     "@type": "VideoGallery",
-    "name": "Portfolio Audiovisual — Castro Pizzano",
+    "name": "Portfolio Audiovisual, Castro Pizzano",
     "description": "Catálogo completo de trabalhos audiovisuais: curtas-metragens, videoperformance, documentários e comerciais",
     "author": {
       "@type": "Person",
@@ -133,8 +133,8 @@ const Videos = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SEO 
-        title="Portfolio de Vídeos — Audiovisual | Castro Pizzano"
-        description="Catálogo completo de trabalhos audiovisuais: curtas-metragens experimentais, videoperformance, documentários e projetos comerciais por Castro Pizzano (цастро™) — CasaTrezeStudio®"
+        title="Portfolio de Vídeos, Audiovisual | Castro Pizzano"
+        description="Catálogo completo de trabalhos audiovisuais: curtas-metragens experimentais, videoperformance, documentários e projetos comerciais por Castro Pizzano (цастро™), CasaTrezeStudio®"
         schemaData={schemaData}
       />
       <Header />
