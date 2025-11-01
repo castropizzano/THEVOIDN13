@@ -85,8 +85,8 @@ const Index = () => {
       {/* {!hasAccess && <AccessGate onAccessGranted={() => setHasAccess(true)} />} */}
       <CookieConsent />
       <SEO 
-        title="THEVØIDN13 — Shadow Interface Bible v13 | Castro Pizzano"
-        description="A Bíblia Definitiva — Um corpo à deriva entre o ruído e o silêncio. Práxis híbrida explorando sombra, silêncio, ruído e vazio através de co-criação humano-máquina."
+        title="THEVØIDN13, Shadow Interface Bible v13 | Castro Pizzano"
+        description="A Bíblia Definitiva, Um corpo à deriva entre o ruído e o silêncio. Práxis híbrida explorando sombra, silêncio, ruído e vazio através de co-criação humano-máquina."
         schemaData={schemaData}
       />
       <Header />

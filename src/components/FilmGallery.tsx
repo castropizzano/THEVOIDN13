@@ -198,7 +198,7 @@ const FilmGallery = () => {
                   </p>
                   <p>
                     Cada filme contribuiu com uma camada visual, estética ou conceitual que 
-                    moldou a linguagem do projeto — desde a textura granulada até os movimentos 
+                    moldou a linguagem do projeto, desde a textura granulada até os movimentos 
                     de câmera e a paleta de cores.
                   </p>
                 </DialogDescription>

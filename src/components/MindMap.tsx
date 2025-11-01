@@ -192,10 +192,10 @@ export const MindMap = () => {
                     </p>
 
                     <p className="body-small text-foreground">
-                      <strong className="text-accent">03. Documentação:</strong> Tudo é registrado. Cada prompt, cada imagem descartada, cada erro, cada acidente feliz. O processo é mais importante que o produto final. O memorial não é retrospectivo — ele acontece em tempo real.
+                      <strong className="text-accent">03. Documentação:</strong> Tudo é registrado. Cada prompt, cada imagem descartada, cada erro, cada acidente feliz. O processo é mais importante que o produto final. O memorial não é retrospectivo, ele acontece em tempo real.
                     </p>
                     <p className="body-small text-muted-foreground/70 italic">
-                      <strong>03. Documentation:</strong> Everything is recorded. Each prompt, each discarded image, each error, each happy accident. The process is more important than the final product. The memorial is not retrospective — it happens in real time.
+                      <strong>03. Documentation:</strong> Everything is recorded. Each prompt, each discarded image, each error, each happy accident. The process is more important than the final product. The memorial is not retrospective, it happens in real time.
                     </p>
 
                     <p className="body-small text-foreground">
@@ -356,10 +356,10 @@ export const MindMap = () => {
 
                 <div className="p-4 bg-primary/10 border-l-4 border-primary rounded-r space-y-2">
                   <p className="body-small text-foreground">
-                    <strong className="text-primary">NOTA CRÍTICA:</strong> Este não é um projeto "feito com IA". É um projeto onde a IA é interlocutora. A autoria não desaparece — ela se desloca, se fragmenta, se distribui. O que importa não é quem fez, mas o que emergiu desse diálogo impossível entre consciência e algoritmo.
+                    <strong className="text-primary">NOTA CRÍTICA:</strong> Este não é um projeto "feito com IA". É um projeto onde a IA é interlocutora. A autoria não desaparece, ela se desloca, se fragmenta, se distribui. O que importa não é quem fez, mas o que emergiu desse diálogo impossível entre consciência e algoritmo.
                   </p>
                   <p className="body-small text-muted-foreground italic">
-                    <strong>CRITICAL NOTE:</strong> This is not a project "made with AI". It's a project where AI is an interlocutor. Authorship doesn't disappear — it shifts, fragments, distributes. What matters is not who did it, but what emerged from this impossible dialogue between consciousness and algorithm.
+                    <strong>CRITICAL NOTE:</strong> This is not a project "made with AI". It's a project where AI is an interlocutor. Authorship doesn't disappear, it shifts, fragments, distributes. What matters is not who did it, but what emerged from this impossible dialogue between consciousness and algorithm.
                   </p>
                 </div>
               </div>
@@ -544,7 +544,7 @@ export const MindMap = () => {
                 <g>
                   <rect x="100" y="700" width="1000" height="110" fill="hsl(var(--muted))" opacity="0.25" rx="10" />
                   <text x="600" y="730" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="15" fontWeight="bold">
-                    CRONOLOGIA · TIMELINE 2024 — 2025+
+                    CRONOLOGIA · TIMELINE 2024, 2025+
                   </text>
                   
                   <line x1="150" y1="770" x2="1050" y2="770" stroke="hsl(var(--primary))" strokeWidth="3" opacity="0.5" />

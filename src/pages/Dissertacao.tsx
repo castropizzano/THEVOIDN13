@@ -43,7 +43,7 @@ const Dissertacao = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SEO 
-        title="LowMovie™ — Dissertação de Mestrado | THEVØIDN13" 
+        title="LowMovie™, Dissertação de Mestrado | THEVØIDN13" 
         description="Dissertação de mestrado em Cinema e Artes do Vídeo explorando subjetividade, subcultura e processos criativos no skate através do filme LowMovie™. CasaTrezeStudio®, LowPressure™ crew por Castro Pizzano" 
         schemaData={schemaData} 
       />

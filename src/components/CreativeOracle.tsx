@@ -81,8 +81,8 @@ const archetypes = {
   shadow: {
     name: 'O ALQUIMISTA DAS SOMBRAS',
     nameEn: 'THE SHADOW ALCHEMIST',
-    description: 'Seu processo criativo mergulha no inconsciente. Você não busca respostas prontas — você desce ao vazio e deixa que ele fale através de você. Sua criação é transmutação.',
-    descriptionEn: 'Your creative process dives into the unconscious. You don\'t seek ready answers — you descend into the void and let it speak through you. Your creation is transmutation.',
+    description: 'Seu processo criativo mergulha no inconsciente. Você não busca respostas prontas, você desce ao vazio e deixa que ele fale através de você. Sua criação é transmutação.',
+    descriptionEn: 'Your creative process dives into the unconscious. You don\'t seek ready answers, you descend into the void and let it speak through you. Your creation is transmutation.',
     message: 'A sombra não é ausência de luz. É potência não nomeada. Continue descendo.',
     messageEn: 'Shadow is not absence of light. It is unnamed power. Keep descending.',
   },

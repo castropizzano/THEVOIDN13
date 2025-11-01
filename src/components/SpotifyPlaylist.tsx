@@ -69,43 +69,43 @@ const SpotifyPlaylist = () => {
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm">
               <div>
                 <p className="text-muted-foreground mb-1">Peso Gravitacional</p>
-                <p className="font-medium">Black Sabbath — Into the Void (1971)</p>
+                <p className="font-medium">Black Sabbath, Into the Void (1971)</p>
               </div>
               <div>
                 <p className="text-muted-foreground mb-1">Corrosão</p>
-                <p className="font-medium">Black Label Society — Rust (2005)</p>
+                <p className="font-medium">Black Label Society, Rust (2005)</p>
               </div>
               <div>
                 <p className="text-muted-foreground mb-1">Fricção Sensorial</p>
-                <p className="font-medium">Deftones — Shove It (1995)</p>
+                <p className="font-medium">Deftones, Shove It (1995)</p>
               </div>
               <div>
                 <p className="text-muted-foreground mb-1">Atmosfera Etérea</p>
-                <p className="font-medium">Vangelis — Blade Runner Blues (1982)</p>
+                <p className="font-medium">Vangelis, Blade Runner Blues (1982)</p>
               </div>
               <div>
                 <p className="text-muted-foreground mb-1">Agressão Controlada</p>
-                <p className="font-medium">Slipknot — Duality (2004)</p>
+                <p className="font-medium">Slipknot, Duality (2004)</p>
               </div>
               <div>
                 <p className="text-muted-foreground mb-1">Caos Catártico</p>
-                <p className="font-medium">Limp Bizkit — Break Stuff (1999)</p>
+                <p className="font-medium">Limp Bizkit, Break Stuff (1999)</p>
               </div>
               <div>
                 <p className="text-muted-foreground mb-1">Melancolia</p>
-                <p className="font-medium">Superheaven — Leach (2015)</p>
+                <p className="font-medium">Superheaven, Leach (2015)</p>
               </div>
               <div>
                 <p className="text-muted-foreground mb-1">Blues Noturno</p>
-                <p className="font-medium">Charles Bradley — The World (2011)</p>
+                <p className="font-medium">Charles Bradley, The World (2011)</p>
               </div>
               <div>
                 <p className="text-muted-foreground mb-1">Blues Clássico</p>
-                <p className="font-medium">Buddy Guy — Tired of Your Jive (1964)</p>
+                <p className="font-medium">Buddy Guy, Tired of Your Jive (1964)</p>
               </div>
               <div>
                 <p className="text-muted-foreground mb-1">Entrega Existencial</p>
-                <p className="font-medium">Frank Sinatra — My Way (1969)</p>
+                <p className="font-medium">Frank Sinatra, My Way (1969)</p>
               </div>
             </div>
           </div>

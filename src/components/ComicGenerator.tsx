@@ -165,7 +165,7 @@ export const ComicGenerator = () => {
           Gerador Experimental de Still
         </CardTitle>
         <CardDescription className="lang-pill">
-          Still Generator — Powered by Nano Banana (Gemini 2.5 Flash Image)
+          Still Generator, Powered by Nano Banana (Gemini 2.5 Flash Image)
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">

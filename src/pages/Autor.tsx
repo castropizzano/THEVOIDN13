@@ -20,8 +20,8 @@ const Autor = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SEO 
-        title="Castro Pizzano (цастро™) — Artista e Pesquisador | THEVØIDN13"
-        description="Castro Pizzano (цастро™): Artista visual, designer e cineasta experimental. Fundador da CasaTrezeStudio®, co-criador LowPressure™ crew. Mestrado em Cinema e Artes do Vídeo — UNESPAR"
+        title="Castro Pizzano (цастро™), Artista e Pesquisador | THEVØIDN13"
+        description="Castro Pizzano (цастро™): Artista visual, designer e cineasta experimental. Fundador da CasaTrezeStudio®, co-criador LowPressure™ crew. Mestrado em Cinema e Artes do Vídeo, UNESPAR"
         schemaData={schemaData}
         type="profile"
       />
@@ -273,7 +273,7 @@ const Autor = () => {
               <div className="space-y-6 mt-6">
                 <p className="bible-body">A jornada começa no skate. Não como esporte, mas como modo de habitar o mundo. O corpo em movimento pelo espaço urbano. A apropriação criativa da cidade. Das manobras na rua às manobras no vídeo. Da câmera VHS à edição digital.</p>
                 
-                <p className="bible-body">2008: Funda CasaTrezeStudio. Começa a construir sua própria infraestrutura criativa. Design, vídeo, direção de arte. O coletivo como espaço de experimentação. 2014-2016: UDNFS no MuMA — primeira exposição institucional, democratização audiovisual DIY. 2019: Subtropikal Festival — criação de ID Visual do zero aplicando processos criativos ao vivo. 2020: LowPressure crew se formaliza. O skate ganha forma de movimento cultural. 2019-2022: Produção de LowMovie. O processo como obra.</p>
+                <p className="bible-body">2008: Funda CasaTrezeStudio. Começa a construir sua própria infraestrutura criativa. Design, vídeo, direção de arte. O coletivo como espaço de experimentação. 2014-2016: UDNFS no MuMA, primeira exposição institucional, democratização audiovisual DIY. 2019: Subtropikal Festival, criação de ID Visual do zero aplicando processos criativos ao vivo. 2020: LowPressure crew se formaliza. O skate ganha forma de movimento cultural. 2019-2022: Produção de LowMovie. O processo como obra.</p>
                 
                 <p className="bible-body">2023: Estreia de LowMovie no Cine Passeio. Do underground à tela grande. Ingresso no mestrado em Cinema e Artes do Vídeo (UNESPAR). A prática vira pesquisa. A pesquisa alimenta a prática. 2024: ⊂ødx — videoarte e instalação urbana sobre resistência e apagamento. 2024-2025: THEVØIDN13 emerge. A anti-marca que condensa tudo que veio antes.</p>
               </div>
