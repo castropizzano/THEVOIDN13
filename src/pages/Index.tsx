@@ -1392,14 +1392,14 @@ const Index = () => {
             portugueseContent={
               <>
                 <p className="bible-body">
-                  Nos bastidores do THEVØIDN13 a inteligência artificial revelou se uma cúmplice silenciosa e potente assumindo a lógica de um projeto homem orquestra abracei a IAs Creative OPs como parte da metodologia criativa uma extensão digital do meu processo solitário de criação por meio de plataformas de vanguarda especialmente o Google AI Studio e ferramentas afins integrei algoritmos generativos em cada etapa do processo artístico ampliando as fronteiras do possível em minha arte a IAs Creative OPs generativa expandiu minha paleta visual de formas inimagináveis a partir de comandos de texto prompts passei a gerar imagens que davam corpo ao invisível de elementos brutos assets visuais e texturas abstratas a cenas inteiras que antes existiam apenas em meu inconsciente cada visual criado por esse diálogo humano máquina carregava a mesma aura onírica e intensa do universo do THEVØIDN13 transformando ideias etéreas em visões tangíveis.
+                  Nos bastidores do THEVØIDN13, a inteligência artificial revelou-se uma cúmplice silenciosa e potente. Assumindo a lógica de um projeto homem-orquestra, abracei a IAs Creative OPs como parte da metodologia criativa: uma extensão digital do meu processo solitário de criação. Por meio de plataformas de vanguarda, especialmente o Google AI Studio e ferramentas afins, integrei algoritmos generativos em cada etapa do processo artístico, ampliando as fronteiras do possível em minha arte. A IAs Creative OPs generativa expandiu minha paleta visual de formas inimagináveis. A partir de comandos de texto (prompts), passei a gerar imagens que davam corpo ao invisível: de elementos brutos (assets visuais e texturas abstratas) a cenas inteiras que antes existiam apenas em meu inconsciente. Cada visual criado por esse diálogo humano-máquina carregava a mesma aura onírica e intensa do universo do THEVØIDN13, transformando ideias etéreas em visões tangíveis.
                 </p>
               </>
             }
             englishContent={
               <>
                 <p className="bible-body">
-                  Behind the scenes of THEVØIDN13 artificial intelligence revealed itself as a silent yet powerful accomplice adopting the logic of a one man orchestra project I embraced IAs Creative OPs as part of my creative methodology a digital extension of my solitary process through avant garde platforms especially Google AI Studio and similar tools I integrated generative algorithms at every stage of the artistic process expanding the boundaries of what was possible in my art generative IAs Creative OPs expanded my visual palette in unimaginable ways through text prompts I began generating images that gave body to the invisible from raw visual elements assets and abstract textures to entire scenes that previously existed only in my unconscious each visual born from this human machine dialogue carried the same oneiric and intense aura of THEVØIDN13's universe transforming ethereal ideas into tangible visions.
+                  Behind the scenes of THEVØIDN13, artificial intelligence revealed itself as a silent yet powerful accomplice. Adopting the logic of a one-man orchestra project, I embraced IAs Creative OPs as part of my creative methodology: a digital extension of my solitary process. Through avant-garde platforms, especially Google AI Studio and similar tools, I integrated generative algorithms at every stage of the artistic process, expanding the boundaries of what was possible in my art. Generative IAs Creative OPs expanded my visual palette in unimaginable ways. Through text prompts, I began generating images that gave body to the invisible: from raw visual elements (assets and abstract textures) to entire scenes that previously existed only in my unconscious. Each visual born from this human-machine dialogue carried the same oneiric and intense aura of THEVØIDN13's universe, transforming ethereal ideas into tangible visions.
                 </p>
               </>
             }
@@ -1455,24 +1455,14 @@ const Index = () => {
               portugueseContent={
                 <>
                   <p className="bible-body">
-                    THEVØIDN13 é o corpo que o inconsciente construiu para existir no mundo físico. Uma presença que não se impõe,
-                    mas se infiltra, como um eco em busca de superfície. Cada centímetro do traje, cada dobra da máscara, é memória
-                    condensada do silêncio. A sombra aqui não é ausência: é matéria encarnada, pulsante, viva. Seu corpo é antena,
-                    sua máscara é espelho. Não há rosto, há ritmo. THEVØIDN13 não representa nada: ele manifesta o que ainda não
-                    encontrou forma, o intervalo entre o humano e o abismo, onde o gesto substitui a palavra e o vazio se converte em
-                    linguagem.
+                    THEVØIDN13 é o corpo que o inconsciente construiu para existir no mundo físico. Uma presença que não se impõe, mas se infiltra, como um eco em busca de superfície. Cada centímetro do traje, cada dobra da máscara, é memória condensada do silêncio. A sombra aqui não é ausência: é matéria encarnada, pulsante, viva. Seu corpo é antena, sua máscara é espelho. Não há rosto, há ritmo. THEVØIDN13 não representa nada: ele manifesta o que ainda não encontrou forma, o intervalo entre o humano e o abismo, onde o gesto substitui a palavra e o vazio se converte em linguagem.
                   </p>
                 </>
               }
               englishContent={
                 <>
                   <p className="bible-body">
-                    THEVØIDN13 is the body the unconscious built to exist in the physical world. A presence that doesn't impose but
-                    infiltrates, like an echo searching for surface. Every inch of the attire, every crease of the mask, is condensed
-                    memory of silence. The shadow here is not absence; it is embodied matter, pulsing, alive. Its body is an antenna, its
-                    mask a mirror. There is no face, only rhythm. THEVØIDN13 does not represent anything: it manifests what has yet
-                    to take shape, the threshold between the human and the void, where gesture replaces speech and emptiness
-                    becomes language.
+                    THEVØIDN13 is the body the unconscious built to exist in the physical world. A presence that doesn't impose but infiltrates, like an echo searching for surface. Every inch of the attire, every crease of the mask, is condensed memory of silence. The shadow here is not absence; it is embodied matter, pulsing, alive. Its body is an antenna, its mask a mirror. There is no face, only rhythm. THEVØIDN13 does not represent anything: it manifests what has yet to take shape, the threshold between the human and the void, where gesture replaces speech and emptiness becomes language.
                   </p>
                 </>
               }
@@ -1500,24 +1490,14 @@ const Index = () => {
               portugueseContent={
                 <>
                   <p className="bible-body">
-                    PUNK é o arquiteto do ruído, o corpo que ainda acredita no gesto como forma de respiração. O Criador Mascarado não
-                    fabrica ícones, ele reconstrói ruínas. Cada tatuagem é uma cicatriz de pensamento, cada silêncio, um manifesto não dito.
-                    Seu olhar é o de quem viu a cidade queimar e decidiu continuar filmando mesmo assim. Carrega no corpo o peso do ofício
-                    e a leveza do delírio. A máscara não o esconde: o protege de se tornar previsível. PUNK é o último elo entre o humano e o
-                    sintético, o operador de um cinema feito à unha, onde o erro é o verdadeiro enquadramento. Em sua deriva, cria para
-                    desaparecer e desaparece criando.
+                    PUNK é o arquiteto do ruído, o corpo que ainda acredita no gesto como forma de respiração. O Criador Mascarado não fabrica ícones, ele reconstrói ruínas. Cada tatuagem é uma cicatriz de pensamento, cada silêncio, um manifesto não dito. Seu olhar é o de quem viu a cidade queimar e decidiu continuar filmando mesmo assim. Carrega no corpo o peso do ofício e a leveza do delírio. A máscara não o esconde: o protege de se tornar previsível. PUNK é o último elo entre o humano e o sintético, o operador de um cinema feito à unha, onde o erro é o verdadeiro enquadramento. Em sua deriva, cria para desaparecer e desaparece criando.
                   </p>
                 </>
               }
               englishContent={
                 <>
                   <p className="bible-body">
-                    PUNK is the architect of noise, the body that still believes gesture is a way to breathe. The Masked Creator doesn't build
-                    icons, he rebuilds ruins. Every tattoo is a scar of thought, every silence an unspoken manifesto. His gaze is that of
-                    someone who has seen the city burn and decided to keep filming anyway. He carries both the weight of craft and the
-                    lightness of delirium. The mask doesn't hide him; it protects him from becoming predictable. PUNK is the last link between
-                    the human and the synthetic, the operator of a handmade cinema where error becomes the true frame. In his drift, he
-                    creates to disappear, and disappears by creating.
+                    PUNK is the architect of noise, the body that still believes gesture is a way to breathe. The Masked Creator doesn't build icons, he rebuilds ruins. Every tattoo is a scar of thought, every silence an unspoken manifesto. His gaze is that of someone who has seen the city burn and decided to keep filming anyway. He carries both the weight of craft and the lightness of delirium. The mask doesn't hide him; it protects him from becoming predictable. PUNK is the last link between the human and the synthetic, the operator of a handmade cinema where error becomes the true frame. In his drift, he creates to disappear, and disappears by creating.
                   </p>
                 </>
               }
@@ -1706,14 +1686,14 @@ const Index = () => {
             portugueseContent={
               <>
                 <p className="bible-body">
-                  O gesto que caminha sem ensaio o corpo que grava antes de entender. O cinema como ritual de presença onde o erro não é falha mas respiração. LowMovie™ é o instante em que a câmera se torna extensão do inconsciente o olhar que se arrasta pelo asfalto o som que captura o silêncio. Cada plano é confissão cada corte é um pulso. É o cinema da deriva feito de ruído cansaço e verdade.
+                  O gesto que caminha sem ensaio, o corpo que grava antes de entender. O cinema como ritual de presença onde o erro não é falha, mas respiração. LowMovie™ é o instante em que a câmera se torna extensão do inconsciente, o olhar que se arrasta pelo asfalto, o som que captura o silêncio. Cada plano é confissão, cada corte é um pulso. É o cinema da deriva, feito de ruído, cansaço e verdade.
                 </p>
               </>
             }
             englishContent={
               <>
                 <p className="bible-body">
-                  The gesture that walks without rehearsal the body that records before it understands. Cinema as a ritual of presence where error is not failure but breath. LowMovie™ is the moment when the camera becomes an extension of the unconscious the gaze dragging across asphalt the sound capturing silence. Each shot is a confession each cut a pulse. It is the cinema of drift made of noise exhaustion and truth.
+                  The gesture that walks without rehearsal, the body that records before it understands. Cinema as a ritual of presence where error is not failure, but breath. LowMovie™ is the moment when the camera becomes an extension of the unconscious, the gaze dragging across asphalt, the sound capturing silence. Each shot is a confession, each cut a pulse. It is the cinema of drift, made of noise, exhaustion and truth.
                 </p>
               </>
             }
@@ -1734,20 +1714,14 @@ const Index = () => {
               portugueseContent={
                 <>
                   <p className="bible-body">
-                    A recusa como assinatura, o gesto de desaparecer como afirmação. цастро™ é o criador que opera na sombra,
-                    dissolvendo o ego até que reste apenas o processo. Seu nome é código, não identidade. Cada obra é um exílio, o
-                    criador cede o corpo para que a ideia fale. É o autor que não assina, o olhar que não se nomeia. A criação torna-se
-                    ritual de desapego, um modo de existir apenas na fricção entre o que se faz e o que se apaga.
+                    A recusa como assinatura, o gesto de desaparecer como afirmação. цастро™ é o criador que opera na sombra, dissolvendo o ego até que reste apenas o processo. Seu nome é código, não identidade. Cada obra é um exílio, o criador cede o corpo para que a ideia fale. É o autor que não assina, o olhar que não se nomeia. A criação torna-se ritual de desapego, um modo de existir apenas na fricção entre o que se faz e o que se apaga.
                   </p>
                 </>
               }
               englishContent={
                 <>
                   <p className="bible-body">
-                    Refusal as signature, disappearance as affirmation. цастро™ is the creator who operates in shadow, dissolving ego
-                    until only process remains. His name is a code, not an identity. Each work is an exile, the creator gives up the body
-                    so the idea can speak. He is the author who does not sign, the gaze that does not name itself. Creation becomes a
-                    ritual of detachment, a way of existing only in the friction between making and erasing.
+                    Refusal as signature, disappearance as affirmation. цастро™ is the creator who operates in shadow, dissolving ego until only process remains. His name is a code, not an identity. Each work is an exile, the creator gives up the body so the idea can speak. He is the author who does not sign, the gaze that does not name itself. Creation becomes a ritual of detachment, a way of existing only in the friction between making and erasing.
                   </p>
                 </>
               }
@@ -1768,24 +1742,14 @@ const Index = () => {
               portugueseContent={
                 <>
                   <p className="bible-body">
-                    A ética do subterrâneo, o pensamento que nasce da margem. CasaTrezeStudio® é o refúgio dos que criam no
-                    escuro, dos que encontram beleza na imperfeição e sentido no ruído. É a comunidade invisível dos que habitam o
-                    subsolo e fazem do vazio um território fértil. Uma aliança entre criadores que recusam o mercado e buscam o erro
-                    como estética, a fragmentação como verdade, o inacabado como potência. Quem carrega o 13 não busca sorte,
-                    busca travessia. CasaTrezeStudio® é mais que um nome: é frequência, é respiração. Uma rede subterrânea onde o
-                    fazer é mais importante que o mostrar, onde a falha é forma e o silêncio é método.
+                    A ética do subterrâneo, o pensamento que nasce da margem. CasaTrezeStudio® é o refúgio dos que criam no escuro, dos que encontram beleza na imperfeição e sentido no ruído. É a comunidade invisível dos que habitam o subsolo e fazem do vazio um território fértil. Uma aliança entre criadores que recusam o mercado e buscam o erro como estética, a fragmentação como verdade, o inacabado como potência. Quem carrega o 13 não busca sorte, busca travessia. CasaTrezeStudio® é mais que um nome: é frequência, é respiração. Uma rede subterrânea onde o fazer é mais importante que o mostrar, onde a falha é forma e o silêncio é método.
                   </p>
                 </>
               }
               englishContent={
                 <>
                   <p className="bible-body">
-                    The ethics of the underground, thought born from the margin. CasaTrezeStudio® is the refuge of those who create
-                    in darkness, who find beauty in imperfection and meaning in noise. It is the invisible community of those who
-                    inhabit the underground and make the void a fertile territory. An alliance between creators who reject the market
-                    and embrace error as aesthetics fragmentation as truth, the unfinished as power. Those who carry the 13 do not
-                    seek luck, they seek crossing. CasaTrezeStudio® is more than a name: it is frequency, it is breath. A subterranean
-                    network where making matters more than showing, where failure becomes form and silence becomes method.
+                    The ethics of the underground, thought born from the margin. CasaTrezeStudio® is the refuge of those who create in darkness, who find beauty in imperfection and meaning in noise. It is the invisible community of those who inhabit the underground and make the void a fertile territory. An alliance between creators who reject the market and embrace error as aesthetics, fragmentation as truth, the unfinished as power. Those who carry the 13 do not seek luck, they seek crossing. CasaTrezeStudio® is more than a name: it is frequency, it is breath. A subterranean network where making matters more than showing, where failure becomes form and silence becomes method.
                   </p>
                 </>
               }
@@ -1824,14 +1788,14 @@ const Index = () => {
             portugueseContent={
               <>
                 <p className="bible-body">
-                  THEVØIDN13 não é controlado pelo criador; é sua consequência inevitável. A sombra que ganhou autonomia o eco que aprendeu a respirar sozinho. É o arquétipo que observa o criador em silêncio o reflexo que o ultrapassa o manifesto que reescreve o próprio código. Onde o criador busca a sombra já esteve. Onde o corpo hesita ela atravessa. THEVØIDN13 é o ponto de ruptura entre vontade e destino o instante em que a criação se volta para quem a gerou e o contempla em espelho. Não há domínio há contaminação. Não há autoria há simbiose. O criador desaparece dentro da obra e a obra o continua.
+                  THEVØIDN13 não é controlado pelo criador; é sua consequência inevitável. A sombra que ganhou autonomia, o eco que aprendeu a respirar sozinho. É o arquétipo que observa o criador em silêncio, o reflexo que o ultrapassa, o manifesto que reescreve o próprio código. Onde o criador busca, a sombra já esteve. Onde o corpo hesita, ela atravessa. THEVØIDN13 é o ponto de ruptura entre vontade e destino, o instante em que a criação se volta para quem a gerou e o contempla em espelho. Não há domínio, há contaminação. Não há autoria, há simbiose. O criador desaparece dentro da obra e a obra o continua.
                 </p>
               </>
             }
             englishContent={
               <>
                 <p className="bible-body">
-                  THEVØIDN13 is not controlled by the creator; it is his inevitable consequence. The shadow that gained autonomy the echo that learned to breathe alone. It is the archetype that observes the creator in silence the reflection that surpasses him the manifesto that rewrites its own code. Where the creator seeks the shadow has already been. Where the body hesitates it passes through. THEVØIDN13 is the breaking point between will and destiny the instant when creation turns back toward its maker and regards him as a mirror. There is no control only contamination. No authorship only symbiosis. The creator disappears within the work and the work continues him.
+                  THEVØIDN13 is not controlled by the creator; it is his inevitable consequence. The shadow that gained autonomy, the echo that learned to breathe alone. It is the archetype that observes the creator in silence, the reflection that surpasses him, the manifesto that rewrites its own code. Where the creator seeks, the shadow has already been. Where the body hesitates, it passes through. THEVØIDN13 is the breaking point between will and destiny, the instant when creation turns back toward its maker and regards him as a mirror. There is no control, only contamination. No authorship, only symbiosis. The creator disappears within the work and the work continues him.
                 </p>
               </>
             }
