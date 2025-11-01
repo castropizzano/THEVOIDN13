@@ -68,6 +68,7 @@ import charactersStudyV2 from "@/assets/characters-study-v2.png";
 import charactersStudyInitial from "@/assets/characters-study-initial.png";
 import corsaRender2 from "@/assets/corsa-render-2.png";
 import sideRender from "@/assets/side-render.png";
+import voidStreetThumbnail from "@/assets/void-street-thumbnail.png";
 
 const Index = () => {
   const [oracleOpen, setOracleOpen] = useState(false);
@@ -126,6 +127,7 @@ const Index = () => {
               className="w-full aspect-video bg-black rounded-lg overflow-hidden"
               controls
               playsInline
+              poster={voidStreetThumbnail}
             >
               <source src="/videos/intro.mp4" type="video/mp4" />
             </video>
