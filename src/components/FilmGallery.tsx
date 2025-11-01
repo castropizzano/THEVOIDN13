@@ -8,6 +8,12 @@ import akiraPoster from "@/assets/posters/akira.jpg";
 import fallenAngelsPoster from "@/assets/posters/fallen-angels.jpg";
 import thx1138Poster from "@/assets/posters/thx1138.jpg";
 import brazilPoster from "@/assets/posters/brazil.jpg";
+import equilibriumPoster from "@/assets/posters/equilibrium.jpg";
+import poster1984 from "@/assets/posters/1984.jpg";
+import theWarriorsPoster from "@/assets/posters/the-warriors.jpg";
+import christianeFPoster from "@/assets/posters/christiane-f.jpg";
+import perfectDaysPoster from "@/assets/posters/perfect-days.jpg";
+import backToTheFuturePoster from "@/assets/posters/back-to-the-future.jpg";
 import {
   Dialog,
   DialogContent,
@@ -95,7 +101,7 @@ const FilmGallery = () => {
       director: "Kurt Wimmer",
       year: 2002,
       imdbId: "tt0238380",
-      posterUrl: "https://m.media-amazon.com/images/M/MV5BMTkwNDY2ODIzMV5BMl5BanBnXkFtZTYwNTc2NDM3._V1_SX300.jpg",
+      posterUrl: equilibriumPoster,
       description: "Supressão emocional"
     },
     {
@@ -103,7 +109,7 @@ const FilmGallery = () => {
       director: "Walter Hill",
       year: 1979,
       imdbId: "tt0080120",
-      posterUrl: "https://m.media-amazon.com/images/M/MV5BNzA1OTUxNjQyNV5BMl5BanBnXkFtZTgwMjU1ODAyNzE@._V1_SX300.jpg",
+      posterUrl: theWarriorsPoster,
       description: "Deriva urbana"
     },
     {
@@ -111,7 +117,7 @@ const FilmGallery = () => {
       director: "Michael Radford",
       year: 1984,
       imdbId: "tt0087803",
-      posterUrl: "https://m.media-amazon.com/images/M/MV5BMDU0ZGQ0MjItODlkNS00ZWVlLWE1YzQtYmI0YTlkNWNhMTQyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+      posterUrl: poster1984,
       description: "Vigilância total"
     },
     {
@@ -119,7 +125,7 @@ const FilmGallery = () => {
       director: "Uli Edel",
       year: 1981,
       imdbId: "tt0082176",
-      posterUrl: "https://m.media-amazon.com/images/M/MV5BMTQxNjg5OTYwMl5BMl5BanBnXkFtZTgwNjk3Mjk2MTE@._V1_SX300.jpg",
+      posterUrl: christianeFPoster,
       description: "Deriva poética"
     },
     {
@@ -127,7 +133,7 @@ const FilmGallery = () => {
       director: "Wim Wenders",
       year: 2023,
       imdbId: "tt27503384",
-      posterUrl: "https://m.media-amazon.com/images/M/MV5BNzQxNDk0ODU3Ml5BMl5BanBnXkFtZTgwNzI5ODU4MzE@._V1_SX300.jpg",
+      posterUrl: perfectDaysPoster,
       description: "Ritmo existencial"
     },
     {
@@ -135,7 +141,7 @@ const FilmGallery = () => {
       director: "Robert Zemeckis",
       year: 1985,
       imdbId: "tt0088763",
-      posterUrl: "https://m.media-amazon.com/images/M/MV5BZmU0M2Y1OGUtZjIxNi00ZjBkLTg1MjgtOWIyNThiZWIwYjRiXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+      posterUrl: backToTheFuturePoster,
       description: "Temporalidade"
     }
   ];
