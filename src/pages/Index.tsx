@@ -269,23 +269,22 @@ const Index = () => {
             />
           </div>
 
-          <h3 className="subsection-title mt-8">1.2 QUANDO O INCONSCIENTE GANHA CORPO</h3>
-          <h3 className="subsection-title mb-6">1.2 WHEN THE UNCONSCIOUS GAINS BODY</h3>
-
           <BilingualContent
             portugueseContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <h3 className="bible-subtitle">1.2 QUANDO O INCONSCIENTE GANHA CORPO</h3>
+                <p className="bible-body bible-section-spacing">
                   Não foi uma fantasia foi um retorno um desses chamados que vêm de dentro quando o inconsciente começa a bater na pele pedindo passagem pensei em inventar uma máscara e acabei revelando um rosto que sempre esteve ali THEVØIDN13 surgiu do atrito entre o desejo e o cansaço entre o fim da forma e o começo da presença não é personagem nem alter ego é uma presença que respira onde o corpo falha um modo de existir sem precisar se exibir respirar sem ter que performar um corpo que se apaga para deixar a imagem viver o instante em que o inconsciente decide existir seu corpo permite atravessar o invisível tornando matéria.
                 </p>
-              </div>
+              </>
             }
             englishContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <h3 className="bible-subtitle">1.2 WHEN THE UNCONSCIOUS GAINS BODY</h3>
+                <p className="bible-body bible-section-spacing">
                   It was not a fantasy it was a return one of those calls that come from within when the unconscious begins to knock on the skin asking for passage I thought I was inventing a mask and ended up revealing a face that was always there THEVØIDN13 emerged from the friction between desire and exhaustion between the end of form and the beginning of presence it is neither character nor alter ego it is a presence that breathes where the body fails a way of existing without needing to exhibit oneself breathing without having to perform a body that fades to let the image live the instant when the unconscious decides to exist its body allows crossing making matter visible.
                 </p>
-              </div>
+              </>
             }
           />
 
@@ -303,23 +302,22 @@ const Index = () => {
 
         {/* ===== 2. FILOSOFIA CENTRAL ===== */}
         <BilingualSection className="py-16">
-          <h2 className="section-title">2. FILOSOFIA CENTRAL (A SOMBRA ENCARNADA)</h2>
-          <h2 className="section-title mb-8">2. CENTRAL PHILOSOPHY (THE EMBODIED SHADOW)</h2>
-
           <BilingualContent
             portugueseContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <h2 className="bible-title">2. FILOSOFIA CENTRAL (A SOMBRA ENCARNADA)</h2>
+                <p className="bible-body bible-section-spacing">
                   THEVØIDN13 é o décimo terceiro andar do inconsciente um espaço entre mundos onde o ego se apaga para que a imagem respire, não é personagem nem avatar é um estado de travessia, não é um ser é um ritmo, a forma que o inconsciente assume para respirar no ruído da cidade, existe para absorver não para reagir, sua ética é a do silêncio uma recusa ativa da autoafirmação, The Void é o nome que restou depois que todos os outros já morreram o número treze é a assinatura do que retorna depois do fim.
                 </p>
-              </div>
+              </>
             }
             englishContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <h2 className="bible-title">2. CENTRAL PHILOSOPHY (THE EMBODIED SHADOW)</h2>
+                <p className="bible-body bible-section-spacing">
                   THEVØIDN13 is the thirteenth floor of the unconscious a space between worlds where the ego fades so the image can breathe, it is neither character nor avatar it is a state of crossing, it is not a being it is a rhythm, the form the unconscious assumes to breathe in the noise of the city, it exists to absorb not to react, its ethic is that of silence an active refusal of self-affirmation, The Void is the name that remained after all others had died thirteen is the signature of what returns after the end.
                 </p>
-              </div>
+              </>
             }
           />
 
@@ -337,51 +335,45 @@ const Index = () => {
 
         {/* ===== 3. A ENTIDADE: THEVØIDN13 ===== */}
         <BilingualSection className="py-16">
-          <h2 className="section-title">3. A ENTIDADE: THEVØIDN13</h2>
-          <h2 className="section-title mb-8">3. THE ENTITY: THEVØIDN13</h2>
-
-          <h3 className="subsection-title">3.1 FUNÇÃO SIMBÓLICA</h3>
-          <h3 className="subsection-title mb-6">3.1 SYMBOLIC FUNCTION</h3>
-
           <BilingualContent
             portugueseContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <h2 className="bible-title">3. A ENTIDADE: THEVØIDN13</h2>
+                <h3 className="bible-subtitle">3.1 FUNÇÃO SIMBÓLICA</h3>
+                <p className="bible-body bible-section-spacing">
                   A função simbólica de THEVØIDN13 é dar corpo ao invisível traduzir o silêncio em gesto o inconsciente em imagem ele é o espelho do caos contemporâneo um ser que surge quando o verbo deixa de fazer sentido sua presença não explica convoca THEVØIDN13 é o instante em que o erro se torna ritual e o colapso criação ele converte ausência em forma tangível.
                 </p>
-              </div>
+              </>
             }
             englishContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <h2 className="bible-title">3. THE ENTITY: THEVØIDN13</h2>
+                <h3 className="bible-subtitle">3.1 SYMBOLIC FUNCTION</h3>
+                <p className="bible-body bible-section-spacing">
                   The symbolic function of THEVØIDN13 is to give body to the invisible to translate silence into gesture the unconscious into image it is the mirror of contemporary chaos a being that appears when the word ceases to make sense its presence does not explain it summons THEVØIDN13 is the instant when error becomes ritual and collapse becomes creation it converts absence into tangible form.
                 </p>
-              </div>
+              </>
             }
           />
-
-          <h3 className="subsection-title mt-8">3.2 ARQUÉTIPO E NATUREZA</h3>
-          <h3 className="subsection-title mb-6">3.2 ARCHETYPE AND NATURE</h3>
 
           <BilingualContent
             portugueseContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <h3 className="bible-subtitle">3.2 ARQUÉTIPO E NATUREZA</h3>
+                <p className="bible-body bible-section-spacing">
                   THEVØIDN13 encarna a sombra junguiana não como vilão mas como espelho do que foi reprimido é o corpo caminhando entre a razão e o delírio entre o controle e o colapso sua natureza é liminar existe no intervalo entre o som e o silêncio entre o gesto e o pensamento é o errante o que não pertence a lugar algum e o redentor subterrâneo sua essência pulsa no limiar do ser.
                 </p>
-              </div>
+              </>
             }
             englishContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <h3 className="bible-subtitle">3.2 ARCHETYPE AND NATURE</h3>
+                <p className="bible-body bible-section-spacing">
                   THEVØIDN13 embodies the Jungian shadow not as a villain but as a mirror of what has been repressed it is the body walking between reason and delirium between control and collapse its nature is liminal existing in the interval between sound and silence between gesture and thought it is the wanderer the one who belongs nowhere and the subterranean redeemer its essence pulses at the threshold of being.
                 </p>
-              </div>
+              </>
             }
           />
-
-          <h3 className="subsection-title mt-8">3.3 A MÁSCARA | CEDER ESPAÇO AO INCONSCIENTE</h3>
-          <h3 className="subsection-title mb-6">3.3 THE MASK | YIELDING SPACE TO THE UNCONSCIOUS</h3>
 
           <div className="my-8">
             <img 
