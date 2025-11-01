@@ -330,7 +330,7 @@ const Autor = () => {
                 </div>
 
                 <div className="mt-8 pt-8 border-t border-border">
-                  <h4 className="bible-subtitle mb-4">Formação Complementar</h4>
+                  <h4 className="bible-subtitle">Formação Complementar</h4>
                   <div className="space-y-2">
                     <p className="bible-link">• Técnico em Design Gráfico, CEFET-PR [1999]</p>
                     <p className="bible-link">• Direção de Arte em Cinema, AIC - Academia Internacional de Cinema [2004]</p>
@@ -375,7 +375,7 @@ const Autor = () => {
                 </div>
 
                 <div className="mt-8 pt-8 border-t border-border">
-                  <h4 className="bible-subtitle mb-4">Additional Training</h4>
+                  <h4 className="bible-subtitle">Additional Training</h4>
                   <div className="space-y-2">
                     <p className="bible-link">• Technical Degree in Graphic Design, CEFET-PR [1999]</p>
                     <p className="bible-link">• Art Direction in Cinema, AIC - International Cinema Academy [2004]</p>
@@ -434,26 +434,26 @@ const Autor = () => {
                 <h3 className="bible-subtitle">A Semiótica do Símbolo</h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-link font-bold uppercase mb-2">ЦАСТРО</h4>
+                    <h4 className="bible-link font-bold uppercase">ЦАСТРО</h4>
                     <p className="bible-link">Transliteração que cria ruído e nega a leitura imediata, uma máscara estética</p>
                   </div>
                   <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-link font-bold uppercase mb-2">"1984"</h4>
+                    <h4 className="bible-link font-bold uppercase">"1984"</h4>
                     <p className="bible-link">Referência ao controle cultural, à vigilância e à resistência autoral</p>
                   </div>
                   <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-link font-bold uppercase mb-2">™</h4>
+                    <h4 className="bible-link font-bold uppercase">™</h4>
                     <p className="bible-link">Ironia: o símbolo do mercado aplicado a uma anti-marca</p>
                   </div>
                   <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-link font-bold uppercase mb-2">Paleta</h4>
+                    <h4 className="bible-link font-bold uppercase">Paleta</h4>
                     <p className="bible-link">Preto e rosa-pálido = choque entre dureza e sensibilidade; brutalismo afetivo</p>
                   </div>
                 </div>
                 
                 <div className="bg-destructive -mx-6 px-6 py-8 rounded-lg">
-                  <h3 className="bible-subtitle text-destructive-foreground mb-4">Conclusão</h3>
-                  <p className="bible-body text-destructive-foreground mb-4">A identidade ЦАСТРО é um exercício de negação criativa. É o avesso do branding para relembrar o que o design pode ser: linguagem, manifesto, resistência.</p>
+                  <h3 className="bible-subtitle text-destructive-foreground">Conclusão</h3>
+                  <p className="bible-body text-destructive-foreground">A identidade ЦАСТРО é um exercício de negação criativa. É o avesso do branding para relembrar o que o design pode ser: linguagem, manifesto, resistência.</p>
                   <p className="bible-body font-bold italic text-destructive-foreground text-center">Não é um logo para ser lembrado, é uma ideia para ser compreendida, tarde demais.</p>
                 </div>
               </div>
@@ -489,26 +489,26 @@ const Autor = () => {
                 <h3 className="bible-subtitle">The Semiotics of the Symbol</h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-link font-bold uppercase mb-2">ЦАСТРО</h4>
+                    <h4 className="bible-link font-bold uppercase">ЦАСТРО</h4>
                     <p className="bible-link">Transliteration that creates noise and denies immediate reading, an aesthetic mask</p>
                   </div>
                   <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-link font-bold uppercase mb-2">"1984"</h4>
+                    <h4 className="bible-link font-bold uppercase">"1984"</h4>
                     <p className="bible-link">Reference to cultural control, surveillance, and authorial resistance</p>
                   </div>
                   <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-link font-bold uppercase mb-2">™</h4>
+                    <h4 className="bible-link font-bold uppercase">™</h4>
                     <p className="bible-link">Irony: the market symbol applied to an anti-brand</p>
                   </div>
                   <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-link font-bold uppercase mb-2">Palette</h4>
+                    <h4 className="bible-link font-bold uppercase">Palette</h4>
                     <p className="bible-link">Black and pale pink = clash between hardness and sensitivity; affective brutalism</p>
                   </div>
                 </div>
                 
                 <div className="bg-destructive -mx-6 px-6 py-8 rounded-lg">
-                  <h3 className="bible-subtitle text-destructive-foreground mb-4">Conclusion</h3>
-                  <p className="bible-body text-destructive-foreground mb-4">The ЦАСТРО identity is an exercise in creative negation. It's the reverse of branding to remind us what design can be: language, manifesto, resistance.</p>
+                  <h3 className="bible-subtitle text-destructive-foreground">Conclusion</h3>
+                  <p className="bible-body text-destructive-foreground">The ЦАСТРО identity is an exercise in creative negation. It's the reverse of branding to remind us what design can be: language, manifesto, resistance.</p>
                   <p className="bible-body font-bold italic text-destructive-foreground text-center">It's not a logo to be remembered, it's an idea to be understood, too late.</p>
                 </div>
               </div>
@@ -537,17 +537,17 @@ const Autor = () => {
                 
                 <div className="space-y-4">
                   <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-body font-bold mb-2">LowMovie™ (2019-2023)</h4>
+                    <h4 className="bible-body font-bold">LowMovie™ (2019-2023)</h4>
                     <p className="bible-body">Filme-manifesto sobre skateboarding, subculturas e processos colaborativos. Estreou no Cine Passeio em 2023 e tornou-se objeto central da pesquisa de mestrado. Integra videoarte, documentário e cinema experimental.</p>
                   </div>
                   
                   <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-body font-bold mb-2">LowPressure™ (2020-atual)</h4>
+                    <h4 className="bible-body font-bold">LowPressure™ (2020-atual)</h4>
                     <p className="bible-body">Coletivo de skatistas-artistas que opera nas interseções entre rua, vídeo e cultura. Funciona como laboratório de práticas visuais, estéticas em movimento e processos coletivos. Representantes olímpicos do Brasil em Paris 2024.</p>
                   </div>
                   
                   <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-body font-bold mb-2">CasaTrezeStudio® (2008-atual)</h4>
+                    <h4 className="bible-body font-bold">CasaTrezeStudio® (2008-atual)</h4>
                     <p className="bible-body">Laboratório criativo independente. Transita entre produção autoral e comercial, conectando design gráfico, audiovisual, direção de arte e experimentação. Espaço de resistência e criação coletiva.</p>
                   </div>
                 </div>
@@ -569,17 +569,17 @@ const Autor = () => {
                 
                 <div className="space-y-4">
                   <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-body font-bold mb-2">LowMovie™ (2019-2023)</h4>
+                    <h4 className="bible-body font-bold">LowMovie™ (2019-2023)</h4>
                     <p className="bible-body">Manifesto-film about skateboarding, subcultures and collaborative processes. Premiered at Cine Passeio in 2023 and became central object of master's research. Integrates video art, documentary and experimental cinema.</p>
                   </div>
                   
                   <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-body font-bold mb-2">LowPressure™ (2020-present)</h4>
+                    <h4 className="bible-body font-bold">LowPressure™ (2020-present)</h4>
                     <p className="bible-body">Collective of skater-artists operating at intersections between street, video and culture. Functions as laboratory for visual practices, aesthetics in motion and collective processes. Olympic representatives of Brazil in Paris 2024.</p>
                   </div>
                   
                   <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-body font-bold mb-2">CasaTrezeStudio® (2008-present)</h4>
+                    <h4 className="bible-body font-bold">CasaTrezeStudio® (2008-present)</h4>
                     <p className="bible-body">Independent creative laboratory. Transits between authorial and commercial production, connecting graphic design, audiovisual, art direction and experimentation. Space of resistance and collective creation.</p>
                   </div>
                 </div>
@@ -644,9 +644,9 @@ const Autor = () => {
                 
                 <p className="bible-body">Porque o que aprendi neste processo é que a verdadeira inteligência, humana ou artificial, não está em chegar a respostas definitivas. Está em continuar fazendo perguntas melhores. E fazer perguntas melhores exige coragem para experimentar, falhar, recalibrar, tentar de novo.</p>
                 
-                <p className="bible-body font-semibold mt-8 p-6 bg-primary/5 rounded-lg border-l-4 border-primary">O portal está vivo. A pesquisa está em movimento. O futuro está sendo criado agora, um prompt, uma imagem, um commit de cada vez.</p>
+                <p className="bible-body font-semibold p-6 bg-primary/5 rounded-lg border-l-4 border-primary">O portal está vivo. A pesquisa está em movimento. O futuro está sendo criado agora, um prompt, uma imagem, um commit de cada vez.</p>
                 
-                <p className="bible-body italic text-muted-foreground mt-6">E quando você fecha esta página, o processo continua. Porque este não é o fim. É apenas o próximo começo.</p>
+                <p className="bible-body italic text-muted-foreground">E quando você fecha esta página, o processo continua. Porque este não é o fim. É apenas o próximo começo.</p>
                 
                 <div className="pt-12 text-center">
                   <p className="bible-link">[continua...]</p>
@@ -688,9 +688,9 @@ const Autor = () => {
                 
                 <p className="bible-body">Because what I learned in this process is that true intelligence, human or artificial, is not in reaching definitive answers. It's in continuing to ask better questions. And asking better questions requires courage to experiment, fail, recalibrate, try again.</p>
                 
-                <p className="bible-body font-semibold mt-8 p-6 bg-primary/5 rounded-lg border-l-4 border-primary">The portal is alive. Research is in motion. The future is being created now, one prompt, one image, one commit at a time.</p>
+                <p className="bible-body font-semibold p-6 bg-primary/5 rounded-lg border-l-4 border-primary">The portal is alive. Research is in motion. The future is being created now, one prompt, one image, one commit at a time.</p>
                 
-                <p className="bible-body italic text-muted-foreground mt-6">And when you close this page, the process continues. Because this isn't the end. It's just the next beginning.</p>
+                <p className="bible-body italic text-muted-foreground">And when you close this page, the process continues. Because this isn't the end. It's just the next beginning.</p>
                 
                 <div className="pt-12 text-center">
                   <p className="bible-link">[to be continued...]</p>
@@ -712,12 +712,12 @@ const Autor = () => {
           <div className="space-y-8 mt-8">
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-card border border-border rounded-lg p-6">
-                <h4 className="bible-body font-bold mb-4">CasaTrezeStudio®</h4>
+                <h4 className="bible-body font-bold">CasaTrezeStudio®</h4>
                 <a 
                   href="/documents/Release_CasaTrezeStudio.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bible-link hover:underline block mb-2"
+                  className="bible-link hover:underline block"
                 >
                   Release CasaTrezeStudio® / CasaTrezeStudio® Release
                 </a>
@@ -732,12 +732,12 @@ const Autor = () => {
               </div>
 
               <div className="bg-card border border-border rounded-lg p-6">
-                <h4 className="bible-body font-bold mb-4">Jornada do Autor / Author Journey</h4>
+                <h4 className="bible-body font-bold">Jornada do Autor / Author Journey</h4>
                 <a 
                   href="http://lattes.cnpq.br/5523516994010198"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bible-link hover:underline block mb-2"
+                  className="bible-link hover:underline block"
                 >
                   Currículo Lattes / Lattes CV
                 </a>
@@ -753,7 +753,7 @@ const Autor = () => {
             </div>
 
             <div className="pt-8 border-t border-border">
-              <h3 className="bible-subtitle mb-6">Portfolio & Links</h3>
+              <h3 className="bible-subtitle">Portfolio & Links</h3>
               
               <div className="grid md:grid-cols-3 gap-6">
                 <a 
@@ -768,7 +768,7 @@ const Autor = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </div>
-                  <p className="bible-link mb-2">castropizzano.com</p>
+                  <p className="bible-link">castropizzano.com</p>
                   <p className="bible-link">
                     Portfólio completo e projetos<br/>
                     Complete portfolio and projects
@@ -787,7 +787,7 @@ const Autor = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </div>
-                  <p className="bible-link mb-2">@castropizzano</p>
+                  <p className="bible-link">@castropizzano</p>
                   <p className="bible-link">
                     Design gráfico e branding<br/>
                     Graphic design and branding
@@ -806,7 +806,7 @@ const Autor = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </div>
-                  <p className="bible-link mb-2">@castropizzano</p>
+                  <p className="bible-link">@castropizzano</p>
                   <p className="bible-link">
                     Cinema e vídeo arte<br/>
                     Cinema and video art

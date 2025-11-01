@@ -383,15 +383,15 @@ const Dissertacao = () => {
                 <h3 className="bible-subtitle">Três Procedimentos Metodológicos</h3>
                 <div className="space-y-4">
                   <div className="bg-background/50 p-4 rounded-lg border border-border/50">
-                    <p className="bible-body font-semibold mb-2">1. Vivência Situada em Processos Coletivos</p>
+                    <p className="bible-body font-semibold">1. Vivência Situada em Processos Coletivos</p>
                     <p className="bible-body">Participação ativa nas dinâmicas que geram imagens, vínculos e registros. Inserção cotidiana que sustenta uma atenção contínua, em que corpo, escuta e presença operam em afinação constante.</p>
                   </div>
                   <div className="bg-background/50 p-4 rounded-lg border border-border/50">
-                    <p className="bible-body font-semibold mb-2">2. Convivência Criativa no Campo</p>
+                    <p className="bible-body font-semibold">2. Convivência Criativa no Campo</p>
                     <p className="bible-body">Acompanhamento dos ritmos e camadas do processo desde dentro, em escuta com as imagens, os sons da cidade e os encontros entre corpos e câmeras. Registro contínuo em diário digital atento às nuances do processo.</p>
                   </div>
                   <div className="bg-background/50 p-4 rounded-lg border border-border/50">
-                    <p className="bible-body font-semibold mb-2">3. Escuta Compartilhada</p>
+                    <p className="bible-body font-semibold">3. Escuta Compartilhada</p>
                     <p className="bible-body">Conversas abertas com integrantes do coletivo (skatistas, videomakers, colaboradores artísticos) como encontros de sintonia, em que o vínculo ativa sentidos e reverbera no percurso investigativo. Coleta de materiais produzidos pelo coletivo (vídeos, zines, áudios, imagens) sempre com consentimento informado.</p>
                   </div>
                 </div>
@@ -433,15 +433,15 @@ const Dissertacao = () => {
                 <h3 className="bible-subtitle">Three Methodological Procedures</h3>
                 <div className="space-y-4">
                   <div className="bg-background/50 p-4 rounded-lg border border-border/50">
-                    <p className="bible-body font-semibold mb-2">1. Situated Experience in Collective Processes</p>
+                    <p className="bible-body font-semibold">1. Situated Experience in Collective Processes</p>
                     <p className="bible-body">Active participation in the dynamics that generate images, bonds and records. Daily insertion that sustains continuous attention, in which body, listening and presence operate in constant tuning.</p>
                   </div>
                   <div className="bg-background/50 p-4 rounded-lg border border-border/50">
-                    <p className="bible-body font-semibold mb-2">2. Creative Coexistence in the Field</p>
+                    <p className="bible-body font-semibold">2. Creative Coexistence in the Field</p>
                     <p className="bible-body">Following the rhythms and layers of the process from within, listening to images, city sounds and encounters between bodies and cameras. Continuous recording in digital diary attentive to the nuances of the process.</p>
                   </div>
                   <div className="bg-background/50 p-4 rounded-lg border border-border/50">
-                    <p className="bible-body font-semibold mb-2">3. Shared Listening</p>
+                    <p className="bible-body font-semibold">3. Shared Listening</p>
                     <p className="bible-body">Open conversations with collective members (skaters, videomakers, artistic collaborators) as tuning encounters, in which the bond activates meanings and reverberates in the investigative path. Collection of materials produced by the collective (videos, zines, audios, images) always with informed consent.</p>
                   </div>
                 </div>
@@ -614,13 +614,13 @@ const Dissertacao = () => {
           <div className="space-y-8 mt-8">
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-card border border-border rounded-lg p-6">
-                <h4 className="bible-body font-bold mb-4">LowPressure™</h4>
-                <p className="bible-link mb-2">Brandbook LowPressure™</p>
+                <h4 className="bible-body font-bold">LowPressure™</h4>
+                <p className="bible-link">Brandbook LowPressure™</p>
                 <a 
                   href="/documents/LowPressure_brandbook.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="bible-link hover:underline block mb-2"
+                  className="bible-link hover:underline block"
                 >
                   Download Brandbook (PDF)
                 </a>
@@ -635,19 +635,19 @@ const Dissertacao = () => {
               </div>
 
               <div className="bg-card border border-border rounded-lg p-6">
-                <h4 className="bible-body font-bold mb-4">LowMovie™</h4>
-                <p className="bible-link mb-2">Brandbook LowMovie™</p>
+                <h4 className="bible-body font-bold">LowMovie™</h4>
+                <p className="bible-link">Brandbook LowMovie™</p>
                 <a 
                   href="/documents/LowMovie_brandbook.pdf" 
-                  target="_blank" 
+                  target="_blank"
                   rel="noopener noreferrer" 
-                  className="bible-link hover:underline block mb-2"
+                  className="bible-link hover:underline block"
                 >
                   Download Brandbook (PDF)
                 </a>
                 <a 
                   href="https://youtu.be/wcYBh6_DqO8" 
-                  target="_blank" 
+                  target="_blank"
                   rel="noopener noreferrer" 
                   className="bible-link hover:underline"
                 >
