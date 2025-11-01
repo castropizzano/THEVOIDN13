@@ -387,7 +387,7 @@ const Autor = () => {
             portugueseContent={
               <div className="space-y-12">
                 <div className="space-y-6">
-                  <h2 className="heading-2 text-primary title-break">ЦЦАСТРО™ como Anti-Brand</h2>
+                  <h2 className="heading-2 text-primary title-break">ЦАСТРО™ como Anti-Brand</h2>
                   <p className="text-lg italic text-muted-foreground">
                     Uma identidade que rejeita a lógica publicitária de autopromoção, e se afirma como linguagem, não logotipo.
                   </p>
@@ -404,7 +404,7 @@ const Autor = () => {
                     </p>
                   </div>
                   <p className="text-base leading-relaxed text-justify">
-                    Ao contrário de um símbolo que busca reconhecimento imediato, o projeto ЦЦАСТРО (transliteração cirílica de CASTRO) propõe o anonimato como força estética. A ausência de identificação direta — o nome distorcido, o alfabeto estrangeiro, a paleta contida — é uma crítica à cultura do ego-branding.
+                    Ao contrário de um símbolo que busca reconhecimento imediato, o projeto ЦАСТРО (transliteração cirílica de CASTRO) propõe o anonimato como força estética. A ausência de identificação direta — o nome distorcido, o alfabeto estrangeiro, a paleta contida — é uma crítica à cultura do ego-branding.
                   </p>
                 </div>
 
@@ -473,7 +473,7 @@ const Autor = () => {
                   <h3 className="subsection-title text-primary">A Semiótica do Símbolo</h3>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="border-l-2 border-primary pl-4">
-                      <h4 className="text-sm font-bold uppercase mb-2">ЦЦАСТРО</h4>
+                      <h4 className="text-sm font-bold uppercase mb-2">ЦАСТРО</h4>
                       <p className="text-sm text-muted-foreground">Transliteração que cria ruído e nega a leitura imediata — uma máscara estética</p>
                     </div>
                     <div className="border-l-2 border-primary pl-4">
@@ -494,7 +494,7 @@ const Autor = () => {
                 <div className="bg-red-900 -mx-6 px-6 py-8 rounded-lg">
                   <h3 className="subsection-title text-white mb-4">Conclusão</h3>
                   <p className="body-base text-white text-justified mb-4">
-                    A identidade ЦЦАСТРО é um exercício de negação criativa. É o avesso do branding para relembrar o que o design pode ser: linguagem, manifesto, resistência.
+                    A identidade ЦАСТРО é um exercício de negação criativa. É o avesso do branding para relembrar o que o design pode ser: linguagem, manifesto, resistência.
                   </p>
                   <p className="text-lg italic text-white/90 text-center">
                     Não é um logo para ser lembrado, é uma ideia para ser compreendida — tarde demais.
@@ -505,7 +505,7 @@ const Autor = () => {
             englishContent={
               <div className="space-y-12">
                 <div className="space-y-6">
-                  <h2 className="heading-2 text-primary title-break">ЦЦАСТРО™ as Anti-Brand</h2>
+                  <h2 className="heading-2 text-primary title-break">ЦАСТРО™ as Anti-Brand</h2>
                   <p className="text-lg italic text-muted-foreground">
                     An identity that rejects the advertising logic of self-promotion, asserting itself as language, not logo.
                   </p>
@@ -522,7 +522,7 @@ const Autor = () => {
                     </p>
                   </div>
                   <p className="text-base leading-relaxed text-justify">
-                    Unlike a symbol seeking immediate recognition, the ЦЦАСТРО project (Cyrillic transliteration of CASTRO) proposes anonymity as aesthetic force. The absence of direct identification — the distorted name, foreign alphabet, restrained palette — is a critique of ego-branding culture.
+                    Unlike a symbol seeking immediate recognition, the ЦАСТРО project (Cyrillic transliteration of CASTRO) proposes anonymity as aesthetic force. The absence of direct identification — the distorted name, foreign alphabet, restrained palette — is a critique of ego-branding culture.
                   </p>
                 </div>
 
@@ -591,7 +591,7 @@ const Autor = () => {
                   <h3 className="heading-3 text-primary">The Semiotics of the Symbol</h3>
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="border-l-2 border-primary pl-4">
-                      <h4 className="text-sm font-bold uppercase mb-2">ЦЦАСТРО</h4>
+                      <h4 className="text-sm font-bold uppercase mb-2">ЦАСТРО</h4>
                       <p className="text-sm text-muted-foreground">Transliteration that creates noise and denies immediate reading — an aesthetic mask</p>
                     </div>
                     <div className="border-l-2 border-primary pl-4">
@@ -612,7 +612,7 @@ const Autor = () => {
                 <div className="bg-red-900 -mx-6 px-6 py-8 rounded-lg">
                   <h3 className="heading-3 text-white mb-4">Conclusion</h3>
                   <p className="text-base leading-relaxed text-white text-justify mb-4">
-                    The ЦЦАСТРО identity is an exercise in creative negation. It's the reverse of branding to remind us what design can be: language, manifesto, resistance.
+                    The ЦАСТРО identity is an exercise in creative negation. It's the reverse of branding to remind us what design can be: language, manifesto, resistance.
                   </p>
                   <p className="text-lg italic text-white/90 text-center">
                     It's not a logo to be remembered, it's an idea to be understood — too late.
