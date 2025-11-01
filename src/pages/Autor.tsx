@@ -101,59 +101,13 @@ const Autor = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing">
             <div>
-              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-8 mt-6">
                 <div>
                   <h3 className="bible-subtitle">[DESIGN & ARTE]</h3>
-                  <ul className="space-y-2">
-                    <li className="bible-body">• Adobe Illustrator</li>
-                    <li className="bible-body">• Adobe InDesign</li>
-                    <li className="bible-body">• Adobe Fresco</li>
-                    <li className="bible-body">• Procreate</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="bible-subtitle">[FOTO & EDIÇÃO]</h3>
-                  <ul className="space-y-2">
-                    <li className="bible-body">• Adobe Photoshop</li>
-                    <li className="bible-body">• Adobe Lightroom</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="bible-subtitle">[VÍDEO & PÓS PRODUÇÃO]</h3>
-                  <ul className="space-y-2">
-                    <li className="bible-body">• Blender</li>
-                    <li className="bible-body">• Adobe Premiere</li>
-                    <li className="bible-body">• Adobe After Effects</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="bible-subtitle">[EXPERIMENTAL]</h3>
-                  <ul className="space-y-2">
-                    <li className="bible-body">• Ultimaker Cura</li>
-                    <li className="bible-body">• UCreality 3D</li>
-                    <li className="bible-body">• Figma</li>
-                    <li className="bible-body">• AI Tools: Claude, Gemini, Midjourney, ChatGPT, Lovable</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h3 className="bible-subtitle">[IDIOMAS]</h3>
-                  <p className="bible-body">Português (nativo) • Espanhol (intermediário) • Inglês (intermediário)</p>
-                </div>
-
-                <div>
-                  <h3 className="bible-subtitle">[REFERENCIAL]</h3>
-                  <p className="bible-body">Minimalista/Experimentação • Futurista/Construtivismo • Cibercultura/Semiótica • Tipografia/Infografia • Economia Criativa • Underground • Op-Art</p>
-                </div>
-              </div>
+...
             </div>
 
             <div>
-              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-8 mt-6">
                 <div>
                   <h3 className="bible-subtitle">[DESIGN & ART]</h3>
