@@ -417,10 +417,10 @@ const Autor = () => {
             <div>
               <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
-                <p className="bible-body italic text-muted-foreground">Uma identidade que rejeita a lógica publicitária de autopromoção, e se afirma como linguagem, não logotipo.</p>
+                <p className="bible-body italic text-muted-foreground">Uma identidade que rejeita a lógica publicitária e se afirma como linguagem, não logotipo.</p>
                 
                 <h3 className="bible-subtitle">O Contexto: Uma Recusa ao Branding Tradicional</h3>
-                <p className="bible-body">Vivemos na era do excesso de identidade. Marcas falam mais de si do que de seus propósitos, buscam reconhecimento pelo algoritmo e não pela substância. Como criador de branding, minha resposta foi criar uma anti-marca — uma identidade que rejeita a lógica publicitária de autopromoção, e se afirma como linguagem, não logotipo.</p>
+                <p className="bible-body">Vivemos na era do excesso de identidade. Marcas falam mais de si do que de seus propósitos, buscam reconhecimento pelo algoritmo e não pela substância. Como criador de branding, minha resposta foi criar uma anti-marca — uma identidade que rejeita a lógica publicitária e se afirma como linguagem, não logotipo.</p>
                 
                 <p className="bible-body">Ao contrário de um símbolo que busca reconhecimento imediato, o projeto ЦАСТРО (transliteração cirílica de CASTRO) propõe o anonimato como força estética. A ausência de identificação direta — o nome distorcido, o alfabeto estrangeiro, a paleta contida — é uma crítica à cultura do ego-branding.</p>
                 
