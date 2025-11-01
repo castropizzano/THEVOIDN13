@@ -44,7 +44,6 @@ import roughs000 from "@/assets/roughs-000.png";
 import roughs001 from "@/assets/roughs-001.png";
 import roughs002 from "@/assets/roughs-002.png";
 import roughs003 from "@/assets/roughs-003.png";
-import voidStreetThumbnail from "@/assets/void-street-thumbnail.png";
 import meditationScene from "@/assets/meditation-scene.png";
 import meditationRainScene from "@/assets/meditation-rain-scene.png";
 import maskVoid from "@/assets/mask-void.png";
@@ -86,8 +85,8 @@ const Index = () => {
       {/* {!hasAccess && <AccessGate onAccessGranted={() => setHasAccess(true)} />} */}
       <CookieConsent />
       <SEO 
-        title="THEVØIDN13, Shadow Interface Bible v13 | Castro Pizzano"
-        description="A Bíblia Definitiva, Um corpo à deriva entre o ruído e o silêncio. Práxis híbrida explorando sombra, silêncio, ruído e vazio através de co-criação humano-máquina."
+        title="THEVØIDN13 — Shadow Interface Bible v13 | Castro Pizzano"
+        description="A Bíblia Definitiva — Um corpo à deriva entre o ruído e o silêncio. Práxis híbrida explorando sombra, silêncio, ruído e vazio através de co-criação humano-máquina."
         schemaData={schemaData}
       />
       <Header />
@@ -97,7 +96,7 @@ const Index = () => {
       <main>
         {/* ===== HERO SECTION ===== */}
         <section className="w-full h-screen overflow-hidden">
-          <img src={heroImage} alt="THEVØIDN13, Shadow Interface Bible v13" className="w-full h-full object-contain" />
+          <img src={heroImage} alt="THEVØIDN13 — Shadow Interface Bible v13" className="w-full h-full object-contain" />
         </section>
 
         {/* ===== SUBTITLE ===== */}
@@ -105,11 +104,13 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <>
+                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
                 <h2 className="bible-subtitle">[UM CORPO À DERIVA ENTRE O RUÍDO E O SILÊNCIO]</h2>
               </>
             }
             englishContent={
               <>
+                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
                 <h2 className="bible-subtitle">[A BODY ADRIFT BETWEEN NOISE AND SILENCE]</h2>
               </>
             }
@@ -125,7 +126,6 @@ const Index = () => {
               className="w-full aspect-video bg-black rounded-lg overflow-hidden"
               controls
               playsInline
-              poster={voidStreetThumbnail}
             >
               <source src="/videos/intro.mp4" type="video/mp4" />
             </video>
@@ -139,11 +139,13 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <>
+                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
                 <h2 className="bible-subtitle">[INÍCIO DA TRANSMISSÃO]</h2>
               </>
             }
             englishContent={
               <>
+                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
                 <h2 className="bible-subtitle">[BEGINNING OF TRANSMISSION]</h2>
               </>
             }
@@ -155,7 +157,7 @@ const Index = () => {
           <div className="max-w-6xl mx-auto px-6">
             <img 
               src={paradoxRender} 
-              alt="THEVØIDN13, Paradox Render" 
+              alt="THEVØIDN13 — Paradox Render" 
               className="w-full rounded-lg"
             />
           </div>
@@ -165,12 +167,12 @@ const Index = () => {
 
         {/* ===== AUDIO PLAYER ===== */}
         <section className="py-16 bg-card/30">
-          <div className="max-w-6xl w-full mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-6">
             <BilingualAudioPlayer
               srcPt="/audio/thevoidn13-manifesto-pt.mp3"
               srcEn="/audio/thevoidn13-manifesto-en.mp3"
-              title="THEVØIDN13 I INTRO"
-              description="Narração Conceitual Projeto / Conceptual Project Narration"
+              title="THEVØIDN13 | INTRO"
+              description="Narração conceitual do projeto / Conceptual project narration"
             />
           </div>
         </section>
@@ -182,18 +184,19 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <>
+                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
                 <h2 className="bible-title">MANIFESTO INTEGRADO</h2>
               </>
             }
             englishContent={
               <>
+                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
                 <h2 className="bible-title">INTEGRATED MANIFESTO</h2>
               </>
             }
           />
           
           <BilingualContent
-            showLabels={false}
             portugueseContent={
               <div className="bible-section-spacing">
                 <p className="bible-body">
@@ -216,7 +219,7 @@ const Index = () => {
           <div className="max-w-6xl mx-auto px-6">
             <img 
               src={fallRender} 
-              alt="THEVØIDN13, Fall Render" 
+              alt="THEVØIDN13 — Fall Render" 
               className="w-full rounded-lg"
             />
           </div>
@@ -229,12 +232,14 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <>
+                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
                 <h2 className="bible-title">1. ORIGEM E PROPÓSITO</h2>
                 <h3 className="bible-subtitle">1.1 O LUGAR SEGURO PARA DESAPARECER</h3>
               </>
             }
             englishContent={
               <>
+                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
                 <h2 className="bible-title">1. ORIGIN AND PURPOSE</h2>
                 <h3 className="bible-subtitle">1.1 THE SAFE PLACE TO DISAPPEAR</h3>
               </>
@@ -262,7 +267,7 @@ const Index = () => {
           <div className="my-8">
             <img 
               src={thinkRender} 
-              alt="THEVØIDN13, Contemplation" 
+              alt="THEVØIDN13 — Contemplation" 
               className="w-full max-w-6xl mx-auto rounded-lg"
             />
           </div>
@@ -290,7 +295,7 @@ const Index = () => {
           <div className="my-8">
             <img 
               src={meditationRender} 
-              alt="THEVØIDN13, Meditation Render" 
+              alt="THEVØIDN13 — Meditation Render" 
               className="w-full max-w-6xl mx-auto rounded-lg"
             />
           </div>
@@ -323,7 +328,7 @@ const Index = () => {
           <div className="my-8">
             <img 
               src={mirrorRender} 
-              alt="THEVØIDN13, Mirror Reflection" 
+              alt="THEVØIDN13 — Mirror Reflection" 
               className="w-full max-w-6xl mx-auto rounded-lg"
             />
           </div>
@@ -376,7 +381,7 @@ const Index = () => {
           <div className="my-8">
             <img 
               src={maskVoidNew} 
-              alt="A máscara de THEVØIDN13, The mask of THEVØIDN13" 
+              alt="A máscara de THEVØIDN13 — The mask of THEVØIDN13" 
               className="w-full max-w-6xl mx-auto rounded-lg"
             />
           </div>
@@ -431,13 +436,12 @@ const Index = () => {
           <div className="my-12">
             <img 
               src={voidLogoVisual} 
-              alt="THEVØIDN13, Visual Identity" 
+              alt="THEVØIDN13 — Visual Identity" 
               className="w-full max-w-6xl mx-auto rounded-lg"
             />
           </div>
 
           <BilingualContent
-            showLabels={false}
             portugueseContent={
               <>
                 <p className="bible-body">
@@ -476,7 +480,7 @@ const Index = () => {
           <div className="my-8">
             <img 
               src={golRender} 
-              alt="THEVØIDN13, VW GOL 87 Render" 
+              alt="THEVØIDN13 — VW GOL 87 Render" 
               className="w-full max-w-6xl mx-auto rounded-lg"
             />
           </div>
@@ -628,7 +632,7 @@ const Index = () => {
           <div className="my-8">
             <img 
               src={lovecityRender} 
-              alt="THEVØIDN13, LOVECITY" 
+              alt="THEVØIDN13 — LOVECITY" 
               className="w-full max-w-6xl mx-auto rounded-lg"
             />
           </div>
@@ -768,7 +772,7 @@ const Index = () => {
           <div className="my-8">
             <img 
               src={hotelRender} 
-              alt="THEVØIDN13, HOTEL" 
+              alt="THEVØIDN13 — HOTEL" 
               className="w-full max-w-6xl mx-auto rounded-lg"
             />
           </div>
@@ -920,7 +924,7 @@ const Index = () => {
           <div className="my-8">
             <img 
               src={gol2Render} 
-              alt="THEVØIDN13, VW GOL 87 Interior" 
+              alt="THEVØIDN13 — VW GOL 87 Interior" 
               className="w-full max-w-6xl mx-auto rounded-lg"
             />
           </div>
@@ -1107,7 +1111,6 @@ const Index = () => {
           />
 
           <BilingualContent
-            showLabels={false}
             portugueseContent={
               <>
                 <p className="bible-body">
@@ -1138,7 +1141,6 @@ const Index = () => {
           />
 
           <BilingualContent
-            showLabels={false}
             portugueseContent={
               <>
                 <p className="bible-body">
@@ -1169,7 +1171,6 @@ const Index = () => {
           />
 
           <BilingualContent
-            showLabels={false}
             portugueseContent={
               <>
                 <p className="bible-body">
@@ -1200,7 +1201,6 @@ const Index = () => {
           />
 
           <BilingualContent
-            showLabels={false}
             portugueseContent={
               <>
                 <p className="bible-body">
@@ -1225,11 +1225,13 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <>
+                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
                 <h2 className="bible-title">9. REFERÊNCIAS | O ECO INTERNO</h2>
               </>
             }
             englishContent={
               <>
+                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
                 <h2 className="bible-title">9. REFERENCES | THE INTERNAL ECHO</h2>
               </>
             }
@@ -1372,11 +1374,13 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <>
+                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
                 <h2 className="bible-title">10. A METODOLOGIA</h2>
               </>
             }
             englishContent={
               <>
+                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
                 <h2 className="bible-title">10. THE METHODOLOGY</h2>
               </>
             }
@@ -1407,11 +1411,13 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <>
+                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
                 <h2 className="bible-title">11. ANATOMIA DO UNIVERSO | PERSONAGENS</h2>
               </>
             }
             englishContent={
               <>
+                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
                 <h2 className="bible-title">11. UNIVERSE ANATOMY | CHARACTERS</h2>
               </>
             }
@@ -1538,7 +1544,7 @@ const Index = () => {
                 <>
                   <p className="bible-body">
                     GI é a quietude que sustenta o caos, a frequência constante no meio do ruído. Sua força não vem do gesto, mas da
-                    ausência dele. Onde PUNK provoca e THEVØIDN13 se dissolve, ela observa, e ao observar, transforma. É a testemunha do
+                    ausência dele. Onde PUNK provoca e THEVØIDN13 se dissolve, ela observa — e ao observar, transforma. É a testemunha do
                     invisível, o eixo que impede a queda. Cada olhar é uma tradução do não-dito, cada respiração, uma forma de resistência.
                     Sua presença é quase imperceptível, mas quando se manifesta, muda o ar em volta. GI é o intervalo entre o verbo e o eco,
                     o instante em que o silêncio se torna linguagem. Não atua, reverbera. É o espelho calmo onde o inconsciente dos outros
@@ -1550,7 +1556,7 @@ const Index = () => {
                 <>
                   <p className="bible-body">
                     GI is the stillness that sustains chaos, the constant frequency within the noise. Her strength does not come from action
-                    but from the absence of it. Where PUNK provokes and THEVØIDN13 dissolves, she observes, and through observing,
+                    but from the absence of it. Where PUNK provokes and THEVØIDN13 dissolves, she observes — and through observing,
                     transforms. She is the witness of the unseen, the axis that prevents collapse. Every gaze is a translation of the unspoken,
                     every breath a form of resistance. Her presence is almost imperceptible, yet when it manifests, it alters the air around her.
                     GI is the interval between the word and the echo, the moment when silence becomes language. She does not act, she
@@ -1672,11 +1678,13 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <>
+                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
                 <h2 className="bible-title">12. PROCESSOS RELACIONADOS</h2>
               </>
             }
             englishContent={
               <>
+                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
                 <h2 className="bible-title">12. RELATED PROCESSES</h2>
               </>
             }
@@ -1790,11 +1798,13 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <>
+                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
                 <h2 className="bible-title">13. PARADOXO EXISTENCIAL</h2>
               </>
             }
             englishContent={
               <>
+                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
                 <h2 className="bible-title">13. EXISTENTIAL PARADOX</h2>
               </>
             }
@@ -1809,7 +1819,6 @@ const Index = () => {
           </div>
 
           <BilingualContent
-            showLabels={false}
             portugueseContent={
               <>
                 <p className="bible-body">
@@ -1854,14 +1863,13 @@ const Index = () => {
             </div>
 
             <BilingualContent
-              showLabels={false}
               portugueseContent={
                 <>
                   <p className="bible-body">
                     O sinal começa a falhar. A imagem se fragmenta, o som respira pela última vez. O corpo se dissolve, mas a
                     frequência permanece. THEVØIDN13 não termina, apenas muda de forma. O que você escuta agora não é voz, é
                     memória. A transmissão segue viva dentro do ruído, ecoando onde a linguagem não alcança. Desligue as luzes.
-                    Respire fundo. O vazio sabe o caminho de volta. @thevoidn13, Rastros digitais de uma presença que não quer ser
+                    Respire fundo. O vazio sabe o caminho de volta. @thevoidn13 — Rastros digitais de uma presença que não quer ser
                     vista.
                   </p>
                 </>
@@ -1872,7 +1880,7 @@ const Index = () => {
                     The signal begins to fail. The image fractures, the sound takes one last breath. The body dissolves, but the
                     frequency remains. THEVØIDN13 doesn't end, it only changes form. What you hear now isn't a voice, it's memory. The
                     transmission remains alive within the noise, echoing where language cannot reach. Turn off the lights. Breathe
-                    deeply. The void knows the way back. @thevoidn13, Digital traces of a presence that doesn't wish to be seen.
+                    deeply. The void knows the way back. @thevoidn13 — Digital traces of a presence that doesn't wish to be seen.
                   </p>
                 </>
               }
@@ -1902,25 +1910,27 @@ const Index = () => {
             <div className="grid md:grid-cols-2 gap-8 items-start">
               <div className="space-y-6 flex flex-col justify-between">
                 <>
-                  <p className="bible-body">
+                  <p className="lang-pill">&lt;PORTUGUÊS&gt;</p>
+                  <p className="bible-body mt-4">
                     Esta visualização representa o modelo imaginado para o action figure do personagem e define o mood visual das filmagens que serão realizadas pelo autor do projeto. A estética, iluminação e atmosfera foram desenvolvidas para traduzir o universo conceitual de THEVØIDN13.
                   </p>
-                  <p className="bible-body">
-                    O protótipo funciona como materialização física da persona THEVØIDN13, uma presença que habita o limiar entre o visível e o invisível, entre a carne e o código. A máscara branca, o capuz negro e a jaqueta de couro não são apenas elementos estéticos, mas símbolos de uma identidade que recusa a exposição total.
+                  <p className="bible-body mt-4">
+                    O protótipo funciona como materialização física da persona THEVØIDN13 — uma presença que habita o limiar entre o visível e o invisível, entre a carne e o código. A máscara branca, o capuz negro e a jaqueta de couro não são apenas elementos estéticos, mas símbolos de uma identidade que recusa a exposição total.
                   </p>
-                  <p className="bible-body">
-                    Esta figura será utilizada em futuras produções audiovisuais como referência de iluminação, composição e atmosfera. O protótipo é tanto documento quanto performance, um objeto que existe simultaneamente como conceito artístico e ferramenta técnica de produção.
+                  <p className="bible-body mt-4">
+                    Esta figura será utilizada em futuras produções audiovisuais como referência de iluminação, composição e atmosfera. O protótipo é tanto documento quanto performance — um objeto que existe simultaneamente como conceito artístico e ferramenta técnica de produção.
                   </p>
                 </>
                 <>
-                  <p className="bible-body">
+                  <p className="lang-pill">&lt;ENGLISH&gt;</p>
+                  <p className="bible-body mt-4">
                     This visualization represents the envisioned model for the character's action figure and defines the visual mood for filming to be carried out by the project's author. The aesthetics, lighting, and atmosphere were developed to translate the conceptual universe of THEVØIDN13.
                   </p>
-                  <p className="bible-body">
-                    The prototype functions as a physical materialization of the THEVØIDN13 persona, a presence that inhabits the threshold between visible and invisible, between flesh and code. The white mask, black hood, and leather jacket are not merely aesthetic elements, but symbols of an identity that refuses total exposure.
+                  <p className="bible-body mt-4">
+                    The prototype functions as a physical materialization of the THEVØIDN13 persona — a presence that inhabits the threshold between visible and invisible, between flesh and code. The white mask, black hood, and leather jacket are not merely aesthetic elements, but symbols of an identity that refuses total exposure.
                   </p>
-                  <p className="bible-body">
-                    This figure will be used in future audiovisual productions as a reference for lighting, composition, and atmosphere. The prototype is both document and performance, an object that exists simultaneously as artistic concept and technical production tool.
+                  <p className="bible-body mt-4">
+                    This figure will be used in future audiovisual productions as a reference for lighting, composition, and atmosphere. The prototype is both document and performance — an object that exists simultaneously as artistic concept and technical production tool.
                   </p>
                 </>
               </div>
@@ -1942,11 +1952,13 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <>
+                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
                 <h2 className="bible-title">[O REPOSITÓRIO | ARQUIVOS E FERRAMENTAS]</h2>
               </>
             }
             englishContent={
               <>
+                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
                 <h2 className="bible-title">THE REPOSITORY | FILES AND TOOLS</h2>
               </>
             }
@@ -2085,18 +2097,17 @@ const Index = () => {
               }
             />
             <BilingualContent
-              showLabels={false}
               portugueseContent={
                 <div>
                   <p className="bible-body">
-                    Uma jornada interativa de autodescoberta guiada por THEVØIDN13. Seis perguntas filosóficas sobre criação e ruído revelam o arquétipo que habita seu processo. O oráculo não responde, reflete.
+                    Uma jornada interativa de autodescoberta guiada por THEVØIDN13. Seis perguntas filosóficas sobre criação e ruído revelam o arquétipo que habita seu processo. O oráculo não responde — reflete.
                   </p>
                 </div>
               }
               englishContent={
                 <div>
                   <p className="bible-body">
-                    An interactive journey of self-discovery guided by THEVØIDN13. Six philosophical questions on creation and noise reveal the archetype dwelling within your process. The oracle does not answer, it reflects.
+                    An interactive journey of self-discovery guided by THEVØIDN13. Six philosophical questions on creation and noise reveal the archetype dwelling within your process. The oracle does not answer — it reflects.
                   </p>
                 </div>
               }
@@ -2128,7 +2139,6 @@ const Index = () => {
               }
             />
             <BilingualContent
-              showLabels={false}
               portugueseContent={
                 <div>
                   <p className="bible-body">
@@ -2161,7 +2171,7 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="block hover:text-primary transition-colors"
                 >
-                  <h4 className="subsection-title">README.md</h4>
+                  <h4 className="text-base font-bold">README.md</h4>
                   <p className="text-sm text-muted-foreground">Manifesto e estrutura do projeto / Manifesto and project structure</p>
                 </a>
                 
@@ -2171,7 +2181,7 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="block hover:text-primary transition-colors"
                 >
-                  <h4 className="subsection-title">LICENSE.md</h4>
+                  <h4 className="text-base font-bold">LICENSE.md</h4>
                   <p className="text-sm text-muted-foreground">Licença CC BY-NC-SA 4.0 / CC BY-NC-SA 4.0 License</p>
                 </a>
                 
@@ -2181,7 +2191,7 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="block hover:text-primary transition-colors"
                 >
-                  <h4 className="subsection-title">CITATION.cff</h4>
+                  <h4 className="text-base font-bold">CITATION.cff</h4>
                   <p className="text-sm text-muted-foreground">Citação automatizada GitHub / GitHub automated citation</p>
                 </a>
                 
@@ -2191,7 +2201,7 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="block hover:text-primary transition-colors"
                 >
-                  <h4 className="subsection-title">METHODOLOGY.md</h4>
+                  <h4 className="text-base font-bold">METHODOLOGY.md</h4>
                   <p className="text-sm text-muted-foreground">Métodos e procedimentos de pesquisa / Research methods and procedures</p>
                 </a>
               </div>
@@ -2207,7 +2217,7 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="block hover:text-primary transition-colors"
                 >
-                  <h4 className="subsection-title">PHILOSOPHY.md</h4>
+                  <h4 className="text-base font-bold">PHILOSOPHY.md</h4>
                   <p className="text-sm text-muted-foreground">Justificativa das escolhas conceituais / Rationale for conceptual choices</p>
                 </a>
                 
@@ -2217,7 +2227,7 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="block hover:text-primary transition-colors"
                 >
-                  <h4 className="subsection-title">COPYRIGHT.md</h4>
+                  <h4 className="text-base font-bold">COPYRIGHT.md</h4>
                   <p className="text-sm text-muted-foreground">Ética e transparência da co-criação / Ethics and transparency of co-creation</p>
                 </a>
                 
@@ -2227,7 +2237,7 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="block hover:text-primary transition-colors"
                 >
-                  <h4 className="subsection-title">HOW_TO_CITE.md</h4>
+                  <h4 className="text-base font-bold">HOW_TO_CITE.md</h4>
                   <p className="text-sm text-muted-foreground">Guia completo de citação acadêmica / Complete academic citation guide</p>
                 </a>
                 
@@ -2237,7 +2247,7 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="block hover:text-primary transition-colors"
                 >
-                  <h4 className="subsection-title">REFERENCES.md</h4>
+                  <h4 className="text-base font-bold">REFERENCES.md</h4>
                   <p className="text-sm text-muted-foreground">Bibliografia completa do projeto / Complete project bibliography</p>
                 </a>
               </div>
@@ -2257,7 +2267,7 @@ const Index = () => {
                   <h3 className="text-2xl font-bold group-hover:text-primary transition-colors mb-2">
                     Complete Repository / Repositório Completo
                   </h3>
-                  <p className="body-base text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     Acesso a todos os arquivos no GitHub / Access all files on GitHub
                   </p>
                 </div>

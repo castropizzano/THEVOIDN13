@@ -145,7 +145,7 @@ export const Timeline = () => {
           <p className="text-sm text-muted-foreground italic">
             <span className="font-bold text-foreground">Lowbyrinth™:</span> Um percurso não-linear, 
             espiralado, onde cada dobra revela novas camadas de sentido. 
-            A timeline não é sequência, é constelação de experiências que vibram juntas.
+            A timeline não é sequência — é constelação de experiências que vibram juntas.
           </p>
         </div>
       </CardContent>

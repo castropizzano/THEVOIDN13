@@ -83,15 +83,15 @@ const ComicsShowcase = () => {
                 </p>
                 <ul className="space-y-4">
                   <li>
-                    <strong>Watchmen (1986)</strong>, Alan Moore & Dave Gibbons<br />
+                    <strong>Watchmen (1986)</strong> — Alan Moore & Dave Gibbons<br />
                     Ética ambígua e o mecanismo de cidade
                   </li>
                   <li>
-                    <strong>The Sandman (1989)</strong>, Neil Gaiman<br />
+                    <strong>The Sandman (1989)</strong> — Neil Gaiman<br />
                     Mitologia pessoal e arquitetura do sonho
                   </li>
                   <li>
-                    <strong>Black Hole (1995)</strong>, Charles Burns<br />
+                    <strong>Black Hole (1995)</strong> — Charles Burns<br />
                     Alienação e metamorfose corporal
                   </li>
                 </ul>

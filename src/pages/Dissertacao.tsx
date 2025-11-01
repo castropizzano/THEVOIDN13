@@ -32,7 +32,7 @@ const Dissertacao = () => {
 
   const breadcrumbs = breadcrumbSchema([
     { name: "Home", url: "https://thevoidn13.com/" },
-    { name: "LowMovie™, Dissertação", url: "https://thevoidn13.com/dissertacao" }
+    { name: "LowMovie™ — Dissertação", url: "https://thevoidn13.com/dissertacao" }
   ]);
 
   const schemaData = {
@@ -43,7 +43,7 @@ const Dissertacao = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <SEO 
-        title="LowMovie™, Dissertação de Mestrado | THEVØIDN13" 
+        title="LowMovie™ — Dissertação de Mestrado | THEVØIDN13" 
         description="Dissertação de mestrado em Cinema e Artes do Vídeo explorando subjetividade, subcultura e processos criativos no skate através do filme LowMovie™. CasaTrezeStudio®, LowPressure™ crew por Castro Pizzano" 
         schemaData={schemaData} 
       />
@@ -60,14 +60,16 @@ const Dissertacao = () => {
         <BilingualSection className="py-16">
           <div className="bilingual-grid">
             <div className="bilingual-col">
-              <h1 className="bible-title">LOWMOVIE™ E O LABIRINTO CRIATIVO</h1>
-              <p className="bible-body">
+              <p className="lang-pill">&lt;PORTUGUÊS&gt;</p>
+              <h1 className="bible-title mt-4">LOWMOVIE™ E O LABIRINTO CRIATIVO</h1>
+              <p className="bible-body mt-6">
                 Subjetividade, Subcultura e a Construção de uma Estética em Movimento no Coletivo LowPressure™
               </p>
             </div>
             <div className="bilingual-col">
-              <h1 className="bible-title">LOWMOVIE™ E O LABIRINTO CRIATIVO</h1>
-              <p className="bible-body">
+              <p className="lang-pill">&lt;ENGLISH&gt;</p>
+              <h1 className="bible-title mt-4">LOWMOVIE™ E O LABIRINTO CRIATIVO</h1>
+              <p className="bible-body mt-6">
                 Subjectivity, Subculture and the Construction of an Aesthetic in Motion in the LowPressure™ Collective
               </p>
             </div>
@@ -131,6 +133,7 @@ const Dissertacao = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing mt-8">
             <div>
+              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Coletivo Criativo fundado em 2008. Estúdio pós-contemporâneo de design e vídeo. Associação de produtores criativos independentes que opera como laboratório de criação autoral, cultural e comercial, conectando pessoas, ideias e projetos.</p>
                 
@@ -144,11 +147,12 @@ const Dissertacao = () => {
                 <p className="bible-body"><span className="font-semibold">Curadoria:</span> Projetos experimentais e autorais</p>
                 
                 <h3 className="bible-subtitle">Filosofia</h3>
-                <p className="bible-body">A casa número 13 como símbolo de resistência ao convencional. O azar transformado em potência criativa. O estúdio opera na fronteira entre o comercial e o experimental, sem hierarquia entre ambos. Cada projeto, seja uma identidade visual para um cliente ou um filme autoral, recebe o mesmo rigor criativo.</p>
+                <p className="bible-body">A casa número 13 como símbolo de resistência ao convencional. O azar transformado em potência criativa. O estúdio opera na fronteira entre o comercial e o experimental, sem hierarquia entre ambos. Cada projeto — seja uma identidade visual para um cliente ou um filme autoral — recebe o mesmo rigor criativo.</p>
               </div>
             </div>
 
             <div>
+              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Creative Collective founded in 2008. Post-contemporary studio of design and video. Association of independent creative producers operating as a laboratory of authorial, cultural and commercial creation, connecting people, ideas and projects.</p>
                 
@@ -162,7 +166,7 @@ const Dissertacao = () => {
                 <p className="bible-body"><span className="font-semibold">Curation:</span> Experimental and authorial projects</p>
                 
                 <h3 className="bible-subtitle">Philosophy</h3>
-                <p className="bible-body">House number 13 as a symbol of resistance to the conventional. Bad luck transformed into creative power. The studio operates on the border between commercial and experimental, without hierarchy between them. Each project, whether a visual identity for a client or an authorial film, receives the same creative rigor.</p>
+                <p className="bible-body">House number 13 as a symbol of resistance to the conventional. Bad luck transformed into creative power. The studio operates on the border between commercial and experimental, without hierarchy between them. Each project — whether a visual identity for a client or an authorial film — receives the same creative rigor.</p>
               </div>
             </div>
           </div>
@@ -194,11 +198,12 @@ const Dissertacao = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing mt-8">
             <div>
+              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Crew de skate @lowpressure.fam estabelecida nas transições e ruas de Curitiba. Movimento que valoriza o skateboard e seu universo cultural. Uma crew de skatistas, músicos e artistas com diferentes visões e um mesmo ideal. A ética do subterrâneo. O pensamento que nasce da margem.</p>
                 
                 <h3 className="bible-subtitle">Filosofia</h3>
-                <p className="bible-body"><span className="font-bold">LOW PRESSURE = BAIXA PRESSÃO.</span> Movimento atmosférico que precede tempestades. Instabilidade como potência. Tensão criativa que gera movimento. A crew não é grupo fechado, é campo de força que atrai quem vibra na mesma frequência.</p>
+                <p className="bible-body"><span className="font-bold">LOW PRESSURE = BAIXA PRESSÃO.</span> Movimento atmosférico que precede tempestades. Instabilidade como potência. Tensão criativa que gera movimento. A crew não é grupo fechado — é campo de força que atrai quem vibra na mesma frequência.</p>
                 <p className="bible-body">Skatistas, músicos, artistas, videomakers. Diferentes visões, mesmo ideal: fazer do skate um modo de vida autêntico, sem concessões ao mercado, sem domesticação da rebeldia. Punk ethics aplicada ao concreto urbano.</p>
                 
                 <h3 className="bible-subtitle">História</h3>
@@ -210,11 +215,12 @@ const Dissertacao = () => {
             </div>
 
             <div>
+              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Skate crew @lowpressure.fam established in the transitions and streets of Curitiba. Movement that values skateboarding and its cultural universe. A crew of skaters, musicians and artists with different visions and the same ideal. The ethics of the underground. Thought that rises from the margin.</p>
                 
                 <h3 className="bible-subtitle">Philosophy</h3>
-                <p className="bible-body"><span className="font-bold">LOW PRESSURE.</span> Atmospheric movement that precedes storms. Instability as power. Creative tension that generates movement. The crew isn't a closed group, it's a force field that attracts those who vibrate at the same frequency.</p>
+                <p className="bible-body"><span className="font-bold">LOW PRESSURE.</span> Atmospheric movement that precedes storms. Instability as power. Creative tension that generates movement. The crew isn't a closed group — it's a force field that attracts those who vibrate at the same frequency.</p>
                 <p className="bible-body">Skaters, musicians, artists, videomakers. Different visions, same ideal: making skateboarding an authentic way of life, without concessions to the market, without domestication of rebellion. Punk ethics applied to urban concrete.</p>
                 
                 <h3 className="bible-subtitle">History</h3>
@@ -239,6 +245,7 @@ const Dissertacao = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing mt-8">
             <div>
+              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Full Video da crew LowPressure. Um filme-processo que documenta as vivências e o legado de uma crew de skatistas pelos spots de Curitiba. Obra produzida de maneira totalmente autoral, através de vídeo, design e trilhas sonoras únicas. Objeto central da pesquisa de mestrado em Cinema e Artes do Vídeo.</p>
                 
@@ -246,18 +253,19 @@ const Dissertacao = () => {
                 <p className="bible-body">LowMovie não é só um vídeo de skate. É um artefato cultural que cristaliza memória, identidade e resistência subcultural. Um documento vivo que captura o ethos de uma crew que fez do skate um modo de existir. Produzido entre 2019-2022, estreou em abril de 2023 no Cine Passeio em Curitiba.</p>
                 
                 <h3 className="bible-subtitle">Simbolismo</h3>
-                <p className="bible-body">O filme opera como labirinto criativo onde subjetividade e subcultura se encontram. Cada manobra é gesto simbólico. Cada spot é território de afeto. A estética DIY não é limitação, é escolha ética. LowMovie materializa a filosofia punk do "faça você mesmo" aplicada ao cinema de skate.</p>
+                <p className="bible-body">O filme opera como labirinto criativo onde subjetividade e subcultura se encontram. Cada manobra é gesto simbólico. Cada spot é território de afeto. A estética DIY não é limitação — é escolha ética. LowMovie materializa a filosofia punk do "faça você mesmo" aplicada ao cinema de skate.</p>
                 
                 <h3 className="bible-subtitle">Premiére</h3>
                 <p className="bible-body">07 de abril de 2023. Cine Passeio, Curitiba. Sessão lotada. Skatistas, amigos, família, pesquisadores. Do underground ao cinema. Da margem ao centro simbólico da cidade. Um momento de reconhecimento sem domesticação. A crew permanece crew, mas agora habita também a tela grande.</p>
                 
                 <h3 className="bible-subtitle">Lowbyrinth™</h3>
                 <p className="bible-body">O símbolo central de LowMovie. Um labirinto inspirado em geometria sagrada e princípios herméticos. Baseado na filosofia de Hermes Trismegistus, o Lowbyrinth™ materializa a ideia de que princípios organizam toda vida e criação no universo.</p>
-                <p className="bible-body">O labirinto é a vida em seus encontros, transformações e realizações. Percursos colaborativos, improvisados e não-lineares. Cada volta representa a jornada da crew pelos picos de Curitiba. Cada linha é uma manobra, um gesto compartilhado. O centro é o encontro, onde todos os caminhos convergem.</p>
+                <p className="bible-body">O labirinto é a vida em seus encontros, transformações e realizações. Percursos colaborativos, improvisados e não-lineares. Cada volta representa a jornada da crew pelos picos de Curitiba. Cada linha é uma manobra, um gesto compartilhado. O centro é o encontro — onde todos os caminhos convergem.</p>
               </div>
             </div>
 
             <div>
+              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">LowPressure crew's Full Video. A process-film documenting the experiences and legacy of a skate crew through Curitiba's spots. Work produced entirely independently, through video, design and unique soundtracks. Central object of master's research in Cinema and Video Arts.</p>
                 
@@ -265,14 +273,14 @@ const Dissertacao = () => {
                 <p className="bible-body">LowMovie isn't just a skate video. It's a cultural artifact that crystallizes memory, identity and subcultural resistance. A living document that captures the ethos of a crew that made skateboarding a way of existing. Produced between 2019-2022, premiered in April 2023 at Cine Passeio in Curitiba.</p>
                 
                 <h3 className="bible-subtitle">Symbolism</h3>
-                <p className="bible-body">The film operates as a creative labyrinth where subjectivity and subculture meet. Each trick is symbolic gesture. Each spot is a territory of affection. The DIY aesthetic isn't a limitation, it's an ethical choice. LowMovie materializes the punk philosophy of "do it yourself" applied to skate cinema.</p>
+                <p className="bible-body">The film operates as a creative labyrinth where subjectivity and subculture meet. Each trick is symbolic gesture. Each spot is a territory of affection. The DIY aesthetic isn't a limitation — it's an ethical choice. LowMovie materializes the punk philosophy of "do it yourself" applied to skate cinema.</p>
                 
                 <h3 className="bible-subtitle">Premiere</h3>
                 <p className="bible-body">April 7, 2023. Cine Passeio, Curitiba. Sold-out session. Skaters, friends, family, researchers. From underground to cinema. From margin to the symbolic center of the city. A moment of recognition without domestication. The crew remains a crew, but now also inhabits the big screen.</p>
                 
                 <h3 className="bible-subtitle">Lowbyrinth™</h3>
                 <p className="bible-body">The central symbol of LowMovie. A labyrinth inspired by sacred geometry and hermetic principles. Based on Hermes Trismegistus' philosophy, the Lowbyrinth™ materializes the idea that principles organize all life and creation in the universe.</p>
-                <p className="bible-body">The labyrinth is life in its encounters, transformations, and realizations. Collaborative, improvised, and non-linear paths. Each turn represents the crew's journey through Curitiba's spots. Each line is a trick, a shared gesture. The center is the meeting point, where all paths converge.</p>
+                <p className="bible-body">The labyrinth is life in its encounters, transformations, and realizations. Collaborative, improvised, and non-linear paths. Each turn represents the crew's journey through Curitiba's spots. Each line is a trick, a shared gesture. The center is the meeting point — where all paths converge.</p>
               </div>
             </div>
           </div>
@@ -284,15 +292,16 @@ const Dissertacao = () => {
         <BilingualSection className="py-16">
           <div className="bible-bilingual-grid bible-block-spacing">
             <div>
-              <h2 className="bible-title">INTRODUÇÃO, RASTROS NAS RUAS</h2>
+              <h2 className="bible-title">INTRODUÇÃO — RASTROS NAS RUAS</h2>
             </div>
             <div>
-              <h2 className="bible-title">INTRODUCTION, TRACES IN THE STREETS</h2>
+              <h2 className="bible-title">INTRODUCTION — TRACES IN THE STREETS</h2>
             </div>
           </div>
 
           <div className="bible-bilingual-grid bible-section-spacing">
             <div>
+              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Esta pesquisa se constrói como travessia em primeira pessoa, um deslizamento entre o skate, o vídeo e a escrita, ativando formas de escuta, presença e invenção. O ato de escrever aqui é corpo em movimento, gesto que se arrisca, que se lança como quem dropa uma borda, um corrimão, uma escada. Drop é esse instante inaugural em que o skatista se projeta de um ponto mais alto e inicia o percurso com risco e intuição, abrindo caminho no concreto.</p>
                 
@@ -301,6 +310,7 @@ const Dissertacao = () => {
             </div>
 
             <div>
+              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">This research is constructed as a first-person journey, a drift between skateboarding, video and writing, activating forms of listening, presence and invention. The act of writing here is body in movement, gesture that takes risks, that launches itself like someone dropping a ledge, a handrail, a staircase. Drop is that inaugural instant in which the skater projects themselves from a higher point and begins the course with risk and intuition, opening a path in the concrete.</p>
                 
@@ -325,12 +335,14 @@ const Dissertacao = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing">
             <div>
+              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Os vídeos de skate registram a evolução técnica e criativa dos skatistas e desempenham um papel central na construção de sua identidade cultural. A VideoParte destaca não apenas as habilidades dos skatistas, mas também a integração entre seus movimentos e o ambiente urbano. A VideoParte é linguagem estética em movimento, expressão que transforma a paisagem urbana em território simbólico.</p>
               </div>
             </div>
 
             <div>
+              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Skateboarding videos record the technical and creative evolution of skaters and play a central role in constructing their cultural identity. The VideoPart highlights not only the skaters' skills, but also the integration between their movements and the urban environment. The VideoPart is aesthetic language in movement, expression that transforms the urban landscape into symbolic territory.</p>
               </div>
@@ -353,6 +365,7 @@ const Dissertacao = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing">
             <div>
+              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <h3 className="bible-subtitle">Pesquisa em Arte como Práxis Sensível</h3>
                 <p className="bible-body">Esta pesquisa se configura como investigação artística situada e processual, em que criar e pesquisar operam em simultaneidade. O pesquisador está implicado nos modos de viver e criar que constituem o campo, atuando desde dentro dos fluxos da criação. Trata-se de uma práxis sensível que mobiliza o corpo em sua totalidade, articulando gesto, técnica, percepção e pensamento em uma ação simultaneamente material e reflexiva.</p>
@@ -362,15 +375,15 @@ const Dissertacao = () => {
                 
                 <div className="space-y-3 border-l-2 border-primary pl-4">
                   <div>
-                    <p className="bible-body font-semibold">Movimento I, Corpo em Deriva</p>
+                    <p className="bible-body font-semibold">Movimento I — Corpo em Deriva</p>
                     <p className="bible-body">Investiga o corpo do skatista em relação ao espaço urbano, explorando a dimensão performática e sensível do gesto.</p>
                   </div>
                   <div>
-                    <p className="bible-body font-semibold">Movimento II, Coletivo em Baixo Relevo</p>
+                    <p className="bible-body font-semibold">Movimento II — Coletivo em Baixo Relevo</p>
                     <p className="bible-body">Examina as dinâmicas colaborativas da crew LowPressure™, seus modos de criação partilhada e pertencimento estético.</p>
                   </div>
                   <div>
-                    <p className="bible-body font-semibold">Movimento III, Obra em Expansão</p>
+                    <p className="bible-body font-semibold">Movimento III — Obra em Expansão</p>
                     <p className="bible-body">Analisa o LowMovie™ como dispositivo audiovisual que transborda o formato convencional em outras materialidades.</p>
                   </div>
                 </div>
@@ -381,15 +394,15 @@ const Dissertacao = () => {
                 <h3 className="bible-subtitle">Três Procedimentos Metodológicos</h3>
                 <div className="space-y-4">
                   <div className="bg-background/50 p-4 rounded-lg border border-border/50">
-                    <p className="bible-body font-semibold">1. Vivência Situada em Processos Coletivos</p>
+                    <p className="bible-body font-semibold mb-2">1. Vivência Situada em Processos Coletivos</p>
                     <p className="bible-body">Participação ativa nas dinâmicas que geram imagens, vínculos e registros. Inserção cotidiana que sustenta uma atenção contínua, em que corpo, escuta e presença operam em afinação constante.</p>
                   </div>
                   <div className="bg-background/50 p-4 rounded-lg border border-border/50">
-                    <p className="bible-body font-semibold">2. Convivência Criativa no Campo</p>
+                    <p className="bible-body font-semibold mb-2">2. Convivência Criativa no Campo</p>
                     <p className="bible-body">Acompanhamento dos ritmos e camadas do processo desde dentro, em escuta com as imagens, os sons da cidade e os encontros entre corpos e câmeras. Registro contínuo em diário digital atento às nuances do processo.</p>
                   </div>
                   <div className="bg-background/50 p-4 rounded-lg border border-border/50">
-                    <p className="bible-body font-semibold">3. Escuta Compartilhada</p>
+                    <p className="bible-body font-semibold mb-2">3. Escuta Compartilhada</p>
                     <p className="bible-body">Conversas abertas com integrantes do coletivo (skatistas, videomakers, colaboradores artísticos) como encontros de sintonia, em que o vínculo ativa sentidos e reverbera no percurso investigativo. Coleta de materiais produzidos pelo coletivo (vídeos, zines, áudios, imagens) sempre com consentimento informado.</p>
                   </div>
                 </div>
@@ -403,6 +416,7 @@ const Dissertacao = () => {
             </div>
 
             <div>
+              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <h3 className="bible-subtitle">Research in Art as Sensitive Praxis</h3>
                 <p className="bible-body">This research is configured as situated and processual artistic investigation, in which creating and researching operate simultaneously. The researcher is implicated in the ways of living and creating that constitute the field, acting from within the flows of creation. It is a sensitive praxis that mobilizes the body in its totality, articulating gesture, technique, perception and thought in an action simultaneously material and reflective.</p>
@@ -412,15 +426,15 @@ const Dissertacao = () => {
                 
                 <div className="space-y-3 border-l-2 border-primary pl-4">
                   <div>
-                    <p className="bible-body font-semibold">Movement I, Body in Drift</p>
+                    <p className="bible-body font-semibold">Movement I — Body in Drift</p>
                     <p className="bible-body">Investigates the skater's body in relation to urban space, exploring the performative and sensitive dimension of gesture.</p>
                   </div>
                   <div>
-                    <p className="bible-body font-semibold">Movement II, Collective in Low Relief</p>
+                    <p className="bible-body font-semibold">Movement II — Collective in Low Relief</p>
                     <p className="bible-body">Examines the collaborative dynamics of the LowPressure™ crew, their modes of shared creation and aesthetic belonging.</p>
                   </div>
                   <div>
-                    <p className="bible-body font-semibold">Movement III, Work in Expansion</p>
+                    <p className="bible-body font-semibold">Movement III — Work in Expansion</p>
                     <p className="bible-body">Analyzes LowMovie™ as an audiovisual device that overflows the conventional format into other materialities.</p>
                   </div>
                 </div>
@@ -431,15 +445,15 @@ const Dissertacao = () => {
                 <h3 className="bible-subtitle">Three Methodological Procedures</h3>
                 <div className="space-y-4">
                   <div className="bg-background/50 p-4 rounded-lg border border-border/50">
-                    <p className="bible-body font-semibold">1. Situated Experience in Collective Processes</p>
+                    <p className="bible-body font-semibold mb-2">1. Situated Experience in Collective Processes</p>
                     <p className="bible-body">Active participation in the dynamics that generate images, bonds and records. Daily insertion that sustains continuous attention, in which body, listening and presence operate in constant tuning.</p>
                   </div>
                   <div className="bg-background/50 p-4 rounded-lg border border-border/50">
-                    <p className="bible-body font-semibold">2. Creative Coexistence in the Field</p>
+                    <p className="bible-body font-semibold mb-2">2. Creative Coexistence in the Field</p>
                     <p className="bible-body">Following the rhythms and layers of the process from within, listening to images, city sounds and encounters between bodies and cameras. Continuous recording in digital diary attentive to the nuances of the process.</p>
                   </div>
                   <div className="bg-background/50 p-4 rounded-lg border border-border/50">
-                    <p className="bible-body font-semibold">3. Shared Listening</p>
+                    <p className="bible-body font-semibold mb-2">3. Shared Listening</p>
                     <p className="bible-body">Open conversations with collective members (skaters, videomakers, artistic collaborators) as tuning encounters, in which the bond activates meanings and reverberates in the investigative path. Collection of materials produced by the collective (videos, zines, audios, images) always with informed consent.</p>
                   </div>
                 </div>
@@ -469,6 +483,7 @@ const Dissertacao = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing">
             <div>
+              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Programa de Pós-Graduação em Cinema e Artes do Vídeo da Universidade Estadual do Paraná, Linha de Pesquisa (2) Processos de Criação no Cinema e nas Artes do Vídeo, como requisito parcial para a obtenção do grau de Mestre em Cinema e Artes do Vídeo.</p>
                 <p className="bible-body font-semibold">Orientador: Prof. Dr. Fábio Jabur de Noronha</p>
@@ -478,6 +493,7 @@ const Dissertacao = () => {
             </div>
 
             <div>
+              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Graduate Program in Cinema and Video Arts at Paraná State University, Research Line (2) Creation Processes in Cinema and Video Arts, as a partial requirement for obtaining the Master's degree in Cinema and Video Arts.</p>
                 <p className="bible-body font-semibold">Advisor: Prof. Dr. Fábio Jabur de Noronha</p>
@@ -503,6 +519,7 @@ const Dissertacao = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing">
             <div>
+              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">A pesquisa de mestrado investiga processos criativos colaborativos a partir da produção de LowMovie. Como uma crew de skate se torna coletivo criativo? Como a subcultura do skate gera modos específicos de fazer cinema? Como documentar sem domesticar?</p>
                 <p className="bible-body">Metodologia autoetnográfica. Análise fílmica. Entrevistas em profundidade. Diário de campo. Mas também: skate sessions como coleta de dados. Edição de vídeo como análise.</p>
@@ -510,6 +527,7 @@ const Dissertacao = () => {
             </div>
 
             <div>
+              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">The master's research investigates collaborative creative processes from LowMovie's production. How does a skate crew become a creative collective? How does skate subculture generate specific ways of making cinema? How to document without domesticating?</p>
                 <p className="bible-body">Autoethnographic methodology. Film analysis. In-depth interviews. Field diary. But also: skate sessions as data collection. Video editing as analysis.</p>
@@ -533,16 +551,18 @@ const Dissertacao = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing">
             <div>
+              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Criação sempre foi coletiva. CasaTrezeStudio (desde 2008), LowPressure (desde 2020), colaborações com músicos, skatistas, designers. Mas a práxis híbrida expande o conceito de coletivo: agora inclui agentes não-humanos. IA como colaboradora, não como ferramenta.</p>
-                <p className="bible-body">O coletivo não é soma de indivíduos, é campo de forças. Cada projeto gera sua própria configuração colaborativa. Algumas permanentes (crew), outras efêmeras (projetos específicos). Mas todas compartilham da mesma ética: autonomia criativa, transparência radical, autoria compartilhada mas assinada.</p>
+                <p className="bible-body">O coletivo não é soma de indivíduos — é campo de forças. Cada projeto gera sua própria configuração colaborativa. Algumas permanentes (crew), outras efêmeras (projetos específicos). Mas todas compartilham da mesma ética: autonomia criativa, transparência radical, autoria compartilhada mas assinada.</p>
               </div>
             </div>
 
             <div>
+              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Creation has always been collective. CasaTrezeStudio (since 2008), LowPressure (since 2020), collaborations with musicians, skaters, designers. But hybrid praxis expands the concept of collective: now it includes non-human agents. AI as collaborator, not as tool.</p>
-                <p className="bible-body">The collective isn't a sum of individuals, it's a force field. Each project generates its own collaborative configuration. Some permanent (crew), others ephemeral (specific projects). But all share the same ethics: creative autonomy, radical transparency, shared but signed authorship.</p>
+                <p className="bible-body">The collective isn't a sum of individuals — it's a force field. Each project generates its own collaborative configuration. Some permanent (crew), others ephemeral (specific projects). But all share the same ethics: creative autonomy, radical transparency, shared but signed authorship.</p>
               </div>
             </div>
           </div>
@@ -612,13 +632,13 @@ const Dissertacao = () => {
           <div className="space-y-8 mt-8">
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-card border border-border rounded-lg p-6">
-                <h4 className="bible-body font-bold">LowPressure™</h4>
-                <p className="bible-link">Brandbook LowPressure™</p>
+                <h4 className="bible-body font-bold mb-4">LowPressure™</h4>
+                <p className="bible-link mb-2">Brandbook LowPressure™</p>
                 <a 
                   href="/documents/LowPressure_brandbook.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="bible-link hover:underline block"
+                  className="bible-link hover:underline block mb-2"
                 >
                   Download Brandbook (PDF)
                 </a>
@@ -633,19 +653,19 @@ const Dissertacao = () => {
               </div>
 
               <div className="bg-card border border-border rounded-lg p-6">
-                <h4 className="bible-body font-bold">LowMovie™</h4>
-                <p className="bible-link">Brandbook LowMovie™</p>
+                <h4 className="bible-body font-bold mb-4">LowMovie™</h4>
+                <p className="bible-link mb-2">Brandbook LowMovie™</p>
                 <a 
                   href="/documents/LowMovie_brandbook.pdf" 
-                  target="_blank"
+                  target="_blank" 
                   rel="noopener noreferrer" 
-                  className="bible-link hover:underline block"
+                  className="bible-link hover:underline block mb-2"
                 >
                   Download Brandbook (PDF)
                 </a>
                 <a 
                   href="https://youtu.be/wcYBh6_DqO8" 
-                  target="_blank"
+                  target="_blank" 
                   rel="noopener noreferrer" 
                   className="bible-link hover:underline"
                 >

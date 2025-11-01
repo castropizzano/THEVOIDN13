@@ -6,7 +6,7 @@ export const PodcastPlayer = () => {
     <Card className="bg-card/80 border-primary/30 hover:border-primary transition-colors">
       <CardHeader>
         <CardTitle className="bible-title text-primary">
-          Skate Punk, Processos Criativos
+          Skate Punk — Processos Criativos
         </CardTitle>
         <CardDescription className="bible-body">
           Entrevista sobre o LowMovie™ e processos de criação / Interview about creative processes
@@ -15,7 +15,7 @@ export const PodcastPlayer = () => {
       <CardContent className="space-y-4">
         <div className="space-y-2">
           <p className="bible-body text-muted-foreground">
-            Podcast Chiclé Vídeos, Conversa sobre a trajetória criativa, os bastidores do LowMovie™, 
+            Podcast Chiclé Vídeos — Conversa sobre a trajetória criativa, os bastidores do LowMovie™, 
             a relação entre skate e audiovisual, e os processos colaborativos do coletivo LowPressure™.
           </p>
         </div>
@@ -31,7 +31,7 @@ export const PodcastPlayer = () => {
             width="100%"
             height="100%"
             src="https://www.youtube.com/embed/rOoUJyzGkDY"
-            title="Skate Punk, Processos Criativos, Castro Pizzano"
+            title="Skate Punk — Processos Criativos — Castro Pizzano"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen

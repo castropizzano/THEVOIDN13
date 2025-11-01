@@ -109,7 +109,7 @@ export const BilingualAudioPlayer = ({ srcPt, srcEn, title, description }: Bilin
       <div className="space-y-4">
         {/* Title and Description */}
         <div className="space-y-1">
-          <h3 className="text-lg font-bold text-primary tracking-wide">{title}</h3>
+          <h3 className="text-lg font-bold text-primary">{title}</h3>
           {description && (
             <p className="text-sm text-muted-foreground">{description}</p>
           )}
