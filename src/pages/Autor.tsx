@@ -657,7 +657,7 @@ const Autor = () => {
                 <h3 className="bible-subtitle">Experimentação Permanente</h3>
                 <p className="bible-body">Este não é um trabalho concluído. Este é um trabalho <span className="italic">em conclusão perpétua</span>. O portal será atualizado. Novos prompts serão testados. Novos capítulos do universo THEVØIDN13 surgirão. A metodologia será refinada enquanto permanece aberta.</p>
                 
-                <p className="bible-body">Aprendi neste processo que a verdadeira inteligência — humana ou artificial — não está em chegar a respostas definitivas. Está em continuar fazendo perguntas melhores. E fazer perguntas melhores exige coragem para experimentar, falhar, recalibrar, tentar de novo.</p>
+                <p className="bible-body">Aprendi neste processo que a verdadeira inteligência — humana ou artificial — não está em chegar a respostas definitivas. Está em continuar fazendo perguntas melhores. E fazer perguntas melhores exige coragem para experimentar, falhar, tentar de novo.</p>
                 
                 <p className="bible-body font-semibold mt-8 p-6 bg-primary/5 rounded-lg border-l-4 border-primary">O portal está vivo. A pesquisa está em movimento. O futuro está sendo criado agora — um prompt, uma imagem, um commit de cada vez.</p>
                 
@@ -702,7 +702,7 @@ const Autor = () => {
                 <h3 className="bible-subtitle">Permanent Experimentation</h3>
                 <p className="bible-body">This is not a finished work. This is a work <span className="italic">in perpetual conclusion</span>. The portal will be updated. New prompts will be tested. New chapters of the THEVØIDN13 universe will emerge. The methodology will be refined while remaining open.</p>
                 
-                <p className="bible-body">Because what I learned in this process is that true intelligence — human or artificial — is not in reaching definitive answers. It's in continuing to ask better questions. And asking better questions requires courage to experiment, fail, recalibrate, try again.</p>
+                <p className="bible-body">Because what I learned in this process is that true intelligence — human or artificial — is not in reaching definitive answers. It's in continuing to ask better questions. And asking better questions requires courage to experiment, fail, try again.</p>
                 
                 <p className="bible-body font-semibold mt-8 p-6 bg-primary/5 rounded-lg border-l-4 border-primary">The portal is alive. Research is in motion. The future is being created now — one prompt, one image, one commit at a time.</p>
                 
