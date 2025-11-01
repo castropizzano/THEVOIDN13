@@ -17,19 +17,7 @@ const SpotifyPlaylist = () => {
   return (
     <section className="w-full">
       <div className="max-w-6xl mx-auto">
-        <div className="flex items-center justify-between mb-8">
-          <div className="flex items-center gap-3">
-            <Music className="w-8 h-8 text-primary" />
-            <div>
-              <h2 className="text-3xl font-bold text-foreground">
-                ASSINATURA SONORA
-              </h2>
-              <p className="text-sm text-muted-foreground mt-1">
-                SONIC SIGNATURE — 13 tracks que guiaram o processo criativo
-              </p>
-            </div>
-          </div>
-          
+        <div className="flex items-center justify-end mb-4">
           <Dialog>
             <DialogTrigger asChild>
               <Button variant="outline" size="icon">
