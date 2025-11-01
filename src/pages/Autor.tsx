@@ -4,7 +4,7 @@ import { SEO, personSchema, breadcrumbSchema } from "@/components/SEO";
 import { BilingualSection } from "@/components/BilingualSection";
 import { BackToTop } from "@/components/BackToTop";
 import { Separator } from "@/components/ui/separator";
-import heroImage from "@/assets/castro-hero-new.png";
+import heroImage from "@/assets/author-hero.png";
 
 const Autor = () => {
   const breadcrumbs = breadcrumbSchema([
