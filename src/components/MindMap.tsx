@@ -164,10 +164,10 @@ export const MindMap = () => {
 
                     <div>
                       <p className="body-small text-foreground">
-                        <strong className="text-primary">2025 (Outubro):</strong> Defesa da dissertação (22/10/2025). Publicação inicial do portal THEVØIDN13. A partir daqui, o portal segue em atualização contínua, explorando questionamentos sobre co-criação humano-IA nascidos da pesquisa sobre LowMovie™.
+                        <strong className="text-primary">Out 25 - Mar 26:</strong> Defesa da dissertação (data a confirmar, prevista até março de 2026). Publicação inicial do portal THEVØIDN13 (22/10/2025). A partir daqui, o portal segue em atualização contínua, explorando questionamentos sobre co-criação humano-IA nascidos da pesquisa sobre LowMovie™.
                       </p>
                       <p className="body-small text-muted-foreground/70 italic">
-                        <strong>October 2025:</strong> Dissertation defense (10/22/2025). Initial publication of THEVØIDN13 portal. From here, the portal continues with ongoing updates, exploring questions about human-AI co-creation born from the research on LowMovie™.
+                        <strong>Oct 25 - Mar 26:</strong> Dissertation defense (date to be confirmed, expected by March 2026). Initial publication of THEVØIDN13 portal (10/22/2025). From here, the portal continues with ongoing updates, exploring questions about human-AI co-creation born from the research on LowMovie™.
                       </p>
                     </div>
                   </div>
