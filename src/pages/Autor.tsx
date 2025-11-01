@@ -46,8 +46,13 @@ const Autor = () => {
 
         {/* Quem Fala e De Onde Falo */}
         <BilingualSection className="py-16">
-          <div className="bible-block-spacing">
-            <h2 className="bible-title">QUEM FALA E DE ONDE FALO / WHO SPEAKS AND FROM WHERE I SPEAK</h2>
+          <div className="bible-bilingual-grid bible-block-spacing">
+            <div>
+              <h2 className="bible-title">QUEM FALA E DE ONDE FALO</h2>
+            </div>
+            <div>
+              <h2 className="bible-title">WHO SPEAKS AND FROM WHERE I SPEAK</h2>
+            </div>
           </div>
 
           <div className="bible-bilingual-grid bible-section-spacing">
@@ -87,8 +92,13 @@ const Autor = () => {
 
         {/* Habilidades Técnicas */}
         <BilingualSection className="py-16">
-          <div className="bible-block-spacing">
-            <h2 className="bible-title">HABILIDADES TÉCNICAS / TECHNICAL SKILLS</h2>
+          <div className="bible-bilingual-grid bible-block-spacing">
+            <div>
+              <h2 className="bible-title">HABILIDADES TÉCNICAS</h2>
+            </div>
+            <div>
+              <h2 className="bible-title">TECHNICAL SKILLS</h2>
+            </div>
           </div>
 
           <div className="bible-bilingual-grid bible-section-spacing">
@@ -202,8 +212,13 @@ const Autor = () => {
 
         {/* Práxis Híbrida */}
         <BilingualSection className="py-16">
-          <div className="bible-block-spacing">
-            <h2 className="bible-title">HYBRID PRAXIS / PRÁXIS HÍBRIDA</h2>
+          <div className="bible-bilingual-grid bible-block-spacing">
+            <div>
+              <h2 className="bible-title">PRÁXIS HÍBRIDA</h2>
+            </div>
+            <div>
+              <h2 className="bible-title">HYBRID PRAXIS</h2>
+            </div>
           </div>
 
           <div className="bible-bilingual-grid bible-section-spacing">
@@ -243,8 +258,13 @@ const Autor = () => {
 
         {/* Trajetória */}
         <BilingualSection className="py-16">
-          <div className="bible-block-spacing">
-            <h2 className="bible-title">TRAJETÓRIA / JOURNEY</h2>
+          <div className="bible-bilingual-grid bible-block-spacing">
+            <div>
+              <h2 className="bible-title">TRAJETÓRIA</h2>
+            </div>
+            <div>
+              <h2 className="bible-title">JOURNEY</h2>
+            </div>
           </div>
 
           <div className="bible-bilingual-grid bible-section-spacing">
@@ -276,8 +296,13 @@ const Autor = () => {
 
         {/* Formação Acadêmica */}
         <BilingualSection className="py-16">
-          <div className="bible-block-spacing">
-            <h2 className="bible-title">FORMAÇÃO ACADÊMICA / ACADEMIC BACKGROUND</h2>
+          <div className="bible-bilingual-grid bible-block-spacing">
+            <div>
+              <h2 className="bible-title">FORMAÇÃO ACADÊMICA</h2>
+            </div>
+            <div>
+              <h2 className="bible-title">ACADEMIC BACKGROUND</h2>
+            </div>
           </div>
 
           <div className="bible-bilingual-grid bible-section-spacing">
@@ -379,8 +404,13 @@ const Autor = () => {
 
         {/* ЦАСТРО™ como Anti-Brand */}
         <BilingualSection className="py-16">
-          <div className="bible-block-spacing">
-            <h2 className="bible-title">ЦАСТРО™ COMO ANTI-BRAND / ЦАСТРО™ AS ANTI-BRAND</h2>
+          <div className="bible-bilingual-grid bible-block-spacing">
+            <div>
+              <h2 className="bible-title">ЦАСТРО™ COMO ANTI-BRAND</h2>
+            </div>
+            <div>
+              <h2 className="bible-title">ЦАСТРО™ AS ANTI-BRAND</h2>
+            </div>
           </div>
 
           <div className="bible-bilingual-grid bible-section-spacing">
@@ -502,8 +532,13 @@ const Autor = () => {
 
         {/* Experiência Cultural */}
         <BilingualSection className="py-16">
-          <div className="bible-block-spacing">
-            <h2 className="bible-title">EXPERIÊNCIA CULTURAL / CULTURAL EXPERIENCE</h2>
+          <div className="bible-bilingual-grid bible-block-spacing">
+            <div>
+              <h2 className="bible-title">EXPERIÊNCIA CULTURAL</h2>
+            </div>
+            <div>
+              <h2 className="bible-title">CULTURAL EXPERIENCE</h2>
+            </div>
           </div>
 
           <div className="bible-bilingual-grid bible-section-spacing">
@@ -579,8 +614,13 @@ const Autor = () => {
 
         {/* Conclusão em Processo */}
         <BilingualSection className="py-16">
-          <div className="bible-block-spacing">
-            <h2 className="bible-title">CONCLUSÃO EM PROCESSO / CONCLUSION IN PROCESS</h2>
+          <div className="bible-bilingual-grid bible-block-spacing">
+            <div>
+              <h2 className="bible-title">CONCLUSÃO EM PROCESSO</h2>
+            </div>
+            <div>
+              <h2 className="bible-title">CONCLUSION IN PROCESS</h2>
+            </div>
           </div>
 
           <div className="bible-bilingual-grid bible-section-spacing">

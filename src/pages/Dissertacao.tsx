@@ -71,10 +71,15 @@ const Dissertacao = () => {
 
         {/* Processos Matriciais */}
         <BilingualSection className="py-16">
-          <div className="bible-block-spacing">
-            <h2 className="bible-title">PROCESSOS MATRICIAIS / MATRIX PROCESSES</h2>
-            <p className="bible-subtitle mt-4">Três projetos que originaram esta dissertação / Three projects that originated this dissertation</p>
+          <div className="bible-bilingual-grid bible-block-spacing">
+            <div>
+              <h2 className="bible-title">PROCESSOS MATRICIAIS</h2>
+            </div>
+            <div>
+              <h2 className="bible-title">MATRIX PROCESSES</h2>
+            </div>
           </div>
+          <p className="bible-subtitle mt-4">Três projetos que originaram esta dissertação / Three projects that originated this dissertation</p>
 
           <div className="bible-section-spacing mt-8">
             <p className="bible-body text-muted-foreground">
@@ -253,8 +258,13 @@ const Dissertacao = () => {
 
         {/* Introdução - Rastros nas Ruas */}
         <BilingualSection className="py-16">
-          <div className="bible-block-spacing">
-            <h2 className="bible-title">INTRODUÇÃO / RASTROS NAS RUAS / INTRODUCTION / TRACES IN THE STREETS</h2>
+          <div className="bible-bilingual-grid bible-block-spacing">
+            <div>
+              <h2 className="bible-title">INTRODUÇÃO — RASTROS NAS RUAS</h2>
+            </div>
+            <div>
+              <h2 className="bible-title">INTRODUCTION — TRACES IN THE STREETS</h2>
+            </div>
           </div>
 
           <div className="bible-bilingual-grid bible-section-spacing">
@@ -282,8 +292,13 @@ const Dissertacao = () => {
 
         {/* A VideoParte como Linguagem */}
         <BilingualSection className="py-16">
-          <div className="bible-block-spacing">
-            <h2 className="bible-title">A VIDEOPARTE COMO LINGUAGEM / THE VIDEOPART AS LANGUAGE</h2>
+          <div className="bible-bilingual-grid bible-block-spacing">
+            <div>
+              <h2 className="bible-title">A VIDEOPARTE COMO LINGUAGEM</h2>
+            </div>
+            <div>
+              <h2 className="bible-title">THE VIDEOPART AS LANGUAGE</h2>
+            </div>
           </div>
 
           <div className="bible-bilingual-grid bible-section-spacing">
@@ -307,8 +322,13 @@ const Dissertacao = () => {
 
         {/* Metodologia - Lowbyrinth™ como Método */}
         <BilingualSection className="py-16">
-          <div className="bible-block-spacing">
-            <h2 className="bible-title">METODOLOGIA [LOWBYRINTH™ COMO MÉTODO] / METHODOLOGY [LOWBYRINTH™ AS METHOD]</h2>
+          <div className="bible-bilingual-grid bible-block-spacing">
+            <div>
+              <h2 className="bible-title">METODOLOGIA [LOWBYRINTH™ COMO MÉTODO]</h2>
+            </div>
+            <div>
+              <h2 className="bible-title">METHODOLOGY [LOWBYRINTH™ AS METHOD]</h2>
+            </div>
           </div>
 
           <div className="bible-bilingual-grid bible-section-spacing">
@@ -420,8 +440,13 @@ const Dissertacao = () => {
 
         {/* Informação Acadêmica */}
         <BilingualSection className="py-16">
-          <div className="bible-block-spacing">
-            <h2 className="bible-title">MESTRADO EM CINEMA E ARTES DO VÍDEO / MASTER'S IN CINEMA AND VIDEO ARTS</h2>
+          <div className="bible-bilingual-grid bible-block-spacing">
+            <div>
+              <h2 className="bible-title">MESTRADO EM CINEMA E ARTES DO VÍDEO</h2>
+            </div>
+            <div>
+              <h2 className="bible-title">MASTER'S IN CINEMA AND VIDEO ARTS</h2>
+            </div>
           </div>
 
           <div className="bible-bilingual-grid bible-section-spacing">
@@ -451,8 +476,13 @@ const Dissertacao = () => {
 
         {/* Pesquisa Acadêmica */}
         <BilingualSection className="py-16">
-          <div className="bible-block-spacing">
-            <h2 className="bible-title">PESQUISA ACADÊMICA / ACADEMIC RESEARCH</h2>
+          <div className="bible-bilingual-grid bible-block-spacing">
+            <div>
+              <h2 className="bible-title">PESQUISA ACADÊMICA</h2>
+            </div>
+            <div>
+              <h2 className="bible-title">ACADEMIC RESEARCH</h2>
+            </div>
           </div>
 
           <div className="bible-bilingual-grid bible-section-spacing">
@@ -478,8 +508,13 @@ const Dissertacao = () => {
 
         {/* Colaboração e Coletivos */}
         <BilingualSection className="py-16">
-          <div className="bible-block-spacing">
-            <h2 className="bible-title">COLABORAÇÃO E COLETIVOS / COLLABORATION AND COLLECTIVES</h2>
+          <div className="bible-bilingual-grid bible-block-spacing">
+            <div>
+              <h2 className="bible-title">COLABORAÇÃO E COLETIVOS</h2>
+            </div>
+            <div>
+              <h2 className="bible-title">COLLABORATION AND COLLECTIVES</h2>
+            </div>
           </div>
 
           <div className="bible-bilingual-grid bible-section-spacing">
@@ -505,10 +540,15 @@ const Dissertacao = () => {
 
         {/* Documentação do Processo */}
         <BilingualSection className="py-16">
-          <div className="bible-block-spacing">
-            <h2 className="bible-title">DOCUMENTAÇÃO DO PROCESSO / PROCESS DOCUMENTATION</h2>
-            <p className="bible-subtitle mt-4">Trilhas sonoras, entrevistas e timeline da pesquisa / Soundtracks, interviews and research timeline</p>
+          <div className="bible-bilingual-grid bible-block-spacing">
+            <div>
+              <h2 className="bible-title">DOCUMENTAÇÃO DO PROCESSO</h2>
+            </div>
+            <div>
+              <h2 className="bible-title">PROCESS DOCUMENTATION</h2>
+            </div>
           </div>
+          <p className="bible-subtitle mt-4">Trilhas sonoras, entrevistas e timeline da pesquisa / Soundtracks, interviews and research timeline</p>
 
           <div className="space-y-16 mt-8">
             {/* Music Player */}
