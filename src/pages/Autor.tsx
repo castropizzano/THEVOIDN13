@@ -381,11 +381,6 @@ const Autor = () => {
           />
         </BilingualSection>
 
-        {/* Anti-brand Hero Image */}
-        <section className="w-full h-screen overflow-hidden">
-          <img src={antibrandImage} alt="ЦЦАСТРО™ Anti-brand" className="w-full h-full object-contain" />
-        </section>
-
         {/* Anti-brand Section */}
         <BilingualSection bgClassName="bg-card/30">
           <BilingualContent 
