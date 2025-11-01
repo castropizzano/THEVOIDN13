@@ -1887,8 +1887,19 @@ const Index = () => {
           <div className="space-y-6 mb-12">
             <BilingualContent
               portugueseContent={
+                <>
+                  <h3 className="bible-subtitle">DOCUMENTOS DE PESQUISA</h3>
+                </>
+              }
+              englishContent={
+                <>
+                  <h3 className="bible-subtitle">RESEARCH DOCUMENTS</h3>
+                </>
+              }
+            />
+            <BilingualContent
+              portugueseContent={
                 <div>
-                  <h3 className="bible-subtitle">DOCUMENTOS DE PESQUISA / RESEARCH DOCUMENTS</h3>
                   <p className="bible-body">
                     Apresentação Conceitual / Concept Art / MoodBoard. O mapa visual do inconsciente. Documentos que preservam a gênese estética e filosófica do projeto.
                   </p>
@@ -1896,7 +1907,7 @@ const Index = () => {
               }
               englishContent={
                 <div>
-                  <p className="bible-body mt-8">
+                  <p className="bible-body">
                     Conceptual Presentation / Concept Art / MoodBoard. The visual map of the unconscious. Documents preserving the aesthetic and philosophical genesis of the project.
                   </p>
                 </div>
@@ -1906,12 +1917,34 @@ const Index = () => {
 
           {/* MATERIAIS PRODUZIDOS */}
           <div className="mt-12 mb-6">
-            <h3 className="bible-subtitle">MATERIAIS PRODUZIDOS / PRODUCED MATERIALS</h3>
+            <BilingualContent
+              portugueseContent={
+                <>
+                  <h3 className="bible-subtitle">MATERIAIS PRODUZIDOS</h3>
+                </>
+              }
+              englishContent={
+                <>
+                  <h3 className="bible-subtitle">PRODUCED MATERIALS</h3>
+                </>
+              }
+            />
           </div>
 
           {/* BIBLIOTECA DE PROMPTS */}
           <div className="mb-12">
-            <h3 className="bible-subtitle">BIBLIOTECA DE PROMPTS / PROMPT LIBRARY</h3>
+            <BilingualContent
+              portugueseContent={
+                <>
+                  <h3 className="bible-subtitle">BIBLIOTECA DE PROMPTS</h3>
+                </>
+              }
+              englishContent={
+                <>
+                  <h3 className="bible-subtitle">PROMPT LIBRARY</h3>
+                </>
+              }
+            />
             <BilingualContent
               portugueseContent={
                 <div>
