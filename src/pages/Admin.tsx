@@ -17,13 +17,16 @@ const Admin = () => {
   const navigate = useNavigate();
   const { user, isAdmin, loading, signOut } = useAuth();
 
+  // Bypass authentication in development mode for editor access
+  const isDev = import.meta.env.DEV;
+
   useEffect(() => {
-    if (!loading && (!user || !isAdmin)) {
+    if (!isDev && !loading && (!user || !isAdmin)) {
       navigate("/auth");
     }
-  }, [user, isAdmin, loading, navigate]);
+  }, [user, isAdmin, loading, navigate, isDev]);
 
-  if (loading) {
+  if (!isDev && loading) {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
         <LoadingSpinner size="xl" text="Carregando painel..." />
@@ -31,7 +34,7 @@ const Admin = () => {
     );
   }
 
-  if (!isAdmin) {
+  if (!isDev && !isAdmin) {
     return null;
   }
 

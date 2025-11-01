@@ -10,6 +10,11 @@ interface ProtectedRouteProps {
 export const ProtectedRoute = ({ children }: ProtectedRouteProps) => {
   const { user, loading } = useAuth();
 
+  // Bypass authentication in development mode for editor access
+  if (import.meta.env.DEV) {
+    return <>{children}</>;
+  }
+
   // Show loading while checking authentication
   if (loading) {
     return (
