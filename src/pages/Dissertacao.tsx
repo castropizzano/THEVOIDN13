@@ -7,7 +7,7 @@ import { BackToTop } from "@/components/BackToTop";
 import { MusicPlayer } from "@/components/MusicPlayer";
 import { PodcastPlayer } from "@/components/PodcastPlayer";
 import { Timeline } from "@/components/Timeline";
-import heroImage from "@/assets/lowmovie-hero-new.png";
+import heroImage from "@/assets/lowmovie-hero.png";
 
 const Dissertacao = () => {
   const thesisSchema = {
