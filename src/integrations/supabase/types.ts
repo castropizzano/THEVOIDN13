@@ -105,9 +105,7 @@ export type Database = {
           email: string
           full_name: string
           id: string
-          ip_address: string | null
           subscribed_at: string | null
-          user_agent: string | null
         }
         Insert: {
           consent_given?: boolean | null
@@ -115,9 +113,7 @@ export type Database = {
           email: string
           full_name: string
           id?: string
-          ip_address?: string | null
           subscribed_at?: string | null
-          user_agent?: string | null
         }
         Update: {
           consent_given?: boolean | null
@@ -125,9 +121,7 @@ export type Database = {
           email?: string
           full_name?: string
           id?: string
-          ip_address?: string | null
           subscribed_at?: string | null
-          user_agent?: string | null
         }
         Relationships: []
       }
