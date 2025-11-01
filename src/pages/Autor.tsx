@@ -429,7 +429,7 @@ const Autor = () => {
                     </p>
                   </div>
                   <p className="text-base leading-relaxed text-justify">
-                    A anti-marca CASTRO não busca legibilidade comercial, mas reconhecimento conceitual. Quem entende o código, entende o autor. Quem não entende, está fora da tribo — e tudo bem.
+                    A anti-marca ЦАСТРО™ não busca legibilidade comercial, mas reconhecimento conceitual. Quem entende o código, entende o autor. Quem não entende, está fora da tribo — e tudo bem.
                   </p>
                 </div>
 
@@ -481,7 +481,7 @@ const Autor = () => {
                       <p className="text-sm text-muted-foreground">Referência ao controle cultural, à vigilância e à resistência autoral</p>
                     </div>
                     <div className="border-l-2 border-primary pl-4">
-                      <h4 className="text-sm font-bold uppercase mb-2">#</h4>
+                      <h4 className="text-sm font-bold uppercase mb-2">™</h4>
                       <p className="text-sm text-muted-foreground">Ironia: o símbolo do mercado aplicado a uma anti-marca</p>
                     </div>
                     <div className="border-l-2 border-primary pl-4">
