@@ -385,18 +385,18 @@ const Index = () => {
 
           <BilingualContent
             portugueseContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <p className="bible-body">
                   A máscara veio antes do nome grafite texturizada silenciosa não era uma face era a topografia do silêncio quando a olhei pela primeira vez percebi que ela não me olhava de volta talvez fosse isso o que eu buscava existir sem precisar me afirmar quando a vesti o rosto deixou de importar o espelho não devolveu imagem apenas peso foi nesse instante que compreendi não estava criando um personagem mas cedendo espaço ceder espaço ao inconsciente deixar que ele assumisse forma a máscara é o pacto entre o que se apaga e o que retorna o instante em que o corpo permite ser atravessado por algo maior do que ele mesmo.
                 </p>
-              </div>
+              </>
             }
             englishContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <p className="bible-body">
                   The mask came before the name graphite textured silent it was not a face it was the topography of silence when I looked at it for the first time I realized it did not look back at me perhaps that was what I was seeking to exist without needing to assert myself when I wore it the face ceased to matter the mirror returned no image only weight it was in that moment I understood I was not creating a character I was yielding space yielding space to the unconscious letting it take shape the mask is the pact between what fades and what returns the instant when the body allows itself to be crossed by something greater than itself.
                 </p>
-              </div>
+              </>
             }
           />
 
@@ -440,18 +440,18 @@ const Index = () => {
 
           <BilingualContent
             portugueseContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <p className="bible-body">
                   A máscara é o espelho do que o ego não sustenta a sombra emerge como forma não como disfarce cada peça do vestígio o casaco o capuz o passo é um gesto de retorno o corpo não atua ele escuta o que o inconsciente quer dizer o figurino é a tradução da psique em matéria um corpo ritual criado para se tornar passagem a indumentária deixa de ser proteção e se torna revelação é o inconsciente vestindo o mundo transformando o corpo em canal e a presença em linguagem THEVØIDN13 não é um personagem é o lugar onde o criador se dissolve para que a imagem respire.
                 </p>
-              </div>
+              </>
             }
             englishContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <p className="bible-body">
                   The mask is the mirror of what the ego cannot hold the shadow emerges as form not as disguise each trace the jacket the hood the step is a gesture of return the body does not act it listens to what the unconscious wants to say the attire is the psyche translated into matter a ritual body created to become a passage clothing ceases to protect and begins to reveal it is the unconscious dressing the world turning the body into a channel and presence into language THEVØIDN13 is not a character it is the place where the creator dissolves so the image can breathe.
                 </p>
-              </div>
+              </>
             }
           />
         </BilingualSection>
