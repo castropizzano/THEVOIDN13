@@ -1630,8 +1630,15 @@ const Index = () => {
             }
           />
 
-          <div className="mb-12">
-            <h3 className="bible-subtitle">LOWMOVIE™</h3>
+          <div className="mt-16 mb-12">
+            <BilingualContent
+              portugueseContent={
+                <h3 className="bible-subtitle">LOWMOVIE™</h3>
+              }
+              englishContent={
+                <h3 className="bible-subtitle">LOWMOVIE™</h3>
+              }
+            />
             
           <BilingualContent
             portugueseContent={
@@ -1652,7 +1659,14 @@ const Index = () => {
           </div>
 
           <div className="mb-16">
-            <h3 className="bible-subtitle">ЦАСТРО™ (CASTRO PIZZANO)</h3>
+            <BilingualContent
+              portugueseContent={
+                <h3 className="bible-subtitle">ЦАСТРО™ (CASTRO PIZZANO)</h3>
+              }
+              englishContent={
+                <h3 className="bible-subtitle">ЦАСТРО™ (CASTRO PIZZANO)</h3>
+              }
+            />
             
             <BilingualContent
               portugueseContent={
@@ -1679,7 +1693,14 @@ const Index = () => {
           </div>
 
           <div className="mb-16">
-            <h3 className="bible-subtitle">CASATREZESTUDIO®</h3>
+            <BilingualContent
+              portugueseContent={
+                <h3 className="bible-subtitle">CASATREZESTUDIO®</h3>
+              }
+              englishContent={
+                <h3 className="bible-subtitle">CASATREZESTUDIO®</h3>
+              }
+            />
             
             <BilingualContent
               portugueseContent={
