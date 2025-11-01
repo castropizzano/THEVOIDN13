@@ -76,7 +76,7 @@ const Autor = () => {
                 
                 <p className="bible-body text-justify">Currently, Master's student in Cinema and Video Arts at PPG-CINEAV of the State University of Paraná (Unespar – Curitiba II/FAP), in the research line on Creation Processes in Cinema and Video Arts. I am part of the CineCriare research group – Cinema: Creation and Reflection (Unespar/CNPq).</p>
                 
-                <p className="bible-body text-justify">Bachelor's degree in Advertising and Propaganda (Universidade Tuiuti do Paraná, 2010) and postgraduate degree in Art Direction and Creative Strategies (Unicuritiba, 2016).</p>
+                <p className="bible-body text-justify">Bachelor's degree in Advertising and Propaganda (Universidade Tuiuti do Paraná, 2010) and postgraduate degree in Art Dir. and Creative Strategies (Unicuritiba, 2016).</p>
                 
                 <p className="bible-body text-justify">Founder of CasaTrezeStudio® (2008), a creative collective that functions as an independent laboratory for cultural, authorial and commercial production, connecting people, ideas and projects. Between 2017 and 2020, professor of Creative Economy at Universidade Positivo; currently, lecturer in Branding and Audiovisual Production disciplines at Universidade Isulpar.</p>
                 
@@ -364,7 +364,7 @@ const Autor = () => {
 
                 <div className="border-l-2 border-muted pl-6">
                   <p className="bible-body text-muted-foreground">2014</p>
-                  <h3 className="bible-body font-bold">Postgraduate Degree in Art Direction and Creative Strategies</h3>
+                  <h3 className="bible-body font-bold">Postgraduate Degree in Art Dir. and Creative Strategies</h3>
                   <p className="bible-body">Unicuritiba</p>
                 </div>
 
@@ -475,7 +475,7 @@ const Autor = () => {
                   <p className="bible-body font-bold italic text-primary">"Branding died when it began to over-explain itself."</p>
                 </div>
                 
-                <p className="bible-body">The ЦАСТРО™ anti-brand doesn't seek commercial legibility, but conceptual recognition. Those who understand the code understand the author. Those who don't are outside, and that's okay.</p>
+                <p className="bible-body">The ЦАСТРО™ anti-brand doesn't seek commercial legibility, but conceptual recognition. Those who understand the code understand the author.</p>
                 
                 <div className="space-y-4 bg-primary/5 border border-primary/20 rounded-lg p-6">
                   <h3 className="bible-subtitle">Know the Work, Not the Face</h3>
@@ -642,7 +642,7 @@ const Autor = () => {
                 <h3 className="bible-subtitle">Experimentação Permanente</h3>
                 <p className="bible-body">Este não é um trabalho concluído. Este é um trabalho <span className="italic">em conclusão perpétua</span>. O portal será atualizado. Novos prompts serão testados. Novos capítulos do universo THEVØIDN13 surgirão. A metodologia será refinada enquanto permanece aberta.</p>
                 
-                <p className="bible-body">Porque o que aprendi neste processo é que a verdadeira inteligência, humana ou artificial, não está em chegar a respostas definitivas. Está em continuar fazendo perguntas melhores. E fazer perguntas melhores exige coragem para experimentar, falhar, recalibrar, tentar de novo.</p>
+                <p className="bible-body">Aprendi que a verdadeira inteligência, humana ou artificial, não está em chegar a respostas definitivas. Está em continuar fazendo perguntas melhores. E fazer perguntas melhores exige coragem para experimentar, falhar, recalibrar, tentar de novo.</p>
                 
                 <p className="bible-body font-semibold p-6 bg-primary/5 rounded-lg border-l-4 border-primary">O portal está vivo. A pesquisa está em movimento. O futuro está sendo criado agora, um prompt, uma imagem, um commit de cada vez.</p>
                 
