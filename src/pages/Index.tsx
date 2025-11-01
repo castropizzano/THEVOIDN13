@@ -2081,7 +2081,7 @@ const Index = () => {
           {/* DOCUMENTAÇÃO TÉCNICA */}
           <div className="grid md:grid-cols-2 gap-12 mt-12">
             <div className="space-y-6">
-              <h3 className="bible-subtitle">Main Documents / Documentos Principais</h3>
+              <h3 className="bible-subtitle">Main Doc. / Doc. Principais</h3>
               
               <div className="space-y-4">
                 <a 
@@ -2127,7 +2127,7 @@ const Index = () => {
             </div>
 
             <div className="space-y-6">
-              <h3 className="bible-subtitle">Technical Documentation / Documentação Técnica</h3>
+              <h3 className="bible-subtitle">Technical Doc. / Doc. Técnica</h3>
               
               <div className="space-y-4">
                 <a 
