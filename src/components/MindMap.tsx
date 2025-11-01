@@ -88,10 +88,10 @@ export const MindMap = () => {
               <div className="space-y-4">
                 <div className="space-y-2">
                   <p className="body-base text-foreground">
-                    <span className="text-primary font-bold">PORTUGUÊS:</span> Este memorial artístico documenta um processo de criação híbrida entre humano e inteligência artificial em constante desenvolvimento. A trajetória começa em 2008 com a fundação da CasaTrezeStudio, passa pelo desenvolvimento do LOWMOVIE (2020-2023), pelo mestrado em Cinema e Artes do Vídeo (iniciado em 2024), e culmina neste portal digital (outubro 2024 - presente). Não se trata de usar IA como ferramenta passiva, mas de estabelecer um diálogo criativo onde a máquina atua como co-criadora, desafiando, propondo e expandindo o universo conceitual de THEVØIDN13. Um coletivo em evolução: de humano-humano para humano-máquina.
+                    <span className="text-primary font-bold">PORTUGUÊS:</span> Este memorial artístico documenta um processo de criação híbrida entre humano e inteligência artificial em constante desenvolvimento. A trajetória começa em 2008 com a fundação da CasaTrezeStudio, passa pelo desenvolvimento do LOWMOVIE (2020-2023), pelo mestrado em Cinema e Artes do Vídeo (iniciado em 2024), e culmina neste portal digital (outubro 2025 - presente). Não se trata de usar IA como ferramenta passiva, mas de estabelecer um diálogo criativo onde a máquina atua como co-criadora, desafiando, propondo e expandindo o universo conceitual de THEVØIDN13. Um coletivo em evolução: de humano-humano para humano-máquina.
                   </p>
                   <p className="body-small text-muted-foreground italic">
-                    <span className="text-primary font-bold">ENGLISH:</span> This artistic memorial documents a hybrid creation process between human and artificial intelligence in constant development. The trajectory begins in 2008 with the foundation of CasaTrezeStudio, passes through the development of LOWMOVIE (2020-2023), the Master's in Cinema and Video Arts (started in 2024), and culminates in this digital portal (October 2024 - present). It's not about using AI as a passive tool, but establishing a creative dialogue where the machine acts as co-creator, challenging, proposing, and expanding the conceptual universe of THEVØIDN13. An evolving collective: from human-human to human-machine.
+                    <span className="text-primary font-bold">ENGLISH:</span> This artistic memorial documents a hybrid creation process between human and artificial intelligence in constant development. The trajectory begins in 2008 with the foundation of CasaTrezeStudio, passes through the development of LOWMOVIE (2020-2023), the Master's in Cinema and Video Arts (started in 2024), and culminates in this digital portal (October 2025 - present). It's not about using AI as a passive tool, but establishing a creative dialogue where the machine acts as co-creator, challenging, proposing, and expanding the conceptual universe of THEVØIDN13. An evolving collective: from human-human to human-machine.
                   </p>
                 </div>
 
@@ -128,19 +128,28 @@ export const MindMap = () => {
 
                     <div>
                       <p className="body-small text-foreground">
-                        <strong className="text-primary">2024 (Outubro - Dezembro):</strong> Crise acadêmica → Burnout → Nascimento de THEVØIDN13 como resposta ao colapso. Primeiras experimentações com Midjourney v6 para gerar máscaras e personagens. Desenvolvimento da estética "low culture punk" através de prompts iterativos com GPT-4. Início do desenvolvimento deste portal digital com Lovable.
+                        <strong className="text-primary">2024 (Outubro - Janeiro/2025):</strong> Crise acadêmica → Burnout → Incubação do projeto. Coleta de referências, rascunhos e experimentos isolados com IA, sem publicações oficiais.
                       </p>
                       <p className="body-small text-muted-foreground/70 italic">
-                        <strong>Oct-Dec 2024:</strong> Academic crisis → Burnout → Birth of THEVØIDN13 as response to collapse. First experiments with Midjourney v6 for masks and characters. Development of "low culture punk" aesthetic through iterative prompts with GPT-4. Beginning of this digital portal development with Lovable.
+                        <strong>Oct 2024 - Jan 2025:</strong> Academic crisis → Burnout → Project incubation. Reference gathering, drafts and isolated AI experiments, no official publications.
                       </p>
                     </div>
 
                     <div>
                       <p className="body-small text-foreground">
-                        <strong className="text-primary">2025 (Janeiro - Julho):</strong> Consolidação progressiva da Shadow Interface Bible. Desenvolvimento massivo do portal com Lovable AI + Claude 3.7 Sonnet. Experimentação com React TypeScript Tailwind. Funcionalidades interativas: Oráculo Criativo Gerador de Stills (Nano Banana) Biblioteca de Prompts Creative-Ops Mind Map. Edge functions em Supabase. Mais de 700 imagens geradas com Midjourney v6 Adobe Firefly e Nano Banana. Mais de 50 sessões iterativas refinando tipografia componentes UI e lógica frontend/backend. Conexão com GitHub.
+                        <strong className="text-primary">2024 (Outubro) - Presente:</strong> Consolidação contínua da Shadow Interface Bible v13. Atualizações vivas do arcabouço conceitual e das regras canônicas do universo.
                       </p>
                       <p className="body-small text-muted-foreground/70 italic">
-                        <strong>Jan-Jul 2025:</strong> Progressive consolidation of Shadow Interface Bible. Massive portal development with Lovable AI + Claude 3.7 Sonnet. Experimentation with React TypeScript Tailwind. Interactive features: Creative Oracle Still Generator (Nano Banana) Prompt Library Creative-Ops Mind Map. Edge functions in Supabase. 700+ images generated with Midjourney v6 Adobe Firefly and Nano Banana. 50+ iterative sessions refining typography UI components and frontend/backend logic. GitHub connection.
+                        <strong>Oct 2024 - Present:</strong> Ongoing consolidation of Shadow Interface Bible v13. Living updates to the conceptual framework and canonical universe rules.
+                      </p>
+                    </div>
+
+                    <div>
+                      <p className="body-small text-foreground">
+                        <strong className="text-primary">2025 (Janeiro - Julho):</strong> Experimentações técnicas e de linguagem com React, TypeScript e Tailwind. Definição de funcionalidades (Oráculo, Gerador de Stills, Biblioteca de Prompts, Mind Map). 700+ imagens com Midjourney v6, Adobe Firefly e Nano Banana. 50+ sessões iterativas refinando tipografia e componentes.
+                      </p>
+                      <p className="body-small text-muted-foreground/70 italic">
+                        <strong>Jan-Jul 2025:</strong> Technical and language experimentation with React, TypeScript and Tailwind. Features definition (Oracle, Still Generator, Prompt Library, Mind Map). 700+ images with Midjourney v6, Adobe Firefly and Nano Banana. 50+ iterative sessions refining typography and components.
                       </p>
                     </div>
 
@@ -155,10 +164,10 @@ export const MindMap = () => {
 
                     <div>
                       <p className="body-small text-foreground">
-                        <strong className="text-primary">2025 (Outubro):</strong> Defesa da dissertação de mestrado (31/10/2025). Publicação final deste portal digital. Desenvolvimento paralelo de questionamentos sobre co-criação humano-IA que originam uma nova fase do projeto em tempo real, nascida da pesquisa do mestrado sobre LOWMOVIE.
+                        <strong className="text-primary">2025 (Outubro):</strong> Início do projeto THEVØIDN13 e publicação inicial do portal (31/10/2025). Defesa da dissertação de mestrado. A partir daqui, o portal segue em atualização contínua.
                       </p>
                       <p className="body-small text-muted-foreground/70 italic">
-                        <strong>October 2025:</strong> Master's dissertation defense (10/31/2025). Final publication of this digital portal. Parallel development of questions about human-AI co-creation that originate a new phase of the project in real time, born from the Master's research on LOWMOVIE.
+                        <strong>October 2025:</strong> Start of THEVØIDN13 project and initial portal publication (10/31/2025). Master's dissertation defense. From here, the portal continues with ongoing updates.
                       </p>
                     </div>
                   </div>
@@ -541,12 +550,12 @@ export const MindMap = () => {
                   <line x1="150" y1="770" x2="1050" y2="770" stroke="hsl(var(--primary))" strokeWidth="3" opacity="0.5" />
                   
                   <rect x="244" y="763" width="14" height="14" fill="hsl(var(--primary))" rx="2" />
-                  <text x="251" y="752" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="9" fontWeight="600">Out-Dez 24</text>
-                  <text x="251" y="792" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">Crise + THEVØID</text>
+                  <text x="251" y="752" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="9" fontWeight="600">Out 24 - Jan 25</text>
+                  <text x="251" y="792" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">Crise Acadêmica</text>
                   
                   <rect x="494" y="763" width="14" height="14" fill="hsl(var(--accent))" rx="2" />
-                  <text x="501" y="752" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="9" fontWeight="600">Out 24 - Out 25</text>
-                  <text x="501" y="792" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">Portal + Bible</text>
+                  <text x="501" y="752" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="9" fontWeight="600">Out 24 - Presente</text>
+                  <text x="501" y="792" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">Bible v13</text>
                   
                   <rect x="744" y="763" width="14" height="14" fill="hsl(var(--secondary))" rx="2" />
                   <text x="751" y="752" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="9" fontWeight="600">2024-2026</text>
@@ -554,7 +563,7 @@ export const MindMap = () => {
                   
                   <rect x="994" y="763" width="14" height="14" fill="hsl(var(--primary))" rx="2" />
                   <text x="1001" y="752" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="9" fontWeight="600">31/10/25</text>
-                  <text x="1001" y="792" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">Publicação</text>
+                  <text x="1001" y="792" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">Início Portal + THEVØIDN13</text>
                 </g>
 
                 {/* Hub connections */}
