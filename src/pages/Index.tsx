@@ -160,14 +160,14 @@ const Index = () => {
             portugueseContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  Não há começo, há apenas o instante em que o silêncio decide respirar, THEVØIDN13 nasceu desse sopro invisível, um gesto entre a morte e o retorno, tudo o que chamam de ausência é apenas matéria em repouso, o vazio não é falta, é incubação de forma, é o espaço onde o verbo esquece o corpo e o corpo se converte em verbo, a imagem não quer ser vista, quer ser atravessada, o silêncio não encerra, expande, e o fim, aqui, é apenas uma respiração mais funda.
+                  Não há começo, há apenas o instante em que o silêncio decide respirar, THEVØIDN13 nasceu desse sopro invisível, um gesto entre a morte e o retorno, tudo o que chamam de ausência é apenas matéria em repouso, o vazio não é falta, é incubação de forma, é o espaço onde o verbo esquece o corpo e o corpo se converte em verbo, a imagem não quer ser vista, quer ser atravessada, o silêncio não encerra, expande, e o fim aqui é apenas uma respiração mais funda.
                 </p>
               </div>
             }
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  There is no beginning, there is only the instant when silence decides to breathe, THEVØIDN13 was born from that invisible breath, a gesture between death and return, everything they call absence is only matter at rest, the void is not lack, it is incubation of form, it is the space where the word forgets the body and the body becomes word, the image doesn't want to be seen, it wants to be crossed through, silence doesn't end, it expands, and the end, here, is only a deeper breath.
+                  There is no beginning, there is only the instant when silence decides to breathe, THEVØIDN13 was born from that invisible breath, a gesture between death and return, everything they call absence is only matter at rest, the void is not lack, it is incubation of form, it is the space where the word forgets the body and the body becomes word, the image doesn't want to be seen, it wants to be crossed through, silence doesn't end it expands, and the end here is only a deeper breath.
                 </p>
               </div>
             }
@@ -197,14 +197,14 @@ const Index = () => {
             portugueseContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  Hoje entendo, o THEVØIDN13 não nasceu para uma festa, nasceu porque eu precisava de um refúgio, um lugar onde o silêncio não fosse ausência, mas abrigo, um espaço para desaparecer sem deixar de criar, um modo de continuar respirando quando tudo o resto parecia saturado, o projeto cresceu como tudo o que é orgânico, pelas frestas, pelos ruídos, pelos becos da cidade, e se alguém pergunta o que é, eu respondo, não é personagem, é vestígio, é o que restou de mim depois que todas as máscaras sociais caíram, THEVØIDN13 é o nome que dei à minha própria sombra, o mito que inventei para continuar respirando, talvez, só talvez, seja o começo de uma nova forma de estar vivo sem precisar ser visto.
+                  Hoje entendo, o THEVØIDN13 não nasceu para uma festa, nasceu porque eu precisava de um refúgio, um lugar onde o silêncio não fosse ausência mas abrigo, um espaço para desaparecer sem deixar de criar, um modo de continuar respirando quando tudo o resto parecia saturado, o projeto cresceu como tudo o que é orgânico, pelas frestas pelos ruídos pelos becos da cidade, e se alguém pergunta o que é eu respondo, não é personagem é vestígio, é o que restou de mim depois que todas as máscaras sociais caíram, THEVØIDN13 é o nome que dei à minha própria sombra, o mito que inventei para continuar respirando, talvez só talvez seja o começo de uma nova forma de estar vivo sem precisar ser visto.
                 </p>
               </div>
             }
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  Today I understand, THEVØIDN13 was not born for a party, it was born because I needed a refuge, a place where silence was not absence but shelter, a space to disappear without ceasing to create, a way to keep breathing when everything else seemed saturated, the project grew like everything organic, through cracks, through noise, through city alleys, and if someone asks what it is, I answer, it is not a character, it is a trace, it is what remained of me after all social masks fell, THEVØIDN13 is the name I gave to my own shadow, the myth I invented to keep breathing, perhaps, just perhaps, it is the beginning of a new way of being alive without needing to be seen.
+                  Today I understand, THEVØIDN13 was not born for a party, it was born because I needed a refuge, a place where silence was not absence but shelter, a space to disappear without ceasing to create, a way to keep breathing when everything else seemed saturated, the project grew like everything organic through cracks through noise through city alleys, and if someone asks what it is I answer, it is not a character it is a trace, it is what remained of me after all social masks fell, THEVØIDN13 is the name I gave to my own shadow, the myth I invented to keep breathing, perhaps just perhaps it is the beginning of a new way of being alive without needing to be seen.
                 </p>
               </div>
             }
@@ -226,14 +226,14 @@ const Index = () => {
             portugueseContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  Não foi uma fantasia, foi um retorno, um desses chamados que vêm de dentro, quando o inconsciente começa a bater na pele pedindo passagem, pensei em inventar uma máscara e acabei revelando um rosto que sempre esteve ali, THEVØIDN13 surgiu do atrito entre o desejo e o cansaço, entre o fim da forma e o começo da presença, não é personagem nem alter ego, é uma presença que respira onde o corpo falha, um modo de existir sem precisar se exibir, respirar sem ter que performar, um corpo que se apaga para deixar a imagem viver, o instante em que o inconsciente decide existir.
+                  Não foi uma fantasia foi um retorno, um desses chamados que vêm de dentro quando o inconsciente começa a bater na pele pedindo passagem, pensei em inventar uma máscara e acabei revelando um rosto que sempre esteve ali, THEVØIDN13 surgiu do atrito entre o desejo e o cansaço entre o fim da forma e o começo da presença, não é personagem nem alter ego é uma presença que respira onde o corpo falha, um modo de existir sem precisar se exibir respirar sem ter que performar, um corpo que se apaga para deixar a imagem viver o instante em que o inconsciente decide existir.
                 </p>
               </div>
             }
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  It was not a fantasy, it was a return, one of those calls that come from within, when the unconscious begins to knock on the skin asking for passage, I thought I was inventing a mask and ended up revealing a face that was always there, THEVØIDN13 emerged from the friction between desire and exhaustion, between the end of form and the beginning of presence, it is neither character nor alter ego, it is a presence that breathes where the body fails, a way of existing without needing to exhibit oneself, breathing without having to perform, a body that fades to let the image live, the instant when the unconscious decides to exist.
+                  It was not a fantasy it was a return, one of those calls that come from within when the unconscious begins to knock on the skin asking for passage, I thought I was inventing a mask and ended up revealing a face that was always there, THEVØIDN13 emerged from the friction between desire and exhaustion between the end of form and the beginning of presence, it is neither character nor alter ego it is a presence that breathes where the body fails, a way of existing without needing to exhibit oneself breathing without having to perform, a body that fades to let the image live the instant when the unconscious decides to exist.
                 </p>
               </div>
             }
@@ -258,14 +258,14 @@ const Index = () => {
             portugueseContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  THEVØIDN13 é o décimo terceiro andar do inconsciente, um espaço entre mundos, onde o ego se apaga para que a imagem respire, não é personagem nem avatar, é um estado de travessia, não é um ser, é um ritmo, a forma que o inconsciente assume para respirar no ruído da cidade, existe para absorver, não para reagir, sua ética é a do silêncio, uma recusa ativa da autoafirmação, The Void é o nome que restou depois que todos os outros já morreram, o número treze é a assinatura do que retorna depois do fim.
+                  THEVØIDN13 é o décimo terceiro andar do inconsciente um espaço entre mundos onde o ego se apaga para que a imagem respire, não é personagem nem avatar é um estado de travessia, não é um ser é um ritmo, a forma que o inconsciente assume para respirar no ruído da cidade, existe para absorver não para reagir, sua ética é a do silêncio uma recusa ativa da autoafirmação, The Void é o nome que restou depois que todos os outros já morreram o número treze é a assinatura do que retorna depois do fim.
                 </p>
               </div>
             }
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  THEVØIDN13 is the thirteenth floor of the unconscious, a space between worlds, where the ego fades so the image can breathe, it is neither character nor avatar, it is a state of crossing, it is not a being, it is a rhythm, the form the unconscious assumes to breathe in the noise of the city, it exists to absorb, not to react, its ethic is that of silence, an active refusal of self-affirmation, The Void is the name that remained after all others had died, thirteen is the signature of what returns after the end.
+                  THEVØIDN13 is the thirteenth floor of the unconscious a space between worlds where the ego fades so the image can breathe, it is neither character nor avatar it is a state of crossing, it is not a being it is a rhythm, the form the unconscious assumes to breathe in the noise of the city, it exists to absorb not to react, its ethic is that of silence an active refusal of self-affirmation, The Void is the name that remained after all others had died thirteen is the signature of what returns after the end.
                 </p>
               </div>
             }
@@ -587,7 +587,7 @@ const Index = () => {
                 <div className="section-spacing">
                   <h3 className="subsection-title mb-4">SOMBRA</h3>
                   <p className="body-base text-justified">
-                    A sombra é o que o ego reprime, é onde mora o desejo sem permissão, o pensamento que não coube, não é monstruosa, é inédita, revelá la é aceitar que o ser é maior que a consciência, o void nasce ali, onde a forma aceita se desfazer.
+                    A sombra é o que o ego reprime é onde mora o desejo sem permissão o pensamento que não coube, não é monstruosa é inédita, revelá la é aceitar que o ser é maior que a consciência o void nasce ali onde a forma aceita se desfazer.
                   </p>
                 </div>
               }
@@ -595,7 +595,7 @@ const Index = () => {
                 <div className="section-spacing">
                   <h3 className="subsection-title mb-4">SHADOW</h3>
                   <p className="body-base text-justified">
-                    The shadow is what the ego represses, it is where forbidden desire resides, the thought that did not fit, it is not monstrous, it is unprecedented, to reveal it is to accept that being is greater than consciousness, the void is born there, where form accepts dissolution.
+                    The shadow is what the ego represses it is where forbidden desire resides the thought that did not fit, it is not monstrous it is unprecedented, to reveal it is to accept that being is greater than consciousness the void is born there where form accepts dissolution.
                   </p>
                 </div>
               }
@@ -606,7 +606,7 @@ const Index = () => {
                 <div className="section-spacing">
                   <h3 className="subsection-title mb-4">SILÊNCIO</h3>
                   <p className="body-base text-justified">
-                    O silêncio não é ausência de som, é o espaço onde o pensamento ainda vibra sem palavra, no silêncio o corpo ouve, é ali que o inconsciente fala, não em voz, mas em pressão, em peso, em pausa, o silêncio do void é denso como concreto e afiado como vidro.
+                    O silêncio não é ausência de som é o espaço onde o pensamento ainda vibra sem palavra, no silêncio o corpo ouve é ali que o inconsciente fala não em voz mas em pressão em peso em pausa, o silêncio do void é denso como concreto e afiado como vidro.
                   </p>
                 </div>
               }
@@ -614,7 +614,7 @@ const Index = () => {
                 <div className="section-spacing">
                   <h3 className="subsection-title mb-4">SILENCE</h3>
                   <p className="body-base text-justified">
-                    Silence is not the absence of sound, it is the space where thought still vibrates wordlessly, in silence the body listens, it is there that the unconscious speaks, not in voice but in pressure, in weight, in pause, the void's silence is dense as concrete and sharp as glass.
+                    Silence is not the absence of sound it is the space where thought still vibrates wordlessly, in silence the body listens it is there that the unconscious speaks not in voice but in pressure in weight in pause, the void's silence is dense as concrete and sharp as glass.
                   </p>
                 </div>
               }
@@ -625,7 +625,7 @@ const Index = () => {
                 <div className="section-spacing">
                   <h3 className="subsection-title mb-4">RUÍDO</h3>
                   <p className="body-base text-justified">
-                    O ruído não interrompe o pensamento, ele o revela, o som é a forma mais bruta do inconsciente tentando existir, o que vibra no limite do audível é o que não pode ser dito, o ruído é memória viva daquilo que ainda não encontrou palavra.
+                    O ruído não interrompe o pensamento ele o revela, o som é a forma mais bruta do inconsciente tentando existir, o que vibra no limite do audível é o que não pode ser dito, o ruído é memória viva daquilo que ainda não encontrou palavra.
                   </p>
                 </div>
               }
@@ -633,7 +633,7 @@ const Index = () => {
                 <div className="section-spacing">
                   <h3 className="subsection-title mb-4">NOISE</h3>
                   <p className="body-base text-justified">
-                    Noise does not interrupt thought, it reveals it, sound is the rawest form of the unconscious trying to exist, what vibrates at the edge of the audible is what cannot yet be said, noise is the living memory of what has not yet found a word.
+                    Noise does not interrupt thought it reveals it, sound is the rawest form of the unconscious trying to exist, what vibrates at the edge of the audible is what cannot yet be said, noise is the living memory of what has not yet found a word.
                   </p>
                 </div>
               }
@@ -644,7 +644,7 @@ const Index = () => {
                 <div className="section-spacing">
                   <h3 className="subsection-title mb-4">VAZIO</h3>
                   <p className="body-base text-justified">
-                    O vazio não apaga, ele abre, é o espaço onde o silêncio respira e o corpo se reescreve, ali tudo que foi reprimido se reorganiza em nova forma, o vazio é o território fértil da reinvenção, o ponto onde o ser se refaz em presença.
+                    O vazio não apaga ele abre, é o espaço onde o silêncio respira e o corpo se reescreve, ali tudo que foi reprimido se reorganiza em nova forma, o vazio é o território fértil da reinvenção o ponto onde o ser se refaz em presença.
                   </p>
                 </div>
               }
@@ -652,7 +652,7 @@ const Index = () => {
                 <div className="section-spacing">
                   <h3 className="subsection-title mb-4">VOID</h3>
                   <p className="body-base text-justified">
-                    The void does not erase, it opens, it is the space where silence breathes and the body rewrites itself, there everything that was repressed reorganizes into new form, the void is the fertile ground of reinvention, the point where being remakes itself into presence.
+                    The void does not erase it opens, it is the space where silence breathes and the body rewrites itself, there everything that was repressed reorganizes into new form, the void is the fertile ground of reinvention the point where being remakes itself into presence.
                   </p>
                 </div>
               }
@@ -1346,28 +1346,22 @@ const Index = () => {
           <div className="mb-16">
             <h3 className="subsection-title mb-8">LOWMOVIE™</h3>
             
-            <BilingualContent
-              portugueseContent={
-                <div className="section-spacing">
-                  <p className="body-base text-justified">
-                    O gesto que caminha sem ensaio, o corpo que grava antes de entender. O cinema como ritual de presença, onde o
-                    erro não é falha, mas respiração. LowMovie™ é o instante em que a câmera se torna extensão do inconsciente, o
-                    olhar que se arrasta pelo asfalto, o som que captura o silêncio. Cada plano é confissão, cada corte é um pulso. É o
-                    cinema da deriva: feito de ruído, cansaço e verdade.
-                  </p>
-                </div>
-              }
-              englishContent={
-                <div className="section-spacing">
-                  <p className="body-base text-justified">
-                    The gesture that walks without rehearsal, the body that records before it understands. Cinema as a ritual of
-                    presence, where error is not failure but breath. LowMovie™ is the moment when the camera becomes an extension
-                    of the unconscious, the gaze dragging across asphalt, the sound capturing silence. Each shot is a confession, each
-                    cut a pulse. It is the cinema of drift: made of noise, exhaustion, and truth.
-                  </p>
-                </div>
-              }
-            />
+          <BilingualContent
+            portugueseContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  O gesto que caminha sem ensaio o corpo que grava antes de entender. O cinema como ritual de presença onde o erro não é falha mas respiração. LowMovie™ é o instante em que a câmera se torna extensão do inconsciente o olhar que se arrasta pelo asfalto o som que captura o silêncio. Cada plano é confissão cada corte é um pulso. É o cinema da deriva feito de ruído cansaço e verdade.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div className="section-spacing">
+                <p className="body-base text-justified">
+                  The gesture that walks without rehearsal the body that records before it understands. Cinema as a ritual of presence where error is not failure but breath. LowMovie™ is the moment when the camera becomes an extension of the unconscious the gaze dragging across asphalt the sound capturing silence. Each shot is a confession each cut a pulse. It is the cinema of drift made of noise exhaustion and truth.
+                </p>
+              </div>
+            }
+          />
           </div>
 
           <div className="mb-16">
