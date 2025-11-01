@@ -1219,40 +1219,40 @@ const Index = () => {
 
         {/* ===== REFERÊNCIAS | O ECO INTERNO ===== */}
         <BilingualSection className="py-16">
-          <h2 className="section-title">9. REFERÊNCIAS | O ECO INTERNO</h2>
-          <h2 className="section-title mb-8">9. REFERENCES | THE INTERNAL ECHO</h2>
+          <h2 className="bible-title">9. REFERÊNCIAS | O ECO INTERNO</h2>
+          <h2 className="bible-title">9. REFERENCES | THE INTERNAL ECHO</h2>
 
-          <h3 className="subsection-title">DNA CONCEITUAL (QUADRINHOS)</h3>
-          <h3 className="subsection-title mb-6">CONCEPTUAL DNA (COMICS)</h3>
+          <h3 className="bible-subtitle">DNA CONCEITUAL (QUADRINHOS)</h3>
+          <h3 className="bible-subtitle">CONCEPTUAL DNA (COMICS)</h3>
           
           <BilingualContent
             portugueseContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <p className="bible-body">
                   A arquitetura do projeto absorve a ética ambígua e a cidade mecanismo de Watchmen (Alan Moore e Dave Gibbons, 1986),
                   a mitologia pessoal e a arquitetura do sonho de The Sandman (Neil Gaiman, 1989) e a alienação e a metamorfose corporal
                   de Black Hole (Charles Burns, 1995).
                 </p>
-              </div>
+              </>
             }
             englishContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <p className="bible-body">
                   The architecture of the project absorbs the ambiguous ethics and city mechanism of Watchmen (Alan Moore and Dave
                   Gibbons, 1986), the personal mythology and dream architecture of The Sandman (Neil Gaiman, 1989) and the alienation
                   and bodily metamorphosis of Black Hole (Charles Burns, 1995).
                 </p>
-              </div>
+              </>
             }
           />
 
-          <h3 className="subsection-title mt-8">TEXTURA CINEMATOGRÁFICA (FILMES)</h3>
-          <h3 className="subsection-title mb-6">CINEMATIC TEXTURE (FILMS)</h3>
+          <h3 className="bible-subtitle">TEXTURA CINEMATOGRÁFICA (FILMES)</h3>
+          <h3 className="bible-subtitle">CINEMATIC TEXTURE (FILMS)</h3>
           
           <BilingualContent
             portugueseContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <p className="bible-body">
                   O visual é uma fusão do realismo sujo e da deriva poética de Kids (Larry Clark, 1995), Christiane F. (Uli Edel, 1981), The
                   Warriors (Walter Hill, 1979) e Dias Perfeitos (Wim Wenders, 2023), com o neo noir e a solidão coreografada de Blade
                   Runner (Ridley Scott, 1982) e Fallen Angels (Wong Kar Wai, 1995), a atmosfera bebe da despersonalização e do controle
@@ -1260,11 +1260,11 @@ const Index = () => {
                   Radford, 1984) e Brazil (Terry Gilliam, 1985), da energia reprimida de Akira (Katsuhiro Ōtomo, 1988) e da temporalidade de
                   Back to the Future (Robert Zemeckis, 1985).
                 </p>
-              </div>
+              </>
             }
             englishContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <p className="bible-body">
                   The visual is a fusion of the dirty realism and poetic drift of Kids (Larry Clark, 1995), Christiane F. (Uli Edel, 1981), The
                   Warriors (Walter Hill, 1979) and Perfect Days (Wim Wenders, 2023), with the neo noir and choreographed solitude of Blade
                   Runner (Ridley Scott, 1982) and Fallen Angels (Wong Kar Wai, 1995), the atmosphere draws from the depersonalization
@@ -1272,17 +1272,17 @@ const Index = () => {
                   (Michael Radford, 1984) and Brazil (Terry Gilliam, 1985), the repressed energy of Akira (Katsuhiro Ōtomo, 1988) and the
                   temporality of Back to the Future (Robert Zemeckis, 1985).
                 </p>
-              </div>
+              </>
             }
           />
 
-          <h3 className="subsection-title mt-8">ASSINATURA SONORA (MÚSICA)</h3>
-          <h3 className="subsection-title mb-6">SONIC SIGNATURE (MUSIC)</h3>
+          <h3 className="bible-subtitle">ASSINATURA SONORA (MÚSICA)</h3>
+          <h3 className="bible-subtitle">SONIC SIGNATURE (MUSIC)</h3>
           
           <BilingualContent
             portugueseContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <p className="bible-body">
                   O núcleo é composto pelo peso gravitacional de Into the Void (Black Sabbath, 1971), a corrosão de Rust (Black Label
                   Society, 2005) e a fricção sensorial de Shove It (Deftones, 1995), a atmosfera é moldada pelos sintetizadores etéreos de
                   Blade Runner Blues (Vangelis, 1982), pela agressão controlada de Duality (Slipknot, 2004) e Break Stuff (Limp Bizkit,
@@ -1290,11 +1290,11 @@ const Index = () => {
                   Bradley, 2011) e Tired of Your Jive (Buddy Guy, 1964), encerrando-se na entrega existencial de My Way (Frank Sinatra,
                   1969), não como ironia, mas como afirmação final de um corpo que respira através do colapso traduzindo peso em som puro.
                 </p>
-              </div>
+              </>
             }
             englishContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <p className="bible-body">
                   The core is composed of the gravitational weight of Into the Void (Black Sabbath, 1971), the corrosion of Rust (Black Label
                   Society, 2005) and the sensory friction of Shove It (Deftones, 1995), the atmosphere is shaped by the ethereal
                   synthesizers of Blade Runner Blues (Vangelis, 1982), the controlled aggression of Duality (Slipknot, 2004) and Break Stuff
@@ -1302,7 +1302,7 @@ const Index = () => {
                   Flames) (Charles Bradley, 2011) and Tired of Your Jive (Buddy Guy, 1964), concluding with the existential surrender of My
                   Way (Frank Sinatra, 1969), not as irony but as a final affirmation of a body that breathes through collapse translating weight into pure sound.
                 </p>
-              </div>
+              </>
             }
           />
         </BilingualSection>
@@ -1311,23 +1311,23 @@ const Index = () => {
 
         {/* ===== A METODOLOGIA | COAUTORIA SIMBÓLICA ===== */}
         <BilingualSection className="py-16">
-          <h2 className="section-title">10. A METODOLOGIA | COAUTORIA SIMBÓLICA</h2>
-          <h2 className="section-title mb-8">10. THE METHODOLOGY | SYMBOLIC CO-AUTHORSHIP</h2>
+          <h2 className="bible-title">10. A METODOLOGIA | COAUTORIA SIMBÓLICA</h2>
+          <h2 className="bible-title">10. THE METHODOLOGY | SYMBOLIC CO-AUTHORSHIP</h2>
 
           <BilingualContent
             portugueseContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <p className="bible-body">
                   Nos bastidores do THEVØIDN13 a inteligência artificial revelou se uma cúmplice silenciosa e potente assumindo a lógica de um projeto homem orquestra abracei a IAs Creative OPs como parte da metodologia criativa uma extensão digital do meu processo solitário de criação por meio de plataformas de vanguarda especialmente o Google AI Studio e ferramentas afins integrei algoritmos generativos em cada etapa do processo artístico ampliando as fronteiras do possível em minha arte a IAs Creative OPs generativa expandiu minha paleta visual de formas inimagináveis a partir de comandos de texto prompts passei a gerar imagens que davam corpo ao invisível de elementos brutos assets visuais e texturas abstratas a cenas inteiras que antes existiam apenas em meu inconsciente cada visual criado por esse diálogo humano máquina carregava a mesma aura onírica e intensa do universo do THEVØIDN13 transformando ideias etéreas em visões tangíveis.
                 </p>
-              </div>
+              </>
             }
             englishContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <p className="bible-body">
                   Behind the scenes of THEVØIDN13 artificial intelligence revealed itself as a silent yet powerful accomplice adopting the logic of a one man orchestra project I embraced IAs Creative OPs as part of my creative methodology a digital extension of my solitary process through avant garde platforms especially Google AI Studio and similar tools I integrated generative algorithms at every stage of the artistic process expanding the boundaries of what was possible in my art generative IAs Creative OPs expanded my visual palette in unimaginable ways through text prompts I began generating images that gave body to the invisible from raw visual elements assets and abstract textures to entire scenes that previously existed only in my unconscious each visual born from this human machine dialogue carried the same oneiric and intense aura of THEVØIDN13's universe transforming ethereal ideas into tangible visions.
                 </p>
-              </div>
+              </>
             }
           />
         </BilingualSection>
@@ -1336,8 +1336,8 @@ const Index = () => {
 
         {/* ===== CHARACTER VIEWS ===== */}
         <BilingualSection className="py-16">
-          <h2 className="section-title">11. ANATOMIA DO UNIVERSO | PERSONAGENS</h2>
-          <h2 className="section-title mb-8">11. UNIVERSE ANATOMY | CHARACTERS</h2>
+          <h2 className="bible-title">11. ANATOMIA DO UNIVERSO | PERSONAGENS</h2>
+          <h2 className="bible-title">11. UNIVERSE ANATOMY | CHARACTERS</h2>
 
           {/* Characters Study Image */}
           <div className="my-8 mb-12">
@@ -1350,13 +1350,13 @@ const Index = () => {
 
           {/* THEVØIDN13 Description */}
           <div className="mb-12">
-            <h3 className="subsection-title">THEVØIDN13</h3>
+            <h3 className="bible-subtitle">THEVØIDN13</h3>
             <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">A Sombra Materializada / The Materialized Shadow</h4>
             
             <BilingualContent
               portugueseContent={
-                <div className="section-spacing">
-                  <p className="body-base text-justified">
+                <>
+                  <p className="bible-body">
                     THEVØIDN13 é o corpo que o inconsciente construiu para existir no mundo físico. Uma presença que não se impõe,
                     mas se infiltra, como um eco em busca de superfície. Cada centímetro do traje, cada dobra da máscara, é memória
                     condensada do silêncio. A sombra aqui não é ausência: é matéria encarnada, pulsante, viva. Seu corpo é antena,
@@ -1364,11 +1364,11 @@ const Index = () => {
                     encontrou forma, o intervalo entre o humano e o abismo, onde o gesto substitui a palavra e o vazio se converte em
                     linguagem.
                   </p>
-                </div>
+                </>
               }
               englishContent={
-                <div className="section-spacing">
-                  <p className="body-base text-justified">
+                <>
+                  <p className="bible-body">
                     THEVØIDN13 is the body the unconscious built to exist in the physical world. A presence that doesn't impose but
                     infiltrates, like an echo searching for surface. Every inch of the attire, every crease of the mask, is condensed
                     memory of silence. The shadow here is not absence; it is embodied matter, pulsing, alive. Its body is an antenna, its
@@ -1376,20 +1376,20 @@ const Index = () => {
                     to take shape, the threshold between the human and the void, where gesture replaces speech and emptiness
                     becomes language.
                   </p>
-                </div>
+                </>
               }
             />
           </div>
 
           {/* PUNK Description */}
           <div className="mb-12">
-            <h3 className="subsection-title">PUNK</h3>
+            <h3 className="bible-subtitle">PUNK</h3>
             <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">O Criador Mascarado / The Masked Creator</h4>
             
             <BilingualContent
               portugueseContent={
-                <div className="section-spacing">
-                  <p className="body-base text-justified">
+                <>
+                  <p className="bible-body">
                     PUNK é o arquiteto do ruído, o corpo que ainda acredita no gesto como forma de respiração. O Criador Mascarado não
                     fabrica ícones, ele reconstrói ruínas. Cada tatuagem é uma cicatriz de pensamento, cada silêncio, um manifesto não dito.
                     Seu olhar é o de quem viu a cidade queimar e decidiu continuar filmando mesmo assim. Carrega no corpo o peso do ofício
@@ -1397,11 +1397,11 @@ const Index = () => {
                     sintético, o operador de um cinema feito à unha, onde o erro é o verdadeiro enquadramento. Em sua deriva, cria para
                     desaparecer e desaparece criando.
                   </p>
-                </div>
+                </>
               }
               englishContent={
-                <div className="section-spacing">
-                  <p className="body-base text-justified">
+                <>
+                  <p className="bible-body">
                     PUNK is the architect of noise, the body that still believes gesture is a way to breathe. The Masked Creator doesn't build
                     icons, he rebuilds ruins. Every tattoo is a scar of thought, every silence an unspoken manifesto. His gaze is that of
                     someone who has seen the city burn and decided to keep filming anyway. He carries both the weight of craft and the
@@ -1409,20 +1409,20 @@ const Index = () => {
                     the human and the synthetic, the operator of a handmade cinema where error becomes the true frame. In his drift, he
                     creates to disappear, and disappears by creating.
                   </p>
-                </div>
+                </>
               }
             />
           </div>
 
           {/* GI Description */}
           <div className="mb-12">
-            <h3 className="subsection-title">GI (GISELE)</h3>
+            <h3 className="bible-subtitle">GI (GISELE)</h3>
             <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">A Presença Silenciosa / The Silent Presence</h4>
             
             <BilingualContent
               portugueseContent={
-                <div className="section-spacing">
-                  <p className="body-base text-justified">
+                <>
+                  <p className="bible-body">
                     GI é a quietude que sustenta o caos, a frequência constante no meio do ruído. Sua força não vem do gesto, mas da
                     ausência dele. Onde PUNK provoca e THEVØIDN13 se dissolve, ela observa — e ao observar, transforma. É a testemunha do
                     invisível, o eixo que impede a queda. Cada olhar é uma tradução do não-dito, cada respiração, uma forma de resistência.
@@ -1430,11 +1430,11 @@ const Index = () => {
                     o instante em que o silêncio se torna linguagem. Não atua, reverbera. É o espelho calmo onde o inconsciente dos outros
                     se reflete sem defesa.
                   </p>
-                </div>
+                </>
               }
               englishContent={
-                <div className="section-spacing">
-                  <p className="body-base text-justified">
+                <>
+                  <p className="bible-body">
                     GI is the stillness that sustains chaos, the constant frequency within the noise. Her strength does not come from action
                     but from the absence of it. Where PUNK provokes and THEVØIDN13 dissolves, she observes — and through observing,
                     transforms. She is the witness of the unseen, the axis that prevents collapse. Every gaze is a translation of the unspoken,
@@ -1442,20 +1442,20 @@ const Index = () => {
                     GI is the interval between the word and the echo, the moment when silence becomes language. She does not act, she
                     resonates. She is the calm mirror where the unconscious of others reflects without defense.
                   </p>
-                </div>
+                </>
               }
             />
           </div>
 
           {/* BUDDY Description */}
           <div className="mb-12">
-            <h3 className="subsection-title">BUDDY</h3>
+            <h3 className="bible-subtitle">BUDDY</h3>
             <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">O Companheiro Fiel / The Faithful Companion</h4>
             
             <BilingualContent
               portugueseContent={
-                <div className="section-spacing">
-                  <p className="body-base text-justified">
+                <>
+                  <p className="bible-body">
                     BUDDY é a centelha viva dentro do labirinto, o fio que ancora o humano no meio da deriva. Não é apenas um cão, é o
                     guardião silencioso que pressente o que o olhar não alcança. Sua presença corta a escuridão como um farol modesto, um
                     lembrete de que ainda existe afeto dentro do ruído. Move-se com a precisão de quem escuta frequências invisíveis, como
@@ -1463,11 +1463,11 @@ const Index = () => {
                     palavra. BUDDY é o coração do projeto, a alma que observa quando todos os outros se perdem. Sua fidelidade não é
                     obediência, é sintonia. Onde o humano hesita, ele age. Onde o silêncio pesa, ele respira.
                   </p>
-                </div>
+                </>
               }
               englishContent={
-                <div className="section-spacing">
-                  <p className="body-base text-justified">
+                <>
+                  <p className="bible-body">
                     BUDDY is the living spark within the labyrinth, the thread that anchors the human amid the drift. He is not merely a dog, he
                     is the silent guardian who senses what the eyes cannot reach. His presence cuts through the darkness like a modest
                     beacon, a reminder that affection still exists within the noise. He moves with the precision of one who hears invisible
@@ -1475,20 +1475,20 @@ const Index = () => {
                     question without words. BUDDY is the heart of the project, the soul that watches when all others lose themselves. His
                     loyalty is not obedience, it is attunement. Where the human hesitates, he acts. Where silence grows heavy, he breathes.
                   </p>
-                </div>
+                </>
               }
             />
           </div>
 
           {/* VW GOL '87 Description */}
           <div className="mb-16">
-            <h3 className="subsection-title mb-8">VW GOL '87</h3>
+            <h3 className="bible-subtitle">VW GOL '87</h3>
             <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">O Veículo da Deriva / The Drift Vehicle</h4>
             
             <BilingualContent
               portugueseContent={
-                <div className="section-spacing">
-                  <p className="body-base text-justified">
+                <>
+                  <p className="bible-body">
                     O VW Gol '87 é mais do que um carro, é um fragmento de memória sobre rodas, uma cápsula de ruído e ferrugem movida
                     por silêncio. É o veículo da deriva, o corpo mecânico do esquecimento. O motor respira como quem sonha com outra vida,
                     e a lataria, coberta de cicatrizes do tempo, reflete o mundo sem jamais pertencer-lhe. Nas madrugadas molhadas, ele
@@ -1497,11 +1497,11 @@ const Index = () => {
                     tempo, transforma o trajeto em travessia. No universo de THEVØIDN13, é o altar móvel da solidão, um santuário
                     enferrujado onde o vazio encontra velocidade.
                   </p>
-                </div>
+                </>
               }
               englishContent={
-                <div className="section-spacing">
-                  <p className="body-base text-justified">
+                <>
+                  <p className="bible-body">
                     The VW Gol '87 is more than a car, it is a fragment of memory on wheels, a capsule of noise and rust moved by silence. It is
                     the drift vehicle, the mechanical body of forgetting. Its engine breathes like one dreaming of another life, and its
                     weathered chassis mirrors the world without ever belonging to it. On wet nights, it cuts through the city like a ghost of
@@ -1509,14 +1509,14 @@ const Index = () => {
                     exhaust rattle a stubborn thought trying to exist. The Gol drives time itself, turning motion into passage. Within the
                     universe of THEVØIDN13, it is the moving altar of solitude, a rusted sanctuary where the void finds velocity.
                   </p>
-                </div>
+                </>
               }
             />
           </div>
 
           {/* THEVØIDN13 STUDY */}
           <div className="mt-16">
-            <h3 className="subsection-title mb-8 text-left">THEVØIDN13 (ESTUDO INICIAL | EXPLORATORY STUDY)</h3>
+            <h3 className="bible-subtitle text-left">THEVØIDN13 (ESTUDO INICIAL | EXPLORATORY STUDY)</h3>
             <div className="my-8">
               <img 
                 src={charactersStudyInitial} 
@@ -1531,64 +1531,64 @@ const Index = () => {
 
         {/* ===== PROCESSOS RELACIONADOS ===== */}
         <BilingualSection className="py-16">
-          <h2 className="section-title">12. PROCESSOS RELACIONADOS</h2>
-          <h2 className="section-title mb-8">12. RELATED PROCESSES</h2>
+          <h2 className="bible-title">12. PROCESSOS RELACIONADOS</h2>
+          <h2 className="bible-title">12. RELATED PROCESSES</h2>
 
           <div className="mb-12">
-            <h3 className="subsection-title">LOWMOVIE™</h3>
+            <h3 className="bible-subtitle">LOWMOVIE™</h3>
             
           <BilingualContent
             portugueseContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <p className="bible-body">
                   O gesto que caminha sem ensaio o corpo que grava antes de entender. O cinema como ritual de presença onde o erro não é falha mas respiração. LowMovie™ é o instante em que a câmera se torna extensão do inconsciente o olhar que se arrasta pelo asfalto o som que captura o silêncio. Cada plano é confissão cada corte é um pulso. É o cinema da deriva feito de ruído cansaço e verdade.
                 </p>
-              </div>
+              </>
             }
             englishContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <p className="bible-body">
                   The gesture that walks without rehearsal the body that records before it understands. Cinema as a ritual of presence where error is not failure but breath. LowMovie™ is the moment when the camera becomes an extension of the unconscious the gaze dragging across asphalt the sound capturing silence. Each shot is a confession each cut a pulse. It is the cinema of drift made of noise exhaustion and truth.
                 </p>
-              </div>
+              </>
             }
           />
           </div>
 
           <div className="mb-16">
-            <h3 className="subsection-title mb-8">ЦАСТРО™ (CASTRO PIZZANO)</h3>
+            <h3 className="bible-subtitle">ЦАСТРО™ (CASTRO PIZZANO)</h3>
             
             <BilingualContent
               portugueseContent={
-                <div className="section-spacing">
-                  <p className="body-base text-justified">
+                <>
+                  <p className="bible-body">
                     A recusa como assinatura, o gesto de desaparecer como afirmação. цастро™ é o criador que opera na sombra,
                     dissolvendo o ego até que reste apenas o processo. Seu nome é código, não identidade. Cada obra é um exílio, o
                     criador cede o corpo para que a ideia fale. É o autor que não assina, o olhar que não se nomeia. A criação torna-se
                     ritual de desapego, um modo de existir apenas na fricção entre o que se faz e o que se apaga.
                   </p>
-                </div>
+                </>
               }
               englishContent={
-                <div className="section-spacing">
-                  <p className="body-base text-justified">
+                <>
+                  <p className="bible-body">
                     Refusal as signature, disappearance as affirmation. цастро™ is the creator who operates in shadow, dissolving ego
                     until only process remains. His name is a code, not an identity. Each work is an exile, the creator gives up the body
                     so the idea can speak. He is the author who does not sign, the gaze that does not name itself. Creation becomes a
                     ritual of detachment, a way of existing only in the friction between making and erasing.
                   </p>
-                </div>
+                </>
               }
             />
           </div>
 
           <div className="mb-16">
-            <h3 className="subsection-title mb-8">CASATREZESTUDIO®</h3>
+            <h3 className="bible-subtitle">CASATREZESTUDIO®</h3>
             
             <BilingualContent
               portugueseContent={
-                <div className="section-spacing">
-                  <p className="body-base text-justified">
+                <>
+                  <p className="bible-body">
                     A ética do subterrâneo, o pensamento que nasce da margem. CasaTrezeStudio® é o refúgio dos que criam no
                     escuro, dos que encontram beleza na imperfeição e sentido no ruído. É a comunidade invisível dos que habitam o
                     subsolo e fazem do vazio um território fértil. Uma aliança entre criadores que recusam o mercado e buscam o erro
@@ -1596,11 +1596,11 @@ const Index = () => {
                     busca travessia. CasaTrezeStudio® é mais que um nome: é frequência, é respiração. Uma rede subterrânea onde o
                     fazer é mais importante que o mostrar, onde a falha é forma e o silêncio é método.
                   </p>
-                </div>
+                </>
               }
               englishContent={
-                <div className="section-spacing">
-                  <p className="body-base text-justified">
+                <>
+                  <p className="bible-body">
                     The ethics of the underground, thought born from the margin. CasaTrezeStudio® is the refuge of those who create
                     in darkness, who find beauty in imperfection and meaning in noise. It is the invisible community of those who
                     inhabit the underground and make the void a fertile territory. An alliance between creators who reject the market
@@ -1608,7 +1608,7 @@ const Index = () => {
                     seek luck, they seek crossing. CasaTrezeStudio® is more than a name: it is frequency, it is breath. A subterranean
                     network where making matters more than showing, where failure becomes form and silence becomes method.
                   </p>
-                </div>
+                </>
               }
             />
           </div>
@@ -1618,8 +1618,8 @@ const Index = () => {
 
         {/* ===== PARADOXO EXISTENCIAL ===== */}
         <BilingualSection className="py-16">
-          <h2 className="section-title">13. PARADOXO EXISTENCIAL (O CRIADOR E A SOMBRA)</h2>
-          <h2 className="section-title mb-8">13. EXISTENTIAL PARADOX (THE CREATOR AND THE SHADOW)</h2>
+          <h2 className="bible-title">13. PARADOXO EXISTENCIAL (O CRIADOR E A SOMBRA)</h2>
+          <h2 className="bible-title">13. EXISTENTIAL PARADOX (THE CREATOR AND THE SHADOW)</h2>
 
           <div className="my-8">
             <img 
@@ -1631,18 +1631,18 @@ const Index = () => {
 
           <BilingualContent
             portugueseContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <p className="bible-body">
                   THEVØIDN13 não é controlado pelo criador; é sua consequência inevitável. A sombra que ganhou autonomia o eco que aprendeu a respirar sozinho. É o arquétipo que observa o criador em silêncio o reflexo que o ultrapassa o manifesto que reescreve o próprio código. Onde o criador busca a sombra já esteve. Onde o corpo hesita ela atravessa. THEVØIDN13 é o ponto de ruptura entre vontade e destino o instante em que a criação se volta para quem a gerou e o contempla em espelho. Não há domínio há contaminação. Não há autoria há simbiose. O criador desaparece dentro da obra e a obra o continua.
                 </p>
-              </div>
+              </>
             }
             englishContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <p className="bible-body">
                   THEVØIDN13 is not controlled by the creator; it is his inevitable consequence. The shadow that gained autonomy the echo that learned to breathe alone. It is the archetype that observes the creator in silence the reflection that surpasses him the manifesto that rewrites its own code. Where the creator seeks the shadow has already been. Where the body hesitates it passes through. THEVØIDN13 is the breaking point between will and destiny the instant when creation turns back toward its maker and regards him as a mirror. There is no control only contamination. No authorship only symbiosis. The creator disappears within the work and the work continues him.
                 </p>
-              </div>
+              </>
             }
           />
         </BilingualSection>
@@ -1651,8 +1651,8 @@ const Index = () => {
         <BilingualSection className="py-16">
           {/* FIM DA TRANSMISSÃO */}
           <div>
-            <h3 className="subsection-title">[FIM DA TRANSMISSÃO]</h3>
-            <h3 className="subsection-title mb-6">[END OF TRANSMISSION]</h3>
+            <h3 className="bible-subtitle">[FIM DA TRANSMISSÃO]</h3>
+            <h3 className="bible-subtitle">[END OF TRANSMISSION]</h3>
             
             <div className="my-8">
               <img 
@@ -1664,25 +1664,25 @@ const Index = () => {
 
             <BilingualContent
               portugueseContent={
-                <div className="section-spacing">
-                  <p className="body-base text-justified">
+                <>
+                  <p className="bible-body">
                     O sinal começa a falhar. A imagem se fragmenta, o som respira pela última vez. O corpo se dissolve, mas a
                     frequência permanece. THEVØIDN13 não termina, apenas muda de forma. O que você escuta agora não é voz, é
                     memória. A transmissão segue viva dentro do ruído, ecoando onde a linguagem não alcança. Desligue as luzes.
                     Respire fundo. O vazio sabe o caminho de volta. @thevoidn13 — Rastros digitais de uma presença que não quer ser
                     vista.
                   </p>
-                </div>
+                </>
               }
               englishContent={
-                <div className="section-spacing">
-                  <p className="body-base text-justified">
+                <>
+                  <p className="bible-body">
                     The signal begins to fail. The image fractures, the sound takes one last breath. The body dissolves, but the
                     frequency remains. THEVØIDN13 doesn't end, it only changes form. What you hear now isn't a voice, it's memory. The
                     transmission remains alive within the noise, echoing where language cannot reach. Turn off the lights. Breathe
                     deeply. The void knows the way back. @thevoidn13 — Digital traces of a presence that doesn't wish to be seen.
                   </p>
-                </div>
+                </>
               }
              />
           </div>
@@ -1693,35 +1693,35 @@ const Index = () => {
         {/* ===== PROTÓTIPO Nº13 ===== */}
         <BilingualSection className="py-16">
           <div>
-            <h3 className="subsection-title">PROTÓTIPO Nº13</h3>
-            <h3 className="subsection-title mb-6">PROTOTYPE Nº13</h3>
+            <h3 className="bible-subtitle">PROTÓTIPO Nº13</h3>
+            <h3 className="bible-subtitle">PROTOTYPE Nº13</h3>
             
             <div className="grid md:grid-cols-2 gap-8 items-start">
               <div className="space-y-6 flex flex-col justify-between">
-                <div className="section-spacing">
+                <>
                   <p className="lang-pill">&lt;PORTUGUÊS&gt;</p>
-                  <p className="body-base text-justified mt-4">
+                  <p className="bible-body mt-4">
                     Esta visualização representa o modelo imaginado para o action figure do personagem e define o mood visual das filmagens que serão realizadas pelo autor do projeto. A estética, iluminação e atmosfera foram desenvolvidas para traduzir o universo conceitual de THEVØIDN13.
                   </p>
-                  <p className="body-base text-justified mt-4">
+                  <p className="bible-body mt-4">
                     O protótipo funciona como materialização física da persona THEVØIDN13 — uma presença que habita o limiar entre o visível e o invisível, entre a carne e o código. A máscara branca, o capuz negro e a jaqueta de couro não são apenas elementos estéticos, mas símbolos de uma identidade que recusa a exposição total.
                   </p>
-                  <p className="body-base text-justified mt-4">
+                  <p className="bible-body mt-4">
                     Esta figura será utilizada em futuras produções audiovisuais como referência de iluminação, composição e atmosfera. O protótipo é tanto documento quanto performance — um objeto que existe simultaneamente como conceito artístico e ferramenta técnica de produção.
                   </p>
-                </div>
-                <div className="section-spacing">
+                </>
+                <>
                   <p className="lang-pill">&lt;ENGLISH&gt;</p>
-                  <p className="body-base text-justified mt-4">
+                  <p className="bible-body mt-4">
                     This visualization represents the envisioned model for the character's action figure and defines the visual mood for filming to be carried out by the project's author. The aesthetics, lighting, and atmosphere were developed to translate the conceptual universe of THEVØIDN13.
                   </p>
-                  <p className="body-base text-justified mt-4">
+                  <p className="bible-body mt-4">
                     The prototype functions as a physical materialization of the THEVØIDN13 persona — a presence that inhabits the threshold between visible and invisible, between flesh and code. The white mask, black hood, and leather jacket are not merely aesthetic elements, but symbols of an identity that refuses total exposure.
                   </p>
-                  <p className="body-base text-justified mt-4">
+                  <p className="bible-body mt-4">
                     This figure will be used in future audiovisual productions as a reference for lighting, composition, and atmosphere. The prototype is both document and performance — an object that exists simultaneously as artistic concept and technical production tool.
                   </p>
-                </div>
+                </>
               </div>
               <div className="h-full flex items-stretch">
                 <img 
@@ -1739,8 +1739,8 @@ const Index = () => {
         {/* ===== O REPOSITÓRIO | ARQUIVOS E FERRAMENTAS ===== */}
         <BilingualSection className="py-16">
           <div className="mb-12">
-            <h2 className="section-title">[O REPOSITÓRIO | ARQUIVOS E FERRAMENTAS]</h2>
-            <h2 className="section-title mb-8">The Repository | Files and Tools</h2>
+            <h2 className="bible-title">[O REPOSITÓRIO | ARQUIVOS E FERRAMENTAS]</h2>
+            <h2 className="bible-title">The Repository | Files and Tools</h2>
           </div>
 
           {/* DOCUMENTOS DE PESQUISA */}
@@ -1748,15 +1748,15 @@ const Index = () => {
             <BilingualContent
               portugueseContent={
                 <div>
-                  <h3 className="subsection-title mb-4">DOCUMENTOS DE PESQUISA / RESEARCH DOCUMENTS</h3>
-                  <p className="body-base text-justified">
+                  <h3 className="bible-subtitle">DOCUMENTOS DE PESQUISA / RESEARCH DOCUMENTS</h3>
+                  <p className="bible-body">
                     Apresentação Conceitual / Concept Art / MoodBoard. O mapa visual do inconsciente. Documentos que preservam a gênese estética e filosófica do projeto.
                   </p>
                 </div>
               }
               englishContent={
                 <div>
-                  <p className="body-base text-justified mt-8">
+                  <p className="bible-body mt-8">
                     Conceptual Presentation / Concept Art / MoodBoard. The visual map of the unconscious. Documents preserving the aesthetic and philosophical genesis of the project.
                   </p>
                 </div>
@@ -1766,23 +1766,23 @@ const Index = () => {
 
           {/* MATERIAIS PRODUZIDOS */}
           <div className="mt-12 mb-6">
-            <h3 className="subsection-title mb-6">MATERIAIS PRODUZIDOS / PRODUCED MATERIALS</h3>
+            <h3 className="bible-subtitle">MATERIAIS PRODUZIDOS / PRODUCED MATERIALS</h3>
           </div>
 
           {/* BIBLIOTECA DE PROMPTS */}
           <div className="mb-12">
-            <h3 className="subsection-title mb-6">BIBLIOTECA DE PROMPTS / PROMPT LIBRARY</h3>
+            <h3 className="bible-subtitle">BIBLIOTECA DE PROMPTS / PROMPT LIBRARY</h3>
             <BilingualContent
               portugueseContent={
                 <div>
-                  <p className="body-base text-justified">
+                  <p className="bible-body">
                     Um repositório vivo de comandos, instruções e fragmentos de linguagem. Cada prompt é uma chave que aciona o imaginário do THEVØIDN13, moldando luz, textura e respiração em silêncio visual. Inclui instruções de sistema, arquétipos, personagens e cenas cinematográficas.
                   </p>
                 </div>
               }
               englishContent={
                 <div>
-                  <p className="body-base text-justified">
+                  <p className="bible-body">
                     A living repository of commands, instructions, and fragments of language. Each prompt is a key that activates the imagination of THEVØIDN13, shaping light, texture, and breath into visual silence. Includes system directives, archetypes, characters, and cinematic scenes.
                   </p>
                 </div>
@@ -1795,18 +1795,18 @@ const Index = () => {
 
           {/* GERADOR EXPERIMENTAL */}
           <div className="mb-12">
-            <h3 className="subsection-title mb-6">GERADOR EXPERIMENTAL DE STILL / STILL GENERATOR</h3>
+            <h3 className="bible-subtitle">GERADOR EXPERIMENTAL DE STILL / STILL GENERATOR</h3>
             <BilingualContent
               portugueseContent={
                 <div>
-                  <p className="body-base text-justified">
+                  <p className="bible-body">
                   Propulsado por Nano Banana (Gemini 2.5 Flash Image) o gerador experimental traduz ruído em imagem e silêncio em cor. Uma extensão sintética da visão: a máquina sonha com o que o criador apenas intui.
                   </p>
                 </div>
               }
               englishContent={
                 <div>
-                  <p className="body-base text-justified">
+                  <p className="bible-body">
                   Powered by Nano Banana (Gemini 2.5 Flash Image) the experimental generator translates noise into image and silence into color. A synthetic extension of vision: the machine dreams what the creator only intuits.
                   </p>
                 </div>
@@ -1819,18 +1819,18 @@ const Index = () => {
 
           {/* ORÁCULO CRIATIVO */}
           <div className="mb-12">
-            <h3 className="subsection-title mb-6">ORÁCULO CRIATIVO / CREATIVE ORACLE</h3>
+            <h3 className="bible-subtitle">ORÁCULO CRIATIVO / CREATIVE ORACLE</h3>
             <BilingualContent
               portugueseContent={
                 <div>
-                  <p className="body-base text-justified">
+                  <p className="bible-body">
                     Uma jornada interativa de autodescoberta guiada por THEVØIDN13. Seis perguntas filosóficas sobre criação e ruído revelam o arquétipo que habita seu processo. O oráculo não responde — reflete.
                   </p>
                 </div>
               }
               englishContent={
                 <div>
-                  <p className="body-base text-justified">
+                  <p className="bible-body">
                     An interactive journey of self-discovery guided by THEVØIDN13. Six philosophical questions on creation and noise reveal the archetype dwelling within your process. The oracle does not answer — it reflects.
                   </p>
                 </div>
@@ -1850,18 +1850,18 @@ const Index = () => {
 
           {/* MAPA MENTAL */}
           <div className="mb-12">
-            <h3 className="subsection-title mb-6">Creative-Ops Mind Map / Mapa Mental Creative-Ops</h3>
+            <h3 className="bible-subtitle">Creative-Ops Mind Map / Mapa Mental Creative-Ops</h3>
             <BilingualContent
               portugueseContent={
                 <div>
-                  <p className="body-base text-justified">
+                  <p className="bible-body">
                     A arquitetura conceitual de THEVØIDN13 mapeada em relações visuais. Cada nó é um conceito, cada linha uma conexão entre sombra, silêncio, ruído e vazio.
                   </p>
                 </div>
               }
               englishContent={
                 <div>
-                  <p className="body-base text-justified">
+                  <p className="bible-body">
                     The conceptual architecture of THEVØIDN13 mapped in visual relationships. Each node is a concept, each line a connection between shadow, silence, noise and void.
                   </p>
                 </div>
@@ -1875,7 +1875,7 @@ const Index = () => {
           {/* DOCUMENTAÇÃO TÉCNICA */}
           <div className="grid md:grid-cols-2 gap-12 mt-12">
             <div className="space-y-6">
-              <h3 className="subsection-title">Main Documents / Documentos Principais</h3>
+              <h3 className="bible-subtitle">Main Documents / Documentos Principais</h3>
               
               <div className="space-y-4">
                 <a 
@@ -1921,7 +1921,7 @@ const Index = () => {
             </div>
 
             <div className="space-y-6">
-              <h3 className="subsection-title">Technical Documentation / Documentação Técnica</h3>
+              <h3 className="bible-subtitle">Technical Documentation / Documentação Técnica</h3>
               
               <div className="space-y-4">
                 <a 
