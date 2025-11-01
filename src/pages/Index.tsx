@@ -237,14 +237,14 @@ const Index = () => {
             portugueseContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  Não foi uma fantasia foi um retorno um desses chamados que vêm de dentro quando o inconsciente começa a bater na pele pedindo passagem pensei em inventar uma máscara e acabei revelando um rosto que sempre esteve ali THEVØIDN13 surgiu do atrito entre o desejo e o cansaço entre o fim da forma e o começo da presença não é personagem nem alter ego é uma presença que respira onde o corpo falha um modo de existir sem precisar se exibir respirar sem ter que performar um corpo que se apaga para deixar a imagem viver o instante em que o inconsciente decide existir.
+                  Não foi uma fantasia foi um retorno um desses chamados que vêm de dentro quando o inconsciente começa a bater na pele pedindo passagem pensei em inventar uma máscara e acabei revelando um rosto que sempre esteve ali THEVØIDN13 surgiu do atrito entre o desejo e o cansaço entre o fim da forma e o começo da presença não é personagem nem alter ego é uma presença que respira onde o corpo falha um modo de existir sem precisar se exibir respirar sem ter que performar um corpo que se apaga para deixar a imagem viver o instante em que o inconsciente decide existir seu corpo permite atravessar o invisível tornando matéria.
                 </p>
               </div>
             }
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  It was not a fantasy it was a return one of those calls that come from within when the unconscious begins to knock on the skin asking for passage I thought I was inventing a mask and ended up revealing a face that was always there THEVØIDN13 emerged from the friction between desire and exhaustion between the end of form and the beginning of presence it is neither character nor alter ego it is a presence that breathes where the body fails a way of existing without needing to exhibit oneself breathing without having to perform a body that fades to let the image live the instant when the unconscious decides to exist.
+                  It was not a fantasy it was a return one of those calls that come from within when the unconscious begins to knock on the skin asking for passage I thought I was inventing a mask and ended up revealing a face that was always there THEVØIDN13 emerged from the friction between desire and exhaustion between the end of form and the beginning of presence it is neither character nor alter ego it is a presence that breathes where the body fails a way of existing without needing to exhibit oneself breathing without having to perform a body that fades to let the image live the instant when the unconscious decides to exist its body allows crossing making matter visible.
                 </p>
               </div>
             }
@@ -308,14 +308,14 @@ const Index = () => {
             portugueseContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  A função simbólica de THEVØIDN13 é dar corpo ao invisível traduzir o silêncio em gesto o inconsciente em imagem ele é o espelho do caos contemporâneo um ser que surge quando o verbo deixa de fazer sentido sua presença não explica convoca THEVØIDN13 é o instante em que o erro se torna ritual e o colapso criação.
+                  A função simbólica de THEVØIDN13 é dar corpo ao invisível traduzir o silêncio em gesto o inconsciente em imagem ele é o espelho do caos contemporâneo um ser que surge quando o verbo deixa de fazer sentido sua presença não explica convoca THEVØIDN13 é o instante em que o erro se torna ritual e o colapso criação ele converte ausência em forma tangível.
                 </p>
               </div>
             }
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  The symbolic function of THEVØIDN13 is to give body to the invisible to translate silence into gesture the unconscious into image it is the mirror of contemporary chaos a being that appears when the word ceases to make sense its presence does not explain it summons THEVØIDN13 is the instant when error becomes ritual and collapse becomes creation.
+                  The symbolic function of THEVØIDN13 is to give body to the invisible to translate silence into gesture the unconscious into image it is the mirror of contemporary chaos a being that appears when the word ceases to make sense its presence does not explain it summons THEVØIDN13 is the instant when error becomes ritual and collapse becomes creation it converts absence into tangible form.
                 </p>
               </div>
             }
@@ -328,14 +328,14 @@ const Index = () => {
             portugueseContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  THEVØIDN13 encarna a sombra junguiana não como vilão mas como espelho do que foi reprimido é o corpo caminhando entre a razão e o delírio entre o controle e o colapso sua natureza é liminar existe no intervalo entre o som e o silêncio entre o gesto e o pensamento é o errante o que não pertence a lugar algum e o redentor subterrâneo.
+                  THEVØIDN13 encarna a sombra junguiana não como vilão mas como espelho do que foi reprimido é o corpo caminhando entre a razão e o delírio entre o controle e o colapso sua natureza é liminar existe no intervalo entre o som e o silêncio entre o gesto e o pensamento é o errante o que não pertence a lugar algum e o redentor subterrâneo sua essência pulsa no limiar do ser.
                 </p>
               </div>
             }
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  THEVØIDN13 embodies the Jungian shadow not as a villain but as a mirror of what has been repressed it is the body walking between reason and delirium between control and collapse its nature is liminal existing in the interval between sound and silence between gesture and thought it is the wanderer the one who belongs nowhere and the subterranean redeemer.
+                  THEVØIDN13 embodies the Jungian shadow not as a villain but as a mirror of what has been repressed it is the body walking between reason and delirium between control and collapse its nature is liminal existing in the interval between sound and silence between gesture and thought it is the wanderer the one who belongs nowhere and the subterranean redeemer its essence pulses at the threshold of being.
                 </p>
               </div>
             }
@@ -450,14 +450,14 @@ const Index = () => {
             portugueseContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  THEVØIDN13 não tem rosto, tem ritmo, sua existência é feita de pulsos, não de poses, cada gesto nasce do atrito entre o consciente e o que tenta emergir, não se move para expressar, mas para liberar, o corpo é antena, não vitrine, é ali que o inconsciente encontra carne, respiração e peso, um ser que não comunica, ressoa, um corpo que existe apenas para traduzir o invisível em vibração.
+                  THEVØIDN13 não tem rosto, tem ritmo, sua existência é feita de pulsos, não de poses, cada gesto nasce do atrito entre o consciente e o que tenta emergir, não se move para expressar, mas para liberar, o corpo é antena, não vitrine, é ali que o inconsciente encontra carne, respiração e peso, um ser que não comunica, ressoa, um corpo que existe apenas para traduzir o invisível em vibração ele converte silêncio em frequência palpável convertendo vazio em pulso.
                 </p>
               </div>
             }
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  THEVØIDN13 has no face, only rhythm, its existence is made of pulses, not poses, each gesture is born from the friction between the conscious and what tries to emerge, it does not move to express but to release, the body is an antenna, not a showcase, there the unconscious finds flesh, breath and weight, a being that does not communicate, it resonates, a body that exists only to translate the invisible into vibration.
+                  THEVØIDN13 has no face, only rhythm, its existence is made of pulses, not poses, each gesture is born from the friction between the conscious and what tries to emerge, it does not move to express but to release, the body is an antenna, not a showcase, there the unconscious finds flesh, breath and weight, a being that does not communicate, it resonates, a body that exists only to translate the invisible into vibration it converts silence into palpable frequency turning void into pulse.
                 </p>
               </div>
             }
@@ -548,7 +548,7 @@ const Index = () => {
                 <div className="section-spacing">
                   <h4 className="subsection-title mb-4">A ATMOSFERA</h4>
                   <p className="body-base text-justified">
-                    Tudo vibra em tom noturno, a névoa, o concreto e a solidão elétrica são extensões do corpo, o ambiente não cerca THEVØIDN13, ele o prolonga, a paisagem se torna psique e o silêncio uma presença física, a cidade é o espelho expandido do inconsciente, o lugar onde o corpo desaparece e o espaço respira por ele.
+                    Tudo vibra em tom noturno, a névoa, o concreto e a solidão elétrica são extensões do corpo, o ambiente não cerca THEVØIDN13, ele o prolonga, a paisagem se torna psique e o silêncio uma presença física, a cidade é o espelho expandido do inconsciente, o lugar onde o corpo desaparece e o espaço respira por ele cada superfície reflete fragmentos do invisível tornando visível o que sempre esteve oculto.
                   </p>
                 </div>
               }
@@ -556,7 +556,7 @@ const Index = () => {
                 <div className="section-spacing">
                   <h4 className="subsection-title mb-4">THE ATMOSPHERE</h4>
                   <p className="body-base text-justified">
-                    Everything vibrates in a nocturnal tone, the fog, the concrete and the electric loneliness are extensions of the body, the environment does not surround THEVØIDN13, it prolongs him, the landscape becomes psyche and silence a physical presence, the city is the expanded mirror of the unconscious, the place where the body disappears and space breathes for it.
+                    Everything vibrates in a nocturnal tone, the fog, the concrete and the electric loneliness are extensions of the body, the environment does not surround THEVØIDN13, it prolongs him, the landscape becomes psyche and silence a physical presence, the city is the expanded mirror of the unconscious, the place where the body disappears and space breathes for it each surface reflects fragments of the invisible making visible what was always hidden.
                   </p>
                 </div>
               }
@@ -731,7 +731,7 @@ const Index = () => {
               <div>
                 <h4 className="subsection-title mb-4">COMPUTAÇÃO</h4>
                 <p className="body-base text-justified">
-                  Na era dos mainframes o zero cortado diferenciava a letra O do número zero, tornou se símbolo de precisão, linguagem de máquina e leitura binária, muito usado em design hacker e cultura digital, representa a leitura correta da ausência, o vazio interpretado pela máquina.
+                  Na era dos mainframes o zero cortado diferenciava a letra O do número zero, tornou se símbolo de precisão, linguagem de máquina e leitura binária, muito usado em design hacker e cultura digital, representa a leitura correta da ausência, o vazio interpretado pela máquina tornando o vazio compreensível ao sistema digital.
                 </p>
               </div>
             </div>
@@ -754,7 +754,7 @@ const Index = () => {
               <div>
                 <h4 className="subsection-title mb-4">COMPUTATION</h4>
                 <p className="body-base text-justified">
-                  In the mainframe era the slashed zero differentiated the letter O from the number zero, it became a symbol of precision, machine language and binary reading, widely used in hacker design and digital culture, it represents the correct reading of absence, the void interpreted by the machine.
+                  In the mainframe era the slashed zero differentiated the letter O from the number zero, it became a symbol of precision, machine language and binary reading, widely used in hacker design and digital culture, it represents the correct reading of absence, the void interpreted by the machine making emptiness comprehensible to the digital system.
                 </p>
               </div>
             </div>
@@ -767,14 +767,14 @@ const Index = () => {
             portugueseContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  Presente em movimentos de anarquia música industrial cyberpunk moda experimental como Rick Owens e Helmut Lang e no hacktivismo o Ø é usado como avatar do usuário vazio sem identidade mas com presença simbólica. Linguística origem nórdica letra de ilha ø significa isolamento THEVØID como ilha mental matemática ausência total base da criação o vazio como matriz criativa tecnológica distinção entre O e zero precisão binária o humano e o sistema filosófica a falta que estrutura o desejo segundo Lacan a sombra que dá forma ao sujeito estética símbolo universal de interferência visual assinatura gráfica da negação e reprogramação do ser.
+                  Presente em movimentos de anarquia música industrial cyberpunk moda experimental como Rick Owens e Helmut Lang e no hacktivismo o Ø é usado como avatar do usuário vazio sem identidade mas com presença simbólica. Linguística origem nórdica letra de ilha ø significa isolamento THEVØID como ilha mental matemática ausência total base da criação o vazio como matriz criativa tecnológica distinção entre O e zero precisão binária o humano e o sistema filosófica a falta que estrutura o desejo segundo Lacan a sombra que dá forma ao sujeito estética símbolo universal de interferência visual assinatura gráfica da negação e reprogramação do ser transformando ausência em linguagem potente.
                 </p>
               </div>
             }
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  Present in anarchy movements industrial music cyberpunk experimental fashion such as Rick Owens and Helmut Lang and in hacktivism the Ø is used as the avatar of the empty user without identity but with symbolic presence. Linguistic nordic origin letter for island ø means isolation THEVØID as a mental island mathematical total absence basis of creation the void as a creative matrix technological distinction between O and zero binary precision the human and the system philosophical the lack that structures desire according to Lacan the shadow that gives form to the subject aesthetic universal symbol of visual interference graphic signature of negation and reprogramming of the being.
+                  Present in anarchy movements industrial music cyberpunk experimental fashion such as Rick Owens and Helmut Lang and in hacktivism the Ø is used as the avatar of the empty user without identity but with symbolic presence. Linguistic nordic origin letter for island ø means isolation THEVØID as a mental island mathematical total absence basis of creation the void as a creative matrix technological distinction between O and zero binary precision the human and the system philosophical the lack that structures desire according to Lacan the shadow that gives form to the subject aesthetic universal symbol of visual interference graphic signature of negation and reprogramming of the being transforming absence into potent language.
                 </p>
               </div>
             }
@@ -932,14 +932,14 @@ const Index = () => {
             portugueseContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  A estética de THEVØIDN13 não foi desenhada, ela emergiu, surgiu da fricção entre o erro e o silêncio, entre o cansaço e o impulso de existir, é uma estética que nasce do colapso, do realismo sujo do ruído urbano e da introspecção solitária, planos longos, grão trinta e cinco milímetros, neon estourado e ruas molhadas são ecos visuais de uma mente em vigília, cada sombra é uma memória, cada reflexo uma confissão.
+                  A estética de THEVØIDN13 não foi desenhada, ela emergiu, surgiu da fricção entre o erro e o silêncio, entre o cansaço e o impulso de existir, é uma estética que nasce do colapso, do realismo sujo do ruído urbano e da introspecção solitária, planos longos, grão trinta e cinco milímetros, neon estourado e ruas molhadas são ecos visuais de uma mente em vigília, cada sombra é uma memória, cada reflexo uma confissão ela converte fragmentos do cotidiano em linguagem visual tornando o invisível tangível e palpável.
                 </p>
               </div>
             }
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  The aesthetic of THEVØIDN13 was not designed, it emerged, it arose from the friction between error and silence, between exhaustion and the impulse to exist, it is an aesthetic born from collapse, from the dirty realism of urban noise and solitary introspection, long shots, thirty-five millimeter grain, blown out neon and wet streets are the visual echoes of a mind on watch, every shadow is a memory, every reflection a confession.
+                  The aesthetic of THEVØIDN13 was not designed, it emerged, it arose from the friction between error and silence, between exhaustion and the impulse to exist, it is an aesthetic born from collapse, from the dirty realism of urban noise and solitary introspection, long shots, thirty-five millimeter grain, blown out neon and wet streets are the visual echoes of a mind on watch, every shadow is a memory, every reflection a confession it converts fragments of everyday life into visual language making the invisible tangible and palpable.
                 </p>
               </div>
             }
@@ -1079,7 +1079,7 @@ const Index = () => {
                   Blade Runner Blues (Vangelis, 1982), pela agressão controlada de Duality (Slipknot, 2004) e Break Stuff (Limp Bizkit,
                   1999), pela melancolia de Leach (Superheaven, 2015) e pelo blues noturno de The World (Is Going Up in Flames) (Charles
                   Bradley, 2011) e Tired of Your Jive (Buddy Guy, 1964), encerrando-se na entrega existencial de My Way (Frank Sinatra,
-                  1969), não como ironia, mas como afirmação final de um corpo que respira através do colapso.
+                  1969), não como ironia, mas como afirmação final de um corpo que respira através do colapso traduzindo peso em som puro.
                 </p>
               </div>
             }
@@ -1091,7 +1091,7 @@ const Index = () => {
                   synthesizers of Blade Runner Blues (Vangelis, 1982), the controlled aggression of Duality (Slipknot, 2004) and Break Stuff
                   (Limp Bizkit, 1999), the melancholy of Leach (Superheaven, 2015) and the nocturnal blues of The World (Is Going Up in
                   Flames) (Charles Bradley, 2011) and Tired of Your Jive (Buddy Guy, 1964), concluding with the existential surrender of My
-                  Way (Frank Sinatra, 1969), not as irony but as a final affirmation of a body that breathes through collapse.
+                  Way (Frank Sinatra, 1969), not as irony but as a final affirmation of a body that breathes through collapse translating weight into pure sound.
                 </p>
               </div>
             }
