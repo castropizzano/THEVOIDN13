@@ -2100,14 +2100,14 @@ const Index = () => {
               portugueseContent={
                 <div>
                   <p className="bible-body">
-                    Uma jornada interativa de autodescoberta guiada por THEVØIDN13. Seis perguntas filosóficas sobre criação e ruído revelam o arquétipo que habita seu processo. O oráculo não responde — reflete.
+                    Uma jornada interativa de autodescoberta guiada por THEVØIDN13. Seis perguntas filosóficas sobre criação e ruído revelam o arquétipo que habita seu processo. O oráculo não responde, reflete.
                   </p>
                 </div>
               }
               englishContent={
                 <div>
                   <p className="bible-body">
-                    An interactive journey of self-discovery guided by THEVØIDN13. Six philosophical questions on creation and noise reveal the archetype dwelling within your process. The oracle does not answer — it reflects.
+                    An interactive journey of self-discovery guided by THEVØIDN13. Six philosophical questions on creation and noise reveal the archetype dwelling within your process. The oracle does not answer, it reflects.
                   </p>
                 </div>
               }
