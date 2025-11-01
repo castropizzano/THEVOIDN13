@@ -522,7 +522,7 @@ const Dissertacao = () => {
               <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">A pesquisa de mestrado investiga processos criativos colaborativos a partir da produção de LowMovie. Como uma crew de skate se torna coletivo criativo? Como a subcultura do skate gera modos específicos de fazer cinema? Como documentar sem domesticar?</p>
-                <p className="bible-body">Metodologia autoetnográfica. Análise fílmica. Entrevistas em profundidade. Diário de campo. Mas também: skate sessions como coleta de dados. Edição de vídeo como análise. Montagem como pensamento. A forma da dissertação questiona a forma acadêmica tradicional.</p>
+                <p className="bible-body">Metodologia autoetnográfica. Análise fílmica. Entrevistas em profundidade. Diário de campo. Mas também: skate sessions como coleta de dados. Edição de vídeo como análise. Montagem como pensamento.</p>
               </div>
             </div>
 
@@ -530,7 +530,7 @@ const Dissertacao = () => {
               <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">The master's research investigates collaborative creative processes from LowMovie's production. How does a skate crew become a creative collective? How does skate subculture generate specific ways of making cinema? How to document without domesticating?</p>
-                <p className="bible-body">Autoethnographic methodology. Film analysis. In-depth interviews. Field diary. But also: skate sessions as data collection. Video editing as analysis. Montage as thought. The dissertation's form questions the traditional academic form.</p>
+                <p className="bible-body">Autoethnographic methodology. Film analysis. In-depth interviews. Field diary. But also: skate sessions as data collection. Video editing as analysis. Montage as thought.</p>
               </div>
             </div>
           </div>
@@ -580,7 +580,14 @@ const Dissertacao = () => {
               <h2 className="bible-title">PROCESS DOCUMENTATION</h2>
             </div>
           </div>
-          <p className="bible-subtitle mt-4">Trilhas sonoras, entrevistas e timeline da pesquisa / Soundtracks, interviews and research timeline</p>
+          <div className="bilingual-grid mt-4">
+            <div className="bilingual-col">
+              <p className="bible-subtitle">TRILHAS SONORAS, ENTREVISTAS</p>
+            </div>
+            <div className="bilingual-col">
+              <p className="bible-subtitle">SOUNDTRACKS, INTERVIEWS</p>
+            </div>
+          </div>
 
           <div className="space-y-16 mt-8">
             {/* Music Player */}
