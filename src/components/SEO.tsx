@@ -88,42 +88,72 @@ export const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Castro Pizzano",
-  "alternateName": "цастро™",
-  "jobTitle": "Artist, Designer, Filmmaker",
-  "affiliation": {
-    "@type": "Organization",
-    "name": "UNESPAR",
-    "department": "PPG-CINEAV"
-  },
-  "alumniOf": {
-    "@type": "EducationalOrganization",
-    "name": "Universidade Estadual do Paraná"
-  },
+  "alternateName": ["цастро™", "PUNK"],
+  "jobTitle": "Visual Artist, Designer, Experimental Filmmaker",
+  "description": "Multidisciplinary creative professional working between visual arts, design and audiovisual production",
+  "affiliation": [
+    {
+      "@type": "Organization",
+      "name": "UNESPAR",
+      "department": "PPG-CINEAV"
+    },
+    {
+      "@type": "Organization",
+      "name": "CasaTrezeStudio®"
+    },
+    {
+      "@type": "Organization",
+      "name": "LowPressure™"
+    }
+  ],
+  "alumniOf": [
+    {
+      "@type": "EducationalOrganization",
+      "name": "Universidade Tuiuti do Paraná",
+      "degree": "Bachelor's in Advertising and Propaganda"
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "Unicuritiba",
+      "degree": "Postgraduate in Art Direction and Creative Strategies"
+    }
+  ],
+  "knowsAbout": [
+    "Cinema Experimental",
+    "Videoarte",
+    "Design Gráfico",
+    "Skate Culture",
+    "Processos Criativos Colaborativos"
+  ],
   "url": "https://thevoidn13.com/autor",
   "sameAs": [
+    "https://www.instagram.com/thevoidn13/",
     "https://castropizzano.com",
     "https://behance.net/castropizzano",
     "https://vimeo.com/castropizzano",
     "http://lattes.cnpq.br/5523516994010198"
-  ],
-  "description": "Artista visual, designer e cineasta experimental explorando práxis híbrida (humano-máquina) em arte digital"
+  ]
 };
 
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "CasaTrezeStudio®",
-  "alternateName": "Casa 13 Studio",
-  "url": "https://casatrezestudio.com",
-  "logo": "https://thevoidn13.com/assets/hero-concept-art.png",
-  "founder": {
-    "@type": "Person",
-    "name": "Castro Pizzano"
-  },
+  "alternateName": "Casa Treze Studio",
+  "description": "Coletivo criativo fundado em 2008. Laboratório de criação autoral, cultural e comercial",
   "foundingDate": "2008",
-  "description": "Estúdio de design gráfico, audiovisual e direção de arte",
+  "founder": personSchema,
+  "url": "https://thevoidn13.com",
   "sameAs": [
+    "https://www.instagram.com/thevoidn13/",
+    "https://casatrezestudio.com",
     "https://behance.net/castropizzano"
+  ],
+  "knowsAbout": [
+    "Design Gráfico",
+    "Produção Audiovisual",
+    "Direção de Arte",
+    "Cinema Experimental"
   ]
 };
 
@@ -131,16 +161,14 @@ export const creativeWorkSchema = {
   "@context": "https://schema.org",
   "@type": "CreativeWork",
   "name": "THEVØIDN13",
-  "alternateName": "The Void Number 13",
-  "creator": {
-    "@type": "Person",
-    "name": "Castro Pizzano",
-    "alternateName": "цастро™"
-  },
+  "alternateName": "The Void Number Thirteen",
+  "description": "Memorial artístico e acadêmico de práxis híbrida. Projeto transmídia que integra cinema experimental, videoarte, design e processos criativos colaborativos",
+  "creator": personSchema,
+  "dateCreated": "2024",
   "datePublished": "2025-01-28",
-  "description": "Memorial artístico digital explorando arte, código e consciência através de co-criação humano-máquina",
-  "keywords": "arte digital, cinema experimental, inteligência artificial, co-criação, práxis híbrida, memorial artístico",
   "inLanguage": ["pt-BR", "en-US"],
+  "keywords": "cinema experimental, videoarte, skate culture, arte contemporânea, processos criativos, práxis híbrida, co-criação IA",
+  "genre": ["Experimental Cinema", "Video Art", "Contemporary Art"],
   "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
   "url": "https://thevoidn13.com",
   "isPartOf": {
