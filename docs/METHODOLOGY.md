@@ -115,17 +115,34 @@ Returning learning to the world through art, code or methodology.
 **Inteligência Artificial**  
 Google Gemini (texto, análise)  
 Claude / ChatGPT (escrita, código)  
-Midjourney / Adobe Firefly (imagens)
+Midjourney / Adobe Firefly (imagens)  
+OpenAI Codex (código complexo)  
+Google AI Studio (apps)  
+Google Notebook LM (organização)  
+NanoBanana / Google Labs (imagens portal)  
+ElevenLabs (áudio, voz, SFX)
 
 **Design e Audiovisual**  
-Adobe Creative Cloud  
-DaVinci Resolve  
-Figma
+iPad + Apple Pencil (sketches)  
+Adobe Photoshop (composição)  
+Adobe Illustrator (brand)  
+Adobe Premiere (edição)  
+Adobe After Effects (motion)  
+Adobe Firefly (moodboards)  
+DaVinci Resolve (color)  
+Upscayl (upscaling)  
+Figma (protótipos)
 
 **Desenvolvimento Web**  
+Lovable (plataforma, SaaS)  
 React + TypeScript  
-Tailwind CSS  
-GitHub + Git
+Tailwind CSS + shadcn/ui  
+Vite  
+Supabase (backend)  
+PostgreSQL (database)  
+Edge Functions (Deno)  
+GitHub + Git (versionamento)  
+Vimeo (hospedagem vídeos)
 
 ───────────────────────────────────────────────────────────────  
 (EN) TOOLS AND TECHNOLOGIES
@@ -133,17 +150,34 @@ GitHub + Git
 **Artificial Intelligence**  
 Google Gemini (text, analysis)  
 Claude / ChatGPT (writing, code)  
-Midjourney / Adobe Firefly (images)
+Midjourney / Adobe Firefly (images)  
+OpenAI Codex (complex code)  
+Google AI Studio (apps)  
+Google Notebook LM (organization)  
+NanoBanana / Google Labs (portal images)  
+ElevenLabs (audio, voice, SFX)
 
 **Design and Audiovisual**  
-Adobe Creative Cloud  
-DaVinci Resolve  
-Figma
+iPad + Apple Pencil (sketches)  
+Adobe Photoshop (composition)  
+Adobe Illustrator (brand)  
+Adobe Premiere (editing)  
+Adobe After Effects (motion)  
+Adobe Firefly (moodboards)  
+DaVinci Resolve (color)  
+Upscayl (upscaling)  
+Figma (prototypes)
 
 **Web Development**  
+Lovable (platform, SaaS)  
 React + TypeScript  
-Tailwind CSS  
-GitHub + Git
+Tailwind CSS + shadcn/ui  
+Vite  
+Supabase (backend)  
+PostgreSQL (database)  
+Edge Functions (Deno)  
+GitHub + Git (versioning)  
+Vimeo (video hosting)
 
 ───────────────────────────────────────────────────────────────
 

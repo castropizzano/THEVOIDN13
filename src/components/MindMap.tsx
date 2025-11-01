@@ -47,20 +47,34 @@ export const MindMap = () => {
               </p>
             </div>
 
-            {/* Asimov's Creative Laws */}
+            {/* Asimov's Creative Laws - Adapted for Creative Robotics */}
             <div className="p-6 bg-primary/5 rounded-lg border border-primary/20">
               <h3 className="subtitle text-primary mb-4">
                 As Três Leis da Robótica Criativa / The Three Laws of Creative Robotics
               </h3>
+              <p className="body-small text-muted-foreground italic mb-4">
+                Adaptação livre das Três Leis da Robótica de Isaac Asimov, aplicadas ao contexto da co-criação humano-máquina. / Free adaptation of Isaac Asimov's Three Laws of Robotics applied to human-machine co-creation context.
+              </p>
               <div className="space-y-3">
                 <p className="body-small font-mono">
                   <span className="text-primary font-bold">01.</span> Uma máquina não prejudicará a criatividade humana ou, por omissão, permitirá que a expressão humana seja diminuída.
                 </p>
+                <p className="body-small font-mono text-muted-foreground/70 italic ml-6">
+                  A machine shall not harm human creativity or, through inaction, allow human expression to be diminished.
+                </p>
+                
                 <p className="body-small font-mono">
                   <span className="text-primary font-bold">02.</span> Uma máquina deve amplificar a intenção criativa humana, exceto quando tal amplificação entrar em conflito com a Primeira Lei.
                 </p>
+                <p className="body-small font-mono text-muted-foreground/70 italic ml-6">
+                  A machine must amplify human creative intention, except when such amplification conflicts with the First Law.
+                </p>
+                
                 <p className="body-small font-mono">
                   <span className="text-primary font-bold">03.</span> Uma máquina deve preservar seu potencial criativo desde que tal preservação não entre em conflito com a Primeira ou Segunda Lei.
+                </p>
+                <p className="body-small font-mono text-muted-foreground/70 italic ml-6">
+                  A machine must preserve its creative potential as long as such preservation does not conflict with the First or Second Law.
                 </p>
               </div>
             </div>
@@ -74,23 +88,50 @@ export const MindMap = () => {
               <div className="space-y-4">
                 <div className="space-y-2">
                   <p className="body-base text-foreground">
-                    <span className="text-primary font-bold">PORTUGUÊS:</span> Este memorial artístico documenta um processo de criação híbrida entre humano e inteligência artificial, desenvolvido ao longo de 2 anos (2023-2025). Não se trata de usar IA como ferramenta passiva, mas de estabelecer um diálogo criativo onde a máquina atua como co-criadora, desafiando, propondo e expandindo o universo conceitual de THEVØIDN13.
+                    <span className="text-primary font-bold">PORTUGUÊS:</span> Este memorial artístico documenta um processo de criação híbrida entre humano e inteligência artificial em constante desenvolvimento. A trajetória começa em 2008 com a fundação da CasaTrezeStudio, passa pelo desenvolvimento do LOWMOVIE (2020-2023), pelo mestrado em Cinema e Artes do Vídeo (2024-2026), e culmina neste portal digital (outubro 2024 - presente). Não se trata de usar IA como ferramenta passiva, mas de estabelecer um diálogo criativo onde a máquina atua como co-criadora, desafiando, propondo e expandindo o universo conceitual de THEVØIDN13. Um coletivo em evolução: de humano-humano para humano-máquina.
                   </p>
                   <p className="body-small text-muted-foreground italic">
-                    <span className="text-primary font-bold">ENGLISH:</span> This artistic memorial documents a hybrid creation process between human and artificial intelligence, developed over 2 years (2023-2025). It's not about using AI as a passive tool, but establishing a creative dialogue where the machine acts as co-creator, challenging, proposing, and expanding the conceptual universe of THEVØIDN13.
+                    <span className="text-primary font-bold">ENGLISH:</span> This artistic memorial documents a hybrid creation process between human and artificial intelligence in constant development. The trajectory begins in 2008 with the foundation of CasaTrezeStudio, passes through the development of LOWMOVIE (2020-2023), the Master's in Cinema and Video Arts (2024-2026), and culminates in this digital portal (October 2024 - present). It's not about using AI as a passive tool, but establishing a creative dialogue where the machine acts as co-creator, challenging, proposing, and expanding the conceptual universe of THEVØIDN13. An evolving collective: from human-human to human-machine.
                   </p>
                 </div>
 
                 <div className="border-l-4 border-primary pl-4 space-y-2">
-                  <h4 className="subtitle text-primary">Cronologia do Processo / Process Timeline</h4>
+                  <h4 className="subtitle text-primary">Cronologia Expandida / Extended Timeline</h4>
                   
                   <div className="space-y-3">
+                    <div>
+                      <p className="body-small text-foreground">
+                        <strong className="text-primary">2008 - Presente:</strong> Fundação da CasaTrezeStudio como coletivo criativo independente. Atividade constante explorando design gráfico, audiovisual, cultura underground e experimentação estética. Base conceitual para todos os projetos subsequentes.
+                      </p>
+                      <p className="body-small text-muted-foreground/70 italic">
+                        <strong>2008 - Present:</strong> Foundation of CasaTrezeStudio as independent creative collective. Constant activity exploring graphic design, audiovisual, underground culture and aesthetic experimentation. Conceptual base for all subsequent projects.
+                      </p>
+                    </div>
+
+                    <div>
+                      <p className="body-small text-foreground">
+                        <strong className="text-primary">2020 - 2023:</strong> Desenvolvimento e lançamento do LOWMOVIE, projeto transmídia explorando narrativas fragmentadas e estética lo-fi. Experimentação com linguagem cinematográfica híbrida. Consolidação da identidade visual "low culture" como resistência estética.
+                      </p>
+                      <p className="body-small text-muted-foreground/70 italic">
+                        <strong>2020 - 2023:</strong> Development and launch of LOWMOVIE, transmedia project exploring fragmented narratives and lo-fi aesthetics. Experimentation with hybrid cinematographic language. Consolidation of "low culture" visual identity as aesthetic resistance.
+                      </p>
+                    </div>
+
                     <div>
                       <p className="body-small text-foreground">
                         <strong className="text-primary">2023 (Outubro - Dezembro):</strong> Crise no mestrado → Burnout acadêmico → Nascimento de THEVØIDN13 como resposta ao colapso. Primeiras experimentações com Midjourney v5 para gerar máscaras e personagens. Desenvolvimento da estética "low culture punk" através de prompts iterativos com GPT-4.
                       </p>
                       <p className="body-small text-muted-foreground/70 italic">
                         <strong>Oct-Dec 2023:</strong> Master's crisis → Academic burnout → Birth of THEVØIDN13 as response to collapse. First experiments with Midjourney v5 for masks and characters. Development of "low culture punk" aesthetic through iterative prompts with GPT-4.
+                      </p>
+                    </div>
+
+                    <div>
+                      <p className="body-small text-foreground">
+                        <strong className="text-primary">2024 - 2026:</strong> Mestrado em Cinema e Artes do Vídeo (PPG-CINEAV/Unespar). Pesquisa sobre co-criação humano-IA no campo das artes visuais e cinema experimental. THEVØIDN13 se torna objeto e método de investigação acadêmica. Desenvolvimento paralelo de prática artística e reflexão teórica.
+                      </p>
+                      <p className="body-small text-muted-foreground/70 italic">
+                        <strong>2024 - 2026:</strong> Master's in Cinema and Video Arts (PPG-CINEAV/Unespar). Research on human-AI co-creation in visual arts and experimental cinema. THEVØIDN13 becomes both object and method of academic investigation. Parallel development of artistic practice and theoretical reflection.
                       </p>
                     </div>
 
@@ -105,19 +146,28 @@ export const MindMap = () => {
 
                     <div>
                       <p className="body-small text-foreground">
-                        <strong className="text-primary">2024 (Julho - Dezembro):</strong> Criação dos brandbooks LowMovie e LowPressure com Adobe Illustrator + IA. Desenvolvimento do Memorial Acadêmico v3 em co-escrita com GPT-4o. Início da integração entre design manual (Photoshop, After Effects) e geração por IA. Primeira versão do website como "portal memorial" no Lovable.
+                        <strong className="text-primary">2024 (Julho - Setembro):</strong> Criação dos brandbooks LowMovie e LowPressure com Adobe Illustrator + IA. Desenvolvimento do Memorial Acadêmico v3 em co-escrita com GPT-4o. Início da integração entre design manual (Photoshop, After Effects) e geração por IA. Estabelecimento de metodologia híbrida constante.
                       </p>
                       <p className="body-small text-muted-foreground/70 italic">
-                        <strong>Jul-Dec 2024:</strong> Creation of LowMovie and LowPressure brandbooks with Adobe Illustrator + AI. Development of Academic Memorial v3 in co-writing with GPT-4o. Beginning of integration between manual design (Photoshop, After Effects) and AI generation. First website version as "memorial portal" on Lovable.
+                        <strong>Jul-Sep 2024:</strong> Creation of LowMovie and LowPressure brandbooks with Adobe Illustrator + AI. Development of Academic Memorial v3 in co-writing with GPT-4o. Beginning of integration between manual design (Photoshop, After Effects) and AI generation. Establishment of constant hybrid methodology.
                       </p>
                     </div>
 
                     <div>
                       <p className="body-small text-foreground">
-                        <strong className="text-primary">2025 (Janeiro - Atual):</strong> Shadow Interface Bible v13 refinada com Gemini 2.5 Flash. Website expandido com Lovable AI + Claude 3.7 Sonnet, incluindo Oráculo Criativo, Gerador de Stills (Nano Banana), Biblioteca de Prompts e este Mind Map. Desenvolvimento de edge functions em Supabase para integração AI. Mais de 700 imagens geradas ao total. Este próprio site foi construído em sessões iterativas de 50+ mensagens, refinando tipografia, design system e funcionalidades interativas.
+                        <strong className="text-primary">2024 (Outubro) - 2025 (Janeiro):</strong> Início do desenvolvimento deste portal digital com Lovable. Primeira versão do website como "memorial portal". Experimentação com React, TypeScript, Tailwind. Design system baseado em tokens semânticos. Shadow Interface Bible v13 refinada com Gemini 2.5 Flash. Integração de áudio, vídeo e documentos PDF.
                       </p>
                       <p className="body-small text-muted-foreground/70 italic">
-                        <strong>Jan-Present 2025:</strong> Shadow Interface Bible v13 refined with Gemini 2.5 Flash. Website expanded with Lovable AI + Claude 3.7 Sonnet, including Creative Oracle, Still Generator (Nano Banana), Prompt Library and this Mind Map. Development of edge functions in Supabase for AI integration. 700+ images generated in total. This very website was built in iterative sessions of 50+ messages, refining typography, design system and interactive features.
+                        <strong>Oct 2024 - Jan 2025:</strong> Beginning of this digital portal development with Lovable. First website version as "memorial portal". Experimentation with React, TypeScript, Tailwind. Design system based on semantic tokens. Shadow Interface Bible v13 refined with Gemini 2.5 Flash. Integration of audio, video and PDF documents.
+                      </p>
+                    </div>
+
+                    <div>
+                      <p className="body-small text-foreground">
+                        <strong className="text-primary">2025 (Janeiro - Outubro):</strong> Expansão massiva do portal com Lovable AI + Claude 3.7 Sonnet. Desenvolvimento de funcionalidades interativas: Oráculo Criativo, Gerador de Stills (Nano Banana), Biblioteca de Prompts, Creative-Ops Mind Map. Edge functions em Supabase para integração com modelos de IA. Mais de 700 imagens geradas ao total. Mais de 50 sessões iterativas refinando tipografia, componentes UI e lógica de frontend/backend. Conexão com GitHub para versionamento e documentação técnica. Publicação final em 31/10/2025.
+                      </p>
+                      <p className="body-small text-muted-foreground/70 italic">
+                        <strong>Jan - Oct 2025:</strong> Massive portal expansion with Lovable AI + Claude 3.7 Sonnet. Development of interactive features: Creative Oracle, Still Generator (Nano Banana), Prompt Library, Creative-Ops Mind Map. Edge functions in Supabase for AI model integration. 700+ images generated in total. 50+ iterative sessions refining typography, UI components and frontend/backend logic. GitHub connection for versioning and technical documentation. Final publication on 10/31/2025.
                       </p>
                     </div>
                   </div>
@@ -164,19 +214,109 @@ export const MindMap = () => {
                   </div>
                 </div>
 
-                <div className="border-l-4 border-secondary pl-4 space-y-2">
-                  <h4 className="subtitle text-secondary">Ferramentas e Stack Técnico / Tools and Technical Stack</h4>
+                <div className="border-l-4 border-secondary pl-4 space-y-3">
+                  <h4 className="subtitle text-secondary">Fluxo de Trabalho Híbrido / Hybrid Workflow</h4>
+                  
+                  <p className="body-small text-muted-foreground italic">
+                    Metodologia constante estabelecida entre humano-máquina, testando múltiplas ferramentas em paralelo: / Constant methodology established between human-machine, testing multiple tools in parallel:
+                  </p>
+
+                  <div className="space-y-3">
+                    <div className="space-y-1">
+                      <p className="body-small text-foreground"><strong className="text-secondary">01. Criação Manual:</strong> iPad + Apple Pencil para sketches, roughs e ideação inicial analógica.</p>
+                      <p className="body-small text-muted-foreground/70 italic">Manual sketching on iPad for initial analog ideation.</p>
+                    </div>
+
+                    <div className="space-y-1">
+                      <p className="body-small text-foreground"><strong className="text-secondary">02. Vetorização:</strong> Adobe Illustrator para refinamento, brandbooks e identidade visual.</p>
+                      <p className="body-small text-muted-foreground/70 italic">Adobe Illustrator for refinement and visual identity.</p>
+                    </div>
+
+                    <div className="space-y-1">
+                      <p className="body-small text-foreground"><strong className="text-secondary">03. Organização:</strong> Google Notebook LM para estruturar o projeto, criar mapas conceituais e organizar referências.</p>
+                      <p className="body-small text-muted-foreground/70 italic">Google Notebook LM for project structure and conceptual maps.</p>
+                    </div>
+
+                    <div className="space-y-1">
+                      <p className="body-small text-foreground"><strong className="text-secondary">04. Chat e Agentes:</strong> GPT-5, Claude 3.7 e Gemini 2.5 para diálogo, organização de conteúdos, criação de agentes personalizados, códigos e biblioteca de prompts.</p>
+                      <p className="body-small text-muted-foreground/70 italic">GPT-5, Claude 3.7 and Gemini 2.5 for dialogue, content organization and custom agents.</p>
+                    </div>
+
+                    <div className="space-y-1">
+                      <p className="body-small text-foreground"><strong className="text-secondary">05. Código Complexo:</strong> OpenAI Codex para desenvolvimento de lógica avançada e funcionalidades técnicas.</p>
+                      <p className="body-small text-muted-foreground/70 italic">OpenAI Codex for advanced logic development.</p>
+                    </div>
+
+                    <div className="space-y-1">
+                      <p className="body-small text-foreground"><strong className="text-secondary">06. Aplicações:</strong> Google AI Studio para criação de aplicações e protótipos experimentais.</p>
+                      <p className="body-small text-muted-foreground/70 italic">Google AI Studio for experimental applications.</p>
+                    </div>
+
+                    <div className="space-y-1">
+                      <p className="body-small text-foreground"><strong className="text-secondary">07. Geração de Imagens:</strong> NanoBanana e Google Labs para geração rápida de imagens para o portal.</p>
+                      <p className="body-small text-muted-foreground/70 italic">NanoBanana and Google Labs for rapid image generation.</p>
+                    </div>
+
+                    <div className="space-y-1">
+                      <p className="body-small text-foreground"><strong className="text-secondary">08. Upscaling:</strong> Upscayl para preparar e otimizar imagens antes da edição final.</p>
+                      <p className="body-small text-muted-foreground/70 italic">Upscayl for image preparation and optimization.</p>
+                    </div>
+
+                    <div className="space-y-1">
+                      <p className="body-small text-foreground"><strong className="text-secondary">09. Edição Visual:</strong> Adobe Photoshop para composição, correção de cor, texturas e finalização de imagens.</p>
+                      <p className="body-small text-muted-foreground/70 italic">Adobe Photoshop for composition and image finalization.</p>
+                    </div>
+
+                    <div className="space-y-1">
+                      <p className="body-small text-foreground"><strong className="text-secondary">10. Áudio:</strong> ElevenLabs para criação de áudios, clones de voz, sound effects e trilhas sonoras.</p>
+                      <p className="body-small text-muted-foreground/70 italic">ElevenLabs for audio creation and voice clones.</p>
+                    </div>
+
+                    <div className="space-y-1">
+                      <p className="body-small text-foreground"><strong className="text-secondary">11. Edição e Pós:</strong> Adobe Premiere para montagem de áudios, vídeos, edição e pós-produção audiovisual.</p>
+                      <p className="body-small text-muted-foreground/70 italic">Adobe Premiere for video editing and post-production.</p>
+                    </div>
+
+                    <div className="space-y-1">
+                      <p className="body-small text-foreground"><strong className="text-secondary">12. Concept Art Avançado:</strong> Midjourney v6 para exploração de cenas urbanas, personagens, veículos e atmosferas conceituais.</p>
+                      <p className="body-small text-muted-foreground/70 italic">Midjourney v6 for advanced concept art exploration.</p>
+                    </div>
+
+                    <div className="space-y-1">
+                      <p className="body-small text-foreground"><strong className="text-secondary">13. Moodboards:</strong> Adobe Firefly para criação de moodboards em ambiente controlado, garantindo consistência visual.</p>
+                      <p className="body-small text-muted-foreground/70 italic">Adobe Firefly for controlled moodboard creation.</p>
+                    </div>
+
+                    <div className="space-y-1">
+                      <p className="body-small text-foreground"><strong className="text-secondary">14. Portal Digital:</strong> Lovable para desenvolvimento do site, apps, prototipagem, frontend/backend, design system e conexão com domínio. Criação de SaaS próprio para controle admin.</p>
+                      <p className="body-small text-muted-foreground/70 italic">Lovable for site development and custom SaaS for admin control.</p>
+                    </div>
+
+                    <div className="space-y-1">
+                      <p className="body-small text-foreground"><strong className="text-secondary">15. Versionamento:</strong> GitHub para repositório, controle de versão, documentação técnica e ciclo contínuo de workflow.</p>
+                      <p className="body-small text-muted-foreground/70 italic">GitHub for versioning and technical documentation.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="border-l-4 border-accent pl-4 space-y-2">
+                  <h4 className="subtitle text-accent">Stack Técnico Detalhado / Detailed Technical Stack</h4>
                   
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <div className="space-y-1">
                       <p className="body-small text-foreground font-bold">IA / AI:</p>
                       <ul className="body-small text-muted-foreground space-y-1 list-disc list-inside">
-                        <li>GPT-5 (textos, manifestos)</li>
-                        <li>Claude 3.7 Sonnet (filosofia)</li>
+                        <li>GPT-5 (chat, texto)</li>
+                        <li>Claude 3.7 (filosofia, código)</li>
                         <li>Gemini 2.5 Flash (sistema)</li>
-                        <li>Nano Banana (imagens site)</li>
-                        <li>Midjourney v6 (concept art)</li>
-                        <li>Adobe Firefly (texturas)</li>
+                        <li>OpenAI Codex (dev)</li>
+                        <li>Google AI Studio (apps)</li>
+                        <li>Google Notebook LM (org.)</li>
+                        <li>NanoBanana (imagens portal)</li>
+                        <li>Google Labs (imagens)</li>
+                        <li>Midjourney v6 (concept)</li>
+                        <li>Adobe Firefly (moodboard)</li>
+                        <li>ElevenLabs (áudio)</li>
                         <li>Lovable AI Gateway</li>
                       </ul>
                     </div>
@@ -184,24 +324,31 @@ export const MindMap = () => {
                     <div className="space-y-1">
                       <p className="body-small text-foreground font-bold">Design:</p>
                       <ul className="body-small text-muted-foreground space-y-1 list-disc list-inside">
+                        <li>iPad + Apple Pencil (sketch)</li>
                         <li>Adobe Photoshop (comp.)</li>
                         <li>Adobe Illustrator (brand)</li>
+                        <li>Adobe Premiere (edit)</li>
                         <li>Adobe After Effects (motion)</li>
-                        <li>DaVinci Resolve (video)</li>
+                        <li>DaVinci Resolve (color)</li>
+                        <li>Upscayl (upscale)</li>
                         <li>Figma (protótipos)</li>
                       </ul>
                     </div>
                     
                     <div className="space-y-1">
-                      <p className="body-small text-foreground font-bold">Desenvolvimento / Dev:</p>
+                      <p className="body-small text-foreground font-bold">Dev:</p>
                       <ul className="body-small text-muted-foreground space-y-1 list-disc list-inside">
                         <li>Lovable (plataforma)</li>
                         <li>React + TypeScript</li>
                         <li>Tailwind CSS</li>
+                        <li>shadcn/ui</li>
+                        <li>Vite</li>
                         <li>Supabase (backend)</li>
-                        <li>PostgreSQL (database)</li>
+                        <li>PostgreSQL (DB)</li>
                         <li>Edge Functions (AI)</li>
-                        <li>GitHub (version control)</li>
+                        <li>Deno Runtime</li>
+                        <li>GitHub (version)</li>
+                        <li>Vimeo (vídeos)</li>
                       </ul>
                     </div>
                   </div>
