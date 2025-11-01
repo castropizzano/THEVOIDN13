@@ -7,6 +7,14 @@ Curitiba, Brasil — 2025
 [![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-grey)]()
 [![Mestrado](https://img.shields.io/badge/Mestrado-Pós--Qualificação-grey)]()
 
+### 🔍 AUDIT STATUS
+[![Production](https://img.shields.io/badge/Production-APPROVED-00d26a?style=for-the-badge&logo=checkmarx&logoColor=white)](AUDIT_REPORT_2025.md)
+[![Audit Score](https://img.shields.io/badge/Audit_Score-95%2F100-00d26a?style=for-the-badge&logo=codecov&logoColor=white)](AUDIT_REPORT_2025.md)
+[![Bible v13](https://img.shields.io/badge/Bible_v13-100%25-00d26a?style=for-the-badge&logo=react&logoColor=white)](TYPOGRAPHY_GUIDE.md)
+[![Security](https://img.shields.io/badge/Security-SECURED-00d26a?style=for-the-badge&logo=security&logoColor=white)](#)
+[![Code Quality](https://img.shields.io/badge/Code_Quality-CLEAN-00d26a?style=for-the-badge&logo=eslint&logoColor=white)](#)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Zero_Errors-3178c6?style=for-the-badge&logo=typescript&logoColor=white)](#)
+
 ───────────────────────────────────────────────────────────────  
 (EN)  
 THEVØIDN13  
