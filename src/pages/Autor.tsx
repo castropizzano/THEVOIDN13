@@ -104,7 +104,51 @@ const Autor = () => {
               <div className="space-y-8 mt-6">
                 <div>
                   <h3 className="bible-subtitle">[DESIGN & ARTE]</h3>
-...
+                  <ul className="space-y-2">
+                    <li className="bible-body">• Adobe Illustrator</li>
+                    <li className="bible-body">• Adobe InDesign</li>
+                    <li className="bible-body">• Adobe Fresco</li>
+                    <li className="bible-body">• Procreate</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="bible-subtitle">[FOTO & EDIÇÃO]</h3>
+                  <ul className="space-y-2">
+                    <li className="bible-body">• Adobe Photoshop</li>
+                    <li className="bible-body">• Adobe Lightroom</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="bible-subtitle">[VÍDEO & PÓS PRODUÇÃO]</h3>
+                  <ul className="space-y-2">
+                    <li className="bible-body">• Blender</li>
+                    <li className="bible-body">• Adobe Premiere</li>
+                    <li className="bible-body">• Adobe After Effects</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="bible-subtitle">[EXPERIMENTAL]</h3>
+                  <ul className="space-y-2">
+                    <li className="bible-body">• Ultimaker Cura</li>
+                    <li className="bible-body">• UCreality 3D</li>
+                    <li className="bible-body">• Figma</li>
+                    <li className="bible-body">• AI Tools: Claude, Gemini, Midjourney, ChatGPT, Lovable</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="bible-subtitle">[IDIOMAS]</h3>
+                  <p className="bible-body">Português (nativo) • Espanhol (intermediário) • Inglês (intermediário)</p>
+                </div>
+
+                <div>
+                  <h3 className="bible-subtitle">[REFERENCIAL]</h3>
+                  <p className="bible-body">Minimalista/Experimentação • Futurista/Construtivismo • Cibercultura/Semiótica • Tipografia/Infografia • Economia Criativa • Underground • Op-Art</p>
+                </div>
+              </div>
             </div>
 
             <div>
@@ -175,7 +219,6 @@ const Autor = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing">
             <div>
-              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Metodologia processual, experimental e reflexiva do projeto THEVØIDN13. Um ciclo contínuo de cinco etapas:</p>
                 
@@ -190,7 +233,6 @@ const Autor = () => {
             </div>
 
             <div>
-              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Processual, experimental and reflexive methodology of the THEVØIDN13 project. A continuous cycle of five stages:</p>
                 
@@ -221,7 +263,6 @@ const Autor = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing">
             <div>
-              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">A jornada começa no skate. Não como esporte, mas como modo de habitar o mundo. O corpo em movimento pelo espaço urbano. A apropriação criativa da cidade. Das manobras na rua às manobras no vídeo. Da câmera VHS à edição digital.</p>
                 
@@ -232,7 +273,6 @@ const Autor = () => {
             </div>
 
             <div>
-              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">The journey begins with skateboarding. Not as a sport, but as a way of inhabiting the world. The body moving through urban space. The creative appropriation of the city. From tricks on the street to tricks in video. From VHS camera to digital editing.</p>
                 
@@ -259,7 +299,6 @@ const Autor = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing">
             <div>
-              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-8 mt-6">
                 <div className="border-l-2 border-primary pl-6">
                   <p className="bible-body text-muted-foreground mb-2">2023-2025 (em curso)</p>
@@ -305,7 +344,6 @@ const Autor = () => {
             </div>
 
             <div>
-              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-8 mt-6">
                 <div className="border-l-2 border-primary pl-6">
                   <p className="bible-body text-muted-foreground mb-2">2023-2025 (ongoing)</p>
@@ -367,7 +405,6 @@ const Autor = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing">
             <div>
-              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body italic text-muted-foreground">Uma identidade que rejeita a lógica publicitária e se afirma como linguagem, não logotipo.</p>
                 
@@ -423,7 +460,6 @@ const Autor = () => {
             </div>
 
             <div>
-              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body italic text-muted-foreground">An identity that rejects the advertising logic of self-promotion, asserting itself as language, not logo.</p>
                 
@@ -495,7 +531,6 @@ const Autor = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing">
             <div>
-              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <h3 className="bible-subtitle">Projetos Matriciais</h3>
                 <p className="bible-body">Três projetos funcionam como órgãos do mesmo organismo criativo. Cada um respira de forma autônoma, mas todos compartilham o mesmo sangue simbólico:</p>
@@ -528,7 +563,6 @@ const Autor = () => {
             </div>
 
             <div>
-              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <h3 className="bible-subtitle">Matrix Projects</h3>
                 <p className="bible-body">Three projects function as organs of the same creative organism. Each breathes autonomously, but all share the same symbolic blood:</p>
@@ -577,7 +611,6 @@ const Autor = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing">
             <div>
-              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <h3 className="bible-subtitle">O Portal Como Objeto de Pesquisa</h3>
                 <p className="bible-body">Este website não é apenas uma apresentação, é o próprio objeto de pesquisa. Um memorial visual e performático onde cada linha de código, cada imagem gerada, cada texto co-escrito com inteligências artificiais, torna-se evidência material de um processo híbrido de criação. Aqui, a interface não explica o projeto: ela <span className="font-bold italic">é</span> o projeto.</p>
@@ -622,7 +655,6 @@ const Autor = () => {
             </div>
 
             <div>
-              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <h3 className="bible-subtitle">The Portal As Research Object</h3>
                 <p className="bible-body">This website is not just a presentation, it is the research object itself. A visual and performative memorial where every line of code, every generated image, every text co-written with artificial intelligences, becomes material evidence of a hybrid creative process. Here, the interface doesn't explain the project: it <span className="font-bold italic">is</span> the project.</p>
