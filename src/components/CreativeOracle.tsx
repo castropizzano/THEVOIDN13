@@ -238,40 +238,41 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
               </div>
               
               {/* Category descriptions */}
-              <div className="pt-4 space-y-3 border-t border-border/30">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
-                  <div className="space-y-1">
-                    <p className="body-small text-foreground/80">
-                      <strong className="text-primary">Sombras:</strong> O inconsciente como matéria-prima criativa
-                    </p>
-                    <p className="body-small text-muted-foreground/60 italic">
-                      <strong>Shadow:</strong> The unconscious as creative raw material
-                    </p>
-                  </div>
-                  <div className="space-y-1">
-                    <p className="body-small text-foreground/80">
-                      <strong className="text-primary">Ruptura:</strong> Destruição como gesto criativo
-                    </p>
-                    <p className="body-small text-muted-foreground/60 italic">
-                      <strong>Rupture:</strong> Destruction as creative gesture
-                    </p>
-                  </div>
-                  <div className="space-y-1">
-                    <p className="body-small text-foreground/80">
-                      <strong className="text-primary">Conexão:</strong> A criação como diálogo e escuta
-                    </p>
-                    <p className="body-small text-muted-foreground/60 italic">
-                      <strong>Connection:</strong> Creation as dialogue and listening
-                    </p>
-                  </div>
-                  <div className="space-y-1">
-                    <p className="body-small text-foreground/80">
-                      <strong className="text-primary">Método:</strong> Disciplina e rigor como estrutura
-                    </p>
-                    <p className="body-small text-muted-foreground/60 italic">
-                      <strong>Method:</strong> Discipline and rigor as structure
-                    </p>
-                  </div>
+              <div className="pt-4 space-y-4 border-t border-border/30">
+                <div className="space-y-1 text-left">
+                  <p className="body-small text-foreground/80">
+                    <strong className="text-primary">Sombras:</strong> O inconsciente como matéria-prima criativa
+                  </p>
+                  <p className="body-small text-muted-foreground/60 italic">
+                    <strong>Shadow:</strong> The unconscious as creative raw material
+                  </p>
+                </div>
+                
+                <div className="space-y-1 text-left">
+                  <p className="body-small text-foreground/80">
+                    <strong className="text-primary">Ruptura:</strong> Destruição como gesto criativo
+                  </p>
+                  <p className="body-small text-muted-foreground/60 italic">
+                    <strong>Rupture:</strong> Destruction as creative gesture
+                  </p>
+                </div>
+                
+                <div className="space-y-1 text-left">
+                  <p className="body-small text-foreground/80">
+                    <strong className="text-primary">Conexão:</strong> A criação como diálogo e escuta
+                  </p>
+                  <p className="body-small text-muted-foreground/60 italic">
+                    <strong>Connection:</strong> Creation as dialogue and listening
+                  </p>
+                </div>
+                
+                <div className="space-y-1 text-left">
+                  <p className="body-small text-foreground/80">
+                    <strong className="text-primary">Método:</strong> Disciplina e rigor como estrutura
+                  </p>
+                  <p className="body-small text-muted-foreground/60 italic">
+                    <strong>Method:</strong> Discipline and rigor as structure
+                  </p>
                 </div>
               </div>
             </div>
@@ -393,6 +394,49 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
                     </div>
                   );
                 })}
+              </div>
+
+              {/* Archetype Descriptions */}
+              <div className="pt-6 space-y-4 border-t border-border/30">
+                <p className="lang-pill mb-4">
+                  Entenda os Arquétipos / Understanding the Archetypes
+                </p>
+                
+                <div className="space-y-1 text-left">
+                  <p className="body-small text-foreground/80">
+                    <strong className="text-primary">Sombras:</strong> O inconsciente como matéria-prima criativa
+                  </p>
+                  <p className="body-small text-muted-foreground/60 italic">
+                    <strong>Shadow:</strong> The unconscious as creative raw material
+                  </p>
+                </div>
+                
+                <div className="space-y-1 text-left">
+                  <p className="body-small text-foreground/80">
+                    <strong className="text-primary">Ruptura:</strong> Destruição como gesto criativo
+                  </p>
+                  <p className="body-small text-muted-foreground/60 italic">
+                    <strong>Rupture:</strong> Destruction as creative gesture
+                  </p>
+                </div>
+                
+                <div className="space-y-1 text-left">
+                  <p className="body-small text-foreground/80">
+                    <strong className="text-primary">Conexão:</strong> A criação como diálogo e escuta
+                  </p>
+                  <p className="body-small text-muted-foreground/60 italic">
+                    <strong>Connection:</strong> Creation as dialogue and listening
+                  </p>
+                </div>
+                
+                <div className="space-y-1 text-left">
+                  <p className="body-small text-foreground/80">
+                    <strong className="text-primary">Método:</strong> Disciplina e rigor como estrutura
+                  </p>
+                  <p className="body-small text-muted-foreground/60 italic">
+                    <strong>Method:</strong> Discipline and rigor as structure
+                  </p>
+                </div>
               </div>
 
               {/* Total Score */}
