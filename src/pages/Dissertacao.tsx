@@ -384,7 +384,7 @@ const Dissertacao = () => {
                   </div>
                   <div>
                     <p className="bible-body font-semibold">Movimento III — Obra em Expansão</p>
-                    <p className="bible-body">Analisa o LowMovie™ como dispositivo audiovisual que transborda o formato convencional e se desdobra em outras materialidades.</p>
+                    <p className="bible-body">Analisa o LowMovie™ como dispositivo audiovisual que transborda o formato convencional em outras materialidades.</p>
                   </div>
                 </div>
                 
@@ -435,7 +435,7 @@ const Dissertacao = () => {
                   </div>
                   <div>
                     <p className="bible-body font-semibold">Movement III — Work in Expansion</p>
-                    <p className="bible-body">Analyzes LowMovie™ as an audiovisual device that overflows the conventional format and unfolds into other materialities.</p>
+                    <p className="bible-body">Analyzes LowMovie™ as an audiovisual device that overflows the conventional format into other materialities.</p>
                   </div>
                 </div>
                 
@@ -485,7 +485,7 @@ const Dissertacao = () => {
             <div>
               <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
-                <p className="bible-body">Dissertação apresentada ao Programa de Pós-Graduação em Cinema e Artes do Vídeo da Universidade Estadual do Paraná, Linha de Pesquisa (2) Processos de Criação no Cinema e nas Artes do Vídeo, como requisito parcial para a obtenção do grau de Mestre em Cinema e Artes do Vídeo.</p>
+                <p className="bible-body">Programa de Pós-Graduação em Cinema e Artes do Vídeo da Universidade Estadual do Paraná, Linha de Pesquisa (2) Processos de Criação no Cinema e nas Artes do Vídeo, como requisito parcial para a obtenção do grau de Mestre em Cinema e Artes do Vídeo.</p>
                 <p className="bible-body font-semibold">Orientador: Prof. Dr. Fábio Jabur de Noronha</p>
                 <p className="bible-body font-semibold">Universidade Estadual do Paraná (UNESPAR)</p>
                 <p className="bible-body font-semibold">Curitiba, 2025</p>
@@ -495,7 +495,7 @@ const Dissertacao = () => {
             <div>
               <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
-                <p className="bible-body">Dissertation presented to the Graduate Program in Cinema and Video Arts at Paraná State University, Research Line (2) Creation Processes in Cinema and Video Arts, as a partial requirement for obtaining the Master's degree in Cinema and Video Arts.</p>
+                <p className="bible-body">Graduate Program in Cinema and Video Arts at Paraná State University, Research Line (2) Creation Processes in Cinema and Video Arts, as a partial requirement for obtaining the Master's degree in Cinema and Video Arts.</p>
                 <p className="bible-body font-semibold">Advisor: Prof. Dr. Fábio Jabur de Noronha</p>
                 <p className="bible-body font-semibold">Paraná State University (UNESPAR)</p>
                 <p className="bible-body font-semibold">Curitiba, 2025</p>
