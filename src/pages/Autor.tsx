@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SEO, personSchema, breadcrumbSchema } from "@/components/SEO";
-import { BilingualSection } from "@/components/BilingualSection";
+import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
 import { BackToTop } from "@/components/BackToTop";
 import { Separator } from "@/components/ui/separator";
 import heroImage from "@/assets/author-hero.png";
@@ -36,10 +36,20 @@ const Autor = () => {
 
         {/* Nome */}
         <BilingualSection className="py-16">
-          <div>
-            <h1 className="bible-title">CASTRO PIZZANO</h1>
-            <p className="bible-body text-muted-foreground">цастро™ / PUNK</p>
-          </div>
+          <BilingualContent
+            portugueseContent={
+              <>
+                <h1 className="bible-title">CASTRO PIZZANO</h1>
+                <p className="bible-body text-muted-foreground">цастро™ / PUNK</p>
+              </>
+            }
+            englishContent={
+              <>
+                <h1 className="bible-title">CASTRO PIZZANO</h1>
+                <p className="bible-body text-muted-foreground">цастро™ / PUNK</p>
+              </>
+            }
+          />
         </BilingualSection>
 
         <Separator className="bg-border/30" />

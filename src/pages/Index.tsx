@@ -136,14 +136,18 @@ const Index = () => {
 
         {/* ===== INÍCIO DA TRANSMISSÃO ===== */}
         <BilingualSection className="py-16">
-          <div className="bible-bilingual-grid">
-            <div>
-              <h2 className="bible-subtitle">[INÍCIO DA TRANSMISSÃO]</h2>
-            </div>
-            <div>
-              <h2 className="bible-subtitle">[BEGINNING OF TRANSMISSION]</h2>
-            </div>
-          </div>
+          <BilingualContent
+            portugueseContent={
+              <>
+                <h2 className="bible-subtitle">[INÍCIO DA TRANSMISSÃO]</h2>
+              </>
+            }
+            englishContent={
+              <>
+                <h2 className="bible-subtitle">[BEGINNING OF TRANSMISSION]</h2>
+              </>
+            }
+          />
         </BilingualSection>
 
         {/* ===== PARADOX RENDER ===== */}
