@@ -15,6 +15,7 @@ serve(async (req) => {
     
     // Enhanced server-side validation
     if (!script || typeof script !== 'string') {
+      console.error('Validation error: Script is missing or not a string');
       return new Response(
         JSON.stringify({ error: "Script is required and must be a string" }),
         { headers: { ...corsHeaders, 'Content-Type': 'application/json' }, status: 400 }
@@ -25,6 +26,7 @@ serve(async (req) => {
     
     // Validate minimum length
     if (trimmedScript.length < 10) {
+      console.error('Validation error: Script too short:', trimmedScript.length);
       return new Response(
         JSON.stringify({ error: "Script too short (minimum 10 characters)" }),
         { headers: { ...corsHeaders, 'Content-Type': 'application/json' }, status: 400 }
@@ -34,6 +36,7 @@ serve(async (req) => {
     // Generous maximum to accommodate Bible (system prompt) + Scene prompts
     // Bible alone is ~5000 chars, scene prompts ~2000 chars = ~7000 total
     if (trimmedScript.length > 15000) {
+      console.error('Validation error: Script too long:', trimmedScript.length);
       return new Response(
         JSON.stringify({ error: "Script too long (maximum 15000 characters)" }),
         { headers: { ...corsHeaders, 'Content-Type': 'application/json' }, status: 400 }
@@ -45,6 +48,7 @@ serve(async (req) => {
 
     const LOVABLE_API_KEY = Deno.env.get('LOVABLE_API_KEY');
     if (!LOVABLE_API_KEY) {
+      console.error('Configuration error: LOVABLE_API_KEY is not set');
       throw new Error('LOVABLE_API_KEY is not configured');
     }
 

@@ -4,7 +4,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Loader2, Sparkles, Download, FileCode, Edit } from "lucide-react";
+import { Loader2 } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { z } from "zod";
@@ -100,6 +100,8 @@ export const ComicGenerator = () => {
         ? `${systemPrompt}\n\n---\n\n${scriptToUse}`
         : `${systemPrompt}\n\n---\n\n${scriptToUse}`;
 
+      console.log('Sending prompt to edge function, length:', fullPrompt.length);
+
       const { data, error } = await supabase.functions.invoke("generate-comic-panel", {
         body: { 
           script: fullPrompt,
@@ -107,22 +109,35 @@ export const ComicGenerator = () => {
         }
       });
 
-      if (error) throw error;
+      console.log('Edge function response:', { data, error });
+
+      if (error) {
+        console.error('Edge function error:', error);
+        throw error;
+      }
+
+      if (data?.error) {
+        throw new Error(data.error);
+      }
 
       if (data?.imageUrl) {
         const processed = await postProcessTo16x9WithWatermark(data.imageUrl);
         setGeneratedImage(processed);
         toast.success("Still gerado! / Still generated!");
       } else {
-        throw new Error("No image generated");
+        throw new Error("No image generated - empty response");
       }
     } catch (error: any) {
-      if (error.message?.includes("Rate limit")) {
-        toast.error("Limite de requisições excedido / Rate limit exceeded");
-      } else if (error.message?.includes("Payment required")) {
-        toast.error("Créditos insuficientes / Insufficient credits");
+      console.error('Generation error:', error);
+      
+      if (error.message?.includes("Rate limit") || error.message?.includes("429")) {
+        toast.error("Limite de requisições excedido. Tente novamente em alguns segundos. / Rate limit exceeded. Try again in a few seconds.");
+      } else if (error.message?.includes("Payment required") || error.message?.includes("402")) {
+        toast.error("Créditos insuficientes. Adicione créditos ao workspace. / Insufficient credits. Add credits to workspace.");
+      } else if (error.message?.includes("Script too")) {
+        toast.error(error.message);
       } else {
-        toast.error(error.message || "Erro ao gerar still / Error generating still");
+        toast.error(`Erro ao gerar still: ${error.message || 'Erro desconhecido'} / Error generating still`);
       }
     } finally {
       setIsGenerating(false);
@@ -152,30 +167,27 @@ export const ComicGenerator = () => {
   return (
     <Card className="w-full border-2 border-primary/30 bg-card/80 backdrop-blur">
       <CardHeader>
-        <CardTitle className="flex items-center gap-2 text-primary">
-          <Sparkles className="w-5 h-5" />
+        <CardTitle className="title text-primary">
           Gerador Experimental de Still
         </CardTitle>
-        <CardDescription>
+        <CardDescription className="lang-pill">
           Still Generator — Powered by Nano Banana (Gemini 2.5 Flash Image)
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
         <Tabs value={promptMode} onValueChange={(v) => setPromptMode(v as "library" | "custom")}>
           <TabsList className="grid w-full grid-cols-2">
-            <TabsTrigger value="library" className="flex items-center gap-2">
-              <FileCode className="w-4 h-4" />
+            <TabsTrigger value="library" className="subtitle">
               Biblioteca / Library
             </TabsTrigger>
-            <TabsTrigger value="custom" className="flex items-center gap-2">
-              <Edit className="w-4 h-4" />
+            <TabsTrigger value="custom" className="subtitle">
               Personalizado / Custom
             </TabsTrigger>
           </TabsList>
 
           <TabsContent value="library" className="space-y-4 mt-4">
             <div className="space-y-2">
-              <label className="text-sm font-medium">
+              <label className="subtitle">
                 Selecionar Prompt Base / Select Base Prompt
               </label>
               <Select value={selectedPromptId} onValueChange={handlePromptChange}>
@@ -193,7 +205,7 @@ export const ComicGenerator = () => {
             </div>
 
             <div className="space-y-2">
-              <label className="text-sm font-medium">
+              <label className="subtitle">
                 Prompt Selecionado / Selected Prompt
               </label>
               <Textarea
@@ -203,7 +215,7 @@ export const ComicGenerator = () => {
                 className="min-h-[200px] font-mono text-sm"
                 disabled={isGenerating}
               />
-              <p className="text-xs text-muted-foreground">
+              <p className="body-small text-muted-foreground">
                 Você pode editar o prompt selecionado ou usá-lo como está / You can edit the selected prompt or use it as is
               </p>
             </div>
@@ -212,15 +224,15 @@ export const ComicGenerator = () => {
           <TabsContent value="custom" className="space-y-4 mt-4">
             <div className="space-y-2">
               <div className="flex justify-between items-center">
-                <label className="text-sm font-medium">
+                <label className="subtitle">
                   Criar Prompt Personalizado / Create Custom Prompt
                 </label>
-                <span className={`text-xs font-mono ${
+                <span className={`lang-pill ${
                   customScript.length < 50 
                     ? 'text-destructive' 
                     : customScript.length > 1500 
                     ? 'text-destructive' 
-                    : 'text-muted-foreground'
+                    : ''
                 }`}>
                   {customScript.length}/1500
                 </span>
@@ -233,14 +245,14 @@ export const ComicGenerator = () => {
                 disabled={isGenerating}
               />
               <div className="space-y-1">
-                <p className="text-xs text-muted-foreground">
+                <p className="body-small text-muted-foreground">
                   <strong>⚠️ Limites / Limits:</strong> Mínimo 50 caracteres / Minimum 50 chars • Máximo 1500 caracteres / Maximum 1500 chars
                 </p>
-                <p className="text-xs text-muted-foreground">
+                <p className="body-small text-muted-foreground">
                   <strong>Dica:</strong> Descreva a cena, personagens, iluminação e atmosfera. 
                   As regras canônicas do universo THEVØIDN13 serão automaticamente aplicadas.
                 </p>
-                <p className="text-xs text-muted-foreground">
+                <p className="body-small text-muted-foreground">
                   <strong>Tip:</strong> Describe the scene, characters, lighting and atmosphere. 
                   The canonical THEVØIDN13 universe rules will be automatically applied.
                 </p>
@@ -256,7 +268,7 @@ export const ComicGenerator = () => {
             (promptMode === "library" && !script.trim()) ||
             (promptMode === "custom" && !customScript.trim())
           }
-          className="w-full"
+          className="w-full subtitle"
           size="lg"
         >
           {isGenerating ? (
@@ -265,10 +277,7 @@ export const ComicGenerator = () => {
               Gerando... / Generating...
             </>
           ) : (
-            <>
-              <Sparkles className="w-4 h-4 mr-2" />
-              Gerar Still / Generate Still
-            </>
+            "Gerar Still / Generate Still"
           )}
         </Button>
 
@@ -284,29 +293,28 @@ export const ComicGenerator = () => {
             <Button
               onClick={handleDownload}
               variant="outline"
-              className="w-full"
+              className="w-full subtitle"
             >
-              <Download className="w-4 h-4 mr-2" />
               Download
             </Button>
           </div>
         )}
 
       <div className="pt-4 border-t border-border space-y-2">
-        <p className="text-xs text-muted-foreground">
+        <p className="body-small text-muted-foreground">
           <span className="font-medium">Nota Experimental:</span> Este gerador usa a Shadow Interface Bible v13 
           como system prompt base, aplicada automaticamente a {promptMode === "library" ? "todos os prompts da biblioteca" : "prompts personalizados"}.
         </p>
-        <p className="text-xs text-muted-foreground">
+        <p className="body-small text-muted-foreground">
           <strong>Modo Biblioteca:</strong> Use prompts oficiais pré-configurados para máxima fidelidade visual. 
           <strong className="ml-1">Modo Personalizado:</strong> Crie suas próprias cenas mantendo as diretrizes canônicas do universo.
         </p>
-        <p className="text-xs text-muted-foreground">
+        <p className="body-small text-muted-foreground">
           Todas as imagens são geradas em <strong>aspect ratio 16:9 horizontal</strong>, 
           ocupando todo o espaço disponível e recebem automaticamente a marca d'água oficial 
           THEVØIDN13 em 50% de transparência no canto inferior direito.
         </p>
-        <p className="text-xs text-muted-foreground">
+        <p className="body-small text-muted-foreground">
           Parâmetros canônicos: Temperature 0.2, Top P 0.5, 
           estilo dirty comic book art com heavy inks e analog print grain.
         </p>
