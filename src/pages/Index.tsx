@@ -2171,7 +2171,7 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="block hover:text-primary transition-colors"
                 >
-                  <h4 className="text-base font-bold">README.md</h4>
+                  <h4 className="subsection-title">README.md</h4>
                   <p className="text-sm text-muted-foreground">Manifesto e estrutura do projeto / Manifesto and project structure</p>
                 </a>
                 
@@ -2181,7 +2181,7 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="block hover:text-primary transition-colors"
                 >
-                  <h4 className="text-base font-bold">LICENSE.md</h4>
+                  <h4 className="subsection-title">LICENSE.md</h4>
                   <p className="text-sm text-muted-foreground">Licença CC BY-NC-SA 4.0 / CC BY-NC-SA 4.0 License</p>
                 </a>
                 
@@ -2191,7 +2191,7 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="block hover:text-primary transition-colors"
                 >
-                  <h4 className="text-base font-bold">CITATION.cff</h4>
+                  <h4 className="subsection-title">CITATION.cff</h4>
                   <p className="text-sm text-muted-foreground">Citação automatizada GitHub / GitHub automated citation</p>
                 </a>
                 
@@ -2201,7 +2201,7 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="block hover:text-primary transition-colors"
                 >
-                  <h4 className="text-base font-bold">METHODOLOGY.md</h4>
+                  <h4 className="subsection-title">METHODOLOGY.md</h4>
                   <p className="text-sm text-muted-foreground">Métodos e procedimentos de pesquisa / Research methods and procedures</p>
                 </a>
               </div>
@@ -2217,7 +2217,7 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="block hover:text-primary transition-colors"
                 >
-                  <h4 className="text-base font-bold">PHILOSOPHY.md</h4>
+                  <h4 className="subsection-title">PHILOSOPHY.md</h4>
                   <p className="text-sm text-muted-foreground">Justificativa das escolhas conceituais / Rationale for conceptual choices</p>
                 </a>
                 
@@ -2227,7 +2227,7 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="block hover:text-primary transition-colors"
                 >
-                  <h4 className="text-base font-bold">COPYRIGHT.md</h4>
+                  <h4 className="subsection-title">COPYRIGHT.md</h4>
                   <p className="text-sm text-muted-foreground">Ética e transparência da co-criação / Ethics and transparency of co-creation</p>
                 </a>
                 
@@ -2237,7 +2237,7 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="block hover:text-primary transition-colors"
                 >
-                  <h4 className="text-base font-bold">HOW_TO_CITE.md</h4>
+                  <h4 className="subsection-title">HOW_TO_CITE.md</h4>
                   <p className="text-sm text-muted-foreground">Guia completo de citação acadêmica / Complete academic citation guide</p>
                 </a>
                 
@@ -2247,7 +2247,7 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="block hover:text-primary transition-colors"
                 >
-                  <h4 className="text-base font-bold">REFERENCES.md</h4>
+                  <h4 className="subsection-title">REFERENCES.md</h4>
                   <p className="text-sm text-muted-foreground">Bibliografia completa do projeto / Complete project bibliography</p>
                 </a>
               </div>
@@ -2267,7 +2267,7 @@ const Index = () => {
                   <h3 className="text-2xl font-bold group-hover:text-primary transition-colors mb-2">
                     Complete Repository / Repositório Completo
                   </h3>
-                  <p className="text-base text-muted-foreground">
+                  <p className="body-base text-muted-foreground">
                     Acesso a todos os arquivos no GitHub / Access all files on GitHub
                   </p>
                 </div>

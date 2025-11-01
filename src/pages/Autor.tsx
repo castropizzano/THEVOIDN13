@@ -630,7 +630,7 @@ const Autor = () => {
                 <h3 className="bible-subtitle">O Portal Como Objeto de Pesquisa</h3>
                 <p className="bible-body">Este website não é apenas uma apresentação, é o próprio objeto de pesquisa. Um memorial visual e performático onde cada linha de código, cada imagem gerada, cada texto co-escrito com inteligências artificiais, torna-se evidência material de um processo híbrido de criação. Aqui, a interface não explica o projeto: ela <span className="font-bold italic">é</span> o projeto.</p>
                 
-                <p className="bible-body">O que começou como uma necessidade de apresentar THEVOIDN13 ao programa de mestrado em Cinema e Artes do Vídeo transformou-se em laboratório vivo. Cada seção, cada componente interativo, o gerador de HQs, a biblioteca de prompts, o mapa mental creative-ops, opera como registro metodológico e experimento estético simultâneo.</p>
+                <p className="bible-body">O que começou como uma necessidade de apresentar THEVØIDN13 ao programa de mestrado em Cinema e Artes do Vídeo transformou-se em laboratório vivo. Cada seção, cada componente interativo, o gerador de HQs, a biblioteca de prompts, o mapa mental creative-ops, opera como registro metodológico e experimento estético simultâneo.</p>
                 
                 <h3 className="bible-subtitle">Desmistificar a Máquina, Amplificar o Humano</h3>
                 <p className="bible-body">Havia medo. Medo de perder autoria, medo de diluir o gesto criativo, medo de que a inteligência artificial substituísse o que há de singular no ato de criar. Mas o processo me ensinou o contrário: a IA não substitui, ela revela. Revela padrões que eu não via, expande horizontes conceituais que eu não alcançaria sozinho, questiona minhas certezas estéticas.</p>
@@ -638,7 +638,7 @@ const Autor = () => {
                 <p className="bible-body">Trabalhar com Claude, Gemini, Midjourney, GPT não foi abrir mão do controle criativo. Foi descobrir que controle criativo nunca foi sobre fazer tudo sozinho. Foi aprender a <span className="font-bold">orquestrar vozes</span>, humanas e não-humanas, em um diálogo onde a autoria se distribui sem se dissolver. A máquina não pensa por mim; ela pensa <span className="italic">comigo</span>.</p>
                 
                 <h3 className="bible-subtitle">Do Personagem ao Universo ao Código</h3>
-                <p className="bible-body">THEVOIDN13 começou como um corpo mascarado. Depois virou conceito. Depois virou universo transmídia. Depois virou metodologia de pesquisa. E agora é também código, interface, plataforma. Cada camada não substitui a anterior, todas coexistem, todas se informam.</p>
+                <p className="bible-body">THEVØIDN13 começou como um corpo mascarado. Depois virou conceito. Depois virou universo transmídia. Depois virou metodologia de pesquisa. E agora é também código, interface, plataforma. Cada camada não substitui a anterior, todas coexistem, todas se informam.</p>
                 
                 <p className="bible-body">Criar o portal foi perceber que não há mais separação entre o pensar, o fazer e o documentar. Escrever o texto, gerar a imagem e programar a interface são gestos contínuos de um mesmo fluxo criativo. O GitHub vira caderno de campo. O commit vira diário. A build vira performance.</p>
                 
@@ -655,7 +655,7 @@ const Autor = () => {
                 <p className="bible-body">A relevância está em provar que é possível fazer pesquisa acadêmica rigorosa sem abrir mão da experimentação radical. Que é possível ser metodologicamente sólido e esteticamente arriscado ao mesmo tempo. Que o mestrado pode ser dissertação <span className="font-bold">e</span> obra. Que o memorial pode ser texto <span className="font-bold">e</span> experiência.</p>
                 
                 <h3 className="bible-subtitle">Experimentação Permanente</h3>
-                <p className="bible-body">Este não é um trabalho concluído. Este é um trabalho <span className="italic">em conclusão perpétua</span>. O portal será atualizado. Novos prompts serão testados. Novos capítulos do universo THEVOIDN13 surgirão. A metodologia será refinada enquanto permanece aberta.</p>
+                <p className="bible-body">Este não é um trabalho concluído. Este é um trabalho <span className="italic">em conclusão perpétua</span>. O portal será atualizado. Novos prompts serão testados. Novos capítulos do universo THEVØIDN13 surgirão. A metodologia será refinada enquanto permanece aberta.</p>
                 
                 <p className="bible-body">Porque o que aprendi neste processo é que a verdadeira inteligência, humana ou artificial, não está em chegar a respostas definitivas. Está em continuar fazendo perguntas melhores. E fazer perguntas melhores exige coragem para experimentar, falhar, recalibrar, tentar de novo.</p>
                 
@@ -675,7 +675,7 @@ const Autor = () => {
                 <h3 className="bible-subtitle">The Portal As Research Object</h3>
                 <p className="bible-body">This website is not just a presentation, it is the research object itself. A visual and performative memorial where every line of code, every generated image, every text co-written with artificial intelligences, becomes material evidence of a hybrid creative process. Here, the interface doesn't explain the project: it <span className="font-bold italic">is</span> the project.</p>
                 
-                <p className="bible-body">What began as a need to present THEVOIDN13 to the Master's program in Cinema and Video Arts transformed into a living laboratory. Each section, each interactive component, the comic generator, the prompt library, the creative-ops mind map, operates as both methodological record and aesthetic experiment simultaneously.</p>
+                <p className="bible-body">What began as a need to present THEVØIDN13 to the Master's program in Cinema and Video Arts transformed into a living laboratory. Each section, each interactive component, the comic generator, the prompt library, the creative-ops mind map, operates as both methodological record and aesthetic experiment simultaneously.</p>
                 
                 <h3 className="bible-subtitle">Demystify the Machine, Amplify the Human</h3>
                 <p className="bible-body">There was fear. Fear of losing authorship, fear of diluting the creative gesture, fear that artificial intelligence would replace what is singular in the act of creating. But the process taught me the opposite: AI doesn't replace, it reveals. It reveals patterns I didn't see, expands conceptual horizons I wouldn't reach alone, questions my aesthetic certainties.</p>
@@ -683,7 +683,7 @@ const Autor = () => {
                 <p className="bible-body">Working with Claude, Gemini, Midjourney, GPT was not giving up creative control. It was discovering that creative control was never about doing everything alone. It was learning to <span className="font-bold">orchestrate voices</span>, human and non-human, in a dialogue where authorship is distributed without dissolving. The machine doesn't think for me; it thinks <span className="italic">with</span> me.</p>
                 
                 <h3 className="bible-subtitle">From Character to Universe to Code</h3>
-                <p className="bible-body">THEVOIDN13 began as a masked body. Then it became a concept. Then it became a transmedia universe. Then it became research methodology. And now it's also code, interface, platform. Each layer doesn't replace the previous one, all coexist, all inform each other.</p>
+                <p className="bible-body">THEVØIDN13 began as a masked body. Then it became a concept. Then it became a transmedia universe. Then it became research methodology. And now it's also code, interface, platform. Each layer doesn't replace the previous one, all coexist, all inform each other.</p>
                 
                 <p className="bible-body">Creating the portal was realizing there's no longer separation between thinking, making and documenting. Writing text, generating images and programming the interface are continuous gestures of the same creative flow. GitHub becomes field notebook. Commit becomes diary. Build becomes performance.</p>
                 
@@ -700,7 +700,7 @@ const Autor = () => {
                 <p className="bible-body">The relevance lies in proving that it's possible to do rigorous academic research without giving up radical experimentation. That it's possible to be methodologically solid and aesthetically risky at the same time. That the master's can be dissertation <span className="font-bold">and</span> work. That the memorial can be text <span className="font-bold">and</span> experience.</p>
                 
                 <h3 className="bible-subtitle">Permanent Experimentation</h3>
-                <p className="bible-body">This is not a finished work. This is a work <span className="italic">in perpetual conclusion</span>. The portal will be updated. New prompts will be tested. New chapters of the THEVOIDN13 universe will emerge. The methodology will be refined while remaining open.</p>
+                <p className="bible-body">This is not a finished work. This is a work <span className="italic">in perpetual conclusion</span>. The portal will be updated. New prompts will be tested. New chapters of the THEVØIDN13 universe will emerge. The methodology will be refined while remaining open.</p>
                 
                 <p className="bible-body">Because what I learned in this process is that true intelligence, human or artificial, is not in reaching definitive answers. It's in continuing to ask better questions. And asking better questions requires courage to experiment, fail, recalibrate, try again.</p>
                 
