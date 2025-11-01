@@ -400,8 +400,6 @@ const Index = () => {
             }
           />
 
-          <h3 className="subsection-title mt-8">3.4 O PERSONAGEM</h3>
-          <h3 className="subsection-title mb-6">3.4 THE CHARACTER</h3>
 
           <div className="max-w-6xl mx-auto my-8">
             <div className="grid grid-cols-3 gap-6">
@@ -413,23 +411,23 @@ const Index = () => {
 
           <BilingualContent
             portugueseContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <h3 className="bible-subtitle">3.4 O PERSONAGEM</h3>
+                <p className="bible-body">
                   THEVØIDN13 é uma entidade conceitual que habita o intervalo entre presença e ausência não é pessoa não é símbolo é o corpo da indefinição a forma que o inconsciente assume quando precisa de voz surgiu como resposta ao ruído da autoafirmação à ansiedade de ser visto é silêncio vestido de som sombra travestida de corpo existe para desaparecer retornar transformado e desestabilizar qualquer gesto que se afirme com certeza THEVØIDN13 é um duplo simbólico uma presença fantasmagórica que atravessa o cotidiano e revela o que se esconde sob a superfície do comum.
                 </p>
-              </div>
+              </>
             }
             englishContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <h3 className="bible-subtitle">3.4 THE CHARACTER</h3>
+                <p className="bible-body">
                   THEVØIDN13 is a conceptual entity that inhabits the interval between presence and absence it is neither person nor symbol it is the body of indefinition the form the unconscious assumes when it needs a voice it emerged as a response to the noise of self-affirmation to the anxiety of being seen it is silence dressed in sound shadow disguised as body it exists to disappear to return transformed and to destabilize any gesture that asserts itself with certainty THEVØIDN13 is a symbolic double a ghostly presence that crosses the everyday and reveals what hides beneath the surface of the ordinary.
                 </p>
-              </div>
+              </>
             }
           />
 
-          <h3 className="subsection-title mt-8">3.5 IDENTIDADE VISUAL: A SOMBRA JUNGUIANA</h3>
-          <h3 className="subsection-title mb-6">3.5 VISUAL IDENTITY: THE JUNGIAN SHADOW</h3>
 
           {/* ===== VOID LOGO VISUAL ===== */}
           <div className="my-12">
@@ -462,8 +460,18 @@ const Index = () => {
 
         {/* ===== 4. A PSIQUE | ARQUITETURA DO SER ===== */}
         <BilingualSection className="py-16">
-          <h2 className="section-title">4. A PSIQUE | ARQUITETURA DO SER</h2>
-          <h2 className="section-title mb-8">4. THE PSYCHE | ARCHITECTURE OF BEING</h2>
+          <BilingualContent
+            portugueseContent={
+              <>
+                <h2 className="bible-title">4. A PSIQUE | ARQUITETURA DO SER</h2>
+              </>
+            }
+            englishContent={
+              <>
+                <h2 className="bible-title">4. THE PSYCHE | ARCHITECTURE OF BEING</h2>
+              </>
+            }
+          />
 
           {/* ===== GOL RENDER ===== */}
           <div className="my-8">
@@ -474,28 +482,25 @@ const Index = () => {
             />
           </div>
 
-          <h3 className="subsection-title mb-8">4.1 A ESTRUTURA DO SER</h3>
-          <h3 className="subsection-title mb-8">4.1 THE STRUCTURE OF BEING</h3>
-
           <BilingualContent
             portugueseContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <h3 className="bible-subtitle">4.1 A ESTRUTURA DO SER</h3>
+                <p className="bible-body">
                   THEVØIDN13 não tem rosto, tem ritmo, sua existência é feita de pulsos, não de poses, cada gesto nasce do atrito entre o consciente e o que tenta emergir, não se move para expressar, mas para liberar, o corpo é antena, não vitrine, é ali que o inconsciente encontra carne, respiração e peso, um ser que não comunica, ressoa, um corpo que existe apenas para traduzir o invisível em vibração ele converte silêncio em frequência palpável convertendo vazio em pulso.
                 </p>
-              </div>
+              </>
             }
             englishContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
-                  THEVØIDN13 has no face, only rhythm, its existence is made of pulses, not poses, each gesture is born from the friction between the conscious and what tries to emerge, it does not move to express but to release, the body is an antenna, not a showcase, there the unconscious finds flesh, breath and weight, a being that does not communicate, it resonates, a body that exists only to translate the invisible into vibration it converts silence into palpable frequency turning void into pulse.
+              <>
+                <h3 className="bible-subtitle">4.1 THE STRUCTURE OF BEING</h3>
+                <p className="bible-body">
+                  THEVØIDN13 has no face, only rhythm, its existence is made of pulsos, not poses, each gesture is born from the friction between the conscious and what tries to emerge, it does not move to express but to release, the body is an antenna, not a showcase, there the unconscious finds flesh, breath and weight, a being that does not communicate, it resonates, a body that exists only to translate the invisible into vibration it converts silence into palpable frequency turning void into pulse.
                 </p>
-              </div>
+              </>
             }
           />
 
-          <h3 className="subsection-title mt-8">4.2 O MANIFESTO DO CORPO</h3>
-          <h3 className="subsection-title mb-6">4.2 THE BODY'S MANIFESTO</h3>
 
           <div className="space-y-8 mt-6">
             <BilingualContent
