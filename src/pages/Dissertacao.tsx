@@ -88,13 +88,29 @@ const Dissertacao = () => {
               <h2 className="bible-title">MATRIX PROCESSES</h2>
             </div>
           </div>
-          <p className="bible-subtitle mt-4">Projetos que originaram esta dissertação / Projects that originated this dissertation</p>
+          
+          <div className="bilingual-grid mt-4">
+            <div className="bilingual-col">
+              <p className="bible-subtitle">PROJETOS QUE ORIGINARAM ESTA DISSERTAÇÃO</p>
+            </div>
+            <div className="bilingual-col">
+              <p className="bible-subtitle">PROJECTS THAT ORIGINATED THIS DISSERTATION</p>
+            </div>
+          </div>
 
           <div className="bible-section-spacing mt-8">
-            <p className="bible-body text-muted-foreground">
-              Processos criativos que se entrelaçam e formam a base do Labirinto Criativo. / 
-              Creative processes that intertwine and form the basis of the Creative Labyrinth.
-            </p>
+            <div className="bilingual-grid">
+              <div className="bilingual-col">
+                <p className="bible-body text-muted-foreground">
+                  Processos criativos que se entrelaçam e formam a base do Labirinto Criativo.
+                </p>
+              </div>
+              <div className="bilingual-col">
+                <p className="bible-body text-muted-foreground">
+                  Creative processes that intertwine and form the basis of the Creative Labyrinth.
+                </p>
+              </div>
+            </div>
           </div>
         </BilingualSection>
 
@@ -119,7 +135,7 @@ const Dissertacao = () => {
             <div>
               <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
-                <p className="bible-body">Coletivo Criativo fundado em 2008. Estúdio pós-contemporâneo de design e vídeo. Associação de produtores criativos independentes que opera como laboratório de criação autoral, cultural e comercial, conectando pessoas, ideias e projetos. Onde o comercial e o experimental coexistem sob a persona цастро™.</p>
+                <p className="bible-body">Coletivo Criativo fundado em 2008. Estúdio pós-contemporâneo de design e vídeo. Associação de produtores criativos independentes que opera como laboratório de criação autoral, cultural e comercial, conectando pessoas, ideias e projetos.</p>
                 
                 <h3 className="bible-subtitle">Conceito</h3>
                 <p className="bible-body">CasaTrezeStudio não é empresa. É organismo vivo. Laboratório onde criadores independentes se encontram para transformar ideias em matéria. Nasceu da necessidade de criar fora dos sistemas tradicionais, construindo sua própria infraestrutura criativa. 17 anos de resistência e reinvenção.</p>
@@ -138,7 +154,7 @@ const Dissertacao = () => {
             <div>
               <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
-                <p className="bible-body">Creative Collective founded in 2008. Post-contemporary studio of design and video. Association of independent creative producers operating as a laboratory of authorial, cultural and commercial creation, connecting people, ideas and projects. Where commercial and experimental coexist under the persona цастро™.</p>
+                <p className="bible-body">Creative Collective founded in 2008. Post-contemporary studio of design and video. Association of independent creative producers operating as a laboratory of authorial, cultural and commercial creation, connecting people, ideas and projects.</p>
                 
                 <h3 className="bible-subtitle">Concept</h3>
                 <p className="bible-body">CasaTrezeStudio isn't a company. It's a living organism. Laboratory where independent creators meet to transform ideas into matter. Born from the need to create outside traditional systems, building its own creative infrastructure. 17 years of resistance and reinvention.</p>
@@ -321,14 +337,14 @@ const Dissertacao = () => {
             <div>
               <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
-                <p className="bible-body">Os vídeos de skate registram a evolução técnica e criativa dos skatistas e desempenham um papel central na construção de sua identidade cultural. A VideoParte destaca não apenas as habilidades dos skatistas, mas também a integração entre seus movimentos e o ambiente urbano. A VideoParte é linguagem estética em movimento, expressão que transforma a paisagem urbana em território simbólico. O corpo e a cidade dialogam em fricção constante, produzindo imagens que são ao mesmo tempo documento e ficção.</p>
+                <p className="bible-body">Os vídeos de skate registram a evolução técnica e criativa dos skatistas e desempenham um papel central na construção de sua identidade cultural. A VideoParte destaca não apenas as habilidades dos skatistas, mas também a integração entre seus movimentos e o ambiente urbano. A VideoParte é linguagem estética em movimento, expressão que transforma a paisagem urbana em território simbólico. O corpo e a cidade dialogam em fricção constante.</p>
               </div>
             </div>
 
             <div>
               <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
-                <p className="bible-body">Skateboarding videos record the technical and creative evolution of skaters and play a central role in constructing their cultural identity. The VideoPart highlights not only the skaters' skills, but also the integration between their movements and the urban environment. The VideoPart is aesthetic language in movement, expression that transforms the urban landscape into symbolic territory. Body and city dialogue in constant friction, producing images that are simultaneously document and fiction.</p>
+                <p className="bible-body">Skateboarding videos record the technical and creative evolution of skaters and play a central role in constructing their cultural identity. The VideoPart highlights not only the skaters' skills, but also the integration between their movements and the urban environment. The VideoPart is aesthetic language in movement, expression that transforms the urban landscape into symbolic territory. Body and city dialogue in constant friction.</p>
               </div>
             </div>
           </div>
