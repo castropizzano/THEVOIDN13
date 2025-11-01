@@ -439,7 +439,7 @@ const Autor = () => {
                     A proposta central é o anonimato como ética criativa. Num mundo saturado de criadores-influencers, a ideia é inverter a equação: não se trata de vender a imagem do artista, mas de expandir o campo simbólico do que ele cria.
                   </p>
                   <p className="body-base text-justified">
-                    Assim, "CASTRO" torna-se um agente conceitual, não uma pessoa. Uma entidade de linguagem, um selo de pensamento, uma assinatura invisível.
+                    Assim, "ЦАСТРО™" torna-se um agente conceitual, não uma pessoa. Uma entidade de linguagem, um selo de pensamento, uma assinatura invisível.
                   </p>
                   <div className="my-4 py-4">
                     <p className="text-lg font-bold italic text-primary">
@@ -547,7 +547,7 @@ const Autor = () => {
                     </p>
                   </div>
                   <p className="text-base leading-relaxed text-justify">
-                    The CASTRO anti-brand doesn't seek commercial legibility, but conceptual recognition. Those who understand the code understand the author. Those who don't are outside the tribe — and that's okay.
+                    The ЦАСТРО™ anti-brand doesn't seek commercial legibility, but conceptual recognition. Those who understand the code understand the author. Those who don't are outside the tribe — and that's okay.
                   </p>
                 </div>
 
@@ -557,7 +557,7 @@ const Autor = () => {
                     The central proposition is anonymity as creative ethics. In a world saturated with creator-influencers, the idea is to reverse the equation: it's not about selling the artist's image, but expanding the symbolic field of what they create.
                   </p>
                   <p className="text-base leading-relaxed text-justify">
-                    Thus, "CASTRO" becomes a conceptual agent, not a person. A language entity, a thought seal, an invisible signature.
+                    Thus, "ЦАСТРО™" becomes a conceptual agent, not a person. A language entity, a thought seal, an invisible signature.
                   </p>
                   <div className="my-4 py-4 text-center">
                     <p className="text-lg font-bold italic text-primary">
@@ -599,7 +599,7 @@ const Autor = () => {
                       <p className="text-sm text-muted-foreground">Reference to cultural control, surveillance, and authorial resistance</p>
                     </div>
                     <div className="border-l-2 border-primary pl-4">
-                      <h4 className="text-sm font-bold uppercase mb-2">#</h4>
+                      <h4 className="text-sm font-bold uppercase mb-2">™</h4>
                       <p className="text-sm text-muted-foreground">Irony: the market symbol applied to an anti-brand</p>
                     </div>
                     <div className="border-l-2 border-primary pl-4">
