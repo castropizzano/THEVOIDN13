@@ -502,105 +502,128 @@ const Index = () => {
           />
 
 
+          <BilingualContent
+            portugueseContent={
+              <>
+                <h3 className="bible-subtitle">4.2 O MANIFESTO DO CORPO</h3>
+              </>
+            }
+            englishContent={
+              <>
+                <h3 className="bible-subtitle">4.2 THE BODY'S MANIFESTO</h3>
+              </>
+            }
+          />
+
           <div className="space-y-8 mt-6">
             <BilingualContent
               portugueseContent={
-                <div className="section-spacing">
-                  <h4 className="subsection-title mb-4">POSTURA</h4>
-                  <p className="body-base text-justified">
+                <>
+                  <h4 className="bible-subtitle">POSTURA</h4>
+                  <p className="bible-body">
                     Neutra, centrada, o corpo como antena, ouvindo a frequência da cidade, ombros baixos, cabeça alinhada, a imobilidade é uma escolha consciente, uma forma de confronto silencioso.
                   </p>
-                </div>
+                </>
               }
               englishContent={
-                <div className="section-spacing">
-                  <h4 className="subsection-title mb-4">POSTURE</h4>
-                  <p className="body-base text-justified">
+                <>
+                  <h4 className="bible-subtitle">POSTURE</h4>
+                  <p className="bible-body">
                     Neutral, centered, the body as an antenna, listening to the city's frequency, shoulders low, head aligned, stillness is a conscious choice, a form of silent confrontation.
                   </p>
-                </div>
+                </>
               }
             />
 
             <BilingualContent
               portugueseContent={
-                <div className="section-spacing">
-                  <h4 className="subsection-title mb-4">O GESTO</h4>
-                  <p className="body-base text-justified">
+                <>
+                  <h4 className="bible-subtitle">O GESTO</h4>
+                  <p className="bible-body">
                     Cada movimento é um ruído controlado, um eco do que o corpo escuta por dentro, andar é pensar, parar é ouvir, o gesto é a respiração do pensamento, um movimento de exílio e de retorno, THEVØIDN13 não representa, ele encarna a hesitação, o gesto não expressa, ele encarna a hesitação entre o desejo e o cansaço, cada deslocamento é uma forma de escuta, o corpo capta o que a mente silencia.
                   </p>
-                </div>
+                </>
               }
               englishContent={
-                <div className="section-spacing">
-                  <h4 className="subsection-title mb-4">THE GESTURE</h4>
-                  <p className="body-base text-justified">
+                <>
+                  <h4 className="bible-subtitle">THE GESTURE</h4>
+                  <p className="bible-body">
                     Each movement is a controlled noise, an echo of what the body hears within, to walk is to think, to stop is to listen, gesture is the breath of thought, a movement of exile and return, THEVØIDN13 does not represent, it embodies hesitation, gesture does not express, it embodies the hesitation between desire and exhaustion, every displacement is a form of listening, the body perceives what the mind silences.
                   </p>
-                </div>
+                </>
               }
             />
 
             <BilingualContent
               portugueseContent={
-                <div className="section-spacing">
-                  <h4 className="subsection-title mb-4">O OLHAR</h4>
-                  <p className="body-base text-justified">
+                <>
+                  <h4 className="bible-subtitle">O OLHAR</h4>
+                  <p className="bible-body">
                     Por trás da máscara há silêncio, um olhar que não busca reconhecimento, apenas presença, o olhar não devolve imagem, devolve espelho, é o espaço onde quem vê também está por dentro, o olhar é o fio que costura o visível e o invisível, uma lente que dissolve a fronteira entre sujeito e sombra.
                   </p>
-                </div>
+                </>
               }
               englishContent={
-                <div className="section-spacing">
-                  <h4 className="subsection-title mb-4">THE GAZE</h4>
-                  <p className="body-base text-justified">
+                <>
+                  <h4 className="bible-subtitle">THE GAZE</h4>
+                  <p className="bible-body">
                     Behind the mask there is silence, a gaze that seeks no recognition, only presence, the gaze does not return an image, it returns a mirror, it is the space where whoever looks is also seen from within, the gaze is the thread that stitches the visible and the invisible, a lens that dissolves the boundary between subject and shadow.
                   </p>
-                </div>
+                </>
               }
             />
 
             <BilingualContent
               portugueseContent={
-                <div className="section-spacing">
-                  <h4 className="subsection-title mb-4">A RESPIRAÇÃO</h4>
-                  <p className="body-base text-justified">
+                <>
+                  <h4 className="bible-subtitle">A RESPIRAÇÃO</h4>
+                  <p className="bible-body">
                     A respiração é o som que resta quando o verbo morre, é nela que o ser se ancora e desaparece, o ar entra como ruído e sai como silêncio, cada expiração é um micro desaparecimento, um instante de retorno ao nada, respirar é lembrar que o corpo é apenas passagem entre dois mundos, o mundo da carne e o mundo do invisível.
                   </p>
-                </div>
+                </>
               }
               englishContent={
-                <div className="section-spacing">
-                  <h4 className="subsection-title mb-4">THE BREATHING</h4>
-                  <p className="body-base text-justified">
+                <>
+                  <h4 className="bible-subtitle">THE BREATHING</h4>
+                  <p className="bible-body">
                     Breathing is the sound that remains when the word dies, in it the being anchors itself and vanishes, air enters as noise and leaves as silence, each exhalation is a micro disappearance, a fleeting return to nothingness, to breathe is to remember that the body is only a passage between two worlds, the world of flesh and the world of the unseen.
                   </p>
-                </div>
+                </>
               }
             />
 
             <BilingualContent
               portugueseContent={
-                <div className="section-spacing">
-                  <h4 className="subsection-title mb-4">A ATMOSFERA</h4>
-                  <p className="body-base text-justified">
+                <>
+                  <h4 className="bible-subtitle">A ATMOSFERA</h4>
+                  <p className="bible-body">
                     Tudo vibra em tom noturno, a névoa, o concreto e a solidão elétrica são extensões do corpo, o ambiente não cerca THEVØIDN13, ele o prolonga, a paisagem se torna psique e o silêncio uma presença física, a cidade é o espelho expandido do inconsciente, o lugar onde o corpo desaparece e o espaço respira por ele cada superfície reflete fragmentos do invisível tornando visível o que sempre esteve oculto.
                   </p>
-                </div>
+                </>
               }
               englishContent={
-                <div className="section-spacing">
-                  <h4 className="subsection-title mb-4">THE ATMOSPHERE</h4>
-                  <p className="body-base text-justified">
+                <>
+                  <h4 className="bible-subtitle">THE ATMOSPHERE</h4>
+                  <p className="bible-body">
                     Everything vibrates in a nocturnal tone, the fog, the concrete and the electric loneliness are extensions of the body, the environment does not surround THEVØIDN13, it prolongs him, the landscape becomes psyche and silence a physical presence, the city is the expanded mirror of the unconscious, the place where the body disappears and space breathes for it each surface reflects fragments of the invisible making visible what was always hidden.
                   </p>
-                </div>
+                </>
               }
             />
           </div>
 
-          <h3 className="subsection-title mt-8">4.3 PSICOLOGIA: A SOMBRA COMO LINGUAGEM</h3>
-          <h3 className="subsection-title mb-6">4.3 PSYCHOLOGY: SHADOW AS LANGUAGE</h3>
+          <BilingualContent
+            portugueseContent={
+              <>
+                <h3 className="bible-subtitle">4.3 PSICOLOGIA: A SOMBRA COMO LINGUAGEM</h3>
+              </>
+            }
+            englishContent={
+              <>
+                <h3 className="bible-subtitle">4.3 PSYCHOLOGY: SHADOW AS LANGUAGE</h3>
+              </>
+            }
+          />
 
           {/* ===== LOVECITY RENDER ===== */}
           <div className="my-8">
@@ -613,18 +636,18 @@ const Index = () => {
 
           <BilingualContent
             portugueseContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <p className="bible-body">
                   THEVØIDN13 é sombra, e a sombra é tudo o que o ego não consegue sustentar, Jung dizia que ela não é o mal, é o que ainda não foi vivido, talvez o projeto seja exatamente isso, uma tentativa de viver o que eu vinha evitando, dar forma àquilo que o mundo me ensinou a esconder, a sombra é a memória do que não se permitiu existir, e o cinema, aqui, é o corpo dessa revelação.
                 </p>
-              </div>
+              </>
             }
             englishContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <>
+                <p className="bible-body">
                   THEVØIDN13 is shadow, and the shadow is everything the ego cannot sustain, Jung said it is not evil, it is what has not yet been lived, perhaps this project is exactly that, an attempt to live what I had been avoiding, to give form to what the world had taught me to hide, the shadow is the memory of what was never allowed to exist, and cinema, here, is the body of that revelation.
                 </p>
-              </div>
+              </>
             }
           />
         </BilingualSection>
@@ -633,83 +656,93 @@ const Index = () => {
 
         {/* ===== 5. LÉXICO DO VAZIO ===== */}
         <BilingualSection className="py-16">
-          <h2 className="section-title">5. LÉXICO DO VAZIO</h2>
-          <h2 className="section-title mb-8">5. LEXICON OF THE VOID</h2>
+          <BilingualContent
+            portugueseContent={
+              <>
+                <h2 className="bible-title">5. LÉXICO DO VAZIO</h2>
+              </>
+            }
+            englishContent={
+              <>
+                <h2 className="bible-title">5. LEXICON OF THE VOID</h2>
+              </>
+            }
+          />
 
           <div className="space-y-8">
             <BilingualContent
               portugueseContent={
-                <div className="section-spacing">
-                  <h3 className="subsection-title mb-4">SOMBRA</h3>
-                  <p className="body-base text-justified">
+                <>
+                  <h3 className="bible-subtitle">SOMBRA</h3>
+                  <p className="bible-body">
                     A sombra é o que o ego reprime é onde mora o desejo sem permissão o pensamento que não coube, não é monstruosa é inédita, revelá la é aceitar que o ser é maior que a consciência o void nasce ali onde a forma aceita se desfazer.
                   </p>
-                </div>
+                </>
               }
               englishContent={
-                <div className="section-spacing">
-                  <h3 className="subsection-title mb-4">SHADOW</h3>
-                  <p className="body-base text-justified">
+                <>
+                  <h3 className="bible-subtitle">SHADOW</h3>
+                  <p className="bible-body">
                     The shadow is what the ego represses it is where forbidden desire resides the thought that did not fit, it is not monstrous it is unprecedented, to reveal it is to accept that being is greater than consciousness the void is born there where form accepts dissolution.
                   </p>
-                </div>
+                </>
               }
             />
 
             <BilingualContent
               portugueseContent={
-                <div className="section-spacing">
-                  <h3 className="subsection-title mb-4">SILÊNCIO</h3>
-                  <p className="body-base text-justified">
+                <>
+                  <h3 className="bible-subtitle">SILÊNCIO</h3>
+                  <p className="bible-body">
                     O silêncio não é ausência de som é o espaço onde o pensamento ainda vibra sem palavra, no silêncio o corpo ouve é ali que o inconsciente fala não em voz mas em pressão em peso em pausa, o silêncio do void é denso como concreto e afiado como vidro.
                   </p>
-                </div>
+                </>
               }
               englishContent={
-                <div className="section-spacing">
-                  <h3 className="subsection-title mb-4">SILENCE</h3>
-                  <p className="body-base text-justified">
+                <>
+                  <h3 className="bible-subtitle">SILENCE</h3>
+                  <p className="bible-body">
                     Silence is not the absence of sound it is the space where thought still vibrates wordlessly, in silence the body listens it is there that the unconscious speaks not in voice but in pressure in weight in pause, the void's silence is dense as concrete and sharp as glass.
                   </p>
-                </div>
+                </>
               }
             />
 
             <BilingualContent
               portugueseContent={
-                <div className="section-spacing">
-                  <h3 className="subsection-title mb-4">RUÍDO</h3>
-                  <p className="body-base text-justified">
+                <>
+                  <h3 className="bible-subtitle">RUÍDO</h3>
+                  <p className="bible-body">
                     O ruído não interrompe o pensamento ele o revela, o som é a forma mais bruta do inconsciente tentando existir, o que vibra no limite do audível é o que não pode ser dito, o ruído é memória viva daquilo que ainda não encontrou palavra.
                   </p>
-                </div>
+                </>
               }
               englishContent={
-                <div className="section-spacing">
-                  <h3 className="subsection-title mb-4">NOISE</h3>
-                  <p className="body-base text-justified">
+                <>
+                  <h3 className="bible-subtitle">NOISE</h3>
+                  <p className="bible-body">
                     Noise does not interrupt thought it reveals it, sound is the rawest form of the unconscious trying to exist, what vibrates at the edge of the audible is what cannot yet be said, noise is the living memory of what has not yet found a word.
                   </p>
-                </div>
+                </>
               }
             />
 
             <BilingualContent
               portugueseContent={
-                <div className="section-spacing">
-                  <h3 className="subsection-title mb-4">VAZIO</h3>
-                  <p className="body-base text-justified">
+                <>
+                  <h3 className="bible-subtitle">VAZIO</h3>
+                  <p className="bible-body">
                     O vazio não apaga ele abre, é o espaço onde o silêncio respira e o corpo se reescreve, ali tudo que foi reprimido se reorganiza em nova forma, o vazio é o território fértil da reinvenção o ponto onde o ser se refaz em presença.
                   </p>
-                </div>
+                </>
               }
               englishContent={
-                <div className="section-spacing">
-                  <h3 className="subsection-title mb-4">VOID</h3>
-                  <p className="body-base text-justified">
+                <>
+                  <h3 className="bible-subtitle">VOID</h3>
+                  <p className="bible-body">
                     The void does not erase it opens, it is the space where silence breathes and the body rewrites itself, there everything that was repressed reorganizes into new form, the void is the fertile ground of reinvention the point where being remakes itself into presence.
                   </p>
-                </div>
+                </>
               }
             />
           </div>
@@ -719,8 +752,18 @@ const Index = () => {
 
         {/* ===== 6. THEVØIDN13 | A GRAFIA DO VAZIO ===== */}
         <BilingualSection className="py-16">
-          <h2 className="section-title">6. THEVØIDN13 | A GRAFIA DO VAZIO</h2>
-          <h2 className="section-title mb-8">6. THEVØIDN13 | THE SPELLING OF THE VOID</h2>
+          <BilingualContent
+            portugueseContent={
+              <>
+                <h2 className="bible-title">6. THEVØIDN13 | A GRAFIA DO VAZIO</h2>
+              </>
+            }
+            englishContent={
+              <>
+                <h2 className="bible-title">6. THEVØIDN13 | THE SPELLING OF THE VOID</h2>
+              </>
+            }
+          />
 
           {/* ===== HOTEL RENDER ===== */}
           <div className="my-8">
