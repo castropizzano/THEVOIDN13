@@ -1,52 +1,224 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { BookOpen } from "lucide-react";
 
 export const MindMap = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <Card className="bg-card/80 border-primary/30 hover:border-primary transition-colors">
-      <CardHeader>
-        <CardTitle className="text-2xl font-bold text-primary">
-          Creative-Ops Mind Map / Mapa Mental Creative-Ops
-        </CardTitle>
-        <CardDescription className="text-base">
-          Ecossistema completo do memorial artístico THEVØIDN13 / 
-          Complete ecosystem of the THEVØIDN13 artistic memorial
-        </CardDescription>
-      </CardHeader>
-      <CardContent>
-        <Button
-          onClick={() => setIsExpanded(!isExpanded)}
-          variant="outline"
-          className="w-full mb-6"
-        >
-          {isExpanded ? "Colapsar / Collapse" : "Expandir / Expand"} Mapa Completo
-        </Button>
+    <>
+      <Card className="bg-card/80 border-primary/30 hover:border-primary transition-colors">
+        <CardHeader>
+          <CardTitle className="title text-primary">
+            Creative-Ops Mind Map / Mapa Mental Creative-Ops
+          </CardTitle>
+          <CardDescription className="body-small">
+            Ecossistema completo do memorial artístico THEVØIDN13 / 
+            Complete ecosystem of the THEVØIDN13 artistic memorial
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <button
+            onClick={() => setIsOpen(true)}
+            className="w-full p-6 bg-card/80 hover:bg-primary/5 border-2 border-primary/30 hover:border-primary rounded-lg transition-all group"
+          >
+            <p className="subtitle text-foreground group-hover:text-primary">
+              Expandir / Expand Mapa Completo
+            </p>
+          </button>
+        </CardContent>
+      </Card>
 
-        {isExpanded && (
-          <div className="space-y-8">
+      <Dialog open={isOpen} onOpenChange={setIsOpen}>
+        <DialogContent className="max-w-[95vw] max-h-[95vh] overflow-y-auto bg-background">
+          <DialogTitle className="sr-only">Creative-Ops Mind Map Completo</DialogTitle>
+          <DialogDescription className="sr-only">
+            Ecossistema completo do memorial artístico THEVØIDN13
+          </DialogDescription>
+
+          <div className="space-y-8 p-4">
+            {/* Header */}
+            <div className="text-center space-y-2">
+              <h2 className="title text-primary">
+                Creative-Ops Mind Map / Mapa Mental Creative-Ops
+              </h2>
+              <p className="body-small text-muted-foreground">
+                Ecossistema completo do memorial artístico THEVØIDN13 / Complete ecosystem of the THEVØIDN13 artistic memorial
+              </p>
+            </div>
+
             {/* Asimov's Creative Laws */}
             <div className="p-6 bg-primary/5 rounded-lg border border-primary/20">
-              <h3 className="text-lg font-bold mb-4 text-primary">
+              <h3 className="subtitle text-primary mb-4">
                 As Três Leis da Robótica Criativa / The Three Laws of Creative Robotics
               </h3>
-              <div className="space-y-3 text-sm">
-                <p className="font-mono">
+              <div className="space-y-3">
+                <p className="body-small font-mono">
                   <span className="text-primary font-bold">01.</span> Uma máquina não prejudicará a criatividade humana ou, por omissão, permitirá que a expressão humana seja diminuída.
                 </p>
-                <p className="font-mono">
+                <p className="body-small font-mono">
                   <span className="text-primary font-bold">02.</span> Uma máquina deve amplificar a intenção criativa humana, exceto quando tal amplificação entrar em conflito com a Primeira Lei.
                 </p>
-                <p className="font-mono">
+                <p className="body-small font-mono">
                   <span className="text-primary font-bold">03.</span> Uma máquina deve preservar seu potencial criativo desde que tal preservação não entre em conflito com a Primeira ou Segunda Lei.
                 </p>
               </div>
             </div>
 
-            {/* Compact Mind Map */}
+            {/* Processo de Criação Híbrida com IA */}
+            <div className="p-6 bg-card/50 rounded-lg border border-border space-y-6">
+              <h3 className="subtitle text-primary">
+                Processo de Criação Híbrida com IA / Hybrid AI Creation Process
+              </h3>
+              
+              <div className="space-y-4">
+                <div className="space-y-2">
+                  <p className="body-base text-foreground">
+                    <span className="text-primary font-bold">PORTUGUÊS:</span> Este memorial artístico documenta um processo de criação híbrida entre humano e inteligência artificial, desenvolvido ao longo de 2 anos (2023-2025). Não se trata de usar IA como ferramenta passiva, mas de estabelecer um diálogo criativo onde a máquina atua como co-criadora, desafiando, propondo e expandindo o universo conceitual de THEVØIDN13.
+                  </p>
+                  <p className="body-small text-muted-foreground italic">
+                    <span className="text-primary font-bold">ENGLISH:</span> This artistic memorial documents a hybrid creation process between human and artificial intelligence, developed over 2 years (2023-2025). It's not about using AI as a passive tool, but establishing a creative dialogue where the machine acts as co-creator, challenging, proposing, and expanding the conceptual universe of THEVØIDN13.
+                  </p>
+                </div>
+
+                <div className="border-l-4 border-primary pl-4 space-y-2">
+                  <h4 className="subtitle text-primary">Cronologia do Processo / Process Timeline</h4>
+                  
+                  <div className="space-y-3">
+                    <div>
+                      <p className="body-small text-foreground">
+                        <strong className="text-primary">2023 (Outubro - Dezembro):</strong> Crise no mestrado → Burnout acadêmico → Nascimento de THEVØIDN13 como resposta ao colapso. Primeiras experimentações com Midjourney v5 para gerar máscaras e personagens. Desenvolvimento da estética "low culture punk" através de prompts iterativos com GPT-4.
+                      </p>
+                      <p className="body-small text-muted-foreground/70 italic">
+                        <strong>Oct-Dec 2023:</strong> Master's crisis → Academic burnout → Birth of THEVØIDN13 as response to collapse. First experiments with Midjourney v5 for masks and characters. Development of "low culture punk" aesthetic through iterative prompts with GPT-4.
+                      </p>
+                    </div>
+
+                    <div>
+                      <p className="body-small text-foreground">
+                        <strong className="text-primary">2024 (Janeiro - Junho):</strong> Consolidação da Shadow Interface Bible como documento canônico. Mais de 500 imagens geradas com Midjourney v6, explorando cenas urbanas, veículos vintage e atmosferas noturnas. Experimentação com Adobe Firefly para texturas analógicas. Co-escrita com Claude 3 Opus de textos filosóficos e manifestos conceituais.
+                      </p>
+                      <p className="body-small text-muted-foreground/70 italic">
+                        <strong>Jan-Jun 2024:</strong> Consolidation of Shadow Interface Bible as canonical document. 500+ images generated with Midjourney v6, exploring urban scenes, vintage vehicles, nocturnal atmospheres. Adobe Firefly experiments for analog textures. Co-writing with Claude 3 Opus of philosophical texts and conceptual manifestos.
+                      </p>
+                    </div>
+
+                    <div>
+                      <p className="body-small text-foreground">
+                        <strong className="text-primary">2024 (Julho - Dezembro):</strong> Criação dos brandbooks LowMovie e LowPressure com Adobe Illustrator + IA. Desenvolvimento do Memorial Acadêmico v3 em co-escrita com GPT-4o. Início da integração entre design manual (Photoshop, After Effects) e geração por IA. Primeira versão do website como "portal memorial" no Lovable.
+                      </p>
+                      <p className="body-small text-muted-foreground/70 italic">
+                        <strong>Jul-Dec 2024:</strong> Creation of LowMovie and LowPressure brandbooks with Adobe Illustrator + AI. Development of Academic Memorial v3 in co-writing with GPT-4o. Beginning of integration between manual design (Photoshop, After Effects) and AI generation. First website version as "memorial portal" on Lovable.
+                      </p>
+                    </div>
+
+                    <div>
+                      <p className="body-small text-foreground">
+                        <strong className="text-primary">2025 (Janeiro - Atual):</strong> Shadow Interface Bible v13 refinada com Gemini 2.5 Flash. Website expandido com Lovable AI + Claude 3.7 Sonnet, incluindo Oráculo Criativo, Gerador de Stills (Nano Banana), Biblioteca de Prompts e este Mind Map. Desenvolvimento de edge functions em Supabase para integração AI. Mais de 700 imagens geradas ao total. Este próprio site foi construído em sessões iterativas de 50+ mensagens, refinando tipografia, design system e funcionalidades interativas.
+                      </p>
+                      <p className="body-small text-muted-foreground/70 italic">
+                        <strong>Jan-Present 2025:</strong> Shadow Interface Bible v13 refined with Gemini 2.5 Flash. Website expanded with Lovable AI + Claude 3.7 Sonnet, including Creative Oracle, Still Generator (Nano Banana), Prompt Library and this Mind Map. Development of edge functions in Supabase for AI integration. 700+ images generated in total. This very website was built in iterative sessions of 50+ messages, refining typography, design system and interactive features.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="border-l-4 border-accent pl-4 space-y-2">
+                  <h4 className="subtitle text-accent">Metodologia de 5 Etapas / 5-Stage Methodology</h4>
+                  
+                  <div className="space-y-2">
+                    <p className="body-small text-foreground">
+                      <strong className="text-accent">01. Observação:</strong> Mergulho introspectivo no vazio pessoal. Identificação de sintomas, ruídos internos, fragmentos visuais do inconsciente. Registro em cadernos analógicos e notas de áudio.
+                    </p>
+                    <p className="body-small text-muted-foreground/70 italic">
+                      <strong>01. Observation:</strong> Introspective dive into personal void. Identification of symptoms, internal noises, visual fragments of unconscious. Recording in analog notebooks and audio notes.
+                    </p>
+
+                    <p className="body-small text-foreground">
+                      <strong className="text-accent">02. Co-criação:</strong> Diálogo com IAs (GPT-5, Claude, Gemini, Midjourney). Prompts não como "comandos", mas como perguntas abertas. A IA propõe, desafia, expande. O humano filtra, recorta, recontextualiza. Iteração até encontrar ressonância estética e conceitual.
+                    </p>
+                    <p className="body-small text-muted-foreground/70 italic">
+                      <strong>02. Co-creation:</strong> Dialogue with AIs (GPT-5, Claude, Gemini, Midjourney). Prompts not as "commands", but as open questions. AI proposes, challenges, expands. Human filters, cuts, recontextualizes. Iteration until finding aesthetic and conceptual resonance.
+                    </p>
+
+                    <p className="body-small text-foreground">
+                      <strong className="text-accent">03. Documentação:</strong> Tudo é registrado. Cada prompt, cada imagem descartada, cada erro, cada acidente feliz. O processo é mais importante que o produto final. O memorial não é retrospectivo — ele acontece em tempo real.
+                    </p>
+                    <p className="body-small text-muted-foreground/70 italic">
+                      <strong>03. Documentation:</strong> Everything is recorded. Each prompt, each discarded image, each error, each happy accident. The process is more important than the final product. The memorial is not retrospective — it happens in real time.
+                    </p>
+
+                    <p className="body-small text-foreground">
+                      <strong className="text-accent">04. Reflexão:</strong> Análise crítica do que emergiu. Textos filosóficos co-escritos com IAs. Diálogos sobre autoria, sobre o papel da máquina, sobre onde termina o humano e começa o sintético. Esta etapa gera os manifestos, as "Leis da Robótica Criativa", a filosofia do projeto.
+                    </p>
+                    <p className="body-small text-muted-foreground/70 italic">
+                      <strong>04. Reflection:</strong> Critical analysis of what emerged. Philosophical texts co-written with AIs. Dialogues about authorship, about machine's role, about where human ends and synthetic begins. This stage generates manifestos, "Creative Robotics Laws", project philosophy.
+                    </p>
+
+                    <p className="body-small text-foreground">
+                      <strong className="text-accent">05. Expansão:</strong> O memorial se torna plataforma. Outros podem usar os prompts, gerar suas próprias variações, interagir com o Oráculo, criar stills. THEVØIDN13 deixa de ser obra fechada e se torna sistema aberto, ecossistema vivo que aceita interferências externas.
+                    </p>
+                    <p className="body-small text-muted-foreground/70 italic">
+                      <strong>05. Expansion:</strong> The memorial becomes platform. Others can use prompts, generate their own variations, interact with Oracle, create stills. THEVØIDN13 ceases to be closed work and becomes open system, living ecosystem that accepts external interferences.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="border-l-4 border-secondary pl-4 space-y-2">
+                  <h4 className="subtitle text-secondary">Ferramentas e Stack Técnico / Tools and Technical Stack</h4>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className="space-y-1">
+                      <p className="body-small text-foreground font-bold">IA / AI:</p>
+                      <ul className="body-small text-muted-foreground space-y-1 list-disc list-inside">
+                        <li>GPT-5 (textos, manifestos)</li>
+                        <li>Claude 3.7 Sonnet (filosofia)</li>
+                        <li>Gemini 2.5 Flash (sistema)</li>
+                        <li>Nano Banana (imagens site)</li>
+                        <li>Midjourney v6 (concept art)</li>
+                        <li>Adobe Firefly (texturas)</li>
+                        <li>Lovable AI Gateway</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="space-y-1">
+                      <p className="body-small text-foreground font-bold">Design:</p>
+                      <ul className="body-small text-muted-foreground space-y-1 list-disc list-inside">
+                        <li>Adobe Photoshop (comp.)</li>
+                        <li>Adobe Illustrator (brand)</li>
+                        <li>Adobe After Effects (motion)</li>
+                        <li>DaVinci Resolve (video)</li>
+                        <li>Figma (protótipos)</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="space-y-1">
+                      <p className="body-small text-foreground font-bold">Desenvolvimento / Dev:</p>
+                      <ul className="body-small text-muted-foreground space-y-1 list-disc list-inside">
+                        <li>Lovable (plataforma)</li>
+                        <li>React + TypeScript</li>
+                        <li>Tailwind CSS</li>
+                        <li>Supabase (backend)</li>
+                        <li>PostgreSQL (database)</li>
+                        <li>Edge Functions (AI)</li>
+                        <li>GitHub (version control)</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="p-4 bg-primary/10 border-l-4 border-primary rounded-r space-y-2">
+                  <p className="body-small text-foreground">
+                    <strong className="text-primary">NOTA CRÍTICA:</strong> Este não é um projeto "feito com IA". É um projeto onde a IA é interlocutora. A autoria não desaparece — ela se desloca, se fragmenta, se distribui. O que importa não é quem fez, mas o que emergiu desse diálogo impossível entre consciência e algoritmo.
+                  </p>
+                  <p className="body-small text-muted-foreground italic">
+                    <strong>CRITICAL NOTE:</strong> This is not a project "made with AI". It's a project where AI is an interlocutor. Authorship doesn't disappear — it shifts, fragments, distributes. What matters is not who did it, but what emerged from this impossible dialogue between consciousness and algorithm.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Mind Map Diagram */}
             <div className="w-full">
               <svg viewBox="0 0 1200 1600" className="w-full h-auto" preserveAspectRatio="xMidYMid meet">
                 <defs>
@@ -229,86 +401,69 @@ export const MindMap = () => {
                   <line x1="150" y1="710" x2="1050" y2="710" stroke="hsl(var(--primary))" strokeWidth="2" opacity="0.4" />
                   
                   <rect x="194" y="704" width="12" height="12" fill="hsl(var(--primary))" />
-                  <text x="200" y="732" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="9" fontWeight="bold">2023</text>
+                  <text x="200" y="695" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="8">Out-Dez 23</text>
+                  <text x="200" y="728" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="6">Burnout</text>
                   
-                  <rect x="344" y="704" width="12" height="12" fill="hsl(var(--primary))" />
-                  <text x="350" y="732" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="9" fontWeight="bold">2024 Q1</text>
+                  <rect x="444" y="704" width="12" height="12" fill="hsl(var(--accent))" />
+                  <text x="450" y="695" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="8">Jan-Jun 24</text>
+                  <text x="450" y="728" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="6">Bible v1</text>
                   
-                  <rect x="494" y="704" width="12" height="12" fill="hsl(var(--primary))" />
-                  <text x="500" y="732" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="9" fontWeight="bold">2024 Q3</text>
+                  <rect x="694" y="704" width="12" height="12" fill="hsl(var(--secondary))" />
+                  <text x="700" y="695" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="8">Jul-Dez 24</text>
+                  <text x="700" y="728" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="6">Brandbooks</text>
                   
-                  <rect x="643" y="703" width="14" height="14" fill="hsl(var(--accent))" />
-                  <text x="650" y="732" textAnchor="middle" fill="hsl(var(--accent))" fontSize="9" fontWeight="bold">2025 Q1</text>
-                  
-                  <rect x="794" y="704" width="12" height="12" fill="hsl(var(--secondary))" />
-                  <text x="800" y="732" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="9" fontWeight="bold">2025+</text>
-                  
-                  <rect x="945" y="705" width="10" height="10" fill="hsl(var(--muted-foreground))" opacity="0.5" />
-                  <text x="950" y="732" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="9">Futuro</text>
+                  <rect x="944" y="704" width="12" height="12" fill="hsl(var(--primary))" />
+                  <text x="950" y="695" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="8">Jan 25+</text>
+                  <text x="950" y="728" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="6">Website</text>
                 </g>
 
-                {/* Compact Legend */}
-                <g>
-                  <text x="600" y="800" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="11" fontWeight="bold">
-                    LEGENDA / LEGEND
-                  </text>
-                  
-                  <rect x="250" y="815" width="25" height="15" fill="url(#primaryGrad)" rx="3" />
-                  <text x="283" y="827" fill="hsl(var(--foreground))" fontSize="9">Conceitual & Outputs</text>
-
-                  <rect x="450" y="815" width="25" height="15" fill="url(#accentGrad)" rx="3" />
-                  <text x="483" y="827" fill="hsl(var(--foreground))" fontSize="9">Metodológico</text>
-
-                  <rect x="650" y="815" width="25" height="15" fill="url(#secondaryGrad)" rx="3" />
-                  <text x="683" y="827" fill="hsl(var(--foreground))" fontSize="9">Técnico</text>
-
-                  <rect x="882" y="817" width="10" height="10" fill="hsl(var(--primary))" />
-                  <text x="898" y="827" fill="hsl(var(--foreground))" fontSize="9">Marco-chave</text>
+                {/* Hub connections */}
+                <g opacity="0.15">
+                  <line x1="600" y1="120" x2="200" y2="650" stroke="hsl(var(--primary))" strokeWidth="1" strokeDasharray="4,4" />
+                  <line x1="600" y1="120" x2="450" y2="650" stroke="hsl(var(--accent))" strokeWidth="1" strokeDasharray="4,4" />
+                  <line x1="600" y1="120" x2="700" y2="650" stroke="hsl(var(--secondary))" strokeWidth="1" strokeDasharray="4,4" />
+                  <line x1="600" y1="120" x2="950" y2="650" stroke="hsl(var(--primary))" strokeWidth="1" strokeDasharray="4,4" />
                 </g>
 
-                {/* Quote Footer */}
+                {/* Legend compacta */}
                 <g>
-                  <rect x="150" y="880" width="900" height="70" fill="hsl(var(--muted))" opacity="0.15" rx="6" />
-                  <text x="600" y="910" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="10" fontStyle="italic">
-                    "Um memorial vivo onde cada camada digital preserva não apenas resultados,
-                  </text>
-                  <text x="600" y="928" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="10" fontStyle="italic">
-                    mas o próprio processo de co-criação humano-máquina."
-                  </text>
-                  <text x="600" y="943" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">
-                    — Manifesto Creative-Ops, 2025
-                  </text>
+                  <text x="600" y="820" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="9" fontWeight="bold">LEGENDA / LEGEND</text>
+                  <rect x="450" y="830" width="60" height="12" fill="url(#primaryGrad)" rx="2" />
+                  <text x="515" y="840" fill="hsl(var(--foreground))" fontSize="7">Conceitual</text>
+                  
+                  <rect x="590" y="830" width="60" height="12" fill="url(#accentGrad)" rx="2" />
+                  <text x="655" y="840" fill="hsl(var(--foreground))" fontSize="7">Metodológico</text>
+                  
+                  <rect x="730" y="830" width="60" height="12" fill="url(#secondaryGrad)" rx="2" />
+                  <text x="795" y="840" fill="hsl(var(--foreground))" fontSize="7">Técnico</text>
                 </g>
               </svg>
             </div>
 
-            {/* Methodological Note */}
-            <div className="mt-8 p-6 bg-muted/50 rounded-lg border border-border space-y-4">
-              <div className="flex items-start gap-3">
-                <BookOpen className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                <div>
-                  <p className="text-sm text-foreground">
-                    <strong className="text-primary">Nota Metodológica / Methodological Note:</strong>
-                  </p>
-                  <p className="text-sm text-muted-foreground mt-2">
-                    Este mapa mental documenta o ecossistema completo do memorial artístico THEVØIDN13, 
-                    estruturado em quatro dimensões principais: <strong>Conceitual</strong> (fundamentos filosóficos 
-                    e estéticos), <strong>Metodológico</strong> (processo de pesquisa e co-criação), 
-                    <strong>Técnico</strong> (ferramentas e tecnologias empregadas), e <strong>Outputs</strong> (entregas 
-                    visuais, interativas e acadêmicas).
-                  </p>
-                  <p className="text-sm text-muted-foreground mt-2">
-                    O processo é inspirado nas <strong>Três Leis da Robótica</strong> de Isaac Asimov, 
-                    reinterpretadas para o contexto criativo: a máquina como amplificadora da expressão humana, 
-                    jamais como substituta. Cada elemento do mapa reflete a práxis híbrida humano-IA 
-                    desenvolvida ao longo de 2023-2025.
-                  </p>
-                </div>
+            {/* Core Nuclei */}
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="space-y-3 p-4 bg-card rounded-lg border border-border">
+                <h3 className="subtitle text-primary">LowMovie</h3>
+                <p className="body-small text-muted-foreground">
+                  Núcleo cinematográfico de ficções urbanas e periféricas. Estética dirty, cores dessaturadas, luz natural crua.
+                </p>
+              </div>
+              <div className="space-y-3 p-4 bg-card rounded-lg border border-border">
+                <h3 className="subtitle text-primary">LowPressure</h3>
+                <p className="body-small text-muted-foreground">
+                  Plataforma editorial e selo independente. Manifestos, zines, textos fragmentados, vozes marginais.
+                </p>
+              </div>
+              <div className="space-y-3 p-4 bg-card rounded-lg border border-border">
+                <h3 className="subtitle text-primary">CasaTrezeStudio</h3>
+                <p className="body-small text-muted-foreground">
+                  Laboratório criativo híbrido. Design gráfico, motion, concept art, experimentação audiovisual.
+                </p>
               </div>
             </div>
           </div>
-        )}
-      </CardContent>
-    </Card>
+        </DialogContent>
+      </Dialog>
+    </>
   );
 };
