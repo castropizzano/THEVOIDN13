@@ -61,14 +61,14 @@ const Dissertacao = () => {
           <div className="bilingual-grid">
             <div className="bilingual-col">
               <p className="lang-pill">&lt;PORTUGUÊS&gt;</p>
-              <h1 className="bible-title mt-4">LOWMOVIE™ E O LABIRINTO CRIATIVO</h1>
+              <h1 className="bible-title">LOWMOVIE™ E O LABIRINTO CRIATIVO</h1>
               <p className="bible-body mt-6">
                 Subjetividade, Subcultura e a Construção de uma Estética em Movimento no Coletivo LowPressure™
               </p>
             </div>
             <div className="bilingual-col">
               <p className="lang-pill">&lt;ENGLISH&gt;</p>
-              <h1 className="bible-title mt-4">LOWMOVIE™ E O LABIRINTO CRIATIVO</h1>
+              <h1 className="bible-title">LOWMOVIE™ E O LABIRINTO CRIATIVO</h1>
               <p className="bible-body mt-6">
                 Subjectivity, Subculture and the Construction of an Aesthetic in Motion in the LowPressure™ Collective
               </p>
