@@ -210,14 +210,14 @@ Entre pelo silêncio. Saia pelo ruído. Ou vice-versa.
 
 **ABNT:**
 
-PIZZANO, C. **THEVØIDN13** — Memorial Artístico e Práxis Híbrida (Humano + Máquina). Curitiba: Unespar, 2025. Disponível em: https://thevoidn13.lovableproject.com. Acesso em: [data].
+PIZZANO, C. **THEVØIDN13** — Memorial Artístico e Práxis Híbrida (Humano + Máquina). Curitiba: Unespar, 2025. Disponível em: https://thevoidn13.com. Acesso em: [data].
 
 ───────────────────────────────────────────────────────────────  
 (EN) RECOMMENDED CITATION  
 
 **APA:**
 
-Pizzano, C. (2025). *THEVØIDN13* — Artistic Memorial and Hybrid Praxis (Human + Machine). Unespar. https://thevoidn13.lovableproject.com
+Pizzano, C. (2025). *THEVØIDN13* — Artistic Memorial and Hybrid Praxis (Human + Machine). Unespar. https://thevoidn13.com
 
 ───────────────────────────────────────────────────────────────  
 ## INTEGRIDADE AUTORAL E LICENÇA  
@@ -263,6 +263,6 @@ Veja [LICENSE.md](./LICENSE.md) para termos legais completos.
 **Maintainer:** Castro Pizzano (цастро™)  
 **Contact:** via portal ou documentação
 
-**Portal Live:** https://thevoidn13.lovableproject.com
+**Portal Live:** https://thevoidn13.com
 
 ───────────────────────────────────────────────────────────────

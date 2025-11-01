@@ -8,8 +8,8 @@ import antibrandImage from "@/assets/antibrand-hero.png";
 
 const Autor = () => {
   const breadcrumbs = breadcrumbSchema([
-    { name: "Home", url: "https://thevoidn13.lovableproject.com/" },
-    { name: "Autor", url: "https://thevoidn13.lovableproject.com/autor" }
+    { name: "Home", url: "https://thevoidn13.com/" },
+    { name: "Autor", url: "https://thevoidn13.com/autor" }
   ]);
 
   const schemaData = {

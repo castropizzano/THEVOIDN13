@@ -29,8 +29,8 @@ const Videos = () => {
   const { toast } = useToast();
 
   const breadcrumbs = breadcrumbSchema([
-    { name: "Home", url: "https://thevoidn13.lovableproject.com/" },
-    { name: "Portfolio de Vídeos", url: "https://thevoidn13.lovableproject.com/videos" }
+    { name: "Home", url: "https://thevoidn13.com/" },
+    { name: "Portfolio de Vídeos", url: "https://thevoidn13.com/videos" }
   ]);
 
   const videoCollectionSchema = {

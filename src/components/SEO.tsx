@@ -17,7 +17,7 @@ export const SEO = ({
   schemaData
 }: SEOProps) => {
   const location = useLocation();
-  const url = `https://thevoidn13.lovableproject.com${location.pathname}`;
+  const url = `https://thevoidn13.com${location.pathname}`;
 
   useEffect(() => {
     // Update document title
@@ -99,7 +99,7 @@ export const personSchema = {
     "@type": "EducationalOrganization",
     "name": "Universidade Estadual do Paraná"
   },
-  "url": "https://thevoidn13.lovableproject.com/autor",
+  "url": "https://thevoidn13.com/autor",
   "sameAs": [
     "https://castropizzano.com",
     "https://behance.net/castropizzano",
@@ -115,7 +115,7 @@ export const organizationSchema = {
   "name": "CasaTrezeStudio®",
   "alternateName": "Casa 13 Studio",
   "url": "https://casatrezestudio.com",
-  "logo": "https://thevoidn13.lovableproject.com/assets/hero-concept-art.png",
+  "logo": "https://thevoidn13.com/assets/hero-concept-art.png",
   "founder": {
     "@type": "Person",
     "name": "Castro Pizzano"
@@ -142,7 +142,7 @@ export const creativeWorkSchema = {
   "keywords": "arte digital, cinema experimental, inteligência artificial, co-criação, práxis híbrida, memorial artístico",
   "inLanguage": ["pt-BR", "en-US"],
   "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-  "url": "https://thevoidn13.lovableproject.com",
+  "url": "https://thevoidn13.com",
   "isPartOf": {
     "@type": "Thesis",
     "name": "LowMovie™ e o Labirinto Criativo",

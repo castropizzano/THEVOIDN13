@@ -37,10 +37,10 @@ const Dissertacao = () => {
   };
   const breadcrumbs = breadcrumbSchema([{
     name: "Home",
-    url: "https://thevoidn13.lovableproject.com/"
+    url: "https://thevoidn13.com/"
   }, {
     name: "LowMovie™ — Dissertação",
-    url: "https://thevoidn13.lovableproject.com/dissertacao"
+    url: "https://thevoidn13.com/dissertacao"
   }]);
   const schemaData = {
     "@context": "https://schema.org",

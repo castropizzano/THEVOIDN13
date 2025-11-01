@@ -152,7 +152,7 @@
 
 **Formato:**
 ```
-https://thevoidn13.lovableproject.com/[pathname]
+https://thevoidn13.com/[pathname]
 ```
 
 ───────────────────────────────────────────────────────────────

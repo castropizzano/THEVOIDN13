@@ -788,6 +788,6 @@ O projeto THEVOIDN13 está **APROVADO** para deploy em produção com as seguint
 
 THEVOIDN13 — Memorial Artístico e Práxis Híbrida (Humano + Máquina)  
 Curitiba, Brasil — 2025  
-https://thevoidn13.lovableproject.com
+https://thevoidn13.com
 
 ───────────────────────────────────────────────────────────────
