@@ -212,11 +212,11 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
               </p>
             </div>
 
-            <div className="space-y-4 text-left">
-              <p className="body-base text-foreground/90">
+            <div className="space-y-4">
+              <p className="body-base text-foreground/90 text-justify">
                 Seis perguntas sobre seu processo criativo. Não existe resposta certa. Apenas verdades que você ainda não disse em voz alta. O que você encontra quando para de fugir?
               </p>
-              <p className="body-small text-muted-foreground/70 italic">
+              <p className="body-small text-muted-foreground/70 italic text-justify">
                 Six questions about your creative process. There are no right answers. Only truths you haven't spoken aloud yet. What do you find when you stop running away?
               </p>
             </div>
@@ -237,38 +237,38 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
               
               {/* Category descriptions */}
               <div className="pt-4 space-y-4 border-t border-border/30">
-                <div className="space-y-1 text-left">
-                  <p className="body-small text-foreground/80">
+                <div className="space-y-1">
+                  <p className="body-small text-foreground/80 text-justify">
                     <strong className="text-primary">Sombras:</strong> O inconsciente como matéria-prima criativa. Aquilo que ainda não tem nome, mas já existe no escuro.
                   </p>
-                  <p className="body-small text-muted-foreground/60 italic">
+                  <p className="body-small text-muted-foreground/60 italic text-justify">
                     <strong>Shadow:</strong> The unconscious as creative raw material. That which has no name yet, but already exists in the dark.
                   </p>
                 </div>
                 
-                <div className="space-y-1 text-left">
-                  <p className="body-small text-foreground/80">
+                <div className="space-y-1">
+                  <p className="body-small text-foreground/80 text-justify">
                     <strong className="text-primary">Ruptura:</strong> Destruição como gesto criativo. Quebrar o que foi feito para encontrar o que ainda pode ser.
                   </p>
-                  <p className="body-small text-muted-foreground/60 italic">
+                  <p className="body-small text-muted-foreground/60 italic text-justify">
                     <strong>Rupture:</strong> Destruction as creative gesture. Breaking what was made to find what can still become.
                   </p>
                 </div>
                 
-                <div className="space-y-1 text-left">
-                  <p className="body-small text-foreground/80">
+                <div className="space-y-1">
+                  <p className="body-small text-foreground/80 text-justify">
                     <strong className="text-primary">Conexão:</strong> A criação como diálogo e escuta. Nada existe sozinho, tudo ressoa no outro para existir.
                   </p>
-                  <p className="body-small text-muted-foreground/60 italic">
+                  <p className="body-small text-muted-foreground/60 italic text-justify">
                     <strong>Connection:</strong> Creation as dialogue and listening. Nothing exists alone, everything resonates in another to exist.
                   </p>
                 </div>
                 
-                <div className="space-y-1 text-left">
-                  <p className="body-small text-foreground/80">
+                <div className="space-y-1">
+                  <p className="body-small text-foreground/80 text-justify">
                     <strong className="text-primary">Método:</strong> Disciplina e rigor como estrutura. A repetição consciente que transforma prática em forma refinada.
                   </p>
-                  <p className="body-small text-muted-foreground/60 italic">
+                  <p className="body-small text-muted-foreground/60 italic text-justify">
                     <strong>Method:</strong> Discipline and rigor as structure. The conscious repetition that transforms practice into refined form.
                   </p>
                 </div>
