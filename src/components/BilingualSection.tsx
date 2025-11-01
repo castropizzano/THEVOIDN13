@@ -29,7 +29,7 @@ export const BilingualContent = ({
   portugueseContent,
   englishContent,
   alignTop = false,
-  showLabels = true
+  showLabels = false
 }: BilingualContentProps) => {
   return <div className="bilingual-grid">
       <div className="bilingual-col">

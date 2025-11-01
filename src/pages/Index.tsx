@@ -138,11 +138,9 @@ const Index = () => {
         <BilingualSection className="py-16">
           <div className="bible-bilingual-grid">
             <div>
-              <p className="lang-pill">&lt;PORTUGUÊS&gt;</p>
               <h2 className="bible-subtitle">[INÍCIO DA TRANSMISSÃO]</h2>
             </div>
             <div>
-              <p className="lang-pill">&lt;ENGLISH&gt;</p>
               <h2 className="bible-subtitle">[BEGINNING OF TRANSMISSION]</h2>
             </div>
           </div>
