@@ -17,11 +17,12 @@ const SpotifyPlaylist = () => {
   return (
     <section className="w-full">
       <div className="max-w-6xl mx-auto">
-        <div className="flex items-center justify-end mb-4">
+        <div className="mb-4">
           <Dialog>
             <DialogTrigger asChild>
-              <Button variant="outline" size="icon">
+              <Button variant="outline" className="w-full justify-start gap-2">
                 <Info className="w-4 h-4" />
+                Sobre a Assinatura Sonora / About the Sonic Signature
               </Button>
             </DialogTrigger>
             <DialogContent className="max-w-2xl">
