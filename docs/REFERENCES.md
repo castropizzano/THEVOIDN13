@@ -1,7 +1,7 @@
 # REFERÊNCIAS BIBLIOGRÁFICAS
-## THEVOIDN13 - Memorial Artístico e Práxis Híbrida
+## THEVØIDN13 - Memorial Artístico e Práxis Híbrida
 
----
+───────────────────────────────────────────────────────────────
 
 ## 📚 BIBLIOGRAFIA COMPLETA (ABNT)
 
@@ -49,7 +49,7 @@ SALLES, Cecília Almeida. **Gesto inacabado: processo de criação artística**.
 
 LANCRI, Jean. **Colóquio sobre a metodologia da pesquisa em artes plásticas na universidade**. In: BRITES, Blanca; TESSLER, Elida (Org.). O meio como ponto zero. Porto Alegre: Ed. UFRGS, 2002.
 
----
+───────────────────────────────────────────────────────────────
 
 ## 🌐 LINKS E RECURSOS DIGITAIS
 
@@ -63,14 +63,14 @@ LANCRI, Jean. **Colóquio sobre a metodologia da pesquisa em artes plásticas na
 - OpenAI ChatGPT
 - Google Gemini
 
----
+───────────────────────────────────────────────────────────────
 
 ## 📝 NOTA SOBRE CITAÇÕES
 
 Para citar este projeto academicamente, consulte:  
-[`COMO_CITAR.md`](./COMO_CITAR.md)
+[`HOW_TO_CITE.md`](./HOW_TO_CITE.md)
 
----
+───────────────────────────────────────────────────────────────
 
 **© 2025 Castro Pizzano (цастро™)**  
-Projeto THEVOIDN13 - Memorial Artístico e Práxis Híbrida
+Projeto THEVØIDN13 - Memorial Artístico e Práxis Híbrida

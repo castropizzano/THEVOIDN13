@@ -1,7 +1,7 @@
 # DIREITOS AUTORAIS E ÉTICA DA CO-CRIAÇÃO
-## THEVOIDN13 - Memorial Artístico e Práxis Híbrida
+## THEVØIDN13 - Memorial Artístico e Práxis Híbrida
 
----
+───────────────────────────────────────────────────────────────
 
 ## 🛡️ DECLARAÇÃO DE AUTORIA
 
@@ -14,7 +14,7 @@ Todo o conteúdo deste repositório é de **autoria de Fernando Castro Pizzano**
 - Edição final
 - Decisões estéticas e narrativas
 
----
+───────────────────────────────────────────────────────────────
 
 ## 🤖 CO-CRIAÇÃO COM INTELIGÊNCIA ARTIFICIAL
 
@@ -40,7 +40,7 @@ Este projeto utiliza **ferramentas de IA como extensões do processo criativo**,
 - ✅ **Pesquisa** — Síntese de bibliografia, análise de padrões
 - ❌ **Decisões finais** — NUNCA. Sempre curadoria humana.
 
----
+───────────────────────────────────────────────────────────────
 
 ## 📜 LICENCIAMENTO
 
@@ -56,7 +56,7 @@ Licença completa: [`LICENSE.md`](../LICENSE.md)
 - Uso de IA é documentado e transparente
 - Autoria final é sempre de Castro Pizzano (цастро™)
 
----
+───────────────────────────────────────────────────────────────
 
 ## 🎬 DIREITOS SOBRE O LOWMOVIE™
 
@@ -74,7 +74,7 @@ O filme **LowMovie™** (2023) é propriedade intelectual do coletivo **LowPress
 - ✅ Crítica e análise
 - ❌ Comercial (sem autorização)
 
----
+───────────────────────────────────────────────────────────────
 
 ## 🛹 DIREITOS SOBRE LOWPRESSURE™
 
@@ -87,7 +87,7 @@ O coletivo **LowPressure™ Skate** detém os direitos sobre:
 **Autorização de uso:**
 Membros do coletivo autorizaram o uso de imagens, vídeos e materiais para fins acadêmicos e documentação neste memorial.
 
----
+───────────────────────────────────────────────────────────────
 
 ## 🎨 DIREITOS SOBRE CASATREZESTUDIO®
 
@@ -97,7 +97,7 @@ Trabalhos realizados pelo estúdio para clientes pertencem aos respectivos clien
 
 Trabalhos autorais do estúdio pertencem ao criador.
 
----
+───────────────────────────────────────────────────────────────
 
 ## 📸 USO DE IMAGENS DE TERCEIROS
 
@@ -114,7 +114,7 @@ Quando houver uso de imagens, vídeos ou materiais de terceiros:
 - Imagens geradas por IA (identificadas)
 - Materiais de domínio público (quando aplicável)
 
----
+───────────────────────────────────────────────────────────────
 
 ## 🎵 DIREITOS MUSICAIS
 
@@ -126,7 +126,7 @@ Uso da trilha neste repositório é:
 - Autorizado pelo artista
 - Sempre creditado
 
----
+───────────────────────────────────────────────────────────────
 
 ## ⚖️ USO JUSTO (FAIR USE) ACADÊMICO
 
@@ -143,7 +143,7 @@ Este projeto é uma **pesquisa acadêmica** (mestrado) e se enquadra nos princí
 - Reprodução integral sem crédito
 - Apropriação de conteúdo de terceiros
 
----
+───────────────────────────────────────────────────────────────
 
 ## 🔒 PROTEÇÃO DE DADOS PESSOAIS
 
@@ -159,7 +159,7 @@ Este projeto é uma **pesquisa acadêmica** (mestrado) e se enquadra nos princí
 - Currículo artístico
 - Trabalhos publicados
 
----
+───────────────────────────────────────────────────────────────
 
 ## 📧 SOLICITAÇÕES E AUTORIZAÇÕES
 
@@ -173,7 +173,7 @@ Se você identifica algum material seu neste repositório e deseja sua remoção
 ### Para colaboração:
 Propostas de colaboração são bem-vindas!
 
----
+───────────────────────────────────────────────────────────────
 
 ## 🎯 COMPROMISSO ÉTICO
 
@@ -185,7 +185,7 @@ Este projeto se compromete com:
 4. **Integridade** — Reconhecer limitações e falhas
 5. **Abertura** — Compartilhar conhecimento para fins educacionais
 
----
+───────────────────────────────────────────────────────────────
 
 ## 📚 REFERÊNCIA LEGAL
 
@@ -194,10 +194,10 @@ Este projeto se compromete com:
 - **Código de Ética da Pesquisa Acadêmica**
 - **Princípios de Uso Justo para fins educacionais**
 
----
+───────────────────────────────────────────────────────────────
 
 **© 2025 Castro Pizzano (цастро™)**  
-THEVOIDN13 Project - Artistic Memorial and Hybrid Praxis
+THEVØIDN13 Project - Artistic Memorial and Hybrid Praxis
 
 Este documento está sob licença CC BY-NC-SA 4.0
 

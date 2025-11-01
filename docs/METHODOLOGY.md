@@ -1,13 +1,13 @@
 # METODOLOGIA DE PESQUISA
 ## THEVØIDN13 - Memorial Artístico e Práxis Híbrida
 
----
+───────────────────────────────────────────────────────────────
 
 ## 🎯 OBJETIVO GERAL
 
 Investigar processos de co-criação entre humano e inteligência artificial no campo das artes visuais, cinema e videoarte, documentando uma metodologia híbrida através de memorial artístico performático.
 
----
+───────────────────────────────────────────────────────────────
 
 ## 📚 FUNDAMENTAÇÃO TEÓRICA
 
@@ -33,7 +33,7 @@ Este projeto dialoga com autores e conceitos das seguintes áreas:
 - Stuart Hall — estudos culturais
 - Paul Virilio — estética da desaparição
 
----
+───────────────────────────────────────────────────────────────
 
 ## 🔬 MÉTODO HÍBRIDO (5 ETAPAS)
 
@@ -52,7 +52,7 @@ Transformação dos registros em narrativa estética, filosófica e técnica.
 ### 5. EXPANSÃO
 Devolução do aprendizado ao mundo através de arte, código ou metodologia.
 
----
+───────────────────────────────────────────────────────────────
 
 ## 🛠️ FERRAMENTAS E TECNOLOGIAS
 
@@ -71,7 +71,7 @@ Devolução do aprendizado ao mundo através de arte, código ou metodologia.
 - Tailwind CSS
 - GitHub + Git
 
----
+───────────────────────────────────────────────────────────────
 
 ## 🎓 CONTEXTO ACADÊMICO
 
@@ -80,14 +80,14 @@ Devolução do aprendizado ao mundo através de arte, código ou metodologia.
 **Pesquisador:** Fernando Castro Pizzano (цастро™)  
 **Status:** Pós-qualificação
 
----
+───────────────────────────────────────────────────────────────
 
 ## 📖 REFERÊNCIAS
 
 Consulte o arquivo completo de referências bibliográficas em:  
-[`REFERENCIAS_BIBLIOGRAFICAS.md`](./REFERENCIAS_BIBLIOGRAFICAS.md)
+[`REFERENCES.md`](./REFERENCES.md)
 
----
+───────────────────────────────────────────────────────────────
 
 **© 2025 Castro Pizzano (цастро™)**  
 Projeto THEVØIDN13 - Memorial Artístico e Práxis Híbrida
