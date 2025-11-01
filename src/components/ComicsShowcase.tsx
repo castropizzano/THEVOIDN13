@@ -1,4 +1,4 @@
-import { Info } from "lucide-react";
+import { Info, ExternalLink } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import watchmenCover from "@/assets/comics/watchmen.jpg";
@@ -26,6 +26,7 @@ interface ComicReference {
   coverUrl: string;
   description: string;
   context: string;
+  wikipediaUrl: string;
 }
 
 const ComicsShowcase = () => {
@@ -36,7 +37,8 @@ const ComicsShowcase = () => {
       year: 1986,
       coverUrl: watchmenCover,
       description: "Ética ambígua e o mecanismo de cidade",
-      context: "A arquitetura ética e o questionamento do heroísmo"
+      context: "A arquitetura ética e o questionamento do heroísmo",
+      wikipediaUrl: "https://en.wikipedia.org/wiki/Watchmen"
     },
     {
       title: "The Sandman",
@@ -44,7 +46,8 @@ const ComicsShowcase = () => {
       year: 1989,
       coverUrl: sandmanCover,
       description: "Mitologia pessoal e arquitetura do sonho",
-      context: "A construção de universos oníricos e simbólicos"
+      context: "A construção de universos oníricos e simbólicos",
+      wikipediaUrl: "https://en.wikipedia.org/wiki/The_Sandman_(comic_book)"
     },
     {
       title: "Black Hole",
@@ -52,7 +55,8 @@ const ComicsShowcase = () => {
       year: 1995,
       coverUrl: blackHoleCover,
       description: "Alienação e metamorfose corporal",
-      context: "O corpo como texto de transformação e isolamento"
+      context: "O corpo como texto de transformação e isolamento",
+      wikipediaUrl: "https://en.wikipedia.org/wiki/Black_Hole_(comics)"
     }
   ];
 
@@ -101,24 +105,33 @@ const ComicsShowcase = () => {
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Card className="group overflow-hidden border-primary/10 hover:border-primary/30 transition-all duration-300 hover:scale-105 cursor-pointer">
-                    <div className="aspect-[2/3] overflow-hidden bg-secondary/20 relative">
-                      <img
-                        src={comic.coverUrl}
-                        alt={`${comic.title} cover`}
-                        className="w-full h-full object-cover object-center scale-110 transition-transform duration-300 group-hover:scale-125"
-                        loading="lazy"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    </div>
-                    <div className="p-6 bg-card">
-                      <h3 className="font-bold text-lg mb-2">{comic.title}</h3>
-                      <p className="text-sm text-muted-foreground mb-3">
-                        {comic.author} ({comic.year})
-                      </p>
-                      <p className="text-sm italic text-primary/80">
-                        {comic.description}
-                      </p>
-                    </div>
+                    <a
+                      href={comic.wikipediaUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block"
+                    >
+                      <div className="aspect-[2/3] overflow-hidden bg-secondary/20 relative">
+                        <img
+                          src={comic.coverUrl}
+                          alt={`${comic.title} cover`}
+                          className="w-full h-full object-cover object-center scale-110 transition-transform duration-300 group-hover:scale-125"
+                          loading="lazy"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                          <ExternalLink className="w-5 h-5 text-white" />
+                        </div>
+                      </div>
+                      <div className="p-6 bg-card">
+                        <h3 className="font-bold text-lg mb-2">{comic.title}</h3>
+                        <p className="text-sm text-muted-foreground mb-3">
+                          {comic.author} ({comic.year})
+                        </p>
+                        <p className="text-sm italic text-primary/80">
+                          {comic.description}
+                        </p>
+                      </div>
+                    </a>
                   </Card>
                 </TooltipTrigger>
                 <TooltipContent side="top" className="max-w-xs">
