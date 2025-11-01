@@ -1,4 +1,4 @@
-import { Film, ExternalLink, Info } from "lucide-react";
+import { ExternalLink, Info } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import {
@@ -137,23 +137,11 @@ const FilmGallery = () => {
     <section className="w-full py-8">
       <div className="max-w-6xl mx-auto">
         <Card className="overflow-hidden border-primary/20 bg-card/50 backdrop-blur-sm p-8">
-          <div className="flex items-center justify-between mb-8">
-            <div className="flex items-center gap-3">
-              <Film className="w-8 h-8 text-primary" />
-              <div>
-                <h2 className="text-3xl font-bold text-foreground">
-                  TEXTURA CINEMATOGRÁFICA
-                </h2>
-                <p className="text-sm text-muted-foreground mt-1">
-                  CINEMATIC TEXTURE — Referências visuais que moldaram o projeto
-                </p>
-              </div>
-            </div>
-          
           <Dialog>
             <DialogTrigger asChild>
-              <Button variant="outline" size="icon">
+              <Button variant="outline" className="w-full justify-start gap-2 mb-8">
                 <Info className="w-4 h-4" />
+                <span className="text-sm">Sobre as Referências Cinematográficas</span>
               </Button>
             </DialogTrigger>
             <DialogContent className="max-w-2xl">
@@ -179,9 +167,9 @@ const FilmGallery = () => {
               </DialogHeader>
             </DialogContent>
           </Dialog>
-        </div>
+        </Card>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mt-6">
           {films.map((film) => (
             <TooltipProvider key={film.imdbId}>
               <Tooltip>
@@ -221,7 +209,6 @@ const FilmGallery = () => {
             </TooltipProvider>
           ))}
         </div>
-        </Card>
       </div>
     </section>
   );
