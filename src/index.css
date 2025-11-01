@@ -260,9 +260,16 @@ All colors MUST be HSL.
 */
 
 @layer base {
+  /* 1) Escala de espaçamentos responsiva (ajuste só aqui) */
   :root {
     --lov-text-margin-bottom: 0;
     --lov-block-gap: 0;
+    
+    --space-1: clamp(8px, 1.2vw, 12px);
+    --space-2: clamp(12px, 1.6vw, 16px);
+    --space-3: clamp(16px, 2.2vw, 24px);   /* valor padrão do site */
+    --space-4: clamp(24px, 3vw, 32px);
+    --site-gap: var(--space-3);            /* use este token como padrão */
     
     --background: 0 0% 10.2%; /* #1A1A1A - Preto Sombra (Bible v13) */
     --foreground: 0 0% 90%; /* #E6E6E6 - Cinza Fantasma (Bible v13) */
@@ -353,6 +360,55 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
+  /* 2) Reset de margens para evitar "saltos" entre elementos */
+  :where(h1,h2,h3,h4,h5,h6,p,ul,ol,li,blockquote,figure,picture,figcaption,
+         img,video,audio,iframe,hr) { 
+    margin: 0; 
+  }
+
+  /* 3) Mídia se comportando: sem estouro e com blocagem */
+  :where(img,video,iframe,canvas) { 
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+  }
+
+  /* 4) Constrói o RITMO VERTICAL (gap) em todos os contêineres comuns */
+  :where(main, .page, .page-content, section, .lov-section, .lov-block, .content, .container) {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--site-gap);
+  }
+
+  /* 5) Subcontêineres que agrupam texto + mídia também herdam o mesmo gap */
+  :where(.text-block, .rich-text, .manifesto-section, .lang-columns, .media-block, 
+         .bilingual-grid, .bilingual-col, .bible-bilingual-grid) {
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--site-gap);
+  }
+
+  /* 6) Tags de idioma, títulos, subtítulos e corpo entram na mesma fila */
+  :where(.lang-tag, .lang-pill, .language, .subtitle, h1,h2,h3,h4,h5,h6, p, ul, ol, blockquote,
+         figure, img, video, audio, iframe) {
+    /* nada de margin-bottom individual — o gap do contêiner manda */
+  }
+
+  /* 7) Exceções: onde você NÃO quer o ritmo (ex.: grids/cards), coloque .no-flow */
+  .no-flow { 
+    display: initial; 
+    gap: 0; 
+  }
+
+  /* 8) Opcional: variações rápidas de espaçamento por seção */
+  .flow-tight { 
+    --site-gap: var(--space-2); 
+  }
+  
+  .flow-comfort { 
+    --site-gap: var(--space-4); 
+  }
+
   body {
     @apply bg-background text-foreground;
     background-color: #1A1A1A; /* Preto Sombra (Bible v13) */
@@ -362,6 +418,8 @@ All colors MUST be HSL.
   h1, h2, h3, h4, h5, h6 {
     @apply uppercase text-foreground text-sm font-medium tracking-wide;
     font-family: 'Manrope', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0.3em;
   }
   
   p {
@@ -382,6 +440,58 @@ All colors MUST be HSL.
     @apply text-primary;
   }
 
+  /* === ETIQUETAS DE IDIOMA — POSICIONAMENTO INTELIGENTE === */
+  
+  /* regra base das tags */
+  .lang-tag, .lang-pill, .language {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    color: #C40000;
+    margin-bottom: 0.25em;
+  }
+
+  /* 1. quando a tag vem imediatamente antes de título → exibir normalmente */
+  .lang-tag + h1,
+  .lang-tag + h2,
+  .lang-tag + h3,
+  .lang-tag + h4,
+  .lang-tag + h5,
+  .lang-tag + h6,
+  .lang-pill + h1,
+  .lang-pill + h2,
+  .lang-pill + h3,
+  .lang-pill + h4,
+  .lang-pill + h5,
+  .lang-pill + h6,
+  .language + h1,
+  .language + h2,
+  .language + h3,
+  .language + h4,
+  .language + h5,
+  .language + h6 {
+    margin-top: var(--space-2);
+  }
+
+  /* 2. quando a tag vem antes de um parágrafo → esconder a tag */
+  .lang-tag + p,
+  .language + p,
+  .lang-pill + p,
+  .lang-tag + div p:first-child,
+  .language + div p:first-child,
+  .lang-pill + div p:first-child {
+    /* parágrafo permanece visível, apenas a tag é controlada */
+  }
+
+  /* 4. garante alinhamento correto dentro dos blocos bilíngues */
+  .lang-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--site-gap);
+  }
+
   /* === GLOBAL TEXT ALIGNMENT & FLOW === */
   p {
     margin-bottom: 0;
@@ -398,12 +508,6 @@ All colors MUST be HSL.
     display: inline-block;
     vertical-align: top;
     margin-bottom: 0 !important;
-  }
-
-  /* === TÍTULOS / SUBTÍTULOS === */
-  h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    margin-bottom: 0.3em;
   }
 
   /* === CORREÇÃO FINAL GLOBAL === */
