@@ -1222,11 +1222,33 @@ const Index = () => {
 
         {/* ===== REFERÊNCIAS | O ECO INTERNO ===== */}
         <BilingualSection className="py-16">
-          <h2 className="bible-title">9. REFERÊNCIAS | O ECO INTERNO</h2>
-          <h2 className="bible-title">9. REFERENCES | THE INTERNAL ECHO</h2>
+          <BilingualContent
+            portugueseContent={
+              <>
+                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
+                <h2 className="bible-title">9. REFERÊNCIAS | O ECO INTERNO</h2>
+              </>
+            }
+            englishContent={
+              <>
+                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
+                <h2 className="bible-title">9. REFERENCES | THE INTERNAL ECHO</h2>
+              </>
+            }
+          />
 
-          <h3 className="bible-subtitle">DNA CONCEITUAL (QUADRINHOS)</h3>
-          <h3 className="bible-subtitle">CONCEPTUAL DNA (COMICS)</h3>
+          <BilingualContent
+            portugueseContent={
+              <>
+                <h3 className="bible-subtitle">DNA CONCEITUAL (QUADRINHOS)</h3>
+              </>
+            }
+            englishContent={
+              <>
+                <h3 className="bible-subtitle">CONCEPTUAL DNA (COMICS)</h3>
+              </>
+            }
+          />
           
           <BilingualContent
             portugueseContent={
@@ -1254,8 +1276,18 @@ const Index = () => {
             <ComicsShowcase />
           </div>
 
-          <h3 className="bible-subtitle mt-16">TEXTURA CINEMATOGRÁFICA (FILMES)</h3>
-          <h3 className="bible-subtitle">CINEMATIC TEXTURE (FILMS)</h3>
+          <BilingualContent
+            portugueseContent={
+              <>
+                <h3 className="bible-subtitle mt-16">TEXTURA CINEMATOGRÁFICA (FILMES)</h3>
+              </>
+            }
+            englishContent={
+              <>
+                <h3 className="bible-subtitle mt-16">CINEMATIC TEXTURE (FILMS)</h3>
+              </>
+            }
+          />
           
           <BilingualContent
             portugueseContent={
@@ -1289,8 +1321,18 @@ const Index = () => {
             <FilmGallery />
           </div>
 
-          <h3 className="bible-subtitle mt-16">ASSINATURA SONORA (MÚSICA)</h3>
-          <h3 className="bible-subtitle">SONIC SIGNATURE (MUSIC)</h3>
+          <BilingualContent
+            portugueseContent={
+              <>
+                <h3 className="bible-subtitle mt-16">ASSINATURA SONORA (MÚSICA)</h3>
+              </>
+            }
+            englishContent={
+              <>
+                <h3 className="bible-subtitle mt-16">SONIC SIGNATURE (MUSIC)</h3>
+              </>
+            }
+          />
           
           <BilingualContent
             portugueseContent={
@@ -1329,8 +1371,20 @@ const Index = () => {
 
         {/* ===== A METODOLOGIA | COAUTORIA SIMBÓLICA ===== */}
         <BilingualSection className="py-16">
-          <h2 className="bible-title">10. A METODOLOGIA | COAUTORIA SIMBÓLICA</h2>
-          <h2 className="bible-title">10. THE METHODOLOGY | SYMBOLIC CO-AUTHORSHIP</h2>
+          <BilingualContent
+            portugueseContent={
+              <>
+                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
+                <h2 className="bible-title">10. A METODOLOGIA | COAUTORIA SIMBÓLICA</h2>
+              </>
+            }
+            englishContent={
+              <>
+                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
+                <h2 className="bible-title">10. THE METHODOLOGY | SYMBOLIC CO-AUTHORSHIP</h2>
+              </>
+            }
+          />
 
           <BilingualContent
             portugueseContent={
@@ -1553,8 +1607,20 @@ const Index = () => {
 
         {/* ===== CHARACTER VIEWS ===== */}
         <BilingualSection className="py-16">
-          <h2 className="bible-title">11. ANATOMIA DO UNIVERSO | PERSONAGENS</h2>
-          <h2 className="bible-title">11. UNIVERSE ANATOMY | CHARACTERS</h2>
+          <BilingualContent
+            portugueseContent={
+              <>
+                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
+                <h2 className="bible-title">11. ANATOMIA DO UNIVERSO | PERSONAGENS</h2>
+              </>
+            }
+            englishContent={
+              <>
+                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
+                <h2 className="bible-title">11. UNIVERSE ANATOMY | CHARACTERS</h2>
+              </>
+            }
+          />
 
           {/* Characters Study Image */}
           <div className="my-8 mb-12">
@@ -1748,8 +1814,20 @@ const Index = () => {
 
         {/* ===== PROCESSOS RELACIONADOS ===== */}
         <BilingualSection className="py-16">
-          <h2 className="bible-title">12. PROCESSOS RELACIONADOS</h2>
-          <h2 className="bible-title">12. RELATED PROCESSES</h2>
+          <BilingualContent
+            portugueseContent={
+              <>
+                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
+                <h2 className="bible-title">12. PROCESSOS RELACIONADOS</h2>
+              </>
+            }
+            englishContent={
+              <>
+                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
+                <h2 className="bible-title">12. RELATED PROCESSES</h2>
+              </>
+            }
+          />
 
           <div className="mb-12">
             <h3 className="bible-subtitle">LOWMOVIE™</h3>
@@ -1835,8 +1913,20 @@ const Index = () => {
 
         {/* ===== PARADOXO EXISTENCIAL ===== */}
         <BilingualSection className="py-16">
-          <h2 className="bible-title">13. PARADOXO EXISTENCIAL (O CRIADOR E A SOMBRA)</h2>
-          <h2 className="bible-title">13. EXISTENTIAL PARADOX (THE CREATOR AND THE SHADOW)</h2>
+          <BilingualContent
+            portugueseContent={
+              <>
+                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
+                <h2 className="bible-title">13. PARADOXO EXISTENCIAL (O CRIADOR E A SOMBRA)</h2>
+              </>
+            }
+            englishContent={
+              <>
+                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
+                <h2 className="bible-title">13. EXISTENTIAL PARADOX (THE CREATOR AND THE SHADOW)</h2>
+              </>
+            }
+          />
 
           <div className="my-8">
             <img 
@@ -1867,9 +1957,20 @@ const Index = () => {
         {/* ===== THEVØIDN13 STUDY ===== */}
         <BilingualSection className="py-16">
           {/* FIM DA TRANSMISSÃO */}
+          <BilingualContent
+            portugueseContent={
+              <>
+                <h3 className="bible-subtitle">[FIM DA TRANSMISSÃO]</h3>
+              </>
+            }
+            englishContent={
+              <>
+                <h3 className="bible-subtitle">[END OF TRANSMISSION]</h3>
+              </>
+            }
+          />
+          
           <div>
-            <h3 className="bible-subtitle">[FIM DA TRANSMISSÃO]</h3>
-            <h3 className="bible-subtitle">[END OF TRANSMISSION]</h3>
             
             <div className="my-8">
               <img 
@@ -1909,9 +2010,20 @@ const Index = () => {
 
         {/* ===== PROTÓTIPO Nº13 ===== */}
         <BilingualSection className="py-16">
+          <BilingualContent
+            portugueseContent={
+              <>
+                <h3 className="bible-subtitle">PROTÓTIPO Nº13</h3>
+              </>
+            }
+            englishContent={
+              <>
+                <h3 className="bible-subtitle">PROTOTYPE Nº13</h3>
+              </>
+            }
+          />
+          
           <div>
-            <h3 className="bible-subtitle">PROTÓTIPO Nº13</h3>
-            <h3 className="bible-subtitle">PROTOTYPE Nº13</h3>
             
             <div className="grid md:grid-cols-2 gap-8 items-start">
               <div className="space-y-6 flex flex-col justify-between">
@@ -1955,10 +2067,20 @@ const Index = () => {
 
         {/* ===== O REPOSITÓRIO | ARQUIVOS E FERRAMENTAS ===== */}
         <BilingualSection className="py-16">
-          <div className="mb-12">
-            <h2 className="bible-title">[O REPOSITÓRIO | ARQUIVOS E FERRAMENTAS]</h2>
-            <h2 className="bible-title">The Repository | Files and Tools</h2>
-          </div>
+          <BilingualContent
+            portugueseContent={
+              <>
+                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
+                <h2 className="bible-title">[O REPOSITÓRIO | ARQUIVOS E FERRAMENTAS]</h2>
+              </>
+            }
+            englishContent={
+              <>
+                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
+                <h2 className="bible-title">THE REPOSITORY | FILES AND TOOLS</h2>
+              </>
+            }
+          />
 
           {/* DOCUMENTOS DE PESQUISA */}
           <div className="space-y-6 mb-12">
@@ -2036,7 +2158,18 @@ const Index = () => {
 
           {/* ORÁCULO CRIATIVO */}
           <div className="mb-12">
-            <h3 className="bible-subtitle">ORÁCULO CRIATIVO / CREATIVE ORACLE</h3>
+            <BilingualContent
+              portugueseContent={
+                <>
+                  <h3 className="bible-subtitle">ORÁCULO CRIATIVO</h3>
+                </>
+              }
+              englishContent={
+                <>
+                  <h3 className="bible-subtitle">CREATIVE ORACLE</h3>
+                </>
+              }
+            />
             <BilingualContent
               portugueseContent={
                 <div>
@@ -2067,7 +2200,18 @@ const Index = () => {
 
           {/* MAPA MENTAL */}
           <div className="mb-12">
-            <h3 className="bible-subtitle">Creative-Ops Mind Map / Mapa Mental Creative-Ops</h3>
+            <BilingualContent
+              portugueseContent={
+                <>
+                  <h3 className="bible-subtitle">MAPA MENTAL CREATIVE-OPS</h3>
+                </>
+              }
+              englishContent={
+                <>
+                  <h3 className="bible-subtitle">CREATIVE-OPS MIND MAP</h3>
+                </>
+              }
+            />
             <BilingualContent
               portugueseContent={
                 <div>
