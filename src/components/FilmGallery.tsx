@@ -14,6 +14,8 @@ import theWarriorsPoster from "@/assets/posters/the-warriors.jpg";
 import christianeFPoster from "@/assets/posters/christiane-f.jpg";
 import perfectDaysPoster from "@/assets/posters/perfect-days.jpg";
 import backToTheFuturePoster from "@/assets/posters/back-to-the-future.jpg";
+import backToTheFuture2Poster from "@/assets/posters/back-to-the-future-2.jpg";
+import backToTheFuture3Poster from "@/assets/posters/back-to-the-future-3.jpg";
 import {
   Dialog,
   DialogContent,
@@ -36,6 +38,8 @@ interface FilmReference {
   imdbId: string;
   posterUrl: string;
   description: string;
+  objectPosition?: string;
+  scale?: string;
 }
 
 const FilmGallery = () => {
@@ -86,7 +90,9 @@ const FilmGallery = () => {
       year: 1971,
       imdbId: "tt0066434",
       posterUrl: thx1138Poster,
-      description: "Despersonalização e controle"
+      description: "Despersonalização e controle",
+      objectPosition: "center bottom",
+      scale: "scale-110"
     },
     {
       title: "Brazil",
@@ -110,7 +116,8 @@ const FilmGallery = () => {
       year: 1979,
       imdbId: "tt0080120",
       posterUrl: theWarriorsPoster,
-      description: "Deriva urbana"
+      description: "Deriva urbana",
+      scale: "scale-110"
     },
     {
       title: "1984",
@@ -118,7 +125,8 @@ const FilmGallery = () => {
       year: 1984,
       imdbId: "tt0087803",
       posterUrl: poster1984,
-      description: "Vigilância total"
+      description: "Vigilância total",
+      scale: "scale-110"
     },
     {
       title: "Christiane F.",
@@ -142,7 +150,24 @@ const FilmGallery = () => {
       year: 1985,
       imdbId: "tt0088763",
       posterUrl: backToTheFuturePoster,
-      description: "Temporalidade"
+      description: "Temporalidade",
+      scale: "scale-110"
+    },
+    {
+      title: "Back to the Future Part II",
+      director: "Robert Zemeckis",
+      year: 1989,
+      imdbId: "tt0096874",
+      posterUrl: backToTheFuture2Poster,
+      description: "Temporalidade futura"
+    },
+    {
+      title: "Back to the Future Part III",
+      director: "Robert Zemeckis",
+      year: 1990,
+      imdbId: "tt0099088",
+      posterUrl: backToTheFuture3Poster,
+      description: "Temporalidade passada"
     }
   ];
 
@@ -198,7 +223,8 @@ const FilmGallery = () => {
                         <img
                           src={film.posterUrl}
                           alt={`${film.title} poster`}
-                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                          className={`w-full h-full object-cover transition-transform duration-300 ${film.scale || 'scale-100'} group-hover:scale-125`}
+                          style={{ objectPosition: film.objectPosition || 'center' }}
                           loading="lazy"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">

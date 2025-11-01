@@ -69,32 +69,33 @@ const ComicsShowcase = () => {
             </DialogTrigger>
             <DialogContent className="max-w-2xl">
               <DialogHeader>
-                <DialogTitle className="text-2xl">DNA Conceitual dos Quadrinhos</DialogTitle>
-                <DialogDescription className="text-base leading-relaxed pt-4">
-                  <p className="mb-4">
-                    A arquitetura conceitual do THEVØIDN13 absorve a <strong>ética ambígua 
-                    e o mecanismo de cidade</strong> de <em>Watchmen</em>, a <strong>mitologia 
-                    pessoal e arquitetura do sonho</strong> de <em>The Sandman</em>, e a <strong>alienação 
-                    e metamorfose corporal</strong> de <em>Black Hole</em>.
-                  </p>
-                  <p className="mb-4">
-                    Estes três quadrinhos formam o <strong>DNA conceitual</strong> do projeto, 
-                    fornecendo estruturas narrativas, visuais e simbólicas que permeiam 
-                    desde a construção dos personagens até a atmosfera geral.
-                  </p>
-                  <p>
-                    <em>Watchmen</em> traz o questionamento ético e a desconstrução do herói. 
-                    <em>The Sandman</em> constrói universos oníricos e mitológicos. 
-                    <em>Black Hole</em> explora a transformação do corpo como metáfora 
-                    de isolamento e alienação social.
-                  </p>
-                </DialogDescription>
+                <DialogTitle className="text-2xl font-bold mb-4">
+                  DNA Conceitual dos Quadrinhos
+                </DialogTitle>
               </DialogHeader>
+              <div className="space-y-6 text-sm leading-relaxed">
+                <p>
+                  Três obras que estruturam a arquitetura narrativa e visual do projeto:
+                </p>
+                <ul className="space-y-4">
+                  <li>
+                    <strong>Watchmen (1986)</strong> — Alan Moore & Dave Gibbons<br />
+                    Ética ambígua e o mecanismo de cidade
+                  </li>
+                  <li>
+                    <strong>The Sandman (1989)</strong> — Neil Gaiman<br />
+                    Mitologia pessoal e arquitetura do sonho
+                  </li>
+                  <li>
+                    <strong>Black Hole (1995)</strong> — Charles Burns<br />
+                    Alienação e metamorfose corporal
+                  </li>
+                </ul>
+              </div>
             </DialogContent>
           </Dialog>
-        </Card>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {comics.map((comic) => (
             <TooltipProvider key={comic.title}>
               <Tooltip>
@@ -104,7 +105,7 @@ const ComicsShowcase = () => {
                       <img
                         src={comic.coverUrl}
                         alt={`${comic.title} cover`}
-                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                        className="w-full h-full object-cover object-center scale-110 transition-transform duration-300 group-hover:scale-125"
                         loading="lazy"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -137,6 +138,7 @@ const ComicsShowcase = () => {
             e <em>Black Hole</em> com a metamorfose corporal e o isolamento.
           </p>
         </div>
+        </Card>
       </div>
     </section>
   );
