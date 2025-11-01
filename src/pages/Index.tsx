@@ -13,6 +13,7 @@ import { AccessGate } from "@/components/AccessGate";
 import { CookieConsent } from "@/components/CookieConsent";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 import heroImage from "@/assets/hero-rain-wide.png";
 import voidCityFront from "@/assets/void-city-front.png";
 import conceptCrew from "@/assets/concept-crew.png";
@@ -96,19 +97,21 @@ const Index = () => {
         </section>
 
         {/* ===== SUBTITLE ===== */}
-        <BilingualSection className="py-12">
+        <BilingualSection className="py-16">
           <div>
             <h2 className="subsection-title">
               [Um corpo à deriva entre o ruído e o silêncio]
             </h2>
-            <h2 className="subsection-title mt-2">
+            <h2 className="subsection-title mt-1">
               [A body adrift between noise and silence]
             </h2>
           </div>
         </BilingualSection>
 
+        <Separator className="bg-border/30" />
+
         {/* ===== VIDEO SECTION ===== */}
-        <section className="py-20">
+        <section className="py-16">
           <div className="max-w-6xl mx-auto px-6 space-y-6">
             <video 
               className="w-full aspect-video bg-black rounded-lg overflow-hidden"
@@ -120,16 +123,18 @@ const Index = () => {
           </div>
         </section>
 
+        <Separator className="bg-border/30" />
+
         {/* ===== INÍCIO DA TRANSMISSÃO ===== */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <div className="mb-8">
             <h3 className="subsection-title">[INÍCIO DA TRANSMISSÃO]</h3>
-            <h3 className="subsection-title mt-2">[BEGINNING OF TRANSMISSION]</h3>
+            <h3 className="subsection-title mt-1">[BEGINNING OF TRANSMISSION]</h3>
           </div>
         </BilingualSection>
 
         {/* ===== PARADOX RENDER ===== */}
-        <section className="py-12">
+        <section className="py-8">
           <div className="max-w-6xl mx-auto px-6">
             <img 
               src={paradoxRender} 
@@ -139,8 +144,10 @@ const Index = () => {
           </div>
         </section>
 
+        <Separator className="bg-border/30" />
+
         {/* ===== AUDIO PLAYER ===== */}
-        <section className="py-12 bg-card/30">
+        <section className="py-16 bg-card/30">
           <div className="max-w-6xl mx-auto px-6">
             <BilingualAudioPlayer
               srcPt="/audio/thevoidn13-manifesto-pt.mp3"
@@ -151,10 +158,12 @@ const Index = () => {
           </div>
         </section>
 
+        <Separator className="bg-border/30" />
+
         {/* ===== MANIFESTO INTEGRADO ===== */}
-        <BilingualSection>
-          <h2 className="section-title mb-12">MANIFESTO INTEGRADO</h2>
-          <h2 className="section-title mb-12">INTEGRATED MANIFESTO</h2>
+        <BilingualSection className="py-16">
+          <h2 className="section-title">MANIFESTO INTEGRADO</h2>
+          <h2 className="section-title mb-8">INTEGRATED MANIFESTO</h2>
           
           <BilingualContent
             portugueseContent={
@@ -175,7 +184,7 @@ const Index = () => {
         </BilingualSection>
 
         {/* ===== FALL RENDER ===== */}
-        <section className="py-12">
+        <section className="py-8">
           <div className="max-w-6xl mx-auto px-6">
             <img 
               src={fallRender} 
@@ -185,13 +194,15 @@ const Index = () => {
           </div>
         </section>
 
+        <Separator className="bg-border/30" />
+
         {/* ===== 1. ORIGEM E PROPÓSITO ===== */}
-        <BilingualSection>
-          <h2 className="section-title mb-12">1. ORIGEM E PROPÓSITO</h2>
-          <h2 className="section-title mb-12">1. ORIGIN AND PURPOSE</h2>
+        <BilingualSection className="py-16">
+          <h2 className="section-title">1. ORIGEM E PROPÓSITO</h2>
+          <h2 className="section-title mb-8">1. ORIGIN AND PURPOSE</h2>
           
-          <h3 className="subsection-title mb-8">1.1 O LUGAR SEGURO PARA DESAPARECER</h3>
-          <h3 className="subsection-title mb-8">1.1 THE SAFE PLACE TO DISAPPEAR</h3>
+          <h3 className="subsection-title">1.1 O LUGAR SEGURO PARA DESAPARECER</h3>
+          <h3 className="subsection-title mb-6">1.1 THE SAFE PLACE TO DISAPPEAR</h3>
 
           <BilingualContent
             portugueseContent={
@@ -211,7 +222,7 @@ const Index = () => {
           />
 
           {/* ===== THINK RENDER ===== */}
-          <div className="my-12">
+          <div className="my-8">
             <img 
               src={thinkRender} 
               alt="THEVØIDN13 — Contemplation" 
@@ -219,8 +230,8 @@ const Index = () => {
             />
           </div>
 
-          <h3 className="subsection-title mt-12 mb-8">1.2 QUANDO O INCONSCIENTE GANHA CORPO</h3>
-          <h3 className="subsection-title mb-8">1.2 WHEN THE UNCONSCIOUS GAINS BODY</h3>
+          <h3 className="subsection-title mt-8">1.2 QUANDO O INCONSCIENTE GANHA CORPO</h3>
+          <h3 className="subsection-title mb-6">1.2 WHEN THE UNCONSCIOUS GAINS BODY</h3>
 
           <BilingualContent
             portugueseContent={
@@ -240,7 +251,7 @@ const Index = () => {
           />
 
           {/* ===== MEDITATION RENDER ===== */}
-          <div className="my-12">
+          <div className="my-8">
             <img 
               src={meditationRender} 
               alt="THEVØIDN13 — Meditation Render" 
@@ -249,10 +260,12 @@ const Index = () => {
           </div>
         </BilingualSection>
 
+        <Separator className="bg-border/30" />
+
         {/* ===== 2. FILOSOFIA CENTRAL ===== */}
-        <BilingualSection>
-          <h2 className="section-title mb-12">2. FILOSOFIA CENTRAL (A SOMBRA ENCARNADA)</h2>
-          <h2 className="section-title mb-12">2. CENTRAL PHILOSOPHY (THE EMBODIED SHADOW)</h2>
+        <BilingualSection className="py-16">
+          <h2 className="section-title">2. FILOSOFIA CENTRAL (A SOMBRA ENCARNADA)</h2>
+          <h2 className="section-title mb-8">2. CENTRAL PHILOSOPHY (THE EMBODIED SHADOW)</h2>
 
           <BilingualContent
             portugueseContent={
@@ -272,7 +285,7 @@ const Index = () => {
           />
 
           {/* ===== MIRROR RENDER ===== */}
-          <div className="my-12">
+          <div className="my-8">
             <img 
               src={mirrorRender} 
               alt="THEVØIDN13 — Mirror Reflection" 
@@ -281,13 +294,15 @@ const Index = () => {
           </div>
         </BilingualSection>
 
-        {/* ===== 3. A ENTIDADE: THEVØIDN13 ===== */}
-        <BilingualSection>
-          <h2 className="section-title mb-12">3. A ENTIDADE: THEVØIDN13</h2>
-          <h2 className="section-title mb-12">3. THE ENTITY: THEVØIDN13</h2>
+        <Separator className="bg-border/30" />
 
-          <h3 className="subsection-title mb-8">3.1 FUNÇÃO SIMBÓLICA</h3>
-          <h3 className="subsection-title mb-8">3.1 SYMBOLIC FUNCTION</h3>
+        {/* ===== 3. A ENTIDADE: THEVØIDN13 ===== */}
+        <BilingualSection className="py-16">
+          <h2 className="section-title">3. A ENTIDADE: THEVØIDN13</h2>
+          <h2 className="section-title mb-8">3. THE ENTITY: THEVØIDN13</h2>
+
+          <h3 className="subsection-title">3.1 FUNÇÃO SIMBÓLICA</h3>
+          <h3 className="subsection-title mb-6">3.1 SYMBOLIC FUNCTION</h3>
 
           <BilingualContent
             portugueseContent={
@@ -306,8 +321,8 @@ const Index = () => {
             }
           />
 
-          <h3 className="subsection-title mt-12 mb-8">3.2 ARQUÉTIPO E NATUREZA</h3>
-          <h3 className="subsection-title mb-8">3.2 ARCHETYPE AND NATURE</h3>
+          <h3 className="subsection-title mt-8">3.2 ARQUÉTIPO E NATUREZA</h3>
+          <h3 className="subsection-title mb-6">3.2 ARCHETYPE AND NATURE</h3>
 
           <BilingualContent
             portugueseContent={
@@ -326,10 +341,10 @@ const Index = () => {
             }
           />
 
-          <h3 className="subsection-title mt-12 mb-8">3.3 A MÁSCARA | CEDER ESPAÇO AO INCONSCIENTE</h3>
-          <h3 className="subsection-title mb-8">3.3 THE MASK | YIELDING SPACE TO THE UNCONSCIOUS</h3>
+          <h3 className="subsection-title mt-8">3.3 A MÁSCARA | CEDER ESPAÇO AO INCONSCIENTE</h3>
+          <h3 className="subsection-title mb-6">3.3 THE MASK | YIELDING SPACE TO THE UNCONSCIOUS</h3>
 
-          <div className="my-12">
+          <div className="my-8">
             <img 
               src={maskVoidNew} 
               alt="A máscara de THEVØIDN13 — The mask of THEVØIDN13" 
@@ -354,10 +369,10 @@ const Index = () => {
             }
           />
 
-          <h3 className="subsection-title mt-12 mb-8">3.4 O PERSONAGEM</h3>
-          <h3 className="subsection-title mb-8">3.4 THE CHARACTER</h3>
+          <h3 className="subsection-title mt-8">3.4 O PERSONAGEM</h3>
+          <h3 className="subsection-title mb-6">3.4 THE CHARACTER</h3>
 
-          <div className="max-w-6xl mx-auto my-12">
+          <div className="max-w-6xl mx-auto my-8">
             <div className="grid grid-cols-3 gap-6">
               <img src={conceptFront} alt="THEVØIDN13 Front View" className="w-full rounded-lg" />
               <img src={conceptBack} alt="THEVØIDN13 Back View" className="w-full rounded-lg" />
@@ -382,8 +397,8 @@ const Index = () => {
             }
           />
 
-          <h3 className="subsection-title mt-12 mb-8">3.5 IDENTIDADE VISUAL: A SOMBRA JUNGUIANA</h3>
-          <h3 className="subsection-title mb-8">3.5 VISUAL IDENTITY: THE JUNGIAN SHADOW</h3>
+          <h3 className="subsection-title mt-8">3.5 IDENTIDADE VISUAL: A SOMBRA JUNGUIANA</h3>
+          <h3 className="subsection-title mb-6">3.5 VISUAL IDENTITY: THE JUNGIAN SHADOW</h3>
 
           {/* ===== VOID LOGO VISUAL ===== */}
           <div className="my-12">
@@ -412,13 +427,15 @@ const Index = () => {
           />
         </BilingualSection>
 
+        <Separator className="bg-border/30" />
+
         {/* ===== 4. A PSIQUE | ARQUITETURA DO SER ===== */}
-        <BilingualSection>
-          <h2 className="section-title mb-12">4. A PSIQUE | ARQUITETURA DO SER</h2>
-          <h2 className="section-title mb-12">4. THE PSYCHE | ARCHITECTURE OF BEING</h2>
+        <BilingualSection className="py-16">
+          <h2 className="section-title">4. A PSIQUE | ARQUITETURA DO SER</h2>
+          <h2 className="section-title mb-8">4. THE PSYCHE | ARCHITECTURE OF BEING</h2>
 
           {/* ===== GOL RENDER ===== */}
-          <div className="my-12">
+          <div className="my-8">
             <img 
               src={golRender} 
               alt="THEVØIDN13 — VW GOL 87 Render" 
@@ -446,10 +463,10 @@ const Index = () => {
             }
           />
 
-          <h3 className="subsection-title mt-12 mb-8">4.2 O MANIFESTO DO CORPO</h3>
-          <h3 className="subsection-title mb-8">4.2 THE BODY'S MANIFESTO</h3>
+          <h3 className="subsection-title mt-8">4.2 O MANIFESTO DO CORPO</h3>
+          <h3 className="subsection-title mb-6">4.2 THE BODY'S MANIFESTO</h3>
 
-          <div className="space-y-12 mt-8">
+          <div className="space-y-8 mt-6">
             <BilingualContent
               portugueseContent={
                 <div className="section-spacing">
@@ -546,11 +563,11 @@ const Index = () => {
             />
           </div>
 
-          <h3 className="subsection-title mt-12 mb-8">4.3 PSICOLOGIA: A SOMBRA COMO LINGUAGEM</h3>
-          <h3 className="subsection-title mb-8">4.3 PSYCHOLOGY: SHADOW AS LANGUAGE</h3>
+          <h3 className="subsection-title mt-8">4.3 PSICOLOGIA: A SOMBRA COMO LINGUAGEM</h3>
+          <h3 className="subsection-title mb-6">4.3 PSYCHOLOGY: SHADOW AS LANGUAGE</h3>
 
           {/* ===== LOVECITY RENDER ===== */}
-          <div className="my-12">
+          <div className="my-8">
             <img 
               src={lovecityRender} 
               alt="THEVØIDN13 — LOVECITY" 
@@ -576,12 +593,14 @@ const Index = () => {
           />
         </BilingualSection>
 
-        {/* ===== 5. LÉXICO DO VAZIO ===== */}
-        <BilingualSection>
-          <h2 className="section-title mb-12">5. LÉXICO DO VAZIO</h2>
-          <h2 className="section-title mb-12">5. LEXICON OF THE VOID</h2>
+        <Separator className="bg-border/30" />
 
-          <div className="space-y-12">
+        {/* ===== 5. LÉXICO DO VAZIO ===== */}
+        <BilingualSection className="py-16">
+          <h2 className="section-title">5. LÉXICO DO VAZIO</h2>
+          <h2 className="section-title mb-8">5. LEXICON OF THE VOID</h2>
+
+          <div className="space-y-8">
             <BilingualContent
               portugueseContent={
                 <div className="section-spacing">
@@ -660,13 +679,15 @@ const Index = () => {
           </div>
         </BilingualSection>
 
+        <Separator className="bg-border/30" />
+
         {/* ===== 6. THEVØIDN13 | A GRAFIA DO VAZIO ===== */}
-        <BilingualSection>
-          <h2 className="section-title mb-12">6. THEVØIDN13 | A GRAFIA DO VAZIO</h2>
-          <h2 className="section-title mb-12">6. THEVØIDN13 | THE SPELLING OF THE VOID</h2>
+        <BilingualSection className="py-16">
+          <h2 className="section-title">6. THEVØIDN13 | A GRAFIA DO VAZIO</h2>
+          <h2 className="section-title mb-8">6. THEVØIDN13 | THE SPELLING OF THE VOID</h2>
 
           {/* ===== HOTEL RENDER ===== */}
-          <div className="my-12">
+          <div className="my-8">
             <img 
               src={hotelRender} 
               alt="THEVØIDN13 — HOTEL" 
@@ -739,8 +760,8 @@ const Index = () => {
             </div>
           </div>
 
-          <h3 className="subsection-title mt-12 mb-8">SÍNTESE SIMBÓLICA</h3>
-          <h3 className="subsection-title mb-8">SYMBOLIC SYNTHESIS</h3>
+          <h3 className="subsection-title mt-8">SÍNTESE SIMBÓLICA</h3>
+          <h3 className="subsection-title mb-6">SYMBOLIC SYNTHESIS</h3>
 
           <BilingualContent
             portugueseContent={
@@ -759,8 +780,8 @@ const Index = () => {
             }
           />
 
-          <h3 className="subsection-title mt-12 mb-8">REGRA DE GRAFIA</h3>
-          <h3 className="subsection-title mb-8">SPELLING RULE</h3>
+          <h3 className="subsection-title mt-8">REGRA DE GRAFIA</h3>
+          <h3 className="subsection-title mb-6">SPELLING RULE</h3>
 
           <BilingualContent
             portugueseContent={
@@ -780,13 +801,15 @@ const Index = () => {
           />
         </BilingualSection>
 
+        <Separator className="bg-border/30" />
+
         {/* ===== 7. O SÍMBOLO | 13 ===== */}
-        <BilingualSection>
-          <h2 className="section-title mb-12">7. O SÍMBOLO | 13</h2>
-          <h2 className="section-title mb-12">7. THE SYMBOL | 13</h2>
+        <BilingualSection className="py-16">
+          <h2 className="section-title">7. O SÍMBOLO | 13</h2>
+          <h2 className="section-title mb-8">7. THE SYMBOL | 13</h2>
 
           {/* ===== GOL 2 RENDER ===== */}
-          <div className="my-12">
+          <div className="my-8">
             <img 
               src={gol2Render} 
               alt="THEVØIDN13 — VW GOL 87 Interior" 
@@ -794,8 +817,8 @@ const Index = () => {
             />
           </div>
 
-          <h3 className="subsection-title mb-8">7.1 REGISTRO TREZE</h3>
-          <h3 className="subsection-title mb-8">7.1 RECORD THIRTEEN</h3>
+          <h3 className="subsection-title">7.1 REGISTRO TREZE</h3>
+          <h3 className="subsection-title mb-6">7.1 RECORD THIRTEEN</h3>
 
           <BilingualContent
             portugueseContent={
@@ -814,8 +837,8 @@ const Index = () => {
             }
           />
 
-          <h3 className="subsection-title mt-12 mb-8">7.2 A CARTA DA MORTE</h3>
-          <h3 className="subsection-title mb-8">7.2 THE DEATH CARD</h3>
+          <h3 className="subsection-title mt-8">7.2 A CARTA DA MORTE</h3>
+          <h3 className="subsection-title mb-6">7.2 THE DEATH CARD</h3>
 
           <BilingualContent
             portugueseContent={
@@ -834,8 +857,8 @@ const Index = () => {
             }
           />
 
-          <h3 className="subsection-title mt-12 mb-8">7.3 O ANDAR INTERDITADO</h3>
-          <h3 className="subsection-title mb-8">7.3 THE FORBIDDEN FLOOR</h3>
+          <h3 className="subsection-title mt-8">7.3 O ANDAR INTERDITADO</h3>
+          <h3 className="subsection-title mb-6">7.3 THE FORBIDDEN FLOOR</h3>
 
           <BilingualContent
             portugueseContent={
@@ -854,8 +877,8 @@ const Index = () => {
             }
           />
 
-          <h3 className="subsection-title mt-12 mb-8">7.4 RENASCIMENTO</h3>
-          <h3 className="subsection-title mb-8">7.4 REBIRTH</h3>
+          <h3 className="subsection-title mt-8">7.4 RENASCIMENTO</h3>
+          <h3 className="subsection-title mb-6">7.4 REBIRTH</h3>
 
           <BilingualContent
             portugueseContent={
@@ -874,8 +897,8 @@ const Index = () => {
             }
           />
 
-          <h3 className="subsection-title mt-12 mb-8">7.5 CASATREZESTUDIO®</h3>
-          <h3 className="subsection-title mb-8">7.5 CASATREZESTUDIO®</h3>
+          <h3 className="subsection-title mt-8">7.5 CASATREZESTUDIO®</h3>
+          <h3 className="subsection-title mb-6">7.5 CASATREZESTUDIO®</h3>
 
           <BilingualContent
             portugueseContent={
@@ -895,13 +918,15 @@ const Index = () => {
           />
         </BilingualSection>
 
-        {/* ===== 8. A PRÁXIS | ESTÉTICA E PROCESSO ===== */}
-        <BilingualSection>
-          <h2 className="section-title mb-12">8. A PRÁXIS | ESTÉTICA E PROCESSO</h2>
-          <h2 className="section-title mb-12">8. PRAXIS | AESTHETICS AND PROCESS</h2>
+        <Separator className="bg-border/30" />
 
-          <h3 className="subsection-title mb-8">8.1 ESTÉTICA E MANIFESTAÇÃO</h3>
-          <h3 className="subsection-title mb-8">8.1 AESTHETICS AND MANIFESTATION</h3>
+        {/* ===== 8. A PRÁXIS | ESTÉTICA E PROCESSO ===== */}
+        <BilingualSection className="py-16">
+          <h2 className="section-title">8. A PRÁXIS | ESTÉTICA E PROCESSO</h2>
+          <h2 className="section-title mb-8">8. PRAXIS | AESTHETICS AND PROCESS</h2>
+
+          <h3 className="subsection-title">8.1 ESTÉTICA E MANIFESTAÇÃO</h3>
+          <h3 className="subsection-title mb-6">8.1 AESTHETICS AND MANIFESTATION</h3>
 
           <BilingualContent
             portugueseContent={
@@ -920,8 +945,8 @@ const Index = () => {
             }
           />
 
-          <h3 className="subsection-title mt-12 mb-8">8.2 ATMOSFERA VISUAL</h3>
-          <h3 className="subsection-title mb-8">8.2 VISUAL ATMOSPHERE</h3>
+          <h3 className="subsection-title mt-8">8.2 ATMOSFERA VISUAL</h3>
+          <h3 className="subsection-title mb-6">8.2 VISUAL ATMOSPHERE</h3>
 
           <BilingualContent
             portugueseContent={
@@ -940,8 +965,8 @@ const Index = () => {
             }
           />
 
-          <h3 className="subsection-title mt-12 mb-8">8.3 PRINCÍPIOS ESTÉTICOS</h3>
-          <h3 className="subsection-title mb-8">8.3 AESTHETIC PRINCIPLES</h3>
+          <h3 className="subsection-title mt-8">8.3 PRINCÍPIOS ESTÉTICOS</h3>
+          <h3 className="subsection-title mb-6">8.3 AESTHETIC PRINCIPLES</h3>
 
           <BilingualContent
             portugueseContent={
@@ -960,8 +985,8 @@ const Index = () => {
             }
           />
 
-          <h3 className="subsection-title mt-12 mb-8">8.4 PALETA CANÔNICA | O ECO</h3>
-          <h3 className="subsection-title mb-8">8.4 CANONICAL PALETTE | THE ECHO</h3>
+          <h3 className="subsection-title mt-8">8.4 PALETA CANÔNICA | O ECO</h3>
+          <h3 className="subsection-title mb-6">8.4 CANONICAL PALETTE | THE ECHO</h3>
 
           <BilingualContent
             portugueseContent={
@@ -981,13 +1006,15 @@ const Index = () => {
           />
         </BilingualSection>
 
-        {/* ===== REFERÊNCIAS | O ECO INTERNO ===== */}
-        <BilingualSection>
-          <h2 className="section-title mb-12">9. REFERÊNCIAS | O ECO INTERNO</h2>
-          <h2 className="section-title mb-12">9. REFERENCES | THE INTERNAL ECHO</h2>
+        <Separator className="bg-border/30" />
 
-          <h3 className="subsection-title mt-12 mb-8">DNA CONCEITUAL (QUADRINHOS)</h3>
-          <h3 className="subsection-title mb-8">CONCEPTUAL DNA (COMICS)</h3>
+        {/* ===== REFERÊNCIAS | O ECO INTERNO ===== */}
+        <BilingualSection className="py-16">
+          <h2 className="section-title">9. REFERÊNCIAS | O ECO INTERNO</h2>
+          <h2 className="section-title mb-8">9. REFERENCES | THE INTERNAL ECHO</h2>
+
+          <h3 className="subsection-title">DNA CONCEITUAL (QUADRINHOS)</h3>
+          <h3 className="subsection-title mb-6">CONCEPTUAL DNA (COMICS)</h3>
           
           <BilingualContent
             portugueseContent={
@@ -1010,8 +1037,8 @@ const Index = () => {
             }
           />
 
-          <h3 className="subsection-title mt-12 mb-8">TEXTURA CINEMATOGRÁFICA (FILMES)</h3>
-          <h3 className="subsection-title mb-8">CINEMATIC TEXTURE (FILMS)</h3>
+          <h3 className="subsection-title mt-8">TEXTURA CINEMATOGRÁFICA (FILMES)</h3>
+          <h3 className="subsection-title mb-6">CINEMATIC TEXTURE (FILMS)</h3>
           
           <BilingualContent
             portugueseContent={
@@ -1040,8 +1067,8 @@ const Index = () => {
             }
           />
 
-          <h3 className="subsection-title mt-12 mb-8">ASSINATURA SONORA (MÚSICA)</h3>
-          <h3 className="subsection-title mb-8">SONIC SIGNATURE (MUSIC)</h3>
+          <h3 className="subsection-title mt-8">ASSINATURA SONORA (MÚSICA)</h3>
+          <h3 className="subsection-title mb-6">SONIC SIGNATURE (MUSIC)</h3>
           
           <BilingualContent
             portugueseContent={
@@ -1071,10 +1098,12 @@ const Index = () => {
           />
         </BilingualSection>
 
+        <Separator className="bg-border/30" />
+
         {/* ===== A METODOLOGIA | COAUTORIA SIMBÓLICA ===== */}
-        <BilingualSection>
-          <h2 className="section-title mb-12">10. A METODOLOGIA | COAUTORIA SIMBÓLICA</h2>
-          <h2 className="section-title mb-12">10. THE METHODOLOGY | SYMBOLIC CO-AUTHORSHIP</h2>
+        <BilingualSection className="py-16">
+          <h2 className="section-title">10. A METODOLOGIA | COAUTORIA SIMBÓLICA</h2>
+          <h2 className="section-title mb-8">10. THE METHODOLOGY | SYMBOLIC CO-AUTHORSHIP</h2>
 
           <BilingualContent
             portugueseContent={
@@ -1145,13 +1174,15 @@ const Index = () => {
           />
         </BilingualSection>
 
+        <Separator className="bg-border/30" />
+
         {/* ===== CHARACTER VIEWS ===== */}
-        <BilingualSection>
-          <h2 className="section-title mb-12">11. ANATOMIA DO UNIVERSO | PERSONAGENS</h2>
-          <h2 className="section-title mb-12">11. UNIVERSE ANATOMY | CHARACTERS</h2>
+        <BilingualSection className="py-16">
+          <h2 className="section-title">11. ANATOMIA DO UNIVERSO | PERSONAGENS</h2>
+          <h2 className="section-title mb-8">11. UNIVERSE ANATOMY | CHARACTERS</h2>
 
           {/* Characters Study Image */}
-          <div className="my-8 mb-16">
+          <div className="my-8 mb-12">
             <img 
               src={charactersStudyV2} 
               alt="THEVØIDN13 Characters Study" 
@@ -1160,8 +1191,8 @@ const Index = () => {
           </div>
 
           {/* THEVØIDN13 Description */}
-          <div className="mb-16">
-            <h3 className="subsection-title mb-8">THEVØIDN13</h3>
+          <div className="mb-12">
+            <h3 className="subsection-title">THEVØIDN13</h3>
             <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">A Sombra Materializada / The Materialized Shadow</h4>
             
             <BilingualContent
@@ -1193,8 +1224,8 @@ const Index = () => {
           </div>
 
           {/* PUNK Description */}
-          <div className="mb-16">
-            <h3 className="subsection-title mb-8">PUNK</h3>
+          <div className="mb-12">
+            <h3 className="subsection-title">PUNK</h3>
             <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">O Criador Mascarado / The Masked Creator</h4>
             
             <BilingualContent
@@ -1226,8 +1257,8 @@ const Index = () => {
           </div>
 
           {/* GI Description */}
-          <div className="mb-16">
-            <h3 className="subsection-title mb-8">GI (GISELE)</h3>
+          <div className="mb-12">
+            <h3 className="subsection-title">GI (GISELE)</h3>
             <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">A Presença Silenciosa / The Silent Presence</h4>
             
             <BilingualContent
@@ -1259,8 +1290,8 @@ const Index = () => {
           </div>
 
           {/* BUDDY Description */}
-          <div className="mb-16">
-            <h3 className="subsection-title mb-8">BUDDY</h3>
+          <div className="mb-12">
+            <h3 className="subsection-title">BUDDY</h3>
             <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">O Companheiro Fiel / The Faithful Companion</h4>
             
             <BilingualContent
@@ -1338,13 +1369,15 @@ const Index = () => {
           </div>
         </BilingualSection>
 
-        {/* ===== PROCESSOS RELACIONADOS ===== */}
-        <BilingualSection>
-          <h2 className="section-title mb-12">12. PROCESSOS RELACIONADOS</h2>
-          <h2 className="section-title mb-12">12. RELATED PROCESSES</h2>
+        <Separator className="bg-border/30" />
 
-          <div className="mb-16">
-            <h3 className="subsection-title mb-8">LOWMOVIE™</h3>
+        {/* ===== PROCESSOS RELACIONADOS ===== */}
+        <BilingualSection className="py-16">
+          <h2 className="section-title">12. PROCESSOS RELACIONADOS</h2>
+          <h2 className="section-title mb-8">12. RELATED PROCESSES</h2>
+
+          <div className="mb-12">
+            <h3 className="subsection-title">LOWMOVIE™</h3>
             
           <BilingualContent
             portugueseContent={
@@ -1423,10 +1456,12 @@ const Index = () => {
           </div>
         </BilingualSection>
 
+        <Separator className="bg-border/30" />
+
         {/* ===== PARADOXO EXISTENCIAL ===== */}
-        <BilingualSection>
-          <h2 className="section-title mb-12">13. PARADOXO EXISTENCIAL (O CRIADOR E A SOMBRA)</h2>
-          <h2 className="section-title mb-12">13. EXISTENTIAL PARADOX (THE CREATOR AND THE SHADOW)</h2>
+        <BilingualSection className="py-16">
+          <h2 className="section-title">13. PARADOXO EXISTENCIAL (O CRIADOR E A SOMBRA)</h2>
+          <h2 className="section-title mb-8">13. EXISTENTIAL PARADOX (THE CREATOR AND THE SHADOW)</h2>
 
           <div className="my-8">
             <img 
@@ -1465,11 +1500,11 @@ const Index = () => {
         </BilingualSection>
 
         {/* ===== THEVØIDN13 STUDY ===== */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           {/* FIM DA TRANSMISSÃO */}
-          <div className="mt-16">
-            <h3 className="subsection-title mb-8">[FIM DA TRANSMISSÃO]</h3>
-            <h3 className="subsection-title mb-8">[END OF TRANSMISSION]</h3>
+          <div>
+            <h3 className="subsection-title">[FIM DA TRANSMISSÃO]</h3>
+            <h3 className="subsection-title mb-6">[END OF TRANSMISSION]</h3>
             
             <div className="my-8">
               <img 
@@ -1505,11 +1540,13 @@ const Index = () => {
           </div>
         </BilingualSection>
 
+        <Separator className="bg-border/30" />
+
         {/* ===== PROTÓTIPO Nº13 ===== */}
-        <BilingualSection>
-          <div className="mt-16">
-            <h3 className="subsection-title mb-8">PROTÓTIPO Nº13</h3>
-            <h3 className="subsection-title mb-8">PROTOTYPE Nº13</h3>
+        <BilingualSection className="py-16">
+          <div>
+            <h3 className="subsection-title">PROTÓTIPO Nº13</h3>
+            <h3 className="subsection-title mb-6">PROTOTYPE Nº13</h3>
             
             <div className="grid md:grid-cols-2 gap-8 items-start">
               <div className="space-y-6 flex flex-col justify-between">
@@ -1549,15 +1586,17 @@ const Index = () => {
           </div>
         </BilingualSection>
 
+        <Separator className="bg-border/30" />
+
         {/* ===== O REPOSITÓRIO | ARQUIVOS E FERRAMENTAS ===== */}
-        <BilingualSection>
-          <div className="mb-16">
-            <h2 className="section-title mb-12">[O REPOSITÓRIO | ARQUIVOS E FERRAMENTAS]</h2>
-            <h2 className="section-title mb-12">The Repository | Files and Tools</h2>
+        <BilingualSection className="py-16">
+          <div className="mb-12">
+            <h2 className="section-title">[O REPOSITÓRIO | ARQUIVOS E FERRAMENTAS]</h2>
+            <h2 className="section-title mb-8">The Repository | Files and Tools</h2>
           </div>
 
           {/* DOCUMENTOS DE PESQUISA */}
-          <div className="space-y-8 mb-16">
+          <div className="space-y-6 mb-12">
             <BilingualContent
               portugueseContent={
                 <div>
@@ -1578,13 +1617,13 @@ const Index = () => {
           </div>
 
           {/* MATERIAIS PRODUZIDOS */}
-          <div className="mt-16 mb-8">
-            <h3 className="subsection-title mb-8">MATERIAIS PRODUZIDOS / PRODUCED MATERIALS</h3>
+          <div className="mt-12 mb-6">
+            <h3 className="subsection-title mb-6">MATERIAIS PRODUZIDOS / PRODUCED MATERIALS</h3>
           </div>
 
           {/* BIBLIOTECA DE PROMPTS */}
-          <div className="mb-16">
-            <h3 className="subsection-title mb-8">BIBLIOTECA DE PROMPTS / PROMPT LIBRARY</h3>
+          <div className="mb-12">
+            <h3 className="subsection-title mb-6">BIBLIOTECA DE PROMPTS / PROMPT LIBRARY</h3>
             <BilingualContent
               portugueseContent={
                 <div>
@@ -1607,8 +1646,8 @@ const Index = () => {
           </div>
 
           {/* GERADOR EXPERIMENTAL */}
-          <div className="mb-16 bg-card/30 p-8 rounded-lg">
-            <h3 className="subsection-title mb-8">GERADOR EXPERIMENTAL DE STILL / STILL GENERATOR</h3>
+          <div className="mb-12 bg-card/30 p-8 rounded-lg">
+            <h3 className="subsection-title mb-6">GERADOR EXPERIMENTAL DE STILL / STILL GENERATOR</h3>
             <BilingualContent
               portugueseContent={
                 <div>
@@ -1631,8 +1670,8 @@ const Index = () => {
           </div>
 
           {/* ORÁCULO CRIATIVO */}
-          <div className="mb-16">
-            <h3 className="subsection-title mb-8">ORÁCULO CRIATIVO / CREATIVE ORACLE</h3>
+          <div className="mb-12">
+            <h3 className="subsection-title mb-6">ORÁCULO CRIATIVO / CREATIVE ORACLE</h3>
             <BilingualContent
               portugueseContent={
                 <div>
@@ -1662,8 +1701,8 @@ const Index = () => {
           </div>
 
           {/* MAPA MENTAL */}
-          <div className="mb-16">
-            <h3 className="subsection-title mb-8">Creative-Ops Mind Map / Mapa Mental Creative-Ops</h3>
+          <div className="mb-12">
+            <h3 className="subsection-title mb-6">Creative-Ops Mind Map / Mapa Mental Creative-Ops</h3>
             <BilingualContent
               portugueseContent={
                 <div>
@@ -1686,7 +1725,7 @@ const Index = () => {
           </div>
 
           {/* DOCUMENTAÇÃO TÉCNICA */}
-          <div className="grid md:grid-cols-2 gap-12 mt-16">
+          <div className="grid md:grid-cols-2 gap-12 mt-12">
             <div className="space-y-6">
               <h3 className="subsection-title">Main Documents / Documentos Principais</h3>
               
