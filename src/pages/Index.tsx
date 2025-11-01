@@ -252,14 +252,14 @@ const Index = () => {
             portugueseContent={
               <div className="bible-section-spacing">
                 <p className="bible-body">
-                  Hoje entendo o THEVØIDN13 não nasceu para uma festa nasceu porque eu precisava de um refúgio um lugar onde o silêncio não fosse ausência mas abrigo um espaço para desaparecer sem deixar de criar um modo de continuar respirando quando tudo parecia saturado o projeto cresceu como tudo orgânico pelas frestas pelos ruídos pelos becos da cidade e se alguém pergunta o que é eu respondo não é personagem é vestígio é o que restou de mim depois que todas as máscaras sociais caíram THEVØIDN13 é o nome que dei à minha própria sombra o mito que inventei para continuar respirando talvez só talvez seja o começo de uma nova forma de estar vivo sem precisar ser visto.
+                  Hoje entendo: o THEVØIDN13 não nasceu para uma festa. Nasceu porque eu precisava de um refúgio, um lugar onde o silêncio não fosse ausência, mas abrigo. Um espaço para desaparecer sem deixar de criar, um modo de continuar respirando quando tudo parecia saturado. O projeto cresceu como tudo orgânico: pelas frestas, pelos ruídos, pelos becos da cidade. E se alguém pergunta o que é, eu respondo: não é personagem, é vestígio. É o que restou de mim depois que todas as máscaras sociais caíram. THEVØIDN13 é o nome que dei à minha própria sombra, o mito que inventei para continuar respirando. Talvez, só talvez, seja o começo de uma nova forma de estar vivo sem precisar ser visto.
                 </p>
               </div>
             }
             englishContent={
               <div className="bible-section-spacing">
                 <p className="bible-body">
-                  Today I understand THEVØIDN13 was not born for a party it was born because I needed a refuge a place where silence was not absence but shelter a space to disappear without ceasing to create a way to keep breathing when everything seemed saturated the project grew like everything organic through cracks through noise through city alleys and if someone asks what it is I answer it is not a character it is a trace it is what remained of me after all social masks fell THEVØIDN13 is the name I gave to my own shadow the myth I invented to keep breathing perhaps just perhaps it is the beginning of a new way of being alive without needing to be seen.
+                  Today I understand: THEVØIDN13 was not born for a party. It was born because I needed a refuge, a place where silence was not absence but shelter. A space to disappear without ceasing to create, a way to keep breathing when everything seemed saturated. The project grew like everything organic: through cracks, through noise, through city alleys. And if someone asks what it is, I answer: it is not a character, it is a trace. It is what remained of me after all social masks fell. THEVØIDN13 is the name I gave to my own shadow, the myth I invented to keep breathing. Perhaps, just perhaps, it is the beginning of a new way of being alive without needing to be seen.
                 </p>
               </div>
             }
@@ -279,7 +279,7 @@ const Index = () => {
               <>
                 <h3 className="bible-subtitle">1.2 QUANDO O INCONSCIENTE GANHA CORPO</h3>
                 <p className="bible-body bible-section-spacing">
-                  Não foi uma fantasia foi um retorno um desses chamados que vêm de dentro quando o inconsciente começa a bater na pele pedindo passagem pensei em inventar uma máscara e acabei revelando um rosto que sempre esteve ali THEVØIDN13 surgiu do atrito entre o desejo e o cansaço entre o fim da forma e o começo da presença não é personagem nem alter ego é uma presença que respira onde o corpo falha um modo de existir sem precisar se exibir respirar sem ter que performar um corpo que se apaga para deixar a imagem viver o instante em que o inconsciente decide existir seu corpo permite atravessar o invisível tornando matéria.
+                  Não foi uma fantasia, foi um retorno. Um desses chamados que vêm de dentro quando o inconsciente começa a bater na pele pedindo passagem. Pensei em inventar uma máscara e acabei revelando um rosto que sempre esteve ali. THEVØIDN13 surgiu do atrito entre o desejo e o cansaço, entre o fim da forma e o começo da presença. Não é personagem nem alter ego, é uma presença que respira onde o corpo falha. Um modo de existir sem precisar se exibir, respirar sem ter que performar. Um corpo que se apaga para deixar a imagem viver. O instante em que o inconsciente decide existir, seu corpo permite atravessar o invisível tornando matéria.
                 </p>
               </>
             }
@@ -287,7 +287,7 @@ const Index = () => {
               <>
                 <h3 className="bible-subtitle">1.2 WHEN THE UNCONSCIOUS GAINS BODY</h3>
                 <p className="bible-body bible-section-spacing">
-                  It was not a fantasy it was a return one of those calls that come from within when the unconscious begins to knock on the skin asking for passage I thought I was inventing a mask and ended up revealing a face that was always there THEVØIDN13 emerged from the friction between desire and exhaustion between the end of form and the beginning of presence it is neither character nor alter ego it is a presence that breathes where the body fails a way of existing without needing to exhibit oneself breathing without having to perform a body that fades to let the image live the instant when the unconscious decides to exist its body allows crossing making matter visible.
+                  It was not a fantasy, it was a return. One of those calls that come from within when the unconscious begins to knock on the skin asking for passage. I thought I was inventing a mask and ended up revealing a face that was always there. THEVØIDN13 emerged from the friction between desire and exhaustion, between the end of form and the beginning of presence. It is neither character nor alter ego, it is a presence that breathes where the body fails. A way of existing without needing to exhibit oneself, breathing without having to perform. A body that fades to let the image live. The instant when the unconscious decides to exist, its body allows crossing making matter visible.
                 </p>
               </>
             }
@@ -312,7 +312,7 @@ const Index = () => {
               <>
                 <h2 className="bible-title">2. FILOSOFIA CENTRAL</h2>
                 <p className="bible-body bible-section-spacing">
-                  THEVØIDN13 é o décimo terceiro andar do inconsciente um espaço entre mundos onde o ego se apaga para que a imagem respire, não é personagem nem avatar é um estado de travessia, não é um ser é um ritmo, a forma que o inconsciente assume para respirar no ruído da cidade, existe para absorver não para reagir, sua ética é a do silêncio uma recusa ativa da autoafirmação, The Void é o nome que restou depois que todos os outros já morreram o número treze é a assinatura do que retorna depois do fim.
+                  THEVØIDN13 é o décimo terceiro andar do inconsciente, um espaço entre mundos onde o ego se apaga para que a imagem respire. Não é personagem nem avatar, é um estado de travessia. Não é um ser, é um ritmo. A forma que o inconsciente assume para respirar no ruído da cidade. Existe para absorver, não para reagir. Sua ética é a do silêncio: uma recusa ativa da autoafirmação. The Void é o nome que restou depois que todos os outros já morreram. O número treze é a assinatura do que retorna depois do fim.
                 </p>
               </>
             }
@@ -320,7 +320,7 @@ const Index = () => {
               <>
                 <h2 className="bible-title">2. CENTRAL PHILOSOPHY</h2>
                 <p className="bible-body bible-section-spacing">
-                  THEVØIDN13 is the thirteenth floor of the unconscious a space between worlds where the ego fades so the image can breathe, it is neither character nor avatar it is a state of crossing, it is not a being it is a rhythm, the form the unconscious assumes to breathe in the noise of the city, it exists to absorb not to react, its ethic is that of silence an active refusal of self-affirmation, The Void is the name that remained after all others had died thirteen is the signature of what returns after the end.
+                  THEVØIDN13 is the thirteenth floor of the unconscious, a space between worlds where the ego fades so the image can breathe. It is neither character nor avatar, it is a state of crossing. It is not a being, it is a rhythm. The form the unconscious assumes to breathe in the noise of the city. It exists to absorb, not to react. Its ethic is that of silence: an active refusal of self-affirmation. The Void is the name that remained after all others had died. Thirteen is the signature of what returns after the end.
                 </p>
               </>
             }
@@ -346,7 +346,7 @@ const Index = () => {
                 <h2 className="bible-title">3. A ENTIDADE: THEVØIDN13</h2>
                 <h3 className="bible-subtitle">3.1 FUNÇÃO SIMBÓLICA</h3>
                 <p className="bible-body bible-section-spacing">
-                  A função simbólica de THEVØIDN13 é dar corpo ao invisível traduzir o silêncio em gesto o inconsciente em imagem ele é o espelho do caos contemporâneo um ser que surge quando o verbo deixa de fazer sentido sua presença não explica convoca THEVØIDN13 é o instante em que o erro se torna ritual e o colapso criação ele converte ausência em forma tangível.
+                  A função simbólica de THEVØIDN13 é dar corpo ao invisível, traduzir o silêncio em gesto, o inconsciente em imagem. Ele é o espelho do caos contemporâneo, um ser que surge quando o verbo deixa de fazer sentido. Sua presença não explica, convoca. THEVØIDN13 é o instante em que o erro se torna ritual e o colapso, criação. Ele converte ausência em forma tangível.
                 </p>
               </>
             }
@@ -355,7 +355,7 @@ const Index = () => {
                 <h2 className="bible-title">3. THE ENTITY: THEVØIDN13</h2>
                 <h3 className="bible-subtitle">3.1 SYMBOLIC FUNCTION</h3>
                 <p className="bible-body bible-section-spacing">
-                  The symbolic function of THEVØIDN13 is to give body to the invisible to translate silence into gesture the unconscious into image it is the mirror of contemporary chaos a being that appears when the word ceases to make sense its presence does not explain it summons THEVØIDN13 is the instant when error becomes ritual and collapse becomes creation it converts absence into tangible form.
+                  The symbolic function of THEVØIDN13 is to give body to the invisible, to translate silence into gesture, the unconscious into image. It is the mirror of contemporary chaos, a being that appears when the word ceases to make sense. Its presence does not explain, it summons. THEVØIDN13 is the instant when error becomes ritual and collapse becomes creation. It converts absence into tangible form.
                 </p>
               </>
             }
@@ -366,7 +366,7 @@ const Index = () => {
               <>
                 <h3 className="bible-subtitle">3.2 ARQUÉTIPO E NATUREZA</h3>
                 <p className="bible-body bible-section-spacing">
-                  THEVØIDN13 encarna a sombra junguiana não como vilão mas como espelho do que foi reprimido é o corpo caminhando entre a razão e o delírio entre o controle e o colapso sua natureza é liminar existe no intervalo entre o som e o silêncio entre o gesto e o pensamento é o errante o que não pertence a lugar algum e o redentor subterrâneo sua essência pulsa no limiar do ser.
+                  THEVØIDN13 encarna a sombra junguiana, não como vilão, mas como espelho do que foi reprimido. É o corpo caminhando entre a razão e o delírio, entre o controle e o colapso. Sua natureza é liminar: existe no intervalo entre o som e o silêncio, entre o gesto e o pensamento. É o errante, o que não pertence a lugar algum, e o redentor subterrâneo. Sua essência pulsa no limiar do ser.
                 </p>
               </>
             }
@@ -374,7 +374,7 @@ const Index = () => {
               <>
                 <h3 className="bible-subtitle">3.2 ARCHETYPE AND NATURE</h3>
                 <p className="bible-body bible-section-spacing">
-                  THEVØIDN13 embodies the Jungian shadow not as a villain but as a mirror of what has been repressed it is the body walking between reason and delirium between control and collapse its nature is liminal existing in the interval between sound and silence between gesture and thought it is the wanderer the one who belongs nowhere and the subterranean redeemer its essence pulses at the threshold of being.
+                  THEVØIDN13 embodies the Jungian shadow, not as a villain, but as a mirror of what has been repressed. It is the body walking between reason and delirium, between control and collapse. Its nature is liminal: existing in the interval between sound and silence, between gesture and thought. It is the wanderer, the one who belongs nowhere, and the subterranean redeemer. Its essence pulses at the threshold of being.
                 </p>
               </>
             }
@@ -392,14 +392,14 @@ const Index = () => {
             portugueseContent={
               <>
                 <p className="bible-body">
-                  A máscara veio antes do nome grafite texturizada silenciosa não era uma face era a topografia do silêncio quando a olhei pela primeira vez percebi que ela não me olhava de volta talvez fosse isso o que eu buscava existir sem precisar me afirmar quando a vesti o rosto deixou de importar o espelho não devolveu imagem apenas peso foi nesse instante que compreendi não estava criando um personagem mas cedendo espaço ceder espaço ao inconsciente deixar que ele assumisse forma a máscara é o pacto entre o que se apaga e o que retorna o instante em que o corpo permite ser atravessado por algo maior do que ele mesmo.
+                  A máscara veio antes do nome: grafite, texturizada, silenciosa. Não era uma face, era a topografia do silêncio. Quando a olhei pela primeira vez, percebi que ela não me olhava de volta. Talvez fosse isso o que eu buscava: existir sem precisar me afirmar. Quando a vesti, o rosto deixou de importar. O espelho não devolveu imagem, apenas peso. Foi nesse instante que compreendi: não estava criando um personagem, mas cedendo espaço. Ceder espaço ao inconsciente, deixar que ele assumisse forma. A máscara é o pacto entre o que se apaga e o que retorna. O instante em que o corpo permite ser atravessado por algo maior do que ele mesmo.
                 </p>
               </>
             }
             englishContent={
               <>
                 <p className="bible-body">
-                  The mask came before the name graphite textured silent it was not a face it was the topography of silence when I looked at it for the first time I realized it did not look back at me perhaps that was what I was seeking to exist without needing to assert myself when I wore it the face ceased to matter the mirror returned no image only weight it was in that moment I understood I was not creating a character I was yielding space yielding space to the unconscious letting it take shape the mask is the pact between what fades and what returns the instant when the body allows itself to be crossed by something greater than itself.
+                  The mask came before the name: graphite, textured, silent. It was not a face, it was the topography of silence. When I looked at it for the first time, I realized it did not look back at me. Perhaps that was what I was seeking: to exist without needing to assert myself. When I wore it, the face ceased to matter. The mirror returned no image, only weight. It was in that moment I understood: I was not creating a character, I was yielding space. Yielding space to the unconscious, letting it take shape. The mask is the pact between what fades and what returns. The instant when the body allows itself to be crossed by something greater than itself.
                 </p>
               </>
             }
@@ -419,7 +419,7 @@ const Index = () => {
               <>
                 <h3 className="bible-subtitle">3.4 O PERSONAGEM</h3>
                 <p className="bible-body">
-                  THEVØIDN13 é uma entidade conceitual que habita o intervalo entre presença e ausência não é pessoa não é símbolo é o corpo da indefinição a forma que o inconsciente assume quando precisa de voz surgiu como resposta ao ruído da autoafirmação à ansiedade de ser visto é silêncio vestido de som sombra travestida de corpo existe para desaparecer retornar transformado e desestabilizar qualquer gesto que se afirme com certeza THEVØIDN13 é um duplo simbólico uma presença fantasmagórica que atravessa o cotidiano e revela o que se esconde sob a superfície do comum.
+                  THEVØIDN13 é uma entidade conceitual que habita o intervalo entre presença e ausência. Não é pessoa, não é símbolo: é o corpo da indefinição. A forma que o inconsciente assume quando precisa de voz. Surgiu como resposta ao ruído da autoafirmação, à ansiedade de ser visto. É silêncio vestido de som, sombra travestida de corpo. Existe para desaparecer, retornar transformado e desestabilizar qualquer gesto que se afirme com certeza. THEVØIDN13 é um duplo simbólico, uma presença fantasmagórica que atravessa o cotidiano e revela o que se esconde sob a superfície do comum.
                 </p>
               </>
             }
@@ -427,7 +427,7 @@ const Index = () => {
               <>
                 <h3 className="bible-subtitle">3.4 THE CHARACTER</h3>
                 <p className="bible-body">
-                  THEVØIDN13 is a conceptual entity that inhabits the interval between presence and absence it is neither person nor symbol it is the body of indefinition the form the unconscious assumes when it needs a voice it emerged as a response to the noise of self-affirmation to the anxiety of being seen it is silence dressed in sound shadow disguised as body it exists to disappear to return transformed and to destabilize any gesture that asserts itself with certainty THEVØIDN13 is a symbolic double a ghostly presence that crosses the everyday and reveals what hides beneath the surface of the ordinary.
+                  THEVØIDN13 is a conceptual entity that inhabits the interval between presence and absence. It is neither person nor symbol: it is the body of indefinition. The form the unconscious assumes when it needs a voice. It emerged as a response to the noise of self-affirmation, to the anxiety of being seen. It is silence dressed in sound, shadow disguised as body. It exists to disappear, to return transformed and to destabilize any gesture that asserts itself with certainty. THEVØIDN13 is a symbolic double, a ghostly presence that crosses the everyday and reveals what hides beneath the surface of the ordinary.
                 </p>
               </>
             }
@@ -447,14 +447,14 @@ const Index = () => {
             portugueseContent={
               <>
                 <p className="bible-body">
-                  A máscara é o espelho do que o ego não sustenta a sombra emerge como forma não como disfarce cada peça do vestígio o casaco o capuz o passo é um gesto de retorno o corpo não atua ele escuta o que o inconsciente quer dizer o figurino é a tradução da psique em matéria um corpo ritual criado para se tornar passagem a indumentária deixa de ser proteção e se torna revelação é o inconsciente vestindo o mundo transformando o corpo em canal e a presença em linguagem THEVØIDN13 não é um personagem é o lugar onde o criador se dissolve para que a imagem respire.
+                  A máscara é o espelho do que o ego não sustenta. A sombra emerge como forma, não como disfarce. Cada peça do vestígio — o casaco, o capuz, o passo — é um gesto de retorno. O corpo não atua, ele escuta o que o inconsciente quer dizer. O figurino é a tradução da psique em matéria, um corpo ritual criado para se tornar passagem. A indumentária deixa de ser proteção e se torna revelação. É o inconsciente vestindo o mundo, transformando o corpo em canal e a presença em linguagem. THEVØIDN13 não é um personagem, é o lugar onde o criador se dissolve para que a imagem respire.
                 </p>
               </>
             }
             englishContent={
               <>
                 <p className="bible-body">
-                  The mask is the mirror of what the ego cannot hold the shadow emerges as form not as disguise each trace the jacket the hood the step is a gesture of return the body does not act it listens to what the unconscious wants to say the attire is the psyche translated into matter a ritual body created to become a passage clothing ceases to protect and begins to reveal it is the unconscious dressing the world turning the body into a channel and presence into language THEVØIDN13 is not a character it is the place where the creator dissolves so the image can breathe.
+                  The mask is the mirror of what the ego cannot hold. The shadow emerges as form, not as disguise. Each trace — the jacket, the hood, the step — is a gesture of return. The body does not act, it listens to what the unconscious wants to say. The attire is the psyche translated into matter, a ritual body created to become a passage. Clothing ceases to protect and begins to reveal. It is the unconscious dressing the world, turning the body into a channel and presence into language. THEVØIDN13 is not a character, it is the place where the creator dissolves so the image can breathe.
                 </p>
               </>
             }
@@ -492,7 +492,7 @@ const Index = () => {
               <>
                 <h3 className="bible-subtitle">4.1 A ESTRUTURA DO SER</h3>
                 <p className="bible-body">
-                  THEVØIDN13 não tem rosto, tem ritmo, sua existência é feita de pulsos, não de poses, cada gesto nasce do atrito entre o consciente e o que tenta emergir, não se move para expressar, mas para liberar, o corpo é antena, não vitrine, é ali que o inconsciente encontra carne, respiração e peso, um ser que não comunica, ressoa, um corpo que existe apenas para traduzir o invisível em vibração ele converte silêncio em frequência palpável convertendo vazio em pulso.
+                  THEVØIDN13 não tem rosto, tem ritmo. Sua existência é feita de pulsos, não de poses. Cada gesto nasce do atrito entre o consciente e o que tenta emergir. Não se move para expressar, mas para liberar. O corpo é antena, não vitrine. É ali que o inconsciente encontra carne, respiração e peso. Um ser que não comunica, ressoa. Um corpo que existe apenas para traduzir o invisível em vibração, ele converte silêncio em frequência palpável, convertendo vazio em pulso.
                 </p>
               </>
             }
@@ -500,7 +500,7 @@ const Index = () => {
               <>
                 <h3 className="bible-subtitle">4.1 THE STRUCTURE OF BEING</h3>
                 <p className="bible-body">
-                  THEVØIDN13 has no face, only rhythm, its existence is made of pulsos, not poses, each gesture is born from the friction between the conscious and what tries to emerge, it does not move to express but to release, the body is an antenna, not a showcase, there the unconscious finds flesh, breath and weight, a being that does not communicate, it resonates, a body that exists only to translate the invisible into vibration it converts silence into palpable frequency turning void into pulse.
+                  THEVØIDN13 has no face, only rhythm. Its existence is made of pulses, not poses. Each gesture is born from the friction between the conscious and what tries to emerge. It does not move to express but to release. The body is an antenna, not a showcase. There the unconscious finds flesh, breath and weight. A being that does not communicate, it resonates. A body that exists only to translate the invisible into vibration, it converts silence into palpable frequency, turning void into pulse.
                 </p>
               </>
             }
@@ -564,7 +564,7 @@ const Index = () => {
                 <>
                   <h4 className="bible-subtitle">O OLHAR</h4>
                   <p className="bible-body">
-                    Por trás da máscara há silêncio, um olhar que não busca reconhecimento, apenas presença, o olhar não devolve imagem, devolve espelho, é o espaço onde quem vê também está por dentro, o olhar é o fio que costura o visível e o invisível, uma lente que dissolve a fronteira entre sujeito e sombra.
+                    Por trás da máscara há silêncio, um olhar que não busca reconhecimento, apenas presença. O olhar não devolve imagem, devolve espelho. É o espaço onde quem vê também está por dentro. O olhar é o fio que costura o visível e o invisível, uma lente que dissolve a fronteira entre sujeito e sombra.
                   </p>
                 </>
               }
@@ -572,7 +572,7 @@ const Index = () => {
                 <>
                   <h4 className="bible-subtitle">THE GAZE</h4>
                   <p className="bible-body">
-                    Behind the mask there is silence, a gaze that seeks no recognition, only presence, the gaze does not return an image, it returns a mirror, it is the space where whoever looks is also seen from within, the gaze is the thread that stitches the visible and the invisible, a lens that dissolves the boundary between subject and shadow.
+                    Behind the mask there is silence, a gaze that seeks no recognition, only presence. The gaze does not return an image, it returns a mirror. It is the space where whoever looks is also seen from within. The gaze is the thread that stitches the visible and the invisible, a lens that dissolves the boundary between subject and shadow.
                   </p>
                 </>
               }
@@ -583,7 +583,7 @@ const Index = () => {
                 <>
                   <h4 className="bible-subtitle">A RESPIRAÇÃO</h4>
                   <p className="bible-body">
-                    A respiração é o som que resta quando o verbo morre, é nela que o ser se ancora e desaparece, o ar entra como ruído e sai como silêncio, cada expiração é um micro desaparecimento, um instante de retorno ao nada, respirar é lembrar que o corpo é apenas passagem entre dois mundos, o mundo da carne e o mundo do invisível.
+                    A respiração é o som que resta quando o verbo morre. É nela que o ser se ancora e desaparece. O ar entra como ruído e sai como silêncio. Cada expiração é um micro desaparecimento, um instante de retorno ao nada. Respirar é lembrar que o corpo é apenas passagem entre dois mundos: o mundo da carne e o mundo do invisível.
                   </p>
                 </>
               }
@@ -591,7 +591,7 @@ const Index = () => {
                 <>
                   <h4 className="bible-subtitle">THE BREATHING</h4>
                   <p className="bible-body">
-                    Breathing is the sound that remains when the word dies, in it the being anchors itself and vanishes, air enters as noise and leaves as silence, each exhalation is a micro disappearance, a fleeting return to nothingness, to breathe is to remember that the body is only a passage between two worlds, the world of flesh and the world of the unseen.
+                    Breathing is the sound that remains when the word dies. In it the being anchors itself and vanishes. Air enters as noise and leaves as silence. Each exhalation is a micro disappearance, a fleeting return to nothingness. To breathe is to remember that the body is only a passage between two worlds: the world of flesh and the world of the unseen.
                   </p>
                 </>
               }
@@ -602,7 +602,7 @@ const Index = () => {
                 <>
                   <h4 className="bible-subtitle">A ATMOSFERA</h4>
                   <p className="bible-body">
-                    Tudo vibra em tom noturno, a névoa, o concreto e a solidão elétrica são extensões do corpo, o ambiente não cerca THEVØIDN13, ele o prolonga, a paisagem se torna psique e o silêncio uma presença física, a cidade é o espelho expandido do inconsciente, o lugar onde o corpo desaparece e o espaço respira por ele cada superfície reflete fragmentos do invisível tornando visível o que sempre esteve oculto.
+                    Tudo vibra em tom noturno. A névoa, o concreto e a solidão elétrica são extensões do corpo. O ambiente não cerca THEVØIDN13, ele o prolonga. A paisagem se torna psique e o silêncio uma presença física. A cidade é o espelho expandido do inconsciente, o lugar onde o corpo desaparece e o espaço respira por ele. Cada superfície reflete fragmentos do invisível, tornando visível o que sempre esteve oculto.
                   </p>
                 </>
               }
@@ -610,7 +610,7 @@ const Index = () => {
                 <>
                   <h4 className="bible-subtitle">THE ATMOSPHERE</h4>
                   <p className="bible-body">
-                    Everything vibrates in a nocturnal tone, the fog, the concrete and the electric loneliness are extensions of the body, the environment does not surround THEVØIDN13, it prolongs him, the landscape becomes psyche and silence a physical presence, the city is the expanded mirror of the unconscious, the place where the body disappears and space breathes for it each surface reflects fragments of the invisible making visible what was always hidden.
+                    Everything vibrates in a nocturnal tone. The fog, the concrete and the electric loneliness are extensions of the body. The environment does not surround THEVØIDN13, it prolongs him. The landscape becomes psyche and silence a physical presence. The city is the expanded mirror of the unconscious, the place where the body disappears and space breathes for it. Each surface reflects fragments of the invisible, making visible what was always hidden.
                   </p>
                 </>
               }
@@ -643,14 +643,14 @@ const Index = () => {
             portugueseContent={
               <>
                 <p className="bible-body">
-                  THEVØIDN13 é sombra, e a sombra é tudo o que o ego não consegue sustentar, Jung dizia que ela não é o mal, é o que ainda não foi vivido, talvez o projeto seja exatamente isso, uma tentativa de viver o que eu vinha evitando, dar forma àquilo que o mundo me ensinou a esconder, a sombra é a memória do que não se permitiu existir, e o cinema, aqui, é o corpo dessa revelação.
+                  THEVØIDN13 é sombra, e a sombra é tudo o que o ego não consegue sustentar. Jung dizia que ela não é o mal, é o que ainda não foi vivido. Talvez o projeto seja exatamente isso: uma tentativa de viver o que eu vinha evitando, dar forma àquilo que o mundo me ensinou a esconder. A sombra é a memória do que não se permitiu existir, e o cinema, aqui, é o corpo dessa revelação.
                 </p>
               </>
             }
             englishContent={
               <>
                 <p className="bible-body">
-                  THEVØIDN13 is shadow, and the shadow is everything the ego cannot sustain, Jung said it is not evil, it is what has not yet been lived, perhaps this project is exactly that, an attempt to live what I had been avoiding, to give form to what the world had taught me to hide, the shadow is the memory of what was never allowed to exist, and cinema, here, is the body of that revelation.
+                  THEVØIDN13 is shadow, and the shadow is everything the ego cannot sustain. Jung said it is not evil, it is what has not yet been lived. Perhaps this project is exactly that: an attempt to live what I had been avoiding, to give form to what the world had taught me to hide. The shadow is the memory of what was never allowed to exist, and cinema, here, is the body of that revelation.
                 </p>
               </>
             }
@@ -680,7 +680,7 @@ const Index = () => {
                 <>
                   <h3 className="bible-subtitle">SOMBRA</h3>
                   <p className="bible-body">
-                    A sombra é o que o ego reprime é onde mora o desejo sem permissão o pensamento que não coube, não é monstruosa é inédita, revelá-la é aceitar que o ser é maior que a consciência o void nasce ali onde a forma aceita se desfazer.
+                    A sombra é o que o ego reprime. É onde mora o desejo sem permissão, o pensamento que não coube. Não é monstruosa, é inédita. Revelá-la é aceitar que o ser é maior que a consciência. O void nasce ali onde a forma aceita se desfazer.
                   </p>
                 </>
               }
@@ -688,7 +688,7 @@ const Index = () => {
                 <>
                   <h3 className="bible-subtitle">SHADOW</h3>
                   <p className="bible-body">
-                    The shadow is what the ego represses it is where forbidden desire resides the thought that did not fit, it is not monstrous it is unprecedented, to reveal it is to accept that being is greater than consciousness the void is born there where form accepts dissolution.
+                    The shadow is what the ego represses. It is where forbidden desire resides, the thought that did not fit. It is not monstrous, it is unprecedented. To reveal it is to accept that being is greater than consciousness. The void is born there where form accepts dissolution.
                   </p>
                 </>
               }
@@ -699,7 +699,7 @@ const Index = () => {
                 <>
                   <h3 className="bible-subtitle">SILÊNCIO</h3>
                   <p className="bible-body">
-                    O silêncio não é ausência de som é o espaço onde o pensamento ainda vibra sem palavra, no silêncio o corpo ouve é ali que o inconsciente fala não em voz mas em pressão em peso em pausa, o silêncio do void é denso como concreto e afiado como vidro.
+                    O silêncio não é ausência de som, é o espaço onde o pensamento ainda vibra sem palavra. No silêncio o corpo ouve. É ali que o inconsciente fala: não em voz, mas em pressão, em peso, em pausa. O silêncio do void é denso como concreto e afiado como vidro.
                   </p>
                 </>
               }
@@ -707,7 +707,7 @@ const Index = () => {
                 <>
                   <h3 className="bible-subtitle">SILENCE</h3>
                   <p className="bible-body">
-                    Silence is not the absence of sound it is the space where thought still vibrates wordlessly, in silence the body listens it is there that the unconscious speaks not in voice but in pressure in weight in pause, the void's silence is dense as concrete and sharp as glass.
+                    Silence is not the absence of sound, it is the space where thought still vibrates wordlessly. In silence the body listens. It is there that the unconscious speaks: not in voice but in pressure, in weight, in pause. The void's silence is dense as concrete and sharp as glass.
                   </p>
                 </>
               }
@@ -718,7 +718,7 @@ const Index = () => {
                 <>
                   <h3 className="bible-subtitle">RUÍDO</h3>
                   <p className="bible-body">
-                    O ruído não interrompe o pensamento ele o revela, o som é a forma mais bruta do inconsciente tentando existir, o que vibra no limite do audível é o que não pode ser dito, o ruído é memória viva daquilo que ainda não encontrou palavra.
+                    O ruído não interrompe o pensamento, ele o revela. O som é a forma mais bruta do inconsciente tentando existir. O que vibra no limite do audível é o que não pode ser dito. O ruído é memória viva daquilo que ainda não encontrou palavra.
                   </p>
                 </>
               }
@@ -726,7 +726,7 @@ const Index = () => {
                 <>
                   <h3 className="bible-subtitle">NOISE</h3>
                   <p className="bible-body">
-                    Noise does not interrupt thought it reveals it, sound is the rawest form of the unconscious trying to exist, what vibrates at the edge of the audible is what cannot yet be said, noise is the living memory of what has not yet found a word.
+                    Noise does not interrupt thought, it reveals it. Sound is the rawest form of the unconscious trying to exist. What vibrates at the edge of the audible is what cannot yet be said. Noise is the living memory of what has not yet found a word.
                   </p>
                 </>
               }
@@ -737,7 +737,7 @@ const Index = () => {
                 <>
                   <h3 className="bible-subtitle">VAZIO</h3>
                   <p className="bible-body">
-                    O vazio não apaga ele abre, é o espaço onde o silêncio respira e o corpo se reescreve, ali tudo que foi reprimido se reorganiza em nova forma, o vazio é o território fértil da reinvenção o ponto onde o ser se refaz em presença.
+                    O vazio não apaga, ele abre. É o espaço onde o silêncio respira e o corpo se reescreve. Ali tudo que foi reprimido se reorganiza em nova forma. O vazio é o território fértil da reinvenção, o ponto onde o ser se refaz em presença.
                   </p>
                 </>
               }
@@ -745,7 +745,7 @@ const Index = () => {
                 <>
                   <h3 className="bible-subtitle">VOID</h3>
                   <p className="bible-body">
-                    The void does not erase it opens, it is the space where silence breathes and the body rewrites itself, there everything that was repressed reorganizes into new form, the void is the fertile ground of reinvention the point where being remakes itself into presence.
+                    The void does not erase, it opens. It is the space where silence breathes and the body rewrites itself. There everything that was repressed reorganizes into new form. The void is the fertile ground of reinvention, the point where being remakes itself into presence.
                   </p>
                 </>
               }
@@ -861,14 +861,14 @@ const Index = () => {
             portugueseContent={
               <>
                 <p className="bible-body">
-                  Presente em movimentos de anarquia música industrial cyberpunk moda experimental como Rick Owens e Helmut Lang e no hacktivismo o Ø é usado como avatar do usuário vazio sem identidade mas com presença simbólica. Linguística origem nórdica letra de ilha ø significa isolamento THEVØID como ilha mental matemática ausência total base da criação o vazio como matriz criativa tecnológica distinção entre O e zero precisão binária o humano e o sistema filosófica a falta que estrutura o desejo segundo Lacan a sombra que dá forma ao sujeito estética símbolo universal de interferência visual assinatura gráfica da negação e reprogramação do ser transformando ausência em linguagem potente.
+                  Presente em movimentos de anarquia, música industrial, cyberpunk, moda experimental como Rick Owens e Helmut Lang, e no hacktivismo, o Ø é usado como avatar do usuário vazio: sem identidade mas com presença simbólica. Linguística: origem nórdica, letra de ilha, ø significa isolamento, THEVØID como ilha mental. Matemática: ausência total, base da criação, o vazio como matriz criativa. Tecnológica: distinção entre O e zero, precisão binária, o humano e o sistema. Filosófica: a falta que estrutura o desejo segundo Lacan, a sombra que dá forma ao sujeito. Estética: símbolo universal de interferência visual, assinatura gráfica da negação e reprogramação do ser, transformando ausência em linguagem potente.
                 </p>
               </>
             }
             englishContent={
               <>
                 <p className="bible-body">
-                  Present in anarchy movements industrial music cyberpunk experimental fashion such as Rick Owens and Helmut Lang and in hacktivism the Ø is used as the avatar of the empty user without identity but with symbolic presence. Linguistic nordic origin letter for island ø means isolation THEVØID as a mental island mathematical total absence basis of creation the void as a creative matrix technological distinction between O and zero binary precision the human and the system philosophical the lack that structures desire according to Lacan the shadow that gives form to the subject aesthetic universal symbol of visual interference graphic signature of negation and reprogramming of the being transforming absence into potent language.
+                  Present in anarchy movements, industrial music, cyberpunk, experimental fashion such as Rick Owens and Helmut Lang, and in hacktivism, the Ø is used as the avatar of the empty user: without identity but with symbolic presence. Linguistic: nordic origin, letter for island, ø means isolation, THEVØID as a mental island. Mathematical: total absence, basis of creation, the void as a creative matrix. Technological: distinction between O and zero, binary precision, the human and the system. Philosophical: the lack that structures desire according to Lacan, the shadow that gives form to the subject. Aesthetic: universal symbol of visual interference, graphic signature of negation and reprogramming of the being, transforming absence into potent language.
                 </p>
               </>
             }
@@ -978,14 +978,14 @@ const Index = () => {
             portugueseContent={
               <>
                 <p className="bible-body">
-                  A carta treze do tarô a morte ergue sua foice como quem abre caminho em meio ao campo estéril ceifando o que já não vive para que o novo possa brotar sua imagem não anuncia um fim definitivo mas uma transição inevitável a porta secreta entre um mundo e outro nessa travessia há uma renúncia silenciosa do ego antigas identidades desabam como folhas secas dando lugar a uma verdade mais crua e essencial o número treze tantas vezes temido revela se aqui como emblema dessa metamorfose subversiva um lembrete de que na morte simbólica reside a semente do renascimento.
+                  A carta treze do tarô, a morte, ergue sua foice como quem abre caminho em meio ao campo estéril, ceifando o que já não vive para que o novo possa brotar. Sua imagem não anuncia um fim definitivo, mas uma transição inevitável: a porta secreta entre um mundo e outro. Nessa travessia há uma renúncia silenciosa do ego. Antigas identidades desabam como folhas secas, dando lugar a uma verdade mais crua e essencial. O número treze, tantas vezes temido, revela-se aqui como emblema dessa metamorfose subversiva: um lembrete de que na morte simbólica reside a semente do renascimento.
                 </p>
               </>
             }
             englishContent={
               <>
                 <p className="bible-body">
-                  The tarot's thirteenth card death raises its scythe like one who clears a path through a barren field cutting away what no longer lives so the new can take root its image does not announce a final end but an inevitable transition the secret door between one world and another in this crossing there is a silent renunciation of the ego old identities collapse like dry leaves giving way to a rawer and more essential truth the number thirteen so often feared reveals itself here as an emblem of subversive metamorphosis a reminder that within symbolic death lies the seed of rebirth.
+                  The tarot's thirteenth card, death, raises its scythe like one who clears a path through a barren field, cutting away what no longer lives so the new can take root. Its image does not announce a final end, but an inevitable transition: the secret door between one world and another. In this crossing there is a silent renunciation of the ego. Old identities collapse like dry leaves, giving way to a rawer and more essential truth. The number thirteen, so often feared, reveals itself here as an emblem of subversive metamorphosis: a reminder that within symbolic death lies the seed of rebirth.
                 </p>
               </>
             }
@@ -1008,14 +1008,14 @@ const Index = () => {
             portugueseContent={
               <>
                 <p className="bible-body">
-                  Em muitos edifícios o décimo terceiro andar é omitido o elevador salta do doze ao quatorze como se apagar o número pudesse apagar o medo mas THEVØIDN13 habita exatamente esse andar o lugar que nunca foi construído o espaço que só existe como fenda é o símbolo do que a sociedade prefere não olhar a melancolia a incerteza o descontrole habitar o décimo terceiro andar é aceitar o risco de desabar é escolher o interdito como morada no décimo terceiro andar ninguém sobe esperando encontrar luz lá o que se encontra é o peso do que nunca foi dito e a chance de transformá-lo em som.
+                  Em muitos edifícios o décimo terceiro andar é omitido. O elevador salta do doze ao quatorze, como se apagar o número pudesse apagar o medo. Mas THEVØIDN13 habita exatamente esse andar: o lugar que nunca foi construído, o espaço que só existe como fenda. É o símbolo do que a sociedade prefere não olhar: a melancolia, a incerteza, o descontrole. Habitar o décimo terceiro andar é aceitar o risco de desabar, é escolher o interdito como morada. No décimo terceiro andar ninguém sobe esperando encontrar luz. Lá o que se encontra é o peso do que nunca foi dito e a chance de transformá-lo em som.
                 </p>
               </>
             }
             englishContent={
               <>
                 <p className="bible-body">
-                  In many buildings the thirteenth floor is omitted the elevator jumps from twelve to fourteen as if erasing the number could erase the fear but THEVØIDN13 inhabits exactly this floor the place that was never built the space that exists only as a crack it is the symbol of what society prefers not to see melancholy uncertainty lack of control to inhabit the thirteenth floor is to accept the risk of collapse it is to choose the forbidden as home on the thirteenth floor no one ascends expecting to find light there what is found is the weight of what was never said and the chance to turn it into sound.
+                  In many buildings the thirteenth floor is omitted. The elevator jumps from twelve to fourteen, as if erasing the number could erase the fear. But THEVØIDN13 inhabits exactly this floor: the place that was never built, the space that exists only as a crack. It is the symbol of what society prefers not to see: melancholy, uncertainty, lack of control. To inhabit the thirteenth floor is to accept the risk of collapse, it is to choose the forbidden as home. On the thirteenth floor no one ascends expecting to find light. There what is found is the weight of what was never said and the chance to turn it into sound.
                 </p>
               </>
             }
