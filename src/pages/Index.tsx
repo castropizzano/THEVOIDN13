@@ -163,7 +163,7 @@ const Index = () => {
 
         {/* ===== AUDIO PLAYER ===== */}
         <section className="py-16 bg-card/30">
-          <div className="max-w-6xl mx-auto px-6">
+          <div className="max-w-6xl w-full mx-auto px-6">
             <BilingualAudioPlayer
               srcPt="/audio/thevoidn13-manifesto-pt.mp3"
               srcEn="/audio/thevoidn13-manifesto-en.mp3"

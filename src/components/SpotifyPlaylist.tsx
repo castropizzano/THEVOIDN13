@@ -16,7 +16,7 @@ const SpotifyPlaylist = () => {
 
   return (
     <section className="w-full">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl w-full mx-auto">
         <div className="mb-4">
           <Dialog>
             <DialogTrigger asChild>
