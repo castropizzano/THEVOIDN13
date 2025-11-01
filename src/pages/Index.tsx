@@ -680,7 +680,7 @@ const Index = () => {
                 <>
                   <h3 className="bible-subtitle">SOMBRA</h3>
                   <p className="bible-body">
-                    A sombra é o que o ego reprime é onde mora o desejo sem permissão o pensamento que não coube, não é monstruosa é inédita, revelá la é aceitar que o ser é maior que a consciência o void nasce ali onde a forma aceita se desfazer.
+                    A sombra é o que o ego reprime é onde mora o desejo sem permissão o pensamento que não coube, não é monstruosa é inédita, revelá-la é aceitar que o ser é maior que a consciência o void nasce ali onde a forma aceita se desfazer.
                   </p>
                 </>
               }
@@ -808,14 +808,14 @@ const Index = () => {
               <div>
               <h4 className="bible-subtitle">MATEMÁTICA & FILOSOFIA</h4>
               <p className="bible-body">
-                  O símbolo ∅ representa o conjunto vazio na matemática, ausência de elementos, o nada estruturado, simbolicamente tornou se sinônimo de negação do conteúdo, o espaço potencial onde tudo pode emergir, a base do zero existencial.
+                  O símbolo ∅ representa o conjunto vazio na matemática, ausência de elementos, o nada estruturado, simbolicamente tornou-se sinônimo de negação do conteúdo, o espaço potencial onde tudo pode emergir, a base do zero existencial.
                 </p>
               </div>
 
               <div>
               <h4 className="bible-subtitle">COMPUTAÇÃO</h4>
               <p className="bible-body">
-                  Na era dos mainframes o zero cortado diferenciava a letra O do número zero, tornou se símbolo de precisão, linguagem de máquina e leitura binária, muito usado em design hacker e cultura digital, representa a leitura correta da ausência, o vazio interpretado pela máquina tornando o vazio compreensível ao sistema digital.
+                  Na era dos mainframes o zero cortado diferenciava a letra O do número zero, tornou-se símbolo de precisão, linguagem de máquina e leitura binária, muito usado em design hacker e cultura digital, representa a leitura correta da ausência, o vazio interpretado pela máquina tornando o vazio compreensível ao sistema digital.
                 </p>
               </div>
             </div>
@@ -1008,7 +1008,7 @@ const Index = () => {
             portugueseContent={
               <>
                 <p className="bible-body">
-                  Em muitos edifícios o décimo terceiro andar é omitido o elevador salta do doze ao quatorze como se apagar o número pudesse apagar o medo mas THEVØIDN13 habita exatamente esse andar o lugar que nunca foi construído o espaço que só existe como fenda é o símbolo do que a sociedade prefere não olhar a melancolia a incerteza o descontrole habitar o décimo terceiro andar é aceitar o risco de desabar é escolher o interdito como morada no décimo terceiro andar ninguém sobe esperando encontrar luz lá o que se encontra é o peso do que nunca foi dito e a chance de transformá lo em som.
+                  Em muitos edifícios o décimo terceiro andar é omitido o elevador salta do doze ao quatorze como se apagar o número pudesse apagar o medo mas THEVØIDN13 habita exatamente esse andar o lugar que nunca foi construído o espaço que só existe como fenda é o símbolo do que a sociedade prefere não olhar a melancolia a incerteza o descontrole habitar o décimo terceiro andar é aceitar o risco de desabar é escolher o interdito como morada no décimo terceiro andar ninguém sobe esperando encontrar luz lá o que se encontra é o peso do que nunca foi dito e a chance de transformá-lo em som.
                 </p>
               </>
             }
@@ -1116,7 +1116,7 @@ const Index = () => {
             portugueseContent={
               <>
                 <p className="bible-body">
-                  A estética de THEVØIDN13 não foi desenhada, ela emergiu, surgiu da fricção entre o erro e o silêncio, entre o cansaço e o impulso de existir, é uma estética que nasce do colapso, do realismo sujo do ruído urbano e da introspecção solitária, planos longos, grão trinta e cinco milímetros, neon estourado e ruas molhadas são ecos visuais de uma mente em vigília, cada sombra é uma memória, cada reflexo uma confissão ela converte fragmentos do cotidiano em linguagem visual tornando o invisível tangível e palpável.
+                  A estética de THEVØIDN13 não foi desenhada, ela emergiu, surgiu da fricção entre o erro e o silêncio, entre o cansaço e o impulso de existir, é uma estética que nasce do colapso, do realismo sujo do ruído urbano e da introspecção solitária, planos longos, grão de trinta-e-cinco milímetros, neon estourado e ruas molhadas são ecos visuais de uma mente em vigília, cada sombra é uma memória, cada reflexo uma confissão ela converte fragmentos do cotidiano em linguagem visual tornando o invisível tangível e palpável.
                 </p>
               </>
             }
@@ -1146,7 +1146,7 @@ const Index = () => {
             portugueseContent={
               <>
                 <p className="bible-body">
-                  A atmosfera é urbana, noturna, introspectiva e chuvosa, o som é grave e distante como trovão contido, há algo de pós vida nos becos e nas luzes difusas, a imagem é sempre corpo e ausência ao mesmo tempo, o erro aqui é forma, grão pesado de trinta e cinco milímetros, realismo sujo, planos longos, silêncios excessivos, luzes de neon estouradas em asfalto molhado, o cinema é respiração estendida, o erro que revela intenção, a câmera não observa, ela escuta, cada imagem é uma tentativa de lembrar o que o corpo já sabia antes da linguagem.
+                  A atmosfera é urbana, noturna, introspectiva e chuvosa, o som é grave e distante como trovão contido, há algo de pós-vida nos becos e nas luzes difusas, a imagem é sempre corpo e ausência ao mesmo tempo, o erro aqui é forma, grão pesado de trinta-e-cinco milímetros, realismo sujo, planos longos, silêncios excessivos, luzes de neon estouradas em asfalto molhado, o cinema é respiração estendida, o erro que revela intenção, a câmera não observa, ela escuta, cada imagem é uma tentativa de lembrar o que o corpo já sabia antes da linguagem.
                 </p>
               </>
             }
@@ -1176,7 +1176,7 @@ const Index = () => {
             portugueseContent={
               <>
                 <p className="bible-body">
-                  Os princípios estéticos que sustentam THEVØIDN13 emergem de uma filosofia do caos e do inconsciente aqui o vazio não é ausência mas potência latente uma força criativa que nasce do atrito entre o ruído e o silêncio o projeto adota o número treze como signo de travessia e transmutação tal qual a carta da morte no tarô simboliza o fim necessário para um renascimento autêntico a máscara de grafite texturizada e inexpressiva encarna a ideia junguiana da sombra tudo aquilo que o ego reprime ganha forma sem rosto permitindo que o criador desapareça para que a obra possa respirar cada gesto torna se ritual cada erro converte se em uma forma de verdade estética THEVØIDN13 é uma presença mutante e anônima não um personagem fixo mas um fenômeno poético em constante trânsito um espelho do caos contemporâneo que transforma a ausência em voz.
+                  Os princípios estéticos que sustentam THEVØIDN13 emergem de uma filosofia do caos e do inconsciente aqui o vazio não é ausência mas potência latente uma força criativa que nasce do atrito entre o ruído e o silêncio o projeto adota o número treze como signo de travessia e transmutação tal qual a carta da morte no tarô simboliza o fim necessário para um renascimento autêntico a máscara de grafite texturizada e inexpressiva encarna a ideia junguiana da sombra tudo aquilo que o ego reprime ganha forma sem rosto permitindo que o criador desapareça para que a obra possa respirar cada gesto torna-se ritual cada erro converte-se em uma forma de verdade estética THEVØIDN13 é uma presença mutante e anônima não um personagem fixo mas um fenômeno poético em constante trânsito um espelho do caos contemporâneo que transforma a ausência em voz.
                 </p>
               </>
             }
