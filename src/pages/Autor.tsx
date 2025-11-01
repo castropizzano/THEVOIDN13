@@ -38,7 +38,7 @@ const Autor = () => {
         <BilingualSection className="py-16">
           <div>
             <h1 className="bible-title">CASTRO PIZZANO</h1>
-            <p className="bible-body mt-4 text-muted-foreground">цастро™ / PUNK</p>
+            <p className="bible-body text-muted-foreground">цастро™ / PUNK</p>
           </div>
         </BilingualSection>
 
@@ -301,16 +301,16 @@ const Autor = () => {
             <div>
               <div className="space-y-8 mt-6">
                 <div className="border-l-2 border-primary pl-6">
-                  <p className="bible-body text-muted-foreground mb-2">2023-2025 (em curso)</p>
-                  <h3 className="bible-body font-bold mb-2">Mestrado em Cinema e Artes do Vídeo</h3>
-                  <p className="bible-body mb-3">UNESPAR - Universidade Estadual do Paraná</p>
-                  <p className="bible-body text-muted-foreground mb-4">
+                  <p className="bible-body text-muted-foreground">2023-2025 (em curso)</p>
+                  <h3 className="bible-body font-bold">Mestrado em Cinema e Artes do Vídeo</h3>
+                  <p className="bible-body">UNESPAR - Universidade Estadual do Paraná</p>
+                  <p className="bible-body text-muted-foreground">
                     Pesquisa: Processos criativos colaborativos, subcultura do skate, cinema documental
                   </p>
                   
                   <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 mt-4">
-                    <p className="bible-body font-semibold mb-2">QUALIFICAÇÃO APROVADA</p>
-                    <p className="bible-link mb-2">11 de julho de 2025, PPG-CINEAV/UNESPAR</p>
+                    <p className="bible-body font-semibold">QUALIFICAÇÃO APROVADA</p>
+                    <p className="bible-link">11 de julho de 2025, PPG-CINEAV/UNESPAR</p>
                     <p className="bible-link">
                       Título: "LowMovie™ e o Labirinto Criativo: Subjetividade, Subcultura e a Construção de uma Estética em Movimento no Coletivo LowPressure™"
                     </p>
@@ -318,14 +318,14 @@ const Autor = () => {
                 </div>
 
                 <div className="border-l-2 border-muted pl-6">
-                  <p className="bible-body text-muted-foreground mb-2">2014</p>
-                  <h3 className="bible-body font-bold mb-2">Pós-Graduado em Direção de Arte e Estratégias Criativas</h3>
+                  <p className="bible-body text-muted-foreground">2014</p>
+                  <h3 className="bible-body font-bold">Pós-Graduado em Direção de Arte e Estratégias Criativas</h3>
                   <p className="bible-body">Unicuritiba</p>
                 </div>
 
                 <div className="border-l-2 border-muted pl-6">
-                  <p className="bible-body text-muted-foreground mb-2">2005</p>
-                  <h3 className="bible-body font-bold mb-2">Graduado em Comunicação Social, Publicidade e Propaganda</h3>
+                  <p className="bible-body text-muted-foreground">2005</p>
+                  <h3 className="bible-body font-bold">Graduado em Comunicação Social, Publicidade e Propaganda</h3>
                   <p className="bible-body">UTP - Universidade Tuiuti do Paraná</p>
                 </div>
 
@@ -346,16 +346,16 @@ const Autor = () => {
             <div>
               <div className="space-y-8 mt-6">
                 <div className="border-l-2 border-primary pl-6">
-                  <p className="bible-body text-muted-foreground mb-2">2023-2025 (ongoing)</p>
-                  <h3 className="bible-body font-bold mb-2">Master's Degree in Cinema and Video Arts</h3>
-                  <p className="bible-body mb-3">UNESPAR - State University of Paraná</p>
-                  <p className="bible-body text-muted-foreground mb-4">
+                  <p className="bible-body text-muted-foreground">2023-2025 (ongoing)</p>
+                  <h3 className="bible-body font-bold">Master's Degree in Cinema and Video Arts</h3>
+                  <p className="bible-body">UNESPAR - State University of Paraná</p>
+                  <p className="bible-body text-muted-foreground">
                     Research: Collaborative creative processes, skateboarding subculture, documentary cinema
                   </p>
                   
                   <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 mt-4">
-                    <p className="bible-body font-semibold mb-2">QUALIFICATION APPROVED</p>
-                    <p className="bible-link mb-2">July 11, 2025, PPG-CINEAV/UNESPAR</p>
+                    <p className="bible-body font-semibold">QUALIFICATION APPROVED</p>
+                    <p className="bible-link">July 11, 2025, PPG-CINEAV/UNESPAR</p>
                     <p className="bible-link">
                       Title: "LowMovie™ and the Creative Labyrinth: Subjectivity, Subculture and the Construction of an Aesthetic in Motion in the LowPressure™ Collective"
                     </p>
@@ -363,14 +363,14 @@ const Autor = () => {
                 </div>
 
                 <div className="border-l-2 border-muted pl-6">
-                  <p className="bible-body text-muted-foreground mb-2">2014</p>
-                  <h3 className="bible-body font-bold mb-2">Postgraduate Degree in Art Direction and Creative Strategies</h3>
+                  <p className="bible-body text-muted-foreground">2014</p>
+                  <h3 className="bible-body font-bold">Postgraduate Degree in Art Direction and Creative Strategies</h3>
                   <p className="bible-body">Unicuritiba</p>
                 </div>
 
                 <div className="border-l-2 border-muted pl-6">
-                  <p className="bible-body text-muted-foreground mb-2">2005</p>
-                  <h3 className="bible-body font-bold mb-2">Bachelor's Degree in Social Communication, Advertising and Propaganda</h3>
+                  <p className="bible-body text-muted-foreground">2005</p>
+                  <h3 className="bible-body font-bold">Bachelor's Degree in Social Communication, Advertising and Propaganda</h3>
                   <p className="bible-body">UTP - Tuiuti University of Paraná</p>
                 </div>
 

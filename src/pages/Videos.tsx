@@ -167,10 +167,10 @@ const Videos = () => {
             englishContent={
               <>
                 <h2 className="bible-title">AUDIOVISUAL PORTFOLIO</h2>
-                <p className="bible-body mt-6">
+                <p className="bible-body">
                   A collection of works that traverse design, cinema and video art. Each project is an experiment in visual language, where aesthetics meets narrative and movement transforms into meaning. From commercial to experimental, from documentary to performance, these works share the same quest: to create images that resonate beyond the screen.
                 </p>
-                <p className="bible-body mt-6">
+                <p className="bible-body">
                   Brandbooks, short films, video performances, documentaries and authorial projects. Works produced between 2019-2025, bringing together collaborations with CasaTrezeStudio®, LowPressure™ and independent projects. Each video carries its own methodology, its own time, its own way of existing.
                 </p>
               </>
