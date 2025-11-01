@@ -1434,8 +1434,20 @@ const Index = () => {
 
           {/* THEVØIDN13 Description */}
           <div className="mb-12">
-            <h3 className="bible-subtitle">THEVØIDN13</h3>
-            <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">A Sombra Materializada / The Materialized Shadow</h4>
+            <BilingualContent
+              portugueseContent={
+                <>
+                  <h3 className="bible-subtitle">THEVØIDN13</h3>
+                  <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">A Sombra Materializada</h4>
+                </>
+              }
+              englishContent={
+                <>
+                  <h3 className="bible-subtitle">THEVØIDN13</h3>
+                  <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">The Materialized Shadow</h4>
+                </>
+              }
+            />
             
             <BilingualContent
               portugueseContent={
@@ -1467,8 +1479,20 @@ const Index = () => {
 
           {/* PUNK Description */}
           <div className="mb-12">
-            <h3 className="bible-subtitle">PUNK</h3>
-            <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">O Criador Mascarado / The Masked Creator</h4>
+            <BilingualContent
+              portugueseContent={
+                <>
+                  <h3 className="bible-subtitle">PUNK</h3>
+                  <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">O Criador Mascarado</h4>
+                </>
+              }
+              englishContent={
+                <>
+                  <h3 className="bible-subtitle">PUNK</h3>
+                  <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">The Masked Creator</h4>
+                </>
+              }
+            />
             
             <BilingualContent
               portugueseContent={
@@ -1500,8 +1524,20 @@ const Index = () => {
 
           {/* GI Description */}
           <div className="mb-12">
-            <h3 className="bible-subtitle">GI (GISELE)</h3>
-            <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">A Presença Silenciosa / The Silent Presence</h4>
+            <BilingualContent
+              portugueseContent={
+                <>
+                  <h3 className="bible-subtitle">GI (GISELE)</h3>
+                  <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">A Presença Silenciosa</h4>
+                </>
+              }
+              englishContent={
+                <>
+                  <h3 className="bible-subtitle">GI (GISELE)</h3>
+                  <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">The Silent Presence</h4>
+                </>
+              }
+            />
             
             <BilingualContent
               portugueseContent={
@@ -1533,8 +1569,20 @@ const Index = () => {
 
           {/* BUDDY Description */}
           <div className="mb-12">
-            <h3 className="bible-subtitle">BUDDY</h3>
-            <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">O Companheiro Fiel / The Faithful Companion</h4>
+            <BilingualContent
+              portugueseContent={
+                <>
+                  <h3 className="bible-subtitle">BUDDY</h3>
+                  <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">O Companheiro Fiel</h4>
+                </>
+              }
+              englishContent={
+                <>
+                  <h3 className="bible-subtitle">BUDDY</h3>
+                  <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">The Faithful Companion</h4>
+                </>
+              }
+            />
             
             <BilingualContent
               portugueseContent={
@@ -1566,8 +1614,20 @@ const Index = () => {
 
           {/* VW GOL '87 Description */}
           <div className="mb-16">
-            <h3 className="bible-subtitle">VW GOL '87</h3>
-            <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">O Veículo da Deriva / The Drift Vehicle</h4>
+            <BilingualContent
+              portugueseContent={
+                <>
+                  <h3 className="bible-subtitle">VW GOL '87</h3>
+                  <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">O Veículo da Deriva</h4>
+                </>
+              }
+              englishContent={
+                <>
+                  <h3 className="bible-subtitle">VW GOL '87</h3>
+                  <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">The Drift Vehicle</h4>
+                </>
+              }
+            />
             
             <BilingualContent
               portugueseContent={
