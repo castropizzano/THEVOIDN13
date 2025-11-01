@@ -98,14 +98,20 @@ const Index = () => {
 
         {/* ===== SUBTITLE ===== */}
         <BilingualSection className="py-16">
-          <div>
-            <h2 className="subsection-title">
-              [Um corpo à deriva entre o ruído e o silêncio]
-            </h2>
-            <h2 className="subsection-title mt-1">
-              [A body adrift between noise and silence]
-            </h2>
-          </div>
+          <BilingualContent
+            portugueseContent={
+              <>
+                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
+                <h2 className="bible-subtitle">[UM CORPO À DERIVA ENTRE O RUÍDO E O SILÊNCIO]</h2>
+              </>
+            }
+            englishContent={
+              <>
+                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
+                <h2 className="bible-subtitle">[A BODY ADRIFT BETWEEN NOISE AND SILENCE]</h2>
+              </>
+            }
+          />
         </BilingualSection>
 
         <Separator className="bg-border/30" />
@@ -127,10 +133,20 @@ const Index = () => {
 
         {/* ===== INÍCIO DA TRANSMISSÃO ===== */}
         <BilingualSection className="py-16">
-          <div className="mb-8">
-            <h3 className="subsection-title">[INÍCIO DA TRANSMISSÃO]</h3>
-            <h3 className="subsection-title mt-1">[BEGINNING OF TRANSMISSION]</h3>
-          </div>
+          <BilingualContent
+            portugueseContent={
+              <>
+                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
+                <h2 className="bible-subtitle">[INÍCIO DA TRANSMISSÃO]</h2>
+              </>
+            }
+            englishContent={
+              <>
+                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
+                <h2 className="bible-subtitle">[BEGINNING OF TRANSMISSION]</h2>
+              </>
+            }
+          />
         </BilingualSection>
 
         {/* ===== PARADOX RENDER ===== */}
@@ -162,20 +178,32 @@ const Index = () => {
 
         {/* ===== MANIFESTO INTEGRADO ===== */}
         <BilingualSection className="py-16">
-          <h2 className="section-title">MANIFESTO INTEGRADO</h2>
-          <h2 className="section-title mb-8">INTEGRATED MANIFESTO</h2>
+          <BilingualContent
+            portugueseContent={
+              <>
+                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
+                <h2 className="bible-title">MANIFESTO INTEGRADO</h2>
+              </>
+            }
+            englishContent={
+              <>
+                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
+                <h2 className="bible-title">INTEGRATED MANIFESTO</h2>
+              </>
+            }
+          />
           
           <BilingualContent
             portugueseContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <div className="bible-section-spacing">
+                <p className="bible-body">
                   Não há começo há apenas o instante em que o silêncio decide respirar THEVØIDN13 nasceu desse sopro invisível um gesto entre a morte e o retorno tudo o que chamam de ausência é apenas matéria em repouso o vazio não é falta é incubação de forma é o espaço onde o verbo esquece o corpo e o corpo se converte em verbo a imagem não quer ser vista quer ser atravessada o silêncio não encerra expande e o fim aqui é apenas uma respiração mais funda.
                 </p>
               </div>
             }
             englishContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <div className="bible-section-spacing">
+                <p className="bible-body">
                   There is no beginning there is only the instant when silence decides to breathe THEVØIDN13 was born from that invisible breath a gesture between death and return everything they call absence is only matter at rest the void is not lack it is incubation of form it is the space where the word forgets the body and the body becomes word the image does not want to be seen it wants to be crossed through silence does not end it expands and the end here is only a deeper breath.
                 </p>
               </div>
@@ -198,23 +226,34 @@ const Index = () => {
 
         {/* ===== 1. ORIGEM E PROPÓSITO ===== */}
         <BilingualSection className="py-16">
-          <h2 className="section-title">1. ORIGEM E PROPÓSITO</h2>
-          <h2 className="section-title mb-8">1. ORIGIN AND PURPOSE</h2>
-          
-          <h3 className="subsection-title">1.1 O LUGAR SEGURO PARA DESAPARECER</h3>
-          <h3 className="subsection-title mb-6">1.1 THE SAFE PLACE TO DISAPPEAR</h3>
+          <BilingualContent
+            portugueseContent={
+              <>
+                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
+                <h2 className="bible-title">1. ORIGEM E PROPÓSITO</h2>
+                <h3 className="bible-subtitle">1.1 O LUGAR SEGURO PARA DESAPARECER</h3>
+              </>
+            }
+            englishContent={
+              <>
+                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
+                <h2 className="bible-title">1. ORIGIN AND PURPOSE</h2>
+                <h3 className="bible-subtitle">1.1 THE SAFE PLACE TO DISAPPEAR</h3>
+              </>
+            }
+          />
 
           <BilingualContent
             portugueseContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <div className="bible-section-spacing">
+                <p className="bible-body">
                   Hoje entendo o THEVØIDN13 não nasceu para uma festa nasceu porque eu precisava de um refúgio um lugar onde o silêncio não fosse ausência mas abrigo um espaço para desaparecer sem deixar de criar um modo de continuar respirando quando tudo parecia saturado o projeto cresceu como tudo orgânico pelas frestas pelos ruídos pelos becos da cidade e se alguém pergunta o que é eu respondo não é personagem é vestígio é o que restou de mim depois que todas as máscaras sociais caíram THEVØIDN13 é o nome que dei à minha própria sombra o mito que inventei para continuar respirando talvez só talvez seja o começo de uma nova forma de estar vivo sem precisar ser visto.
                 </p>
               </div>
             }
             englishContent={
-              <div className="section-spacing">
-                <p className="body-base text-justified">
+              <div className="bible-section-spacing">
+                <p className="bible-body">
                   Today I understand THEVØIDN13 was not born for a party it was born because I needed a refuge a place where silence was not absence but shelter a space to disappear without ceasing to create a way to keep breathing when everything seemed saturated the project grew like everything organic through cracks through noise through city alleys and if someone asks what it is I answer it is not a character it is a trace it is what remained of me after all social masks fell THEVØIDN13 is the name I gave to my own shadow the myth I invented to keep breathing perhaps just perhaps it is the beginning of a new way of being alive without needing to be seen.
                 </p>
               </div>
