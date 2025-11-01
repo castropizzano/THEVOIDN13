@@ -110,10 +110,6 @@ const SpotifyPlaylist = () => {
             </div>
           </div>
         </Card>
-
-        <p className="text-xs text-muted-foreground text-center mt-4">
-          13 faixas que traduziram em peso gravitacional, corrosão, fricção e melancolia o universo conceitual do THEVØIDN13
-        </p>
       </div>
     </section>
   );
