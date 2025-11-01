@@ -169,14 +169,14 @@ const Index = () => {
             portugueseContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  Não há começo, há apenas o instante em que o silêncio decide respirar, THEVØIDN13 nasceu desse sopro invisível, um gesto entre a morte e o retorno, tudo o que chamam de ausência é apenas matéria em repouso, o vazio não é falta, é incubação de forma, é o espaço onde o verbo esquece o corpo e o corpo se converte em verbo, a imagem não quer ser vista, quer ser atravessada, o silêncio não encerra, expande, e o fim aqui é apenas uma respiração mais funda.
+                  Não há começo há apenas o instante em que o silêncio decide respirar THEVØIDN13 nasceu desse sopro invisível um gesto entre a morte e o retorno tudo o que chamam de ausência é apenas matéria em repouso o vazio não é falta é incubação de forma é o espaço onde o verbo esquece o corpo e o corpo se converte em verbo a imagem não quer ser vista quer ser atravessada o silêncio não encerra expande e o fim aqui é apenas uma respiração mais funda.
                 </p>
               </div>
             }
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  There is no beginning, there is only the instant when silence decides to breathe, THEVØIDN13 was born from that invisible breath, a gesture between death and return, everything they call absence is only matter at rest, the void is not lack, it is incubation of form, it is the space where the word forgets the body and the body becomes word, the image doesn't want to be seen, it wants to be crossed through, silence doesn't end it expands, and the end here is only a deeper breath.
+                  There is no beginning there is only the instant when silence decides to breathe THEVØIDN13 was born from that invisible breath a gesture between death and return everything they call absence is only matter at rest the void is not lack it is incubation of form it is the space where the word forgets the body and the body becomes word the image does not want to be seen it wants to be crossed through silence does not end it expands and the end here is only a deeper breath.
                 </p>
               </div>
             }
@@ -208,14 +208,14 @@ const Index = () => {
             portugueseContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  Hoje entendo, o THEVØIDN13 não nasceu para uma festa, nasceu porque eu precisava de um refúgio, um lugar onde o silêncio não fosse ausência mas abrigo, um espaço para desaparecer sem deixar de criar, um modo de continuar respirando quando tudo o resto parecia saturado, o projeto cresceu como tudo o que é orgânico, pelas frestas pelos ruídos pelos becos da cidade, e se alguém pergunta o que é eu respondo, não é personagem é vestígio, é o que restou de mim depois que todas as máscaras sociais caíram, THEVØIDN13 é o nome que dei à minha própria sombra, o mito que inventei para continuar respirando, talvez só talvez seja o começo de uma nova forma de estar vivo sem precisar ser visto.
+                  Hoje entendo o THEVØIDN13 não nasceu para uma festa nasceu porque eu precisava de um refúgio um lugar onde o silêncio não fosse ausência mas abrigo um espaço para desaparecer sem deixar de criar um modo de continuar respirando quando tudo parecia saturado o projeto cresceu como tudo orgânico pelas frestas pelos ruídos pelos becos da cidade e se alguém pergunta o que é eu respondo não é personagem é vestígio é o que restou de mim depois que todas as máscaras sociais caíram THEVØIDN13 é o nome que dei à minha própria sombra o mito que inventei para continuar respirando talvez só talvez seja o começo de uma nova forma de estar vivo sem precisar ser visto.
                 </p>
               </div>
             }
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  Today I understand, THEVØIDN13 was not born for a party, it was born because I needed a refuge, a place where silence was not absence but shelter, a space to disappear without ceasing to create, a way to keep breathing when everything else seemed saturated, the project grew like everything organic through cracks through noise through city alleys, and if someone asks what it is I answer, it is not a character it is a trace, it is what remained of me after all social masks fell, THEVØIDN13 is the name I gave to my own shadow, the myth I invented to keep breathing, perhaps just perhaps it is the beginning of a new way of being alive without needing to be seen.
+                  Today I understand THEVØIDN13 was not born for a party it was born because I needed a refuge a place where silence was not absence but shelter a space to disappear without ceasing to create a way to keep breathing when everything seemed saturated the project grew like everything organic through cracks through noise through city alleys and if someone asks what it is I answer it is not a character it is a trace it is what remained of me after all social masks fell THEVØIDN13 is the name I gave to my own shadow the myth I invented to keep breathing perhaps just perhaps it is the beginning of a new way of being alive without needing to be seen.
                 </p>
               </div>
             }
@@ -237,14 +237,14 @@ const Index = () => {
             portugueseContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  Não foi uma fantasia foi um retorno, um desses chamados que vêm de dentro quando o inconsciente começa a bater na pele pedindo passagem, pensei em inventar uma máscara e acabei revelando um rosto que sempre esteve ali, THEVØIDN13 surgiu do atrito entre o desejo e o cansaço entre o fim da forma e o começo da presença, não é personagem nem alter ego é uma presença que respira onde o corpo falha, um modo de existir sem precisar se exibir respirar sem ter que performar, um corpo que se apaga para deixar a imagem viver o instante em que o inconsciente decide existir.
+                  Não foi uma fantasia foi um retorno um desses chamados que vêm de dentro quando o inconsciente começa a bater na pele pedindo passagem pensei em inventar uma máscara e acabei revelando um rosto que sempre esteve ali THEVØIDN13 surgiu do atrito entre o desejo e o cansaço entre o fim da forma e o começo da presença não é personagem nem alter ego é uma presença que respira onde o corpo falha um modo de existir sem precisar se exibir respirar sem ter que performar um corpo que se apaga para deixar a imagem viver o instante em que o inconsciente decide existir.
                 </p>
               </div>
             }
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  It was not a fantasy it was a return, one of those calls that come from within when the unconscious begins to knock on the skin asking for passage, I thought I was inventing a mask and ended up revealing a face that was always there, THEVØIDN13 emerged from the friction between desire and exhaustion between the end of form and the beginning of presence, it is neither character nor alter ego it is a presence that breathes where the body fails, a way of existing without needing to exhibit oneself breathing without having to perform, a body that fades to let the image live the instant when the unconscious decides to exist.
+                  It was not a fantasy it was a return one of those calls that come from within when the unconscious begins to knock on the skin asking for passage I thought I was inventing a mask and ended up revealing a face that was always there THEVØIDN13 emerged from the friction between desire and exhaustion between the end of form and the beginning of presence it is neither character nor alter ego it is a presence that breathes where the body fails a way of existing without needing to exhibit oneself breathing without having to perform a body that fades to let the image live the instant when the unconscious decides to exist.
                 </p>
               </div>
             }
@@ -308,14 +308,14 @@ const Index = () => {
             portugueseContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  A função simbólica de THEVØIDN13 é dar corpo ao invisível, traduzir o silêncio em gesto, o inconsciente em imagem, ele é o espelho do caos contemporâneo, um ser que surge quando o verbo deixa de fazer sentido, sua presença não explica, convoca, THEVØIDN13 é o instante em que o erro se torna ritual e o colapso, criação.
+                  A função simbólica de THEVØIDN13 é dar corpo ao invisível traduzir o silêncio em gesto o inconsciente em imagem ele é o espelho do caos contemporâneo um ser que surge quando o verbo deixa de fazer sentido sua presença não explica convoca THEVØIDN13 é o instante em que o erro se torna ritual e o colapso criação.
                 </p>
               </div>
             }
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  The symbolic function of THEVØIDN13 is to give body to the invisible, to translate silence into gesture, the unconscious into image, it is the mirror of contemporary chaos, a being that appears when the word ceases to make sense, its presence does not explain, it summons, THEVØIDN13 is the instant when error becomes ritual and collapse becomes creation.
+                  The symbolic function of THEVØIDN13 is to give body to the invisible to translate silence into gesture the unconscious into image it is the mirror of contemporary chaos a being that appears when the word ceases to make sense its presence does not explain it summons THEVØIDN13 is the instant when error becomes ritual and collapse becomes creation.
                 </p>
               </div>
             }
@@ -328,14 +328,14 @@ const Index = () => {
             portugueseContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  THEVØIDN13 encarna a sombra junguiana, não como vilão, mas como espelho do que foi reprimido, é o corpo caminhando entre a razão e o delírio, entre o controle e o colapso, sua natureza é liminar, existe no intervalo entre o som e o silêncio, entre o gesto e o pensamento, é o errante, o que não pertence a lugar algum, e o redentor subterrâneo.
+                  THEVØIDN13 encarna a sombra junguiana não como vilão mas como espelho do que foi reprimido é o corpo caminhando entre a razão e o delírio entre o controle e o colapso sua natureza é liminar existe no intervalo entre o som e o silêncio entre o gesto e o pensamento é o errante o que não pertence a lugar algum e o redentor subterrâneo.
                 </p>
               </div>
             }
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  THEVØIDN13 embodies the Jungian shadow, not as a villain, but as a mirror of what has been repressed, it is the body walking between reason and delirium, between control and collapse, its nature is liminal, existing in the interval between sound and silence, between gesture and thought, it is the wanderer, the one who belongs nowhere, and the subterranean redeemer.
+                  THEVØIDN13 embodies the Jungian shadow not as a villain but as a mirror of what has been repressed it is the body walking between reason and delirium between control and collapse its nature is liminal existing in the interval between sound and silence between gesture and thought it is the wanderer the one who belongs nowhere and the subterranean redeemer.
                 </p>
               </div>
             }
@@ -356,14 +356,14 @@ const Index = () => {
             portugueseContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  A máscara veio antes do nome, grafite, texturizada, silenciosa, não era uma face, era a topografia do silêncio, quando a olhei pela primeira vez percebi que ela não me olhava de volta, talvez fosse isso o que eu buscava, existir sem precisar me afirmar, quando a vesti o rosto deixou de importar, o espelho não devolveu imagem, apenas peso, foi nesse instante que compreendi, não estava criando um personagem, mas cedendo espaço, ceder espaço ao inconsciente, deixar que ele assumisse forma, a máscara é o pacto entre o que se apaga e o que retorna, o instante em que o corpo permite ser atravessado por algo maior do que ele mesmo.
+                  A máscara veio antes do nome grafite texturizada silenciosa não era uma face era a topografia do silêncio quando a olhei pela primeira vez percebi que ela não me olhava de volta talvez fosse isso o que eu buscava existir sem precisar me afirmar quando a vesti o rosto deixou de importar o espelho não devolveu imagem apenas peso foi nesse instante que compreendi não estava criando um personagem mas cedendo espaço ceder espaço ao inconsciente deixar que ele assumisse forma a máscara é o pacto entre o que se apaga e o que retorna o instante em que o corpo permite ser atravessado por algo maior do que ele mesmo.
                 </p>
               </div>
             }
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  The mask came before the name, graphite, textured, silent, it was not a face, it was the topography of silence, when I looked at it for the first time I realized it did not look back at me, perhaps that was what I was seeking, to exist without needing to assert myself, when I wore it the face ceased to matter, the mirror returned no image, only weight, it was in that moment I understood, I was not creating a character, I was yielding space, yielding space to the unconscious, letting it take shape, the mask is the pact between what fades and what returns, the instant when the body allows itself to be crossed by something greater than itself.
+                  The mask came before the name graphite textured silent it was not a face it was the topography of silence when I looked at it for the first time I realized it did not look back at me perhaps that was what I was seeking to exist without needing to assert myself when I wore it the face ceased to matter the mirror returned no image only weight it was in that moment I understood I was not creating a character I was yielding space yielding space to the unconscious letting it take shape the mask is the pact between what fades and what returns the instant when the body allows itself to be crossed by something greater than itself.
                 </p>
               </div>
             }
@@ -384,14 +384,14 @@ const Index = () => {
             portugueseContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  THEVØIDN13 é uma entidade conceitual que habita o intervalo entre presença e ausência, não é pessoa, não é símbolo, é o corpo da indefinição, a forma que o inconsciente assume quando precisa de voz, surgiu como resposta ao ruído da autoafirmação, à ansiedade de ser visto, é silêncio vestido de som, sombra travestida de corpo, existe para desaparecer, retornar transformado e desestabilizar qualquer gesto que se afirme com certeza, THEVØIDN13 é um duplo simbólico, uma presença fantasmagórica que atravessa o cotidiano e revela o que se esconde sob a superfície do comum.
+                  THEVØIDN13 é uma entidade conceitual que habita o intervalo entre presença e ausência não é pessoa não é símbolo é o corpo da indefinição a forma que o inconsciente assume quando precisa de voz surgiu como resposta ao ruído da autoafirmação à ansiedade de ser visto é silêncio vestido de som sombra travestida de corpo existe para desaparecer retornar transformado e desestabilizar qualquer gesto que se afirme com certeza THEVØIDN13 é um duplo simbólico uma presença fantasmagórica que atravessa o cotidiano e revela o que se esconde sob a superfície do comum.
                 </p>
               </div>
             }
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  THEVØIDN13 is a conceptual entity that inhabits the interval between presence and absence, it is neither person nor symbol, it is the body of indefinition, the form the unconscious assumes when it needs a voice, it emerged as a response to the noise of self-affirmation, to the anxiety of being seen, it is silence dressed in sound, shadow disguised as body, it exists to disappear, to return transformed and to destabilize any gesture that asserts itself with certainty, THEVØIDN13 is a symbolic double, a ghostly presence that crosses the everyday and reveals what hides beneath the surface of the ordinary.
+                  THEVØIDN13 is a conceptual entity that inhabits the interval between presence and absence it is neither person nor symbol it is the body of indefinition the form the unconscious assumes when it needs a voice it emerged as a response to the noise of self-affirmation to the anxiety of being seen it is silence dressed in sound shadow disguised as body it exists to disappear to return transformed and to destabilize any gesture that asserts itself with certainty THEVØIDN13 is a symbolic double a ghostly presence that crosses the everyday and reveals what hides beneath the surface of the ordinary.
                 </p>
               </div>
             }
@@ -413,14 +413,14 @@ const Index = () => {
             portugueseContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  A máscara é o espelho do que o ego não sustenta, a sombra emerge como forma, não como disfarce, cada peça do vestígio, o casaco, o capuz, o passo, é um gesto de retorno, o corpo não atua, ele escuta o que o inconsciente quer dizer, o figurino é a tradução da psique em matéria, um corpo ritual criado para se tornar passagem, a indumentária deixa de ser proteção e se torna revelação, é o inconsciente vestindo o mundo, transformando o corpo em canal e a presença em linguagem, THEVØIDN13 não é um personagem, é o lugar onde o criador se dissolve para que a imagem respire.
+                  A máscara é o espelho do que o ego não sustenta a sombra emerge como forma não como disfarce cada peça do vestígio o casaco o capuz o passo é um gesto de retorno o corpo não atua ele escuta o que o inconsciente quer dizer o figurino é a tradução da psique em matéria um corpo ritual criado para se tornar passagem a indumentária deixa de ser proteção e se torna revelação é o inconsciente vestindo o mundo transformando o corpo em canal e a presença em linguagem THEVØIDN13 não é um personagem é o lugar onde o criador se dissolve para que a imagem respire.
                 </p>
               </div>
             }
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  The mask is the mirror of what the ego cannot hold, the shadow emerges as form, not as disguise, each trace, the jacket, the hood, the step, is a gesture of return, the body does not act, it listens to what the unconscious wants to say, the attire is the psyche translated into matter, a ritual body created to become a passage, clothing ceases to protect and begins to reveal, it is the unconscious dressing the world, turning the body into a channel and presence into language, THEVØIDN13 is not a character, it is the place where the creator dissolves so the image can breathe.
+                  The mask is the mirror of what the ego cannot hold the shadow emerges as form not as disguise each trace the jacket the hood the step is a gesture of return the body does not act it listens to what the unconscious wants to say the attire is the psyche translated into matter a ritual body created to become a passage clothing ceases to protect and begins to reveal it is the unconscious dressing the world turning the body into a channel and presence into language THEVØIDN13 is not a character it is the place where the creator dissolves so the image can breathe.
                 </p>
               </div>
             }
@@ -767,14 +767,14 @@ const Index = () => {
             portugueseContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  Presente em movimentos de anarquia, música industrial, cyberpunk, moda experimental como Rick Owens e Helmut Lang e no hacktivismo, o Ø é usado como avatar do usuário vazio, sem identidade mas com presença simbólica. Linguística, origem nórdica, letra de ilha, ø significa isolamento, THEVØID como ilha mental, matemática, ausência total, base da criação, o vazio como matriz criativa, tecnológica, distinção entre O e zero, precisão binária, o humano e o sistema, filosófica, a falta que estrutura o desejo segundo Lacan, a sombra que dá forma ao sujeito, estética, símbolo universal de interferência visual, assinatura gráfica da negação e reprogramação do ser.
+                  Presente em movimentos de anarquia música industrial cyberpunk moda experimental como Rick Owens e Helmut Lang e no hacktivismo o Ø é usado como avatar do usuário vazio sem identidade mas com presença simbólica. Linguística origem nórdica letra de ilha ø significa isolamento THEVØID como ilha mental matemática ausência total base da criação o vazio como matriz criativa tecnológica distinção entre O e zero precisão binária o humano e o sistema filosófica a falta que estrutura o desejo segundo Lacan a sombra que dá forma ao sujeito estética símbolo universal de interferência visual assinatura gráfica da negação e reprogramação do ser.
                 </p>
               </div>
             }
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  Present in anarchy movements, industrial music, cyberpunk, experimental fashion such as Rick Owens and Helmut Lang and in hacktivism, the Ø is used as the avatar of the empty user, without identity but with symbolic presence. Linguistic, nordic origin, letter for island, ø means isolation, THEVØID as a mental island, mathematical, total absence, basis of creation, the void as a creative matrix, technological, distinction between O and zero, binary precision, the human and the system, philosophical, the lack that structures desire according to Lacan, the shadow that gives form to the subject, aesthetic, universal symbol of visual interference, graphic signature of negation and reprogramming of the being.
+                  Present in anarchy movements industrial music cyberpunk experimental fashion such as Rick Owens and Helmut Lang and in hacktivism the Ø is used as the avatar of the empty user without identity but with symbolic presence. Linguistic nordic origin letter for island ø means isolation THEVØID as a mental island mathematical total absence basis of creation the void as a creative matrix technological distinction between O and zero binary precision the human and the system philosophical the lack that structures desire according to Lacan the shadow that gives form to the subject aesthetic universal symbol of visual interference graphic signature of negation and reprogramming of the being.
                 </p>
               </div>
             }
@@ -844,14 +844,14 @@ const Index = () => {
             portugueseContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  A carta treze do tarô, a morte, ergue sua foice como quem abre caminho em meio ao campo estéril, ceifando o que já não vive para que o novo possa brotar, sua imagem não anuncia um fim definitivo, mas uma transição inevitável, a porta secreta entre um mundo e outro, nessa travessia há uma renúncia silenciosa do ego, antigas identidades desabam como folhas secas, dando lugar a uma verdade mais crua e essencial, o número treze, tantas vezes temido, revela se aqui como emblema dessa metamorfose subversiva, um lembrete de que na morte simbólica reside a semente do renascimento.
+                  A carta treze do tarô a morte ergue sua foice como quem abre caminho em meio ao campo estéril ceifando o que já não vive para que o novo possa brotar sua imagem não anuncia um fim definitivo mas uma transição inevitável a porta secreta entre um mundo e outro nessa travessia há uma renúncia silenciosa do ego antigas identidades desabam como folhas secas dando lugar a uma verdade mais crua e essencial o número treze tantas vezes temido revela se aqui como emblema dessa metamorfose subversiva um lembrete de que na morte simbólica reside a semente do renascimento.
                 </p>
               </div>
             }
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  The tarot's thirteenth card, death, raises its scythe like one who clears a path through a barren field, cutting away what no longer lives so the new can take root, its image does not announce a final end but an inevitable transition, the secret door between one world and another, in this crossing there is a silent renunciation of the ego, old identities collapse like dry leaves, giving way to a rawer and more essential truth, the number thirteen, so often feared, reveals itself here as an emblem of subversive metamorphosis, a reminder that within symbolic death lies the seed of rebirth.
+                  The tarot's thirteenth card death raises its scythe like one who clears a path through a barren field cutting away what no longer lives so the new can take root its image does not announce a final end but an inevitable transition the secret door between one world and another in this crossing there is a silent renunciation of the ego old identities collapse like dry leaves giving way to a rawer and more essential truth the number thirteen so often feared reveals itself here as an emblem of subversive metamorphosis a reminder that within symbolic death lies the seed of rebirth.
                 </p>
               </div>
             }
@@ -864,14 +864,14 @@ const Index = () => {
             portugueseContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  Em muitos edifícios o décimo terceiro andar é omitido, o elevador salta do doze ao quatorze como se apagar o número pudesse apagar o medo, mas THEVØIDN13 habita exatamente esse andar, o lugar que nunca foi construído, o espaço que só existe como fenda, é o símbolo do que a sociedade prefere não olhar, a melancolia, a incerteza, o descontrole, habitar o décimo terceiro andar é aceitar o risco de desabar, é escolher o interdito como morada, no décimo terceiro andar ninguém sobe esperando encontrar luz, lá o que se encontra é o peso do que nunca foi dito e a chance de transformá lo em som.
+                  Em muitos edifícios o décimo terceiro andar é omitido o elevador salta do doze ao quatorze como se apagar o número pudesse apagar o medo mas THEVØIDN13 habita exatamente esse andar o lugar que nunca foi construído o espaço que só existe como fenda é o símbolo do que a sociedade prefere não olhar a melancolia a incerteza o descontrole habitar o décimo terceiro andar é aceitar o risco de desabar é escolher o interdito como morada no décimo terceiro andar ninguém sobe esperando encontrar luz lá o que se encontra é o peso do que nunca foi dito e a chance de transformá lo em som.
                 </p>
               </div>
             }
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  In many buildings the thirteenth floor is omitted, the elevator jumps from twelve to fourteen as if erasing the number could erase the fear, but THEVØIDN13 inhabits exactly this floor, the place that was never built, the space that exists only as a crack, it is the symbol of what society prefers not to see, melancholy, uncertainty, lack of control, to inhabit the thirteenth floor is to accept the risk of collapse, it is to choose the forbidden as home, on the thirteenth floor no one ascends expecting to find light, there what is found is the weight of what was never said and the chance to turn it into sound.
+                  In many buildings the thirteenth floor is omitted the elevator jumps from twelve to fourteen as if erasing the number could erase the fear but THEVØIDN13 inhabits exactly this floor the place that was never built the space that exists only as a crack it is the symbol of what society prefers not to see melancholy uncertainty lack of control to inhabit the thirteenth floor is to accept the risk of collapse it is to choose the forbidden as home on the thirteenth floor no one ascends expecting to find light there what is found is the weight of what was never said and the chance to turn it into sound.
                 </p>
               </div>
             }
@@ -884,14 +884,14 @@ const Index = () => {
             portugueseContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  Cada renascimento dentro do projeto é como atravessar um limiar invisível e voltar transformado, cada vez que visto a máscara do THEVØIDN13 sinto que estou cruzando uma porta secreta que separa o real do imaginário, e ao atravessar essa fronteira vou deixando peles antigas para trás, não é disfarce, é ritual de morte e retorno, a identidade anterior se dissolve no silêncio para que algo genuíno possa emergir, renascer aqui é morrer um pouco a cada sessão, descascar camadas de ego até restar apenas o gesto, é recusar a permanência, abraçar a mutação, o renascimento não é glorioso, é doloroso, silencioso, imperfeito, é aceitar que o corpo sempre foi passagem e que o THEVØIDN13 é o nome que dei à travessia, renascer aqui é o começo de uma nova forma de estar vivo sem precisar ser visto, uma existência renovada que carrega sua própria luz silenciosa dentro da sombra.
+                  Cada renascimento dentro do projeto é como atravessar um limiar invisível e voltar transformado cada vez que visto a máscara do THEVØIDN13 sinto que estou cruzando uma porta secreta que separa o real do imaginário e ao atravessar essa fronteira vou deixando peles antigas para trás não é disfarce é ritual de morte e retorno a identidade anterior se dissolve no silêncio para que algo genuíno possa emergir renascer aqui é morrer um pouco a cada sessão descascar camadas de ego até restar apenas o gesto é recusar a permanência abraçar a mutação o renascimento não é glorioso é doloroso silencioso imperfeito é aceitar que o corpo sempre foi passagem e que o THEVØIDN13 é o nome que dei à travessia renascer aqui é o começo de uma nova forma de estar vivo sem precisar ser visto uma existência renovada que carrega sua própria luz silenciosa dentro da sombra.
                 </p>
               </div>
             }
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  Each rebirth within the project is like crossing an invisible threshold and returning transformed, every time I put on the mask of THEVØIDN13 I feel I am walking through a secret door that separates the real from the imaginary, and by crossing that boundary I shed old skins, it is not a disguise, it is a ritual of death and return, the old identity dissolves into silence so that something genuine can emerge, to be reborn here is to die a little with each session, to peel back layers of ego until only the gesture remains, it is to refuse permanence, to embrace mutation, rebirth is not glorious, it is painful, silent, imperfect, it is to accept that the body has always been a passage and that THEVØIDN13 is the name I gave to that crossing, to be reborn here is the beginning of a new way of being alive without needing to be seen, a renewed existence that carries its own quiet light within the shadow.
+                  Each rebirth within the project is like crossing an invisible threshold and returning transformed every time I put on the mask of THEVØIDN13 I feel I am walking through a secret door that separates the real from the imaginary and by crossing that boundary I shed old skins it is not a disguise it is a ritual of death and return the old identity dissolves into silence so that something genuine can emerge to be reborn here is to die a little with each session to peel back layers of ego until only the gesture remains it is to refuse permanence to embrace mutation rebirth is not glorious it is painful silent imperfect it is to accept that the body has always been a passage and that THEVØIDN13 is the name I gave to that crossing to be reborn here is the beginning of a new way of being alive without needing to be seen a renewed existence that carries its own quiet light within the shadow.
                 </p>
               </div>
             }
@@ -904,14 +904,14 @@ const Index = () => {
             portugueseContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  O número treze não é apenas símbolo de THEVØIDN13, é assinatura de um movimento maior, CasaTrezeStudio® é a comunidade invisível de quem cria no subsolo, de quem habita as margens, de quem faz do vazio um território fértil, é o selo de quem não pertence, mas se reconhece, uma aliança subterrânea entre criadores que recusam a lógica do mercado e abraçam a estética do erro, da fragmentação e do inacabado, quem carrega o treze não busca sorte, busca travessia, CasaTrezeStudio® é a rebelião silenciosa de quem transforma o interdito em linguagem, não é grupo, é frequência, não é marca, é modo de respirar.
+                  O número treze não é apenas símbolo de THEVØIDN13 é assinatura de um movimento maior CasaTrezeStudio® é a comunidade invisível de quem cria no subsolo de quem habita as margens de quem faz do vazio um território fértil é o selo de quem não pertence mas se reconhece uma aliança subterrânea entre criadores que recusam a lógica do mercado e abraçam a estética do erro da fragmentação e do inacabado quem carrega o treze não busca sorte busca travessia CasaTrezeStudio® é a rebelião silenciosa de quem transforma o interdito em linguagem não é grupo é frequência não é marca é modo de respirar.
                 </p>
               </div>
             }
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  The number thirteen is not just a symbol of THEVØIDN13, it is the signature of a larger movement, CasaTrezeStudio® is the invisible community of those who create underground, who inhabit the margins, who make the void a fertile territory, it is the seal of those who do not belong but recognize each other, an underground alliance between creators who refuse the logic of the market and embrace the aesthetic of error, of fragmentation and of the unfinished, those who carry thirteen do not seek luck, they seek crossing, CasaTrezeStudio® is the silent rebellion of those who transform the forbidden into language, it is not a group, it is a frequency, it is not a brand, it is a way of breathing.
+                  The number thirteen is not just a symbol of THEVØIDN13 it is the signature of a larger movement CasaTrezeStudio® is the invisible community of those who create underground who inhabit the margins who make the void a fertile territory it is the seal of those who do not belong but recognize each other an underground alliance between creators who refuse the logic of the market and embrace the aesthetic of error of fragmentation and of the unfinished those who carry thirteen do not seek luck they seek crossing CasaTrezeStudio® is the silent rebellion of those who transform the forbidden into language it is not a group it is a frequency it is not a brand it is a way of breathing.
                 </p>
               </div>
             }
@@ -972,14 +972,14 @@ const Index = () => {
             portugueseContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  Os princípios estéticos que sustentam THEVØIDN13 emergem de uma filosofia do caos e do inconsciente, aqui o vazio não é ausência mas potência latente, uma força criativa que nasce do atrito entre o ruído e o silêncio, o projeto adota o número treze como signo de travessia e transmutação, tal qual a carta da morte no tarô simboliza o fim necessário para um renascimento autêntico, a máscara de grafite, texturizada e inexpressiva, encarna a ideia junguiana da sombra, tudo aquilo que o ego reprime ganha forma sem rosto, permitindo que o criador desapareça para que a obra possa respirar, cada gesto torna se ritual, cada erro converte se em uma forma de verdade estética, THEVØIDN13 é uma presença mutante e anônima, não um personagem fixo mas um fenômeno poético em constante trânsito, um espelho do caos contemporâneo que transforma a ausência em voz.
+                  Os princípios estéticos que sustentam THEVØIDN13 emergem de uma filosofia do caos e do inconsciente aqui o vazio não é ausência mas potência latente uma força criativa que nasce do atrito entre o ruído e o silêncio o projeto adota o número treze como signo de travessia e transmutação tal qual a carta da morte no tarô simboliza o fim necessário para um renascimento autêntico a máscara de grafite texturizada e inexpressiva encarna a ideia junguiana da sombra tudo aquilo que o ego reprime ganha forma sem rosto permitindo que o criador desapareça para que a obra possa respirar cada gesto torna se ritual cada erro converte se em uma forma de verdade estética THEVØIDN13 é uma presença mutante e anônima não um personagem fixo mas um fenômeno poético em constante trânsito um espelho do caos contemporâneo que transforma a ausência em voz.
                 </p>
               </div>
             }
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  The aesthetic principles supporting THEVØIDN13 emerge from a philosophy of chaos and the unconscious, here the void is not absence but latent potential, a creative force born from the friction between noise and silence, the project adopts the number thirteen as a sign of crossing and transmutation, just like the death card in the tarot it symbolizes the necessary end for an authentic rebirth, the graphite mask, textured and expressionless, embodies the Jungian idea of the shadow, everything the ego represses takes form without a face allowing the creator to disappear so the work can breathe, each gesture becomes ritual, each error converts into a form of aesthetic truth, THEVØIDN13 is a mutant anonymous presence, not a fixed character but a poetic phenomenon in constant transit, a mirror to contemporary chaos that transforms absence into voice.
+                  The aesthetic principles supporting THEVØIDN13 emerge from a philosophy of chaos and the unconscious here the void is not absence but latent potential a creative force born from the friction between noise and silence the project adopts the number thirteen as a sign of crossing and transmutation just like the death card in the tarot it symbolizes the necessary end for an authentic rebirth the graphite mask textured and expressionless embodies the Jungian idea of the shadow everything the ego represses takes form without a face allowing the creator to disappear so the work can breathe each gesture becomes ritual each error converts into a form of aesthetic truth THEVØIDN13 is a mutant anonymous presence not a fixed character but a poetic phenomenon in constant transit a mirror to contemporary chaos that transforms absence into voice.
                 </p>
               </div>
             }
@@ -1109,65 +1109,14 @@ const Index = () => {
             portugueseContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  Nos bastidores do THEVØIDN13, a inteligência artificial revelou-se uma cúmplice silenciosa e potente, assumindo a
-                  lógica de um projeto homem-orquestra abracei a IAs: Creative OPs como parte da metodologia criativa, uma
-                  extensão digital do meu processo solitário de criação, por meio de plataformas de vanguarda, especialmente o
-                  Google AI Studio e ferramentas afins, integrei algoritmos generativos em cada etapa do processo artístico,
-                  ampliando as fronteiras do possível em minha arte, a IAs: Creative OPs generativa expandiu minha paleta visual de
-                  formas inimagináveis, a partir de comandos de texto, prompts, passei a gerar imagens que davam corpo ao invisível,
-                  de elementos brutos, assets visuais e texturas abstratas a cenas inteiras que antes existiam apenas em meu
-                  inconsciente, cada visual criado por esse diálogo humano-máquina carregava a mesma aura onírica e intensa do
-                  universo do THEVØIDN13, transformando ideias etéreas em visões tangíveis, a IAs: Creative OPs também emprestou
-                  voz e ruído ao silêncio do projeto, vozes sintéticas, cada qual com personalidade própria, emergiram para dar fala ao
-                  indizível, como se o THEVØIDN13 sussurrasse por múltiplas gargantas digitais, em paralelo, sons e ruídos gerados
-                  algoritmicamente costuram a atmosfera, do sussurro elétrico ao trovão distante, preencheram o vazio acústico
-                  com camadas de tensão e devaneio, o resultado é uma paisagem sonora que respira junto com as imagens,
-                  intensificando a imersão no caos poético do projeto, até no domínio das palavras, a inteligência artificial atuou
-                  como coautora simbólica, roteiros e descrições atmosféricas foram desenvolvidos em parceria com algoritmos que
-                  ajudaram a delimitar cenas e narrativas com a mesma poesia fragmentada característica do THEVØIDN13,
-                  fragmentos de texto, frases quebradas e micro-manifestos também emergiram desse diálogo entre humano e
-                  máquina, surgindo como ecos conceituais alinhados ao manifesto e à arquitetura de ser do THEVØIDN13, em cada
-                  frase gerada através da co-criação a IAs: Creative OPs espelhava discretamente a voz filosófica do projeto,
-                  reforçando seus temas sem violar sua essência, nessa co-criação com a máquina a IAs: Creative OPs permanece
-                  uma coautora invisível que jamais ofusca a essência do projeto, em vez de subverter a estética do THEVØIDN13 ela a
-                  intensifica em silêncio, respeitando o tom lírico-conceitual, o ritmo fragmentado e a linguagem de sombras que
-                  definem esta obra, cada interação homem-máquina torna-se um ritual discreto de criação em que os algoritmos
-                  oferecem sugestões e ecos, mas é o inconsciente do criador que continua a guiar a sintonia, assim a inteligência
-                  artificial se faz presente como espelho digital do meu impulso criativo, um reflexo binário do Vazio que coescreve
-                  sem rosto, transformando o silêncio em substância e afirmando neste desfecho a ideia de que até o vazio pode ter
-                  uma inteligência sussurrante.
+                  Nos bastidores do THEVØIDN13 a inteligência artificial revelou se uma cúmplice silenciosa e potente assumindo a lógica de um projeto homem orquestra abracei a IAs Creative OPs como parte da metodologia criativa uma extensão digital do meu processo solitário de criação por meio de plataformas de vanguarda especialmente o Google AI Studio e ferramentas afins integrei algoritmos generativos em cada etapa do processo artístico ampliando as fronteiras do possível em minha arte a IAs Creative OPs generativa expandiu minha paleta visual de formas inimagináveis a partir de comandos de texto prompts passei a gerar imagens que davam corpo ao invisível de elementos brutos assets visuais e texturas abstratas a cenas inteiras que antes existiam apenas em meu inconsciente cada visual criado por esse diálogo humano máquina carregava a mesma aura onírica e intensa do universo do THEVØIDN13 transformando ideias etéreas em visões tangíveis.
                 </p>
               </div>
             }
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  Behind the scenes of THEVØIDN13, artificial intelligence revealed itself as a silent yet powerful accomplice, adopting
-                  the logic of a one-man-orchestra project I embraced IAs: Creative OPs as part of my creative methodology, a digital
-                  extension of my solitary process, through avant-garde platforms, especially Google AI Studio and similar tools, I
-                  integrated generative algorithms at every stage of the artistic process, expanding the boundaries of what was
-                  possible in my art, generative IAs: Creative OPs expanded my visual palette in unimaginable ways, through text
-                  prompts I began generating images that gave body to the invisible, from raw visual elements, assets and abstract
-                  textures to entire scenes that previously existed only in my unconscious, each visual born from this
-                  human-machine dialogue carried the same oneiric and intense aura of THEVØIDN13's universe, transforming
-                  ethereal ideas into tangible visions, IAs: Creative OPs also lent voice and noise to the project's silence, synthetic
-                  voices, each with its own personality, emerged to give speech to the unspeakable, as if THEVØIDN13 were
-                  whispering through multiple digital throats, in parallel, algorithmically generated sounds and noises weave the
-                  atmosphere, from the electric whisper to the distant thunder they filled the acoustic void with layers of tension and
-                  reverie, the result is a soundscape that breathes with the images, intensifying immersion in the project's poetic
-                  chaos, even in the realm of words artificial intelligence acted as a symbolic co-author, scripts and atmospheric
-                  descriptions were developed in partnership with algorithms that helped delineate scenes and narratives with the
-                  same fragmented poetry characteristic of THEVØIDN13, text fragments, broken phrases and micro-manifestos also
-                  emerged from this dialogue between human and machine, arising as conceptual echoes aligned with THEVØIDN13's
-                  manifesto and architecture of being, in each sentence generated through co-creation IAs: Creative OPs discreetly
-                  mirrored the project's philosophical voice, reinforcing its themes without violating its essence, in this co-creation
-                  with the machine IAs: Creative OPs remains an invisible co-author that never overshadows the project's essence,
-                  instead of subverting THEVØIDN13's aesthetic it silently intensifies it, respecting the lyrical-conceptual tone, the
-                  fragmented rhythm and the language of shadows that define this work, each human-machine interaction becomes
-                  a discreet ritual of creation where algorithms offer suggestions and echoes but it is the creator's unconscious that
-                  continues to guide the attunement, thus artificial intelligence becomes a digital mirror of my creative impulse, a
-                  binary reflection of the Void that co-writes without a face, transforming silence into substance and affirming in this
-                  closing the idea that even the void can possess a whispering intelligence.
+                  Behind the scenes of THEVØIDN13 artificial intelligence revealed itself as a silent yet powerful accomplice adopting the logic of a one man orchestra project I embraced IAs Creative OPs as part of my creative methodology a digital extension of my solitary process through avant garde platforms especially Google AI Studio and similar tools I integrated generative algorithms at every stage of the artistic process expanding the boundaries of what was possible in my art generative IAs Creative OPs expanded my visual palette in unimaginable ways through text prompts I began generating images that gave body to the invisible from raw visual elements assets and abstract textures to entire scenes that previously existed only in my unconscious each visual born from this human machine dialogue carried the same oneiric and intense aura of THEVØIDN13's universe transforming ethereal ideas into tangible visions.
                 </p>
               </div>
             }
