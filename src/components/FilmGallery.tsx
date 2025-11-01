@@ -1,6 +1,13 @@
 import { ExternalLink, Info } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import bladeRunnerPoster from "@/assets/posters/blade-runner.jpg";
+import kidsPoster from "@/assets/posters/kids.jpg";
+import matrixPoster from "@/assets/posters/matrix.jpg";
+import akiraPoster from "@/assets/posters/akira.jpg";
+import fallenAngelsPoster from "@/assets/posters/fallen-angels.jpg";
+import thx1138Poster from "@/assets/posters/thx1138.jpg";
+import brazilPoster from "@/assets/posters/brazil.jpg";
 import {
   Dialog,
   DialogContent,
@@ -32,7 +39,7 @@ const FilmGallery = () => {
       director: "Ridley Scott",
       year: 1982,
       imdbId: "tt0083658",
-      posterUrl: "https://m.media-amazon.com/images/M/MV5BNzQzMzJhZTEtOWM4NS00MTdhLTg0YjgtMjM4MDRkZjUwZDBlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+      posterUrl: bladeRunnerPoster,
       description: "Neo noir e solidão coreografada"
     },
     {
@@ -40,7 +47,7 @@ const FilmGallery = () => {
       director: "Larry Clark",
       year: 1995,
       imdbId: "tt0113540",
-      posterUrl: "https://m.media-amazon.com/images/M/MV5BOGNhMGMzN2YtNjcxMS00ZWMzLWI4NzYtZTJkMGNkYWFjZWYyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+      posterUrl: kidsPoster,
       description: "Realismo sujo"
     },
     {
@@ -48,7 +55,7 @@ const FilmGallery = () => {
       director: "The Wachowskis",
       year: 1999,
       imdbId: "tt0133093",
-      posterUrl: "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+      posterUrl: matrixPoster,
       description: "Controle e realidade sintética"
     },
     {
@@ -56,7 +63,7 @@ const FilmGallery = () => {
       director: "Katsuhiro Ōtomo",
       year: 1988,
       imdbId: "tt0094625",
-      posterUrl: "https://m.media-amazon.com/images/M/MV5BM2ZiZTk1ODgtMTZkNS00NTYxLWIxZTUtNWExZGYwZTRhZGY1XkEyXkFqcGdeQXVyMTE2NzA0Ng@@._V1_SX300.jpg",
+      posterUrl: akiraPoster,
       description: "Energia reprimida"
     },
     {
@@ -64,7 +71,7 @@ const FilmGallery = () => {
       director: "Wong Kar Wai",
       year: 1995,
       imdbId: "tt0112913",
-      posterUrl: "https://m.media-amazon.com/images/M/MV5BYjdkZGRjNmQtOGRjNS00ZmI1LTk1MzUtNGM0NGNiYTVkOGU3XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
+      posterUrl: fallenAngelsPoster,
       description: "Atmosfera bebê-da-desesperança"
     },
     {
@@ -72,7 +79,7 @@ const FilmGallery = () => {
       director: "George Lucas",
       year: 1971,
       imdbId: "tt0066434",
-      posterUrl: "https://m.media-amazon.com/images/M/MV5BYTE3N2Q0ZjItNTY2My00MDRlLTgxZDYtZjQ1ZGJhNjExMDNkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+      posterUrl: thx1138Poster,
       description: "Despersonalização e controle"
     },
     {
@@ -80,7 +87,7 @@ const FilmGallery = () => {
       director: "Terry Gilliam",
       year: 1985,
       imdbId: "tt0088846",
-      posterUrl: "https://m.media-amazon.com/images/M/MV5BODExZmE2ZWItYTIzOC00MzI1LTgyNTktNDVjMjk4NzMwNjZjXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+      posterUrl: brazilPoster,
       description: "Burocracia como pesadelo"
     },
     {
