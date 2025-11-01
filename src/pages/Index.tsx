@@ -1249,7 +1249,12 @@ const Index = () => {
             }
           />
 
-          <h3 className="bible-subtitle">TEXTURA CINEMATOGRÁFICA (FILMES)</h3>
+          {/* DNA CONCEITUAL - Comics Showcase */}
+          <div className="mt-12">
+            <ComicsShowcase />
+          </div>
+
+          <h3 className="bible-subtitle mt-16">TEXTURA CINEMATOGRÁFICA (FILMES)</h3>
           <h3 className="bible-subtitle">CINEMATIC TEXTURE (FILMS)</h3>
           
           <BilingualContent
@@ -1279,7 +1284,12 @@ const Index = () => {
             }
           />
 
-          <h3 className="bible-subtitle">ASSINATURA SONORA (MÚSICA)</h3>
+          {/* TEXTURA CINEMATOGRÁFICA - Film Gallery */}
+          <div className="mt-12">
+            <FilmGallery />
+          </div>
+
+          <h3 className="bible-subtitle mt-16">ASSINATURA SONORA (MÚSICA)</h3>
           <h3 className="bible-subtitle">SONIC SIGNATURE (MUSIC)</h3>
           
           <BilingualContent
@@ -1308,16 +1318,13 @@ const Index = () => {
               </>
             }
           />
+
+          {/* ASSINATURA SONORA - Spotify Playlist */}
+          <div className="mt-12">
+            <SpotifyPlaylist />
+          </div>
         </BilingualSection>
 
-        {/* ===== VISUAL REFERENCES COMPONENTS ===== */}
-        <ComicsShowcase />
-        <Separator className="bg-border/30" />
-        
-        <FilmGallery />
-        <Separator className="bg-border/30" />
-        
-        <SpotifyPlaylist />
         <Separator className="bg-border/30" />
 
         {/* ===== A METODOLOGIA | COAUTORIA SIMBÓLICA ===== */}

@@ -54,20 +54,21 @@ const ComicsShowcase = () => {
   ];
 
   return (
-    <section className="py-16 px-4">
-      <div className="container mx-auto max-w-6xl">
-        <div className="flex items-center justify-between mb-8">
-          <div className="flex items-center gap-3">
-            <BookOpen className="w-8 h-8 text-primary" />
-            <div>
-              <h2 className="text-3xl font-bold text-foreground">
-                DNA CONCEITUAL
-              </h2>
-              <p className="text-sm text-muted-foreground mt-1">
-                CONCEPTUAL DNA — Quadrinhos que estruturam a narrativa
-              </p>
+    <section className="w-full py-8">
+      <div className="max-w-6xl mx-auto">
+        <Card className="overflow-hidden border-primary/20 bg-card/50 backdrop-blur-sm p-8">
+          <div className="flex items-center justify-between mb-8">
+            <div className="flex items-center gap-3">
+              <BookOpen className="w-8 h-8 text-primary" />
+              <div>
+                <h2 className="text-3xl font-bold text-foreground">
+                  DNA CONCEITUAL
+                </h2>
+                <p className="text-sm text-muted-foreground mt-1">
+                  CONCEPTUAL DNA — Quadrinhos que estruturam a narrativa
+                </p>
+              </div>
             </div>
-          </div>
           
           <Dialog>
             <DialogTrigger asChild>
@@ -137,7 +138,7 @@ const ComicsShowcase = () => {
           ))}
         </div>
 
-        <div className="mt-12 p-6 bg-secondary/10 rounded-lg border border-primary/10">
+        <div className="mt-8 p-6 bg-secondary/10 rounded-lg border border-primary/10">
           <p className="text-sm text-center text-muted-foreground leading-relaxed">
             Estes três quadrinhos formam a <strong className="text-foreground">tríade conceitual</strong> que 
             estrutura o universo narrativo do THEVØIDN13. Cada um contribui com camadas 
@@ -145,6 +146,7 @@ const ComicsShowcase = () => {
             e <em>Black Hole</em> com a metamorfose corporal e o isolamento.
           </p>
         </div>
+        </Card>
       </div>
     </section>
   );

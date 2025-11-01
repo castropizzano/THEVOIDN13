@@ -134,20 +134,21 @@ const FilmGallery = () => {
   ];
 
   return (
-    <section className="py-16 px-4 bg-secondary/5">
-      <div className="container mx-auto max-w-7xl">
-        <div className="flex items-center justify-between mb-8">
-          <div className="flex items-center gap-3">
-            <Film className="w-8 h-8 text-primary" />
-            <div>
-              <h2 className="text-3xl font-bold text-foreground">
-                TEXTURA CINEMATOGRÁFICA
-              </h2>
-              <p className="text-sm text-muted-foreground mt-1">
-                CINEMATIC TEXTURE — Referências visuais que moldaram o projeto
-              </p>
+    <section className="w-full py-8">
+      <div className="max-w-6xl mx-auto">
+        <Card className="overflow-hidden border-primary/20 bg-card/50 backdrop-blur-sm p-8">
+          <div className="flex items-center justify-between mb-8">
+            <div className="flex items-center gap-3">
+              <Film className="w-8 h-8 text-primary" />
+              <div>
+                <h2 className="text-3xl font-bold text-foreground">
+                  TEXTURA CINEMATOGRÁFICA
+                </h2>
+                <p className="text-sm text-muted-foreground mt-1">
+                  CINEMATIC TEXTURE — Referências visuais que moldaram o projeto
+                </p>
+              </div>
             </div>
-          </div>
           
           <Dialog>
             <DialogTrigger asChild>
@@ -220,6 +221,7 @@ const FilmGallery = () => {
             </TooltipProvider>
           ))}
         </div>
+        </Card>
       </div>
     </section>
   );

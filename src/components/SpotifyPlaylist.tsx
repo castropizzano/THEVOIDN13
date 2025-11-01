@@ -12,11 +12,11 @@ import {
 
 const SpotifyPlaylist = () => {
   // 13 tracks that guided the THEVOIDN13 creation process
-  const playlistId = "37i9dQZF1DX5Ejj0EkURtP"; // Placeholder - user needs to create actual playlist
+  const playlistId = "37i9dQZF1DX5Ejj0EkURtP"; // User will update with actual playlist
 
   return (
-    <section className="py-16 px-4">
-      <div className="container mx-auto max-w-4xl">
+    <section className="w-full">
+      <div className="max-w-6xl mx-auto">
         <div className="flex items-center justify-between mb-8">
           <div className="flex items-center gap-3">
             <Music className="w-8 h-8 text-primary" />
