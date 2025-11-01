@@ -704,63 +704,117 @@ const Autor = () => {
 
         {/* Documentation */}
         <BilingualSection className="py-16">
-          <div className="bible-block-spacing">
-            <h2 className="bible-title">DOCUMENTATION</h2>
-            <h3 className="bible-subtitle">DOCUMENTOS DE PESQUISA / RESEARCH DOCUMENTS</h3>
+          <div className="bible-bilingual-grid bible-block-spacing">
+            <div>
+              <h2 className="bible-title">DOCUMENTAÇÃO</h2>
+              <h3 className="bible-subtitle">DOCUMENTOS DE PESQUISA</h3>
+            </div>
+            <div>
+              <h2 className="bible-title">DOCUMENTATION</h2>
+              <h3 className="bible-subtitle">RESEARCH DOCUMENTS</h3>
+            </div>
           </div>
 
-          <div className="space-y-8 mt-8">
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-card border border-border rounded-lg p-6">
-                <h4 className="bible-body font-bold">CasaTrezeStudio®</h4>
-                <a 
-                  href="/documents/Release_CasaTrezeStudio.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bible-link hover:underline block"
-                >
-                  Release CasaTrezeStudio® / CasaTrezeStudio® Release
-                </a>
-                <a 
-                  href="https://casatrezestudio.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bible-link hover:underline"
-                >
-                  https://casatrezestudio.com/
-                </a>
-              </div>
+          <div className="bible-bilingual-grid bible-section-spacing">
+            <div>
+              <div className="space-y-6">
+                <div className="bg-card border border-border rounded-lg p-6">
+                  <h4 className="bible-body font-bold">CasaTrezeStudio®</h4>
+                  <a 
+                    href="/documents/Release_CasaTrezeStudio.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bible-link hover:underline block"
+                  >
+                    Release CasaTrezeStudio®
+                  </a>
+                  <a 
+                    href="https://casatrezestudio.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bible-link hover:underline"
+                  >
+                    https://casatrezestudio.com/
+                  </a>
+                </div>
 
-              <div className="bg-card border border-border rounded-lg p-6">
-                <h4 className="bible-body font-bold">Jornada do Autor / Author Journey</h4>
-                <a 
-                  href="http://lattes.cnpq.br/5523516994010198"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bible-link hover:underline block"
-                >
-                  Currículo Lattes / Lattes CV
-                </a>
-                <a 
-                  href="/documents/Memorial_Academico_v3.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bible-link hover:underline"
-                >
-                  Memorial Acadêmico / Academic Memorial
-                </a>
+                <div className="bg-card border border-border rounded-lg p-6">
+                  <h4 className="bible-body font-bold">Jornada do Autor</h4>
+                  <a 
+                    href="http://lattes.cnpq.br/5523516994010198"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bible-link hover:underline block"
+                  >
+                    Currículo Lattes
+                  </a>
+                  <a 
+                    href="/documents/Memorial_Academico_v3.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bible-link hover:underline"
+                  >
+                    Memorial Acadêmico
+                  </a>
+                </div>
               </div>
             </div>
 
-            <div className="pt-8 border-t border-border">
-              <h3 className="bible-subtitle">Portfolio & Links</h3>
+            <div>
+              <div className="space-y-6">
+                <div className="bg-card border border-border rounded-lg p-6">
+                  <h4 className="bible-body font-bold">CasaTrezeStudio®</h4>
+                  <a 
+                    href="/documents/Release_CasaTrezeStudio.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bible-link hover:underline block"
+                  >
+                    CasaTrezeStudio® Release
+                  </a>
+                  <a 
+                    href="https://casatrezestudio.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bible-link hover:underline"
+                  >
+                    https://casatrezestudio.com/
+                  </a>
+                </div>
+
+                <div className="bg-card border border-border rounded-lg p-6">
+                  <h4 className="bible-body font-bold">Author Journey</h4>
+                  <a 
+                    href="http://lattes.cnpq.br/5523516994010198"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bible-link hover:underline block"
+                  >
+                    Lattes CV
+                  </a>
+                  <a 
+                    href="/documents/Memorial_Academico_v3.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bible-link hover:underline"
+                  >
+                    Academic Memorial
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bible-bilingual-grid bible-section-spacing">
+            <div>
+              <h3 className="bible-subtitle mb-6">PORTFOLIO & LINKS</h3>
               
-              <div className="grid md:grid-cols-3 gap-6">
+              <div className="space-y-4">
                 <a 
                   href="https://castropizzano.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group bg-card/50 border border-border rounded-lg p-6 hover:border-primary transition-colors"
+                  className="group bg-card/50 border border-border rounded-lg p-6 hover:border-primary transition-colors block"
                 >
                   <div className="flex justify-between items-start mb-4">
                     <h3 className="bible-body font-bold">Website</h3>
@@ -769,17 +823,14 @@ const Autor = () => {
                     </svg>
                   </div>
                   <p className="bible-link">castropizzano.com</p>
-                  <p className="bible-link">
-                    Portfólio completo e projetos<br/>
-                    Complete portfolio and projects
-                  </p>
+                  <p className="bible-link">Portfólio completo e projetos</p>
                 </a>
 
                 <a 
                   href="https://www.behance.net/castropizzano"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group bg-card/50 border border-border rounded-lg p-6 hover:border-primary transition-colors"
+                  className="group bg-card/50 border border-border rounded-lg p-6 hover:border-primary transition-colors block"
                 >
                   <div className="flex justify-between items-start mb-4">
                     <h3 className="bible-body font-bold">Behance</h3>
@@ -788,17 +839,14 @@ const Autor = () => {
                     </svg>
                   </div>
                   <p className="bible-link">@castropizzano</p>
-                  <p className="bible-link">
-                    Design gráfico e branding<br/>
-                    Graphic design and branding
-                  </p>
+                  <p className="bible-link">Design gráfico e branding</p>
                 </a>
 
                 <a 
                   href="https://vimeo.com/castropizzano"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group bg-card/50 border border-border rounded-lg p-6 hover:border-primary transition-colors"
+                  className="group bg-card/50 border border-border rounded-lg p-6 hover:border-primary transition-colors block"
                 >
                   <div className="flex justify-between items-start mb-4">
                     <h3 className="bible-body font-bold">Vimeo</h3>
@@ -807,10 +855,61 @@ const Autor = () => {
                     </svg>
                   </div>
                   <p className="bible-link">@castropizzano</p>
-                  <p className="bible-link">
-                    Cinema e vídeo arte<br/>
-                    Cinema and video art
-                  </p>
+                  <p className="bible-link">Cinema e vídeo arte</p>
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="bible-subtitle mb-6">PORTFOLIO & LINKS</h3>
+              
+              <div className="space-y-4">
+                <a 
+                  href="https://castropizzano.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group bg-card/50 border border-border rounded-lg p-6 hover:border-primary transition-colors block"
+                >
+                  <div className="flex justify-between items-start mb-4">
+                    <h3 className="bible-body font-bold">Website</h3>
+                    <svg className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                  <p className="bible-link">castropizzano.com</p>
+                  <p className="bible-link">Complete portfolio and projects</p>
+                </a>
+
+                <a 
+                  href="https://www.behance.net/castropizzano"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group bg-card/50 border border-border rounded-lg p-6 hover:border-primary transition-colors block"
+                >
+                  <div className="flex justify-between items-start mb-4">
+                    <h3 className="bible-body font-bold">Behance</h3>
+                    <svg className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                  <p className="bible-link">@castropizzano</p>
+                  <p className="bible-link">Graphic design and branding</p>
+                </a>
+
+                <a 
+                  href="https://vimeo.com/castropizzano"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group bg-card/50 border border-border rounded-lg p-6 hover:border-primary transition-colors block"
+                >
+                  <div className="flex justify-between items-start mb-4">
+                    <h3 className="bible-body font-bold">Vimeo</h3>
+                    <svg className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                  <p className="bible-link">@castropizzano</p>
+                  <p className="bible-link">Cinema and video art</p>
                 </a>
               </div>
             </div>
