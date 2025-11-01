@@ -1518,11 +1518,17 @@ const Index = () => {
             <h3 className="subsection-title mb-8">PROTOTYPE Nº13</h3>
             
             <div className="grid md:grid-cols-2 gap-8 items-start">
-              <div className="space-y-6">
+              <div className="space-y-6 flex flex-col justify-between">
                 <div className="section-spacing">
                   <p className="lang-pill">&lt;PORTUGUÊS&gt;</p>
                   <p className="body-base text-justified mt-4">
                     Esta visualização representa o modelo imaginado para o action figure do personagem e define o mood visual das filmagens que serão realizadas pelo autor do projeto. A estética, iluminação e atmosfera foram desenvolvidas para traduzir o universo conceitual de THEVØIDN13.
+                  </p>
+                  <p className="body-base text-justified mt-4">
+                    O protótipo funciona como materialização física da persona THEVØIDN13 — uma presença que habita o limiar entre o visível e o invisível, entre a carne e o código. A máscara branca, o capuz negro e a jaqueta de couro não são apenas elementos estéticos, mas símbolos de uma identidade que recusa a exposição total.
+                  </p>
+                  <p className="body-base text-justified mt-4">
+                    Esta figura será utilizada em futuras produções audiovisuais como referência de iluminação, composição e atmosfera. O protótipo é tanto documento quanto performance — um objeto que existe simultaneamente como conceito artístico e ferramenta técnica de produção.
                   </p>
                 </div>
                 <div className="section-spacing">
@@ -1530,13 +1536,19 @@ const Index = () => {
                   <p className="body-base text-justified mt-4">
                     This visualization represents the envisioned model for the character's action figure and defines the visual mood for filming to be carried out by the project's author. The aesthetics, lighting, and atmosphere were developed to translate the conceptual universe of THEVØIDN13.
                   </p>
+                  <p className="body-base text-justified mt-4">
+                    The prototype functions as a physical materialization of the THEVØIDN13 persona — a presence that inhabits the threshold between visible and invisible, between flesh and code. The white mask, black hood, and leather jacket are not merely aesthetic elements, but symbols of an identity that refuses total exposure.
+                  </p>
+                  <p className="body-base text-justified mt-4">
+                    This figure will be used in future audiovisual productions as a reference for lighting, composition, and atmosphere. The prototype is both document and performance — an object that exists simultaneously as artistic concept and technical production tool.
+                  </p>
                 </div>
               </div>
-              <div>
+              <div className="h-full flex items-stretch">
                 <img 
                   src={actionFigureNew} 
                   alt="THEVØIDN13 Action Figure Prototype" 
-                  className="w-full rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
               </div>
             </div>
