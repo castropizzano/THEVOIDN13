@@ -372,7 +372,7 @@ const Dissertacao = () => {
                   </div>
                 </div>
                 
-                <h3 className="bible-subtitle">Lowbyrinth™: O Labirinto como Orientação Metodológica</h3>
+                <h3 className="bible-subtitle">O Labirinto como Orientação Metodológica</h3>
                 <p className="bible-body">O conceito de Lowbyrinth™ emerge organicamente do processo criativo e atua como orientador metodológico desta pesquisa. Trata-se de uma imagem simbólica que expressa caminhos improvisados, não lineares e rizomáticos do fazer coletivo. O labirinto não é obstáculo, mas campo de possibilidades criativas que se desdobra em dobra, escuta e desvio. Uma travessia espiralada que acolhe o erro, o improviso e a reconfiguração constante dos percursos.</p>
                 
                 <h3 className="bible-subtitle">Três Procedimentos Metodológicos</h3>
@@ -423,7 +423,7 @@ const Dissertacao = () => {
                   </div>
                 </div>
                 
-                <h3 className="bible-subtitle">Lowbyrinth™: The Labyrinth as Methodological Orientation</h3>
+                <h3 className="bible-subtitle">The Labyrinth as Methodological Orientation</h3>
                 <p className="bible-body">The concept of Lowbyrinth™ emerges organically from the creative process and acts as methodological guide for this research. It is a symbolic image that expresses improvised, non-linear and rhizomatic paths of collective making. The labyrinth is not an obstacle, but a field of creative possibilities that unfolds in fold, listening and deviation. A spiral crossing that welcomes error, improvisation and the constant reconfiguration of paths.</p>
                 
                 <h3 className="bible-subtitle">Three Methodological Procedures</h3>
@@ -588,9 +588,22 @@ const Dissertacao = () => {
 
         {/* Documentation - ÚLTIMA SEÇÃO */}
         <BilingualSection className="py-16">
-          <div className="bible-block-spacing">
-            <h2 className="bible-title">DOCUMENTATION</h2>
-            <h3 className="bible-subtitle mt-4">Documentos de Pesquisa / Research Documents</h3>
+          <div className="bilingual-grid bible-block-spacing">
+            <div className="bilingual-col">
+              <h2 className="bible-title">DOCUMENTAÇÃO</h2>
+            </div>
+            <div className="bilingual-col">
+              <h2 className="bible-title">DOCUMENTATION</h2>
+            </div>
+          </div>
+          
+          <div className="bilingual-grid mt-6">
+            <div className="bilingual-col">
+              <h3 className="bible-subtitle">DOCUMENTOS DE PESQUISA</h3>
+            </div>
+            <div className="bilingual-col">
+              <h3 className="bible-subtitle">RESEARCH DOCUMENTS</h3>
+            </div>
           </div>
 
           <div className="space-y-8 mt-8">
@@ -640,7 +653,14 @@ const Dissertacao = () => {
 
             {/* Dissertação - Coming Soon */}
             <div className="bg-card border-2 border-primary/50 rounded-lg p-8">
-              <h4 className="bible-body font-bold text-primary mb-4">Dissertação de Mestrado / Master's Dissertation</h4>
+              <div className="bilingual-grid mb-4">
+                <div className="bilingual-col">
+                  <h4 className="bible-body font-bold text-primary">Dissertação de Mestrado</h4>
+                </div>
+                <div className="bilingual-col">
+                  <h4 className="bible-body font-bold text-primary">Master's Dissertation</h4>
+                </div>
+              </div>
               <div className="bible-bilingual-grid">
                 <div>
                   <p className="bible-body text-muted-foreground">Depósito da dissertação de mestrado após aprovação em breve.</p>
