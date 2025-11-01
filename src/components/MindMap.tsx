@@ -119,10 +119,10 @@ export const MindMap = () => {
 
                     <div>
                       <p className="body-small text-foreground">
-                        <strong className="text-primary">2024:</strong> Início do Mestrado em Cinema e Artes do Vídeo (PPG-CINEAV/Unespar). Pesquisa sobre processos criativos do filme LowMovie™. Título: "LOWMOVIE™ E O LABIRINTO CRIATIVO: SUBJETIVIDADE, SUBCULTURA E A CONSTRUÇÃO DE UMA ESTÉTICA EM MOVIMENTO NO COLETIVO LOWPRESSURE™". Orientação: Prof. Dr. Fábio Jabur de Noronha.
+                        <strong className="text-primary">2024:</strong> Início do Mestrado em Cinema e Artes do Vídeo (PPG-CINEAV/Unespar) na linha de pesquisa "Processos de Criação no Cinema e nas Artes do Vídeo". Pesquisa sobre processos criativos do filme LowMovie™. Título: "LOWMOVIE™ E O LABIRINTO CRIATIVO: SUBJETIVIDADE, SUBCULTURA E A CONSTRUÇÃO DE UMA ESTÉTICA EM MOVIMENTO NO COLETIVO LOWPRESSURE™". Orientação: Prof. Dr. Fábio Jabur de Noronha.
                       </p>
                       <p className="body-small text-muted-foreground/70 italic">
-                        <strong>2024:</strong> Beginning of Master's in Cinema and Video Arts (PPG-CINEAV/Unespar). Research on creative processes of LowMovie™ film. Title: "LOWMOVIE™ AND THE CREATIVE LABYRINTH: SUBJECTIVITY, SUBCULTURE AND THE CONSTRUCTION OF AN AESTHETIC IN MOTION IN THE LOWPRESSURE™ COLLECTIVE". Advisor: Prof. Dr. Fábio Jabur de Noronha.
+                        <strong>2024:</strong> Beginning of Master's in Cinema and Video Arts (PPG-CINEAV/Unespar) in the research line "Creation Processes in Cinema and Video Arts". Research on creative processes of LowMovie™ film. Title: "LOWMOVIE™ AND THE CREATIVE LABYRINTH: SUBJECTIVITY, SUBCULTURE AND THE CONSTRUCTION OF AN AESTHETIC IN MOTION IN THE LOWPRESSURE™ COLLECTIVE". Advisor: Prof. Dr. Fábio Jabur de Noronha.
                       </p>
                     </div>
 
