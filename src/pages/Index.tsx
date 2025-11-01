@@ -1643,14 +1643,15 @@ const Index = () => {
                 </div>
               }
             />
-            <div className="mt-8 text-center">
-              <Button 
+            <div className="mt-8">
+              <button
                 onClick={() => setOracleOpen(true)}
-                className="mt-6"
-                size="lg"
+                className="w-full p-6 bg-card/80 hover:bg-primary/5 border-2 border-primary/30 hover:border-primary rounded-lg transition-all group"
               >
-                ACESSAR ORÁCULO | ACCESS ORACLE
-              </Button>
+                <p className="subtitle text-foreground group-hover:text-primary">
+                  ACESSAR ORÁCULO | ACCESS ORACLE
+                </p>
+              </button>
             </div>
           </div>
 

@@ -236,6 +236,44 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
                 <div>Connection</div>
                 <div>Method</div>
               </div>
+              
+              {/* Category descriptions */}
+              <div className="pt-4 space-y-3 border-t border-border/30">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
+                  <div className="space-y-1">
+                    <p className="body-small text-foreground/80">
+                      <strong className="text-primary">Sombras:</strong> O inconsciente como matéria-prima criativa
+                    </p>
+                    <p className="body-small text-muted-foreground/60 italic">
+                      <strong>Shadow:</strong> The unconscious as creative raw material
+                    </p>
+                  </div>
+                  <div className="space-y-1">
+                    <p className="body-small text-foreground/80">
+                      <strong className="text-primary">Ruptura:</strong> Destruição como gesto criativo
+                    </p>
+                    <p className="body-small text-muted-foreground/60 italic">
+                      <strong>Rupture:</strong> Destruction as creative gesture
+                    </p>
+                  </div>
+                  <div className="space-y-1">
+                    <p className="body-small text-foreground/80">
+                      <strong className="text-primary">Conexão:</strong> A criação como diálogo e escuta
+                    </p>
+                    <p className="body-small text-muted-foreground/60 italic">
+                      <strong>Connection:</strong> Creation as dialogue and listening
+                    </p>
+                  </div>
+                  <div className="space-y-1">
+                    <p className="body-small text-foreground/80">
+                      <strong className="text-primary">Método:</strong> Disciplina e rigor como estrutura
+                    </p>
+                    <p className="body-small text-muted-foreground/60 italic">
+                      <strong>Method:</strong> Discipline and rigor as structure
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <Button 
@@ -274,10 +312,11 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
           </DialogDescription>
           
           <div className="space-y-8 p-8">
-            {/* Audio Control */}
+            {/* Audio Control - moved to top-left */}
             <button
               onClick={toggleAudio}
-              className="absolute top-4 right-4 p-2 text-muted-foreground hover:text-foreground transition-colors z-20"
+              className="absolute top-4 left-4 p-2 text-muted-foreground hover:text-foreground transition-colors z-20"
+              aria-label="Toggle audio"
             >
               {audioMuted ? <VolumeX size={20} /> : <Volume2 size={20} />}
             </button>
@@ -405,10 +444,11 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
         </DialogDescription>
         
         <div className="space-y-6 p-8">
-          {/* Audio Control */}
+          {/* Audio Control - moved to top-left */}
           <button
             onClick={toggleAudio}
-            className="absolute top-4 right-4 p-2 text-muted-foreground hover:text-foreground transition-colors z-20"
+            className="absolute top-4 left-4 p-2 text-muted-foreground hover:text-foreground transition-colors z-20"
+            aria-label="Toggle audio"
           >
             {audioMuted ? <VolumeX size={20} /> : <Volume2 size={20} />}
           </button>
