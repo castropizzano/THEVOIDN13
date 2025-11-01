@@ -730,68 +730,6 @@ const Autor = () => {
           </div>
         </BilingualSection>
 
-        {/* Documentation Section */}
-        <BilingualSection bgClassName="bg-card/50">
-          <div className="space-y-16">
-            <div className="space-y-4">
-              <h2 className="heading-1">Documentation</h2>
-              <h3 className="heading-4 text-primary">Documentos de Pesquisa / Research Documents</h3>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-card border border-border rounded-lg p-6">
-                <div className="flex justify-between items-start mb-4">
-                  <h4 className="text-lg font-bold">CasaTrezeStudio®</h4>
-                  <svg className="w-5 h-5 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                  </svg>
-                </div>
-                <a 
-                  href="/documents/Release_CasaTrezeStudio.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-primary hover:underline block mb-2"
-                >
-                  Release CasaTrezeStudio® / CasaTrezeStudio® Release
-                </a>
-                <a 
-                  href="https://casatrezestudio.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-muted-foreground hover:text-primary hover:underline transition-colors"
-                >
-                  https://casatrezestudio.com/
-                </a>
-              </div>
-
-              <div className="bg-card border border-border rounded-lg p-6">
-                <div className="flex justify-between items-start mb-4">
-                  <h4 className="text-lg font-bold">Jornada do Autor / Author Journey</h4>
-                  <svg className="w-5 h-5 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                  </svg>
-                </div>
-                <a 
-                  href="http://lattes.cnpq.br/5523516994010198"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-primary hover:underline block mb-2"
-                >
-                  Currículo Lattes / Lattes CV
-                </a>
-                <a 
-                  href="/documents/Memorial_Academico_v3.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-primary hover:underline block"
-                >
-                  Memorial Acadêmico / Academic Memorial
-                </a>
-              </div>
-            </div>
-          </div>
-        </BilingualSection>
-
         {/* Conclusion Section */}
         <BilingualSection bgClassName="bg-gradient-to-b from-background via-primary/5 to-background" className="py-32">
           <div className="space-y-16">
@@ -992,6 +930,68 @@ const Autor = () => {
                 </div>
               }
             />
+          </div>
+        </BilingualSection>
+
+        {/* Documentation Section - ÚLTIMA SEÇÃO */}
+        <BilingualSection bgClassName="bg-card/50">
+          <div className="space-y-16">
+            <div className="space-y-4">
+              <h2 className="heading-1">Documentation</h2>
+              <h3 className="heading-4 text-primary">Documentos de Pesquisa / Research Documents</h3>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-card border border-border rounded-lg p-6">
+                <div className="flex justify-between items-start mb-4">
+                  <h4 className="text-lg font-bold">CasaTrezeStudio®</h4>
+                  <svg className="w-5 h-5 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <a 
+                  href="/documents/Release_CasaTrezeStudio.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-primary hover:underline block mb-2"
+                >
+                  Release CasaTrezeStudio® / CasaTrezeStudio® Release
+                </a>
+                <a 
+                  href="https://casatrezestudio.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted-foreground hover:text-primary hover:underline transition-colors"
+                >
+                  https://casatrezestudio.com/
+                </a>
+              </div>
+
+              <div className="bg-card border border-border rounded-lg p-6">
+                <div className="flex justify-between items-start mb-4">
+                  <h4 className="text-lg font-bold">Jornada do Autor / Author Journey</h4>
+                  <svg className="w-5 h-5 text-muted-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <a 
+                  href="http://lattes.cnpq.br/5523516994010198"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-primary hover:underline block mb-2"
+                >
+                  Currículo Lattes / Lattes CV
+                </a>
+                <a 
+                  href="/documents/Memorial_Academico_v3.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-primary hover:underline block"
+                >
+                  Memorial Acadêmico / Academic Memorial
+                </a>
+              </div>
+            </div>
           </div>
         </BilingualSection>
       </main>
