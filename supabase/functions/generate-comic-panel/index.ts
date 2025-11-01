@@ -23,7 +23,7 @@ serve(async (req) => {
 
     const trimmedScript = script.trim();
     
-    // Enforce strict length limits (increased to accommodate system prompt + scene prompt)
+    // Validate minimum length
     if (trimmedScript.length < 10) {
       return new Response(
         JSON.stringify({ error: "Script too short (minimum 10 characters)" }),
@@ -31,9 +31,11 @@ serve(async (req) => {
       );
     }
 
-    if (trimmedScript.length > 10000) {
+    // Generous maximum to accommodate Bible (system prompt) + Scene prompts
+    // Bible alone is ~5000 chars, scene prompts ~2000 chars = ~7000 total
+    if (trimmedScript.length > 15000) {
       return new Response(
-        JSON.stringify({ error: "Script too long (maximum 10000 characters)" }),
+        JSON.stringify({ error: "Script too long (maximum 15000 characters)" }),
         { headers: { ...corsHeaders, 'Content-Type': 'application/json' }, status: 400 }
       );
     }
