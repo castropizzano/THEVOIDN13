@@ -1718,13 +1718,13 @@ const Index = () => {
             portugueseContent={
               <>
                 <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
-                <h2 className="bible-title">13. PARADOXO EXISTENCIAL (O CRIADOR E A SOMBRA)</h2>
+                <h2 className="bible-title">13. PARADOXO EXISTENCIAL</h2>
               </>
             }
             englishContent={
               <>
                 <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
-                <h2 className="bible-title">13. EXISTENTIAL PARADOX (THE CREATOR AND THE SHADOW)</h2>
+                <h2 className="bible-title">13. EXISTENTIAL PARADOX</h2>
               </>
             }
           />
