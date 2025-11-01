@@ -17,10 +17,11 @@ interface Prompt {
   prompt_text: string;
 }
 
-const scriptSchema = z.string()
+// Validation for custom prompts only (library prompts are pre-validated)
+const customScriptSchema = z.string()
   .trim()
-  .min(10, "Roteiro muito curto (mín. 10 caracteres) / Script too short (min 10 chars)")
-  .max(2000, "Roteiro muito longo (máx. 2000 caracteres) / Script too long (max 2000 chars)");
+  .min(50, "Descrição muito curta (mín. 50 caracteres) / Description too short (min 50 chars)")
+  .max(1500, "Descrição muito longa (máx. 1500 caracteres) / Description too long (max 1500 chars)");
 
 export const ComicGenerator = () => {
   const [script, setScript] = useState("");
@@ -72,20 +73,22 @@ export const ComicGenerator = () => {
   };
 
   const handleGenerate = async () => {
-    // Choose the appropriate script based on mode
-    const scriptToValidate = promptMode === "library" ? script : customScript;
-    
-    // Validate input
-    const validation = scriptSchema.safeParse(scriptToValidate);
-    if (!validation.success) {
-      toast.error(validation.error.errors[0].message);
-      return;
+    // Validate only custom scripts (library prompts are pre-validated)
+    if (promptMode === "custom") {
+      const validation = customScriptSchema.safeParse(customScript);
+      if (!validation.success) {
+        toast.error(validation.error.errors[0].message);
+        return;
+      }
     }
 
     if (!systemPrompt) {
       toast.error("System prompt não carregado / System prompt not loaded");
       return;
     }
+
+    // Use the appropriate script
+    const scriptToUse = promptMode === "library" ? script : customScript;
 
     setIsGenerating(true);
     setGeneratedImage(null);
@@ -94,8 +97,8 @@ export const ComicGenerator = () => {
       // For custom mode, combine system prompt with custom script
       // For library mode, the script already includes the full scene prompt
       const fullPrompt = promptMode === "custom" 
-        ? `${systemPrompt}\n\n---\n\n${validation.data}`
-        : `${systemPrompt}\n\n---\n\n${validation.data}`;
+        ? `${systemPrompt}\n\n---\n\n${scriptToUse}`
+        : `${systemPrompt}\n\n---\n\n${scriptToUse}`;
 
       const { data, error } = await supabase.functions.invoke("generate-comic-panel", {
         body: { 
@@ -208,9 +211,20 @@ export const ComicGenerator = () => {
 
           <TabsContent value="custom" className="space-y-4 mt-4">
             <div className="space-y-2">
-              <label className="text-sm font-medium">
-                Criar Prompt Personalizado / Create Custom Prompt
-              </label>
+              <div className="flex justify-between items-center">
+                <label className="text-sm font-medium">
+                  Criar Prompt Personalizado / Create Custom Prompt
+                </label>
+                <span className={`text-xs font-mono ${
+                  customScript.length < 50 
+                    ? 'text-destructive' 
+                    : customScript.length > 1500 
+                    ? 'text-destructive' 
+                    : 'text-muted-foreground'
+                }`}>
+                  {customScript.length}/1500
+                </span>
+              </div>
               <Textarea
                 placeholder="Descreva sua cena seguindo o estilo THEVØIDN13. As System Instructions (Shadow Interface Bible v13) serão aplicadas automaticamente..."
                 value={customScript}
@@ -218,14 +232,19 @@ export const ComicGenerator = () => {
                 className="min-h-[200px] font-mono text-sm"
                 disabled={isGenerating}
               />
-              <p className="text-xs text-muted-foreground">
-                <strong>Dica:</strong> Descreva a cena, personagens, iluminação e atmosfera. 
-                As regras canônicas do universo THEVØIDN13 serão automaticamente aplicadas.
-              </p>
-              <p className="text-xs text-muted-foreground">
-                <strong>Tip:</strong> Describe the scene, characters, lighting and atmosphere. 
-                The canonical THEVØIDN13 universe rules will be automatically applied.
-              </p>
+              <div className="space-y-1">
+                <p className="text-xs text-muted-foreground">
+                  <strong>⚠️ Limites / Limits:</strong> Mínimo 50 caracteres / Minimum 50 chars • Máximo 1500 caracteres / Maximum 1500 chars
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  <strong>Dica:</strong> Descreva a cena, personagens, iluminação e atmosfera. 
+                  As regras canônicas do universo THEVØIDN13 serão automaticamente aplicadas.
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  <strong>Tip:</strong> Describe the scene, characters, lighting and atmosphere. 
+                  The canonical THEVØIDN13 universe rules will be automatically applied.
+                </p>
+              </div>
             </div>
           </TabsContent>
         </Tabs>
