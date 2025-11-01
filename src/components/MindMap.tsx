@@ -340,7 +340,7 @@ export const MindMap = () => {
 
             {/* Mind Map Diagram */}
             <div className="w-full">
-              <svg viewBox="0 0 1200 1600" className="w-full h-auto" preserveAspectRatio="xMidYMid meet">
+              <svg viewBox="0 0 1200 1750" className="w-full h-auto" preserveAspectRatio="xMidYMid meet">
                 <defs>
                   <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" style={{ stopColor: "hsl(var(--primary))", stopOpacity: 0.9 }} />
@@ -358,228 +358,242 @@ export const MindMap = () => {
 
                 {/* Central Node */}
                 <g>
-                  <rect x="420" y="40" width="360" height="80" fill="url(#primaryGrad)" rx="6" />
-                  <text x="600" y="75" textAnchor="middle" fill="hsl(var(--primary-foreground))" fontSize="22" fontWeight="bold">
+                  <rect x="420" y="50" width="360" height="90" fill="url(#primaryGrad)" rx="8" />
+                  <text x="600" y="85" textAnchor="middle" fill="hsl(var(--primary-foreground))" fontSize="26" fontWeight="bold">
                     THEVØIDN13
                   </text>
-                  <text x="600" y="95" textAnchor="middle" fill="hsl(var(--primary-foreground))" fontSize="10" opacity="0.8">
-                    Memorial Artístico • Artistic Memorial
+                  <text x="600" y="110" textAnchor="middle" fill="hsl(var(--primary-foreground))" fontSize="12" opacity="0.9">
+                    Memorial Artístico · Artistic Memorial
+                  </text>
+                  <text x="600" y="128" textAnchor="middle" fill="hsl(var(--primary-foreground))" fontSize="10" opacity="0.7">
+                    2024-2025+
                   </text>
                 </g>
 
                 {/* 4 Main Branches */}
                 {/* Top Left - CONCEITUAL */}
-                <line x1="420" y1="120" x2="200" y2="220" stroke="hsl(var(--primary))" strokeWidth="2" opacity="0.5" />
-                <rect x="50" y="200" width="300" height="55" fill="url(#primaryGrad)" rx="6" />
-                <text x="200" y="225" textAnchor="middle" fill="hsl(var(--primary-foreground))" fontSize="16" fontWeight="bold">
+                <line x1="420" y1="95" x2="200" y2="230" stroke="hsl(var(--primary))" strokeWidth="3" opacity="0.6" />
+                <rect x="50" y="210" width="300" height="60" fill="url(#primaryGrad)" rx="8" />
+                <text x="200" y="240" textAnchor="middle" fill="hsl(var(--primary-foreground))" fontSize="18" fontWeight="bold">
                   CONCEITUAL
                 </text>
-                <text x="200" y="242" textAnchor="middle" fill="hsl(var(--primary-foreground))" fontSize="9" opacity="0.8">
-                  Foundations • Fundamentos
+                <text x="200" y="258" textAnchor="middle" fill="hsl(var(--primary-foreground))" fontSize="10" opacity="0.85">
+                  Foundations · Fundamentos
                 </text>
 
                 {/* Sub-items CONCEITUAL */}
-                <rect x="60" y="275" width="130" height="90" fill="hsl(var(--card))" stroke="hsl(var(--primary))" strokeWidth="1.5" rx="6" />
-                <text x="125" y="295" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="11" fontWeight="bold">Shadow Interface</text>
-                <text x="125" y="310" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Anti-brand aesthetic</text>
-                <text x="125" y="323" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Low culture punk</text>
-                <text x="125" y="336" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Subcultural resistance</text>
-                <text x="125" y="349" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7" opacity="0.6">Shadow Interface Bible</text>
-                <text x="125" y="358" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7" opacity="0.6">v13</text>
+                <rect x="60" y="295" width="130" height="105" fill="hsl(var(--card))" stroke="hsl(var(--primary))" strokeWidth="2" rx="6" />
+                <text x="125" y="318" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="12" fontWeight="bold">Shadow Interface</text>
+                <text x="125" y="336" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="9">• Anti-brand aesthetic</text>
+                <text x="125" y="352" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="9">• Low culture punk</text>
+                <text x="125" y="368" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="9">• Subcultural resistance</text>
+                <text x="125" y="388" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8" opacity="0.6">Shadow Interface Bible v13</text>
 
-                <rect x="210" y="275" width="130" height="90" fill="hsl(var(--card))" stroke="hsl(var(--primary))" strokeWidth="1.5" rx="6" />
-                <text x="275" y="295" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="11" fontWeight="bold">Lowbyrinth™</text>
-                <text x="275" y="310" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Navegação não-linear</text>
-                <text x="275" y="323" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Labirinto periférico</text>
-                <text x="275" y="336" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Memória fragmentada</text>
-                <text x="275" y="349" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7" opacity="0.6">PHILOSOPHY.md</text>
+                <rect x="210" y="295" width="130" height="105" fill="hsl(var(--card))" stroke="hsl(var(--primary))" strokeWidth="2" rx="6" />
+                <text x="275" y="318" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="12" fontWeight="bold">Lowbyrinth™</text>
+                <text x="275" y="336" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="9">• Navegação não-linear</text>
+                <text x="275" y="352" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="9">• Labirinto periférico</text>
+                <text x="275" y="368" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="9">• Memória fragmentada</text>
+                <text x="275" y="388" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8" opacity="0.6">PHILOSOPHY.md</text>
 
-                <line x1="200" y1="255" x2="125" y2="275" stroke="hsl(var(--primary))" strokeWidth="1" opacity="0.4" />
-                <line x1="200" y1="255" x2="275" y2="275" stroke="hsl(var(--primary))" strokeWidth="1" opacity="0.4" />
+                <line x1="200" y1="270" x2="125" y2="295" stroke="hsl(var(--primary))" strokeWidth="1.5" opacity="0.5" />
+                <line x1="200" y1="270" x2="275" y2="295" stroke="hsl(var(--primary))" strokeWidth="1.5" opacity="0.5" />
 
                 {/* Top Right - METODOLÓGICO */}
-                <line x1="780" y1="120" x2="1000" y2="220" stroke="hsl(var(--accent))" strokeWidth="2" opacity="0.5" />
-                <rect x="850" y="200" width="300" height="55" fill="url(#accentGrad)" rx="6" />
-                <text x="1000" y="225" textAnchor="middle" fill="hsl(var(--accent-foreground))" fontSize="16" fontWeight="bold">
+                <line x1="780" y1="95" x2="1000" y2="230" stroke="hsl(var(--accent))" strokeWidth="3" opacity="0.6" />
+                <rect x="850" y="210" width="300" height="60" fill="url(#accentGrad)" rx="8" />
+                <text x="1000" y="240" textAnchor="middle" fill="hsl(var(--accent-foreground))" fontSize="18" fontWeight="bold">
                   METODOLÓGICO
                 </text>
-                <text x="1000" y="242" textAnchor="middle" fill="hsl(var(--accent-foreground))" fontSize="9" opacity="0.8">
-                  Process • Processo
+                <text x="1000" y="258" textAnchor="middle" fill="hsl(var(--accent-foreground))" fontSize="10" opacity="0.85">
+                  Process · Processo
                 </text>
 
                 {/* Sub-items METODOLÓGICO */}
-                <rect x="860" y="275" width="130" height="90" fill="hsl(var(--card))" stroke="hsl(var(--accent))" strokeWidth="1.5" rx="6" />
-                <text x="925" y="295" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="11" fontWeight="bold">5 Etapas</text>
-                <text x="925" y="310" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">01. Observação</text>
-                <text x="925" y="323" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">02. Co-criação</text>
-                <text x="925" y="336" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">03. Documentação</text>
-                <text x="925" y="349" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">04. Reflexão</text>
-                <text x="925" y="360" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7" opacity="0.6">05. Expansão</text>
+                <rect x="860" y="295" width="130" height="115" fill="hsl(var(--card))" stroke="hsl(var(--accent))" strokeWidth="2" rx="6" />
+                <text x="925" y="318" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="12" fontWeight="bold">5 Etapas</text>
+                <text x="925" y="336" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="9">01. Observação</text>
+                <text x="925" y="352" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="9">02. Co-criação</text>
+                <text x="925" y="368" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="9">03. Documentação</text>
+                <text x="925" y="384" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="9">04. Reflexão</text>
+                <text x="925" y="400" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8" opacity="0.7">05. Expansão</text>
 
-                <rect x="1010" y="275" width="130" height="90" fill="hsl(var(--card))" stroke="hsl(var(--accent))" strokeWidth="1.5" rx="6" />
-                <text x="1075" y="295" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="11" fontWeight="bold">PPG-CINEAV</text>
-                <text x="1075" y="310" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Mestrado UFF</text>
-                <text x="1075" y="323" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Memorial artístico</text>
-                <text x="1075" y="336" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Práxis híbrida</text>
-                <text x="1075" y="349" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Cinema + Video Art</text>
-                <text x="1075" y="360" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7" opacity="0.6">2023-2025</text>
+                <rect x="1010" y="295" width="130" height="115" fill="hsl(var(--card))" stroke="hsl(var(--accent))" strokeWidth="2" rx="6" />
+                <text x="1075" y="318" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="12" fontWeight="bold">PPG-CINEAV</text>
+                <text x="1075" y="336" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="9">• Mestrado Unespar</text>
+                <text x="1075" y="352" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="9">• Memorial artístico</text>
+                <text x="1075" y="368" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="9">• Metodologia coletiva</text>
+                <text x="1075" y="384" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="9">• Cinema + Video Art</text>
+                <text x="1075" y="400" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8" opacity="0.7">2024-2026</text>
 
-                <line x1="1000" y1="255" x2="925" y2="275" stroke="hsl(var(--accent))" strokeWidth="1" opacity="0.4" />
-                <line x1="1000" y1="255" x2="1075" y2="275" stroke="hsl(var(--accent))" strokeWidth="1" opacity="0.4" />
+                <line x1="1000" y1="270" x2="925" y2="295" stroke="hsl(var(--accent))" strokeWidth="1.5" opacity="0.5" />
+                <line x1="1000" y1="270" x2="1075" y2="295" stroke="hsl(var(--accent))" strokeWidth="1.5" opacity="0.5" />
 
                 {/* Bottom Left - TÉCNICO */}
-                <line x1="420" y1="120" x2="200" y2="430" stroke="hsl(var(--secondary))" strokeWidth="2" opacity="0.5" />
-                <rect x="50" y="410" width="300" height="55" fill="url(#secondaryGrad)" rx="6" />
-                <text x="200" y="435" textAnchor="middle" fill="hsl(var(--secondary-foreground))" fontSize="16" fontWeight="bold">
+                <line x1="420" y1="140" x2="200" y2="460" stroke="hsl(var(--secondary))" strokeWidth="3" opacity="0.6" />
+                <rect x="50" y="440" width="300" height="60" fill="url(#secondaryGrad)" rx="8" />
+                <text x="200" y="470" textAnchor="middle" fill="hsl(var(--secondary-foreground))" fontSize="18" fontWeight="bold">
                   TÉCNICO
                 </text>
-                <text x="200" y="452" textAnchor="middle" fill="hsl(var(--secondary-foreground))" fontSize="9" opacity="0.8">
-                  Technology • Tecnologia
+                <text x="200" y="488" textAnchor="middle" fill="hsl(var(--secondary-foreground))" fontSize="10" opacity="0.85">
+                  Technology · Tecnologia
                 </text>
 
-                {/* Sub-items TÉCNICO - 3 boxes compactas */}
-                <rect x="60" y="485" width="80" height="100" fill="hsl(var(--card))" stroke="hsl(var(--secondary))" strokeWidth="1.5" rx="6" />
-                <text x="100" y="502" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="10" fontWeight="bold">AI</text>
-                <text x="100" y="517" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• Gemini</text>
-                <text x="100" y="529" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• Claude</text>
-                <text x="100" y="541" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• GPT-5</text>
-                <text x="100" y="553" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• Midjourney</text>
-                <text x="100" y="565" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• Firefly</text>
-                <text x="100" y="577" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• Lovable</text>
+                {/* Sub-items TÉCNICO */}
+                <rect x="60" y="525" width="85" height="115" fill="hsl(var(--card))" stroke="hsl(var(--secondary))" strokeWidth="2" rx="6" />
+                <text x="102" y="546" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="11" fontWeight="bold">AI</text>
+                <text x="102" y="563" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Gemini 2.5</text>
+                <text x="102" y="577" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Claude 3.7</text>
+                <text x="102" y="591" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• GPT-5</text>
+                <text x="102" y="605" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Midjourney v6</text>
+                <text x="102" y="619" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Adobe Firefly</text>
+                <text x="102" y="633" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7" opacity="0.7">Lovable AI</text>
 
-                <rect x="160" y="485" width="80" height="100" fill="hsl(var(--card))" stroke="hsl(var(--secondary))" strokeWidth="1.5" rx="6" />
-                <text x="200" y="502" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="10" fontWeight="bold">Design</text>
-                <text x="200" y="517" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• Adobe CC</text>
-                <text x="200" y="529" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• Photoshop</text>
-                <text x="200" y="541" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• Illustrator</text>
-                <text x="200" y="553" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• After Effects</text>
-                <text x="200" y="565" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• DaVinci</text>
-                <text x="200" y="577" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• Figma</text>
+                <rect x="160" y="525" width="85" height="115" fill="hsl(var(--card))" stroke="hsl(var(--secondary))" strokeWidth="2" rx="6" />
+                <text x="202" y="546" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="11" fontWeight="bold">Design</text>
+                <text x="202" y="563" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Adobe CC</text>
+                <text x="202" y="577" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Photoshop</text>
+                <text x="202" y="591" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Illustrator</text>
+                <text x="202" y="605" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• After Effects</text>
+                <text x="202" y="619" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• DaVinci</text>
+                <text x="202" y="633" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7" opacity="0.7">ElevenLabs</text>
 
-                <rect x="260" y="485" width="80" height="100" fill="hsl(var(--card))" stroke="hsl(var(--secondary))" strokeWidth="1.5" rx="6" />
-                <text x="300" y="502" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="10" fontWeight="bold">Dev</text>
-                <text x="300" y="517" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• React</text>
-                <text x="300" y="529" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• TypeScript</text>
-                <text x="300" y="541" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• Tailwind</text>
-                <text x="300" y="553" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• Supabase</text>
-                <text x="300" y="565" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• PostgreSQL</text>
-                <text x="300" y="577" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• GitHub</text>
+                <rect x="260" y="525" width="85" height="115" fill="hsl(var(--card))" stroke="hsl(var(--secondary))" strokeWidth="2" rx="6" />
+                <text x="302" y="546" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="11" fontWeight="bold">Dev</text>
+                <text x="302" y="563" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• React + TS</text>
+                <text x="302" y="577" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Tailwind CSS</text>
+                <text x="302" y="591" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Vite</text>
+                <text x="302" y="605" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Supabase</text>
+                <text x="302" y="619" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• PostgreSQL</text>
+                <text x="302" y="633" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7" opacity="0.7">GitHub</text>
 
-                <line x1="200" y1="465" x2="100" y2="485" stroke="hsl(var(--secondary))" strokeWidth="1" opacity="0.4" />
-                <line x1="200" y1="465" x2="200" y2="485" stroke="hsl(var(--secondary))" strokeWidth="1" opacity="0.4" />
-                <line x1="200" y1="465" x2="300" y2="485" stroke="hsl(var(--secondary))" strokeWidth="1" opacity="0.4" />
+                <line x1="200" y1="500" x2="102" y2="525" stroke="hsl(var(--secondary))" strokeWidth="1.5" opacity="0.5" />
+                <line x1="200" y1="500" x2="202" y2="525" stroke="hsl(var(--secondary))" strokeWidth="1.5" opacity="0.5" />
+                <line x1="200" y1="500" x2="302" y2="525" stroke="hsl(var(--secondary))" strokeWidth="1.5" opacity="0.5" />
 
                 {/* Bottom Right - OUTPUTS */}
-                <line x1="780" y1="120" x2="1000" y2="430" stroke="hsl(var(--primary))" strokeWidth="2" opacity="0.5" />
-                <rect x="850" y="410" width="300" height="55" fill="url(#primaryGrad)" rx="6" />
-                <text x="1000" y="435" textAnchor="middle" fill="hsl(var(--primary-foreground))" fontSize="16" fontWeight="bold">
+                <line x1="780" y1="140" x2="1000" y2="460" stroke="hsl(var(--primary))" strokeWidth="3" opacity="0.6" />
+                <rect x="850" y="440" width="300" height="60" fill="url(#primaryGrad)" rx="8" />
+                <text x="1000" y="470" textAnchor="middle" fill="hsl(var(--primary-foreground))" fontSize="18" fontWeight="bold">
                   OUTPUTS
                 </text>
-                <text x="1000" y="452" textAnchor="middle" fill="hsl(var(--primary-foreground))" fontSize="9" opacity="0.8">
-                  Deliverables • Entregas
+                <text x="1000" y="488" textAnchor="middle" fill="hsl(var(--primary-foreground))" fontSize="10" opacity="0.85">
+                  Deliverables · Entregas
                 </text>
 
-                {/* Sub-items OUTPUTS - 3 boxes compactas */}
-                <rect x="860" y="485" width="80" height="100" fill="hsl(var(--card))" stroke="hsl(var(--primary))" strokeWidth="1.5" rx="6" />
-                <text x="900" y="502" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="10" fontWeight="bold">Visual</text>
-                <text x="900" y="517" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• Crew</text>
-                <text x="900" y="529" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• Máscaras</text>
-                <text x="900" y="541" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• Void City</text>
-                <text x="900" y="553" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• Action figs</text>
-                <text x="900" y="565" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• Low aesthetic</text>
-                <text x="900" y="577" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">700+ images</text>
+                {/* Sub-items OUTPUTS */}
+                <rect x="860" y="525" width="85" height="115" fill="hsl(var(--card))" stroke="hsl(var(--primary))" strokeWidth="2" rx="6" />
+                <text x="902" y="546" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="11" fontWeight="bold">Visual</text>
+                <text x="902" y="563" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Crew</text>
+                <text x="902" y="577" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Máscaras</text>
+                <text x="902" y="591" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Void City</text>
+                <text x="902" y="605" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Action figs</text>
+                <text x="902" y="619" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Low aesthetic</text>
+                <text x="902" y="633" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7" opacity="0.7">700+ images</text>
 
-                <rect x="960" y="485" width="80" height="100" fill="hsl(var(--card))" stroke="hsl(var(--primary))" strokeWidth="1.5" rx="6" />
-                <text x="1000" y="502" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="10" fontWeight="bold">Digital</text>
-                <text x="1000" y="517" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• Oráculo</text>
-                <text x="1000" y="529" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• Generator</text>
-                <text x="1000" y="541" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• Prompt Lib</text>
-                <text x="1000" y="553" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• Website</text>
-                <text x="1000" y="565" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• MindMap</text>
-                <text x="1000" y="577" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• Timeline</text>
+                <rect x="960" y="525" width="85" height="115" fill="hsl(var(--card))" stroke="hsl(var(--primary))" strokeWidth="2" rx="6" />
+                <text x="1002" y="546" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="11" fontWeight="bold">Digital</text>
+                <text x="1002" y="563" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Oráculo</text>
+                <text x="1002" y="577" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Generator</text>
+                <text x="1002" y="591" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Prompt Lib</text>
+                <text x="1002" y="605" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Website</text>
+                <text x="1002" y="619" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• MindMap</text>
+                <text x="1002" y="633" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7" opacity="0.7">Timeline</text>
 
-                <rect x="1060" y="485" width="80" height="100" fill="hsl(var(--card))" stroke="hsl(var(--primary))" strokeWidth="1.5" rx="6" />
-                <text x="1100" y="502" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="10" fontWeight="bold">Academic</text>
-                <text x="1100" y="517" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• Memorial</text>
-                <text x="1100" y="529" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• Brandbooks</text>
-                <text x="1100" y="541" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• Bible v13</text>
-                <text x="1100" y="553" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• Dissertação</text>
-                <text x="1100" y="565" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• PDFs</text>
-                <text x="1100" y="577" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">• Áudios</text>
+                <rect x="1060" y="525" width="85" height="115" fill="hsl(var(--card))" stroke="hsl(var(--primary))" strokeWidth="2" rx="6" />
+                <text x="1102" y="546" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="11" fontWeight="bold">Academic</text>
+                <text x="1102" y="563" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Memorial</text>
+                <text x="1102" y="577" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Brandbooks</text>
+                <text x="1102" y="591" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Bible v13</text>
+                <text x="1102" y="605" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• Dissertação</text>
+                <text x="1102" y="619" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">• PDFs</text>
+                <text x="1102" y="633" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7" opacity="0.7">Áudios</text>
 
-                <line x1="1000" y1="465" x2="900" y2="485" stroke="hsl(var(--primary))" strokeWidth="1" opacity="0.4" />
-                <line x1="1000" y1="465" x2="1000" y2="485" stroke="hsl(var(--primary))" strokeWidth="1" opacity="0.4" />
-                <line x1="1000" y1="465" x2="1100" y2="485" stroke="hsl(var(--primary))" strokeWidth="1" opacity="0.4" />
+                <line x1="1000" y1="500" x2="902" y2="525" stroke="hsl(var(--primary))" strokeWidth="1.5" opacity="0.5" />
+                <line x1="1000" y1="500" x2="1002" y2="525" stroke="hsl(var(--primary))" strokeWidth="1.5" opacity="0.5" />
+                <line x1="1000" y1="500" x2="1102" y2="525" stroke="hsl(var(--primary))" strokeWidth="1.5" opacity="0.5" />
 
                 {/* Timeline Compact */}
                 <g>
-                  <rect x="100" y="650" width="1000" height="90" fill="hsl(var(--muted))" opacity="0.2" rx="8" />
-                  <text x="600" y="675" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="13" fontWeight="bold">
-                    CRONOLOGIA / TIMELINE 2023 — 2025+
+                  <rect x="100" y="700" width="1000" height="110" fill="hsl(var(--muted))" opacity="0.25" rx="10" />
+                  <text x="600" y="730" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="15" fontWeight="bold">
+                    CRONOLOGIA · TIMELINE 2024 — 2025+
                   </text>
                   
-                  <line x1="150" y1="710" x2="1050" y2="710" stroke="hsl(var(--primary))" strokeWidth="2" opacity="0.4" />
+                  <line x1="150" y1="770" x2="1050" y2="770" stroke="hsl(var(--primary))" strokeWidth="3" opacity="0.5" />
                   
-                  <rect x="194" y="704" width="12" height="12" fill="hsl(var(--primary))" />
-                  <text x="200" y="695" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="8">Out-Dez 23</text>
-                  <text x="200" y="728" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="6">Burnout</text>
+                  <rect x="244" y="763" width="14" height="14" fill="hsl(var(--primary))" rx="2" />
+                  <text x="251" y="752" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="9" fontWeight="600">Out-Dez 24</text>
+                  <text x="251" y="792" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">Crise + THEVØID</text>
                   
-                  <rect x="444" y="704" width="12" height="12" fill="hsl(var(--accent))" />
-                  <text x="450" y="695" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="8">Jan-Jun 24</text>
-                  <text x="450" y="728" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="6">Bible v1</text>
+                  <rect x="494" y="763" width="14" height="14" fill="hsl(var(--accent))" rx="2" />
+                  <text x="501" y="752" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="9" fontWeight="600">Out 24 - Out 25</text>
+                  <text x="501" y="792" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">Portal + Bible</text>
                   
-                  <rect x="694" y="704" width="12" height="12" fill="hsl(var(--secondary))" />
-                  <text x="700" y="695" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="8">Jul-Dez 24</text>
-                  <text x="700" y="728" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="6">Brandbooks</text>
+                  <rect x="744" y="763" width="14" height="14" fill="hsl(var(--secondary))" rx="2" />
+                  <text x="751" y="752" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="9" fontWeight="600">2024-2026</text>
+                  <text x="751" y="792" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">Mestrado</text>
                   
-                  <rect x="944" y="704" width="12" height="12" fill="hsl(var(--primary))" />
-                  <text x="950" y="695" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="8">Jan 25+</text>
-                  <text x="950" y="728" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="6">Website</text>
+                  <rect x="994" y="763" width="14" height="14" fill="hsl(var(--primary))" rx="2" />
+                  <text x="1001" y="752" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="9" fontWeight="600">31/10/25</text>
+                  <text x="1001" y="792" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">Publicação</text>
                 </g>
 
                 {/* Hub connections */}
-                <g opacity="0.15">
-                  <line x1="600" y1="120" x2="200" y2="650" stroke="hsl(var(--primary))" strokeWidth="1" strokeDasharray="4,4" />
-                  <line x1="600" y1="120" x2="450" y2="650" stroke="hsl(var(--accent))" strokeWidth="1" strokeDasharray="4,4" />
-                  <line x1="600" y1="120" x2="700" y2="650" stroke="hsl(var(--secondary))" strokeWidth="1" strokeDasharray="4,4" />
-                  <line x1="600" y1="120" x2="950" y2="650" stroke="hsl(var(--primary))" strokeWidth="1" strokeDasharray="4,4" />
+                <g opacity="0.12">
+                  <line x1="600" y1="140" x2="251" y2="700" stroke="hsl(var(--primary))" strokeWidth="1" strokeDasharray="5,5" />
+                  <line x1="600" y1="140" x2="501" y2="700" stroke="hsl(var(--accent))" strokeWidth="1" strokeDasharray="5,5" />
+                  <line x1="600" y1="140" x2="751" y2="700" stroke="hsl(var(--secondary))" strokeWidth="1" strokeDasharray="5,5" />
+                  <line x1="600" y1="140" x2="1001" y2="700" stroke="hsl(var(--primary))" strokeWidth="1" strokeDasharray="5,5" />
                 </g>
 
-                {/* Legend compacta */}
+                {/* Legend */}
                 <g>
-                  <text x="600" y="820" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="9" fontWeight="bold">LEGENDA / LEGEND</text>
-                  <rect x="450" y="830" width="60" height="12" fill="url(#primaryGrad)" rx="2" />
-                  <text x="515" y="840" fill="hsl(var(--foreground))" fontSize="7">Conceitual</text>
+                  <text x="600" y="870" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="11" fontWeight="bold">LEGENDA · LEGEND</text>
+                  <rect x="430" y="885" width="70" height="16" fill="url(#primaryGrad)" rx="3" />
+                  <text x="505" y="897" fill="hsl(var(--foreground))" fontSize="9">Conceitual</text>
                   
-                  <rect x="590" y="830" width="60" height="12" fill="url(#accentGrad)" rx="2" />
-                  <text x="655" y="840" fill="hsl(var(--foreground))" fontSize="7">Metodológico</text>
+                  <rect x="570" y="885" width="70" height="16" fill="url(#accentGrad)" rx="3" />
+                  <text x="645" y="897" fill="hsl(var(--foreground))" fontSize="9">Metodológico</text>
                   
-                  <rect x="730" y="830" width="60" height="12" fill="url(#secondaryGrad)" rx="2" />
-                  <text x="795" y="840" fill="hsl(var(--foreground))" fontSize="7">Técnico</text>
+                  <rect x="710" y="885" width="70" height="16" fill="url(#secondaryGrad)" rx="3" />
+                  <text x="785" y="897" fill="hsl(var(--foreground))" fontSize="9">Técnico</text>
                 </g>
-              </svg>
-            </div>
 
-            {/* Core Nuclei */}
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="space-y-3 p-4 bg-card rounded-lg border border-border">
-                <h3 className="subtitle text-primary">LowMovie</h3>
-                <p className="body-small text-muted-foreground">
-                  Núcleo cinematográfico de ficções urbanas e periféricas. Estética dirty, cores dessaturadas, luz natural crua.
-                </p>
-              </div>
-              <div className="space-y-3 p-4 bg-card rounded-lg border border-border">
-                <h3 className="subtitle text-primary">LowPressure</h3>
-                <p className="body-small text-muted-foreground">
-                  Plataforma editorial e selo independente. Manifestos, zines, textos fragmentados, vozes marginais.
-                </p>
-              </div>
-              <div className="space-y-3 p-4 bg-card rounded-lg border border-border">
-                <h3 className="subtitle text-primary">CasaTrezeStudio</h3>
-                <p className="body-small text-muted-foreground">
-                  Laboratório criativo híbrido. Design gráfico, motion, concept art, experimentação audiovisual.
-                </p>
-              </div>
+                {/* Core Nuclei */}
+                <g>
+                  <text x="600" y="945" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="12" fontWeight="bold">NÚCLEOS CRIATIVOS · CREATIVE NUCLEI</text>
+                  
+                  <rect x="120" y="965" width="280" height="105" fill="hsl(var(--card))" stroke="hsl(var(--primary))" strokeWidth="2" rx="8" />
+                  <text x="260" y="990" textAnchor="middle" fill="hsl(var(--primary))" fontSize="14" fontWeight="bold">LowMovie</text>
+                  <text x="260" y="1010" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">Núcleo cinematográfico de ficções</text>
+                  <text x="260" y="1025" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">urbanas e periféricas. Estética dirty,</text>
+                  <text x="260" y="1040" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">cores dessaturadas, luz natural crua.</text>
+                  <text x="260" y="1060" textAnchor="middle" fill="hsl(var(--accent))" fontSize="7" opacity="0.8">2020-2023</text>
+                  
+                  <rect x="460" y="965" width="280" height="105" fill="hsl(var(--card))" stroke="hsl(var(--primary))" strokeWidth="2" rx="8" />
+                  <text x="600" y="990" textAnchor="middle" fill="hsl(var(--primary))" fontSize="14" fontWeight="bold">LowPressure</text>
+                  <text x="600" y="1010" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">Plataforma editorial e selo independente.</text>
+                  <text x="600" y="1025" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">Manifestos, zines, textos fragmentados,</text>
+                  <text x="600" y="1040" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">vozes marginais.</text>
+                  <text x="600" y="1060" textAnchor="middle" fill="hsl(var(--accent))" fontSize="7" opacity="0.8">2020+</text>
+                  
+                  <rect x="800" y="965" width="280" height="105" fill="hsl(var(--card))" stroke="hsl(var(--primary))" strokeWidth="2" rx="8" />
+                  <text x="940" y="990" textAnchor="middle" fill="hsl(var(--primary))" fontSize="14" fontWeight="bold">CasaTrezeStudio®</text>
+                  <text x="940" y="1010" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">Laboratório criativo híbrido.</text>
+                  <text x="940" y="1025" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">Design gráfico, motion, concept art,</text>
+                  <text x="940" y="1040" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">experimentação audiovisual.</text>
+                  <text x="940" y="1060" textAnchor="middle" fill="hsl(var(--accent))" fontSize="7" opacity="0.8">2008+</text>
+                </g>
+
+                {/* Signature */}
+                <text x="600" y="1120" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8" opacity="0.6">
+                  Creative-Ops Mind Map · Mapa Mental Creative-Ops
+                </text>
+                <text x="600" y="1135" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7" opacity="0.5">
+                  © 2024-2025 Castro Pizzano (цастро™) · THEVØIDN13 Project
+                </text>
+              </svg>
             </div>
           </div>
         </DialogContent>
