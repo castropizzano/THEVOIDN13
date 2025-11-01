@@ -57,7 +57,6 @@ const Autor = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing">
             <div>
-              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body text-justify">Profissional criativo multidisciplinar, atuo entre as artes visuais, o design e a produção audiovisual. Minha trajetória é guiada pela criação de identidades visuais e narrativas semióticas, explorando linguagens como fotografia, vídeo, design gráfico e multiartes digitais. Transito entre processos individuais e colaborações coletivas, com base em laboratórios criativos, imersões referenciais e desenvolvimento conceitual.</p>
                 
@@ -72,7 +71,6 @@ const Autor = () => {
             </div>
 
             <div>
-              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body text-justify">Multidisciplinary creative professional, I work between visual arts, design and audiovisual production. My trajectory is guided by the creation of visual identities and semiotic narratives, exploring languages such as photography, video, graphic design and digital multi-arts. I transit between individual processes and collective collaborations, based on creative laboratories, referential immersions and conceptual development.</p>
                 

@@ -105,13 +105,11 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <>
-                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
                 <h2 className="bible-subtitle">[UM CORPO À DERIVA ENTRE O RUÍDO E O SILÊNCIO]</h2>
               </>
             }
             englishContent={
               <>
-                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
                 <h2 className="bible-subtitle">[A BODY ADRIFT BETWEEN NOISE AND SILENCE]</h2>
               </>
             }
@@ -141,13 +139,11 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <>
-                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
                 <h2 className="bible-subtitle">[INÍCIO DA TRANSMISSÃO]</h2>
               </>
             }
             englishContent={
               <>
-                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
                 <h2 className="bible-subtitle">[BEGINNING OF TRANSMISSION]</h2>
               </>
             }
@@ -186,13 +182,11 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <>
-                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
                 <h2 className="bible-title">MANIFESTO INTEGRADO</h2>
               </>
             }
             englishContent={
               <>
-                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
                 <h2 className="bible-title">INTEGRATED MANIFESTO</h2>
               </>
             }
@@ -234,14 +228,12 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <>
-                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
                 <h2 className="bible-title">1. ORIGEM E PROPÓSITO</h2>
                 <h3 className="bible-subtitle">1.1 O LUGAR SEGURO PARA DESAPARECER</h3>
               </>
             }
             englishContent={
               <>
-                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
                 <h2 className="bible-title">1. ORIGIN AND PURPOSE</h2>
                 <h3 className="bible-subtitle">1.1 THE SAFE PLACE TO DISAPPEAR</h3>
               </>
@@ -1227,13 +1219,11 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <>
-                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
                 <h2 className="bible-title">9. REFERÊNCIAS | O ECO INTERNO</h2>
               </>
             }
             englishContent={
               <>
-                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
                 <h2 className="bible-title">9. REFERENCES | THE INTERNAL ECHO</h2>
               </>
             }
@@ -1376,13 +1366,11 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <>
-                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
                 <h2 className="bible-title">10. A METODOLOGIA</h2>
               </>
             }
             englishContent={
               <>
-                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
                 <h2 className="bible-title">10. THE METHODOLOGY</h2>
               </>
             }
@@ -1413,13 +1401,11 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <>
-                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
                 <h2 className="bible-title">11. ANATOMIA DO UNIVERSO | PERSONAGENS</h2>
               </>
             }
             englishContent={
               <>
-                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
                 <h2 className="bible-title">11. UNIVERSE ANATOMY | CHARACTERS</h2>
               </>
             }
@@ -1680,13 +1666,11 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <>
-                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
                 <h2 className="bible-title">12. PROCESSOS RELACIONADOS</h2>
               </>
             }
             englishContent={
               <>
-                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
                 <h2 className="bible-title">12. RELATED PROCESSES</h2>
               </>
             }
@@ -1800,13 +1784,11 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <>
-                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
                 <h2 className="bible-title">13. PARADOXO EXISTENCIAL</h2>
               </>
             }
             englishContent={
               <>
-                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
                 <h2 className="bible-title">13. EXISTENTIAL PARADOX</h2>
               </>
             }
@@ -1954,13 +1936,11 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <>
-                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
                 <h2 className="bible-title">[O REPOSITÓRIO | ARQUIVOS E FERRAMENTAS]</h2>
               </>
             }
             englishContent={
               <>
-                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
                 <h2 className="bible-title">THE REPOSITORY | FILES AND TOOLS</h2>
               </>
             }

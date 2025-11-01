@@ -100,7 +100,8 @@
   
   /* LABELS BILÍNGUES - <PORTUGUÊS> <INGLÊS> */
   .lang-pill {
-    @apply text-xs font-medium uppercase tracking-wider text-foreground/60;
+    @apply text-xs font-medium uppercase tracking-wider;
+    color: #C40000;
     font-family: 'Manrope', sans-serif;
     font-weight: 500;
   }
