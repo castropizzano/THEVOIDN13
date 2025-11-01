@@ -214,12 +214,10 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
 
             <div className="space-y-4 text-left">
               <p className="body-base text-foreground/90">
-                Seis perguntas sobre seu processo criativo. Não existe resposta certa. 
-                Apenas verdades que você ainda não disse em voz alta.
+                Seis perguntas sobre seu processo criativo. Não existe resposta certa. Apenas verdades que você ainda não disse em voz alta. O que você encontra quando para de fugir?
               </p>
               <p className="body-small text-muted-foreground/70 italic">
-                Six questions about your creative process. There are no right answers. 
-                Only truths you haven't spoken aloud yet.
+                Six questions about your creative process. There are no right answers. Only truths you haven't spoken aloud yet. What do you find when you stop running away?
               </p>
             </div>
 
@@ -241,37 +239,37 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
               <div className="pt-4 space-y-4 border-t border-border/30">
                 <div className="space-y-1 text-left">
                   <p className="body-small text-foreground/80">
-                    <strong className="text-primary">Sombras:</strong> O inconsciente como matéria-prima criativa
+                    <strong className="text-primary">Sombras:</strong> O inconsciente como matéria-prima criativa. Aquilo que ainda não tem nome, mas já existe no escuro.
                   </p>
                   <p className="body-small text-muted-foreground/60 italic">
-                    <strong>Shadow:</strong> The unconscious as creative raw material
+                    <strong>Shadow:</strong> The unconscious as creative raw material. That which has no name yet, but already exists in the dark.
                   </p>
                 </div>
                 
                 <div className="space-y-1 text-left">
                   <p className="body-small text-foreground/80">
-                    <strong className="text-primary">Ruptura:</strong> Destruição como gesto criativo
+                    <strong className="text-primary">Ruptura:</strong> Destruição como gesto criativo. Quebrar o que foi feito para encontrar o que ainda pode ser.
                   </p>
                   <p className="body-small text-muted-foreground/60 italic">
-                    <strong>Rupture:</strong> Destruction as creative gesture
+                    <strong>Rupture:</strong> Destruction as creative gesture. Breaking what was made to find what can still become.
                   </p>
                 </div>
                 
                 <div className="space-y-1 text-left">
                   <p className="body-small text-foreground/80">
-                    <strong className="text-primary">Conexão:</strong> A criação como diálogo e escuta
+                    <strong className="text-primary">Conexão:</strong> A criação como diálogo e escuta. Nada existe sozinho, tudo ressoa no outro para existir.
                   </p>
                   <p className="body-small text-muted-foreground/60 italic">
-                    <strong>Connection:</strong> Creation as dialogue and listening
+                    <strong>Connection:</strong> Creation as dialogue and listening. Nothing exists alone, everything resonates in another to exist.
                   </p>
                 </div>
                 
                 <div className="space-y-1 text-left">
                   <p className="body-small text-foreground/80">
-                    <strong className="text-primary">Método:</strong> Disciplina e rigor como estrutura
+                    <strong className="text-primary">Método:</strong> Disciplina e rigor como estrutura. A repetição consciente que transforma prática em forma refinada.
                   </p>
                   <p className="body-small text-muted-foreground/60 italic">
-                    <strong>Method:</strong> Discipline and rigor as structure
+                    <strong>Method:</strong> Discipline and rigor as structure. The conscious repetition that transforms practice into refined form.
                   </p>
                 </div>
               </div>
