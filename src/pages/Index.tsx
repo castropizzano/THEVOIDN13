@@ -44,6 +44,7 @@ import roughs000 from "@/assets/roughs-000.png";
 import roughs001 from "@/assets/roughs-001.png";
 import roughs002 from "@/assets/roughs-002.png";
 import roughs003 from "@/assets/roughs-003.png";
+import voidStreetThumbnail from "@/assets/void-street-thumbnail.png";
 import meditationScene from "@/assets/meditation-scene.png";
 import meditationRainScene from "@/assets/meditation-rain-scene.png";
 import maskVoid from "@/assets/mask-void.png";
@@ -126,6 +127,7 @@ const Index = () => {
               className="w-full aspect-video bg-black rounded-lg overflow-hidden"
               controls
               playsInline
+              poster={voidStreetThumbnail}
             >
               <source src="/videos/intro.mp4" type="video/mp4" />
             </video>
