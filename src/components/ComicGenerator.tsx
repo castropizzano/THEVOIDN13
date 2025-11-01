@@ -331,7 +331,8 @@ async function postProcessTo16x9WithWatermark(imageUrl: string): Promise<string>
   const ctx = canvas.getContext('2d');
   if (!ctx) return imageUrl;
 
-  // Fill background (matte) using theme background approximation (black matte)
+  // Fill background (matte) - using pure black for canvas matte background
+  // This is intentional as it's a technical requirement for image composition
   ctx.fillStyle = '#000000';
   ctx.fillRect(0, 0, width, height);
 

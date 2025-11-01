@@ -198,7 +198,7 @@ const Videos = () => {
               <div className="relative w-full h-full">
                 <button
                   onClick={() => setSelectedVideo(null)}
-                  className="absolute -top-12 right-0 text-white hover:text-primary transition-colors text-2xl"
+                  className="absolute -top-12 right-0 text-foreground hover:text-primary transition-colors text-2xl"
                 >
                   ✕
                 </button>

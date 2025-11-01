@@ -228,7 +228,7 @@ const FilmGallery = () => {
                           loading="lazy"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-                          <ExternalLink className="w-5 h-5 text-white" />
+                          <ExternalLink className="w-5 h-5 text-foreground" />
                         </div>
                       </div>
                       <div className="p-3 bg-card">
