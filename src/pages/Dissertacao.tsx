@@ -686,10 +686,10 @@ const Dissertacao = () => {
               </div>
               <div className="bible-bilingual-grid">
                 <div>
-                  <p className="bible-body text-muted-foreground">Depósito da dissertação de mestrado após aprovação em breve.</p>
+                  <p className="bible-body text-muted-foreground">Depósito da dissertação de mestrado em breve.</p>
                 </div>
                 <div>
-                  <p className="bible-body text-muted-foreground">Master's dissertation deposit after approval coming soon.</p>
+                  <p className="bible-body text-muted-foreground">Master's dissertation deposit coming soon.</p>
                 </div>
               </div>
             </div>
