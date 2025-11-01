@@ -1935,7 +1935,18 @@ const Index = () => {
 
           {/* GERADOR EXPERIMENTAL */}
           <div className="mb-12">
-            <h3 className="bible-subtitle">GERADOR EXPERIMENTAL DE STILL / STILL GENERATOR</h3>
+            <BilingualContent
+              portugueseContent={
+                <>
+                  <h3 className="bible-subtitle">GERADOR EXPERIMENTAL DE STILL</h3>
+                </>
+              }
+              englishContent={
+                <>
+                  <h3 className="bible-subtitle">STILL GENERATOR</h3>
+                </>
+              }
+            />
             <BilingualContent
               portugueseContent={
                 <div>
