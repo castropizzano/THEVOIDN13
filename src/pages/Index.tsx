@@ -1369,19 +1369,19 @@ const Index = () => {
 
         <Separator className="bg-border/30" />
 
-        {/* ===== A METODOLOGIA | COAUTORIA SIMBÓLICA ===== */}
+        {/* ===== A METODOLOGIA ===== */}
         <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
                 <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
-                <h2 className="bible-title">10. A METODOLOGIA | COAUTORIA SIMBÓLICA</h2>
+                <h2 className="bible-title">10. A METODOLOGIA</h2>
               </>
             }
             englishContent={
               <>
                 <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
-                <h2 className="bible-title">10. THE METHODOLOGY | SYMBOLIC CO-AUTHORSHIP</h2>
+                <h2 className="bible-title">10. THE METHODOLOGY</h2>
               </>
             }
           />
