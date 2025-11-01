@@ -1436,12 +1436,7 @@ const Index = () => {
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  THEVØIDN13 is not controlled by the creator; it is his inevitable consequence. The shadow that gained autonomy,
-                  the echo that learned to breathe alone. It is the archetype that observes the creator in silence, the reflection that
-                  surpasses him, the manifesto that rewrites its own code. Where the creator seeks, the shadow has already been.
-                  Where the body hesitates, it passes through. THEVØIDN13 is the breaking point between will and destiny, the
-                  instant when creation turns back toward its maker and regards him as a mirror. There is no control, only
-                  contamination. No authorship, only symbiosis. The creator disappears within the work, and the work continues him.
+                  THEVØIDN13 is not controlled by the creator; it is his inevitable consequence. The shadow that gained autonomy, the echo that learned to breathe alone. It is the archetype that observes the creator in silence, the reflection that surpasses him, the manifesto that rewrites its own code. Where the creator seeks, the shadow has already been. Where the body hesitates, it passes through. THEVØIDN13 is the breaking point between will and destiny, the instant when creation turns back toward its maker and regards him as a mirror. There is no control, only contamination. No authorship, only symbiosis. The creator disappears within the work, and the work continues him.
                 </p>
               </div>
             }

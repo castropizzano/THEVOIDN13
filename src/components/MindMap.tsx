@@ -140,7 +140,7 @@ export const MindMap = () => {
                         <strong className="text-primary">2024 (Outubro) - Presente:</strong> Consolidação contínua da Shadow Interface Bible v13. Atualizações vivas do arcabouço conceitual e das regras canônicas do universo.
                       </p>
                       <p className="body-small text-muted-foreground/70 italic">
-                        <strong>Oct 2024 - Present:</strong> Ongoing consolidation of Shadow Interface Bible v13. Living updates to the conceptual framework and canonical universe rules.
+                        <strong>Oct 2025 - Present:</strong> Ongoing consolidation of Shadow Interface Bible v13. Living updates to the conceptual framework and canonical universe rules.
                       </p>
                     </div>
 
@@ -554,7 +554,7 @@ export const MindMap = () => {
                   <text x="251" y="792" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">Crise Acadêmica</text>
                   
                   <rect x="494" y="763" width="14" height="14" fill="hsl(var(--accent))" rx="2" />
-                  <text x="501" y="752" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="9" fontWeight="600">Out 24 - Presente</text>
+                  <text x="501" y="752" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="9" fontWeight="600">Out 25 - Presente</text>
                   <text x="501" y="792" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">Bible v13</text>
                   
                   <rect x="744" y="763" width="14" height="14" fill="hsl(var(--secondary))" rx="2" />
@@ -562,7 +562,7 @@ export const MindMap = () => {
                   <text x="751" y="792" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">Mestrado</text>
                   
                   <rect x="994" y="763" width="14" height="14" fill="hsl(var(--primary))" rx="2" />
-                  <text x="1001" y="752" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="9" fontWeight="600">31/10/25</text>
+                  <text x="1001" y="752" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="9" fontWeight="600">22/10/25</text>
                   <text x="1001" y="792" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="7">Início Portal + THEVØIDN13</text>
                 </g>
 
