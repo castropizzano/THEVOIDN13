@@ -337,14 +337,14 @@ const Dissertacao = () => {
             <div>
               <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
-                <p className="bible-body">Os vídeos de skate registram a evolução técnica e criativa dos skatistas e desempenham um papel central na construção de sua identidade cultural. A VideoParte destaca não apenas as habilidades dos skatistas, mas também a integração entre seus movimentos e o ambiente urbano. A VideoParte é linguagem estética em movimento, expressão que transforma a paisagem urbana em território simbólico. O corpo e a cidade dialogam em fricção constante.</p>
+                <p className="bible-body">Os vídeos de skate registram a evolução técnica e criativa dos skatistas e desempenham um papel central na construção de sua identidade cultural. A VideoParte destaca não apenas as habilidades dos skatistas, mas também a integração entre seus movimentos e o ambiente urbano. A VideoParte é linguagem estética em movimento, expressão que transforma a paisagem urbana em território simbólico.</p>
               </div>
             </div>
 
             <div>
               <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
-                <p className="bible-body">Skateboarding videos record the technical and creative evolution of skaters and play a central role in constructing their cultural identity. The VideoPart highlights not only the skaters' skills, but also the integration between their movements and the urban environment. The VideoPart is aesthetic language in movement, expression that transforms the urban landscape into symbolic territory. Body and city dialogue in constant friction.</p>
+                <p className="bible-body">Skateboarding videos record the technical and creative evolution of skaters and play a central role in constructing their cultural identity. The VideoPart highlights not only the skaters' skills, but also the integration between their movements and the urban environment. The VideoPart is aesthetic language in movement, expression that transforms the urban landscape into symbolic territory.</p>
               </div>
             </div>
           </div>
@@ -389,7 +389,7 @@ const Dissertacao = () => {
                 </div>
                 
                 <h3 className="bible-subtitle">O Labirinto como Orientação Metodológica</h3>
-                <p className="bible-body">O conceito de Lowbyrinth™ emerge organicamente do processo criativo e atua como orientador metodológico desta pesquisa. Trata-se de uma imagem simbólica que expressa caminhos improvisados, não lineares e rizomáticos do fazer coletivo. O labirinto não é obstáculo, mas campo de possibilidades criativas que se desdobra em dobra, escuta e desvio. Uma travessia espiralada que acolhe o erro, o improviso e a reconfiguração constante dos percursos.</p>
+                <p className="bible-body">O conceito de Lowbyrinth™ emerge organicamente do processo criativo e atua como orientador metodológico desta pesquisa. Trata-se de uma imagem simbólica que expressa caminhos improvisados, não lineares e rizomáticos do fazer coletivo. O labirinto não é obstáculo, mas campo de possibilidades criativas que se desdobra em dobra, escuta e desvio. Uma travessia espiralada que acolhe o erro e o improviso.</p>
                 
                 <h3 className="bible-subtitle">Três Procedimentos Metodológicos</h3>
                 <div className="space-y-4">
@@ -440,7 +440,7 @@ const Dissertacao = () => {
                 </div>
                 
                 <h3 className="bible-subtitle">The Labyrinth as Methodological Orientation</h3>
-                <p className="bible-body">The concept of Lowbyrinth™ emerges organically from the creative process and acts as methodological guide for this research. It is a symbolic image that expresses improvised, non-linear and rhizomatic paths of collective making. The labyrinth is not an obstacle, but a field of creative possibilities that unfolds in fold, listening and deviation. A spiral crossing that welcomes error, improvisation and the constant reconfiguration of paths.</p>
+                <p className="bible-body">The concept of Lowbyrinth™ emerges organically from the creative process and acts as methodological guide for this research. It is a symbolic image that expresses improvised, non-linear and rhizomatic paths of collective making. The labyrinth is not an obstacle, but a field of creative possibilities that unfolds in fold, listening and deviation. A spiral crossing that welcomes error and improvisation.</p>
                 
                 <h3 className="bible-subtitle">Three Methodological Procedures</h3>
                 <div className="space-y-4">
