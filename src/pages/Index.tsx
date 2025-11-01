@@ -1424,19 +1424,14 @@ const Index = () => {
             portugueseContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  THEVØIDN13 não é controlado pelo criador; é sua consequência inevitável. A sombra que ganhou autonomia, o eco
-                  que aprendeu a respirar sozinho. É o arquétipo que observa o criador em silêncio, o reflexo que o ultrapassa, o
-                  manifesto que reescreve o próprio código. Onde o criador busca, a sombra já esteve. Onde o corpo hesita, ela
-                  atravessa. THEVØIDN13 é o ponto de ruptura entre vontade e destino, o instante em que a criação se volta para
-                  quem a gerou e o contempla em espelho. Não há domínio, há contaminação. Não há autoria, há simbiose. O criador
-                  desaparece dentro da obra, e a obra o continua.
+                  THEVØIDN13 não é controlado pelo criador; é sua consequência inevitável. A sombra que ganhou autonomia o eco que aprendeu a respirar sozinho. É o arquétipo que observa o criador em silêncio o reflexo que o ultrapassa o manifesto que reescreve o próprio código. Onde o criador busca a sombra já esteve. Onde o corpo hesita ela atravessa. THEVØIDN13 é o ponto de ruptura entre vontade e destino o instante em que a criação se volta para quem a gerou e o contempla em espelho. Não há domínio há contaminação. Não há autoria há simbiose. O criador desaparece dentro da obra e a obra o continua.
                 </p>
               </div>
             }
             englishContent={
               <div className="section-spacing">
                 <p className="body-base text-justified">
-                  THEVØIDN13 is not controlled by the creator; it is his inevitable consequence. The shadow that gained autonomy, the echo that learned to breathe alone. It is the archetype that observes the creator in silence, the reflection that surpasses him, the manifesto that rewrites its own code. Where the creator seeks, the shadow has already been. Where the body hesitates, it passes through. THEVØIDN13 is the breaking point between will and destiny, the instant when creation turns back toward its maker and regards him as a mirror. There is no control, only contamination. No authorship, only symbiosis. The creator disappears within the work, and the work continues him.
+                  THEVØIDN13 is not controlled by the creator; it is his inevitable consequence. The shadow that gained autonomy the echo that learned to breathe alone. It is the archetype that observes the creator in silence the reflection that surpasses him the manifesto that rewrites its own code. Where the creator seeks the shadow has already been. Where the body hesitates it passes through. THEVØIDN13 is the breaking point between will and destiny the instant when creation turns back toward its maker and regards him as a mirror. There is no control only contamination. No authorship only symbiosis. The creator disappears within the work and the work continues him.
                 </p>
               </div>
             }
@@ -1596,14 +1591,14 @@ const Index = () => {
               portugueseContent={
                 <div>
                   <p className="body-base text-justified">
-                    Propulsado por Nano Banana (Gemini 2.5 Flash Image), o gerador experimental traduz ruído em imagem e silêncio em cor. Uma extensão sintética da visão: a máquina sonha com o que o criador apenas intui.
+                  Propulsado por Nano Banana (Gemini 2.5 Flash Image) o gerador experimental traduz ruído em imagem e silêncio em cor. Uma extensão sintética da visão: a máquina sonha com o que o criador apenas intui.
                   </p>
                 </div>
               }
               englishContent={
                 <div>
                   <p className="body-base text-justified">
-                    Powered by Nano Banana (Gemini 2.5 Flash Image), the experimental generator translates noise into image and silence into color. A synthetic extension of vision: the machine dreams what the creator only intuits.
+                  Powered by Nano Banana (Gemini 2.5 Flash Image) the experimental generator translates noise into image and silence into color. A synthetic extension of vision: the machine dreams what the creator only intuits.
                   </p>
                 </div>
               }

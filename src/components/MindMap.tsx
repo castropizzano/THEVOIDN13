@@ -88,10 +88,10 @@ export const MindMap = () => {
               <div className="space-y-4">
                 <div className="space-y-2">
                   <p className="body-base text-foreground">
-                    <span className="text-primary font-bold">PORTUGUÊS:</span> Este memorial artístico documenta um processo de criação híbrida entre humano e inteligência artificial em constante desenvolvimento. A trajetória começa em 2008 com a fundação da CasaTrezeStudio, passa pelo desenvolvimento do LOWMOVIE (2020-2023), pelo mestrado em Cinema e Artes do Vídeo (iniciado em 2024), e culmina neste portal digital (outubro 2025 - presente). Não se trata de usar IA como ferramenta passiva, mas de estabelecer um diálogo criativo onde a máquina atua como co-criadora, desafiando, propondo e expandindo o universo conceitual de THEVØIDN13. Um coletivo em evolução: de humano-humano para humano-máquina.
+                    <span className="text-primary font-bold">PORTUGUÊS:</span> Este memorial artístico documenta um processo de criação híbrida entre humano e inteligência artificial em constante desenvolvimento. A trajetória começa em 2008 com a fundação da CasaTrezeStudio, passa pelo desenvolvimento do filme LowMovie™ (2020-2023), pelo mestrado em Cinema e Artes do Vídeo (iniciado em 2024), e culmina neste portal digital (outubro 2025 - presente). Não se trata de usar IA como ferramenta passiva, mas de estabelecer um diálogo criativo onde a máquina atua como co-criadora, desafiando, propondo e expandindo o universo conceitual de THEVØIDN13. Um coletivo em evolução: de humano-humano para humano-máquina.
                   </p>
                   <p className="body-small text-muted-foreground italic">
-                    <span className="text-primary font-bold">ENGLISH:</span> This artistic memorial documents a hybrid creation process between human and artificial intelligence in constant development. The trajectory begins in 2008 with the foundation of CasaTrezeStudio, passes through the development of LOWMOVIE (2020-2023), the Master's in Cinema and Video Arts (started in 2024), and culminates in this digital portal (October 2025 - present). It's not about using AI as a passive tool, but establishing a creative dialogue where the machine acts as co-creator, challenging, proposing, and expanding the conceptual universe of THEVØIDN13. An evolving collective: from human-human to human-machine.
+                    <span className="text-primary font-bold">ENGLISH:</span> This artistic memorial documents a hybrid creation process between human and artificial intelligence in constant development. The trajectory begins in 2008 with the foundation of CasaTrezeStudio, passes through the development of LowMovie™ film (2020-2023), the Master's in Cinema and Video Arts (started in 2024), and culminates in this digital portal (October 2025 - present). It's not about using AI as a passive tool, but establishing a creative dialogue where the machine acts as co-creator, challenging, proposing, and expanding the conceptual universe of THEVØIDN13. An evolving collective: from human-human to human-machine.
                   </p>
                 </div>
 
@@ -110,19 +110,19 @@ export const MindMap = () => {
 
                     <div>
                       <p className="body-small text-foreground">
-                        <strong className="text-primary">2020 - 2023:</strong> Desenvolvimento e lançamento do LOWMOVIE, projeto transmídia explorando narrativas fragmentadas e estética lo-fi. Experimentação com linguagem cinematográfica híbrida. Consolidação da identidade visual "low culture" como resistência estética.
+                        <strong className="text-primary">2020 - 2023:</strong> Criação e lançamento do filme LowMovie™ pelo coletivo LowPressure™. Experimentação com videoarte e cinema experimental. Estética lo-fi e narrativas fragmentadas urbanas. Consolidação da identidade visual "low culture" como resistência estética.
                       </p>
                       <p className="body-small text-muted-foreground/70 italic">
-                        <strong>2020 - 2023:</strong> Development and launch of LOWMOVIE, transmedia project exploring fragmented narratives and lo-fi aesthetics. Experimentation with hybrid cinematographic language. Consolidation of "low culture" visual identity as aesthetic resistance.
+                        <strong>2020 - 2023:</strong> Creation and release of LowMovie™ film by LowPressure™ collective. Experimentation with video art and experimental cinema. Lo-fi aesthetics and fragmented urban narratives. Consolidation of "low culture" visual identity as aesthetic resistance.
                       </p>
                     </div>
 
                     <div>
                       <p className="body-small text-foreground">
-                        <strong className="text-primary">2024:</strong> Início do Mestrado em Cinema e Artes do Vídeo (PPG-CINEAV/Unespar). Pesquisa sobre metodologia coletiva do LOWMOVIE. Título: "LOWMOVIE™ E O LABIRINTO CRIATIVO: SUBJETIVIDADE, SUBCULTURA E A CONSTRUÇÃO DE UMA ESTÉTICA EM MOVIMENTO NO COLETIVO LOWPRESSURE™". Orientação: Prof. Dr. Fábio Jabur de Noronha.
+                        <strong className="text-primary">2024:</strong> Início do Mestrado em Cinema e Artes do Vídeo (PPG-CINEAV/Unespar). Pesquisa sobre processos criativos do filme LowMovie™. Título: "LOWMOVIE™ E O LABIRINTO CRIATIVO: SUBJETIVIDADE, SUBCULTURA E A CONSTRUÇÃO DE UMA ESTÉTICA EM MOVIMENTO NO COLETIVO LOWPRESSURE™". Orientação: Prof. Dr. Fábio Jabur de Noronha.
                       </p>
                       <p className="body-small text-muted-foreground/70 italic">
-                        <strong>2024:</strong> Beginning of Master's in Cinema and Video Arts (PPG-CINEAV/Unespar). Research on LOWMOVIE collective methodology. Title: "LOWMOVIE™ AND THE CREATIVE LABYRINTH: SUBJECTIVITY, SUBCULTURE AND THE CONSTRUCTION OF AN AESTHETIC IN MOTION IN THE LOWPRESSURE™ COLLECTIVE". Advisor: Prof. Dr. Fábio Jabur de Noronha.
+                        <strong>2024:</strong> Beginning of Master's in Cinema and Video Arts (PPG-CINEAV/Unespar). Research on creative processes of LowMovie™ film. Title: "LOWMOVIE™ AND THE CREATIVE LABYRINTH: SUBJECTIVITY, SUBCULTURE AND THE CONSTRUCTION OF AN AESTHETIC IN MOTION IN THE LOWPRESSURE™ COLLECTIVE". Advisor: Prof. Dr. Fábio Jabur de Noronha.
                       </p>
                     </div>
 
@@ -164,10 +164,10 @@ export const MindMap = () => {
 
                     <div>
                       <p className="body-small text-foreground">
-                        <strong className="text-primary">2025 (Outubro):</strong> Início do projeto THEVØIDN13 e publicação inicial do portal (31/10/2025). Defesa da dissertação de mestrado. A partir daqui, o portal segue em atualização contínua.
+                        <strong className="text-primary">2025 (Outubro):</strong> Defesa da dissertação (22/10/2025). Publicação inicial do portal THEVØIDN13. A partir daqui, o portal segue em atualização contínua, explorando questionamentos sobre co-criação humano-IA nascidos da pesquisa sobre LowMovie™.
                       </p>
                       <p className="body-small text-muted-foreground/70 italic">
-                        <strong>October 2025:</strong> Start of THEVØIDN13 project and initial portal publication (10/31/2025). Master's dissertation defense. From here, the portal continues with ongoing updates.
+                        <strong>October 2025:</strong> Dissertation defense (10/22/2025). Initial publication of THEVØIDN13 portal. From here, the portal continues with ongoing updates, exploring questions about human-AI co-creation born from the research on LowMovie™.
                       </p>
                     </div>
                   </div>
@@ -592,10 +592,10 @@ export const MindMap = () => {
                   <text x="600" y="945" textAnchor="middle" fill="hsl(var(--foreground))" fontSize="12" fontWeight="bold">NÚCLEOS CRIATIVOS · CREATIVE NUCLEI</text>
                   
                   <rect x="120" y="965" width="280" height="105" fill="hsl(var(--card))" stroke="hsl(var(--primary))" strokeWidth="2" rx="8" />
-                  <text x="260" y="990" textAnchor="middle" fill="hsl(var(--primary))" fontSize="14" fontWeight="bold">LowMovie</text>
-                  <text x="260" y="1010" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">Núcleo cinematográfico de ficções</text>
-                  <text x="260" y="1025" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">urbanas e periféricas. Estética dirty,</text>
-                  <text x="260" y="1040" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">cores dessaturadas, luz natural crua.</text>
+                  <text x="260" y="990" textAnchor="middle" fill="hsl(var(--primary))" fontSize="14" fontWeight="bold">LowMovie™</text>
+                  <text x="260" y="1010" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">Filme experimental. Ficções urbanas</text>
+                  <text x="260" y="1025" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">e periféricas. Estética dirty, cores</text>
+                  <text x="260" y="1040" textAnchor="middle" fill="hsl(var(--muted-foreground))" fontSize="8">dessaturadas, luz natural crua.</text>
                   <text x="260" y="1060" textAnchor="middle" fill="hsl(var(--accent))" fontSize="7" opacity="0.8">2020-2023</text>
                   
                   <rect x="460" y="965" width="280" height="105" fill="hsl(var(--card))" stroke="hsl(var(--primary))" strokeWidth="2" rx="8" />
