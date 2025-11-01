@@ -202,14 +202,14 @@ const Index = () => {
             portugueseContent={
               <div className="bible-section-spacing">
                 <p className="bible-body">
-                  Não há começo há apenas o instante em que o silêncio decide respirar THEVØIDN13 nasceu desse sopro invisível um gesto entre a morte e o retorno tudo o que chamam de ausência é apenas matéria em repouso o vazio não é falta é incubação de forma é o espaço onde o verbo esquece o corpo e o corpo se converte em verbo a imagem não quer ser vista quer ser atravessada o silêncio não encerra expande e o fim aqui é apenas uma respiração mais funda.
+                  Não há começo. Há apenas o instante em que o silêncio decide respirar. THEVØIDN13 nasceu desse sopro invisível, um gesto entre a morte e o retorno. Tudo o que chamam de ausência é apenas matéria em repouso. O vazio não é falta, é incubação de forma. É o espaço onde o verbo esquece o corpo e o corpo se converte em verbo. A imagem não quer ser vista, quer ser atravessada. O silêncio não encerra, expande. E o fim aqui é apenas uma respiração mais funda.
                 </p>
               </div>
             }
             englishContent={
               <div className="bible-section-spacing">
                 <p className="bible-body">
-                  There is no beginning there is only the instant when silence decides to breathe THEVØIDN13 was born from that invisible breath a gesture between death and return everything they call absence is only matter at rest the void is not lack it is incubation of form it is the space where the word forgets the body and the body becomes word the image does not want to be seen it wants to be crossed through silence does not end it expands and the end here is only a deeper breath.
+                  There is no beginning. There is only the instant when silence decides to breathe. THEVØIDN13 was born from that invisible breath, a gesture between death and return. Everything they call absence is only matter at rest. The void is not lack, it is incubation of form. It is the space where the word forgets the body and the body becomes word. The image does not want to be seen, it wants to be crossed through. Silence does not end, it expands. And the end here is only a deeper breath.
                 </p>
               </div>
             }
