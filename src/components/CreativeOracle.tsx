@@ -204,33 +204,33 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
           
           <div className="space-y-8 p-8">
             <div className="pb-6 border-b border-primary/20">
-              <h2 className="text-4xl font-bold text-primary tracking-tight text-left">
+              <h2 className="title text-primary tracking-tight text-left mb-2">
                 ORÁCULO CRIATIVO
               </h2>
-              <p className="text-sm text-muted-foreground uppercase tracking-wide text-left">
+              <p className="lang-pill text-left">
                 Creative Oracle
               </p>
             </div>
 
             <div className="space-y-4 text-left">
-              <p className="text-lg text-foreground/90 leading-relaxed">
+              <p className="body-base text-foreground/90">
                 Seis perguntas sobre seu processo criativo. Não existe resposta certa. 
                 Apenas verdades que você ainda não disse em voz alta.
               </p>
-              <p className="text-sm text-muted-foreground/70 italic leading-relaxed">
+              <p className="body-small text-muted-foreground/70 italic">
                 Six questions about your creative process. There are no right answers. 
                 Only truths you haven't spoken aloud yet.
               </p>
             </div>
 
             <div className="space-y-3 pt-4">
-              <div className="grid grid-cols-4 gap-2 text-left text-xs text-muted-foreground/60 uppercase tracking-wider">
+              <div className="grid grid-cols-4 gap-2 text-left lang-pill">
                 <div>Sombras</div>
                 <div>Ruptura</div>
                 <div>Conexão</div>
                 <div>Método</div>
               </div>
-              <div className="grid grid-cols-4 gap-2 text-left text-xs text-muted-foreground/40">
+              <div className="grid grid-cols-4 gap-2 text-left lang-pill opacity-60">
                 <div>Shadow</div>
                 <div>Rupture</div>
                 <div>Connection</div>
@@ -241,7 +241,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
             <Button 
               onClick={handleStart} 
               size="lg" 
-              className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-lg py-6"
+              className="w-full bg-primary hover:bg-primary/90 text-primary-foreground subtitle py-6"
             >
               COMEÇAR / START
             </Button>
@@ -284,26 +284,26 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
 
             {/* Header */}
             <div className="text-left space-y-2 pb-6 border-b border-primary/20">
-              <h2 className="text-4xl font-bold text-primary tracking-tight uppercase">{result.name}</h2>
-              <p className="text-xl text-muted-foreground/60 italic font-light">{result.nameEn}</p>
+              <h2 className="title text-primary tracking-tight uppercase">{result.name}</h2>
+              <p className="subtitle text-muted-foreground/60 italic">{result.nameEn}</p>
             </div>
 
             {/* Description */}
             <div className="space-y-4">
               <div className="space-y-3 p-6 rounded-lg border border-primary/20 bg-card/50 text-left">
-                <p className="text-base text-foreground leading-relaxed">
+                <p className="body-base text-foreground">
                   {result.description}
                 </p>
-                <p className="text-sm text-muted-foreground/80 italic leading-relaxed">
+                <p className="body-small text-muted-foreground/80 italic">
                   {result.descriptionEn}
                 </p>
               </div>
 
               <div className="p-5 bg-primary/10 border-l-4 border-primary rounded-r space-y-2 text-left">
-                <p className="text-sm font-bold text-foreground">
+                <p className="body-small font-bold text-foreground">
                   {result.message}
                 </p>
-                <p className="text-xs text-muted-foreground italic">
+                <p className="body-small text-muted-foreground italic">
                   {result.messageEn}
                 </p>
               </div>
@@ -312,7 +312,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
             {/* Statistics */}
             <div className="space-y-4 pt-4">
               <div className="text-left">
-                <p className="text-xs text-muted-foreground/70 uppercase tracking-wider mb-4">
+                <p className="lang-pill mb-4">
                   Distribuição dos Arquétipos / Archetype Distribution
                 </p>
               </div>
@@ -333,10 +333,10 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
                       }`}
                     >
                       <div className="text-center space-y-2">
-                        <p className="text-2xl font-bold text-primary">
+                        <p className="title text-primary">
                           {percentage}%
                         </p>
-                        <p className="text-xs uppercase tracking-wide text-foreground/80">
+                        <p className="lang-pill text-foreground/80">
                           {archetypeName}
                         </p>
                         <div className="pt-2">
@@ -347,7 +347,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
                             />
                           </div>
                         </div>
-                        <p className="text-xs text-muted-foreground">
+                        <p className="lang-pill">
                           {value} pts
                         </p>
                       </div>
@@ -358,8 +358,8 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
 
               {/* Total Score */}
               <div className="text-left pt-4 border-t border-border">
-                <p className="text-xs text-muted-foreground/50 uppercase tracking-wider">
-                  Pontuação Total / Total Score: <span className="font-bold text-foreground/70">{totalScore}</span>
+                <p className="lang-pill">
+                  Pontuação Total / Total Score: <span className="subtitle text-foreground/70">{totalScore}</span>
                 </p>
               </div>
             </div>
@@ -369,13 +369,13 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
               <Button 
                 onClick={handleReset} 
                 variant="outline" 
-                className="border-primary/30 hover:bg-primary/10"
+                className="border-primary/30 hover:bg-primary/10 subtitle"
               >
                 REFAZER / RESTART
               </Button>
               <Button 
                 onClick={() => onOpenChange(false)}
-                className="bg-primary hover:bg-primary/90"
+                className="bg-primary hover:bg-primary/90 subtitle"
               >
                 FECHAR / CLOSE
               </Button>
@@ -427,7 +427,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
                     />
                   ))}
                 </div>
-                <p className="text-sm text-muted-foreground/70 uppercase tracking-wider">
+                <p className="lang-pill">
                   {currentQuestion + 1} / {questions.length}
                 </p>
               </div>
@@ -436,10 +436,10 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
             {/* Question */}
             <div className="space-y-6">
               <div className="space-y-3 text-left pb-4 border-b border-primary/20">
-                <p className="text-xl font-medium text-foreground leading-relaxed">
+                <p className="body-base text-foreground">
                   {question.text}
                 </p>
-                <p className="text-base text-muted-foreground/70 italic leading-relaxed">
+                <p className="body-small text-muted-foreground/70 italic">
                   {question.textEn}
                 </p>
               </div>
@@ -452,10 +452,10 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
                     onClick={() => handleAnswer(option.archetype, option.value)}
                     className="w-full text-left p-5 rounded-lg border border-border bg-card/30 hover:border-primary hover:bg-primary/5 transition-all group"
                   >
-                    <p className="text-base font-medium text-foreground group-hover:text-primary transition-colors">
+                    <p className="body-base text-foreground group-hover:text-primary transition-colors">
                       {option.text}
                     </p>
-                    <p className="text-sm text-muted-foreground/60 italic mt-1">
+                    <p className="body-small text-muted-foreground/60 italic mt-1">
                       {option.textEn}
                     </p>
                   </button>
