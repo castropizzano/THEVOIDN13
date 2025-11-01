@@ -58,12 +58,21 @@ const Dissertacao = () => {
 
         {/* Título */}
         <BilingualSection className="py-16">
-          <div>
-            <h1 className="bible-title">LOWMOVIE™ E O LABIRINTO CRIATIVO</h1>
-            <p className="bible-body mt-6">
-              Subjetividade, Subcultura e a Construção de uma Estética em Movimento no Coletivo LowPressure™ / 
-              Subjectivity, Subculture and the Construction of an Aesthetic in Motion in the LowPressure™ Collective
-            </p>
+          <div className="bilingual-grid">
+            <div className="bilingual-col">
+              <p className="lang-pill">&lt;PORTUGUÊS&gt;</p>
+              <h1 className="bible-title mt-4">LOWMOVIE™ E O LABIRINTO CRIATIVO</h1>
+              <p className="bible-body mt-6">
+                Subjetividade, Subcultura e a Construção de uma Estética em Movimento no Coletivo LowPressure™
+              </p>
+            </div>
+            <div className="bilingual-col">
+              <p className="lang-pill">&lt;ENGLISH&gt;</p>
+              <h1 className="bible-title mt-4">LOWMOVIE™ E O LABIRINTO CRIATIVO</h1>
+              <p className="bible-body mt-6">
+                Subjectivity, Subculture and the Construction of an Aesthetic in Motion in the LowPressure™ Collective
+              </p>
+            </div>
           </div>
         </BilingualSection>
 
@@ -79,7 +88,7 @@ const Dissertacao = () => {
               <h2 className="bible-title">MATRIX PROCESSES</h2>
             </div>
           </div>
-          <p className="bible-subtitle mt-4">Três projetos que originaram esta dissertação / Three projects that originated this dissertation</p>
+          <p className="bible-subtitle mt-4">Projetos que originaram esta dissertação / Projects that originated this dissertation</p>
 
           <div className="bible-section-spacing mt-8">
             <p className="bible-body text-muted-foreground">
@@ -93,10 +102,17 @@ const Dissertacao = () => {
 
         {/* CasaTrezeStudio */}
         <BilingualSection className="py-16">
-          <div className="bible-block-spacing border-l-4 border-primary pl-6">
-            <h2 className="bible-title">CASATREZESTUDIO®</h2>
-            <p className="bible-subtitle text-muted-foreground mt-2">2008-Presente / 2008-Present</p>
-            <p className="bible-subtitle text-primary mt-2">Coletivo Criativo / Creative Lab</p>
+          <div className="bilingual-grid bible-block-spacing">
+            <div className="bilingual-col border-l-4 border-primary pl-6">
+              <h2 className="bible-title">CASATREZESTUDIO®</h2>
+              <p className="bible-subtitle text-muted-foreground mt-2">2008-Presente</p>
+              <p className="bible-subtitle text-primary mt-2">Coletivo Criativo</p>
+            </div>
+            <div className="bilingual-col border-l-4 border-primary pl-6">
+              <h2 className="bible-title">CASATREZESTUDIO®</h2>
+              <p className="bible-subtitle text-muted-foreground mt-2">2008-Present</p>
+              <p className="bible-subtitle text-primary mt-2">Creative Lab</p>
+            </div>
           </div>
 
           <div className="bible-bilingual-grid bible-section-spacing mt-8">

@@ -14,25 +14,25 @@
     </image:image>
   </url>
 
-  <!-- Dissertação -->
+  <!-- LowMovie -->
   <url>
-    <loc>https://thevoidn13.lovableproject.com/dissertacao</loc>
+    <loc>https://thevoidn13.lovableproject.com/lowmovie</loc>
     <lastmod>2025-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
-  <!-- Autor -->
+  <!-- Sobre/Author -->
   <url>
-    <loc>https://thevoidn13.lovableproject.com/autor</loc>
+    <loc>https://thevoidn13.lovableproject.com/sobre</loc>
     <lastmod>2025-01-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Videos Portfolio -->
+  <!-- Galeria/Videos Portfolio -->
   <url>
-    <loc>https://thevoidn13.lovableproject.com/videos</loc>
+    <loc>https://thevoidn13.lovableproject.com/galeria</loc>
     <lastmod>2025-01-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

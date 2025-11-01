@@ -462,10 +462,10 @@ const Autor = () => {
                   </div>
                 </div>
                 
-                <div className="bg-red-900 -mx-6 px-6 py-8 rounded-lg">
-                  <h3 className="bible-subtitle text-white mb-4">Conclusão</h3>
-                  <p className="bible-body text-white mb-4">A identidade ЦАСТРО é um exercício de negação criativa. É o avesso do branding para relembrar o que o design pode ser: linguagem, manifesto, resistência.</p>
-                  <p className="bible-body font-bold italic text-white text-center">Não é um logo para ser lembrado, é uma ideia para ser compreendida — tarde demais.</p>
+                <div className="bg-destructive -mx-6 px-6 py-8 rounded-lg">
+                  <h3 className="bible-subtitle text-destructive-foreground mb-4">Conclusão</h3>
+                  <p className="bible-body text-destructive-foreground mb-4">A identidade ЦАСТРО é um exercício de negação criativa. É o avesso do branding para relembrar o que o design pode ser: linguagem, manifesto, resistência.</p>
+                  <p className="bible-body font-bold italic text-destructive-foreground text-center">Não é um logo para ser lembrado, é uma ideia para ser compreendida — tarde demais.</p>
                 </div>
               </div>
             </div>
@@ -518,10 +518,10 @@ const Autor = () => {
                   </div>
                 </div>
                 
-                <div className="bg-red-900 -mx-6 px-6 py-8 rounded-lg">
-                  <h3 className="bible-subtitle text-white mb-4">Conclusion</h3>
-                  <p className="bible-body text-white mb-4">The ЦАСТРО identity is an exercise in creative negation. It's the reverse of branding to remind us what design can be: language, manifesto, resistance.</p>
-                  <p className="bible-body font-bold italic text-white text-center">It's not a logo to be remembered, it's an idea to be understood — too late.</p>
+                <div className="bg-destructive -mx-6 px-6 py-8 rounded-lg">
+                  <h3 className="bible-subtitle text-destructive-foreground mb-4">Conclusion</h3>
+                  <p className="bible-body text-destructive-foreground mb-4">The ЦАСТРО identity is an exercise in creative negation. It's the reverse of branding to remind us what design can be: language, manifesto, resistance.</p>
+                  <p className="bible-body font-bold italic text-destructive-foreground text-center">It's not a logo to be remembered, it's an idea to be understood — too late.</p>
                 </div>
               </div>
             </div>

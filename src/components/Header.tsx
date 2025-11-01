@@ -21,7 +21,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <Link 
             to="/" 
-            className="text-sm font-medium tracking-wide text-[#DADADA] hover:text-[#DADADA]/80 transition-colors"
+            className="text-sm font-medium tracking-wide text-foreground hover:text-foreground/80 transition-colors"
             style={{ fontFamily: 'Manrope, sans-serif' }}
           >
             THEVØIDN13
@@ -34,8 +34,8 @@ const Header = () => {
                   to={item.path}
                   className={`text-sm font-medium tracking-wide transition-colors ${
                     location.pathname === item.path
-                      ? "text-[#DADADA]"
-                      : "text-[#DADADA]/70 hover:text-[#DADADA]"
+                      ? "text-foreground"
+                      : "text-muted-foreground hover:text-foreground"
                   }`}
                   style={{ fontFamily: 'Manrope, sans-serif' }}
                 >
