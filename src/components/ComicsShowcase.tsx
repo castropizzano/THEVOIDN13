@@ -1,6 +1,9 @@
-import { BookOpen, Info } from "lucide-react";
+import { Info } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import watchmenCover from "@/assets/comics/watchmen.jpg";
+import sandmanCover from "@/assets/comics/sandman.jpg";
+import blackHoleCover from "@/assets/comics/black-hole.png";
 import {
   Dialog,
   DialogContent,
@@ -31,7 +34,7 @@ const ComicsShowcase = () => {
       title: "Watchmen",
       author: "Alan Moore & Dave Gibbons",
       year: 1986,
-      coverUrl: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1442239711i/472331.jpg",
+      coverUrl: watchmenCover,
       description: "Ética ambígua e o mecanismo de cidade",
       context: "A arquitetura ética e o questionamento do heroísmo"
     },
@@ -39,7 +42,7 @@ const ComicsShowcase = () => {
       title: "The Sandman",
       author: "Neil Gaiman",
       year: 1989,
-      coverUrl: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1355564900i/23754.jpg",
+      coverUrl: sandmanCover,
       description: "Mitologia pessoal e arquitetura do sonho",
       context: "A construção de universos oníricos e simbólicos"
     },
@@ -47,7 +50,7 @@ const ComicsShowcase = () => {
       title: "Black Hole",
       author: "Charles Burns",
       year: 1995,
-      coverUrl: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1388199803i/381033.jpg",
+      coverUrl: blackHoleCover,
       description: "Alienação e metamorfose corporal",
       context: "O corpo como texto de transformação e isolamento"
     }
@@ -57,23 +60,11 @@ const ComicsShowcase = () => {
     <section className="w-full py-8">
       <div className="max-w-6xl mx-auto">
         <Card className="overflow-hidden border-primary/20 bg-card/50 backdrop-blur-sm p-8">
-          <div className="flex items-center justify-between mb-8">
-            <div className="flex items-center gap-3">
-              <BookOpen className="w-8 h-8 text-primary" />
-              <div>
-                <h2 className="text-3xl font-bold text-foreground">
-                  DNA CONCEITUAL
-                </h2>
-                <p className="text-sm text-muted-foreground mt-1">
-                  CONCEPTUAL DNA — Quadrinhos que estruturam a narrativa
-                </p>
-              </div>
-            </div>
-          
           <Dialog>
             <DialogTrigger asChild>
-              <Button variant="outline" size="icon">
+              <Button variant="outline" className="w-full justify-start gap-2 mb-8">
                 <Info className="w-4 h-4" />
+                <span className="text-sm">DNA Conceitual dos Quadrinhos</span>
               </Button>
             </DialogTrigger>
             <DialogContent className="max-w-2xl">
@@ -101,9 +92,9 @@ const ComicsShowcase = () => {
               </DialogHeader>
             </DialogContent>
           </Dialog>
-        </div>
+        </Card>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
           {comics.map((comic) => (
             <TooltipProvider key={comic.title}>
               <Tooltip>
@@ -146,7 +137,6 @@ const ComicsShowcase = () => {
             e <em>Black Hole</em> com a metamorfose corporal e o isolamento.
           </p>
         </div>
-        </Card>
       </div>
     </section>
   );
