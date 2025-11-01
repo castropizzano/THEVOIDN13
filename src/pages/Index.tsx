@@ -2083,6 +2083,7 @@ const Index = () => {
               }
             />
             <BilingualContent
+              showLabels={false}
               portugueseContent={
                 <div>
                   <p className="bible-body">
@@ -2125,6 +2126,7 @@ const Index = () => {
               }
             />
             <BilingualContent
+              showLabels={false}
               portugueseContent={
                 <div>
                   <p className="bible-body">
