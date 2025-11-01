@@ -88,10 +88,10 @@ export const MindMap = () => {
               <div className="space-y-4">
                 <div className="space-y-2">
                   <p className="body-base text-foreground">
-                    <span className="text-primary font-bold">PORTUGUÊS:</span> Este memorial artístico documenta um processo de criação híbrida entre humano e inteligência artificial em constante desenvolvimento. A trajetória começa em 2008 com a fundação da CasaTrezeStudio, passa pelo desenvolvimento do LOWMOVIE (2020-2023), pelo mestrado em Cinema e Artes do Vídeo (2024-2026), e culmina neste portal digital (outubro 2024 - presente). Não se trata de usar IA como ferramenta passiva, mas de estabelecer um diálogo criativo onde a máquina atua como co-criadora, desafiando, propondo e expandindo o universo conceitual de THEVØIDN13. Um coletivo em evolução: de humano-humano para humano-máquina.
+                    <span className="text-primary font-bold">PORTUGUÊS:</span> Este memorial artístico documenta um processo de criação híbrida entre humano e inteligência artificial em constante desenvolvimento. A trajetória começa em 2008 com a fundação da CasaTrezeStudio, passa pelo desenvolvimento do LOWMOVIE (2020-2023), pelo mestrado em Cinema e Artes do Vídeo (2024-2026), e culmina neste portal digital (outubro 2025 - presente). Não se trata de usar IA como ferramenta passiva, mas de estabelecer um diálogo criativo onde a máquina atua como co-criadora, desafiando, propondo e expandindo o universo conceitual de THEVØIDN13. Um coletivo em evolução: de humano-humano para humano-máquina.
                   </p>
                   <p className="body-small text-muted-foreground italic">
-                    <span className="text-primary font-bold">ENGLISH:</span> This artistic memorial documents a hybrid creation process between human and artificial intelligence in constant development. The trajectory begins in 2008 with the foundation of CasaTrezeStudio, passes through the development of LOWMOVIE (2020-2023), the Master's in Cinema and Video Arts (2024-2026), and culminates in this digital portal (October 2024 - present). It's not about using AI as a passive tool, but establishing a creative dialogue where the machine acts as co-creator, challenging, proposing, and expanding the conceptual universe of THEVØIDN13. An evolving collective: from human-human to human-machine.
+                    <span className="text-primary font-bold">ENGLISH:</span> This artistic memorial documents a hybrid creation process between human and artificial intelligence in constant development. The trajectory begins in 2008 with the foundation of CasaTrezeStudio, passes through the development of LOWMOVIE (2020-2023), the Master's in Cinema and Video Arts (2024-2026), and culminates in this digital portal (October 2025 - present). It's not about using AI as a passive tool, but establishing a creative dialogue where the machine acts as co-creator, challenging, proposing, and expanding the conceptual universe of THEVØIDN13. An evolving collective: from human-human to human-machine.
                   </p>
                 </div>
 
@@ -119,55 +119,28 @@ export const MindMap = () => {
 
                     <div>
                       <p className="body-small text-foreground">
-                        <strong className="text-primary">2023 (Outubro - Dezembro):</strong> Crise no mestrado → Burnout acadêmico → Nascimento de THEVØIDN13 como resposta ao colapso. Primeiras experimentações com Midjourney v5 para gerar máscaras e personagens. Desenvolvimento da estética "low culture punk" através de prompts iterativos com GPT-4.
+                        <strong className="text-primary">2024 (Outubro - Dezembro):</strong> Crise no mestrado → Burnout acadêmico → Nascimento de THEVØIDN13 como resposta ao colapso. Primeiras experimentações com Midjourney v6 para gerar máscaras e personagens. Desenvolvimento da estética "low culture punk" através de prompts iterativos com GPT-4. Início do desenvolvimento deste portal digital com Lovable.
                       </p>
                       <p className="body-small text-muted-foreground/70 italic">
-                        <strong>Oct-Dec 2023:</strong> Master's crisis → Academic burnout → Birth of THEVØIDN13 as response to collapse. First experiments with Midjourney v5 for masks and characters. Development of "low culture punk" aesthetic through iterative prompts with GPT-4.
+                        <strong>Oct-Dec 2024:</strong> Master's crisis → Academic burnout → Birth of THEVØIDN13 as response to collapse. First experiments with Midjourney v6 for masks and characters. Development of "low culture punk" aesthetic through iterative prompts with GPT-4. Beginning of this digital portal development with Lovable.
                       </p>
                     </div>
 
                     <div>
                       <p className="body-small text-foreground">
-                        <strong className="text-primary">2024 - 2026:</strong> Mestrado em Cinema e Artes do Vídeo (PPG-CINEAV/Unespar). Pesquisa sobre co-criação humano-IA no campo das artes visuais e cinema experimental. THEVØIDN13 se torna objeto e método de investigação acadêmica. Desenvolvimento paralelo de prática artística e reflexão teórica.
+                        <strong className="text-primary">2024 - 2026:</strong> Mestrado em Cinema e Artes do Vídeo (PPG-CINEAV/Unespar). Pesquisa sobre metodologia coletiva do LOWMOVIE. Desenvolvimento paralelo de prática artística reflexão teórica e questionamentos sobre co-criação humano-IA que originam esta nova fase do projeto em tempo real.
                       </p>
                       <p className="body-small text-muted-foreground/70 italic">
-                        <strong>2024 - 2026:</strong> Master's in Cinema and Video Arts (PPG-CINEAV/Unespar). Research on human-AI co-creation in visual arts and experimental cinema. THEVØIDN13 becomes both object and method of academic investigation. Parallel development of artistic practice and theoretical reflection.
+                        <strong>2024 - 2026:</strong> Master's in Cinema and Video Arts (PPG-CINEAV/Unespar). Research on LOWMOVIE collective methodology. Parallel development of artistic practice theoretical reflection and questions about human-AI co-creation that originate this new phase of the project in real time.
                       </p>
                     </div>
 
                     <div>
                       <p className="body-small text-foreground">
-                        <strong className="text-primary">2024 (Janeiro - Junho):</strong> Consolidação da Shadow Interface Bible como documento canônico. Mais de 500 imagens geradas com Midjourney v6, explorando cenas urbanas, veículos vintage e atmosferas noturnas. Experimentação com Adobe Firefly para texturas analógicas. Co-escrita com Claude 3 Opus de textos filosóficos e manifestos conceituais.
+                        <strong className="text-primary">2024 (Outubro) - 2025 (Outubro):</strong> Consolidação progressiva da Shadow Interface Bible. Desenvolvimento completo do portal com Lovable AI + Claude 3.7 Sonnet. Experimentação com React TypeScript Tailwind. Funcionalidades interativas: Oráculo Criativo Gerador de Stills (Nano Banana) Biblioteca de Prompts Creative-Ops Mind Map. Edge functions em Supabase. Mais de 700 imagens geradas com Midjourney v6 Adobe Firefly e Nano Banana. Mais de 50 sessões iterativas refinando tipografia componentes UI e lógica frontend/backend. Conexão com GitHub. Publicação final em 31/10/2025.
                       </p>
                       <p className="body-small text-muted-foreground/70 italic">
-                        <strong>Jan-Jun 2024:</strong> Consolidation of Shadow Interface Bible as canonical document. 500+ images generated with Midjourney v6, exploring urban scenes, vintage vehicles, nocturnal atmospheres. Adobe Firefly experiments for analog textures. Co-writing with Claude 3 Opus of philosophical texts and conceptual manifestos.
-                      </p>
-                    </div>
-
-                    <div>
-                      <p className="body-small text-foreground">
-                        <strong className="text-primary">2024 (Julho - Setembro):</strong> Criação dos brandbooks LowMovie e LowPressure com Adobe Illustrator + IA. Desenvolvimento do Memorial Acadêmico v3 em co-escrita com GPT-4o. Início da integração entre design manual (Photoshop, After Effects) e geração por IA. Estabelecimento de metodologia híbrida constante.
-                      </p>
-                      <p className="body-small text-muted-foreground/70 italic">
-                        <strong>Jul-Sep 2024:</strong> Creation of LowMovie and LowPressure brandbooks with Adobe Illustrator + AI. Development of Academic Memorial v3 in co-writing with GPT-4o. Beginning of integration between manual design (Photoshop, After Effects) and AI generation. Establishment of constant hybrid methodology.
-                      </p>
-                    </div>
-
-                    <div>
-                      <p className="body-small text-foreground">
-                        <strong className="text-primary">2024 (Outubro) - 2025 (Janeiro):</strong> Início do desenvolvimento deste portal digital com Lovable. Primeira versão do website como "memorial portal". Experimentação com React, TypeScript, Tailwind. Design system baseado em tokens semânticos. Shadow Interface Bible v13 refinada com Gemini 2.5 Flash. Integração de áudio, vídeo e documentos PDF.
-                      </p>
-                      <p className="body-small text-muted-foreground/70 italic">
-                        <strong>Oct 2024 - Jan 2025:</strong> Beginning of this digital portal development with Lovable. First website version as "memorial portal". Experimentation with React, TypeScript, Tailwind. Design system based on semantic tokens. Shadow Interface Bible v13 refined with Gemini 2.5 Flash. Integration of audio, video and PDF documents.
-                      </p>
-                    </div>
-
-                    <div>
-                      <p className="body-small text-foreground">
-                        <strong className="text-primary">2025 (Janeiro - Outubro):</strong> Expansão massiva do portal com Lovable AI + Claude 3.7 Sonnet. Desenvolvimento de funcionalidades interativas: Oráculo Criativo, Gerador de Stills (Nano Banana), Biblioteca de Prompts, Creative-Ops Mind Map. Edge functions em Supabase para integração com modelos de IA. Mais de 700 imagens geradas ao total. Mais de 50 sessões iterativas refinando tipografia, componentes UI e lógica de frontend/backend. Conexão com GitHub para versionamento e documentação técnica. Publicação final em 31/10/2025.
-                      </p>
-                      <p className="body-small text-muted-foreground/70 italic">
-                        <strong>Jan - Oct 2025:</strong> Massive portal expansion with Lovable AI + Claude 3.7 Sonnet. Development of interactive features: Creative Oracle, Still Generator (Nano Banana), Prompt Library, Creative-Ops Mind Map. Edge functions in Supabase for AI model integration. 700+ images generated in total. 50+ iterative sessions refining typography, UI components and frontend/backend logic. GitHub connection for versioning and technical documentation. Final publication on 10/31/2025.
+                        <strong>Oct 2024 - Oct 2025:</strong> Progressive consolidation of Shadow Interface Bible. Complete portal development with Lovable AI + Claude 3.7 Sonnet. Experimentation with React TypeScript Tailwind. Interactive features: Creative Oracle Still Generator (Nano Banana) Prompt Library Creative-Ops Mind Map. Edge functions in Supabase. 700+ images generated with Midjourney v6 Adobe Firefly and Nano Banana. 50+ iterative sessions refining typography UI components and frontend/backend logic. GitHub connection. Final publication on 10/31/2025.
                       </p>
                     </div>
                   </div>
