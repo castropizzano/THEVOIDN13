@@ -23,19 +23,21 @@ interface BilingualContentProps {
   portugueseContent: React.ReactNode;
   englishContent: React.ReactNode;
   alignTop?: boolean;
+  showLabels?: boolean;
 }
 export const BilingualContent = ({
   portugueseContent,
   englishContent,
-  alignTop = false
+  alignTop = false,
+  showLabels = true
 }: BilingualContentProps) => {
   return <div className="bilingual-grid">
       <div className="bilingual-col">
-        <p className="lang-pill">&lt;PORTUGUÊS&gt;</p>
+        {showLabels && <p className="lang-pill">&lt;PORTUGUÊS&gt;</p>}
         {portugueseContent}
       </div>
       <div className="bilingual-col">
-        <p className="lang-pill">&lt;ENGLISH&gt;</p>
+        {showLabels && <p className="lang-pill">&lt;ENGLISH&gt;</p>}
         {englishContent}
       </div>
     </div>;

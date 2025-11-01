@@ -193,6 +193,7 @@ const Index = () => {
           />
           
           <BilingualContent
+            showLabels={false}
             portugueseContent={
               <div className="bible-section-spacing">
                 <p className="bible-body">
@@ -436,6 +437,7 @@ const Index = () => {
           </div>
 
           <BilingualContent
+            showLabels={false}
             portugueseContent={
               <>
                 <p className="bible-body">
@@ -1105,6 +1107,7 @@ const Index = () => {
           />
 
           <BilingualContent
+            showLabels={false}
             portugueseContent={
               <>
                 <p className="bible-body">
@@ -1135,6 +1138,7 @@ const Index = () => {
           />
 
           <BilingualContent
+            showLabels={false}
             portugueseContent={
               <>
                 <p className="bible-body">
@@ -1165,6 +1169,7 @@ const Index = () => {
           />
 
           <BilingualContent
+            showLabels={false}
             portugueseContent={
               <>
                 <p className="bible-body">
@@ -1195,6 +1200,7 @@ const Index = () => {
           />
 
           <BilingualContent
+            showLabels={false}
             portugueseContent={
               <>
                 <p className="bible-body">
@@ -1803,6 +1809,7 @@ const Index = () => {
           </div>
 
           <BilingualContent
+            showLabels={false}
             portugueseContent={
               <>
                 <p className="bible-body">
@@ -1847,6 +1854,7 @@ const Index = () => {
             </div>
 
             <BilingualContent
+              showLabels={false}
               portugueseContent={
                 <>
                   <p className="bible-body">
