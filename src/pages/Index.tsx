@@ -171,8 +171,8 @@ const Index = () => {
             <BilingualAudioPlayer
               srcPt="/audio/thevoidn13-manifesto-pt.mp3"
               srcEn="/audio/thevoidn13-manifesto-en.mp3"
-              title="THEVØIDN13 | INTRO"
-              description="Narração conceitual do projeto / Conceptual project narration"
+              title="THEVØIDN13 I INTRO"
+              description="Narração Conceitual Projeto / Conceptual Project Narration"
             />
           </div>
         </section>
