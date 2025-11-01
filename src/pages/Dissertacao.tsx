@@ -522,7 +522,7 @@ const Dissertacao = () => {
               <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">A pesquisa de mestrado investiga processos criativos colaborativos a partir da produção de LowMovie. Como uma crew de skate se torna coletivo criativo? Como a subcultura do skate gera modos específicos de fazer cinema? Como documentar sem domesticar?</p>
-                <p className="bible-body">Metodologia autoetnográfica. Análise fílmica. Entrevistas em profundidade. Diário de campo. Mas também: skate sessions como coleta de dados. Edição de vídeo como análise. Montagem como pensamento.</p>
+                <p className="bible-body">Metodologia autoetnográfica. Análise fílmica. Entrevistas em profundidade. Diário de campo. Mas também: skate sessions como coleta de dados. Edição de vídeo como análise.</p>
               </div>
             </div>
 
@@ -530,7 +530,7 @@ const Dissertacao = () => {
               <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">The master's research investigates collaborative creative processes from LowMovie's production. How does a skate crew become a creative collective? How does skate subculture generate specific ways of making cinema? How to document without domesticating?</p>
-                <p className="bible-body">Autoethnographic methodology. Film analysis. In-depth interviews. Field diary. But also: skate sessions as data collection. Video editing as analysis. Montage as thought.</p>
+                <p className="bible-body">Autoethnographic methodology. Film analysis. In-depth interviews. Field diary. But also: skate sessions as data collection. Video editing as analysis.</p>
               </div>
             </div>
           </div>
