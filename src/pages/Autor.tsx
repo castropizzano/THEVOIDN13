@@ -487,7 +487,7 @@ const Autor = () => {
                   <p className="bible-body font-bold italic text-primary">"Branding died when it began to over-explain itself."</p>
                 </div>
                 
-                <p className="bible-body">The ЦАСТРО™ anti-brand doesn't seek commercial legibility, but conceptual recognition. Those who understand the code understand the author. Those who don't are outside the tribe — and that's okay.</p>
+                <p className="bible-body">The ЦАСТРО™ anti-brand doesn't seek commercial legibility, but conceptual recognition. Those who understand the code understand the author. Those who don't are outside, and that's okay.</p>
                 
                 <div className="space-y-4 bg-primary/5 border border-primary/20 rounded-lg p-6">
                   <h3 className="bible-subtitle">Know the Work, Not the Face</h3>
