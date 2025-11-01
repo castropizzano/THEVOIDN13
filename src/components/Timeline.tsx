@@ -97,7 +97,7 @@ export const Timeline = () => {
                     }
                   `}
                 >
-                  <span className="text-xs font-bold">{event.year}</span>
+                  <span className="text-xs font-bold">{event.year.split('-')[0]}</span>
                 </div>
 
                 {/* Content */}
