@@ -65,9 +65,9 @@ export const AccessGate = ({
       setHasAccess(true);
       onAccessGranted();
       toast.success("Bem-vindo de volta ao vazio / Welcome back to the void");
-    } catch (error: any) {
-      console.error("Login error:", error);
-      toast.error(error.message || "Erro ao fazer login / Login error");
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : "Erro ao fazer login / Login error";
+      toast.error(errorMessage);
     } finally {
       setIsSubmitting(false);
     }
@@ -113,16 +113,20 @@ export const AccessGate = ({
         consent_given: true
       });
 
+      // Silently ignore newsletter duplicate errors
       if (insertError && !insertError.message.includes("duplicate")) {
-        console.error("Newsletter error:", insertError);
+        // Newsletter subscription failed but account was created
+        toast("Conta criada, mas erro ao inscrever na newsletter / Account created, newsletter subscription failed", {
+          duration: 3000,
+        });
       }
 
       setHasAccess(true);
       onAccessGranted();
       toast.success("Conta criada! Bem-vindo ao vazio / Account created! Welcome to the void");
-    } catch (error: any) {
-      console.error("Signup error:", error);
-      toast.error(error.message || "Erro ao criar conta / Signup error");
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : "Erro ao criar conta / Signup error";
+      toast.error(errorMessage);
     } finally {
       setIsSubmitting(false);
     }

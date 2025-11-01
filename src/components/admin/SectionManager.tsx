@@ -38,6 +38,18 @@ interface SectionContent {
   display_order: number;
 }
 
+interface ContentItemProps {
+  content: SectionContent;
+  onUpdate: (data: any) => void;
+  onDelete: () => void;
+}
+
+interface AddContentFormProps {
+  type: string;
+  onSave: (data: any) => void;
+  onCancel: () => void;
+}
+
 const PAGES = [
   { value: "home", label: "Página Inicial" },
   { value: "autor", label: "Autor" },
@@ -92,7 +104,7 @@ const SectionManager = () => {
 
         // Organizar conteúdos por seção
         const contentsBySection: Record<string, SectionContent[]> = {};
-        (contentsData || []).forEach((content: any) => {
+        (contentsData || []).forEach((content) => {
           if (!contentsBySection[content.section_id]) {
             contentsBySection[content.section_id] = [];
           }
@@ -100,10 +112,11 @@ const SectionManager = () => {
         });
         setContents(contentsBySection);
       }
-    } catch (error: any) {
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : "Erro desconhecido";
       toast({
         title: "Erro ao carregar",
-        description: error.message,
+        description: errorMessage,
         variant: "destructive",
       });
     } finally {
@@ -134,10 +147,11 @@ const SectionManager = () => {
       toast({ title: "Seção criada com sucesso!" });
       setNewSection({ title: "", key: "" });
       fetchData();
-    } catch (error: any) {
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : "Erro desconhecido";
       toast({
         title: "Erro ao criar seção",
-        description: error.message,
+        description: errorMessage,
         variant: "destructive",
       });
     }
@@ -152,10 +166,11 @@ const SectionManager = () => {
 
       if (error) throw error;
       fetchData();
-    } catch (error: any) {
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : "Erro desconhecido";
       toast({
         title: "Erro",
-        description: error.message,
+        description: errorMessage,
         variant: "destructive",
       });
     }
@@ -174,10 +189,11 @@ const SectionManager = () => {
         supabase.from("page_sections").update({ display_order: newIndex }).eq("id", newSections[newIndex].id),
       ]);
       fetchData();
-    } catch (error: any) {
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : "Erro desconhecido";
       toast({
         title: "Erro",
-        description: error.message,
+        description: errorMessage,
         variant: "destructive",
       });
     }
@@ -197,10 +213,11 @@ const SectionManager = () => {
         toast({ title: "Conteúdo excluído" });
       }
       fetchData();
-    } catch (error: any) {
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : "Erro desconhecido";
       toast({
         title: "Erro ao excluir",
-        description: error.message,
+        description: errorMessage,
         variant: "destructive",
       });
     } finally {
@@ -215,18 +232,19 @@ const SectionManager = () => {
       const { error } = await supabase.from("section_contents").insert({
         section_id: sectionId,
         content_type: type,
-        content_data: data,
+        content_data: data as any,
         display_order: sectionContents.length,
-      });
+      } as any);
 
       if (error) throw error;
       toast({ title: "Conteúdo adicionado!" });
       setNewContent(null);
       fetchData();
-    } catch (error: any) {
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : "Erro desconhecido";
       toast({
         title: "Erro ao adicionar conteúdo",
-        description: error.message,
+        description: errorMessage,
         variant: "destructive",
       });
     }
@@ -236,16 +254,17 @@ const SectionManager = () => {
     try {
       const { error } = await supabase
         .from("section_contents")
-        .update({ content_data: data })
+        .update({ content_data: data as any })
         .eq("id", contentId);
 
       if (error) throw error;
       toast({ title: "Conteúdo atualizado!" });
       fetchData();
-    } catch (error: any) {
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : "Erro desconhecido";
       toast({
         title: "Erro ao atualizar",
-        description: error.message,
+        description: errorMessage,
         variant: "destructive",
       });
     }
@@ -445,7 +464,7 @@ const SectionManager = () => {
 };
 
 // Componente para renderizar item de conteúdo
-const ContentItem = ({ content, onUpdate, onDelete }: any) => {
+const ContentItem = ({ content, onUpdate, onDelete }: ContentItemProps) => {
   const [isEditing, setIsEditing] = useState(false);
   const [editData, setEditData] = useState(content.content_data);
 
@@ -535,8 +554,8 @@ const ContentItem = ({ content, onUpdate, onDelete }: any) => {
 };
 
 // Componente para adicionar novo conteúdo
-const AddContentForm = ({ type, onSave, onCancel }: any) => {
-  const [data, setData] = useState<any>({});
+const AddContentForm = ({ type, onSave, onCancel }: AddContentFormProps) => {
+  const [data, setData] = useState<Record<string, string>>({});
 
   return (
     <Card className="border-2 border-dashed">

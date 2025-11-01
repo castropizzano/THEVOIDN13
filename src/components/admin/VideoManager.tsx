@@ -73,10 +73,11 @@ const VideoManager = () => {
           fetchData(); // Refresh
         }
       }
-    } catch (error: any) {
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : "Erro desconhecido";
       toast({
         title: "Erro ao carregar vídeos",
-        description: error.message,
+        description: errorMessage,
         variant: "destructive",
       });
     } finally {
@@ -101,10 +102,11 @@ const VideoManager = () => {
         title: "Configuração atualizada",
         description: "As alterações foram salvas.",
       });
-    } catch (error: any) {
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : "Erro desconhecido";
       toast({
         title: "Erro ao atualizar",
-        description: error.message,
+        description: errorMessage,
         variant: "destructive",
       });
     }
@@ -137,10 +139,11 @@ const VideoManager = () => {
 
       // Set new featured
       await updateSetting(vimeoId, { is_featured: true });
-    } catch (error: any) {
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : "Erro desconhecido";
       toast({
         title: "Erro",
-        description: error.message,
+        description: errorMessage,
         variant: "destructive",
       });
     }

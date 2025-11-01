@@ -67,7 +67,6 @@ export const ComicGenerator = () => {
         }
       }
     } catch (error) {
-      console.error('Error fetching prompts:', error);
       toast.error('Erro ao carregar prompts / Error loading prompts');
     }
   };
@@ -100,8 +99,6 @@ export const ComicGenerator = () => {
         ? `${systemPrompt}\n\n---\n\n${scriptToUse}`
         : `${systemPrompt}\n\n---\n\n${scriptToUse}`;
 
-      console.log('Sending prompt to edge function, length:', fullPrompt.length);
-
       const { data, error } = await supabase.functions.invoke("generate-comic-panel", {
         body: { 
           script: fullPrompt,
@@ -109,10 +106,7 @@ export const ComicGenerator = () => {
         }
       });
 
-      console.log('Edge function response:', { data, error });
-
       if (error) {
-        console.error('Edge function error:', error);
         throw error;
       }
 
@@ -127,17 +121,17 @@ export const ComicGenerator = () => {
       } else {
         throw new Error("No image generated - empty response");
       }
-    } catch (error: any) {
-      console.error('Generation error:', error);
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : "Unknown error";
       
-      if (error.message?.includes("Rate limit") || error.message?.includes("429")) {
+      if (errorMessage.includes("Rate limit") || errorMessage.includes("429")) {
         toast.error("Limite de requisições excedido. Tente novamente em alguns segundos. / Rate limit exceeded. Try again in a few seconds.");
-      } else if (error.message?.includes("Payment required") || error.message?.includes("402")) {
+      } else if (errorMessage.includes("Payment required") || errorMessage.includes("402")) {
         toast.error("Créditos insuficientes. Adicione créditos ao workspace. / Insufficient credits. Add credits to workspace.");
-      } else if (error.message?.includes("Script too")) {
-        toast.error(error.message);
+      } else if (errorMessage.includes("Script too")) {
+        toast.error(errorMessage);
       } else {
-        toast.error(`Erro ao gerar still: ${error.message || 'Erro desconhecido'} / Error generating still`);
+        toast.error(`Erro ao gerar still: ${errorMessage} / Error generating still`);
       }
     } finally {
       setIsGenerating(false);

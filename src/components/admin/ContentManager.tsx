@@ -39,10 +39,11 @@ const ContentManager = () => {
 
       if (error) throw error;
       setContents(data || []);
-    } catch (error: any) {
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : "Erro desconhecido";
       toast({
         title: "Erro ao carregar conteúdos",
-        description: error.message,
+        description: errorMessage,
         variant: "destructive",
       });
     } finally {
@@ -66,10 +67,11 @@ const ContentManager = () => {
         title: "Conteúdo atualizado",
         description: "As alterações foram salvas com sucesso.",
       });
-    } catch (error: any) {
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : "Erro desconhecido";
       toast({
         title: "Erro ao atualizar",
-        description: error.message,
+        description: errorMessage,
         variant: "destructive",
       });
     }

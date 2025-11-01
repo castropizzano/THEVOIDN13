@@ -40,7 +40,6 @@ export const PromptLibrary = () => {
       if (error) throw error;
       setPrompts(data || []);
     } catch (error) {
-      console.error('Error fetching prompts:', error);
       toast.error('Erro ao carregar prompts');
     } finally {
       setLoading(false);

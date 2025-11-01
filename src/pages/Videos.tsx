@@ -58,7 +58,6 @@ const Videos = () => {
       const { data, error } = await supabase.functions.invoke('vimeo-videos');
 
       if (error) {
-        console.error('Error fetching videos:', error);
         toast({
           title: "Erro ao carregar vídeos",
           description: "Não foi possível carregar os vídeos. Tente novamente.",
@@ -76,7 +75,6 @@ const Videos = () => {
       setVideos(data.videos || []);
       setVideoSettings(settings || []);
     } catch (error) {
-      console.error('Error:', error);
       toast({
         title: "Erro",
         description: "Ocorreu um erro ao carregar os vídeos.",

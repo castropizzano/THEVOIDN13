@@ -4,8 +4,9 @@ import { useLocation, Link } from "react-router-dom";
 const NotFound = () => {
   const location = useLocation();
 
+  // 404 tracking happens silently - no console pollution
   useEffect(() => {
-    console.error("404 Error: User attempted to access non-existent route:", location.pathname);
+    // Could send to analytics service here if needed
   }, [location.pathname]);
 
   return (

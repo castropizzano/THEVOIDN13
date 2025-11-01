@@ -74,7 +74,6 @@ const AdminDashboard = () => {
       setSubscribers(data || []);
       setFilteredSubscribers(data || []);
     } catch (error) {
-      console.error("Error fetching subscribers:", error);
       toast.error("Erro ao carregar inscritos");
     } finally {
       setLoadingData(false);
@@ -95,7 +94,6 @@ const AdminDashboard = () => {
       toast.success("Inscrito removido com sucesso");
       fetchSubscribers();
     } catch (error) {
-      console.error("Error deleting subscriber:", error);
       toast.error("Erro ao remover inscrito");
     } finally {
       setDeleteDialogOpen(false);

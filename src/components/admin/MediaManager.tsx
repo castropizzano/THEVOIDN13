@@ -37,10 +37,11 @@ const MediaManager = () => {
 
       if (error) throw error;
       setAssets(data || []);
-    } catch (error: any) {
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : "Erro desconhecido";
       toast({
         title: "Erro ao carregar mídias",
-        description: error.message,
+        description: errorMessage,
         variant: "destructive",
       });
     } finally {
@@ -66,10 +67,11 @@ const MediaManager = () => {
         title: "Mídia atualizada",
         description: "As alterações foram salvas com sucesso.",
       });
-    } catch (error: any) {
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : "Erro desconhecido";
       toast({
         title: "Erro ao atualizar",
-        description: error.message,
+        description: errorMessage,
         variant: "destructive",
       });
     }
