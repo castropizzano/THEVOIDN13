@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { toast } from "sonner";
 import { Trash2, Plus, Save } from "lucide-react";
+import { z } from "zod";
 
 interface Prompt {
   id: string;
@@ -50,9 +51,26 @@ export const PromptManager = () => {
     }
   };
 
+  const promptSchema = z.object({
+    title: z.string().min(1, 'Título é obrigatório').max(200, 'Título muito longo'),
+    description: z.string().max(1000, 'Descrição muito longa').optional(),
+    prompt_text: z.string().min(10, 'Prompt muito curto (mínimo 10 caracteres)').max(50000, 'Prompt muito longo (máximo 50.000 caracteres)'),
+    category: z.enum(['system', 'character', 'scene']),
+  });
+
   const handleSave = async () => {
-    if (!editingPrompt?.title || !editingPrompt?.prompt_text || !editingPrompt?.category) {
-      toast.error('Preencha os campos obrigatórios');
+    if (!editingPrompt) return;
+
+    // Validate input
+    const validation = promptSchema.safeParse({
+      title: editingPrompt.title,
+      description: editingPrompt.description,
+      prompt_text: editingPrompt.prompt_text,
+      category: editingPrompt.category,
+    });
+
+    if (!validation.success) {
+      toast.error(validation.error.errors[0].message);
       return;
     }
 

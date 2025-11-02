@@ -82,6 +82,17 @@ export const AccessGate = ({
       return;
     }
 
+    // Rate limiting check - prevent spam submissions
+    const recentSubmission = localStorage.getItem('newsletter_submitted');
+    if (recentSubmission) {
+      const timestamp = parseInt(recentSubmission);
+      const hoursSince = (Date.now() - timestamp) / (1000 * 60 * 60);
+      if (hoursSince < 24) {
+        toast.error('Você já se inscreveu recentemente. Tente novamente em 24 horas / You already subscribed recently. Try again in 24 hours.');
+        return;
+      }
+    }
+
     setIsSubmitting(true);
     try {
       const { data, error: signUpError } = await supabase.auth.signUp({
@@ -108,9 +119,8 @@ export const AccessGate = ({
       const { error: insertError } = await supabase.from("newsletter_subscribers").insert({
         email: validation.data.email,
         full_name: validation.data.full_name,
-        ip_address: await fetch("https://api.ipify.org?format=json").then(r => r.json()).then(data => data.ip).catch(() => null),
-        user_agent: navigator.userAgent,
-        consent_given: true
+        consent_given: true,
+        consent_timestamp: new Date().toISOString()
       });
 
       // Silently ignore newsletter duplicate errors
@@ -119,6 +129,9 @@ export const AccessGate = ({
         toast("Conta criada, mas erro ao inscrever na newsletter / Account created, newsletter subscription failed", {
           duration: 3000,
         });
+      } else {
+        // Mark submission timestamp for rate limiting
+        localStorage.setItem('newsletter_submitted', Date.now().toString());
       }
 
       setHasAccess(true);

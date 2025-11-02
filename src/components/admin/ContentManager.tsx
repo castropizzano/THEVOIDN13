@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Save, Plus } from "lucide-react";
+import { z } from "zod";
 
 interface ContentSetting {
   id: string;
@@ -51,8 +52,28 @@ const ContentManager = () => {
     }
   };
 
+  const contentSchema = z.object({
+    content_pt: z.string().max(50000, 'Conteúdo PT muito longo (máximo 50.000 caracteres)'),
+    content_en: z.string().max(50000, 'Conteúdo EN muito longo (máximo 50.000 caracteres)'),
+  });
+
   const updateContent = async (content: ContentSetting) => {
     try {
+      // Validate input
+      const validation = contentSchema.safeParse({
+        content_pt: content.content_pt,
+        content_en: content.content_en,
+      });
+
+      if (!validation.success) {
+        toast({
+          title: "Erro de validação",
+          description: validation.error.errors[0].message,
+          variant: "destructive",
+        });
+        return;
+      }
+
       const { error } = await supabase
         .from('content_settings')
         .update({
