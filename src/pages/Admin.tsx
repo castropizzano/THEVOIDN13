@@ -50,68 +50,93 @@ const Admin = () => {
           </Button>
         </div>
 
-        {/* Quick Access Card */}
-        <Card className="mb-8">
+        {/* Main Admin Cards */}
+        <div className="grid gap-6 md:grid-cols-2 mb-8">
+          <Card className="border-2 border-primary/20 hover:border-primary/40 transition-colors">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Layout className="h-5 w-5 text-primary" />
+                Editor de Páginas
+              </CardTitle>
+              <CardDescription>
+                Edite conteúdos organizados por páginas — Filosofia "Admin como Espelho"
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <Button onClick={() => navigate("/admin/pages")} className="w-full">
+                Abrir Editor de Páginas
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Mail className="h-5 w-5 text-primary" />
+                Newsletter Dashboard
+              </CardTitle>
+              <CardDescription>
+                Gerencie os inscritos da newsletter e visualize estatísticas
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <Button onClick={() => navigate("/admin/dashboard")} className="w-full" variant="outline">
+                Abrir Dashboard de Inscritos
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Legacy Tools (Deprecated) */}
+        <Card className="opacity-60">
           <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Mail className="h-5 w-5 text-primary" />
-              Newsletter Dashboard
+            <CardTitle className="text-base flex items-center gap-2">
+              <Settings className="h-4 w-4" />
+              Ferramentas Legadas (Deprecated)
             </CardTitle>
-            <CardDescription>
-              Gerencie os inscritos da newsletter e visualize estatísticas
+            <CardDescription className="text-xs">
+              Estas ferramentas serão removidas em breve. Use o Editor de Páginas.
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <Button onClick={() => navigate("/admin/dashboard")} className="w-full md:w-auto">
-              Abrir Dashboard de Inscritos
-            </Button>
+            <Tabs defaultValue="content" className="w-full">
+              <TabsList className="grid w-full grid-cols-4 mb-4">
+                <TabsTrigger value="content" className="flex items-center gap-2 text-xs">
+                  <Type className="w-3 h-3" />
+                  Textos
+                </TabsTrigger>
+                <TabsTrigger value="media" className="flex items-center gap-2 text-xs">
+                  <Image className="w-3 h-3" />
+                  Mídias
+                </TabsTrigger>
+                <TabsTrigger value="sections" className="flex items-center gap-2 text-xs">
+                  <Layout className="w-3 h-3" />
+                  Seções
+                </TabsTrigger>
+                <TabsTrigger value="prompts" className="flex items-center gap-2 text-xs">
+                  <Settings className="w-3 h-3" />
+                  Prompts
+                </TabsTrigger>
+              </TabsList>
+
+              <TabsContent value="content">
+                <ContentManager />
+              </TabsContent>
+
+              <TabsContent value="media">
+                <MediaManager />
+              </TabsContent>
+
+              <TabsContent value="sections">
+                <SectionManager />
+              </TabsContent>
+
+              <TabsContent value="prompts">
+                <PromptManager />
+              </TabsContent>
+            </Tabs>
           </CardContent>
         </Card>
-
-        <Tabs defaultValue="sections" className="w-full">
-          <TabsList className="grid w-full grid-cols-5 mb-8">
-            <TabsTrigger value="sections" className="flex items-center gap-2">
-              <Layout className="w-4 h-4" />
-              Seções
-            </TabsTrigger>
-            <TabsTrigger value="content" className="flex items-center gap-2">
-              <Type className="w-4 h-4" />
-              Textos
-            </TabsTrigger>
-            <TabsTrigger value="media" className="flex items-center gap-2">
-              <Image className="w-4 h-4" />
-              Mídias
-            </TabsTrigger>
-            <TabsTrigger value="videos" className="flex items-center gap-2">
-              <Video className="w-4 h-4" />
-              Vídeos
-            </TabsTrigger>
-            <TabsTrigger value="prompts" className="flex items-center gap-2">
-              <Settings className="w-4 h-4" />
-              Prompts
-            </TabsTrigger>
-          </TabsList>
-
-          <TabsContent value="sections">
-            <SectionManager />
-          </TabsContent>
-
-          <TabsContent value="content">
-            <ContentManager />
-          </TabsContent>
-
-          <TabsContent value="media">
-            <MediaManager />
-          </TabsContent>
-
-          <TabsContent value="videos">
-            <VideoManager />
-          </TabsContent>
-
-          <TabsContent value="prompts">
-            <PromptManager />
-          </TabsContent>
-        </Tabs>
       </main>
     </div>
   );
