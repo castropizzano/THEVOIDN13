@@ -5,6 +5,7 @@ import { BilingualSection } from "@/components/BilingualSection";
 import { BackToTop } from "@/components/BackToTop";
 import { Separator } from "@/components/ui/separator";
 import heroImage from "@/assets/author-hero.png";
+import heroImageMobile from "@/assets/author-hero-mobile.png";
 
 const Autor = () => {
   const breadcrumbs = breadcrumbSchema([
@@ -31,12 +32,16 @@ const Autor = () => {
       <main>
         {/* Hero Image */}
         <section className="w-full min-h-screen flex items-center justify-center overflow-hidden bg-black">
-          <img 
-            src={heroImage} 
-            alt="CASTRO PIZZANO" 
-            className="w-full h-full object-cover md:object-contain"
-            loading="eager"
-          />
+          <picture className="w-full h-full">
+            <source media="(max-width: 768px)" srcSet={heroImageMobile} />
+            <source media="(min-width: 769px)" srcSet={heroImage} />
+            <img 
+              src={heroImage} 
+              alt="CASTRO PIZZANO" 
+              className="w-full h-full object-cover md:object-contain"
+              loading="eager"
+            />
+          </picture>
         </section>
 
         {/* Nome */}
