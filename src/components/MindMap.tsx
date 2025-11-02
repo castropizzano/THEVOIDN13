@@ -20,7 +20,7 @@ export const MindMap = () => {
         <CardContent>
           <button
             onClick={() => setIsOpen(true)}
-            className="w-full p-6 bg-card/80 hover:bg-primary/5 border-2 border-primary/30 hover:border-primary rounded-lg transition-all group"
+            className="w-full p-4 sm:p-6 bg-card/80 hover:bg-primary/5 border-2 border-primary/30 hover:border-primary rounded-lg transition-all group min-h-[60px]"
           >
             <p className="subtitle text-foreground group-hover:text-primary">
               Expandir / Expand Mapa Completo
@@ -30,13 +30,13 @@ export const MindMap = () => {
       </Card>
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="max-w-[95vw] max-h-[95vh] overflow-y-auto bg-background">
+        <DialogContent className="max-w-[95vw] max-h-[90vh] overflow-y-auto bg-background p-4 sm:p-6">
           <DialogTitle className="sr-only">Creative-Ops Mind Map Completo</DialogTitle>
           <DialogDescription className="sr-only">
             Ecossistema completo do memorial artístico THEVØIDN13
           </DialogDescription>
 
-          <div className="space-y-8 p-4">
+          <div className="space-y-6 sm:space-y-8">
             {/* Header */}
             <div className="text-center space-y-2">
               <h2 className="title text-primary">
@@ -48,11 +48,11 @@ export const MindMap = () => {
             </div>
 
             {/* Asimov's Creative Laws - Adapted for Creative Robotics */}
-            <div className="p-6 bg-primary/5 rounded-lg border border-primary/20">
-              <h3 className="subtitle text-primary mb-4">
+            <div className="p-4 sm:p-6 bg-primary/5 rounded-lg border border-primary/20">
+              <h3 className="subtitle text-primary mb-3 sm:mb-4">
                 As Três Leis da Robótica Criativa / The Three Laws of Creative Robotics
               </h3>
-              <p className="body-small text-muted-foreground italic mb-4">
+              <p className="body-small text-muted-foreground italic mb-3 sm:mb-4">
                 Adaptação livre das Três Leis da Robótica de Isaac Asimov, aplicadas ao contexto da co-criação humano-máquina. / Free adaptation of Isaac Asimov's Three Laws of Robotics applied to human-machine co-creation context.
               </p>
               <div className="space-y-3">
@@ -80,7 +80,7 @@ export const MindMap = () => {
             </div>
 
             {/* Processo de Criação Híbrida com IA */}
-            <div className="p-6 bg-card/50 rounded-lg border border-border space-y-6">
+            <div className="p-4 sm:p-6 bg-card/50 rounded-lg border border-border space-y-4 sm:space-y-6">
               <h3 className="subtitle text-primary">
                 Processo de Criação Híbrida com IA / Hybrid AI Creation Process
               </h3>
@@ -302,7 +302,7 @@ export const MindMap = () => {
                 <div className="border-l-4 border-accent pl-4 space-y-2">
                   <h4 className="subtitle text-accent">Stack Técnico Detalhado / Detailed Technical Stack</h4>
                   
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
                     <div className="space-y-1">
                       <p className="body-small text-foreground font-bold">IA / AI:</p>
                       <ul className="body-small text-muted-foreground space-y-1 list-disc list-inside">
@@ -354,7 +354,7 @@ export const MindMap = () => {
                   </div>
                 </div>
 
-                <div className="p-4 bg-primary/10 border-l-4 border-primary rounded-r space-y-2">
+                <div className="p-4 sm:p-4 bg-primary/10 border-l-4 border-primary rounded-r space-y-2">
                   <p className="body-small text-foreground">
                     <strong className="text-primary">NOTA CRÍTICA:</strong> Este não é um projeto "feito com IA". É um projeto onde a IA é interlocutora. A autoria não desaparece — ela se desloca, se fragmenta, se distribui. O que importa não é quem fez, mas o que emergiu desse diálogo impossível entre consciência e algoritmo.
                   </p>
@@ -366,8 +366,9 @@ export const MindMap = () => {
             </div>
 
             {/* Mind Map Diagram */}
-            <div className="w-full">
-              <svg viewBox="0 0 1200 1750" className="w-full h-auto" preserveAspectRatio="xMidYMid meet">
+            <div className="w-full overflow-x-auto">
+              <div className="min-w-[800px] sm:min-w-0">
+                <svg viewBox="0 0 1200 1750" className="w-full h-auto" preserveAspectRatio="xMidYMid meet">
                 <defs>
                   <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" style={{ stopColor: "hsl(var(--primary))", stopOpacity: 0.9 }} />
@@ -621,6 +622,7 @@ export const MindMap = () => {
                   © 2024-2025 Castro Pizzano (цастро™) · THEVØIDN13 Project
                 </text>
               </svg>
+              </div>
             </div>
           </div>
         </DialogContent>

@@ -196,13 +196,13 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
   if (!started) {
     return (
       <Dialog open={open} onOpenChange={onOpenChange}>
-        <DialogContent className="max-w-3xl bg-background border-2 border-primary/30">
+        <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto bg-background border-2 border-primary/30 p-4 sm:p-6">
           <DialogTitle className="sr-only">Oráculo Criativo</DialogTitle>
           <DialogDescription className="sr-only">
             Descubra seu arquétipo criativo dominante através de seis perguntas
           </DialogDescription>
           
-          <div className="space-y-8 p-8">
+          <div className="space-y-6 sm:space-y-8">
             <div className="pb-6 border-b border-primary/20">
               <h2 className="title text-primary tracking-tight text-left mb-2">
                 ORÁCULO CRIATIVO
@@ -222,13 +222,13 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
             </div>
 
             <div className="space-y-3 pt-4">
-              <div className="grid grid-cols-4 gap-2 text-left lang-pill">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-left lang-pill">
                 <div>Sombras</div>
                 <div>Ruptura</div>
                 <div>Conexão</div>
                 <div>Método</div>
               </div>
-              <div className="grid grid-cols-4 gap-2 text-left lang-pill opacity-60">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-left lang-pill opacity-60">
                 <div>Shadow</div>
                 <div>Rupture</div>
                 <div>Connection</div>
@@ -304,20 +304,20 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
     
     return (
       <Dialog open={open} onOpenChange={onOpenChange}>
-        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto bg-background border-2 border-primary/30">
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto bg-background border-2 border-primary/30 p-4 sm:p-6">
           <DialogTitle className="sr-only">Resultado do Oráculo Criativo</DialogTitle>
           <DialogDescription className="sr-only">
             Seu arquétipo criativo dominante foi revelado
           </DialogDescription>
           
-          <div className="space-y-8 p-8">
+          <div className="space-y-6 sm:space-y-8">
             {/* Audio Control - moved to top-left */}
             <button
               onClick={toggleAudio}
-              className="absolute top-4 left-4 p-2 text-muted-foreground hover:text-foreground transition-colors z-20"
+              className="absolute top-2 left-2 sm:top-4 sm:left-4 p-3 text-muted-foreground hover:text-foreground transition-colors z-20 min-h-[44px] min-w-[44px] flex items-center justify-center"
               aria-label="Toggle audio"
             >
-              {audioMuted ? <VolumeX size={20} /> : <Volume2 size={20} />}
+              {audioMuted ? <VolumeX size={18} className="sm:w-5 sm:h-5" /> : <Volume2 size={18} className="sm:w-5 sm:h-5" />}
             </button>
 
             {/* Header */}
@@ -328,7 +328,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
 
             {/* Description */}
             <div className="space-y-4">
-              <div className="space-y-3 p-6 rounded-lg border border-primary/20 bg-card/50 text-left">
+              <div className="space-y-3 p-4 sm:p-6 rounded-lg border border-primary/20 bg-card/50 text-left">
                 <p className="body-base text-foreground">
                   {result.description}
                 </p>
@@ -337,7 +337,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
                 </p>
               </div>
 
-              <div className="p-5 bg-primary/10 border-l-4 border-primary rounded-r space-y-2 text-left">
+              <div className="p-4 sm:p-5 bg-primary/10 border-l-4 border-primary rounded-r space-y-2 text-left">
                 <p className="body-small font-bold text-foreground">
                   {result.message}
                 </p>
@@ -446,17 +446,17 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
             </div>
 
             {/* Actions */}
-            <div className="flex justify-start gap-4 pt-6">
+            <div className="flex flex-col sm:flex-row justify-start gap-3 sm:gap-4 pt-6">
               <Button 
                 onClick={handleReset} 
                 variant="outline" 
-                className="border-primary/30 hover:bg-primary/10 subtitle"
+                className="border-primary/30 hover:bg-primary/10 subtitle min-h-[48px]"
               >
                 REFAZER / RESTART
               </Button>
               <Button 
                 onClick={() => onOpenChange(false)}
-                className="bg-primary hover:bg-primary/90 subtitle"
+                className="bg-primary hover:bg-primary/90 subtitle min-h-[48px]"
               >
                 FECHAR / CLOSE
               </Button>
@@ -479,44 +479,44 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto bg-background border-2 border-primary/30">
+      <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto bg-background border-2 border-primary/30 p-4 sm:p-6">
         <DialogTitle className="sr-only">Oráculo Criativo - Pergunta {currentQuestion + 1}</DialogTitle>
         <DialogDescription className="sr-only">
           {question.textEn}
         </DialogDescription>
         
-        <div className="space-y-6 p-8">
+        <div className="space-y-6 sm:space-y-8 relative">
           {/* Audio Control - moved to top-left */}
           <button
             onClick={toggleAudio}
-            className="absolute top-4 left-4 p-2 text-muted-foreground hover:text-foreground transition-colors z-20"
+            className="absolute top-0 right-0 p-3 text-muted-foreground hover:text-foreground transition-colors z-20 min-h-[44px] min-w-[44px] flex items-center justify-center"
             aria-label="Toggle audio"
           >
-            {audioMuted ? <VolumeX size={20} /> : <Volume2 size={20} />}
+            {audioMuted ? <VolumeX size={18} className="sm:w-5 sm:h-5" /> : <Volume2 size={18} className="sm:w-5 sm:h-5" />}
           </button>
 
           <div className={`transition-all duration-500 ${animatingOut ? 'opacity-0 scale-95' : 'opacity-100 scale-100'}`}>
             {/* Progress Bar */}
-            <div className="pb-6">
+            <div className="pb-4 sm:pb-6">
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-2">
                   {questions.map((_, idx) => (
                     <div
                       key={idx}
-                      className={`h-1.5 w-12 rounded-full transition-all ${
+                      className={`h-1.5 w-8 sm:w-12 rounded-full transition-all ${
                         idx === currentQuestion ? 'bg-primary' : idx < currentQuestion ? 'bg-primary/50' : 'bg-muted/30'
                       }`}
                     />
                   ))}
                 </div>
-                <p className="lang-pill">
+                <p className="lang-pill text-xs sm:text-sm">
                   {currentQuestion + 1} / {questions.length}
                 </p>
               </div>
             </div>
 
             {/* Question */}
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               <div className="space-y-3 text-left pb-4 border-b border-primary/20">
                 <p className="body-base text-foreground">
                   {question.text}
@@ -532,7 +532,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
                   <button
                     key={idx}
                     onClick={() => handleAnswer(option.archetype, option.value)}
-                    className="w-full text-left p-5 rounded-lg border border-border bg-card/30 hover:border-primary hover:bg-primary/5 transition-all group"
+                    className="w-full text-left p-4 sm:p-5 rounded-lg border border-border bg-card/30 hover:border-primary hover:bg-primary/5 transition-all group min-h-[60px]"
                   >
                     <p className="body-base text-foreground group-hover:text-primary transition-colors">
                       {option.text}
