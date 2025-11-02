@@ -8,6 +8,7 @@ import { MusicPlayer } from "@/components/MusicPlayer";
 import { PodcastPlayer } from "@/components/PodcastPlayer";
 import { Timeline } from "@/components/Timeline";
 import heroImage from "@/assets/lowmovie-hero.png";
+import heroImageMobile from "@/assets/lowmovie-hero-mobile.png";
 
 const Dissertacao = () => {
   const thesisSchema = {
@@ -53,12 +54,16 @@ const Dissertacao = () => {
       <main>
         {/* Hero Image */}
         <section className="w-full min-h-screen flex items-center justify-center overflow-hidden bg-black">
-          <img 
-            src={heroImage} 
-            alt="LOWMOVIE™ E O LABIRINTO CRIATIVO" 
-            className="w-full h-full object-cover md:object-contain"
-            loading="eager"
-          />
+          <picture className="w-full h-full">
+            <source media="(max-width: 768px)" srcSet={heroImageMobile} />
+            <source media="(min-width: 769px)" srcSet={heroImage} />
+            <img 
+              src={heroImage} 
+              alt="LOWMOVIE™ E O LABIRINTO CRIATIVO" 
+              className="w-full h-full object-cover md:object-contain"
+              loading="eager"
+            />
+          </picture>
         </section>
 
         {/* Título */}
