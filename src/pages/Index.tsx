@@ -18,6 +18,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import heroImage from "@/assets/hero-rain-wide.png";
+import heroMobile from "@/assets/hero-mobile.png";
 import voidCityFront from "@/assets/void-city-front.png";
 import conceptCrew from "@/assets/concept-crew.png";
 import actionFigureNew from "@/assets/action-figure-new.png";
@@ -97,12 +98,16 @@ const Index = () => {
       <main>
         {/* ===== HERO SECTION ===== */}
         <section className="w-full min-h-screen flex items-center justify-center overflow-hidden bg-black">
-          <img 
-            src={heroImage} 
-            alt="THEVØIDN13 — Shadow Interface Bible v13" 
-            className="w-full h-full object-cover md:object-contain"
-            loading="eager"
-          />
+          <picture className="w-full h-full">
+            <source media="(max-width: 768px)" srcSet={heroMobile} />
+            <source media="(min-width: 769px)" srcSet={heroImage} />
+            <img 
+              src={heroImage} 
+              alt="THEVØIDN13 — Shadow Interface Bible v13" 
+              className="w-full h-full object-cover md:object-contain"
+              loading="eager"
+            />
+          </picture>
         </section>
 
         {/* ===== SUBTITLE ===== */}
