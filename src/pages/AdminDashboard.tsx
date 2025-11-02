@@ -43,9 +43,32 @@ const AdminDashboard = () => {
   const [subscriberToDelete, setSubscriberToDelete] = useState<string | null>(null);
 
   useEffect(() => {
-    if (!loading && (!user || !isAdmin)) {
-      navigate("/auth");
-    }
+    const verifyAdminAccess = async () => {
+      if (!loading && !user) {
+        navigate("/auth");
+        return;
+      }
+      
+      if (!loading && user) {
+        if (!isAdmin) {
+          // Server-side verification as defense-in-depth
+          const { data } = await supabase
+            .from('user_roles')
+            .select('role')
+            .eq('user_id', user.id)
+            .eq('role', 'admin')
+            .maybeSingle();
+          
+          if (!data) {
+            navigate("/auth");
+            toast.error("Acesso negado / Access denied");
+            return;
+          }
+        }
+      }
+    };
+    
+    verifyAdminAccess();
   }, [user, isAdmin, loading, navigate]);
 
   useEffect(() => {

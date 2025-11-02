@@ -115,7 +115,7 @@ export const AccessGate = ({
         throw signUpError;
       }
 
-      // Save to newsletter
+      // Save to newsletter with duplicate check
       const { error: insertError } = await supabase.from("newsletter_subscribers").insert({
         email: validation.data.email,
         full_name: validation.data.full_name,
@@ -123,12 +123,20 @@ export const AccessGate = ({
         consent_timestamp: new Date().toISOString()
       });
 
-      // Silently ignore newsletter duplicate errors
-      if (insertError && !insertError.message.includes("duplicate")) {
-        // Newsletter subscription failed but account was created
-        toast("Conta criada, mas erro ao inscrever na newsletter / Account created, newsletter subscription failed", {
-          duration: 3000,
-        });
+      // Handle newsletter subscription errors
+      if (insertError) {
+        if (insertError.code === '23505' || insertError.message.includes("duplicate") || insertError.message.includes("unique")) {
+          // Email already subscribed to newsletter, but account created successfully
+          toast("Conta criada! Email já cadastrado na newsletter / Account created! Email already in newsletter", {
+            duration: 3000,
+          });
+        } else {
+          // Other newsletter error
+          console.error('Newsletter subscription error:', insertError);
+          toast("Conta criada, mas erro ao inscrever na newsletter / Account created, newsletter subscription failed", {
+            duration: 3000,
+          });
+        }
       } else {
         // Mark submission timestamp for rate limiting
         localStorage.setItem('newsletter_submitted', Date.now().toString());

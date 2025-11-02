@@ -11,6 +11,8 @@ import { LowMovieEditor } from "@/components/admin/PageEditor/LowMovieEditor";
 import { AuthorEditor } from "@/components/admin/PageEditor/AuthorEditor";
 import { VideosEditor } from "@/components/admin/PageEditor/VideosEditor";
 import { GlobalContentEditor } from "@/components/admin/PageEditor/GlobalContentEditor";
+import { supabase } from "@/integrations/supabase/client";
+import { toast } from "sonner";
 
 const AdminPageEditor = () => {
   const navigate = useNavigate();
@@ -19,9 +21,29 @@ const AdminPageEditor = () => {
   const [activeTab, setActiveTab] = useState(searchParams.get("page") || "home");
 
   useEffect(() => {
-    if (!loading && (!user || !isAdmin)) {
-      navigate("/auth");
-    }
+    const verifyAdminAccess = async () => {
+      if (!loading && !user) {
+        navigate("/auth");
+        return;
+      }
+      
+      if (!loading && user && !isAdmin) {
+        // Server-side verification as defense-in-depth
+        const { data } = await supabase
+          .from('user_roles')
+          .select('role')
+          .eq('user_id', user.id)
+          .eq('role', 'admin')
+          .maybeSingle();
+        
+        if (!data) {
+          navigate("/auth");
+          toast.error("Acesso negado / Access denied");
+        }
+      }
+    };
+    
+    verifyAdminAccess();
   }, [user, isAdmin, loading, navigate]);
 
   useEffect(() => {

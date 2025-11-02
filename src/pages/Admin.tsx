@@ -12,15 +12,37 @@ import VideoManager from "@/components/admin/VideoManager";
 import SectionManager from "@/components/admin/SectionManager";
 import { PromptManager } from "@/components/admin/PromptManager";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { supabase } from "@/integrations/supabase/client";
+import { toast } from "sonner";
 
 const Admin = () => {
   const navigate = useNavigate();
   const { user, isAdmin, loading, signOut } = useAuth();
 
   useEffect(() => {
-    if (!loading && (!user || !isAdmin)) {
-      navigate("/auth");
-    }
+    const verifyAdminAccess = async () => {
+      if (!loading && !user) {
+        navigate("/auth");
+        return;
+      }
+      
+      if (!loading && user && !isAdmin) {
+        // Server-side verification as defense-in-depth
+        const { data } = await supabase
+          .from('user_roles')
+          .select('role')
+          .eq('user_id', user.id)
+          .eq('role', 'admin')
+          .maybeSingle();
+        
+        if (!data) {
+          navigate("/auth");
+          toast.error("Acesso negado / Access denied");
+        }
+      }
+    };
+    
+    verifyAdminAccess();
   }, [user, isAdmin, loading, navigate]);
 
   if (loading) {
