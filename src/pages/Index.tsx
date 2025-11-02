@@ -96,23 +96,28 @@ const Index = () => {
       
       <main>
         {/* ===== HERO SECTION ===== */}
-        <section className="w-full h-screen overflow-hidden">
-          <img src={heroImage} alt="THEVØIDN13 — Shadow Interface Bible v13" className="w-full h-full object-contain" />
+        <section className="w-full min-h-screen flex items-center justify-center overflow-hidden bg-black">
+          <img 
+            src={heroImage} 
+            alt="THEVØIDN13 — Shadow Interface Bible v13" 
+            className="w-full h-full object-cover md:object-contain"
+            loading="eager"
+          />
         </section>
 
         {/* ===== SUBTITLE ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection className="py-8 sm:py-12 md:py-16">
           <BilingualContent
             portugueseContent={
               <>
-                <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
-                <h2 className="bible-subtitle">[UM CORPO À DERIVA ENTRE O RUÍDO E O SILÊNCIO]</h2>
+                <p className="bible-lang-tag text-xs sm:text-sm">&lt;PORTUGUÊS&gt;</p>
+                <h2 className="bible-subtitle text-base sm:text-lg md:text-xl">[UM CORPO À DERIVA ENTRE O RUÍDO E O SILÊNCIO]</h2>
               </>
             }
             englishContent={
               <>
-                <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
-                <h2 className="bible-subtitle">[A BODY ADRIFT BETWEEN NOISE AND SILENCE]</h2>
+                <p className="bible-lang-tag text-xs sm:text-sm">&lt;ENGLISH&gt;</p>
+                <h2 className="bible-subtitle text-base sm:text-lg md:text-xl">[A BODY ADRIFT BETWEEN NOISE AND SILENCE]</h2>
               </>
             }
           />
@@ -121,12 +126,13 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== VIDEO SECTION ===== */}
-        <section className="py-16">
-          <div className="max-w-6xl mx-auto px-6 space-y-6">
+        <section className="py-8 sm:py-12 md:py-16">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-6">
             <video 
               className="w-full aspect-video bg-black rounded-lg overflow-hidden"
               controls
               playsInline
+              preload="metadata"
               poster={voidStreetThumbnail}
             >
               <source src="/videos/intro.mp4" type="video/mp4" />
@@ -155,12 +161,13 @@ const Index = () => {
         </BilingualSection>
 
         {/* ===== PARADOX RENDER ===== */}
-        <section className="py-8">
-          <div className="max-w-6xl mx-auto px-6">
+        <section className="py-6 sm:py-8">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <img 
               src={paradoxRender} 
               alt="THEVØIDN13 — Paradox Render" 
               className="w-full rounded-lg"
+              loading="lazy"
             />
           </div>
         </section>
@@ -168,8 +175,8 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== AUDIO PLAYER ===== */}
-        <section className="py-16 bg-card/30">
-          <div className="max-w-6xl mx-auto px-6">
+        <section className="py-8 sm:py-12 md:py-16 bg-card/30">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <BilingualAudioPlayer
               srcPt="/audio/thevoidn13-manifesto-pt.mp3"
               srcEn="/audio/thevoidn13-manifesto-en.mp3"
@@ -217,12 +224,13 @@ const Index = () => {
         </BilingualSection>
 
         {/* ===== FALL RENDER ===== */}
-        <section className="py-8">
-          <div className="max-w-6xl mx-auto px-6">
+        <section className="py-6 sm:py-8">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <img 
               src={fallRender} 
               alt="THEVØIDN13 — Fall Render" 
               className="w-full rounded-lg"
+              loading="lazy"
             />
           </div>
         </section>

@@ -52,8 +52,13 @@ const Dissertacao = () => {
       
       <main>
         {/* Hero Image */}
-        <section className="w-full h-screen overflow-hidden">
-          <img src={heroImage} alt="LOWMOVIE™ E O LABIRINTO CRIATIVO" className="w-full h-full object-contain" />
+        <section className="w-full min-h-screen flex items-center justify-center overflow-hidden bg-black">
+          <img 
+            src={heroImage} 
+            alt="LOWMOVIE™ E O LABIRINTO CRIATIVO" 
+            className="w-full h-full object-cover md:object-contain"
+            loading="eager"
+          />
         </section>
 
         {/* Título */}

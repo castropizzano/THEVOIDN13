@@ -1,9 +1,14 @@
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useAuth } from "@/hooks/useAuth";
+import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const Header = () => {
   const location = useLocation();
   const { isAdmin } = useAuth();
+  const [open, setOpen] = useState(false);
   
   const navItems = [
     { path: "/lowmovie", label: "LOWMOVIE™" },
@@ -16,18 +21,19 @@ const Header = () => {
   }
   
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm">
-      <nav className="max-w-6xl mx-auto px-6 py-6">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border/40">
+      <nav className="max-w-6xl mx-auto px-4 sm:px-6 py-4 sm:py-6">
         <div className="flex justify-between items-center">
           <Link 
             to="/" 
-            className="text-sm font-medium tracking-wide text-foreground hover:text-foreground/80 transition-colors"
+            className="text-sm sm:text-base font-medium tracking-wide text-foreground hover:text-foreground/80 transition-colors touch-manipulation"
             style={{ fontFamily: 'Manrope, sans-serif' }}
           >
             THEVØIDN13
           </Link>
           
-          <ul className="flex gap-12 items-center">
+          {/* Desktop Navigation */}
+          <ul className="hidden md:flex gap-8 lg:gap-12 items-center">
             {navItems.map((item) => (
               <li key={item.path}>
                 <Link
@@ -44,6 +50,39 @@ const Header = () => {
               </li>
             ))}
           </ul>
+
+          {/* Mobile Navigation */}
+          <Sheet open={open} onOpenChange={setOpen}>
+            <SheetTrigger asChild className="md:hidden">
+              <Button 
+                variant="ghost" 
+                size="icon"
+                className="h-10 w-10 touch-manipulation"
+                aria-label="Menu"
+              >
+                <Menu className="h-5 w-5" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[280px] sm:w-[350px] bg-background/98 backdrop-blur-md">
+              <div className="flex flex-col gap-6 mt-8">
+                {navItems.map((item) => (
+                  <Link
+                    key={item.path}
+                    to={item.path}
+                    onClick={() => setOpen(false)}
+                    className={`text-lg font-medium tracking-wide transition-colors py-3 touch-manipulation ${
+                      location.pathname === item.path
+                        ? "text-foreground border-l-2 border-primary pl-4"
+                        : "text-muted-foreground hover:text-foreground hover:border-l-2 hover:border-muted-foreground/50 pl-4"
+                    }`}
+                    style={{ fontFamily: 'Manrope, sans-serif' }}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </nav>
     </header>

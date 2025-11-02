@@ -31,10 +31,10 @@ export const BackToTop = () => {
     <Button
       onClick={scrollToTop}
       size="icon"
-      className="fixed bottom-8 right-8 z-50 h-12 w-12 rounded-md shadow-lg hover:shadow-xl transition-all"
+      className="fixed bottom-6 right-4 sm:bottom-8 sm:right-8 z-50 h-12 w-12 sm:h-14 sm:w-14 rounded-md shadow-lg hover:shadow-xl transition-all touch-manipulation"
       aria-label="Voltar ao topo / Back to top"
     >
-      <ArrowUp className="h-5 w-5" />
+      <ArrowUp className="h-5 w-5 sm:h-6 sm:w-6" />
     </Button>
   );
 };
