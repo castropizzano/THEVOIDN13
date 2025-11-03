@@ -158,6 +158,39 @@ export type Database = {
         }
         Relationships: []
       }
+      page_views: {
+        Row: {
+          created_at: string
+          id: string
+          page_path: string
+          page_title: string | null
+          referrer: string | null
+          session_id: string | null
+          user_agent: string | null
+          visitor_id: string | null
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          page_path: string
+          page_title?: string | null
+          referrer?: string | null
+          session_id?: string | null
+          user_agent?: string | null
+          visitor_id?: string | null
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          page_path?: string
+          page_title?: string | null
+          referrer?: string | null
+          session_id?: string | null
+          user_agent?: string | null
+          visitor_id?: string | null
+        }
+        Relationships: []
+      }
       profiles: {
         Row: {
           created_at: string
@@ -224,6 +257,30 @@ export type Database = {
         }
         Relationships: []
       }
+      search_queries: {
+        Row: {
+          created_at: string
+          id: string
+          query: string
+          results_count: number | null
+          session_id: string | null
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          query: string
+          results_count?: number | null
+          session_id?: string | null
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          query?: string
+          results_count?: number | null
+          session_id?: string | null
+        }
+        Relationships: []
+      }
       section_contents: {
         Row: {
           content_data: Json
@@ -261,6 +318,33 @@ export type Database = {
             referencedColumns: ["id"]
           },
         ]
+      }
+      section_engagement: {
+        Row: {
+          action_type: string
+          created_at: string
+          duration_seconds: number | null
+          id: string
+          section_name: string
+          session_id: string | null
+        }
+        Insert: {
+          action_type: string
+          created_at?: string
+          duration_seconds?: number | null
+          id?: string
+          section_name: string
+          session_id?: string | null
+        }
+        Update: {
+          action_type?: string
+          created_at?: string
+          duration_seconds?: number | null
+          id?: string
+          section_name?: string
+          session_id?: string | null
+        }
+        Relationships: []
       }
       user_roles: {
         Row: {

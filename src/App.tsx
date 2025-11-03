@@ -7,6 +7,8 @@ import { AuthProvider } from "@/hooks/useAuth";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
 import ScrollToTop from "@/components/ScrollToTop";
+import { usePageView } from "@/hooks/useAnalytics";
+import { PWAInstallPrompt } from "@/components/PWAInstallPrompt";
 import Index from "./pages/Index";
 import Dissertacao from "./pages/Dissertacao";
 import Autor from "./pages/Autor";
@@ -18,6 +20,30 @@ import AdminPageEditor from "./pages/AdminPageEditor";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
+
+const AppContent = () => {
+  usePageView(); // Track page views automatically
+  
+  return (
+    <>
+      <PWAInstallPrompt />
+      <Routes>
+        <Route path="/" element={<ProtectedRoute><Index /></ProtectedRoute>} />
+        <Route path="/lowmovie" element={<ProtectedRoute><Dissertacao /></ProtectedRoute>} />
+        <Route path="/dissertacao" element={<ProtectedRoute><Dissertacao /></ProtectedRoute>} />
+        <Route path="/sobre" element={<ProtectedRoute><Autor /></ProtectedRoute>} />
+        <Route path="/autor" element={<ProtectedRoute><Autor /></ProtectedRoute>} />
+        <Route path="/galeria" element={<ProtectedRoute><Videos /></ProtectedRoute>} />
+        <Route path="/videos" element={<ProtectedRoute><Videos /></ProtectedRoute>} />
+        <Route path="/auth" element={<ProtectedRoute><Auth /></ProtectedRoute>} />
+        <Route path="/admin" element={<ProtectedRoute><Admin /></ProtectedRoute>} />
+        <Route path="/admin/dashboard" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} />
+        <Route path="/admin/pages" element={<ProtectedRoute><AdminPageEditor /></ProtectedRoute>} />
+        <Route path="*" element={<ProtectedRoute><NotFound /></ProtectedRoute>} />
+      </Routes>
+    </>
+  );
+};
 
 const App = () => (
   <ErrorBoundary>
@@ -33,21 +59,7 @@ const App = () => (
             }}
           >
             <ScrollToTop />
-            <Routes>
-              <Route path="/" element={<ProtectedRoute><Index /></ProtectedRoute>} />
-              <Route path="/lowmovie" element={<ProtectedRoute><Dissertacao /></ProtectedRoute>} />
-              <Route path="/dissertacao" element={<ProtectedRoute><Dissertacao /></ProtectedRoute>} /> {/* legacy redirect */}
-              <Route path="/sobre" element={<ProtectedRoute><Autor /></ProtectedRoute>} />
-              <Route path="/autor" element={<ProtectedRoute><Autor /></ProtectedRoute>} /> {/* legacy redirect */}
-              <Route path="/galeria" element={<ProtectedRoute><Videos /></ProtectedRoute>} />
-              <Route path="/videos" element={<ProtectedRoute><Videos /></ProtectedRoute>} /> {/* legacy redirect */}
-              <Route path="/auth" element={<ProtectedRoute><Auth /></ProtectedRoute>} />
-              <Route path="/admin" element={<ProtectedRoute><Admin /></ProtectedRoute>} />
-              <Route path="/admin/dashboard" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} />
-              <Route path="/admin/pages" element={<ProtectedRoute><AdminPageEditor /></ProtectedRoute>} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<ProtectedRoute><NotFound /></ProtectedRoute>} />
-            </Routes>
+            <AppContent />
           </BrowserRouter>
         </TooltipProvider>
       </AuthProvider>
