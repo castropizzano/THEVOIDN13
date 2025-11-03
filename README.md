@@ -28,13 +28,6 @@ by Castro Pizzano (цастро™)
 Curitiba, Brazil — 2025
 ───────────────────────────────────────────────────────────────
 
-## DEMO VIDEO
-
-https://github.com/user-attachments/assets/intro-video-preview.mp4
-
-Watch the full experience at [thevoidn13.com](https://thevoidn13.com)
-
-───────────────────────────────────────────────────────────────
 ## FEATURES
 
 **Core Experience:**
@@ -65,16 +58,7 @@ Watch the full experience at [thevoidn13.com](https://thevoidn13.com)
 - OWASP Top 10 protected
 - Production-ready infrastructure
 
-───────────────────────────────────────────────────────────────
-## QUICK START
-
-```bash
-git clone https://github.com/castropizzano/THEVOIDN13.git
-cd THEVOIDN13
-npm install && npm run dev
-```
-
-Access at `http://localhost:5173`
+**Experience the portal:** [thevoidn13.com](https://thevoidn13.com)
 
 ───────────────────────────────────────────────────────────────
 ## ÍNDICE
