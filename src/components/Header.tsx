@@ -55,30 +55,22 @@ const Header = () => {
                   </li>
                 ))}
               </ul>
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={() => setSearchOpen(true)}
-                aria-label="Search"
-                className="h-9 w-9"
-              >
-                <Search className="h-4 w-4" />
-              </Button>
             </div>
 
-            {/* Mobile Navigation */}
-            <div className="flex md:hidden gap-2 items-center">
+            {/* Search + Mobile Menu */}
+            <div className="flex gap-2 items-center">
               <Button
                 variant="ghost"
                 size="icon"
                 onClick={() => setSearchOpen(true)}
                 aria-label="Search"
-                className="h-10 w-10 touch-manipulation"
+                className="h-9 w-9 md:h-9 md:w-9"
               >
-                <Search className="h-5 w-5" />
+                <Search className="h-4 w-4 md:h-4 md:w-4" />
               </Button>
+              
               <Sheet open={open} onOpenChange={setOpen}>
-                <SheetTrigger asChild>
+                <SheetTrigger asChild className="md:hidden">
                   <Button 
                     variant="ghost" 
                     size="icon"
