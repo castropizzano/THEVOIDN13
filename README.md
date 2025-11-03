@@ -20,7 +20,7 @@ Curitiba, Brasil — 2025
 [![RLS Enabled](https://img.shields.io/badge/RLS-100%25%20Coverage-success?style=for-the-badge)](./docs/SECURITY_CERTIFICATE.md)
 [![OWASP](https://img.shields.io/badge/OWASP%20Top%2010-Protected-success?style=for-the-badge)](./docs/SECURITY_CERTIFICATE.md)
 
-───────────────────────────────────────────────────────────────  
+───────────────────────────────────────────────────────────────
 (EN)  
 THEVØIDN13  
 ARTISTIC MEMORIAL AND HYBRID PRAXIS (HUMAN + MACHINE)  
@@ -28,6 +28,55 @@ by Castro Pizzano (цастро™)
 Curitiba, Brazil — 2025
 ───────────────────────────────────────────────────────────────
 
+## DEMO VIDEO
+
+https://github.com/user-attachments/assets/intro-video-preview.mp4
+
+Watch the full experience at [thevoidn13.com](https://thevoidn13.com)
+
+───────────────────────────────────────────────────────────────
+## FEATURES
+
+**Core Experience:**
+- Shadow Interface Bible v13 — Complete design system and artistic documentation
+- Hybrid Praxis methodology — Human-AI co-creation framework
+- Bilingual system — Full PT-BR/EN-US content translation
+- Immersive narrative — Text, audio, and visual storytelling
+
+**Technical Stack:**
+- React 18 + TypeScript + Vite
+- Tailwind CSS + shadcn/ui components
+- Lovable Cloud backend (Supabase)
+- Vimeo API integration for video portfolio
+- SEO optimized with structured data
+- Performance optimized with lazy loading
+- Responsive design for all devices
+
+**Interactive Tools:**
+- Creative Oracle — AI-powered artistic guidance
+- Comic Generator — Transform ideas into visual narratives
+- Mind Map — Visual exploration of project concepts
+- Prompt Library — Collection of creative prompts
+- Audio narration — Multilingual conceptual content
+
+**Security:**
+- 95/100 security score
+- 100% RLS coverage on database
+- OWASP Top 10 protected
+- Production-ready infrastructure
+
+───────────────────────────────────────────────────────────────
+## QUICK START
+
+```bash
+git clone https://github.com/castropizzano/THEVOIDN13.git
+cd THEVOIDN13
+npm install && npm run dev
+```
+
+Access at `http://localhost:5173`
+
+───────────────────────────────────────────────────────────────
 ## ÍNDICE
 
 [MANIFESTO POÉTICO](#manifesto-poético) · [VISÃO DE PROJETO](#visão-de-projeto) · [O PORTAL](#o-portal) · [ESTRUTURA](#estrutura-técnica) · [NAVEGAÇÃO](#páginas-do-portal) · [LICENÇA](#integridade-autoral-e-licença)
