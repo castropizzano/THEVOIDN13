@@ -558,7 +558,7 @@ const Index = () => {
                 <>
                   <h4 className="bible-subtitle">O GESTO</h4>
                   <p className="bible-body">
-                    Cada movimento é um ruído controlado, um eco do que o corpo escuta por dentro, andar é pensar, parar é ouvir, o gesto é a respiração do pensamento, um movimento de exílio e de retorno, THEVØIDN13 não representa, ele encarna a hesitação, o gesto não expressa, ele encarna a hesitação entre o desejo e o cansaço, cada deslocamento é uma forma de escuta, o corpo capta o que a mente silencia.
+                    Cada movimento é um ruído controlado, um eco do que o corpo escuta por dentro. Andar é pensar, parar é ouvir. O gesto é a respiração do pensamento, um movimento de exílio e de retorno. THEVØIDN13 não representa, ele encarna a hesitação. O gesto não expressa, ele encarna a hesitação entre o desejo e o cansaço. Cada deslocamento é uma forma de escuta, o corpo capta o que a mente silencia.
                   </p>
                 </>
               }
@@ -566,7 +566,7 @@ const Index = () => {
                 <>
                   <h4 className="bible-subtitle">THE GESTURE</h4>
                   <p className="bible-body">
-                    Each movement is a controlled noise, an echo of what the body hears within, to walk is to think, to stop is to listen, gesture is the breath of thought, a movement of exile and return, THEVØIDN13 does not represent, it embodies hesitation, gesture does not express, it embodies the hesitation between desire and exhaustion, every displacement is a form of listening, the body perceives what the mind silences.
+                    Each movement is a controlled noise, an echo of what the body hears within. To walk is to think, to stop is to listen. Gesture is the breath of thought, a movement of exile and return. THEVØIDN13 does not represent, it embodies hesitation. Gesture does not express, it embodies the hesitation between desire and exhaustion. Every displacement is a form of listening, the body perceives what the mind silences.
                   </p>
                 </>
               }
@@ -1081,14 +1081,14 @@ const Index = () => {
             portugueseContent={
               <>
                 <p className="bible-body">
-                  O número treze não é apenas símbolo de THEVØIDN13 é assinatura de um movimento maior CasaTrezeStudio® é a comunidade invisível de quem cria no subsolo de quem habita as margens de quem faz do vazio um território fértil é o selo de quem não pertence mas se reconhece uma aliança subterrânea entre criadores que recusam a lógica do mercado e abraçam a estética do erro da fragmentação e do inacabado quem carrega o treze não busca sorte busca travessia CasaTrezeStudio® é a rebelião silenciosa de quem transforma o interdito em linguagem não é grupo é frequência não é marca é modo de respirar.
+                  O número treze não é apenas símbolo de THEVØIDN13, é assinatura de um movimento maior. CasaTrezeStudio® é a comunidade invisível de quem cria no subsolo, de quem habita as margens, de quem faz do vazio um território fértil. É o selo de quem não pertence, mas se reconhece. Uma aliança subterrânea entre criadores que recusam a lógica do mercado e abraçam a estética do erro, da fragmentação e do inacabado. Quem carrega o treze não busca sorte, busca travessia. CasaTrezeStudio® é a rebelião silenciosa de quem transforma o interdito em linguagem. Não é grupo, é frequência. Não é marca, é modo de respirar.
                 </p>
               </>
             }
             englishContent={
               <>
                 <p className="bible-body">
-                  The number thirteen is not just a symbol of THEVØIDN13 it is the signature of a larger movement CasaTrezeStudio® is the invisible community of those who create underground who inhabit the margins who make the void a fertile territory it is the seal of those who do not belong but recognize each other an underground alliance between creators who refuse the logic of the market and embrace the aesthetic of error of fragmentation and of the unfinished those who carry thirteen do not seek luck they seek crossing CasaTrezeStudio® is the silent rebellion of those who transform the forbidden into language it is not a group it is a frequency it is not a brand it is a way of breathing.
+                  The number thirteen is not just a symbol of THEVØIDN13, it is the signature of a larger movement. CasaTrezeStudio® is the invisible community of those who create underground, who inhabit the margins, who make the void a fertile territory. It is the seal of those who do not belong but recognize each other. An underground alliance between creators who refuse the logic of the market and embrace the aesthetic of error, of fragmentation and of the unfinished. Those who carry thirteen do not seek luck, they seek crossing. CasaTrezeStudio® is the silent rebellion of those who transform the forbidden into language. It is not a group, it is a frequency. It is not a brand, it is a way of breathing.
                 </p>
               </>
             }
