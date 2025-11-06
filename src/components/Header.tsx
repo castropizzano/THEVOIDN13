@@ -37,24 +37,21 @@ const Header = () => {
             </Link>
             
             {/* Desktop Navigation */}
-            <div className="hidden md:flex gap-8 lg:gap-12 items-center">
-              <ul className="flex gap-8 lg:gap-12 items-center">
-                {navItems.map((item) => (
-                  <li key={item.path}>
-                    <Link
-                      to={item.path}
-                      className={`text-sm font-medium tracking-wide transition-colors ${
-                        location.pathname === item.path
-                          ? "text-foreground"
-                          : "text-muted-foreground hover:text-foreground"
-                      }`}
-                      style={{ fontFamily: 'Manrope, sans-serif' }}
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+            <div className="hidden md:flex items-center gap-8 lg:gap-12">
+              {navItems.map((item) => (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`text-sm font-medium tracking-wide transition-colors ${
+                    location.pathname === item.path
+                      ? "text-foreground"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
+                  style={{ fontFamily: 'Manrope, sans-serif' }}
+                >
+                  {item.label}
+                </Link>
+              ))}
               
               {/* Search Button - Desktop */}
               <Button
