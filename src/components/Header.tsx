@@ -30,7 +30,7 @@ const Header = () => {
           <div className="flex justify-between items-center">
             <Link 
               to="/" 
-              className="text-sm sm:text-base font-medium tracking-wide text-foreground hover:text-foreground/80 transition-colors touch-manipulation"
+              className="flex items-center h-10 text-sm sm:text-base font-medium tracking-wide text-foreground hover:text-foreground/80 transition-colors touch-manipulation"
               style={{ fontFamily: 'Manrope, sans-serif' }}
             >
               THEVØIDN13
@@ -42,7 +42,7 @@ const Header = () => {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`text-sm font-medium tracking-wide transition-colors ${
+                  className={`flex items-center h-10 text-sm font-medium tracking-wide transition-colors ${
                     location.pathname === item.path
                       ? "text-foreground"
                       : "text-muted-foreground hover:text-foreground"
@@ -59,9 +59,9 @@ const Header = () => {
                 size="icon"
                 onClick={() => setSearchOpen(true)}
                 aria-label="Search"
-                className="h-auto w-auto p-0 hover:bg-transparent"
+                className="h-10 w-10 p-0 flex items-center justify-center"
               >
-                <Search className="h-4 w-4" />
+                <Search className="h-5 w-5" />
               </Button>
             </div>
 
