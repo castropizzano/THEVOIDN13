@@ -59,7 +59,7 @@ const Header = () => {
                 size="icon"
                 onClick={() => setSearchOpen(true)}
                 aria-label="Search"
-                className="h-10 w-10 p-0"
+                className="h-auto w-auto p-0 hover:bg-transparent"
               >
                 <Search className="h-4 w-4" />
               </Button>
