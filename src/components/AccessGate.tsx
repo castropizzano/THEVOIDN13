@@ -127,18 +127,23 @@ export const AccessGate = ({
       if (insertError) {
         if (insertError.code === '23505' || insertError.message.includes("duplicate") || insertError.message.includes("unique")) {
           // Email already subscribed to newsletter, but account created successfully
+          console.log('Newsletter: Email já existe na lista');
           toast("Conta criada! Email já cadastrado na newsletter / Account created! Email already in newsletter", {
             duration: 3000,
           });
         } else {
-          // Other newsletter error
-          console.error('Newsletter subscription error:', insertError);
-          toast("Conta criada, mas erro ao inscrever na newsletter / Account created, newsletter subscription failed", {
-            duration: 3000,
+          // Other newsletter error - LOG para debug
+          console.error('ERRO Newsletter subscription:', {
+            code: insertError.code,
+            message: insertError.message,
+            details: insertError.details,
+            hint: insertError.hint
           });
+          toast.error("Conta criada, mas erro ao inscrever na newsletter / Account created, newsletter subscription failed");
         }
       } else {
-        // Mark submission timestamp for rate limiting
+        // Success! Mark submission timestamp for rate limiting
+        console.log('Newsletter: Inscrição realizada com sucesso', validation.data.email);
         localStorage.setItem('newsletter_submitted', Date.now().toString());
       }
 
