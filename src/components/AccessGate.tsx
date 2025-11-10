@@ -27,6 +27,7 @@ export const AccessGate = ({
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [fullName, setFullName] = useState("");
+  const [honeypot, setHoneypot] = useState(""); // Bot detection field
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [hasAccess, setHasAccess] = useState(false);
   const [activeTab, setActiveTab] = useState<"login" | "signup">("login");
@@ -75,6 +76,12 @@ export const AccessGate = ({
 
   const handleSignup = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Honeypot check - if filled, it's likely a bot
+    if (honeypot) {
+      toast.error("Submissão inválida / Invalid submission");
+      return;
+    }
 
     const validation = signupSchema.safeParse({ email, password, full_name: fullName });
     if (!validation.success) {
@@ -216,6 +223,19 @@ export const AccessGate = ({
 
             <TabsContent value="signup">
               <form onSubmit={handleSignup} className="space-y-4">
+                {/* Honeypot field - hidden from users, visible to bots */}
+                <div className="absolute -left-[9999px] opacity-0 pointer-events-none" aria-hidden="true">
+                  <label htmlFor="website">Website</label>
+                  <Input
+                    id="website"
+                    type="text"
+                    value={honeypot}
+                    onChange={(e) => setHoneypot(e.target.value)}
+                    tabIndex={-1}
+                    autoComplete="off"
+                  />
+                </div>
+
                 <div className="space-y-2">
                   <label htmlFor="signup-name" className="bible-subtitle text-sm">
                     Nome Completo / Full Name
