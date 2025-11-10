@@ -643,6 +643,15 @@ const Dissertacao = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-card border border-border rounded-lg p-6">
                 <h4 className="bible-body font-bold mb-4">LowPressure™</h4>
+                <p className="bible-link mb-2">Brandbook LowPressure™</p>
+                <a 
+                  href="/documents/LowPressure_brandbook.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="bible-link hover:underline block mb-2"
+                >
+                  Download Brandbook (PDF)
+                </a>
                 <a 
                   href="https://castropizzano.com/lowpressure" 
                   target="_blank" 
