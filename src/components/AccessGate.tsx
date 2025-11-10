@@ -82,17 +82,6 @@ export const AccessGate = ({
       return;
     }
 
-    // Rate limiting check - prevent spam submissions
-    const recentSubmission = localStorage.getItem('newsletter_submitted');
-    if (recentSubmission) {
-      const timestamp = parseInt(recentSubmission);
-      const hoursSince = (Date.now() - timestamp) / (1000 * 60 * 60);
-      if (hoursSince < 24) {
-        toast.error('Você já se inscreveu recentemente. Tente novamente em 24 horas / You already subscribed recently. Try again in 24 hours.');
-        return;
-      }
-    }
-
     setIsSubmitting(true);
     try {
       const { data, error: signUpError } = await supabase.auth.signUp({
@@ -127,24 +116,13 @@ export const AccessGate = ({
       if (insertError) {
         if (insertError.code === '23505' || insertError.message.includes("duplicate") || insertError.message.includes("unique")) {
           // Email already subscribed to newsletter, but account created successfully
-          console.log('Newsletter: Email já existe na lista');
           toast("Conta criada! Email já cadastrado na newsletter / Account created! Email already in newsletter", {
             duration: 3000,
           });
         } else {
-          // Other newsletter error - LOG para debug
-          console.error('ERRO Newsletter subscription:', {
-            code: insertError.code,
-            message: insertError.message,
-            details: insertError.details,
-            hint: insertError.hint
-          });
+          // Other newsletter error
           toast.error("Conta criada, mas erro ao inscrever na newsletter / Account created, newsletter subscription failed");
         }
-      } else {
-        // Success! Mark submission timestamp for rate limiting
-        console.log('Newsletter: Inscrição realizada com sucesso', validation.data.email);
-        localStorage.setItem('newsletter_submitted', Date.now().toString());
       }
 
       setHasAccess(true);
