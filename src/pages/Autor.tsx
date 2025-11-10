@@ -4,6 +4,7 @@ import { SEO, personSchema, breadcrumbSchema } from "@/components/SEO";
 import { BilingualSection } from "@/components/BilingualSection";
 import { BackToTop } from "@/components/BackToTop";
 import { Separator } from "@/components/ui/separator";
+import { PDFViewer } from "@/components/PDFViewer";
 import heroImage from "@/assets/author-hero.png";
 import heroImageMobile from "@/assets/author-hero-mobile.png";
 
@@ -736,44 +737,38 @@ const Autor = () => {
           </div>
 
           <div className="space-y-8 mt-8">
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-1 gap-8">
+              <PDFViewer 
+                pdfUrl="/documents/Release_CasaTrezeStudio.pdf"
+                title="Release CasaTrezeStudio® / CasaTrezeStudio® Release"
+                description="Documentação oficial do estúdio / Official studio documentation"
+              />
+              
+              <PDFViewer 
+                pdfUrl="/documents/Memorial_Academico_v3.pdf"
+                title="Memorial Acadêmico / Academic Memorial"
+                description="Jornada do Autor / Author Journey"
+              />
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 mt-6">
               <div className="bg-card border border-border rounded-lg p-6">
-                <h4 className="bible-body font-bold mb-4">CasaTrezeStudio®</h4>
-                <a 
-                  href="/documents/Release_CasaTrezeStudio.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bible-link hover:underline block mb-2"
-                >
-                  Release CasaTrezeStudio® / CasaTrezeStudio® Release
-                </a>
+                <h4 className="bible-body font-bold mb-4">Links Externos / External Links</h4>
                 <a 
                   href="https://casatrezestudio.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bible-link hover:underline"
+                  className="bible-link hover:underline block mb-2"
                 >
                   https://casatrezestudio.com/
                 </a>
-              </div>
-
-              <div className="bg-card border border-border rounded-lg p-6">
-                <h4 className="bible-body font-bold mb-4">Jornada do Autor / Author Journey</h4>
                 <a 
                   href="http://lattes.cnpq.br/5523516994010198"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bible-link hover:underline block mb-2"
-                >
-                  Currículo Lattes / Lattes CV
-                </a>
-                <a 
-                  href="/documents/Memorial_Academico_v3.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="bible-link hover:underline"
                 >
-                  Memorial Acadêmico / Academic Memorial
+                  Currículo Lattes / Lattes CV
                 </a>
               </div>
             </div>

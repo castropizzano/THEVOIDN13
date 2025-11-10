@@ -7,6 +7,7 @@ import { BackToTop } from "@/components/BackToTop";
 import { MusicPlayer } from "@/components/MusicPlayer";
 import { PodcastPlayer } from "@/components/PodcastPlayer";
 import { Timeline } from "@/components/Timeline";
+import { PDFViewer } from "@/components/PDFViewer";
 import heroImage from "@/assets/lowmovie-hero.png";
 import heroImageMobile from "@/assets/lowmovie-hero-mobile.png";
 
@@ -640,18 +641,23 @@ const Dissertacao = () => {
           </div>
 
           <div className="space-y-8 mt-8">
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-1 gap-8">
+              <PDFViewer 
+                pdfUrl="/documents/LowPressure_brandbook.pdf"
+                title="Brandbook LowPressure™"
+                description="Identidade visual e diretrizes de marca / Brand identity and guidelines"
+              />
+              
+              <PDFViewer 
+                pdfUrl="/documents/LowMovie_brandbook.pdf"
+                title="Brandbook LowMovie™"
+                description="Identidade visual e diretrizes de marca / Brand identity and guidelines"
+              />
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 mt-6">
               <div className="bg-card border border-border rounded-lg p-6">
                 <h4 className="bible-body font-bold mb-4">LowPressure™</h4>
-                <p className="bible-link mb-2">Brandbook LowPressure™</p>
-                <a 
-                  href="/documents/LowPressure_brandbook.pdf" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="bible-link hover:underline block mb-2"
-                >
-                  Download Brandbook (PDF)
-                </a>
                 <a 
                   href="https://castropizzano.com/lowpressure" 
                   target="_blank" 
@@ -664,15 +670,6 @@ const Dissertacao = () => {
 
               <div className="bg-card border border-border rounded-lg p-6">
                 <h4 className="bible-body font-bold mb-4">LowMovie™</h4>
-                <p className="bible-link mb-2">Brandbook LowMovie™</p>
-                <a 
-                  href="/documents/LowMovie_brandbook.pdf" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="bible-link hover:underline block mb-2"
-                >
-                  Download Brandbook (PDF)
-                </a>
                 <a 
                   href="https://youtu.be/wcYBh6_DqO8" 
                   target="_blank" 
