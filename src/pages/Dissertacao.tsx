@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SEO, breadcrumbSchema } from "@/components/SEO";
@@ -9,15 +8,10 @@ import { MusicPlayer } from "@/components/MusicPlayer";
 import { PodcastPlayer } from "@/components/PodcastPlayer";
 import { Timeline } from "@/components/Timeline";
 import { PDFViewer } from "@/components/PDFViewer";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
-import { Minimize2 } from "lucide-react";
 import heroImage from "@/assets/lowmovie-hero.png";
 import heroImageMobile from "@/assets/lowmovie-hero-mobile.png";
 
 const Dissertacao = () => {
-  const [showLowPressurePDF, setShowLowPressurePDF] = useState(false);
-  const [showLowMoviePDF, setShowLowMoviePDF] = useState(false);
   const thesisSchema = {
     "@context": "https://schema.org",
     "@type": "Thesis",
@@ -649,23 +643,17 @@ const Dissertacao = () => {
           <div className="space-y-8 mt-8">
             {/* Brandbooks */}
             <div className="grid md:grid-cols-1 gap-8">
-              <div className="bg-card border border-border rounded-lg p-6">
-                <button
-                  onClick={() => setShowLowPressurePDF(true)}
-                  className="bible-link hover:underline block text-left w-full"
-                >
-                  Brandbook LowPressure™
-                </button>
-              </div>
+              <PDFViewer 
+                pdfUrl="/documents/LowPressure_brandbook.pdf"
+                title="Brandbook LowPressure™"
+                description=""
+              />
               
-              <div className="bg-card border border-border rounded-lg p-6">
-                <button
-                  onClick={() => setShowLowMoviePDF(true)}
-                  className="bible-link hover:underline block text-left w-full"
-                >
-                  Brandbook LowMovie™
-                </button>
-              </div>
+              <PDFViewer 
+                pdfUrl="/documents/LowMovie_brandbook.pdf"
+                title="Brandbook LowMovie™"
+                description=""
+              />
             </div>
 
             {/* Case Studies and Videos */}
@@ -719,74 +707,6 @@ const Dissertacao = () => {
       </main>
 
       <Footer />
-
-      {/* LowPressure PDF Dialog */}
-      <Dialog open={showLowPressurePDF} onOpenChange={setShowLowPressurePDF}>
-        <DialogContent className="max-w-[95vw] h-[95vh] p-0">
-          <DialogHeader className="p-4 border-b">
-            <div className="flex items-center justify-between">
-              <DialogTitle>Brandbook LowPressure™</DialogTitle>
-              <Button 
-                variant="ghost" 
-                size="sm"
-                onClick={() => setShowLowPressurePDF(false)}
-                className="gap-2"
-              >
-                <Minimize2 className="h-4 w-4" />
-                Fechar / Close
-              </Button>
-            </div>
-          </DialogHeader>
-          <div className="flex-1 overflow-hidden">
-            <object
-              data="/documents/LowPressure_brandbook.pdf#view=FitH"
-              type="application/pdf"
-              className="w-full h-full"
-              aria-label="Brandbook LowPressure™"
-            >
-              <iframe
-                src="/documents/LowPressure_brandbook.pdf#view=FitH"
-                className="w-full h-full"
-                title="Brandbook LowPressure™"
-              />
-            </object>
-          </div>
-        </DialogContent>
-      </Dialog>
-
-      {/* LowMovie PDF Dialog */}
-      <Dialog open={showLowMoviePDF} onOpenChange={setShowLowMoviePDF}>
-        <DialogContent className="max-w-[95vw] h-[95vh] p-0">
-          <DialogHeader className="p-4 border-b">
-            <div className="flex items-center justify-between">
-              <DialogTitle>Brandbook LowMovie™</DialogTitle>
-              <Button 
-                variant="ghost" 
-                size="sm"
-                onClick={() => setShowLowMoviePDF(false)}
-                className="gap-2"
-              >
-                <Minimize2 className="h-4 w-4" />
-                Fechar / Close
-              </Button>
-            </div>
-          </DialogHeader>
-          <div className="flex-1 overflow-hidden">
-            <object
-              data="/documents/LowMovie_brandbook.pdf#view=FitH"
-              type="application/pdf"
-              className="w-full h-full"
-              aria-label="Brandbook LowMovie™"
-            >
-              <iframe
-                src="/documents/LowMovie_brandbook.pdf#view=FitH"
-                className="w-full h-full"
-                title="Brandbook LowMovie™"
-              />
-            </object>
-          </div>
-        </DialogContent>
-      </Dialog>
     </div>
   );
 };
