@@ -737,9 +737,15 @@ const Autor = () => {
 
         {/* Documentation */}
         <BilingualSection className="py-16">
-          <div className="bible-block-spacing">
-            <h2 className="bible-title">DOCUMENTATION</h2>
-            <h3 className="bible-subtitle">DOCUMENTOS DE PESQUISA / RESEARCH DOCUMENTS</h3>
+          <div className="bible-bilingual-grid bible-block-spacing">
+            <div>
+              <h2 className="bible-title">DOCUMENTAÇÃO</h2>
+              <h3 className="bible-subtitle mt-2">DOCUMENTOS DE PESQUISA</h3>
+            </div>
+            <div>
+              <h2 className="bible-title">DOCUMENTATION</h2>
+              <h3 className="bible-subtitle mt-2">RESEARCH DOCUMENTS</h3>
+            </div>
           </div>
 
           <div className="space-y-8 mt-8">
