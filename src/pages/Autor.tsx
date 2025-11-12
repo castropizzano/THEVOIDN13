@@ -774,23 +774,25 @@ const Autor = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </div>
-                  <a 
-                    href="https://castropizzano.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bible-link block hover:text-primary transition-colors"
-                  >
-                    castropizzano.com
-                  </a>
-                  <span className="bible-link"> | </span>
-                  <a 
-                    href="https://casatrezestudio.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bible-link hover:text-primary transition-colors"
-                  >
-                    casatrezestudio.com
-                  </a>
+                  <div>
+                    <a 
+                      href="https://castropizzano.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bible-link hover:text-primary transition-colors"
+                    >
+                      castropizzano.com
+                    </a>
+                    <span className="bible-link"> | </span>
+                    <a 
+                      href="https://casatrezestudio.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bible-link hover:text-primary transition-colors"
+                    >
+                      casatrezestudio.com
+                    </a>
+                  </div>
                 </div>
 
                 <a 
