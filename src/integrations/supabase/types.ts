@@ -402,6 +402,18 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      check_engagement_rate_limit: {
+        Args: { _session_id: string }
+        Returns: boolean
+      }
+      check_page_view_rate_limit: {
+        Args: { _session_id: string }
+        Returns: boolean
+      }
+      check_search_rate_limit: {
+        Args: { _session_id: string }
+        Returns: boolean
+      }
       has_role: {
         Args: {
           _role: Database["public"]["Enums"]["app_role"]
