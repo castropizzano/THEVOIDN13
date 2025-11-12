@@ -584,9 +584,9 @@ const Autor = () => {
 
                 <div className="max-w-4xl mx-auto py-12">
                   <blockquote className="bible-body text-left">
-                    <p className="mb-6">Este memorial não guarda o que passou.</p>
-                    <p className="mb-6">Guarda o que ainda pulsa.</p>
-                    <p><span className="font-bold">LowMovie™</span>, <span className="font-bold">LowPressure™</span>, <span className="font-bold">CasaTrezeStudio®</span> — três projetos matriciais que funcionam como órgãos do mesmo organismo criativo. Cada um respira de forma autônoma, mas todos compartilham o mesmo sangue simbólico.</p>
+                    <p className="bible-body mb-6">Este memorial não guarda o que passou.</p>
+                    <p className="bible-body mb-6">Guarda o que ainda pulsa.</p>
+                    <p className="bible-body"><span className="font-bold">LowMovie™</span>, <span className="font-bold">LowPressure™</span>, <span className="font-bold">CasaTrezeStudio®</span> — três projetos matriciais que funcionam como órgãos do mesmo organismo criativo. Cada um respira de forma autônoma, mas todos compartilham o mesmo sangue simbólico.</p>
                   </blockquote>
                 </div>
               </div>
@@ -617,9 +617,9 @@ const Autor = () => {
 
                 <div className="max-w-4xl mx-auto py-12">
                   <blockquote className="bible-body text-left">
-                    <p className="mb-6">This memorial does not keep what has passed.</p>
-                    <p className="mb-6">It keeps what still pulses.</p>
-                    <p><span className="font-bold">LowMovie™</span>, <span className="font-bold">LowPressure™</span>, <span className="font-bold">CasaTrezeStudio®</span> — three matrix projects that function as organs of the same creative organism. Each breathes autonomously, but all share the same symbolic blood.</p>
+                    <p className="bible-body mb-6">This memorial does not keep what has passed.</p>
+                    <p className="bible-body mb-6">It keeps what still pulses.</p>
+                    <p className="bible-body"><span className="font-bold">LowMovie™</span>, <span className="font-bold">LowPressure™</span>, <span className="font-bold">CasaTrezeStudio®</span> — three matrix projects that function as organs of the same creative organism. Each breathes autonomously, but all share the same symbolic blood.</p>
                   </blockquote>
                 </div>
               </div>
