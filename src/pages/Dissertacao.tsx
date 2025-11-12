@@ -666,7 +666,7 @@ const Dissertacao = () => {
                   rel="noopener noreferrer" 
                   className="bible-link hover:underline block"
                 >
-                  Case Study
+                  Estudo de Caso / Case Study
                 </a>
               </div>
 
@@ -678,7 +678,7 @@ const Dissertacao = () => {
                   rel="noopener noreferrer" 
                   className="bible-link hover:underline block"
                 >
-                  Full Video LowMovie™ (2023)
+                  Vídeo Completo LowMovie™ (2023) / Full Video LowMovie™ (2023)
                 </a>
               </div>
             </div>
