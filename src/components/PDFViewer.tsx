@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Download, ExternalLink, Maximize2, Minimize2 } from "lucide-react";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { ExternalLink } from "lucide-react";
 
 interface PDFViewerProps {
   pdfUrl: string;
@@ -10,7 +9,6 @@ interface PDFViewerProps {
 }
 
 export const PDFViewer = ({ pdfUrl, title, description }: PDFViewerProps) => {
-  const [isFullscreen, setIsFullscreen] = useState(false);
   const [pdfExists, setPdfExists] = useState<boolean | null>(null);
 
   // Check if PDF exists
@@ -33,12 +31,8 @@ export const PDFViewer = ({ pdfUrl, title, description }: PDFViewerProps) => {
     checkPdfExists();
   });
 
-  const handleDownload = () => {
+  const handleOpenNewTab = () => {
     window.open(pdfUrl, '_blank');
-  };
-
-  const handleFullscreen = () => {
-    setIsFullscreen(true);
   };
 
   if (pdfExists === false) {
@@ -52,12 +46,12 @@ export const PDFViewer = ({ pdfUrl, title, description }: PDFViewerProps) => {
         <Button 
           variant="outline" 
           size="sm"
-          onClick={handleDownload}
+          onClick={handleOpenNewTab}
           className="gap-2"
           disabled
         >
-          <Download className="h-4 w-4" />
-          Download PDF
+          <ExternalLink className="h-4 w-4" />
+          Abrir em Nova Aba / Open in New Tab
         </Button>
       </div>
     );
@@ -71,8 +65,8 @@ export const PDFViewer = ({ pdfUrl, title, description }: PDFViewerProps) => {
           {description && <p className="bible-caption text-muted-foreground">{description}</p>}
         </div>
         
-        {/* PDF Embed Preview */}
-        <div className="relative bg-muted" style={{ height: '400px' }}>
+        {/* PDF Embed Preview - Full page height */}
+        <div className="relative bg-muted" style={{ height: '1056px' }}>
           <object
             data={`${pdfUrl}#view=FitH&toolbar=0&navpanes=0`}
             type="application/pdf"
@@ -88,7 +82,7 @@ export const PDFViewer = ({ pdfUrl, title, description }: PDFViewerProps) => {
                 </p>
                 <Button 
                   variant="outline" 
-                  onClick={handleDownload}
+                  onClick={handleOpenNewTab}
                   className="gap-2"
                 >
                   <ExternalLink className="h-4 w-4" />
@@ -100,29 +94,11 @@ export const PDFViewer = ({ pdfUrl, title, description }: PDFViewerProps) => {
         </div>
 
         {/* Actions */}
-        <div className="p-4 flex flex-wrap gap-2 border-t border-border">
+        <div className="p-4 flex justify-center border-t border-border">
           <Button 
             variant="outline" 
             size="sm"
-            onClick={handleDownload}
-            className="gap-2"
-          >
-            <Download className="h-4 w-4" />
-            Download
-          </Button>
-          <Button 
-            variant="outline" 
-            size="sm"
-            onClick={handleFullscreen}
-            className="gap-2"
-          >
-            <Maximize2 className="h-4 w-4" />
-            Tela Cheia / Fullscreen
-          </Button>
-          <Button 
-            variant="outline" 
-            size="sm"
-            onClick={handleDownload}
+            onClick={handleOpenNewTab}
             className="gap-2"
           >
             <ExternalLink className="h-4 w-4" />
@@ -130,40 +106,6 @@ export const PDFViewer = ({ pdfUrl, title, description }: PDFViewerProps) => {
           </Button>
         </div>
       </div>
-
-      {/* Fullscreen Dialog */}
-      <Dialog open={isFullscreen} onOpenChange={setIsFullscreen}>
-        <DialogContent className="max-w-[95vw] h-[95vh] p-0">
-          <DialogHeader className="p-4 border-b">
-            <div className="flex items-center justify-between">
-              <DialogTitle>{title}</DialogTitle>
-              <Button 
-                variant="ghost" 
-                size="sm"
-                onClick={() => setIsFullscreen(false)}
-                className="gap-2"
-              >
-                <Minimize2 className="h-4 w-4" />
-                Fechar / Close
-              </Button>
-            </div>
-          </DialogHeader>
-          <div className="flex-1 overflow-hidden">
-            <object
-              data={`${pdfUrl}#view=FitH`}
-              type="application/pdf"
-              className="w-full h-full"
-              aria-label={title}
-            >
-              <iframe
-                src={`${pdfUrl}#view=FitH`}
-                className="w-full h-full"
-                title={title}
-              />
-            </object>
-          </div>
-        </DialogContent>
-      </Dialog>
     </>
   );
 };
