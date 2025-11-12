@@ -142,11 +142,24 @@ CRITICAL REMINDERS:
     );
 
   } catch (error) {
-    console.error('Error in generate-comic-panel:', error);
+    // Log detailed error server-side only
+    console.error('[INTERNAL] Comic generation error:', error);
+    
+    // Map to safe user messages
+    let userMessage = 'Unable to generate image. Please try again.';
+    
+    if (error instanceof Error) {
+      if (error.message.includes('Rate limit')) {
+        userMessage = 'Too many requests. Please wait a moment.';
+      } else if (error.message.includes('Payment required')) {
+        userMessage = 'Service temporarily unavailable.';
+      } else if (error.message.includes('Script too')) {
+        userMessage = error.message; // Safe validation messages
+      }
+    }
+    
     return new Response(
-      JSON.stringify({ 
-        error: error instanceof Error ? error.message : 'Unknown error occurred' 
-      }),
+      JSON.stringify({ error: userMessage }),
       { 
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },
         status: 500

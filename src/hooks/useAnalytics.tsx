@@ -22,6 +22,20 @@ const getVisitorId = () => {
   return visitorId;
 };
 
+// Rate limiting to prevent analytics spam
+const RATE_LIMIT = 100; // max events per session
+const checkRateLimit = () => {
+  const sessionEventCount = sessionStorage.getItem('analytics_count') || '0';
+  const count = parseInt(sessionEventCount);
+  
+  if (count >= RATE_LIMIT) {
+    return false; // Rate limit exceeded
+  }
+  
+  sessionStorage.setItem('analytics_count', String(count + 1));
+  return true;
+};
+
 export const usePageView = () => {
   const location = useLocation();
   const trackedRef = useRef(false);
@@ -32,6 +46,12 @@ export const usePageView = () => {
     trackedRef.current = true;
 
     const trackPageView = async () => {
+      // Check rate limit before tracking
+      if (!checkRateLimit()) {
+        console.warn('Analytics rate limit exceeded');
+        return;
+      }
+      
       try {
         await supabase.from('page_views').insert({
           page_path: location.pathname,
@@ -61,6 +81,11 @@ export const useTrackSectionEngagement = () => {
     actionType: 'view' | 'scroll' | 'interact',
     durationSeconds?: number
   ) => {
+    // Check rate limit before tracking
+    if (!checkRateLimit()) {
+      return;
+    }
+    
     try {
       await supabase.from('section_engagement').insert({
         section_name: sectionName,
@@ -78,6 +103,11 @@ export const useTrackSectionEngagement = () => {
 
 export const useTrackSearch = () => {
   const trackSearch = async (query: string, resultsCount: number) => {
+    // Check rate limit before tracking
+    if (!checkRateLimit()) {
+      return;
+    }
+    
     try {
       await supabase.from('search_queries').insert({
         query,
