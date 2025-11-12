@@ -766,8 +766,8 @@ const Autor = () => {
             <div className="pt-8 border-t border-border">
               <h3 className="bible-subtitle mb-6">Portfolio & Links</h3>
               
-              <div className="grid md:grid-cols-4 gap-6">
-                <div className="group bg-card/50 border border-border rounded-lg p-6 md:col-span-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="group bg-card/50 border border-border rounded-lg p-6 sm:col-span-2 lg:col-span-2">
                   <div className="flex justify-between items-start mb-4">
                     <h3 className="bible-body font-bold">Sites</h3>
                     <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
