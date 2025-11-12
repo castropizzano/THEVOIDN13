@@ -783,15 +783,6 @@ const Autor = () => {
                     >
                       castropizzano.com
                     </a>
-                    <span className="bible-link"> | </span>
-                    <a 
-                      href="https://casatrezestudio.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bible-link hover:text-primary transition-colors"
-                    >
-                      casatrezestudio.com
-                    </a>
                   </div>
                 </div>
 
