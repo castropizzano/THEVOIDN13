@@ -774,7 +774,7 @@ const Autor = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </div>
-                  <div>
+                  <div className="text-sm">
                     <a 
                       href="https://castropizzano.com"
                       target="_blank"
