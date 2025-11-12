@@ -647,45 +647,51 @@ const Dissertacao = () => {
           </div>
 
           <div className="space-y-8 mt-8">
+            {/* Brandbooks */}
+            <div className="grid md:grid-cols-1 gap-8">
+              <div className="bg-card border border-border rounded-lg p-6">
+                <button
+                  onClick={() => setShowLowPressurePDF(true)}
+                  className="bible-link hover:underline block text-left w-full"
+                >
+                  Brandbook LowPressure™
+                </button>
+              </div>
+              
+              <div className="bg-card border border-border rounded-lg p-6">
+                <button
+                  onClick={() => setShowLowMoviePDF(true)}
+                  className="bible-link hover:underline block text-left w-full"
+                >
+                  Brandbook LowMovie™
+                </button>
+              </div>
+            </div>
+
+            {/* Case Studies and Videos */}
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-card border border-border rounded-lg p-6">
                 <h4 className="bible-body font-bold mb-4">LowPressure™</h4>
-                <div className="space-y-2">
-                  <button
-                    onClick={() => setShowLowPressurePDF(true)}
-                    className="bible-link hover:underline block text-left"
-                  >
-                    Brandbook LowPressure™
-                  </button>
-                  <a 
-                    href="https://castropizzano.com/lowpressure" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="bible-link hover:underline block"
-                  >
-                    Case Study
-                  </a>
-                </div>
+                <a 
+                  href="https://castropizzano.com/lowpressure" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="bible-link hover:underline block"
+                >
+                  Case Study
+                </a>
               </div>
 
               <div className="bg-card border border-border rounded-lg p-6">
                 <h4 className="bible-body font-bold mb-4">LowMovie™</h4>
-                <div className="space-y-2">
-                  <button
-                    onClick={() => setShowLowMoviePDF(true)}
-                    className="bible-link hover:underline block text-left"
-                  >
-                    Brandbook LowMovie™
-                  </button>
-                  <a 
-                    href="https://youtu.be/wcYBh6_DqO8" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="bible-link hover:underline block"
-                  >
-                    Full Video LowMovie™ (2023)
-                  </a>
-                </div>
+                <a 
+                  href="https://youtu.be/wcYBh6_DqO8" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="bible-link hover:underline block"
+                >
+                  Full Video LowMovie™ (2023)
+                </a>
               </div>
             </div>
 
