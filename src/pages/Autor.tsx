@@ -359,7 +359,7 @@ const Autor = () => {
                   <h4 className="bible-subtitle mb-4">Formação Complementar</h4>
                   <div className="space-y-2">
                     <p className="bible-link">• Técnico em Design Gráfico — CEFET-PR [1999]</p>
-                    <p className="bible-link">• Direção de Arte em Cinema — AIC - Academia Internacional de Cinema [2004]</p>
+                    <p className="bible-link">• Dir. de Arte em Cinema — AIC - Academia Internacional de Cinema [2004]</p>
                     <p className="bible-link">• Graphic Journey Expert — Adobe Systems [2004]</p>
                     <p className="bible-link">• Princípios e Ações para o Educador — CEJA [2004]</p>
                     <p className="bible-link">• Jornada de Design Gráfico — Adobe Eng-DTP e Multimídia [2008]</p>
