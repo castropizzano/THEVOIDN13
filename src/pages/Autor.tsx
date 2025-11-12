@@ -751,15 +751,15 @@ const Autor = () => {
           <div className="space-y-8 mt-8">
             <div className="grid md:grid-cols-1 gap-8">
               <PDFViewer 
-                pdfUrl="/documents/Release_CasaTrezeStudio.pdf"
-                title="Release CasaTrezeStudio® / CasaTrezeStudio® Release"
-                description="Documentação oficial do estúdio / Official studio documentation"
-              />
-              
-              <PDFViewer 
                 pdfUrl="/documents/Memorial_Academico_v3.pdf"
                 title="Memorial Acadêmico / Academic Memorial"
                 description="Jornada do Autor / Author Journey"
+              />
+              
+              <PDFViewer 
+                pdfUrl="/documents/Release_CasaTrezeStudio.pdf"
+                title="Release CasaTrezeStudio® / CasaTrezeStudio® Release"
+                description="Documentação oficial do estúdio / Official studio documentation"
               />
             </div>
 
