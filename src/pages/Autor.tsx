@@ -769,7 +769,7 @@ const Autor = () => {
               <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
                 <div className="group bg-card/50 border border-border rounded-lg p-6">
                   <div className="flex justify-between items-start mb-4">
-                    <h3 className="bible-body font-bold">Sites</h3>
+                    <h3 className="bible-body font-bold">Site</h3>
                     <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
