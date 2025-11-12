@@ -802,24 +802,46 @@ const Autor = () => {
             <div className="pt-8 border-t border-border">
               <h3 className="bible-subtitle mb-6">Portfolio & Links</h3>
               
-              <div className="grid md:grid-cols-3 gap-6">
+              <div className="grid md:grid-cols-4 gap-6">
+                <div className="group bg-card/50 border border-border rounded-lg p-6">
+                  <div className="flex justify-between items-start mb-4">
+                    <h3 className="bible-body font-bold">Sites</h3>
+                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                  <a 
+                    href="https://castropizzano.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bible-link block hover:text-primary transition-colors"
+                  >
+                    castropizzano.com
+                  </a>
+                  <span className="bible-link"> | </span>
+                  <a 
+                    href="https://casatrezestudio.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bible-link hover:text-primary transition-colors"
+                  >
+                    casatrezestudio.com
+                  </a>
+                </div>
+
                 <a 
-                  href="https://castropizzano.com"
+                  href="http://lattes.cnpq.br/5523516994010198"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group bg-card/50 border border-border rounded-lg p-6 hover:border-primary transition-colors"
                 >
                   <div className="flex justify-between items-start mb-4">
-                    <h3 className="bible-body font-bold">Website</h3>
+                    <h3 className="bible-body font-bold">Lattes</h3>
                     <svg className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </div>
-                  <p className="bible-link mb-2">castropizzano.com</p>
-                  <p className="bible-link">
-                    Portfólio completo e projetos<br/>
-                    Complete portfolio and projects
-                  </p>
+                  <p className="bible-link">@castropizzano</p>
                 </a>
 
                 <a 
@@ -834,11 +856,7 @@ const Autor = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </div>
-                  <p className="bible-link mb-2">@castropizzano</p>
-                  <p className="bible-link">
-                    Design gráfico e branding<br/>
-                    Graphic design and branding
-                  </p>
+                  <p className="bible-link">@castropizzano</p>
                 </a>
 
                 <a 
@@ -853,11 +871,7 @@ const Autor = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </div>
-                  <p className="bible-link mb-2">@castropizzano</p>
-                  <p className="bible-link">
-                    Cinema e vídeo arte<br/>
-                    Cinema and video art
-                  </p>
+                  <p className="bible-link">@castropizzano</p>
                 </a>
               </div>
             </div>
