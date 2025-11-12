@@ -17,6 +17,7 @@ import heroImageMobile from "@/assets/lowmovie-hero-mobile.png";
 
 const Dissertacao = () => {
   const [showLowPressurePDF, setShowLowPressurePDF] = useState(false);
+  const [showLowMoviePDF, setShowLowMoviePDF] = useState(false);
   const thesisSchema = {
     "@context": "https://schema.org",
     "@type": "Thesis",
@@ -646,15 +647,7 @@ const Dissertacao = () => {
           </div>
 
           <div className="space-y-8 mt-8">
-            <div className="grid md:grid-cols-1 gap-8">
-              <PDFViewer 
-                pdfUrl="/documents/LowMovie_brandbook.pdf"
-                title="Brandbook LowMovie™"
-                description="Identidade visual e diretrizes de marca / Brand identity and guidelines"
-              />
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-6 mt-6">
+            <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-card border border-border rounded-lg p-6">
                 <h4 className="bible-body font-bold mb-4">LowPressure™</h4>
                 <div className="space-y-2">
@@ -677,14 +670,22 @@ const Dissertacao = () => {
 
               <div className="bg-card border border-border rounded-lg p-6">
                 <h4 className="bible-body font-bold mb-4">LowMovie™</h4>
-                <a 
-                  href="https://youtu.be/wcYBh6_DqO8" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="bible-link hover:underline"
-                >
-                  Full Video LowMovie™ (2023)
-                </a>
+                <div className="space-y-2">
+                  <button
+                    onClick={() => setShowLowMoviePDF(true)}
+                    className="bible-link hover:underline block text-left"
+                  >
+                    Brandbook LowMovie™
+                  </button>
+                  <a 
+                    href="https://youtu.be/wcYBh6_DqO8" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="bible-link hover:underline block"
+                  >
+                    Full Video LowMovie™ (2023)
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -741,6 +742,40 @@ const Dissertacao = () => {
                 src="/documents/LowPressure_brandbook.pdf#view=FitH"
                 className="w-full h-full"
                 title="Brandbook LowPressure™"
+              />
+            </object>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* LowMovie PDF Dialog */}
+      <Dialog open={showLowMoviePDF} onOpenChange={setShowLowMoviePDF}>
+        <DialogContent className="max-w-[95vw] h-[95vh] p-0">
+          <DialogHeader className="p-4 border-b">
+            <div className="flex items-center justify-between">
+              <DialogTitle>Brandbook LowMovie™</DialogTitle>
+              <Button 
+                variant="ghost" 
+                size="sm"
+                onClick={() => setShowLowMoviePDF(false)}
+                className="gap-2"
+              >
+                <Minimize2 className="h-4 w-4" />
+                Fechar / Close
+              </Button>
+            </div>
+          </DialogHeader>
+          <div className="flex-1 overflow-hidden">
+            <object
+              data="/documents/LowMovie_brandbook.pdf#view=FitH"
+              type="application/pdf"
+              className="w-full h-full"
+              aria-label="Brandbook LowMovie™"
+            >
+              <iframe
+                src="/documents/LowMovie_brandbook.pdf#view=FitH"
+                className="w-full h-full"
+                title="Brandbook LowMovie™"
               />
             </object>
           </div>
