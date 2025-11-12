@@ -678,7 +678,7 @@ const Autor = () => {
                 
                 <p className="bible-body font-semibold mt-8 p-6 bg-primary/5 rounded-lg border-l-4 border-primary">O portal está vivo. A pesquisa está em movimento. O futuro está sendo criado agora — um prompt, uma imagem, um commit de cada vez.</p>
                 
-                <p className="bible-body italic text-muted-foreground mt-6">E quando você fecha esta página, o processo continua. Porque este não é o fim. É apenas o próximo começo.</p>
+                <p className="bible-body text-muted-foreground mt-6">E quando você fecha esta página, o processo continua. Porque este não é o fim. É apenas o próximo começo.</p>
                 
                 <div className="pt-12 text-center">
                   <p className="bible-link">[continua...]</p>
@@ -723,7 +723,7 @@ const Autor = () => {
                 
                 <p className="bible-body font-semibold mt-8 p-6 bg-primary/5 rounded-lg border-l-4 border-primary">The portal is alive. Research is in motion. The future is being created now — one prompt, one image, one commit at a time.</p>
                 
-                <p className="bible-body italic text-muted-foreground mt-6">And when you close this page, the process continues. Because this isn't the end. It's just the next beginning.</p>
+                <p className="bible-body text-muted-foreground mt-6">And when you close this page, the process continues. Because this isn't the end. It's just the next beginning.</p>
                 
                 <div className="pt-12 text-center">
                   <p className="bible-link">[to be continued...]</p>
