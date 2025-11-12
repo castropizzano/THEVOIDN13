@@ -763,42 +763,6 @@ const Autor = () => {
               />
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6 mt-6">
-              <div className="bg-card border border-border rounded-lg p-6">
-                <h4 className="bible-body font-bold mb-4">Links Externos / External Links</h4>
-                <div className="space-y-2">
-                  <a 
-                    href="http://lattes.cnpq.br/5523516994010198"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bible-link hover:underline block"
-                  >
-                    Currículo Lattes / Lattes CV
-                  </a>
-                  <button
-                    onClick={() => setShowMemorialPDF(true)}
-                    className="bible-link hover:underline block text-left"
-                  >
-                    Memorial Acadêmico / Academic Memorial
-                  </button>
-                  <button
-                    onClick={() => setShowReleasePDF(true)}
-                    className="bible-link hover:underline block text-left"
-                  >
-                    CasaTrezeStudio® Release
-                  </button>
-                  <a 
-                    href="https://casatrezestudio.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bible-link hover:underline block"
-                  >
-                    CasaTrezeStudio® Site
-                  </a>
-                </div>
-              </div>
-            </div>
-
             <div className="pt-8 border-t border-border">
               <h3 className="bible-subtitle mb-6">Portfolio & Links</h3>
               
