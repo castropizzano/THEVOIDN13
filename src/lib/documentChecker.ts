@@ -13,11 +13,11 @@ export interface DocumentCheck {
  * List of all PDF documents that should be available in the application
  */
 export const REQUIRED_DOCUMENTS = [
-  '/documents/Release_CasaTrezeStudio.pdf',
-  '/documents/Memorial_Academico_v3.pdf',
   '/documents/LowPressure_brandbook.pdf',
   '/documents/LowMovie_brandbook.pdf',
   '/documents/THEVOIDN13_ShadowInterfaceBible_v13.pdf',
+  '/documents/Memorial_Academico_Ecos_Criativos.pdf',
+  '/documents/CasaTrezeStudio_Release.pdf',
 ] as const;
 
 /**

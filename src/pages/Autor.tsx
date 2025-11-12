@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SEO, personSchema, breadcrumbSchema } from "@/components/SEO";
@@ -5,10 +6,15 @@ import { BilingualSection } from "@/components/BilingualSection";
 import { BackToTop } from "@/components/BackToTop";
 import { Separator } from "@/components/ui/separator";
 import { PDFViewer } from "@/components/PDFViewer";
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import { Minimize2 } from "lucide-react";
 import heroImage from "@/assets/author-hero.png";
 import heroImageMobile from "@/assets/author-hero-mobile.png";
 
 const Autor = () => {
+  const [showMemorialPDF, setShowMemorialPDF] = useState(false);
+  const [showReleasePDF, setShowReleasePDF] = useState(false);
   const breadcrumbs = breadcrumbSchema([
     { name: "Home", url: "https://thevoidn13.com/" },
     { name: "Autor", url: "https://thevoidn13.com/autor" }
@@ -754,22 +760,36 @@ const Autor = () => {
             <div className="grid md:grid-cols-2 gap-6 mt-6">
               <div className="bg-card border border-border rounded-lg p-6">
                 <h4 className="bible-body font-bold mb-4">Links Externos / External Links</h4>
-                <a 
-                  href="https://casatrezestudio.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bible-link hover:underline block mb-2"
-                >
-                  https://casatrezestudio.com/
-                </a>
-                <a 
-                  href="http://lattes.cnpq.br/5523516994010198"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bible-link hover:underline"
-                >
-                  Currículo Lattes / Lattes CV
-                </a>
+                <div className="space-y-2">
+                  <a 
+                    href="http://lattes.cnpq.br/5523516994010198"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bible-link hover:underline block"
+                  >
+                    Currículo Lattes / Lattes CV
+                  </a>
+                  <button
+                    onClick={() => setShowMemorialPDF(true)}
+                    className="bible-link hover:underline block text-left"
+                  >
+                    Memorial Acadêmico / Academic Memorial
+                  </button>
+                  <button
+                    onClick={() => setShowReleasePDF(true)}
+                    className="bible-link hover:underline block text-left"
+                  >
+                    CasaTrezeStudio® Release
+                  </button>
+                  <a 
+                    href="https://casatrezestudio.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bible-link hover:underline block"
+                  >
+                    CasaTrezeStudio® Site
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -840,6 +860,74 @@ const Autor = () => {
       </main>
 
       <Footer />
+
+      {/* Memorial PDF Dialog */}
+      <Dialog open={showMemorialPDF} onOpenChange={setShowMemorialPDF}>
+        <DialogContent className="max-w-[95vw] h-[95vh] p-0">
+          <DialogHeader className="p-4 border-b">
+            <div className="flex items-center justify-between">
+              <DialogTitle>Memorial Acadêmico / Academic Memorial</DialogTitle>
+              <Button 
+                variant="ghost" 
+                size="sm"
+                onClick={() => setShowMemorialPDF(false)}
+                className="gap-2"
+              >
+                <Minimize2 className="h-4 w-4" />
+                Fechar / Close
+              </Button>
+            </div>
+          </DialogHeader>
+          <div className="flex-1 overflow-hidden">
+            <object
+              data="/documents/Memorial_Academico_Ecos_Criativos.pdf#view=FitH"
+              type="application/pdf"
+              className="w-full h-full"
+              aria-label="Memorial Acadêmico"
+            >
+              <iframe
+                src="/documents/Memorial_Academico_Ecos_Criativos.pdf#view=FitH"
+                className="w-full h-full"
+                title="Memorial Acadêmico"
+              />
+            </object>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Release PDF Dialog */}
+      <Dialog open={showReleasePDF} onOpenChange={setShowReleasePDF}>
+        <DialogContent className="max-w-[95vw] h-[95vh] p-0">
+          <DialogHeader className="p-4 border-b">
+            <div className="flex items-center justify-between">
+              <DialogTitle>CasaTrezeStudio® Release</DialogTitle>
+              <Button 
+                variant="ghost" 
+                size="sm"
+                onClick={() => setShowReleasePDF(false)}
+                className="gap-2"
+              >
+                <Minimize2 className="h-4 w-4" />
+                Fechar / Close
+              </Button>
+            </div>
+          </DialogHeader>
+          <div className="flex-1 overflow-hidden">
+            <object
+              data="/documents/CasaTrezeStudio_Release.pdf#view=FitH"
+              type="application/pdf"
+              className="w-full h-full"
+              aria-label="CasaTrezeStudio Release"
+            >
+              <iframe
+                src="/documents/CasaTrezeStudio_Release.pdf#view=FitH"
+                className="w-full h-full"
+                title="CasaTrezeStudio Release"
+              />
+            </object>
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
