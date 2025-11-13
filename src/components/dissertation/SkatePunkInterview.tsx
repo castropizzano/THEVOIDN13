@@ -20,6 +20,24 @@ export const SkatePunkInterview = () => {
           <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
           <div className="space-y-6 mt-6">
             <p className="bible-body">
+              Podcast Chiclé Vídeos — Conversa sobre a trajetória criativa, os bastidores do LowMovie™, a relação entre skate e audiovisual, e os processos colaborativos do coletivo LowPressure™.
+            </p>
+
+            {/* YouTube Video */}
+            <div className="aspect-video w-full rounded-lg overflow-hidden border border-border/50 shadow-lg shadow-primary/10 mb-8">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/rOoUJyzGkDY"
+                title="Skate Punk — Processos Criativos — Castro Pizzano"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
+
+            <p className="bible-body">
               Esta entrevista é fundamental para a compreensão dos processos criativos que permeiam o universo do skate punk. 
               Através de conversas em profundidade com membros do coletivo LowPressure™, exploramos como o corpo em movimento, 
               a cultura de rua e a estética DIY se entrelaçam na construção de uma linguagem audiovisual única.
@@ -27,7 +45,7 @@ export const SkatePunkInterview = () => {
             
             <Card className="p-6 border-l-4 border-primary hover:shadow-lg hover:shadow-primary/20 transition-all duration-300">
               <div className="space-y-4">
-                <h3 className="bible-subtitle">Eixos da Entrevista</h3>
+                <h3 className="bible-subtitle">Tópicos da Conversa</h3>
                 <ul className="space-y-2 bible-body">
                   <li>• <span className="font-semibold">Corpo e Movimento:</span> O skate como método, o andar como epistemologia</li>
                   <li>• <span className="font-semibold">Estética Punk DIY:</span> Criação artesanal, experimental e colaborativa</li>
@@ -47,6 +65,24 @@ export const SkatePunkInterview = () => {
           <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
           <div className="space-y-6 mt-6">
             <p className="bible-body">
+              Podcast Chiclé Vídeos — Conversation about the creative trajectory, the backstage of LowMovie™, the relationship between skateboarding and audiovisual, and the collaborative processes of the LowPressure™ collective.
+            </p>
+
+            {/* YouTube Video */}
+            <div className="aspect-video w-full rounded-lg overflow-hidden border border-border/50 shadow-lg shadow-primary/10 mb-8">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/rOoUJyzGkDY"
+                title="Skate Punk — Creative Processes — Castro Pizzano"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
+
+            <p className="bible-body">
               This interview is fundamental to understanding the creative processes that permeate the skate punk universe. 
               Through in-depth conversations with members of the LowPressure™ collective, we explore how the body in movement, 
               street culture and DIY aesthetics intertwine in the construction of a unique audiovisual language.
@@ -54,7 +90,7 @@ export const SkatePunkInterview = () => {
             
             <Card className="p-6 border-l-4 border-primary hover:shadow-lg hover:shadow-primary/20 transition-all duration-300">
               <div className="space-y-4">
-                <h3 className="bible-subtitle">Interview Axes</h3>
+                <h3 className="bible-subtitle">Conversation Topics</h3>
                 <ul className="space-y-2 bible-body">
                   <li>• <span className="font-semibold">Body and Movement:</span> Skateboarding as method, walking as epistemology</li>
                   <li>• <span className="font-semibold">Punk DIY Aesthetics:</span> Artisanal, experimental and collaborative creation</li>

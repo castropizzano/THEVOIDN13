@@ -607,10 +607,10 @@ const Dissertacao = () => {
           </div>
           <div className="bilingual-grid mt-4">
             <div className="bilingual-col">
-              <p className="bible-subtitle">TRILHAS SONORAS, ENTREVISTAS</p>
+              <p className="bible-subtitle">TRILHAS SONORAS, LINHA DO TEMPO</p>
             </div>
             <div className="bilingual-col">
-              <p className="bible-subtitle">SOUNDTRACKS, INTERVIEWS</p>
+              <p className="bible-subtitle">SOUNDTRACKS, TIMELINE</p>
             </div>
           </div>
 
@@ -618,11 +618,6 @@ const Dissertacao = () => {
             {/* Music Player */}
             <div>
               <MusicPlayer />
-            </div>
-
-            {/* Podcast Player */}
-            <div>
-              <PodcastPlayer />
             </div>
 
             {/* Timeline */}
