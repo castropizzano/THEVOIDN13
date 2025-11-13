@@ -1,7 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { BilingualSection } from "@/components/BilingualSection";
-import zine01 from "@/assets/zine/zine_01.png";
 import zine02 from "@/assets/zine/zine_02.png";
 import zine03 from "@/assets/zine/zine_03.png";
 import zine04 from "@/assets/zine/zine_04.png";
@@ -20,7 +19,7 @@ import zine16 from "@/assets/zine/zine_16.png";
 
 export const InterviewsTabs = () => {
   const zineImages = [
-    zine01, zine02, zine03, zine04, zine05, 
+    zine02, zine03, zine04, zine05, 
     zine06, zine07, zine08, zine09, zine10,
     zine11, zine12, zine13, zine14, zine15, zine16
   ];
