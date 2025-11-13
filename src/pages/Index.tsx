@@ -14,6 +14,8 @@ import { CookieConsent } from "@/components/CookieConsent";
 import SpotifyPlaylist from "@/components/SpotifyPlaylist";
 import FilmGallery from "@/components/FilmGallery";
 import ComicsShowcase from "@/components/ComicsShowcase";
+import PhilosophyShowcase from "@/components/PhilosophyShowcase";
+import PunkPhilosophySection from "@/components/PunkPhilosophySection";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
@@ -1380,7 +1382,17 @@ const Index = () => {
           <div className="mt-12">
             <SpotifyPlaylist />
           </div>
+
+          {/* FILOSOFIA & METODOLOGIA - Philosophy Showcase */}
+          <div className="mt-16">
+            <PhilosophyShowcase />
+          </div>
         </BilingualSection>
+
+        <Separator className="bg-border/30" />
+
+        {/* ===== PUNK PHILOSOPHY ===== */}
+        <PunkPhilosophySection />
 
         <Separator className="bg-border/30" />
 
