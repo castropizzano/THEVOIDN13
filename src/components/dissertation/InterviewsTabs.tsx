@@ -38,11 +38,12 @@ export const InterviewsTabs = () => {
       </div>
 
       <Tabs defaultValue="skate-punk" className="w-full">
-        <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mb-8">
+        <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mb-8">
           <TabsTrigger value="skate-punk">Skate Punk</TabsTrigger>
           <TabsTrigger value="black-media">Black Media</TabsTrigger>
           <TabsTrigger value="gabriel-peralta">Gabriel Peralta</TabsTrigger>
           <TabsTrigger value="rafao-vm">Rafão VM</TabsTrigger>
+          <TabsTrigger value="werner-herzog">Werner Herzog</TabsTrigger>
           <TabsTrigger value="lowzine">LowZine</TabsTrigger>
         </TabsList>
 
@@ -477,6 +478,88 @@ export const InterviewsTabs = () => {
                 </p>
                 <a 
                   href="/documents/Rafao_VM_Skate_Marginal_Interview.pdf" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-primary hover:underline font-medium"
+                >
+                  Download Transcription (PDF)
+                </a>
+              </Card>
+            </div>
+          </div>
+        </TabsContent>
+
+        {/* Werner Herzog Interview Tab */}
+        <TabsContent value="werner-herzog" className="space-y-8">
+          <div className="bible-bilingual-grid bible-block-spacing">
+            <div>
+              <h3 className="bible-title">WERNER HERZOG & SKATEBOARDING</h3>
+              <p className="bible-subtitle text-primary mt-2">Ian Michna & Rob Fraebel</p>
+            </div>
+            <div>
+              <h3 className="bible-title">WERNER HERZOG & SKATEBOARDING</h3>
+              <p className="bible-subtitle text-primary mt-2">Ian Michna & Rob Fraebel</p>
+            </div>
+          </div>
+
+          <div className="bible-bilingual-grid bible-section-spacing mt-8">
+            <div>
+              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
+              <p className="bible-body mt-6">
+                Entrevista com o renomado cineasta alemão Werner Herzog discutindo skateboarding, cinema, 
+                arte e a relação entre corpo, movimento e narrativa. Uma conversa única que conecta a filosofia 
+                do skate com o olhar poético e existencial de um dos maiores diretores contemporâneos.
+              </p>
+            </div>
+            <div>
+              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
+              <p className="bible-body mt-6">
+                Interview with renowned German filmmaker Werner Herzog discussing skateboarding, cinema, 
+                art and the relationship between body, movement and narrative. A unique conversation connecting 
+                skate philosophy with the poetic and existential vision of one of the greatest contemporary directors.
+              </p>
+            </div>
+          </div>
+
+          <div className="aspect-video w-full rounded-lg overflow-hidden border border-border/50 shadow-lg shadow-primary/10 my-12 max-w-5xl mx-auto">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/EQLInlnfWUc"
+              title="Werner Herzog discussing skateboarding"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            />
+          </div>
+
+          <div className="bible-bilingual-grid bible-section-spacing mt-8">
+            <div>
+              <Card className="p-6 bg-background/50 border border-border/50">
+                <h3 className="bible-subtitle mb-4">Transcrição Completa</h3>
+                <p className="bible-body mb-4">
+                  Acesse a transcrição completa da conversa sobre skateboarding, cinema e filosofia com Werner Herzog.
+                </p>
+                <a 
+                  href="/documents/Werner_Herzog_Skateboarding_Interview.pdf" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-primary hover:underline font-medium"
+                >
+                  Download da Transcrição (PDF)
+                </a>
+              </Card>
+            </div>
+
+            <div>
+              <Card className="p-6 bg-background/50 border border-border/50">
+                <h3 className="bible-subtitle mb-4">Full Transcription</h3>
+                <p className="bible-body mb-4">
+                  Access the complete conversation transcription about skateboarding, cinema and philosophy with Werner Herzog.
+                </p>
+                <a 
+                  href="/documents/Werner_Herzog_Skateboarding_Interview.pdf" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-primary hover:underline font-medium"
