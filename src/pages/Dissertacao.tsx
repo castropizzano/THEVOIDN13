@@ -8,6 +8,8 @@ import { MusicPlayer } from "@/components/MusicPlayer";
 import { PodcastPlayer } from "@/components/PodcastPlayer";
 import { Timeline } from "@/components/Timeline";
 import { PDFViewer } from "@/components/PDFViewer";
+import { CasaTrezeBlock } from "@/components/dissertation/CasaTrezeBlock";
+import { LowPressureBlock } from "@/components/dissertation/LowPressureBlock";
 import { SkatePunkInterview } from "@/components/dissertation/SkatePunkInterview";
 import { LowMovieBlock } from "@/components/dissertation/LowMovieBlock";
 import heroImage from "@/assets/lowmovie-hero.png";
