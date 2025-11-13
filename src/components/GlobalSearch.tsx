@@ -88,7 +88,7 @@ export const GlobalSearch = ({ open, onOpenChange }: GlobalSearchProps) => {
 
         <div className="flex gap-2">
           <Input
-            placeholder="Pesquisar conceitos, temas, processos..."
+            placeholder="Buscar... / Search..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onKeyPress={handleKeyPress}
