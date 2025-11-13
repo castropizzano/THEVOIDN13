@@ -74,8 +74,8 @@ export default function PhilosophyShowcase() {
       <BilingualContent
         portugueseContent={
           <>
-            <h3 className="bible-subtitle">FILOSOFIA & METODOLOGIA</h3>
-            <p className="text-muted-foreground mt-4">
+            <h3 className="bible-subtitle text-left">FILOSOFIA & METODOLOGIA</h3>
+            <p className="text-muted-foreground text-left mt-4 text-base leading-relaxed">
               Referências conceituais que estruturam a abordagem criativa e metodológica do projeto. 
               Da sabedoria ancestral do Tao Te Ching à revolução contemporânea do vibe coding, 
               essas filosofias informam tanto o processo quanto o produto.
@@ -84,8 +84,8 @@ export default function PhilosophyShowcase() {
         }
         englishContent={
           <>
-            <h3 className="bible-subtitle">PHILOSOPHY & METHODOLOGY</h3>
-            <p className="text-muted-foreground mt-4">
+            <h3 className="bible-subtitle text-left">PHILOSOPHY & METHODOLOGY</h3>
+            <p className="text-muted-foreground text-left mt-4 text-base leading-relaxed">
               Conceptual references that structure the project's creative and methodological approach. 
               From the ancestral wisdom of Tao Te Ching to the contemporary revolution of vibe coding, 
               these philosophies inform both process and product.
@@ -94,7 +94,7 @@ export default function PhilosophyShowcase() {
         }
       />
 
-      <div className="flex justify-center mb-6">
+      <div className="mb-6">
         <Dialog>
           <DialogTrigger asChild>
             <Button variant="outline" className="gap-2">
@@ -105,75 +105,29 @@ export default function PhilosophyShowcase() {
               />
             </Button>
           </DialogTrigger>
-          <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
+          <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto">
             <DialogHeader>
-              <DialogTitle className="bible-subtitle">
+              <DialogTitle className="text-left">
                 <BilingualContent
-                  portugueseContent={<>DNA Filosófico do Projeto</>}
-                  englishContent={<>Philosophical DNA of the Project</>}
+                  portugueseContent={<>Sobre as Referências Filosóficas</>}
+                  englishContent={<>About Philosophical References</>}
                 />
               </DialogTitle>
-              <DialogDescription className="text-left space-y-4 pt-4">
+              <DialogDescription className="text-left">
                 <BilingualContent
                   portugueseContent={
-                    <>
-                      <p>
-                        As filosofias apresentadas aqui não são apenas inspirações abstratas—elas representam 
-                        a estrutura metodológica e ética que sustenta todo o projeto THEVØIDN13.
+                    <div className="space-y-4 text-left mt-4">
+                      <p className="leading-relaxed italic text-base">
+                        Estas filosofias não são externas ao projeto—elas são o projeto. Metodologia performada, não apenas citada.
                       </p>
-                      <p className="mt-4">
-                        <strong>The Way of Code</strong> e o conceito de <strong>Vibe Coding</strong>, 
-                        propostos por Rick Rubin, articulam uma abordagem contemplativa ao desenvolvimento 
-                        mediado por IA. Em vez de domínio técnico absoluto, prioriza-se visão criativa e 
-                        intuição direcional—o desenvolvedor como curador, não como executor.
-                      </p>
-                      <p className="mt-4">
-                        O <strong>Punk Rock of Coding</strong> é o manifesto político implícito: 
-                        assim como o punk democratizou a música nos anos 70 ("three chords and the truth"), 
-                        a IA democratiza o desenvolvimento. Resistência contra elitismo técnico, 
-                        acessibilidade radical, faça-você-mesmo expandido para faça-com-IA.
-                      </p>
-                      <p className="mt-4">
-                        <strong>Lovable</strong> aparece aqui como meta-referência: é a ferramenta 
-                        que materializou essas filosofias. Este site inteiro foi construído através 
-                        de co-criação humano-IA, validando empiricamente os princípios de vibe coding.
-                      </p>
-                      <p className="mt-4">
-                        Por fim, o <strong>Tao Te Ching</strong> fornece o substrato filosófico milenar: 
-                        Wu Wei (não-ação criativa), fluxo natural dos processos, harmonia entre intenção 
-                        e execução. O código como caminho, não como destino.
-                      </p>
-                    </>
+                    </div>
                   }
                   englishContent={
-                    <>
-                      <p>
-                        The philosophies presented here are not mere abstract inspirations—they represent 
-                        the methodological and ethical framework that sustains the entire THEVØIDN13 project.
+                    <div className="space-y-4 text-left mt-4">
+                      <p className="leading-relaxed italic text-base">
+                        These philosophies are not external to the project—they are the project. Methodology performed, not merely cited.
                       </p>
-                      <p className="mt-4">
-                        <strong>The Way of Code</strong> and the concept of <strong>Vibe Coding</strong>, 
-                        proposed by Rick Rubin, articulate a contemplative approach to AI-mediated development. 
-                        Instead of absolute technical mastery, creative vision and directional intuition are 
-                        prioritized—the developer as curator, not executor.
-                      </p>
-                      <p className="mt-4">
-                        <strong>Punk Rock of Coding</strong> is the implicit political manifesto: 
-                        just as punk democratized music in the 70s ("three chords and the truth"), 
-                        AI democratizes development. Resistance against technical elitism, 
-                        radical accessibility, DIY expanded to do-it-with-AI.
-                      </p>
-                      <p className="mt-4">
-                        <strong>Lovable</strong> appears here as meta-reference: it's the tool 
-                        that materialized these philosophies. This entire website was built through 
-                        human-AI co-creation, empirically validating vibe coding principles.
-                      </p>
-                      <p className="mt-4">
-                        Finally, the <strong>Tao Te Ching</strong> provides the ancient philosophical substrate: 
-                        Wu Wei (creative non-action), natural flow of processes, harmony between intention 
-                        and execution. Code as path, not destination.
-                      </p>
-                    </>
+                    </div>
                   }
                 />
               </DialogDescription>
@@ -210,7 +164,7 @@ export default function PhilosophyShowcase() {
                     </div>
                   </div>
                   
-                  <p className="text-sm leading-relaxed">
+                  <p className="text-base leading-relaxed">
                     {phil.description}
                   </p>
                   
