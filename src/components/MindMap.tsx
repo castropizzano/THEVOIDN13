@@ -8,26 +8,28 @@ export const MindMap = () => {
 
   return (
     <>
-      <Card className="bg-card/80 border-primary/30 hover:border-primary transition-colors">
-        <CardHeader>
-          <CardTitle className="heading-2 text-primary">
-            CREATIVE-OPS MIND MAP / MAPA MENTAL CREATIVE-OPS
-          </CardTitle>
-          <CardDescription className="body-base text-muted-foreground">
-            Ecossistema completo das operações criativas do THEVØIDN13. / 
-            Complete ecosystem of THEVØIDN13 creative operations.
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Button
-            onClick={() => setIsOpen(true)}
-            variant="default"
-            className="w-full"
-          >
-            EXPANDIR MAPA COMPLETO / EXPAND FULL MAP
-          </Button>
-        </CardContent>
-      </Card>
+      <div className="container mx-auto px-4 max-w-7xl">
+        <Card className="bg-card/80 border-primary/30 hover:border-primary transition-colors">
+          <CardHeader>
+            <CardTitle className="heading-2 text-primary">
+              CREATIVE-OPS MIND MAP / MAPA MENTAL CREATIVE-OPS
+            </CardTitle>
+            <CardDescription className="body-base text-muted-foreground">
+              Ecossistema completo das operações criativas do THEVØIDN13. / 
+              Complete ecosystem of THEVØIDN13 creative operations.
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <Button
+              onClick={() => setIsOpen(true)}
+              variant="outline"
+              className="w-full"
+            >
+              EXPANDIR MAPA COMPLETO / EXPAND FULL MAP
+            </Button>
+          </CardContent>
+        </Card>
+      </div>
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogContent className="max-w-6xl mx-auto max-h-[90vh] overflow-y-auto bg-background/95 backdrop-blur-sm p-6 sm:p-8">

@@ -22,29 +22,30 @@ export default function PunkPhilosophySection() {
   ];
 
   return (
-    <section className="py-16 space-y-12">
-      <BilingualContent
-        portugueseContent={
-          <>
-            <h2 className="bible-title text-left">PUNK PHILOSOPHY</h2>
-            <p className="text-left text-muted-foreground mt-4 text-base leading-relaxed">
-              A intersecção entre resistência criativa, democratização tecnológica e filosofia contemplativa. 
-              Do punk rock dos anos 70 ao vibe coding de 2024: a mesma energia, diferentes mídias.
-            </p>
-          </>
-        }
-        englishContent={
-          <>
-            <h2 className="bible-title text-left">PUNK PHILOSOPHY</h2>
-            <p className="text-left text-muted-foreground mt-4 text-base leading-relaxed">
-              The intersection of creative resistance, technological democratization, and contemplative philosophy. 
-              From 70s punk rock to 2024 vibe coding: same energy, different media.
-            </p>
-          </>
-        }
-      />
+    <section className="py-16">
+      <div className="container mx-auto px-4 max-w-7xl space-y-12">
+        <BilingualContent
+          portugueseContent={
+            <>
+              <h2 className="bible-title text-left">PUNK PHILOSOPHY</h2>
+              <p className="text-left text-muted-foreground mt-4 text-base leading-relaxed">
+                A intersecção entre resistência criativa, democratização tecnológica e filosofia contemplativa. 
+                Do punk rock dos anos 70 ao vibe coding de 2024: a mesma energia, diferentes mídias.
+              </p>
+            </>
+          }
+          englishContent={
+            <>
+              <h2 className="bible-title text-left">PUNK PHILOSOPHY</h2>
+              <p className="text-left text-muted-foreground mt-4 text-base leading-relaxed">
+                The intersection of creative resistance, technological democratization, and contemplative philosophy. 
+                From 70s punk rock to 2024 vibe coding: same energy, different media.
+              </p>
+            </>
+          }
+        />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {connections.map((connection, index) => {
           return (
             <Card key={index} className="p-6 border-l-4 border-primary hover:shadow-lg hover:shadow-primary/20 transition-all duration-300">
@@ -59,9 +60,9 @@ export default function PunkPhilosophySection() {
             </Card>
           );
         })}
-      </div>
+        </div>
 
-      <Card className="p-8 bg-gradient-to-br from-background via-background to-primary/5 border-2 border-primary/20">
+        <Card className="p-8 bg-gradient-to-br from-background via-background to-primary/5 border-2 border-primary/20">
         <BilingualContent
           portugueseContent={
             <>
@@ -114,7 +115,8 @@ export default function PunkPhilosophySection() {
             </>
           }
         />
-      </Card>
+        </Card>
+      </div>
     </section>
   );
 }

@@ -147,7 +147,7 @@ export default function PhilosophyShowcase() {
             className="group"
           >
             <Card className="h-full overflow-hidden border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
-              <div className={`h-2 bg-gradient-to-r ${phil.gradient}`} />
+              <div className="h-1 bg-primary" />
               <div className="p-6 space-y-4">
                 <div>
                   <h4 className="font-bold text-lg group-hover:text-primary transition-colors">

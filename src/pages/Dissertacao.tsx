@@ -8,6 +8,8 @@ import { MusicPlayer } from "@/components/MusicPlayer";
 import { PodcastPlayer } from "@/components/PodcastPlayer";
 import { Timeline } from "@/components/Timeline";
 import { PDFViewer } from "@/components/PDFViewer";
+import { SkatePunkInterview } from "@/components/dissertation/SkatePunkInterview";
+import { LowMovieBlock } from "@/components/dissertation/LowMovieBlock";
 import heroImage from "@/assets/lowmovie-hero.png";
 import heroImageMobile from "@/assets/lowmovie-hero-mobile.png";
 
@@ -478,6 +480,16 @@ const Dissertacao = () => {
             </div>
           </div>
         </BilingualSection>
+
+        <Separator className="bg-border/30" />
+
+        {/* Skate Punk Interview */}
+        <SkatePunkInterview />
+
+        <Separator className="bg-border/30" />
+
+        {/* LowMovie as Device */}
+        <LowMovieBlock />
 
         <Separator className="bg-border/30" />
 
