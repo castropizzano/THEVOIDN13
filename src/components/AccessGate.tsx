@@ -119,22 +119,28 @@ export const AccessGate = ({
         consent_timestamp: new Date().toISOString()
       });
 
-      // Handle newsletter subscription errors
+      setHasAccess(true);
+      onAccessGranted();
+
+      // Show appropriate success message based on newsletter subscription result
       if (insertError) {
         if (insertError.code === '23505' || insertError.message.includes("duplicate") || insertError.message.includes("unique")) {
           // Email already subscribed to newsletter, but account created successfully
-          toast("Conta criada! Email já cadastrado na newsletter / Account created! Email already in newsletter", {
-            duration: 3000,
+          toast.success("Conta criada! Bem-vindo ao vazio / Account created! Welcome to the void", {
+            description: "Você já estava inscrito na newsletter / You were already subscribed to the newsletter"
           });
         } else {
-          // Other newsletter error
-          toast.error("Conta criada, mas erro ao inscrever na newsletter / Account created, newsletter subscription failed");
+          // Other newsletter error - show warning but still confirm account creation
+          toast.success("Conta criada! Bem-vindo ao vazio / Account created! Welcome to the void", {
+            description: "Erro ao inscrever na newsletter, mas sua conta foi criada / Newsletter subscription failed, but your account was created"
+          });
         }
+      } else {
+        // Everything worked perfectly
+        toast.success("Conta criada! Bem-vindo ao vazio / Account created! Welcome to the void", {
+          description: "Você foi inscrito na newsletter / You've been subscribed to the newsletter"
+        });
       }
-
-      setHasAccess(true);
-      onAccessGranted();
-      toast.success("Conta criada! Bem-vindo ao vazio / Account created! Welcome to the void");
     } catch (error) {
       const errorMessage = error instanceof Error ? error.message : "Erro ao criar conta / Signup error";
       toast.error(errorMessage);
