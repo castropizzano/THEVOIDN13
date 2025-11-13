@@ -92,8 +92,8 @@ export default function VibeCodingPlayground() {
       <BilingualContent
         portugueseContent={
           <>
-            <h3 className="bible-subtitle text-center">VIBE CODING PLAYGROUND</h3>
-            <p className="text-center text-muted-foreground mt-4 max-w-3xl mx-auto">
+            <h3 className="bible-subtitle text-left">VIBE CODING PLAYGROUND</h3>
+            <p className="text-left text-muted-foreground mt-4 text-base leading-relaxed">
               Experimente o desenvolvimento intuitivo mediado por IA. Escreva o que você imagina, 
               veja como a intenção criativa se transforma em código. Teoria encontra prática.
             </p>
@@ -101,8 +101,8 @@ export default function VibeCodingPlayground() {
         }
         englishContent={
           <>
-            <h3 className="bible-subtitle text-center">VIBE CODING PLAYGROUND</h3>
-            <p className="text-center text-muted-foreground mt-4 max-w-3xl mx-auto">
+            <h3 className="bible-subtitle text-left">VIBE CODING PLAYGROUND</h3>
+            <p className="text-left text-muted-foreground mt-4 text-base leading-relaxed">
               Experience intuitive AI-mediated development. Write what you imagine, 
               watch creative intention transform into code. Theory meets practice.
             </p>
@@ -216,13 +216,13 @@ export default function VibeCodingPlayground() {
       <Card className="max-w-4xl mx-auto p-8 bg-gradient-to-br from-background via-background to-blue-500/5 border-2 border-blue-500/20">
         <BilingualContent
           portugueseContent={
-            <div className="space-y-4 text-center">
+            <div className="space-y-4 text-left">
               <h4 className="font-bold text-xl">Da Teoria à Prática</h4>
-              <p className="leading-relaxed">
+              <p className="leading-relaxed text-base">
                 Este playground materializa os princípios de <strong>The Way of Code</strong>: 
                 desenvolvimento como fluxo criativo (Wu Wei), não como execução técnica forçada.
               </p>
-              <p className="leading-relaxed">
+              <p className="leading-relaxed text-base">
                 Aqui você experimenta o <strong>Punk Rock of Coding</strong>—acesso democratizado, 
                 sem necessidade de anos de estudo técnico. A barreira entre ideia e realização 
                 se dissolve.
@@ -233,13 +233,13 @@ export default function VibeCodingPlayground() {
             </div>
           }
           englishContent={
-            <div className="space-y-4 text-center">
+            <div className="space-y-4 text-left">
               <h4 className="font-bold text-xl">From Theory to Practice</h4>
-              <p className="leading-relaxed">
+              <p className="leading-relaxed text-base">
                 This playground materializes <strong>The Way of Code</strong> principles: 
                 development as creative flow (Wu Wei), not forced technical execution.
               </p>
-              <p className="leading-relaxed">
+              <p className="leading-relaxed text-base">
                 Here you experience the <strong>Punk Rock of Coding</strong>—democratized access, 
                 no need for years of technical study. The barrier between idea and realization 
                 dissolves.

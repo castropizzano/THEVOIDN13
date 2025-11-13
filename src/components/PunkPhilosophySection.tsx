@@ -35,8 +35,8 @@ export default function PunkPhilosophySection() {
       <BilingualContent
         portugueseContent={
           <>
-            <h2 className="bible-title text-center">PUNK PHILOSOPHY</h2>
-            <p className="text-center text-muted-foreground mt-4 max-w-3xl mx-auto">
+            <h2 className="bible-title text-left">PUNK PHILOSOPHY</h2>
+            <p className="text-left text-muted-foreground mt-4 text-base leading-relaxed">
               A intersecção entre resistência criativa, democratização tecnológica e filosofia contemplativa. 
               Do punk rock dos anos 70 ao vibe coding de 2024: a mesma energia, diferentes mídias.
             </p>
@@ -44,8 +44,8 @@ export default function PunkPhilosophySection() {
         }
         englishContent={
           <>
-            <h2 className="bible-title text-center">PUNK PHILOSOPHY</h2>
-            <p className="text-center text-muted-foreground mt-4 max-w-3xl mx-auto">
+            <h2 className="bible-title text-left">PUNK PHILOSOPHY</h2>
+            <p className="text-left text-muted-foreground mt-4 text-base leading-relaxed">
               The intersection of creative resistance, technological democratization, and contemplative philosophy. 
               From 70s punk rock to 2024 vibe coding: same energy, different media.
             </p>
@@ -64,7 +64,7 @@ export default function PunkPhilosophySection() {
                 </div>
                 <div className="space-y-2 flex-1">
                   <h3 className="font-bold text-xl">{connection.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground text-base leading-relaxed">
                     {connection.description}
                   </p>
                 </div>
@@ -78,19 +78,19 @@ export default function PunkPhilosophySection() {
         <BilingualContent
           portugueseContent={
             <>
-              <h3 className="bible-subtitle text-center mb-6">A TESE CENTRAL</h3>
-              <div className="space-y-4 text-center max-w-4xl mx-auto">
-                <p className="leading-relaxed">
+              <h3 className="bible-subtitle text-left mb-6">A TESE CENTRAL</h3>
+              <div className="space-y-4 text-left">
+                <p className="leading-relaxed text-base">
                   Rick Rubin propõe que a IA no desenvolvimento de software é análoga ao punk rock na música: 
                   ambos democratizam acesso, desafiam gatekeepers estabelecidos e priorizam expressão autêntica 
                   sobre virtuosismo técnico.
                 </p>
-                <p className="leading-relaxed mt-4">
+                <p className="leading-relaxed text-base mt-4">
                   Nos anos 70, não era necessário ser músico virtuoso para formar uma banda—bastavam 
                   três acordes e algo a dizer. Em 2024, não é necessário ser engenheiro de software 
                   para construir aplicações—bastam prompts claros e visão criativa.
                 </p>
-                <p className="leading-relaxed mt-4">
+                <p className="leading-relaxed text-base mt-4">
                   THEVØIDN13 materializa essa filosofia: construído via co-criação humano-IA (Lovable), 
                   documentado como processo artístico performativo, estruturado pela filosofia contemplativa 
                   do Tao Te Ching aplicada ao código.
@@ -103,19 +103,19 @@ export default function PunkPhilosophySection() {
           }
           englishContent={
             <>
-              <h3 className="bible-subtitle text-center mb-6">THE CENTRAL THESIS</h3>
-              <div className="space-y-4 text-center max-w-4xl mx-auto">
-                <p className="leading-relaxed">
+              <h3 className="bible-subtitle text-left mb-6">THE CENTRAL THESIS</h3>
+              <div className="space-y-4 text-left">
+                <p className="leading-relaxed text-base">
                   Rick Rubin proposes that AI in software development is analogous to punk rock in music: 
                   both democratize access, challenge established gatekeepers, and prioritize authentic expression 
                   over technical virtuosity.
                 </p>
-                <p className="leading-relaxed mt-4">
+                <p className="leading-relaxed text-base mt-4">
                   In the 70s, you didn't need to be a virtuoso musician to form a band—three chords 
                   and something to say were enough. In 2024, you don't need to be a software engineer 
                   to build applications—clear prompts and creative vision suffice.
                 </p>
-                <p className="leading-relaxed mt-4">
+                <p className="leading-relaxed text-base mt-4">
                   THEVØIDN13 materializes this philosophy: built via human-AI co-creation (Lovable), 
                   documented as performative artistic process, structured by the contemplative philosophy 
                   of Tao Te Ching applied to code.
@@ -128,77 +128,6 @@ export default function PunkPhilosophySection() {
           }
         />
       </Card>
-
-      <div className="text-center space-y-4">
-        <BilingualContent
-          portugueseContent={
-            <>
-              <h4 className="font-bold text-lg">REFERÊNCIAS PRIMÁRIAS</h4>
-              <div className="flex flex-wrap justify-center gap-4 mt-4">
-                <a 
-                  href="https://www.thewayofcode.com/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
-                  The Way of Code (Rick Rubin, 2024)
-                </a>
-                <span className="text-muted-foreground">•</span>
-                <a 
-                  href="https://en.wikipedia.org/wiki/Tao_Te_Ching" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
-                  Tao Te Ching (Lao Tzu, ~400 AC)
-                </a>
-                <span className="text-muted-foreground">•</span>
-                <a 
-                  href="https://lovable.dev/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
-                  Lovable Platform
-                </a>
-              </div>
-            </>
-          }
-          englishContent={
-            <>
-              <h4 className="font-bold text-lg">PRIMARY REFERENCES</h4>
-              <div className="flex flex-wrap justify-center gap-4 mt-4">
-                <a 
-                  href="https://www.thewayofcode.com/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
-                  The Way of Code (Rick Rubin, 2024)
-                </a>
-                <span className="text-muted-foreground">•</span>
-                <a 
-                  href="https://en.wikipedia.org/wiki/Tao_Te_Ching" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
-                  Tao Te Ching (Lao Tzu, ~400 BC)
-                </a>
-                <span className="text-muted-foreground">•</span>
-                <a 
-                  href="https://lovable.dev/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
-                  Lovable Platform
-                </a>
-              </div>
-            </>
-          }
-        />
-      </div>
     </section>
   );
 }
