@@ -20,9 +20,8 @@ const SpotifyPlaylist = () => {
         <div className="mb-4">
           <Dialog>
             <DialogTrigger asChild>
-              <Button variant="outline" className="w-full justify-start gap-2">
-                <Info className="w-4 h-4" />
-                Sobre a Assinatura Sonora / About the Sonic Signature
+              <Button variant="outline" className="w-full justify-start mb-8">
+                <span className="text-sm">Sobre a Assinatura Sonora / About the Sonic Signature</span>
               </Button>
             </DialogTrigger>
             <DialogContent className="max-w-2xl">
