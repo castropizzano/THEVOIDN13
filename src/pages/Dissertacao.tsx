@@ -10,8 +10,7 @@ import { Timeline } from "@/components/Timeline";
 import { PDFViewer } from "@/components/PDFViewer";
 import { CasaTrezeBlock } from "@/components/dissertation/CasaTrezeBlock";
 import { LowPressureBlock } from "@/components/dissertation/LowPressureBlock";
-import { SkatePunkInterview } from "@/components/dissertation/SkatePunkInterview";
-import { BlackMediaInterview } from "@/components/dissertation/BlackMediaInterview";
+import { InterviewsTabs } from "@/components/dissertation/InterviewsTabs";
 import { LowMovieBlock } from "@/components/dissertation/LowMovieBlock";
 import heroImage from "@/assets/lowmovie-hero.png";
 import heroImageMobile from "@/assets/lowmovie-hero-mobile.png";
@@ -486,13 +485,8 @@ const Dissertacao = () => {
 
         <Separator className="bg-border/30" />
 
-        {/* Skate Punk Interview */}
-        <SkatePunkInterview />
-
-        <Separator className="bg-border/30" />
-
-        {/* Black Media Interview */}
-        <BlackMediaInterview />
+        {/* Interviews and LowZine Tabs */}
+        <InterviewsTabs />
 
         <Separator className="bg-border/30" />
 
