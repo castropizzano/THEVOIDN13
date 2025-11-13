@@ -8,25 +8,25 @@ export default function PunkPhilosophySection() {
       icon: Music,
       title: "Punk Rock (1976-1979)",
       description: "Democratização da música: três acordes e a verdade. Resistência ao virtuosismo elitista, acesso radical à expressão.",
-      gradient: "from-red-500 to-pink-500"
+      gradient: "from-destructive to-accent"
     },
     {
       icon: Code2,
       title: "Vibe Coding (2024)",
       description: "Democratização do código: prompts e intuição. Resistência ao elitismo técnico, acesso radical ao desenvolvimento.",
-      gradient: "from-blue-500 to-cyan-500"
+      gradient: "from-primary to-primary/70"
     },
     {
       icon: Film,
       title: "Cinema Punk (1977-1995)",
       description: "Estética da precariedade: Kids, Fallen Angels, The Warriors. Beleza no imperfeito, verdade no marginal.",
-      gradient: "from-purple-500 to-indigo-500"
+      gradient: "from-accent to-primary"
     },
     {
       icon: BookOpen,
       title: "Tao do Código (400 AC - 2024)",
       description: "Wu Wei criativo: fluxo natural, não-ação proposital. Da filosofia ancestral ao desenvolvimento contemporâneo.",
-      gradient: "from-amber-500 to-orange-500"
+      gradient: "from-muted to-accent/60"
     }
   ];
 

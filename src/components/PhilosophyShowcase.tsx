@@ -25,7 +25,7 @@ export default function PhilosophyShowcase() {
       context: "Metodologia de não-ação criativa (Wu Wei) aplicada à programação",
       link: "https://www.thewayofcode.com/",
       icon: BookOpen,
-      gradient: "from-purple-500 to-pink-500"
+      gradient: "from-primary to-accent"
     },
     {
       title: "Vibe Coding",
@@ -35,7 +35,7 @@ export default function PhilosophyShowcase() {
       context: "Democratização do acesso ao desenvolvimento via ferramentas de IA",
       link: "https://www.thewayofcode.com/",
       icon: Sparkles,
-      gradient: "from-blue-500 to-cyan-500"
+      gradient: "from-primary/80 to-primary"
     },
     {
       title: "Punk Rock of Coding",
@@ -45,7 +45,7 @@ export default function PhilosophyShowcase() {
       context: "Resistência criativa contra elitismo técnico e barreiras de entrada",
       link: "https://www.thewayofcode.com/",
       icon: Zap,
-      gradient: "from-red-500 to-orange-500"
+      gradient: "from-accent to-destructive"
     },
     {
       title: "Lovable",
@@ -55,7 +55,7 @@ export default function PhilosophyShowcase() {
       context: "Praxis concreta da filosofia punk rock do código",
       link: "https://lovable.dev/",
       icon: Code2,
-      gradient: "from-green-500 to-emerald-500"
+      gradient: "from-secondary to-muted"
     },
     {
       title: "Tao Te Ching",
@@ -65,7 +65,17 @@ export default function PhilosophyShowcase() {
       context: "Sabedoria ancestral sobre criatividade sem esforço forçado",
       link: "https://en.wikipedia.org/wiki/Tao_Te_Ching",
       icon: Music,
-      gradient: "from-amber-500 to-yellow-500"
+      gradient: "from-muted to-secondary"
+    },
+    {
+      title: "Process Art",
+      author: "Metodologia",
+      year: "1960-2024",
+      description: "Arte como processo performativo documentado, não apenas produto final. O caminho criativo é a obra—cada decisão, iteração e transformação tem valor artístico.",
+      context: "Documentação performática do desenvolvimento como arte conceitual",
+      link: "https://en.wikipedia.org/wiki/Process_art",
+      icon: BookOpen,
+      gradient: "from-accent/70 to-primary/60"
     }
   ];
 
