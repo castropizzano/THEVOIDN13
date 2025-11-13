@@ -112,10 +112,10 @@ export default function VibeCodingPlayground() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
         {/* Input Side */}
-        <Card className="p-6 space-y-4 border-l-4 border-blue-500">
+        <Card className="p-6 space-y-4 border-l-4 border-primary">
           <div className="flex items-center gap-3 mb-4">
-            <div className="p-3 rounded-lg bg-gradient-to-br from-blue-500 to-cyan-500">
-              <Sparkles className="h-6 w-6 text-white" />
+            <div className="p-3 rounded-lg bg-gradient-to-br from-primary to-primary/80">
+              <Sparkles className="h-6 w-6 text-primary-foreground" />
             </div>
             <div>
               <h4 className="font-bold text-lg">Sua Visão</h4>
@@ -166,10 +166,10 @@ export default function VibeCodingPlayground() {
         </Card>
 
         {/* Output Side */}
-        <Card className="p-6 space-y-4 border-l-4 border-green-500">
+        <Card className="p-6 space-y-4 border-l-4 border-accent">
           <div className="flex items-center gap-3 mb-4">
-            <div className="p-3 rounded-lg bg-gradient-to-br from-green-500 to-emerald-500">
-              <Sparkles className="h-6 w-6 text-white" />
+            <div className="p-3 rounded-lg bg-gradient-to-br from-accent to-accent/80">
+              <Sparkles className="h-6 w-6 text-accent-foreground" />
             </div>
             <div>
               <h4 className="font-bold text-lg">Código Gerado</h4>
