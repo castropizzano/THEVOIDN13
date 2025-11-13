@@ -13,9 +13,9 @@ const Header = () => {
   const [searchOpen, setSearchOpen] = useState(false);
   
   const navItems = [
-    { path: "/lowmovie", label: "LOWMOVIE™" },
-    { path: "/sobre", label: "AUTHOR" },
-    { path: "/galeria", label: "VIDEO PORTFOLIO" },
+    { path: "/dissertacao", label: "LOWMOVIE™" },
+    { path: "/autor", label: "AUTHOR" },
+    { path: "/videos", label: "VIDEO PORTFOLIO" },
   ];
   
   if (isAdmin) {
