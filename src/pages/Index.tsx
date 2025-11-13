@@ -16,6 +16,7 @@ import FilmGallery from "@/components/FilmGallery";
 import ComicsShowcase from "@/components/ComicsShowcase";
 import PhilosophyShowcase from "@/components/PhilosophyShowcase";
 import PunkPhilosophySection from "@/components/PunkPhilosophySection";
+import VibeCodingPlayground from "@/components/VibeCodingPlayground";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
@@ -1393,6 +1394,11 @@ const Index = () => {
 
         {/* ===== PUNK PHILOSOPHY ===== */}
         <PunkPhilosophySection />
+
+        <Separator className="bg-border/30" />
+
+        {/* ===== VIBE CODING PLAYGROUND ===== */}
+        <VibeCodingPlayground />
 
         <Separator className="bg-border/30" />
 
