@@ -266,6 +266,45 @@ PIZZANO, C. **THEVØIDN13** — Memorial Artístico e Práxis Híbrida (Humano +
 Pizzano, C. (2025). *THEVØIDN13* — Artistic Memorial and Hybrid Praxis (Human + Machine). Unespar. https://thevoidn13.com
 
 ───────────────────────────────────────────────────────────────  
+## VERSION HISTORY / HISTÓRICO DE VERSÕES  
+───────────────────────────────────────────────────────────────
+
+### v20251113 — Marco de Lançamento (2025-11-13 03:33 BRT)
+
+**Milestone:** Versão final de testes antes da dissertação final  
+**Branch:** `archive/2025_11_13`  
+**Status:** Production-ready with 95/100 security score
+
+**O que foi alcançado:**
+- ✅ Sistema de Design Bible v13 completo e auditado
+- ✅ Segurança enterprise-grade (95/100, RLS 100%, OWASP protected)
+- ✅ Infraestrutura de automação com GitHub Actions
+- ✅ Wayback Machine integration para arquivamento perpétuo
+- ✅ Sistema bilíngue PT/EN completo
+- ✅ Portfolio de vídeos integrado (Vimeo API)
+- ✅ Ferramentas interativas (Creative Oracle, Comic Generator, Mind Map)
+- ✅ Performance otimizada (lazy loading, code splitting, SEO)
+- ✅ Documentação acadêmica completa (12 PDFs, 15+ markdown docs)
+
+**Artefatos culturais preservados:**
+- Shadow Interface Bible v1.3 (PDF)
+- Memorial Acadêmico (PDF)
+- Entrevistas transcritas (Skate Punk, Black Media, Gabriel Peralta, etc.)
+- Brandbooks (LowMovie, LowPressure)
+- Audio manifestos (PT/EN)
+- Portfolios completos (design, vídeo, fotografia)
+
+**Internet Archive:** [link será adicionado após upload]
+
+**Citação desta versão:**
+```
+PIZZANO, C. (2025). THEVØIDN13 v20251113 — Memorial Artístico e Práxis Híbrida. 
+Curitiba: Unespar. https://thevoidn13.com | Archive: [pending]
+```
+
+---
+
+───────────────────────────────────────────────────────────────  
 ## INTEGRIDADE AUTORAL E LICENÇA  
 ───────────────────────────────────────────────────────────────
 
