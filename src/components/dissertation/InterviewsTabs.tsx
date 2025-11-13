@@ -38,10 +38,12 @@ export const InterviewsTabs = () => {
       </div>
 
       <Tabs defaultValue="skate-punk" className="w-full">
-        <TabsList className="grid w-full grid-cols-3 mb-8">
-          <TabsTrigger value="skate-punk">Skate Punk Interview</TabsTrigger>
-          <TabsTrigger value="black-media">Black Media Interview</TabsTrigger>
-          <TabsTrigger value="lowzine">LowZine Gallery</TabsTrigger>
+        <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mb-8">
+          <TabsTrigger value="skate-punk">Skate Punk</TabsTrigger>
+          <TabsTrigger value="black-media">Black Media</TabsTrigger>
+          <TabsTrigger value="gabriel-peralta">Gabriel Peralta</TabsTrigger>
+          <TabsTrigger value="rafao-vm">Rafão VM</TabsTrigger>
+          <TabsTrigger value="lowzine">LowZine</TabsTrigger>
         </TabsList>
 
         {/* Skate Punk Interview Tab */}
@@ -322,6 +324,166 @@ export const InterviewsTabs = () => {
                   </a>
                 </Card>
               </div>
+            </div>
+          </div>
+        </TabsContent>
+
+        {/* Gabriel Peralta Interview Tab */}
+        <TabsContent value="gabriel-peralta" className="space-y-8">
+          <div className="bible-bilingual-grid bible-block-spacing">
+            <div>
+              <h3 className="bible-title">FOTOS DE SKATE — GABRIEL PERALTA</h3>
+              <p className="bible-subtitle text-primary mt-2">Entrevista Chiclé Vídeos — 10º EP</p>
+            </div>
+            <div>
+              <h3 className="bible-title">SKATE PHOTOGRAPHY — GABRIEL PERALTA</h3>
+              <p className="bible-subtitle text-primary mt-2">Chiclé Vídeos Interview — 10th EP</p>
+            </div>
+          </div>
+
+          <div className="bible-bilingual-grid bible-section-spacing mt-8">
+            <div>
+              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
+              <p className="bible-body mt-6">
+                Entrevista com Gabriel Peralta sobre fotografia de skate, a importância do registro visual na cultura do skate, 
+                processos criativos por trás das lentes e a relação entre fotógrafo e skatista.
+              </p>
+            </div>
+            <div>
+              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
+              <p className="bible-body mt-6">
+                Interview with Gabriel Peralta about skate photography, the importance of visual documentation in skate culture, 
+                creative processes behind the lens and the relationship between photographer and skater.
+              </p>
+            </div>
+          </div>
+
+          <div className="aspect-video w-full rounded-lg overflow-hidden border border-border/50 shadow-lg shadow-primary/10 my-12 max-w-5xl mx-auto">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/n7Vu89PzMLE"
+              title="Fotos de skate — Gabriel Peralta"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            />
+          </div>
+
+          <div className="bible-bilingual-grid bible-section-spacing mt-8">
+            <div>
+              <Card className="p-6 bg-background/50 border border-border/50">
+                <h3 className="bible-subtitle mb-4">Transcrição Completa</h3>
+                <p className="bible-body mb-4">
+                  Acesse a transcrição completa da entrevista sobre fotografia de skate e processos criativos visuais.
+                </p>
+                <a 
+                  href="/documents/Gabriel_Peralta_Photos_Interview.pdf" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-primary hover:underline font-medium"
+                >
+                  Download da Transcrição (PDF)
+                </a>
+              </Card>
+            </div>
+
+            <div>
+              <Card className="p-6 bg-background/50 border border-border/50">
+                <h3 className="bible-subtitle mb-4">Full Transcription</h3>
+                <p className="bible-body mb-4">
+                  Access the complete interview transcription about skate photography and visual creative processes.
+                </p>
+                <a 
+                  href="/documents/Gabriel_Peralta_Photos_Interview.pdf" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-primary hover:underline font-medium"
+                >
+                  Download Transcription (PDF)
+                </a>
+              </Card>
+            </div>
+          </div>
+        </TabsContent>
+
+        {/* Rafão VM Interview Tab */}
+        <TabsContent value="rafao-vm" className="space-y-8">
+          <div className="bible-bilingual-grid bible-block-spacing">
+            <div>
+              <h3 className="bible-title">SKATE MARGINAL — RAFÃO VM</h3>
+              <p className="bible-subtitle text-primary mt-2">Entrevista Chiclé Vídeos — 6º EP</p>
+            </div>
+            <div>
+              <h3 className="bible-title">MARGINAL SKATE — RAFÃO VM</h3>
+              <p className="bible-subtitle text-primary mt-2">Chiclé Vídeos Interview — 6th EP</p>
+            </div>
+          </div>
+
+          <div className="bible-bilingual-grid bible-section-spacing mt-8">
+            <div>
+              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
+              <p className="bible-body mt-6">
+                Conversa com Rafão VM sobre a cultura do skate marginal, a cena de São Paulo, 
+                a filosofia DIY aplicada ao audiovisual e os processos colaborativos da crew LowPressure™.
+              </p>
+            </div>
+            <div>
+              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
+              <p className="bible-body mt-6">
+                Conversation with Rafão VM about marginal skate culture, the São Paulo scene, 
+                DIY philosophy applied to audiovisual and the collaborative processes of the LowPressure™ crew.
+              </p>
+            </div>
+          </div>
+
+          <div className="aspect-video w-full rounded-lg overflow-hidden border border-border/50 shadow-lg shadow-primary/10 my-12 max-w-5xl mx-auto">
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/t89iwhuAOjU"
+              title="Skate Marginal — Rafão VM"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            />
+          </div>
+
+          <div className="bible-bilingual-grid bible-section-spacing mt-8">
+            <div>
+              <Card className="p-6 bg-background/50 border border-border/50">
+                <h3 className="bible-subtitle mb-4">Transcrição Completa</h3>
+                <p className="bible-body mb-4">
+                  Acesse a transcrição completa da entrevista sobre skate marginal e cultura DIY.
+                </p>
+                <a 
+                  href="/documents/Rafao_VM_Skate_Marginal_Interview.pdf" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-primary hover:underline font-medium"
+                >
+                  Download da Transcrição (PDF)
+                </a>
+              </Card>
+            </div>
+
+            <div>
+              <Card className="p-6 bg-background/50 border border-border/50">
+                <h3 className="bible-subtitle mb-4">Full Transcription</h3>
+                <p className="bible-body mb-4">
+                  Access the complete interview transcription about marginal skate and DIY culture.
+                </p>
+                <a 
+                  href="/documents/Rafao_VM_Skate_Marginal_Interview.pdf" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-primary hover:underline font-medium"
+                >
+                  Download Transcription (PDF)
+                </a>
+              </Card>
             </div>
           </div>
         </TabsContent>
