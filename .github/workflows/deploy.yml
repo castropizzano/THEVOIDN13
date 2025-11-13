@@ -1,0 +1,108 @@
+name: Deploy & Archive
+
+on:
+  push:
+    branches:
+      - main
+  release:
+    types: [published]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Build static site
+        run: bun run build
+        env:
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.VITE_SUPABASE_PUBLISHABLE_KEY }}
+          VITE_SUPABASE_PROJECT_ID: ${{ secrets.VITE_SUPABASE_PROJECT_ID }}
+
+      - name: Archive to Wayback Machine
+        run: |
+          echo "📦 Archiving site to Wayback Machine..."
+          
+          # URLs principais para arquivar
+          URLS=(
+            "https://${{ github.event.repository.name }}.lovable.app"
+            "https://${{ github.event.repository.name }}.lovable.app/autor"
+            "https://${{ github.event.repository.name }}.lovable.app/dissertacao"
+            "https://${{ github.event.repository.name }}.lovable.app/videos"
+            "https://${{ github.event.repository.name }}.lovable.app/lowmovie"
+          )
+          
+          for url in "${URLS[@]}"; do
+            echo "Archiving: $url"
+            curl -s "https://web.archive.org/save/$url" || echo "Failed to archive $url"
+            sleep 2  # Rate limiting
+          done
+          
+          echo "✅ Wayback Machine archiving completed!"
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist-${{ github.sha }}
+          path: dist/
+          retention-days: 30
+
+      - name: Create deployment summary
+        run: |
+          echo "## 🚀 Deployment Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Branch:** \`${{ github.ref_name }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "- **Commit:** \`${{ github.sha }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "- **Build:** ✅ Successful" >> $GITHUB_STEP_SUMMARY
+          echo "- **Archive:** ✅ Sent to Wayback Machine" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### 📦 Build Stats" >> $GITHUB_STEP_SUMMARY
+          du -sh dist/ >> $GITHUB_STEP_SUMMARY
+
+  release:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'release'
+    needs: build-and-deploy
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: dist-${{ github.sha }}
+          path: dist/
+
+      - name: Create release archive
+        run: |
+          tar -czf thevoidn13-${{ github.event.release.tag_name }}.tar.gz dist/
+          zip -r thevoidn13-${{ github.event.release.tag_name }}.zip dist/
+
+      - name: Upload release assets
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            thevoidn13-${{ github.event.release.tag_name }}.tar.gz
+            thevoidn13-${{ github.event.release.tag_name }}.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create release summary
+        run: |
+          echo "## 🎉 Release Published" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Version:** \`${{ github.event.release.tag_name }}\`" >> $GITHUB_STEP_SUMMARY
+          echo "- **Release:** ${{ github.event.release.html_url }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Assets:** ✅ Uploaded (tar.gz + zip)" >> $GITHUB_STEP_SUMMARY
