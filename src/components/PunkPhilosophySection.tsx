@@ -1,32 +1,23 @@
 import { Card } from "@/components/ui/card";
 import { BilingualContent } from "./BilingualSection";
-import { Music, Code2, Film, BookOpen } from "lucide-react";
 
 export default function PunkPhilosophySection() {
   const connections = [
     {
-      icon: Music,
       title: "Punk Rock (1976-1979)",
       description: "Democratização da música: três acordes e a verdade. Resistência ao virtuosismo elitista, acesso radical à expressão.",
-      gradient: "from-destructive to-accent"
     },
     {
-      icon: Code2,
       title: "Vibe Coding (2024)",
       description: "Democratização do código: prompts e intuição. Resistência ao elitismo técnico, acesso radical ao desenvolvimento.",
-      gradient: "from-primary to-primary/70"
     },
     {
-      icon: Film,
       title: "Cinema Punk (1977-1995)",
       description: "Estética da precariedade: Kids, Fallen Angels, The Warriors. Beleza no imperfeito, verdade no marginal.",
-      gradient: "from-accent to-primary"
     },
     {
-      icon: BookOpen,
       title: "Tao do Código (400 AC - 2024)",
       description: "Wu Wei criativo: fluxo natural, não-ação proposital. Da filosofia ancestral ao desenvolvimento contemporâneo.",
-      gradient: "from-muted to-accent/60"
     }
   ];
 
@@ -55,16 +46,12 @@ export default function PunkPhilosophySection() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {connections.map((connection, index) => {
-          const IconComponent = connection.icon;
           return (
             <Card key={index} className="p-6 border-l-4 border-primary hover:shadow-lg hover:shadow-primary/20 transition-all duration-300">
-              <div className="flex items-start gap-4">
-                <div className={`p-4 rounded-lg bg-gradient-to-br ${connection.gradient} bg-opacity-10`}>
-                  <IconComponent className="h-8 w-8 text-primary" />
-                </div>
-                <div className="space-y-2 flex-1">
+              <div className="space-y-4">
+                <div>
                   <h3 className="font-bold text-xl">{connection.title}</h3>
-                  <p className="text-muted-foreground text-base leading-relaxed">
+                  <p className="text-muted-foreground text-base leading-relaxed mt-2">
                     {connection.description}
                   </p>
                 </div>

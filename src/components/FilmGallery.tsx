@@ -177,8 +177,7 @@ const FilmGallery = () => {
         <Card className="overflow-hidden border-primary/20 bg-card/50 backdrop-blur-sm p-8">
           <Dialog>
             <DialogTrigger asChild>
-              <Button variant="outline" className="w-full justify-start gap-2 mb-8">
-                <Info className="w-4 h-4" />
+              <Button variant="outline" className="w-full justify-start mb-8">
                 <span className="text-sm">Sobre as Referências Cinematográficas</span>
               </Button>
             </DialogTrigger>

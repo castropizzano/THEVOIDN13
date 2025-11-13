@@ -134,26 +134,16 @@ export default function VibeCodingPlayground() {
             <Button 
               onClick={handleGenerate}
               disabled={!prompt.trim() || isGenerating}
-              className="flex-1 gap-2"
+              className="flex-1"
             >
-              {isGenerating ? (
-                <>
-                  <Sparkles className="h-4 w-4 animate-pulse" />
-                  Gerando...
-                </>
-              ) : (
-                <>
-                  <Send className="h-4 w-4" />
-                  Gerar Código
-                </>
-              )}
+              {isGenerating ? "Gerando..." : "Gerar Código"}
             </Button>
             <Button 
               onClick={handleReset}
               variant="outline"
               size="icon"
             >
-              <RotateCcw className="h-4 w-4" />
+              ✕
             </Button>
           </div>
 
