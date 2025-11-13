@@ -73,16 +73,16 @@ const Dissertacao = () => {
 
         {/* Título */}
         <BilingualSection className="py-16">
-          <div className="bilingual-grid">
-            <div className="bilingual-col">
-              <p className="lang-pill">&lt;PORTUGUÊS&gt;</p>
+          <div className="bible-bilingual-grid">
+            <div>
+              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <h1 className="bible-title mt-4">LOWMOVIE™ E O LABIRINTO CRIATIVO</h1>
               <p className="bible-body mt-6">
                 Subjetividade, Subcultura e a Construção de uma Estética em Movimento no Coletivo LowPressure™
               </p>
             </div>
-            <div className="bilingual-col">
-              <p className="lang-pill">&lt;ENGLISH&gt;</p>
+            <div>
+              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <h1 className="bible-title mt-4">LOWMOVIE™ E O LABIRINTO CRIATIVO</h1>
               <p className="bible-body mt-6">
                 Subjectivity, Subculture and the Construction of an Aesthetic in Motion in the LowPressure™ Collective
@@ -104,27 +104,25 @@ const Dissertacao = () => {
             </div>
           </div>
           
-          <div className="bilingual-grid mt-4">
-            <div className="bilingual-col">
+          <div className="bible-bilingual-grid bible-section-spacing">
+            <div>
               <p className="bible-subtitle">PROJETOS QUE ORIGINARAM ESTA DISSERTAÇÃO</p>
             </div>
-            <div className="bilingual-col">
+            <div>
               <p className="bible-subtitle">PROJECTS THAT ORIGINATED THIS DISSERTATION</p>
             </div>
           </div>
 
-          <div className="bible-section-spacing mt-8">
-            <div className="bilingual-grid">
-              <div className="bilingual-col">
-                <p className="bible-body text-muted-foreground">
-                  Processos criativos que se entrelaçam e formam a base do Labirinto Criativo.
-                </p>
-              </div>
-              <div className="bilingual-col">
-                <p className="bible-body text-muted-foreground">
-                  Creative processes that intertwine and form the basis of the Creative Labyrinth.
-                </p>
-              </div>
+          <div className="bible-bilingual-grid bible-section-spacing">
+            <div>
+              <p className="bible-body text-muted-foreground">
+                Processos criativos que se entrelaçam e formam a base do Labirinto Criativo.
+              </p>
+            </div>
+            <div>
+              <p className="bible-body text-muted-foreground">
+                Creative processes that intertwine and form the basis of the Creative Labyrinth.
+              </p>
             </div>
           </div>
         </BilingualSection>
@@ -133,13 +131,13 @@ const Dissertacao = () => {
 
         {/* CasaTrezeStudio */}
         <BilingualSection className="py-16">
-          <div className="bilingual-grid bible-block-spacing">
-            <div className="bilingual-col border-l-4 border-primary pl-6">
+          <div className="bible-bilingual-grid bible-block-spacing">
+            <div className="border-l-4 border-primary pl-6">
               <h2 className="bible-title">CASATREZESTUDIO®</h2>
               <p className="bible-subtitle text-muted-foreground mt-2">2008-Presente</p>
               <p className="bible-subtitle text-primary mt-2">Coletivo Criativo</p>
             </div>
-            <div className="bilingual-col border-l-4 border-primary pl-6">
+            <div className="border-l-4 border-primary pl-6">
               <h2 className="bible-title">CASATREZESTUDIO®</h2>
               <p className="bible-subtitle text-muted-foreground mt-2">2008-Present</p>
               <p className="bible-subtitle text-primary mt-2">Creative Lab</p>
