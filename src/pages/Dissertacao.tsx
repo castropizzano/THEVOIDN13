@@ -11,6 +11,7 @@ import { PDFViewer } from "@/components/PDFViewer";
 import { CasaTrezeBlock } from "@/components/dissertation/CasaTrezeBlock";
 import { LowPressureBlock } from "@/components/dissertation/LowPressureBlock";
 import { SkatePunkInterview } from "@/components/dissertation/SkatePunkInterview";
+import { BlackMediaInterview } from "@/components/dissertation/BlackMediaInterview";
 import { LowMovieBlock } from "@/components/dissertation/LowMovieBlock";
 import heroImage from "@/assets/lowmovie-hero.png";
 import heroImageMobile from "@/assets/lowmovie-hero-mobile.png";
@@ -487,6 +488,11 @@ const Dissertacao = () => {
 
         {/* Skate Punk Interview */}
         <SkatePunkInterview />
+
+        <Separator className="bg-border/30" />
+
+        {/* Black Media Interview */}
+        <BlackMediaInterview />
 
         <Separator className="bg-border/30" />
 
