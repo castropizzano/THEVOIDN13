@@ -1,6 +1,5 @@
 import { Card } from "@/components/ui/card";
 import { BilingualSection } from "@/components/BilingualSection";
-import { ExternalLink } from "lucide-react";
 
 export const SkatePunkInterview = () => {
   return (
@@ -38,10 +37,9 @@ export const SkatePunkInterview = () => {
               </div>
             </Card>
 
-            <div className="flex items-center gap-2 text-muted-foreground text-sm italic mt-6">
-              <ExternalLink className="w-4 h-4" />
-              <p>A entrevista completa reforça o lugar do corpo, do skate e da estética punk DIY como fundamentos metodológicos da pesquisa.</p>
-            </div>
+            <p className="text-muted-foreground text-sm italic mt-6">
+              A entrevista completa reforça o lugar do corpo, do skate e da estética punk DIY como fundamentos metodológicos da pesquisa.
+            </p>
           </div>
         </div>
 
@@ -66,10 +64,9 @@ export const SkatePunkInterview = () => {
               </div>
             </Card>
 
-            <div className="flex items-center gap-2 text-muted-foreground text-sm italic mt-6">
-              <ExternalLink className="w-4 h-4" />
-              <p>The complete interview reinforces the place of the body, skateboarding and punk DIY aesthetics as methodological foundations of the research.</p>
-            </div>
+            <p className="text-muted-foreground text-sm italic mt-6">
+              The complete interview reinforces the place of the body, skateboarding and punk DIY aesthetics as methodological foundations of the research.
+            </p>
           </div>
         </div>
       </div>
