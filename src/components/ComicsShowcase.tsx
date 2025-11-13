@@ -95,6 +95,17 @@ const ComicsShowcase = () => {
                     Alienação e metamorfose corporal
                   </li>
                 </ul>
+                <p className="mt-6 pt-6 border-t border-border">
+                  Esta abordagem ecoa a filosofia <strong>punk rock do código</strong>: resistência contra 
+                  convenções estabelecidas, acesso democratizado à expressão criativa, priorização da autenticidade 
+                  sobre perfeição técnica. Assim como Watchmen desconstruiu o gênero de super-heróis, 
+                  THEVØIDN13 desconstrói as fronteiras entre desenvolvimento técnico e performance artística.
+                </p>
+                <p className="text-xs italic text-muted-foreground mt-4">
+                  Como Rick Rubin articula em <em>The Way of Code</em>, o "punk rock of coding" é sobre remover 
+                  barreiras de entrada—não é necessário ser expert em todos os quadrinhos ou todas as linguagens. 
+                  Basta visão clara e coragem para subverter o esperado.
+                </p>
               </div>
             </DialogContent>
           </Dialog>

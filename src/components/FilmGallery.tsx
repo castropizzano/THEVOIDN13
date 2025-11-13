@@ -196,10 +196,16 @@ const FilmGallery = () => {
                     de <em>The Matrix</em>, da energia reprimida de <em>Akira</em>, e da temporalidade 
                     de <em>Back to the Future</em>.
                   </p>
+                  <p className="mb-4">
+                    Esta curadoria conecta-se diretamente com os princípios de <strong>Vibe Coding</strong>: 
+                    a seleção intuitiva de referências que informam visão criativa, não execução técnica. 
+                    Como Rick Rubin articula em <em>The Way of Code</em>, o desenvolvedor atua como curador 
+                    de influências—assim como um diretor de cinema compõe atmosfera através de referências visuais.
+                  </p>
                   <p>
                     Cada filme contribuiu com uma camada visual, estética ou conceitual que 
                     moldou a linguagem do projeto — desde a textura granulada até os movimentos 
-                    de câmera e a paleta de cores.
+                    de câmera e a paleta de cores. <strong>Três acordes e a verdade.</strong>
                   </p>
                 </DialogDescription>
               </DialogHeader>
