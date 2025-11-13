@@ -10,11 +10,19 @@ import zine06 from "@/assets/zine/zine_06.png";
 import zine07 from "@/assets/zine/zine_07.png";
 import zine08 from "@/assets/zine/zine_08.png";
 import zine09 from "@/assets/zine/zine_09.png";
+import zine10 from "@/assets/zine/zine_10.png";
+import zine11 from "@/assets/zine/zine_11.png";
+import zine12 from "@/assets/zine/zine_12.png";
+import zine13 from "@/assets/zine/zine_13.png";
+import zine14 from "@/assets/zine/zine_14.png";
+import zine15 from "@/assets/zine/zine_15.png";
+import zine16 from "@/assets/zine/zine_16.png";
 
 export const InterviewsTabs = () => {
   const zineImages = [
     zine01, zine02, zine03, zine04, zine05, 
-    zine06, zine07, zine08, zine09
+    zine06, zine07, zine08, zine09, zine10,
+    zine11, zine12, zine13, zine14, zine15, zine16
   ];
 
   return (
@@ -131,6 +139,42 @@ export const InterviewsTabs = () => {
                   The complete interview reinforces the place of body, skateboarding and punk DIY aesthetics as methodological foundations of the research.
                 </p>
               </div>
+            </div>
+          </div>
+
+          <div className="bible-bilingual-grid bible-section-spacing mt-8">
+            <div>
+              <Card className="p-6 bg-background/50 border border-border/50">
+                <h3 className="bible-subtitle mb-4">Transcrição Completa</h3>
+                <p className="bible-body mb-4">
+                  Acesse a transcrição completa da entrevista com todos os depoimentos e conversas sobre processos criativos.
+                </p>
+                <a 
+                  href="/documents/Skate_Punk_Interview_Transcript.pdf" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-primary hover:underline font-medium"
+                >
+                  Download da Transcrição (PDF)
+                </a>
+              </Card>
+            </div>
+
+            <div>
+              <Card className="p-6 bg-background/50 border border-border/50">
+                <h3 className="bible-subtitle mb-4">Full Transcription</h3>
+                <p className="bible-body mb-4">
+                  Access the complete interview transcription with all testimonials and conversations about creative processes.
+                </p>
+                <a 
+                  href="/documents/Skate_Punk_Interview_Transcript.pdf" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-primary hover:underline font-medium"
+                >
+                  Download Transcription (PDF)
+                </a>
+              </Card>
             </div>
           </div>
         </TabsContent>
@@ -326,9 +370,41 @@ export const InterviewsTabs = () => {
             ))}
           </div>
 
-          <p className="text-center text-muted-foreground text-sm italic mt-8">
-            Mais páginas em breve / More pages coming soon
-          </p>
+          <div className="bible-bilingual-grid bible-section-spacing mt-12">
+            <div>
+              <Card className="p-6 bg-background/50 border border-border/50">
+                <h3 className="bible-subtitle mb-4">Transcrição Completa</h3>
+                <p className="bible-body mb-4">
+                  Acesse a transcrição completa da entrevista coletiva com toda a crew sobre a produção da LowZine e do LowMovie™.
+                </p>
+                <a 
+                  href="/documents/LOWZINE._LowPressure™_-_The_LowMovie.pdf" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-primary hover:underline font-medium"
+                >
+                  Download da Transcrição (PDF)
+                </a>
+              </Card>
+            </div>
+
+            <div>
+              <Card className="p-6 bg-background/50 border border-border/50">
+                <h3 className="bible-subtitle mb-4">Full Transcription</h3>
+                <p className="bible-body mb-4">
+                  Access the complete collective interview transcription with the entire crew about the production of LowZine and LowMovie™.
+                </p>
+                <a 
+                  href="/documents/LOWZINE._LowPressure™_-_The_LowMovie.pdf" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-primary hover:underline font-medium"
+                >
+                  Download Transcription (PDF)
+                </a>
+              </Card>
+            </div>
+          </div>
         </TabsContent>
       </Tabs>
     </BilingualSection>
