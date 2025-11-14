@@ -17,14 +17,12 @@ export const SkatePunkInterview = () => {
 
       <div className="bible-bilingual-grid bible-section-spacing mt-8">
         <div>
-          <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
-          <p className="bible-body mt-6">
+          <p className="bible-body">
             Podcast Chiclé Vídeos — Conversa sobre a trajetória criativa, os bastidores do LowMovie™, a relação entre skate e audiovisual, e os processos colaborativos do coletivo LowPressure™.
           </p>
         </div>
         <div>
-          <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
-          <p className="bible-body mt-6">
+          <p className="bible-body">
             Podcast Chiclé Vídeos — Conversation about the creative trajectory, the backstage of LowMovie™, the relationship between skateboarding and audiovisual, and the collaborative processes of the LowPressure™ collective.
           </p>
         </div>
@@ -46,8 +44,7 @@ export const SkatePunkInterview = () => {
 
       <div className="bible-bilingual-grid bible-section-spacing mt-8">
         <div>
-          <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
-          <div className="space-y-6 mt-6">
+          <div className="space-y-6">
             <p className="bible-body">
               Esta entrevista é fundamental para a compreensão dos processos criativos que permeiam o universo do skate punk. 
               Através de conversas em profundidade com membros do coletivo LowPressure™, exploramos como o corpo em movimento, 
@@ -73,8 +70,7 @@ export const SkatePunkInterview = () => {
         </div>
 
         <div>
-          <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
-          <div className="space-y-6 mt-6">
+          <div className="space-y-6">
             <p className="bible-body">
               This interview is fundamental to understanding the creative processes that permeate the skate punk universe. 
               Through in-depth conversations with members of the LowPressure™ collective, we explore how the body in movement, 

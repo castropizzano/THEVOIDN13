@@ -17,14 +17,12 @@ export const BlackMediaInterview = () => {
 
       <div className="bible-bilingual-grid bible-section-spacing mt-8">
         <div>
-          <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
-          <p className="bible-body mt-6">
+          <p className="bible-body">
             Black Media Skate — Conversa coletiva com toda a crew LowPressure™ sobre o processo de criação do LowMovie™, os bastidores das filmagens, a dinâmica do coletivo e o significado do filme para cada skatista.
           </p>
         </div>
         <div>
-          <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
-          <p className="bible-body mt-6">
+          <p className="bible-body">
             Black Media Skate — Collective conversation with the entire LowPressure™ crew about the creation process of LowMovie™, behind-the-scenes filming, collective dynamics and the meaning of the film for each skater.
           </p>
         </div>
@@ -46,8 +44,7 @@ export const BlackMediaInterview = () => {
 
       <div className="bible-bilingual-grid bible-section-spacing mt-8">
         <div>
-          <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
-          <div className="space-y-6 mt-6">
+          <div className="space-y-6">
             <p className="bible-body">
               Esta entrevista coletiva reúne todos os membros da crew LowPressure™ para uma conversa aberta sobre o LowMovie™. 
               Conduzida pela Black Media Skate, a conversa explora as perspectivas individuais e coletivas sobre o processo criativo, 
@@ -102,8 +99,7 @@ export const BlackMediaInterview = () => {
         </div>
 
         <div>
-          <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
-          <div className="space-y-6 mt-6">
+          <div className="space-y-6">
             <p className="bible-body">
               This collective interview brings together all members of the LowPressure™ crew for an open conversation about LowMovie™. 
               Conducted by Black Media Skate, the conversation explores individual and collective perspectives on the creative process, 

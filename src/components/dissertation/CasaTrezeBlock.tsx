@@ -17,8 +17,7 @@ export const CasaTrezeBlock = () => {
 
       <div className="bible-bilingual-grid bible-section-spacing mt-8">
         <div>
-          <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
-          <div className="space-y-6 mt-6">
+          <div className="space-y-6">
             <p className="bible-body">
               A CasaTrezeStudio nasceu em 2008 como <span className="font-semibold text-primary">gesto intuitivo</span>, 
               movido por urgência e imaginação. A casa onde cresci, antes silenciada pelo tempo, transformou-se em 
@@ -63,8 +62,7 @@ export const CasaTrezeBlock = () => {
         </div>
 
         <div>
-          <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
-          <div className="space-y-6 mt-6">
+          <div className="space-y-6">
             <p className="bible-body">
               CasaTrezeStudio was born in 2008 as an <span className="font-semibold text-primary">intuitive gesture</span>, 
               driven by urgency and imagination. The house where I grew up, previously silenced by time, transformed into a 
