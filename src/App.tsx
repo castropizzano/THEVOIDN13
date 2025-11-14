@@ -28,18 +28,18 @@ const AppContent = () => {
     <>
       <PWAInstallPrompt />
       <Routes>
-        <Route path="/" element={<ProtectedRoute><Index /></ProtectedRoute>} />
-        <Route path="/lowmovie" element={<ProtectedRoute><Dissertacao /></ProtectedRoute>} />
-        <Route path="/dissertacao" element={<ProtectedRoute><Dissertacao /></ProtectedRoute>} />
-        <Route path="/sobre" element={<ProtectedRoute><Autor /></ProtectedRoute>} />
-        <Route path="/autor" element={<ProtectedRoute><Autor /></ProtectedRoute>} />
-        <Route path="/galeria" element={<ProtectedRoute><Videos /></ProtectedRoute>} />
-        <Route path="/videos" element={<ProtectedRoute><Videos /></ProtectedRoute>} />
-        <Route path="/auth" element={<ProtectedRoute><Auth /></ProtectedRoute>} />
-        <Route path="/admin" element={<ProtectedRoute><Admin /></ProtectedRoute>} />
-        <Route path="/admin/dashboard" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} />
-        <Route path="/admin/pages" element={<ProtectedRoute><AdminPageEditor /></ProtectedRoute>} />
-        <Route path="*" element={<ProtectedRoute><NotFound /></ProtectedRoute>} />
+        <Route path="/" element={<Index />} />
+        <Route path="/lowmovie" element={<Dissertacao />} />
+        <Route path="/dissertacao" element={<Dissertacao />} />
+        <Route path="/sobre" element={<Autor />} />
+        <Route path="/autor" element={<Autor />} />
+        <Route path="/galeria" element={<Videos />} />
+        <Route path="/videos" element={<Videos />} />
+        <Route path="/auth" element={<Auth />} />
+        <Route path="/admin" element={<ProtectedRoute requireAdmin={true}><Admin /></ProtectedRoute>} />
+        <Route path="/admin/dashboard" element={<ProtectedRoute requireAdmin={true}><AdminDashboard /></ProtectedRoute>} />
+        <Route path="/admin/pages" element={<ProtectedRoute requireAdmin={true}><AdminPageEditor /></ProtectedRoute>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
