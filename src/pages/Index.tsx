@@ -116,6 +116,7 @@ const Index = () => {
         {/* ===== SUBTITLE ===== */}
         <BilingualSection className="py-8 sm:py-12 md:py-16">
           <BilingualContent
+            showLanguageTags={true}
             portugueseContent={
               <>
                 <h2 className="bible-subtitle text-base sm:text-lg md:text-xl">[UM CORPO À DERIVA ENTRE O RUÍDO E O SILÊNCIO]</h2>
