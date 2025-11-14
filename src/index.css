@@ -8,65 +8,140 @@
 
 @layer components {
   /* ===============================================
-     SISTEMA TIPOGRÁFICO PADRONIZADO THEVOIDN13 v1.3b
-     Bible v13 Compliant - Conversão exata pt → px
+     SISTEMA TIPOGRÁFICO MINIMALISTA THEVOIDN13
+     Noir Cyberpunk - Layout Cinematográfico
      =============================================== */
   
-  /* BIBLE V13 - TÍTULOS BILÍNGUES (16pt = 21.33px) */
-  .bible-title {
+  /* MINIMALISTA - H2 (Títulos de Seção) */
+  .tvn-minimal-h2 {
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
-    font-size: 21.33px;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+  }
+  
+  /* MINIMALISTA - H3 (Subtítulos / Rótulos) */
+  .tvn-minimal-h3 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+  }
+  
+  /* MINIMALISTA - Parágrafo */
+  .tvn-minimal-p {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 165%;
+    letter-spacing: 0.005em;
+    color: #E6E6E6;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  
+  .tvn-minimal-p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* MINIMALISTA - Microtexto */
+  .tvn-minimal-micro {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 155%;
+    color: #E6E6E6;
+    opacity: 0.7;
+  }
+  
+  /* MINIMALISTA - Cards Noir Cyberpunk */
+  .tvn-minimal-card {
+    border-radius: 4px;
+    border: 1px solid rgba(163, 36, 36, 0.25);
+    background: #111;
+    padding: 20px;
+  }
+  
+  @media (min-width: 768px) {
+    .tvn-minimal-card {
+      padding: 24px;
+    }
+  }
+  
+  /* BIBLE/TVN MINIMALISTA - Títulos de Seção (H2) */
+  .bible-title,
+  .tvn-h2 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: left;
-    /* SISTEMA TVN13: 48px superior / 20px inferior */
-    margin-top: 48px;
-    margin-bottom: 20px;
+    margin-top: 64px;
+    margin-bottom: 12px;
   }
   
   /* Primeiro título sem margin-top */
   .bilingual-col > .bible-title:first-child,
-  .bible-title:first-child {
+  .bible-title:first-child,
+  .tvn-h2:first-child {
     margin-top: 0;
   }
   
   @media (max-width: 768px) {
-    .bible-title {
+    .bible-title,
+    .tvn-h2 {
       font-size: 18px;
-      margin-top: 32px;
+      margin-top: 48px;
     }
   }
   
-  /* BIBLE V13 - SUBTÍTULOS BILÍNGUES (15pt = 20px) */
-  .bible-subtitle {
+  /* BIBLE/TVN MINIMALISTA - Subtítulos (H3) */
+  .bible-subtitle,
+  .tvn-subtitle,
+  .tvn-h3 {
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 15px;
+    line-height: 130%;
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: left;
-    /* SISTEMA TVN13: 32px superior / 16px inferior */
-    margin-top: 32px;
-    margin-bottom: 16px;
+    margin-top: 40px;
+    margin-bottom: 8px;
   }
   
   /* Primeiro subtítulo sem margin-top */
   .bilingual-col > .bible-subtitle:first-child,
-  .bible-subtitle:first-child {
+  .bible-subtitle:first-child,
+  .tvn-subtitle:first-child,
+  .tvn-h3:first-child {
     margin-top: 0;
   }
   
   /* Subtítulo logo após título */
-  .bible-title + .bible-subtitle {
-    margin-top: 20px;
+  .bible-title + .bible-subtitle,
+  .tvn-h2 + .tvn-subtitle,
+  .tvn-h2 + .tvn-h3 {
+    margin-top: 12px;
   }
   
   @media (max-width: 768px) {
-    .bible-subtitle {
-      font-size: 16px;
-      margin-top: 24px;
-      margin-bottom: 12px;
+    .bible-subtitle,
+    .tvn-subtitle,
+    .tvn-h3 {
+      font-size: 14px;
+      margin-top: 32px;
+      margin-bottom: 8px;
     }
   }
   
@@ -88,64 +163,106 @@
     }
   }
   
-  /* BIBLE V13 - TEXTOS CORPO (13pt = 17.33px) */
-  .bible-body {
+  /* BIBLE/TVN MINIMALISTA - Parágrafos Corpo */
+  .bible-body,
+  .tvn-paragraph {
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
-    font-size: 17.33px;
+    font-size: 13px;
+    line-height: 165%;
+    letter-spacing: 0.005em;
     color: #E6E6E6;
     text-align: justify;
-    line-height: 1.6;
     text-transform: none;
-    /* SISTEMA TVN13: 20px inferior entre parágrafos */
     margin-bottom: 20px;
   }
   
-  .bible-body:last-child {
+  .bible-body:last-child,
+  .tvn-paragraph:last-child {
     margin-bottom: 0;
   }
   
   @media (max-width: 768px) {
-    .bible-body {
-      font-size: 15px;
-      line-height: 1.65;
+    .bible-body,
+    .tvn-paragraph {
+      font-size: 13px;
+      line-height: 170%;
     }
   }
   
-  /* BIBLE V13 - ELEMENTOS E HIPERLINKS (11pt = 14.67px) */
-  .bible-link {
+  /* BIBLE/TVN MINIMALISTA - Links e Elementos */
+  .bible-link,
+  .tvn-link {
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
-    font-size: 14.67px;
+    font-size: 11px;
+    line-height: 155%;
     color: #C40000;
     text-decoration: none;
     text-transform: none;
+    opacity: 0.9;
   }
   
-  .bible-link:hover {
+  .bible-link:hover,
+  .tvn-link:hover {
     text-decoration: underline;
+    opacity: 1;
   }
   
-  /* BIBLE V13 - ESPAÇAMENTO ENTRE SEÇÕES (ATUALIZADO SISTEMA TVN13) */
-  .bible-section-spacing {
-    margin-bottom: 32px;
+  /* MICROTEXTO - Legendas, notas, metadados */
+  .tvn-micro,
+  .bible-caption {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 155%;
+    color: #E6E6E6;
+    opacity: 0.7;
+    text-align: center;
+    margin-top: 8px;
   }
   
-  /* BIBLE V13 - ESPAÇAMENTO ANTES DE NOVO BLOCO (ATUALIZADO SISTEMA TVN13) */
-  .bible-block-spacing {
-    margin-top: 48px;
+  /* ESPAÇAMENTOS MINIMALISTAS */
+  
+  /* Entre módulos principais */
+  .bible-section-spacing,
+  .tvn-section-spacing {
+    margin-bottom: 64px;
   }
   
-  /* IMAGENS DENTRO DO SISTEMA BILÍNGUE */
+  /* Entre blocos temáticos grandes */
+  .bible-block-spacing,
+  .tvn-block-spacing {
+    margin-bottom: 96px;
+  }
+  
+  /* Espaçamento imagem-texto */
+  .tvn-image-spacing {
+    margin-top: 20px;
+    margin-bottom: 24px;
+  }
+  
+  /* IMAGENS DENTRO DO SISTEMA BILÍNGUE - Espaçamento minimalista */
   .bilingual-col img,
   .bilingual-col figure {
-    margin-top: 48px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    max-width: 1080px;
+    width: 100%;
+    height: auto;
   }
   
   .bilingual-col img:first-child,
   .bilingual-col figure:first-child {
     margin-top: 0;
+  }
+  
+  /* Imagens centralizadas */
+  img,
+  figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* ===============================================
@@ -153,18 +270,18 @@
      Ritmo Cinematográfico Uniforme em Todo o Portal
      =============================================== */
   
-  /* GRID BILÍNGUE - Base simétrica */
+  /* GRID BILÍNGUE - Base simétrica com gutter minimalista */
   .bilingual-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    gap: 24px;
     align-items: start;
   }
   
   @media (max-width: 1024px) {
     .bilingual-grid {
       grid-template-columns: 1fr;
-      gap: 2rem;
+      gap: 20px;
     }
   }
   
@@ -237,6 +354,69 @@
     margin-top: 0;
   }
   
+  /* MINIMALISTA - Espaçamento entre módulos principais */
+  .tvn-spacing-module {
+    margin-bottom: 64px;
+  }
+  
+  /* MINIMALISTA - Espaçamento entre blocos temáticos grandes */
+  .tvn-spacing-theme {
+    margin-bottom: 96px;
+  }
+  
+  /* MINIMALISTA - Espaçamento imagem-texto */
+  .tvn-spacing-image {
+    margin-top: 20px;
+    margin-bottom: 24px;
+  }
+  
+  /* MINIMALISTA - Gutter entre colunas (aplicado no grid) */
+  .tvn-minimal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+  
+  @media (max-width: 1024px) {
+    .tvn-minimal-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+  
+  /* MINIMALISTA - Cards em Grid */
+  .tvn-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 24px;
+    margin-bottom: 64px;
+  }
+  
+  @media (max-width: 768px) {
+    .tvn-cards-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  }
+  
+  /* MINIMALISTA - Módulos de áudio/playlist */
+  .tvn-audio-module {
+    padding: 24px;
+    border-radius: 4px;
+    border: 1px solid rgba(163, 36, 36, 0.25);
+    background: #111;
+    margin-top: 24px;
+    margin-bottom: 64px;
+  }
+  
+  @media (min-width: 768px) {
+    .tvn-audio-module {
+      padding: 28px;
+    }
+  }
+  
   /* SEÇÃO → PRÓXIMA SEÇÃO - 80px */
   section + section {
     margin-top: 80px;
@@ -284,24 +464,24 @@
     margin-top: 0 !important;
   }
 
-  /* BIBLE V13 - LAYOUT DUPLA COLUNA (Migrado para sistema global) */
+  /* BIBLE V13 - LAYOUT DUPLA COLUNA - Atualizado com gutter minimalista */
   .bible-bilingual-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    gap: 24px;
     align-items: start;
   }
   
   @media (max-width: 1024px) {
     .bible-bilingual-grid {
       grid-template-columns: 1fr;
-      gap: 2rem;
+      gap: 20px;
     }
   }
   
   @media (max-width: 640px) {
     .bible-bilingual-grid {
-      gap: 1.5rem;
+      gap: 20px;
     }
   }
   
@@ -365,19 +545,29 @@
     @apply border-t border-primary/90 my-0;
   }
   
-  /* GRID BILÍNGUE */
+  /* GRID BILÍNGUE - Consistente com sistema minimalista */
   .bilingual-grid {
-    @apply grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+  
+  @media (min-width: 1024px) {
+    .bilingual-grid {
+      grid-template-columns: 1fr 1fr;
+    }
   }
   
   @media (max-width: 640px) {
     .bilingual-grid {
-      gap: 1.5rem;
+      gap: 20px;
     }
   }
   
   .bilingual-col {
-    @apply flex flex-col gap-3 sm:gap-4;
+    display: flex;
+    flex-direction: column;
   }
   
   .bilingual-col > *:first-child {
