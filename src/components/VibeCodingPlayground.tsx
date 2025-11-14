@@ -93,7 +93,7 @@ export default function VibeCodingPlayground() {
         portugueseContent={
           <>
             <h3 className="bible-subtitle text-left">VIBE CODING PLAYGROUND</h3>
-            <p className="text-left text-muted-foreground mt-4 text-base leading-relaxed">
+            <p className="text-left text-muted-foreground mt-4 text-base leading-relaxed max-w-none">
               Experimente o desenvolvimento intuitivo mediado por IA. Escreva o que você imagina, 
               veja como a intenção criativa se transforma em código. Teoria encontra prática.
             </p>
@@ -102,7 +102,7 @@ export default function VibeCodingPlayground() {
         englishContent={
           <>
             <h3 className="bible-subtitle text-left">VIBE CODING PLAYGROUND</h3>
-            <p className="text-left text-muted-foreground mt-4 text-base leading-relaxed">
+            <p className="text-left text-muted-foreground mt-4 text-base leading-relaxed max-w-none">
               Experience intuitive AI-mediated development. Write what you imagine, 
               watch creative intention transform into code. Theory meets practice.
             </p>
@@ -110,7 +110,7 @@ export default function VibeCodingPlayground() {
         }
       />
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Input Side */}
         <Card className="p-6 space-y-4 border-l-4 border-primary">
           <div className="flex items-center gap-3 mb-4">
@@ -203,38 +203,38 @@ export default function VibeCodingPlayground() {
       </div>
 
       {/* Philosophy Connection */}
-      <Card className="max-w-4xl mx-auto p-8 bg-gradient-to-br from-background via-background to-blue-500/5 border-2 border-blue-500/20">
+      <Card className="p-8 bg-gradient-to-br from-background via-background to-blue-500/5 border-2 border-blue-500/20">
         <BilingualContent
           portugueseContent={
             <div className="space-y-4 text-left">
-              <h4 className="font-bold text-xl">Da Teoria à Prática</h4>
-              <p className="leading-relaxed text-base">
+              <h4 className="font-bold text-xl">DA TEORIA À PRÁTICA</h4>
+              <p className="leading-relaxed text-base max-w-none">
                 Este playground materializa os princípios de <strong>The Way of Code</strong>: 
                 desenvolvimento como fluxo criativo (Wu Wei), não como execução técnica forçada.
               </p>
-              <p className="leading-relaxed text-base">
+              <p className="leading-relaxed text-base max-w-none">
                 Aqui você experimenta o <strong>Punk Rock of Coding</strong>—acesso democratizado, 
                 sem necessidade de anos de estudo técnico. A barreira entre ideia e realização 
                 se dissolve.
               </p>
-              <p className="text-sm italic text-muted-foreground mt-4">
+              <p className="text-sm italic text-muted-foreground mt-4 max-w-none">
                 "The best code is the code you don't have to write—just imagine."
               </p>
             </div>
           }
           englishContent={
             <div className="space-y-4 text-left">
-              <h4 className="font-bold text-xl">From Theory to Practice</h4>
-              <p className="leading-relaxed text-base">
+              <h4 className="font-bold text-xl">FROM THEORY TO PRACTICE</h4>
+              <p className="leading-relaxed text-base max-w-none">
                 This playground materializes <strong>The Way of Code</strong> principles: 
                 development as creative flow (Wu Wei), not forced technical execution.
               </p>
-              <p className="leading-relaxed text-base">
+              <p className="leading-relaxed text-base max-w-none">
                 Here you experience the <strong>Punk Rock of Coding</strong>—democratized access, 
                 no need for years of technical study. The barrier between idea and realization 
                 dissolves.
               </p>
-              <p className="text-sm italic text-muted-foreground mt-4">
+              <p className="text-sm italic text-muted-foreground mt-4 max-w-none">
                 "The best code is the code you don't have to write—just imagine."
               </p>
             </div>
