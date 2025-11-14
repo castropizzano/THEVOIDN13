@@ -118,12 +118,12 @@ const Index = () => {
             showLanguageTags={true}
             portugueseContent={
               <>
-                <h2 className="bible-subtitle text-base sm:text-lg md:text-xl">[UM CORPO À DERIVA ENTRE O RUÍDO E O SILÊNCIO]</h2>
+                <h2 className="bible-subtitle text-base sm:text-lg md:text-xl tvn-h2">[UM CORPO À DERIVA ENTRE O RUÍDO E O SILÊNCIO]</h2>
               </>
             }
             englishContent={
               <>
-                <h2 className="bible-subtitle text-base sm:text-lg md:text-xl">[A BODY ADRIFT BETWEEN NOISE AND SILENCE]</h2>
+                <h2 className="bible-subtitle text-base sm:text-lg md:text-xl tvn-h2">[A BODY ADRIFT BETWEEN NOISE AND SILENCE]</h2>
               </>
             }
           />
@@ -153,12 +153,12 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <>
-                <h2 className="bible-subtitle">[INÍCIO DA TRANSMISSÃO]</h2>
+                <h2 className="bible-subtitle tvn-h2">[INÍCIO DA TRANSMISSÃO]</h2>
               </>
             }
             englishContent={
               <>
-                <h2 className="bible-subtitle">[BEGINNING OF TRANSMISSION]</h2>
+                <h2 className="bible-subtitle tvn-h2">[BEGINNING OF TRANSMISSION]</h2>
               </>
             }
           />
