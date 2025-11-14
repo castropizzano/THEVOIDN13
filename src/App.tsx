@@ -9,9 +9,6 @@ import { ProtectedRoute } from "@/components/ProtectedRoute";
 import ScrollToTop from "@/components/ScrollToTop";
 import { usePageView } from "@/hooks/useAnalytics";
 import { PWAInstallPrompt } from "@/components/PWAInstallPrompt";
-import { TypographyControlPanel } from "@/components/TypographyControlPanel";
-import { ContentEditorPanel } from "@/components/ContentEditorPanel";
-import { ContentEditorProvider } from "@/hooks/useContentEditor";
 import Index from "./pages/Index";
 import Dissertacao from "./pages/Dissertacao";
 import Autor from "./pages/Autor";
@@ -30,8 +27,6 @@ const AppContent = () => {
   return (
     <>
       <PWAInstallPrompt />
-      <TypographyControlPanel />
-      <ContentEditorPanel />
       <Routes>
         <Route path="/" element={<ProtectedRoute><Index /></ProtectedRoute>} />
         <Route path="/lowmovie" element={<ProtectedRoute><Dissertacao /></ProtectedRoute>} />
@@ -54,21 +49,19 @@ const App = () => (
   <ErrorBoundary>
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
-        <ContentEditorProvider>
-          <TooltipProvider>
-            <Toaster />
-            <Sonner />
-            <BrowserRouter
-              future={{
-                v7_startTransition: true,
-                v7_relativeSplatPath: true,
-              }}
-            >
-              <ScrollToTop />
-              <AppContent />
-            </BrowserRouter>
-          </TooltipProvider>
-        </ContentEditorProvider>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter
+            future={{
+              v7_startTransition: true,
+              v7_relativeSplatPath: true,
+            }}
+          >
+            <ScrollToTop />
+            <AppContent />
+          </BrowserRouter>
+        </TooltipProvider>
       </AuthProvider>
     </QueryClientProvider>
   </ErrorBoundary>

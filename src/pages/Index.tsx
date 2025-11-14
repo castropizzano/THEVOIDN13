@@ -11,7 +11,6 @@ import { CreativeOracle } from "@/components/CreativeOracle";
 import { BackToTop } from "@/components/BackToTop";
 import { AccessGate } from "@/components/AccessGate";
 import { CookieConsent } from "@/components/CookieConsent";
-import { EditableHeading, EditableParagraph } from "@/components/EditableText";
 import SpotifyPlaylist from "@/components/SpotifyPlaylist";
 import FilmGallery from "@/components/FilmGallery";
 import ComicsShowcase from "@/components/ComicsShowcase";
@@ -118,28 +117,12 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <>
-                <EditableHeading
-                  id="home-subtitle-pt"
-                  defaultValue="[UM CORPO À DERIVA ENTRE O RUÍDO E O SILÊNCIO]"
-                  label="Subtitle (Portuguese)"
-                  page="Home"
-                  section="Hero"
-                  as="h2"
-                  className="bible-subtitle text-base sm:text-lg md:text-xl tvn-h2"
-                />
+                <h2 className="bible-subtitle text-base sm:text-lg md:text-xl tvn-h2">[UM CORPO À DERIVA ENTRE O RUÍDO E O SILÊNCIO]</h2>
               </>
             }
             englishContent={
               <>
-                <EditableHeading
-                  id="home-subtitle-en"
-                  defaultValue="[A BODY ADRIFT BETWEEN NOISE AND SILENCE]"
-                  label="Subtitle (English)"
-                  page="Home"
-                  section="Hero"
-                  as="h2"
-                  className="bible-subtitle text-base sm:text-lg md:text-xl tvn-h2"
-                />
+                <h2 className="bible-subtitle text-base sm:text-lg md:text-xl tvn-h2">[A BODY ADRIFT BETWEEN NOISE AND SILENCE]</h2>
               </>
             }
           />
@@ -169,28 +152,12 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <>
-                <EditableHeading
-                  id="transmission-title-pt"
-                  defaultValue="[INÍCIO DA TRANSMISSÃO]"
-                  label="Transmission Title (Portuguese)"
-                  page="Home"
-                  section="Transmission"
-                  as="h2"
-                  className="bible-subtitle tvn-h2"
-                />
+                <h2 className="bible-subtitle tvn-h2">[INÍCIO DA TRANSMISSÃO]</h2>
               </>
             }
             englishContent={
               <>
-                <EditableHeading
-                  id="transmission-title-en"
-                  defaultValue="[BEGINNING OF TRANSMISSION]"
-                  label="Transmission Title (English)"
-                  page="Home"
-                  section="Transmission"
-                  as="h2"
-                  className="bible-subtitle tvn-h2"
-                />
+                <h2 className="bible-subtitle tvn-h2">[BEGINNING OF TRANSMISSION]</h2>
               </>
             }
           />
@@ -229,28 +196,12 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <>
-                <EditableHeading
-                  id="manifesto-title-pt"
-                  defaultValue="MANIFESTO INTEGRADO"
-                  label="Manifesto Title (Portuguese)"
-                  page="Home"
-                  section="Manifesto"
-                  as="h2"
-                  className="bible-title"
-                />
+                <h2 className="bible-title">MANIFESTO INTEGRADO</h2>
               </>
             }
             englishContent={
               <>
-                <EditableHeading
-                  id="manifesto-title-en"
-                  defaultValue="INTEGRATED MANIFESTO"
-                  label="Manifesto Title (English)"
-                  page="Home"
-                  section="Manifesto"
-                  as="h2"
-                  className="bible-title"
-                />
+                <h2 className="bible-title">INTEGRATED MANIFESTO</h2>
               </>
             }
           />
@@ -258,28 +209,16 @@ const Index = () => {
           <BilingualContent
             portugueseContent={
               <div className="bible-section-spacing">
-                <EditableParagraph
-                  id="manifesto-intro-pt"
-                  defaultValue="Não há começo. Há apenas o instante em que o silêncio decide respirar. THEVØIDN13 nasceu desse sopro invisível, um gesto entre a morte e o retorno. Tudo o que chamam de ausência é apenas matéria em repouso. O vazio não é falta, é incubação de forma. É o espaço onde o verbo esquece o corpo e o corpo se converte em verbo. A imagem não quer ser vista, quer ser atravessada. O silêncio não encerra, expande. E o fim aqui é apenas uma respiração mais funda."
-                  label="Manifesto Introduction (Portuguese)"
-                  page="Home"
-                  section="Manifesto"
-                  as="p"
-                  className="bible-body"
-                />
+                <p className="bible-body">
+                  Não há começo. Há apenas o instante em que o silêncio decide respirar. THEVØIDN13 nasceu desse sopro invisível, um gesto entre a morte e o retorno. Tudo o que chamam de ausência é apenas matéria em repouso. O vazio não é falta, é incubação de forma. É o espaço onde o verbo esquece o corpo e o corpo se converte em verbo. A imagem não quer ser vista, quer ser atravessada. O silêncio não encerra, expande. E o fim aqui é apenas uma respiração mais funda.
+                </p>
               </div>
             }
             englishContent={
               <div className="bible-section-spacing">
-                <EditableParagraph
-                  id="manifesto-intro-en"
-                  defaultValue="There is no beginning. There is only the instant when silence decides to breathe. THEVØIDN13 was born from that invisible breath, a gesture between death and return. Everything they call absence is only matter at rest. The void is not lack, it is incubation of form. It is the space where the word forgets the body and the body becomes word. The image does not want to be seen, it wants to be crossed through. Silence does not end, it expands. And the end here is only a deeper breath."
-                  label="Manifesto Introduction (English)"
-                  page="Home"
-                  section="Manifesto"
-                  as="p"
-                  className="bible-body"
-                />
+                <p className="bible-body">
+                  There is no beginning. There is only the instant when silence decides to breathe. THEVØIDN13 was born from that invisible breath, a gesture between death and return. Everything they call absence is only matter at rest. The void is not lack, it is incubation of form. It is the space where the word forgets the body and the body becomes word. The image does not want to be seen, it wants to be crossed through. Silence does not end, it expands. And the end here is only a deeper breath.
+                </p>
               </div>
             }
           />
