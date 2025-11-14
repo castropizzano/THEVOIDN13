@@ -110,6 +110,45 @@
     margin-top: 44px;
   }
 
+  /* ===============================================
+     SISTEMA DE RITMO VERTICAL CINEMATOGRÁFICO TVN13
+     =============================================== */
+  
+  /* TÍTULOS DE SEÇÃO - ex: "7.1 REGISTRO TREZE", "4.2 O MANIFESTO DO CORPO" */
+  .section-title {
+    margin-top: 40px;
+    margin-bottom: 16px;
+  }
+  
+  /* SUBTÍTULOS INTERNOS - ex: "POSTURA", "O GESTO", "SÍNTESE SIMBÓLICA" */
+  .section-subtitle {
+    margin-top: 28px;
+    margin-bottom: 12px;
+  }
+  
+  /* PARÁGRAFOS - Spacing consistente entre blocos */
+  .section-paragraph {
+    margin-bottom: 20px;
+  }
+  
+  .section-paragraph:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* ESPAÇAMENTO ENTRE PARÁGRAFOS - Linha base consistente */
+  .paragraph-spacing {
+    line-height: 1.6;
+  }
+  
+  .paragraph-spacing + .paragraph-spacing {
+    margin-top: 24px;
+  }
+  
+  /* PRIMEIRO TÍTULO DE SEÇÃO - Sem margin-top */
+  .section-title:first-child {
+    margin-top: 0;
+  }
+
   /* BIBLE V13 - LAYOUT DUPLA COLUNA */
   .bible-bilingual-grid {
     display: grid;

@@ -136,8 +136,8 @@ export default function PhilosophyShowcase() {
       <BilingualContent
         portugueseContent={
           <>
-            <h3 className="bible-subtitle text-left">FILOSOFIA & METODOLOGIA</h3>
-            <p className="text-muted-foreground text-left mt-4 text-base leading-relaxed max-w-none">
+            <h3 className="bible-subtitle text-left section-title">FILOSOFIA & METODOLOGIA</h3>
+            <p className="text-muted-foreground text-left mt-4 text-base leading-relaxed max-w-none section-paragraph">
               Referências conceituais que estruturam a abordagem criativa e metodológica do projeto. 
               Da sabedoria ancestral do Tao Te Ching à revolução contemporânea do vibe coding, 
               essas filosofias informam tanto o processo quanto o produto.
@@ -146,8 +146,8 @@ export default function PhilosophyShowcase() {
         }
         englishContent={
           <>
-            <h3 className="bible-subtitle text-left">PHILOSOPHY & METHODOLOGY</h3>
-            <p className="text-muted-foreground text-left mt-4 text-base leading-relaxed max-w-none">
+            <h3 className="bible-subtitle text-left section-title">PHILOSOPHY & METHODOLOGY</h3>
+            <p className="text-muted-foreground text-left mt-4 text-base leading-relaxed max-w-none section-paragraph">
               Conceptual references that structure the project's creative and methodological approach. 
               From the ancestral wisdom of Tao Te Ching to the contemporary revolution of vibe coding, 
               these philosophies inform both process and product.
@@ -200,13 +200,13 @@ export default function PhilosophyShowcase() {
 
       <BilingualContent
         portugueseContent={
-          <p className="text-left text-muted-foreground mt-8 text-base leading-relaxed max-w-none">
+          <p className="text-left text-muted-foreground text-base leading-relaxed max-w-none section-paragraph">
             A intersecção entre resistência criativa, democratização tecnológica e filosofia contemplativa. 
             Do punk rock dos anos 70 ao vibe coding de 2024: a mesma energia, diferentes mídias.
           </p>
         }
         englishContent={
-          <p className="text-left text-muted-foreground mt-8 text-base leading-relaxed max-w-none">
+          <p className="text-left text-muted-foreground text-base leading-relaxed max-w-none section-paragraph">
             The intersection of creative resistance, technological democratization, and contemplative philosophy. 
             From 70s punk rock to 2024 vibe coding: same energy, different media.
           </p>
@@ -228,55 +228,55 @@ export default function PhilosophyShowcase() {
         ))}
       </div>
 
-      <Card className="p-8 bg-gradient-to-br from-background via-background to-primary/5 border-2 border-primary/20">
+      <Card className="p-8 bg-gradient-to-br from-background via-background to-primary/5 border-2 border-primary/20 section-title">
         <BilingualContent
           portugueseContent={
             <>
-              <h3 className="bible-subtitle text-left mb-6">A TESE CENTRAL</h3>
+              <h3 className="bible-subtitle text-left mb-6 section-subtitle">A TESE CENTRAL</h3>
               <div className="space-y-4 text-left">
-                <p className="leading-relaxed text-base max-w-none">
+                <p className="leading-relaxed text-base max-w-none section-paragraph">
                   Rick Rubin propõe que a IA no desenvolvimento de software é análoga ao punk rock na música: 
                   ambos democratizam acesso, desafiam gatekeepers estabelecidos e priorizam expressão autêntica 
                   sobre virtuosismo técnico.
                 </p>
-                <p className="leading-relaxed text-base mt-4 max-w-none">
+                <p className="leading-relaxed text-base max-w-none section-paragraph">
                   Nos anos 70, não era necessário ser músico virtuoso para formar uma banda—bastavam 
                   três acordes e algo a dizer. Em 2024, não é necessário ser engenheiro de software 
                   para construir aplicações—bastam prompts claros e visão criativa.
                 </p>
-                <p className="leading-relaxed text-base mt-4 max-w-none">
+                <p className="leading-relaxed text-base max-w-none section-paragraph">
                   THEVØIDN13 materializa essa filosofia: construído via co-criação humano-IA (Lovable), 
                   documentado como processo artístico performativo, estruturado pela filosofia contemplativa 
                   do Tao Te Ching aplicada ao código.
                 </p>
-                <p className="italic text-lg mt-6 font-medium max-w-none">
+                <blockquote className="text-primary italic text-lg font-medium border-l-4 border-primary pl-4 mt-6 section-paragraph">
                   "The punk rock of coding is here—three prompts and the truth."
-                </p>
+                </blockquote>
               </div>
             </>
           }
           englishContent={
             <>
-              <h3 className="bible-subtitle text-left mb-6">THE CENTRAL THESIS</h3>
+              <h3 className="bible-subtitle text-left mb-6 section-subtitle">THE CENTRAL THESIS</h3>
               <div className="space-y-4 text-left">
-                <p className="leading-relaxed text-base max-w-none">
+                <p className="leading-relaxed text-base max-w-none section-paragraph">
                   Rick Rubin proposes that AI in software development is analogous to punk rock in music: 
                   both democratize access, challenge established gatekeepers, and prioritize authentic expression 
                   over technical virtuosity.
                 </p>
-                <p className="leading-relaxed text-base mt-4 max-w-none">
+                <p className="leading-relaxed text-base max-w-none section-paragraph">
                   In the 70s, you didn't need to be a virtuoso musician to form a band—three chords and something 
                   to say were enough. In 2024, you don't need to be a software engineer to build applications—clear 
                   prompts and creative vision suffice.
                 </p>
-                <p className="leading-relaxed text-base mt-4 max-w-none">
+                <p className="leading-relaxed text-base max-w-none section-paragraph">
                   THEVØIDN13 materializes this philosophy: built via human-AI co-creation (Lovable), 
                   documented as performative artistic process, structured by the contemplative philosophy 
                   of Tao Te Ching applied to code.
                 </p>
-                <p className="italic text-lg mt-6 font-medium max-w-none">
+                <blockquote className="text-primary italic text-lg font-medium border-l-4 border-primary pl-4 mt-6 section-paragraph">
                   "The punk rock of coding is here—three prompts and the truth."
-                </p>
+                </blockquote>
               </div>
             </>
           }

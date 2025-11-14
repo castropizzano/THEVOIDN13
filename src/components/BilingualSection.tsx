@@ -32,11 +32,11 @@ export const BilingualContent = ({
   showLanguageTags = false
 }: BilingualContentProps) => {
   return <div className="bilingual-grid">
-      <div className="bilingual-col">
+      <div className="bilingual-col paragraph-spacing">
         {showLanguageTags && <p className="lang-pill">&lt;PORTUGUÊS&gt;</p>}
         {portugueseContent}
       </div>
-      <div className="bilingual-col">
+      <div className="bilingual-col paragraph-spacing">
         {showLanguageTags && <p className="lang-pill">&lt;ENGLISH&gt;</p>}
         {englishContent}
       </div>
