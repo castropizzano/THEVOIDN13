@@ -144,7 +144,6 @@ const Dissertacao = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing mt-8">
             <div>
-              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Coletivo Criativo fundado em 2008. Estúdio pós-contemporâneo de design e vídeo. Associação de produtores criativos independentes que opera como laboratório de criação autoral, cultural e comercial, conectando pessoas, ideias e projetos.</p>
                 
@@ -163,7 +162,6 @@ const Dissertacao = () => {
             </div>
 
             <div>
-              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Creative Collective founded in 2008. Post-contemporary studio of design and video. Association of independent creative producers operating as a laboratory of authorial, cultural and commercial creation, connecting people, ideas and projects.</p>
                 
@@ -209,7 +207,6 @@ const Dissertacao = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing mt-8">
             <div>
-              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Crew de skate @lowpressure.fam estabelecida nas transições e ruas de Curitiba. Movimento que valoriza o skateboard e seu universo cultural. Uma crew de skatistas, músicos e artistas com diferentes visões e um mesmo ideal. A ética do subterrâneo. O pensamento que nasce da margem.</p>
                 
@@ -226,7 +223,6 @@ const Dissertacao = () => {
             </div>
 
             <div>
-              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Skate crew @lowpressure.fam established in the transitions and streets of Curitiba. Movement that values skateboarding and its cultural universe. A crew of skaters, musicians and artists with different visions and the same ideal. The ethics of the underground. Thought that rises from the margin.</p>
                 
@@ -256,7 +252,6 @@ const Dissertacao = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing mt-8">
             <div>
-              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Full Video da crew LowPressure. Um filme-processo que documenta as vivências e o legado de uma crew de skatistas pelos spots de Curitiba. Obra produzida de maneira totalmente autoral, através de vídeo, design e trilhas sonoras únicas. Objeto central da pesquisa de mestrado em Cinema e Artes do Vídeo.</p>
                 
@@ -276,7 +271,6 @@ const Dissertacao = () => {
             </div>
 
             <div>
-              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">LowPressure crew's Full Video. A process-film documenting the experiences and legacy of a skate crew through Curitiba's spots. Work produced entirely independently, through video, design and unique soundtracks. Central object of master's research in Cinema and Video Arts.</p>
                 
@@ -312,7 +306,6 @@ const Dissertacao = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing">
             <div>
-              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Esta pesquisa se constrói como travessia em primeira pessoa, um deslizamento entre o skate, o vídeo e a escrita, ativando formas de escuta, presença e invenção. O ato de escrever aqui é corpo em movimento, gesto que se arrisca, que se lança como quem dropa uma borda, um corrimão, uma escada. Drop é esse instante inaugural em que o skatista se projeta de um ponto mais alto e inicia o percurso com risco e intuição, abrindo caminho no concreto.</p>
                 
@@ -321,7 +314,6 @@ const Dissertacao = () => {
             </div>
 
             <div>
-              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">This research is constructed as a first-person journey, a drift between skateboarding, video and writing, activating forms of listening, presence and invention. The act of writing here is body in movement, gesture that takes risks, that launches itself like someone dropping a ledge, a handrail, a staircase. Drop is that inaugural instant in which the skater projects themselves from a higher point and begins the course with risk and intuition, opening a path in the concrete.</p>
                 
@@ -346,14 +338,12 @@ const Dissertacao = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing">
             <div>
-              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Os vídeos de skate registram a evolução técnica e criativa dos skatistas e desempenham um papel central na construção de sua identidade cultural. A VideoParte destaca não apenas as habilidades dos skatistas, mas também a integração entre seus movimentos e o ambiente urbano. A VideoParte é linguagem estética em movimento, expressão que transforma a paisagem urbana em território simbólico.</p>
               </div>
             </div>
 
             <div>
-              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Skateboarding videos record the technical and creative evolution of skaters and play a central role in constructing their cultural identity. The VideoPart highlights not only the skaters' skills, but also the integration between their movements and the urban environment. The VideoPart is aesthetic language in movement, expression that transforms the urban landscape into symbolic territory.</p>
               </div>
@@ -376,7 +366,6 @@ const Dissertacao = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing">
             <div>
-              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <h3 className="bible-subtitle">Pesquisa em Arte como Práxis Sensível</h3>
                 <p className="bible-body">Esta pesquisa se configura como investigação artística situada e processual, em que criar e pesquisar operam em simultaneidade. O pesquisador está implicado nos modos de viver e criar que constituem o campo, atuando desde dentro dos fluxos da criação. Trata-se de uma práxis sensível que mobiliza o corpo em sua totalidade, articulando gesto, técnica, percepção e pensamento em uma ação simultaneamente material e reflexiva.</p>
@@ -427,7 +416,6 @@ const Dissertacao = () => {
             </div>
 
             <div>
-              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <h3 className="bible-subtitle">Research in Art as Sensitive Praxis</h3>
                 <p className="bible-body">This research is configured as situated and processual artistic investigation, in which creating and researching operate simultaneously. The researcher is implicated in the ways of living and creating that constitute the field, acting from within the flows of creation. It is a sensitive praxis that mobilizes the body in its totality, articulating gesture, technique, perception and thought in an action simultaneously material and reflective.</p>
@@ -504,7 +492,6 @@ const Dissertacao = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing">
             <div>
-              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Programa de Pós-Graduação em Cinema e Artes do Vídeo da Universidade Estadual do Paraná, Linha de Pesquisa (2) Processos de Criação no Cinema e nas Artes do Vídeo, como requisito parcial para a obtenção do grau de Mestre em Cinema e Artes do Vídeo.</p>
                 <p className="bible-body font-semibold">Orientador: Prof. Dr. Fábio Jabur de Noronha</p>
@@ -514,7 +501,6 @@ const Dissertacao = () => {
             </div>
 
             <div>
-              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Graduate Program in Cinema and Video Arts at Paraná State University, Research Line (2) Creation Processes in Cinema and Video Arts, as a partial requirement for obtaining the Master's degree in Cinema and Video Arts.</p>
                 <p className="bible-body font-semibold">Advisor: Prof. Dr. Fábio Jabur de Noronha</p>
@@ -540,7 +526,6 @@ const Dissertacao = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing">
             <div>
-              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">A pesquisa de mestrado investiga processos criativos colaborativos a partir da produção de LowMovie. Como uma crew de skate se torna coletivo criativo? Como a subcultura do skate gera modos específicos de fazer cinema? Como documentar sem domesticar?</p>
                 <p className="bible-body">Metodologia autoetnográfica. Análise fílmica. Entrevistas em profundidade. Diário de campo. Mas também: skate sessions como coleta de dados. Edição de vídeo como análise.</p>
@@ -548,7 +533,6 @@ const Dissertacao = () => {
             </div>
 
             <div>
-              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">The master's research investigates collaborative creative processes from LowMovie's production. How does a skate crew become a creative collective? How does skate subculture generate specific ways of making cinema? How to document without domesticating?</p>
                 <p className="bible-body">Autoethnographic methodology. Film analysis. In-depth interviews. Field diary. But also: skate sessions as data collection. Video editing as analysis.</p>
@@ -572,7 +556,6 @@ const Dissertacao = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing">
             <div>
-              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Criação sempre foi coletiva. CasaTrezeStudio (desde 2008), LowPressure (desde 2020), colaborações com músicos, skatistas, designers. Mas a práxis híbrida expande o conceito de coletivo: agora inclui agentes não-humanos. IA como colaboradora, não como ferramenta.</p>
                 <p className="bible-body">O coletivo não é soma de indivíduos — é campo de forças. Cada projeto gera sua própria configuração colaborativa. Algumas permanentes (crew), outras efêmeras (projetos específicos). Mas todas compartilham da mesma ética: autonomia criativa, transparência radical, autoria compartilhada mas assinada.</p>
@@ -580,7 +563,6 @@ const Dissertacao = () => {
             </div>
 
             <div>
-              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">Creation has always been collective. CasaTrezeStudio (since 2008), LowPressure (since 2020), collaborations with musicians, skaters, designers. But hybrid praxis expands the concept of collective: now it includes non-human agents. AI as collaborator, not as tool.</p>
                 <p className="bible-body">The collective isn't a sum of individuals — it's a force field. Each project generates its own collaborative configuration. Some permanent (crew), others ephemeral (specific projects). But all share the same ethics: creative autonomy, radical transparency, shared but signed authorship.</p>
