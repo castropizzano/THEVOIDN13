@@ -145,16 +145,17 @@
     }
   }
   
-  /* BIBLE V13 - TAGS DE IDIOMA (13pt = 17.33px) */
+  /* BIBLE V13 - TAGS DE IDIOMA - Atualizado para sistema minimalista */
   .bible-lang-tag {
     font-family: 'Manrope', sans-serif;
-    font-weight: 500;
-    font-size: 17.33px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 130%;
     text-transform: uppercase;
     color: #C40000;
     text-align: left;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 8px;
   }
   
   @media (max-width: 768px) {
