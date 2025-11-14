@@ -833,8 +833,11 @@ const Autor = () => {
             </div>
           </div>
 
-          <div className="max-w-4xl mx-auto bible-section-spacing">
-            <ContactForm />
+          <div className="bible-bilingual-grid bible-section-spacing">
+            <div></div>
+            <div>
+              <ContactForm />
+            </div>
           </div>
         </BilingualSection>
       </main>
