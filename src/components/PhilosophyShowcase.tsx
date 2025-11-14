@@ -69,7 +69,7 @@ export default function PhilosophyShowcase() {
       year: "~400 AC",
       description: "Texto fundacional do Taoísmo sobre fluxo, não-ação criativa (Wu Wei) e harmonia com processos naturais. Base filosófica de The Way of Code.",
       context: "Sabedoria ancestral sobre criatividade sem esforço forçado",
-      link: "https://ia902905.us.archive.org/32/items/plus-mystics/PLUS%20MYSTICS/EBOOK/ENG/TAO/OKE/Tao%20Te%20Ching%20The%20New%20Translation%20from%20Tao%20Te%20Ching%2C%20The%20Definitive%20Edition.pdf",
+      link: "/documents/Tao_Te_Ching.pdf",
       action: "pdf"
     },
     {
