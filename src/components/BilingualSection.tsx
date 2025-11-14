@@ -12,9 +12,9 @@ export const BilingualSection = ({
   const customPadding = className.match(/py-\d+/)?.[0] || "py-12 sm:py-16 md:py-20";
   const otherClasses = className.replace(/py-\d+/g, "").trim();
   
-  // Sempre usar fundo Preto Sombra #1A1A1A (Bible v13)
+  // Container global 1400px fixo
   return <section className={`${customPadding} bg-background`}>
-      <div className={`max-w-6xl mx-auto px-4 sm:px-6 ${otherClasses}`}>
+      <div className={`max-w-[1400px] mx-auto px-6 ${otherClasses}`}>
         {children}
       </div>
     </section>;
@@ -30,17 +30,13 @@ export const BilingualContent = ({
   englishContent,
   alignTop = false
 }: BilingualContentProps) => {
-  // Aplica automaticamente classes de espaçamento nos títulos e parágrafos
-  const processContent = (content: React.ReactNode) => {
-    return content;
-  };
-
-  return <div className="bilingual-grid">
-      <div className="bilingual-col">
-        {processContent(portugueseContent)}
+  // Grid bilíngue fixo 1fr 1fr com gap consistente
+  return <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+      <div className="space-y-0">
+        {portugueseContent}
       </div>
-      <div className="bilingual-col">
-        {processContent(englishContent)}
+      <div className="space-y-0">
+        {englishContent}
       </div>
     </div>;
 };
