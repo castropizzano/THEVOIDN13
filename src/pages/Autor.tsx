@@ -833,7 +833,7 @@ const Autor = () => {
             </div>
           </div>
 
-          <div className="bible-section-spacing">
+          <div className="bible-bilingual-grid bible-section-spacing">
             <ContactForm />
           </div>
         </BilingualSection>
