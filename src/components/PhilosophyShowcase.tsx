@@ -228,6 +228,7 @@ export default function PhilosophyShowcase() {
           </Card>
         ))}
       </div>
+      </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <Card className="p-8 bg-gradient-to-br from-background via-background to-primary/5 border-2 border-primary/20 section-title">
