@@ -1,5 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { BilingualContent } from "./BilingualSection";
+import { useState } from "react";
+import MediaDialog from "./MediaDialog";
 
 interface PhilosophyReference {
   title: string;
@@ -8,9 +10,22 @@ interface PhilosophyReference {
   description: string;
   context: string;
   link: string;
+  action?: "external" | "video" | "audio" | "pdf";
 }
 
 export default function PhilosophyShowcase() {
+  const [mediaDialog, setMediaDialog] = useState<{
+    open: boolean;
+    title: string;
+    type: "video" | "audio" | "pdf";
+    url: string;
+  }>({
+    open: false,
+    title: "",
+    type: "video",
+    url: "",
+  });
+
   const philosophies: PhilosophyReference[] = [
     {
       title: "THE WAY OF CODE",
@@ -18,7 +33,8 @@ export default function PhilosophyShowcase() {
       year: "2024",
       description: "Filosofia criativa que conecta o Tao Te Ching com desenvolvimento de software, propondo que código seja tratado como arte contemplativa.",
       context: "Metodologia de não-ação criativa (Wu Wei) aplicada à programação",
-      link: "https://www.thewayofcode.com/"
+      link: "https://www.thewayofcode.com",
+      action: "external"
     },
     {
       title: "VIBE CODING",
@@ -26,7 +42,8 @@ export default function PhilosophyShowcase() {
       year: "2024",
       description: "Abordagem intuitiva de programação mediada por IA, onde o desenvolvedor atua como diretor criativo ao invés de executor técnico.",
       context: "Democratização do acesso ao desenvolvimento via ferramentas de IA",
-      link: "https://www.thewayofcode.com/"
+      link: "https://www.youtube.com/watch?v=GvzaNZ67gQA",
+      action: "video"
     },
     {
       title: "PUNK ROCK OF CODING",
@@ -34,7 +51,8 @@ export default function PhilosophyShowcase() {
       year: "2024",
       description: "IA como movimento revolucionário no desenvolvimento: acessível, rebelde, democratizante. Paralelo com o punk rock dos anos 70.",
       context: "Resistência criativa contra elitismo técnico e barreiras de entrada",
-      link: "https://www.thewayofcode.com/"
+      link: "https://open.spotify.com/episode/1wbhdwipLP4EKyU5oVeNB9?si=LDS2TxBRR5qLOEtU983Tmw",
+      action: "audio"
     },
     {
       title: "LOVABLE",
@@ -42,7 +60,8 @@ export default function PhilosophyShowcase() {
       year: "2024",
       description: "Ferramenta de co-criação humano-IA que materializa os princípios de vibe coding e resistência criativa. Este site foi construído com ela.",
       context: "Praxis concreta da filosofia punk rock do código",
-      link: "https://lovable.dev/"
+      link: "https://asset.empiricus.com.br/conteudos/ponto-cego-do-mercado/lovable-e-a-autofagia-do-software/",
+      action: "external"
     },
     {
       title: "TAO TE CHING",
@@ -50,7 +69,8 @@ export default function PhilosophyShowcase() {
       year: "~400 AC",
       description: "Texto fundacional do Taoísmo sobre fluxo, não-ação criativa (Wu Wei) e harmonia com processos naturais. Base filosófica de The Way of Code.",
       context: "Sabedoria ancestral sobre criatividade sem esforço forçado",
-      link: "https://en.wikipedia.org/wiki/Tao_Te_Ching"
+      link: "https://ia902905.us.archive.org/32/items/plus-mystics/PLUS%20MYSTICS/EBOOK/ENG/TAO/OKE/Tao%20Te%20Ching%20The%20New%20Translation%20from%20Tao%20Te%20Ching%2C%20The%20Definitive%20Edition.pdf",
+      action: "pdf"
     },
     {
       title: "PROCESS ART",
@@ -58,9 +78,39 @@ export default function PhilosophyShowcase() {
       year: "1960-2024",
       description: "Arte como processo performativo documentado, não apenas produto final. O caminho criativo é a obra—cada decisão, iteração e transformação tem valor artístico.",
       context: "Documentação performática do desenvolvimento como arte conceitual",
-      link: "https://en.wikipedia.org/wiki/Process_art"
+      link: "https://arthistoryunstuffed.com/process-art/",
+      action: "external"
     }
   ];
+
+  const handleCardClick = (e: React.MouseEvent, phil: PhilosophyReference) => {
+    e.preventDefault();
+    
+    if (phil.action === "external") {
+      window.open(phil.link, "_blank", "noopener,noreferrer");
+    } else if (phil.action === "video") {
+      setMediaDialog({
+        open: true,
+        title: phil.title,
+        type: "video",
+        url: phil.link,
+      });
+    } else if (phil.action === "audio") {
+      setMediaDialog({
+        open: true,
+        title: phil.title,
+        type: "audio",
+        url: phil.link,
+      });
+    } else if (phil.action === "pdf") {
+      setMediaDialog({
+        open: true,
+        title: phil.title,
+        type: "pdf",
+        url: phil.link,
+      });
+    }
+  };
 
   const connections = [
     {
@@ -108,12 +158,10 @@ export default function PhilosophyShowcase() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {philosophies.map((phil, index) => (
-          <a
+          <div
             key={index}
-            href={phil.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group"
+            onClick={(e) => handleCardClick(e, phil)}
+            className="group cursor-pointer"
           >
             <Card className="h-full overflow-hidden border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
               <div className="h-1 bg-primary" />
@@ -138,9 +186,17 @@ export default function PhilosophyShowcase() {
                 </div>
               </div>
             </Card>
-          </a>
+          </div>
         ))}
       </div>
+
+      <MediaDialog
+        open={mediaDialog.open}
+        onOpenChange={(open) => setMediaDialog({ ...mediaDialog, open })}
+        title={mediaDialog.title}
+        type={mediaDialog.type}
+        url={mediaDialog.url}
+      />
 
       <BilingualContent
         portugueseContent={
