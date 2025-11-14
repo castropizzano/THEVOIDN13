@@ -133,7 +133,7 @@ export default function PhilosophyShowcase() {
 
   return (
     <section className="space-y-12">
-      <div className="max-w-6xl mx-auto space-y-12">
+      <div className="space-y-12">
         <BilingualContent
         portugueseContent={
           <>
@@ -229,9 +229,7 @@ export default function PhilosophyShowcase() {
         ))}
       </div>
 
-      </div>
-
-      <div className="max-w-6xl mx-auto">
+      <div>
         <Card className="p-8 bg-gradient-to-br from-background via-background to-primary/5 border-2 border-primary/20 section-title">
           <BilingualContent
             portugueseContent={
@@ -286,6 +284,7 @@ export default function PhilosophyShowcase() {
             }
           />
         </Card>
+      </div>
       </div>
     </section>
   );

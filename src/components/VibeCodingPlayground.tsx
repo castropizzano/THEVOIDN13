@@ -89,7 +89,7 @@ export default function VibeCodingPlayground() {
 
   return (
     <section className="py-12 sm:py-16 md:py-20 bg-background">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-8">
+      <div className="max-w-[1400px] mx-auto px-6 space-y-8">
         <BilingualContent
           portugueseContent={
             <>
