@@ -8,12 +8,13 @@
 
 @layer components {
   /* ===============================================
-     SISTEMA TIPOGRÁFICO MINIMALISTA THEVOIDN13
-     Noir Cyberpunk - Layout Cinematográfico
+     SISTEMA BILÍNGUE PT→EN DEFINITIVO
+     Padrão Minimalista Noir Cyberpunk THEVOIDN13
      =============================================== */
   
-  /* MINIMALISTA - H2 (Títulos de Seção) */
-  .tvn-minimal-h2 {
+  /* H2 - TÍTULOS DE SEÇÃO */
+  .tvn-h2,
+  .bible-title {
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
     font-size: 20px;
@@ -22,10 +23,12 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 12px;
+    margin-top: 0;
   }
   
-  /* MINIMALISTA - H3 (Subtítulos / Rótulos) */
-  .tvn-minimal-h3 {
+  /* H3 - SUBTÍTULOS / RÓTULOS DE CARDS */
+  .tvn-h3,
+  .bible-subtitle {
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
     font-size: 15px;
@@ -33,119 +36,147 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 8px;
+    margin-top: 0;
   }
   
-  /* MINIMALISTA - Parágrafo */
-  .tvn-minimal-p {
+  /* TEXTO PT (Português - principal) */
+  .tvn-text-pt,
+  .bible-body {
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 165%;
-    letter-spacing: 0.005em;
-    color: #E6E6E6;
+    color: #DADADA;
+    opacity: 0.95;
     text-align: justify;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
   }
   
-  .tvn-minimal-p:last-child {
+  /* TEXTO EN (English - logo abaixo, sempre italic) */
+  .tvn-text-en {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    font-style: italic;
+    color: #DADADA;
+    opacity: 0.75;
+    text-align: justify;
+    margin-bottom: 24px;
+  }
+  
+  /* BLOCO PT+EN COMPLETO */
+  .tvn-bilingual-block {
+    margin-bottom: 24px;
+  }
+  
+  .tvn-bilingual-block:last-child {
     margin-bottom: 0;
   }
   
-  /* MINIMALISTA - Microtexto */
-  .tvn-minimal-micro {
+  /* MICROTEXTO - Legendas, notas */
+  .tvn-micro,
+  .bible-caption {
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     font-size: 11px;
     line-height: 155%;
-    color: #E6E6E6;
+    letter-spacing: 0.01em;
+    color: #DADADA;
     opacity: 0.7;
+    text-align: center;
+    margin-top: 8px;
   }
   
-  /* MINIMALISTA - Cards Noir Cyberpunk */
-  .tvn-minimal-card {
+  /* CARDS NOIR CYBERPUNK */
+  .tvn-card {
     border-radius: 4px;
     border: 1px solid rgba(163, 36, 36, 0.25);
-    background: #111;
+    background: #111111;
     padding: 20px;
   }
   
   @media (min-width: 768px) {
-    .tvn-minimal-card {
+    .tvn-card {
       padding: 24px;
     }
   }
   
-  /* BIBLE/TVN MINIMALISTA - Títulos de Seção (H2) */
-  .bible-title,
-  .tvn-h2 {
-    font-family: 'Manrope', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 120%;
-    letter-spacing: 0.01em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    text-align: left;
-    margin-top: 64px;
-    margin-bottom: 12px;
+  /* ESPAÇAMENTOS GLOBAIS DEFINITIVOS */
+  
+  /* Entre seções grandes */
+  .tvn-section-spacing {
+    margin-bottom: 96px;
   }
   
-  /* Primeiro título sem margin-top */
-  .bilingual-col > .bible-title:first-child,
-  .bible-title:first-child,
-  .tvn-h2:first-child {
-    margin-top: 0;
+  /* Entre módulos internos */
+  .tvn-module-spacing {
+    margin-bottom: 32px;
   }
   
-  @media (max-width: 768px) {
-    .bible-title,
-    .tvn-h2 {
-      font-size: 18px;
-      margin-top: 48px;
-    }
+  /* Entre blocos de conteúdo */
+  .tvn-block-spacing {
+    margin-bottom: 24px;
   }
   
-  /* BIBLE/TVN MINIMALISTA - Subtítulos (H3) */
-  .bible-subtitle,
-  .tvn-subtitle,
-  .tvn-h3 {
-    font-family: 'Manrope', sans-serif;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 130%;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    text-align: left;
-    margin-top: 40px;
-    margin-bottom: 8px;
-  }
-  
-  /* Primeiro subtítulo sem margin-top */
-  .bilingual-col > .bible-subtitle:first-child,
-  .bible-subtitle:first-child,
-  .tvn-subtitle:first-child,
-  .tvn-h3:first-child {
-    margin-top: 0;
-  }
-  
-  /* Subtítulo logo após título */
-  .bible-title + .bible-subtitle,
-  .tvn-h2 + .tvn-subtitle,
-  .tvn-h2 + .tvn-h3 {
-    margin-top: 12px;
+  /* Entre imagem e texto abaixo */
+  .tvn-image-spacing {
+    margin-bottom: 24px;
   }
   
   @media (max-width: 768px) {
-    .bible-subtitle,
-    .tvn-subtitle,
-    .tvn-h3 {
-      font-size: 14px;
-      margin-top: 32px;
-      margin-bottom: 8px;
+    .tvn-section-spacing {
+      margin-bottom: 64px;
+    }
+    
+    .tvn-module-spacing {
+      margin-bottom: 24px;
     }
   }
   
-  /* BIBLE V13 - TAGS DE IDIOMA - Atualizado para sistema minimalista */
+  /* IMAGENS - Espaçamento e centralização */
+  img,
+  figure {
+    max-width: 1080px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+  }
+  
+  /* DIVISORES - Linha fina vermelha */
+  .tvn-divider {
+    border: 0;
+    height: 1px;
+    background: rgba(163, 36, 36, 0.18);
+    margin: 96px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .tvn-divider {
+      margin: 64px 0;
+    }
+  }
+  
+  /* GRIDS E LAYOUTS */
+  
+  /* Grid para cards (quando necessário) */
+  .tvn-grid-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  
+  @media (max-width: 768px) {
+    .tvn-grid-cards {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  }
+  
+  /* COMPATIBILIDADE LEGACY - Classes antigas */
   .bible-lang-tag {
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
@@ -154,41 +185,30 @@
     text-transform: uppercase;
     color: #C40000;
     text-align: left;
-    margin-top: 0;
     margin-bottom: 8px;
   }
   
-  @media (max-width: 768px) {
-    .bible-lang-tag {
-      font-size: 14px;
-    }
+  .bible-section-spacing {
+    margin-bottom: 96px;
   }
   
-  /* BIBLE/TVN MINIMALISTA - Parágrafos Corpo */
-  .bible-body,
-  .tvn-paragraph {
-    font-family: 'Manrope', sans-serif;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 165%;
-    letter-spacing: 0.005em;
-    color: #E6E6E6;
-    text-align: justify;
-    text-transform: none;
-    margin-bottom: 20px;
+  .bible-block-spacing {
+    margin-bottom: 32px;
   }
   
-  .bible-body:last-child,
-  .tvn-paragraph:last-child {
-    margin-bottom: 0;
+  .bible-bilingual-grid {
+    display: block;
+    max-width: 100%;
   }
   
-  @media (max-width: 768px) {
-    .bible-body,
-    .tvn-paragraph {
-      font-size: 13px;
-      line-height: 170%;
-    }
+  .bilingual-grid {
+    display: block;
+    max-width: 100%;
+  }
+  
+  .bilingual-col {
+    display: block;
+    width: 100%;
   }
   
   /* BIBLE/TVN MINIMALISTA - Links e Elementos */
@@ -673,25 +693,25 @@ All colors MUST be HSL.
     
     /* Minimum touch target size for mobile (44x44px per WCAG) */
     --min-touch-target: 44px;
-    --background: 0 0% 10.2%; /* #1A1A1A - Preto Sombra (Bible v13) */
-    --foreground: 0 0% 90%; /* #E6E6E6 - Cinza Fantasma (Bible v13) */
+    --background: 0 0% 4.7%; /* #0C0C0C - Preto Profundo (Definitivo) */
+    --foreground: 0 0% 85.5%; /* #DADADA - Cinza Suave */
 
-    --card: 0 0% 12%;
+    --card: 0 0% 6.7%; /* #111111 - Container Escuro */
     --card-foreground: 0 0% 100%; /* #FFFFFF - Branco Vazio */
 
-    --popover: 0 0% 12%;
+    --popover: 0 0% 6.7%;
     --popover-foreground: 0 0% 100%;
 
-    --primary: 0 100% 38.4%; /* #C40000 - Vermelho Sintético (Bible v13) */
+    --primary: 0 100% 38.4%; /* #C40000 / #A32424 - Vermelho Sintético */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 0 0% 15%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 0 0% 20%;
-    --muted-foreground: 0 0% 90% / 64%; /* Cinza Fantasma com opacidade */
+    --muted-foreground: 0 0% 85.5% / 70%; /* #DADADA com 70% opacity */
     
-    --body-text: 0 0% 90%; /* #E6E6E6 - Cinza Fantasma */
+    --body-text: 0 0% 85.5%; /* #DADADA - Cinza Suave */
 
     --accent: 0 100% 30%;
     --accent-foreground: 0 0% 100%;
@@ -699,19 +719,19 @@ All colors MUST be HSL.
     --destructive: 0 100% 35%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 25%;
+    --border: 0 100% 38.4% / 25%; /* #A32424 com 25% opacity */
     --input: 0 0% 20%;
     --ring: 0 100% 30%;
 
-    --radius: 0.25rem;
+    --radius: 0.25rem; /* 4px */
 
-    --sidebar-background: 0 0% 12%;
+    --sidebar-background: 0 0% 6.7%;
     --sidebar-foreground: 0 0% 100%;
     --sidebar-primary: 0 100% 30%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 0 0% 15%;
     --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 0 0% 25%;
+    --sidebar-border: 0 100% 38.4% / 25%;
     --sidebar-ring: 0 100% 30%;
   }
 
@@ -764,7 +784,8 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    background-color: #1A1A1A; /* Preto Sombra (Bible v13) */
+    background-color: #0C0C0C; /* Preto Profundo Definitivo */
+    color: #DADADA; /* Cinza Suave */
     /* Mobile scroll optimization */
     -webkit-overflow-scrolling: touch;
     overscroll-behavior-y: none;
