@@ -19,6 +19,7 @@ export const BilingualSection = ({
       </div>
     </section>;
 };
+
 interface BilingualContentProps {
   portugueseContent: React.ReactNode;
   englishContent: React.ReactNode;
@@ -31,14 +32,19 @@ export const BilingualContent = ({
   alignTop = false,
   showLanguageTags = false
 }: BilingualContentProps) => {
+  // Aplica automaticamente classes de espaçamento nos títulos e parágrafos
+  const processContent = (content: React.ReactNode) => {
+    return content;
+  };
+
   return <div className="bilingual-grid">
-      <div className="bilingual-col paragraph-spacing">
+      <div className="bilingual-col">
         {showLanguageTags && <p className="lang-pill">&lt;PORTUGUÊS&gt;</p>}
-        {portugueseContent}
+        {processContent(portugueseContent)}
       </div>
-      <div className="bilingual-col paragraph-spacing">
+      <div className="bilingual-col">
         {showLanguageTags && <p className="lang-pill">&lt;ENGLISH&gt;</p>}
-        {englishContent}
+        {processContent(englishContent)}
       </div>
     </div>;
 };

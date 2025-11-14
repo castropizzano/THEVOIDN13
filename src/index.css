@@ -20,8 +20,15 @@
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: left;
-    margin-top: 44px;
-    margin-bottom: 0;
+    /* SISTEMA TVN13: 48px superior / 20px inferior */
+    margin-top: 48px;
+    margin-bottom: 20px;
+  }
+  
+  /* Primeiro título sem margin-top */
+  .bilingual-col > .bible-title:first-child,
+  .bible-title:first-child {
+    margin-top: 0;
   }
   
   @media (max-width: 768px) {
@@ -39,14 +46,27 @@
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: left;
+    /* SISTEMA TVN13: 32px superior / 16px inferior */
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+  
+  /* Primeiro subtítulo sem margin-top */
+  .bilingual-col > .bible-subtitle:first-child,
+  .bible-subtitle:first-child {
     margin-top: 0;
-    margin-bottom: 29.33px;
+  }
+  
+  /* Subtítulo logo após título */
+  .bible-title + .bible-subtitle {
+    margin-top: 20px;
   }
   
   @media (max-width: 768px) {
     .bible-subtitle {
       font-size: 16px;
-      margin-bottom: 20px;
+      margin-top: 24px;
+      margin-bottom: 12px;
     }
   }
   
@@ -77,6 +97,12 @@
     text-align: justify;
     line-height: 1.6;
     text-transform: none;
+    /* SISTEMA TVN13: 20px inferior entre parágrafos */
+    margin-bottom: 20px;
+  }
+  
+  .bible-body:last-child {
+    margin-bottom: 0;
   }
   
   @media (max-width: 768px) {
@@ -100,33 +126,153 @@
     text-decoration: underline;
   }
   
-  /* BIBLE V13 - ESPAÇAMENTO ENTRE SEÇÕES (22pt = 29.33px) */
+  /* BIBLE V13 - ESPAÇAMENTO ENTRE SEÇÕES (ATUALIZADO SISTEMA TVN13) */
   .bible-section-spacing {
-    margin-bottom: 29.33px;
+    margin-bottom: 32px;
   }
   
-  /* BIBLE V13 - ESPAÇAMENTO ANTES DE NOVO BLOCO (33pt = 44px) */
+  /* BIBLE V13 - ESPAÇAMENTO ANTES DE NOVO BLOCO (ATUALIZADO SISTEMA TVN13) */
   .bible-block-spacing {
-    margin-top: 44px;
+    margin-top: 48px;
+  }
+  
+  /* IMAGENS DENTRO DO SISTEMA BILÍNGUE */
+  .bilingual-col img,
+  .bilingual-col figure {
+    margin-top: 48px;
+    margin-bottom: 40px;
+  }
+  
+  .bilingual-col img:first-child,
+  .bilingual-col figure:first-child {
+    margin-top: 0;
   }
 
   /* ===============================================
-     SISTEMA DE RITMO VERTICAL CINEMATOGRÁFICO TVN13
+     SISTEMA GLOBAL DE LAYOUT E ESPAÇAMENTO THEVØIDN13
+     Grid Bilíngue Simétrico + Ritmo Cinematográfico
      =============================================== */
   
-  /* TÍTULOS DE SEÇÃO - ex: "7.1 REGISTRO TREZE", "4.2 O MANIFESTO DO CORPO" */
-  .section-title {
-    margin-top: 40px;
+  /* GRID BILÍNGUE - Base do sistema */
+  .bilingual-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+  
+  @media (max-width: 1024px) {
+    .bilingual-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+  
+  /* COLUNAS BILÍNGUES - Sempre mesma altura */
+  .bilingual-col {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* SISTEMA UNIVERSAL DE ESPAÇAMENTO */
+  
+  /* TÍTULOS H1, H2, H3 - 48px superior / 20px inferior */
+  .tvn-h1,
+  .tvn-h2,
+  .tvn-h3,
+  h1.tvn-title,
+  h2.tvn-title,
+  h3.tvn-title {
+    margin-top: 48px;
+    margin-bottom: 20px;
+  }
+  
+  /* Primeiro título sem margin-top */
+  .tvn-h1:first-child,
+  .tvn-h2:first-child,
+  .tvn-h3:first-child,
+  .bilingual-col > h1:first-child,
+  .bilingual-col > h2:first-child,
+  .bilingual-col > h3:first-child {
+    margin-top: 0;
+  }
+  
+  /* SUBTÍTULOS - 32px superior / 16px inferior */
+  .tvn-subtitle,
+  h4.tvn-subtitle,
+  h5.tvn-subtitle {
+    margin-top: 32px;
     margin-bottom: 16px;
   }
   
-  /* SUBTÍTULOS INTERNOS - ex: "POSTURA", "O GESTO", "SÍNTESE SIMBÓLICA" */
-  .section-subtitle {
-    margin-top: 28px;
-    margin-bottom: 12px;
+  /* PARÁGRAFOS - 20px inferior */
+  .tvn-paragraph,
+  .bilingual-col > p {
+    margin-bottom: 20px;
   }
   
-  /* PARÁGRAFOS - Spacing consistente entre blocos */
+  .tvn-paragraph:last-child,
+  .bilingual-col > p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* IMAGENS - 48px superior / 40px inferior */
+  .tvn-image,
+  .bilingual-col > img,
+  .bilingual-col > figure {
+    margin-top: 48px;
+    margin-bottom: 40px;
+  }
+  
+  /* BLOCOS DE CONTEÚDO GERAL - 48px superior / 32px inferior */
+  .tvn-block,
+  .bilingual-col > div:not(:first-child),
+  .bilingual-col > section {
+    margin-top: 48px;
+    margin-bottom: 32px;
+  }
+  
+  /* CITAÇÕES E DESTAQUES - 48px superior / 32px inferior */
+  .tvn-quote,
+  .bilingual-col > blockquote {
+    margin-top: 48px;
+    margin-bottom: 32px;
+  }
+  
+  /* LISTAS - 20px inferior entre itens */
+  .tvn-list,
+  .bilingual-col > ul,
+  .bilingual-col > ol {
+    margin-bottom: 20px;
+  }
+  
+  .tvn-list li,
+  .bilingual-col > ul > li,
+  .bilingual-col > ol > li {
+    margin-bottom: 8px;
+  }
+  
+  /* ESPAÇAMENTO INTERNO DE CARDS E CONTAINERS */
+  .tvn-card-spacing > * + * {
+    margin-top: 20px;
+  }
+  
+  /* ALTURA IGUAL ENTRE PARES PT/EN */
+  .bilingual-grid > .bilingual-col {
+    min-height: 100%;
+  }
+  
+  /* COMPATIBILIDADE COM CLASSES ANTIGAS */
+  .section-title {
+    margin-top: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .section-subtitle {
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+  
   .section-paragraph {
     margin-bottom: 20px;
   }
@@ -134,22 +280,8 @@
   .section-paragraph:last-child {
     margin-bottom: 0;
   }
-  
-  /* ESPAÇAMENTO ENTRE PARÁGRAFOS - Linha base consistente */
-  .paragraph-spacing {
-    line-height: 1.6;
-  }
-  
-  .paragraph-spacing + .paragraph-spacing {
-    margin-top: 24px;
-  }
-  
-  /* PRIMEIRO TÍTULO DE SEÇÃO - Sem margin-top */
-  .section-title:first-child {
-    margin-top: 0;
-  }
 
-  /* BIBLE V13 - LAYOUT DUPLA COLUNA */
+  /* BIBLE V13 - LAYOUT DUPLA COLUNA (Migrado para sistema global) */
   .bible-bilingual-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
