@@ -74,8 +74,7 @@ const Autor = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing">
             <div>
-              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
-              <div className="space-y-6 mt-6">
+              <div className="space-y-6">
                 <p className="bible-body text-justify">Profissional criativo multidisciplinar, atuo entre as artes visuais, o design e a produção audiovisual. Minha trajetória é guiada pela criação de identidades visuais e narrativas semióticas, explorando linguagens como fotografia, vídeo, design gráfico e multiartes digitais. Transito entre processos individuais e colaborações coletivas, com base em laboratórios criativos, imersões referenciais e desenvolvimento conceitual.</p>
                 
                 <p className="bible-body text-justify">Atualmente, mestrando em Cinema e Artes do Vídeo pelo PPG-CINEAV da Universidade Estadual do Paraná (Unespar – Curitiba II/FAP), na linha de pesquisa em Processos de Criação no Cinema e nas Artes do Vídeo. Integro o grupo de pesquisa CineCriare – Cinema: Criação e Reflexão (Unespar/CNPq).</p>
@@ -89,8 +88,7 @@ const Autor = () => {
             </div>
 
             <div>
-              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
-              <div className="space-y-6 mt-6">
+              <div className="space-y-6">
                 <p className="bible-body text-justify">Multidisciplinary creative professional, I work between visual arts, design and audiovisual production. My trajectory is guided by the creation of visual identities and semiotic narratives, exploring languages such as photography, video, graphic design and digital multi-arts. I transit between individual processes and collective collaborations, based on creative laboratories, referential immersions and conceptual development.</p>
                 
                 <p className="bible-body text-justify">Currently, Master's student in Cinema and Video Arts at PPG-CINEAV of the State University of Paraná (Unespar – Curitiba II/FAP), in the research line on Creation Processes in Cinema and Video Arts. I am part of the CineCriare research group – Cinema: Creation and Reflection (Unespar/CNPq).</p>

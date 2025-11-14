@@ -17,8 +17,7 @@ export const LowMovieBlock = () => {
 
       <div className="bible-bilingual-grid bible-section-spacing mt-8">
         <div>
-          <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
-          <div className="space-y-6 mt-6">
+          <div className="space-y-6">
             <p className="bible-body">
               LowMovie™ não é apenas obra—é <span className="font-semibold text-primary">dispositivo de pesquisa</span>. 
               Full-length que condensa o labirinto criativo (Lowbyrinth™) do coletivo LowPressure™, operando como 
@@ -71,8 +70,7 @@ export const LowMovieBlock = () => {
         </div>
 
         <div>
-          <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
-          <div className="space-y-6 mt-6">
+          <div className="space-y-6">
             <p className="bible-body">
               LowMovie™ is not just a work—it's a <span className="font-semibold text-primary">research device</span>. 
               Full-length that condenses the creative labyrinth (Lowbyrinth™) of the LowPressure™ collective, operating as 

@@ -62,14 +62,12 @@ export const InterviewsTabs = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing mt-8">
             <div>
-              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
-              <p className="bible-body mt-6">
+              <p className="bible-body">
                 Podcast Chiclé Vídeos — Conversa sobre a trajetória criativa, os bastidores do LowMovie™, a relação entre skate e audiovisual, e os processos colaborativos do coletivo LowPressure™.
               </p>
             </div>
             <div>
-              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
-              <p className="bible-body mt-6">
+              <p className="bible-body">
                 Podcast Chiclé Vídeos — Conversation about the creative trajectory, the backstage of LowMovie™, the relationship between skateboarding and audiovisual, and the collaborative processes of the LowPressure™ collective.
               </p>
             </div>
@@ -196,14 +194,12 @@ export const InterviewsTabs = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing mt-8">
             <div>
-              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
-              <p className="bible-body mt-6">
+              <p className="bible-body">
                 Black Media Skate — Conversa coletiva com toda a crew LowPressure™ sobre o processo de criação do LowMovie™, os bastidores das filmagens, a dinâmica do coletivo e o significado do filme para cada skatista.
               </p>
             </div>
             <div>
-              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
-              <p className="bible-body mt-6">
+              <p className="bible-body">
                 Black Media Skate — Collective conversation with the entire LowPressure™ crew about the creation process of LowMovie™, behind-the-scenes filming, collective dynamics and the meaning of the film for each skater.
               </p>
             </div>
@@ -276,8 +272,7 @@ export const InterviewsTabs = () => {
             </div>
 
             <div>
-              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
-              <div className="space-y-6 mt-6">
+              <div className="space-y-6">
                 <p className="bible-body">
                   This collective interview brings together all members of the LowPressure™ crew for an open conversation about LowMovie™. 
                   Led by Black Media Skate, the conversation explores individual and collective perspectives on the creative process, 
@@ -344,15 +339,13 @@ export const InterviewsTabs = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing mt-8">
             <div>
-              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
-              <p className="bible-body mt-6">
+              <p className="bible-body">
                 Entrevista com Gabriel Peralta sobre fotografia de skate, a importância do registro visual na cultura do skate, 
                 processos criativos por trás das lentes e a relação entre fotógrafo e skatista.
               </p>
             </div>
             <div>
-              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
-              <p className="bible-body mt-6">
+              <p className="bible-body">
                 Interview with Gabriel Peralta about skate photography, the importance of visual documentation in skate culture, 
                 creative processes behind the lens and the relationship between photographer and skater.
               </p>
@@ -424,15 +417,13 @@ export const InterviewsTabs = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing mt-8">
             <div>
-              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
-              <p className="bible-body mt-6">
+              <p className="bible-body">
                 Conversa com Rafão VM sobre a cultura do skate marginal, a cena de São Paulo, 
                 a filosofia DIY aplicada ao audiovisual e os processos colaborativos da crew LowPressure™.
               </p>
             </div>
             <div>
-              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
-              <p className="bible-body mt-6">
+              <p className="bible-body">
                 Conversation with Rafão VM about marginal skate culture, the São Paulo scene, 
                 DIY philosophy applied to audiovisual and the collaborative processes of the LowPressure™ crew.
               </p>
@@ -504,16 +495,14 @@ export const InterviewsTabs = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing mt-8">
             <div>
-              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
-              <p className="bible-body mt-6">
+              <p className="bible-body">
                 Entrevista com o renomado cineasta alemão Werner Herzog discutindo skateboarding, cinema, 
                 arte e a relação entre corpo, movimento e narrativa. Uma conversa única que conecta a filosofia 
                 do skate com o olhar poético e existencial de um dos maiores diretores contemporâneos.
               </p>
             </div>
             <div>
-              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
-              <p className="bible-body mt-6">
+              <p className="bible-body">
                 Interview with renowned German filmmaker Werner Herzog discussing skateboarding, cinema, 
                 art and the relationship between body, movement and narrative. A unique conversation connecting 
                 skate philosophy with the poetic and existential vision of one of the greatest contemporary directors.
@@ -586,14 +575,12 @@ export const InterviewsTabs = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing mt-8">
             <div>
-              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
-              <p className="bible-body mt-6">
+              <p className="bible-body">
                 Zine produzida pela crew em parceria com Black Media Skate. Registro fotográfico, depoimentos dos skatistas e bastidores do processo criativo do LowMovie™. Uma publicação que documenta a energia, o estilo e a filosofia DIY do coletivo.
               </p>
             </div>
             <div>
-              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
-              <p className="bible-body mt-6">
+              <p className="bible-body">
                 Zine produced by the crew in partnership with Black Media Skate. Photographic record, skaters' testimonials and behind-the-scenes of the LowMovie™ creative process. A publication that documents the energy, style and DIY philosophy of the collective.
               </p>
             </div>

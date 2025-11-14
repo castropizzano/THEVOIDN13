@@ -17,8 +17,7 @@ export const LowPressureBlock = () => {
 
       <div className="bible-bilingual-grid bible-section-spacing mt-8">
         <div>
-          <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
-          <div className="space-y-6 mt-6">
+          <div className="space-y-6">
             <p className="bible-body">
               O processo criativo delineado neste trabalho emerge da <span className="font-semibold text-primary">convivência 
               com o coletivo LowPressure™</span>, organismo em vibração, movido por sintonia estética e prática. No vocabulário 
@@ -76,8 +75,7 @@ export const LowPressureBlock = () => {
         </div>
 
         <div>
-          <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
-          <div className="space-y-6 mt-6">
+          <div className="space-y-6">
             <p className="bible-body">
               The creative process outlined in this work emerges from <span className="font-semibold text-primary">coexistence 
               with the LowPressure™ collective</span>, an organism in vibration, moved by aesthetic and practical syntony. In 
