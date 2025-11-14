@@ -8,22 +8,6 @@ interface ProtectedRouteProps {
 }
 
 export const ProtectedRoute = ({ children }: ProtectedRouteProps) => {
-  const { user, loading } = useAuth();
-
-  // Show loading while checking authentication
-  if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <LoadingSpinner />
-      </div>
-    );
-  }
-
-  // Show access gate if not authenticated
-  if (!user) {
-    return <AccessGate onAccessGranted={() => {}} />;
-  }
-
-  // Render protected content for authenticated users
+  // Bypass authentication - allow direct access in editor
   return <>{children}</>;
 };
