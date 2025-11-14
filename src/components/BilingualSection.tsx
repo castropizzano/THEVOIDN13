@@ -3,23 +3,21 @@ interface BilingualSectionProps {
   className?: string;
   bgClassName?: string;
 }
-
 export const BilingualSection = ({
   children,
   className = "",
   bgClassName = ""
 }: BilingualSectionProps) => {
-  // Usa espaçamento minimalista definitivo
-  const customPadding = className.match(/py-\d+/)?.[0] || "py-16 sm:py-20 md:py-24";
+  // Extract custom py-* class from className if present, otherwise use default py-20
+  const customPadding = className.match(/py-\d+/)?.[0] || "py-12 sm:py-16 md:py-20";
   const otherClasses = className.replace(/py-\d+/g, "").trim();
   
-  return (
-    <section className={`${customPadding} bg-[#0C0C0C] ${bgClassName}`}>
+  // Sempre usar fundo Preto Sombra #1A1A1A (Bible v13)
+  return <section className={`${customPadding} bg-background`}>
       <div className={`max-w-6xl mx-auto px-4 sm:px-6 ${otherClasses}`}>
         {children}
       </div>
-    </section>
-  );
+    </section>;
 };
 
 interface BilingualContentProps {
@@ -27,24 +25,22 @@ interface BilingualContentProps {
   englishContent: React.ReactNode;
   alignTop?: boolean;
 }
-
 export const BilingualContent = ({
   portugueseContent,
   englishContent,
   alignTop = false
 }: BilingualContentProps) => {
-  // Novo padrão: PT seguido de EN em formato vertical (nunca lado a lado)
-  return (
-    <div className="tvn-bilingual-block">
-      {/* Conteúdo PT (principal) */}
-      <div className="tvn-text-pt">
-        {portugueseContent}
+  // Aplica automaticamente classes de espaçamento nos títulos e parágrafos
+  const processContent = (content: React.ReactNode) => {
+    return content;
+  };
+
+  return <div className="bilingual-grid">
+      <div className="bilingual-col">
+        {processContent(portugueseContent)}
       </div>
-      
-      {/* Conteúdo EN (logo abaixo, italic, opacidade reduzida) */}
-      <div className="tvn-text-en">
-        {englishContent}
+      <div className="bilingual-col">
+        {processContent(englishContent)}
       </div>
-    </div>
-  );
+    </div>;
 };

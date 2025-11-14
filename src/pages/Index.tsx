@@ -148,7 +148,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== INÍCIO DA TRANSMISSÃO ===== */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
@@ -192,7 +192,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== MANIFESTO INTEGRADO ===== */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
@@ -239,7 +239,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 1. ORIGEM E PROPÓSITO ===== */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
@@ -313,7 +313,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 2. FILOSOFIA CENTRAL ===== */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
@@ -346,7 +346,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 3. A ENTIDADE: THEVØIDN13 ===== */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
@@ -471,7 +471,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 4. A PSIQUE | ARQUITETURA DO SER ===== */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
@@ -667,7 +667,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 5. LÉXICO DO VAZIO ===== */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
@@ -763,7 +763,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 6. THEVØIDN13 | A GRAFIA DO VAZIO ===== */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
@@ -915,7 +915,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 7. O SÍMBOLO | 13 ===== */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
@@ -1092,7 +1092,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 8. A PRÁXIS | ESTÉTICA E PROCESSO ===== */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
@@ -1230,7 +1230,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== REFERÊNCIAS | O ECO INTERNO ===== */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
@@ -1387,7 +1387,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== A METODOLOGIA ===== */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
@@ -1422,7 +1422,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== CHARACTER VIEWS ===== */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
@@ -1667,7 +1667,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== PROCESSOS RELACIONADOS ===== */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
@@ -1769,7 +1769,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== PARADOXO EXISTENCIAL ===== */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
@@ -1810,7 +1810,7 @@ const Index = () => {
         </BilingualSection>
 
         {/* ===== THEVØIDN13 STUDY ===== */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           {/* FIM DA TRANSMISSÃO */}
           <BilingualContent
             portugueseContent={
@@ -1864,7 +1864,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== PROTÓTIPO Nº13 ===== */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
@@ -1919,7 +1919,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== O REPOSITÓRIO | ARQUIVOS E FERRAMENTAS ===== */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>

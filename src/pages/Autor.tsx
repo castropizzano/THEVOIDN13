@@ -52,7 +52,7 @@ const Autor = () => {
         </section>
 
         {/* Nome */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <div>
             <h1 className="bible-title">CASTRO PIZZANO</h1>
             <p className="bible-body mt-4 text-muted-foreground">цастро™ / PUNK</p>
@@ -62,7 +62,7 @@ const Autor = () => {
         <Separator className="bg-border/30" />
 
         {/* Quem Fala e De Onde Falo */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <div className="bible-bilingual-grid bible-block-spacing">
             <div>
               <h2 className="bible-title">QUEM FALA E DE ONDE FALO</h2>
@@ -106,7 +106,7 @@ const Autor = () => {
         <Separator className="bg-border/30" />
 
         {/* Habilidades Técnicas */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <div className="bible-bilingual-grid bible-block-spacing">
             <div>
               <h2 className="bible-title">HABILIDADES TÉCNICAS</h2>
@@ -224,7 +224,7 @@ const Autor = () => {
         <Separator className="bg-border/30" />
 
         {/* Práxis Híbrida */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <div className="bible-bilingual-grid bible-block-spacing">
             <div>
               <h2 className="bible-title">PRÁXIS HÍBRIDA</h2>
@@ -268,7 +268,7 @@ const Autor = () => {
         <Separator className="bg-border/30" />
 
         {/* Trajetória */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <div className="bible-bilingual-grid bible-block-spacing">
             <div>
               <h2 className="bible-title">TRAJETÓRIA</h2>
@@ -304,7 +304,7 @@ const Autor = () => {
         <Separator className="bg-border/30" />
 
         {/* Formação Acadêmica */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <div className="bible-bilingual-grid bible-block-spacing">
             <div>
               <h2 className="bible-title">FORMAÇÃO ACADÊMICA</h2>
@@ -410,7 +410,7 @@ const Autor = () => {
         <Separator className="bg-border/30" />
 
         {/* ЦАСТРО™ como Anti-Brand */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <div className="bible-bilingual-grid bible-block-spacing">
             <div>
               <h2 className="bible-title">ЦАСТРО™ COMO ANTI-BRAND</h2>
@@ -536,7 +536,7 @@ const Autor = () => {
         <Separator className="bg-border/30" />
 
         {/* Experiência Cultural */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <div className="bible-bilingual-grid bible-block-spacing">
             <div>
               <h2 className="bible-title">EXPERIÊNCIA CULTURAL</h2>
@@ -616,7 +616,7 @@ const Autor = () => {
         <Separator className="bg-border/30" />
 
         {/* Conclusão em Processo */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <div className="bible-bilingual-grid bible-block-spacing">
             <div>
               <h2 className="bible-title">CONCLUSÃO EM PROCESSO</h2>
@@ -720,7 +720,7 @@ const Autor = () => {
         <Separator className="bg-border/30" />
 
         {/* Documentation */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <div className="bible-bilingual-grid bible-block-spacing">
             <div>
               <h2 className="bible-title">DOCUMENTAÇÃO</h2>
