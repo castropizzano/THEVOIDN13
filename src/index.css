@@ -12,17 +12,19 @@
      Bible v13 Compliant - Conversão exata pt → px
      =============================================== */
   
-  /* BIBLE V13 - TÍTULOS BILÍNGUES (16pt = 21.33px) */
+  /* BIBLE V13 - TÍTULOS BILÍNGUES (16pt = 21.33px) - NOW WITH CSS VARIABLES */
   .bible-title {
     font-family: 'Manrope', sans-serif;
-    font-weight: 700;
-    font-size: 21.33px;
+    font-weight: var(--tvn-title-font-weight, 700);
+    font-size: var(--tvn-title-font-size, 21.33px);
+    line-height: var(--tvn-title-line-height, 1.2);
+    letter-spacing: var(--tvn-title-letter-spacing, 0);
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: left;
-    /* SISTEMA TVN13: 48px superior / 20px inferior */
-    margin-top: 48px;
-    margin-bottom: 20px;
+    /* SISTEMA TVN13: 48px superior / 20px inferior - NOW CONTROLLABLE */
+    margin-top: var(--tvn-title-margin-top, 48px);
+    margin-bottom: var(--tvn-title-margin-bottom, 20px);
   }
   
   /* Primeiro título sem margin-top */
@@ -38,17 +40,19 @@
     }
   }
   
-  /* BIBLE V13 - SUBTÍTULOS BILÍNGUES (15pt = 20px) */
+  /* BIBLE V13 - SUBTÍTULOS BILÍNGUES (15pt = 20px) - NOW WITH CSS VARIABLES */
   .bible-subtitle {
     font-family: 'Manrope', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: var(--tvn-subtitle-font-weight, 600);
+    font-size: var(--tvn-subtitle-font-size, 20px);
+    line-height: var(--tvn-subtitle-line-height, 1.3);
+    letter-spacing: var(--tvn-subtitle-letter-spacing, 0);
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: left;
-    /* SISTEMA TVN13: 32px superior / 16px inferior */
-    margin-top: 32px;
-    margin-bottom: 16px;
+    /* SISTEMA TVN13: 32px superior / 16px inferior - NOW CONTROLLABLE */
+    margin-top: var(--tvn-subtitle-margin-top, 32px);
+    margin-bottom: var(--tvn-subtitle-margin-bottom, 16px);
   }
   
   /* Primeiro subtítulo sem margin-top */
@@ -70,11 +74,13 @@
     }
   }
   
-  /* BIBLE V13 - TAGS DE IDIOMA (13pt = 17.33px) */
+  /* BIBLE V13 - TAGS DE IDIOMA (13pt = 17.33px) - NOW WITH CSS VARIABLES */
   .bible-lang-tag {
     font-family: 'Manrope', sans-serif;
-    font-weight: 500;
-    font-size: 17.33px;
+    font-weight: var(--tvn-caption-font-weight, 500);
+    font-size: var(--tvn-caption-font-size, 17.33px);
+    line-height: var(--tvn-caption-line-height, 1.4);
+    letter-spacing: var(--tvn-caption-letter-spacing, 0);
     text-transform: uppercase;
     color: #C40000;
     text-align: left;
@@ -88,17 +94,18 @@
     }
   }
   
-  /* BIBLE V13 - TEXTOS CORPO (13pt = 17.33px) */
+  /* BIBLE V13 - TEXTOS CORPO (13pt = 17.33px) - NOW WITH CSS VARIABLES */
   .bible-body {
     font-family: 'Manrope', sans-serif;
-    font-weight: 400;
-    font-size: 17.33px;
+    font-weight: var(--tvn-body-font-weight, 400);
+    font-size: var(--tvn-body-font-size, 17.33px);
+    line-height: var(--tvn-body-line-height, 1.6);
+    letter-spacing: var(--tvn-body-letter-spacing, 0);
     color: #E6E6E6;
     text-align: justify;
-    line-height: 1.6;
     text-transform: none;
-    /* SISTEMA TVN13: 20px inferior entre parágrafos */
-    margin-bottom: 20px;
+    /* SISTEMA TVN13: 20px inferior entre parágrafos - NOW CONTROLLABLE */
+    margin-bottom: var(--tvn-body-margin-bottom, 20px);
   }
   
   .bible-body:last-child {
@@ -112,11 +119,13 @@
     }
   }
   
-  /* BIBLE V13 - ELEMENTOS E HIPERLINKS (11pt = 14.67px) */
+  /* BIBLE V13 - ELEMENTOS E HIPERLINKS (11pt = 14.67px) - NOW WITH CSS VARIABLES */
   .bible-link {
     font-family: 'Manrope', sans-serif;
-    font-weight: 400;
-    font-size: 14.67px;
+    font-weight: var(--tvn-caption-font-weight, 400);
+    font-size: var(--tvn-caption-font-size, 14.67px);
+    line-height: var(--tvn-caption-line-height, 1.4);
+    letter-spacing: var(--tvn-caption-letter-spacing, 0);
     color: #C40000;
     text-decoration: none;
     text-transform: none;
@@ -126,14 +135,14 @@
     text-decoration: underline;
   }
   
-  /* BIBLE V13 - ESPAÇAMENTO ENTRE SEÇÕES (ATUALIZADO SISTEMA TVN13) */
+  /* BIBLE V13 - ESPAÇAMENTO ENTRE SEÇÕES (ATUALIZADO SISTEMA TVN13) - NOW CONTROLLABLE */
   .bible-section-spacing {
-    margin-bottom: 32px;
+    margin-bottom: var(--tvn-section-spacing, 32px);
   }
   
-  /* BIBLE V13 - ESPAÇAMENTO ANTES DE NOVO BLOCO (ATUALIZADO SISTEMA TVN13) */
+  /* BIBLE V13 - ESPAÇAMENTO ANTES DE NOVO BLOCO (ATUALIZADO SISTEMA TVN13) - NOW CONTROLLABLE */
   .bible-block-spacing {
-    margin-top: 48px;
+    margin-top: var(--tvn-block-spacing, 48px);
   }
   
   /* IMAGENS DENTRO DO SISTEMA BILÍNGUE */
