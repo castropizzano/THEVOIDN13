@@ -1,6 +1,4 @@
 import { Card } from "@/components/ui/card";
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
 import { BilingualContent } from "./BilingualSection";
 
 interface PhilosophyReference {
@@ -96,46 +94,6 @@ export default function PhilosophyShowcase() {
         }
       />
 
-      <div className="mb-6">
-        <Dialog>
-          <DialogTrigger asChild>
-            <Button variant="outline">
-              <BilingualContent
-                portugueseContent="Sobre as Referências Filosóficas"
-                englishContent="About Philosophical References"
-              />
-            </Button>
-          </DialogTrigger>
-          <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto">
-            <DialogHeader>
-              <DialogTitle className="text-left">
-                <BilingualContent
-                  portugueseContent="Sobre as Referências Filosóficas"
-                  englishContent="About Philosophical References"
-                />
-              </DialogTitle>
-              <DialogDescription className="text-left">
-                <BilingualContent
-                  portugueseContent={
-                    <div className="space-y-4 text-left mt-4">
-                      <p className="leading-relaxed italic text-base max-w-none">
-                        Estas filosofias não são externas ao projeto—elas são o projeto. Metodologia performada, não apenas citada.
-                      </p>
-                    </div>
-                  }
-                  englishContent={
-                    <div className="space-y-4 text-left mt-4">
-                      <p className="leading-relaxed italic text-base max-w-none">
-                        These philosophies are not external to the project—they are the project. Methodology performed, not merely cited.
-                      </p>
-                    </div>
-                  }
-                />
-              </DialogDescription>
-            </DialogHeader>
-          </DialogContent>
-        </Dialog>
-      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {philosophies.map((phil, index) => (
