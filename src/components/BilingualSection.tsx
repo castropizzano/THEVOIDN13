@@ -8,8 +8,8 @@ export const BilingualSection = ({
   className = "",
   bgClassName = ""
 }: BilingualSectionProps) => {
-  // Extract custom py-* class from className if present, otherwise use default py-20
-  const customPadding = className.match(/py-\d+/)?.[0] || "py-12 sm:py-16 md:py-20";
+  // Extract custom py-* class from className if present, otherwise use minimal spacing
+  const customPadding = className.match(/py-\d+/)?.[0] || "py-16 sm:py-20 md:py-24";
   const otherClasses = className.replace(/py-\d+/g, "").trim();
   
   // Sempre usar fundo Preto Sombra #1A1A1A (Bible v13)
