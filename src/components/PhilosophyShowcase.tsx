@@ -8,69 +8,81 @@ interface PhilosophyReference {
   description: string;
   context: string;
   link: string;
-  gradient: string;
 }
 
 export default function PhilosophyShowcase() {
   const philosophies: PhilosophyReference[] = [
     {
-      title: "The Way of Code",
+      title: "THE WAY OF CODE",
       author: "Rick Rubin",
       year: "2024",
       description: "Filosofia criativa que conecta o Tao Te Ching com desenvolvimento de software, propondo que código seja tratado como arte contemplativa.",
       context: "Metodologia de não-ação criativa (Wu Wei) aplicada à programação",
-      link: "https://www.thewayofcode.com/",
-      gradient: "from-primary to-accent"
+      link: "https://www.thewayofcode.com/"
     },
     {
-      title: "Vibe Coding",
+      title: "VIBE CODING",
       author: "Rick Rubin",
       year: "2024",
       description: "Abordagem intuitiva de programação mediada por IA, onde o desenvolvedor atua como diretor criativo ao invés de executor técnico.",
       context: "Democratização do acesso ao desenvolvimento via ferramentas de IA",
-      link: "https://www.thewayofcode.com/",
-      gradient: "from-primary/80 to-primary"
+      link: "https://www.thewayofcode.com/"
     },
     {
-      title: "Punk Rock of Coding",
+      title: "PUNK ROCK OF CODING",
       author: "Rick Rubin",
       year: "2024",
       description: "IA como movimento revolucionário no desenvolvimento: acessível, rebelde, democratizante. Paralelo com o punk rock dos anos 70.",
       context: "Resistência criativa contra elitismo técnico e barreiras de entrada",
-      link: "https://www.thewayofcode.com/",
-      gradient: "from-accent to-destructive"
+      link: "https://www.thewayofcode.com/"
     },
     {
-      title: "Lovable",
+      title: "LOVABLE",
       author: "Meta-Referência",
       year: "2024",
       description: "Ferramenta de co-criação humano-IA que materializa os princípios de vibe coding e resistência criativa. Este site foi construído com ela.",
       context: "Praxis concreta da filosofia punk rock do código",
-      link: "https://lovable.dev/",
-      gradient: "from-secondary to-muted"
+      link: "https://lovable.dev/"
     },
     {
-      title: "Tao Te Ching",
+      title: "TAO TE CHING",
       author: "Lao Tzu",
       year: "~400 AC",
       description: "Texto fundacional do Taoísmo sobre fluxo, não-ação criativa (Wu Wei) e harmonia com processos naturais. Base filosófica de The Way of Code.",
       context: "Sabedoria ancestral sobre criatividade sem esforço forçado",
-      link: "https://en.wikipedia.org/wiki/Tao_Te_Ching",
-      gradient: "from-muted to-secondary"
+      link: "https://en.wikipedia.org/wiki/Tao_Te_Ching"
     },
     {
-      title: "Process Art",
+      title: "PROCESS ART",
       author: "Metodologia",
       year: "1960-2024",
       description: "Arte como processo performativo documentado, não apenas produto final. O caminho criativo é a obra—cada decisão, iteração e transformação tem valor artístico.",
       context: "Documentação performática do desenvolvimento como arte conceitual",
-      link: "https://en.wikipedia.org/wiki/Process_art",
-      gradient: "from-accent/70 to-primary/60"
+      link: "https://en.wikipedia.org/wiki/Process_art"
+    }
+  ];
+
+  const connections = [
+    {
+      title: "PUNK ROCK (1976-1979)",
+      description: "Democratização da música: três acordes e a verdade. Resistência ao virtuosismo elitista, acesso radical à expressão.",
+    },
+    {
+      title: "VIBE CODING (2024)",
+      description: "Democratização do código: prompts e intuição. Resistência ao elitismo técnico, acesso radical ao desenvolvimento.",
+    },
+    {
+      title: "CINEMA PUNK (1977-1995)",
+      description: "Estética da precariedade: Kids, Fallen Angels, The Warriors. Beleza no imperfeito, verdade no marginal.",
+    },
+    {
+      title: "TAO DO CÓDIGO (400 AC - 2024)",
+      description: "Wu Wei criativo: fluxo natural, não-ação proposital. Da filosofia ancestral ao desenvolvimento contemporâneo.",
     }
   ];
 
   return (
-    <section className="space-y-8">
+    <section className="space-y-12">
       <BilingualContent
         portugueseContent={
           <>
@@ -93,7 +105,6 @@ export default function PhilosophyShowcase() {
           </>
         }
       />
-
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {philosophies.map((phil, index) => (
@@ -133,18 +144,88 @@ export default function PhilosophyShowcase() {
 
       <BilingualContent
         portugueseContent={
-          <p className="text-sm text-muted-foreground text-left mt-8 italic max-w-none">
-            Estas filosofias não são externas ao projeto—elas são o projeto. 
-            Metodologia performada, não apenas citada.
+          <p className="text-left text-muted-foreground mt-8 text-base leading-relaxed max-w-none">
+            A intersecção entre resistência criativa, democratização tecnológica e filosofia contemplativa. 
+            Do punk rock dos anos 70 ao vibe coding de 2024: a mesma energia, diferentes mídias.
           </p>
         }
         englishContent={
-          <p className="text-sm text-muted-foreground text-left mt-8 italic max-w-none">
-            These philosophies are not external to the project—they are the project. 
-            Methodology performed, not merely cited.
+          <p className="text-left text-muted-foreground mt-8 text-base leading-relaxed max-w-none">
+            The intersection of creative resistance, technological democratization, and contemplative philosophy. 
+            From 70s punk rock to 2024 vibe coding: same energy, different media.
           </p>
         }
       />
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {connections.map((connection, index) => (
+          <Card key={index} className="p-6 border-l-4 border-primary hover:shadow-lg hover:shadow-primary/20 transition-all duration-300">
+            <div className="space-y-4">
+              <div>
+                <h3 className="font-bold text-xl">{connection.title}</h3>
+                <p className="text-muted-foreground text-base leading-relaxed mt-2">
+                  {connection.description}
+                </p>
+              </div>
+            </div>
+          </Card>
+        ))}
+      </div>
+
+      <Card className="p-8 bg-gradient-to-br from-background via-background to-primary/5 border-2 border-primary/20">
+        <BilingualContent
+          portugueseContent={
+            <>
+              <h3 className="bible-subtitle text-left mb-6">A TESE CENTRAL</h3>
+              <div className="space-y-4 text-left">
+                <p className="leading-relaxed text-base max-w-none">
+                  Rick Rubin propõe que a IA no desenvolvimento de software é análoga ao punk rock na música: 
+                  ambos democratizam acesso, desafiam gatekeepers estabelecidos e priorizam expressão autêntica 
+                  sobre virtuosismo técnico.
+                </p>
+                <p className="leading-relaxed text-base mt-4 max-w-none">
+                  Nos anos 70, não era necessário ser músico virtuoso para formar uma banda—bastavam 
+                  três acordes e algo a dizer. Em 2024, não é necessário ser engenheiro de software 
+                  para construir aplicações—bastam prompts claros e visão criativa.
+                </p>
+                <p className="leading-relaxed text-base mt-4 max-w-none">
+                  THEVØIDN13 materializa essa filosofia: construído via co-criação humano-IA (Lovable), 
+                  documentado como processo artístico performativo, estruturado pela filosofia contemplativa 
+                  do Tao Te Ching aplicada ao código.
+                </p>
+                <p className="italic text-lg mt-6 font-medium max-w-none">
+                  "The punk rock of coding is here—three prompts and the truth."
+                </p>
+              </div>
+            </>
+          }
+          englishContent={
+            <>
+              <h3 className="bible-subtitle text-left mb-6">THE CENTRAL THESIS</h3>
+              <div className="space-y-4 text-left">
+                <p className="leading-relaxed text-base max-w-none">
+                  Rick Rubin proposes that AI in software development is analogous to punk rock in music: 
+                  both democratize access, challenge established gatekeepers, and prioritize authentic expression 
+                  over technical virtuosity.
+                </p>
+                <p className="leading-relaxed text-base mt-4 max-w-none">
+                  In the 70s, you didn't need to be a virtuoso musician to form a band—three chords and something 
+                  to say were enough. In 2024, you don't need to be a software engineer to build applications—clear 
+                  prompts and creative vision suffice.
+                </p>
+                <p className="leading-relaxed text-base mt-4 max-w-none">
+                  THEVØIDN13 materializes this philosophy: built via human-AI co-creation (Lovable), 
+                  documented as performative artistic process, structured by the contemplative philosophy 
+                  of Tao Te Ching applied to code.
+                </p>
+                <p className="italic text-lg mt-6 font-medium max-w-none">
+                  "The punk rock of coding is here—three prompts and the truth."
+                </p>
+              </div>
+            </>
+          }
+        />
+      </Card>
     </section>
   );
 }

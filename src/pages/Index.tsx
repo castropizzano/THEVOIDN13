@@ -15,7 +15,6 @@ import SpotifyPlaylist from "@/components/SpotifyPlaylist";
 import FilmGallery from "@/components/FilmGallery";
 import ComicsShowcase from "@/components/ComicsShowcase";
 import PhilosophyShowcase from "@/components/PhilosophyShowcase";
-import PunkPhilosophySection from "@/components/PunkPhilosophySection";
 import VibeCodingPlayground from "@/components/VibeCodingPlayground";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -1380,11 +1379,6 @@ const Index = () => {
             <PhilosophyShowcase />
           </div>
         </BilingualSection>
-
-        <Separator className="bg-border/30" />
-
-        {/* ===== PUNK PHILOSOPHY ===== */}
-        <PunkPhilosophySection />
 
         <Separator className="bg-border/30" />
 
