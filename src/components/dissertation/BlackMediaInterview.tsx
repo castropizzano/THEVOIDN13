@@ -29,7 +29,7 @@ export const BlackMediaInterview = () => {
       </div>
 
       {/* Single YouTube Video Player */}
-      <div className="aspect-video w-full rounded-lg overflow-hidden border border-border/50 shadow-lg shadow-primary/10 my-12 max-w-5xl mx-auto">
+      <div className="aspect-video w-full rounded-lg overflow-hidden border border-border/50 shadow-lg shadow-primary/10 my-12 max-w-6xl mx-auto">
         <iframe
           width="100%"
           height="100%"
