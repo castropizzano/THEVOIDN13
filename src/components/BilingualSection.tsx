@@ -3,21 +3,23 @@ interface BilingualSectionProps {
   className?: string;
   bgClassName?: string;
 }
+
 export const BilingualSection = ({
   children,
   className = "",
   bgClassName = ""
 }: BilingualSectionProps) => {
-  // Extract custom py-* class from className if present, otherwise use minimal spacing
+  // Usa espaçamento minimalista definitivo
   const customPadding = className.match(/py-\d+/)?.[0] || "py-16 sm:py-20 md:py-24";
   const otherClasses = className.replace(/py-\d+/g, "").trim();
   
-  // Sempre usar fundo Preto Sombra #1A1A1A (Bible v13)
-  return <section className={`${customPadding} bg-background`}>
+  return (
+    <section className={`${customPadding} bg-[#0C0C0C] ${bgClassName}`}>
       <div className={`max-w-6xl mx-auto px-4 sm:px-6 ${otherClasses}`}>
         {children}
       </div>
-    </section>;
+    </section>
+  );
 };
 
 interface BilingualContentProps {
@@ -25,22 +27,24 @@ interface BilingualContentProps {
   englishContent: React.ReactNode;
   alignTop?: boolean;
 }
+
 export const BilingualContent = ({
   portugueseContent,
   englishContent,
   alignTop = false
 }: BilingualContentProps) => {
-  // Aplica automaticamente classes de espaçamento nos títulos e parágrafos
-  const processContent = (content: React.ReactNode) => {
-    return content;
-  };
-
-  return <div className="bilingual-grid">
-      <div className="bilingual-col">
-        {processContent(portugueseContent)}
+  // Novo padrão: PT seguido de EN em formato vertical (nunca lado a lado)
+  return (
+    <div className="tvn-bilingual-block">
+      {/* Conteúdo PT (principal) */}
+      <div className="tvn-text-pt">
+        {portugueseContent}
       </div>
-      <div className="bilingual-col">
-        {processContent(englishContent)}
+      
+      {/* Conteúdo EN (logo abaixo, italic, opacidade reduzida) */}
+      <div className="tvn-text-en">
+        {englishContent}
       </div>
-    </div>;
+    </div>
+  );
 };
