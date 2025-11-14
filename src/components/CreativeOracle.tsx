@@ -204,10 +204,10 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
           
           <div className="space-y-6 sm:space-y-8">
             <div className="pb-6 border-b border-primary/20">
-              <h2 className="title text-primary tracking-tight text-left mb-2">
+              <h2 className="bible-title text-left mb-2">
                 ORÁCULO CRIATIVO
               </h2>
-              <p className="lang-pill text-left">
+              <p className="bible-subtitle text-left">
                 Creative Oracle
               </p>
             </div>
@@ -222,13 +222,13 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
             </div>
 
             <div className="space-y-3 pt-4">
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-left lang-pill">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-left bible-body">
                 <div>Sombras</div>
                 <div>Ruptura</div>
                 <div>Conexão</div>
                 <div>Método</div>
               </div>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-left lang-pill opacity-60">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-left bible-body opacity-60">
                 <div>Shadow</div>
                 <div>Rupture</div>
                 <div>Connection</div>
@@ -350,7 +350,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
             {/* Statistics */}
             <div className="space-y-4 pt-4">
               <div className="text-left">
-                <p className="lang-pill mb-4">
+                <p className="bible-subtitle mb-4">
                   Distribuição dos Arquétipos / Archetype Distribution
                 </p>
               </div>
@@ -371,21 +371,21 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
                       }`}
                     >
                       <div className="text-center space-y-2">
-                        <p className="title text-primary">
+                        <p className="bible-title">
                           {percentage}%
                         </p>
-                        <p className="lang-pill text-foreground/80">
+                        <p className="bible-body text-foreground/80">
                           {archetypeName}
                         </p>
                         <div className="pt-2">
                           <div className="h-2 bg-muted/20 rounded-full overflow-hidden">
                             <div 
-                              className="h-full bg-primary transition-all duration-1000"
+                              className="h-full bg-primary transition-all duration-300"
                               style={{ width: `${percentage}%` }}
                             />
                           </div>
                         </div>
-                        <p className="lang-pill">
+                        <p className="bible-body">
                           {value} pts
                         </p>
                       </div>
@@ -396,7 +396,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
 
               {/* Archetype Descriptions */}
               <div className="pt-6 space-y-4 border-t border-border/30">
-                <p className="lang-pill mb-4">
+                <p className="bible-subtitle mb-4">
                   Entenda os Arquétipos / Understanding the Archetypes
                 </p>
                 
@@ -439,8 +439,8 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
 
               {/* Total Score */}
               <div className="text-left pt-4 border-t border-border">
-                <p className="lang-pill">
-                  Pontuação Total / Total Score: <span className="subtitle text-foreground/70">{totalScore}</span>
+                <p className="bible-body">
+                  Pontuação Total / Total Score: <span className="bible-subtitle text-foreground/70">{totalScore}</span>
                 </p>
               </div>
             </div>
@@ -509,7 +509,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
                     />
                   ))}
                 </div>
-                <p className="lang-pill text-xs sm:text-sm">
+                <p className="bible-body text-xs sm:text-sm">
                   {currentQuestion + 1} / {questions.length}
                 </p>
               </div>

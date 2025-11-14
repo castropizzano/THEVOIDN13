@@ -161,10 +161,10 @@ export const ComicGenerator = () => {
   return (
     <Card className="w-full border-2 border-primary/30 bg-card/80 backdrop-blur">
       <CardHeader>
-        <CardTitle className="title text-primary">
+        <CardTitle className="bible-title">
           Gerador Experimental de Still
         </CardTitle>
-        <CardDescription className="lang-pill">
+        <CardDescription className="bible-subtitle">
           Still Generator — Powered by Nano Banana (Gemini 2.5 Flash Image)
         </CardDescription>
       </CardHeader>
@@ -218,14 +218,14 @@ export const ComicGenerator = () => {
           <TabsContent value="custom" className="space-y-4 mt-4">
             <div className="space-y-2">
               <div className="flex justify-between items-center">
-                <label className="subtitle">
+                <label className="bible-subtitle">
                   Criar Prompt Personalizado / Create Custom Prompt
                 </label>
-                <span className={`lang-pill ${
+                <span className={`bible-body ${
                   customScript.length < 50 
                     ? 'text-destructive' 
                     : customScript.length > 1500 
-                    ? 'text-destructive' 
+                    ? 'text-destructive'
                     : ''
                 }`}>
                   {customScript.length}/1500
