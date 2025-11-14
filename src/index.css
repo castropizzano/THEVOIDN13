@@ -149,11 +149,11 @@
   }
 
   /* ===============================================
-     SISTEMA GLOBAL DE LAYOUT E ESPAÇAMENTO THEVØIDN13
-     Grid Bilíngue Simétrico + Ritmo Cinematográfico
+     SISTEMA GLOBAL DE ESPAÇAMENTO TVN13 - VERSÃO FINAL
+     Ritmo Cinematográfico Uniforme em Todo o Portal
      =============================================== */
   
-  /* GRID BILÍNGUE - Base do sistema */
+  /* GRID BILÍNGUE - Base simétrica */
   .bilingual-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -168,78 +168,95 @@
     }
   }
   
-  /* COLUNAS BILÍNGUES - Sempre mesma altura */
+  /* COLUNAS BILÍNGUES - Altura igual */
   .bilingual-col {
     display: flex;
     flex-direction: column;
   }
   
-  /* SISTEMA UNIVERSAL DE ESPAÇAMENTO */
-  
-  /* TÍTULOS H1, H2, H3 - 48px superior / 20px inferior */
+  /* TÍTULOS H1, H2, H3 - 0px superior (primeiro) / 24px inferior */
+  .bible-title,
   .tvn-h1,
   .tvn-h2,
-  .tvn-h3,
-  h1.tvn-title,
-  h2.tvn-title,
-  h3.tvn-title {
-    margin-top: 48px;
-    margin-bottom: 20px;
-  }
-  
-  /* Primeiro título sem margin-top */
-  .tvn-h1:first-child,
-  .tvn-h2:first-child,
-  .tvn-h3:first-child,
-  .bilingual-col > h1:first-child,
-  .bilingual-col > h2:first-child,
-  .bilingual-col > h3:first-child {
+  .tvn-h3 {
     margin-top: 0;
+    margin-bottom: 24px;
   }
   
-  /* SUBTÍTULOS - 32px superior / 16px inferior */
-  .tvn-subtitle,
-  h4.tvn-subtitle,
-  h5.tvn-subtitle {
-    margin-top: 32px;
+  /* TÍTULOS DE SEÇÃO (4.1, 7.1, 10.) - 64px superior / 32px inferior */
+  .section-major-title {
+    margin-top: 64px;
+    margin-bottom: 32px;
+  }
+  
+  /* SUBTÍTULOS INTERNOS - 40px superior / 16px inferior */
+  .bible-subtitle,
+  .tvn-subtitle {
+    margin-top: 40px;
     margin-bottom: 16px;
   }
   
-  /* PARÁGRAFOS - 20px inferior */
+  /* Primeiro subtítulo sem margin-top */
+  .bilingual-col > .bible-subtitle:first-child,
+  .bible-subtitle:first-child,
+  .tvn-subtitle:first-child {
+    margin-top: 0;
+  }
+  
+  /* Subtítulo logo após título - mantém 24px */
+  .bible-title + .bible-subtitle,
+  .tvn-h1 + .tvn-subtitle,
+  .tvn-h2 + .tvn-subtitle {
+    margin-top: 24px;
+  }
+  
+  /* PARÁGRAFOS - 20px entre parágrafos */
+  .bible-body,
   .tvn-paragraph,
   .bilingual-col > p {
     margin-bottom: 20px;
   }
   
+  .bible-body:last-child,
   .tvn-paragraph:last-child,
   .bilingual-col > p:last-child {
     margin-bottom: 0;
   }
   
-  /* IMAGENS - 48px superior / 40px inferior */
+  /* IMAGENS - 40px superior / 32px inferior */
   .tvn-image,
   .bilingual-col > img,
-  .bilingual-col > figure {
-    margin-top: 48px;
-    margin-bottom: 40px;
+  .bilingual-col > figure,
+  img {
+    margin-top: 40px;
+    margin-bottom: 32px;
   }
   
-  /* BLOCOS DE CONTEÚDO GERAL - 48px superior / 32px inferior */
+  .bilingual-col > img:first-child,
+  .bilingual-col > figure:first-child {
+    margin-top: 0;
+  }
+  
+  /* SEÇÃO → PRÓXIMA SEÇÃO - 80px */
+  section + section {
+    margin-top: 80px;
+  }
+  
+  /* BLOCOS DE CONTEÚDO - Espaçamento padrão */
   .tvn-block,
-  .bilingual-col > div:not(:first-child),
-  .bilingual-col > section {
-    margin-top: 48px;
+  .bilingual-col > div:not(:first-child) {
+    margin-top: 40px;
     margin-bottom: 32px;
   }
   
-  /* CITAÇÕES E DESTAQUES - 48px superior / 32px inferior */
+  /* CITAÇÕES E BLOCKQUOTES - 40px superior / 32px inferior */
   .tvn-quote,
-  .bilingual-col > blockquote {
-    margin-top: 48px;
+  blockquote {
+    margin-top: 40px;
     margin-bottom: 32px;
   }
   
-  /* LISTAS - 20px inferior entre itens */
+  /* LISTAS - 20px entre itens */
   .tvn-list,
   .bilingual-col > ul,
   .bilingual-col > ol {
@@ -252,7 +269,7 @@
     margin-bottom: 8px;
   }
   
-  /* ESPAÇAMENTO INTERNO DE CARDS E CONTAINERS */
+  /* ESPAÇAMENTO INTERNO DE CARDS */
   .tvn-card-spacing > * + * {
     margin-top: 20px;
   }
@@ -262,23 +279,9 @@
     min-height: 100%;
   }
   
-  /* COMPATIBILIDADE COM CLASSES ANTIGAS */
-  .section-title {
-    margin-top: 48px;
-    margin-bottom: 20px;
-  }
-  
-  .section-subtitle {
-    margin-top: 32px;
-    margin-bottom: 16px;
-  }
-  
-  .section-paragraph {
-    margin-bottom: 20px;
-  }
-  
-  .section-paragraph:last-child {
-    margin-bottom: 0;
+  /* REMOVER MARGENS EXTRAS EM PRIMEIROS ELEMENTOS */
+  .bilingual-col > *:first-child {
+    margin-top: 0 !important;
   }
 
   /* BIBLE V13 - LAYOUT DUPLA COLUNA (Migrado para sistema global) */
@@ -302,11 +305,13 @@
     }
   }
   
-  /* LABELS BILÍNGUES - <PORTUGUÊS> <INGLÊS> */
+  /* ===============================================
+     TAGS DE IDIOMA - REMOVIDAS DO SISTEMA
+     =============================================== */
+  
+  /* Tag removida conforme Sistema TVN13 Final */
   .lang-pill {
-    @apply text-xs font-medium uppercase tracking-wider text-foreground/60;
-    font-family: 'Manrope', sans-serif;
-    font-weight: 500;
+    display: none;
   }
   
   /* TÍTULOS PRINCIPAIS - Todo o site */

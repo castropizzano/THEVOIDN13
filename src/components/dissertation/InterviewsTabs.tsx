@@ -88,7 +88,6 @@ export const InterviewsTabs = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing mt-8">
             <div>
-              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">
                   Esta entrevista é fundamental para a compreensão dos processos criativos que permeiam o universo do skate punk. 
@@ -115,7 +114,6 @@ export const InterviewsTabs = () => {
             </div>
 
             <div>
-              <p className="bible-lang-tag">&lt;ENGLISH&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">
                   This interview is fundamental to understanding the creative processes that permeate the skate punk universe. 
@@ -220,7 +218,6 @@ export const InterviewsTabs = () => {
 
           <div className="bible-bilingual-grid bible-section-spacing mt-8">
             <div>
-              <p className="bible-lang-tag">&lt;PORTUGUÊS&gt;</p>
               <div className="space-y-6 mt-6">
                 <p className="bible-body">
                   Esta entrevista coletiva reúne todos os membros da crew LowPressure™ para uma conversa aberta sobre o LowMovie™. 

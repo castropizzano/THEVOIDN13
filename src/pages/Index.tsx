@@ -115,7 +115,6 @@ const Index = () => {
         {/* ===== SUBTITLE ===== */}
         <BilingualSection className="py-8 sm:py-12 md:py-16">
           <BilingualContent
-            showLanguageTags={true}
             portugueseContent={
               <>
                 <h2 className="bible-subtitle text-base sm:text-lg md:text-xl tvn-h2">[UM CORPO À DERIVA ENTRE O RUÍDO E O SILÊNCIO]</h2>
@@ -1884,7 +1883,6 @@ const Index = () => {
             <div className="grid md:grid-cols-2 gap-8 items-start">
               <div className="space-y-6 flex flex-col justify-between">
                 <>
-                  <p className="lang-pill">&lt;PORTUGUÊS&gt;</p>
                   <p className="bible-body mt-4">
                     Esta visualização representa o modelo imaginado para o action figure do personagem e define o mood visual das filmagens que serão realizadas pelo autor do projeto. A estética, iluminação e atmosfera foram desenvolvidas para traduzir o universo conceitual de THEVØIDN13.
                   </p>
@@ -1896,7 +1894,6 @@ const Index = () => {
                   </p>
                 </>
                 <>
-                  <p className="lang-pill">&lt;ENGLISH&gt;</p>
                   <p className="bible-body mt-4">
                     This visualization represents the envisioned model for the character's action figure and defines the visual mood for filming to be carried out by the project's author. The aesthetics, lighting, and atmosphere were developed to translate the conceptual universe of THEVØIDN13.
                   </p>
