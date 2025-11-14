@@ -9,6 +9,7 @@ import { ProtectedRoute } from "@/components/ProtectedRoute";
 import ScrollToTop from "@/components/ScrollToTop";
 import { usePageView } from "@/hooks/useAnalytics";
 import { PWAInstallPrompt } from "@/components/PWAInstallPrompt";
+import { TypographyControlPanel } from "@/components/TypographyControlPanel";
 import Index from "./pages/Index";
 import Dissertacao from "./pages/Dissertacao";
 import Autor from "./pages/Autor";
@@ -27,6 +28,7 @@ const AppContent = () => {
   return (
     <>
       <PWAInstallPrompt />
+      <TypographyControlPanel />
       <Routes>
         <Route path="/" element={<ProtectedRoute><Index /></ProtectedRoute>} />
         <Route path="/lowmovie" element={<ProtectedRoute><Dissertacao /></ProtectedRoute>} />
