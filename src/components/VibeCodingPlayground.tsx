@@ -88,29 +88,30 @@ export default function VibeCodingPlayground() {
   };
 
   return (
-    <section className="py-16 space-y-8">
-      <BilingualContent
-        portugueseContent={
-          <>
-            <h3 className="bible-subtitle text-left section-title">VIBE CODING PLAYGROUND</h3>
-            <p className="text-left text-muted-foreground mt-4 text-base leading-relaxed max-w-none section-paragraph">
-              Experimente o desenvolvimento intuitivo mediado por IA. Escreva o que você imagina, 
-              veja como a intenção criativa se transforma em código. Teoria encontra prática.
-            </p>
-          </>
-        }
-        englishContent={
-          <>
-            <h3 className="bible-subtitle text-left section-title">VIBE CODING PLAYGROUND</h3>
-            <p className="text-left text-muted-foreground mt-4 text-base leading-relaxed max-w-none section-paragraph">
-              Experience intuitive AI-mediated development. Write what you imagine, 
-              watch creative intention transform into code. Theory meets practice.
-            </p>
-          </>
-        }
-      />
+    <section className="py-12 sm:py-16 md:py-20 bg-background">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-8">
+        <BilingualContent
+          portugueseContent={
+            <>
+              <h3 className="bible-subtitle text-left section-title">VIBE CODING PLAYGROUND</h3>
+              <p className="text-left text-muted-foreground mt-4 text-base leading-relaxed max-w-none section-paragraph">
+                Experimente o desenvolvimento intuitivo mediado por IA. Escreva o que você imagina, 
+                veja como a intenção criativa se transforma em código. Teoria encontra prática.
+              </p>
+            </>
+          }
+          englishContent={
+            <>
+              <h3 className="bible-subtitle text-left section-title">VIBE CODING PLAYGROUND</h3>
+              <p className="text-left text-muted-foreground mt-4 text-base leading-relaxed max-w-none section-paragraph">
+                Experience intuitive AI-mediated development. Write what you imagine, 
+                watch creative intention transform into code. Theory meets practice.
+              </p>
+            </>
+          }
+        />
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Input Side */}
         <Card className="p-6 space-y-4 border-l-4 border-primary">
           <div className="flex items-center gap-3 mb-4">
@@ -241,6 +242,7 @@ export default function VibeCodingPlayground() {
           }
         />
       </Card>
+      </div>
     </section>
   );
 }

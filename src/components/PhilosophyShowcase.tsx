@@ -133,7 +133,8 @@ export default function PhilosophyShowcase() {
 
   return (
     <section className="space-y-12">
-      <BilingualContent
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <BilingualContent
         portugueseContent={
           <>
             <h3 className="bible-subtitle text-left section-title">FILOSOFIA & METODOLOGIA</h3>
@@ -228,60 +229,62 @@ export default function PhilosophyShowcase() {
         ))}
       </div>
 
-      <Card className="p-8 bg-gradient-to-br from-background via-background to-primary/5 border-2 border-primary/20 section-title">
-        <BilingualContent
-          portugueseContent={
-            <>
-              <h3 className="bible-subtitle text-left mb-6 section-subtitle">A TESE CENTRAL</h3>
-              <div className="space-y-4 text-left">
-                <p className="leading-relaxed text-base max-w-none section-paragraph">
-                  Rick Rubin propõe que a IA no desenvolvimento de software é análoga ao punk rock na música: 
-                  ambos democratizam acesso, desafiam gatekeepers estabelecidos e priorizam expressão autêntica 
-                  sobre virtuosismo técnico.
-                </p>
-                <p className="leading-relaxed text-base max-w-none section-paragraph">
-                  Nos anos 70, não era necessário ser músico virtuoso para formar uma banda—bastavam 
-                  três acordes e algo a dizer. Em 2024, não é necessário ser engenheiro de software 
-                  para construir aplicações—bastam prompts claros e visão criativa.
-                </p>
-                <p className="leading-relaxed text-base max-w-none section-paragraph">
-                  THEVØIDN13 materializa essa filosofia: construído via co-criação humano-IA (Lovable), 
-                  documentado como processo artístico performativo, estruturado pela filosofia contemplativa 
-                  do Tao Te Ching aplicada ao código.
-                </p>
-                <blockquote className="text-primary italic text-lg font-medium border-l-4 border-primary pl-4 mt-6 section-paragraph">
-                  "The punk rock of coding is here—three prompts and the truth."
-                </blockquote>
-              </div>
-            </>
-          }
-          englishContent={
-            <>
-              <h3 className="bible-subtitle text-left mb-6 section-subtitle">THE CENTRAL THESIS</h3>
-              <div className="space-y-4 text-left">
-                <p className="leading-relaxed text-base max-w-none section-paragraph">
-                  Rick Rubin proposes that AI in software development is analogous to punk rock in music: 
-                  both democratize access, challenge established gatekeepers, and prioritize authentic expression 
-                  over technical virtuosity.
-                </p>
-                <p className="leading-relaxed text-base max-w-none section-paragraph">
-                  In the 70s, you didn't need to be a virtuoso musician to form a band—three chords and something 
-                  to say were enough. In 2024, you don't need to be a software engineer to build applications—clear 
-                  prompts and creative vision suffice.
-                </p>
-                <p className="leading-relaxed text-base max-w-none section-paragraph">
-                  THEVØIDN13 materializes this philosophy: built via human-AI co-creation (Lovable), 
-                  documented as performative artistic process, structured by the contemplative philosophy 
-                  of Tao Te Ching applied to code.
-                </p>
-                <blockquote className="text-primary italic text-lg font-medium border-l-4 border-primary pl-4 mt-6 section-paragraph">
-                  "The punk rock of coding is here—three prompts and the truth."
-                </blockquote>
-              </div>
-            </>
-          }
-        />
-      </Card>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <Card className="p-8 bg-gradient-to-br from-background via-background to-primary/5 border-2 border-primary/20 section-title">
+          <BilingualContent
+            portugueseContent={
+              <>
+                <h3 className="bible-subtitle text-left mb-6 section-subtitle">A TESE CENTRAL</h3>
+                <div className="space-y-4 text-left">
+                  <p className="leading-relaxed text-base max-w-none section-paragraph">
+                    Rick Rubin propõe que a IA no desenvolvimento de software é análoga ao punk rock na música: 
+                    ambos democratizam acesso, desafiam gatekeepers estabelecidos e priorizam expressão autêntica 
+                    sobre virtuosismo técnico.
+                  </p>
+                  <p className="leading-relaxed text-base max-w-none section-paragraph">
+                    Nos anos 70, não era necessário ser músico virtuoso para formar uma banda—bastavam 
+                    três acordes e algo a dizer. Em 2024, não é necessário ser engenheiro de software 
+                    para construir aplicações—bastam prompts claros e visão criativa.
+                  </p>
+                  <p className="leading-relaxed text-base max-w-none section-paragraph">
+                    THEVØIDN13 materializa essa filosofia: construído via co-criação humano-IA (Lovable), 
+                    documentado como processo artístico performativo, estruturado pela filosofia contemplativa 
+                    do Tao Te Ching aplicada ao código.
+                  </p>
+                  <blockquote className="text-primary italic text-lg font-medium border-l-4 border-primary pl-4 mt-6 section-paragraph">
+                    "The punk rock of coding is here—three prompts and the truth."
+                  </blockquote>
+                </div>
+              </>
+            }
+            englishContent={
+              <>
+                <h3 className="bible-subtitle text-left mb-6 section-subtitle">THE CENTRAL THESIS</h3>
+                <div className="space-y-4 text-left">
+                  <p className="leading-relaxed text-base max-w-none section-paragraph">
+                    Rick Rubin proposes that AI in software development is analogous to punk rock in music: 
+                    both democratize access, challenge established gatekeepers, and prioritize authentic expression 
+                    over technical virtuosity.
+                  </p>
+                  <p className="leading-relaxed text-base max-w-none section-paragraph">
+                    In the 70s, you didn't need to be a virtuoso musician to form a band—three chords and something 
+                    to say were enough. In 2024, you don't need to be a software engineer to build applications—clear 
+                    prompts and creative vision suffice.
+                  </p>
+                  <p className="leading-relaxed text-base max-w-none section-paragraph">
+                    THEVØIDN13 materializes this philosophy: built via human-AI co-creation (Lovable), 
+                    documented as performative artistic process, structured by the contemplative philosophy 
+                    of Tao Te Ching applied to code.
+                  </p>
+                  <blockquote className="text-primary italic text-lg font-medium border-l-4 border-primary pl-4 mt-6 section-paragraph">
+                    "The punk rock of coding is here—three prompts and the truth."
+                  </blockquote>
+                </div>
+              </>
+            }
+          />
+        </Card>
+      </div>
     </section>
   );
 }
