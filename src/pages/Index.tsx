@@ -14,7 +14,6 @@ import { CookieConsent } from "@/components/CookieConsent";
 import SpotifyPlaylist from "@/components/SpotifyPlaylist";
 import FilmGallery from "@/components/FilmGallery";
 import ComicsShowcase from "@/components/ComicsShowcase";
-import PhilosophyShowcase from "@/components/PhilosophyShowcase";
 import PunkPhilosophySection from "@/components/PunkPhilosophySection";
 import VibeCodingPlayground from "@/components/VibeCodingPlayground";
 import { Button } from "@/components/ui/button";
@@ -1373,11 +1372,6 @@ const Index = () => {
           {/* ASSINATURA SONORA - Spotify Playlist */}
           <div className="mt-12">
             <SpotifyPlaylist />
-          </div>
-
-          {/* FILOSOFIA & METODOLOGIA - Philosophy Showcase */}
-          <div className="mt-16">
-            <PhilosophyShowcase />
           </div>
         </BilingualSection>
 
