@@ -72,7 +72,7 @@ const Dissertacao = () => {
         </section>
 
         {/* Título */}
-        <BilingualSection className="py-16">
+        <BilingualSection>
           <div className="bible-bilingual-grid">
             <div>
               <h1 className="bible-title">LOWMOVIE™ E O LABIRINTO CRIATIVO</h1>
@@ -92,7 +92,7 @@ const Dissertacao = () => {
         <Separator className="bg-border/30" />
 
         {/* Processos Matriciais */}
-        <BilingualSection className="py-16">
+        <BilingualSection>
           <div className="bible-bilingual-grid bible-block-spacing">
             <div>
               <h2 className="bible-title">PROCESSOS MATRICIAIS</h2>
@@ -128,7 +128,7 @@ const Dissertacao = () => {
         <Separator className="bg-border/30" />
 
         {/* CasaTrezeStudio */}
-        <BilingualSection className="py-16">
+        <BilingualSection>
           <div className="bible-bilingual-grid bible-block-spacing">
             <div className="border-l-4 border-primary pl-6">
               <h2 className="bible-title">CASATREZESTUDIO®</h2>
@@ -198,7 +198,7 @@ const Dissertacao = () => {
         <Separator className="bg-border/30" />
 
         {/* LowPressure */}
-        <BilingualSection className="py-16">
+        <BilingualSection>
           <div className="bible-block-spacing border-l-4 border-primary pl-6">
             <h2 className="bible-title">LOWPRESSURE™</h2>
             <p className="bible-subtitle text-muted-foreground mt-2">2020-Presente / 2020-Present</p>
@@ -243,7 +243,7 @@ const Dissertacao = () => {
         <Separator className="bg-border/30" />
 
         {/* LowMovie */}
-        <BilingualSection className="py-16">
+        <BilingualSection>
           <div className="bible-block-spacing border-l-4 border-primary pl-6">
             <h2 className="bible-title">LOWMOVIE™</h2>
             <p className="bible-subtitle text-muted-foreground mt-2">2019-Presente / 2019-Present</p>
@@ -294,7 +294,7 @@ const Dissertacao = () => {
         <Separator className="bg-border/30" />
 
         {/* Introdução - Rastros nas Ruas */}
-        <BilingualSection className="py-16">
+        <BilingualSection>
           <div className="bible-bilingual-grid bible-block-spacing">
             <div>
               <h2 className="bible-title">INTRODUÇÃO — RASTROS NAS RUAS</h2>
@@ -326,7 +326,7 @@ const Dissertacao = () => {
         <Separator className="bg-border/30" />
 
         {/* A VideoParte como Linguagem */}
-        <BilingualSection className="py-16">
+        <BilingualSection>
           <div className="bible-bilingual-grid bible-block-spacing">
             <div>
               <h2 className="bible-title">A VIDEOPARTE COMO LINGUAGEM</h2>
@@ -480,7 +480,7 @@ const Dissertacao = () => {
         <Separator className="bg-border/30" />
 
         {/* Informação Acadêmica */}
-        <BilingualSection className="py-16">
+        <BilingualSection>
           <div className="bible-bilingual-grid bible-block-spacing">
             <div>
               <h2 className="bible-title">MESTRADO EM CINEMA E ARTES DO VÍDEO</h2>
@@ -514,7 +514,7 @@ const Dissertacao = () => {
         <Separator className="bg-border/30" />
 
         {/* Pesquisa Acadêmica */}
-        <BilingualSection className="py-16">
+        <BilingualSection>
           <div className="bible-bilingual-grid bible-block-spacing">
             <div>
               <h2 className="bible-title">PESQUISA ACADÊMICA</h2>
@@ -544,7 +544,7 @@ const Dissertacao = () => {
         <Separator className="bg-border/30" />
 
         {/* Colaboração e Coletivos */}
-        <BilingualSection className="py-16">
+        <BilingualSection>
           <div className="bible-bilingual-grid bible-block-spacing">
             <div>
               <h2 className="bible-title">COLABORAÇÃO E COLETIVOS</h2>
@@ -574,7 +574,7 @@ const Dissertacao = () => {
         <Separator className="bg-border/30" />
 
         {/* Documentação do Processo */}
-        <BilingualSection className="py-16">
+        <BilingualSection>
           <div className="bible-bilingual-grid bible-block-spacing">
             <div>
               <h2 className="bible-title">DOCUMENTAÇÃO DO PROCESSO</h2>
@@ -608,7 +608,7 @@ const Dissertacao = () => {
         <Separator className="bg-border/30" />
 
         {/* Documentation - ÚLTIMA SEÇÃO */}
-        <BilingualSection className="py-16">
+        <BilingualSection>
           <div className="bilingual-grid bible-block-spacing">
             <div className="bilingual-col">
               <h2 className="bible-title">DOCUMENTAÇÃO</h2>
