@@ -8,7 +8,7 @@ export const MindMap = () => {
 
   return (
     <>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto">
         <Card className="bg-card/80 border-primary/30 hover:border-primary transition-colors">
           <CardHeader>
             <CardTitle className="heading-2 text-primary">
