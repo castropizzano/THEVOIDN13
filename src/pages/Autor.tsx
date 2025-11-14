@@ -268,7 +268,7 @@ const Autor = () => {
         <Separator className="bg-border/30" />
 
         {/* Trajetória */}
-        <BilingualSection className="py-16">
+        <BilingualSection>
           <div className="bible-bilingual-grid bible-block-spacing">
             <div>
               <h2 className="bible-title">TRAJETÓRIA</h2>

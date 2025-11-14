@@ -354,7 +354,7 @@ const Dissertacao = () => {
         <Separator className="bg-border/30" />
 
         {/* Metodologia - Lowbyrinth™ como Método */}
-        <BilingualSection className="py-16">
+        <BilingualSection>
           <div className="bible-bilingual-grid bible-block-spacing">
             <div>
               <h2 className="bible-title">METODOLOGIA [LOWBYRINTH™ COMO MÉTODO]</h2>
