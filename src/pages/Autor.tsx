@@ -580,7 +580,7 @@ const Autor = () => {
                   </div>
                 </div>
 
-                <div className="max-w-4xl mx-auto py-12">
+                <div className="max-w-6xl mx-auto py-12">
                   <blockquote className="bible-body text-left">
                     <p className="bible-body mb-6">Este memorial não guarda o que passou.</p>
                     <p className="bible-body mb-6">Guarda o que ainda pulsa.</p>
@@ -613,7 +613,7 @@ const Autor = () => {
                   </div>
                 </div>
 
-                <div className="max-w-4xl mx-auto py-12">
+                <div className="max-w-6xl mx-auto py-12">
                   <blockquote className="bible-body text-left">
                     <p className="bible-body mb-6">This memorial does not keep what has passed.</p>
                     <p className="bible-body mb-6">It keeps what still pulses.</p>
