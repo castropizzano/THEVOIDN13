@@ -15,7 +15,7 @@ interface PhilosophyReference {
 }
 
 export default function PhilosophyShowcase() {
-  const { t } = useTranslation();
+  const { t, language } = useTranslation();
   const [mediaDialog, setMediaDialog] = useState<{
     open: boolean;
     title: string;
@@ -114,24 +114,26 @@ export default function PhilosophyShowcase() {
     }
   };
 
-  const connections = [
-    {
-      title: "PUNK ROCK (1976-1979)",
-      description: "Democratização da música: três acordes e a verdade. Resistência ao virtuosismo elitista, acesso radical à expressão.",
-    },
-    {
-      title: "VIBE CODING (2024)",
-      description: "Democratização do código: prompts e intuição. Resistência ao elitismo técnico, acesso radical ao desenvolvimento.",
-    },
-    {
-      title: "CINEMA PUNK (1977-1995)",
-      description: "Estética da precariedade: Kids, Fallen Angels, The Warriors. Beleza no imperfeito, verdade no marginal.",
-    },
-    {
-      title: "TAO DO CÓDIGO (400 AC - 2024)",
-      description: "Wu Wei criativo: fluxo natural, não-ação proposital. Da filosofia ancestral ao desenvolvimento contemporâneo.",
-    }
-  ];
+  const getConnections = () => {
+    return [
+      {
+        title: "PUNK ROCK (1976-1979)",
+        description: t("connectionPunkRock"),
+      },
+      {
+        title: "VIBE CODING (2024)",
+        description: t("connectionVibeCoding"),
+      },
+      {
+        title: "CINEMA PUNK (1977-1995)",
+        description: t("connectionCinemaPunk"),
+      },
+      {
+        title: language === "pt" ? "TAO DO CÓDIGO (400 AC - 2024)" : "TAO OF CODE (400 BC - 2024)",
+        description: t("connectionTaoCoding"),
+      }
+    ];
+  };
 
   return (
     <section className="space-y-12">

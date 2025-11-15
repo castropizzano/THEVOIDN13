@@ -789,20 +789,8 @@ const Index = () => {
           </div>
 
           <BilingualContent
-            portugueseContent={
-              <>
-                <p className="bible-body">
-                  A letra Ø não é apenas uma escolha estética, é uma declaração simbólica, essa vogal cortada carrega múltiplas camadas de significado que se entrelaçam na construção conceitual do projeto.
-                </p>
-              </>
-            }
-            englishContent={
-              <>
-                <p className="bible-body">
-                  The letter Ø is not just an aesthetic choice, it is a symbolic declaration, this slashed vowel carries multiple layers of meaning that intertwine in the project's conceptual construction.
-                </p>
-              </>
-            }
+            portugueseContent={<p className="bible-body">{t("symbolIntro")}</p>}
+            englishContent={<p className="bible-body">{t("symbolIntro")}</p>}
           />
 
           <div className="grid md:grid-cols-2 gap-12 mt-12">
@@ -1883,30 +1871,22 @@ const Index = () => {
           <div>
             
             <div className="grid md:grid-cols-2 gap-8 items-start">
-              <div className="space-y-6 flex flex-col justify-between">
-                <>
-                  <p className="bible-body mt-4">
-                    Esta visualização representa o modelo imaginado para o action figure do personagem e define o mood visual das filmagens que serão realizadas pelo autor do projeto. A estética, iluminação e atmosfera foram desenvolvidas para traduzir o universo conceitual de THEVØIDN13.
-                  </p>
-                  <p className="bible-body mt-4">
-                    O protótipo funciona como materialização física da persona THEVØIDN13 — uma presença que habita o limiar entre o visível e o invisível, entre a carne e o código. A máscara branca, o capuz negro e a jaqueta de couro não são apenas elementos estéticos, mas símbolos de uma identidade que recusa a exposição total.
-                  </p>
-                  <p className="bible-body mt-4">
-                    Esta figura será utilizada em futuras produções audiovisuais como referência de iluminação, composição e atmosfera. O protótipo é tanto documento quanto performance — um objeto que existe simultaneamente como conceito artístico e ferramenta técnica de produção.
-                  </p>
-                </>
-                <>
-                  <p className="bible-body mt-4">
-                    This visualization represents the envisioned model for the character's action figure and defines the visual mood for filming to be carried out by the project's author. The aesthetics, lighting, and atmosphere were developed to translate the conceptual universe of THEVØIDN13.
-                  </p>
-                  <p className="bible-body mt-4">
-                    The prototype functions as a physical materialization of the THEVØIDN13 persona — a presence that inhabits the threshold between visible and invisible, between flesh and code. The white mask, black hood, and leather jacket are not merely aesthetic elements, but symbols of an identity that refuses total exposure.
-                  </p>
-                  <p className="bible-body mt-4">
-                    This figure will be used in future audiovisual productions as a reference for lighting, composition, and atmosphere. The prototype is both document and performance — an object that exists simultaneously as artistic concept and technical production tool.
-                  </p>
-                </>
-              </div>
+              <BilingualContent
+                portugueseContent={
+                  <div className="space-y-6">
+                    <p className="bible-body mt-4">{t("prototypeDesc1")}</p>
+                    <p className="bible-body mt-4">{t("prototypeDesc2")}</p>
+                    <p className="bible-body mt-4">{t("prototypeDesc3")}</p>
+                  </div>
+                }
+                englishContent={
+                  <div className="space-y-6">
+                    <p className="bible-body mt-4">{t("prototypeDesc1")}</p>
+                    <p className="bible-body mt-4">{t("prototypeDesc2")}</p>
+                    <p className="bible-body mt-4">{t("prototypeDesc3")}</p>
+                  </div>
+                }
+              />
               <div className="h-full flex items-stretch">
                 <img 
                   src={actionFigureNew} 
