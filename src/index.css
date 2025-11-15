@@ -75,7 +75,6 @@
     line-height: 1.6;
     text-transform: none;
     margin-bottom: 20px;
-    max-width: 75ch;
   }
   
   .bible-body:last-child {
@@ -197,7 +196,6 @@
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     margin-bottom: 20px;
-    max-width: 75ch;
   }
 
   .tvn-paragraph:last-child {
