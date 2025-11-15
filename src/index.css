@@ -16,13 +16,19 @@
   .bible-title {
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
-    font-size: 21.33px;
+    font-size: 48px;
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: left;
-    /* SISTEMA TVN13: 48px superior / 20px inferior */
-    margin-top: 48px;
-    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .bible-title {
+      font-size: calc(48px * 0.85);
+    }
   }
   
   /* Primeiro título sem margin-top */
@@ -31,24 +37,41 @@
     margin-top: 0;
   }
   
-  @media (max-width: 768px) {
-    .bible-title {
-      font-size: 18px;
-      margin-top: 32px;
-    }
-  }
-  
-  /* BIBLE V13 - SUBTÍTULOS BILÍNGUES (15pt = 20px) */
+  /* BIBLE V13 - SUBTÍTULOS BILÍNGUES H2 (15pt = 36px) */
   .bible-subtitle {
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 36px;
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: left;
-    /* SISTEMA TVN13: 32px superior / 16px inferior */
-    margin-top: 32px;
-    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+  
+  @media (max-width: 768px) {
+    .bible-subtitle {
+      font-size: calc(36px * 0.85);
+    }
+  }
+  
+  /* H3 - TÍTULOS DE SUBSEÇÃO */
+  .tvn-h3 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .tvn-h3 {
+      font-size: calc(24px * 0.85);
+    }
   }
   
   /* Primeiro subtítulo sem margin-top */
@@ -70,35 +93,39 @@
     }
   }
   
-  /* BIBLE V13 - TAGS DE IDIOMA (13pt = 17.33px) */
+  /* BIBLE V13 - TAGS DE IDIOMA - Estilo destacado */
   .bible-lang-tag {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Monaco', 'Courier New', monospace;
     font-weight: 500;
-    font-size: 17.33px;
+    font-size: 14px;
     text-transform: uppercase;
     color: #C40000;
     text-align: left;
-    margin-top: 0;
-    margin-bottom: 0;
+    background: rgba(196, 0, 0, 0.1);
+    padding: 8px 16px;
+    border-left: 3px solid #C40000;
+    margin-bottom: 32px;
+    display: inline-block;
   }
   
   @media (max-width: 768px) {
     .bible-lang-tag {
-      font-size: 14px;
+      font-size: 12px;
+      padding: 6px 12px;
     }
   }
   
-  /* BIBLE V13 - TEXTOS CORPO (13pt = 17.33px) */
+  /* BIBLE V13 - TEXTOS CORPO (18px base) */
   .bible-body {
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
-    font-size: 17.33px;
+    font-size: 18px;
     color: #E6E6E6;
     text-align: justify;
-    line-height: 1.6;
+    line-height: 1.8;
     text-transform: none;
-    /* SISTEMA TVN13: 20px inferior entre parágrafos */
-    margin-bottom: 20px;
+    max-width: 75ch;
+    margin-bottom: 24px;
   }
   
   .bible-body:last-child {
@@ -107,8 +134,8 @@
   
   @media (max-width: 768px) {
     .bible-body {
-      font-size: 15px;
-      line-height: 1.65;
+      font-size: calc(18px * 0.85);
+      line-height: 1.8;
     }
   }
   
@@ -126,14 +153,25 @@
     text-decoration: underline;
   }
   
-  /* BIBLE V13 - ESPAÇAMENTO ENTRE SEÇÕES (ATUALIZADO SISTEMA TVN13) */
+  /* BIBLE V13 - ESPAÇAMENTO ENTRE SEÇÕES */
   .bible-section-spacing {
-    margin-bottom: 32px;
+    margin-bottom: 120px;
   }
   
-  /* BIBLE V13 - ESPAÇAMENTO ANTES DE NOVO BLOCO (ATUALIZADO SISTEMA TVN13) */
+  /* BIBLE V13 - ESPAÇAMENTO ANTES DE NOVO BLOCO */
   .bible-block-spacing {
-    margin-top: 48px;
+    margin-top: 120px;
+  }
+  
+  /* Padding interno das seções */
+  .section-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  /* Espaçamento após títulos */
+  .title-spacing {
+    margin-bottom: 32px;
   }
   
   /* IMAGENS DENTRO DO SISTEMA BILÍNGUE */
@@ -237,9 +275,22 @@
     margin-top: 0;
   }
   
-  /* SEÇÃO → PRÓXIMA SEÇÃO - 80px */
+  /* SEÇÃO → PRÓXIMA SEÇÃO - 120px */
   section + section {
-    margin-top: 80px;
+    margin-top: 120px;
+  }
+  
+  /* Separador visual entre seções */
+  .section-divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 120px 0;
+  }
+  
+  /* Smooth scroll */
+  html {
+    scroll-behavior: smooth;
   }
   
   /* BLOCOS DE CONTEÚDO - Espaçamento padrão */
@@ -577,6 +628,11 @@ All colors MUST be HSL.
     /* Mobile scroll optimization */
     -webkit-overflow-scrolling: touch;
     overscroll-behavior-y: none;
+  }
+  
+  /* Garantir text-align justify em todos os parágrafos */
+  p {
+    text-align: justify;
   }
   
   /* Improve touch targets on mobile */
