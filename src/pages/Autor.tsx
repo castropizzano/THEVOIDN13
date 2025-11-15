@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SEO, personSchema, breadcrumbSchema } from "@/components/SEO";
 import { BilingualSection } from "@/components/BilingualSection";
+import { H1, H2, H3, Body, BodyLarge, BodySmall } from "@/components/Typography";
 import { BackToTop } from "@/components/BackToTop";
 import { Separator } from "@/components/ui/separator";
 import { PDFViewer } from "@/components/PDFViewer";
