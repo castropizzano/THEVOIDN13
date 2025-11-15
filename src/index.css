@@ -20,25 +20,25 @@
   .bible-title {
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
-    font-size: 56px;
+    font-size: 36px;
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: left;
-    letter-spacing: -0.03em;
-    line-height: 1.1;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
     margin-top: 0;
-    margin-bottom: 12px;
+    margin-bottom: 24px;
   }
   
   @media (max-width: 1199px) {
     .bible-title {
-      font-size: calc(56px * 0.85);
+      font-size: calc(36px * 0.9);
     }
   }
   
   @media (max-width: 767px) {
     .bible-title {
-      font-size: 36px;
+      font-size: 28px;
     }
   }
   
@@ -52,7 +52,7 @@
   .bible-subtitle {
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 28px;
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: left;
@@ -60,21 +60,21 @@
     line-height: 1.3;
     margin-top: 80px;
     margin-bottom: 32px;
-    border-left: 4px solid #ff0000;
-    padding-left: 24px;
+    border-left: 3px solid #ff0000;
+    padding-left: 20px;
   }
   
   @media (max-width: 1199px) {
     .bible-subtitle {
-      font-size: calc(32px * 0.85);
-      margin-top: 68px;
+      font-size: calc(28px * 0.9);
+      margin-top: 72px;
     }
   }
   
   @media (max-width: 767px) {
     .bible-subtitle {
-      font-size: 24px;
-      margin-top: 48px;
+      font-size: 22px;
+      margin-top: 56px;
       padding-left: 16px;
     }
   }
@@ -83,26 +83,53 @@
   .tvn-h3 {
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.95);
     text-align: left;
-    letter-spacing: 0;
+    letter-spacing: 0.01em;
     margin-top: 48px;
     margin-bottom: 24px;
   }
   
   @media (max-width: 1199px) {
     .tvn-h3 {
-      font-size: calc(24px * 0.85);
-      margin-top: 40px;
+      font-size: calc(20px * 0.9);
+      margin-top: 43px;
     }
   }
   
   @media (max-width: 767px) {
     .tvn-h3 {
-      font-size: 20px;
-      margin-top: 32px;
+      font-size: 18px;
+      margin-top: 38px;
+    }
+  }
+  
+  /* H4 - CONCEITOS */
+  .tvn-h4 {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.95);
+    text-align: left;
+    letter-spacing: 0.05em;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    border-left: 2px solid #ff0000;
+    padding-left: 16px;
+  }
+  
+  @media (max-width: 1199px) {
+    .tvn-h4 {
+      font-size: calc(18px * 0.9);
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .tvn-h4 {
+      font-size: 16px;
+      margin-top: 26px;
     }
   }
   
@@ -129,29 +156,29 @@
   .bible-lang-tag {
     font-family: 'Courier New', monospace;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 12px;
     text-transform: uppercase;
     color: #C40000;
     text-align: left;
-    letter-spacing: 0.1em;
-    background: rgba(255, 0, 0, 0.08);
-    border: 1px solid rgba(255, 0, 0, 0.3);
-    border-left: 4px solid #ff0000;
-    padding: 12px 24px;
-    margin-bottom: 40px;
+    letter-spacing: 0.08em;
+    background: rgba(255, 0, 0, 0.06);
+    border: 1px solid rgba(255, 0, 0, 0.2);
+    border-left: 3px solid #ff0000;
+    padding: 10px 20px;
+    margin-bottom: 32px;
     display: inline-block;
-    transition: all 0.3s ease;
+    transition: all 0.25s ease;
   }
   
   .bible-lang-tag:hover {
-    background: rgba(255, 0, 0, 0.15);
+    background: rgba(255, 0, 0, 0.12);
   }
   
   @media (max-width: 767px) {
     .bible-lang-tag {
-      font-size: 12px;
-      padding: 10px 16px;
-      margin-bottom: 32px;
+      font-size: 11px;
+      padding: 8px 16px;
+      margin-bottom: 22px;
     }
   }
   
@@ -159,13 +186,13 @@
   .bible-body {
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     color: rgba(255, 255, 255, 0.85);
     text-align: justify;
-    line-height: 1.8;
+    line-height: 1.75;
     text-transform: none;
-    max-width: 75ch;
-    margin-bottom: 28px;
+    max-width: 70ch;
+    margin-bottom: 20px;
   }
   
   .bible-body:last-child {
@@ -174,32 +201,32 @@
   
   @media (max-width: 1199px) {
     .bible-body {
-      font-size: calc(18px * 0.85);
+      font-size: calc(16px * 0.9);
     }
   }
   
   @media (max-width: 767px) {
     .bible-body {
-      font-size: 16px;
-      line-height: 1.8;
+      font-size: 15px;
+      line-height: 1.75;
     }
   }
   
   /* TEXTO DE DESTAQUE/CITAÇÕES */
   .bible-quote {
-    font-size: 20px;
+    font-size: 18px;
     font-style: italic;
     opacity: 0.9;
-    padding-left: 32px;
+    padding-left: 24px;
     border-left: 2px solid rgba(255, 0, 0, 0.3);
-    margin: 48px 0;
+    margin: 40px 0;
   }
   
   @media (max-width: 767px) {
     .bible-quote {
-      font-size: 18px;
-      padding-left: 20px;
-      margin: 32px 0;
+      font-size: 16px;
+      padding-left: 16px;
+      margin: 28px 0;
     }
   }
   
@@ -221,43 +248,43 @@
      SISTEMA DE ESPAÇAMENTO - GRID BASE 8px
      ═══════════════════════════════════════════════════════ */
   
-  /* ESPAÇAMENTO ENTRE SEÇÕES PRINCIPAIS - 160px (20 × 8px) */
+  /* ESPAÇAMENTO ENTRE SEÇÕES PRINCIPAIS - 80px (10 × 8px) */
   .bible-section-spacing {
-    margin-bottom: 160px;
+    margin-bottom: 80px;
   }
   
-  /* ESPAÇAMENTO ENTRE SUBSECTIONS - 96px (12 × 8px) */
+  /* ESPAÇAMENTO ENTRE SUBSECTIONS - 48px (6 × 8px) */
   .bible-subsection-spacing {
-    margin-bottom: 96px;
+    margin-bottom: 48px;
   }
   
-  /* ESPAÇAMENTO ENTRE BLOCOS - 64px (8 × 8px) */
+  /* ESPAÇAMENTO ENTRE BLOCOS - 32px (4 × 8px) */
   .bible-block-spacing {
-    margin-bottom: 64px;
+    margin-bottom: 32px;
   }
   
   /* PADDING INTERNO DAS SEÇÕES */
   .section-padding {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   
   @media (max-width: 767px) {
     .bible-section-spacing {
-      margin-bottom: 96px;
+      margin-bottom: 56px;
     }
     
     .bible-subsection-spacing {
-      margin-bottom: 64px;
+      margin-bottom: 34px;
     }
     
     .bible-block-spacing {
-      margin-bottom: 40px;
+      margin-bottom: 22px;
     }
     
     .section-padding {
-      padding-top: 72px;
-      padding-bottom: 72px;
+      padding-top: 42px;
+      padding-bottom: 42px;
     }
   }
   
@@ -389,14 +416,15 @@
   /* SEPARADOR VISUAL ENTRE SEÇÕES */
   .section-divider {
     height: 1px;
-    background: rgba(255, 255, 255, 0.08);
-    margin: 120px 0;
-    max-width: 200px;
+    background: rgba(255, 255, 255, 0.06);
+    margin: 80px auto;
+    max-width: 120px;
   }
   
   @media (max-width: 767px) {
     .section-divider {
-      margin: 72px 0;
+      margin: 56px auto;
+      max-width: 80px;
     }
   }
   
@@ -419,7 +447,7 @@
   /* Smooth scroll com offset */
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 100px;
+    scroll-padding-top: 80px;
   }
   
   /* BLOCOS DE CONTEÚDO - Espaçamento padrão */
@@ -772,7 +800,7 @@ All colors MUST be HSL.
   @keyframes fadeInUp {
     from {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(15px);
     }
     to {
       opacity: 1;
@@ -784,7 +812,7 @@ All colors MUST be HSL.
   @keyframes slideInLeft {
     from {
       opacity: 0;
-      transform: translateX(-30px);
+      transform: translateX(-20px);
     }
     to {
       opacity: 1;
@@ -796,7 +824,7 @@ All colors MUST be HSL.
   @keyframes scaleIn {
     from {
       opacity: 0;
-      transform: scale(0.95);
+      transform: scale(0.98);
     }
     to {
       opacity: 1;
@@ -806,23 +834,23 @@ All colors MUST be HSL.
   
   /* Classes de animação */
   .animate-fade-in {
-    animation: fadeInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    animation: fadeInUp 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
   
   .animate-slide-in {
-    animation: slideInLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    animation: slideInLeft 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
   
   .animate-scale-in {
-    animation: scaleIn 1s ease-out forwards;
+    animation: scaleIn 0.8s ease-out forwards;
   }
   
   /* Stagger delay para elementos múltiplos */
-  .stagger-1 { animation-delay: 0.1s; opacity: 0; }
-  .stagger-2 { animation-delay: 0.2s; opacity: 0; }
-  .stagger-3 { animation-delay: 0.3s; opacity: 0; }
-  .stagger-4 { animation-delay: 0.4s; opacity: 0; }
-  .stagger-5 { animation-delay: 0.5s; opacity: 0; }
+  .stagger-1 { animation-delay: 0.08s; opacity: 0; }
+  .stagger-2 { animation-delay: 0.16s; opacity: 0; }
+  .stagger-3 { animation-delay: 0.24s; opacity: 0; }
+  .stagger-4 { animation-delay: 0.32s; opacity: 0; }
+  .stagger-5 { animation-delay: 0.40s; opacity: 0; }
   
   /* Hover effects para links */
   a {
