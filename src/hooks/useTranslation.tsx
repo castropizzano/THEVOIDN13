@@ -136,7 +136,35 @@ type TranslationKey =
   | "seeResult"
   | "dominantArchetype"
   | "creativeProfile"
-  | "restartOracle";
+  | "restartOracle"
+  | "producedMaterials"
+  | "references"
+  | "theInternalEcho"
+  | "conceptualDNA"
+  | "conceptualDNAComics"
+  | "cinematicTexture"
+  | "cinematicTextureFilms"
+  | "sonicSignatureMusic"
+  | "comicsShowcaseTitle"
+  | "comicsShowcaseDesc"
+  | "filmGalleryTitle"
+  | "filmGalleryDesc"
+  | "vibeCodingTitle"
+  | "vibeCodingDesc"
+  | "promptLibraryTitle"
+  | "promptLibraryDesc"
+  | "yourVision"
+  | "generatedCode"
+  | "instantTransformation"
+  | "describeWhatYouWant"
+  | "codeWillAppearHere"
+  | "vibeCodingAction"
+  | "vibeCodingActionDesc"
+  | "examplesTitle"
+  | "fromTheoryToPractice"
+  | "fromTheoryDesc"
+  | "punkRockPrinciple"
+  | "bestCode";
 
 const translations: Record<TranslationKey, { pt: string; en: string }> = {
   home: { pt: "INÍCIO", en: "HOME" },
@@ -275,6 +303,34 @@ const translations: Record<TranslationKey, { pt: string; en: string }> = {
   dominantArchetype: { pt: "SEU ARQUÉTIPO DOMINANTE", en: "YOUR DOMINANT ARCHETYPE" },
   creativeProfile: { pt: "Seu Perfil Criativo", en: "Your Creative Profile" },
   restartOracle: { pt: "REFAZER ORÁCULO", en: "RESTART ORACLE" },
+  producedMaterials: { pt: "MATERIAIS PRODUZIDOS", en: "PRODUCED MATERIALS" },
+  references: { pt: "REFERÊNCIAS", en: "REFERENCES" },
+  theInternalEcho: { pt: "O ECO INTERNO", en: "THE INTERNAL ECHO" },
+  conceptualDNA: { pt: "DNA CONCEITUAL", en: "CONCEPTUAL DNA" },
+  conceptualDNAComics: { pt: "DNA CONCEITUAL (QUADRINHOS)", en: "CONCEPTUAL DNA (COMICS)" },
+  cinematicTexture: { pt: "TEXTURA CINEMATOGRÁFICA", en: "CINEMATIC TEXTURE" },
+  cinematicTextureFilms: { pt: "TEXTURA CINEMATOGRÁFICA (FILMES)", en: "CINEMATIC TEXTURE (FILMS)" },
+  sonicSignatureMusic: { pt: "ASSINATURA SONORA (MÚSICA)", en: "SONIC SIGNATURE (MUSIC)" },
+  comicsShowcaseTitle: { pt: "DNA Conceitual dos Quadrinhos", en: "Conceptual DNA of Comics" },
+  comicsShowcaseDesc: { pt: "Três obras que estruturam a arquitetura narrativa e visual do projeto", en: "Three works that structure the narrative and visual architecture of the project" },
+  filmGalleryTitle: { pt: "Sobre as Referências Cinematográficas", en: "About the Cinematic References" },
+  filmGalleryDesc: { pt: "Quinze filmes essenciais", en: "Fifteen essential films" },
+  vibeCodingTitle: { pt: "VIBE CODING PLAYGROUND", en: "VIBE CODING PLAYGROUND" },
+  vibeCodingDesc: { pt: "Experimente o desenvolvimento intuitivo mediado por IA", en: "Experience intuitive AI-mediated development" },
+  promptLibraryTitle: { pt: "BIBLIOTECA DE PROMPTS", en: "PROMPT LIBRARY" },
+  promptLibraryDesc: { pt: "Um repositório vivo de comandos e instruções", en: "A living repository of commands and instructions" },
+  yourVision: { pt: "SUA VISÃO", en: "YOUR VISION" },
+  generatedCode: { pt: "CÓDIGO GERADO", en: "GENERATED CODE" },
+  instantTransformation: { pt: "Transformação instantânea", en: "Instant transformation" },
+  describeWhatYouWant: { pt: "Descreva o que você quer criar", en: "Describe what you want to create" },
+  codeWillAppearHere: { pt: "Seu código aparecerá aqui", en: "Your code will appear here" },
+  vibeCodingAction: { pt: "Vibe Coding em ação", en: "Vibe Coding in action" },
+  vibeCodingActionDesc: { pt: "Você descreve a intenção, a IA traduz em código", en: "You describe the intention, AI translates to code" },
+  examplesTitle: { pt: "Exemplos para testar", en: "Examples to test" },
+  fromTheoryToPractice: { pt: "FROM THEORY TO PRACTICE", en: "FROM THEORY TO PRACTICE" },
+  fromTheoryDesc: { pt: "Este playground materializa os princípios do Way of Code", en: "This playground materializes the Way of Code principles" },
+  punkRockPrinciple: { pt: "O punk rock do código", en: "The punk rock of coding" },
+  bestCode: { pt: "O melhor código é o que você não precisa escrever", en: "The best code is the code you don't have to write" },
 };
 
 export const useTranslation = () => {
