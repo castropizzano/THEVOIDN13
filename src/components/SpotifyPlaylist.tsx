@@ -9,8 +9,10 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const SpotifyPlaylist = () => {
+  const { t, language } = useTranslation();
   // 13 tracks that guided the THEVOIDN13 creation process
   const playlistId = "16p2xrYWYsA4DfNgdrtEmP";
 
@@ -21,29 +23,53 @@ const SpotifyPlaylist = () => {
           <Dialog>
             <DialogTrigger asChild>
               <Button variant="outline" className="w-full justify-start mb-8">
-                <span className="text-sm">Sobre a Assinatura Sonora / About the Sonic Signature</span>
+                <span className="text-sm">{t("aboutSonic")}</span>
               </Button>
             </DialogTrigger>
             <DialogContent className="max-w-2xl">
               <DialogHeader>
-                <DialogTitle className="text-2xl">Trilha do Processo Criativo</DialogTitle>
+                <DialogTitle className="text-2xl">{t("sonicSignature")}</DialogTitle>
                 <DialogDescription className="text-base leading-relaxed pt-4">
-                  <p className="mb-4">
-                    Esta playlist representa a <strong>assinatura sonora</strong> que permeou 
-                    todo o desenvolvimento do THEVØIDN13. São 13 faixas cuidadosamente 
-                    selecionadas que traduziram em peso gravitacional, corrosão, fricção 
-                    e melancolia o universo conceitual do projeto.
-                  </p>
-                  <p className="mb-4">
-                    Do peso visceral de <em>Black Sabbath</em> à atmosfera etérea de <em>Vangelis</em>, 
-                    da agressão controlada de <em>Slipknot</em> ao blues noturno de <em>Buddy Guy</em>, 
-                    cada faixa foi um portal para diferentes camadas do vazio.
-                  </p>
-                  <p>
-                    <strong>O núcleo é composto pelo peso gravitacional de Into the Void</strong>, 
-                    a corrosão de Rust, a fricção sensorial de Shove It, os sintetizadores 
-                    etéreos de Blade Runner Blues, e o colapso final traduzindo peso em som puro.
-                  </p>
+                  {language === "pt" ? (
+                    <>
+                      <p className="mb-4">
+                        Esta playlist representa a <strong>assinatura sonora</strong> que permeou 
+                        todo o desenvolvimento do THEVØIDN13. São 13 faixas cuidadosamente 
+                        selecionadas que traduziram em peso gravitacional, corrosão, fricção 
+                        e melancolia o universo conceitual do projeto.
+                      </p>
+                      <p className="mb-4">
+                        Do peso visceral de <em>Black Sabbath</em> à atmosfera etérea de <em>Vangelis</em>, 
+                        da agressão controlada de <em>Slipknot</em> ao blues noturno de <em>Buddy Guy</em>, 
+                        cada faixa foi um portal para diferentes camadas do vazio.
+                      </p>
+                      <p>
+                        <strong>O núcleo é composto pelo peso gravitacional de Into the Void</strong>, 
+                        a corrosão de Rust, a fricção sensorial de Shove It, os sintetizadores 
+                        etéreos de Blade Runner Blues, e o colapso final traduzindo peso em som puro.
+                      </p>
+                    </>
+                  ) : (
+                    <>
+                      <p className="mb-4">
+                        This playlist represents the <strong>sonic signature</strong> that permeated 
+                        the entire development of THEVØIDN13. These are 13 carefully selected tracks 
+                        that translated into gravitational weight, corrosion, friction and melancholy 
+                        the conceptual universe of the project.
+                      </p>
+                      <p className="mb-4">
+                        From the visceral weight of <em>Black Sabbath</em> to the ethereal atmosphere 
+                        of <em>Vangelis</em>, from the controlled aggression of <em>Slipknot</em> to 
+                        the nocturnal blues of <em>Buddy Guy</em>, each track was a portal to different 
+                        layers of the void.
+                      </p>
+                      <p>
+                        <strong>The core is composed of the gravitational weight of Into the Void</strong>, 
+                        the corrosion of Rust, the sensory friction of Shove It, the ethereal synthesizers 
+                        of Blade Runner Blues, and the final collapse translating weight into pure sound.
+                      </p>
+                    </>
+                  )}
                 </DialogDescription>
               </DialogHeader>
             </DialogContent>

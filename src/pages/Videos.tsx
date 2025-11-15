@@ -6,6 +6,7 @@ import { BilingualSection, BilingualContent } from "@/components/BilingualSectio
 import { BackToTop } from "@/components/BackToTop";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
+import { useTranslation } from "@/hooks/useTranslation";
 
 interface Video {
   id: string;
@@ -26,6 +27,7 @@ const Videos = () => {
   const [loading, setLoading] = useState(true);
   const [selectedVideo, setSelectedVideo] = useState<Video | null>(null);
   const { toast } = useToast();
+  const { t } = useTranslation();
 
   const breadcrumbs = breadcrumbSchema([
     { name: "Home", url: "https://thevoidn13.com/" },
@@ -101,7 +103,7 @@ const Videos = () => {
           <div className="flex items-center justify-center min-h-[60vh]">
             <div className="text-center space-y-4">
               <div className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto"></div>
-              <p className="text-muted-foreground">Carregando vídeos...</p>
+              <p className="text-muted-foreground">{t("loadingVideos")}</p>
             </div>
           </div>
         </main>

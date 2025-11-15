@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
+import { useTranslation } from "@/hooks/useTranslation";
 
 interface PDFViewerProps {
   pdfUrl: string;
@@ -10,6 +11,7 @@ interface PDFViewerProps {
 
 export const PDFViewer = ({ pdfUrl, title, description }: PDFViewerProps) => {
   const [pdfExists, setPdfExists] = useState<boolean | null>(null);
+  const { t } = useTranslation();
 
   // Check if PDF exists
   const checkPdfExists = async () => {
@@ -41,7 +43,7 @@ export const PDFViewer = ({ pdfUrl, title, description }: PDFViewerProps) => {
         <h4 className="bible-body font-bold mb-2 text-destructive">{title}</h4>
         {description && <p className="bible-caption text-muted-foreground mb-4">{description}</p>}
         <p className="bible-caption text-destructive mb-4">
-          Arquivo não disponível no momento / File not available at the moment
+          {t("fileNotAvailable")}
         </p>
         <Button 
           variant="outline" 
@@ -51,7 +53,7 @@ export const PDFViewer = ({ pdfUrl, title, description }: PDFViewerProps) => {
           disabled
         >
           <ExternalLink className="h-4 w-4" />
-          Abrir em Nova Aba / Open in New Tab
+          {t("openInNewTab")}
         </Button>
       </div>
     );
@@ -76,9 +78,7 @@ export const PDFViewer = ({ pdfUrl, title, description }: PDFViewerProps) => {
             <div className="flex items-center justify-center h-full p-8 text-center">
               <div>
                 <p className="bible-body mb-4">
-                  Preview não disponível neste navegador
-                  <br />
-                  Preview not available in this browser
+                  {t("previewNotAvailable")}
                 </p>
                 <Button 
                   variant="outline" 
@@ -86,7 +86,7 @@ export const PDFViewer = ({ pdfUrl, title, description }: PDFViewerProps) => {
                   className="gap-2"
                 >
                   <ExternalLink className="h-4 w-4" />
-                  Abrir PDF / Open PDF
+                  {t("openPDF")}
                 </Button>
               </div>
             </div>
@@ -102,7 +102,7 @@ export const PDFViewer = ({ pdfUrl, title, description }: PDFViewerProps) => {
             className="gap-2"
           >
             <ExternalLink className="h-4 w-4" />
-            Abrir em Nova Aba / Open in New Tab
+            {t("openInNewTab")}
           </Button>
         </div>
       </div>

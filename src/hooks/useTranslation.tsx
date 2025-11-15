@@ -11,6 +11,7 @@ type TranslationKey =
   | "menu"
   | "close"
   | "loading"
+  | "loadingVideos"
   | "error"
   | "success"
   | "readMore"
@@ -39,6 +40,8 @@ type TranslationKey =
   | "featured"
   | "portfolio"
   | "about"
+  | "aboutSonic"
+  | "sonicSignature"
   | "contact"
   | "biography"
   | "projects"
@@ -63,7 +66,26 @@ type TranslationKey =
   | "sortBy"
   | "newest"
   | "oldest"
-  | "popular";
+  | "popular"
+  | "expandFullMap"
+  | "creativeOpsMindMap"
+  | "completeEcosystem"
+  | "fileNotAvailable"
+  | "openInNewTab"
+  | "openPDF"
+  | "previewNotAvailable"
+  | "creativeProcessTrack"
+  | "gravitationalWeight"
+  | "corrosion"
+  | "sensorialFriction"
+  | "etherealAtmosphere"
+  | "controlledAggression"
+  | "nocturnalBlues"
+  | "experimentalCinema"
+  | "urbanChaos"
+  | "internalCollapse"
+  | "sonicColapso"
+  | "fullLength";
 
 const translations: Record<TranslationKey, { pt: string; en: string }> = {
   home: { pt: "INÍCIO", en: "HOME" },
@@ -76,6 +98,7 @@ const translations: Record<TranslationKey, { pt: string; en: string }> = {
   menu: { pt: "Menu", en: "Menu" },
   close: { pt: "Fechar", en: "Close" },
   loading: { pt: "Carregando...", en: "Loading..." },
+  loadingVideos: { pt: "Carregando vídeos...", en: "Loading videos..." },
   error: { pt: "Erro", en: "Error" },
   success: { pt: "Sucesso", en: "Success" },
   readMore: { pt: "Leia Mais", en: "Read More" },
@@ -104,6 +127,8 @@ const translations: Record<TranslationKey, { pt: string; en: string }> = {
   featured: { pt: "Destaque", en: "Featured" },
   portfolio: { pt: "Portfólio", en: "Portfolio" },
   about: { pt: "Sobre", en: "About" },
+  aboutSonic: { pt: "Sobre a Assinatura Sonora", en: "About the Sonic Signature" },
+  sonicSignature: { pt: "Trilha do Processo Criativo", en: "Creative Process Soundtrack" },
   contact: { pt: "Contato", en: "Contact" },
   biography: { pt: "Biografia", en: "Biography" },
   projects: { pt: "Projetos", en: "Projects" },
@@ -129,6 +154,25 @@ const translations: Record<TranslationKey, { pt: string; en: string }> = {
   newest: { pt: "Mais Recente", en: "Newest" },
   oldest: { pt: "Mais Antigo", en: "Oldest" },
   popular: { pt: "Popular", en: "Popular" },
+  expandFullMap: { pt: "EXPANDIR MAPA COMPLETO", en: "EXPAND FULL MAP" },
+  creativeOpsMindMap: { pt: "CREATIVE-OPS MIND MAP", en: "CREATIVE-OPS MIND MAP" },
+  completeEcosystem: { pt: "Ecossistema completo das operações criativas do THEVØIDN13.", en: "Complete ecosystem of THEVØIDN13 creative operations." },
+  fileNotAvailable: { pt: "Arquivo não disponível no momento", en: "File not available at the moment" },
+  openInNewTab: { pt: "Abrir em Nova Aba", en: "Open in New Tab" },
+  openPDF: { pt: "Abrir PDF", en: "Open PDF" },
+  previewNotAvailable: { pt: "Preview não disponível neste navegador", en: "Preview not available in this browser" },
+  creativeProcessTrack: { pt: "Trilha do Processo Criativo", en: "Creative Process Soundtrack" },
+  gravitationalWeight: { pt: "Peso Gravitacional", en: "Gravitational Weight" },
+  corrosion: { pt: "Corrosão", en: "Corrosion" },
+  sensorialFriction: { pt: "Fricção Sensorial", en: "Sensorial Friction" },
+  etherealAtmosphere: { pt: "Atmosfera Etérea", en: "Ethereal Atmosphere" },
+  controlledAggression: { pt: "Agressão Controlada", en: "Controlled Aggression" },
+  nocturnalBlues: { pt: "Blues Noturno", en: "Nocturnal Blues" },
+  experimentalCinema: { pt: "Cinema Experimental", en: "Experimental Cinema" },
+  urbanChaos: { pt: "Caos Urbano", en: "Urban Chaos" },
+  internalCollapse: { pt: "Colapso Interno", en: "Internal Collapse" },
+  sonicColapso: { pt: "Colapso Sônico", en: "Sonic Collapse" },
+  fullLength: { pt: "Duração Completa", en: "Full Length" },
 };
 
 export const useTranslation = () => {
