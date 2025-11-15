@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Sparkles, Send, RotateCcw } from "lucide-react";
 import { BilingualContent } from "./BilingualSection";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const examplePrompts = [
   {
@@ -54,6 +55,7 @@ const examplePrompts = [
 ];
 
 export default function VibeCodingPlayground() {
+  const { t } = useTranslation();
   const [prompt, setPrompt] = useState("");
   const [output, setOutput] = useState("");
   const [isGenerating, setIsGenerating] = useState(false);
@@ -119,13 +121,13 @@ export default function VibeCodingPlayground() {
               <Sparkles className="h-6 w-6 text-primary-foreground" />
             </div>
             <div>
-              <h4 className="font-bold text-lg">Sua Visão</h4>
-              <p className="text-sm text-muted-foreground">Descreva o que você quer criar</p>
+              <h4 className="font-bold text-lg">{t("yourVision")}</h4>
+              <p className="text-sm text-muted-foreground">{t("describeWhatYouWant")}</p>
             </div>
           </div>
 
           <Textarea
-            placeholder="Ex: Criar um botão animado que brilha ao passar o mouse..."
+            placeholder={t("describeWhatYouWant")}
             value={prompt}
             onChange={(e) => setPrompt(e.target.value)}
             className="min-h-[120px] font-mono text-sm"
@@ -137,7 +139,7 @@ export default function VibeCodingPlayground() {
               disabled={!prompt.trim() || isGenerating}
               className="flex-1"
             >
-              {isGenerating ? "Gerando..." : "Gerar Código"}
+              {isGenerating ? t("generating") : t("generateStill")}
             </Button>
             <Button 
               onClick={handleReset}
@@ -149,7 +151,7 @@ export default function VibeCodingPlayground() {
           </div>
 
           <div className="pt-4 border-t border-border">
-            <p className="text-xs text-muted-foreground mb-3">Exemplos para testar:</p>
+            <p className="text-xs text-muted-foreground mb-3">{t("examplesTest")}</p>
             <div className="flex flex-wrap gap-2">
               {examplePrompts.map((example, index) => (
                 <Button
@@ -173,8 +175,8 @@ export default function VibeCodingPlayground() {
               <Sparkles className="h-6 w-6 text-accent-foreground" />
             </div>
             <div>
-              <h4 className="font-bold text-lg">Código Gerado</h4>
-              <p className="text-sm text-muted-foreground">Transformação instantânea</p>
+              <h4 className="font-bold text-lg">{t("generatedCode")}</h4>
+              <p className="text-sm text-muted-foreground">{t("instantTransformation")}</p>
             </div>
           </div>
 

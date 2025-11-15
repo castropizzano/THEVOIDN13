@@ -249,7 +249,8 @@ const FilmGallery = () => {
                 </TooltipTrigger>
                 <TooltipContent side="top" className="max-w-xs">
                   <p className="font-semibold">{film.title}</p>
-                  <p className="text-xs text-muted-foreground">{film.description}</p>
+                  <p className="text-xs text-muted-foreground">{film.director} • {film.year}</p>
+                  <p className="text-xs mt-1">{t(film.descriptionKey as any)}</p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
