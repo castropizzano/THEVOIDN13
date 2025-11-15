@@ -1,10 +1,10 @@
 /* ============================================
-   SISTEMA TIPOGRÁFICO THEVOIDN13 v2.0
-   Hierarquia Visual Clara + Espaçamentos Matemáticos
+   SISTEMA TIPOGRÁFICO THEVOIDN13 v3.0 FINAL
+   Hierarquia baseada no screenshot de referência
    ============================================ */
 
 /* ===============================================
-   TÍTULOS - H1 (Títulos Principais)
+   TÍTULOS - H1 (Títulos Principais - 32px)
    =============================================== */
 .tvn-h1 {
   font-family: 'Manrope', sans-serif;
@@ -14,8 +14,7 @@
   text-transform: uppercase;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-top: 64px;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
 .tvn-h1:first-child {
@@ -25,23 +24,21 @@
 @media (max-width: 768px) {
   .tvn-h1 {
     font-size: 24px;
-    margin-top: 48px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 }
 
 /* ===============================================
-   TÍTULOS - H2 (Subtítulos Importantes)
+   TÍTULOS - H2 (Subtítulos - MESMO TAMANHO H1)
    =============================================== */
 .tvn-h2 {
   font-family: 'Manrope', sans-serif;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 700;
-  color: hsl(var(--foreground));
+  color: hsl(var(--muted-foreground));
   text-transform: uppercase;
-  line-height: 1.3;
+  line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-top: 48px;
   margin-bottom: 24px;
 }
 
@@ -49,35 +46,24 @@
   margin-top: 0 !important;
 }
 
-/* H1 → H2 consecutivos (menor distância) */
-.tvn-h1 + .tvn-h2 {
-  margin-top: 32px;
-}
-
 @media (max-width: 768px) {
   .tvn-h2 {
-    font-size: 20px;
-    margin-top: 40px;
+    font-size: 24px;
     margin-bottom: 20px;
-  }
-  
-  .tvn-h1 + .tvn-h2 {
-    margin-top: 24px;
   }
 }
 
 /* ===============================================
-   TÍTULOS - H3 (Subtítulos Secundários)
+   TÍTULOS - H3 (Labels/Tags - 14px)
    =============================================== */
 .tvn-h3 {
   font-family: 'Manrope', sans-serif;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 600;
-  color: hsl(var(--foreground));
+  color: hsl(var(--primary));
   text-transform: uppercase;
   line-height: 1.4;
-  letter-spacing: 0.02em;
-  margin-top: 40px;
+  letter-spacing: 0.1em;
   margin-bottom: 16px;
 }
 
@@ -85,36 +71,25 @@
   margin-top: 0 !important;
 }
 
-/* H2 → H3 consecutivos */
-.tvn-h2 + .tvn-h3 {
-  margin-top: 24px;
-}
-
 @media (max-width: 768px) {
   .tvn-h3 {
-    font-size: 18px;
-    margin-top: 32px;
+    font-size: 12px;
     margin-bottom: 12px;
-  }
-  
-  .tvn-h2 + .tvn-h3 {
-    margin-top: 20px;
   }
 }
 
 /* ===============================================
-   TÍTULOS - H4 (Labels / Tags / Categorias)
+   TÍTULOS - H4 (Não usar - mesmo que H3)
    =============================================== */
 .tvn-h4 {
   font-family: 'Manrope', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   color: hsl(var(--primary));
   text-transform: uppercase;
   line-height: 1.4;
-  letter-spacing: 0.05em;
-  margin-top: 32px;
-  margin-bottom: 12px;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
 }
 
 .tvn-h4:first-child {
@@ -123,23 +98,20 @@
 
 @media (max-width: 768px) {
   .tvn-h4 {
-    font-size: 14px;
-    margin-top: 24px;
-    margin-bottom: 8px;
+    font-size: 12px;
+    margin-bottom: 12px;
   }
 }
 
 /* ===============================================
-   CORPO DE TEXTO - Body Large (Introduções)
+   CORPO DE TEXTO - Body Large (MESMO QUE BODY - 16px)
    =============================================== */
 .tvn-body-large {
   font-family: 'Manrope', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   color: hsl(var(--body-text));
-  text-align: justify;
   line-height: 1.6;
-  hyphens: auto;
   margin-bottom: 24px;
 }
 
@@ -156,16 +128,14 @@
 }
 
 /* ===============================================
-   CORPO DE TEXTO - Body (Texto Padrão)
+   CORPO DE TEXTO - Body (Texto Padrão - 16px)
    =============================================== */
 .tvn-body {
   font-family: 'Manrope', sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: hsl(var(--body-text));
-  text-align: justify;
   line-height: 1.6;
-  hyphens: auto;
   margin-bottom: 24px;
 }
 
@@ -175,24 +145,22 @@
 
 @media (max-width: 768px) {
   .tvn-body {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.65;
     margin-bottom: 20px;
   }
 }
 
 /* ===============================================
-   CORPO DE TEXTO - Body Small (Legendas/Detalhes)
+   CORPO DE TEXTO - Body Small (MESMO QUE BODY - 16px)
    =============================================== */
 .tvn-body-small {
   font-family: 'Manrope', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
-  color: hsl(var(--body-text));
-  text-align: justify;
+  color: hsl(var(--muted-foreground));
   line-height: 1.6;
-  hyphens: auto;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .tvn-body-small:last-child {
@@ -201,9 +169,9 @@
 
 @media (max-width: 768px) {
   .tvn-body-small {
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1.65;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
 }
 
