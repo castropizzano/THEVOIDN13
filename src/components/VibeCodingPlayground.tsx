@@ -183,13 +183,13 @@ export default function VibeCodingPlayground() {
           <div className="relative">
             <pre className="bg-muted/50 rounded-lg p-4 overflow-x-auto min-h-[200px] border border-border">
               <code className="text-xs font-mono">
-                {output || "// Seu código aparecerá aqui...\n// Escreva um prompt e clique em 'Gerar Código'"}
+                {output || `${t("codeWillAppearHere")}\n${t("writePromptHint")}`}
               </code>
             </pre>
             {output && (
               <div className="absolute top-2 right-2">
                 <div className="bg-green-500/20 text-green-500 text-xs px-2 py-1 rounded">
-                  ✓ Gerado
+                  {t("generated")}
                 </div>
               </div>
             )}
@@ -197,9 +197,7 @@ export default function VibeCodingPlayground() {
 
           <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
             <p className="text-xs text-muted-foreground leading-relaxed">
-              <strong className="text-foreground">Vibe Coding em ação:</strong> Você descreve a intenção, 
-              a IA traduz em código. Não é sobre saber sintaxe—é sobre ter visão criativa. 
-              Três prompts e a verdade.
+              {t("vibeCodingInAction")}
             </p>
           </div>
         </Card>
