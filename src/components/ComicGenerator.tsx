@@ -253,14 +253,6 @@ export const ComicGenerator = () => {
                 </p>
               </div>
             </div>
-                  As regras canônicas do universo THEVØIDN13 serão automaticamente aplicadas.
-                </p>
-                <p className="body-small text-muted-foreground">
-                  <strong>Tip:</strong> Describe the scene, characters, lighting and atmosphere. 
-                  The canonical THEVØIDN13 universe rules will be automatically applied.
-                </p>
-              </div>
-            </div>
           </TabsContent>
         </Tabs>
 
