@@ -321,7 +321,46 @@
     @apply space-y-6;
   }
 
-  /* Grid bilíngue legado - manter para compatibilidade mas modificar para stack */
+  /* ===============================================
+     GRID BILÍNGUE - Sistema Legado com Toggle Global
+     =============================================== */
+  
+  /* Grid bilateral adaptativo que responde ao idioma global */
+  .bible-bilingual-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+  
+  /* Primeira coluna = PT, Segunda coluna = EN */
+  .bible-bilingual-grid > div:first-child {
+    /* Coluna PT */
+  }
+  
+  .bible-bilingual-grid > div:last-child {
+    /* Coluna EN */
+  }
+  
+  /* Ocultar coluna EN quando idioma é PT */
+  [data-language="pt"] .bible-bilingual-grid > div:last-child {
+    display: none;
+  }
+  
+  /* Ocultar coluna PT quando idioma é EN */
+  [data-language="en"] .bible-bilingual-grid > div:first-child {
+    display: none;
+  }
+  
+  /* Em mobile, sempre stack vertical */
+  @media (max-width: 1024px) {
+    .bible-bilingual-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+  
+  /* Grid bilíngue legado - compatibilidade */
   .bilingual-grid {
     @apply space-y-16;
   }
@@ -332,7 +371,8 @@
   
   /* Remover margin-top do primeiro elemento */
   .bilingual-col > *:first-child,
-  .bilingual-content > *:first-child {
+  .bilingual-content > *:first-child,
+  .bible-bilingual-grid > div > *:first-child {
     margin-top: 0 !important;
   }
 

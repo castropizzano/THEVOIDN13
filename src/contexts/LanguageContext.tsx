@@ -19,8 +19,20 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     return "pt";
   });
 
+  // Sincronizar atributo data-language no body quando monta e quando muda
+  useEffect(() => {
+    if (typeof document !== "undefined") {
+      document.body.setAttribute("data-language", language);
+    }
+  }, []); // Executa na montagem
+
   useEffect(() => {
     localStorage.setItem("preferred-language", language);
+    
+    // Atualizar atributo data-language ao body para CSS
+    if (typeof document !== "undefined") {
+      document.body.setAttribute("data-language", language);
+    }
   }, [language]);
 
   const setLanguage = (lang: Language) => {
