@@ -11,6 +11,7 @@ import { z } from "zod";
 import watermarkLogo from "@/assets/thevoidn13-watermark.png";
 import { useTranslation } from "@/hooks/useTranslation";
 import { BilingualContent } from "@/components/BilingualSection";
+import { useValidationMessage } from "@/lib/zodValidation";
 
 interface Prompt {
   id: string;
@@ -20,13 +21,14 @@ interface Prompt {
 }
 
 // Validation for custom prompts only (library prompts are pre-validated)
-const customScriptSchema = z.string()
+const createCustomScriptSchema = (vm: (key: string) => string) => z.string()
   .trim()
-  .min(50, "Descrição muito curta (mín. 50 caracteres) / Description too short (min 50 chars)")
-  .max(1500, "Descrição muito longa (máx. 1500 caracteres) / Description too long (max 1500 chars)");
+  .min(50, vm("descriptionMinLength"))
+  .max(1500, vm("descriptionMaxLength"));
 
 export const ComicGenerator = () => {
   const { t } = useTranslation();
+  const vm = useValidationMessage();
   const [script, setScript] = useState("");
   const [generatedImage, setGeneratedImage] = useState<string | null>(null);
   const [isGenerating, setIsGenerating] = useState(false);
@@ -70,13 +72,14 @@ export const ComicGenerator = () => {
         }
       }
     } catch (error) {
-      toast.error('Erro ao carregar prompts / Error loading prompts');
+      toast.error(t("errorLoadingPrompts"));
     }
   };
 
   const handleGenerate = async () => {
     // Validate only custom scripts (library prompts are pre-validated)
     if (promptMode === "custom") {
+      const customScriptSchema = createCustomScriptSchema(vm);
       const validation = customScriptSchema.safeParse(customScript);
       if (!validation.success) {
         toast.error(validation.error.errors[0].message);
@@ -85,7 +88,7 @@ export const ComicGenerator = () => {
     }
 
     if (!systemPrompt) {
-      toast.error("System prompt não carregado / System prompt not loaded");
+      toast.error(t("systemPromptNotLoaded"));
       return;
     }
 
@@ -157,7 +160,7 @@ export const ComicGenerator = () => {
     const selected = prompts.find(p => p.id === promptId);
     if (selected) {
       setScript(selected.prompt_text);
-      toast.info(`Prompt "${selected.title}" carregado / Prompt loaded`);
+      toast.info(`${t("promptLoaded")}: "${selected.title}"`);
     }
   };
 
