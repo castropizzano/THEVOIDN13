@@ -13,6 +13,7 @@ import { Card } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { useTrackSearch } from "@/hooks/useAnalytics";
+import { useTranslation } from "@/hooks/useTranslation";
 
 interface SearchResult {
   section: string;
@@ -32,6 +33,7 @@ export const GlobalSearch = ({ open, onOpenChange }: GlobalSearchProps) => {
   const [isSearching, setIsSearching] = useState(false);
   const navigate = useNavigate();
   const { trackSearch } = useTrackSearch();
+  const { t } = useTranslation();
 
   const handleSearch = async () => {
     if (!query.trim()) return;
@@ -79,16 +81,16 @@ export const GlobalSearch = ({ open, onOpenChange }: GlobalSearchProps) => {
       <DialogContent className="max-w-2xl">
         <DialogHeader>
           <DialogTitle className="bible-subtitle text-lg">
-            BUSCA SEMÂNTICA / SEMANTIC SEARCH
+            {t("search").toUpperCase()}
           </DialogTitle>
           <DialogDescription className="bible-body text-sm">
-            Busca inteligente através de todo o memorial artístico
+            {t("searchPlaceholder")}
           </DialogDescription>
         </DialogHeader>
 
         <div className="flex gap-2">
           <Input
-            placeholder="Buscar... / Search..."
+            placeholder={t("searchPlaceholder")}
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onKeyPress={handleKeyPress}
@@ -99,6 +101,7 @@ export const GlobalSearch = ({ open, onOpenChange }: GlobalSearchProps) => {
             onClick={handleSearch}
             disabled={isSearching || !query.trim()}
             size="icon"
+            aria-label={t("search")}
           >
             {isSearching ? (
               <Loader2 className="h-4 w-4 animate-spin" />
@@ -114,6 +117,7 @@ export const GlobalSearch = ({ open, onOpenChange }: GlobalSearchProps) => {
                 setQuery("");
                 setResults([]);
               }}
+              aria-label={t("close")}
             >
               <X className="h-4 w-4" />
             </Button>
@@ -148,12 +152,12 @@ export const GlobalSearch = ({ open, onOpenChange }: GlobalSearchProps) => {
 
         {!isSearching && query && results.length === 0 && (
           <div className="text-center py-8 text-muted-foreground bible-body text-sm">
-            Nenhum resultado encontrado para "{query}"
+            {t("error")}: {query}
           </div>
         )}
 
         <div className="text-xs text-muted-foreground bible-body text-center">
-          Powered by AI • Busca conceitual e temática
+          Powered by AI
         </div>
       </DialogContent>
     </Dialog>
