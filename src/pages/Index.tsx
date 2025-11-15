@@ -19,6 +19,7 @@ import VibeCodingPlayground from "@/components/VibeCodingPlayground";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+import { useTranslation } from "@/hooks/useTranslation";
 import heroImage from "@/assets/hero-rain-wide.png";
 import heroMobile from "@/assets/hero-mobile.png";
 import voidCityFront from "@/assets/void-city-front.png";
@@ -78,6 +79,7 @@ const Index = () => {
   const [hasAccess, setHasAccess] = useState(() => {
     return localStorage.getItem("thevoidn13_access_granted") === "true";
   });
+  const { t } = useTranslation();
   
   const schemaData = {
     "@context": "https://schema.org",
@@ -184,7 +186,7 @@ const Index = () => {
               srcPt="/audio/thevoidn13-manifesto-pt.mp3"
               srcEn="/audio/thevoidn13-manifesto-en.mp3"
               title="THEVØIDN13 | INTRO"
-              description="Narração conceitual do projeto / Conceptual project narration"
+              description={t("conceptualNarration")}
             />
           </div>
         </section>
@@ -1951,14 +1953,14 @@ const Index = () => {
               portugueseContent={
                 <div>
                   <p className="bible-body">
-                    Apresentação Conceitual / Concept Art / MoodBoard. O mapa visual do inconsciente. Documentos que preservam a gênese estética e filosófica do projeto.
+                    Apresentação Conceitual, Concept Art e MoodBoard. O mapa visual do inconsciente. Documentos que preservam a gênese estética e filosófica do projeto.
                   </p>
                 </div>
               }
               englishContent={
                 <div>
                   <p className="bible-body">
-                    Conceptual Presentation / Concept Art / MoodBoard. The visual map of the unconscious. Documents preserving the aesthetic and philosophical genesis of the project.
+                    Conceptual Presentation, Concept Art and MoodBoard. The visual map of the unconscious. Documents preserving the aesthetic and philosophical genesis of the project.
                   </p>
                 </div>
               }
@@ -2087,7 +2089,7 @@ const Index = () => {
                 className="w-full p-6 bg-card/80 hover:bg-primary/5 border-2 border-primary/30 hover:border-primary rounded-lg transition-all group"
               >
                 <p className="subtitle text-foreground group-hover:text-primary">
-                  ACESSAR ORÁCULO | ACCESS ORACLE
+                  {t("accessOracle")}
                 </p>
               </button>
             </div>
@@ -2131,7 +2133,10 @@ const Index = () => {
           {/* DOCUMENTAÇÃO TÉCNICA */}
           <div className="grid md:grid-cols-2 gap-12 mt-12">
             <div className="space-y-6">
-              <h3 className="bible-subtitle">Main Doc. / Doc. Principais</h3>
+              <BilingualContent
+                portugueseContent={<h3 className="bible-subtitle">{t("mainDoc")}</h3>}
+                englishContent={<h3 className="bible-subtitle">{t("mainDoc")}</h3>}
+              />
               
               <div className="space-y-4">
                 <a 
@@ -2141,7 +2146,7 @@ const Index = () => {
                   className="block hover:text-primary transition-colors"
                 >
                   <h4 className="text-base font-bold">README.md</h4>
-                  <p className="text-sm text-muted-foreground">Manifesto e estrutura do projeto / Manifesto and project structure</p>
+                  <p className="text-sm text-muted-foreground">{t("readmeDesc")}</p>
                 </a>
                 
                 <a 
@@ -2151,7 +2156,7 @@ const Index = () => {
                   className="block hover:text-primary transition-colors"
                 >
                   <h4 className="text-base font-bold">LICENSE.md</h4>
-                  <p className="text-sm text-muted-foreground">Licença CC BY-NC-SA 4.0 / CC BY-NC-SA 4.0 License</p>
+                  <p className="text-sm text-muted-foreground">{t("licenseDesc")}</p>
                 </a>
                 
                 <a 
@@ -2161,7 +2166,7 @@ const Index = () => {
                   className="block hover:text-primary transition-colors"
                 >
                   <h4 className="text-base font-bold">CITATION.cff</h4>
-                  <p className="text-sm text-muted-foreground">Citação automatizada GitHub / GitHub automated citation</p>
+                  <p className="text-sm text-muted-foreground">{t("citationDesc")}</p>
                 </a>
                 
                 <a 
@@ -2171,13 +2176,16 @@ const Index = () => {
                   className="block hover:text-primary transition-colors"
                 >
                   <h4 className="text-base font-bold">METHODOLOGY.md</h4>
-                  <p className="text-sm text-muted-foreground">Métodos e procedimentos de pesquisa / Research methods and procedures</p>
+                  <p className="text-sm text-muted-foreground">{t("methodologyDesc")}</p>
                 </a>
               </div>
             </div>
 
             <div className="space-y-6">
-              <h3 className="bible-subtitle">Technical Doc. / Doc. Técnica</h3>
+              <BilingualContent
+                portugueseContent={<h3 className="bible-subtitle">{t("technicalDoc")}</h3>}
+                englishContent={<h3 className="bible-subtitle">{t("technicalDoc")}</h3>}
+              />
               
               <div className="space-y-4">
                 <a 
@@ -2187,7 +2195,7 @@ const Index = () => {
                   className="block hover:text-primary transition-colors"
                 >
                   <h4 className="text-base font-bold">PHILOSOPHY.md</h4>
-                  <p className="text-sm text-muted-foreground">Justificativa das escolhas conceituais / Rationale for conceptual choices</p>
+                  <p className="text-sm text-muted-foreground">{t("philosophyDesc")}</p>
                 </a>
                 
                 <a 
@@ -2197,7 +2205,7 @@ const Index = () => {
                   className="block hover:text-primary transition-colors"
                 >
                   <h4 className="text-base font-bold">COPYRIGHT.md</h4>
-                  <p className="text-sm text-muted-foreground">Ética e transparência da co-criação / Ethics and transparency of co-creation</p>
+                  <p className="text-sm text-muted-foreground">{t("copyrightDesc")}</p>
                 </a>
                 
                 <a 
@@ -2207,7 +2215,7 @@ const Index = () => {
                   className="block hover:text-primary transition-colors"
                 >
                   <h4 className="text-base font-bold">HOW_TO_CITE.md</h4>
-                  <p className="text-sm text-muted-foreground">Guia completo de citação acadêmica / Complete academic citation guide</p>
+                  <p className="text-sm text-muted-foreground">{t("howToCiteDesc")}</p>
                 </a>
                 
                 <a 
@@ -2217,34 +2225,52 @@ const Index = () => {
                   className="block hover:text-primary transition-colors"
                 >
                   <h4 className="text-base font-bold">REFERENCES.md</h4>
-                  <p className="text-sm text-muted-foreground">Bibliografia completa do projeto / Complete project bibliography</p>
+                  <p className="text-sm text-muted-foreground">{t("referencesDesc")}</p>
                 </a>
               </div>
             </div>
           </div>
 
-          {/* COMPLETE REPOSITORY */}
+          {/* REPOSITÓRIO COMPLETO */}
           <div className="mt-12">
-            <a 
-              href="https://github.com/castropizzano/thevoidn13"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block bg-primary/5 border-2 border-primary/30 rounded-lg p-8 hover:bg-primary/10 hover:border-primary transition-colors group"
-            >
-              <div className="flex items-center justify-between">
-                <div>
-                  <h3 className="text-2xl font-bold group-hover:text-primary transition-colors mb-2">
-                    Complete Repository / Repositório Completo
-                  </h3>
-                  <p className="text-base text-muted-foreground">
-                    Acesso a todos os arquivos no GitHub / Access all files on GitHub
-                  </p>
-                </div>
-                <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </div>
-            </a>
+            <BilingualContent
+              portugueseContent={
+                <a 
+                  href="https://github.com/castropizzano/thevoidn13"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block bg-card border border-primary/30 rounded-lg p-6 hover:border-primary transition-colors group"
+                >
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <h3 className="text-lg font-bold text-primary mb-2">{t("completeRepository")}</h3>
+                      <p className="text-sm text-muted-foreground">{t("accessAllFiles")}</p>
+                    </div>
+                    <svg className="w-6 h-6 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </div>
+                </a>
+              }
+              englishContent={
+                <a 
+                  href="https://github.com/castropizzano/thevoidn13"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block bg-card border border-primary/30 rounded-lg p-6 hover:border-primary transition-colors group"
+                >
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <h3 className="text-lg font-bold text-primary mb-2">{t("completeRepository")}</h3>
+                      <p className="text-sm text-muted-foreground">{t("accessAllFiles")}</p>
+                    </div>
+                    <svg className="w-6 h-6 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </div>
+                </a>
+              }
+            />
           </div>
         </BilingualSection>
       </main>

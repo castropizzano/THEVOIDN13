@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { Play, Pause, Volume2, VolumeX } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface BilingualAudioPlayerProps {
   srcPt: string;
@@ -12,12 +13,18 @@ interface BilingualAudioPlayerProps {
 
 export const BilingualAudioPlayer = ({ srcPt, srcEn, title, description }: BilingualAudioPlayerProps) => {
   const audioRef = useRef<HTMLAudioElement>(null);
-  const [selectedLang, setSelectedLang] = useState<"pt" | "en">("pt");
+  const { language } = useLanguage(); // Usa idioma global
+  const [selectedLang, setSelectedLang] = useState<"pt" | "en">(language);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [volume, setVolume] = useState(1);
   const [isMuted, setIsMuted] = useState(false);
+
+  // Sincronizar com idioma global
+  useEffect(() => {
+    setSelectedLang(language);
+  }, [language]);
 
   const currentSrc = selectedLang === "pt" ? srcPt : srcEn;
 
