@@ -175,21 +175,21 @@ export const ComicGenerator = () => {
         <Tabs value={promptMode} onValueChange={(v) => setPromptMode(v as "library" | "custom")}>
           <TabsList className="grid w-full grid-cols-2">
             <TabsTrigger value="library" className="subtitle">
-              Biblioteca / Library
+              {t("library")}
             </TabsTrigger>
             <TabsTrigger value="custom" className="subtitle">
-              Personalizado / Custom
+              {t("custom")}
             </TabsTrigger>
           </TabsList>
 
           <TabsContent value="library" className="space-y-4 mt-4">
             <div className="space-y-2">
               <label className="subtitle">
-                Selecionar Prompt Base / Select Base Prompt
+                {t("selectBasePrompt")}
               </label>
               <Select value={selectedPromptId} onValueChange={handlePromptChange}>
                 <SelectTrigger>
-                  <SelectValue placeholder="Escolha um prompt da biblioteca / Choose from library" />
+                  <SelectValue placeholder={t("selectBasePrompt")} />
                 </SelectTrigger>
                 <SelectContent>
                   {prompts.map((prompt) => (
@@ -203,17 +203,17 @@ export const ComicGenerator = () => {
 
             <div className="space-y-2">
               <label className="subtitle">
-                Prompt Selecionado / Selected Prompt
+                {t("selectedPrompt")}
               </label>
               <Textarea
-                placeholder="Selecione um prompt da biblioteca acima..."
+                placeholder={t("selectBasePrompt")}
                 value={script}
                 onChange={(e) => setScript(e.target.value)}
                 className="min-h-[200px] font-mono text-sm"
                 disabled={isGenerating}
               />
               <p className="body-small text-muted-foreground">
-                Você pode editar o prompt selecionado ou usá-lo como está / You can edit the selected prompt or use it as is
+                {t("editPromptNote")}
               </p>
             </div>
           </TabsContent>
@@ -222,7 +222,7 @@ export const ComicGenerator = () => {
             <div className="space-y-2">
               <div className="flex justify-between items-center">
                 <label className="bible-subtitle">
-                  Criar Prompt Personalizado / Create Custom Prompt
+                  {t("customPrompt")}
                 </label>
                 <span className={`bible-body ${
                   customScript.length < 50 
@@ -235,7 +235,7 @@ export const ComicGenerator = () => {
                 </span>
               </div>
               <Textarea
-                placeholder="Descreva sua cena seguindo o estilo THEVØIDN13. As System Instructions (Shadow Interface Bible v13) serão aplicadas automaticamente..."
+                placeholder={t("customPromptPlaceholder")}
                 value={customScript}
                 onChange={(e) => setCustomScript(e.target.value)}
                 className="min-h-[200px] font-mono text-sm"
@@ -243,10 +243,16 @@ export const ComicGenerator = () => {
               />
               <div className="space-y-1">
                 <p className="body-small text-muted-foreground">
-                  <strong>⚠️ Limites / Limits:</strong> Mínimo 50 caracteres / Minimum 50 chars • Máximo 1500 caracteres / Maximum 1500 chars
+                  <BilingualContent
+                    portugueseContent={<><strong>⚠️ Limites:</strong> Mínimo 50 caracteres • Máximo 1500 caracteres</>}
+                    englishContent={<><strong>⚠️ Limits:</strong> Minimum 50 chars • Maximum 1500 chars</>}
+                  />
                 </p>
                 <p className="body-small text-muted-foreground">
-                  <strong>Dica:</strong> Descreva a cena, personagens, iluminação e atmosfera. 
+                  {t("customPromptNote")}
+                </p>
+              </div>
+            </div>
                   As regras canônicas do universo THEVØIDN13 serão automaticamente aplicadas.
                 </p>
                 <p className="body-small text-muted-foreground">
@@ -271,10 +277,10 @@ export const ComicGenerator = () => {
           {isGenerating ? (
             <>
               <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-              Gerando... / Generating...
+              {t("generating")}
             </>
           ) : (
-            "Gerar Still / Generate Still"
+            t("generateStill")
           )}
         </Button>
 
@@ -292,28 +298,29 @@ export const ComicGenerator = () => {
               variant="outline"
               className="w-full subtitle"
             >
-              Download
+            {t("downloadStill")}
             </Button>
           </div>
         )}
 
       <div className="pt-4 border-t border-border space-y-2">
         <p className="body-small text-muted-foreground">
-          <span className="font-medium">Nota Experimental:</span> Este gerador usa a Shadow Interface Bible v13 
-          como system prompt base, aplicada automaticamente a {promptMode === "library" ? "todos os prompts da biblioteca" : "prompts personalizados"}.
+          <BilingualContent
+            portugueseContent={<><span className="font-medium">Nota Experimental:</span> Este gerador usa a Shadow Interface Bible v13 como system prompt base, aplicada automaticamente a {promptMode === "library" ? "todos os prompts da biblioteca" : "prompts personalizados"}.</>}
+            englishContent={<><span className="font-medium">Experimental Note:</span> This generator uses the Shadow Interface Bible v13 as base system prompt, automatically applied to {promptMode === "library" ? "all library prompts" : "custom prompts"}.</>}
+          />
         </p>
         <p className="body-small text-muted-foreground">
-          <strong>Modo Biblioteca:</strong> Use prompts oficiais pré-configurados para máxima fidelidade visual. 
-          <strong className="ml-1">Modo Personalizado:</strong> Crie suas próprias cenas mantendo as diretrizes canônicas do universo.
+          <BilingualContent
+            portugueseContent={<><strong>Modo Biblioteca:</strong> {t("libraryMode")} <strong className="ml-1">Modo Personalizado:</strong> {t("customMode")}</>}
+            englishContent={<><strong>Library Mode:</strong> {t("libraryMode")} <strong className="ml-1">Custom Mode:</strong> {t("customMode")}</>}
+          />
         </p>
         <p className="body-small text-muted-foreground">
-          Todas as imagens são geradas em <strong>aspect ratio 16:9 horizontal</strong>, 
-          preservando todo o conteúdo sem cortes e recebem automaticamente a marca d'água oficial 
-          THEVØIDN13 em 50% de transparência no canto inferior direito.
+          {t("allImagesNote")}
         </p>
         <p className="body-small text-muted-foreground">
-          Parâmetros canônicos: Temperature 0.2, Top P 0.5, 
-          estilo dirty comic book art com heavy inks e analog print grain.
+          {t("canonicalParams")}
         </p>
       </div>
       </CardContent>
