@@ -55,8 +55,8 @@ const Autor = () => {
         {/* Nome */}
         <BilingualSection className="py-16">
           <div>
-            <h1 className="bible-title">CASTRO PIZZANO</h1>
-            <p className="bible-body mt-4 text-muted-foreground">цастро™ / PUNK</p>
+            <h1 className="tvn-h1">CASTRO PIZZANO</h1>
+            <p className="tvn-body mt-4 text-muted-foreground">цастро™ / PUNK</p>
           </div>
         </BilingualSection>
 
@@ -64,37 +64,37 @@ const Autor = () => {
 
         {/* Quem Fala e De Onde Falo */}
         <BilingualSection className="py-16">
-          <div className="bible-bilingual-grid bible-block-spacing">
+          <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <h2 className="bible-title">QUEM FALA E DE ONDE FALO</h2>
+              <h2 className="tvn-h1">QUEM FALA E DE ONDE FALO</h2>
             </div>
             <div>
-              <h2 className="bible-title">WHO SPEAKS AND FROM WHERE I SPEAK</h2>
+              <h2 className="tvn-h1">WHO SPEAKS AND FROM WHERE I SPEAK</h2>
             </div>
           </div>
 
-          <div className="bible-bilingual-grid bible-section-spacing">
+          <div className="grid md:grid-cols-2 gap-12 mt-12">
             <div>
               <div className="space-y-6">
-                <p className="bible-body text-justify">Profissional criativo multidisciplinar, atuo entre as artes visuais, o design e a produção audiovisual. Minha trajetória é guiada pela criação de identidades visuais e narrativas semióticas, explorando linguagens como fotografia, vídeo, design gráfico e multiartes digitais. Transito entre processos individuais e colaborações coletivas, com base em laboratórios criativos, imersões referenciais e desenvolvimento conceitual.</p>
+                <p className="tvn-body text-justify">Profissional criativo multidisciplinar, atuo entre as artes visuais, o design e a produção audiovisual. Minha trajetória é guiada pela criação de identidades visuais e narrativas semióticas, explorando linguagens como fotografia, vídeo, design gráfico e multiartes digitais. Transito entre processos individuais e colaborações coletivas, com base em laboratórios criativos, imersões referenciais e desenvolvimento conceitual.</p>
                 
-                <p className="bible-body text-justify">Atualmente, mestrando em Cinema e Artes do Vídeo pelo PPG-CINEAV da Universidade Estadual do Paraná (Unespar – Curitiba II/FAP), na linha de pesquisa em Processos de Criação no Cinema e nas Artes do Vídeo. Integro o grupo de pesquisa CineCriare – Cinema: Criação e Reflexão (Unespar/CNPq).</p>
+                <p className="tvn-body text-justify">Atualmente, mestrando em Cinema e Artes do Vídeo pelo PPG-CINEAV da Universidade Estadual do Paraná (Unespar – Curitiba II/FAP), na linha de pesquisa em Processos de Criação no Cinema e nas Artes do Vídeo. Integro o grupo de pesquisa CineCriare – Cinema: Criação e Reflexão (Unespar/CNPq).</p>
                 
-                <p className="bible-body text-justify">Graduado em Publicidade e Propaganda (Universidade Tuiuti do Paraná, 2010) e pós-graduado em Direção de Arte e Estratégias Criativas (Unicuritiba, 2016).</p>
+                <p className="tvn-body text-justify">Graduado em Publicidade e Propaganda (Universidade Tuiuti do Paraná, 2010) e pós-graduado em Direção de Arte e Estratégias Criativas (Unicuritiba, 2016).</p>
                 
-                <p className="bible-body text-justify">Fundador da CasaTrezeStudio® (2008), coletivo criativo que funciona como laboratório independente de produção cultural, autoral e comercial, conectando pessoas, ideias e projetos. Entre 2017 e 2020, professor de Economia Criativa na Universidade Positivo; atualmente, docente nas disciplinas de Branding e Produção Audiovisual na Universidade Isulpar.</p>
+                <p className="tvn-body text-justify">Fundador da CasaTrezeStudio® (2008), coletivo criativo que funciona como laboratório independente de produção cultural, autoral e comercial, conectando pessoas, ideias e projetos. Entre 2017 e 2020, professor de Economia Criativa na Universidade Positivo; atualmente, docente nas disciplinas de Branding e Produção Audiovisual na Universidade Isulpar.</p>
                 
-                <p className="bible-body text-justify">Membro do LowPressure™, coletivo de skatistas e produtores criativos que atuam nas interseções entre skate, cinema e videoarte contemporânea. Também colaboro com o TheWorkspace™, voltado à produção audiovisual colaborativa e independente. Navego por repertórios diversos, fluxos criativos múltiplos e práticas interdisciplinares, construindo minha bagagem intelectual a partir da prática, da escuta e da troca.</p>
+                <p className="tvn-body text-justify">Membro do LowPressure™, coletivo de skatistas e produtores criativos que atuam nas interseções entre skate, cinema e videoarte contemporânea. Também colaboro com o TheWorkspace™, voltado à produção audiovisual colaborativa e independente. Navego por repertórios diversos, fluxos criativos múltiplos e práticas interdisciplinares, construindo minha bagagem intelectual a partir da prática, da escuta e da troca.</p>
               </div>
             </div>
 
             <div>
               <div className="space-y-6">
-                <p className="bible-body text-justify">Multidisciplinary creative professional, I work between visual arts, design and audiovisual production. My trajectory is guided by the creation of visual identities and semiotic narratives, exploring languages such as photography, video, graphic design and digital multi-arts. I transit between individual processes and collective collaborations, based on creative laboratories, referential immersions and conceptual development.</p>
+                <p className="tvn-body text-justify">Multidisciplinary creative professional, I work between visual arts, design and audiovisual production. My trajectory is guided by the creation of visual identities and semiotic narratives, exploring languages such as photography, video, graphic design and digital multi-arts. I transit between individual processes and collective collaborations, based on creative laboratories, referential immersions and conceptual development.</p>
                 
-                <p className="bible-body text-justify">Currently, Master's student in Cinema and Video Arts at PPG-CINEAV of the State University of Paraná (Unespar – Curitiba II/FAP), in the research line on Creation Processes in Cinema and Video Arts. I am part of the CineCriare research group – Cinema: Creation and Reflection (Unespar/CNPq).</p>
+                <p className="tvn-body text-justify">Currently, Master's student in Cinema and Video Arts at PPG-CINEAV of the State University of Paraná (Unespar – Curitiba II/FAP), in the research line on Creation Processes in Cinema and Video Arts. I am part of the CineCriare research group – Cinema: Creation and Reflection (Unespar/CNPq).</p>
                 
-                <p className="bible-body text-justify">Bachelor's degree in Advertising and Propaganda (Universidade Tuiuti do Paraná, 2010) and postgraduate degree in Art Direction and Creative Strategies (Unicuritiba, 2016).</p>
+                <p className="tvn-body text-justify">Bachelor's degree in Advertising and Propaganda (Universidade Tuiuti do Paraná, 2010) and postgraduate degree in Art Direction and Creative Strategies (Unicuritiba, 2016).</p>
                 
                 <p className="bible-body text-justify">Founder of CasaTrezeStudio® (2008), a creative collective that functions as an independent laboratory for cultural, authorial and commercial production, connecting people, ideas and projects. Between 2017 and 2020, professor of Creative Economy at Universidade Positivo; currently, lecturer in Branding and Audiovisual Production disciplines at Universidade Isulpar.</p>
                 
