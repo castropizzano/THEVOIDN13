@@ -85,8 +85,9 @@ export const AudioPlayer = ({ src, title, description }: AudioPlayerProps) => {
   };
 
   return (
-    <div className="w-full border-2 border-primary/30 rounded-lg bg-card/50 backdrop-blur-sm p-6 hover:border-primary/50 transition-colors">
-      <audio ref={audioRef} src={src} />
+    <div className="media-player-container">
+      <div className="w-full border-2 border-primary/30 rounded-lg bg-card/50 backdrop-blur-sm p-6 hover:border-primary/50 transition-colors">
+        <audio ref={audioRef} src={src} />
       
       <div className="space-y-4">
         {/* Title and Description */}
@@ -149,6 +150,7 @@ export const AudioPlayer = ({ src, title, description }: AudioPlayerProps) => {
               onValueChange={handleVolumeChange}
               className="w-24 cursor-pointer"
             />
+            </div>
           </div>
         </div>
       </div>

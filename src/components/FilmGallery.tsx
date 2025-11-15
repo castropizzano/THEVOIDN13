@@ -212,7 +212,7 @@ const FilmGallery = () => {
           </Dialog>
         </Card>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mt-6">
+        <div className="films-grid mt-6">
           {films.map((film) => (
             <TooltipProvider key={film.imdbId}>
               <Tooltip>
