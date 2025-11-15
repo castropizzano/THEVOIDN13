@@ -13,6 +13,7 @@ import Index from "./pages/Index";
 import Dissertacao from "./pages/Dissertacao";
 import Autor from "./pages/Autor";
 import Videos from "./pages/Videos";
+import StyleGuide from "./pages/StyleGuide";
 import Auth from "./pages/Auth";
 import Admin from "./pages/Admin";
 import AdminDashboard from "./pages/AdminDashboard";
@@ -35,6 +36,7 @@ const AppContent = () => {
         <Route path="/autor" element={<ProtectedRoute><Autor /></ProtectedRoute>} />
         <Route path="/galeria" element={<ProtectedRoute><Videos /></ProtectedRoute>} />
         <Route path="/videos" element={<ProtectedRoute><Videos /></ProtectedRoute>} />
+        <Route path="/style-guide" element={<StyleGuide />} />
         <Route path="/auth" element={<ProtectedRoute><Auth /></ProtectedRoute>} />
         <Route path="/admin" element={<ProtectedRoute><Admin /></ProtectedRoute>} />
         <Route path="/admin/dashboard" element={<ProtectedRoute><AdminDashboard /></ProtectedRoute>} />
