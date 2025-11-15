@@ -5,7 +5,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Sparkles, Send, RotateCcw } from "lucide-react";
 import { BilingualContent } from "./BilingualSection";
 import { useTranslation } from "@/hooks/useTranslation";
-import { useLanguage } from "@/contexts/LanguageContext";
 
 const examplePrompts = [
   {
@@ -57,10 +56,10 @@ const examplePrompts = [
 
 export default function VibeCodingPlayground() {
   const { t } = useTranslation();
-  const { language } = useLanguage();
   const [prompt, setPrompt] = useState("");
   const [output, setOutput] = useState("");
   const [isGenerating, setIsGenerating] = useState(false);
+  const [language, setLanguage] = useState<"pt" | "en">("pt");
 
   const handleGenerate = () => {
     if (!prompt.trim()) return;
