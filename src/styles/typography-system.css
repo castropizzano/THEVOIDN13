@@ -330,15 +330,41 @@ blockquote p:last-child {
 }
 
 /* ===============================================
-   ESPAÇAMENTO ENTRE MEGA SEÇÕES
+   ESPAÇAMENTO ENTRE SEÇÕES
    =============================================== */
 section + section {
-  margin-top: 80px;
+  margin-top: 0;
+}
+
+/* ===============================================
+   GRID BILÍNGUE - ESPAÇAMENTO PADRONIZADO
+   =============================================== */
+.bilingual-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  margin-top: 48px;
+}
+
+@media (min-width: 768px) {
+  .bilingual-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+  }
+}
+
+.bilingual-grid:first-child {
+  margin-top: 0 !important;
+}
+
+/* Espaçamento entre elementos dentro das colunas */
+.bilingual-col > * + * {
+  margin-top: 24px;
 }
 
 @media (max-width: 768px) {
-  section + section {
-    margin-top: 64px;
+  .bilingual-col > * + * {
+    margin-top: 20px;
   }
 }
 
@@ -359,5 +385,49 @@ section + section {
 @media (max-width: 768px) {
   .tvn-content > * + * {
     margin-top: 20px;
+  }
+}
+
+/* ===============================================
+   ESPAÇAMENTOS PARA ELEMENTOS COMUNS
+   =============================================== */
+
+/* Divisores (Separators) */
+.separator {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+@media (max-width: 768px) {
+  .separator {
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
+}
+
+/* Space-y alternatives - substituir space-y-* por tvn-stack */
+.tvn-stack > * + * {
+  margin-top: 24px;
+}
+
+.tvn-stack-sm > * + * {
+  margin-top: 16px;
+}
+
+.tvn-stack-lg > * + * {
+  margin-top: 32px;
+}
+
+@media (max-width: 768px) {
+  .tvn-stack > * + * {
+    margin-top: 20px;
+  }
+  
+  .tvn-stack-sm > * + * {
+    margin-top: 12px;
+  }
+  
+  .tvn-stack-lg > * + * {
+    margin-top: 24px;
   }
 }
