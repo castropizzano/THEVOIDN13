@@ -78,7 +78,7 @@ const AdminPageEditor = () => {
               <ArrowLeft className="mr-2 h-4 w-4" />
               Voltar ao Admin
             </Button>
-            <h1 className="tvn-h1 mb-2">Editor de Páginas</h1>
+            <h1 className="bible-title mb-2">Editor de Páginas</h1>
             <p className="text-muted-foreground">
               Admin como Espelho de Conteúdo — Edite seguindo a ordem visual do site
             </p>

@@ -3,7 +3,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SEO, creativeWorkSchema, personSchema, organizationSchema } from "@/components/SEO";
 import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
-import { H1, H2, H3, Body, BodyLarge } from "@/components/Typography";
 import { PromptLibrary } from "@/components/PromptLibrary";
 import { BilingualAudioPlayer } from "@/components/BilingualAudioPlayer";
 import { ComicGenerator } from "@/components/ComicGenerator";
@@ -165,7 +164,7 @@ const Index = () => {
         </BilingualSection>
 
         {/* ===== PARADOX RENDER ===== */}
-        <section className="pt-0 pb-6 sm:pb-8">
+        <section className="py-6 sm:py-8">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <img 
               src={paradoxRender} 
@@ -193,31 +192,31 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== MANIFESTO INTEGRADO ===== */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
-                <h2 className="tvn-h1">MANIFESTO INTEGRADO</h2>
+                <h2 className="bible-title">MANIFESTO INTEGRADO</h2>
               </>
             }
             englishContent={
               <>
-                <h2 className="tvn-h1">INTEGRATED MANIFESTO</h2>
+                <h2 className="bible-title">INTEGRATED MANIFESTO</h2>
               </>
             }
           />
           
           <BilingualContent
             portugueseContent={
-              <div>
-                <p className="tvn-body">
+              <div className="bible-section-spacing">
+                <p className="bible-body">
                   Não há começo. Há apenas o instante em que o silêncio decide respirar. THEVØIDN13 nasceu desse sopro invisível, um gesto entre a morte e o retorno. Tudo o que chamam de ausência é apenas matéria em repouso. O vazio não é falta, é incubação de forma. É o espaço onde o verbo esquece o corpo e o corpo se converte em verbo. A imagem não quer ser vista, quer ser atravessada. O silêncio não encerra, expande. E o fim aqui é apenas uma respiração mais funda.
                 </p>
               </div>
             }
             englishContent={
-              <div>
-                <p className="tvn-body">
+              <div className="bible-section-spacing">
+                <p className="bible-body">
                   There is no beginning. There is only the instant when silence decides to breathe. THEVØIDN13 was born from that invisible breath, a gesture between death and return. Everything they call absence is only matter at rest. The void is not lack, it is incubation of form. It is the space where the word forgets the body and the body becomes word. The image does not want to be seen, it wants to be crossed through. Silence does not end, it expands. And the end here is only a deeper breath.
                 </p>
               </div>
@@ -226,7 +225,7 @@ const Index = () => {
         </BilingualSection>
 
         {/* ===== FALL RENDER ===== */}
-        <section className="pt-0 pb-6 sm:pb-8">
+        <section className="py-6 sm:py-8">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <img 
               src={fallRender} 
@@ -240,33 +239,33 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 1. ORIGEM E PROPÓSITO ===== */}
-        <BilingualSection>
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
-                <h2 className="tvn-h1">1. ORIGEM E PROPÓSITO</h2>
-                <h3 className="tvn-h2">1.1 O LUGAR SEGURO PARA DESAPARECER</h3>
+                <h2 className="bible-title">1. ORIGEM E PROPÓSITO</h2>
+                <h3 className="bible-subtitle">1.1 O LUGAR SEGURO PARA DESAPARECER</h3>
               </>
             }
             englishContent={
               <>
-                <h2 className="tvn-h1">1. ORIGIN AND PURPOSE</h2>
-                <h3 className="tvn-h2">1.1 THE SAFE PLACE TO DISAPPEAR</h3>
+                <h2 className="bible-title">1. ORIGIN AND PURPOSE</h2>
+                <h3 className="bible-subtitle">1.1 THE SAFE PLACE TO DISAPPEAR</h3>
               </>
             }
           />
 
           <BilingualContent
             portugueseContent={
-              <div>
-                <p className="tvn-body">
+              <div className="bible-section-spacing">
+                <p className="bible-body">
                   Hoje entendo: o THEVØIDN13 não nasceu para uma festa. Nasceu porque eu precisava de um refúgio, um lugar onde o silêncio não fosse ausência, mas abrigo. Um espaço para desaparecer sem deixar de criar, um modo de continuar respirando quando tudo parecia saturado. O projeto cresceu como tudo orgânico: pelas frestas, pelos ruídos, pelos becos da cidade. E se alguém pergunta o que é, eu respondo: não é personagem, é vestígio. É o que restou de mim depois que todas as máscaras sociais caíram. THEVØIDN13 é o nome que dei à minha própria sombra, o mito que inventei para continuar respirando. Talvez, só talvez, seja o começo de uma nova forma de estar vivo sem precisar ser visto.
                 </p>
               </div>
             }
             englishContent={
-              <div>
-                <p className="tvn-body">
+              <div className="bible-section-spacing">
+                <p className="bible-body">
                   Today I understand: THEVØIDN13 was not born for a party. It was born because I needed a refuge, a place where silence was not absence but shelter. A space to disappear without ceasing to create, a way to keep breathing when everything seemed saturated. The project grew like everything organic: through cracks, through noise, through city alleys. And if someone asks what it is, I answer: it is not a character, it is a trace. It is what remained of me after all social masks fell. THEVØIDN13 is the name I gave to my own shadow, the myth I invented to keep breathing. Perhaps, just perhaps, it is the beginning of a new way of being alive without needing to be seen.
                 </p>
               </div>

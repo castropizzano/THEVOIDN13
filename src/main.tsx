@@ -1,7 +1,6 @@
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
 import "./index.css";
-import "./styles/typography-system.css";
 import { logDocumentChecks } from "@/lib/documentChecker";
 
 // Check document availability on app start (development only)
