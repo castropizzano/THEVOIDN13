@@ -16,6 +16,7 @@ import perfectDaysPoster from "@/assets/posters/perfect-days.jpg";
 import backToTheFuturePoster from "@/assets/posters/back-to-the-future.jpg";
 import backToTheFuture2Poster from "@/assets/posters/back-to-the-future-2.jpg";
 import backToTheFuture3Poster from "@/assets/posters/back-to-the-future-3.jpg";
+import { useTranslation } from "@/hooks/useTranslation";
 import {
   Dialog,
   DialogContent,
@@ -37,12 +38,13 @@ interface FilmReference {
   year: number;
   imdbId: string;
   posterUrl: string;
-  description: string;
+  descriptionKey: string;
   objectPosition?: string;
   scale?: string;
 }
 
 const FilmGallery = () => {
+  const { t } = useTranslation();
   const films: FilmReference[] = [
     {
       title: "Blade Runner",
@@ -50,7 +52,7 @@ const FilmGallery = () => {
       year: 1982,
       imdbId: "tt0083658",
       posterUrl: bladeRunnerPoster,
-      description: "Neo noir e solidão coreografada"
+      descriptionKey: "bladeRunnerDesc"
     },
     {
       title: "Kids",
@@ -58,7 +60,7 @@ const FilmGallery = () => {
       year: 1995,
       imdbId: "tt0113540",
       posterUrl: kidsPoster,
-      description: "Realismo sujo"
+      descriptionKey: "kidsDesc"
     },
     {
       title: "The Matrix",
@@ -66,7 +68,7 @@ const FilmGallery = () => {
       year: 1999,
       imdbId: "tt0133093",
       posterUrl: matrixPoster,
-      description: "Controle e realidade sintética"
+      descriptionKey: "matrixDesc"
     },
     {
       title: "Akira",
@@ -74,7 +76,7 @@ const FilmGallery = () => {
       year: 1988,
       imdbId: "tt0094625",
       posterUrl: akiraPoster,
-      description: "Energia reprimida"
+      descriptionKey: "akiraDesc"
     },
     {
       title: "Fallen Angels",
@@ -82,7 +84,7 @@ const FilmGallery = () => {
       year: 1995,
       imdbId: "tt0112913",
       posterUrl: fallenAngelsPoster,
-      description: "Atmosfera bebê-da-desesperança"
+      descriptionKey: "fallenAngelsDesc"
     },
     {
       title: "THX 1138",
@@ -90,7 +92,7 @@ const FilmGallery = () => {
       year: 1971,
       imdbId: "tt0066434",
       posterUrl: thx1138Poster,
-      description: "Despersonalização e controle",
+      descriptionKey: "thx1138Desc",
       objectPosition: "center bottom",
       scale: "scale-110"
     },
@@ -100,7 +102,7 @@ const FilmGallery = () => {
       year: 1985,
       imdbId: "tt0088846",
       posterUrl: brazilPoster,
-      description: "Burocracia como pesadelo"
+      descriptionKey: "brazilDesc"
     },
     {
       title: "Equilibrium",
@@ -108,7 +110,7 @@ const FilmGallery = () => {
       year: 2002,
       imdbId: "tt0238380",
       posterUrl: equilibriumPoster,
-      description: "Supressão emocional"
+      descriptionKey: "equilibriumDesc"
     },
     {
       title: "The Warriors",
@@ -116,7 +118,7 @@ const FilmGallery = () => {
       year: 1979,
       imdbId: "tt0080120",
       posterUrl: theWarriorsPoster,
-      description: "Deriva urbana",
+      descriptionKey: "warriorsDesc",
       scale: "scale-110"
     },
     {
@@ -125,7 +127,7 @@ const FilmGallery = () => {
       year: 1984,
       imdbId: "tt0087803",
       posterUrl: poster1984,
-      description: "Vigilância total",
+      descriptionKey: "orwell1984Desc",
       scale: "scale-110"
     },
     {
@@ -134,7 +136,7 @@ const FilmGallery = () => {
       year: 1981,
       imdbId: "tt0082176",
       posterUrl: christianeFPoster,
-      description: "Deriva poética"
+      descriptionKey: "christianeFDesc"
     },
     {
       title: "Perfect Days",
@@ -142,7 +144,7 @@ const FilmGallery = () => {
       year: 2023,
       imdbId: "tt27503384",
       posterUrl: perfectDaysPoster,
-      description: "Ritmo existencial"
+      descriptionKey: "perfectDaysDesc"
     },
     {
       title: "Back to the Future",
@@ -150,7 +152,7 @@ const FilmGallery = () => {
       year: 1985,
       imdbId: "tt0088763",
       posterUrl: backToTheFuturePoster,
-      description: "Temporalidade",
+      descriptionKey: "backToFutureDesc",
       scale: "scale-110"
     },
     {
@@ -159,7 +161,7 @@ const FilmGallery = () => {
       year: 1989,
       imdbId: "tt0096874",
       posterUrl: backToTheFuture2Poster,
-      description: "Temporalidade futura"
+      descriptionKey: "backToFutureDesc"
     },
     {
       title: "Back to the Future Part III",
@@ -167,7 +169,7 @@ const FilmGallery = () => {
       year: 1990,
       imdbId: "tt0099088",
       posterUrl: backToTheFuture3Poster,
-      description: "Temporalidade passada"
+      descriptionKey: "backToFutureDesc"
     }
   ];
 

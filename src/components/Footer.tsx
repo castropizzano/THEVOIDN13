@@ -10,7 +10,7 @@ const Footer = () => {
           <div>
             <h3 className="text-sm sm:text-base font-bold tracking-wide">THEVØIDN13</h3>
             <p className="text-xs sm:text-sm text-muted-foreground mt-1">
-              Memorial Artístico e Práxis Híbrida / Artistic Memorial and Hybrid Praxis
+              {t("artisticMemorial")}
             </p>
           </div>
           <div className="text-left md:text-right">
