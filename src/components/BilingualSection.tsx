@@ -30,17 +30,30 @@ export const BilingualContent = ({
   englishContent,
   alignTop = false
 }: BilingualContentProps) => {
-  // Aplica automaticamente classes de espaçamento nos títulos e parágrafos
-  const processContent = (content: React.ReactNode) => {
-    return content;
-  };
+  return (
+    <div className="space-y-16">
+      {/* Conteúdo em Português */}
+      <div className="bilingual-section">
+        <div className="bilingual-lang-label">
+          <span className="text-xs font-semibold uppercase tracking-wider text-primary">PT</span>
+        </div>
+        <div className="bilingual-content">
+          {portugueseContent}
+        </div>
+      </div>
 
-  return <div className="bilingual-grid">
-      <div className="bilingual-col">
-        {processContent(portugueseContent)}
+      {/* Separador sutil */}
+      <div className="border-t border-border/30"></div>
+
+      {/* Conteúdo em Inglês */}
+      <div className="bilingual-section">
+        <div className="bilingual-lang-label">
+          <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">EN</span>
+        </div>
+        <div className="bilingual-content">
+          {englishContent}
+        </div>
       </div>
-      <div className="bilingual-col">
-        {processContent(englishContent)}
-      </div>
-    </div>;
+    </div>
+  );
 };
