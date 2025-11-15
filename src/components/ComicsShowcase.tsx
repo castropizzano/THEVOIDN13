@@ -70,43 +70,33 @@ const ComicsShowcase = () => {
           <Dialog>
             <DialogTrigger asChild>
               <Button variant="outline" className="w-full justify-start mb-8">
-                <span className="text-sm">DNA Conceitual dos Quadrinhos</span>
+                <span className="text-sm">{t("comicsDNAButton")}</span>
               </Button>
             </DialogTrigger>
             <DialogContent className="max-w-2xl">
               <DialogHeader>
                 <DialogTitle className="text-2xl font-bold mb-4">
-                  DNA Conceitual dos Quadrinhos
+                  {t("comicsDNATitle")}
                 </DialogTitle>
               </DialogHeader>
               <div className="space-y-6 text-sm leading-relaxed">
-                <p>
-                  Três obras que estruturam a arquitetura narrativa e visual do projeto:
-                </p>
+                <p>{t("comicsDNAIntro")}</p>
                 <ul className="space-y-4">
                   <li>
                     <strong>Watchmen (1986)</strong> — Alan Moore & Dave Gibbons<br />
-                    Ética ambígua e o mecanismo de cidade
+                    {t("watchmenDesc")}
                   </li>
                   <li>
                     <strong>The Sandman (1989)</strong> — Neil Gaiman<br />
-                    Mitologia pessoal e arquitetura do sonho
+                    {t("sandmanDesc")}
                   </li>
                   <li>
                     <strong>Black Hole (1995)</strong> — Charles Burns<br />
-                    Alienação e metamorfose corporal
+                    {t("blackHoleDesc")}
                   </li>
                 </ul>
                 <p className="mt-6 pt-6 border-t border-border">
-                  Esta abordagem ecoa a filosofia <strong>punk rock do código</strong>: resistência contra 
-                  convenções estabelecidas, acesso democratizado à expressão criativa, priorização da autenticidade 
-                  sobre perfeição técnica. Assim como Watchmen desconstruiu o gênero de super-heróis, 
-                  THEVØIDN13 desconstrói as fronteiras entre desenvolvimento técnico e performance artística.
-                </p>
-                <p className="text-xs italic text-muted-foreground mt-4">
-                  Como Rick Rubin articula em <em>The Way of Code</em>, o "punk rock of coding" é sobre remover 
-                  barreiras de entrada—não é necessário ser expert em todos os quadrinhos ou todas as linguagens. 
-                  Basta visão clara e coragem para subverter o esperado.
+                  {t("comicsDNANote")}
                 </p>
               </div>
             </DialogContent>
@@ -158,10 +148,7 @@ const ComicsShowcase = () => {
 
         <div className="mt-8 p-6 bg-secondary/10 rounded-lg border border-primary/10">
           <p className="text-sm text-center text-muted-foreground leading-relaxed">
-            Estes três quadrinhos formam a <strong className="text-foreground">tríade conceitual</strong> que 
-            estrutura o universo narrativo do THEVØIDN13. Cada um contribui com camadas 
-            distintas: <em>Watchmen</em> com a ética, <em>The Sandman</em> com a mitologia, 
-            e <em>Black Hole</em> com a metamorfose corporal e o isolamento.
+            {t("comicsTriadNote")}
           </p>
         </div>
         </Card>

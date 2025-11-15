@@ -238,7 +238,12 @@ type TranslationKey =
   | "connectionPunkRock"
   | "connectionVibeCoding"
   | "connectionCinemaPunk"
-  | "connectionTaoCoding";
+  | "connectionTaoCoding"
+  // Comics DNA
+  | "comicsDNAButton"
+  | "comicsDNATitle"
+  | "comicsDNAIntro"
+  | "comicsTriadNote";
 
 
 const translations: Record<TranslationKey, { pt: string; en: string }> = {
@@ -479,6 +484,10 @@ const translations: Record<TranslationKey, { pt: string; en: string }> = {
   instantTransformDesc: { pt: "Você descreve a intenção, a IA traduz em código", en: "You describe the intention, AI translates to code" },
   artisticMemorial: { pt: "Memorial Artístico e Práxis Híbrida", en: "Artistic Memorial and Hybrid Praxis" },
   hybridPraxis: { pt: "Práxis Híbrida", en: "Hybrid Praxis" },
+  comicsDNAButton: { pt: "DNA Conceitual dos Quadrinhos", en: "Conceptual DNA (Comics)" },
+  comicsDNATitle: { pt: "DNA Conceitual dos Quadrinhos", en: "Conceptual DNA (Comics)" },
+  comicsDNAIntro: { pt: "Três obras que estruturam a arquitetura narrativa e visual do projeto:", en: "Three works that structure the narrative and visual architecture of the project:" },
+  comicsTriadNote: { pt: "Estes três quadrinhos formam a tríade conceitual que estrutura o universo narrativo do THEVØIDN13. Cada um contribui com camadas distintas: Watchmen com a ética, The Sandman com a mitologia, e Black Hole com a metamorfose corporal e o isolamento.", en: "These three comics form the conceptual triad that structures the narrative universe of THEVØIDN13. Each contributes distinct layers: Watchmen with ethics, The Sandman with mythology, and Black Hole with bodily metamorphosis and isolation." },
 };
 
 export const useTranslation = () => {
