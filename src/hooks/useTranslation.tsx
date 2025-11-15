@@ -85,7 +85,21 @@ type TranslationKey =
   | "urbanChaos"
   | "internalCollapse"
   | "sonicColapso"
-  | "fullLength";
+  | "fullLength"
+  | "mainDoc"
+  | "technicalDoc"
+  | "readmeDesc"
+  | "licenseDesc"
+  | "citationDesc"
+  | "methodologyDesc"
+  | "philosophyDesc"
+  | "copyrightDesc"
+  | "howToCiteDesc"
+  | "referencesDesc"
+  | "completeRepository"
+  | "accessAllFiles"
+  | "accessOracle"
+  | "conceptualNarration";
 
 const translations: Record<TranslationKey, { pt: string; en: string }> = {
   home: { pt: "INÍCIO", en: "HOME" },
@@ -173,6 +187,20 @@ const translations: Record<TranslationKey, { pt: string; en: string }> = {
   internalCollapse: { pt: "Colapso Interno", en: "Internal Collapse" },
   sonicColapso: { pt: "Colapso Sônico", en: "Sonic Collapse" },
   fullLength: { pt: "Duração Completa", en: "Full Length" },
+  mainDoc: { pt: "Doc. Principais", en: "Main Doc." },
+  technicalDoc: { pt: "Doc. Técnica", en: "Technical Doc." },
+  readmeDesc: { pt: "Manifesto e estrutura do projeto", en: "Manifesto and project structure" },
+  licenseDesc: { pt: "Licença CC BY-NC-SA 4.0", en: "CC BY-NC-SA 4.0 License" },
+  citationDesc: { pt: "Citação automatizada GitHub", en: "GitHub automated citation" },
+  methodologyDesc: { pt: "Métodos e procedimentos de pesquisa", en: "Research methods and procedures" },
+  philosophyDesc: { pt: "Justificativa das escolhas conceituais", en: "Rationale for conceptual choices" },
+  copyrightDesc: { pt: "Ética e transparência da co-criação", en: "Ethics and transparency of co-creation" },
+  howToCiteDesc: { pt: "Guia completo de citação acadêmica", en: "Complete academic citation guide" },
+  referencesDesc: { pt: "Bibliografia completa do projeto", en: "Complete project bibliography" },
+  completeRepository: { pt: "REPOSITÓRIO COMPLETO", en: "COMPLETE REPOSITORY" },
+  accessAllFiles: { pt: "Acesso a todos os arquivos no GitHub", en: "Access all files on GitHub" },
+  accessOracle: { pt: "ACESSAR ORÁCULO", en: "ACCESS ORACLE" },
+  conceptualNarration: { pt: "Narração conceitual do projeto", en: "Conceptual project narration" },
 };
 
 export const useTranslation = () => {
