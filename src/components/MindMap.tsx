@@ -33,7 +33,7 @@ export const MindMap = () => {
       </div>
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogContent className="max-w-6xl mx-auto max-h-[90vh] overflow-y-auto bg-background/95 backdrop-blur-sm p-6 sm:p-8">
+        <DialogContent className="max-w-6xl mx-auto max-h-[90vh] overflow-y-auto bg-background/95 backdrop-blur-sm p-6 sm:p-8 pt-12">
           <DialogTitle className="sr-only">{language === 'pt' ? 'Mapa Mental Creative-Ops Completo' : 'Creative-Ops Mind Map Full'}</DialogTitle>
           <DialogDescription className="sr-only">
             {language === 'pt' ? 'Ecossistema completo das operações criativas THEVØIDN13' : 'Complete ecosystem of THEVØIDN13 creative operations'}
