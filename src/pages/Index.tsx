@@ -793,53 +793,40 @@ const Index = () => {
             englishContent={<p className="bible-body">{t("symbolIntro")}</p>}
           />
 
-          <div className="grid md:grid-cols-2 gap-12 mt-12">
-            <div className="space-y-8">
-              <div>
-              <h4 className="bible-subtitle">ORIGEM LINGUÍSTICA</h4>
-              <p className="bible-body">
-                  A letra Ø maiúscula e ø minúscula é uma vogal usada no dinamarquês, norueguês e feroês, derivada do alfabeto rúnico nórdico antigo, representa passagem, interseção, ruptura, perfeita para a ideia de vazio consciente ou identidade negada.
-                </p>
+          <BilingualContent
+            portugueseContent={
+              <div className="space-y-8">
+                <div>
+                  <h4 className="bible-subtitle">{t("linguisticOriginTitle")}</h4>
+                  <p className="bible-body">{t("linguisticOriginDesc")}</p>
+                </div>
+                <div>
+                  <h4 className="bible-subtitle">{t("mathPhilosophyTitle")}</h4>
+                  <p className="bible-body">{t("mathPhilosophyDesc")}</p>
+                </div>
+                <div>
+                  <h4 className="bible-subtitle">{t("computationTitle")}</h4>
+                  <p className="bible-body">{t("computationDesc")}</p>
+                </div>
               </div>
-
-              <div>
-              <h4 className="bible-subtitle">MATEMÁTICA & FILOSOFIA</h4>
-              <p className="bible-body">
-                  O símbolo ∅ representa o conjunto vazio na matemática, ausência de elementos, o nada estruturado, simbolicamente tornou-se sinônimo de negação do conteúdo, o espaço potencial onde tudo pode emergir, a base do zero existencial.
-                </p>
+            }
+            englishContent={
+              <div className="space-y-8">
+                <div>
+                  <h4 className="bible-subtitle">{t("linguisticOriginTitle")}</h4>
+                  <p className="bible-body">{t("linguisticOriginDesc")}</p>
+                </div>
+                <div>
+                  <h4 className="bible-subtitle">{t("mathPhilosophyTitle")}</h4>
+                  <p className="bible-body">{t("mathPhilosophyDesc")}</p>
+                </div>
+                <div>
+                  <h4 className="bible-subtitle">{t("computationTitle")}</h4>
+                  <p className="bible-body">{t("computationDesc")}</p>
+                </div>
               </div>
-
-              <div>
-              <h4 className="bible-subtitle">COMPUTAÇÃO</h4>
-              <p className="bible-body">
-                  Na era dos mainframes o zero cortado diferenciava a letra O do número zero, tornou-se símbolo de precisão, linguagem de máquina e leitura binária, muito usado em design hacker e cultura digital, representa a leitura correta da ausência, o vazio interpretado pela máquina tornando o vazio compreensível ao sistema digital.
-                </p>
-              </div>
-            </div>
-
-            <div className="space-y-8">
-              <div>
-              <h4 className="bible-subtitle">LINGUISTIC ORIGIN</h4>
-              <p className="bible-body">
-                  The letter Ø uppercase and ø lowercase is a vowel used in Danish, Norwegian and Faroese, derived from the Old Norse runic alphabet, it represents passage, intersection, rupture, perfect for the idea of conscious void or negated identity.
-                </p>
-              </div>
-
-              <div>
-              <h4 className="bible-subtitle">MATHEMATICS & PHILOSOPHY</h4>
-              <p className="bible-body">
-                  The ∅ symbol represents the empty set in mathematics, absence of elements, structured nothingness, symbolically it became synonymous with the negation of content, the potential space where everything can emerge, the basis of the existential zero.
-                </p>
-              </div>
-
-              <div>
-              <h4 className="bible-subtitle">COMPUTATION</h4>
-              <p className="bible-body">
-                  In the mainframe era the slashed zero differentiated the letter O from the number zero, it became a symbol of precision, machine language and binary reading, widely used in hacker design and digital culture, it represents the correct reading of absence, the void interpreted by the machine making emptiness comprehensible to the digital system.
-                </p>
-              </div>
-            </div>
-          </div>
+            }
+          />
 
           <BilingualContent
             portugueseContent={
