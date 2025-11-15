@@ -342,12 +342,20 @@
     /* Coluna EN */
   }
   
-  /* Ocultar coluna EN quando idioma é PT */
+  /* Ocultar coluna EN quando idioma é PT e expandir coluna PT */
+  [data-language="pt"] .bible-bilingual-grid {
+    grid-template-columns: 1fr;
+  }
+  
   [data-language="pt"] .bible-bilingual-grid > div:last-child {
     display: none;
   }
   
-  /* Ocultar coluna PT quando idioma é EN */
+  /* Ocultar coluna PT quando idioma é EN e expandir coluna EN */
+  [data-language="en"] .bible-bilingual-grid {
+    grid-template-columns: 1fr;
+  }
+  
   [data-language="en"] .bible-bilingual-grid > div:first-child {
     display: none;
   }
