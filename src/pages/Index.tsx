@@ -11,6 +11,7 @@ import { CreativeOracle } from "@/components/CreativeOracle";
 import { BackToTop } from "@/components/BackToTop";
 import { AccessGate } from "@/components/AccessGate";
 import { CookieConsent } from "@/components/CookieConsent";
+import { ScrollSpyNav } from "@/components/ScrollSpyNav";
 import SpotifyPlaylist from "@/components/SpotifyPlaylist";
 import FilmGallery from "@/components/FilmGallery";
 import ComicsShowcase from "@/components/ComicsShowcase";
@@ -96,10 +97,11 @@ const Index = () => {
       <Header />
       <CreativeOracle open={oracleOpen} onOpenChange={setOracleOpen} />
       <BackToTop />
+      <ScrollSpyNav />
       
       <main>
         {/* ===== HERO SECTION ===== */}
-        <section className="w-full min-h-screen flex items-center justify-center overflow-hidden bg-black">
+        <section id="hero" className="w-full min-h-screen flex items-center justify-center overflow-hidden bg-black">
           <picture className="w-full h-full">
             <source media="(max-width: 768px)" srcSet={heroMobile} />
             <source media="(min-width: 769px)" srcSet={heroImage} />
@@ -148,7 +150,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== INÍCIO DA TRANSMISSÃO ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection id="transmissao" className="section-padding">
           <BilingualContent
             portugueseContent={
               <>
@@ -192,7 +194,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== MANIFESTO INTEGRADO ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection id="manifesto" className="section-padding">
           <BilingualContent
             portugueseContent={
               <>
@@ -239,7 +241,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 1. ORIGEM E PROPÓSITO ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection id="origem" className="section-padding">
           <BilingualContent
             portugueseContent={
               <>
@@ -313,7 +315,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 2. FILOSOFIA CENTRAL ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection id="filosofia" className="section-padding">
           <BilingualContent
             portugueseContent={
               <>
@@ -346,7 +348,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 3. A ENTIDADE: THEVØIDN13 ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection id="entidade" className="section-padding">
           <BilingualContent
             portugueseContent={
               <>
@@ -471,7 +473,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 4. A PSIQUE | ARQUITETURA DO SER ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection id="psique" className="section-padding">
           <BilingualContent
             portugueseContent={
               <>
@@ -667,7 +669,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 5. LÉXICO DO VAZIO ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection id="lexico" className="section-padding">
           <BilingualContent
             portugueseContent={
               <>
@@ -1387,7 +1389,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== A METODOLOGIA ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection id="metodologia" className="section-padding">
           <BilingualContent
             portugueseContent={
               <>
@@ -1422,7 +1424,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== CHARACTER VIEWS ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection id="personagens" className="section-padding">
           <BilingualContent
             portugueseContent={
               <>
