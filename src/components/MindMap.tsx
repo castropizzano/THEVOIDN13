@@ -34,9 +34,9 @@ export const MindMap = () => {
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogContent className="max-w-6xl mx-auto max-h-[90vh] overflow-y-auto bg-background/95 backdrop-blur-sm p-6 sm:p-8">
-          <DialogTitle className="sr-only">Creative-Ops Mind Map Completo</DialogTitle>
+          <DialogTitle className="sr-only">{language === 'pt' ? 'Mapa Mental Creative-Ops Completo' : 'Creative-Ops Mind Map Full'}</DialogTitle>
           <DialogDescription className="sr-only">
-            Ecossistema completo das operações criativas THEVØIDN13
+            {language === 'pt' ? 'Ecossistema completo das operações criativas THEVØIDN13' : 'Complete ecosystem of THEVØIDN13 creative operations'}
           </DialogDescription>
 
           <div className="space-y-8">
@@ -55,10 +55,9 @@ export const MindMap = () => {
                   </div>
                   <div className="pl-6 space-y-1">
                     <div className="text-foreground">
-                      PT&gt; Coleta de diários, HQs, dissertação, arquivos brutos, memórias de set e processos THEVØIDN13.
-                    </div>
-                    <div className="text-muted-foreground">
-                      EN&gt; Collection of journals, comics, thesis, raw files, on-set memories and THEVØIDN13 processes.
+                      {language === 'pt'
+                        ? 'Coleta de diários, HQs, dissertação, arquivos brutos, memórias de set e processos THEVØIDN13.'
+                        : 'Collection of journals, comics, thesis, raw files, on-set memories and THEVØIDN13 processes.'}
                     </div>
                   </div>
                 </div>
@@ -70,10 +69,9 @@ export const MindMap = () => {
                   </div>
                   <div className="pl-6 space-y-1">
                     <div className="text-foreground">
-                      PT&gt; THEVØIDN13 organiza, cruza e traduz o material em protocolos visuais, textuais e sonoros.
-                    </div>
-                    <div className="text-muted-foreground">
-                      EN&gt; THEVØIDN13 organizes, cross-references and translates the material into visual, textual and sonic protocols.
+                      {language === 'pt'
+                        ? 'THEVØIDN13 organiza, cruza e traduz o material em protocolos visuais, textuais e sonoros.'
+                        : 'THEVØIDN13 organizes, cross-references and translates the material into visual, textual and sonic protocols.'}
                     </div>
                   </div>
                 </div>
@@ -85,10 +83,9 @@ export const MindMap = () => {
                   </div>
                   <div className="pl-6 space-y-1">
                     <div className="text-foreground">
-                      PT&gt; Cada projeto gera um nó no mapa: filmes, HQs, sites, prompts, memórias e experimentos.
-                    </div>
-                    <div className="text-muted-foreground">
-                      EN&gt; Each project generates a node in the map: films, comics, websites, prompts, memories and experiments.
+                      {language === 'pt'
+                        ? 'Cada projeto gera um nó no mapa: filmes, HQs, sites, prompts, memórias e experimentos.'
+                        : 'Each project generates a node in the map: films, comics, websites, prompts, memories and experiments.'}
                     </div>
                   </div>
                 </div>
@@ -100,10 +97,9 @@ export const MindMap = () => {
                   </div>
                   <div className="pl-6 space-y-1">
                     <div className="text-foreground">
-                      PT&gt; Integração com Lovable, Gamma, IA de imagem, edição de vídeo e sistemas de escrita crítica.
-                    </div>
-                    <div className="text-muted-foreground">
-                      EN&gt; Integration with Lovable, Gamma, image AIs, video editing and critical writing systems.
+                      {language === 'pt'
+                        ? 'Integração com Lovable, Gamma, IA de imagem, edição de vídeo e sistemas de escrita crítica.'
+                        : 'Integration with Lovable, Gamma, image AIs, video editing and critical writing systems.'}
                     </div>
                   </div>
                 </div>
@@ -115,10 +111,9 @@ export const MindMap = () => {
                   </div>
                   <div className="pl-6 space-y-1">
                     <div className="text-foreground">
-                      PT&gt; O mapa mental se atualiza em tempo real, espelhando o crescimento do universo THEVØIDN13.
-                    </div>
-                    <div className="text-muted-foreground">
-                      EN&gt; The mind map updates in real time, mirroring the growth of the THEVØIDN13 universe.
+                      {language === 'pt'
+                        ? 'O mapa mental se atualiza em tempo real, espelhando o crescimento do universo THEVØIDN13.'
+                        : 'The mind map updates in real time, mirroring the growth of the THEVØIDN13 universe.'}
                     </div>
                   </div>
                 </div>
@@ -130,10 +125,9 @@ export const MindMap = () => {
                   </div>
                   <div className="pl-6 space-y-1">
                     <div className="text-foreground">
-                      PT&gt; Este painel é uma visão de sistema do processo criativo em operação contínua.
-                    </div>
-                    <div className="text-muted-foreground">
-                      EN&gt; This panel is a system view of the creative process in continuous operation.
+                      {language === 'pt'
+                        ? 'Este painel é uma visão de sistema do processo criativo em operação contínua.'
+                        : 'This panel is a system view of the creative process in continuous operation.'}
                     </div>
                   </div>
                 </div>

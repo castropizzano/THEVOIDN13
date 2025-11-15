@@ -2,6 +2,8 @@ import { useState, useEffect, useRef } from 'react';
 import { Button } from './ui/button';
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from './ui/dialog';
 import { Volume2, VolumeX } from 'lucide-react';
+import { useTranslation } from '@/hooks/useTranslation';
+import { BilingualContent } from '@/components/BilingualSection';
 
 interface CreativeOracleProps {
   open: boolean;
@@ -113,6 +115,7 @@ const archetypes = {
 };
 
 export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
+  const { t, language } = useTranslation();
   const [started, setStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [scores, setScores] = useState({ shadow: 0, punk: 0, buddy: 0, gi: 0 });
@@ -197,42 +200,33 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
     return (
       <Dialog open={open} onOpenChange={onOpenChange}>
         <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto bg-background border-2 border-primary/30 p-4 sm:p-6">
-          <DialogTitle className="sr-only">Oráculo Criativo</DialogTitle>
+          <DialogTitle className="sr-only">{t("creativeOracle")}</DialogTitle>
           <DialogDescription className="sr-only">
-            Descubra seu arquétipo criativo dominante através de seis perguntas
+            {t("creativeOracleDesc")}
           </DialogDescription>
           
           <div className="space-y-6 sm:space-y-8">
             <div className="pb-6 border-b border-primary/20">
               <h2 className="bible-title text-left mb-2">
-                ORÁCULO CRIATIVO
+                {t("creativeOracle")}
               </h2>
               <p className="bible-subtitle text-left">
-                Creative Oracle
+                {t("creativeOracle")}
               </p>
             </div>
 
             <div className="space-y-4">
               <p className="body-base text-foreground/90 text-justify">
-                Seis perguntas sobre seu processo criativo. Não existe resposta certa. Apenas verdades que você ainda não disse em voz alta. O que você encontra quando para de fugir?
-              </p>
-              <p className="body-small text-muted-foreground/70 italic text-justify">
-                Six questions about your creative process. There are no right answers. Only truths you haven't spoken aloud yet. What do you find when you stop running away?
+                {t("sixQuestions")}
               </p>
             </div>
 
             <div className="space-y-3 pt-4">
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-left bible-body">
-                <div>Sombras</div>
-                <div>Ruptura</div>
-                <div>Conexão</div>
-                <div>Método</div>
-              </div>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-left bible-body opacity-60">
-                <div>Shadow</div>
-                <div>Rupture</div>
-                <div>Connection</div>
-                <div>Method</div>
+                <div>{t("shadows")}</div>
+                <div>{t("rupture")}</div>
+                <div>{t("connection")}</div>
+                <div>{t("method")}</div>
               </div>
               
               {/* Category descriptions */}
@@ -280,7 +274,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
               size="lg" 
               className="w-full bg-primary hover:bg-primary/90 text-primary-foreground subtitle py-6"
             >
-              COMEÇAR / START
+              {t("startOracle")}
             </Button>
           </div>
 
@@ -452,7 +446,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
                 variant="outline" 
                 className="border-primary/30 hover:bg-primary/10 subtitle min-h-[48px]"
               >
-                REFAZER / RESTART
+                {t("restartOracle")}
               </Button>
               <Button 
                 onClick={() => onOpenChange(false)}
