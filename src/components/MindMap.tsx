@@ -2,9 +2,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export const MindMap = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t, language } = useTranslation();
 
   return (
     <>
@@ -12,11 +14,10 @@ export const MindMap = () => {
         <Card className="bg-card/80 border-primary/30 hover:border-primary transition-colors">
           <CardHeader>
             <CardTitle className="heading-2 text-primary">
-              CREATIVE-OPS MIND MAP / MAPA MENTAL CREATIVE-OPS
+              {t("creativeOpsMindMap")}
             </CardTitle>
             <CardDescription className="body-base text-muted-foreground">
-              Ecossistema completo das operações criativas do THEVØIDN13. / 
-              Complete ecosystem of THEVØIDN13 creative operations.
+              {t("completeEcosystem")}
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -25,7 +26,7 @@ export const MindMap = () => {
               variant="outline"
               className="w-full"
             >
-              EXPANDIR MAPA COMPLETO / EXPAND FULL MAP
+              {t("expandFullMap")}
             </Button>
           </CardContent>
         </Card>
