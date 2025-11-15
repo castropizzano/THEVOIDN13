@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SEO, creativeWorkSchema, personSchema, organizationSchema } from "@/components/SEO";
 import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
+import { H1, H2, H3, Body, BodyLarge } from "@/components/Typography";
 import { PromptLibrary } from "@/components/PromptLibrary";
 import { BilingualAudioPlayer } from "@/components/BilingualAudioPlayer";
 import { ComicGenerator } from "@/components/ComicGenerator";
