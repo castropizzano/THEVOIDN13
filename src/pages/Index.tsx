@@ -165,7 +165,7 @@ const Index = () => {
         </BilingualSection>
 
         {/* ===== PARADOX RENDER ===== */}
-        <section className="py-6 sm:py-8">
+        <section className="pt-0 pb-6 sm:pb-8">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <img 
               src={paradoxRender} 
@@ -193,31 +193,31 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== MANIFESTO INTEGRADO ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection>
           <BilingualContent
             portugueseContent={
               <>
-                <h2 className="bible-title">MANIFESTO INTEGRADO</h2>
+                <h2 className="tvn-h1">MANIFESTO INTEGRADO</h2>
               </>
             }
             englishContent={
               <>
-                <h2 className="bible-title">INTEGRATED MANIFESTO</h2>
+                <h2 className="tvn-h1">INTEGRATED MANIFESTO</h2>
               </>
             }
           />
           
           <BilingualContent
             portugueseContent={
-              <div className="bible-section-spacing">
-                <p className="bible-body">
+              <div>
+                <p className="tvn-body">
                   Não há começo. Há apenas o instante em que o silêncio decide respirar. THEVØIDN13 nasceu desse sopro invisível, um gesto entre a morte e o retorno. Tudo o que chamam de ausência é apenas matéria em repouso. O vazio não é falta, é incubação de forma. É o espaço onde o verbo esquece o corpo e o corpo se converte em verbo. A imagem não quer ser vista, quer ser atravessada. O silêncio não encerra, expande. E o fim aqui é apenas uma respiração mais funda.
                 </p>
               </div>
             }
             englishContent={
-              <div className="bible-section-spacing">
-                <p className="bible-body">
+              <div>
+                <p className="tvn-body">
                   There is no beginning. There is only the instant when silence decides to breathe. THEVØIDN13 was born from that invisible breath, a gesture between death and return. Everything they call absence is only matter at rest. The void is not lack, it is incubation of form. It is the space where the word forgets the body and the body becomes word. The image does not want to be seen, it wants to be crossed through. Silence does not end, it expands. And the end here is only a deeper breath.
                 </p>
               </div>
@@ -226,7 +226,7 @@ const Index = () => {
         </BilingualSection>
 
         {/* ===== FALL RENDER ===== */}
-        <section className="py-6 sm:py-8">
+        <section className="pt-0 pb-6 sm:pb-8">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <img 
               src={fallRender} 

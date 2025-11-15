@@ -373,26 +373,49 @@ section + section {
   }
 }
 
-.bilingual-grid:first-child {
-  margin-top: 0 !important;
-}
+.bilingual-grid:first-child { margin-top: 0 !important; }
 
 /* Espaçamento entre elementos dentro das colunas */
-.bilingual-col > * + * {
-  margin-top: 24px;
-}
-
-@media (max-width: 768px) {
-  .bilingual-col > * + * {
-    margin-top: 20px;
-  }
-}
+.bilingual-col > * + * { margin-top: 24px; }
+@media (max-width: 768px) { .bilingual-col > * + * { margin-top: 20px; } }
 
 /* ===============================================
    RESET DE PRIMEIRO ELEMENTO EM COLUNAS BILÍNGUES
    =============================================== */
-.bilingual-col > *:first-child {
-  margin-top: 0 !important;
+.bilingual-col > *:first-child { margin-top: 0 !important; }
+
+/* ===============================================
+   LEGACY OVERRIDES (bible-*) → normalizar espaçamento
+   =============================================== */
+.bible-section-spacing, .bible-block-spacing {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.bible-bilingual-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  margin-top: 48px;
+}
+
+@media (min-width: 768px) {
+  .bible-bilingual-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+  }
+}
+
+/* Separadores padrão (Shadcn) */
+div[role="separator"] {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+@media (max-width: 768px) {
+  div[role="separator"] {
+    margin-top: 48px;
+    margin-bottom: 48px;
+  }
 }
 
 /* ===============================================

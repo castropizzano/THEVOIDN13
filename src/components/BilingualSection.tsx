@@ -12,7 +12,7 @@ export const BilingualSection = ({
   // Remove qualquer py-* customizado do className
   const cleanClassName = className.replace(/py-\d+/g, "").trim();
   
-  return <section className="py-12 md:py-20 bg-background">
+  return <section className="pt-12 md:pt-20 pb-0 bg-background">
       <div className={`max-w-6xl mx-auto px-4 sm:px-6 ${cleanClassName}`}>
         {children}
       </div>
