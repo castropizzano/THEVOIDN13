@@ -11,7 +11,6 @@ import { CreativeOracle } from "@/components/CreativeOracle";
 import { BackToTop } from "@/components/BackToTop";
 import { AccessGate } from "@/components/AccessGate";
 import { CookieConsent } from "@/components/CookieConsent";
-import { ScrollSpyNav } from "@/components/ScrollSpyNav";
 import SpotifyPlaylist from "@/components/SpotifyPlaylist";
 import FilmGallery from "@/components/FilmGallery";
 import ComicsShowcase from "@/components/ComicsShowcase";
@@ -97,11 +96,10 @@ const Index = () => {
       <Header />
       <CreativeOracle open={oracleOpen} onOpenChange={setOracleOpen} />
       <BackToTop />
-      <ScrollSpyNav />
       
       <main>
         {/* ===== HERO SECTION ===== */}
-        <section id="hero" className="w-full min-h-screen flex items-center justify-center overflow-hidden bg-black">
+        <section className="w-full min-h-screen flex items-center justify-center overflow-hidden bg-black">
           <picture className="w-full h-full">
             <source media="(max-width: 768px)" srcSet={heroMobile} />
             <source media="(min-width: 769px)" srcSet={heroImage} />
@@ -150,7 +148,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== INÍCIO DA TRANSMISSÃO ===== */}
-        <BilingualSection id="transmissao" className="section-padding">
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
@@ -194,7 +192,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== MANIFESTO INTEGRADO ===== */}
-        <BilingualSection id="manifesto" className="section-padding">
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
@@ -241,7 +239,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 1. ORIGEM E PROPÓSITO ===== */}
-        <BilingualSection id="origem" className="section-padding">
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
@@ -315,7 +313,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 2. FILOSOFIA CENTRAL ===== */}
-        <BilingualSection id="filosofia" className="section-padding">
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
@@ -348,7 +346,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 3. A ENTIDADE: THEVØIDN13 ===== */}
-        <BilingualSection id="entidade" className="section-padding">
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
@@ -473,7 +471,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 4. A PSIQUE | ARQUITETURA DO SER ===== */}
-        <BilingualSection id="psique" className="section-padding">
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
@@ -669,7 +667,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 5. LÉXICO DO VAZIO ===== */}
-        <BilingualSection id="lexico" className="section-padding">
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
@@ -1389,7 +1387,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== A METODOLOGIA ===== */}
-        <BilingualSection id="metodologia" className="section-padding">
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>
@@ -1424,7 +1422,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== CHARACTER VIEWS ===== */}
-        <BilingualSection id="personagens" className="section-padding">
+        <BilingualSection className="py-16">
           <BilingualContent
             portugueseContent={
               <>

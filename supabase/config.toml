@@ -1,10 +1,10 @@
 project_id = "mkigpkfahuqkqxocsyjn"
 
 [functions.vimeo-videos]
-verify_jwt = false
+verify_jwt = true
 
 [functions.generate-comic-panel]
 verify_jwt = true
 
 [functions.semantic-search]
-verify_jwt = false
+verify_jwt = true

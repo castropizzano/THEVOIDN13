@@ -2,20 +2,18 @@ interface BilingualSectionProps {
   children: React.ReactNode;
   className?: string;
   bgClassName?: string;
-  id?: string;
 }
 export const BilingualSection = ({
   children,
   className = "",
-  bgClassName = "",
-  id
+  bgClassName = ""
 }: BilingualSectionProps) => {
   // Extract custom py-* class from className if present, otherwise use default py-20
   const customPadding = className.match(/py-\d+/)?.[0] || "py-12 sm:py-16 md:py-20";
   const otherClasses = className.replace(/py-\d+/g, "").trim();
   
   // Sempre usar fundo Preto Sombra #1A1A1A (Bible v13)
-  return <section id={id} className={`${customPadding} bg-background`}>
+  return <section className={`${customPadding} bg-background`}>
       <div className={`max-w-6xl mx-auto px-4 sm:px-6 ${otherClasses}`}>
         {children}
       </div>

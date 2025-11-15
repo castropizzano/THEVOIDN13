@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useAuth } from "@/hooks/useAuth";
 import { Menu, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -7,6 +8,7 @@ import { GlobalSearch } from "@/components/GlobalSearch";
 
 const Header = () => {
   const location = useLocation();
+  const { isAdmin } = useAuth();
   const [open, setOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   
@@ -15,6 +17,10 @@ const Header = () => {
     { path: "/autor", label: "AUTHOR" },
     { path: "/videos", label: "VIDEO PORTFOLIO" },
   ];
+  
+  if (isAdmin) {
+    navItems.push({ path: "/admin", label: "ADMIN" });
+  }
   
   return (
     <>
