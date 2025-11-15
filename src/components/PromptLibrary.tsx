@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { toast } from "sonner";
+import { useTranslation } from "@/hooks/useTranslation";
 
 interface Prompt {
   id: string;
@@ -21,6 +22,7 @@ interface Prompt {
 }
 
 export const PromptLibrary = () => {
+  const { t } = useTranslation();
   const [prompts, setPrompts] = useState<Prompt[]>([]);
   const [loading, setLoading] = useState(true);
   const [open, setOpen] = useState(false);
@@ -40,7 +42,7 @@ export const PromptLibrary = () => {
       if (error) throw error;
       setPrompts(data || []);
     } catch (error) {
-      toast.error('Erro ao carregar prompts');
+      toast.error(t("errorLoadPrompts"));
     } finally {
       setLoading(false);
     }
@@ -49,9 +51,9 @@ export const PromptLibrary = () => {
   const copyToClipboard = async (text: string, title: string) => {
     try {
       await navigator.clipboard.writeText(text);
-      toast.success(`Prompt "${title}" copiado!`);
+      toast.success(`${t("copiedPrompt")} "${title}"`);
     } catch (error) {
-      toast.error('Erro ao copiar prompt');
+      toast.error(t("errorCopyPrompt"));
     }
   };
 
@@ -81,23 +83,20 @@ export const PromptLibrary = () => {
               <div className="space-y-1">
                 <CardTitle className="text-2xl flex items-center gap-2">
                   <FileCode className="w-6 h-6 text-primary" />
-                  Biblioteca de Prompts
+                  {t("promptLibraryTitle")}
                 </CardTitle>
                 <CardDescription>
-                  Prompt Library
+                  {t("promptLibraryTitle")}
                 </CardDescription>
               </div>
               <Badge variant="outline" className="text-xs">
-                {prompts.length} prompts
+                {prompts.length} {t("promptLibraryPrompts")}
               </Badge>
             </div>
           </CardHeader>
           <CardContent className="space-y-2">
             <p className="text-sm text-muted-foreground">
-              Acesse os prompts desenvolvidos para o projeto THEVØIDN13, criados de forma experimental e em constante atualização. Cada entrada reflete o processo de construção visual e narrativa do universo.
-            </p>
-            <p className="text-sm text-muted-foreground">
-              Access the prompts developed for THEVØIDN13, built experimentally and in continuous evolution. Each entry reflects the visual and narrative construction process of the universe.
+              {t("promptsAccess")}
             </p>
           </CardContent>
         </Card>
@@ -107,10 +106,10 @@ export const PromptLibrary = () => {
         <DialogHeader>
           <DialogTitle className="text-2xl flex items-center gap-2">
             <FileCode className="w-6 h-6 text-primary" />
-            Biblioteca de Prompts THEVØIDN13
+            {t("promptLibraryTitle")}
           </DialogTitle>
           <DialogDescription>
-            Templates padronizados para geração de imagens com estética Neo-Noir
+            {t("promptsAccess")}
           </DialogDescription>
         </DialogHeader>
 
@@ -118,15 +117,15 @@ export const PromptLibrary = () => {
           <TabsList className="grid w-full grid-cols-3">
             <TabsTrigger value="system" className="flex items-center gap-2">
               <FileCode className="w-4 h-4" />
-              Sistema
+              {t("systemPrompts")}
             </TabsTrigger>
             <TabsTrigger value="characters" className="flex items-center gap-2">
               <Palette className="w-4 h-4" />
-              Personagens
+              {t("characterPrompts")}
             </TabsTrigger>
             <TabsTrigger value="scenes" className="flex items-center gap-2">
               <Camera className="w-4 h-4" />
-              Cenas
+              {t("scenePrompts")}
             </TabsTrigger>
           </TabsList>
 
