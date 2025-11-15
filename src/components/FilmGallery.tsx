@@ -180,34 +180,17 @@ const FilmGallery = () => {
           <Dialog>
             <DialogTrigger asChild>
               <Button variant="outline" className="w-full justify-start mb-8">
-                <span className="text-sm">Sobre as Referências Cinematográficas</span>
+                <span className="text-sm">{t("filmReferencesButton")}</span>
               </Button>
             </DialogTrigger>
             <DialogContent className="max-w-2xl">
               <DialogHeader>
-                <DialogTitle className="text-2xl">Sobre as Referências Cinematográficas</DialogTitle>
+                <DialogTitle className="text-2xl">{t("filmReferencesTitle")}</DialogTitle>
                 <DialogDescription className="text-base leading-relaxed pt-4">
-                  <p className="mb-4">
-                    O visual do THEVØIDN13 é uma <strong>fusão do realismo sujo e da deriva poética</strong> 
-                    encontrados em filmes como <em>Kids</em> e <em>Christiane F.</em>, com o neo noir 
-                    e a solidão coreografada de <em>Blade Runner</em> e <em>Fallen Angels</em>.
-                  </p>
-                  <p className="mb-4">
-                    A atmosfera bebe da despersonalização de <em>THX 1138</em>, do controle sintético 
-                    de <em>The Matrix</em>, da energia reprimida de <em>Akira</em>, e da temporalidade 
-                    de <em>Back to the Future</em>.
-                  </p>
-                  <p className="mb-4">
-                    Esta curadoria conecta-se diretamente com os princípios de <strong>Vibe Coding</strong>: 
-                    a seleção intuitiva de referências que informam visão criativa, não execução técnica. 
-                    Como Rick Rubin articula em <em>The Way of Code</em>, o desenvolvedor atua como curador 
-                    de influências—assim como um diretor de cinema compõe atmosfera através de referências visuais.
-                  </p>
-                  <p>
-                    Cada filme contribuiu com uma camada visual, estética ou conceitual que 
-                    moldou a linguagem do projeto — desde a textura granulada até os movimentos 
-                    de câmera e a paleta de cores. <strong>Três acordes e a verdade.</strong>
-                  </p>
+                  <p className="mb-4">{t("filmRefPara1")}</p>
+                  <p className="mb-4">{t("filmRefPara2")}</p>
+                  <p className="mb-4">{t("filmRefPara3")}</p>
+                  <p>{t("filmRefPara4")}</p>
                 </DialogDescription>
               </DialogHeader>
             </DialogContent>

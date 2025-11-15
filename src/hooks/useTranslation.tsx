@@ -243,7 +243,18 @@ type TranslationKey =
   | "comicsDNAButton"
   | "comicsDNATitle"
   | "comicsDNAIntro"
-  | "comicsTriadNote";
+  | "comicsTriadNote"
+  // FilmGallery
+  | "filmReferencesButton"
+  | "filmReferencesTitle"
+  | "filmRefPara1"
+  | "filmRefPara2"
+  | "filmRefPara3"
+  | "filmRefPara4"
+  // VibeCodingPlayground
+  | "writePromptHint"
+  | "generated"
+  | "vibeCodingInAction";
 
 
 const translations: Record<TranslationKey, { pt: string; en: string }> = {
@@ -488,6 +499,17 @@ const translations: Record<TranslationKey, { pt: string; en: string }> = {
   comicsDNATitle: { pt: "DNA Conceitual dos Quadrinhos", en: "Conceptual DNA (Comics)" },
   comicsDNAIntro: { pt: "Três obras que estruturam a arquitetura narrativa e visual do projeto:", en: "Three works that structure the narrative and visual architecture of the project:" },
   comicsTriadNote: { pt: "Estes três quadrinhos formam a tríade conceitual que estrutura o universo narrativo do THEVØIDN13. Cada um contribui com camadas distintas: Watchmen com a ética, The Sandman com a mitologia, e Black Hole com a metamorfose corporal e o isolamento.", en: "These three comics form the conceptual triad that structures the narrative universe of THEVØIDN13. Each contributes distinct layers: Watchmen with ethics, The Sandman with mythology, and Black Hole with bodily metamorphosis and isolation." },
+  // FilmGallery
+  filmReferencesButton: { pt: "Sobre as Referências Cinematográficas", en: "About Cinematographic References" },
+  filmReferencesTitle: { pt: "Sobre as Referências Cinematográficas", en: "About Cinematographic References" },
+  filmRefPara1: { pt: "O visual do THEVØIDN13 é uma fusão do realismo sujo e da deriva poética encontrados em filmes como Kids e Christiane F., com o neo noir e a solidão coreografada de Blade Runner e Fallen Angels.", en: "The visual of THEVØIDN13 is a fusion of the dirty realism and poetic drift found in films like Kids and Christiane F., with the neo noir and choreographed solitude of Blade Runner and Fallen Angels." },
+  filmRefPara2: { pt: "A atmosfera bebe da despersonalização de THX 1138, do controle sintético de The Matrix, da energia reprimida de Akira, e da temporalidade de Back to the Future.", en: "The atmosphere draws from the depersonalization of THX 1138, the synthetic control of The Matrix, the repressed energy of Akira, and the temporality of Back to the Future." },
+  filmRefPara3: { pt: "Esta curadoria conecta-se diretamente com os princípios de Vibe Coding: a seleção intuitiva de referências que informam visão criativa, não execução técnica. Como Rick Rubin articula em The Way of Code, o desenvolvedor atua como curador de influências—assim como um diretor de cinema compõe atmosfera através de referências visuais.", en: "This curation connects directly with the principles of Vibe Coding: the intuitive selection of references that inform creative vision, not technical execution. As Rick Rubin articulates in The Way of Code, the developer acts as a curator of influences—just as a film director composes atmosphere through visual references." },
+  filmRefPara4: { pt: "Cada filme contribuiu com uma camada visual, estética ou conceitual que moldou a linguagem do projeto — desde a textura granulada até os movimentos de câmera e a paleta de cores. Três acordes e a verdade.", en: "Each film contributed a visual, aesthetic, or conceptual layer that shaped the language of the project—from the grainy texture to the camera movements and color palette. Three chords and the truth." },
+  // VibeCodingPlayground
+  writePromptHint: { pt: "// Escreva um prompt e clique em 'Gerar Código'", en: "// Write a prompt and click 'Generate Code'" },
+  generated: { pt: "✓ Gerado", en: "✓ Generated" },
+  vibeCodingInAction: { pt: "Vibe Coding em ação: Você descreve a intenção, a IA traduz em código. Não é sobre saber sintaxe—é sobre ter visão criativa. Três prompts e a verdade.", en: "Vibe Coding in action: You describe the intention, AI translates into code. It's not about knowing syntax—it's about having creative vision. Three prompts and the truth." }
 };
 
 export const useTranslation = () => {
