@@ -138,7 +138,6 @@ type TranslationKey =
   | "creativeProfile"
   | "restartOracle"
   | "producedMaterials"
-  | "references"
   | "theInternalEcho"
   | "conceptualDNA"
   | "conceptualDNAComics"
@@ -304,7 +303,6 @@ const translations: Record<TranslationKey, { pt: string; en: string }> = {
   creativeProfile: { pt: "Seu Perfil Criativo", en: "Your Creative Profile" },
   restartOracle: { pt: "REFAZER ORÁCULO", en: "RESTART ORACLE" },
   producedMaterials: { pt: "MATERIAIS PRODUZIDOS", en: "PRODUCED MATERIALS" },
-  references: { pt: "REFERÊNCIAS", en: "REFERENCES" },
   theInternalEcho: { pt: "O ECO INTERNO", en: "THE INTERNAL ECHO" },
   conceptualDNA: { pt: "DNA CONCEITUAL", en: "CONCEPTUAL DNA" },
   conceptualDNAComics: { pt: "DNA CONCEITUAL (QUADRINHOS)", en: "CONCEPTUAL DNA (COMICS)" },
