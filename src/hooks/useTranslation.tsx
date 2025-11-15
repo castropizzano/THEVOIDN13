@@ -99,7 +99,44 @@ type TranslationKey =
   | "completeRepository"
   | "accessAllFiles"
   | "accessOracle"
-  | "conceptualNarration";
+  | "conceptualNarration"
+  | "stillGenerator"
+  | "stillGeneratorDesc"
+  | "experimentalGenerator"
+  | "library"
+  | "custom"
+  | "selectBasePrompt"
+  | "selectedPrompt"
+  | "editPromptNote"
+  | "customPrompt"
+  | "customPromptPlaceholder"
+  | "customPromptNote"
+  | "generateStill"
+  | "generating"
+  | "downloadStill"
+  | "experimentalNote"
+  | "libraryMode"
+  | "customMode"
+  | "allImagesNote"
+  | "canonicalParams"
+  | "creativeOracle"
+  | "creativeOracleDesc"
+  | "sixQuestions"
+  | "noRightAnswers"
+  | "shadows"
+  | "rupture"
+  | "connection"
+  | "method"
+  | "shadowDesc"
+  | "ruptureDesc"
+  | "connectionDesc"
+  | "methodDesc"
+  | "startOracle"
+  | "nextQuestion"
+  | "seeResult"
+  | "dominantArchetype"
+  | "creativeProfile"
+  | "restartOracle";
 
 const translations: Record<TranslationKey, { pt: string; en: string }> = {
   home: { pt: "INÍCIO", en: "HOME" },
@@ -201,6 +238,43 @@ const translations: Record<TranslationKey, { pt: string; en: string }> = {
   accessAllFiles: { pt: "Acesso a todos os arquivos no GitHub", en: "Access all files on GitHub" },
   accessOracle: { pt: "ACESSAR ORÁCULO", en: "ACCESS ORACLE" },
   conceptualNarration: { pt: "Narração conceitual do projeto", en: "Conceptual project narration" },
+  stillGenerator: { pt: "GERADOR DE STILL", en: "STILL GENERATOR" },
+  stillGeneratorDesc: { pt: "Powered by Nano Banana (Gemini 2.5 Flash Image) o gerador experimental traduz ruído em imagem e silêncio em cor. Uma extensão sintética da visão: a máquina sonha o que o criador apenas intui.", en: "Powered by Nano Banana (Gemini 2.5 Flash Image) the experimental generator translates noise into image and silence into color. A synthetic extension of vision: the machine dreams what the creator only intuits." },
+  experimentalGenerator: { pt: "GERADOR EXPERIMENTAL DE STILL", en: "EXPERIMENTAL STILL GENERATOR" },
+  library: { pt: "Biblioteca", en: "Library" },
+  custom: { pt: "Personalizado", en: "Custom" },
+  selectBasePrompt: { pt: "Selecionar Prompt Base", en: "Select Base Prompt" },
+  selectedPrompt: { pt: "Prompt Selecionado", en: "Selected Prompt" },
+  editPromptNote: { pt: "Você pode editar o prompt selecionado ou usá-lo como está", en: "You can edit the selected prompt or use it as is" },
+  customPrompt: { pt: "Prompt Personalizado", en: "Custom Prompt" },
+  customPromptPlaceholder: { pt: "Descreva a cena que deseja gerar em detalhes...", en: "Describe the scene you want to generate in detail..." },
+  customPromptNote: { pt: "Crie suas próprias cenas mantendo as diretrizes canônicas do universo.", en: "Create your own scenes while maintaining the canonical guidelines of the universe." },
+  generateStill: { pt: "Gerar Still", en: "Generate Still" },
+  generating: { pt: "Gerando...", en: "Generating..." },
+  downloadStill: { pt: "Baixar Still", en: "Download Still" },
+  experimentalNote: { pt: "Nota Experimental: Este gerador usa a Shadow Interface Bible v13 como system prompt base, aplicada automaticamente a todos os prompts da biblioteca.", en: "Experimental Note: This generator uses the Shadow Interface Bible v13 as base system prompt, automatically applied to all library prompts." },
+  libraryMode: { pt: "Use prompts oficiais pré-configurados para máxima fidelidade visual.", en: "Use official pre-configured prompts for maximum visual fidelity." },
+  customMode: { pt: "Crie suas próprias cenas mantendo as diretrizes canônicas do universo.", en: "Create your own scenes while maintaining the canonical guidelines of the universe." },
+  allImagesNote: { pt: "Todas as imagens são geradas em aspect ratio 16:9 horizontal, preservando todo o conteúdo sem cortes e recebem automaticamente a marca d'água oficial THEVØIDN13 em 50% de transparência no canto inferior direito.", en: "All images are generated in 16:9 horizontal aspect ratio, preserving all content without crops and automatically receive the official THEVØIDN13 watermark at 50% transparency in the bottom right corner." },
+  canonicalParams: { pt: "Parâmetros canônicos: Temperature 0.2, Top P 0.5, estilo dirty comic book art com heavy inks e analog print grain.", en: "Canonical parameters: Temperature 0.2, Top P 0.5, dirty comic book art style with heavy inks and analog print grain." },
+  creativeOracle: { pt: "ORÁCULO CRIATIVO", en: "CREATIVE ORACLE" },
+  creativeOracleDesc: { pt: "Uma jornada interativa de autoconhecimento guiada por THEVØIDN13. Seis perguntas filosóficas sobre criação e ruído revelam o arquétipo que habita seu processo. O oráculo não responde — reflete.", en: "An interactive journey of self-discovery guided by THEVØIDN13. Six philosophical questions on creation and noise reveal the archetype dwelling within your process. The oracle does not answer — it reflects." },
+  sixQuestions: { pt: "Seis perguntas sobre seu processo criativo. Não existe resposta certa. Apenas verdades que você ainda não disse em voz alta. O que você encontra quando para de fugir?", en: "Six questions about your creative process. There are no right answers. Only truths you haven't spoken aloud yet. What do you find when you stop running away?" },
+  noRightAnswers: { pt: "Não existe resposta certa. Apenas verdades que você ainda não disse em voz alta.", en: "There are no right answers. Only truths you haven't spoken aloud yet." },
+  shadows: { pt: "Sombras", en: "Shadow" },
+  rupture: { pt: "Ruptura", en: "Rupture" },
+  connection: { pt: "Conexão", en: "Connection" },
+  method: { pt: "Método", en: "Method" },
+  shadowDesc: { pt: "O inconsciente como matéria-prima criativa. Aquilo que ainda não tem nome, mas já existe no escuro.", en: "The unconscious as creative raw material. That which has no name yet, but already exists in the dark." },
+  ruptureDesc: { pt: "Destruição como gesto criativo. Quebrar o que foi feito para encontrar o que ainda pode ser.", en: "Destruction as creative gesture. Breaking what was made to find what can still become." },
+  connectionDesc: { pt: "A criação como diálogo e escuta. Nada existe sozinho, tudo ressoa no outro para existir.", en: "Creation as dialogue and listening. Nothing exists alone, everything resonates in another to exist." },
+  methodDesc: { pt: "Disciplina e rigor como estrutura. A repetição consciente que transforma prática em forma refinada.", en: "Discipline and rigor as structure. Conscious repetition that transforms practice into refined form." },
+  startOracle: { pt: "INICIAR ORÁCULO", en: "START ORACLE" },
+  nextQuestion: { pt: "PRÓXIMA PERGUNTA", en: "NEXT QUESTION" },
+  seeResult: { pt: "VER RESULTADO", en: "SEE RESULT" },
+  dominantArchetype: { pt: "SEU ARQUÉTIPO DOMINANTE", en: "YOUR DOMINANT ARCHETYPE" },
+  creativeProfile: { pt: "Seu Perfil Criativo", en: "Your Creative Profile" },
+  restartOracle: { pt: "REFAZER ORÁCULO", en: "RESTART ORACLE" },
 };
 
 export const useTranslation = () => {

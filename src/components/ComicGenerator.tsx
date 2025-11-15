@@ -9,6 +9,8 @@ import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { z } from "zod";
 import watermarkLogo from "@/assets/thevoidn13-watermark.png";
+import { useTranslation } from "@/hooks/useTranslation";
+import { BilingualContent } from "@/components/BilingualSection";
 
 interface Prompt {
   id: string;
@@ -24,6 +26,7 @@ const customScriptSchema = z.string()
   .max(1500, "Descrição muito longa (máx. 1500 caracteres) / Description too long (max 1500 chars)");
 
 export const ComicGenerator = () => {
+  const { t } = useTranslation();
   const [script, setScript] = useState("");
   const [generatedImage, setGeneratedImage] = useState<string | null>(null);
   const [isGenerating, setIsGenerating] = useState(false);
