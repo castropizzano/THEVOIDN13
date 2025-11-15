@@ -9,7 +9,6 @@ import { PDFViewer } from "@/components/PDFViewer";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Minimize2 } from "lucide-react";
-import { ContactForm } from "@/components/ContactForm";
 import heroImage from "@/assets/author-hero.png";
 import heroImageMobile from "@/assets/author-hero-mobile.png";
 
@@ -816,27 +815,6 @@ const Autor = () => {
                   <p className="bible-link">@castropizzano</p>
                 </a>
               </div>
-            </div>
-          </div>
-        </BilingualSection>
-
-        <Separator className="bg-border/30" />
-
-        {/* Contact Form */}
-        <BilingualSection className="py-16">
-          <div className="bible-bilingual-grid bible-block-spacing">
-            <div>
-              <h2 className="bible-title">CONTATO</h2>
-            </div>
-            <div>
-              <h2 className="bible-title">CONTACT</h2>
-            </div>
-          </div>
-
-          <div className="bible-bilingual-grid bible-section-spacing">
-            <div></div>
-            <div>
-              <ContactForm />
             </div>
           </div>
         </BilingualSection>

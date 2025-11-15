@@ -109,7 +109,7 @@ const ComicsShowcase = () => {
             </DialogContent>
           </Dialog>
 
-          <div className="comics-grid">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {comics.map((comic) => (
             <TooltipProvider key={comic.title}>
               <Tooltip>

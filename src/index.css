@@ -12,15 +12,15 @@
      Bible v13 Compliant - Conversão exata pt → px
      =============================================== */
   
-  /* BIBLE V13 - TÍTULOS BILÍNGUES (THEVØIDN13 v1.3b) */
+  /* BIBLE V13 - TÍTULOS BILÍNGUES (16pt = 21.33px) */
   .bible-title {
     font-family: 'Manrope', sans-serif;
-    font-weight: 800; /* ExtraBold */
+    font-weight: 700;
     font-size: 21.33px;
     text-transform: uppercase;
     color: #FFFFFF;
     text-align: left;
-    letter-spacing: -0.01em; /* -1% */
+    /* SISTEMA TVN13: 48px superior / 20px inferior */
     margin-top: 48px;
     margin-bottom: 20px;
   }
@@ -38,14 +38,15 @@
     }
   }
   
-  /* BIBLE V13 - SUBTÍTULOS BILÍNGUES (THEVØIDN13 v1.3b) */
+  /* BIBLE V13 - SUBTÍTULOS BILÍNGUES (15pt = 20px) */
   .bible-subtitle {
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
     font-size: 20px;
     text-transform: uppercase;
-    color: #DADADA;
+    color: #FFFFFF;
     text-align: left;
+    /* SISTEMA TVN13: 32px superior / 16px inferior */
     margin-top: 32px;
     margin-bottom: 16px;
   }
@@ -69,13 +70,13 @@
     }
   }
   
-  /* BIBLE V13 - TAGS DE IDIOMA / METADADOS (THEVØIDN13 v1.3b) */
+  /* BIBLE V13 - TAGS DE IDIOMA (13pt = 17.33px) */
   .bible-lang-tag {
-    font-family: 'IBM Plex Mono', monospace;
-    font-weight: 400;
-    font-size: 0.75rem; /* 12px */
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 17.33px;
     text-transform: uppercase;
-    color: #A32424;
+    color: #C40000;
     text-align: left;
     margin-top: 0;
     margin-bottom: 0;
@@ -87,15 +88,16 @@
     }
   }
   
-  /* BIBLE V13 - TEXTOS CORPO (THEVØIDN13 v1.3b) */
+  /* BIBLE V13 - TEXTOS CORPO (13pt = 17.33px) */
   .bible-body {
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     font-size: 17.33px;
-    color: #DADADA;
+    color: #E6E6E6;
     text-align: justify;
-    line-height: 1.7;
+    line-height: 1.6;
     text-transform: none;
+    /* SISTEMA TVN13: 20px inferior entre parágrafos */
     margin-bottom: 20px;
   }
   
@@ -110,83 +112,12 @@
     }
   }
   
-  /* ===============================================
-     COMPONENTES VISUAIS THEVØIDN13 v1.3b
-     Cards, Grids e Interações
-     =============================================== */
-  
-  /* CARDS - Bordas sutis e sombras leves */
-  .tvn-card {
-    border: 1px solid hsl(var(--border));
-    border-radius: var(--radius);
-    background: hsl(var(--card));
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  }
-  
-  /* HOVER MINIMALISTA */
-  .tvn-card:hover {
-    box-shadow: 0 2px 6px rgba(163, 36, 36, 0.15), 0 2px 4px rgba(0, 0, 0, 0.3);
-    transform: translateY(-2px);
-  }
-  
-  /* GRIDS CINEMATOGRÁFICOS */
-  .comics-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
-  
-  @media (max-width: 1024px) {
-    .comics-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (max-width: 640px) {
-    .comics-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-  
-  .films-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-  }
-  
-  @media (max-width: 1024px) {
-    .films-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .films-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .films-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-  
-  /* PLAYERS DE VÍDEO E AUDIO - Centralizados max-width 900px */
-  .media-player-container {
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-  }
-  
-  /* BIBLE V13 - ELEMENTOS E HIPERLINKS (THEVØIDN13 v1.3b) */
+  /* BIBLE V13 - ELEMENTOS E HIPERLINKS (11pt = 14.67px) */
   .bible-link {
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     font-size: 14.67px;
-    color: #A32424;
+    color: #C40000;
     text-decoration: none;
     text-transform: none;
   }
@@ -195,9 +126,9 @@
     text-decoration: underline;
   }
   
-  /* BIBLE V13 - ESPAÇAMENTO ENTRE SEÇÕES (THEVØIDN13 v1.3b: 80px) */
+  /* BIBLE V13 - ESPAÇAMENTO ENTRE SEÇÕES (ATUALIZADO SISTEMA TVN13) */
   .bible-section-spacing {
-    margin-bottom: 80px;
+    margin-bottom: 32px;
   }
   
   /* BIBLE V13 - ESPAÇAMENTO ANTES DE NOVO BLOCO (ATUALIZADO SISTEMA TVN13) */
@@ -306,7 +237,7 @@
     margin-top: 0;
   }
   
-  /* SEÇÃO → PRÓXIMA SEÇÃO - 80px (THEVØIDN13 v1.3b) */
+  /* SEÇÃO → PRÓXIMA SEÇÃO - 80px */
   section + section {
     margin-top: 80px;
   }
@@ -551,89 +482,87 @@ All colors MUST be HSL.
     
     /* Minimum touch target size for mobile (44x44px per WCAG) */
     --min-touch-target: 44px;
-    /* THEVØIDN13 v1.3b - Sistema de Cores */
-    --background: 0 0% 4.7%; /* #0C0C0C - Background principal */
-    --foreground: 0 0% 85.5%; /* #DADADA - Texto principal */
+    --background: 0 0% 10.2%; /* #1A1A1A - Preto Sombra (Bible v13) */
+    --foreground: 0 0% 90%; /* #E6E6E6 - Cinza Fantasma (Bible v13) */
 
-    --card: 0 0% 7%;
-    --card-foreground: 0 0% 100%; /* #FFFFFF - Texto titular */
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 100%; /* #FFFFFF - Branco Vazio */
 
-    --popover: 0 0% 7%;
-    --popover-foreground: 0 0% 85.5%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 0 63.6% 39%; /* #A32424 - Vermelho acento */
+    --primary: 0 100% 38.4%; /* #C40000 - Vermelho Sintético (Bible v13) */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 12%;
-    --secondary-foreground: 0 0% 85.5%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 85.5% / 70%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 90% / 64%; /* Cinza Fantasma com opacidade */
     
-    --body-text: 0 0% 85.5%; /* #DADADA - Texto corpo */
+    --body-text: 0 0% 90%; /* #E6E6E6 - Cinza Fantasma */
 
-    --accent: 0 63.6% 39%;
+    --accent: 0 100% 30%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 100% 35%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 17% 23.5%; /* #323A46 - Linha suave */
-    --input: 214 17% 23.5%;
-    --ring: 0 63.6% 39%;
+    --border: 0 0% 25%;
+    --input: 0 0% 20%;
+    --ring: 0 100% 30%;
 
-    --radius: 0.5rem;
+    --radius: 0.25rem;
 
-    --sidebar-background: 0 0% 4.7%;
-    --sidebar-foreground: 0 0% 85.5%;
-    --sidebar-primary: 0 63.6% 39%;
+    --sidebar-background: 0 0% 12%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 100% 30%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 12%;
-    --sidebar-accent-foreground: 0 0% 85.5%;
-    --sidebar-border: 214 17% 23.5%;
-    --sidebar-ring: 0 63.6% 39%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 25%;
+    --sidebar-ring: 0 100% 30%;
   }
 
   .dark {
-    /* THEVØIDN13 v1.3b - Dark mode (idêntico ao light) */
-    --background: 0 0% 4.7%;
-    --foreground: 0 0% 85.5%;
+    --background: 0 0% 10.2%; /* #1A1A1A - Preto Sombra (Bible v13) */
+    --foreground: 0 0% 90%; /* #E6E6E6 - Cinza Fantasma (Bible v13) */
 
-    --card: 0 0% 7%;
+    --card: 0 0% 12%;
     --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 7%;
-    --popover-foreground: 0 0% 85.5%;
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 100%;
 
-    --primary: 0 63.6% 39%;
+    --primary: 0 100% 38.4%; /* #C40000 - Vermelho Sintético (Bible v13) */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 12%;
-    --secondary-foreground: 0 0% 85.5%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 85.5% / 70%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 90% / 64%;
     
-    --body-text: 0 0% 85.5%;
+    --body-text: 0 0% 90%;
 
-    --accent: 0 63.6% 39%;
+    --accent: 0 100% 30%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 100% 35%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 17% 23.5%;
-    --input: 214 17% 23.5%;
-    --ring: 0 63.6% 39%;
+    --border: 0 0% 25%;
+    --input: 0 0% 20%;
+    --ring: 0 100% 30%;
 
-    --sidebar-background: 0 0% 4.7%;
-    --sidebar-foreground: 0 0% 85.5%;
-    --sidebar-primary: 0 63.6% 39%;
+    --sidebar-background: 0 0% 12%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 100% 30%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 12%;
-    --sidebar-accent-foreground: 0 0% 85.5%;
-    --sidebar-border: 214 17% 23.5%;
-    --sidebar-ring: 0 63.6% 39%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 25%;
+    --sidebar-ring: 0 100% 30%;
   }
 }
 
@@ -644,7 +573,7 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
-    background-color: #0C0C0C; /* THEVØIDN13 v1.3b - Background principal */
+    background-color: #1A1A1A; /* Preto Sombra (Bible v13) */
     /* Mobile scroll optimization */
     -webkit-overflow-scrolling: touch;
     overscroll-behavior-y: none;
