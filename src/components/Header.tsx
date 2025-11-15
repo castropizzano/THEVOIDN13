@@ -5,10 +5,12 @@ import { Menu, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { GlobalSearch } from "@/components/GlobalSearch";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Header = () => {
   const location = useLocation();
   const { isAdmin } = useAuth();
+  const { language, toggleLanguage } = useLanguage();
   const [open, setOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   
@@ -53,6 +55,17 @@ const Header = () => {
                 </Link>
               ))}
               
+              {/* Language Toggle */}
+              <button
+                onClick={toggleLanguage}
+                className="flex items-center gap-2 h-10 px-3 text-sm font-semibold tracking-wider transition-all hover:bg-muted/50 rounded-md"
+                aria-label="Toggle language"
+              >
+                <span className={language === "pt" ? "text-primary" : "text-muted-foreground"}>PT</span>
+                <span className="text-muted-foreground/30">|</span>
+                <span className={language === "en" ? "text-primary" : "text-muted-foreground"}>EN</span>
+              </button>
+              
               {/* Search Button - Desktop */}
               <Button
                 variant="ghost"
@@ -67,6 +80,17 @@ const Header = () => {
 
             {/* Mobile Menu */}
             <div className="flex gap-2 items-center md:hidden">
+              {/* Language Toggle Mobile */}
+              <button
+                onClick={toggleLanguage}
+                className="flex items-center gap-1.5 h-10 px-2.5 text-xs font-semibold tracking-wider transition-all hover:bg-muted/50 rounded-md touch-manipulation"
+                aria-label="Toggle language"
+              >
+                <span className={language === "pt" ? "text-primary" : "text-muted-foreground"}>PT</span>
+                <span className="text-muted-foreground/30">|</span>
+                <span className={language === "en" ? "text-primary" : "text-muted-foreground"}>EN</span>
+              </button>
+              
               <Button
                 variant="ghost"
                 size="icon"

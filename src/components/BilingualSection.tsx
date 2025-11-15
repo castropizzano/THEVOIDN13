@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface BilingualSectionProps {
   children: React.ReactNode;
@@ -35,40 +34,11 @@ export const BilingualContent = ({
   englishContent,
   alignTop = false
 }: BilingualContentProps) => {
-  // Persistir idioma selecionado no localStorage
-  const [activeTab, setActiveTab] = useState<string>(() => {
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("preferred-language") || "pt";
-    }
-    return "pt";
-  });
-
-  useEffect(() => {
-    localStorage.setItem("preferred-language", activeTab);
-  }, [activeTab]);
+  const { language } = useLanguage();
 
   return (
-    <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-      <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-8">
-        <TabsTrigger value="pt" className="text-sm font-semibold uppercase tracking-wider">
-          Português
-        </TabsTrigger>
-        <TabsTrigger value="en" className="text-sm font-semibold uppercase tracking-wider">
-          English
-        </TabsTrigger>
-      </TabsList>
-
-      <TabsContent value="pt" className="mt-0 animate-fade-in">
-        <div className="bilingual-content">
-          {portugueseContent}
-        </div>
-      </TabsContent>
-
-      <TabsContent value="en" className="mt-0 animate-fade-in">
-        <div className="bilingual-content">
-          {englishContent}
-        </div>
-      </TabsContent>
-    </Tabs>
+    <div className="bilingual-content animate-fade-in">
+      {language === "pt" ? portugueseContent : englishContent}
+    </div>
   );
 };
