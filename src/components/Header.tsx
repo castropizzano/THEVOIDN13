@@ -6,22 +6,24 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { GlobalSearch } from "@/components/GlobalSearch";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const Header = () => {
   const location = useLocation();
   const { isAdmin } = useAuth();
   const { language, toggleLanguage } = useLanguage();
+  const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   
   const navItems = [
-    { path: "/dissertacao", label: "LOWMOVIE™" },
-    { path: "/autor", label: "AUTHOR" },
-    { path: "/videos", label: "VIDEO PORTFOLIO" },
+    { path: "/dissertacao", labelKey: "lowmovie" },
+    { path: "/autor", labelKey: "author" },
+    { path: "/videos", labelKey: "videos" },
   ];
   
   if (isAdmin) {
-    navItems.push({ path: "/admin", label: "ADMIN" });
+    navItems.push({ path: "/admin", labelKey: "admin" });
   }
   
   return (
@@ -51,7 +53,7 @@ const Header = () => {
                   }`}
                   style={{ fontFamily: 'Manrope, sans-serif' }}
                 >
-                  {item.label}
+                  {t(item.labelKey as any)}
                 </Link>
               ))}
               
@@ -126,7 +128,7 @@ const Header = () => {
                         }`}
                         style={{ fontFamily: 'Manrope, sans-serif' }}
                       >
-                        {item.label}
+                        {t(item.labelKey as any)}
                       </Link>
                     ))}
                   </div>

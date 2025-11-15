@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import watchmenCover from "@/assets/comics/watchmen.jpg";
 import sandmanCover from "@/assets/comics/sandman.jpg";
 import blackHoleCover from "@/assets/comics/black-hole.png";
+import { useTranslation } from "@/hooks/useTranslation";
 import {
   Dialog,
   DialogContent,
@@ -20,42 +21,44 @@ import {
 } from "@/components/ui/tooltip";
 
 interface ComicReference {
-  title: string;
+  titleKey: string;
   author: string;
   year: number;
   coverUrl: string;
-  description: string;
-  context: string;
+  descriptionKey: string;
+  contextKey: string;
   wikipediaUrl: string;
 }
 
 const ComicsShowcase = () => {
+  const { t } = useTranslation();
+
   const comics: ComicReference[] = [
     {
-      title: "Watchmen",
+      titleKey: "watchmenTitle",
       author: "Alan Moore & Dave Gibbons",
       year: 1986,
       coverUrl: watchmenCover,
-      description: "Ética ambígua e o mecanismo de cidade",
-      context: "A arquitetura ética e o questionamento do heroísmo",
+      descriptionKey: "watchmenDesc",
+      contextKey: "watchmenContext",
       wikipediaUrl: "https://en.wikipedia.org/wiki/Watchmen"
     },
     {
-      title: "The Sandman",
+      titleKey: "sandmanTitle",
       author: "Neil Gaiman",
       year: 1989,
       coverUrl: sandmanCover,
-      description: "Mitologia pessoal e arquitetura do sonho",
-      context: "A construção de universos oníricos e simbólicos",
+      descriptionKey: "sandmanDesc",
+      contextKey: "sandmanContext",
       wikipediaUrl: "https://en.wikipedia.org/wiki/The_Sandman_(comic_book)"
     },
     {
-      title: "Black Hole",
+      titleKey: "blackHoleTitle",
       author: "Charles Burns",
       year: 1995,
       coverUrl: blackHoleCover,
-      description: "Alienação e metamorfose corporal",
-      context: "O corpo como texto de transformação e isolamento",
+      descriptionKey: "blackHoleDesc",
+      contextKey: "blackHoleContext",
       wikipediaUrl: "https://en.wikipedia.org/wiki/Black_Hole_(comics)"
     }
   ];
@@ -111,7 +114,7 @@ const ComicsShowcase = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {comics.map((comic) => (
-            <TooltipProvider key={comic.title}>
+            <TooltipProvider key={t(comic.titleKey as any)}>
               <Tooltip>
                 <TooltipTrigger asChild>
                   <Card className="group overflow-hidden border-primary/10 hover:border-primary/30 transition-all duration-300 hover:scale-105 cursor-pointer">
@@ -124,7 +127,7 @@ const ComicsShowcase = () => {
                       <div className="aspect-[2/3] overflow-hidden bg-secondary/20 relative">
                         <img
                           src={comic.coverUrl}
-                          alt={`${comic.title} cover`}
+                          alt={`${t(comic.titleKey as any)} cover`}
                           className="w-full h-full object-cover object-center scale-110 transition-transform duration-300 group-hover:scale-125"
                           loading="lazy"
                         />
@@ -133,20 +136,20 @@ const ComicsShowcase = () => {
                         </div>
                       </div>
                       <div className="p-6 bg-card">
-                        <h3 className="font-bold text-lg mb-2">{comic.title}</h3>
+                        <h3 className="font-bold text-lg mb-2">{t(comic.titleKey as any)}</h3>
                         <p className="text-sm text-muted-foreground mb-3">
                           {comic.author} ({comic.year})
                         </p>
                         <p className="text-sm italic text-primary/80">
-                          {comic.description}
+                          {t(comic.descriptionKey as any)}
                         </p>
                       </div>
                     </a>
                   </Card>
                 </TooltipTrigger>
                 <TooltipContent side="top" className="max-w-xs">
-                  <p className="font-semibold">{comic.title}</p>
-                  <p className="text-xs text-muted-foreground mt-1">{comic.context}</p>
+                  <p className="font-semibold">{t(comic.titleKey as any)}</p>
+                  <p className="text-xs text-muted-foreground mt-1">{t(comic.contextKey as any)}</p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>

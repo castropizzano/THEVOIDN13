@@ -2,18 +2,20 @@ import { Card } from "@/components/ui/card";
 import { BilingualContent } from "./BilingualSection";
 import { useState } from "react";
 import MediaDialog from "./MediaDialog";
+import { useTranslation } from "@/hooks/useTranslation";
 
 interface PhilosophyReference {
-  title: string;
-  author: string;
-  year: string;
-  description: string;
-  context: string;
+  titleKey: string;
+  authorKey: string;
+  yearKey: string;
+  descriptionKey: string;
+  contextKey: string;
   link: string;
   action?: "external" | "video" | "audio" | "pdf";
 }
 
 export default function PhilosophyShowcase() {
+  const { t } = useTranslation();
   const [mediaDialog, setMediaDialog] = useState<{
     open: boolean;
     title: string;
@@ -28,56 +30,56 @@ export default function PhilosophyShowcase() {
 
   const philosophies: PhilosophyReference[] = [
     {
-      title: "THE WAY OF CODE",
-      author: "Rick Rubin",
-      year: "2024",
-      description: "Filosofia criativa que conecta o Tao Te Ching com desenvolvimento de software, propondo que código seja tratado como arte contemplativa.",
-      context: "Metodologia de não-ação criativa (Wu Wei) aplicada à programação",
+      titleKey: "wayOfCode",
+      authorKey: "Rick Rubin",
+      yearKey: "2024",
+      descriptionKey: "wayOfCodeDesc",
+      contextKey: "taoTeChingContext",
       link: "https://www.thewayofcode.com",
       action: "external"
     },
     {
-      title: "VIBE CODING",
-      author: "Rick Rubin",
-      year: "2024",
-      description: "Abordagem intuitiva de programação mediada por IA, onde o desenvolvedor atua como diretor criativo ao invés de executor técnico.",
-      context: "Democratização do acesso ao desenvolvimento via ferramentas de IA",
+      titleKey: "vibeCoding",
+      authorKey: "Rick Rubin",
+      yearKey: "2024",
+      descriptionKey: "vibeCodingMethodDesc",
+      contextKey: "lovableContext",
       link: "https://www.youtube.com/watch?v=GvzaNZ67gQA",
       action: "video"
     },
     {
-      title: "PUNK ROCK OF CODING",
-      author: "Rick Rubin",
-      year: "2024",
-      description: "IA como movimento revolucionário no desenvolvimento: acessível, rebelde, democratizante. Paralelo com o punk rock dos anos 70.",
-      context: "Resistência criativa contra elitismo técnico e barreiras de entrada",
+      titleKey: "punkRockCoding",
+      authorKey: "Rick Rubin",
+      yearKey: "2024",
+      descriptionKey: "punkRockCodingDesc",
+      contextKey: "lovableContext",
       link: "https://open.spotify.com/episode/1wbhdwipLP4EKyU5oVeNB9?si=LDS2TxBRR5qLOEtU983Tmw",
       action: "audio"
     },
     {
-      title: "LOVABLE",
-      author: "Meta-Referência",
-      year: "2024",
-      description: "Ferramenta de co-criação humano-IA que materializa os princípios de vibe coding e resistência criativa. Este site foi construído com ela.",
-      context: "Praxis concreta da filosofia punk rock do código",
+      titleKey: "LOVABLE",
+      authorKey: "philosophyMetaRef",
+      yearKey: "2024",
+      descriptionKey: "lovableDesc",
+      contextKey: "lovableContext",
       link: "https://asset.empiricus.com.br/conteudos/ponto-cego-do-mercado/lovable-e-a-autofagia-do-software/",
       action: "external"
     },
     {
-      title: "TAO TE CHING",
-      author: "Lao Tzu",
-      year: "~400 AC",
-      description: "Texto fundacional do Taoísmo sobre fluxo, não-ação criativa (Wu Wei) e harmonia com processos naturais. Base filosófica de The Way of Code.",
-      context: "Sabedoria ancestral sobre criatividade sem esforço forçado",
+      titleKey: "taoTeChingTitle",
+      authorKey: "Lao Tzu",
+      yearKey: "~400 AC",
+      descriptionKey: "taoTeChingDesc",
+      contextKey: "taoTeChingContext",
       link: "/documents/Tao_Te_Ching.pdf",
       action: "pdf"
     },
     {
-      title: "PROCESS ART",
-      author: "Metodologia",
-      year: "1960-2024",
-      description: "Arte como processo performativo documentado, não apenas produto final. O caminho criativo é a obra—cada decisão, iteração e transformação tem valor artístico.",
-      context: "Documentação performática do desenvolvimento como arte conceitual",
+      titleKey: "processArt",
+      authorKey: "philosophyMethodology",
+      yearKey: "1960-2024",
+      descriptionKey: "processArtDesc",
+      contextKey: "processArtContext",
       link: "https://arthistoryunstuffed.com/process-art/",
       action: "external"
     }
@@ -91,21 +93,21 @@ export default function PhilosophyShowcase() {
     } else if (phil.action === "video") {
       setMediaDialog({
         open: true,
-        title: phil.title,
+        title: t(phil.titleKey as any),
         type: "video",
         url: phil.link,
       });
     } else if (phil.action === "audio") {
       setMediaDialog({
         open: true,
-        title: phil.title,
+        title: t(phil.titleKey as any),
         type: "audio",
         url: phil.link,
       });
     } else if (phil.action === "pdf") {
       setMediaDialog({
         open: true,
-        title: phil.title,
+        title: t(phil.titleKey as any),
         type: "pdf",
         url: phil.link,
       });
@@ -169,20 +171,20 @@ export default function PhilosophyShowcase() {
               <div className="p-6 space-y-4">
                 <div>
                   <h4 className="font-bold text-lg group-hover:text-primary transition-colors">
-                    {phil.title}
+                    {t(phil.titleKey as any)}
                   </h4>
                   <p className="text-sm text-muted-foreground">
-                    {phil.author} • {phil.year}
+                    {phil.authorKey === "philosophyMetaRef" || phil.authorKey === "philosophyMethodology" ? t(phil.authorKey as any) : phil.authorKey} • {phil.yearKey}
                   </p>
                 </div>
                 
                 <p className="text-base leading-relaxed max-w-none">
-                  {phil.description}
+                  {t(phil.descriptionKey as any)}
                 </p>
                 
                 <div className="pt-2 border-t border-border/50">
                   <p className="text-xs text-muted-foreground italic max-w-none">
-                    {phil.context}
+                    {t(phil.contextKey as any)}
                   </p>
                 </div>
               </div>

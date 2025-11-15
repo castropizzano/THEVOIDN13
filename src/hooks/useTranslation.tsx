@@ -163,7 +163,67 @@ type TranslationKey =
   | "fromTheoryToPractice"
   | "fromTheoryDesc"
   | "punkRockPrinciple"
-  | "bestCode";
+  | "bestCode"
+  | "wayOfCode"
+  | "wayOfCodeDesc"
+  | "vibeCoding"
+  | "vibeCodingMethodDesc"
+  | "punkRockCoding"
+  | "punkRockCodingDesc"
+  | "lovableDesc"
+  | "lovableContext"
+  | "taoTeChingTitle"
+  | "taoTeChingDesc"
+  | "taoTeChingContext"
+  | "processArt"
+  | "processArtDesc"
+  | "processArtContext"
+  | "philosophyAuthor"
+  | "philosophyYear"
+  | "philosophyMetaRef"
+  | "philosophyMethodology"
+  | "watchmenTitle"
+  | "watchmenDesc"
+  | "watchmenContext"
+  | "sandmanTitle"
+  | "sandmanDesc"
+  | "sandmanContext"
+  | "blackHoleTitle"
+  | "blackHoleDesc"
+  | "blackHoleContext"
+  | "comicsDNANote"
+  | "filmAbout"
+  | "bladeRunnerDesc"
+  | "kidsDesc"
+  | "matrixDesc"
+  | "akiraDesc"
+  | "fallenAngelsDesc"
+  | "thx1138Desc"
+  | "brazilDesc"
+  | "equilibriumDesc"
+  | "warriorsDesc"
+  | "orwell1984Desc"
+  | "christianeFDesc"
+  | "perfectDaysDesc"
+  | "backToFutureDesc"
+  | "essentialFilms"
+  | "promptLibraryPrompts"
+  | "promptsAccess"
+  | "systemPrompts"
+  | "characterPrompts"
+  | "scenePrompts"
+  | "copyPrompt"
+  | "copiedPrompt"
+  | "errorCopyPrompt"
+  | "errorLoadPrompts"
+  | "vibeCodingIntro"
+  | "yourVisionLabel"
+  | "generatedCodeLabel"
+  | "examplesTest"
+  | "practiceArea"
+  | "instantTransformDesc"
+  | "artisticMemorial"
+  | "hybridPraxis";
 
 const translations: Record<TranslationKey, { pt: string; en: string }> = {
   home: { pt: "INÍCIO", en: "HOME" },
@@ -329,6 +389,66 @@ const translations: Record<TranslationKey, { pt: string; en: string }> = {
   fromTheoryDesc: { pt: "Este playground materializa os princípios do Way of Code", en: "This playground materializes the Way of Code principles" },
   punkRockPrinciple: { pt: "O punk rock do código", en: "The punk rock of coding" },
   bestCode: { pt: "O melhor código é o que você não precisa escrever", en: "The best code is the code you don't have to write" },
+  wayOfCode: { pt: "THE WAY OF CODE", en: "THE WAY OF CODE" },
+  wayOfCodeDesc: { pt: "Filosofia criativa que conecta o Tao Te Ching com desenvolvimento de software, propondo que código seja tratado como arte contemplativa.", en: "Creative philosophy connecting Tao Te Ching with software development, proposing code as contemplative art." },
+  vibeCoding: { pt: "VIBE CODING", en: "VIBE CODING" },
+  vibeCodingMethodDesc: { pt: "Abordagem intuitiva de programação mediada por IA, onde o desenvolvedor atua como diretor criativo ao invés de executor técnico.", en: "Intuitive AI-mediated programming approach, where the developer acts as creative director rather than technical executor." },
+  punkRockCoding: { pt: "PUNK ROCK OF CODING", en: "PUNK ROCK OF CODING" },
+  punkRockCodingDesc: { pt: "IA como movimento revolucionário no desenvolvimento: acessível, rebelde, democratizante. Paralelo com o punk rock dos anos 70.", en: "AI as revolutionary movement in development: accessible, rebellious, democratizing. Parallel with 70s punk rock." },
+  lovableDesc: { pt: "Ferramenta de co-criação humano-IA que materializa os princípios de vibe coding e resistência criativa. Este site foi construído com ela.", en: "Human-AI co-creation tool that materializes vibe coding principles and creative resistance. This site was built with it." },
+  lovableContext: { pt: "Praxis concreta da filosofia punk rock do código", en: "Concrete praxis of punk rock coding philosophy" },
+  taoTeChingTitle: { pt: "TAO TE CHING", en: "TAO TE CHING" },
+  taoTeChingDesc: { pt: "Texto fundacional do Taoísmo sobre fluxo, não-ação criativa (Wu Wei) e harmonia com processos naturais. Base filosófica de The Way of Code.", en: "Foundational Taoist text on flow, creative non-action (Wu Wei) and harmony with natural processes. Philosophical basis of The Way of Code." },
+  taoTeChingContext: { pt: "Sabedoria ancestral sobre criatividade sem esforço forçado", en: "Ancestral wisdom on creativity without forced effort" },
+  processArt: { pt: "PROCESS ART", en: "PROCESS ART" },
+  processArtDesc: { pt: "Arte como processo performativo documentado, não apenas produto final. O caminho criativo é a obra—cada decisão, iteração e transformação tem valor artístico.", en: "Art as documented performative process, not just final product. The creative path is the work—every decision, iteration and transformation has artistic value." },
+  processArtContext: { pt: "Documentação performática do desenvolvimento como arte conceitual", en: "Performative documentation of development as conceptual art" },
+  philosophyAuthor: { pt: "Autor", en: "Author" },
+  philosophyYear: { pt: "Ano", en: "Year" },
+  philosophyMetaRef: { pt: "Meta-Referência", en: "Meta-Reference" },
+  philosophyMethodology: { pt: "Metodologia", en: "Methodology" },
+  watchmenTitle: { pt: "Watchmen", en: "Watchmen" },
+  watchmenDesc: { pt: "Ética ambígua e o mecanismo de cidade", en: "Ambiguous ethics and city mechanics" },
+  watchmenContext: { pt: "A arquitetura ética e o questionamento do heroísmo", en: "Ethical architecture and questioning of heroism" },
+  sandmanTitle: { pt: "The Sandman", en: "The Sandman" },
+  sandmanDesc: { pt: "Mitologia pessoal e arquitetura do sonho", en: "Personal mythology and dream architecture" },
+  sandmanContext: { pt: "A construção de universos oníricos e simbólicos", en: "Construction of dreamlike and symbolic universes" },
+  blackHoleTitle: { pt: "Black Hole", en: "Black Hole" },
+  blackHoleDesc: { pt: "Alienação e metamorfose corporal", en: "Alienation and bodily metamorphosis" },
+  blackHoleContext: { pt: "O corpo como texto de transformação e isolamento", en: "The body as text of transformation and isolation" },
+  comicsDNANote: { pt: "Esta abordagem ecoa a filosofia punk rock do código: resistência contra convenções estabelecidas, acesso democratizado à expressão criativa, priorização da autenticidade sobre perfeição técnica. Assim como Watchmen desconstruiu o gênero de super-heróis, THEVØIDN13 desconstrói as fronteiras entre desenvolvimento técnico e performance artística.", en: "This approach echoes the punk rock philosophy of code: resistance against established conventions, democratized access to creative expression, prioritization of authenticity over technical perfection. Just as Watchmen deconstructed the superhero genre, THEVØIDN13 deconstructs the boundaries between technical development and artistic performance." },
+  filmAbout: { pt: "Sobre as Referências Cinematográficas", en: "About the Cinematic References" },
+  bladeRunnerDesc: { pt: "Neo noir e solidão coreografada", en: "Neo noir and choreographed solitude" },
+  kidsDesc: { pt: "Realismo sujo", en: "Dirty realism" },
+  matrixDesc: { pt: "Controle e realidade sintética", en: "Control and synthetic reality" },
+  akiraDesc: { pt: "Energia reprimida", en: "Repressed energy" },
+  fallenAngelsDesc: { pt: "Atmosfera bebê-da-desesperança", en: "Baby-of-despair atmosphere" },
+  thx1138Desc: { pt: "Despersonalização e controle", en: "Depersonalization and control" },
+  brazilDesc: { pt: "Burocracia como pesadelo", en: "Bureaucracy as nightmare" },
+  equilibriumDesc: { pt: "Supressão emocional", en: "Emotional suppression" },
+  warriorsDesc: { pt: "Deriva urbana", en: "Urban drift" },
+  orwell1984Desc: { pt: "Vigilância total", en: "Total surveillance" },
+  christianeFDesc: { pt: "Queda adolescente", en: "Adolescent fall" },
+  perfectDaysDesc: { pt: "Contemplação e rotina", en: "Contemplation and routine" },
+  backToFutureDesc: { pt: "Nostalgia e tempo", en: "Nostalgia and time" },
+  essentialFilms: { pt: "Quinze filmes essenciais", en: "Fifteen essential films" },
+  promptLibraryPrompts: { pt: "prompts", en: "prompts" },
+  promptsAccess: { pt: "Acesse os prompts desenvolvidos para o projeto THEVØIDN13, criados de forma experimental e em constante atualização. Cada entrada reflete o processo de construção visual e narrativa do universo.", en: "Access the prompts developed for THEVØIDN13, built experimentally and in continuous evolution. Each entry reflects the visual and narrative construction process of the universe." },
+  systemPrompts: { pt: "System", en: "System" },
+  characterPrompts: { pt: "Personagens", en: "Characters" },
+  scenePrompts: { pt: "Cenas", en: "Scenes" },
+  copyPrompt: { pt: "Copiar prompt", en: "Copy prompt" },
+  copiedPrompt: { pt: "copiado!", en: "copied!" },
+  errorCopyPrompt: { pt: "Erro ao copiar prompt", en: "Error copying prompt" },
+  errorLoadPrompts: { pt: "Erro ao carregar prompts", en: "Error loading prompts" },
+  vibeCodingIntro: { pt: "Experimente o desenvolvimento intuitivo mediado por IA. Escreva o que você imagina, veja como a intenção criativa se transforma em código. Teoria encontra prática.", en: "Experience intuitive AI-mediated development. Write what you imagine, watch creative intention transform into code. Theory meets practice." },
+  yourVisionLabel: { pt: "SUA VISÃO", en: "YOUR VISION" },
+  generatedCodeLabel: { pt: "CÓDIGO GERADO", en: "GENERATED CODE" },
+  examplesTest: { pt: "Exemplos para testar", en: "Examples to test" },
+  practiceArea: { pt: "Área de Prática", en: "Practice Area" },
+  instantTransformDesc: { pt: "Você descreve a intenção, a IA traduz em código", en: "You describe the intention, AI translates to code" },
+  artisticMemorial: { pt: "Memorial Artístico e Práxis Híbrida", en: "Artistic Memorial and Hybrid Praxis" },
+  hybridPraxis: { pt: "Práxis Híbrida", en: "Hybrid Praxis" },
 };
 
 export const useTranslation = () => {
