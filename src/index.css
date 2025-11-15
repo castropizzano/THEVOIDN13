@@ -306,30 +306,33 @@
   }
 
   /* ===============================================
-     GRID BILÍNGUE - Layout Simétrico PT/EN
+     LAYOUT BILÍNGUE - Vertical (PT depois EN)
      =============================================== */
   
-  .bilingual-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: start;
+  .bilingual-section {
+    @apply space-y-4;
   }
-  
-  @media (max-width: 1024px) {
-    .bilingual-grid {
-      grid-template-columns: 1fr;
-      gap: 2rem;
-    }
+
+  .bilingual-lang-label {
+    @apply mb-4;
+  }
+
+  .bilingual-content {
+    @apply space-y-6;
+  }
+
+  /* Grid bilíngue legado - manter para compatibilidade mas modificar para stack */
+  .bilingual-grid {
+    @apply space-y-16;
   }
   
   .bilingual-col {
-    display: flex;
-    flex-direction: column;
+    @apply space-y-4;
   }
   
-  /* Remover margin-top do primeiro elemento de cada coluna */
-  .bilingual-col > *:first-child {
+  /* Remover margin-top do primeiro elemento */
+  .bilingual-col > *:first-child,
+  .bilingual-content > *:first-child {
     margin-top: 0 !important;
   }
 
