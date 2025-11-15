@@ -219,7 +219,7 @@ export default function PhilosophyShowcase() {
       />
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {connections.map((connection, index) => (
+        {getConnections().map((connection, index) => (
           <Card key={index} className="p-6 border-l-4 border-primary hover:shadow-lg hover:shadow-primary/20 transition-all duration-300">
             <div className="space-y-4">
               <div>

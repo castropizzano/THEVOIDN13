@@ -223,7 +223,23 @@ type TranslationKey =
   | "practiceArea"
   | "instantTransformDesc"
   | "artisticMemorial"
-  | "hybridPraxis";
+  | "hybridPraxis"
+  // New bilingual audit keys
+  | "symbolIntro"
+  | "linguisticOriginTitle"
+  | "linguisticOriginDesc"
+  | "mathPhilosophyTitle"
+  | "mathPhilosophyDesc"
+  | "computationTitle"
+  | "computationDesc"
+  | "prototypeDesc1"
+  | "prototypeDesc2"
+  | "prototypeDesc3"
+  | "connectionPunkRock"
+  | "connectionVibeCoding"
+  | "connectionCinemaPunk"
+  | "connectionTaoCoding";
+
 
 const translations: Record<TranslationKey, { pt: string; en: string }> = {
   home: { pt: "INÍCIO", en: "HOME" },
