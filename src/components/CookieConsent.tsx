@@ -2,8 +2,10 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { PrivacyPolicyDialog } from "@/components/PrivacyPolicyDialog";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export const CookieConsent = () => {
+  const { t } = useTranslation();
   const [showBanner, setShowBanner] = useState(false);
 
   useEffect(() => {
@@ -32,13 +34,10 @@ export const CookieConsent = () => {
         <div className="p-6 space-y-4">
           <div className="space-y-2">
             <h3 className="bible-title text-primary">
-              POLÍTICA DE COOKIES / COOKIE POLICY
+              {t("cookiePolicyTitle")}
             </h3>
             <p className="bible-body text-muted-foreground leading-relaxed">
-              Este site utiliza cookies essenciais para garantir funcionalidade básica e armazenamento local para melhorar sua experiência de navegação. Não coletamos dados pessoais além do necessário para o cadastro, respeitando sua privacidade e segurança em cada etapa do processo.
-            </p>
-            <p className="bible-body text-muted-foreground text-xs leading-relaxed">
-              This site uses essential cookies to ensure basic functionality and local storage to improve your browsing experience. We do not collect personal data beyond what is necessary for registration, respecting your privacy and security at every step of the process.
+              {t("cookiePolicyDescription")}
             </p>
           </div>
 
@@ -48,7 +47,7 @@ export const CookieConsent = () => {
               className="flex-1"
               size="lg"
             >
-              Aceitar / Accept
+              {t("acceptButton")}
             </Button>
             <Button
               onClick={handleDecline}
@@ -56,7 +55,7 @@ export const CookieConsent = () => {
               className="flex-1"
               size="lg"
             >
-              Recusar / Decline
+              {t("declineButton")}
             </Button>
             <PrivacyPolicyDialog>
               <Button
@@ -64,7 +63,7 @@ export const CookieConsent = () => {
                 className="flex-1"
                 size="lg"
               >
-                Política de Privacidade / Privacy Policy
+                {t("privacyPolicyButton")}
               </Button>
             </PrivacyPolicyDialog>
           </div>

@@ -8,15 +8,18 @@ import { toast } from "sonner";
 import { z } from "zod";
 import { Loader2 } from "lucide-react";
 import { PrivacyPolicyDialog } from "@/components/PrivacyPolicyDialog";
-const loginSchema = z.object({
-  email: z.string().trim().email("Email inválido / Invalid email"),
-  password: z.string().min(6, "Senha deve ter no mínimo 6 caracteres / Password must be at least 6 characters")
+import { useTranslation } from "@/hooks/useTranslation";
+import { useValidationMessage } from "@/lib/zodValidation";
+
+const createLoginSchema = (vm: (key: string) => string) => z.object({
+  email: z.string().trim().email(vm("emailInvalid")),
+  password: z.string().min(6, vm("passwordMinLength"))
 });
 
-const signupSchema = z.object({
-  email: z.string().trim().email("Email inválido / Invalid email").max(255, "Email muito longo / Email too long"),
-  full_name: z.string().trim().min(2, "Nome muito curto (mín. 2 caracteres) / Name too short (min 2 chars)").max(100, "Nome muito longo (máx. 100 caracteres) / Name too long (max 100 chars)"),
-  password: z.string().min(6, "Senha deve ter no mínimo 6 caracteres / Password must be at least 6 characters")
+const createSignupSchema = (vm: (key: string) => string) => z.object({
+  email: z.string().trim().email(vm("emailInvalid")).max(255, vm("emailTooLong")),
+  full_name: z.string().trim().min(2, vm("nameMinLength")).max(100, vm("nameMaxLength")),
+  password: z.string().min(6, vm("passwordMinLength"))
 });
 interface AccessGateProps {
   onAccessGranted: () => void;
@@ -24,6 +27,8 @@ interface AccessGateProps {
 export const AccessGate = ({
   onAccessGranted
 }: AccessGateProps) => {
+  const { t } = useTranslation();
+  const vm = useValidationMessage();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [fullName, setFullName] = useState("");
@@ -45,6 +50,7 @@ export const AccessGate = ({
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    const loginSchema = createLoginSchema(vm);
     const validation = loginSchema.safeParse({ email, password });
     if (!validation.success) {
       toast.error(validation.error.errors[0].message);
@@ -59,15 +65,15 @@ export const AccessGate = ({
       });
 
       if (error) {
-        toast.error("Email ou senha incorretos / Incorrect email or password");
+        toast.error(t("invalidEmailPassword"));
         return;
       }
 
       setHasAccess(true);
       onAccessGranted();
-      toast.success("Bem-vindo de volta ao vazio / Welcome back to the void");
+      toast.success(t("welcomeBack"));
     } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : "Erro ao fazer login / Login error";
+      const errorMessage = error instanceof Error ? error.message : t("loginError");
       toast.error(errorMessage);
     } finally {
       setIsSubmitting(false);
@@ -79,10 +85,11 @@ export const AccessGate = ({
 
     // Honeypot check - if filled, it's likely a bot
     if (honeypot) {
-      toast.error("Submissão inválida / Invalid submission");
+      toast.error(t("invalidSubmission"));
       return;
     }
 
+    const signupSchema = createSignupSchema(vm);
     const validation = signupSchema.safeParse({ email, password, full_name: fullName });
     if (!validation.success) {
       toast.error(validation.error.errors[0].message);
@@ -104,7 +111,7 @@ export const AccessGate = ({
 
       if (signUpError) {
         if (signUpError.message.includes("already registered")) {
-          toast.error("Email já cadastrado. Use a aba 'Entrar' / Email already registered. Use 'Login' tab");
+          toast.error(t("emailAlreadyRegistered"));
           setActiveTab("login");
           return;
         }
@@ -126,23 +133,23 @@ export const AccessGate = ({
       if (insertError) {
         if (insertError.code === '23505' || insertError.message.includes("duplicate") || insertError.message.includes("unique")) {
           // Email already subscribed to newsletter, but account created successfully
-          toast.success("Conta criada! Bem-vindo ao vazio / Account created! Welcome to the void", {
-            description: "Você já estava inscrito na newsletter / You were already subscribed to the newsletter"
+          toast.success(t("accountCreated"), {
+            description: t("alreadySubscribed")
           });
         } else {
           // Other newsletter error - show warning but still confirm account creation
-          toast.success("Conta criada! Bem-vindo ao vazio / Account created! Welcome to the void", {
-            description: "Erro ao inscrever na newsletter, mas sua conta foi criada / Newsletter subscription failed, but your account was created"
+          toast.success(t("accountCreated"), {
+            description: t("newsletterError")
           });
         }
       } else {
         // Everything worked perfectly
-        toast.success("Conta criada! Bem-vindo ao vazio / Account created! Welcome to the void", {
-          description: "Você foi inscrito na newsletter / You've been subscribed to the newsletter"
+        toast.success(t("accountCreated"), {
+          description: t("newsletterSubscribed")
         });
       }
     } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : "Erro ao criar conta / Signup error";
+      const errorMessage = error instanceof Error ? error.message : t("signupError");
       toast.error(errorMessage);
     } finally {
       setIsSubmitting(false);
@@ -176,22 +183,22 @@ export const AccessGate = ({
         <CardContent>
           <Tabs value={activeTab} onValueChange={(v) => setActiveTab(v as "login" | "signup")}>
             <TabsList className="grid w-full grid-cols-2 mb-4">
-              <TabsTrigger value="login">Entrar / Login</TabsTrigger>
-              <TabsTrigger value="signup">Cadastrar / Sign Up</TabsTrigger>
+              <TabsTrigger value="login">{t("loginTab")}</TabsTrigger>
+              <TabsTrigger value="signup">{t("signupTab")}</TabsTrigger>
             </TabsList>
 
             <TabsContent value="login">
               <form onSubmit={handleLogin} className="space-y-4">
                 <div className="space-y-2">
                   <label htmlFor="login-email" className="bible-subtitle text-sm">
-                    Email
+                    {t("emailLabel")}
                   </label>
                   <Input
                     id="login-email"
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="seu@email.com / your@email.com"
+                    placeholder={t("emailPlaceholder")}
                     required
                     disabled={isSubmitting}
                     className="h-11"
@@ -200,7 +207,7 @@ export const AccessGate = ({
 
                 <div className="space-y-2">
                   <label htmlFor="login-password" className="bible-subtitle text-sm">
-                    Senha / Password
+                    {t("passwordLabel")}
                   </label>
                   <Input
                     id="login-password"
@@ -218,10 +225,10 @@ export const AccessGate = ({
                   {isSubmitting ? (
                     <>
                       <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                      Entrando... / Logging in...
+                      {t("loggingIn")}
                     </>
                   ) : (
-                    <>ENTRAR / LOGIN</>
+                    <>{t("loginButton")}</>
                   )}
                 </Button>
               </form>
@@ -244,14 +251,14 @@ export const AccessGate = ({
 
                 <div className="space-y-2">
                   <label htmlFor="signup-name" className="bible-subtitle text-sm">
-                    Nome Completo / Full Name
+                    {t("fullNameLabel")}
                   </label>
                   <Input
                     id="signup-name"
                     type="text"
                     value={fullName}
                     onChange={(e) => setFullName(e.target.value)}
-                    placeholder="seu nome / your name"
+                    placeholder={t("fullNamePlaceholder")}
                     required
                     disabled={isSubmitting}
                     className="h-11"
@@ -260,14 +267,14 @@ export const AccessGate = ({
 
                 <div className="space-y-2">
                   <label htmlFor="signup-email" className="bible-subtitle text-sm">
-                    Email
+                    {t("emailLabel")}
                   </label>
                   <Input
                     id="signup-email"
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="seu@email.com / your@email.com"
+                    placeholder={t("emailPlaceholder")}
                     required
                     disabled={isSubmitting}
                     className="h-11"
@@ -276,49 +283,33 @@ export const AccessGate = ({
 
                 <div className="space-y-2">
                   <label htmlFor="signup-password" className="bible-subtitle text-sm">
-                    Senha / Password
+                    {t("passwordLabel")}
                   </label>
                   <Input
                     id="signup-password"
                     type="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    placeholder="mínimo 6 caracteres / min 6 chars"
+                    placeholder={t("passwordPlaceholder")}
                     required
                     disabled={isSubmitting}
                     className="h-11"
                   />
                 </div>
 
-                <div className="space-y-2">
-                  <p className="text-xs text-muted-foreground leading-relaxed">
-                    Ao cadastrar, você aceita nossa{" "}
-                    <PrivacyPolicyDialog>
-                      <button type="button" className="text-primary hover:underline">
-                        Política de Privacidade
-                      </button>
-                    </PrivacyPolicyDialog>
-                    {" "}e permite que o vazio envie ecos.
-                  </p>
-                  <p className="text-xs text-muted-foreground leading-relaxed">
-                    By signing up, you accept our{" "}
-                    <PrivacyPolicyDialog>
-                      <button type="button" className="text-primary hover:underline">
-                        Privacy Policy
-                      </button>
-                    </PrivacyPolicyDialog>
-                    {" "}and allow the void to send echoes.
-                  </p>
-                </div>
+                <p className="bible-body text-xs text-muted-foreground">
+                  Ao se cadastrar, você concorda em receber nossa newsletter e aceita nossa política de privacidade.
+                  By signing up, you agree to receive our newsletter and accept our privacy policy.
+                </p>
 
                 <Button type="submit" disabled={isSubmitting} className="w-full h-11" size="lg">
                   {isSubmitting ? (
                     <>
                       <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                      Criando conta... / Creating account...
+                      {t("creatingAccount")}
                     </>
                   ) : (
-                    <>CADASTRAR / SIGN UP</>
+                    <>{t("signupButton")}</>
                   )}
                 </Button>
               </form>

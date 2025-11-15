@@ -254,7 +254,45 @@ type TranslationKey =
   // VibeCodingPlayground
   | "writePromptHint"
   | "generated"
-  | "vibeCodingInAction";
+  | "vibeCodingInAction"
+  // AccessGate translations
+  | "loginTab"
+  | "signupTab"
+  | "emailLabel"
+  | "emailPlaceholder"
+  | "passwordLabel"
+  | "passwordPlaceholder"
+  | "fullNameLabel"
+  | "fullNamePlaceholder"
+  | "loginButton"
+  | "loggingIn"
+  | "signupButton"
+  | "creatingAccount"
+  | "invalidEmailPassword"
+  | "welcomeBack"
+  | "loginError"
+  | "invalidSubmission"
+  | "emailAlreadyRegistered"
+  | "accountCreated"
+  | "alreadySubscribed"
+  | "newsletterError"
+  | "newsletterSubscribed"
+  | "signupError"
+  | "passwordMinChars"
+  // ComicGenerator translations
+  | "errorLoadingPrompts"
+  | "systemPromptNotLoaded"
+  | "stillGenerated"
+  | "rateLimitExceeded"
+  | "insufficientCredits"
+  | "errorGeneratingStill"
+  | "promptLoaded"
+  // CookieConsent translations
+  | "cookiePolicyTitle"
+  | "cookiePolicyDescription"
+  | "acceptButton"
+  | "declineButton"
+  | "privacyPolicyButton";
 
 
 const translations: Record<TranslationKey, { pt: string; en: string }> = {
@@ -509,7 +547,48 @@ const translations: Record<TranslationKey, { pt: string; en: string }> = {
   // VibeCodingPlayground
   writePromptHint: { pt: "// Escreva um prompt e clique em 'Gerar Código'", en: "// Write a prompt and click 'Generate Code'" },
   generated: { pt: "✓ Gerado", en: "✓ Generated" },
-  vibeCodingInAction: { pt: "Vibe Coding em ação: Você descreve a intenção, a IA traduz em código. Não é sobre saber sintaxe—é sobre ter visão criativa. Três prompts e a verdade.", en: "Vibe Coding in action: You describe the intention, AI translates into code. It's not about knowing syntax—it's about having creative vision. Three prompts and the truth." }
+  vibeCodingInAction: { pt: "Vibe Coding em ação: Você descreve a intenção, a IA traduz em código. Não é sobre saber sintaxe—é sobre ter visão criativa. Três prompts e a verdade.", en: "Vibe Coding in action: You describe the intention, AI translates into code. It's not about knowing syntax—it's about having creative vision. Three prompts and the truth." },
+  
+  // AccessGate translations
+  loginTab: { pt: "Entrar", en: "Login" },
+  signupTab: { pt: "Cadastrar", en: "Sign Up" },
+  emailLabel: { pt: "Email", en: "Email" },
+  emailPlaceholder: { pt: "seu@email.com", en: "your@email.com" },
+  passwordLabel: { pt: "Senha", en: "Password" },
+  passwordPlaceholder: { pt: "mínimo 6 caracteres", en: "min 6 chars" },
+  fullNameLabel: { pt: "Nome Completo", en: "Full Name" },
+  fullNamePlaceholder: { pt: "seu nome", en: "your name" },
+  loginButton: { pt: "ENTRAR", en: "LOGIN" },
+  loggingIn: { pt: "Entrando...", en: "Logging in..." },
+  signupButton: { pt: "CADASTRAR", en: "SIGN UP" },
+  creatingAccount: { pt: "Criando conta...", en: "Creating account..." },
+  invalidEmailPassword: { pt: "Email ou senha incorretos", en: "Incorrect email or password" },
+  welcomeBack: { pt: "Bem-vindo de volta ao vazio", en: "Welcome back to the void" },
+  loginError: { pt: "Erro ao fazer login", en: "Login error" },
+  invalidSubmission: { pt: "Submissão inválida", en: "Invalid submission" },
+  emailAlreadyRegistered: { pt: "Email já cadastrado. Use a aba 'Entrar'", en: "Email already registered. Use 'Login' tab" },
+  accountCreated: { pt: "Conta criada! Bem-vindo ao vazio", en: "Account created! Welcome to the void" },
+  alreadySubscribed: { pt: "Você já estava inscrito na newsletter", en: "You were already subscribed to the newsletter" },
+  newsletterError: { pt: "Erro ao inscrever na newsletter, mas sua conta foi criada", en: "Newsletter subscription failed, but your account was created" },
+  newsletterSubscribed: { pt: "Você foi inscrito na newsletter", en: "You've been subscribed to the newsletter" },
+  signupError: { pt: "Erro ao criar conta", en: "Signup error" },
+  passwordMinChars: { pt: "mínimo 6 caracteres", en: "min 6 chars" },
+  
+  // ComicGenerator translations
+  errorLoadingPrompts: { pt: "Erro ao carregar prompts", en: "Error loading prompts" },
+  systemPromptNotLoaded: { pt: "System prompt não carregado", en: "System prompt not loaded" },
+  stillGenerated: { pt: "Still gerado!", en: "Still generated!" },
+  rateLimitExceeded: { pt: "Limite de requisições excedido. Tente novamente em alguns segundos.", en: "Rate limit exceeded. Try again in a few seconds." },
+  insufficientCredits: { pt: "Créditos insuficientes. Adicione créditos ao workspace.", en: "Insufficient credits. Add credits to workspace." },
+  errorGeneratingStill: { pt: "Erro ao gerar still", en: "Error generating still" },
+  promptLoaded: { pt: "Prompt carregado", en: "Prompt loaded" },
+  
+  // CookieConsent translations
+  cookiePolicyTitle: { pt: "POLÍTICA DE COOKIES", en: "COOKIE POLICY" },
+  cookiePolicyDescription: { pt: "Este site utiliza cookies essenciais para garantir funcionalidade básica e armazenamento local para melhorar sua experiência de navegação. Não coletamos dados pessoais além do necessário para o cadastro, respeitando sua privacidade e segurança em cada etapa do processo.", en: "This site uses essential cookies to ensure basic functionality and local storage to improve your browsing experience. We do not collect personal data beyond what is necessary for registration, respecting your privacy and security at every step of the process." },
+  acceptButton: { pt: "Aceitar", en: "Accept" },
+  declineButton: { pt: "Recusar", en: "Decline" },
+  privacyPolicyButton: { pt: "Política de Privacidade", en: "Privacy Policy" }
 };
 
 export const useTranslation = () => {
