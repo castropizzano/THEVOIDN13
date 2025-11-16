@@ -13,11 +13,19 @@ export interface DocumentCheck {
  * List of all PDF documents that should be available in the application
  */
 export const REQUIRED_DOCUMENTS = [
+  // Brandbooks & Academic Documents
   '/documents/LowPressure_brandbook.pdf',
   '/documents/LowMovie_brandbook.pdf',
   '/documents/THEVOIDN13_ShadowInterfaceBible_v13.pdf',
   '/documents/Memorial_Academico_Ecos_Criativos.pdf',
   '/documents/CasaTrezeStudio_Release.pdf',
+  
+  // Interview Transcriptions
+  '/documents/Skate_Punk_Interview_Transcript.pdf',
+  '/documents/Black_Media_Skate_LowMovie_Interview.pdf',
+  '/documents/Gabriel_Peralta_Photos_Interview.pdf',
+  '/documents/Rafao_VM_Skate_Marginal_Interview.pdf',
+  '/documents/Werner_Herzog_Skateboarding_Interview.pdf',
 ] as const;
 
 /**
