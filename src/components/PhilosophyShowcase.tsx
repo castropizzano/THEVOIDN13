@@ -136,13 +136,13 @@ export default function PhilosophyShowcase() {
   };
 
   return (
-    <section className="space-y-12">
-      <div className="max-w-6xl mx-auto space-y-12">
+    <section className="bible-block">
+      <div className="max-w-6xl mx-auto bible-block">
         <BilingualContent
         portugueseContent={
           <>
             <h3 className="bible-subtitle text-left section-title">FILOSOFIA & METODOLOGIA</h3>
-            <p className="text-muted-foreground text-left mt-4 text-base leading-relaxed max-w-none section-paragraph">
+            <p className="text-muted-foreground text-left text-base leading-relaxed max-w-none section-paragraph">
               Referências conceituais que estruturam a abordagem criativa e metodológica do projeto. 
               Da sabedoria ancestral do Tao Te Ching à revolução contemporânea do vibe coding, 
               essas filosofias informam tanto o processo quanto o produto.
@@ -152,7 +152,7 @@ export default function PhilosophyShowcase() {
         englishContent={
           <>
             <h3 className="bible-subtitle text-left section-title">PHILOSOPHY & METHODOLOGY</h3>
-            <p className="text-muted-foreground text-left mt-4 text-base leading-relaxed max-w-none section-paragraph">
+            <p className="text-muted-foreground text-left text-base leading-relaxed max-w-none section-paragraph">
               Conceptual references that structure the project's creative and methodological approach. 
               From the ancestral wisdom of Tao Te Ching to the contemporary revolution of vibe coding, 
               these philosophies inform both process and product.
@@ -170,7 +170,7 @@ export default function PhilosophyShowcase() {
           >
             <Card className="h-full overflow-hidden border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20">
               <div className="h-1 bg-primary" />
-              <div className="p-6 space-y-4">
+              <div className="p-6 bible-block">
                 <div>
                   <h4 className="font-bold text-lg group-hover:text-primary transition-colors">
                     {t(phil.titleKey as any)}
