@@ -1262,14 +1262,14 @@ const Index = () => {
 
           <BilingualContent
             portugueseContent={
-              <>
-                <h3 className="bible-subtitle mt-16">TEXTURA CINEMATOGRÁFICA (FILMES)</h3>
-              </>
+              <div className="bible-block">
+                <h3 className="bible-subtitle">TEXTURA CINEMATOGRÁFICA (FILMES)</h3>
+              </div>
             }
             englishContent={
-              <>
-                <h3 className="bible-subtitle mt-16">CINEMATIC TEXTURE (FILMS)</h3>
-              </>
+              <div className="bible-block">
+                <h3 className="bible-subtitle">CINEMATIC TEXTURE (FILMS)</h3>
+              </div>
             }
           />
           
@@ -1307,14 +1307,14 @@ const Index = () => {
 
           <BilingualContent
             portugueseContent={
-              <>
-                <h3 className="bible-subtitle mt-16">ASSINATURA SONORA (MÚSICA)</h3>
-              </>
+              <div className="bible-block">
+                <h3 className="bible-subtitle">ASSINATURA SONORA (MÚSICA)</h3>
+              </div>
             }
             englishContent={
-              <>
-                <h3 className="bible-subtitle mt-16">SONIC SIGNATURE (MUSIC)</h3>
-              </>
+              <div className="bible-block">
+                <h3 className="bible-subtitle">SONIC SIGNATURE (MUSIC)</h3>
+              </div>
             }
           />
           
