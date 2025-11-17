@@ -48,13 +48,10 @@
     margin-bottom: 16px;
   }
   
-  .bilingual-col > .bible-subtitle:first-child,
-  .bible-subtitle:first-child {
-    margin-top: 0;
-  }
+  /* Removed first-child reset to ensure consistent spacing after media and other elements. Subtitles now keep default top margin unless following a .bible-title (handled below). */
   
   .bible-title + .bible-subtitle {
-    margin-top: 20px;
+    margin-top: 32px;
   }
   
   @media (max-width: 768px) {
