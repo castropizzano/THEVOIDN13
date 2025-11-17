@@ -444,7 +444,7 @@ const Index = () => {
 
 
           {/* ===== VOID LOGO VISUAL ===== */}
-          <div className="my-12">
+          <div className="bible-media">
             <img 
               src={voidLogoVisual} 
               alt="THEVØIDN13 — Visual Identity" 
@@ -1256,7 +1256,7 @@ const Index = () => {
           />
 
           {/* DNA CONCEITUAL - Comics Showcase */}
-          <div className="mt-12">
+          <div>
             <ComicsShowcase />
           </div>
 
@@ -1301,7 +1301,7 @@ const Index = () => {
           />
 
           {/* TEXTURA CINEMATOGRÁFICA - Film Gallery */}
-          <div className="mt-12">
+          <div>
             <FilmGallery />
           </div>
 
@@ -1346,12 +1346,12 @@ const Index = () => {
           />
 
           {/* ASSINATURA SONORA - Spotify Playlist */}
-          <div className="mt-12">
+          <div>
             <SpotifyPlaylist />
           </div>
 
           {/* FILOSOFIA & METODOLOGIA - Philosophy Showcase */}
-          <div className="mt-16">
+          <div>
             <PhilosophyShowcase />
           </div>
         </BilingualSection>
@@ -1423,7 +1423,7 @@ const Index = () => {
           </div>
 
           {/* THEVØIDN13 Description */}
-          <div className="mb-12">
+          <div>
             <BilingualContent
               portugueseContent={
                 <>
@@ -1458,7 +1458,7 @@ const Index = () => {
           </div>
 
           {/* PUNK Description */}
-          <div className="mb-12">
+          <div>
             <BilingualContent
               portugueseContent={
                 <>
@@ -1493,7 +1493,7 @@ const Index = () => {
           </div>
 
           {/* GI Description */}
-          <div className="mb-12">
+          <div>
             <BilingualContent
               portugueseContent={
                 <>
@@ -1538,7 +1538,7 @@ const Index = () => {
           </div>
 
           {/* BUDDY Description */}
-          <div className="mb-12">
+          <div>
             <BilingualContent
               portugueseContent={
                 <>
@@ -1583,7 +1583,7 @@ const Index = () => {
           </div>
 
           {/* VW GOL '87 Description */}
-          <div className="mb-16">
+          <div>
             <BilingualContent
               portugueseContent={
                 <>
@@ -1658,7 +1658,7 @@ const Index = () => {
             }
           />
 
-          <div className="mt-16 mb-12">
+          <div>
             <BilingualContent
               portugueseContent={
                 <h3 className="bible-subtitle">LOWMOVIE™</h3>
@@ -1686,7 +1686,7 @@ const Index = () => {
           />
           </div>
 
-          <div className="mb-16">
+          <div>
             <BilingualContent
               portugueseContent={
                 <h3 className="bible-subtitle">ЦАСТРО™ (CASTRO PIZZANO)</h3>
@@ -1714,7 +1714,7 @@ const Index = () => {
             />
           </div>
 
-          <div className="mb-16">
+          <div>
             <BilingualContent
               portugueseContent={
                 <h3 className="bible-subtitle">CASATREZESTUDIO®</h3>
@@ -1929,7 +1929,7 @@ const Index = () => {
           </div>
 
           {/* MATERIAIS PRODUZIDOS */}
-          <div className="mt-12 mb-6">
+          <div>
             <BilingualContent
               portugueseContent={
                 <>
@@ -1945,7 +1945,7 @@ const Index = () => {
           </div>
 
           {/* BIBLIOTECA DE PROMPTS */}
-          <div className="mb-12">
+          <div>
             <BilingualContent
               portugueseContent={
                 <>
@@ -1974,13 +1974,13 @@ const Index = () => {
                 </div>
               }
             />
-            <div className="mt-8">
+            <div>
               <PromptLibrary />
             </div>
           </div>
 
           {/* GERADOR EXPERIMENTAL */}
-          <div className="mb-12">
+          <div>
             <BilingualContent
               portugueseContent={
                 <>
@@ -2009,13 +2009,13 @@ const Index = () => {
                 </div>
               }
             />
-            <div className="mt-8">
+            <div>
               <ComicGenerator />
             </div>
           </div>
 
           {/* ORÁCULO CRIATIVO */}
-          <div className="mb-12">
+          <div>
             <BilingualContent
               portugueseContent={
                 <>
@@ -2044,7 +2044,7 @@ const Index = () => {
                 </div>
               }
             />
-            <div className="mt-8">
+            <div>
               <button
                 onClick={() => setOracleOpen(true)}
                 className="w-full p-6 bg-card/80 hover:bg-primary/5 border-2 border-primary/30 hover:border-primary rounded-lg transition-all group"
@@ -2057,7 +2057,7 @@ const Index = () => {
           </div>
 
           {/* MAPA MENTAL */}
-          <div className="mb-12">
+          <div>
             <BilingualContent
               portugueseContent={
                 <>
@@ -2086,7 +2086,7 @@ const Index = () => {
                 </div>
               }
             />
-            <div className="mt-8">
+            <div>
               <MindMap />
             </div>
           </div>
@@ -2193,7 +2193,7 @@ const Index = () => {
           </div>
 
           {/* REPOSITÓRIO COMPLETO */}
-          <div className="mt-12">
+          <div>
             <BilingualContent
               portugueseContent={
                 <a 
