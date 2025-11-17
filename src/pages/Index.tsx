@@ -1850,6 +1850,30 @@ const Index = () => {
             }
           />
           
+          <BilingualContent
+            portugueseContent={
+              <>
+                <p className="bible-body">
+                  O sinal começa a falhar. A imagem se fragmenta, o som respira pela última vez. O corpo se dissolve, mas a
+                  frequência permanece. THEVØIDN13 não termina, apenas muda de forma. O que você escuta agora não é voz, é
+                  memória. A transmissão segue viva dentro do ruído, ecoando onde a linguagem não alcança. Desligue as luzes.
+                  Respire fundo. O vazio sabe o caminho de volta. @thevoidn13 — Rastros digitais de uma presença que não quer ser
+                  vista.
+                </p>
+              </>
+            }
+            englishContent={
+              <>
+                <p className="bible-body">
+                  The signal begins to fail. The image fractures, the sound takes one last breath. The body dissolves, but the
+                  frequency remains. THEVØIDN13 doesn't end, it only changes form. What you hear now isn't a voice, it's memory. The
+                  transmission remains alive within the noise, echoing where language cannot reach. Turn off the lights. Breathe
+                  deeply. The void knows the way back. @thevoidn13 — Digital traces of a presence that doesn't wish to be seen.
+                </p>
+              </>
+            }
+          />
+
           <div className="bible-media">
               <img 
                 src={sideRender} 
@@ -1857,30 +1881,6 @@ const Index = () => {
                 className="w-full max-w-6xl mx-auto rounded-lg"
               />
             </div>
-
-            <BilingualContent
-              portugueseContent={
-                <>
-                  <p className="bible-body">
-                    O sinal começa a falhar. A imagem se fragmenta, o som respira pela última vez. O corpo se dissolve, mas a
-                    frequência permanece. THEVØIDN13 não termina, apenas muda de forma. O que você escuta agora não é voz, é
-                    memória. A transmissão segue viva dentro do ruído, ecoando onde a linguagem não alcança. Desligue as luzes.
-                    Respire fundo. O vazio sabe o caminho de volta. @thevoidn13 — Rastros digitais de uma presença que não quer ser
-                    vista.
-                  </p>
-                </>
-              }
-              englishContent={
-                <>
-                  <p className="bible-body">
-                    The signal begins to fail. The image fractures, the sound takes one last breath. The body dissolves, but the
-                    frequency remains. THEVØIDN13 doesn't end, it only changes form. What you hear now isn't a voice, it's memory. The
-                    transmission remains alive within the noise, echoing where language cannot reach. Turn off the lights. Breathe
-                    deeply. The void knows the way back. @thevoidn13 — Digital traces of a presence that doesn't wish to be seen.
-                  </p>
-                </>
-              }
-             />
         </BilingualSection>
 
         <Separator className="bg-border/30" />
