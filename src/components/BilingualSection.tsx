@@ -11,16 +11,23 @@ export const BilingualSection = ({
   className = "",
   bgClassName = ""
 }: BilingualSectionProps) => {
-  // Extract custom py-* class from className if present, otherwise use default py-20
-  const customPadding = className.match(/py-\d+/)?.[0] || "py-12 sm:py-16 md:py-20";
-  const otherClasses = className.replace(/py-\d+/g, "").trim();
-  
-  // Sempre usar fundo Preto Sombra #1A1A1A (Bible v13)
-  return <section className={`${customPadding} bg-background`}>
-      <div className={`max-w-6xl mx-auto px-4 sm:px-6 ${otherClasses}`}>
+  // Detect bible-section or py-* and apply spacing on wrapper
+  const hasBibleSection = /\bbible-section\b/.test(className);
+  const pyClass = className.match(/py-\d+/)?.[0];
+  const wrapperSpacing = hasBibleSection ? "bible-section" : (pyClass ?? "bible-section");
+
+  const cleanedClasses = className
+    .replace(/\bbible-section\b/g, "")
+    .replace(/py-\d+/g, "")
+    .trim();
+
+  return (
+    <section className={`${wrapperSpacing} bg-background ${bgClassName}`.trim()}>
+      <div className={`max-w-6xl mx-auto px-4 sm:px-6 ${cleanedClasses}`.trim()}>
         {children}
       </div>
-    </section>;
+    </section>
+  );
 };
 
 interface BilingualContentProps {
