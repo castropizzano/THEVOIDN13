@@ -222,11 +222,9 @@ const Index = () => {
               </div>
             }
           />
-        </BilingualSection>
 
-        {/* ===== FALL RENDER ===== */}
-        <section className="bible-section">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          {/* FALL RENDER */}
+          <div className="bible-media">
             <img 
               src={fallRender} 
               alt="THEVØIDN13 — Fall Render" 
@@ -234,7 +232,7 @@ const Index = () => {
               loading="lazy"
             />
           </div>
-        </section>
+        </BilingualSection>
 
         <Separator className="bg-border/30" />
 
