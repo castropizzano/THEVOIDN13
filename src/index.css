@@ -57,8 +57,12 @@
   @media (max-width: 768px) {
     .bible-subtitle {
       font-size: 16px;
-      margin-top: 24px;
+      margin-top: 32px;
       margin-bottom: 12px;
+    }
+    
+    .bible-title + .bible-subtitle {
+      margin-top: 32px;
     }
   }
   
