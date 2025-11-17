@@ -1342,12 +1342,12 @@ const Index = () => {
           />
 
           {/* ASSINATURA SONORA - Spotify Playlist */}
-          <div>
+          <div className="bible-media">
             <SpotifyPlaylist />
           </div>
 
           {/* FILOSOFIA & METODOLOGIA - Philosophy Showcase */}
-          <div>
+          <div className="bible-media">
             <PhilosophyShowcase />
           </div>
         </BilingualSection>
