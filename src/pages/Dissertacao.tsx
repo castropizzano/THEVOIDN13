@@ -72,7 +72,7 @@ const Dissertacao = () => {
         </section>
 
         {/* Título */}
-        <BilingualSection className="py-16">
+        <BilingualSection className="bible-section">
           <div className="bible-bilingual-grid">
             <div>
               <h1 className="bible-title">LOWMOVIE™ E O LABIRINTO CRIATIVO</h1>
