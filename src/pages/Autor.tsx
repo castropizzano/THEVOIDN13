@@ -311,37 +311,37 @@ const Autor = () => {
           <div className="bible-bilingual-grid bible-block">
             <div>
               <div>
-                <div className="border-l-2 border-primary pl-6">
-                  <p className="bible-body text-muted-foreground mb-2">2023-2025 (em curso)</p>
-                  <h3 className="bible-body font-bold mb-2">Mestrado em Cinema e Artes do Vídeo</h3>
-                  <p className="bible-body mb-3">UNESPAR - Universidade Estadual do Paraná</p>
-                  <p className="bible-body text-muted-foreground mb-4">
+                <div className="border-l-2 border-primary pl-6 bible-block">
+                  <p className="bible-body text-muted-foreground">2023-2025 (em curso)</p>
+                  <h3 className="bible-body font-bold">Mestrado em Cinema e Artes do Vídeo</h3>
+                  <p className="bible-body">UNESPAR - Universidade Estadual do Paraná</p>
+                  <p className="bible-body text-muted-foreground">
                     Pesquisa: Processos criativos colaborativos, subcultura do skate, cinema documental
                   </p>
                   
-                  <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 mt-4">
-                    <p className="bible-body font-semibold mb-2">QUALIFICAÇÃO APROVADA</p>
-                    <p className="bible-link mb-2">11 de julho de 2025 — PPG-CINEAV/UNESPAR</p>
+                  <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 bible-media">
+                    <p className="bible-body font-semibold">QUALIFICAÇÃO APROVADA</p>
+                    <p className="bible-link">11 de julho de 2025 — PPG-CINEAV/UNESPAR</p>
                     <p className="bible-link">
                       Título: "LowMovie™ e o Labirinto Criativo: Subjetividade, Subcultura e a Construção de uma Estética em Movimento no Coletivo LowPressure™"
                     </p>
                   </div>
                 </div>
 
-                <div className="border-l-2 border-muted pl-6">
-                  <p className="bible-body text-muted-foreground mb-2">2014</p>
-                  <h3 className="bible-body font-bold mb-2">Pós-Graduado em Direção de Arte e Estratégias Criativas</h3>
+                <div className="border-l-2 border-muted pl-6 bible-block">
+                  <p className="bible-body text-muted-foreground">2014</p>
+                  <h3 className="bible-body font-bold">Pós-Graduado em Direção de Arte e Estratégias Criativas</h3>
                   <p className="bible-body">Unicuritiba</p>
                 </div>
 
-                <div className="border-l-2 border-muted pl-6">
-                  <p className="bible-body text-muted-foreground mb-2">2005</p>
-                  <h3 className="bible-body font-bold mb-2">Graduado em Comunicação Social — Publicidade e Propaganda</h3>
+                <div className="border-l-2 border-muted pl-6 bible-block">
+                  <p className="bible-body text-muted-foreground">2005</p>
+                  <h3 className="bible-body font-bold">Graduado em Comunicação Social — Publicidade e Propaganda</h3>
                   <p className="bible-body">UTP - Universidade Tuiuti do Paraná</p>
                 </div>
 
-                <div className="mt-8 pt-8 border-t border-border">
-                  <h4 className="bible-subtitle mb-4">Formação Complementar</h4>
+                <div className="bible-block border-t border-border pt-8">
+                  <h4 className="bible-subtitle">Formação Complementar</h4>
                   <div className="space-y-2">
                     <p className="bible-link">• Técnico em Design Gráfico — CEFET-PR [1999]</p>
                     <p className="bible-link">• Dir. de Arte em Cinema — AIC - Academia Internacional de Cinema [2004]</p>
@@ -356,37 +356,37 @@ const Autor = () => {
 
             <div>
               <div>
-                <div className="border-l-2 border-primary pl-6">
-                  <p className="bible-body text-muted-foreground mb-2">2023-2025 (ongoing)</p>
-                  <h3 className="bible-body font-bold mb-2">Master's Degree in Cinema and Video Arts</h3>
-                  <p className="bible-body mb-3">UNESPAR - State University of Paraná</p>
-                  <p className="bible-body text-muted-foreground mb-4">
+                <div className="border-l-2 border-primary pl-6 bible-block">
+                  <p className="bible-body text-muted-foreground">2023-2025 (ongoing)</p>
+                  <h3 className="bible-body font-bold">Master's Degree in Cinema and Video Arts</h3>
+                  <p className="bible-body">UNESPAR - State University of Paraná</p>
+                  <p className="bible-body text-muted-foreground">
                     Research: Collaborative creative processes, skateboarding subculture, documentary cinema
                   </p>
                   
-                  <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 mt-4">
-                    <p className="bible-body font-semibold mb-2">QUALIFICATION APPROVED</p>
-                    <p className="bible-link mb-2">July 11, 2025 — PPG-CINEAV/UNESPAR</p>
+                  <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 bible-media">
+                    <p className="bible-body font-semibold">QUALIFICATION APPROVED</p>
+                    <p className="bible-link">July 11, 2025 — PPG-CINEAV/UNESPAR</p>
                     <p className="bible-link">
                       Title: "LowMovie™ and the Creative Labyrinth: Subjectivity, Subculture and the Construction of an Aesthetic in Motion in the LowPressure™ Collective"
                     </p>
                   </div>
                 </div>
 
-                <div className="border-l-2 border-muted pl-6">
-                  <p className="bible-body text-muted-foreground mb-2">2014</p>
-                  <h3 className="bible-body font-bold mb-2">Postgraduate Degree in Art Dir. and Creative Strategies</h3>
+                <div className="border-l-2 border-muted pl-6 bible-block">
+                  <p className="bible-body text-muted-foreground">2014</p>
+                  <h3 className="bible-body font-bold">Postgraduate Degree in Art Dir. and Creative Strategies</h3>
                   <p className="bible-body">Unicuritiba</p>
                 </div>
 
-                <div className="border-l-2 border-muted pl-6">
-                  <p className="bible-body text-muted-foreground mb-2">2005</p>
-                  <h3 className="bible-body font-bold mb-2">Bachelor's Degree in Social Communication — Advertising and Propaganda</h3>
+                <div className="border-l-2 border-muted pl-6 bible-block">
+                  <p className="bible-body text-muted-foreground">2005</p>
+                  <h3 className="bible-body font-bold">Bachelor's Degree in Social Communication — Advertising and Propaganda</h3>
                   <p className="bible-body">UTP - Tuiuti University of Paraná</p>
                 </div>
 
-                <div className="mt-8 pt-8 border-t border-border">
-                  <h4 className="bible-subtitle mb-4">Additional Training</h4>
+                <div className="bible-block border-t border-border pt-8">
+                  <h4 className="bible-subtitle">Additional Training</h4>
                   <div className="space-y-2">
                     <p className="bible-link">• Technical Degree in Graphic Design — CEFET-PR [1999]</p>
                     <p className="bible-link">• Art Direction in Cinema — AIC - International Cinema Academy [2004]</p>
@@ -427,17 +427,17 @@ const Autor = () => {
                 <h3 className="bible-subtitle">A Linguagem Visual como Resistência</h3>
                 <p className="bible-body">O uso de tipografia em corpo alto, tons frios (rosa-pálido sobre preto), e elementos de arquivo como "1984" e o símbolo ™ cria uma tensão entre o institucional e o subversivo. Essa ironia visual ecoa Orwell, glitch estético e ruído pós-soviético — um statement sobre o branding em colapso.</p>
                 
-                <div className="my-6 py-6 border-y border-primary/20 text-center">
+                <div className="bible-media border-y border-primary/20 text-center">
                   <p className="bible-body font-bold italic text-primary">"O branding morreu quando começou a se explicar demais."</p>
                 </div>
                 
                 <p className="bible-body">A anti-marca ЦАСТРО™ não busca legibilidade comercial, mas reconhecimento conceitual. Quem entende o código, entende o autor. Quem não entende, está fora da tribo — e tudo bem.</p>
                 
-                <div className="space-y-4 bg-primary/5 border border-primary/20 rounded-lg p-6">
+                <div className="space-y-4 bg-primary/5 border border-primary/20 rounded-lg p-6 bible-media">
                   <h3 className="bible-subtitle">Conheçam o Trabalho, Não o Rosto</h3>
                   <p className="bible-body">A proposta central é o anonimato como ética criativa. Num mundo saturado de criadores-influencers, a ideia é inverter a equação: não se trata de vender a imagem do artista, mas de expandir o campo simbólico do que ele cria.</p>
                   <p className="bible-body">Assim, "ЦАСТРО™" torna-se um agente conceitual, não uma pessoa. Uma entidade de linguagem, um selo de pensamento, uma assinatura invisível.</p>
-                  <div className="my-4 py-4">
+                  <div className="bible-media">
                     <p className="bible-body font-bold italic text-primary">"O criador desaparece para que a obra fale."</p>
                   </div>
                 </div>
@@ -445,26 +445,26 @@ const Autor = () => {
                 <h3 className="bible-subtitle">A Semiótica do Símbolo</h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-link font-bold uppercase mb-2">ЦАСТРО</h4>
+                    <h4 className="bible-link font-bold uppercase">ЦАСТРО</h4>
                     <p className="bible-link">Transliteração que cria ruído e nega a leitura imediata — uma máscara estética</p>
                   </div>
                   <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-link font-bold uppercase mb-2">"1984"</h4>
+                    <h4 className="bible-link font-bold uppercase">"1984"</h4>
                     <p className="bible-link">Referência ao controle cultural, à vigilância e à resistência autoral</p>
                   </div>
                   <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-link font-bold uppercase mb-2">™</h4>
+                    <h4 className="bible-link font-bold uppercase">™</h4>
                     <p className="bible-link">Ironia: o símbolo do mercado aplicado a uma anti-marca</p>
                   </div>
                   <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-link font-bold uppercase mb-2">Paleta</h4>
+                    <h4 className="bible-link font-bold uppercase">Paleta</h4>
                     <p className="bible-link">Preto e rosa-pálido = choque entre dureza e sensibilidade; brutalismo afetivo</p>
                   </div>
                 </div>
                 
-                <div className="-mx-6 px-6 py-8 rounded-lg">
-                  <h3 className="bible-subtitle mb-4">Conclusão</h3>
-                  <p className="bible-body mb-4">A identidade ЦАСТРО é um exercício de negação criativa. É o avesso do branding para relembrar o que o design pode ser: linguagem, manifesto, resistência.</p>
+                <div className="-mx-6 px-6 py-8 rounded-lg bible-block">
+                  <h3 className="bible-subtitle">Conclusão</h3>
+                  <p className="bible-body">A identidade ЦАСТРО é um exercício de negação criativa. É o avesso do branding para relembrar o que o design pode ser: linguagem, manifesto, resistência.</p>
                   <p className="bible-body font-bold">Não é um logo para ser lembrado, é uma ideia para ser compreendida — tarde demais.</p>
                 </div>
               </div>
