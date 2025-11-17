@@ -114,7 +114,7 @@ const Index = () => {
           </picture>
         </section>
 
-        {/* ===== SUBTITLE ===== */}
+        {/* ===== SUBTITLE + VIDEO ===== */}
         <BilingualSection className="bible-section">
           <BilingualContent
             portugueseContent={
@@ -128,13 +128,9 @@ const Index = () => {
               </>
             }
           />
-        </BilingualSection>
 
-        <Separator className="bg-border/30" />
-
-        {/* ===== VIDEO SECTION ===== */}
-        <section className="bible-section">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          {/* VIDEO */}
+          <div className="bible-media">
             <video 
               className="w-full aspect-video bg-black rounded-lg overflow-hidden"
               controls
@@ -145,7 +141,7 @@ const Index = () => {
               <source src="/videos/intro.mp4" type="video/mp4" />
             </video>
           </div>
-        </section>
+        </BilingualSection>
 
         <Separator className="bg-border/30" />
 
