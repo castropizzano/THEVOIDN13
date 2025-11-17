@@ -1791,7 +1791,7 @@ const Index = () => {
             }
           />
 
-          <div className="grid md:grid-cols-2 gap-8 items-start">
+          <div className="grid md:grid-cols-2 gap-8 items-stretch">
             <BilingualContent
               portugueseContent={
                 <>
@@ -1809,7 +1809,7 @@ const Index = () => {
               }
             />
             <div 
-              className="h-full flex items-stretch cursor-pointer"
+              className="flex cursor-pointer"
               onClick={() => setPrototypeDialogOpen(true)}
             >
               <img 
