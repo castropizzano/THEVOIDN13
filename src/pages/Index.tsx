@@ -163,11 +163,9 @@ const Index = () => {
               </>
             }
           />
-        </BilingualSection>
 
-        {/* ===== PARADOX RENDER ===== */}
-        <section className="bible-section">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          {/* PARADOX RENDER */}
+          <div className="bible-media">
             <img 
               src={paradoxRender} 
               alt="THEVØIDN13 — Paradox Render" 
@@ -175,7 +173,7 @@ const Index = () => {
               loading="lazy"
             />
           </div>
-        </section>
+        </BilingualSection>
 
         <Separator className="bg-border/30" />
 
