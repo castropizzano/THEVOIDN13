@@ -108,30 +108,17 @@
 
   /* 2) BLOCO TEXTUAL - Container para título + parágrafos dentro de uma seção */
   .bible-block {
-    margin-bottom: 2rem;  /* 32px de respiro pro próximo bloco */
-  }
-  
-  .bible-block > * + * {
-    margin-top: 1.5rem;  /* elementos internos com 24px entre si */
+    @apply space-y-6 mb-8;
   }
 
   /* 3) MÍDIA - Imagens, vídeos, etc. */
   .bible-media {
-    margin-top: 2rem;
-    margin-bottom: 2rem;  /* 32px acima e abaixo */
+    @apply my-8;
   }
 
   /* 4) SEÇÃO CANÔNICA - Respiro vertical para seções principais */
   .bible-section {
-    padding-top: 4rem;
-    padding-bottom: 4rem;  /* 64px de respiro vertical geral */
-  }
-
-  @media (min-width: 768px) {
-    .bible-section {
-      padding-top: 5rem;
-      padding-bottom: 5rem;  /* 80px em telas maiores */
-    }
+    @apply py-16 md:py-20;
   }
 
   /* ============================================
@@ -147,7 +134,7 @@
     text-transform: uppercase;
     color: #FFFFFF;
     line-height: 1.2;
-    margin-bottom: 1.5rem;
+    @apply mb-4;
   }
 
   @media (min-width: 768px) {
@@ -221,13 +208,7 @@
     letter-spacing: 0.05em;
     color: rgba(255, 255, 255, 0.7);
     line-height: 1.4;
-    margin-top: 32px;
-    margin-bottom: 12px;
-  }
-
-  .tvn-subtitle:first-child,
-  .bilingual-col > .tvn-subtitle:first-child {
-    margin-top: 0;
+    @apply mb-3;
   }
 
   /* CORPO DE TEXTO - Mesmo que bible-body */
@@ -257,7 +238,7 @@
 
   /* ESPAÇAMENTO DE BLOCOS */
   .tvn-block {
-    @apply space-y-6 md:space-y-8;
+    @apply space-y-6 mb-8;
   }
 
   /* ESPAÇAMENTO DE CARDS */
@@ -271,8 +252,7 @@
     padding-left: 1rem;
     font-style: italic;
     color: rgba(230, 230, 230, 0.8);
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
+    @apply my-8;
   }
 
   /* IMAGENS */
@@ -280,8 +260,7 @@
     width: 100%;
     height: auto;
     border-radius: 0.5rem;
-    margin-top: 2.5rem;
-    margin-bottom: 2rem;
+    @apply my-8;
   }
 
   .tvn-image:first-child {
