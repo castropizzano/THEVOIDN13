@@ -173,20 +173,6 @@ const Index = () => {
 
         <Separator className="bg-border/30" />
 
-        {/* ===== AUDIO PLAYER ===== */}
-        <section className="bible-section bg-card/30">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6">
-            <BilingualAudioPlayer
-              srcPt="/audio/thevoidn13-manifesto-pt.mp3"
-              srcEn="/audio/thevoidn13-manifesto-en.mp3"
-              title="THEVØIDN13 | INTRO"
-              description={t("conceptualNarration")}
-            />
-          </div>
-        </section>
-
-        <Separator className="bg-border/30" />
-
         {/* ===== MANIFESTO INTEGRADO ===== */}
         <BilingualSection className="bible-section">
           <BilingualContent
@@ -507,6 +493,15 @@ const Index = () => {
             />
           </div>
 
+          {/* AUDIO PLAYER */}
+          <div className="bible-media">
+            <BilingualAudioPlayer
+              srcPt="/audio/thevoidn13-manifesto-pt.mp3"
+              srcEn="/audio/thevoidn13-manifesto-en.mp3"
+              title="THEVØIDN13 | INTRO"
+              description={t("conceptualNarration")}
+            />
+          </div>
 
           <BilingualContent
             portugueseContent={
