@@ -11,6 +11,7 @@ import { CreativeOracle } from "@/components/CreativeOracle";
 import { BackToTop } from "@/components/BackToTop";
 import { AccessGate } from "@/components/AccessGate";
 import { CookieConsent } from "@/components/CookieConsent";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 import SpotifyPlaylist from "@/components/SpotifyPlaylist";
 import FilmGallery from "@/components/FilmGallery";
 import ComicsShowcase from "@/components/ComicsShowcase";
@@ -76,6 +77,7 @@ import voidStreetThumbnail from "@/assets/void-street-thumbnail.png";
 
 const Index = () => {
   const [oracleOpen, setOracleOpen] = useState(false);
+  const [prototypeDialogOpen, setPrototypeDialogOpen] = useState(false);
   const [hasAccess, setHasAccess] = useState(() => {
     return localStorage.getItem("thevoidn13_access_granted") === "true";
   });
@@ -1775,6 +1777,65 @@ const Index = () => {
 
         {/* ===== THEVØIDN13 STUDY ===== */}
         <BilingualSection className="bible-section">
+          {/* ===== PROTÓTIPO Nº13 ===== */}
+          <BilingualContent
+            portugueseContent={
+              <>
+                <h3 className="bible-subtitle">PROTÓTIPO Nº13</h3>
+              </>
+            }
+            englishContent={
+              <>
+                <h3 className="bible-subtitle">PROTOTYPE Nº13</h3>
+              </>
+            }
+          />
+
+          <div className="grid md:grid-cols-2 gap-8 items-start">
+            <BilingualContent
+              portugueseContent={
+                <>
+                  <p className="bible-body">{t("prototypeDesc1")}</p>
+                  <p className="bible-body">{t("prototypeDesc2")}</p>
+                  <p className="bible-body">{t("prototypeDesc3")}</p>
+                </>
+              }
+              englishContent={
+                <>
+                  <p className="bible-body">{t("prototypeDesc1")}</p>
+                  <p className="bible-body">{t("prototypeDesc2")}</p>
+                  <p className="bible-body">{t("prototypeDesc3")}</p>
+                </>
+              }
+            />
+            <div 
+              className="h-full flex items-stretch cursor-pointer"
+              onClick={() => setPrototypeDialogOpen(true)}
+            >
+              <img 
+                src={actionFigureNew} 
+                alt="THEVØIDN13 Action Figure Prototype" 
+                className="w-full h-full object-cover rounded-lg hover:opacity-90 transition-opacity"
+              />
+            </div>
+          </div>
+
+          <Dialog open={prototypeDialogOpen} onOpenChange={setPrototypeDialogOpen}>
+            <DialogContent className="max-w-6xl max-h-[90vh] p-0">
+              <img 
+                src={actionFigureNew} 
+                alt="THEVØIDN13 Action Figure Prototype" 
+                className="w-full h-full object-contain"
+              />
+            </DialogContent>
+          </Dialog>
+
+        </BilingualSection>
+
+        <Separator className="bg-border/30" />
+
+        {/* ===== THEVØIDN13 STUDY ===== */}
+        <BilingualSection className="bible-section">
           {/* FIM DA TRANSMISSÃO */}
           <BilingualContent
             portugueseContent={
@@ -1820,50 +1881,6 @@ const Index = () => {
                 </>
               }
              />
-        </BilingualSection>
-
-        <Separator className="bg-border/30" />
-
-        {/* ===== PROTÓTIPO Nº13 ===== */}
-        <BilingualSection className="bible-section">
-          <BilingualContent
-            portugueseContent={
-              <>
-                <h3 className="bible-subtitle">PROTÓTIPO Nº13</h3>
-              </>
-            }
-            englishContent={
-              <>
-                <h3 className="bible-subtitle">PROTOTYPE Nº13</h3>
-              </>
-            }
-          />
-
-          <div className="grid md:grid-cols-2 gap-8 items-start">
-            <BilingualContent
-              portugueseContent={
-                <>
-                  <p className="bible-body">{t("prototypeDesc1")}</p>
-                  <p className="bible-body">{t("prototypeDesc2")}</p>
-                  <p className="bible-body">{t("prototypeDesc3")}</p>
-                </>
-              }
-              englishContent={
-                <>
-                  <p className="bible-body">{t("prototypeDesc1")}</p>
-                  <p className="bible-body">{t("prototypeDesc2")}</p>
-                  <p className="bible-body">{t("prototypeDesc3")}</p>
-                </>
-              }
-              />
-              <div className="h-full flex items-stretch">
-                <img 
-                  src={actionFigureNew} 
-                  alt="THEVØIDN13 Action Figure Prototype" 
-                  className="w-full h-full object-cover rounded-lg"
-                />
-              </div>
-            </div>
         </BilingualSection>
 
         <Separator className="bg-border/30" />
