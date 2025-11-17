@@ -52,7 +52,7 @@ const Autor = () => {
         </section>
 
         {/* Nome */}
-        <BilingualSection className="py-16">
+        <BilingualSection className="bible-section">
           <div>
             <h1 className="bible-title">CASTRO PIZZANO</h1>
             <p className="bible-body mt-4 text-muted-foreground">цастро™ / PUNK</p>

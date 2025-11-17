@@ -115,7 +115,7 @@ const Index = () => {
         </section>
 
         {/* ===== SUBTITLE ===== */}
-        <BilingualSection className="py-8 sm:py-12 md:py-16">
+        <BilingualSection className="bible-section">
           <BilingualContent
             portugueseContent={
               <>
@@ -133,7 +133,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== VIDEO SECTION ===== */}
-        <section className="py-8 sm:py-12 md:py-16">
+        <section className="bible-section">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-6">
             <video 
               className="w-full aspect-video bg-black rounded-lg overflow-hidden"
@@ -150,7 +150,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== INÍCIO DA TRANSMISSÃO ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection className="bible-section">
           <BilingualContent
             portugueseContent={
               <>
@@ -166,7 +166,7 @@ const Index = () => {
         </BilingualSection>
 
         {/* ===== PARADOX RENDER ===== */}
-        <section className="py-6 sm:py-8">
+        <section className="bible-section">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <img 
               src={paradoxRender} 
@@ -180,7 +180,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== AUDIO PLAYER ===== */}
-        <section className="py-8 sm:py-12 md:py-16 bg-card/30">
+        <section className="bible-section bg-card/30">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <BilingualAudioPlayer
               srcPt="/audio/thevoidn13-manifesto-pt.mp3"
@@ -194,7 +194,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== MANIFESTO INTEGRADO ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection className="bible-section">
           <BilingualContent
             portugueseContent={
               <>
@@ -227,7 +227,7 @@ const Index = () => {
         </BilingualSection>
 
         {/* ===== FALL RENDER ===== */}
-        <section className="py-6 sm:py-8">
+        <section className="bible-section">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <img 
               src={fallRender} 
@@ -241,7 +241,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 1. ORIGEM E PROPÓSITO ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection className="bible-section">
           <BilingualContent
             portugueseContent={
               <>
