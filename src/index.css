@@ -347,8 +347,24 @@
     @apply space-y-6;
   }
 
-  /* Ensure title → subtitle spacing is consistent inside bilingual blocks */
-  .bilingual-content > .bible-title + .bible-subtitle {
+  /* Ensure consistent spacing after titles inside bilingual blocks */
+  .bilingual-content > .bible-title + .bible-subtitle,
+  .bilingual-content > .bible-title + .bible-body {
+    margin-top: 32px;
+  }
+
+  /* Ensure consistent spacing between consecutive bilingual content blocks */
+  .bilingual-content + .bilingual-content {
+    margin-top: 1.5rem; /* 24px to match space-y-6 */
+  }
+
+  /* Global fallback when elements are in the same block */
+  .bible-title + .bible-body {
+    margin-top: 32px;
+  }
+
+  /* TVN system equivalence */
+  .tvn-h2 + .tvn-paragraph {
     margin-top: 32px;
   }
 
