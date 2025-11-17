@@ -119,103 +119,101 @@ const Autor = () => {
           <div className="bible-bilingual-grid bible-block">
             <div>
               <div>
-                <div>
-                  <h3 className="bible-subtitle">[DESIGN & ARTE]</h3>
-                  <ul className="space-y-2">
-                    <li className="bible-body">• Adobe Illustrator</li>
-                    <li className="bible-body">• Adobe InDesign</li>
-                    <li className="bible-body">• Adobe Fresco</li>
-                    <li className="bible-body">• Procreate</li>
-                  </ul>
-                </div>
+                <h3 className="bible-subtitle">[DESIGN & ARTE]</h3>
+                <ul className="space-y-2">
+                  <li className="bible-body">• Adobe Illustrator</li>
+                  <li className="bible-body">• Adobe InDesign</li>
+                  <li className="bible-body">• Adobe Fresco</li>
+                  <li className="bible-body">• Procreate</li>
+                </ul>
+              </div>
 
-                <div>
-                  <h3 className="bible-subtitle">[FOTO & EDIÇÃO]</h3>
-                  <ul className="space-y-2">
-                    <li className="bible-body">• Adobe Photoshop</li>
-                    <li className="bible-body">• Adobe Lightroom</li>
-                  </ul>
-                </div>
+              <div>
+                <h3 className="bible-subtitle">[FOTO & EDIÇÃO]</h3>
+                <ul className="space-y-2">
+                  <li className="bible-body">• Adobe Photoshop</li>
+                  <li className="bible-body">• Adobe Lightroom</li>
+                </ul>
+              </div>
 
-                <div>
-                  <h3 className="bible-subtitle">[VÍDEO & PÓS PRODUÇÃO]</h3>
-                  <ul className="space-y-2">
-                    <li className="bible-body">• Blender</li>
-                    <li className="bible-body">• Adobe Premiere</li>
-                    <li className="bible-body">• Adobe After Effects</li>
-                  </ul>
-                </div>
+              <div>
+                <h3 className="bible-subtitle">[VÍDEO & PÓS PRODUÇÃO]</h3>
+                <ul className="space-y-2">
+                  <li className="bible-body">• Blender</li>
+                  <li className="bible-body">• Adobe Premiere Pro</li>
+                  <li className="bible-body">• Adobe After Effects</li>
+                  <li className="bible-body">• DaVinci Resolve</li>
+                </ul>
+              </div>
 
-                <div>
-                  <h3 className="bible-subtitle">[EXPERIMENTAL]</h3>
-                  <ul className="space-y-2">
-                    <li className="bible-body">• Ultimaker Cura</li>
-                    <li className="bible-body">• UCreality 3D</li>
-                    <li className="bible-body">• Figma</li>
-                    <li className="bible-body">• AI Tools: Claude, Gemini, Midjourney, ChatGPT, Lovable</li>
-                  </ul>
-                </div>
+              <div>
+                <h3 className="bible-subtitle">[EXPERIMENTAL]</h3>
+                <ul className="space-y-2">
+                  <li className="bible-body">• Ultimaker Cura</li>
+                  <li className="bible-body">• UCreality 3D</li>
+                  <li className="bible-body">• Figma</li>
+                  <li className="bible-body">• AI Tools: Claude, Gemini, Midjourney, ChatGPT, Lovable</li>
+                </ul>
+              </div>
 
-                <div>
-                  <h3 className="bible-subtitle">[IDIOMAS]</h3>
-                  <p className="bible-body">Português (nativo) • Espanhol (intermediário) • Inglês (intermediário)</p>
-                </div>
+              <div>
+                <h3 className="bible-subtitle">[IDIOMAS]</h3>
+                <p className="bible-body">Português (nativo) • Espanhol (intermediário) • Inglês (intermediário)</p>
+              </div>
 
-                <div>
-                  <h3 className="bible-subtitle">[REFERENCIAL]</h3>
-                  <p className="bible-body">Minimalista/Experimentação • Futurista/Construtivismo • Cibercultura/Semiótica • Tipografia/Infografia • Economia Criativa • Underground • Op-Art</p>
-                </div>
+              <div>
+                <h3 className="bible-subtitle">[REFERENCES]</h3>
+                <p className="bible-body">Minimalista/Experimentação • Futurista/Construtivismo • Cibercultura/Semiótica • Tipografia/Infografismos • Economia Criativa • Underground • Op-Art</p>
               </div>
             </div>
 
             <div>
               <div>
-                <div>
-                  <h3 className="bible-subtitle">[DESIGN & ART]</h3>
-                  <ul className="space-y-2">
-                    <li className="bible-body">• Adobe Illustrator</li>
-                    <li className="bible-body">• Adobe InDesign</li>
-                    <li className="bible-body">• Adobe Fresco</li>
-                    <li className="bible-body">• Procreate</li>
-                  </ul>
-                </div>
+                <h3 className="bible-subtitle">[DESIGN & ART]</h3>
+                <ul className="space-y-2">
+                  <li className="bible-body">• Adobe Illustrator</li>
+                  <li className="bible-body">• Adobe InDesign</li>
+                  <li className="bible-body">• Adobe Fresco</li>
+                  <li className="bible-body">• Procreate</li>
+                </ul>
+              </div>
 
-                <div>
-                  <h3 className="bible-subtitle">[PHOTO & EDITING]</h3>
-                  <ul className="space-y-2">
-                    <li className="bible-body">• Adobe Photoshop</li>
-                    <li className="bible-body">• Adobe Lightroom</li>
-                  </ul>
-                </div>
+              <div>
+                <h3 className="bible-subtitle">[PHOTO & EDITING]</h3>
+                <ul className="space-y-2">
+                  <li className="bible-body">• Adobe Photoshop</li>
+                  <li className="bible-body">• Adobe Lightroom</li>
+                </ul>
+              </div>
 
-                <div>
-                  <h3 className="bible-subtitle">[VIDEO & POST PRODUCTION]</h3>
-                  <ul className="space-y-2">
-                    <li className="bible-body">• Blender</li>
-                    <li className="bible-body">• Adobe Premiere</li>
-                    <li className="bible-body">• Adobe After Effects</li>
-                  </ul>
-                </div>
+              <div>
+                <h3 className="bible-subtitle">[VIDEO & POST PRODUCTION]</h3>
+                <ul className="space-y-2">
+                  <li className="bible-body">• Blender</li>
+                  <li className="bible-body">• Adobe Premiere Pro</li>
+                  <li className="bible-body">• Adobe After Effects</li>
+                  <li className="bible-body">• DaVinci Resolve</li>
+                </ul>
+              </div>
 
-                <div>
-                  <h3 className="bible-subtitle">[EXPERIMENTAL]</h3>
-                  <ul className="space-y-2">
-                    <li className="bible-body">• Ultimaker Cura</li>
-                    <li className="bible-body">• UCreality 3D</li>
-                    <li className="bible-body">• Figma</li>
-                    <li className="bible-body">• AI Tools: Claude, Gemini, Midjourney, ChatGPT, Lovable</li>
-                  </ul>
-                </div>
+              <div>
+                <h3 className="bible-subtitle">[EXPERIMENTAL]</h3>
+                <ul className="space-y-2">
+                  <li className="bible-body">• Ultimaker Cura</li>
+                  <li className="bible-body">• UCreality 3D</li>
+                  <li className="bible-body">• Figma</li>
+                  <li className="bible-body">• AI Tools: Claude, Gemini, Midjourney, ChatGPT, Lovable</li>
+                </ul>
+              </div>
 
-                <div>
-                  <h3 className="bible-subtitle">[LANGUAGES]</h3>
-                  <p className="bible-body">Portuguese (native) • Spanish (intermediate) • English (intermediate)</p>
-                </div>
+              <div>
+                <h3 className="bible-subtitle">[LANGUAGES]</h3>
+                <p className="bible-body">Portuguese (native) • Spanish (intermediate) • English (intermediate)</p>
+              </div>
 
-                <div>
-                  <h3 className="bible-subtitle">[REFERENCES]</h3>
-                  <p className="bible-body">Minimalist/Experimentation • Futurist/Constructivism • Cyberculture/Semiotics • Typography/Infographics • Creative Economy • Underground • Op-Art</p>
-                </div>
+              <div>
+                <h3 className="bible-subtitle">[REFERENCES]</h3>
+                <p className="bible-body">Minimalist/Experimentation • Futurist/Constructivism • Cyberculture/Semiotics • Typography/Infographics • Creative Economy • Underground • Op-Art</p>
               </div>
             </div>
           </div>
@@ -236,31 +234,27 @@ const Autor = () => {
 
           <div className="bible-bilingual-grid bible-block">
             <div>
-              <div>
-                <p className="bible-body">Metodologia processual, experimental e reflexiva do projeto THEVØIDN13. Um ciclo contínuo de cinco etapas:</p>
-                
-                <p className="bible-body"><span className="font-semibold">Observação:</span> Análise do fluxo criativo e documentação de padrões.</p>
-                <p className="bible-body"><span className="font-semibold">Cocriação:</span> Interação com IAs (Claude, Gemini, Midjourney) como extensões simbólicas.</p>
-                <p className="bible-body"><span className="font-semibold">Documentação:</span> Registro contínuo de camadas, decisões e estados mentais.</p>
-                <p className="bible-body"><span className="font-semibold">Reflexão:</span> Transformação dos registros em narrativas estéticas, filosóficas e técnicas.</p>
-                <p className="bible-body"><span className="font-semibold">Expansão:</span> Compartilhamento de aprendizados através de arte, código e metodologia.</p>
-                
-                <p className="bible-body">Transparência radical. Autoria compartilhada mas assinada. Pesquisa como criação.</p>
-              </div>
+              <p className="bible-body">Metodologia processual, experimental e reflexiva do projeto THEVØIDN13. Um ciclo contínuo de cinco etapas:</p>
+              
+              <p className="bible-body"><span className="font-semibold">Observação:</span> Análise do fluxo criativo e documentação de padrões.</p>
+              <p className="bible-body"><span className="font-semibold">Cocriação:</span> Interação com IAs (Claude, Gemini, Midjourney) como extensões simbólicas.</p>
+              <p className="bible-body"><span className="font-semibold">Documentação:</span> Registro contínuo de camadas, decisões e estados mentais.</p>
+              <p className="bible-body"><span className="font-semibold">Reflexão:</span> Transformação dos registros em narrativas estéticas, filosóficas e técnicas.</p>
+              <p className="bible-body"><span className="font-semibold">Expansão:</span> Compartilhamento de aprendizados através de arte, código e metodologia.</p>
+              
+              <p className="bible-body">Transparência radical. Autoria compartilhada mas assinada. Pesquisa como criação.</p>
             </div>
 
             <div>
-              <div>
-                <p className="bible-body">Processual, experimental and reflexive methodology of the THEVØIDN13 project. A continuous cycle of five stages:</p>
-                
-                <p className="bible-body"><span className="font-semibold">Observation:</span> Analysis of creative flow and pattern documentation.</p>
-                <p className="bible-body"><span className="font-semibold">Co-creation:</span> Interaction with AIs (Claude, Gemini, Midjourney) as symbolic extensions.</p>
-                <p className="bible-body"><span className="font-semibold">Documentation:</span> Continuous recording of layers, decisions and mental states.</p>
-                <p className="bible-body"><span className="font-semibold">Reflection:</span> Transformation of records into aesthetic, philosophical and technical narratives.</p>
-                <p className="bible-body"><span className="font-semibold">Expansion:</span> Sharing learnings through art, code and methodology.</p>
-                
-                <p className="bible-body">Radical transparency. Shared but signed authorship. Research as creation.</p>
-              </div>
+              <p className="bible-body">Processual, experimental and reflexive methodology of the THEVØIDN13 project. A continuous cycle of five stages:</p>
+              
+              <p className="bible-body"><span className="font-semibold">Observation:</span> Analysis of creative flow and pattern documentation.</p>
+              <p className="bible-body"><span className="font-semibold">Co-creation:</span> Interaction with AIs (Claude, Gemini, Midjourney) as symbolic extensions.</p>
+              <p className="bible-body"><span className="font-semibold">Documentation:</span> Continuous recording of layers, decisions and mental states.</p>
+              <p className="bible-body"><span className="font-semibold">Reflection:</span> Transformation of records into aesthetic, philosophical and technical narratives.</p>
+              <p className="bible-body"><span className="font-semibold">Expansion:</span> Sharing learnings through art, code and methodology.</p>
+              
+              <p className="bible-body">Radical transparency. Shared but signed authorship. Research as creation.</p>
             </div>
           </div>
         </BilingualSection>
