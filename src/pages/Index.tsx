@@ -1497,13 +1497,13 @@ const Index = () => {
             <BilingualContent
               portugueseContent={
                 <>
-                  <h3 className="bible-subtitle">GI (GISELE)</h3>
+                  <h3 className="bible-subtitle">GI</h3>
                   <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">A Presença Silenciosa</h4>
                 </>
               }
               englishContent={
                 <>
-                  <h3 className="bible-subtitle">GI (GISELE)</h3>
+                  <h3 className="bible-subtitle">GI</h3>
                   <h4 className="text-sm font-semibold uppercase tracking-wide mb-4 text-muted-foreground">The Silent Presence</h4>
                 </>
               }
