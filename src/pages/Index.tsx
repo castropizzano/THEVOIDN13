@@ -169,6 +169,16 @@ const Index = () => {
               loading="lazy"
             />
           </div>
+
+          {/* AUDIO PLAYER */}
+          <div className="bible-media">
+            <BilingualAudioPlayer
+              srcPt="/audio/thevoidn13-manifesto-pt.mp3"
+              srcEn="/audio/thevoidn13-manifesto-en.mp3"
+              title="THEVØIDN13 | INTRO"
+              description={t("conceptualNarration")}
+            />
+          </div>
         </BilingualSection>
 
         <Separator className="bg-border/30" />
@@ -490,16 +500,6 @@ const Index = () => {
               src={golRender} 
               alt="THEVØIDN13 — VW GOL 87 Render" 
               className="w-full max-w-6xl mx-auto rounded-lg"
-            />
-          </div>
-
-          {/* AUDIO PLAYER */}
-          <div className="bible-media">
-            <BilingualAudioPlayer
-              srcPt="/audio/thevoidn13-manifesto-pt.mp3"
-              srcEn="/audio/thevoidn13-manifesto-en.mp3"
-              title="THEVØIDN13 | INTRO"
-              description={t("conceptualNarration")}
             />
           </div>
 
