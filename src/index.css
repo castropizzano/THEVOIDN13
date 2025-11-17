@@ -368,6 +368,12 @@
     margin-top: 32px;
   }
 
+  /* Cross-wrapper fix: when a new block starts with a subtitle, add spacing even if previous block ended with .bible-body */
+  .bilingual-content + * .bible-subtitle:first-child,
+  .bilingual-content + * .tvn-h3:first-child {
+    margin-top: 32px;
+  }
+
   /* ===============================================
      GRID BILÍNGUE - Sistema Legado com Toggle Global
      =============================================== */
@@ -424,9 +430,8 @@
     @apply space-y-4;
   }
   
-  /* Remover margin-top do primeiro elemento */
+  /* Remover margin-top do primeiro elemento (exceto em .bilingual-content para manter respiro entre blocos) */
   .bilingual-col > *:first-child,
-  .bilingual-content > *:first-child,
   .bible-bilingual-grid > div > *:first-child {
     margin-top: 0 !important;
   }
