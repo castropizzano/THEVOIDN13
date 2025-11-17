@@ -24,7 +24,7 @@ export const MindMap = () => {
             <Button
               onClick={() => setIsOpen(true)}
               variant="outline"
-              className="w-full"
+              className="w-full justify-start text-left"
             >
               {t("expandFullMap")}
             </Button>

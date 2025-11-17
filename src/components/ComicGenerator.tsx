@@ -266,7 +266,7 @@ export const ComicGenerator = () => {
             (promptMode === "library" && !script.trim()) ||
             (promptMode === "custom" && !customScript.trim())
           }
-          className="w-full subtitle"
+          className="w-full subtitle justify-start text-left"
           size="lg"
         >
           {isGenerating ? (
