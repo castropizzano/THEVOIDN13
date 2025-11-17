@@ -134,7 +134,7 @@ const Index = () => {
 
         {/* ===== VIDEO SECTION ===== */}
         <section className="bible-section">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-6">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <video 
               className="w-full aspect-video bg-black rounded-lg overflow-hidden"
               controls
@@ -683,7 +683,7 @@ const Index = () => {
             }
           />
 
-          <div className="space-y-8">
+          <div className="bible-block">
             <BilingualContent
               portugueseContent={
                 <>
@@ -795,7 +795,7 @@ const Index = () => {
 
           <BilingualContent
             portugueseContent={
-              <div className="space-y-8">
+              <div className="bible-block">
                 <div>
                   <h4 className="bible-subtitle">{t("linguisticOriginTitle")}</h4>
                   <p className="bible-body">{t("linguisticOriginDesc")}</p>
@@ -811,7 +811,7 @@ const Index = () => {
               </div>
             }
             englishContent={
-              <div className="space-y-8">
+              <div className="bible-block">
                 <div>
                   <h4 className="bible-subtitle">{t("linguisticOriginTitle")}</h4>
                   <p className="bible-body">{t("linguisticOriginDesc")}</p>
@@ -1629,7 +1629,7 @@ const Index = () => {
           </div>
 
           {/* THEVØIDN13 STUDY */}
-          <div className="mt-16">
+          <div>
             <h3 className="bible-subtitle text-left">THEVØIDN13 (ESTUDO INICIAL | EXPLORATORY STUDY)</h3>
             <div className="bible-media">
               <img 
@@ -1802,9 +1802,7 @@ const Index = () => {
             }
           />
           
-          <div>
-            
-            <div className="bible-media">
+          <div className="bible-media">
               <img 
                 src={sideRender} 
                 alt="THEVØIDN13 Final Scene" 
@@ -1835,7 +1833,6 @@ const Index = () => {
                 </>
               }
              />
-          </div>
         </BilingualSection>
 
         <Separator className="bg-border/30" />
@@ -1854,25 +1851,23 @@ const Index = () => {
               </>
             }
           />
-          
-          <div>
-            
-            <div className="grid md:grid-cols-2 gap-8 items-start">
-              <BilingualContent
-                portugueseContent={
-                  <div className="space-y-6">
-                    <p className="bible-body mt-4">{t("prototypeDesc1")}</p>
-                    <p className="bible-body mt-4">{t("prototypeDesc2")}</p>
-                    <p className="bible-body mt-4">{t("prototypeDesc3")}</p>
-                  </div>
-                }
-                englishContent={
-                  <div className="space-y-6">
-                    <p className="bible-body mt-4">{t("prototypeDesc1")}</p>
-                    <p className="bible-body mt-4">{t("prototypeDesc2")}</p>
-                    <p className="bible-body mt-4">{t("prototypeDesc3")}</p>
-                  </div>
-                }
+
+          <div className="grid md:grid-cols-2 gap-8 items-start">
+            <BilingualContent
+              portugueseContent={
+                <>
+                  <p className="bible-body">{t("prototypeDesc1")}</p>
+                  <p className="bible-body">{t("prototypeDesc2")}</p>
+                  <p className="bible-body">{t("prototypeDesc3")}</p>
+                </>
+              }
+              englishContent={
+                <>
+                  <p className="bible-body">{t("prototypeDesc1")}</p>
+                  <p className="bible-body">{t("prototypeDesc2")}</p>
+                  <p className="bible-body">{t("prototypeDesc3")}</p>
+                </>
+              }
               />
               <div className="h-full flex items-stretch">
                 <img 
@@ -1882,7 +1877,6 @@ const Index = () => {
                 />
               </div>
             </div>
-          </div>
         </BilingualSection>
 
         <Separator className="bg-border/30" />
@@ -2098,14 +2092,14 @@ const Index = () => {
           </div>
 
           {/* DOCUMENTAÇÃO TÉCNICA */}
-          <div className="grid md:grid-cols-2 gap-12 mt-12">
-            <div className="space-y-6">
+          <div className="grid md:grid-cols-2 gap-12">
+            <div className="bible-block">
               <BilingualContent
                 portugueseContent={<h3 className="bible-subtitle">{t("mainDoc")}</h3>}
                 englishContent={<h3 className="bible-subtitle">{t("mainDoc")}</h3>}
               />
               
-              <div className="space-y-4">
+              <div>
                 <a 
                   href="https://github.com/castropizzano/thevoidn13/blob/main/README.md"
                   target="_blank"
@@ -2148,13 +2142,13 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="space-y-6">
+            <div className="bible-block">
               <BilingualContent
                 portugueseContent={<h3 className="bible-subtitle">{t("technicalDoc")}</h3>}
                 englishContent={<h3 className="bible-subtitle">{t("technicalDoc")}</h3>}
               />
               
-              <div className="space-y-4">
+              <div>
                 <a 
                   href="https://github.com/castropizzano/thevoidn13/blob/main/docs/PHILOSOPHY.md"
                   target="_blank"
