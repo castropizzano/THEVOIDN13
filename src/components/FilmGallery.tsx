@@ -174,22 +174,22 @@ const FilmGallery = () => {
   ];
 
   return (
-    <section className="w-full py-8">
+    <section className="w-full bible-section">
       <div className="max-w-6xl mx-auto">
         <Card className="overflow-hidden border-primary/20 bg-card/50 backdrop-blur-sm p-8">
           <Dialog>
             <DialogTrigger asChild>
-              <Button variant="outline" className="w-full justify-start mb-8">
+              <Button variant="outline" className="w-full justify-start bible-media">
                 <span className="text-sm">{t("filmReferencesButton")}</span>
               </Button>
             </DialogTrigger>
             <DialogContent className="max-w-2xl">
               <DialogHeader>
                 <DialogTitle className="text-2xl">{t("filmReferencesTitle")}</DialogTitle>
-                <DialogDescription className="text-base leading-relaxed pt-4">
-                  <p className="mb-4">{t("filmRefPara1")}</p>
-                  <p className="mb-4">{t("filmRefPara2")}</p>
-                  <p className="mb-4">{t("filmRefPara3")}</p>
+                <DialogDescription className="text-base leading-relaxed pt-4 bible-block">
+                  <p>{t("filmRefPara1")}</p>
+                  <p>{t("filmRefPara2")}</p>
+                  <p>{t("filmRefPara3")}</p>
                   <p>{t("filmRefPara4")}</p>
                 </DialogDescription>
               </DialogHeader>

@@ -64,24 +64,22 @@ const ComicsShowcase = () => {
   ];
 
   return (
-    <section className="w-full py-8">
+    <section className="w-full bible-section">
       <div className="max-w-6xl mx-auto">
         <Card className="overflow-hidden border-primary/20 bg-card/50 backdrop-blur-sm p-8">
           <Dialog>
             <DialogTrigger asChild>
-              <Button variant="outline" className="w-full justify-start mb-8">
+              <Button variant="outline" className="w-full justify-start bible-media">
                 <span className="text-sm">{t("comicsDNAButton")}</span>
               </Button>
             </DialogTrigger>
             <DialogContent className="max-w-2xl">
               <DialogHeader>
-                <DialogTitle className="text-2xl font-bold mb-4">
-                  {t("comicsDNATitle")}
-                </DialogTitle>
+                <DialogTitle className="text-2xl font-bold">{t("comicsDNATitle")}</DialogTitle>
               </DialogHeader>
-              <div className="space-y-6 text-sm leading-relaxed">
+              <div className="bible-block text-sm leading-relaxed">
                 <p>{t("comicsDNAIntro")}</p>
-                <ul className="space-y-4">
+                <ul className="bible-block">
                   <li>
                     <strong>Watchmen (1986)</strong> — Alan Moore & Dave Gibbons<br />
                     {t("watchmenDesc")}
@@ -95,7 +93,7 @@ const ComicsShowcase = () => {
                     {t("blackHoleDesc")}
                   </li>
                 </ul>
-                <p className="mt-6 pt-6 border-t border-border">
+                <p className="pt-6 border-t border-border">
                   {t("comicsDNANote")}
                 </p>
               </div>
@@ -126,8 +124,8 @@ const ComicsShowcase = () => {
                         </div>
                       </div>
                       <div className="p-6 bg-card">
-                        <h3 className="font-bold text-lg mb-2">{t(comic.titleKey as any)}</h3>
-                        <p className="text-sm text-muted-foreground mb-3">
+                        <h3 className="font-bold text-lg">{t(comic.titleKey as any)}</h3>
+                        <p className="text-sm text-muted-foreground">
                           {comic.author} ({comic.year})
                         </p>
                         <p className="text-sm italic text-primary/80">
@@ -139,14 +137,14 @@ const ComicsShowcase = () => {
                 </TooltipTrigger>
                 <TooltipContent side="top" className="max-w-xs">
                   <p className="font-semibold">{t(comic.titleKey as any)}</p>
-                  <p className="text-xs text-muted-foreground mt-1">{t(comic.contextKey as any)}</p>
+                  <p className="text-xs text-muted-foreground">{t(comic.contextKey as any)}</p>
                 </TooltipContent>
               </Tooltip>
             </TooltipProvider>
           ))}
         </div>
 
-        <div className="mt-8 p-6 bg-secondary/10 rounded-lg border border-primary/10">
+        <div className="bible-media p-6 bg-secondary/10 rounded-lg border border-primary/10">
           <p className="text-sm text-center text-muted-foreground leading-relaxed">
             {t("comicsTriadNote")}
           </p>

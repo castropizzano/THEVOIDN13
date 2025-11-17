@@ -39,10 +39,10 @@ export const MindMap = () => {
             {language === 'pt' ? 'Ecossistema completo das operações criativas THEVØIDN13' : 'Complete ecosystem of THEVØIDN13 creative operations'}
           </DialogDescription>
 
-          <div className="space-y-8">
+          <div className="bible-block">
             {/* Code-style Interface */}
             <div className="bg-black/90 border border-primary/30 rounded-lg p-6 sm:p-8 font-mono text-sm leading-relaxed overflow-x-auto">
-              <div className="space-y-6">
+              <div className="bible-block">
                 {/* Header */}
                 <div className="text-primary text-base sm:text-lg font-bold border-b border-primary/30 pb-4">
                   CREATIVE_OPS::MIND_MAP   <span className="text-muted-foreground text-xs">// PT / EN</span>
