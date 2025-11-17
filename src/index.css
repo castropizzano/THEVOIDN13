@@ -323,7 +323,7 @@
   .bilingual-col img,
   .bilingual-col figure {
     margin-top: 48px;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
   }
   
   .bilingual-col img:first-child,
@@ -345,6 +345,11 @@
 
   .bilingual-content {
     @apply space-y-6;
+  }
+
+  /* Ensure title → subtitle spacing is consistent inside bilingual blocks */
+  .bilingual-content > .bible-title + .bible-subtitle {
+    margin-top: 32px;
   }
 
   /* ===============================================
