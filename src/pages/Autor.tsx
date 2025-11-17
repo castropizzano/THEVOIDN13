@@ -53,17 +53,17 @@ const Autor = () => {
 
         {/* Nome */}
         <BilingualSection className="bible-section">
-          <div>
+          <div className="bible-block">
             <h1 className="bible-title">CASTRO PIZZANO</h1>
-            <p className="bible-body mt-4 text-muted-foreground">цастро™ / PUNK</p>
+            <p className="bible-body text-muted-foreground">цастро™ / PUNK</p>
           </div>
         </BilingualSection>
 
         <Separator className="bg-border/30" />
 
         {/* Quem Fala e De Onde Falo */}
-        <BilingualSection className="py-16">
-          <div className="bible-bilingual-grid bible-block-spacing">
+        <BilingualSection className="bible-section">
+          <div className="bible-bilingual-grid bible-block">
             <div>
               <h2 className="bible-title">QUEM FALA E DE ONDE FALO</h2>
             </div>
@@ -72,9 +72,9 @@ const Autor = () => {
             </div>
           </div>
 
-          <div className="bible-bilingual-grid bible-section-spacing">
+          <div className="bible-bilingual-grid bible-block">
             <div>
-              <div className="space-y-6">
+              <div>
                 <p className="bible-body text-justify">Profissional criativo multidisciplinar, atuo entre as artes visuais, o design e a produção audiovisual. Minha trajetória é guiada pela criação de identidades visuais e narrativas semióticas, explorando linguagens como fotografia, vídeo, design gráfico e multiartes digitais. Transito entre processos individuais e colaborações coletivas, com base em laboratórios criativos, imersões referenciais e desenvolvimento conceitual.</p>
                 
                 <p className="bible-body text-justify">Atualmente, mestrando em Cinema e Artes do Vídeo pelo PPG-CINEAV da Universidade Estadual do Paraná (Unespar – Curitiba II/FAP), na linha de pesquisa em Processos de Criação no Cinema e nas Artes do Vídeo. Integro o grupo de pesquisa CineCriare – Cinema: Criação e Reflexão (Unespar/CNPq).</p>
@@ -88,7 +88,7 @@ const Autor = () => {
             </div>
 
             <div>
-              <div className="space-y-6">
+              <div>
                 <p className="bible-body text-justify">Multidisciplinary creative professional, I work between visual arts, design and audiovisual production. My trajectory is guided by the creation of visual identities and semiotic narratives, exploring languages such as photography, video, graphic design and digital multi-arts. I transit between individual processes and collective collaborations, based on creative laboratories, referential immersions and conceptual development.</p>
                 
                 <p className="bible-body text-justify">Currently, Master's student in Cinema and Video Arts at PPG-CINEAV of the State University of Paraná (Unespar – Curitiba II/FAP), in the research line on Creation Processes in Cinema and Video Arts. I am part of the CineCriare research group – Cinema: Creation and Reflection (Unespar/CNPq).</p>
@@ -106,8 +106,8 @@ const Autor = () => {
         <Separator className="bg-border/30" />
 
         {/* Habilidades Técnicas */}
-        <BilingualSection className="py-16">
-          <div className="bible-bilingual-grid bible-block-spacing">
+        <BilingualSection className="bible-section">
+          <div className="bible-bilingual-grid bible-block">
             <div>
               <h2 className="bible-title">HABILIDADES TÉCNICAS</h2>
             </div>
@@ -116,9 +116,9 @@ const Autor = () => {
             </div>
           </div>
 
-          <div className="bible-bilingual-grid bible-section-spacing">
+          <div className="bible-bilingual-grid bible-block">
             <div>
-              <div className="space-y-8 mt-6">
+              <div>
                 <div>
                   <h3 className="bible-subtitle">[DESIGN & ARTE]</h3>
                   <ul className="space-y-2">
@@ -169,7 +169,7 @@ const Autor = () => {
             </div>
 
             <div>
-              <div className="space-y-8 mt-6">
+              <div>
                 <div>
                   <h3 className="bible-subtitle">[DESIGN & ART]</h3>
                   <ul className="space-y-2">
@@ -224,8 +224,8 @@ const Autor = () => {
         <Separator className="bg-border/30" />
 
         {/* Práxis Híbrida */}
-        <BilingualSection className="py-16">
-          <div className="bible-bilingual-grid bible-block-spacing">
+        <BilingualSection className="bible-section">
+          <div className="bible-bilingual-grid bible-block">
             <div>
               <h2 className="bible-title">PRÁXIS HÍBRIDA</h2>
             </div>
@@ -234,9 +234,9 @@ const Autor = () => {
             </div>
           </div>
 
-          <div className="bible-bilingual-grid bible-section-spacing">
+          <div className="bible-bilingual-grid bible-block">
             <div>
-              <div className="space-y-6 mt-6">
+              <div>
                 <p className="bible-body">Metodologia processual, experimental e reflexiva do projeto THEVØIDN13. Um ciclo contínuo de cinco etapas:</p>
                 
                 <p className="bible-body"><span className="font-semibold">Observação:</span> Análise do fluxo criativo e documentação de padrões.</p>
@@ -250,7 +250,7 @@ const Autor = () => {
             </div>
 
             <div>
-              <div className="space-y-6 mt-6">
+              <div>
                 <p className="bible-body">Processual, experimental and reflexive methodology of the THEVØIDN13 project. A continuous cycle of five stages:</p>
                 
                 <p className="bible-body"><span className="font-semibold">Observation:</span> Analysis of creative flow and pattern documentation.</p>
@@ -268,8 +268,8 @@ const Autor = () => {
         <Separator className="bg-border/30" />
 
         {/* Trajetória */}
-        <BilingualSection className="py-16">
-          <div className="bible-bilingual-grid bible-block-spacing">
+        <BilingualSection className="bible-section">
+          <div className="bible-bilingual-grid bible-block">
             <div>
               <h2 className="bible-title">TRAJETÓRIA</h2>
             </div>
@@ -278,9 +278,9 @@ const Autor = () => {
             </div>
           </div>
 
-          <div className="bible-bilingual-grid bible-section-spacing">
+          <div className="bible-bilingual-grid bible-block">
             <div>
-              <div className="space-y-6 mt-6">
+              <div>
                 <p className="bible-body">A jornada começa no skate. Não como esporte, mas como modo de habitar o mundo. O corpo em movimento pelo espaço urbano. A apropriação criativa da cidade. Das manobras na rua às manobras no vídeo. Da câmera VHS à edição digital.</p>
                 
                 <p className="bible-body">2008: Funda CasaTrezeStudio. Começa a construir sua própria infraestrutura criativa. Design, vídeo, direção de arte. O coletivo como espaço de experimentação. 2014-2016: UDNFS no MuMA — primeira exposição institucional, democratização audiovisual DIY. 2019: Subtropikal Festival — criação de ID Visual do zero aplicando processos criativos ao vivo. 2020: LowPressure crew se formaliza. O skate ganha forma de movimento cultural. 2019-2022: Produção de LowMovie. O processo como obra.</p>
@@ -290,7 +290,7 @@ const Autor = () => {
             </div>
 
             <div>
-              <div className="space-y-6 mt-6">
+              <div>
                 <p className="bible-body">The journey begins with skateboarding. Not as a sport, but as a way of inhabiting the world. The body moving through urban space. The creative appropriation of the city. From tricks on the street to tricks in video. From VHS camera to digital editing.</p>
                 
                 <p className="bible-body">2008: Founds CasaTrezeStudio. Begins building his own creative infrastructure. Design, video, art direction. The collective as experimentation space. 2014-2016: UDNFS at MuMA — first institutional exhibition, DIY audiovisual democratization. 2019: Subtropikal Festival — creating visual identity from scratch applying live creative processes. 2020: LowPressure crew formalizes. Skateboarding takes shape as cultural movement. 2019-2022: LowMovie production. Process as work.</p>
@@ -304,8 +304,8 @@ const Autor = () => {
         <Separator className="bg-border/30" />
 
         {/* Formação Acadêmica */}
-        <BilingualSection className="py-16">
-          <div className="bible-bilingual-grid bible-block-spacing">
+        <BilingualSection className="bible-section">
+          <div className="bible-bilingual-grid bible-block">
             <div>
               <h2 className="bible-title">FORMAÇÃO ACADÊMICA</h2>
             </div>
@@ -314,9 +314,9 @@ const Autor = () => {
             </div>
           </div>
 
-          <div className="bible-bilingual-grid bible-section-spacing">
+          <div className="bible-bilingual-grid bible-block">
             <div>
-              <div className="space-y-8 mt-6">
+              <div>
                 <div className="border-l-2 border-primary pl-6">
                   <p className="bible-body text-muted-foreground mb-2">2023-2025 (em curso)</p>
                   <h3 className="bible-body font-bold mb-2">Mestrado em Cinema e Artes do Vídeo</h3>
@@ -361,7 +361,7 @@ const Autor = () => {
             </div>
 
             <div>
-              <div className="space-y-8 mt-6">
+              <div>
                 <div className="border-l-2 border-primary pl-6">
                   <p className="bible-body text-muted-foreground mb-2">2023-2025 (ongoing)</p>
                   <h3 className="bible-body font-bold mb-2">Master's Degree in Cinema and Video Arts</h3>
@@ -410,8 +410,8 @@ const Autor = () => {
         <Separator className="bg-border/30" />
 
         {/* ЦАСТРО™ como Anti-Brand */}
-        <BilingualSection className="py-16">
-          <div className="bible-bilingual-grid bible-block-spacing">
+        <BilingualSection className="bible-section">
+          <div className="bible-bilingual-grid bible-block">
             <div>
               <h2 className="bible-title">ЦАСТРО™ COMO ANTI-BRAND</h2>
             </div>
@@ -420,9 +420,9 @@ const Autor = () => {
             </div>
           </div>
 
-          <div className="bible-bilingual-grid bible-section-spacing">
+          <div className="bible-bilingual-grid bible-block">
             <div>
-              <div className="space-y-6 mt-6">
+              <div>
                 <p className="bible-body italic text-muted-foreground">Uma identidade que rejeita a lógica publicitária e se afirma como linguagem, não logotipo.</p>
                 
                 <h3 className="bible-subtitle">O Contexto: Uma Recusa ao Branding Tradicional</h3>
@@ -477,7 +477,7 @@ const Autor = () => {
             </div>
 
             <div>
-              <div className="space-y-6 mt-6">
+              <div>
                 <p className="bible-body italic text-muted-foreground">An identity that rejects the advertising logic of self-promotion, asserting itself as language, not logo.</p>
                 
                 <h3 className="bible-subtitle">The Context: A Refusal of Traditional Branding</h3>
@@ -536,8 +536,8 @@ const Autor = () => {
         <Separator className="bg-border/30" />
 
         {/* Experiência Cultural */}
-        <BilingualSection className="py-16">
-          <div className="bible-bilingual-grid bible-block-spacing">
+        <BilingualSection className="bible-section">
+          <div className="bible-bilingual-grid bible-block">
             <div>
               <h2 className="bible-title">EXPERIÊNCIA CULTURAL</h2>
             </div>
@@ -546,9 +546,9 @@ const Autor = () => {
             </div>
           </div>
 
-          <div className="bible-bilingual-grid bible-section-spacing">
+          <div className="bible-bilingual-grid bible-block">
             <div>
-              <div className="space-y-6 mt-6">
+              <div>
                 <h3 className="bible-subtitle">Projetos Matriciais</h3>
                 <p className="bible-body">Três projetos funcionam como órgãos do mesmo organismo criativo. Cada um respira de forma autônoma, mas todos compartilham o mesmo sangue simbólico:</p>
                 
@@ -580,7 +580,7 @@ const Autor = () => {
             </div>
 
             <div>
-              <div className="space-y-6 mt-6">
+              <div>
                 <h3 className="bible-subtitle">Matrix Projects</h3>
                 <p className="bible-body">Three projects function as organs of the same creative organism. Each breathes autonomously, but all share the same symbolic blood:</p>
                 
@@ -616,8 +616,8 @@ const Autor = () => {
         <Separator className="bg-border/30" />
 
         {/* Conclusão em Processo */}
-        <BilingualSection className="py-16">
-          <div className="bible-bilingual-grid bible-block-spacing">
+        <BilingualSection className="bible-section">
+          <div className="bible-bilingual-grid bible-block">
             <div>
               <h2 className="bible-title">CONCLUSÃO EM PROCESSO</h2>
             </div>
@@ -626,9 +626,9 @@ const Autor = () => {
             </div>
           </div>
 
-          <div className="bible-bilingual-grid bible-section-spacing">
+          <div className="bible-bilingual-grid bible-block">
             <div>
-              <div className="space-y-6 mt-6">
+              <div>
                 <h3 className="bible-subtitle">O Portal Como Objeto de Pesquisa</h3>
                 <p className="bible-body">Este website não é apenas uma apresentação — é o próprio objeto de pesquisa. Um memorial visual e performático onde cada linha de código, cada imagem gerada, cada texto co-escrito com inteligências artificiais, torna-se evidência material de um processo híbrido de criação. Aqui, a interface não explica o projeto: ela <span className="font-bold italic">é</span> o projeto.</p>
                 
@@ -672,7 +672,7 @@ const Autor = () => {
             </div>
 
             <div>
-              <div className="space-y-6 mt-6">
+              <div>
                 <h3 className="bible-subtitle">The Portal As Research Object</h3>
                 <p className="bible-body">This website is not just a presentation — it is the research object itself. A visual and performative memorial where every line of code, every generated image, every text co-written with artificial intelligences, becomes material evidence of a hybrid creative process. Here, the interface doesn't explain the project: it <span className="font-bold italic">is</span> the project.</p>
                 
@@ -720,8 +720,8 @@ const Autor = () => {
         <Separator className="bg-border/30" />
 
         {/* Documentation */}
-        <BilingualSection className="py-16">
-          <div className="bible-bilingual-grid bible-block-spacing">
+        <BilingualSection className="bible-section">
+          <div className="bible-bilingual-grid bible-block">
             <div>
               <h2 className="bible-title">DOCUMENTAÇÃO</h2>
               <h3 className="bible-subtitle mt-2">DOCUMENTOS DE PESQUISA</h3>
@@ -732,7 +732,7 @@ const Autor = () => {
             </div>
           </div>
 
-          <div className="space-y-8 mt-8">
+          <div className="bible-block">
             <div className="grid md:grid-cols-1 gap-8">
               <PDFViewer 
                 pdfUrl="/documents/Memorial_Academico_v3.pdf"
