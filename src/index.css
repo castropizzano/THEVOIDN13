@@ -89,6 +89,52 @@
   }
 
   /* ============================================
+     SISTEMA DE ESPAÇAMENTO THEVØIDN13 
+     "Metrônomo" oficial para consistência global
+     ============================================ */
+
+  /* 1) STACKS DE CONTEÚDO - Espaçamento vertical entre elementos filhos */
+  .tvn-stack-sm > * + * {
+    margin-top: 1rem;   /* ~16px */
+  }
+
+  .tvn-stack-md > * + * {
+    margin-top: 1.5rem;   /* ~24px */
+  }
+
+  .tvn-stack-lg > * + * {
+    margin-top: 2rem;   /* ~32px */
+  }
+
+  /* 2) BLOCO TEXTUAL - Container para título + parágrafos dentro de uma seção */
+  .bible-block {
+    margin-bottom: 2rem;  /* 32px de respiro pro próximo bloco */
+  }
+  
+  .bible-block > * + * {
+    margin-top: 1.5rem;  /* elementos internos com 24px entre si */
+  }
+
+  /* 3) MÍDIA - Imagens, vídeos, etc. */
+  .bible-media {
+    margin-top: 2rem;
+    margin-bottom: 2rem;  /* 32px acima e abaixo */
+  }
+
+  /* 4) SEÇÃO CANÔNICA - Respiro vertical para seções principais */
+  .bible-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;  /* 64px de respiro vertical geral */
+  }
+
+  @media (min-width: 768px) {
+    .bible-section {
+      padding-top: 5rem;
+      padding-bottom: 5rem;  /* 80px em telas maiores */
+    }
+  }
+
+  /* ============================================
      SISTEMA TVN (ALTERNATIVO - TAMANHOS AJUSTADOS)
      Para novos componentes
      ============================================ */
