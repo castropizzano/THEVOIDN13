@@ -1791,31 +1791,34 @@ const Index = () => {
             }
           />
 
-          <div className="grid md:grid-cols-2 gap-8 items-stretch">
-            <BilingualContent
-              portugueseContent={
-                <>
-                  <p className="bible-body">{t("prototypeDesc1")}</p>
-                  <p className="bible-body">{t("prototypeDesc2")}</p>
-                  <p className="bible-body">{t("prototypeDesc3")}</p>
-                </>
-              }
-              englishContent={
-                <>
-                  <p className="bible-body">{t("prototypeDesc1")}</p>
-                  <p className="bible-body">{t("prototypeDesc2")}</p>
-                  <p className="bible-body">{t("prototypeDesc3")}</p>
-                </>
-              }
-            />
+          <div className="grid md:grid-cols-2 gap-8 items-start">
+            <div className="space-y-6">
+              <BilingualContent
+                portugueseContent={
+                  <>
+                    <p className="bible-body">{t("prototypeDesc1")}</p>
+                    <p className="bible-body">{t("prototypeDesc2")}</p>
+                    <p className="bible-body">{t("prototypeDesc3")}</p>
+                  </>
+                }
+                englishContent={
+                  <>
+                    <p className="bible-body">{t("prototypeDesc1")}</p>
+                    <p className="bible-body">{t("prototypeDesc2")}</p>
+                    <p className="bible-body">{t("prototypeDesc3")}</p>
+                  </>
+                }
+              />
+            </div>
             <div 
-              className="flex cursor-pointer"
+              className="cursor-pointer self-start"
               onClick={() => setPrototypeDialogOpen(true)}
             >
               <img 
                 src={actionFigureNew} 
                 alt="THEVØIDN13 Action Figure Prototype" 
-                className="w-full h-full object-cover rounded-lg hover:opacity-90 transition-opacity"
+                className="w-full object-contain rounded-lg hover:opacity-90 transition-opacity"
+                style={{ maxHeight: '100%' }}
               />
             </div>
           </div>
