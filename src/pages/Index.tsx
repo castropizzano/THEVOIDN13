@@ -1970,7 +1970,7 @@ const Index = () => {
                 </div>
               }
             />
-            <div>
+            <div className="bible-media">
               <PromptLibrary />
             </div>
           </div>
@@ -2005,7 +2005,7 @@ const Index = () => {
                 </div>
               }
             />
-            <div>
+            <div className="bible-media">
               <ComicGenerator />
             </div>
           </div>
@@ -2040,7 +2040,7 @@ const Index = () => {
                 </div>
               }
             />
-            <div>
+            <div className="bible-media">
               <button
                 onClick={() => setOracleOpen(true)}
                 className="w-full p-6 bg-card/80 hover:bg-primary/5 border-2 border-primary/30 hover:border-primary rounded-lg transition-all group"
@@ -2082,7 +2082,7 @@ const Index = () => {
                 </div>
               }
             />
-            <div>
+            <div className="bible-media">
               <MindMap />
             </div>
           </div>
