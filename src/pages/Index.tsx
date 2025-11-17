@@ -626,15 +626,6 @@ const Index = () => {
             }
           />
 
-          {/* ===== LOVECITY RENDER ===== */}
-          <div className="bible-media">
-            <img 
-              src={lovecityRender} 
-              alt="THEVØIDN13 — LOVECITY" 
-              className="w-full max-w-6xl mx-auto rounded-lg"
-            />
-          </div>
-
           <BilingualContent
             portugueseContent={
               <>
@@ -651,6 +642,15 @@ const Index = () => {
               </>
             }
           />
+
+          {/* ===== LOVECITY RENDER ===== */}
+          <div className="bible-media">
+            <img 
+              src={lovecityRender} 
+              alt="THEVØIDN13 — LOVECITY" 
+              className="w-full max-w-6xl mx-auto rounded-lg"
+            />
+          </div>
         </BilingualSection>
 
         <Separator className="bg-border/30" />
