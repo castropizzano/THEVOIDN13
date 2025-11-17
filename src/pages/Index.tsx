@@ -766,6 +766,11 @@ const Index = () => {
             }
           />
 
+          <BilingualContent
+            portugueseContent={<p className="bible-body">{t("symbolIntro")}</p>}
+            englishContent={<p className="bible-body">{t("symbolIntro")}</p>}
+          />
+
           {/* ===== HOTEL RENDER ===== */}
           <div className="bible-media">
             <img 
@@ -774,11 +779,6 @@ const Index = () => {
               className="w-full max-w-6xl mx-auto rounded-lg"
             />
           </div>
-
-          <BilingualContent
-            portugueseContent={<p className="bible-body">{t("symbolIntro")}</p>}
-            englishContent={<p className="bible-body">{t("symbolIntro")}</p>}
-          />
 
           <BilingualContent
             portugueseContent={
