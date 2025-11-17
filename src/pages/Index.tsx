@@ -210,14 +210,14 @@ const Index = () => {
           
           <BilingualContent
             portugueseContent={
-              <div className="bible-section-spacing">
+              <div>
                 <p className="bible-body">
                   Não há começo. Há apenas o instante em que o silêncio decide respirar. THEVØIDN13 nasceu desse sopro invisível, um gesto entre a morte e o retorno. Tudo o que chamam de ausência é apenas matéria em repouso. O vazio não é falta, é incubação de forma. É o espaço onde o verbo esquece o corpo e o corpo se converte em verbo. A imagem não quer ser vista, quer ser atravessada. O silêncio não encerra, expande. E o fim aqui é apenas uma respiração mais funda.
                 </p>
               </div>
             }
             englishContent={
-              <div className="bible-section-spacing">
+              <div>
                 <p className="bible-body">
                   There is no beginning. There is only the instant when silence decides to breathe. THEVØIDN13 was born from that invisible breath, a gesture between death and return. Everything they call absence is only matter at rest. The void is not lack, it is incubation of form. It is the space where the word forgets the body and the body becomes word. The image does not want to be seen, it wants to be crossed through. Silence does not end, it expands. And the end here is only a deeper breath.
                 </p>
@@ -259,14 +259,14 @@ const Index = () => {
 
           <BilingualContent
             portugueseContent={
-              <div className="bible-section-spacing">
+              <div>
                 <p className="bible-body">
                   Hoje entendo: o THEVØIDN13 não nasceu para uma festa. Nasceu porque eu precisava de um refúgio, um lugar onde o silêncio não fosse ausência, mas abrigo. Um espaço para desaparecer sem deixar de criar, um modo de continuar respirando quando tudo parecia saturado. O projeto cresceu como tudo orgânico: pelas frestas, pelos ruídos, pelos becos da cidade. E se alguém pergunta o que é, eu respondo: não é personagem, é vestígio. É o que restou de mim depois que todas as máscaras sociais caíram. THEVØIDN13 é o nome que dei à minha própria sombra, o mito que inventei para continuar respirando. Talvez, só talvez, seja o começo de uma nova forma de estar vivo sem precisar ser visto.
                 </p>
               </div>
             }
             englishContent={
-              <div className="bible-section-spacing">
+              <div>
                 <p className="bible-body">
                   Today I understand: THEVØIDN13 was not born for a party. It was born because I needed a refuge, a place where silence was not absence but shelter. A space to disappear without ceasing to create, a way to keep breathing when everything seemed saturated. The project grew like everything organic: through cracks, through noise, through city alleys. And if someone asks what it is, I answer: it is not a character, it is a trace. It is what remained of me after all social masks fell. THEVØIDN13 is the name I gave to my own shadow, the myth I invented to keep breathing. Perhaps, just perhaps, it is the beginning of a new way of being alive without needing to be seen.
                 </p>
@@ -275,7 +275,7 @@ const Index = () => {
           />
 
           {/* ===== THINK RENDER ===== */}
-          <div className="my-8">
+          <div className="bible-media">
             <img 
               src={thinkRender} 
               alt="THEVØIDN13 — Contemplation" 
@@ -287,7 +287,7 @@ const Index = () => {
             portugueseContent={
               <>
                 <h3 className="bible-subtitle">1.2 QUANDO O INCONSCIENTE GANHA CORPO</h3>
-                <p className="bible-body bible-section-spacing">
+                <p className="bible-body">
                   Não foi uma fantasia, foi um retorno. Um desses chamados que vêm de dentro quando o inconsciente começa a bater na pele pedindo passagem. Pensei em inventar uma máscara e acabei revelando um rosto que sempre esteve ali. THEVØIDN13 surgiu do atrito entre o desejo e o cansaço, entre o fim da forma e o começo da presença. Não é personagem nem alter ego, é uma presença que respira onde o corpo falha. Um modo de existir sem precisar se exibir, respirar sem ter que performar. Um corpo que se apaga para deixar a imagem viver. O instante em que o inconsciente decide existir, seu corpo permite atravessar o invisível tornando matéria.
                 </p>
               </>
@@ -295,7 +295,7 @@ const Index = () => {
             englishContent={
               <>
                 <h3 className="bible-subtitle">1.2 WHEN THE UNCONSCIOUS GAINS BODY</h3>
-                <p className="bible-body bible-section-spacing">
+                <p className="bible-body">
                   It was not a fantasy, it was a return. One of those calls that come from within when the unconscious begins to knock on the skin asking for passage. I thought I was inventing a mask and ended up revealing a face that was always there. THEVØIDN13 emerged from the friction between desire and exhaustion, between the end of form and the beginning of presence. It is neither character nor alter ego, it is a presence that breathes where the body fails. A way of existing without needing to exhibit oneself, breathing without having to perform. A body that fades to let the image live. The instant when the unconscious decides to exist, its body allows crossing making matter visible.
                 </p>
               </>
@@ -303,7 +303,7 @@ const Index = () => {
           />
 
           {/* ===== MEDITATION RENDER ===== */}
-          <div className="my-8">
+          <div className="bible-media">
             <img 
               src={meditationRender} 
               alt="THEVØIDN13 — Meditation Render" 
@@ -315,12 +315,12 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 2. FILOSOFIA CENTRAL ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection className="bible-section">
           <BilingualContent
             portugueseContent={
               <>
                 <h2 className="bible-title">2. FILOSOFIA CENTRAL</h2>
-                <p className="bible-body bible-section-spacing">
+                <p className="bible-body">
                   THEVØIDN13 é o décimo terceiro andar do inconsciente, um espaço entre mundos onde o ego se apaga para que a imagem respire. Não é personagem nem avatar, é um estado de travessia. Não é um ser, é um ritmo. A forma que o inconsciente assume para respirar no ruído da cidade. Existe para absorver, não para reagir. Sua ética é a do silêncio: uma recusa ativa da autoafirmação. The Void é o nome que restou depois que todos os outros já morreram. O número treze é a assinatura do que retorna depois do fim.
                 </p>
               </>
@@ -328,7 +328,7 @@ const Index = () => {
             englishContent={
               <>
                 <h2 className="bible-title">2. CENTRAL PHILOSOPHY</h2>
-                <p className="bible-body bible-section-spacing">
+                <p className="bible-body">
                   THEVØIDN13 is the thirteenth floor of the unconscious, a space between worlds where the ego fades so the image can breathe. It is neither character nor avatar, it is a state of crossing. It is not a being, it is a rhythm. The form the unconscious assumes to breathe in the noise of the city. It exists to absorb, not to react. Its ethic is that of silence: an active refusal of self-affirmation. The Void is the name that remained after all others had died. Thirteen is the signature of what returns after the end.
                 </p>
               </>
@@ -336,7 +336,7 @@ const Index = () => {
           />
 
           {/* ===== MIRROR RENDER ===== */}
-          <div className="my-8">
+          <div className="bible-media">
             <img 
               src={mirrorRender} 
               alt="THEVØIDN13 — Mirror Reflection" 
@@ -348,13 +348,13 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 3. A ENTIDADE: THEVØIDN13 ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection className="bible-section">
           <BilingualContent
             portugueseContent={
               <>
                 <h2 className="bible-title">3. A ENTIDADE: THEVØIDN13</h2>
                 <h3 className="bible-subtitle">3.1 FUNÇÃO SIMBÓLICA</h3>
-                <p className="bible-body bible-section-spacing">
+                <p className="bible-body">
                   A função simbólica de THEVØIDN13 é dar corpo ao invisível, traduzir o silêncio em gesto, o inconsciente em imagem. Ele é o espelho do caos contemporâneo, um ser que surge quando o verbo deixa de fazer sentido. Sua presença não explica, convoca. THEVØIDN13 é o instante em que o erro se torna ritual e o colapso, criação. Ele converte ausência em forma tangível.
                 </p>
               </>
@@ -363,7 +363,7 @@ const Index = () => {
               <>
                 <h2 className="bible-title">3. THE ENTITY: THEVØIDN13</h2>
                 <h3 className="bible-subtitle">3.1 SYMBOLIC FUNCTION</h3>
-                <p className="bible-body bible-section-spacing">
+                <p className="bible-body">
                   The symbolic function of THEVØIDN13 is to give body to the invisible, to translate silence into gesture, the unconscious into image. It is the mirror of contemporary chaos, a being that appears when the word ceases to make sense. Its presence does not explain, it summons. THEVØIDN13 is the instant when error becomes ritual and collapse becomes creation. It converts absence into tangible form.
                 </p>
               </>
@@ -374,7 +374,7 @@ const Index = () => {
             portugueseContent={
               <>
                 <h3 className="bible-subtitle">3.2 ARQUÉTIPO E NATUREZA</h3>
-                <p className="bible-body bible-section-spacing">
+                <p className="bible-body">
                   THEVØIDN13 encarna a sombra junguiana, não como vilão, mas como espelho do que foi reprimido. É o corpo caminhando entre a razão e o delírio, entre o controle e o colapso. Sua natureza é liminar: existe no intervalo entre o som e o silêncio, entre o gesto e o pensamento. É o errante, o que não pertence a lugar algum, e o redentor subterrâneo. Sua essência pulsa no limiar do ser.
                 </p>
               </>
@@ -382,14 +382,14 @@ const Index = () => {
             englishContent={
               <>
                 <h3 className="bible-subtitle">3.2 ARCHETYPE AND NATURE</h3>
-                <p className="bible-body bible-section-spacing">
+                <p className="bible-body">
                   THEVØIDN13 embodies the Jungian shadow, not as a villain, but as a mirror of what has been repressed. It is the body walking between reason and delirium, between control and collapse. Its nature is liminal: existing in the interval between sound and silence, between gesture and thought. It is the wanderer, the one who belongs nowhere, and the subterranean redeemer. Its essence pulses at the threshold of being.
                 </p>
               </>
             }
           />
 
-          <div className="my-8">
+          <div className="bible-media">
             <img 
               src={maskVoidNew} 
               alt="A máscara de THEVØIDN13 — The mask of THEVØIDN13" 
@@ -415,7 +415,7 @@ const Index = () => {
           />
 
 
-          <div className="max-w-6xl mx-auto my-8">
+          <div className="max-w-6xl mx-auto bible-media">
             <div className="grid grid-cols-3 gap-6">
               <img src={conceptFront} alt="THEVØIDN13 Front View" className="w-full rounded-lg" />
               <img src={conceptBack} alt="THEVØIDN13 Back View" className="w-full rounded-lg" />
@@ -473,7 +473,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 4. A PSIQUE | ARQUITETURA DO SER ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection className="bible-section">
           <BilingualContent
             portugueseContent={
               <>
@@ -488,7 +488,7 @@ const Index = () => {
           />
 
           {/* ===== GOL RENDER ===== */}
-          <div className="my-8">
+          <div className="bible-media">
             <img 
               src={golRender} 
               alt="THEVØIDN13 — VW GOL 87 Render" 
@@ -529,7 +529,7 @@ const Index = () => {
             }
           />
 
-          <div className="space-y-8 mt-6">
+          <div className="bible-block">
             <BilingualContent
               portugueseContent={
                 <>
@@ -640,7 +640,7 @@ const Index = () => {
           />
 
           {/* ===== LOVECITY RENDER ===== */}
-          <div className="my-8">
+          <div className="bible-media">
             <img 
               src={lovecityRender} 
               alt="THEVØIDN13 — LOVECITY" 
@@ -669,7 +669,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 5. LÉXICO DO VAZIO ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection className="bible-section">
           <BilingualContent
             portugueseContent={
               <>
@@ -765,7 +765,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 6. THEVØIDN13 | A GRAFIA DO VAZIO ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection className="bible-section">
           <BilingualContent
             portugueseContent={
               <>
@@ -780,7 +780,7 @@ const Index = () => {
           />
 
           {/* ===== HOTEL RENDER ===== */}
-          <div className="my-8">
+          <div className="bible-media">
             <img 
               src={hotelRender} 
               alt="THEVØIDN13 — HOTEL" 
@@ -892,7 +892,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 7. O SÍMBOLO | 13 ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection className="bible-section">
           <BilingualContent
             portugueseContent={
               <>
@@ -907,7 +907,7 @@ const Index = () => {
           />
 
           {/* ===== GOL 2 RENDER ===== */}
-          <div className="my-8">
+          <div className="bible-media">
             <img 
               src={gol2Render} 
               alt="THEVØIDN13 — VW GOL 87 Interior" 
@@ -1069,7 +1069,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== 8. A PRÁXIS | ESTÉTICA E PROCESSO ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection className="bible-section">
           <BilingualContent
             portugueseContent={
               <>
@@ -1207,7 +1207,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== REFERÊNCIAS | O ECO INTERNO ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection className="bible-section">
           <BilingualContent
             portugueseContent={
               <>
@@ -1364,7 +1364,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== A METODOLOGIA ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection className="bible-section">
           <BilingualContent
             portugueseContent={
               <>
@@ -1399,7 +1399,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== CHARACTER VIEWS ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection className="bible-section">
           <BilingualContent
             portugueseContent={
               <>
@@ -1414,7 +1414,7 @@ const Index = () => {
           />
 
           {/* Characters Study Image */}
-          <div className="my-8 mb-12">
+          <div className="bible-media">
             <img 
               src={charactersStudyV2} 
               alt="THEVØIDN13 Characters Study" 
@@ -1631,7 +1631,7 @@ const Index = () => {
           {/* THEVØIDN13 STUDY */}
           <div className="mt-16">
             <h3 className="bible-subtitle text-left">THEVØIDN13 (ESTUDO INICIAL | EXPLORATORY STUDY)</h3>
-            <div className="my-8">
+            <div className="bible-media">
               <img 
                 src={charactersStudyInitial} 
                 alt="THEVØIDN13 Characters Initial Study" 
@@ -1644,7 +1644,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== PROCESSOS RELACIONADOS ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection className="bible-section">
           <BilingualContent
             portugueseContent={
               <>
@@ -1746,7 +1746,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== PARADOXO EXISTENCIAL ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection className="bible-section">
           <BilingualContent
             portugueseContent={
               <>
@@ -1760,7 +1760,7 @@ const Index = () => {
             }
           />
 
-          <div className="my-8">
+          <div className="bible-media">
             <img 
               src={corsaRender2} 
               alt="THEVØIDN13 Paradox Scene" 
@@ -1787,7 +1787,7 @@ const Index = () => {
         </BilingualSection>
 
         {/* ===== THEVØIDN13 STUDY ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection className="bible-section">
           {/* FIM DA TRANSMISSÃO */}
           <BilingualContent
             portugueseContent={
@@ -1804,7 +1804,7 @@ const Index = () => {
           
           <div>
             
-            <div className="my-8">
+            <div className="bible-media">
               <img 
                 src={sideRender} 
                 alt="THEVØIDN13 Final Scene" 
@@ -1841,7 +1841,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== PROTÓTIPO Nº13 ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection className="bible-section">
           <BilingualContent
             portugueseContent={
               <>
@@ -1888,7 +1888,7 @@ const Index = () => {
         <Separator className="bg-border/30" />
 
         {/* ===== O REPOSITÓRIO | ARQUIVOS E FERRAMENTAS ===== */}
-        <BilingualSection className="py-16">
+        <BilingualSection className="bible-section">
           <BilingualContent
             portugueseContent={
               <>
@@ -1903,7 +1903,7 @@ const Index = () => {
           />
 
           {/* DOCUMENTOS DE PESQUISA */}
-          <div className="space-y-6 mb-12">
+          <div className="bible-block">
             <BilingualContent
               portugueseContent={
                 <>

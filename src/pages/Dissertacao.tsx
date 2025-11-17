@@ -198,8 +198,8 @@ const Dissertacao = () => {
         <Separator className="bg-border/30" />
 
         {/* LowPressure */}
-        <BilingualSection className="py-16">
-          <div className="bible-block-spacing border-l-4 border-primary pl-6">
+        <BilingualSection className="bible-section">
+          <div className="bible-block border-l-4 border-primary pl-6">
             <h2 className="bible-title">LOWPRESSURE™</h2>
             <p className="bible-subtitle text-muted-foreground mt-2">2020-Presente / 2020-Present</p>
             <p className="bible-subtitle text-primary mt-2">Skate Crew / Movimento Cultural</p>
@@ -480,8 +480,8 @@ const Dissertacao = () => {
         <Separator className="bg-border/30" />
 
         {/* Informação Acadêmica */}
-        <BilingualSection className="py-16">
-          <div className="bible-bilingual-grid bible-block-spacing">
+        <BilingualSection className="bible-section">
+          <div className="bible-bilingual-grid bible-block">
             <div>
               <h2 className="bible-title">MESTRADO EM CINEMA E ARTES DO VÍDEO</h2>
             </div>
@@ -490,9 +490,9 @@ const Dissertacao = () => {
             </div>
           </div>
 
-          <div className="bible-bilingual-grid bible-section-spacing">
+          <div className="bible-bilingual-grid bible-block">
             <div>
-              <div className="space-y-6 mt-6">
+              <div>
                 <p className="bible-body">Programa de Pós-Graduação em Cinema e Artes do Vídeo da Universidade Estadual do Paraná, Linha de Pesquisa (2) Processos de Criação no Cinema e nas Artes do Vídeo, como requisito parcial para a obtenção do grau de Mestre em Cinema e Artes do Vídeo.</p>
                 <p className="bible-body font-semibold">Orientador: Prof. Dr. Fábio Jabur de Noronha</p>
                 <p className="bible-body font-semibold">Universidade Estadual do Paraná (UNESPAR)</p>
@@ -501,7 +501,7 @@ const Dissertacao = () => {
             </div>
 
             <div>
-              <div className="space-y-6 mt-6">
+              <div>
                 <p className="bible-body">Graduate Program in Cinema and Video Arts at Paraná State University, Research Line (2) Creation Processes in Cinema and Video Arts, as a partial requirement for obtaining the Master's degree in Cinema and Video Arts.</p>
                 <p className="bible-body font-semibold">Advisor: Prof. Dr. Fábio Jabur de Noronha</p>
                 <p className="bible-body font-semibold">Paraná State University (UNESPAR)</p>
@@ -514,8 +514,8 @@ const Dissertacao = () => {
         <Separator className="bg-border/30" />
 
         {/* Pesquisa Acadêmica */}
-        <BilingualSection className="py-16">
-          <div className="bible-bilingual-grid bible-block-spacing">
+        <BilingualSection className="bible-section">
+          <div className="bible-bilingual-grid bible-block">
             <div>
               <h2 className="bible-title">PESQUISA ACADÊMICA</h2>
             </div>
@@ -524,16 +524,16 @@ const Dissertacao = () => {
             </div>
           </div>
 
-          <div className="bible-bilingual-grid bible-section-spacing">
+          <div className="bible-bilingual-grid bible-block">
             <div>
-              <div className="space-y-6 mt-6">
+              <div>
                 <p className="bible-body">A pesquisa de mestrado investiga processos criativos colaborativos a partir da produção de LowMovie. Como uma crew de skate se torna coletivo criativo? Como a subcultura do skate gera modos específicos de fazer cinema? Como documentar sem domesticar?</p>
                 <p className="bible-body">Metodologia autoetnográfica. Análise fílmica. Entrevistas em profundidade. Diário de campo. Mas também: skate sessions como coleta de dados. Edição de vídeo como análise.</p>
               </div>
             </div>
 
             <div>
-              <div className="space-y-6 mt-6">
+              <div>
                 <p className="bible-body">The master's research investigates collaborative creative processes from LowMovie's production. How does a skate crew become a creative collective? How does skate subculture generate specific ways of making cinema? How to document without domesticating?</p>
                 <p className="bible-body">Autoethnographic methodology. Film analysis. In-depth interviews. Field diary. But also: skate sessions as data collection. Video editing as analysis.</p>
               </div>
@@ -544,8 +544,8 @@ const Dissertacao = () => {
         <Separator className="bg-border/30" />
 
         {/* Colaboração e Coletivos */}
-        <BilingualSection className="py-16">
-          <div className="bible-bilingual-grid bible-block-spacing">
+        <BilingualSection className="bible-section">
+          <div className="bible-bilingual-grid bible-block">
             <div>
               <h2 className="bible-title">COLABORAÇÃO E COLETIVOS</h2>
             </div>
@@ -554,16 +554,16 @@ const Dissertacao = () => {
             </div>
           </div>
 
-          <div className="bible-bilingual-grid bible-section-spacing">
+          <div className="bible-bilingual-grid bible-block">
             <div>
-              <div className="space-y-6 mt-6">
+              <div>
                 <p className="bible-body">Criação sempre foi coletiva. CasaTrezeStudio (desde 2008), LowPressure (desde 2020), colaborações com músicos, skatistas, designers. Mas a práxis híbrida expande o conceito de coletivo: agora inclui agentes não-humanos. IA como colaboradora, não como ferramenta.</p>
                 <p className="bible-body">O coletivo não é soma de indivíduos — é campo de forças. Cada projeto gera sua própria configuração colaborativa. Algumas permanentes (crew), outras efêmeras (projetos específicos). Mas todas compartilham da mesma ética: autonomia criativa, transparência radical, autoria compartilhada mas assinada.</p>
               </div>
             </div>
 
             <div>
-              <div className="space-y-6 mt-6">
+              <div>
                 <p className="bible-body">Creation has always been collective. CasaTrezeStudio (since 2008), LowPressure (since 2020), collaborations with musicians, skaters, designers. But hybrid praxis expands the concept of collective: now it includes non-human agents. AI as collaborator, not as tool.</p>
                 <p className="bible-body">The collective isn't a sum of individuals — it's a force field. Each project generates its own collaborative configuration. Some permanent (crew), others ephemeral (specific projects). But all share the same ethics: creative autonomy, radical transparency, shared but signed authorship.</p>
               </div>
@@ -574,8 +574,8 @@ const Dissertacao = () => {
         <Separator className="bg-border/30" />
 
         {/* Documentação do Processo */}
-        <BilingualSection className="py-16">
-          <div className="bible-bilingual-grid bible-block-spacing">
+        <BilingualSection className="bible-section">
+          <div className="bible-bilingual-grid bible-block">
             <div>
               <h2 className="bible-title">DOCUMENTAÇÃO DO PROCESSO</h2>
             </div>
@@ -583,7 +583,7 @@ const Dissertacao = () => {
               <h2 className="bible-title">PROCESS DOCUMENTATION</h2>
             </div>
           </div>
-          <div className="bilingual-grid mt-4">
+          <div className="bilingual-grid">
             <div className="bilingual-col">
               <p className="bible-subtitle">TRILHAS SONORAS, LINHA DO TEMPO</p>
             </div>
@@ -592,7 +592,7 @@ const Dissertacao = () => {
             </div>
           </div>
 
-          <div className="space-y-16 mt-8">
+          <div className="bible-media">
             {/* Music Player */}
             <div>
               <MusicPlayer />
@@ -608,8 +608,8 @@ const Dissertacao = () => {
         <Separator className="bg-border/30" />
 
         {/* Documentation - ÚLTIMA SEÇÃO */}
-        <BilingualSection className="py-16">
-          <div className="bilingual-grid bible-block-spacing">
+        <BilingualSection className="bible-section">
+          <div className="bilingual-grid bible-block">
             <div className="bilingual-col">
               <h2 className="bible-title">DOCUMENTAÇÃO</h2>
             </div>
@@ -618,7 +618,7 @@ const Dissertacao = () => {
             </div>
           </div>
           
-          <div className="bilingual-grid mt-6">
+          <div className="bilingual-grid">
             <div className="bilingual-col">
               <h3 className="bible-subtitle">DOCUMENTOS DE PESQUISA</h3>
             </div>
@@ -627,7 +627,7 @@ const Dissertacao = () => {
             </div>
           </div>
 
-          <div className="space-y-8 mt-8">
+          <div className="bible-block">
             {/* Brandbooks */}
             <div className="grid md:grid-cols-1 gap-8">
               <PDFViewer 
