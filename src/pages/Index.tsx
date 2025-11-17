@@ -2054,9 +2054,9 @@ const Index = () => {
             <div className="bible-media">
               <button
                 onClick={() => setOracleOpen(true)}
-                className="w-full p-6 bg-card/80 hover:bg-primary/5 border-2 border-primary/30 hover:border-primary rounded-lg transition-all group"
+                className="w-full p-6 bg-card/80 hover:bg-primary/5 border-2 border-primary/30 hover:border-primary rounded-lg transition-all group text-left"
               >
-                <p className="subtitle text-foreground group-hover:text-primary">
+                <p className="subtitle text-foreground group-hover:text-primary text-left">
                   {t("accessOracle")}
                 </p>
               </button>
