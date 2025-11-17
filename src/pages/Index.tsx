@@ -1252,7 +1252,7 @@ const Index = () => {
           />
 
           {/* DNA CONCEITUAL - Comics Showcase */}
-          <div>
+          <div className="bible-media">
             <ComicsShowcase />
           </div>
 
@@ -1297,7 +1297,7 @@ const Index = () => {
           />
 
           {/* TEXTURA CINEMATOGRÁFICA - Film Gallery */}
-          <div>
+          <div className="bible-media">
             <FilmGallery />
           </div>
 
