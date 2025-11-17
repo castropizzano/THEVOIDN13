@@ -893,15 +893,6 @@ const Index = () => {
             }
           />
 
-          {/* ===== GOL 2 RENDER ===== */}
-          <div className="bible-media">
-            <img 
-              src={gol2Render} 
-              alt="THEVØIDN13 — VW GOL 87 Interior" 
-              className="w-full max-w-6xl mx-auto rounded-lg"
-            />
-          </div>
-
           <BilingualContent
             portugueseContent={
               <>
@@ -931,6 +922,15 @@ const Index = () => {
               </>
             }
           />
+
+          {/* ===== GOL 2 RENDER ===== */}
+          <div className="bible-media">
+            <img 
+              src={gol2Render} 
+              alt="THEVØIDN13 — VW GOL 87 Interior" 
+              className="w-full max-w-6xl mx-auto rounded-lg"
+            />
+          </div>
 
           <BilingualContent
             portugueseContent={
