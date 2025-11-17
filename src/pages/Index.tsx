@@ -1749,14 +1749,6 @@ const Index = () => {
             }
           />
 
-          <div className="bible-media">
-            <img 
-              src={corsaRender2} 
-              alt="THEVØIDN13 Paradox Scene" 
-              className="w-full max-w-6xl mx-auto rounded-lg"
-            />
-          </div>
-
           <BilingualContent
             portugueseContent={
               <>
@@ -1773,6 +1765,14 @@ const Index = () => {
               </>
             }
           />
+
+          <div className="bible-media">
+            <img 
+              src={corsaRender2} 
+              alt="THEVØIDN13 Paradox Scene" 
+              className="w-full max-w-6xl mx-auto rounded-lg"
+            />
+          </div>
         </BilingualSection>
 
         {/* ===== THEVØIDN13 STUDY ===== */}
