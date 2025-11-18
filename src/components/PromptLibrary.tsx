@@ -81,7 +81,7 @@ export const PromptLibrary = () => {
           <CardHeader className="border-l-4 border-l-primary">
             <div className="flex items-start justify-between">
               <div className="space-y-1">
-                <CardTitle className="text-2xl flex items-center gap-2">
+                <CardTitle className="bible-title flex items-center gap-2">
                   <FileCode className="w-6 h-6 text-primary" />
                   {t("promptLibraryTitle")}
                 </CardTitle>

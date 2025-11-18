@@ -13,7 +13,7 @@ export const MindMap = () => {
       <div className="max-w-6xl mx-auto">
         <Card className="bg-card/80 border-primary/30 hover:border-primary transition-colors">
           <CardHeader>
-            <CardTitle className="bible-subtitle text-primary">
+            <CardTitle className="bible-title text-primary">
               {t("creativeOpsMindMap")}
             </CardTitle>
             <CardDescription className="bible-body text-muted-foreground">
