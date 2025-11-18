@@ -2056,7 +2056,7 @@ const Index = () => {
                 onClick={() => setOracleOpen(true)}
                 className="w-full p-6 bg-card/80 hover:bg-primary/5 border-2 border-primary/30 hover:border-primary rounded-lg transition-all group text-left"
               >
-                <p className="subtitle text-foreground group-hover:text-primary text-left">
+                <p className="bible-title text-foreground group-hover:text-primary text-left">
                   {t("accessOracle")}
                 </p>
               </button>
@@ -2102,8 +2102,8 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="bible-block">
               <BilingualContent
-                portugueseContent={<h3 className="bible-subtitle">{t("mainDoc")}</h3>}
-                englishContent={<h3 className="bible-subtitle">{t("mainDoc")}</h3>}
+                portugueseContent={<h3 className="bible-title">{t("mainDoc")}</h3>}
+                englishContent={<h3 className="bible-title">{t("mainDoc")}</h3>}
               />
               
               <div>
@@ -2151,8 +2151,8 @@ const Index = () => {
 
             <div className="bible-block">
               <BilingualContent
-                portugueseContent={<h3 className="bible-subtitle">{t("technicalDoc")}</h3>}
-                englishContent={<h3 className="bible-subtitle">{t("technicalDoc")}</h3>}
+                portugueseContent={<h3 className="bible-title">{t("technicalDoc")}</h3>}
+                englishContent={<h3 className="bible-title">{t("technicalDoc")}</h3>}
               />
               
               <div>
