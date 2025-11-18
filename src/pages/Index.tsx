@@ -2211,7 +2211,7 @@ const Index = () => {
                 >
                   <div className="flex items-center justify-between">
                     <div>
-                      <h3 className="text-lg font-bold text-primary mb-2">{t("completeRepository")}</h3>
+                      <h3 className="bible-title text-primary mb-2">{t("completeRepository")}</h3>
                       <p className="text-sm text-muted-foreground">{t("accessAllFiles")}</p>
                     </div>
                     <svg className="w-6 h-6 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -2229,7 +2229,7 @@ const Index = () => {
                 >
                   <div className="flex items-center justify-between">
                     <div>
-                      <h3 className="text-lg font-bold text-primary mb-2">{t("completeRepository")}</h3>
+                      <h3 className="bible-title text-primary mb-2">{t("completeRepository")}</h3>
                       <p className="text-sm text-muted-foreground">{t("accessAllFiles")}</p>
                     </div>
                     <svg className="w-6 h-6 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
