@@ -272,13 +272,12 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
             <Button 
               onClick={handleStart} 
               size="lg" 
-              className="w-full bg-primary hover:bg-primary/90 text-primary-foreground subtitle py-6"
+              className="w-full font-mono bg-primary/20 hover:bg-primary/30 border border-primary/50 text-primary py-6"
             >
-              {t("startOracle")}
+              {'>> '}{t("startOracle").toUpperCase()}
             </Button>
           </div>
 
-          {/* Hidden audio element */}
           <audio 
             ref={audioRef} 
             loop 

@@ -178,46 +178,48 @@ export const ComicGenerator = () => {
         />
       </div>
 
-      <DialogContent className="max-w-5xl max-h-[90vh] overflow-y-auto">
-        <DialogHeader>
-          <DialogTitle className="sr-only">Gerador Experimental de Still</DialogTitle>
-          <DialogDescription className="sr-only">
-            Powered by Nano Banana (Gemini 2.5 Flash Image)
+      <DialogContent className="max-w-5xl max-h-[90vh] overflow-y-auto bg-black/95 border-primary/30">
+        <DialogHeader className="border-b border-primary/30 pb-4">
+          <DialogTitle className="text-primary text-xl font-mono font-bold">
+            STILL_GENERATOR::EXPERIMENTAL
+          </DialogTitle>
+          <DialogDescription className="text-muted-foreground font-mono text-sm">
+            // Powered by Nano Banana (Gemini 2.5 Flash Image)
           </DialogDescription>
         </DialogHeader>
 
-        <Card className="w-full border-2 border-primary/30 bg-card/80 backdrop-blur">
-      <CardHeader>
-        <CardTitle className="bible-title">
-          [Gerador Experimental de Still]
+        <Card className="w-full border border-primary/30 bg-background/30 backdrop-blur">
+      <CardHeader className="border-b border-primary/20">
+        <CardTitle className="text-accent font-mono text-base font-bold">
+          [GERADOR EXPERIMENTAL]
         </CardTitle>
-        <CardDescription className="bible-subtitle">
-          Still Generator — Powered by Nano Banana (Gemini 2.5 Flash Image)
+        <CardDescription className="font-mono text-xs text-muted-foreground">
+          // Traduz ruído em imagem e silêncio em cor
         </CardDescription>
       </CardHeader>
-      <CardContent className="space-y-4">
+       <CardContent className="space-y-4">
         <Tabs value={promptMode} onValueChange={(v) => setPromptMode(v as "library" | "custom")}>
-          <TabsList className="grid w-full grid-cols-2">
-            <TabsTrigger value="library" className="subtitle">
-              {t("library")}
+          <TabsList className="grid w-full grid-cols-2 bg-background/50 border border-primary/20">
+            <TabsTrigger value="library" className="font-mono data-[state=active]:bg-primary/20 data-[state=active]:text-primary">
+              [LIBRARY]
             </TabsTrigger>
-            <TabsTrigger value="custom" className="subtitle">
-              {t("custom")}
+            <TabsTrigger value="custom" className="font-mono data-[state=active]:bg-primary/20 data-[state=active]:text-primary">
+              [CUSTOM]
             </TabsTrigger>
           </TabsList>
 
-          <TabsContent value="library" className="space-y-4 mt-4">
+          <TabsContent value="library" className="space-y-3 mt-4">
             <div className="space-y-2">
-              <label className="subtitle">
-                {t("selectBasePrompt")}
+              <label className="text-accent font-mono text-sm font-bold">
+                // {t("selectBasePrompt")}
               </label>
               <Select value={selectedPromptId} onValueChange={handlePromptChange}>
-                <SelectTrigger>
+                <SelectTrigger className="font-mono border-primary/30">
                   <SelectValue placeholder={t("selectBasePrompt")} />
                 </SelectTrigger>
-                <SelectContent>
+                <SelectContent className="bg-background border-primary/30">
                   {prompts.map((prompt) => (
-                    <SelectItem key={prompt.id} value={prompt.id}>
+                    <SelectItem key={prompt.id} value={prompt.id} className="font-mono">
                       {prompt.title}
                     </SelectItem>
                   ))}
@@ -226,54 +228,54 @@ export const ComicGenerator = () => {
             </div>
 
             <div className="space-y-2">
-              <label className="subtitle">
-                {t("selectedPrompt")}
+              <label className="text-accent font-mono text-sm font-bold">
+                // {t("selectedPrompt")}
               </label>
               <Textarea
                 placeholder={t("selectBasePrompt")}
                 value={script}
                 onChange={(e) => setScript(e.target.value)}
-                className="min-h-[200px] font-mono text-sm"
+                className="min-h-[200px] font-mono text-xs bg-black/50 border-primary/30"
                 disabled={isGenerating}
               />
-              <p className="body-small text-muted-foreground">
-                {t("editPromptNote")}
+              <p className="text-muted-foreground font-mono text-xs">
+                * {t("editPromptNote")}
               </p>
             </div>
           </TabsContent>
 
-          <TabsContent value="custom" className="space-y-4 mt-4">
+          <TabsContent value="custom" className="space-y-3 mt-4">
             <div className="space-y-2">
               <div className="flex justify-between items-center">
-                <label className="bible-subtitle">
-                  {t("customPrompt")}
+                <label className="text-accent font-mono text-sm font-bold">
+                  // {t("customPrompt")}
                 </label>
-                <span className={`bible-body ${
+                <span className={`font-mono text-xs ${
                   customScript.length < 50 
                     ? 'text-destructive' 
                     : customScript.length > 1500 
                     ? 'text-destructive'
-                    : ''
+                    : 'text-muted-foreground'
                 }`}>
-                  {customScript.length}/1500
+                  [{customScript.length}/1500]
                 </span>
               </div>
               <Textarea
                 placeholder={t("customPromptPlaceholder")}
                 value={customScript}
                 onChange={(e) => setCustomScript(e.target.value)}
-                className="min-h-[200px] font-mono text-sm"
+                className="min-h-[200px] font-mono text-xs bg-black/50 border-primary/30"
                 disabled={isGenerating}
               />
               <div className="space-y-1">
-                <p className="body-small text-muted-foreground">
+                <p className="text-muted-foreground font-mono text-xs">
                   <BilingualContent
                     portugueseContent={<><strong>⚠️ Limites:</strong> Mínimo 50 caracteres • Máximo 1500 caracteres</>}
                     englishContent={<><strong>⚠️ Limits:</strong> Minimum 50 chars • Maximum 1500 chars</>}
                   />
                 </p>
-                <p className="body-small text-muted-foreground">
-                  {t("customPromptNote")}
+                <p className="text-muted-foreground font-mono text-xs">
+                  * {t("customPromptNote")}
                 </p>
               </div>
             </div>
@@ -287,56 +289,59 @@ export const ComicGenerator = () => {
             (promptMode === "library" && !script.trim()) ||
             (promptMode === "custom" && !customScript.trim())
           }
-          className="w-full subtitle justify-start text-left"
+          className="w-full font-mono bg-primary/20 hover:bg-primary/30 border border-primary/50 text-primary"
           size="lg"
         >
           {isGenerating ? (
             <>
               <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-              {t("generating")}
+              [GENERATING...]
             </>
           ) : (
-            t("generateStill")
+            <>{' >>'} {t("generateStill").toUpperCase()}</>
           )}
         </Button>
 
         {generatedImage && (
-          <div className="space-y-4 animate-in fade-in-50 duration-500">
-            <div className="relative rounded-lg overflow-hidden border-2 border-primary/50">
+          <div className="space-y-3 animate-fade-in">
+            <div className="text-accent font-mono text-sm font-bold border-b border-primary/30 pb-2">
+              [OUTPUT::GENERATED_STILL]
+            </div>
+            <div className="relative rounded-lg overflow-hidden border border-primary/50 bg-black/50 p-2">
               <img
                 src={generatedImage}
                 alt="Generated still from THEVØIDN13"
-                className="w-full h-auto"
+                className="w-full h-auto rounded"
               />
             </div>
             <Button
               onClick={handleDownload}
               variant="outline"
-              className="w-full subtitle"
+              className="w-full font-mono border-primary/50 hover:bg-primary/20"
             >
-            {t("downloadStill")}
+              {t("downloadStill").toUpperCase()}
             </Button>
           </div>
         )}
 
-      <div className="pt-4 border-t border-border space-y-2">
-        <p className="body-small text-muted-foreground">
+      <div className="pt-4 space-y-2 border-t border-primary/20">
+        <p className="text-muted-foreground font-mono text-xs">
           <BilingualContent
-            portugueseContent={<><span className="font-medium">Nota Experimental:</span> Este gerador usa a Shadow Interface Bible v13 como system prompt base, aplicada automaticamente a {promptMode === "library" ? "todos os prompts da biblioteca" : "prompts personalizados"}.</>}
-            englishContent={<><span className="font-medium">Experimental Note:</span> This generator uses the Shadow Interface Bible v13 as base system prompt, automatically applied to {promptMode === "library" ? "all library prompts" : "custom prompts"}.</>}
+            portugueseContent={<><span className="font-medium">* Nota Experimental:</span> Este gerador usa a Shadow Interface Bible v13 como system prompt base, aplicada automaticamente a {promptMode === "library" ? "todos os prompts da biblioteca" : "prompts personalizados"}.</>}
+            englishContent={<><span className="font-medium">* Experimental Note:</span> This generator uses the Shadow Interface Bible v13 as base system prompt, automatically applied to {promptMode === "library" ? "all library prompts" : "custom prompts"}.</>}
           />
         </p>
-        <p className="body-small text-muted-foreground">
+        <p className="text-muted-foreground font-mono text-xs">
           <BilingualContent
             portugueseContent={<><strong>Modo Biblioteca:</strong> {t("libraryMode")} <strong className="ml-1">Modo Personalizado:</strong> {t("customMode")}</>}
             englishContent={<><strong>Library Mode:</strong> {t("libraryMode")} <strong className="ml-1">Custom Mode:</strong> {t("customMode")}</>}
           />
         </p>
-        <p className="body-small text-muted-foreground">
-          {t("allImagesNote")}
+        <p className="text-muted-foreground font-mono text-xs">
+          * {t("allImagesNote")}
         </p>
-        <p className="body-small text-muted-foreground">
-          {t("canonicalParams")}
+        <p className="text-muted-foreground font-mono text-xs">
+          * {t("canonicalParams")}
         </p>
       </div>
       </CardContent>

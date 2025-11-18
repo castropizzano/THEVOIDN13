@@ -86,75 +86,73 @@ export const PromptLibrary = () => {
         />
       </div>
 
-      <DialogContent className="max-w-5xl max-h-[85vh]">
-        <DialogHeader>
-          <DialogTitle className="text-2xl">
-            {t("promptLibraryTitle")}
+      <DialogContent className="max-w-5xl max-h-[85vh] bg-black/95 border-primary/30">
+        <DialogHeader className="border-b border-primary/30 pb-4">
+          <DialogTitle className="text-primary text-xl font-mono font-bold">
+            PROMPT_LIBRARY::THEVØIDN13
           </DialogTitle>
-          <DialogDescription>
-            {t("promptsAccess")}
+          <DialogDescription className="text-muted-foreground font-mono text-sm">
+            // {t("promptsAccess")}
           </DialogDescription>
         </DialogHeader>
 
         <Tabs defaultValue="system" className="w-full">
-          <TabsList className="grid w-full grid-cols-3">
-            <TabsTrigger value="system" className="flex items-center gap-2">
+          <TabsList className="grid w-full grid-cols-3 bg-background/50 border border-primary/20">
+            <TabsTrigger value="system" className="flex items-center gap-2 font-mono data-[state=active]:bg-primary/20 data-[state=active]:text-primary">
               <FileCode className="w-4 h-4" />
-              {t("systemPrompts")}
+              [SYSTEM]
             </TabsTrigger>
-            <TabsTrigger value="characters" className="flex items-center gap-2">
+            <TabsTrigger value="characters" className="flex items-center gap-2 font-mono data-[state=active]:bg-primary/20 data-[state=active]:text-primary">
               <Palette className="w-4 h-4" />
-              {t("characterPrompts")}
+              [CHARACTERS]
             </TabsTrigger>
-            <TabsTrigger value="scenes" className="flex items-center gap-2">
+            <TabsTrigger value="scenes" className="flex items-center gap-2 font-mono data-[state=active]:bg-primary/20 data-[state=active]:text-primary">
               <Camera className="w-4 h-4" />
-              {t("scenePrompts")}
+              [SCENES]
             </TabsTrigger>
           </TabsList>
 
           <ScrollArea className="h-[60vh] mt-4">
-            <TabsContent value="system" className="space-y-4">
-              {systemPrompts.map((prompt) => (
-                <Card key={prompt.id} className="relative">
-                  <CardHeader>
-                    <div className="flex items-start justify-between">
-                      <div className="space-y-1 flex-1">
-                        <CardTitle className="text-lg flex items-center gap-2">
-                          {getCategoryIcon(prompt.category)}
-                          {prompt.title}
-                        </CardTitle>
-                        <CardDescription>{prompt.description}</CardDescription>
+            <TabsContent value="system" className="space-y-3">
+              {systemPrompts.map((prompt, index) => (
+                <div key={prompt.id} className="bg-background/30 border border-primary/30 rounded-lg p-4 hover:border-primary/50 transition-colors">
+                  <div className="flex items-start justify-between mb-3">
+                    <div className="flex-1">
+                      <div className="text-accent font-mono font-bold text-sm mb-1">
+                        [{String(index + 1).padStart(2, '0')}] {prompt.title.toUpperCase()}
                       </div>
-                      <Button
-                        size="sm"
-                        variant="ghost"
-                        onClick={() => copyToClipboard(prompt.prompt_text, prompt.title)}
-                      >
-                        <Copy className="w-4 h-4" />
-                      </Button>
-                    </div>
-                  </CardHeader>
-                  <CardContent className="space-y-3">
-                    <div className="p-3 bg-muted rounded-md font-mono text-sm whitespace-pre-wrap">
-                      {prompt.prompt_text}
-                    </div>
-                    {prompt.parameters && (
-                      <div className="flex flex-wrap gap-2">
-                        {prompt.parameters.seed && (
-                          <Badge variant="secondary">Seed: {prompt.parameters.seed}</Badge>
-                        )}
-                        {prompt.parameters.stylize_range && (
-                          <Badge variant="secondary">
-                            Stylize: {prompt.parameters.stylize_range[0]}-{prompt.parameters.stylize_range[1]}
-                          </Badge>
-                        )}
-                        {prompt.parameters.chaos && (
-                          <Badge variant="secondary">Chaos: {prompt.parameters.chaos}</Badge>
-                        )}
+                      <div className="text-muted-foreground font-mono text-xs">
+                        // {prompt.description}
                       </div>
-                    )}
-                  </CardContent>
-                </Card>
+                    </div>
+                    <Button
+                      size="sm"
+                      variant="ghost"
+                      onClick={() => copyToClipboard(prompt.prompt_text, prompt.title)}
+                      className="hover:bg-primary/20 hover:text-primary"
+                    >
+                      <Copy className="w-4 h-4" />
+                    </Button>
+                  </div>
+                  <div className="p-3 bg-black/50 border border-primary/20 rounded font-mono text-xs text-foreground/90 whitespace-pre-wrap leading-relaxed">
+                    {prompt.prompt_text}
+                  </div>
+                  {prompt.parameters && (
+                    <div className="flex flex-wrap gap-2 mt-3">
+                      {prompt.parameters.seed && (
+                        <Badge variant="outline" className="font-mono text-xs border-primary/30">seed: {prompt.parameters.seed}</Badge>
+                      )}
+                      {prompt.parameters.stylize_range && (
+                        <Badge variant="outline" className="font-mono text-xs border-primary/30">
+                          stylize: {prompt.parameters.stylize_range[0]}-{prompt.parameters.stylize_range[1]}
+                        </Badge>
+                      )}
+                      {prompt.parameters.chaos && (
+                        <Badge variant="outline" className="font-mono text-xs border-primary/30">chaos: {prompt.parameters.chaos}</Badge>
+                      )}
+                    </div>
+                  )}
+                </div>
               ))}
             </TabsContent>
 
