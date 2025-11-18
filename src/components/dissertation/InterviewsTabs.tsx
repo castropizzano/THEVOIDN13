@@ -75,19 +75,21 @@ const InterviewCard = ({
         </CardHeader>
 
         <CardContent className="space-y-6">
-          {/* Video */}
-          <div className="aspect-video w-full rounded-lg overflow-hidden border border-border/50 shadow-lg shadow-primary/10 hover-scale transition-all duration-300">
-            <iframe
-              width="100%"
-              height="100%"
-              src={`https://www.youtube.com/embed/${youtubeId}`}
-              title={titleEn}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="w-full h-full"
-            />
-          </div>
+          {/* Video - only show if youtubeId is provided */}
+          {youtubeId && (
+            <div className="aspect-video w-full rounded-lg overflow-hidden border border-border/50 shadow-lg shadow-primary/10 hover-scale transition-all duration-300">
+              <iframe
+                width="100%"
+                height="100%"
+                src={`https://www.youtube.com/embed/${youtubeId}`}
+                title={titleEn}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
+          )}
 
           {/* PDF Button */}
           <div className="flex justify-center pt-4">
@@ -252,64 +254,41 @@ export const InterviewsTabs = () => {
 
         {/* LowZine */}
         <TabsContent value="lowzine" className="space-y-8">
+          <InterviewCard
+            titlePt="LOWZINE — FANZINE COLETIVO"
+            titleEn="LOWZINE — COLLECTIVE FANZINE"
+            subtitlePt="Entrevista LowMovie™ × LowPressure™"
+            subtitleEn="Interview LowMovie™ × LowPressure™"
+            descriptionPt="Fanzine colaborativo com entrevista sobre o processo criativo do LowMovie™ e a filosofia do coletivo LowPressure™. Publicação independente que documenta os bastidores da produção. Galeria de páginas do fanzine abaixo."
+            descriptionEn="Collaborative fanzine featuring an interview about the creative process of LowMovie™ and the philosophy of the LowPressure™ collective. Independent publication documenting the production backstage. Fanzine pages gallery below."
+            youtubeId=""
+            pdfPath="/documents/LowZine_LowMovie_Interview.pdf"
+            pdfTitlePt="Transcrição: LowZine"
+            pdfTitleEn="Transcription: LowZine"
+          />
+
+          {/* Zine Gallery - Mosaico */}
           <Card className="overflow-hidden border-border/50 shadow-lg shadow-primary/5 animate-fade-in">
             <CardHeader>
               <div className="bible-bilingual-grid">
-                <div>
-                  <CardTitle className="bible-title">LOWZINE — FANZINE COLETIVO</CardTitle>
-                  <CardDescription className="bible-subtitle text-primary mt-2">
-                    Entrevista LowMovie™ × LowPressure™
-                  </CardDescription>
-                </div>
-                <div>
-                  <CardTitle className="bible-title">LOWZINE — COLLECTIVE FANZINE</CardTitle>
-                  <CardDescription className="bible-subtitle text-primary mt-2">
-                    Interview LowMovie™ × LowPressure™
-                  </CardDescription>
-                </div>
-              </div>
-
-              <div className="bible-bilingual-grid bible-section-spacing">
-                <p className="bible-body">
-                  Fanzine colaborativo com entrevista sobre o processo criativo do LowMovie™ e a filosofia do coletivo LowPressure™. Publicação independente que documenta os bastidores da produção.
-                </p>
-                <p className="bible-body">
-                  Collaborative fanzine featuring an interview about the creative process of LowMovie™ and the philosophy of the LowPressure™ collective. Independent publication documenting the production backstage.
-                </p>
+                <CardTitle className="bible-subtitle">Galeria LowZine</CardTitle>
+                <CardTitle className="bible-subtitle">LowZine Gallery</CardTitle>
               </div>
             </CardHeader>
-
-            <CardContent className="space-y-6">
-              {/* Zine Gallery */}
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <CardContent>
+              <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
                 {zineImages.map((image, index) => (
                   <div
                     key={index}
-                    className="aspect-[3/4] rounded-lg overflow-hidden border border-border/50 shadow-md hover:shadow-xl hover:shadow-primary/10 transition-all hover-scale cursor-pointer"
+                    className="break-inside-avoid rounded-lg overflow-hidden border border-border/50 shadow-md hover:shadow-xl hover:shadow-primary/10 transition-all hover-scale cursor-pointer"
                   >
                     <img
                       src={image}
                       alt={`LowZine página ${index + 2}`}
-                      className="w-full h-full object-cover"
+                      className="w-full h-auto"
                     />
                   </div>
                 ))}
-              </div>
-
-              {/* PDF Download */}
-              <div className="flex justify-center pt-4">
-                <Button
-                  onClick={() => window.open("/documents/LowZine_LowMovie_Interview.pdf", "_blank")}
-                  variant="outline"
-                  size="lg"
-                  className="gap-2 hover:bg-primary/10 hover:border-primary transition-all hover-scale"
-                >
-                  <FileText className="h-5 w-5" />
-                  <span className="bible-body font-semibold">
-                    <span className="lang-pt">Transcrição Completa</span>
-                    <span className="lang-en"> / Full Transcription</span>
-                  </span>
-                </Button>
               </div>
             </CardContent>
           </Card>
