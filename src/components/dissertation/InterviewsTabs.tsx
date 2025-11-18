@@ -5,7 +5,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Button } from "@/components/ui/button";
 import { BilingualSection } from "@/components/BilingualSection";
 import { PDFViewer } from "@/components/PDFViewer";
-import { FileText } from "lucide-react";
+import { FileText, ChevronLeft, ChevronRight, X, ZoomIn, ZoomOut } from "lucide-react";
 import zine02 from "@/assets/zine/zine_02.png";
 import zine03 from "@/assets/zine/zine_03.png";
 import zine04 from "@/assets/zine/zine_04.png";
@@ -131,11 +131,39 @@ const InterviewCard = ({
 };
 
 export const InterviewsTabs = () => {
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [zoomLevel, setZoomLevel] = useState(1);
+
   const zineImages = [
     zine02, zine03, zine04, zine05, 
     zine06, zine07, zine08, zine09, zine10,
     zine11, zine12, zine13, zine14, zine15, zine16
   ];
+
+  const openLightbox = (index: number) => {
+    setCurrentImageIndex(index);
+    setZoomLevel(1);
+    setLightboxOpen(true);
+  };
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % zineImages.length);
+    setZoomLevel(1);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + zineImages.length) % zineImages.length);
+    setZoomLevel(1);
+  };
+
+  const zoomIn = () => {
+    setZoomLevel((prev) => Math.min(prev + 0.25, 3));
+  };
+
+  const zoomOut = () => {
+    setZoomLevel((prev) => Math.max(prev - 0.25, 0.5));
+  };
 
   return (
     <BilingualSection className="py-16">
@@ -280,18 +308,100 @@ export const InterviewsTabs = () => {
                 {zineImages.map((image, index) => (
                   <div
                     key={index}
-                    className="break-inside-avoid rounded-lg overflow-hidden border border-border/50 shadow-md hover:shadow-xl hover:shadow-primary/10 transition-all hover-scale cursor-pointer"
+                    onClick={() => openLightbox(index)}
+                    className="break-inside-avoid rounded-lg overflow-hidden border border-border/50 shadow-md hover:shadow-xl hover:shadow-primary/10 transition-all hover-scale cursor-pointer group relative"
                   >
                     <img
                       src={image}
                       alt={`LowZine página ${index + 2}`}
                       className="w-full h-auto"
                     />
+                    <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                      <ZoomIn className="w-8 h-8 text-white" />
+                    </div>
                   </div>
                 ))}
               </div>
             </CardContent>
           </Card>
+
+          {/* Lightbox */}
+          <Dialog open={lightboxOpen} onOpenChange={setLightboxOpen}>
+            <DialogContent className="max-w-7xl h-[95vh] p-0 bg-black/95 border-border/20">
+              <div className="relative w-full h-full flex items-center justify-center">
+                {/* Close Button */}
+                <Button
+                  onClick={() => setLightboxOpen(false)}
+                  variant="ghost"
+                  size="icon"
+                  className="absolute top-4 right-4 z-50 text-white hover:bg-white/10"
+                >
+                  <X className="h-6 w-6" />
+                </Button>
+
+                {/* Page Counter */}
+                <div className="absolute top-4 left-4 z-50 text-white bible-body font-semibold bg-black/50 px-4 py-2 rounded-lg">
+                  <span className="lang-pt">Página {currentImageIndex + 2} de 16</span>
+                  <span className="lang-en">Page {currentImageIndex + 2} of 16</span>
+                </div>
+
+                {/* Zoom Controls */}
+                <div className="absolute top-4 left-1/2 -translate-x-1/2 z-50 flex gap-2">
+                  <Button
+                    onClick={zoomOut}
+                    variant="ghost"
+                    size="icon"
+                    className="text-white hover:bg-white/10"
+                    disabled={zoomLevel <= 0.5}
+                  >
+                    <ZoomOut className="h-5 w-5" />
+                  </Button>
+                  <div className="text-white bible-caption font-semibold bg-black/50 px-3 py-2 rounded-lg">
+                    {Math.round(zoomLevel * 100)}%
+                  </div>
+                  <Button
+                    onClick={zoomIn}
+                    variant="ghost"
+                    size="icon"
+                    className="text-white hover:bg-white/10"
+                    disabled={zoomLevel >= 3}
+                  >
+                    <ZoomIn className="h-5 w-5" />
+                  </Button>
+                </div>
+
+                {/* Previous Button */}
+                <Button
+                  onClick={prevImage}
+                  variant="ghost"
+                  size="icon"
+                  className="absolute left-4 top-1/2 -translate-y-1/2 z-50 text-white hover:bg-white/10 h-12 w-12"
+                >
+                  <ChevronLeft className="h-8 w-8" />
+                </Button>
+
+                {/* Image */}
+                <div className="overflow-auto max-h-full max-w-full p-16">
+                  <img
+                    src={zineImages[currentImageIndex]}
+                    alt={`LowZine página ${currentImageIndex + 2}`}
+                    className="transition-transform duration-200"
+                    style={{ transform: `scale(${zoomLevel})` }}
+                  />
+                </div>
+
+                {/* Next Button */}
+                <Button
+                  onClick={nextImage}
+                  variant="ghost"
+                  size="icon"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 z-50 text-white hover:bg-white/10 h-12 w-12"
+                >
+                  <ChevronRight className="h-8 w-8" />
+                </Button>
+              </div>
+            </DialogContent>
+          </Dialog>
         </TabsContent>
       </Tabs>
     </BilingualSection>
