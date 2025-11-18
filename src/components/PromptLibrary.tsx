@@ -81,8 +81,7 @@ export const PromptLibrary = () => {
           <CardHeader className="border-l-4 border-l-primary">
             <div className="flex items-start justify-between">
               <div className="space-y-1">
-                <CardTitle className="bible-title flex items-center gap-2">
-                  <FileCode className="w-6 h-6 text-primary" />
+                <CardTitle className="bible-title">
                   {t("promptLibraryTitle")}
                 </CardTitle>
                 <CardDescription>
@@ -104,8 +103,7 @@ export const PromptLibrary = () => {
 
       <DialogContent className="max-w-5xl max-h-[85vh]">
         <DialogHeader>
-          <DialogTitle className="text-2xl flex items-center gap-2">
-            <FileCode className="w-6 h-6 text-primary" />
+          <DialogTitle className="text-2xl">
             {t("promptLibraryTitle")}
           </DialogTitle>
           <DialogDescription>
