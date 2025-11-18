@@ -2240,7 +2240,7 @@ const Index = () => {
           </div>
 
           {/* REPOSITÓRIO COMPLETO */}
-          <div>
+          <div className="mt-12">
             <BilingualContent
               portugueseContent={
                 <a 
