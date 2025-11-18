@@ -605,6 +605,10 @@ export const InterviewsTabs = () => {
                 <p className="bible-body mb-4">
                   Acesse a transcrição completa da entrevista coletiva com toda a crew sobre a produção da LowZine e do LowMovie™.
                 </p>
+                <p className="bible-body text-muted-foreground text-sm italic">
+                  // Documento em preparação
+                </p>
+                {/* 
                 <a 
                   href="/documents/LOWZINE._LowPressure™_-_The_LowMovie.pdf" 
                   target="_blank"
@@ -613,6 +617,7 @@ export const InterviewsTabs = () => {
                 >
                   Download da Transcrição (PDF)
                 </a>
+                */}
               </Card>
             </div>
 
@@ -622,6 +627,10 @@ export const InterviewsTabs = () => {
                 <p className="bible-body mb-4">
                   Access the complete collective interview transcription with the entire crew about the production of LowZine and LowMovie™.
                 </p>
+                <p className="bible-body text-muted-foreground text-sm italic">
+                  // Document in preparation
+                </p>
+                {/*
                 <a 
                   href="/documents/LOWZINE._LowPressure™_-_The_LowMovie.pdf" 
                   target="_blank"
@@ -630,6 +639,7 @@ export const InterviewsTabs = () => {
                 >
                   Download Transcription (PDF)
                 </a>
+                */}
               </Card>
             </div>
           </div>

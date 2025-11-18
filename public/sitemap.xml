@@ -5,7 +5,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://thevoidn13.lovableproject.com/</loc>
-    <lastmod>2025-01-28</lastmod>
+    <lastmod>2025-01-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -17,7 +17,7 @@
   <!-- LowMovie -->
   <url>
     <loc>https://thevoidn13.lovableproject.com/lowmovie</loc>
-    <lastmod>2025-01-28</lastmod>
+    <lastmod>2025-01-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -25,7 +25,7 @@
   <!-- Sobre/Author -->
   <url>
     <loc>https://thevoidn13.lovableproject.com/sobre</loc>
-    <lastmod>2025-01-28</lastmod>
+    <lastmod>2025-01-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -33,7 +33,7 @@
   <!-- Galeria/Videos Portfolio -->
   <url>
     <loc>https://thevoidn13.lovableproject.com/galeria</loc>
-    <lastmod>2025-01-28</lastmod>
+    <lastmod>2025-01-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -48,7 +48,7 @@
 
   <url>
     <loc>https://thevoidn13.lovableproject.com/documents/LowMovie_brandbook.pdf</loc>
-    <lastmod>2025-01-28</lastmod>
+    <lastmod>2025-01-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
