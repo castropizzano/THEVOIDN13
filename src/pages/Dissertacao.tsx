@@ -645,39 +645,39 @@ const Dissertacao = () => {
 
             {/* Case Studies and Videos */}
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-card border border-border rounded-lg p-6">
-                <h4 className="bible-body font-bold mb-4">LowPressure™</h4>
+              <div className="bg-card/80 border border-primary/30 rounded-lg p-6 hover:border-primary/50 transition-colors">
+                <h4 className="font-mono text-accent font-bold mb-4">[LOWPRESSURE™]</h4>
                 <a 
                   href="https://castropizzano.com/lowpressure" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="bible-link hover:underline block"
+                  className="bible-link hover:underline block font-mono text-sm"
                 >
-                  Estudo de Caso / Case Study
+                  // Estudo de Caso / Case Study
                 </a>
               </div>
 
-              <div className="bg-card border border-border rounded-lg p-6">
-                <h4 className="bible-body font-bold mb-4">LowMovie™</h4>
+              <div className="bg-card/80 border border-primary/30 rounded-lg p-6 hover:border-primary/50 transition-colors">
+                <h4 className="font-mono text-accent font-bold mb-4">[LOWMOVIE™]</h4>
                 <a 
                   href="https://youtu.be/wcYBh6_DqO8" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="bible-link hover:underline block"
+                  className="bible-link hover:underline block font-mono text-sm"
                 >
-                  Vídeo Completo LowMovie™ (2023) / Full Video LowMovie™ (2023)
+                  // Vídeo Completo LowMovie™ (2023) / Full Video LowMovie™ (2023)
                 </a>
               </div>
             </div>
 
             {/* Dissertação - Coming Soon */}
-            <div className="bg-card border-2 border-primary/50 rounded-lg p-8">
+            <div className="bg-card/80 border-2 border-primary/30 rounded-lg p-8">
               <div className="bilingual-grid mb-4">
                 <div className="bilingual-col">
-                  <h4 className="bible-body font-bold text-primary">Dissertação de Mestrado</h4>
+                  <h4 className="font-mono text-primary font-bold">[DISSERTAÇÃO_DE_MESTRADO]</h4>
                 </div>
                 <div className="bilingual-col">
-                  <h4 className="bible-body font-bold text-primary">Master's Dissertation</h4>
+                  <h4 className="font-mono text-primary font-bold">[MASTER'S_DISSERTATION]</h4>
                 </div>
               </div>
               <div className="bible-bilingual-grid">

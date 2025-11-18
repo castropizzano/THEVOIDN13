@@ -25,7 +25,7 @@ export const LowPressureBlock = () => {
               em que o pertencimento se inscreve nos gestos, nas imagens e nos vínculos forjados em movimento.
             </p>
 
-            <Card className="p-6 border-l-4 border-primary bg-gradient-to-br from-background via-background to-primary/5">
+            <Card className="p-6 border-l-4 border-primary/30 bg-gradient-to-br from-background via-background to-primary/5">
               <h3 className="bible-subtitle mb-4">Ethos Skate-Punk + Cultura de Rua</h3>
               <p className="bible-body">
                 Crew de skate estabelecida nas transições e ruas de Curitiba. Movimento que valoriza o skateboard e seu universo 
@@ -51,7 +51,7 @@ export const LowPressureBlock = () => {
               </p>
             </div>
 
-            <Card className="p-6 border-l-4 border-primary">
+            <Card className="p-6 border-l-4 border-primary/30 bg-card/80">
               <h3 className="bible-subtitle mb-4">Estética Coletiva + Colaborativa</h3>
               <p className="bible-body">
                 Com o surgimento do coletivo LowPressure™, os impulsos criativos se expandem e encontram direção. O grupo 
@@ -61,7 +61,7 @@ export const LowPressureBlock = () => {
               </p>
             </Card>
 
-            <Card className="p-8 bg-gradient-to-br from-background via-background to-primary/5 border-2 border-primary/20 mt-6">
+            <Card className="p-8 bg-gradient-to-br from-background via-background to-primary/5 border-2 border-primary/30 mt-6">
               <h3 className="bible-subtitle mb-4">Por que o Coletivo é o Solo Epistemológico</h3>
               <p className="bible-body">
                 A LowPressure™ não é apenas objeto de estudo—é o <span className="font-semibold text-primary">território 
@@ -83,7 +83,7 @@ export const LowPressureBlock = () => {
               in which belonging is inscribed in gestures, images and bonds forged in movement.
             </p>
 
-            <Card className="p-6 border-l-4 border-primary bg-gradient-to-br from-background via-background to-primary/5">
+            <Card className="p-6 border-l-4 border-primary/30 bg-gradient-to-br from-background via-background to-primary/5">
               <h3 className="bible-subtitle mb-4">Skate-Punk Ethos + Street Culture</h3>
               <p className="bible-body">
                 Skate crew established in Curitiba's transitions and streets. Movement that values skateboarding and its cultural 
@@ -109,7 +109,7 @@ export const LowPressureBlock = () => {
               </p>
             </div>
 
-            <Card className="p-6 border-l-4 border-primary">
+            <Card className="p-6 border-l-4 border-primary/30 bg-card/80">
               <h3 className="bible-subtitle mb-4">Collective + Collaborative Aesthetics</h3>
               <p className="bible-body">
                 With the emergence of the LowPressure™ collective, creative impulses expand and find direction. The group 
@@ -119,7 +119,7 @@ export const LowPressureBlock = () => {
               </p>
             </Card>
 
-            <Card className="p-8 bg-gradient-to-br from-background via-background to-primary/5 border-2 border-primary/20 mt-6">
+            <Card className="p-8 bg-gradient-to-br from-background via-background to-primary/5 border-2 border-primary/30 mt-6">
               <h3 className="bible-subtitle mb-4">Why the Collective is the Epistemological Ground</h3>
               <p className="bible-body">
                 LowPressure™ is not just object of study—it is the <span className="font-semibold text-primary">epistemological 

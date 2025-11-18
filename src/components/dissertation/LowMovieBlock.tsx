@@ -25,7 +25,7 @@ export const LowMovieBlock = () => {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Card className="p-6 border-l-4 border-primary">
+              <Card className="p-6 border-l-4 border-primary/30 bg-card/80">
                 <h3 className="bible-subtitle mb-4">Cine-Transe</h3>
                 <p className="bible-body">
                   Montagem rítmica que dissolve narrativa linear em experiência sensorial. 
@@ -33,23 +33,17 @@ export const LowMovieBlock = () => {
                 </p>
               </Card>
 
-              <Card className="p-6 border-l-4 border-primary">
+              <Card className="p-6 border-l-4 border-primary/30 bg-card/80">
                 <h3 className="bible-subtitle mb-4">Estética Relacional</h3>
-                <p className="bible-body">
-                  Criação como processo compartilhado. Câmera, skatistas, cidade e crew 
-                  em relação dinâmica e colaborativa.
-                </p>
+...
               </Card>
 
-              <Card className="p-6 border-l-4 border-primary">
+              <Card className="p-6 border-l-4 border-primary/30 bg-card/80">
                 <h3 className="bible-subtitle mb-4">Arquivo Vivo</h3>
-                <p className="bible-body">
-                  Registro não domesticado. Memória em movimento que resiste à 
-                  cristalização documental tradicional.
-                </p>
+...
               </Card>
 
-              <Card className="p-6 border-l-4 border-primary">
+              <Card className="p-6 border-l-4 border-primary/30 bg-card/80">
                 <h3 className="bible-subtitle mb-4">VideoParte</h3>
                 <p className="bible-body">
                   Linguagem híbrida: documentário experimental + filme de skate. 
@@ -58,7 +52,7 @@ export const LowMovieBlock = () => {
               </Card>
             </div>
 
-            <Card className="p-8 bg-gradient-to-br from-background via-background to-primary/5 border-2 border-primary/20 mt-6">
+            <Card className="p-8 bg-gradient-to-br from-background via-background to-primary/5 border-2 border-primary/30 mt-6">
               <h3 className="bible-subtitle mb-4">Lowbyrinth™ — O Labirinto Criativo</h3>
               <p className="bible-body">
                 LowMovie™ materializa o conceito de Lowbyrinth™: percursos criativos não-lineares, 
@@ -78,7 +72,7 @@ export const LowMovieBlock = () => {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Card className="p-6 border-l-4 border-primary">
+              <Card className="p-6 border-l-4 border-primary/30 bg-card/80">
                 <h3 className="bible-subtitle mb-4">Cine-Trance</h3>
                 <p className="bible-body">
                   Rhythmic montage that dissolves linear narrative into sensory experience. 
@@ -86,7 +80,7 @@ export const LowMovieBlock = () => {
                 </p>
               </Card>
 
-              <Card className="p-6 border-l-4 border-primary">
+              <Card className="p-6 border-l-4 border-primary/30 bg-card/80">
                 <h3 className="bible-subtitle mb-4">Relational Aesthetics</h3>
                 <p className="bible-body">
                   Creation as shared process. Camera, skaters, city and crew 
@@ -94,7 +88,7 @@ export const LowMovieBlock = () => {
                 </p>
               </Card>
 
-              <Card className="p-6 border-l-4 border-primary">
+              <Card className="p-6 border-l-4 border-primary/30 bg-card/80">
                 <h3 className="bible-subtitle mb-4">Living Archive</h3>
                 <p className="bible-body">
                   Undomesticated record. Memory in movement that resists 
@@ -102,7 +96,7 @@ export const LowMovieBlock = () => {
                 </p>
               </Card>
 
-              <Card className="p-6 border-l-4 border-primary">
+              <Card className="p-6 border-l-4 border-primary/30 bg-card/80">
                 <h3 className="bible-subtitle mb-4">VideoPart</h3>
                 <p className="bible-body">
                   Hybrid language: experimental documentary + skate film. 
@@ -111,7 +105,7 @@ export const LowMovieBlock = () => {
               </Card>
             </div>
 
-            <Card className="p-8 bg-gradient-to-br from-background via-background to-primary/5 border-2 border-primary/20 mt-6">
+            <Card className="p-8 bg-gradient-to-br from-background via-background to-primary/5 border-2 border-primary/30 mt-6">
               <h3 className="bible-subtitle mb-4">Lowbyrinth™ — The Creative Labyrinth</h3>
               <p className="bible-body">
                 LowMovie™ materializes the Lowbyrinth™ concept: non-linear creative paths, 
