@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Copy, FileCode, Palette, Camera } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
@@ -156,112 +155,112 @@ export const PromptLibrary = () => {
               ))}
             </TabsContent>
 
-            <TabsContent value="characters" className="space-y-4">
-              {characterPrompts.map((prompt) => (
-                <Card key={prompt.id} className="relative">
-                  <CardHeader>
-                    <div className="flex items-start justify-between">
-                      <div className="space-y-1 flex-1">
-                        <CardTitle className="text-lg flex items-center gap-2">
-                          {getCategoryIcon(prompt.category)}
-                          {prompt.title}
-                        </CardTitle>
-                        <CardDescription>{prompt.description}</CardDescription>
+            <TabsContent value="characters" className="space-y-3">
+              {characterPrompts.map((prompt, index) => (
+                <div key={prompt.id} className="bg-background/30 border border-primary/30 rounded-lg p-4 hover:border-primary/50 transition-colors">
+                  <div className="flex items-start justify-between mb-3">
+                    <div className="flex-1">
+                      <div className="text-accent font-mono font-bold text-sm mb-1">
+                        [{String(index + 1).padStart(2, '0')}] {prompt.title.toUpperCase()}
                       </div>
-                      <Button
-                        size="sm"
-                        variant="ghost"
-                        onClick={() => copyToClipboard(prompt.prompt_text, prompt.title)}
-                      >
-                        <Copy className="w-4 h-4" />
-                      </Button>
+                      <div className="text-muted-foreground font-mono text-xs">
+                        // {prompt.description}
+                      </div>
                     </div>
-                    <div className="flex flex-wrap gap-1 mt-2">
+                    <Button
+                      size="sm"
+                      variant="ghost"
+                      onClick={() => copyToClipboard(prompt.prompt_text, prompt.title)}
+                      className="hover:bg-primary/20 hover:text-primary"
+                    >
+                      <Copy className="w-4 h-4" />
+                    </Button>
+                  </div>
+                  {prompt.tags && prompt.tags.length > 0 && (
+                    <div className="flex flex-wrap gap-2 mb-3">
                       {prompt.tags.map((tag) => (
-                        <Badge key={tag} variant="outline" className="text-xs">
+                        <Badge key={tag} variant="outline" className="font-mono text-xs border-primary/30">
                           {tag}
                         </Badge>
                       ))}
                     </div>
-                  </CardHeader>
-                  <CardContent className="space-y-3">
-                    <div className="p-3 bg-muted rounded-md font-mono text-sm whitespace-pre-wrap">
-                      {prompt.prompt_text}
+                  )}
+                  <div className="p-3 bg-black/50 border border-primary/20 rounded font-mono text-xs text-foreground/90 whitespace-pre-wrap leading-relaxed">
+                    {prompt.prompt_text}
+                  </div>
+                  {prompt.parameters && (
+                    <div className="flex flex-wrap gap-2 mt-3">
+                      {prompt.parameters.ar && (
+                        <Badge variant="outline" className="font-mono text-xs border-primary/30">ar: {prompt.parameters.ar}</Badge>
+                      )}
+                      {prompt.parameters.seed && (
+                        <Badge variant="outline" className="font-mono text-xs border-primary/30">seed: {prompt.parameters.seed}</Badge>
+                      )}
+                      {prompt.parameters.stylize && (
+                        <Badge variant="outline" className="font-mono text-xs border-primary/30">stylize: {prompt.parameters.stylize}</Badge>
+                      )}
+                      {prompt.parameters.chaos && (
+                        <Badge variant="outline" className="font-mono text-xs border-primary/30">chaos: {prompt.parameters.chaos}</Badge>
+                      )}
+                      {prompt.parameters.version && (
+                        <Badge variant="outline" className="font-mono text-xs border-primary/30">v{prompt.parameters.version}</Badge>
+                      )}
                     </div>
-                    {prompt.parameters && (
-                      <div className="flex flex-wrap gap-2">
-                        {prompt.parameters.ar && (
-                          <Badge variant="secondary">AR: {prompt.parameters.ar}</Badge>
-                        )}
-                        {prompt.parameters.seed && (
-                          <Badge variant="secondary">Seed: {prompt.parameters.seed}</Badge>
-                        )}
-                        {prompt.parameters.stylize && (
-                          <Badge variant="secondary">Stylize: {prompt.parameters.stylize}</Badge>
-                        )}
-                        {prompt.parameters.chaos && (
-                          <Badge variant="secondary">Chaos: {prompt.parameters.chaos}</Badge>
-                        )}
-                        {prompt.parameters.version && (
-                          <Badge variant="secondary">V{prompt.parameters.version}</Badge>
-                        )}
-                      </div>
-                    )}
-                  </CardContent>
-                </Card>
+                  )}
+                </div>
               ))}
             </TabsContent>
 
-            <TabsContent value="scenes" className="space-y-4">
-              {scenePrompts.map((prompt) => (
-                <Card key={prompt.id} className="relative">
-                  <CardHeader>
-                    <div className="flex items-start justify-between">
-                      <div className="space-y-1 flex-1">
-                        <CardTitle className="text-lg flex items-center gap-2">
-                          {getCategoryIcon(prompt.category)}
-                          {prompt.title}
-                        </CardTitle>
-                        <CardDescription>{prompt.description}</CardDescription>
+            <TabsContent value="scenes" className="space-y-3">
+              {scenePrompts.map((prompt, index) => (
+                <div key={prompt.id} className="bg-background/30 border border-primary/30 rounded-lg p-4 hover:border-primary/50 transition-colors">
+                  <div className="flex items-start justify-between mb-3">
+                    <div className="flex-1">
+                      <div className="text-accent font-mono font-bold text-sm mb-1">
+                        [{String(index + 1).padStart(2, '0')}] {prompt.title.toUpperCase()}
                       </div>
-                      <Button
-                        size="sm"
-                        variant="ghost"
-                        onClick={() => copyToClipboard(prompt.prompt_text, prompt.title)}
-                      >
-                        <Copy className="w-4 h-4" />
-                      </Button>
+                      <div className="text-muted-foreground font-mono text-xs">
+                        // {prompt.description}
+                      </div>
                     </div>
-                    <div className="flex flex-wrap gap-1 mt-2">
+                    <Button
+                      size="sm"
+                      variant="ghost"
+                      onClick={() => copyToClipboard(prompt.prompt_text, prompt.title)}
+                      className="hover:bg-primary/20 hover:text-primary"
+                    >
+                      <Copy className="w-4 h-4" />
+                    </Button>
+                  </div>
+                  {prompt.tags && prompt.tags.length > 0 && (
+                    <div className="flex flex-wrap gap-2 mb-3">
                       {prompt.tags.map((tag) => (
-                        <Badge key={tag} variant="outline" className="text-xs">
+                        <Badge key={tag} variant="outline" className="font-mono text-xs border-primary/30">
                           {tag}
                         </Badge>
                       ))}
                     </div>
-                  </CardHeader>
-                  <CardContent className="space-y-3">
-                    <div className="p-3 bg-muted rounded-md font-mono text-sm whitespace-pre-wrap">
-                      {prompt.prompt_text}
+                  )}
+                  <div className="p-3 bg-black/50 border border-primary/20 rounded font-mono text-xs text-foreground/90 whitespace-pre-wrap leading-relaxed">
+                    {prompt.prompt_text}
+                  </div>
+                  {prompt.parameters && (
+                    <div className="flex flex-wrap gap-2 mt-3">
+                      {prompt.parameters.ar && (
+                        <Badge variant="outline" className="font-mono text-xs border-primary/30">ar: {prompt.parameters.ar}</Badge>
+                      )}
+                      {prompt.parameters.seed && (
+                        <Badge variant="outline" className="font-mono text-xs border-primary/30">seed: {prompt.parameters.seed}</Badge>
+                      )}
+                      {prompt.parameters.stylize && (
+                        <Badge variant="outline" className="font-mono text-xs border-primary/30">stylize: {prompt.parameters.stylize}</Badge>
+                      )}
+                      {prompt.parameters.version && (
+                        <Badge variant="outline" className="font-mono text-xs border-primary/30">v{prompt.parameters.version}</Badge>
+                      )}
                     </div>
-                    {prompt.parameters && (
-                      <div className="flex flex-wrap gap-2">
-                        {prompt.parameters.ar && (
-                          <Badge variant="secondary">AR: {prompt.parameters.ar}</Badge>
-                        )}
-                        {prompt.parameters.seed && (
-                          <Badge variant="secondary">Seed: {prompt.parameters.seed}</Badge>
-                        )}
-                        {prompt.parameters.stylize && (
-                          <Badge variant="secondary">Stylize: {prompt.parameters.stylize}</Badge>
-                        )}
-                        {prompt.parameters.version && (
-                          <Badge variant="secondary">V{prompt.parameters.version}</Badge>
-                        )}
-                      </div>
-                    )}
-                  </CardContent>
-                </Card>
+                  )}
+                </div>
               ))}
             </TabsContent>
           </ScrollArea>
