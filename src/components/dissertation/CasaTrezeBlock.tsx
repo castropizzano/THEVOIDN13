@@ -25,7 +25,7 @@ export const CasaTrezeBlock = () => {
               forma e o encontro se tornou prática.
             </p>
 
-            <Card className="p-6 border-l-4 border-primary bg-gradient-to-br from-background via-background to-primary/5">
+            <Card className="p-6 border-l-4 border-primary/30 bg-gradient-to-br from-background via-background to-primary/5">
               <h3 className="bible-subtitle mb-4">Laboratório de Experimentação</h3>
               <p className="bible-body">
                 Espaço que se constitui como <span className="font-semibold">laboratório, abrigo e ponto de encontro</span> para 
@@ -50,7 +50,7 @@ export const CasaTrezeBlock = () => {
               </p>
             </div>
 
-            <Card className="p-6 border-l-4 border-primary">
+            <Card className="p-6 border-l-4 border-primary/30 bg-card/80">
               <h3 className="bible-subtitle mb-4">Núcleo de Convergência</h3>
               <p className="bible-body">
                 É neste território que <span className="font-semibold">LowMovie™, LowPressure™ e THEVØIDN13</span> convergem. 
@@ -70,7 +70,7 @@ export const CasaTrezeBlock = () => {
               form and encounter became practice.
             </p>
 
-            <Card className="p-6 border-l-4 border-primary bg-gradient-to-br from-background via-background to-primary/5">
+            <Card className="p-6 border-l-4 border-primary/30 bg-gradient-to-br from-background via-background to-primary/5">
               <h3 className="bible-subtitle mb-4">Experimentation Laboratory</h3>
               <p className="bible-body">
                 Space that constitutes itself as <span className="font-semibold">laboratory, shelter and meeting point</span> for 
@@ -95,7 +95,7 @@ export const CasaTrezeBlock = () => {
               </p>
             </div>
 
-            <Card className="p-6 border-l-4 border-primary">
+            <Card className="p-6 border-l-4 border-primary/30 bg-card/80">
               <h3 className="bible-subtitle mb-4">Convergence Nucleus</h3>
               <p className="bible-body">
                 It is in this territory that <span className="font-semibold">LowMovie™, LowPressure™ and THEVØIDN13</span> converge. 

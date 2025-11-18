@@ -745,9 +745,9 @@ const Autor = () => {
               <h3 className="bible-subtitle mb-6">Portfolio & Links</h3>
               
               <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-                <div className="group bg-card/50 border border-border rounded-lg p-6">
+                <div className="group bg-card/80 border border-primary/30 rounded-lg p-6 hover:border-primary/50 transition-colors">
                   <div className="flex justify-between items-start mb-4">
-                    <h3 className="bible-body font-bold">Site</h3>
+                    <h3 className="font-mono text-accent font-bold">SITE</h3>
                     <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
@@ -768,10 +768,10 @@ const Autor = () => {
                   href="http://lattes.cnpq.br/5523516994010198"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group bg-card/50 border border-border rounded-lg p-6 hover:border-primary transition-colors"
+                  className="group bg-card/80 border border-primary/30 rounded-lg p-6 hover:border-primary/50 transition-colors"
                 >
                   <div className="flex justify-between items-start mb-4">
-                    <h3 className="bible-body font-bold">Lattes</h3>
+                    <h3 className="font-mono text-accent font-bold">LATTES</h3>
                     <svg className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
@@ -783,10 +783,10 @@ const Autor = () => {
                   href="https://www.behance.net/castropizzano"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group bg-card/50 border border-border rounded-lg p-6 hover:border-primary transition-colors"
+                  className="group bg-card/80 border border-primary/30 rounded-lg p-6 hover:border-primary/50 transition-colors"
                 >
                   <div className="flex justify-between items-start mb-4">
-                    <h3 className="bible-body font-bold">Behance</h3>
+                    <h3 className="font-mono text-accent font-bold">BEHANCE</h3>
                     <svg className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
@@ -798,10 +798,10 @@ const Autor = () => {
                   href="https://vimeo.com/castropizzano"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group bg-card/50 border border-border rounded-lg p-6 hover:border-primary transition-colors"
+                  className="group bg-card/80 border border-primary/30 rounded-lg p-6 hover:border-primary/50 transition-colors"
                 >
                   <div className="flex justify-between items-start mb-4">
-                    <h3 className="bible-body font-bold">Vimeo</h3>
+                    <h3 className="font-mono text-accent font-bold">VIMEO</h3>
                     <svg className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
@@ -818,10 +818,10 @@ const Autor = () => {
 
       {/* Memorial PDF Dialog */}
       <Dialog open={showMemorialPDF} onOpenChange={setShowMemorialPDF}>
-        <DialogContent className="max-w-[95vw] h-[95vh] p-0">
-          <DialogHeader className="p-4 border-b">
+        <DialogContent className="max-w-[95vw] h-[95vh] p-0 bg-black/95 border-primary/30">
+          <DialogHeader className="p-4 border-b border-primary/30">
             <div className="flex items-center justify-between">
-              <DialogTitle>Memorial Acadêmico / Academic Memorial</DialogTitle>
+              <DialogTitle className="font-mono text-primary">MEMORIAL_ACADÊMICO / ACADEMIC_MEMORIAL</DialogTitle>
               <Button 
                 variant="ghost" 
                 size="sm"
@@ -852,10 +852,10 @@ const Autor = () => {
 
       {/* Release PDF Dialog */}
       <Dialog open={showReleasePDF} onOpenChange={setShowReleasePDF}>
-        <DialogContent className="max-w-[95vw] h-[95vh] p-0">
-          <DialogHeader className="p-4 border-b">
+        <DialogContent className="max-w-[95vw] h-[95vh] p-0 bg-black/95 border-primary/30">
+          <DialogHeader className="p-4 border-b border-primary/30">
             <div className="flex items-center justify-between">
-              <DialogTitle>CasaTrezeStudio® Release</DialogTitle>
+              <DialogTitle className="font-mono text-primary">CASATREZESTUDIO®_RELEASE</DialogTitle>
               <Button 
                 variant="ghost" 
                 size="sm"
