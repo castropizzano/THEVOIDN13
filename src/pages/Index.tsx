@@ -18,7 +18,7 @@ import ComicsShowcase from "@/components/ComicsShowcase";
 import PhilosophyShowcase from "@/components/PhilosophyShowcase";
 import VibeCodingPlayground from "@/components/VibeCodingPlayground";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { useTranslation } from "@/hooks/useTranslation";
 import heroImage from "@/assets/hero-rain-wide.png";
@@ -2022,45 +2022,26 @@ const Index = () => {
           </div>
 
           {/* ORÁCULO CRIATIVO */}
-          <div>
-            <BilingualContent
-              portugueseContent={
-                <>
-                  <h3 className="bible-subtitle">ORÁCULO CRIATIVO</h3>
-                </>
-              }
-              englishContent={
-                <>
-                  <h3 className="bible-subtitle">CREATIVE ORACLE</h3>
-                </>
-              }
-            />
-            <BilingualContent
-              portugueseContent={
-                <div>
-                  <p className="bible-body">
-                    Uma jornada interativa de autodescoberta guiada por THEVØIDN13. Seis perguntas filosóficas sobre criação e ruído revelam o arquétipo que habita seu processo. O oráculo não responde — reflete.
-                  </p>
-                </div>
-              }
-              englishContent={
-                <div>
-                  <p className="bible-body">
-                    An interactive journey of self-discovery guided by THEVØIDN13. Six philosophical questions on creation and noise reveal the archetype dwelling within your process. The oracle does not answer — it reflects.
-                  </p>
-                </div>
-              }
-            />
-            <div className="bible-media">
-              <button
-                onClick={() => setOracleOpen(true)}
-                className="w-full p-6 bg-card/80 hover:bg-primary/5 border-2 border-primary/30 hover:border-primary rounded-lg transition-all group text-left"
-              >
-                <p className="bible-title text-foreground group-hover:text-primary text-left">
+          <div className="bible-media">
+            <Card className="bg-card/80 border-primary/30 hover:border-primary transition-colors">
+              <CardHeader>
+                <CardTitle className="bible-title text-primary">
                   {t("accessOracle")}
-                </p>
-              </button>
-            </div>
+                </CardTitle>
+                <CardDescription className="bible-body text-muted-foreground">
+                  {t("oracleDescription")}
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button
+                  onClick={() => setOracleOpen(true)}
+                  variant="outline"
+                  className="w-full justify-start text-left"
+                >
+                  {t("expandOracle")}
+                </Button>
+              </CardContent>
+            </Card>
           </div>
 
           {/* MAPA MENTAL */}
