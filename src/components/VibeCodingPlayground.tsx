@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import { Sparkles, Send, RotateCcw } from "lucide-react";
+import { RotateCcw } from "lucide-react";
 import { BilingualContent } from "./BilingualSection";
 import { useTranslation } from "@/hooks/useTranslation";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -116,22 +116,19 @@ export default function VibeCodingPlayground() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Input Side */}
-        <Card className="p-6 space-y-4 border-l-4 border-primary">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="p-3 rounded-lg bg-gradient-to-br from-primary to-primary/80">
-              <Sparkles className="h-6 w-6 text-primary-foreground" />
-            </div>
-            <div>
-              <h4 className="font-bold text-lg">{t("yourVision")}</h4>
-              <p className="text-sm text-muted-foreground">{t("describeWhatYouWant")}</p>
-            </div>
-          </div>
+        <Card className="p-6 space-y-4 bg-card/80 border-primary/30">
+          <h4 className="text-accent font-mono text-sm font-bold mb-4">
+            <BilingualContent
+              portugueseContent="[SUA_VISÃO]"
+              englishContent="[YOUR_VISION]"
+            />
+          </h4>
 
           <Textarea
-            placeholder={t("describeWhatYouWant")}
+            placeholder={language === "pt" ? "// Descreva o que você quer criar..." : "// Describe what you want to create..."}
             value={prompt}
             onChange={(e) => setPrompt(e.target.value)}
-            className="min-h-[120px] font-mono text-sm"
+            className="min-h-[120px] font-mono text-sm bg-black/50 border-primary/30"
           />
 
           <div className="flex gap-2">
@@ -151,8 +148,13 @@ export default function VibeCodingPlayground() {
             </Button>
           </div>
 
-          <div className="pt-4 border-t border-border">
-            <p className="text-xs text-muted-foreground mb-3">{t("examplesTest")}</p>
+          <div className="pt-4 border-t border-primary/20">
+            <p className="text-xs font-mono text-muted-foreground mb-3">
+              <BilingualContent
+                portugueseContent="// exemplos rápidos"
+                englishContent="// quick examples"
+              />
+            </p>
             <div className="flex flex-wrap gap-2">
               {examplePrompts.map((example, index) => (
                 <Button
@@ -170,35 +172,38 @@ export default function VibeCodingPlayground() {
         </Card>
 
         {/* Output Side */}
-        <Card className="p-6 space-y-4 border-l-4 border-accent">
-          <div className="flex items-center gap-3 mb-4">
-            <div className="p-3 rounded-lg bg-gradient-to-br from-accent to-accent/80">
-              <Sparkles className="h-6 w-6 text-accent-foreground" />
-            </div>
-            <div>
-              <h4 className="font-bold text-lg">{t("generatedCode")}</h4>
-              <p className="text-sm text-muted-foreground">{t("instantTransformation")}</p>
-            </div>
-          </div>
+        <Card className="p-6 space-y-4 bg-card/80 border-primary/30">
+          <h4 className="text-accent font-mono text-sm font-bold mb-4">
+            <BilingualContent
+              portugueseContent="[CÓDIGO_GERADO]"
+              englishContent="[GENERATED_CODE]"
+            />
+          </h4>
 
           <div className="relative">
-            <pre className="bg-muted/50 rounded-lg p-4 overflow-x-auto min-h-[200px] border border-border">
+            <pre className="bg-black/50 border border-primary/30 rounded-lg p-4 overflow-x-auto min-h-[200px]">
               <code className="text-xs font-mono">
-                {output || `${t("codeWillAppearHere")}\n${t("writePromptHint")}`}
+                {output || (language === "pt" 
+                  ? "// O código aparecerá aqui...\n// Escreva um prompt acima para começar." 
+                  : "// Code will appear here...\n// Write a prompt above to start."
+                )}
               </code>
             </pre>
             {output && (
               <div className="absolute top-2 right-2">
-                <div className="bg-green-500/20 text-green-500 text-xs px-2 py-1 rounded">
-                  {t("generated")}
+                <div className="bg-primary/20 text-primary text-xs px-2 py-1 rounded font-mono border border-primary/30">
+                  {language === "pt" ? "// gerado" : "// generated"}
                 </div>
               </div>
             )}
           </div>
 
-          <div className="bg-primary/5 border border-primary/20 rounded-lg p-4">
-            <p className="text-xs text-muted-foreground leading-relaxed">
-              {t("vibeCodingInAction")}
+          <div className="bg-background/30 border border-primary/20 rounded-lg p-4">
+            <p className="text-xs font-mono text-muted-foreground leading-relaxed">
+              <BilingualContent
+                portugueseContent="// A IA transforma intenção em estrutura. O código emerge do pensamento."
+                englishContent="// AI transforms intention into structure. Code emerges from thought."
+              />
             </p>
           </div>
         </Card>
