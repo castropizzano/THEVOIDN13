@@ -99,7 +99,7 @@ export default function VibeCodingPlayground() {
               <h3 className="bible-subtitle text-left section-title">VIBE CODING PLAYGROUND</h3>
               <p className="text-left text-muted-foreground mt-4 text-base leading-relaxed max-w-none section-paragraph">
                 Experimente o desenvolvimento intuitivo mediado por IA. Escreva o que você imagina, 
-                veja como a intenção criativa se transforma em código. Teoria encontra prática.
+                veja como a intenção criativa se transforma em código.
               </p>
             </>
           }
@@ -108,7 +108,7 @@ export default function VibeCodingPlayground() {
               <h3 className="bible-subtitle text-left section-title">VIBE CODING PLAYGROUND</h3>
               <p className="text-left text-muted-foreground mt-4 text-base leading-relaxed max-w-none section-paragraph">
                 Experience intuitive AI-mediated development. Write what you imagine, 
-                watch creative intention transform into code. Theory meets practice.
+                watch creative intention transform into code.
               </p>
             </>
           }
@@ -210,7 +210,7 @@ export default function VibeCodingPlayground() {
       </div>
 
       {/* Philosophy Connection */}
-      <Card className="p-8 bg-gradient-to-br from-background via-background to-blue-500/5 border-2 border-blue-500/20 section-title">
+      <Card className="p-8 bg-gradient-to-br from-background via-background to-primary/5 border-2 border-primary/20 section-title">
         <BilingualContent
           portugueseContent={
             <div className="space-y-4 text-left">
