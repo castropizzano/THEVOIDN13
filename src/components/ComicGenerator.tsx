@@ -168,7 +168,7 @@ export const ComicGenerator = () => {
     <Card className="w-full border-2 border-primary/30 bg-card/80 backdrop-blur">
       <CardHeader>
         <CardTitle className="bible-title">
-          Gerador Experimental de Still
+          [Gerador Experimental de Still]
         </CardTitle>
         <CardDescription className="bible-subtitle">
           Still Generator — Powered by Nano Banana (Gemini 2.5 Flash Image)
