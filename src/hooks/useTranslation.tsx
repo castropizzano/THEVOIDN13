@@ -104,6 +104,7 @@ type TranslationKey =
   | "conceptualNarration"
   | "stillGenerator"
   | "stillGeneratorDesc"
+  | "clickToGenerate"
   | "experimentalGenerator"
   | "library"
   | "custom"
@@ -154,6 +155,9 @@ type TranslationKey =
   | "vibeCodingDesc"
   | "promptLibraryTitle"
   | "promptLibraryDesc"
+  | "promptLibraryPrompts"
+  | "promptsAccess"
+  | "expandPrompts"
   | "yourVision"
   | "generatedCode"
   | "instantTransformation"
@@ -401,6 +405,7 @@ const translations: Record<TranslationKey, { pt: string; en: string }> = {
   conceptualNarration: { pt: "Narração conceitual do projeto", en: "Conceptual project narration" },
   stillGenerator: { pt: "GERADOR DE STILL", en: "STILL GENERATOR" },
   stillGeneratorDesc: { pt: "Powered by Nano Banana (Gemini 2.5 Flash Image) o gerador experimental traduz ruído em imagem e silêncio em cor. Uma extensão sintética da visão: a máquina sonha o que o criador apenas intui.", en: "Powered by Nano Banana (Gemini 2.5 Flash Image) the experimental generator translates noise into image and silence into color. A synthetic extension of vision: the machine dreams what the creator only intuits." },
+  clickToGenerate: { pt: "GERAR STILL", en: "GENERATE STILL" },
   experimentalGenerator: { pt: "GERADOR EXPERIMENTAL DE STILL", en: "EXPERIMENTAL STILL GENERATOR" },
   library: { pt: "Biblioteca", en: "Library" },
   custom: { pt: "Personalizado", en: "Custom" },
@@ -451,6 +456,9 @@ const translations: Record<TranslationKey, { pt: string; en: string }> = {
   vibeCodingDesc: { pt: "Experimente o desenvolvimento intuitivo mediado por IA", en: "Experience intuitive AI-mediated development" },
   promptLibraryTitle: { pt: "[BIBLIOTECA DE PROMPTS]", en: "[PROMPT LIBRARY]" },
   promptLibraryDesc: { pt: "Um repositório vivo de comandos e instruções", en: "A living repository of commands and instructions" },
+  promptLibraryPrompts: { pt: "prompts", en: "prompts" },
+  promptsAccess: { pt: "Acesso a todos os prompts de geração de imagens e narrativas visuais", en: "Access to all image generation and visual narrative prompts" },
+  expandPrompts: { pt: "EXPANDIR BIBLIOTECA", en: "EXPAND LIBRARY" },
   yourVision: { pt: "SUA VISÃO", en: "YOUR VISION" },
   generatedCode: { pt: "CÓDIGO GERADO", en: "GENERATED CODE" },
   instantTransformation: { pt: "Transformação instantânea", en: "Instant transformation" },
@@ -506,8 +514,6 @@ const translations: Record<TranslationKey, { pt: string; en: string }> = {
   perfectDaysDesc: { pt: "Contemplação e rotina", en: "Contemplation and routine" },
   backToFutureDesc: { pt: "Nostalgia e tempo", en: "Nostalgia and time" },
   essentialFilms: { pt: "Quinze filmes essenciais", en: "Fifteen essential films" },
-  promptLibraryPrompts: { pt: "prompts", en: "prompts" },
-  promptsAccess: { pt: "Acesse os prompts desenvolvidos para o projeto THEVØIDN13, criados de forma experimental e em constante atualização. Cada entrada reflete o processo de construção visual e narrativa do universo.", en: "Access the prompts developed for THEVØIDN13, built experimentally and in continuous evolution. Each entry reflects the visual and narrative construction process of the universe." },
   systemPrompts: { pt: "System", en: "System" },
   characterPrompts: { pt: "Personagens", en: "Characters" },
   scenePrompts: { pt: "Cenas", en: "Scenes" },

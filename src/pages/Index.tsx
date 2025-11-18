@@ -19,6 +19,7 @@ import PhilosophyShowcase from "@/components/PhilosophyShowcase";
 import VibeCodingPlayground from "@/components/VibeCodingPlayground";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { FeatureCard } from "@/components/FeatureCard";
 import { Separator } from "@/components/ui/separator";
 import { useTranslation } from "@/hooks/useTranslation";
 import heroImage from "@/assets/hero-rain-wide.png";
@@ -2023,25 +2024,12 @@ const Index = () => {
 
           {/* ORÁCULO CRIATIVO */}
           <div className="bible-media">
-            <Card className="bg-card/80 border-primary/30 hover:border-primary transition-colors">
-              <CardHeader>
-                <CardTitle className="bible-title text-primary">
-                  {t("accessOracle")}
-                </CardTitle>
-                <CardDescription className="bible-body text-muted-foreground">
-                  {t("oracleDescription")}
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Button
-                  onClick={() => setOracleOpen(true)}
-                  variant="outline"
-                  className="w-full justify-start text-left"
-                >
-                  {t("expandOracle")}
-                </Button>
-              </CardContent>
-            </Card>
+            <FeatureCard
+              title={t("accessOracle")}
+              description={t("oracleDescription")}
+              buttonText={t("expandOracle")}
+              onClick={() => setOracleOpen(true)}
+            />
           </div>
 
           {/* MAPA MENTAL */}
