@@ -8,6 +8,19 @@ interface ProtectedRouteProps {
 }
 
 export const ProtectedRoute = ({ children }: ProtectedRouteProps) => {
-  // Bypass authentication - allow direct access in editor
+  const { user, loading } = useAuth();
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <LoadingSpinner size="lg" text="Verificando autenticação..." />
+      </div>
+    );
+  }
+
+  if (!user) {
+    return <AccessGate onAccessGranted={() => window.location.reload()} />;
+  }
+
   return <>{children}</>;
 };

@@ -426,6 +426,7 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
+      check_contact_rate_limit: { Args: { _email: string }; Returns: boolean }
       check_engagement_rate_limit: {
         Args: { _session_id: string }
         Returns: boolean
