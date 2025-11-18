@@ -2068,104 +2068,138 @@ const Index = () => {
           </div>
 
           {/* DOCUMENTAÇÃO TÉCNICA */}
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="bible-block">
-              <BilingualContent
-                portugueseContent={<h3 className="bible-title">{t("mainDoc")}</h3>}
-                englishContent={<h3 className="bible-title">{t("mainDoc")}</h3>}
-              />
-              
-              <div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* DOC. PRINCIPAIS */}
+            <Card className="bg-card/80 border-primary/30 hover:border-primary transition-colors">
+              <CardHeader className="border-b border-primary/20">
+                <CardTitle className="text-accent font-mono text-base font-bold">
+                  {t("mainDoc")}
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3 pt-4">
                 <a 
                   href="https://github.com/castropizzano/thevoidn13/blob/main/README.md"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block hover:text-primary transition-colors"
+                  className="block bg-background/30 border border-primary/20 rounded p-3 hover:border-primary/50 hover:bg-background/50 transition-all group"
                 >
-                  <h4 className="text-base font-bold">README.md</h4>
-                  <p className="text-sm text-muted-foreground">{t("readmeDesc")}</p>
+                  <h4 className="text-primary font-mono text-sm font-bold group-hover:text-accent transition-colors">
+                    [01] README.MD
+                  </h4>
+                  <p className="text-muted-foreground font-mono text-xs mt-1">
+                    // {t("readmeDesc")}
+                  </p>
                 </a>
                 
                 <a 
                   href="https://github.com/castropizzano/thevoidn13/blob/main/LICENSE.md"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block hover:text-primary transition-colors"
+                  className="block bg-background/30 border border-primary/20 rounded p-3 hover:border-primary/50 hover:bg-background/50 transition-all group"
                 >
-                  <h4 className="text-base font-bold">LICENSE.md</h4>
-                  <p className="text-sm text-muted-foreground">{t("licenseDesc")}</p>
+                  <h4 className="text-primary font-mono text-sm font-bold group-hover:text-accent transition-colors">
+                    [02] LICENSE.MD
+                  </h4>
+                  <p className="text-muted-foreground font-mono text-xs mt-1">
+                    // {t("licenseDesc")}
+                  </p>
                 </a>
                 
                 <a 
                   href="https://github.com/castropizzano/thevoidn13/blob/main/CITATION.cff"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block hover:text-primary transition-colors"
+                  className="block bg-background/30 border border-primary/20 rounded p-3 hover:border-primary/50 hover:bg-background/50 transition-all group"
                 >
-                  <h4 className="text-base font-bold">CITATION.cff</h4>
-                  <p className="text-sm text-muted-foreground">{t("citationDesc")}</p>
+                  <h4 className="text-primary font-mono text-sm font-bold group-hover:text-accent transition-colors">
+                    [03] CITATION.CFF
+                  </h4>
+                  <p className="text-muted-foreground font-mono text-xs mt-1">
+                    // {t("citationDesc")}
+                  </p>
                 </a>
                 
                 <a 
                   href="https://github.com/castropizzano/thevoidn13/blob/main/docs/METHODOLOGY.md"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block hover:text-primary transition-colors"
+                  className="block bg-background/30 border border-primary/20 rounded p-3 hover:border-primary/50 hover:bg-background/50 transition-all group"
                 >
-                  <h4 className="text-base font-bold">METHODOLOGY.md</h4>
-                  <p className="text-sm text-muted-foreground">{t("methodologyDesc")}</p>
+                  <h4 className="text-primary font-mono text-sm font-bold group-hover:text-accent transition-colors">
+                    [04] METHODOLOGY.MD
+                  </h4>
+                  <p className="text-muted-foreground font-mono text-xs mt-1">
+                    // {t("methodologyDesc")}
+                  </p>
                 </a>
-              </div>
-            </div>
+              </CardContent>
+            </Card>
 
-            <div className="bible-block">
-              <BilingualContent
-                portugueseContent={<h3 className="bible-title">{t("technicalDoc")}</h3>}
-                englishContent={<h3 className="bible-title">{t("technicalDoc")}</h3>}
-              />
-              
-              <div>
+            {/* DOC. TÉCNICA */}
+            <Card className="bg-card/80 border-primary/30 hover:border-primary transition-colors">
+              <CardHeader className="border-b border-primary/20">
+                <CardTitle className="text-accent font-mono text-base font-bold">
+                  {t("technicalDoc")}
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-3 pt-4">
                 <a 
                   href="https://github.com/castropizzano/thevoidn13/blob/main/docs/PHILOSOPHY.md"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block hover:text-primary transition-colors"
+                  className="block bg-background/30 border border-primary/20 rounded p-3 hover:border-primary/50 hover:bg-background/50 transition-all group"
                 >
-                  <h4 className="text-base font-bold">PHILOSOPHY.md</h4>
-                  <p className="text-sm text-muted-foreground">{t("philosophyDesc")}</p>
+                  <h4 className="text-primary font-mono text-sm font-bold group-hover:text-accent transition-colors">
+                    [01] PHILOSOPHY.MD
+                  </h4>
+                  <p className="text-muted-foreground font-mono text-xs mt-1">
+                    // {t("philosophyDesc")}
+                  </p>
                 </a>
                 
                 <a 
                   href="https://github.com/castropizzano/thevoidn13/blob/main/docs/COPYRIGHT.md"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block hover:text-primary transition-colors"
+                  className="block bg-background/30 border border-primary/20 rounded p-3 hover:border-primary/50 hover:bg-background/50 transition-all group"
                 >
-                  <h4 className="text-base font-bold">COPYRIGHT.md</h4>
-                  <p className="text-sm text-muted-foreground">{t("copyrightDesc")}</p>
+                  <h4 className="text-primary font-mono text-sm font-bold group-hover:text-accent transition-colors">
+                    [02] COPYRIGHT.MD
+                  </h4>
+                  <p className="text-muted-foreground font-mono text-xs mt-1">
+                    // {t("copyrightDesc")}
+                  </p>
                 </a>
                 
                 <a 
                   href="https://github.com/castropizzano/thevoidn13/blob/main/docs/HOW_TO_CITE.md"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block hover:text-primary transition-colors"
+                  className="block bg-background/30 border border-primary/20 rounded p-3 hover:border-primary/50 hover:bg-background/50 transition-all group"
                 >
-                  <h4 className="text-base font-bold">HOW_TO_CITE.md</h4>
-                  <p className="text-sm text-muted-foreground">{t("howToCiteDesc")}</p>
+                  <h4 className="text-primary font-mono text-sm font-bold group-hover:text-accent transition-colors">
+                    [03] HOW_TO_CITE.MD
+                  </h4>
+                  <p className="text-muted-foreground font-mono text-xs mt-1">
+                    // {t("howToCiteDesc")}
+                  </p>
                 </a>
                 
                 <a 
                   href="https://github.com/castropizzano/thevoidn13/blob/main/docs/REFERENCES.md"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block hover:text-primary transition-colors"
+                  className="block bg-background/30 border border-primary/20 rounded p-3 hover:border-primary/50 hover:bg-background/50 transition-all group"
                 >
-                  <h4 className="text-base font-bold">REFERENCES.md</h4>
-                  <p className="text-sm text-muted-foreground">{t("referencesDesc")}</p>
+                  <h4 className="text-primary font-mono text-sm font-bold group-hover:text-accent transition-colors">
+                    [04] REFERENCES.MD
+                  </h4>
+                  <p className="text-muted-foreground font-mono text-xs mt-1">
+                    // {t("referencesDesc")}
+                  </p>
                 </a>
-              </div>
-            </div>
+              </CardContent>
+            </Card>
           </div>
 
           {/* REPOSITÓRIO COMPLETO */}
