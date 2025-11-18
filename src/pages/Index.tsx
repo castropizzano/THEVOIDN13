@@ -1904,6 +1904,23 @@ const Index = () => {
             }
           />
 
+          <BilingualContent
+            portugueseContent={
+              <div>
+                <p className="bible-body">
+                  Esta seção reúne os documentos que sustentam o pensamento, os arquivos que preservam a gênese estética e os aplicativos experimentais desenvolvidos entre o autor e a IA, uma ecologia viva onde teoria, prática e mito se encontram. Aqui, o processo criativo do THEVØIDN13 deixa de ser apenas descrito e passa a ser experimentado.
+                </p>
+              </div>
+            }
+            englishContent={
+              <div>
+                <p className="bible-body">
+                  This section gathers the documents that sustain thought, the files that preserve the aesthetic genesis, and the experimental applications developed between author and AI—a living ecology where theory, practice, and myth converge. Here, THEVØIDN13's creative process ceases to be merely described and becomes experienced.
+                </p>
+              </div>
+            }
+          />
+
           {/* DOCUMENTOS DE PESQUISA */}
           <div className="bible-block">
             <BilingualContent
@@ -1922,32 +1939,16 @@ const Index = () => {
               portugueseContent={
                 <div>
                   <p className="bible-body">
-                    Apresentação Conceitual, Concept Art e MoodBoard. O mapa visual do inconsciente. Documentos que preservam a gênese estética e filosófica do projeto.
+                    A espinha dorsal conceitual do projeto. Aqui vivem a Apresentação Conceitual, o Concept Art, o MoodBoard e o mapa visual do inconsciente: materiais que documentam o nascimento estético, filosófico e simbólico de THEVØIDN13. São arquivos que guardam a primeira respiração do projeto, suas origens, tensões, estruturas e intuições primordiais, preservando, em forma, o que antes existia apenas como ruído, sombra e desejo.
                   </p>
                 </div>
               }
               englishContent={
                 <div>
                   <p className="bible-body">
-                    Conceptual Presentation, Concept Art and MoodBoard. The visual map of the unconscious. Documents preserving the aesthetic and philosophical genesis of the project.
+                    The conceptual backbone of the project. Here dwell the Conceptual Presentation, Concept Art, MoodBoard, and the visual map of the unconscious: materials documenting the aesthetic, philosophical, and symbolic birth of THEVØIDN13. These are files that hold the project's first breath—its origins, tensions, structures, and primordial intuitions—preserving, in form, what once existed only as noise, shadow, and desire.
                   </p>
                 </div>
-              }
-            />
-          </div>
-
-          {/* MATERIAIS PRODUZIDOS */}
-          <div>
-            <BilingualContent
-              portugueseContent={
-                <>
-                  <h3 className="bible-subtitle">MATERIAIS PRODUZIDOS</h3>
-                </>
-              }
-              englishContent={
-                <>
-                  <h3 className="bible-subtitle">PRODUCED MATERIALS</h3>
-                </>
               }
             />
           </div>
@@ -1970,14 +1971,14 @@ const Index = () => {
               portugueseContent={
                 <div>
                   <p className="bible-body">
-                    Um repositório vivo de comandos, instruções e fragmentos de linguagem. Cada prompt é uma chave que aciona o imaginário do THEVØIDN13, moldando luz, textura e respiração em silêncio visual. Inclui instruções de sistema, arquétipos, personagens e cenas cinematográficas.
+                    Um repositório vivo de comandos, instruções e fragmentos de linguagem. Cada prompt é uma chave simbólica que aciona o imaginário do THEVØIDN13, moldando luz, textura e silêncio visual. Inclui instruções de sistema, arquétipos, personagens, cenas cinematográficas e protocolos linguísticos que estruturam a respiração do projeto. É o manual invisível do sonho, o lugar onde o processo técnico encontra o ritual criativo.
                   </p>
                 </div>
               }
               englishContent={
                 <div>
                   <p className="bible-body">
-                    A living repository of commands, instructions, and fragments of language. Each prompt is a key that activates the imagination of THEVØIDN13, shaping light, texture, and breath into visual silence. Includes system directives, archetypes, characters, and cinematic scenes.
+                    A living repository of commands, instructions, and fragments of language. Each prompt is a symbolic key that activates THEVØIDN13's imagination, shaping light, texture, and visual silence. It includes system directives, archetypes, characters, cinematic scenes, and linguistic protocols that structure the project's breathing. It is the invisible manual of the dream—the place where technical process meets creative ritual.
                   </p>
                 </div>
               }
@@ -1997,7 +1998,7 @@ const Index = () => {
               }
               englishContent={
                 <>
-                  <h3 className="bible-subtitle">STILL GENERATOR</h3>
+                  <h3 className="bible-subtitle">EXPERIMENTAL STILL GENERATOR</h3>
                 </>
               }
             />
@@ -2005,14 +2006,18 @@ const Index = () => {
               portugueseContent={
                 <div>
                   <p className="bible-body">
-                  Propulsado por Nano Banana (Gemini 2.5 Flash Image) o gerador experimental traduz ruído em imagem e silêncio em cor. Uma extensão sintética da visão: a máquina sonha com o que o criador apenas intui.
+                    Co-desenvolvido entre o autor e a inteligência artificial, o gerador é um aplicativo experimental que traduz ruído em imagem e silêncio em cor.
+                    Propulsado por Nano Banana (Gemini 2.5 Flash Image), ele cria uma extensão sintética da visão: a máquina sonha com o que o criador apenas intui. É o laboratório de visualidade do THEVØIDN13, onde técnicas documentadas nos arquivos ganham corpo, textura e desvio.
+                    Uma ferramenta para testar, tensionar e expandir a estética do projeto em tempo real.
                   </p>
                 </div>
               }
               englishContent={
                 <div>
                   <p className="bible-body">
-                  Powered by Nano Banana (Gemini 2.5 Flash Image) the experimental generator translates noise into image and silence into color. A synthetic extension of vision: the machine dreams what the creator only intuits.
+                    Co-developed between author and artificial intelligence, the generator is an experimental application that translates noise into image and silence into color.
+                    Powered by Nano Banana (Gemini 2.5 Flash Image), it creates a synthetic extension of vision: the machine dreams what the creator only intuits. It is THEVØIDN13's visual laboratory, where techniques documented in files gain body, texture, and deviation.
+                    A tool to test, tension, and expand the project's aesthetics in real time.
                   </p>
                 </div>
               }
@@ -2022,17 +2027,49 @@ const Index = () => {
             </div>
           </div>
 
-          {/* ORÁCULO CRIATIVO */}
-          <div className="bible-media">
-            <FeatureCard
-              title={t("accessOracle")}
-              description={t("oracleDescription")}
-              buttonText={t("expandOracle")}
-              onClick={() => setOracleOpen(true)}
+          {/* ORÁCULO: JORNADA INTERATIVA */}
+          <div>
+            <BilingualContent
+              portugueseContent={
+                <>
+                  <h3 className="bible-subtitle">ORÁCULO: JORNADA INTERATIVA</h3>
+                </>
+              }
+              englishContent={
+                <>
+                  <h3 className="bible-subtitle">ORACLE: INTERACTIVE JOURNEY</h3>
+                </>
+              }
             />
+            <BilingualContent
+              portugueseContent={
+                <div>
+                  <p className="bible-body">
+                    Um aplicativo de autodescoberta guiado pelos fundamentos conceituais de THEVØIDN13. Seis perguntas filosóficas sobre criação, sombra e ruído revelam o arquétipo que habita o processo de quem atravessa o percurso.
+                    O Oráculo transforma metodologia em experiência: o pensamento vira travessia, e não apenas leitura.
+                  </p>
+                </div>
+              }
+              englishContent={
+                <div>
+                  <p className="bible-body">
+                    A self-discovery application guided by THEVØIDN13's conceptual foundations. Six philosophical questions about creation, shadow, and noise reveal the archetype dwelling within the process of those who traverse the path.
+                    The Oracle transforms methodology into experience: thought becomes crossing, not merely reading.
+                  </p>
+                </div>
+              }
+            />
+            <div className="bible-media">
+              <FeatureCard
+                title={t("accessOracle")}
+                description={t("oracleDescription")}
+                buttonText={t("expandOracle")}
+                onClick={() => setOracleOpen(true)}
+              />
+            </div>
           </div>
 
-          {/* MAPA MENTAL */}
+          {/* MAPA MENTAL CREATIVE-OPS */}
           <div>
             <BilingualContent
               portugueseContent={
@@ -2050,14 +2087,14 @@ const Index = () => {
               portugueseContent={
                 <div>
                   <p className="bible-body">
-                    A arquitetura conceitual de THEVØIDN13 mapeada em relações visuais. Cada nó é um conceito, cada linha uma conexão entre sombra, silêncio, ruído e vazio.
+                    A arquitetura do projeto, mapeada. Cada nó é um conceito, cada linha é uma conexão entre sombra, silêncio, ruído e vazio, um diagrama operacional do imaginário.
                   </p>
                 </div>
               }
               englishContent={
                 <div>
                   <p className="bible-body">
-                    The conceptual architecture of THEVØIDN13 mapped in visual relationships. Each node is a concept, each line a connection between shadow, silence, noise and void.
+                    The project's architecture, mapped. Each node is a concept, each line is a connection between shadow, silence, noise, and void—an operational diagram of the imaginary.
                   </p>
                 </div>
               }
