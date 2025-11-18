@@ -1,7 +1,6 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { FeatureCard } from "@/components/FeatureCard";
 import { useTranslation } from "@/hooks/useTranslation";
 
 export const MindMap = () => {
@@ -11,25 +10,12 @@ export const MindMap = () => {
   return (
     <>
       <div className="max-w-6xl mx-auto">
-        <Card className="bg-card/80 border-primary/30 hover:border-primary transition-colors">
-          <CardHeader>
-            <CardTitle className="bible-title text-primary">
-              {t("creativeOpsMindMap")}
-            </CardTitle>
-            <CardDescription className="bible-body text-muted-foreground">
-              {t("completeEcosystem")}
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <Button
-              onClick={() => setIsOpen(true)}
-              variant="outline"
-              className="w-full justify-start text-left"
-            >
-              {t("expandFullMap")}
-            </Button>
-          </CardContent>
-        </Card>
+        <FeatureCard
+          title={t("creativeOpsMindMap")}
+          description={t("completeEcosystem")}
+          buttonText={t("expandFullMap")}
+          onClick={() => setIsOpen(true)}
+        />
       </div>
 
       <Dialog open={isOpen} onOpenChange={setIsOpen}>

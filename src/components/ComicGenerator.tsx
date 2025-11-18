@@ -4,6 +4,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Loader2 } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
@@ -12,6 +13,7 @@ import watermarkLogo from "@/assets/thevoidn13-watermark.png";
 import { useTranslation } from "@/hooks/useTranslation";
 import { BilingualContent } from "@/components/BilingualSection";
 import { useValidationMessage } from "@/lib/zodValidation";
+import { FeatureCard } from "@/components/FeatureCard";
 
 interface Prompt {
   id: string;
@@ -37,6 +39,7 @@ export const ComicGenerator = () => {
   const [systemPrompt, setSystemPrompt] = useState<string>("");
   const [promptMode, setPromptMode] = useState<"library" | "custom">("library");
   const [customScript, setCustomScript] = useState("");
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     fetchPrompts();
@@ -165,7 +168,25 @@ export const ComicGenerator = () => {
   };
 
   return (
-    <Card className="w-full border-2 border-primary/30 bg-card/80 backdrop-blur">
+    <Dialog open={open} onOpenChange={setOpen}>
+      <div onClick={() => setOpen(true)}>
+        <FeatureCard
+          title="[GERADOR EXPERIMENTAL DE STILL]"
+          description={t("stillGeneratorDesc")}
+          buttonText={t("clickToGenerate")}
+          onClick={() => setOpen(true)}
+        />
+      </div>
+
+      <DialogContent className="max-w-5xl max-h-[90vh] overflow-y-auto">
+        <DialogHeader>
+          <DialogTitle className="sr-only">Gerador Experimental de Still</DialogTitle>
+          <DialogDescription className="sr-only">
+            Powered by Nano Banana (Gemini 2.5 Flash Image)
+          </DialogDescription>
+        </DialogHeader>
+
+        <Card className="w-full border-2 border-primary/30 bg-card/80 backdrop-blur">
       <CardHeader>
         <CardTitle className="bible-title">
           [Gerador Experimental de Still]
@@ -320,6 +341,8 @@ export const ComicGenerator = () => {
       </div>
       </CardContent>
     </Card>
+      </DialogContent>
+    </Dialog>
   );
 };
 

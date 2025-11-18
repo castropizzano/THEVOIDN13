@@ -2,13 +2,14 @@ import { useState, useEffect } from "react";
 import { Copy, FileCode, Palette, Camera } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { toast } from "sonner";
 import { useTranslation } from "@/hooks/useTranslation";
+import { FeatureCard } from "@/components/FeatureCard";
 
 interface Prompt {
   id: string;
@@ -76,30 +77,14 @@ export const PromptLibrary = () => {
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger asChild>
-        <Card className="cursor-pointer hover:border-primary transition-all hover:shadow-lg bg-card/50 backdrop-blur-sm">
-          <CardHeader className="border-l-4 border-l-primary">
-            <div className="flex items-start justify-between">
-              <div className="space-y-1">
-                <CardTitle className="bible-title">
-                  {t("promptLibraryTitle")}
-                </CardTitle>
-                <CardDescription>
-                  {t("promptLibraryTitle")}
-                </CardDescription>
-              </div>
-              <Badge variant="outline" className="text-xs">
-                {prompts.length} {t("promptLibraryPrompts")}
-              </Badge>
-            </div>
-          </CardHeader>
-          <CardContent className="space-y-2">
-            <p className="text-sm text-muted-foreground">
-              {t("promptsAccess")}
-            </p>
-          </CardContent>
-        </Card>
-      </DialogTrigger>
+      <div onClick={() => setOpen(true)}>
+        <FeatureCard
+          title={t("promptLibraryTitle")}
+          description={t("promptsAccess")}
+          buttonText={t("expandPrompts")}
+          onClick={() => setOpen(true)}
+        />
+      </div>
 
       <DialogContent className="max-w-5xl max-h-[85vh]">
         <DialogHeader>
