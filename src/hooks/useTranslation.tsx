@@ -99,6 +99,8 @@ type TranslationKey =
   | "completeRepository"
   | "accessAllFiles"
   | "accessOracle"
+  | "oracleDescription"
+  | "expandOracle"
   | "conceptualNarration"
   | "stillGenerator"
   | "stillGeneratorDesc"
@@ -394,6 +396,8 @@ const translations: Record<TranslationKey, { pt: string; en: string }> = {
   completeRepository: { pt: "[REPOSITÓRIO COMPLETO]", en: "[COMPLETE REPOSITORY]" },
   accessAllFiles: { pt: "Acesso a todos os arquivos no GitHub", en: "Access all files on GitHub" },
   accessOracle: { pt: "[ACESSAR ORÁCULO]", en: "[ACCESS ORACLE]" },
+  oracleDescription: { pt: "Uma jornada interativa de autodescoberta guiada por THEVØIDN13. Seis perguntas filosóficas sobre criação e ruído revelam o arquétipo que habita seu processo.", en: "An interactive journey of self-discovery guided by THEVØIDN13. Six philosophical questions on creation and noise reveal the archetype dwelling within your process." },
+  expandOracle: { pt: "EXPANDIR ORÁCULO", en: "EXPAND ORACLE" },
   conceptualNarration: { pt: "Narração conceitual do projeto", en: "Conceptual project narration" },
   stillGenerator: { pt: "GERADOR DE STILL", en: "STILL GENERATOR" },
   stillGeneratorDesc: { pt: "Powered by Nano Banana (Gemini 2.5 Flash Image) o gerador experimental traduz ruído em imagem e silêncio em cor. Uma extensão sintética da visão: a máquina sonha o que o criador apenas intui.", en: "Powered by Nano Banana (Gemini 2.5 Flash Image) the experimental generator translates noise into image and silence into color. A synthetic extension of vision: the machine dreams what the creator only intuits." },
