@@ -44,13 +44,9 @@ export const AntiSurveillanceBanner = () => {
               <h3 className="font-bold text-sm sm:text-base mb-2 tracking-wide uppercase">
                 {t("antiSurveillanceBannerTitle")}
               </h3>
-              <div className="space-y-1 bible-body text-xs sm:text-sm text-muted-foreground">
-                <p>{t("antiSurveillanceBannerLine1")}</p>
-                <p>{t("antiSurveillanceBannerLine2")}</p>
-                <p className="font-semibold text-foreground">
-                  {t("antiSurveillanceBannerLine3")}
-                </p>
-              </div>
+              <p className="bible-body text-xs sm:text-sm text-muted-foreground">
+                {t("antiSurveillanceBannerLine1")} {t("antiSurveillanceBannerLine2")} <span className="font-semibold text-foreground">{t("antiSurveillanceBannerLine3")}</span>
+              </p>
 
               {/* Buttons */}
               <div className="flex flex-wrap gap-2 mt-4">
