@@ -189,7 +189,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-6xl mx-auto max-h-[90vh] overflow-y-auto bg-background/95 backdrop-blur-sm p-6 sm:p-8 [&>button]:top-4 [&>button]:right-4 [&>button]:bg-background [&>button]:hover:bg-accent">
+      <DialogContent className="max-w-6xl mx-auto max-h-[90vh] overflow-y-auto bg-background/95 backdrop-blur-sm p-6 sm:p-8">
         <DialogHeader className="border-b border-primary/30 pb-4 mb-6">
           <DialogTitle className="text-primary text-xl font-mono font-bold">
             CREATIVE_ORACLE::ARCHETYPE_SCAN <span className="text-muted-foreground text-sm">// PT / EN</span>
