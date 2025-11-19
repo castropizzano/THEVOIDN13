@@ -11,6 +11,8 @@ import { Button } from "@/components/ui/button";
 import { Minimize2 } from "lucide-react";
 import heroImage from "@/assets/author-hero.png";
 import heroImageMobile from "@/assets/author-hero-mobile.png";
+import castroGuidelinePT from "@/assets/castro-guideline-pt.png";
+import castroGuidelineEN from "@/assets/castro-guideline-en.png";
 
 const Autor = () => {
   const [showMemorialPDF, setShowMemorialPDF] = useState(false);
@@ -411,6 +413,26 @@ const Autor = () => {
             </div>
             <div>
               <h2 className="bible-title">ЦАСТРО™ AS ANTI-BRAND</h2>
+            </div>
+          </div>
+
+          {/* Anti-Brand Guideline Images */}
+          <div className="bible-bilingual-grid bible-block">
+            <div>
+              <img 
+                src={castroGuidelinePT} 
+                alt="ЦАСТРО™ Anti-Brand Guideline — Português"
+                className="w-full h-auto"
+                loading="lazy"
+              />
+            </div>
+            <div>
+              <img 
+                src={castroGuidelineEN} 
+                alt="ЦАСТРО™ Anti-Brand Guideline — English"
+                className="w-full h-auto"
+                loading="lazy"
+              />
             </div>
           </div>
 
