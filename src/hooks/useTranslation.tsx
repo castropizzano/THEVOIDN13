@@ -274,7 +274,14 @@ type TranslationKey =
   | "cookiePolicyDescription"
   | "acceptButton"
   | "declineButton"
-  | "privacyPolicyButton";
+  | "privacyPolicyButton"
+  // AntiSurveillanceBanner translations
+  | "antiSurveillanceBannerTitle"
+  | "antiSurveillanceBannerLine1"
+  | "antiSurveillanceBannerLine2"
+  | "antiSurveillanceBannerLine3"
+  | "antiSurveillanceBannerButtonGotIt"
+  | "antiSurveillanceBannerButtonPolicy";
 
 
 const translations: Record<TranslationKey, { pt: string; en: string }> = {
@@ -549,7 +556,33 @@ const translations: Record<TranslationKey, { pt: string; en: string }> = {
   cookiePolicyDescription: { pt: "Este site utiliza cookies essenciais para garantir funcionalidade básica e armazenamento local para melhorar sua experiência de navegação. Não coletamos dados pessoais além do necessário para o cadastro, respeitando sua privacidade e segurança em cada etapa do processo.", en: "This site uses essential cookies to ensure basic functionality and local storage to improve your browsing experience. We do not collect personal data beyond what is necessary for registration, respecting your privacy and security at every step of the process." },
   acceptButton: { pt: "Aceitar", en: "Accept" },
   declineButton: { pt: "Recusar", en: "Decline" },
-  privacyPolicyButton: { pt: "Política de Privacidade", en: "Privacy Policy" }
+  privacyPolicyButton: { pt: "Política de Privacidade", en: "Privacy Policy" },
+  
+  // AntiSurveillanceBanner translations
+  antiSurveillanceBannerTitle: {
+    pt: "MEMORIAL LIVRE DE VIGILÂNCIA",
+    en: "SURVEILLANCE-FREE MEMORIAL"
+  },
+  antiSurveillanceBannerLine1: {
+    pt: "Este site NÃO coleta dados pessoais.",
+    en: "This site DOES NOT collect personal data."
+  },
+  antiSurveillanceBannerLine2: {
+    pt: "NÃO usa cookies ou rastreamento.",
+    en: "DOES NOT use cookies or tracking."
+  },
+  antiSurveillanceBannerLine3: {
+    pt: "Sua navegação é completamente anônima e privada.",
+    en: "Your browsing is completely anonymous and private."
+  },
+  antiSurveillanceBannerButtonGotIt: {
+    pt: "Entendi",
+    en: "Got it"
+  },
+  antiSurveillanceBannerButtonPolicy: {
+    pt: "Política de Privacidade",
+    en: "Privacy Policy"
+  }
 };
 
 export const useTranslation = () => {

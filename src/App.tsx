@@ -7,6 +7,7 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import ScrollToTop from "@/components/ScrollToTop";
 import { PWAInstallPrompt } from "@/components/PWAInstallPrompt";
+import { AntiSurveillanceBanner } from "@/components/AntiSurveillanceBanner";
 import Index from "./pages/Index";
 import Dissertacao from "./pages/Dissertacao";
 import Autor from "./pages/Autor";
@@ -48,6 +49,7 @@ const App = () => (
             }}
           >
             <ScrollToTop />
+            <AntiSurveillanceBanner />
             <AppContent />
           </BrowserRouter>
         </TooltipProvider>

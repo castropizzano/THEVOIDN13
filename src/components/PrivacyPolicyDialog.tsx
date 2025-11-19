@@ -73,6 +73,19 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
                   dos canais públicos listados na página do autor.
                 </p>
               </div>
+
+              <div className="space-y-4">
+                <h3 className="bible-subtitle">6. POR QUE ESTE BANNER EXISTE?</h3>
+                <p className="bible-body text-sm">
+                  Acreditamos em <strong>transparência radical</strong>. Você tem o direito de saber que não está 
+                  sendo vigiado. Este banner não é uma obrigação legal burocrática—é uma <strong>declaração 
+                  política e artística</strong>. É o site afirmando: "Este é um espaço ético."
+                </p>
+                <p className="bible-body text-sm">
+                  O banner reaparece a cada nova sessão porque não guardamos nada sobre você. 
+                  Cada visita é verdadeiramente anônima.
+                </p>
+              </div>
             </div>
 
             <div className="border-t border-border pt-6" />
@@ -121,11 +134,24 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
                   channels listed on the author page.
                 </p>
               </div>
+
+              <div className="space-y-4">
+                <h3 className="bible-subtitle">6. WHY DOES THIS BANNER EXIST?</h3>
+                <p className="bible-body text-sm">
+                  We believe in <strong>radical transparency</strong>. You have the right to know you're not being 
+                  surveilled. This banner is not a bureaucratic legal obligation—it's a <strong>political 
+                  and artistic statement</strong>. It's the site affirming: "This is an ethical space."
+                </p>
+                <p className="bible-body text-sm">
+                  The banner reappears with each new session because we don't store anything about you. 
+                  Every visit is truly anonymous.
+                </p>
+              </div>
             </div>
 
             <div className="text-center pt-6 border-t border-border">
               <p className="bible-body text-xs text-muted-foreground">
-                Última atualização: Janeiro 2025 / Last updated: January 2025
+                Última atualização: 19 de novembro de 2025 / Last updated: November 19, 2025
               </p>
             </div>
           </div>
