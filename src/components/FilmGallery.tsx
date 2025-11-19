@@ -202,7 +202,7 @@ const FilmGallery = () => {
             <TooltipProvider key={film.imdbId}>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <Card className="group overflow-hidden border-primary/10 hover:border-primary/30 transition-all duration-300 hover:scale-105 cursor-pointer">
+                  <Card className="group overflow-hidden border-primary/10 hover:border-primary/30 transition-all duration-300 cursor-pointer">
                     <a
                       href={`https://www.imdb.com/title/${film.imdbId}`}
                       target="_blank"
@@ -213,7 +213,7 @@ const FilmGallery = () => {
                         <img
                           src={film.posterUrl}
                           alt={`${film.title} poster`}
-                          className={`w-full h-full object-cover transition-transform duration-300 ${film.scale || 'scale-100'} group-hover:scale-125`}
+                          className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                           style={{ objectPosition: film.objectPosition || 'center' }}
                           loading="lazy"
                         />

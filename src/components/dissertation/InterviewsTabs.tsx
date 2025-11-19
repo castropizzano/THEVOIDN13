@@ -306,16 +306,16 @@ export const InterviewsTabs = () => {
             <CardContent>
               <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
                 {zineImages.map((image, index) => (
-                  <div
-                    key={index}
-                    onClick={() => openLightbox(index)}
-                    className="break-inside-avoid rounded-lg overflow-hidden border border-border/50 shadow-md hover:shadow-xl hover:shadow-primary/10 transition-all hover-scale cursor-pointer group relative"
-                  >
-                    <img
-                      src={image}
-                      alt={`LowZine página ${index + 2}`}
-                      className="w-full h-auto"
-                    />
+                <div
+                  key={index}
+                  onClick={() => openLightbox(index)}
+                  className="break-inside-avoid rounded-lg overflow-hidden border border-border/50 shadow-md hover:shadow-xl hover:shadow-primary/10 transition-all cursor-pointer group relative"
+                >
+                  <img
+                    src={image}
+                    alt={`LowZine página ${index + 2}`}
+                    className="w-full h-auto grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
                     <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                       <ZoomIn className="w-8 h-8 text-white" />
                     </div>
