@@ -9,49 +9,45 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 const examplePrompts = [
   {
-    pt: "Criar um botão animado que brilha ao passar o mouse",
-    en: "Create an animated button that glows on hover",
-    output: `<button className="relative overflow-hidden
-  bg-primary text-primary-foreground
-  px-6 py-3 rounded-lg
-  transition-all duration-300
-  hover:shadow-lg hover:shadow-primary/50
-  hover:scale-105">
-  Click Me
-</button>`
-  },
-  {
-    pt: "Fazer um card de perfil com foto e bio",
-    en: "Make a profile card with photo and bio",
-    output: `<div className="max-w-sm rounded-lg
-  border border-border bg-card p-6">
-  <img src="/avatar.jpg" 
-    className="w-24 h-24 rounded-full mx-auto" />
-  <h3 className="text-xl font-bold mt-4 text-center">
-    John Doe
+    pt: "Card de filme cult com poster e sinopse noir",
+    en: "Cult movie card with poster and noir synopsis",
+    output: `<div className="max-w-md rounded-lg
+  border border-primary/30 bg-black/90 p-6
+  hover:border-primary transition-all duration-300">
+  <img src="/poster.jpg" 
+    className="w-full aspect-[2/3] object-cover
+    rounded-md grayscale hover:grayscale-0
+    transition-all duration-500" />
+  <h3 className="text-primary font-mono mt-4 text-lg">
+    BLADE RUNNER // 1982
   </h3>
-  <p className="text-muted-foreground mt-2">
-    Creative developer exploring AI-powered design
+  <p className="text-muted-foreground text-sm mt-2 leading-relaxed">
+    In a dystopian future, synthetic humans 
+    question their existence in neon-soaked streets...
   </p>
 </div>`
   },
   {
-    pt: "Criar uma lista de tarefas com checkbox",
-    en: "Create a todo list with checkboxes",
-    output: `<ul className="space-y-2">
-  {tasks.map(task => (
-    <li key={task.id} 
-      className="flex items-center gap-3">
-      <input type="checkbox"
-        checked={task.done}
-        className="w-5 h-5" />
-      <span className={task.done ? 
-        "line-through text-muted-foreground" : ""}>
-        {task.text}
-      </span>
-    </li>
-  ))}
-</ul>`
+    pt: "Banner de skate crew com estética underground",
+    en: "Skate crew banner with underground aesthetic",
+    output: `<div className="relative overflow-hidden
+  border-l-4 border-primary bg-black/95 p-8
+  backdrop-blur-sm">
+  <div className="font-mono text-primary text-xs tracking-wider">
+    // STREET_COLLECTIVE
+  </div>
+  <h2 className="text-3xl font-bold text-foreground mt-2
+    tracking-tight uppercase">
+    LOWPRESSURE CREW
+  </h2>
+  <p className="text-muted-foreground mt-3 max-w-lg
+    text-sm leading-relaxed">
+    Concrete poets. Asphalt philosophers.
+    Capturing the raw energy of the streets.
+  </p>
+  <div className="absolute top-0 right-0 w-32 h-32 
+    bg-primary/5 rounded-full blur-3xl" />
+</div>`
   }
 ];
 
