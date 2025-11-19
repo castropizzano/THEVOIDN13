@@ -1,19 +1,5 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
 User-agent: *
 Allow: /
-Disallow: /admin
-Disallow: /auth
 
 # Sitemap
 Sitemap: https://thevoidn13.lovableproject.com/sitemap.xml
