@@ -1808,8 +1808,8 @@ const Index = () => {
               </DialogContent>
             </Dialog>
 
-            <div className="grid md:grid-cols-2 gap-8 items-start">
-              <Card className="border-primary/10 bg-background/50 p-6 h-fit">
+            <div className="grid md:grid-cols-2 gap-8 items-stretch">
+              <Card className="border-primary/10 bg-background/50 p-6 flex flex-col">
                 <BilingualContent
                   portugueseContent={
                     <>
@@ -1828,10 +1828,10 @@ const Index = () => {
                 />
               </Card>
               <Card 
-                className="cursor-pointer border-primary/10 bg-background/50 p-6 hover:border-primary/30 transition-all h-fit"
+                className="cursor-pointer border-primary/10 bg-background/50 p-6 hover:border-primary/30 transition-all flex flex-col"
                 onClick={() => setPrototypeDialogOpen(true)}
               >
-                <div className="flex items-center justify-center">
+                <div className="flex items-center justify-center flex-1">
                   <img 
                     src={actionFigureNew} 
                     alt="THEVØIDN13 Action Figure Prototype" 
