@@ -38,6 +38,7 @@ export const ComicGenerator = () => {
         canvas.width = mainImage.width;
         canvas.height = mainImage.height;
         
+        // Draw main image
         ctx.drawImage(mainImage, 0, 0);
 
         const watermark = new Image();
@@ -47,36 +48,44 @@ export const ComicGenerator = () => {
           const watermarkWidth = mainImage.width * 0.15;
           const watermarkHeight = (watermark.height / watermark.width) * watermarkWidth;
           const padding = 20;
+          const x = mainImage.width - watermarkWidth - padding;
+          const y = mainImage.height - watermarkHeight - padding;
           
-          // Draw watermark with increased opacity
-          ctx.globalAlpha = 0.75;
-          ctx.drawImage(
-            watermark,
-            mainImage.width - watermarkWidth - padding,
-            mainImage.height - watermarkHeight - padding,
-            watermarkWidth,
-            watermarkHeight
-          );
+          // Create temporary canvas to color watermark (Bible v13 technique)
+          const tempCanvas = document.createElement('canvas');
+          const tempCtx = tempCanvas.getContext('2d');
+          if (!tempCtx) {
+            resolve(canvas.toDataURL('image/png'));
+            return;
+          }
           
-          // Apply red color overlay to watermark
-          ctx.globalCompositeOperation = 'source-atop';
-          ctx.fillStyle = '#DC2626'; // Red accent color
-          ctx.fillRect(
-            mainImage.width - watermarkWidth - padding,
-            mainImage.height - watermarkHeight - padding,
-            watermarkWidth,
-            watermarkHeight
-          );
+          tempCanvas.width = watermarkWidth;
+          tempCanvas.height = watermarkHeight;
           
-          // Reset composite operation
-          ctx.globalCompositeOperation = 'source-over';
+          // Draw watermark on temp canvas
+          tempCtx.drawImage(watermark, 0, 0, watermarkWidth, watermarkHeight);
+          
+          // Apply THEVØIDN13 canonical red (#c40000)
+          tempCtx.globalCompositeOperation = 'source-in';
+          tempCtx.fillStyle = '#c40000';
+          tempCtx.fillRect(0, 0, watermarkWidth, watermarkHeight);
+          
+          // Draw colored watermark on main canvas
+          ctx.globalAlpha = 0.8;
+          ctx.drawImage(tempCanvas, x, y);
           ctx.globalAlpha = 1.0;
 
           resolve(canvas.toDataURL('image/png'));
         };
 
         watermark.onerror = () => {
-          console.warn('Watermark load failed');
+          console.warn('Watermark load failed, using text fallback');
+          // Fallback: text watermark (Bible v13)
+          ctx.font = 'bold 16px monospace';
+          ctx.fillStyle = '#c40000';
+          ctx.globalAlpha = 0.7;
+          ctx.fillText('THEVØIDN13', mainImage.width - 150, mainImage.height - 20);
+          ctx.globalAlpha = 1.0;
           resolve(canvas.toDataURL('image/png'));
         };
 
