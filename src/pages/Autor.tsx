@@ -38,7 +38,7 @@ const Autor = () => {
       
       <main>
         {/* Hero Image */}
-        <section className="w-full min-h-screen flex items-center justify-center overflow-hidden bg-black">
+        <section className="w-full min-h-screen flex items-center justify-center overflow-hidden bg-black pt-16 sm:pt-20 md:pt-24">
           <picture className="w-full h-full">
             <source media="(max-width: 768px)" srcSet={heroImageMobile} />
             <source media="(min-width: 769px)" srcSet={heroImage} />
