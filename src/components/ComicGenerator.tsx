@@ -1,27 +1,25 @@
 import { useState, useRef, useEffect } from "react";
-import { AlertCircle, Download, Sparkles } from "lucide-react";
-import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Download, Sparkles, Copy } from "lucide-react";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Textarea } from "@/components/ui/textarea";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { FeatureCard } from "@/components/FeatureCard";
 import { supabase } from "@/integrations/supabase/client";
-import { useToast } from "@/hooks/use-toast";
+import { toast } from "@/hooks/use-toast";
 import { LoadingSpinner } from "@/components/LoadingSpinner";
-import { useTranslation } from "@/hooks/useTranslation";
 
 interface Prompt {
   id: string;
   title: string;
   prompt_text: string;
   category: string;
+  description: string | null;
 }
 
 export const ComicGenerator = () => {
   const { language } = useLanguage();
-  const { t } = useTranslation();
-  const { toast } = useToast();
   const [open, setOpen] = useState(false);
   const [mode, setMode] = useState<"library" | "custom">("library");
   const [prompts, setPrompts] = useState<Prompt[]>([]);
@@ -32,10 +30,10 @@ export const ComicGenerator = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
-    if (open) {
+    if (open && mode === "library") {
       loadPrompts();
     }
-  }, [open]);
+  }, [open, mode]);
 
   const loadPrompts = async () => {
     try {
@@ -50,8 +48,8 @@ export const ComicGenerator = () => {
     } catch (error) {
       console.error('Error loading prompts:', error);
       toast({
-        title: t("error"),
-        description: t("errorLoadingPrompts"),
+        title: language === "pt" ? "Erro" : "Error",
+        description: language === "pt" ? "Erro ao carregar prompts" : "Error loading prompts",
         variant: "destructive",
       });
     }
@@ -78,15 +76,13 @@ export const ComicGenerator = () => {
         canvas.width = mainImage.width;
         canvas.height = mainImage.height;
         
-        // Draw main image
         ctx.drawImage(mainImage, 0, 0);
 
-        // Draw watermark with 50% opacity in bottom right
         const watermark = new Image();
         watermark.crossOrigin = "anonymous";
         
         watermark.onload = () => {
-          const watermarkWidth = mainImage.width * 0.15; // 15% of image width
+          const watermarkWidth = mainImage.width * 0.15;
           const watermarkHeight = (watermark.height / watermark.width) * watermarkWidth;
           const padding = 20;
           
@@ -104,7 +100,7 @@ export const ComicGenerator = () => {
         };
 
         watermark.onerror = () => {
-          console.warn('Watermark load failed, using image without watermark');
+          console.warn('Watermark load failed');
           resolve(canvas.toDataURL('image/png'));
         };
 
@@ -112,7 +108,7 @@ export const ComicGenerator = () => {
       };
 
       mainImage.onerror = () => {
-        console.error('Main image load failed');
+        console.error('Image load failed');
         resolve(imageDataUrl);
       };
 
@@ -120,15 +116,17 @@ export const ComicGenerator = () => {
     });
   };
 
-  const generateStill = async () => {
+  const handleGenerate = async () => {
     const promptToUse = mode === "library" 
       ? selectedPrompt?.prompt_text 
       : customPrompt;
 
     if (!promptToUse) {
       toast({
-        title: t("error"),
-        description: mode === "library" ? t("selectBasePrompt") : t("customPromptPlaceholder"),
+        title: language === "pt" ? "Erro" : "Error",
+        description: language === "pt" 
+          ? (mode === "library" ? "Selecione um prompt base" : "Digite um prompt personalizado")
+          : (mode === "library" ? "Select a base prompt" : "Enter a custom prompt"),
         variant: "destructive",
       });
       return;
@@ -145,16 +143,20 @@ export const ComicGenerator = () => {
       if (error) {
         if (error.message?.includes('rate_limit')) {
           toast({
-            title: t("error"),
-            description: t("rateLimitExceeded"),
+            title: language === "pt" ? "Limite Excedido" : "Rate Limit Exceeded",
+            description: language === "pt" 
+              ? "Muitas requisições. Aguarde um momento."
+              : "Too many requests. Please wait a moment.",
             variant: "destructive",
           });
           return;
         }
         if (error.message?.includes('insufficient_credits')) {
           toast({
-            title: t("error"),
-            description: t("insufficientCredits"),
+            title: language === "pt" ? "Créditos Insuficientes" : "Insufficient Credits",
+            description: language === "pt"
+              ? "Adicione créditos para continuar gerando imagens."
+              : "Add credits to continue generating images.",
             variant: "destructive",
           });
           return;
@@ -163,7 +165,6 @@ export const ComicGenerator = () => {
       }
 
       if (data?.image) {
-        // Apply watermark if available
         if (data.watermark) {
           const finalImage = await applyWatermark(data.image, data.watermark);
           setGeneratedImage(finalImage);
@@ -172,15 +173,15 @@ export const ComicGenerator = () => {
         }
         
         toast({
-          title: t("success"),
-          description: t("stillGenerated"),
+          title: language === "pt" ? "Sucesso!" : "Success!",
+          description: language === "pt" ? "Still cinematográfico gerado" : "Cinematic still generated",
         });
       }
     } catch (error) {
       console.error('Error generating still:', error);
       toast({
-        title: t("error"),
-        description: t("errorGeneratingStill"),
+        title: language === "pt" ? "Erro" : "Error",
+        description: language === "pt" ? "Erro ao gerar still" : "Error generating still",
         variant: "destructive",
       });
     } finally {
@@ -199,6 +200,14 @@ export const ComicGenerator = () => {
     document.body.removeChild(link);
   };
 
+  const copyPrompt = (text: string) => {
+    navigator.clipboard.writeText(text);
+    toast({
+      title: language === "pt" ? "Copiado!" : "Copied!",
+      description: language === "pt" ? "Prompt copiado" : "Prompt copied",
+    });
+  };
+
   const groupedPrompts = prompts.reduce((acc, prompt) => {
     if (!acc[prompt.category]) {
       acc[prompt.category] = [];
@@ -208,127 +217,183 @@ export const ComicGenerator = () => {
   }, {} as Record<string, Prompt[]>);
 
   return (
-    <div>
-      <div onClick={() => setOpen(!open)}>
+    <Dialog open={open} onOpenChange={setOpen}>
+      <div onClick={() => setOpen(true)}>
         <FeatureCard
-          title={t("stillGenerator")}
-          description={t("stillGeneratorDesc")}
-          buttonText={t("clickToGenerate")}
-          onClick={() => setOpen(!open)}
+          title={language === "pt" ? "Gerador Experimental de Stills" : "Experimental Still Generator"}
+          description={language === "pt" ? "Gerar stills cinematográficos" : "Generate cinematic stills"}
+          buttonText={language === "pt" ? "Gerar Still" : "Generate Still"}
+          onClick={() => setOpen(true)}
         />
       </div>
-      
-      {open && (
-        <div className="mt-6 space-y-6">
-          <Alert className="border-primary/30">
-            <Sparkles className="h-4 w-4" />
-            <AlertDescription className="bible-body">
-              <div className="space-y-2">
-                <p><strong>{t("experimentalGenerator")}</strong></p>
-                <p className="text-sm">{t("allImagesNote")}</p>
-                <p className="text-sm text-muted-foreground">{t("canonicalParams")}</p>
-              </div>
-            </AlertDescription>
-          </Alert>
 
-          <Tabs value={mode} onValueChange={(v) => setMode(v as "library" | "custom")} className="w-full">
-            <TabsList className="grid w-full grid-cols-2">
-              <TabsTrigger value="library">{t("library")}</TabsTrigger>
-              <TabsTrigger value="custom">{t("custom")}</TabsTrigger>
+      <DialogContent className="max-w-6xl mx-auto max-h-[90vh] overflow-y-auto bg-background/95 backdrop-blur-sm p-6 sm:p-8 [&>button]:top-4 [&>button]:right-4 [&>button]:bg-background [&>button]:hover:bg-accent">
+        <DialogHeader className="border-b border-primary/30 pb-4 mb-6">
+          <DialogTitle className="text-primary text-xl font-mono font-bold">
+            CINEMATIC_STILL::GENERATOR <span className="text-muted-foreground text-sm">// PT / EN</span>
+          </DialogTitle>
+          <DialogDescription className="text-muted-foreground font-mono text-sm">
+            {language === "pt" 
+              ? "// Gerador experimental de stills cinematográficos com IA" 
+              : "// Experimental AI-powered cinematic still generator"}
+          </DialogDescription>
+        </DialogHeader>
+
+        <div className="bg-black/90 border border-primary/30 rounded-lg p-6 sm:p-8 font-mono space-y-6">
+          {/* Warning */}
+          <div className="space-y-2 pb-4 border-b border-primary/20">
+            <div className="flex items-start gap-2">
+              <Sparkles className="h-4 w-4 text-accent mt-1 flex-shrink-0" />
+              <div className="space-y-2 text-sm">
+                <p className="text-foreground font-bold">
+                  {language === "pt" ? "[EXPERIMENTAL] Gerador em fase de testes" : "[EXPERIMENTAL] Generator in testing phase"}
+                </p>
+                <p className="text-muted-foreground">
+                  {language === "pt"
+                    ? "Todas as imagens incluem marca d'água THEVØIDN13 (50% opacidade, inferior direito)."
+                    : "All images include THEVØIDN13 watermark (50% opacity, bottom right)."}
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  {language === "pt"
+                    ? "Parâmetros canônicos: 16:9 | modelo google/gemini-2.5-flash-image-preview"
+                    : "Canonical parameters: 16:9 | google/gemini-2.5-flash-image-preview model"}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Mode Tabs */}
+          <Tabs value={mode} onValueChange={(v) => setMode(v as "library" | "custom")} className="space-y-4">
+            <TabsList className="grid w-full grid-cols-2 bg-background/50">
+              <TabsTrigger value="library" className="font-mono">
+                [LIBRARY] {language === "pt" ? "Biblioteca" : "Library"}
+              </TabsTrigger>
+              <TabsTrigger value="custom" className="font-mono">
+                [CUSTOM] {language === "pt" ? "Personalizado" : "Custom"}
+              </TabsTrigger>
             </TabsList>
 
+            {/* Library Mode */}
             <TabsContent value="library" className="space-y-4">
-              <p className="text-sm text-muted-foreground bible-body">{t("libraryMode")}</p>
-              
-              <div className="space-y-4">
-                {Object.entries(groupedPrompts).map(([category, categoryPrompts]) => (
-                  <div key={category} className="space-y-2">
-                    <h4 className="bible-subtitle text-primary">{category}</h4>
-                    <div className="grid gap-2">
-                      {categoryPrompts.map((prompt) => (
-                        <Button
-                          key={prompt.id}
-                          variant={selectedPrompt?.id === prompt.id ? "default" : "outline"}
-                          className="justify-start text-left h-auto py-3"
-                          onClick={() => setSelectedPrompt(prompt)}
-                        >
-                          <div className="flex flex-col items-start">
-                            <span className="font-medium">{prompt.title}</span>
-                            <span className="text-xs text-muted-foreground line-clamp-2">
-                              {prompt.prompt_text}
-                            </span>
-                          </div>
-                        </Button>
-                      ))}
-                    </div>
-                  </div>
-                ))}
+              <div className="text-muted-foreground text-sm">
+                {language === "pt" 
+                  ? "├─ Selecione um prompt da biblioteca para gerar um still cinematográfico"
+                  : "├─ Select a prompt from the library to generate a cinematic still"}
               </div>
-
-              {selectedPrompt && (
-                <div className="p-4 border border-primary/20 rounded-lg bg-background/50">
-                  <p className="text-sm font-medium mb-2">{t("selectedPrompt")}</p>
-                  <p className="text-sm text-muted-foreground bible-body">{selectedPrompt.prompt_text}</p>
+              
+              {Object.entries(groupedPrompts).map(([category, categoryPrompts]) => (
+                <div key={category} className="space-y-3">
+                  <div className="text-accent font-bold">
+                    [{category.toUpperCase()}]
+                  </div>
+                  <div className="pl-4 space-y-2">
+                    {categoryPrompts.map((prompt) => (
+                      <div
+                        key={prompt.id}
+                        className={`border rounded-lg p-3 cursor-pointer transition-colors ${
+                          selectedPrompt?.id === prompt.id
+                            ? 'border-primary bg-primary/10'
+                            : 'border-primary/20 hover:border-primary/40 bg-background/50'
+                        }`}
+                        onClick={() => setSelectedPrompt(prompt)}
+                      >
+                        <div className="flex items-start justify-between gap-2">
+                          <div className="space-y-1 flex-1">
+                            <div className="text-foreground font-semibold text-sm">
+                              └─ {prompt.title}
+                            </div>
+                            {prompt.description && (
+                              <div className="text-muted-foreground text-xs pl-4">
+                                {prompt.description}
+                              </div>
+                            )}
+                          </div>
+                          <Button
+                            variant="ghost"
+                            size="sm"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              copyPrompt(prompt.prompt_text);
+                            }}
+                            className="flex-shrink-0"
+                          >
+                            <Copy className="h-3 w-3" />
+                          </Button>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              )}
+              ))}
             </TabsContent>
 
+            {/* Custom Mode */}
             <TabsContent value="custom" className="space-y-4">
-              <p className="text-sm text-muted-foreground bible-body">{t("customMode")}</p>
-              
+              <div className="text-muted-foreground text-sm">
+                {language === "pt"
+                  ? "├─ Digite seu prompt personalizado para o gerador"
+                  : "├─ Enter your custom prompt for the generator"}
+              </div>
               <Textarea
-                placeholder={t("customPromptPlaceholder")}
                 value={customPrompt}
                 onChange={(e) => setCustomPrompt(e.target.value)}
-                className="min-h-[150px] bible-body"
+                placeholder={language === "pt" 
+                  ? "Ex: Uma cena noturna urbana retrofuturista, personagem mascarado sob neon vermelho..."
+                  : "Ex: A retrofuturistic urban night scene, masked character under red neon..."}
+                className="min-h-[120px] font-mono text-sm bg-background/50 border-primary/20"
               />
-              
-              <Alert>
-                <AlertCircle className="h-4 w-4" />
-                <AlertDescription className="text-xs bible-body">
-                  {t("customPromptNote")}
-                </AlertDescription>
-              </Alert>
             </TabsContent>
           </Tabs>
 
-          <Button
-            onClick={generateStill}
-            disabled={isGenerating || (mode === "library" && !selectedPrompt) || (mode === "custom" && !customPrompt)}
-            className="w-full"
-            size="lg"
-          >
-            {isGenerating ? (
-              <><LoadingSpinner size="sm" className="mr-2" /> {t("generating")}</>
-            ) : (
-              <><Sparkles className="mr-2 h-4 w-4" /> {t("generateStill")}</>
-            )}
-          </Button>
+          {/* Generate Button */}
+          <div className="pt-4 flex gap-3">
+            <Button
+              onClick={handleGenerate}
+              disabled={isGenerating || (mode === "library" && !selectedPrompt) || (mode === "custom" && !customPrompt)}
+              className="gap-2"
+            >
+              {isGenerating ? (
+                <>
+                  <LoadingSpinner />
+                  {language === "pt" ? "Gerando..." : "Generating..."}
+                </>
+              ) : (
+                <>
+                  <Sparkles className="h-4 w-4" />
+                  {language === "pt" ? "> GENERATE()" : "> GENERATE()"}
+                </>
+              )}
+            </Button>
+          </div>
 
+          {/* Generated Image */}
           {generatedImage && (
-            <div className="space-y-4">
-              <div className="relative rounded-lg overflow-hidden border border-primary/20">
-                <img 
-                  src={generatedImage} 
-                  alt="Generated cinematic still" 
+            <div className="space-y-4 pt-4 border-t border-primary/20">
+              <div className="text-accent font-bold">
+                [OUTPUT] {language === "pt" ? "Still Gerado" : "Generated Still"}
+              </div>
+              <div className="relative rounded-lg overflow-hidden border border-primary/30">
+                <img
+                  src={generatedImage}
+                  alt="Generated cinematic still"
                   className="w-full h-auto"
                 />
               </div>
-              
               <Button
                 onClick={downloadImage}
                 variant="outline"
-                className="w-full"
-                size="lg"
+                className="gap-2"
               >
-                <Download className="mr-2 h-4 w-4" /> {t("downloadStill")}
+                <Download className="h-4 w-4" />
+                {language === "pt" ? "> DOWNLOAD()" : "> DOWNLOAD()"}
               </Button>
             </div>
           )}
-
-          <canvas ref={canvasRef} style={{ display: 'none' }} />
         </div>
-      )}
-    </div>
+
+        {/* Hidden canvas for watermark */}
+        <canvas ref={canvasRef} className="hidden" />
+      </DialogContent>
+    </Dialog>
   );
 };

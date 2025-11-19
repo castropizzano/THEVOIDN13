@@ -1,9 +1,8 @@
-import { useState, useEffect, useRef } from 'react';
-import { Button } from './ui/button';
-import { Dialog, DialogContent, DialogTitle, DialogDescription } from './ui/dialog';
-import { Volume2, VolumeX } from 'lucide-react';
-import { useTranslation } from '@/hooks/useTranslation';
-import { BilingualContent } from '@/components/BilingualSection';
+import { useState, useEffect } from "react";
+import { Volume2, VolumeX } from "lucide-react";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface CreativeOracleProps {
   open: boolean;
@@ -13,171 +12,157 @@ interface CreativeOracleProps {
 type Question = {
   text: string;
   textEn: string;
-  options: { text: string; textEn: string; archetype: string; value: number }[];
+  options: Array<{
+    text: string;
+    textEn: string;
+    archetype: string;
+    value: number;
+  }>;
 };
 
 const questions: Question[] = [
   {
-    text: 'Quando você cria, de onde vem o impulso inicial?',
-    textEn: 'When you create, where does the initial impulse come from?',
+    text: "Quando você cria, de onde vem o impulso inicial?",
+    textEn: "When you create, where does the initial impulse come from?",
     options: [
-      { text: 'Do vazio interior, do que não consigo nomear', textEn: 'From the inner void, from what I cannot name', archetype: 'shadow', value: 3 },
-      { text: 'Da necessidade de expressar algo urgente', textEn: 'From the need to express something urgent', archetype: 'punk', value: 2 },
-      { text: 'Do desejo de conectar com outras pessoas', textEn: 'From the desire to connect with others', archetype: 'buddy', value: 1 },
-      { text: 'De um método ou técnica que domino', textEn: 'From a method or technique I master', archetype: 'gi', value: 0 },
+      { text: "Do vazio interior, da sombra", textEn: "From the inner void, the shadow", archetype: "shadow", value: 3 },
+      { text: "Da necessidade urgente de quebrar o sistema", textEn: "From urgent need to break the system", archetype: "punk", value: 2 },
+      { text: "Do desejo de conectar com outros", textEn: "From desire to connect with others", archetype: "buddy", value: 1 },
+      { text: "De um método técnico estabelecido", textEn: "From an established technical method", archetype: "gi", value: 0 },
     ],
   },
   {
-    text: 'O que você faz quando o processo criativo trava?',
-    textEn: 'What do you do when the creative process gets stuck?',
+    text: "Como você encara o erro no processo criativo?",
+    textEn: "How do you face mistakes in the creative process?",
     options: [
-      { text: 'Destruo tudo e recomeço do zero', textEn: 'I destroy everything and start over', archetype: 'punk', value: 3 },
-      { text: 'Mergulho no desconforto até encontrar algo', textEn: 'I dive into discomfort until I find something', archetype: 'shadow', value: 2 },
-      { text: 'Busco referências e conversas inspiradoras', textEn: 'I seek references and inspiring conversations', archetype: 'buddy', value: 1 },
-      { text: 'Volto ao básico, aos fundamentos', textEn: 'I return to basics, to fundamentals', archetype: 'gi', value: 0 },
+      { text: "Como parte da exploração do desconhecido", textEn: "As part of exploring the unknown", archetype: "shadow", value: 3 },
+      { text: "Como combustível para algo novo", textEn: "As fuel for something new", archetype: "punk", value: 2 },
+      { text: "Como oportunidade de aprender junto", textEn: "As opportunity to learn together", archetype: "buddy", value: 1 },
+      { text: "Como algo a ser evitado com planejamento", textEn: "As something to avoid with planning", archetype: "gi", value: 0 },
     ],
   },
   {
-    text: 'Como você sabe que um trabalho está terminado?',
-    textEn: 'How do you know when a work is finished?',
+    text: "O que te motiva a continuar criando?",
+    textEn: "What motivates you to keep creating?",
     options: [
-      { text: 'Quando ressoa com outras pessoas', textEn: 'When it resonates with others', archetype: 'buddy', value: 3 },
-      { text: 'Quando atinge os critérios técnicos', textEn: 'When it meets technical criteria', archetype: 'gi', value: 2 },
-      { text: 'Quando não aguento mais olhar pra ele', textEn: "When I can't stand looking at it anymore", archetype: 'punk', value: 1 },
-      { text: 'Quando ele me revela algo sobre mim', textEn: 'When it reveals something about myself', archetype: 'shadow', value: 0 },
+      { text: "A busca por autenticidade profunda", textEn: "The search for deep authenticity", archetype: "shadow", value: 3 },
+      { text: "O desejo de transformar a cultura", textEn: "The desire to transform culture", archetype: "punk", value: 2 },
+      { text: "A alegria da colaboração", textEn: "The joy of collaboration", archetype: "buddy", value: 1 },
+      { text: "A satisfação da execução perfeita", textEn: "The satisfaction of perfect execution", archetype: "gi", value: 0 },
     ],
   },
   {
-    text: 'Qual é a parte mais importante do processo criativo?',
-    textEn: 'What is the most important part of the creative process?',
+    text: "Como você lida com a solidão criativa?",
+    textEn: "How do you deal with creative solitude?",
     options: [
-      { text: 'A disciplina e a repetição diária', textEn: 'Discipline and daily repetition', archetype: 'gi', value: 3 },
-      { text: 'O espaço de silêncio e contemplação', textEn: 'The space of silence and contemplation', archetype: 'shadow', value: 2 },
-      { text: 'A experimentação sem medo de errar', textEn: 'Experimentation without fear of failure', archetype: 'punk', value: 1 },
-      { text: 'O feedback e a troca com os outros', textEn: 'Feedback and exchange with others', archetype: 'buddy', value: 0 },
+      { text: "É onde encontro clareza", textEn: "It's where I find clarity", archetype: "shadow", value: 3 },
+      { text: "É um sacrifício necessário", textEn: "It's a necessary sacrifice", archetype: "punk", value: 2 },
+      { text: "Prefiro criar em comunidade", textEn: "I prefer to create in community", archetype: "buddy", value: 1 },
+      { text: "É parte da disciplina", textEn: "It's part of discipline", archetype: "gi", value: 0 },
     ],
   },
   {
-    text: 'O que você mais teme no ato de criar?',
-    textEn: 'What do you fear most in the act of creating?',
+    text: "Qual é sua relação com o tempo?",
+    textEn: "What's your relationship with time?",
     options: [
-      { text: 'Descobrir partes de mim que preferia ignorar', textEn: 'Discovering parts of myself I preferred to ignore', archetype: 'shadow', value: 3 },
-      { text: 'Perder o controle e não conseguir executar', textEn: 'Losing control and failing to execute', archetype: 'gi', value: 2 },
-      { text: 'Ser incompreendido ou rejeitado', textEn: 'Being misunderstood or rejected', archetype: 'buddy', value: 1 },
-      { text: 'Não ser radical o suficiente', textEn: 'Not being radical enough', archetype: 'punk', value: 0 },
+      { text: "Flui quando estou imerso", textEn: "It flows when I'm immersed", archetype: "shadow", value: 3 },
+      { text: "É sempre urgente, sempre agora", textEn: "It's always urgent, always now", archetype: "punk", value: 2 },
+      { text: "É compartilhado com outros", textEn: "It's shared with others", archetype: "buddy", value: 1 },
+      { text: "É estruturado e otimizado", textEn: "It's structured and optimized", archetype: "gi", value: 0 },
     ],
   },
   {
-    text: 'Onde você encontra sua identidade criativa?',
-    textEn: 'Where do you find your creative identity?',
+    text: "O que você busca no seu trabalho criativo?",
+    textEn: "What do you seek in your creative work?",
     options: [
-      { text: 'Na ruptura com o que é esperado', textEn: 'In breaking with what is expected', archetype: 'punk', value: 3 },
-      { text: 'No domínio técnico e na maestria', textEn: 'In technical mastery and craftsmanship', archetype: 'gi', value: 2 },
-      { text: 'No diálogo com minha comunidade', textEn: 'In dialogue with my community', archetype: 'buddy', value: 1 },
-      { text: 'No encontro com o desconhecido em mim', textEn: 'In encountering the unknown within me', archetype: 'shadow', value: 0 },
+      { text: "Verdade interior e expressão autêntica", textEn: "Inner truth and authentic expression", archetype: "shadow", value: 3 },
+      { text: "Impacto cultural e mudança social", textEn: "Cultural impact and social change", archetype: "punk", value: 2 },
+      { text: "Conexão humana e empatia", textEn: "Human connection and empathy", archetype: "buddy", value: 1 },
+      { text: "Excelência técnica e maestria", textEn: "Technical excellence and mastery", archetype: "gi", value: 0 },
     ],
   },
 ];
 
 const archetypes = {
   shadow: {
-    name: 'O ALQUIMISTA DAS SOMBRAS',
-    nameEn: 'THE SHADOW ALCHEMIST',
-    description: 'Seu processo criativo mergulha no inconsciente. Você não busca respostas prontas — você desce ao vazio e deixa que ele fale através de você. Sua criação é transmutação.',
-    descriptionEn: 'Your creative process dives into the unconscious. You don\'t seek ready answers — you descend into the void and let it speak through you. Your creation is transmutation.',
-    message: 'A sombra não é ausência de luz. É potência não nomeada. Continue descendo.',
-    messageEn: 'Shadow is not absence of light. It is unnamed power. Keep descending.',
+    name: "SHADOW (A Sombra)",
+    nameEn: "SHADOW (The Shadow)",
+    description: "Você é o criador introspectivo, que mergulha nas profundezas do eu para extrair verdades ocultas. Seu processo é solitário mas profundo, transformando a escuridão interior em luz criativa.",
+    descriptionEn: "You are the introspective creator, diving into the depths of the self to extract hidden truths. Your process is solitary but profound, transforming inner darkness into creative light.",
+    message: "O vazio não é ausência. É o espaço onde a verdade nasce.",
+    messageEn: "The void is not absence. It's the space where truth is born.",
   },
   punk: {
-    name: 'O ICONOCLASTA',
-    nameEn: 'THE ICONOCLAST',
-    description: 'Seu processo é ruptura. Você cria destruindo o que veio antes, recusando fórmulas, negando conforto. Sua arte é manifesto em movimento.',
-    descriptionEn: 'Your process is rupture. You create by destroying what came before, refusing formulas, denying comfort. Your art is a manifesto in motion.',
-    message: 'O caos não é falta de ordem. É ordem ainda não reconhecida. Continue quebrando.',
-    messageEn: 'Chaos is not lack of order. It is order not yet recognized. Keep breaking.',
+    name: "PUNK (O Criador)",
+    nameEn: "PUNK (The Creator)",
+    description: "Você é o revolucionário impulsivo, que cria para destruir e reconstruir. Seu impulso vem da rejeição ao establishment e do desejo ardente de transformação radical.",
+    descriptionEn: "You are the impulsive revolutionary, who creates to destroy and rebuild. Your impulse comes from rejecting the establishment and the burning desire for radical transformation.",
+    message: "Criar é quebrar. Toda obra verdadeira é um ato de rebelião.",
+    messageEn: "To create is to break. Every true work is an act of rebellion.",
   },
   buddy: {
-    name: 'O TECELÃO DE REDES',
-    nameEn: 'THE NETWORK WEAVER',
-    description: 'Seu processo é relacional. Você cria no diálogo, na troca, na ressonância com o outro. Sua obra só existe porque existe escuta.',
-    descriptionEn: 'Your process is relational. You create in dialogue, in exchange, in resonance with others. Your work exists only because there is listening.',
-    message: 'A conexão não é fraqueza. É força multiplicada. Continue tecendo.',
-    messageEn: 'Connection is not weakness. It is multiplied strength. Keep weaving.',
+    name: "BUDDY (O Companheiro)",
+    nameEn: "BUDDY (The Companion)",
+    description: "Você é o colaborador conectado, que encontra força na comunidade e no compartilhamento. Seu trabalho nasce do diálogo, da troca, da energia coletiva.",
+    descriptionEn: "You are the connected collaborator, who finds strength in community and sharing. Your work is born from dialogue, exchange, collective energy.",
+    message: "Sozinho vamos rápido. Juntos, criamos o impossível.",
+    messageEn: "Alone we go fast. Together, we create the impossible.",
   },
   gi: {
-    name: 'O ARQUITETO DO MÉTODO',
-    nameEn: 'THE METHOD ARCHITECT',
-    description: 'Seu processo é estrutura. Você constrói com rigor, disciplina, repetição consciente. Sua criação é forma refinada pelo tempo.',
-    descriptionEn: 'Your process is structure. You build with rigor, discipline, conscious repetition. Your creation is form refined by time.',
-    message: 'A disciplina não é prisão. É liberdade através da forma. Continue construindo.',
-    messageEn: 'Discipline is not prison. It is freedom through form. Keep building.',
+    name: "GI (A Presença)",
+    nameEn: "GI (The Presence)",
+    description: "Você é o executor disciplinado, que encontra liberdade na estrutura e maestria na repetição. Seu caminho é o da excelência técnica e da presença plena.",
+    descriptionEn: "You are the disciplined executor, who finds freedom in structure and mastery in repetition. Your path is technical excellence and full presence.",
+    message: "A forma liberta. A disciplina é o caminho para a verdadeira expressão.",
+    messageEn: "Form liberates. Discipline is the path to true expression.",
   },
 };
 
 export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
-  const { t, language } = useTranslation();
+  const { language } = useLanguage();
   const [started, setStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [scores, setScores] = useState({ shadow: 0, punk: 0, buddy: 0, gi: 0 });
-  const [revealed, setRevealed] = useState(false);
-  const [selectedOption, setSelectedOption] = useState<number | null>(null);
-  const [animatingOut, setAnimatingOut] = useState(false);
-  const [audioMuted, setAudioMuted] = useState(false);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const [showResults, setShowResults] = useState(false);
+  const [isMuted, setIsMuted] = useState(false);
+  const [audio] = useState(() => new Audio("/audio/Shadow_In_The_Dark.mp3"));
 
   useEffect(() => {
     if (!open) {
       setStarted(false);
       setCurrentQuestion(0);
       setScores({ shadow: 0, punk: 0, buddy: 0, gi: 0 });
-      setRevealed(false);
-      setSelectedOption(null);
-      setAnimatingOut(false);
-      if (audioRef.current) {
-        audioRef.current.pause();
-        audioRef.current.currentTime = 0;
-      }
+      setShowResults(false);
+      audio.pause();
+      audio.currentTime = 0;
     }
-  }, [open]);
+  }, [open, audio]);
 
   useEffect(() => {
-    if (started && audioRef.current) {
-      audioRef.current.play().catch(() => {});
+    if (started && !isMuted) {
+      audio.loop = true;
+      audio.volume = 0.3;
+      audio.play().catch(console.error);
+    } else {
+      audio.pause();
     }
-  }, [started]);
-
-  const toggleAudio = () => {
-    if (audioRef.current) {
-      if (audioMuted) {
-        audioRef.current.play();
-      } else {
-        audioRef.current.pause();
-      }
-      setAudioMuted(!audioMuted);
-    }
-  };
+  }, [started, isMuted, audio]);
 
   const handleAnswer = (archetype: string, value: number) => {
     setScores(prev => ({
       ...prev,
-      [archetype]: prev[archetype as keyof typeof prev] + value,
+      [archetype]: prev[archetype as keyof typeof prev] + value
     }));
-    
-    setAnimatingOut(true);
-    setTimeout(() => {
-      if (currentQuestion < questions.length - 1) {
-        setCurrentQuestion(prev => prev + 1);
-        setSelectedOption(null);
-        setAnimatingOut(false);
-      } else {
-        setRevealed(true);
-        setAnimatingOut(false);
-      }
-    }, 600);
+
+    if (currentQuestion < questions.length - 1) {
+      setCurrentQuestion(prev => prev + 1);
+    } else {
+      setShowResults(true);
+    }
   };
 
   const getDominantArchetype = () => {
-    const entries = Object.entries(scores) as [keyof typeof scores, number][];
+    const entries = Object.entries(scores) as [keyof typeof archetypes, number][];
     const sorted = entries.sort((a, b) => b[1] - a[1]);
     return sorted[0][0];
   };
@@ -190,362 +175,190 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
     setStarted(false);
     setCurrentQuestion(0);
     setScores({ shadow: 0, punk: 0, buddy: 0, gi: 0 });
-    setRevealed(false);
-    setSelectedOption(null);
-    setAnimatingOut(false);
+    setShowResults(false);
   };
 
-  // Initial screen
-  if (!started) {
-    return (
-      <Dialog open={open} onOpenChange={onOpenChange}>
-        <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto bg-background border-2 border-primary/30 p-4 sm:p-6">
-          <DialogTitle className="sr-only">{t("creativeOracle")}</DialogTitle>
-          <DialogDescription className="sr-only">
-            {t("creativeOracleDesc")}
-          </DialogDescription>
-          
-          <div className="space-y-6 sm:space-y-8">
-            <div className="pb-6 border-b border-primary/20">
-              <h2 className="bible-title text-left mb-2">
-                {t("creativeOracle")}
-              </h2>
-              <p className="bible-subtitle text-left">
-                {t("creativeOracle")}
-              </p>
-            </div>
+  const getProgressBar = (value: number, max: number = 18) => {
+    const filled = Math.round((value / max) * 16);
+    return '█'.repeat(filled) + '░'.repeat(16 - filled);
+  };
 
-            <div className="space-y-4">
-              <p className="body-base text-foreground/90 text-justify">
-                {t("sixQuestions")}
-              </p>
-            </div>
-
-            <div className="space-y-3 pt-4">
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-left bible-body">
-                <div>{t("shadows")}</div>
-                <div>{t("rupture")}</div>
-                <div>{t("connection")}</div>
-                <div>{t("method")}</div>
-              </div>
-              
-              {/* Category descriptions */}
-              <div className="pt-4 space-y-4 border-t border-border/30">
-                <div className="space-y-1">
-                  <p className="body-small text-foreground/80 text-justify">
-                    <strong className="text-primary">Sombras:</strong> O inconsciente como matéria-prima criativa. Aquilo que ainda não tem nome, mas já existe no escuro.
-                  </p>
-                  <p className="body-small text-muted-foreground/60 italic text-justify">
-                    <strong>Shadow:</strong> The unconscious as creative raw material. That which has no name yet, but already exists in the dark.
-                  </p>
-                </div>
-                
-                <div className="space-y-1">
-                  <p className="body-small text-foreground/80 text-justify">
-                    <strong className="text-primary">Ruptura:</strong> Destruição como gesto criativo. Quebrar o que foi feito para encontrar o que ainda pode ser.
-                  </p>
-                  <p className="body-small text-muted-foreground/60 italic text-justify">
-                    <strong>Rupture:</strong> Destruction as creative gesture. Breaking what was made to find what can still become.
-                  </p>
-                </div>
-                
-                <div className="space-y-1">
-                  <p className="body-small text-foreground/80 text-justify">
-                    <strong className="text-primary">Conexão:</strong> A criação como diálogo e escuta. Nada existe sozinho, tudo ressoa no outro para existir.
-                  </p>
-                  <p className="body-small text-muted-foreground/60 italic text-justify">
-                    <strong>Connection:</strong> Creation as dialogue and listening. Nothing exists alone, everything resonates in another to exist.
-                  </p>
-                </div>
-                
-                <div className="space-y-1">
-                  <p className="body-small text-foreground/80 text-justify">
-                    <strong className="text-primary">Método:</strong> Disciplina e rigor como estrutura. A repetição consciente que transforma prática em forma refinada.
-                  </p>
-                  <p className="body-small text-muted-foreground/60 italic text-justify">
-                    <strong>Method:</strong> Discipline and rigor as structure. The conscious repetition that transforms practice into refined form.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <Button 
-              onClick={handleStart} 
-              size="lg" 
-              className="w-full font-mono bg-primary/20 hover:bg-primary/30 border border-primary/50 text-primary py-6"
-            >
-              {'>> '}{t("startOracle").toUpperCase()}
-            </Button>
-          </div>
-
-          <audio 
-            ref={audioRef} 
-            loop 
-            src="/audio/Shadow_In_The_Dark.mp3"
-            className="hidden"
-          />
-        </DialogContent>
-      </Dialog>
-    );
-  }
-
-  // Results screen
-  if (revealed) {
-    const archetype = getDominantArchetype();
-    const result = archetypes[archetype];
-    const totalScore = Object.values(scores).reduce((a, b) => a + b, 0);
-    
-    return (
-      <Dialog open={open} onOpenChange={onOpenChange}>
-        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto bg-background border-2 border-primary/30 p-4 sm:p-6">
-          <DialogTitle className="sr-only">Resultado do Oráculo Criativo</DialogTitle>
-          <DialogDescription className="sr-only">
-            Seu arquétipo criativo dominante foi revelado
-          </DialogDescription>
-          
-          <div className="space-y-6 sm:space-y-8">
-            {/* Audio Control - moved to top-left */}
-            <button
-              onClick={toggleAudio}
-              className="absolute top-2 left-2 sm:top-4 sm:left-4 p-3 text-muted-foreground hover:text-foreground transition-colors z-20 min-h-[44px] min-w-[44px] flex items-center justify-center"
-              aria-label="Toggle audio"
-            >
-              {audioMuted ? <VolumeX size={18} className="sm:w-5 sm:h-5" /> : <Volume2 size={18} className="sm:w-5 sm:h-5" />}
-            </button>
-
-            {/* Header */}
-            <div className="text-left space-y-2 pb-6 border-b border-primary/20">
-              <h2 className="title text-primary tracking-tight uppercase">{result.name}</h2>
-              <p className="subtitle text-muted-foreground/60 italic">{result.nameEn}</p>
-            </div>
-
-            {/* Description */}
-            <div className="space-y-4">
-              <div className="space-y-3 p-4 sm:p-6 rounded-lg border border-primary/20 bg-card/50 text-left">
-                <p className="body-base text-foreground">
-                  {result.description}
-                </p>
-                <p className="body-small text-muted-foreground/80 italic">
-                  {result.descriptionEn}
-                </p>
-              </div>
-
-              <div className="p-4 sm:p-5 bg-primary/10 border-l-4 border-primary rounded-r space-y-2 text-left">
-                <p className="body-small font-bold text-foreground">
-                  {result.message}
-                </p>
-                <p className="body-small text-muted-foreground italic">
-                  {result.messageEn}
-                </p>
-              </div>
-            </div>
-
-            {/* Statistics */}
-            <div className="space-y-4 pt-4">
-              <div className="text-left">
-                <p className="bible-subtitle mb-4">
-                  Distribuição dos Arquétipos / Archetype Distribution
-                </p>
-              </div>
-              
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
-                {Object.entries(scores).map(([key, value]) => {
-                  const percentage = totalScore > 0 ? Math.round((value / totalScore) * 100) : 0;
-                  const archetypeName = archetypes[key as keyof typeof archetypes].name.split(' ').pop() || key;
-                  const isDominant = key === archetype;
-                  
-                  return (
-                    <div 
-                      key={key} 
-                      className={`p-4 rounded-lg border transition-all ${
-                        isDominant 
-                          ? 'border-primary bg-primary/10' 
-                          : 'border-border bg-card/30'
-                      }`}
-                    >
-                      <div className="text-center space-y-2">
-                        <p className="bible-title">
-                          {percentage}%
-                        </p>
-                        <p className="bible-body text-foreground/80">
-                          {archetypeName}
-                        </p>
-                        <div className="pt-2">
-                          <div className="h-2 bg-muted/20 rounded-full overflow-hidden">
-                            <div 
-                              className="h-full bg-primary transition-all duration-300"
-                              style={{ width: `${percentage}%` }}
-                            />
-                          </div>
-                        </div>
-                        <p className="bible-body">
-                          {value} pts
-                        </p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-
-              {/* Archetype Descriptions */}
-              <div className="pt-6 space-y-4 border-t border-border/30">
-                <p className="bible-subtitle mb-4">
-                  Entenda os Arquétipos / Understanding the Archetypes
-                </p>
-                
-                <div className="space-y-1 text-left">
-                  <p className="body-small text-foreground/80">
-                    <strong className="text-primary">Sombras:</strong> O inconsciente como matéria-prima criativa
-                  </p>
-                  <p className="body-small text-muted-foreground/60 italic">
-                    <strong>Shadow:</strong> The unconscious as creative raw material
-                  </p>
-                </div>
-                
-                <div className="space-y-1 text-left">
-                  <p className="body-small text-foreground/80">
-                    <strong className="text-primary">Ruptura:</strong> Destruição como gesto criativo
-                  </p>
-                  <p className="body-small text-muted-foreground/60 italic">
-                    <strong>Rupture:</strong> Destruction as creative gesture
-                  </p>
-                </div>
-                
-                <div className="space-y-1 text-left">
-                  <p className="body-small text-foreground/80">
-                    <strong className="text-primary">Conexão:</strong> A criação como diálogo e escuta
-                  </p>
-                  <p className="body-small text-muted-foreground/60 italic">
-                    <strong>Connection:</strong> Creation as dialogue and listening
-                  </p>
-                </div>
-                
-                <div className="space-y-1 text-left">
-                  <p className="body-small text-foreground/80">
-                    <strong className="text-primary">Método:</strong> Disciplina e rigor como estrutura
-                  </p>
-                  <p className="body-small text-muted-foreground/60 italic">
-                    <strong>Method:</strong> Discipline and rigor as structure
-                  </p>
-                </div>
-              </div>
-
-              {/* Total Score */}
-              <div className="text-left pt-4 border-t border-border">
-                <p className="bible-body">
-                  Pontuação Total / Total Score: <span className="bible-subtitle text-foreground/70">{totalScore}</span>
-                </p>
-              </div>
-            </div>
-
-            {/* Actions */}
-            <div className="flex flex-col sm:flex-row justify-start gap-3 sm:gap-4 pt-6">
-              <Button 
-                onClick={handleReset} 
-                variant="outline" 
-                className="border-primary/30 hover:bg-primary/10 subtitle min-h-[48px]"
-              >
-                {t("restartOracle")}
-              </Button>
-              <Button 
-                onClick={() => onOpenChange(false)}
-                className="bg-primary hover:bg-primary/90 subtitle min-h-[48px]"
-              >
-                FECHAR / CLOSE
-              </Button>
-            </div>
-          </div>
-
-          <audio 
-            ref={audioRef} 
-            loop 
-            src="/audio/Shadow_In_The_Dark.mp3"
-            className="hidden"
-          />
-        </DialogContent>
-      </Dialog>
-    );
-  }
-
-  // Questions screen
-  const question = questions[currentQuestion];
+  const getProgressPercentage = () => {
+    return Math.round(((currentQuestion + 1) / questions.length) * 100);
+  };
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto bg-background border-2 border-primary/30 p-4 sm:p-6">
-        <DialogTitle className="sr-only">Oráculo Criativo - Pergunta {currentQuestion + 1}</DialogTitle>
-        <DialogDescription className="sr-only">
-          {question.textEn}
-        </DialogDescription>
-        
-        <div className="space-y-6 sm:space-y-8 relative">
-          {/* Audio Control - moved to top-left */}
-          <button
-            onClick={toggleAudio}
-            className="absolute top-0 right-0 p-3 text-muted-foreground hover:text-foreground transition-colors z-20 min-h-[44px] min-w-[44px] flex items-center justify-center"
-            aria-label="Toggle audio"
-          >
-            {audioMuted ? <VolumeX size={18} className="sm:w-5 sm:h-5" /> : <Volume2 size={18} className="sm:w-5 sm:h-5" />}
-          </button>
+      <DialogContent className="max-w-6xl mx-auto max-h-[90vh] overflow-y-auto bg-background/95 backdrop-blur-sm p-6 sm:p-8 [&>button]:top-4 [&>button]:right-4 [&>button]:bg-background [&>button]:hover:bg-accent">
+        <DialogHeader className="border-b border-primary/30 pb-4 mb-6">
+          <DialogTitle className="text-primary text-xl font-mono font-bold">
+            CREATIVE_ORACLE::ARCHETYPE_SCAN <span className="text-muted-foreground text-sm">// PT / EN</span>
+          </DialogTitle>
+          <DialogDescription className="text-muted-foreground font-mono text-sm">
+            {language === "pt" 
+              ? "// Sistema de identificação de arquétipos criativos" 
+              : "// Creative archetype identification system"}
+          </DialogDescription>
+        </DialogHeader>
 
-          <div className={`transition-all duration-500 ${animatingOut ? 'opacity-0 scale-95' : 'opacity-100 scale-100'}`}>
-            {/* Progress Bar */}
-            <div className="pb-4 sm:pb-6">
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center gap-2">
-                  {questions.map((_, idx) => (
-                    <div
-                      key={idx}
-                      className={`h-1.5 w-8 sm:w-12 rounded-full transition-all ${
-                        idx === currentQuestion ? 'bg-primary' : idx < currentQuestion ? 'bg-primary/50' : 'bg-muted/30'
-                      }`}
-                    />
+        <div className="bg-black/90 border border-primary/30 rounded-lg p-6 sm:p-8 font-mono space-y-6">
+          {!started && !showResults && (
+            <div className="space-y-8">
+              <div className="text-accent font-bold text-lg">
+                [STATUS] INITIALIZING...
+              </div>
+
+              <div className="space-y-4 text-foreground">
+                <div className="text-muted-foreground">[DESCRIPTION]</div>
+                <div className="pl-4 space-y-2">
+                  {language === "pt" ? (
+                    <p>Seis perguntas. Suas respostas revelam seu arquétipo criativo dominante: Shadow, Punk, Buddy ou GI. Cada um representa uma forma única de ver e transformar o mundo através da criatividade.</p>
+                  ) : (
+                    <p>Six questions. Your answers reveal your dominant creative archetype: Shadow, Punk, Buddy or GI. Each represents a unique way of seeing and transforming the world through creativity.</p>
+                  )}
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                <div className="text-muted-foreground">[ARCHETYPES_MAP]</div>
+                <div className="pl-4 space-y-2 text-sm">
+                  <div>├─ <span className="text-primary">SHADOW</span> {language === "pt" ? "(A Sombra)" : "(The Shadow)"} - {language === "pt" ? "O criador introspectivo" : "The introspective creator"}</div>
+                  <div>├─ <span className="text-primary">PUNK</span> {language === "pt" ? "(O Criador)" : "(The Creator)"} - {language === "pt" ? "O revolucionário impulsivo" : "The impulsive revolutionary"}</div>
+                  <div>├─ <span className="text-primary">BUDDY</span> {language === "pt" ? "(O Companheiro)" : "(The Companion)"} - {language === "pt" ? "O colaborador conectado" : "The connected collaborator"}</div>
+                  <div>└─ <span className="text-primary">GI</span> {language === "pt" ? "(A Presença)" : "(The Presence)"} - {language === "pt" ? "O executor disciplinado" : "The disciplined executor"}</div>
+                </div>
+              </div>
+
+              <div className="pt-4">
+                <Button 
+                  onClick={handleStart}
+                  variant="outline"
+                  className="w-full sm:w-auto"
+                >
+                  &gt; START_SCAN()
+                </Button>
+              </div>
+            </div>
+          )}
+
+          {started && !showResults && (
+            <div className="space-y-8 animate-fade-in">
+              <div className="flex items-center justify-between">
+                <div className="text-accent font-bold text-lg">
+                  CREATIVE_ORACLE::QUESTION_{currentQuestion + 1}/6
+                </div>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => setIsMuted(!isMuted)}
+                  className="gap-2"
+                >
+                  {isMuted ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}
+                  [AUDIO: {isMuted ? 'OFF' : 'ON'}]
+                </Button>
+              </div>
+
+              <div className="space-y-4">
+                <div className="space-y-2 pb-4 border-b border-primary/20">
+                  <div className="text-foreground font-semibold">
+                    [Q] {questions[currentQuestion].text}
+                  </div>
+                  <div className="text-muted-foreground text-sm">
+                    [Q] {questions[currentQuestion].textEn}
+                  </div>
+                </div>
+
+                <div className="space-y-3 pl-4">
+                  {questions[currentQuestion].options.map((option, idx) => (
+                    <div key={idx}>
+                      <Button
+                        variant="outline"
+                        className="w-full justify-start text-left h-auto py-3"
+                        onClick={() => handleAnswer(option.archetype, option.value)}
+                      >
+                        <div className="space-y-1">
+                          <div>├─ [{String.fromCharCode(65 + idx)}] {option.text} → {option.archetype.toUpperCase()} (+{option.value})</div>
+                          <div className="text-muted-foreground text-xs pl-6">{option.textEn}</div>
+                        </div>
+                      </Button>
+                    </div>
                   ))}
                 </div>
-                <p className="bible-body text-xs sm:text-sm">
-                  {currentQuestion + 1} / {questions.length}
-                </p>
-              </div>
-            </div>
-
-            {/* Question */}
-            <div className="space-y-4 sm:space-y-6">
-              <div className="space-y-3 text-left pb-4 border-b border-primary/20">
-                <p className="body-base text-foreground">
-                  {question.text}
-                </p>
-                <p className="body-small text-muted-foreground/70 italic">
-                  {question.textEn}
-                </p>
               </div>
 
-              {/* Options */}
-              <div className="space-y-3">
-                {question.options.map((option, idx) => (
-                  <button
-                    key={idx}
-                    onClick={() => handleAnswer(option.archetype, option.value)}
-                    className="w-full text-left p-4 sm:p-5 rounded-lg border border-border bg-card/30 hover:border-primary hover:bg-primary/5 transition-all group min-h-[60px]"
-                  >
-                    <p className="body-base text-foreground group-hover:text-primary transition-colors">
-                      {option.text}
-                    </p>
-                    <p className="body-small text-muted-foreground/60 italic mt-1">
-                      {option.textEn}
-                    </p>
-                  </button>
-                ))}
+              <div className="pt-4 space-y-2">
+                <div className="text-muted-foreground text-sm">[PROGRESS] {getProgressBar(currentQuestion + 1, 6)} {getProgressPercentage()}%</div>
               </div>
             </div>
-          </div>
+          )}
+
+          {showResults && (
+            <div className="space-y-8 animate-fade-in">
+              <div className="text-accent font-bold text-lg">
+                CREATIVE_ORACLE::SCAN_COMPLETE
+              </div>
+
+              <div className="space-y-6">
+                <div className="space-y-2">
+                  <div className="text-muted-foreground">[DOMINANT_ARCHETYPE]</div>
+                  <div className="pl-4 space-y-1">
+                    <div className="text-primary text-xl font-bold">
+                      {language === "pt" 
+                        ? archetypes[getDominantArchetype()].name
+                        : archetypes[getDominantArchetype()].nameEn}
+                    </div>
+                    <div className="text-muted-foreground text-sm">
+                      └─ Score: {scores[getDominantArchetype()]}/18 pts
+                    </div>
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <div className="text-muted-foreground">[DESCRIPTION]</div>
+                  <div className="pl-4 text-foreground text-sm">
+                    {language === "pt"
+                      ? archetypes[getDominantArchetype()].description
+                      : archetypes[getDominantArchetype()].descriptionEn}
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <div className="text-muted-foreground">[MESSAGE]</div>
+                  <div className="pl-4 text-primary italic">
+                    "{language === "pt"
+                      ? archetypes[getDominantArchetype()].message
+                      : archetypes[getDominantArchetype()].messageEn}"
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  <div className="text-muted-foreground">[SCORE_BREAKDOWN]</div>
+                  <div className="pl-4 space-y-2 text-sm font-mono">
+                    <div>├─ SHADOW: {getProgressBar(scores.shadow)} {scores.shadow} pts</div>
+                    <div>├─ PUNK:   {getProgressBar(scores.punk)} {scores.punk} pts</div>
+                    <div>├─ BUDDY:  {getProgressBar(scores.buddy)} {scores.buddy} pts</div>
+                    <div>└─ GI:     {getProgressBar(scores.gi)} {scores.gi} pts</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-3 pt-4">
+                <Button
+                  onClick={handleReset}
+                  variant="outline"
+                >
+                  &gt; RESTART_SCAN()
+                </Button>
+                <Button
+                  onClick={() => onOpenChange(false)}
+                  variant="outline"
+                >
+                  &gt; CLOSE()
+                </Button>
+              </div>
+            </div>
+          )}
         </div>
-
-        <audio 
-          ref={audioRef} 
-          loop 
-          src="/audio/Shadow_In_The_Dark.mp3"
-          className="hidden"
-        />
       </DialogContent>
     </Dialog>
   );
