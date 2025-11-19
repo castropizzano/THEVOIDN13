@@ -28,22 +28,44 @@ serve(async (req) => {
       },
       body: JSON.stringify({
         model: "google/gemini-2.5-flash-image-preview",
+        temperature: 0.2,
+        top_p: 0.5,
         messages: [
           {
             role: "user",
             content: `Create a cinematic still in 16:9 aspect ratio with the following description: ${prompt}
 
-CRITICAL STYLE REQUIREMENTS:
-- BLACK AND WHITE noir comic art with HEAVY INKS and high contrast, inspired by Frank Miller's Sin City
-- Use RED as the ONLY color accent (sparingly and strategically)
-- Gritty urban Brazilian underground aesthetic with analog print grain and dirty textures
-- Shadows dominate, punk/skate culture vibes
-- Think: São Paulo streets at night, concrete, graffiti, rebellion
-- Visual reference: Blade Runner meets Brazilian favela noir
+CRITICAL STYLE REQUIREMENTS (SHADOW INTERFACE BIBLE v13 CANONICAL):
 
-FORBIDDEN:
-- NO pastel colors, NO clean lines, NO European comic style (Moebius/Jodorowsky)
-- NO colorful scenes, NO bright or saturated colors besides red accents
+MANDATORY STYLE:
+- EXTREMELY DIRTY COMIC BOOK ART STYLE (MUITO SUJO)
+- EXTREMELY HEAVY INKS (TINTA EXTREMAMENTE PESADA) 
+- HIGH CONTRAST like Frank Miller's Sin City and Alan Moore's WATCHMEN
+- VERY VISIBLE ANALOG PRINT GRAIN - heavy 35mm film grain texture
+- ABSOLUTELY FORBIDDEN: clean 3D renders, digital look, video game aesthetics
+
+CANONICAL COLOR PALETTE (USE EXACT HEX CODES):
+- Background/Void: #1A1A1A (Shadow Black) - dominant
+- Text/Echo: #E6E6E6 (Ice Gray) - use sparingly for specular light
+- Accent/Impact: #c40000 (Deep Red) - use sparingly and strategically
+
+ATMOSPHERE & DNA:
+- Nocturnal, rainy, melancholic, introspective
+- Visual references: Blade Runner + The Warriors + THX 1138 + Watchmen
+- Dirty realism like Kids (1995) and Christiane F.
+- Gritty urban Brazilian underground (São Paulo streets at night)
+- Concrete, graffiti, shadows, rebellion, punk/skate culture
+
+PHILOSOPHY:
+- "Void as gestation" and "silence as refusal"
+- A "safe place to disappear"
+- Character exists to "absorb, not to react"
+
+ABSOLUTELY FORBIDDEN:
+- NO pastel colors, NO clean lines
+- NO European comic style (Moebius/Jodorowsky)
+- NO bright or saturated colors besides red accent (#c40000)
+- NO text, words, or names in the image
 
 Aspect ratio: 16:9 cinematic format.`
           }
