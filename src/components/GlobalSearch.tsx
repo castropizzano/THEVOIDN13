@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Search, X } from "lucide-react";
+import { Search, Loader2, X } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import {
@@ -11,6 +11,8 @@ import {
 } from "@/components/ui/dialog";
 import { Card } from "@/components/ui/card";
 import { useNavigate } from "react-router-dom";
+import { supabase } from "@/integrations/supabase/client";
+import { useTrackSearch } from "@/hooks/useAnalytics";
 import { useTranslation } from "@/hooks/useTranslation";
 
 interface SearchResult {
@@ -25,71 +27,40 @@ interface GlobalSearchProps {
   onOpenChange: (open: boolean) => void;
 }
 
-// Static search data - no backend needed
-const staticSearchContent = [
-  {
-    section: "THEVØIDN13 — Manifesto",
-    excerpt: "Memorial artístico explorando arte, código e consciência através de co-criação humano-máquina",
-    path: "/",
-    keywords: ["thevoidn13", "manifesto", "arte", "código", "consciência", "memorial"]
-  },
-  {
-    section: "LowMovie™ — Dissertação",
-    excerpt: "Projeto de pesquisa em Cinema e Artes do Vídeo",
-    path: "/lowmovie",
-    keywords: ["lowmovie", "dissertação", "cinema", "pesquisa", "mestrado"]
-  },
-  {
-    section: "Castro Pizzano — Autor",
-    excerpt: "Sobre o criador, pesquisador e artista por trás do projeto",
-    path: "/autor",
-    keywords: ["castro", "pizzano", "autor", "criador", "artista", "цастро"]
-  },
-  {
-    section: "Galeria Visual",
-    excerpt: "Exploração visual do universo THEVØIDN13",
-    path: "/galeria",
-    keywords: ["galeria", "vídeos", "visual", "imagens"]
-  },
-];
-
 export const GlobalSearch = ({ open, onOpenChange }: GlobalSearchProps) => {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<SearchResult[]>([]);
+  const [isSearching, setIsSearching] = useState(false);
   const navigate = useNavigate();
+  const { trackSearch } = useTrackSearch();
   const { t } = useTranslation();
 
-  const handleSearch = () => {
-    if (!query.trim()) {
+  const handleSearch = async () => {
+    if (!query.trim()) return;
+
+    setIsSearching(true);
+    try {
+      const { data, error } = await supabase.functions.invoke('semantic-search', {
+        body: { query }
+      });
+
+      if (error) {
+        console.error('Search error:', error);
+        setResults([]);
+        return;
+      }
+
+      const searchResults = data?.results || [];
+      setResults(searchResults);
+      
+      // Track search
+      await trackSearch(query, searchResults.length);
+    } catch (error) {
+      console.error('Search failed:', error);
       setResults([]);
-      return;
+    } finally {
+      setIsSearching(false);
     }
-
-    const searchTerm = query.toLowerCase();
-    
-    // Simple client-side search
-    const searchResults = staticSearchContent
-      .map(item => {
-        const titleMatch = item.section.toLowerCase().includes(searchTerm);
-        const excerptMatch = item.excerpt.toLowerCase().includes(searchTerm);
-        const keywordMatch = item.keywords.some(k => k.includes(searchTerm));
-        
-        let relevance = 0;
-        if (titleMatch) relevance += 3;
-        if (excerptMatch) relevance += 2;
-        if (keywordMatch) relevance += 1;
-        
-        return {
-          section: item.section,
-          excerpt: item.excerpt,
-          path: item.path,
-          relevance
-        };
-      })
-      .filter(item => item.relevance > 0)
-      .sort((a, b) => b.relevance - a.relevance);
-
-    setResults(searchResults);
   };
 
   const handleResultClick = (path: string) => {
@@ -121,24 +92,22 @@ export const GlobalSearch = ({ open, onOpenChange }: GlobalSearchProps) => {
           <Input
             placeholder={t("searchPlaceholder")}
             value={query}
-            onChange={(e) => {
-              setQuery(e.target.value);
-              if (e.target.value.trim()) {
-                handleSearch();
-              } else {
-                setResults([]);
-              }
-            }}
+            onChange={(e) => setQuery(e.target.value)}
             onKeyPress={handleKeyPress}
             className="flex-1"
+            disabled={isSearching}
           />
           <Button 
             onClick={handleSearch}
-            disabled={!query.trim()}
+            disabled={isSearching || !query.trim()}
             size="icon"
             aria-label={t("search")}
           >
-            <Search className="h-4 w-4" />
+            {isSearching ? (
+              <Loader2 className="h-4 w-4 animate-spin" />
+            ) : (
+              <Search className="h-4 w-4" />
+            )}
           </Button>
           {query && (
             <Button
@@ -181,11 +150,9 @@ export const GlobalSearch = ({ open, onOpenChange }: GlobalSearchProps) => {
           </div>
         )}
 
-        {query && results.length === 0 && (
-          <div className="text-center py-8">
-            <p className="bible-body text-sm text-muted-foreground">
-              {t("noResults")}
-            </p>
+        {!isSearching && query && results.length === 0 && (
+          <div className="text-center py-8 text-muted-foreground bible-body text-sm">
+            {t("error")}: {query}
           </div>
         )}
 

@@ -1,12 +1,32 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SEO, breadcrumbSchema } from "@/components/SEO";
 import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
 import { BackToTop } from "@/components/BackToTop";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 import { useTranslation } from "@/hooks/useTranslation";
 
+interface Video {
+  id: string;
+  name: string;
+  description: string;
+  duration: number;
+  link: string;
+  embedUrl: string;
+  thumbnail: string;
+  createdTime: string;
+  width: number;
+  height: number;
+}
+
 const Videos = () => {
+  const [videos, setVideos] = useState<Video[]>([]);
+  const [videoSettings, setVideoSettings] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [selectedVideo, setSelectedVideo] = useState<Video | null>(null);
+  const { toast } = useToast();
   const { t } = useTranslation();
 
   const breadcrumbs = breadcrumbSchema([
@@ -27,30 +47,51 @@ const Videos = () => {
 
   const schemaData = {
     "@context": "https://schema.org",
-    "@graph": [breadcrumbs]
+    "@graph": [videoCollectionSchema, breadcrumbs]
   };
 
-  return (
-    <div className="min-h-screen bg-background text-foreground">
-      <SEO
-        title="Portfolio de Vídeos — THEVØIDN13"
-        description="Exploração visual"
-        schemaData={schemaData}
-      />
-      <Header />
-      <BackToTop />
-      <main className="container mx-auto px-4 py-20">
-        <BilingualSection>
-          <BilingualContent
-            pt={<h1 className="bible-title">PORTFÓLIO DE VÍDEOS</h1>}
-            en={<h1 className="bible-title">VIDEO PORTFOLIO</h1>}
-          />
-        </BilingualSection>
-      </main>
-      <Footer />
-    </div>
-  );
-};
+  useEffect(() => {
+    fetchVideos();
+  }, []);
+
+  const fetchVideos = async () => {
+    try {
+      setLoading(true);
+      const { data, error } = await supabase.functions.invoke('vimeo-videos');
+
+      if (error) {
+        toast({
+          title: "Erro ao carregar vídeos",
+          description: "Não foi possível carregar os vídeos. Tente novamente.",
+          variant: "destructive",
+        });
+        return;
+      }
+
+      const { data: settings } = await supabase
+        .from('video_settings')
+        .select('vimeo_id, is_visible, is_featured, display_order')
+        .eq('is_visible', true)
+        .order('display_order', { ascending: true });
+
+      setVideos(data.videos || []);
+      setVideoSettings(settings || []);
+    } catch (error) {
+      toast({
+        title: "Erro",
+        description: "Ocorreu um erro ao carregar os vídeos.",
+        variant: "destructive",
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const formatDuration = (seconds: number) => {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${mins}:${secs.toString().padStart(2, '0')}`;
+  };
 
 
   if (loading) {

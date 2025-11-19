@@ -8,7 +8,6 @@ type TranslationKey =
   | "admin"
   | "search"
   | "searchPlaceholder"
-  | "noResults"
   | "menu"
   | "close"
   | "loading"
@@ -286,7 +285,6 @@ const translations: Record<TranslationKey, { pt: string; en: string }> = {
   admin: { pt: "ADMIN", en: "ADMIN" },
   search: { pt: "Buscar", en: "Search" },
   searchPlaceholder: { pt: "Buscar no site...", en: "Search site..." },
-  noResults: { pt: "Nenhum resultado encontrado", en: "No results found" },
   menu: { pt: "Menu", en: "Menu" },
   close: { pt: "Fechar", en: "Close" },
   loading: { pt: "Carregando...", en: "Loading..." },

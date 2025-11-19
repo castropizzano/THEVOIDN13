@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import ScrollToTop from "@/components/ScrollToTop";
+import { usePageView } from "@/hooks/useAnalytics";
+import { PWAInstallPrompt } from "@/components/PWAInstallPrompt";
 import Index from "./pages/Index";
 import Dissertacao from "./pages/Dissertacao";
 import Autor from "./pages/Autor";
@@ -16,8 +18,11 @@ import NotFound from "./pages/NotFound";
 const queryClient = new QueryClient();
 
 const AppContent = () => {
+  usePageView(); // Track page views automatically
+  
   return (
     <>
+      <PWAInstallPrompt />
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/lowmovie" element={<Dissertacao />} />

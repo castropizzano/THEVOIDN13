@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
     <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
-    
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
     
     <!-- Preload Critical Resources -->
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" as="style" />
@@ -22,8 +22,17 @@
     <meta name="author" content="Castro Pizzano (цастро™)" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
-    <!-- Zero Tracking - Privacy First -->
-    <!-- THEVØIDN13 não utiliza nenhum sistema de analytics, tracking ou cookies de terceiros -->
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-383605046"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-383605046', {
+        'send_page_view': true,
+        'anonymize_ip': true
+      });
+    </script>
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />

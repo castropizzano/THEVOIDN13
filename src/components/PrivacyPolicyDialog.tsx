@@ -41,49 +41,40 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
               </div>
 
               <div className="space-y-4">
-                <h3 className="bible-subtitle">2. ZERO COOKIES E RASTREAMENTO</h3>
+                <h3 className="bible-subtitle">2. USO DE COOKIES</h3>
                 <p className="bible-body text-sm">
-                  <strong>Este site não utiliza cookies, localStorage, sessionStorage ou 
-                  qualquer mecanismo de armazenamento local.</strong> Não rastreamos sua navegação, 
-                  não identificamos visitantes e não coletamos estatísticas de uso.
+                  Utilizamos apenas cookies técnicos essenciais para:
                 </p>
+                <ul className="list-disc list-inside space-y-2 bible-body text-sm ml-4">
+                  <li>Armazenar sua preferência de idioma (PT/EN)</li>
+                  <li>Registrar seu consentimento de cookies (LGPD)</li>
+                  <li>Garantir funcionalidades básicas de navegação</li>
+                </ul>
                 <p className="bible-body text-sm mt-2">
-                  Sua preferência de idioma (PT/EN) é armazenada apenas na memória durante 
-                  a sessão atual e é esquecida ao fechar o navegador.
+                  <strong>Nenhum cookie rastreia seu comportamento ou identidade.</strong>
                 </p>
               </div>
 
               <div className="space-y-4">
-                <h3 className="bible-subtitle">3. ZERO ANALYTICS</h3>
+                <h3 className="bible-subtitle">3. ZERO RASTREAMENTO</h3>
                 <p className="bible-body text-sm">
                   Não utilizamos Google Analytics, Facebook Pixel, ou qualquer ferramenta de 
-                  analytics ou rastreamento de terceiros. <strong>Sua navegação é completamente 
-                  privada, anônima e não deixa rastros.</strong>
+                  rastreamento de terceiros. Sua navegação é completamente privada e anônima.
                 </p>
               </div>
 
               <div className="space-y-4">
-                <h3 className="bible-subtitle">4. ARQUITETURA ESTÁTICA</h3>
+                <h3 className="bible-subtitle">4. NATUREZA DO PROJETO</h3>
                 <p className="bible-body text-sm">
-                  Este é um site 100% estático sem backend, sem servidor, sem banco de dados 
-                  e sem APIs. Não existem formulários, cadastros ou qualquer tipo de interação 
-                  que colete informações. O site funciona como um memorial artístico digital, 
-                  portfólio e interface experimental—<strong>sem necessidade de qualquer tipo 
-                  de identificação ou cadastro de visitantes</strong>.
+                  Este é um memorial artístico acadêmico desenvolvido como parte de pesquisa 
+                  de mestrado em Cinema e Artes do Vídeo (PPG-CINEAV/UNESPAR). O site funciona 
+                  como arquivo visual, portfólio e interface experimental—<strong>sem necessidade 
+                  de qualquer tipo de cadastro ou identificação de visitantes</strong>.
                 </p>
               </div>
 
               <div className="space-y-4">
-                <h3 className="bible-subtitle">5. NATUREZA DO PROJETO</h3>
-                <p className="bible-body text-sm">
-                  Desenvolvido como parte de pesquisa de mestrado em Cinema e Artes do Vídeo 
-                  (PPG-CINEAV/UNESPAR) por Castro Pizzano. Este memorial artístico existe para 
-                  ser explorado livremente, sem barreiras, sem cadastros e sem vigilância.
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <h3 className="bible-subtitle">6. CONTATO</h3>
+                <h3 className="bible-subtitle">5. CONTATO</h3>
                 <p className="bible-body text-sm">
                   Para questões sobre privacidade ou sobre o projeto, entre em contato através 
                   dos canais públicos listados na página do autor.
@@ -105,49 +96,40 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
               </div>
 
               <div className="space-y-4">
-                <h3 className="bible-subtitle">2. ZERO COOKIES AND TRACKING</h3>
+                <h3 className="bible-subtitle">2. COOKIE USAGE</h3>
                 <p className="bible-body text-sm">
-                  <strong>This website does not use cookies, localStorage, sessionStorage, or 
-                  any local storage mechanism.</strong> We do not track your navigation, do not 
-                  identify visitors, and do not collect usage statistics.
+                  We only use essential technical cookies for:
                 </p>
+                <ul className="list-disc list-inside space-y-2 bible-body text-sm ml-4">
+                  <li>Storing your language preference (PT/EN)</li>
+                  <li>Recording your cookie consent (GDPR/LGPD)</li>
+                  <li>Ensuring basic navigation functionalities</li>
+                </ul>
                 <p className="bible-body text-sm mt-2">
-                  Your language preference (PT/EN) is stored only in memory during the current 
-                  session and is forgotten when you close the browser.
+                  <strong>No cookie tracks your behavior or identity.</strong>
                 </p>
               </div>
 
               <div className="space-y-4">
-                <h3 className="bible-subtitle">3. ZERO ANALYTICS</h3>
+                <h3 className="bible-subtitle">3. ZERO TRACKING</h3>
                 <p className="bible-body text-sm">
-                  We do not use Google Analytics, Facebook Pixel, or any analytics or tracking 
-                  tools from third parties. <strong>Your navigation is completely private, 
-                  anonymous, and leaves no traces.</strong>
+                  We do not use Google Analytics, Facebook Pixel, or any third-party tracking 
+                  tools. Your navigation is completely private and anonymous.
                 </p>
               </div>
 
               <div className="space-y-4">
-                <h3 className="bible-subtitle">4. STATIC ARCHITECTURE</h3>
+                <h3 className="bible-subtitle">4. PROJECT NATURE</h3>
                 <p className="bible-body text-sm">
-                  This is a 100% static website with no backend, no server, no database, and 
-                  no APIs. There are no forms, registrations, or any type of interaction that 
-                  collects information. The website functions as a digital artistic memorial, 
-                  portfolio, and experimental interface—<strong>without requiring any type of 
-                  identification or visitor registration</strong>.
+                  This is an academic artistic memorial developed as part of a master's research 
+                  in Cinema and Video Arts (PPG-CINEAV/UNESPAR). The website functions as a visual 
+                  archive, portfolio, and experimental interface—<strong>without requiring any type 
+                  of registration or visitor identification</strong>.
                 </p>
               </div>
 
               <div className="space-y-4">
-                <h3 className="bible-subtitle">5. PROJECT NATURE</h3>
-                <p className="bible-body text-sm">
-                  Developed as part of master's research in Cinema and Video Arts 
-                  (PPG-CINEAV/UNESPAR) by Castro Pizzano. This artistic memorial exists to be 
-                  freely explored, without barriers, without registrations, and without surveillance.
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <h3 className="bible-subtitle">6. CONTACT</h3>
+                <h3 className="bible-subtitle">5. CONTACT</h3>
                 <p className="bible-body text-sm">
                   For privacy or project-related questions, please contact through the public 
                   channels listed on the author page.
@@ -158,9 +140,6 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
             <div className="text-center pt-6 border-t border-border">
               <p className="bible-body text-xs text-muted-foreground">
                 Última atualização: Janeiro 2025 / Last updated: January 2025
-              </p>
-              <p className="bible-body text-xs text-muted-foreground mt-2">
-                <strong>ZERO DATA · ZERO TRACKING · ZERO COOKIES · 100% STATIC</strong>
               </p>
             </div>
           </div>

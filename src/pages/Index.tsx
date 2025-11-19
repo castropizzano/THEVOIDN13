@@ -3,11 +3,13 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SEO, creativeWorkSchema, personSchema, organizationSchema } from "@/components/SEO";
 import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
+import { PromptLibrary } from "@/components/PromptLibrary";
 import { BilingualAudioPlayer } from "@/components/BilingualAudioPlayer";
+import { ComicGenerator } from "@/components/ComicGenerator";
 import { MindMap } from "@/components/MindMap";
 import { CreativeOracle } from "@/components/CreativeOracle";
 import { BackToTop } from "@/components/BackToTop";
-
+import { CookieConsent } from "@/components/CookieConsent";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import SpotifyPlaylist from "@/components/SpotifyPlaylist";
 import FilmGallery from "@/components/FilmGallery";
@@ -85,7 +87,7 @@ const Index = () => {
   
   return (
     <div className="min-h-screen bg-background text-foreground">
-      
+      <CookieConsent />
       <SEO 
         title="THEVØIDN13 — Shadow Interface Bible v13 | Castro Pizzano"
         description="A Bíblia Definitiva — Um corpo à deriva entre o ruído e o silêncio. Práxis híbrida explorando sombra, silêncio, ruído e vazio através de co-criação humano-máquina."
@@ -1976,6 +1978,9 @@ const Index = () => {
                 </div>
               }
             />
+            <div className="bible-media">
+              <PromptLibrary />
+            </div>
           </div>
 
           {/* GERADOR EXPERIMENTAL */}
@@ -2012,6 +2017,9 @@ const Index = () => {
                 </div>
               }
             />
+            <div className="bible-media">
+              <ComicGenerator />
+            </div>
           </div>
 
           {/* ORÁCULO: JORNADA INTERATIVA */}
