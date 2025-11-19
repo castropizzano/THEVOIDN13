@@ -23,15 +23,15 @@ const processSteps: ProcessStep[] = [
     contentPt: [
       "Este é o processo completo de criação do Memorial Artístico THEVØIDN13.",
       "Um sistema de operações criativas que transforma memórias brutas em interfaces digitais interativas.",
-      "Cada etapa representa uma camada de transformação do material coletado ao longo de 15 anos de trabalho criativo."
+      "Cada etapa representa uma camada de transformação do material coletado ao longo de 2 anos de trabalho criativo."
     ],
     contentEn: [
       "This is the complete creative process of the THEVØIDN13 Artistic Memorial.",
       "A creative operations system that transforms raw memories into interactive digital interfaces.",
-      "Each step represents a layer of transformation of material collected over 15 years of creative work."
+      "Each step represents a layer of transformation of material collected over 2 years of creative work."
     ],
-    codePt: "├─ ETAPAS: 7 fases\n├─ TEMPO: 15 anos de coleta\n└─ OUTPUT: Memorial digital interativo",
-    codeEn: "├─ STEPS: 7 phases\n├─ TIME: 15 years of collection\n└─ OUTPUT: Interactive digital memorial"
+    codePt: "├─ ETAPAS: 7 fases\n├─ TEMPO: 2 anos de coleta\n└─ OUTPUT: Memorial digital interativo",
+    codeEn: "├─ STEPS: 7 phases\n├─ TIME: 2 years of collection\n└─ OUTPUT: Interactive digital memorial"
   },
   {
     id: "01_input",
