@@ -185,20 +185,19 @@ const FilmGallery = () => {
             </DialogTrigger>
             <DialogContent className="max-w-2xl">
               <DialogHeader>
-                <DialogTitle className="text-2xl">{t("filmReferencesTitle")}</DialogTitle>
-                <DialogDescription className="text-base leading-relaxed pt-4 bible-block">
-                  <p>{t("filmRefPara1")}</p>
-                  <p>{t("filmRefPara2")}</p>
-                  <p>{t("filmRefPara3")}</p>
-                  <p>{t("filmRefPara4")}</p>
-                </DialogDescription>
+                <DialogTitle className="text-2xl font-bold">{t("filmReferencesTitle")}</DialogTitle>
               </DialogHeader>
+              <div className="bible-block text-sm leading-relaxed">
+                <p>{t("filmRefPara1")}</p>
+                <p>{t("filmRefPara2")}</p>
+                <p>{t("filmRefPara3")}</p>
+                <p>{t("filmRefPara4")}</p>
+              </div>
             </DialogContent>
           </Dialog>
-        </Card>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mt-6">
-          {films.map((film) => (
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+            {films.map((film) => (
             <TooltipProvider key={film.imdbId}>
               <Tooltip>
                 <TooltipTrigger asChild>
@@ -238,7 +237,14 @@ const FilmGallery = () => {
               </Tooltip>
             </TooltipProvider>
           ))}
-        </div>
+          </div>
+
+          <div className="bible-media p-6 bg-secondary/10 rounded-lg border border-primary/10">
+            <p className="text-sm text-center text-muted-foreground leading-relaxed">
+              Essas 15 obras cinematográficas formam a base conceitual e estética do universo THEVOIDN13.
+            </p>
+          </div>
+        </Card>
       </div>
     </section>
   );
