@@ -9,7 +9,7 @@ import { ComicGenerator } from "@/components/ComicGenerator";
 import { MindMap } from "@/components/MindMap";
 import { CreativeOracle } from "@/components/CreativeOracle";
 import { BackToTop } from "@/components/BackToTop";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTrigger, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import SpotifyPlaylist from "@/components/SpotifyPlaylist";
 import FilmGallery from "@/components/FilmGallery";
 import ComicsShowcase from "@/components/ComicsShowcase";
@@ -1772,49 +1772,69 @@ const Index = () => {
         {/* ===== THEVØIDN13 STUDY ===== */}
         <BilingualSection className="bible-section">
           {/* ===== PROTÓTIPO Nº13 ===== */}
-          <BilingualContent
-            portugueseContent={
-              <>
-                <h3 className="bible-subtitle">PROTÓTIPO Nº13</h3>
-              </>
-            }
-            englishContent={
-              <>
-                <h3 className="bible-subtitle">PROTOTYPE Nº13</h3>
-              </>
-            }
-          />
+          <Card className="overflow-hidden border-primary/20 bg-card/50 backdrop-blur-sm p-8">
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button variant="outline" className="w-full justify-start bible-media mb-6">
+                  <span className="text-sm">Protótipo Nº13 / Prototype Nº13</span>
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="max-w-2xl">
+                <DialogHeader>
+                  <DialogTitle className="text-2xl font-bold">THEVØIDN13 Action Figure</DialogTitle>
+                </DialogHeader>
+                <div className="bible-block text-sm leading-relaxed space-y-4">
+                  <BilingualContent
+                    portugueseContent={
+                      <>
+                        <p>{t("prototypeDesc1")}</p>
+                        <p>{t("prototypeDesc2")}</p>
+                        <p>{t("prototypeDesc3")}</p>
+                      </>
+                    }
+                    englishContent={
+                      <>
+                        <p>{t("prototypeDesc1")}</p>
+                        <p>{t("prototypeDesc2")}</p>
+                        <p>{t("prototypeDesc3")}</p>
+                      </>
+                    }
+                  />
+                </div>
+              </DialogContent>
+            </Dialog>
 
-          <div className="grid md:grid-cols-2 gap-8 items-start">
-            <div className="space-y-6">
-              <BilingualContent
-                portugueseContent={
-                  <>
-                    <p className="bible-body">{t("prototypeDesc1")}</p>
-                    <p className="bible-body">{t("prototypeDesc2")}</p>
-                    <p className="bible-body">{t("prototypeDesc3")}</p>
-                  </>
-                }
-                englishContent={
-                  <>
-                    <p className="bible-body">{t("prototypeDesc1")}</p>
-                    <p className="bible-body">{t("prototypeDesc2")}</p>
-                    <p className="bible-body">{t("prototypeDesc3")}</p>
-                  </>
-                }
-              />
+            <div className="grid md:grid-cols-2 gap-8 items-start">
+              <div className="space-y-6">
+                <BilingualContent
+                  portugueseContent={
+                    <>
+                      <p className="bible-body">{t("prototypeDesc1")}</p>
+                      <p className="bible-body">{t("prototypeDesc2")}</p>
+                      <p className="bible-body">{t("prototypeDesc3")}</p>
+                    </>
+                  }
+                  englishContent={
+                    <>
+                      <p className="bible-body">{t("prototypeDesc1")}</p>
+                      <p className="bible-body">{t("prototypeDesc2")}</p>
+                      <p className="bible-body">{t("prototypeDesc3")}</p>
+                    </>
+                  }
+                />
+              </div>
+              <div 
+                className="cursor-pointer self-start"
+                onClick={() => setPrototypeDialogOpen(true)}
+              >
+                <img 
+                  src={actionFigureNew} 
+                  alt="THEVØIDN13 Action Figure Prototype" 
+                  className="w-full h-auto max-h-[400px] object-contain rounded-lg hover:scale-105 transition-transform"
+                />
+              </div>
             </div>
-            <div 
-              className="cursor-pointer self-start"
-              onClick={() => setPrototypeDialogOpen(true)}
-            >
-              <img 
-                src={actionFigureNew} 
-                alt="THEVØIDN13 Action Figure Prototype" 
-                className="w-full h-auto max-h-[400px] object-contain rounded-lg hover:opacity-90 transition-opacity"
-              />
-            </div>
-          </div>
+          </Card>
 
           <Dialog open={prototypeDialogOpen} onOpenChange={setPrototypeDialogOpen}>
             <DialogContent className="max-w-6xl max-h-[90vh] p-0">
