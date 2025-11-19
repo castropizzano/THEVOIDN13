@@ -1811,8 +1811,7 @@ const Index = () => {
               <img 
                 src={actionFigureNew} 
                 alt="THEVØIDN13 Action Figure Prototype" 
-                className="w-full object-contain rounded-lg hover:opacity-90 transition-opacity"
-                style={{ maxHeight: '100%' }}
+                className="w-full h-auto max-h-[400px] object-contain rounded-lg hover:opacity-90 transition-opacity"
               />
             </div>
           </div>
