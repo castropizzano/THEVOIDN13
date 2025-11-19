@@ -17,6 +17,8 @@ import castroGuidelineEN from "@/assets/castro-guideline-en.png";
 const Autor = () => {
   const [showMemorialPDF, setShowMemorialPDF] = useState(false);
   const [showReleasePDF, setShowReleasePDF] = useState(false);
+  const [showGuidelinePT, setShowGuidelinePT] = useState(false);
+  const [showGuidelineEN, setShowGuidelineEN] = useState(false);
   const breadcrumbs = breadcrumbSchema([
     { name: "Home", url: "https://thevoidn13.com/" },
     { name: "Autor", url: "https://thevoidn13.com/autor" }
@@ -422,16 +424,18 @@ const Autor = () => {
               <img 
                 src={castroGuidelinePT} 
                 alt="ЦАСТРО™ Anti-Brand Guideline — Português"
-                className="w-full h-auto"
+                className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
                 loading="lazy"
+                onClick={() => setShowGuidelinePT(true)}
               />
             </div>
             <div>
               <img 
                 src={castroGuidelineEN} 
                 alt="ЦАСТРО™ Anti-Brand Guideline — English"
-                className="w-full h-auto"
+                className="w-full h-auto cursor-pointer hover:opacity-90 transition-opacity"
                 loading="lazy"
+                onClick={() => setShowGuidelineEN(true)}
               />
             </div>
           </div>
@@ -902,6 +906,60 @@ const Autor = () => {
                 title="CasaTrezeStudio Release"
               />
             </object>
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Guideline PT Dialog */}
+      <Dialog open={showGuidelinePT} onOpenChange={setShowGuidelinePT}>
+        <DialogContent className="max-w-[95vw] h-[95vh] p-0 bg-black/95 border-primary/30">
+          <DialogHeader className="p-4 border-b border-primary/30">
+            <div className="flex items-center justify-between">
+              <DialogTitle className="font-mono text-primary">ЦАСТРО™ ANTI-BRAND GUIDELINE [PT]</DialogTitle>
+              <Button 
+                variant="ghost" 
+                size="sm"
+                onClick={() => setShowGuidelinePT(false)}
+                className="gap-2"
+              >
+                <Minimize2 className="h-4 w-4" />
+                Fechar / Close
+              </Button>
+            </div>
+          </DialogHeader>
+          <div className="flex-1 overflow-auto p-4">
+            <img 
+              src={castroGuidelinePT} 
+              alt="ЦАСТРО™ Anti-Brand Guideline — Português"
+              className="w-full h-auto"
+            />
+          </div>
+        </DialogContent>
+      </Dialog>
+
+      {/* Guideline EN Dialog */}
+      <Dialog open={showGuidelineEN} onOpenChange={setShowGuidelineEN}>
+        <DialogContent className="max-w-[95vw] h-[95vh] p-0 bg-black/95 border-primary/30">
+          <DialogHeader className="p-4 border-b border-primary/30">
+            <div className="flex items-center justify-between">
+              <DialogTitle className="font-mono text-primary">ЦАСТРО™ ANTI-BRAND GUIDELINE [EN]</DialogTitle>
+              <Button 
+                variant="ghost" 
+                size="sm"
+                onClick={() => setShowGuidelineEN(false)}
+                className="gap-2"
+              >
+                <Minimize2 className="h-4 w-4" />
+                Fechar / Close
+              </Button>
+            </div>
+          </DialogHeader>
+          <div className="flex-1 overflow-auto p-4">
+            <img 
+              src={castroGuidelineEN} 
+              alt="ЦАСТРО™ Anti-Brand Guideline — English"
+              className="w-full h-auto"
+            />
           </div>
         </DialogContent>
       </Dialog>
