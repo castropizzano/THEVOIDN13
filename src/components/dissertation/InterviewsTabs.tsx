@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { BilingualSection } from "@/components/BilingualSection";
 import { PDFViewer } from "@/components/PDFViewer";
 import { FileText, ChevronLeft, ChevronRight, X, ZoomIn, ZoomOut } from "lucide-react";
 import zine02 from "@/assets/zine/zine_02.png";
@@ -166,19 +165,40 @@ export const InterviewsTabs = () => {
   };
 
   return (
-    <BilingualSection className="py-16">
-      <div className="bible-bilingual-grid bible-block-spacing mb-12">
-        <div>
-          <h2 className="bible-title">ENTREVISTAS & REGISTROS</h2>
-          <p className="bible-subtitle text-primary mt-2">Processos e Conversas</p>
-        </div>
-        <div>
-          <h2 className="bible-title">INTERVIEWS & RECORDS</h2>
-          <p className="bible-subtitle text-primary mt-2">Processes and Conversations</p>
-        </div>
-      </div>
+    <section className="w-full bible-section">
+      <div className="max-w-6xl mx-auto">
+        <Card className="overflow-hidden border-primary/20 bg-card/50 backdrop-blur-sm p-8">
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button variant="outline" className="w-full justify-start bible-media">
+                <span className="text-sm">Sobre as Entrevistas / About the Interviews</span>
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="max-w-2xl">
+              <DialogHeader>
+                <DialogTitle className="text-2xl font-bold">Documentação Etnográfica</DialogTitle>
+              </DialogHeader>
+              <div className="bible-block text-sm leading-relaxed space-y-4">
+                <p>Este conjunto de entrevistas documenta a pesquisa de campo realizada entre 2017-2024, capturando vozes da cena underground brasileira.</p>
+                <p><strong>Metodologia:</strong> Conversas abertas gravadas em vídeo, transcritas e analisadas segundo princípios etnográficos, preservando a oralidade e contexto cultural dos entrevistados.</p>
+                <p><strong>Temas:</strong> Skate, punk, mídia independente, produção cultural marginal, resistência criativa e construção de identidades subculturais.</p>
+                <p className="text-xs text-muted-foreground">Pesquisa acadêmica vinculada ao Memorial "Ecos Criativos" (PUC-SP, 2024)</p>
+              </div>
+            </DialogContent>
+          </Dialog>
 
-      <Tabs defaultValue="skate-punk" className="w-full">
+          <div className="bible-bilingual-grid bible-block mb-12">
+            <div>
+              <h2 className="bible-title">ENTREVISTAS & REGISTROS</h2>
+              <p className="bible-subtitle text-primary mt-2">Processos e Conversas</p>
+            </div>
+            <div>
+              <h2 className="bible-title">INTERVIEWS & RECORDS</h2>
+              <p className="bible-subtitle text-primary mt-2">Processes and Conversations</p>
+            </div>
+          </div>
+
+          <Tabs defaultValue="skate-punk" className="w-full">
         <TabsList className="grid w-full grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mb-8 h-auto">
           <TabsTrigger value="skate-punk" className="bible-caption font-semibold">
             Skate Punk
@@ -403,7 +423,9 @@ export const InterviewsTabs = () => {
             </DialogContent>
           </Dialog>
         </TabsContent>
-      </Tabs>
-    </BilingualSection>
+          </Tabs>
+        </Card>
+      </div>
+    </section>
   );
 };

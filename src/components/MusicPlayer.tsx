@@ -1,19 +1,33 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
 
 export const MusicPlayer = () => {
   return (
-    <Card className="bg-card/80 border-primary/30 hover:border-primary transition-colors">
-      <CardHeader>
-        <CardTitle className="text-2xl font-bold text-primary">
-          LowMovie™ Original Soundtrack
-        </CardTitle>
-        <CardDescription className="text-base">
-          Trilhas sonoras originais do filme / Original motion picture soundtracks
-        </CardDescription>
-      </CardHeader>
-      <CardContent>
-        <Tabs defaultValue="instrumental" className="w-full">
+    <section className="w-full bible-section">
+      <div className="max-w-6xl mx-auto">
+        <Card className="overflow-hidden border-primary/20 bg-card/50 backdrop-blur-sm p-8">
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button variant="outline" className="w-full justify-start bible-media">
+                <span className="text-sm">Sobre a Assinatura Sonora / About the Sound Signature</span>
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="max-w-2xl">
+              <DialogHeader>
+                <DialogTitle className="text-2xl font-bold">LowMovie™ Original Soundtrack</DialogTitle>
+              </DialogHeader>
+              <div className="bible-block text-sm leading-relaxed space-y-4">
+                <p>A assinatura sonora de THEVOIDN13 é composta por duas obras principais que exploram diferentes dimensões narrativas do universo.</p>
+                <p><strong>Like Rats on Hostile Paths:</strong> Álbum instrumental das cenas cinematográficas, criando atmosferas densas e contemplativas que dialogam com a estética visual do filme.</p>
+                <p><strong>Lowbyrinth EP:</strong> Trilha das VideoPartes, explorando texturas eletrônicas e experimentais que refletem a fragmentação narrativa do projeto.</p>
+                <p className="text-xs text-muted-foreground">Composição: Dan Guinski (Non-Grata) & Raphael Carvalho (Relvi)</p>
+              </div>
+            </DialogContent>
+          </Dialog>
+
+          <Tabs defaultValue="instrumental" className="w-full">
           <TabsList className="grid w-full grid-cols-2 mb-6">
             <TabsTrigger value="instrumental">
               Like Rats on Hostile Paths
@@ -72,16 +86,15 @@ export const MusicPlayer = () => {
               />
             </div>
           </TabsContent>
-        </Tabs>
+          </Tabs>
 
-        <div className="mt-6 p-4 bg-primary/5 rounded-lg border-l-4 border-primary">
-          <p className="text-sm text-muted-foreground">
-            <span className="font-bold text-foreground">Nota de Escuta:</span> Acione o som antes da próxima respiração. 
-            Ao deslizar por estas páginas, faça vibrar os pulsares que mantêm o LowMovie™ em combustão contínua, 
-            riscando a superfície como quem traça linha no asfalto. Dê play, deixe a onda atravessar o corpo.
-          </p>
-        </div>
-      </CardContent>
-    </Card>
+          <div className="bible-media p-6 bg-secondary/10 rounded-lg border border-primary/10">
+            <p className="text-sm text-center text-muted-foreground leading-relaxed">
+              <strong className="text-foreground">Nota de Escuta:</strong> Acione o som antes da próxima respiração. Deixe as frequências guiarem sua atenção.
+            </p>
+          </div>
+        </Card>
+      </div>
+    </section>
   );
 };
