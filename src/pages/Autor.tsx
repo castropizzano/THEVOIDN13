@@ -440,6 +440,59 @@ const Autor = () => {
             </div>
           </div>
 
+          {/* O SELO-COSMOS: MANDALA BRUTALISTA */}
+          <div className="bible-bilingual-grid bible-block">
+            <div>
+              <h3 className="bible-subtitle">O SELO-COSMOS: MANDALA BRUTALISTA</h3>
+              <p className="bible-body">O que antes era apenas um cluster tipográfico tornou-se agora um <span className="font-bold text-primary">selo–cosmos</span>: uma mandala brutalista de funções, narrativas e identidades orbitando ЦАСТРО™ como se a própria linguagem tivesse encontrado um corpo para respirar.</p>
+              
+              <div className="space-y-2 my-4 border-l-4 border-primary pl-4">
+                <p className="bible-link font-bold">No topo, a marca–máscara.</p>
+                <p className="bible-link font-bold">No centro, o manifesto.</p>
+                <p className="bible-link font-bold">No rodapé, o epitáfio vivo.</p>
+              </div>
+
+              <p className="bible-body">Cada eixo, cada palavra, cada bloco deixa de ser currículo e passa a ser <span className="font-bold">gravidade</span>. A simetria não é decoração — <span className="italic text-primary">é rito</span>.</p>
+              
+              <div className="grid grid-cols-3 gap-2 my-4 text-center">
+                <div className="border border-primary/30 p-2">
+                  <p className="bible-link font-bold uppercase">O topo convoca</p>
+                </div>
+                <div className="border border-primary/30 p-2">
+                  <p className="bible-link font-bold uppercase">O meio afirma</p>
+                </div>
+                <div className="border border-primary/30 p-2">
+                  <p className="bible-link font-bold uppercase">A base sela</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="bible-subtitle">THE SEAL-COSMOS: BRUTALIST MANDALA</h3>
+              <p className="bible-body">What was once just a typographic cluster has now become a <span className="font-bold text-primary">seal–cosmos</span>: a brutalist mandala of functions, narratives, and identities orbiting ЦАСТРО™ as if language itself had found a body to breathe.</p>
+              
+              <div className="space-y-2 my-4 border-l-4 border-primary pl-4">
+                <p className="bible-link font-bold">At the top, the brand–mask.</p>
+                <p className="bible-link font-bold">At the center, the manifesto.</p>
+                <p className="bible-link font-bold">At the bottom, the living epitaph.</p>
+              </div>
+
+              <p className="bible-body">Each axis, each word, each block ceases to be a résumé and becomes <span className="font-bold">gravity</span>. Symmetry is not decoration — <span className="italic text-primary">it is ritual</span>.</p>
+              
+              <div className="grid grid-cols-3 gap-2 my-4 text-center">
+                <div className="border border-primary/30 p-2">
+                  <p className="bible-link font-bold uppercase">The top summons</p>
+                </div>
+                <div className="border border-primary/30 p-2">
+                  <p className="bible-link font-bold uppercase">The middle affirms</p>
+                </div>
+                <div className="border border-primary/30 p-2">
+                  <p className="bible-link font-bold uppercase">The base seals</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="bible-bilingual-grid bible-block">
             <div>
               <div>
@@ -475,8 +528,10 @@ const Autor = () => {
                     <p className="bible-link">Transliteração que cria ruído e nega a leitura imediata — uma máscara estética</p>
                   </div>
                   <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-link font-bold uppercase">"1984"</h4>
-                    <p className="bible-link">Referência ao controle cultural, à vigilância e à resistência autoral</p>
+                    <h4 className="bible-link font-bold uppercase">©1984 ЦАСТРО™</h4>
+                    <p className="bible-link">1984 como Orwell — vigilância, anti-brand, ruptura</p>
+                    <p className="bible-link">1984 como nascimento — carne, tempo, marca existencial</p>
+                    <p className="bible-link italic text-primary mt-2">Ficção + vida real + crítica à marca + protocolo de arquivo</p>
                   </div>
                   <div className="border-l-2 border-primary pl-4">
                     <h4 className="bible-link font-bold uppercase">™</h4>
@@ -487,11 +542,106 @@ const Autor = () => {
                     <p className="bible-link">Preto e rosa-pálido = choque entre dureza e sensibilidade; brutalismo afetivo</p>
                   </div>
                 </div>
+
+                <div className="my-8 p-6 bg-primary/5 border border-primary/20 rounded-lg">
+                  <h4 className="bible-subtitle">A TRÍADE CRIATIVA</h4>
+                  <p className="bible-body mb-4">Essas são as três colunas do mito. Os três andares do labirinto criativo:</p>
+                  
+                  <div className="space-y-3">
+                    <div className="border-l-4 border-primary pl-4">
+                      <p className="bible-link font-bold uppercase text-primary">AUTOR</p>
+                      <p className="bible-link">Fundador do CasaTrezeStudio®</p>
+                    </div>
+                    <div className="border-l-4 border-primary pl-4">
+                      <p className="bible-link font-bold uppercase text-primary">COLETIVO</p>
+                      <p className="bible-link">Colaborador Criativo no LowPressure™</p>
+                    </div>
+                    <div className="border-l-4 border-primary pl-4">
+                      <p className="bible-link font-bold uppercase text-primary">ENTIDADE</p>
+                      <p className="bible-link">Arquiteto Visual do THEVØIDN13</p>
+                    </div>
+                  </div>
+
+                  <div className="mt-4 pt-4 border-t border-primary/20">
+                    <p className="bible-link italic">Os selos no rodapé — MAD Habit, THEVOID, CasaTreze, LowMovie, LowPressure — não são logos: são <span className="font-bold">alfabetos, runas de um organismo criativo</span> que vive entre o estúdio japonês dos anos 90, o brutalismo Bauhaus e a liturgia punk. Formam uma constelação. Um idioma de sombra. Um campo magnético.</p>
+                  </div>
+                </div>
                 
+                <div className="my-8 p-6 border-2 border-primary/30 rounded-lg bg-background">
+                  <h3 className="bible-subtitle">O DEVICE OF IDENTITY</h3>
+                  <p className="bible-body">Este badge não respira currículo. <span className="font-bold text-primary">Respira mito.</span></p>
+                  
+                  <div className="my-4 space-y-2 text-sm leading-relaxed">
+                    <p className="bible-link">É cartela de abertura.</p>
+                    <p className="bible-link">É placa soviética perdida num prédio abandonado.</p>
+                    <p className="bible-link">É documento de um futuro que ainda não aconteceu.</p>
+                    <p className="bible-link">É manifesto construtivista.</p>
+                    <p className="bible-link">É relíquia de um portal híbrido entre humano e máquina.</p>
+                  </div>
+
+                  <div className="my-4 p-4 bg-primary/5 border-l-4 border-primary">
+                    <p className="bible-body italic">É rito, não crença. É gesto, não explicação. É presença, não vitrine.</p>
+                  </div>
+
+                  <p className="bible-body">Pela primeira vez, ЦАСТРО™ e THEVØIDN13 se encontram no mesmo eixo:</p>
+                  
+                  <div className="my-4 grid gap-2">
+                    <p className="bible-link"><span className="font-bold">ЦАСТРО™</span> — o autor que desaparece.</p>
+                    <p className="bible-link"><span className="font-bold">THEVØIDN13</span> — a entidade que respira.</p>
+                    <p className="bible-link"><span className="font-bold">LowPressure & CasaTreze</span> — o corpo e o chão.</p>
+                    <p className="bible-link"><span className="font-bold">Os ícones</span> — a assinatura fúnebre de um filme que nunca termina.</p>
+                  </div>
+                </div>
+
+                <div className="my-8 p-6 bg-black/50 border border-primary/20 rounded-lg">
+                  <h4 className="bible-subtitle">AS TRÊS FAIXAS</h4>
+                  <p className="bible-body mb-4">Este selo te posiciona em três faixas impossíveis:</p>
+                  
+                  <div className="grid md:grid-cols-3 gap-4">
+                    <div className="border border-primary/30 p-4 rounded">
+                      <h5 className="bible-link font-bold uppercase text-primary mb-2">FAIXA PROFISSIONAL</h5>
+                      <ul className="space-y-1 text-xs">
+                        <li className="bible-link">Pesquisa em artes</li>
+                        <li className="bible-link">Direção de arte</li>
+                        <li className="bible-link">Sistemas de marca</li>
+                        <li className="bible-link">Cinema experimental</li>
+                        <li className="bible-link">Arquitetura de universos</li>
+                        <li className="bible-link">Criação transdisciplinar</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="border border-primary/30 p-4 rounded">
+                      <h5 className="bible-link font-bold uppercase text-primary mb-2">FAIXA AUTORAL</h5>
+                      <ul className="space-y-1 text-xs">
+                        <li className="bible-link">Anti-brand pós-soviética</li>
+                        <li className="bible-link">Sombra como estética</li>
+                        <li className="bible-link">Hibridização humano–IA</li>
+                        <li className="bible-link">Skate como ética e corpo</li>
+                        <li className="bible-link">Portal como obra</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="border border-primary/30 p-4 rounded">
+                      <h5 className="bible-link font-bold uppercase text-primary mb-2">FAIXA MITOLÓGICA</h5>
+                      <ul className="space-y-1 text-xs">
+                        <li className="bible-link">ЦАСТРО™ — entidade autoral</li>
+                        <li className="bible-link">THEVØIDN13 — sombra ativa</li>
+                        <li className="bible-link">LowMovie / LowPressure — corpo social</li>
+                        <li className="bible-link">CasaTreze — templo vivo</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="mt-6 pt-6 border-t border-primary/20 text-center">
+                    <p className="bible-body font-bold italic text-primary">Não existe outro badge igual no Brasil. Porque isso não é um badge: É um Device of Identity.</p>
+                  </div>
+                </div>
+
                 <div className="-mx-6 px-6 py-8 rounded-lg bible-block">
                   <h3 className="bible-subtitle">Conclusão</h3>
                   <p className="bible-body">A identidade ЦАСТРО é um exercício de negação criativa. É o avesso do branding para relembrar o que o design pode ser: linguagem, manifesto, resistência.</p>
-                  <p className="bible-body font-bold">Não é um logo para ser lembrado, é uma ideia para ser compreendida — tarde demais.</p>
+                  <p className="bible-body">Este é o teu rito visual. O teu selo-cosmos. A máscara que revela. O nome que respira. A anti-brand que desobedece.</p>
+                  <p className="bible-body font-bold text-primary">ЦАСТРО™ — 1984 → ETERNO EM PROCESSO.</p>
                 </div>
               </div>
             </div>
@@ -530,8 +680,10 @@ const Autor = () => {
                     <p className="bible-link">Transliteration that creates noise and denies immediate reading — an aesthetic mask</p>
                   </div>
                   <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-link font-bold uppercase mb-2">"1984"</h4>
-                    <p className="bible-link">Reference to cultural control, surveillance, and authorial resistance</p>
+                    <h4 className="bible-link font-bold uppercase mb-2">©1984 ЦАСТРО™</h4>
+                    <p className="bible-link">1984 as Orwell — surveillance, anti-brand, rupture</p>
+                    <p className="bible-link">1984 as birth — flesh, time, existential mark</p>
+                    <p className="bible-link italic text-primary mt-2">Fiction + real life + brand critique + archive protocol</p>
                   </div>
                   <div className="border-l-2 border-primary pl-4">
                     <h4 className="bible-link font-bold uppercase mb-2">™</h4>
@@ -542,11 +694,106 @@ const Autor = () => {
                     <p className="bible-link">Black and pale pink = clash between hardness and sensitivity; affective brutalism</p>
                   </div>
                 </div>
+
+                <div className="my-8 p-6 bg-primary/5 border border-primary/20 rounded-lg">
+                  <h4 className="bible-subtitle">THE CREATIVE TRIAD</h4>
+                  <p className="bible-body mb-4">These are the three pillars of the myth. The three floors of the creative labyrinth:</p>
+                  
+                  <div className="space-y-3">
+                    <div className="border-l-4 border-primary pl-4">
+                      <p className="bible-link font-bold uppercase text-primary">AUTHOR</p>
+                      <p className="bible-link">Founder of CasaTrezeStudio®</p>
+                    </div>
+                    <div className="border-l-4 border-primary pl-4">
+                      <p className="bible-link font-bold uppercase text-primary">COLLECTIVE</p>
+                      <p className="bible-link">Creative Collaborator at LowPressure™</p>
+                    </div>
+                    <div className="border-l-4 border-primary pl-4">
+                      <p className="bible-link font-bold uppercase text-primary">ENTITY</p>
+                      <p className="bible-link">Visual Architect of THEVØIDN13</p>
+                    </div>
+                  </div>
+
+                  <div className="mt-4 pt-4 border-t border-primary/20">
+                    <p className="bible-link italic">The seals in the footer — MAD Habit, THEVOID, CasaTreze, LowMovie, LowPressure — are not logos: they are <span className="font-bold">alphabets, runes of a creative organism</span> that lives between the Japanese studio of the 90s, Bauhaus brutalism, and punk liturgy. They form a constellation. A shadow language. A magnetic field.</p>
+                  </div>
+                </div>
                 
+                <div className="my-8 p-6 border-2 border-primary/30 rounded-lg bg-background">
+                  <h3 className="bible-subtitle">THE DEVICE OF IDENTITY</h3>
+                  <p className="bible-body">This badge doesn't breathe curriculum. <span className="font-bold text-primary">It breathes myth.</span></p>
+                  
+                  <div className="my-4 space-y-2 text-sm leading-relaxed">
+                    <p className="bible-link">It's an opening title card.</p>
+                    <p className="bible-link">It's a Soviet plaque lost in an abandoned building.</p>
+                    <p className="bible-link">It's a document from a future that hasn't happened yet.</p>
+                    <p className="bible-link">It's a constructivist manifesto.</p>
+                    <p className="bible-link">It's a relic of a hybrid portal between human and machine.</p>
+                  </div>
+
+                  <div className="my-4 p-4 bg-primary/5 border-l-4 border-primary">
+                    <p className="bible-body italic">It is ritual, not belief. It is gesture, not explanation. It is presence, not showcase.</p>
+                  </div>
+
+                  <p className="bible-body">For the first time, ЦАСТРО™ and THEVØIDN13 meet on the same axis:</p>
+                  
+                  <div className="my-4 grid gap-2">
+                    <p className="bible-link"><span className="font-bold">ЦАСТРО™</span> — the author who disappears.</p>
+                    <p className="bible-link"><span className="font-bold">THEVØIDN13</span> — the entity that breathes.</p>
+                    <p className="bible-link"><span className="font-bold">LowPressure & CasaTreze</span> — the body and the ground.</p>
+                    <p className="bible-link"><span className="font-bold">The icons</span> — the funerary signature of a film that never ends.</p>
+                  </div>
+                </div>
+
+                <div className="my-8 p-6 bg-black/50 border border-primary/20 rounded-lg">
+                  <h4 className="bible-subtitle">THE THREE BANDS</h4>
+                  <p className="bible-body mb-4">This seal positions you in three impossible bands:</p>
+                  
+                  <div className="grid md:grid-cols-3 gap-4">
+                    <div className="border border-primary/30 p-4 rounded">
+                      <h5 className="bible-link font-bold uppercase text-primary mb-2">PROFESSIONAL BAND</h5>
+                      <ul className="space-y-1 text-xs">
+                        <li className="bible-link">Arts research</li>
+                        <li className="bible-link">Art direction</li>
+                        <li className="bible-link">Brand systems</li>
+                        <li className="bible-link">Experimental cinema</li>
+                        <li className="bible-link">Universe architecture</li>
+                        <li className="bible-link">Transdisciplinary creation</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="border border-primary/30 p-4 rounded">
+                      <h5 className="bible-link font-bold uppercase text-primary mb-2">AUTHORIAL BAND</h5>
+                      <ul className="space-y-1 text-xs">
+                        <li className="bible-link">Post-Soviet anti-brand</li>
+                        <li className="bible-link">Shadow as aesthetics</li>
+                        <li className="bible-link">Human–AI hybridization</li>
+                        <li className="bible-link">Skateboarding as ethics and body</li>
+                        <li className="bible-link">Portal as artwork</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="border border-primary/30 p-4 rounded">
+                      <h5 className="bible-link font-bold uppercase text-primary mb-2">MYTHOLOGICAL BAND</h5>
+                      <ul className="space-y-1 text-xs">
+                        <li className="bible-link">ЦАСТРО™ — authorial entity</li>
+                        <li className="bible-link">THEVØIDN13 — active shadow</li>
+                        <li className="bible-link">LowMovie / LowPressure — social body</li>
+                        <li className="bible-link">CasaTreze — living temple</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="mt-6 pt-6 border-t border-primary/20 text-center">
+                    <p className="bible-body font-bold italic text-primary">There is no other badge like this in Brazil. Because this is not a badge: It is a Device of Identity.</p>
+                  </div>
+                </div>
+
                 <div className="-mx-6 px-6 py-8 rounded-lg">
                   <h3 className="bible-subtitle mb-4">Conclusion</h3>
                   <p className="bible-body mb-4">The ЦАСТРО identity is an exercise in creative negation. It's the reverse of branding to remind us what design can be: language, manifesto, resistance.</p>
-                  <p className="bible-body font-bold">It's not a logo to be remembered, it's an idea to be understood — too late.</p>
+                  <p className="bible-body mb-4">This is your visual ritual. Your seal-cosmos. The mask that reveals. The name that breathes. The anti-brand that disobeys.</p>
+                  <p className="bible-body font-bold text-primary">ЦАСТРО™ — 1984 → ETERNALLY IN PROCESS.</p>
                 </div>
               </div>
             </div>
