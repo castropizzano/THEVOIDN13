@@ -213,7 +213,7 @@ const FilmGallery = () => {
                         <img
                           src={film.posterUrl}
                           alt={`${film.title} poster`}
-                          className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                          className={`w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 ${film.scale || ''}`}
                           style={{ objectPosition: film.objectPosition || 'center' }}
                           loading="lazy"
                         />
