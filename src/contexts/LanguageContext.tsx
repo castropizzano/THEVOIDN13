@@ -11,25 +11,11 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguageState] = useState<Language>(() => {
-    if (typeof window !== "undefined") {
-      const saved = localStorage.getItem("preferred-language");
-      return (saved === "en" ? "en" : "pt") as Language;
-    }
-    return "pt";
-  });
+  // Default language based on browser, no persistence
+  const [language, setLanguageState] = useState<Language>("pt");
 
-  // Sincronizar atributo data-language no body quando monta e quando muda
+  // Update body data-language attribute when language changes
   useEffect(() => {
-    if (typeof document !== "undefined") {
-      document.body.setAttribute("data-language", language);
-    }
-  }, []); // Executa na montagem
-
-  useEffect(() => {
-    localStorage.setItem("preferred-language", language);
-    
-    // Atualizar atributo data-language ao body para CSS
     if (typeof document !== "undefined") {
       document.body.setAttribute("data-language", language);
     }
