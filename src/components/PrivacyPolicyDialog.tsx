@@ -151,7 +151,7 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
 
             <div className="text-center pt-6 border-t border-border">
               <p className="bible-body text-xs text-muted-foreground">
-                Última atualização: Janeiro 2025 / Last updated: January 2025
+                Última atualização: 19 de novembro de 2025 / Last updated: November 19, 2025
               </p>
             </div>
           </div>
