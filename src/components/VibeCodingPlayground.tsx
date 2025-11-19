@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Eye, Copy, Check } from "lucide-react";
 import { BilingualContent } from "./BilingualSection";
@@ -11,15 +11,18 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 const examplePrompts = [
   {
-    pt: "Card de filme cult com poster e sinopse noir",
-    en: "Cult movie card with poster and noir synopsis",
+    pt: "Card de filme cult com estética noir",
+    en: "Cult movie card with noir aesthetic",
     output: `<div className="max-w-md rounded-lg
   border border-primary/30 bg-black/90 p-6
   hover:border-primary transition-all duration-300">
-  <img src="/poster.jpg" 
-    className="w-full aspect-[2/3] object-cover
-    rounded-md grayscale hover:grayscale-0
-    transition-all duration-500" />
+  <div className="w-full aspect-[2/3] bg-gradient-to-br 
+    from-background to-primary/20 rounded-md
+    flex items-center justify-center">
+    <span className="text-primary/50 font-mono text-4xl">
+      THEVØIDN13
+    </span>
+  </div>
   <h3 className="text-primary font-mono mt-4 text-lg">
     BLADE RUNNER // 1982
   </h3>
@@ -238,12 +241,17 @@ export default function VibeCodingPlayground() {
       <Dialog open={showPreview} onOpenChange={setShowPreview}>
         <DialogContent className="max-w-5xl h-[85vh] flex flex-col bg-black/95 border-primary/30">
           <DialogHeader className="flex flex-row items-center justify-between">
-            <DialogTitle className="font-mono text-primary">
-              {language === "pt" ? "[PREVIEW_VISUAL]" : "[VISUAL_PREVIEW]"}
-              <span className="text-muted-foreground text-xs ml-2">
-                // {language === "pt" ? "Resultado" : "Result"}
-              </span>
-            </DialogTitle>
+            <div className="flex-1">
+              <DialogTitle className="font-mono text-primary">
+                {language === "pt" ? "[PREVIEW_VISUAL]" : "[VISUAL_PREVIEW]"}
+                <span className="text-muted-foreground text-xs ml-2">
+                  // {language === "pt" ? "Resultado" : "Result"}
+                </span>
+              </DialogTitle>
+              <DialogDescription className="text-muted-foreground text-xs font-mono mt-1">
+                {language === "pt" ? "// Visualize e copie o código gerado" : "// Preview and copy the generated code"}
+              </DialogDescription>
+            </div>
             <Button
               size="sm"
               variant="outline"

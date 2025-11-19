@@ -65,12 +65,32 @@ export const ComicGenerator = () => {
           // Draw watermark on temp canvas
           tempCtx.drawImage(watermark, 0, 0, watermarkWidth, watermarkHeight);
           
-          // Apply THEVØIDN13 canonical red (#c40000)
-          tempCtx.globalCompositeOperation = 'source-in';
-          tempCtx.fillStyle = '#c40000';
-          tempCtx.fillRect(0, 0, watermarkWidth, watermarkHeight);
+          // Get image data to detect white pixels
+          const imageData = tempCtx.getImageData(0, 0, watermarkWidth, watermarkHeight);
+          const data = imageData.data;
           
-          // Draw colored watermark on main canvas
+          // Convert white/bright pixels to THEVØIDN13 canonical red (#c40000 = rgb(196,0,0))
+          for (let i = 0; i < data.length; i += 4) {
+            const r = data[i];
+            const g = data[i + 1];
+            const b = data[i + 2];
+            const brightness = (r + g + b) / 3;
+            
+            // If pixel is bright (white or light gray), make it red
+            if (brightness > 128) {
+              data[i] = 196;     // R
+              data[i + 1] = 0;   // G
+              data[i + 2] = 0;   // B
+              // Keep original alpha
+            } else {
+              // Make dark pixels transparent
+              data[i + 3] = 0;
+            }
+          }
+          
+          tempCtx.putImageData(imageData, 0, 0);
+          
+          // Draw colored watermark on main canvas at 80% opacity
           ctx.globalAlpha = 0.8;
           ctx.drawImage(tempCanvas, x, y);
           ctx.globalAlpha = 1.0;
@@ -83,7 +103,7 @@ export const ComicGenerator = () => {
           // Fallback: text watermark (Bible v13)
           ctx.font = 'bold 16px monospace';
           ctx.fillStyle = '#c40000';
-          ctx.globalAlpha = 0.7;
+          ctx.globalAlpha = 0.8;
           ctx.fillText('THEVØIDN13', mainImage.width - 150, mainImage.height - 20);
           ctx.globalAlpha = 1.0;
           resolve(canvas.toDataURL('image/png'));
