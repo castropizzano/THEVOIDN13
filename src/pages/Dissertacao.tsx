@@ -591,17 +591,17 @@ const Dissertacao = () => {
               <p className="bible-subtitle">SOUNDTRACKS, TIMELINE</p>
             </div>
           </div>
+        </BilingualSection>
 
+        {/* Music Player - Componente Standalone */}
+        <MusicPlayer />
+
+        <Separator className="bg-border/30" />
+
+        {/* Timeline */}
+        <BilingualSection className="bible-section">
           <div className="bible-media">
-            {/* Music Player */}
-            <div>
-              <MusicPlayer />
-            </div>
-
-            {/* Timeline */}
-            <div>
-              <Timeline />
-            </div>
+            <Timeline />
           </div>
         </BilingualSection>
 
