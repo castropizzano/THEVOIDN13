@@ -28,6 +28,7 @@ interface ComicReference {
   descriptionKey: string;
   contextKey: string;
   wikipediaUrl: string;
+  scale?: string;
 }
 
 const ComicsShowcase = () => {
@@ -41,7 +42,8 @@ const ComicsShowcase = () => {
       coverUrl: watchmenCover,
       descriptionKey: "watchmenDesc",
       contextKey: "watchmenContext",
-      wikipediaUrl: "https://en.wikipedia.org/wiki/Watchmen"
+      wikipediaUrl: "https://en.wikipedia.org/wiki/Watchmen",
+      scale: "scale-110"
     },
     {
       titleKey: "sandmanTitle",
@@ -116,7 +118,7 @@ const ComicsShowcase = () => {
                         <img
                           src={comic.coverUrl}
                           alt={`${t(comic.titleKey as any)} cover`}
-                          className="w-full h-full object-cover object-center grayscale group-hover:grayscale-0 transition-all duration-500"
+                          className={`w-full h-full object-cover object-center grayscale group-hover:grayscale-0 transition-all duration-500 ${comic.scale || ''}`}
                           loading="lazy"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
