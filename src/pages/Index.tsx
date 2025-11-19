@@ -9,7 +9,6 @@ import { ComicGenerator } from "@/components/ComicGenerator";
 import { MindMap } from "@/components/MindMap";
 import { CreativeOracle } from "@/components/CreativeOracle";
 import { BackToTop } from "@/components/BackToTop";
-import { CookieConsent } from "@/components/CookieConsent";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import SpotifyPlaylist from "@/components/SpotifyPlaylist";
 import FilmGallery from "@/components/FilmGallery";
@@ -87,8 +86,7 @@ const Index = () => {
   
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <CookieConsent />
-      <SEO 
+      <SEO
         title="THEVØIDN13 — Shadow Interface Bible v13 | Castro Pizzano"
         description="A Bíblia Definitiva — Um corpo à deriva entre o ruído e o silêncio. Práxis híbrida explorando sombra, silêncio, ruído e vazio através de co-criação humano-máquina."
         schemaData={schemaData}

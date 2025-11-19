@@ -71,12 +71,7 @@ export const SEO = ({
       script.textContent = JSON.stringify(schemaData);
     }
 
-    // Track page view with GA
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('config', 'G-383605046', {
-        page_path: location.pathname,
-      });
-    }
+    // No tracking - static site
   }, [title, description, image, url, type, schemaData, location.pathname]);
 
   return null;

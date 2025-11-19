@@ -41,17 +41,10 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
               </div>
 
               <div className="space-y-4">
-                <h3 className="bible-subtitle">2. USO DE COOKIES</h3>
+                <h3 className="bible-subtitle">2. ZERO COOKIES</h3>
                 <p className="bible-body text-sm">
-                  Utilizamos apenas cookies técnicos essenciais para:
-                </p>
-                <ul className="list-disc list-inside space-y-2 bible-body text-sm ml-4">
-                  <li>Armazenar sua preferência de idioma (PT/EN)</li>
-                  <li>Registrar seu consentimento de cookies (LGPD)</li>
-                  <li>Garantir funcionalidades básicas de navegação</li>
-                </ul>
-                <p className="bible-body text-sm mt-2">
-                  <strong>Nenhum cookie rastreia seu comportamento ou identidade.</strong>
+                  Este site <strong>NÃO UTILIZA COOKIES</strong>. Nenhum dado é armazenado no seu navegador.
+                  Sua preferência de idioma não é salva entre sessões—cada visita é completamente anônima e sem rastros.
                 </p>
               </div>
 
@@ -96,17 +89,10 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
               </div>
 
               <div className="space-y-4">
-                <h3 className="bible-subtitle">2. COOKIE USAGE</h3>
+                <h3 className="bible-subtitle">2. ZERO COOKIES</h3>
                 <p className="bible-body text-sm">
-                  We only use essential technical cookies for:
-                </p>
-                <ul className="list-disc list-inside space-y-2 bible-body text-sm ml-4">
-                  <li>Storing your language preference (PT/EN)</li>
-                  <li>Recording your cookie consent (GDPR/LGPD)</li>
-                  <li>Ensuring basic navigation functionalities</li>
-                </ul>
-                <p className="bible-body text-sm mt-2">
-                  <strong>No cookie tracks your behavior or identity.</strong>
+                  This website <strong>DOES NOT USE COOKIES</strong>. No data is stored in your browser.
+                  Your language preference is not saved between sessions—each visit is completely anonymous and traceless.
                 </p>
               </div>
 

@@ -1,12 +1,11 @@
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+// Query client removed - static site
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
 import ScrollToTop from "@/components/ScrollToTop";
-import { usePageView } from "@/hooks/useAnalytics";
 import { PWAInstallPrompt } from "@/components/PWAInstallPrompt";
 import Index from "./pages/Index";
 import Dissertacao from "./pages/Dissertacao";
@@ -15,11 +14,9 @@ import Videos from "./pages/Videos";
 import StyleGuide from "./pages/StyleGuide";
 import NotFound from "./pages/NotFound";
 
-const queryClient = new QueryClient();
+// Static site - no query client needed
 
 const AppContent = () => {
-  usePageView(); // Track page views automatically
-  
   return (
     <>
       <PWAInstallPrompt />
@@ -40,8 +37,7 @@ const AppContent = () => {
 
 const App = () => (
   <ErrorBoundary>
-    <QueryClientProvider client={queryClient}>
-      <LanguageProvider>
+    <LanguageProvider>
         <TooltipProvider>
           <Toaster />
           <Sonner />
@@ -56,7 +52,6 @@ const App = () => (
           </BrowserRouter>
         </TooltipProvider>
       </LanguageProvider>
-    </QueryClientProvider>
   </ErrorBoundary>
 );
 
