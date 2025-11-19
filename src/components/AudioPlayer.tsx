@@ -104,7 +104,7 @@ export const AudioPlayer = ({ src, title, description }: AudioPlayerProps) => {
             max={duration || 100}
             step={0.1}
             onValueChange={handleSeek}
-            className="cursor-pointer"
+            className="cursor-pointer hover:opacity-80 transition-opacity"
           />
           <div className="flex justify-between text-xs text-muted-foreground">
             <span>{formatTime(currentTime)}</span>
