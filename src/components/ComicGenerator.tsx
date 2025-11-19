@@ -214,8 +214,8 @@ export const ComicGenerator = () => {
                 </p>
                 <p className="text-muted-foreground">
                   {language === "pt"
-                    ? "Todas as imagens incluem marca d'água THEVØIDN13 (50% opacidade, inferior direito)."
-                    : "All images include THEVØIDN13 watermark (50% opacity, bottom right)."}
+                    ? "Todas as imagens incluem marca d'água THEVØIDN13 (80% opacidade, inferior direito)."
+                    : "All images include THEVØIDN13 watermark (80% opacity, bottom right)."}
                 </p>
                 <p className="text-xs text-muted-foreground">
                   {language === "pt"
