@@ -48,7 +48,8 @@ export const ComicGenerator = () => {
           const watermarkHeight = (watermark.height / watermark.width) * watermarkWidth;
           const padding = 20;
           
-          ctx.globalAlpha = 0.5;
+          // Draw watermark with increased opacity
+          ctx.globalAlpha = 0.75;
           ctx.drawImage(
             watermark,
             mainImage.width - watermarkWidth - padding,
@@ -56,6 +57,19 @@ export const ComicGenerator = () => {
             watermarkWidth,
             watermarkHeight
           );
+          
+          // Apply red color overlay to watermark
+          ctx.globalCompositeOperation = 'source-atop';
+          ctx.fillStyle = '#DC2626'; // Red accent color
+          ctx.fillRect(
+            mainImage.width - watermarkWidth - padding,
+            mainImage.height - watermarkHeight - padding,
+            watermarkWidth,
+            watermarkHeight
+          );
+          
+          // Reset composite operation
+          ctx.globalCompositeOperation = 'source-over';
           ctx.globalAlpha = 1.0;
 
           resolve(canvas.toDataURL('image/png'));
