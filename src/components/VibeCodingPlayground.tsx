@@ -96,6 +96,16 @@ export default function VibeCodingPlayground() {
     setTimeout(() => setCopied(false), 2000);
   };
 
+  // Convert JSX to HTML for iframe preview
+  const convertJSXtoHTML = (jsxCode: string): string => {
+    return jsxCode
+      .replace(/className=/g, 'class=')
+      .replace(/\/\/.*$/gm, '') // Remove single-line comments
+      .replace(/\{\/\*[\s\S]*?\*\/\}/g, '') // Remove JSX comments
+      .replace(/\{`([^`]*)`\}/g, '$1') // Remove template literal wrappers
+      .trim();
+  };
+
   return (
     <section className="py-12 sm:py-16 md:py-20 bg-background">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-8">
@@ -227,33 +237,31 @@ export default function VibeCodingPlayground() {
       {/* Preview Dialog */}
       <Dialog open={showPreview} onOpenChange={setShowPreview}>
         <DialogContent className="max-w-5xl h-[85vh] flex flex-col bg-black/95 border-primary/30">
-          <DialogHeader>
-            <DialogTitle className="font-mono text-primary flex items-center justify-between">
-              <span>
-                {language === "pt" ? "[PREVIEW_VISUAL]" : "[VISUAL_PREVIEW]"}
-                <span className="text-muted-foreground text-xs ml-2">
-                  // {language === "pt" ? "Resultado" : "Result"}
-                </span>
+          <DialogHeader className="flex flex-row items-center justify-between">
+            <DialogTitle className="font-mono text-primary">
+              {language === "pt" ? "[PREVIEW_VISUAL]" : "[VISUAL_PREVIEW]"}
+              <span className="text-muted-foreground text-xs ml-2">
+                // {language === "pt" ? "Resultado" : "Result"}
               </span>
-              <Button
-                size="sm"
-                variant="ghost"
-                onClick={handleCopy}
-                className="h-8 px-3 text-xs font-mono"
-              >
-                {copied ? (
-                  <>
-                    <Check className="w-3 h-3 mr-1" />
-                    {language === "pt" ? "Copiado!" : "Copied!"}
-                  </>
-                ) : (
-                  <>
-                    <Copy className="w-3 h-3 mr-1" />
-                    {language === "pt" ? "Copiar" : "Copy"}
-                  </>
-                )}
-              </Button>
             </DialogTitle>
+            <Button
+              size="sm"
+              variant="outline"
+              onClick={handleCopy}
+              className="h-8 px-3 text-xs font-mono border-primary/30 hover:border-primary hover:bg-primary/10"
+            >
+              {copied ? (
+                <>
+                  <Check className="w-3 h-3 mr-1" />
+                  {language === "pt" ? "Copiado!" : "Copied!"}
+                </>
+              ) : (
+                <>
+                  <Copy className="w-3 h-3 mr-1" />
+                  {language === "pt" ? "Copiar" : "Copy"}
+                </>
+              )}
+            </Button>
           </DialogHeader>
 
           <Tabs defaultValue="preview" className="flex-1 flex flex-col">
@@ -290,12 +298,12 @@ export default function VibeCodingPlayground() {
                             font-family: system-ui, -apple-system, sans-serif;
                           }
                         </style>
-                      </head>
-                      <body>
-                        ${output}
-                      </body>
-                    </html>
-                  `}
+                       </head>
+                       <body>
+                         ${convertJSXtoHTML(output)}
+                       </body>
+                     </html>
+                   `}
                   className="w-full h-full"
                   title="Preview"
                   sandbox="allow-scripts"
