@@ -96,8 +96,10 @@ Style: dirty comic book art with heavy inks, analog print grain, gritty urban at
     
     console.log('Image URL extracted successfully');
 
-    // Load watermark from assets
-    const watermarkUrl = "https://mkigpkfahuqkqxocsyjn.supabase.co/storage/v1/object/public/assets/thevoidn13-watermark.png";
+    // Load watermark from public assets
+    // The watermark is served from the project's public directory
+    const projectUrl = "https://77991fba-1759-4282-b7d4-1a8f89499483.lovableproject.com";
+    const watermarkUrl = `${projectUrl}/images/thevoidn13-watermark.png`;
     let watermarkBase64 = "";
     
     try {
