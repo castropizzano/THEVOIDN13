@@ -1823,16 +1823,18 @@ const Index = () => {
                   }
                 />
               </div>
-              <div 
-                className="cursor-pointer self-start"
+              <Card 
+                className="cursor-pointer self-start border-primary/10 bg-background/50 p-6 hover:border-primary/30 transition-all"
                 onClick={() => setPrototypeDialogOpen(true)}
               >
-                <img 
-                  src={actionFigureNew} 
-                  alt="THEVØIDN13 Action Figure Prototype" 
-                  className="w-full h-auto max-h-[400px] object-contain rounded-lg hover:scale-105 transition-transform"
-                />
-              </div>
+                <div className="flex items-center justify-center">
+                  <img 
+                    src={actionFigureNew} 
+                    alt="THEVØIDN13 Action Figure Prototype" 
+                    className="w-full h-auto max-h-[400px] object-contain hover:scale-105 transition-transform"
+                  />
+                </div>
+              </Card>
             </div>
           </Card>
 
