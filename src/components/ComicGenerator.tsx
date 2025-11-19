@@ -12,7 +12,6 @@ import { z } from "zod";
 import watermarkLogo from "@/assets/thevoidn13-watermark.png";
 import { useTranslation } from "@/hooks/useTranslation";
 import { BilingualContent } from "@/components/BilingualSection";
-import { useValidationMessage } from "@/lib/zodValidation";
 import { FeatureCard } from "@/components/FeatureCard";
 
 interface Prompt {
@@ -23,14 +22,13 @@ interface Prompt {
 }
 
 // Validation for custom prompts only (library prompts are pre-validated)
-const createCustomScriptSchema = (vm: (key: string) => string) => z.string()
+const customScriptSchema = z.string()
   .trim()
-  .min(50, vm("descriptionMinLength"))
-  .max(1500, vm("descriptionMaxLength"));
+  .min(50, "Script must be at least 50 characters")
+  .max(1500, "Script must be at most 1500 characters");
 
 export const ComicGenerator = () => {
   const { t } = useTranslation();
-  const vm = useValidationMessage();
   const [script, setScript] = useState("");
   const [generatedImage, setGeneratedImage] = useState<string | null>(null);
   const [isGenerating, setIsGenerating] = useState(false);
@@ -82,7 +80,6 @@ export const ComicGenerator = () => {
   const handleGenerate = async () => {
     // Validate only custom scripts (library prompts are pre-validated)
     if (promptMode === "custom") {
-      const customScriptSchema = createCustomScriptSchema(vm);
       const validation = customScriptSchema.safeParse(customScript);
       if (!validation.success) {
         toast.error(validation.error.errors[0].message);

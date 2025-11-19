@@ -9,7 +9,6 @@ import { ComicGenerator } from "@/components/ComicGenerator";
 import { MindMap } from "@/components/MindMap";
 import { CreativeOracle } from "@/components/CreativeOracle";
 import { BackToTop } from "@/components/BackToTop";
-import { AccessGate } from "@/components/AccessGate";
 import { CookieConsent } from "@/components/CookieConsent";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import SpotifyPlaylist from "@/components/SpotifyPlaylist";
@@ -79,9 +78,6 @@ import voidStreetThumbnail from "@/assets/void-street-thumbnail.png";
 const Index = () => {
   const [oracleOpen, setOracleOpen] = useState(false);
   const [prototypeDialogOpen, setPrototypeDialogOpen] = useState(false);
-  const [hasAccess, setHasAccess] = useState(() => {
-    return localStorage.getItem("thevoidn13_access_granted") === "true";
-  });
   const { t } = useTranslation();
   
   const schemaData = {
@@ -91,7 +87,6 @@ const Index = () => {
   
   return (
     <div className="min-h-screen bg-background text-foreground">
-      {/* {!hasAccess && <AccessGate onAccessGranted={() => setHasAccess(true)} />} */}
       <CookieConsent />
       <SEO 
         title="THEVØIDN13 — Shadow Interface Bible v13 | Castro Pizzano"
