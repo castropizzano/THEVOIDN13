@@ -1,1 +1,4 @@
 project_id = "mkigpkfahuqkqxocsyjn"
+
+[functions.generate-cinematic-still]
+verify_jwt = false
