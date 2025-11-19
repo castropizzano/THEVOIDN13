@@ -281,7 +281,8 @@ type TranslationKey =
   | "antiSurveillanceBannerLine2"
   | "antiSurveillanceBannerLine3"
   | "antiSurveillanceBannerButtonGotIt"
-  | "antiSurveillanceBannerButtonPolicy";
+  | "antiSurveillanceBannerButtonPolicy"
+  | "surveillanceFreeBadge";
 
 
 const translations: Record<TranslationKey, { pt: string; en: string }> = {
@@ -582,6 +583,10 @@ const translations: Record<TranslationKey, { pt: string; en: string }> = {
   antiSurveillanceBannerButtonPolicy: {
     pt: "Política de Privacidade",
     en: "Privacy Policy"
+  },
+  surveillanceFreeBadge: {
+    pt: "Memorial Livre de Vigilância",
+    en: "Surveillance-Free Memorial"
   }
 };
 

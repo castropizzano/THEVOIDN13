@@ -28,7 +28,7 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
         </DialogHeader>
         
         <ScrollArea className="h-[60vh] pr-4">
-          <div className="space-y-8">
+          <div className="space-y-8 max-w-prose mx-auto">
             {/* Portuguese Version */}
             <div className="space-y-6">
               <div className="space-y-4">
@@ -151,7 +151,7 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
 
             <div className="text-center pt-6 border-t border-border">
               <p className="bible-body text-xs text-muted-foreground">
-                Última atualização: 19 de novembro de 2025 / Last updated: November 19, 2025
+                Última atualização: Janeiro 2025 / Last updated: January 2025
               </p>
             </div>
           </div>
