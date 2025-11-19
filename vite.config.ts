@@ -17,9 +17,9 @@ export default defineConfig(({ mode }) => ({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'robots.txt', 'sitemap.xml', 'pwa-192x192.png', 'pwa-512x512.png'],
       manifest: {
-        name: 'THEVØIDN13 — Memorial Artístico',
+        name: 'THEVØIDN13 — Memorial Artístico Estático',
         short_name: 'THEVØIDN13',
-        description: 'Memorial artístico explorando arte, código e consciência através de co-criação humano-máquina',
+        description: 'Memorial artístico 100% estático. Zero tracking, zero cookies, zero dados.',
         theme_color: '#0C0C0C',
         background_color: '#0C0C0C',
         display: 'standalone',
