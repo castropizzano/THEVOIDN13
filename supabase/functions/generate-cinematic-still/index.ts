@@ -107,7 +107,14 @@ Style: dirty comic book art with heavy inks, analog print grain, gritty urban at
       if (watermarkResponse.ok) {
         const watermarkBlob = await watermarkResponse.blob();
         const watermarkArrayBuffer = await watermarkBlob.arrayBuffer();
-        watermarkBase64 = btoa(String.fromCharCode(...new Uint8Array(watermarkArrayBuffer)));
+        const bytes = new Uint8Array(watermarkArrayBuffer);
+        let binary = '';
+        const chunkSize = 8192;
+        for (let i = 0; i < bytes.length; i += chunkSize) {
+          const chunk = bytes.slice(i, i + chunkSize);
+          binary += String.fromCharCode.apply(null, Array.from(chunk));
+        }
+        watermarkBase64 = btoa(binary);
         console.log('Watermark loaded');
       } else {
         console.warn('Watermark not found, proceeding without it');
