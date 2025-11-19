@@ -31,9 +31,21 @@ serve(async (req) => {
         messages: [
           {
             role: "user",
-            content: `Create a cinematic still in 16:9 aspect ratio with the following description: ${prompt}. 
-            
-Style: dirty comic book art with heavy inks, analog print grain, gritty urban atmosphere, noir aesthetic.`
+            content: `Create a cinematic still in 16:9 aspect ratio with the following description: ${prompt}
+
+CRITICAL STYLE REQUIREMENTS:
+- BLACK AND WHITE noir comic art with HEAVY INKS and high contrast, inspired by Frank Miller's Sin City
+- Use RED as the ONLY color accent (sparingly and strategically)
+- Gritty urban Brazilian underground aesthetic with analog print grain and dirty textures
+- Shadows dominate, punk/skate culture vibes
+- Think: São Paulo streets at night, concrete, graffiti, rebellion
+- Visual reference: Blade Runner meets Brazilian favela noir
+
+FORBIDDEN:
+- NO pastel colors, NO clean lines, NO European comic style (Moebius/Jodorowsky)
+- NO colorful scenes, NO bright or saturated colors besides red accents
+
+Aspect ratio: 16:9 cinematic format.`
           }
         ],
         modalities: ["image", "text"]
