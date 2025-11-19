@@ -149,7 +149,7 @@ export const BilingualAudioPlayer = ({ srcPt, srcEn, title, description }: Bilin
             max={duration || 100}
             step={0.1}
             onValueChange={handleSeek}
-            className="cursor-pointer"
+            className="cursor-pointer hover:opacity-80 transition-opacity"
           />
           <div className="flex justify-between text-xs text-muted-foreground">
             <span>{formatTime(currentTime)}</span>
