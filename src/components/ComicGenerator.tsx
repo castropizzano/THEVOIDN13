@@ -120,11 +120,11 @@ export const ComicGenerator = () => {
         throw error;
       }
 
-      if (data.imageUrl) {
-        let finalImage = data.imageUrl;
+      if (data.image) {
+        let finalImage = data.image;
         
         if (data.watermark) {
-          finalImage = await applyWatermark(data.imageUrl, data.watermark);
+          finalImage = await applyWatermark(data.image, data.watermark);
         }
         
         setGeneratedImage(finalImage);
