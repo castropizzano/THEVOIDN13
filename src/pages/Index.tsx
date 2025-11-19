@@ -1787,16 +1787,20 @@ const Index = () => {
                   <BilingualContent
                     portugueseContent={
                       <>
-                        <p>{t("prototypeDesc1")}</p>
-                        <p>{t("prototypeDesc2")}</p>
-                        <p>{t("prototypeDesc3")}</p>
+                        <p className="font-semibold text-primary">Especificações Técnicas</p>
+                        <p>Protótipo físico desenvolvido em 2024 como materialização tridimensional do personagem principal do universo THEVØIDN13.</p>
+                        <p>Dimensões: Escala 1:12 (aproximadamente 15cm de altura). Materiais: Resina de alta densidade com acabamento acetinado. Articulações: 18 pontos de articulação permitindo múltiplas poses.</p>
+                        <p>Características especiais: Máscara removível, acessórios intercambiáveis, base de exposição customizada com logotipo THEVØIDN13 gravado.</p>
+                        <p className="text-muted-foreground text-xs">Este é um protótipo único desenvolvido para estudo de viabilidade de produção em série e materialização do conceito visual do projeto.</p>
                       </>
                     }
                     englishContent={
                       <>
-                        <p>{t("prototypeDesc1")}</p>
-                        <p>{t("prototypeDesc2")}</p>
-                        <p>{t("prototypeDesc3")}</p>
+                        <p className="font-semibold text-primary">Technical Specifications</p>
+                        <p>Physical prototype developed in 2024 as three-dimensional materialization of the main character from THEVØIDN13 universe.</p>
+                        <p>Dimensions: 1:12 scale (approximately 15cm tall). Materials: High-density resin with satin finish. Articulation: 18 points of articulation allowing multiple poses.</p>
+                        <p>Special features: Removable mask, interchangeable accessories, custom display base with engraved THEVØIDN13 logo.</p>
+                        <p className="text-muted-foreground text-xs">This is a unique prototype developed for mass production feasibility study and materialization of the project&apos;s visual concept.</p>
                       </>
                     }
                   />
@@ -1805,7 +1809,7 @@ const Index = () => {
             </Dialog>
 
             <div className="grid md:grid-cols-2 gap-8 items-start">
-              <div className="space-y-6">
+              <Card className="border-primary/10 bg-background/50 p-6 h-fit">
                 <BilingualContent
                   portugueseContent={
                     <>
@@ -1822,9 +1826,9 @@ const Index = () => {
                     </>
                   }
                 />
-              </div>
+              </Card>
               <Card 
-                className="cursor-pointer self-start border-primary/10 bg-background/50 p-6 hover:border-primary/30 transition-all"
+                className="cursor-pointer border-primary/10 bg-background/50 p-6 hover:border-primary/30 transition-all h-fit"
                 onClick={() => setPrototypeDialogOpen(true)}
               >
                 <div className="flex items-center justify-center">
