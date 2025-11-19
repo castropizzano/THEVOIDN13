@@ -60,11 +60,41 @@ Style: dirty comic book art with heavy inks, analog print grain, gritty urban at
 
     const data = await response.json();
     console.log('AI response received');
-
-    const generatedImageUrl = data.choices?.[0]?.message?.images?.[0]?.image_url?.url;
-    if (!generatedImageUrl) {
-      throw new Error("No image generated");
+    console.log('Full response data:', JSON.stringify(data, null, 2));
+    
+    // Check if we have choices
+    if (!data.choices || data.choices.length === 0) {
+      console.error('No choices in response');
+      throw new Error("No choices in AI response");
     }
+    
+    // Check message structure
+    const message = data.choices[0]?.message;
+    console.log('Message structure:', JSON.stringify(message, null, 2));
+    
+    // Try to get image from different possible paths
+    let generatedImageUrl = null;
+    
+    // Path 1: Standard structure
+    if (message?.images?.[0]?.image_url?.url) {
+      generatedImageUrl = message.images[0].image_url.url;
+    }
+    // Path 2: Direct content
+    else if (message?.content && typeof message.content === 'string' && message.content.includes('data:image')) {
+      generatedImageUrl = message.content;
+    }
+    // Path 3: Check if image is in a different format
+    else if (message?.images?.[0]) {
+      console.log('Image object found:', JSON.stringify(message.images[0], null, 2));
+      generatedImageUrl = message.images[0].url || message.images[0].image_url || message.images[0];
+    }
+    
+    if (!generatedImageUrl) {
+      console.error('No image URL found in response');
+      throw new Error("No image generated - check logs for response structure");
+    }
+    
+    console.log('Image URL extracted successfully');
 
     // Load watermark from assets
     const watermarkUrl = "https://mkigpkfahuqkqxocsyjn.supabase.co/storage/v1/object/public/assets/thevoidn13-watermark.png";
