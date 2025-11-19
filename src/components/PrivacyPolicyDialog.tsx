@@ -32,53 +32,52 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
             {/* Portuguese Version */}
             <div className="space-y-6">
               <div className="space-y-4">
-                <h3 className="bible-subtitle">1. COLETA DE DADOS</h3>
+                <h3 className="bible-subtitle">1. ZERO COLETA DE DADOS</h3>
                 <p className="bible-body text-sm">
-                  Coletamos apenas informações essenciais: nome completo e endereço de email. 
-                  Estes dados são utilizados exclusivamente para controle de acesso ao memorial 
-                  e comunicações relacionadas ao projeto THEVØIDN13.
+                  Este site <strong>NÃO COLETA NENHUM DADO PESSOAL</strong>. Não há cadastros, 
+                  formulários de contato, newsletters ou qualquer tipo de registro de usuário. 
+                  O THEVØIDN13 é um memorial artístico 100% estático e aberto.
                 </p>
               </div>
 
               <div className="space-y-4">
                 <h3 className="bible-subtitle">2. USO DE COOKIES</h3>
                 <p className="bible-body text-sm">
-                  Utilizamos cookies essenciais para:
+                  Utilizamos apenas cookies técnicos essenciais para:
                 </p>
                 <ul className="list-disc list-inside space-y-2 bible-body text-sm ml-4">
-                  <li>Armazenar preferências de consentimento de cookies</li>
-                  <li>Manter sessões de acesso ao site</li>
-                  <li>Garantir funcionalidades básicas da plataforma</li>
+                  <li>Armazenar sua preferência de idioma (PT/EN)</li>
+                  <li>Registrar seu consentimento de cookies (LGPD)</li>
+                  <li>Garantir funcionalidades básicas de navegação</li>
                 </ul>
-              </div>
-
-              <div className="space-y-4">
-                <h3 className="bible-subtitle">3. SEGURANÇA</h3>
-                <p className="bible-body text-sm">
-                  Seus dados são armazenados em servidores seguros com criptografia. 
-                  Implementamos Row Level Security (RLS) para garantir que apenas administradores 
-                  autorizados possam acessar a lista de emails cadastrados.
+                <p className="bible-body text-sm mt-2">
+                  <strong>Nenhum cookie rastreia seu comportamento ou identidade.</strong>
                 </p>
               </div>
 
               <div className="space-y-4">
-                <h3 className="bible-subtitle">4. SEUS DIREITOS</h3>
+                <h3 className="bible-subtitle">3. ZERO RASTREAMENTO</h3>
                 <p className="bible-body text-sm">
-                  Você tem direito a:
+                  Não utilizamos Google Analytics, Facebook Pixel, ou qualquer ferramenta de 
+                  rastreamento de terceiros. Sua navegação é completamente privada e anônima.
                 </p>
-                <ul className="list-disc list-inside space-y-2 bible-body text-sm ml-4">
-                  <li>Solicitar a exclusão de seus dados a qualquer momento</li>
-                  <li>Acessar as informações que temos sobre você</li>
-                  <li>Retificar dados incorretos ou desatualizados</li>
-                </ul>
               </div>
 
               <div className="space-y-4">
-                <h3 className="bible-subtitle">5. NATUREZA DO PROJETO</h3>
+                <h3 className="bible-subtitle">4. NATUREZA DO PROJETO</h3>
                 <p className="bible-body text-sm">
                   Este é um memorial artístico acadêmico desenvolvido como parte de pesquisa 
-                  de mestrado em Cinema e Artes do Vídeo (PPG-CINEAV/UNESPAR). O cadastro 
-                  permite documentar o alcance e interesse no projeto para fins de pesquisa.
+                  de mestrado em Cinema e Artes do Vídeo (PPG-CINEAV/UNESPAR). O site funciona 
+                  como arquivo visual, portfólio e interface experimental—<strong>sem necessidade 
+                  de qualquer tipo de cadastro ou identificação de visitantes</strong>.
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <h3 className="bible-subtitle">5. CONTATO</h3>
+                <p className="bible-body text-sm">
+                  Para questões sobre privacidade ou sobre o projeto, entre em contato através 
+                  dos canais públicos listados na página do autor.
                 </p>
               </div>
             </div>
@@ -88,53 +87,52 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
             {/* English Version */}
             <div className="space-y-6">
               <div className="space-y-4">
-                <h3 className="bible-subtitle">1. DATA COLLECTION</h3>
+                <h3 className="bible-subtitle">1. ZERO DATA COLLECTION</h3>
                 <p className="bible-body text-sm">
-                  We only collect essential information: full name and email address. 
-                  This data is used exclusively for access control to the memorial 
-                  and communications related to the THEVØIDN13 project.
+                  This website <strong>DOES NOT COLLECT ANY PERSONAL DATA</strong>. There are no 
+                  registrations, contact forms, newsletters, or any type of user registration. 
+                  THEVØIDN13 is a 100% static and open artistic memorial.
                 </p>
               </div>
 
               <div className="space-y-4">
                 <h3 className="bible-subtitle">2. COOKIE USAGE</h3>
                 <p className="bible-body text-sm">
-                  We use essential cookies to:
+                  We only use essential technical cookies for:
                 </p>
                 <ul className="list-disc list-inside space-y-2 bible-body text-sm ml-4">
-                  <li>Store cookie consent preferences</li>
-                  <li>Maintain site access sessions</li>
-                  <li>Ensure basic platform functionalities</li>
+                  <li>Storing your language preference (PT/EN)</li>
+                  <li>Recording your cookie consent (GDPR/LGPD)</li>
+                  <li>Ensuring basic navigation functionalities</li>
                 </ul>
-              </div>
-
-              <div className="space-y-4">
-                <h3 className="bible-subtitle">3. SECURITY</h3>
-                <p className="bible-body text-sm">
-                  Your data is stored on secure servers with encryption. 
-                  We implement Row Level Security (RLS) to ensure that only authorized 
-                  administrators can access the registered email list.
+                <p className="bible-body text-sm mt-2">
+                  <strong>No cookie tracks your behavior or identity.</strong>
                 </p>
               </div>
 
               <div className="space-y-4">
-                <h3 className="bible-subtitle">4. YOUR RIGHTS</h3>
+                <h3 className="bible-subtitle">3. ZERO TRACKING</h3>
                 <p className="bible-body text-sm">
-                  You have the right to:
+                  We do not use Google Analytics, Facebook Pixel, or any third-party tracking 
+                  tools. Your navigation is completely private and anonymous.
                 </p>
-                <ul className="list-disc list-inside space-y-2 bible-body text-sm ml-4">
-                  <li>Request deletion of your data at any time</li>
-                  <li>Access the information we have about you</li>
-                  <li>Rectify incorrect or outdated data</li>
-                </ul>
               </div>
 
               <div className="space-y-4">
-                <h3 className="bible-subtitle">5. PROJECT NATURE</h3>
+                <h3 className="bible-subtitle">4. PROJECT NATURE</h3>
                 <p className="bible-body text-sm">
-                  This is an academic artistic memorial developed as part of master's 
-                  research in Cinema and Video Arts (PPG-CINEAV/UNESPAR). Registration 
-                  allows documenting the project's reach and interest for research purposes.
+                  This is an academic artistic memorial developed as part of a master's research 
+                  in Cinema and Video Arts (PPG-CINEAV/UNESPAR). The website functions as a visual 
+                  archive, portfolio, and experimental interface—<strong>without requiring any type 
+                  of registration or visitor identification</strong>.
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <h3 className="bible-subtitle">5. CONTACT</h3>
+                <p className="bible-body text-sm">
+                  For privacy or project-related questions, please contact through the public 
+                  channels listed on the author page.
                 </p>
               </div>
             </div>

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { useAuth } from "@/hooks/useAuth";
 import { Menu, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -10,7 +9,6 @@ import { useTranslation } from "@/hooks/useTranslation";
 
 const Header = () => {
   const location = useLocation();
-  const { isAdmin } = useAuth();
   const { language, toggleLanguage } = useLanguage();
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
@@ -21,10 +19,6 @@ const Header = () => {
     { path: "/autor", labelKey: "author" },
     { path: "/videos", labelKey: "videos" },
   ];
-  
-  if (isAdmin) {
-    navItems.push({ path: "/admin", labelKey: "admin" });
-  }
   
   return (
     <>
