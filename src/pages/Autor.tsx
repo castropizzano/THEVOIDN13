@@ -822,14 +822,14 @@ DaVinci Resolve"
             <div className="grid md:grid-cols-1 gap-8">
               <PDFViewer 
                 pdfUrl="/documents/Memorial_Academico_v3.pdf"
-                title="Memorial Acadêmico / Academic Memorial"
-                description="Jornada do Autor / Author Journey"
+                title={{ pt: "Memorial Acadêmico", en: "Academic Memorial" }}
+                description={{ pt: "Jornada do Autor", en: "Author Journey" }}
               />
               
               <PDFViewer 
                 pdfUrl="/documents/Release_CasaTrezeStudio.pdf"
-                title="Release CasaTrezeStudio® / CasaTrezeStudio® Release"
-                description="Documentação oficial do estúdio / Official studio documentation"
+                title={{ pt: "Release CasaTrezeStudio®", en: "CasaTrezeStudio® Release" }}
+                description={{ pt: "Documentação oficial do estúdio", en: "Official studio documentation" }}
               />
             </div>
 
