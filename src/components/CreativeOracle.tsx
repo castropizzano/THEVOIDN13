@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { Volume2, VolumeX } from "lucide-react";
+import { useState, useEffect, useRef } from "react";
+import { Volume2, VolumeX, Download, Share2 } from "lucide-react";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -81,6 +81,46 @@ const questions: Question[] = [
       { text: "Excelência técnica e maestria", textEn: "Technical excellence and mastery", archetype: "gi", value: 0 },
     ],
   },
+  {
+    text: "Como você se relaciona com referências e influências?",
+    textEn: "How do you relate to references and influences?",
+    options: [
+      { text: "Absorvo e transformo em algo pessoal", textEn: "I absorb and transform into something personal", archetype: "shadow", value: 3 },
+      { text: "Uso para subverter e ressignificar", textEn: "I use to subvert and reframe", archetype: "punk", value: 2 },
+      { text: "Compartilho e discuto com outros", textEn: "I share and discuss with others", archetype: "buddy", value: 1 },
+      { text: "Estudo metodicamente para dominar", textEn: "I study methodically to master", archetype: "gi", value: 0 },
+    ],
+  },
+  {
+    text: "O que significa 'sucesso' no seu processo criativo?",
+    textEn: "What does 'success' mean in your creative process?",
+    options: [
+      { text: "Alcançar um estado de verdade pessoal", textEn: "Reaching a state of personal truth", archetype: "shadow", value: 3 },
+      { text: "Provocar mudança ou reação intensa", textEn: "Provoking change or intense reaction", archetype: "punk", value: 2 },
+      { text: "Criar algo que ressoe com outros", textEn: "Creating something that resonates with others", archetype: "buddy", value: 1 },
+      { text: "Atingir perfeição técnica visível", textEn: "Achieving visible technical perfection", archetype: "gi", value: 0 },
+    ],
+  },
+  {
+    text: "Como você lida com bloqueios criativos?",
+    textEn: "How do you deal with creative blocks?",
+    options: [
+      { text: "Mergulho mais fundo no silêncio", textEn: "I dive deeper into silence", archetype: "shadow", value: 3 },
+      { text: "Quebro a rotina radicalmente", textEn: "I break the routine radically", archetype: "punk", value: 2 },
+      { text: "Busco conversas e novas perspectivas", textEn: "I seek conversations and new perspectives", archetype: "buddy", value: 1 },
+      { text: "Retorno aos fundamentos e técnicas", textEn: "I return to fundamentals and techniques", archetype: "gi", value: 0 },
+    ],
+  },
+  {
+    text: "Qual sua relação com o imperfeito e o inacabado?",
+    textEn: "What's your relationship with the imperfect and unfinished?",
+    options: [
+      { text: "É onde a verdade realmente vive", textEn: "It's where truth really lives", archetype: "shadow", value: 3 },
+      { text: "É mais autêntico que o polido", textEn: "It's more authentic than polished", archetype: "punk", value: 2 },
+      { text: "É parte da jornada compartilhada", textEn: "It's part of the shared journey", archetype: "buddy", value: 1 },
+      { text: "É um estágio a ser superado", textEn: "It's a stage to be overcome", archetype: "gi", value: 0 },
+    ],
+  },
 ];
 
 const archetypes = {
@@ -91,6 +131,12 @@ const archetypes = {
     descriptionEn: "You are the introspective creator, diving into the depths of the self to extract hidden truths. Your process is solitary but profound, transforming inner darkness into creative light.",
     message: "O vazio não é ausência. É o espaço onde a verdade nasce.",
     messageEn: "The void is not absence. It's the space where truth is born.",
+    strengths: ["Autenticidade profunda", "Introspecção intensa", "Trabalho solitário produtivo"],
+    strengthsEn: ["Deep authenticity", "Intense introspection", "Productive solitary work"],
+    challenges: ["Isolamento excessivo", "Dificuldade em compartilhar processo", "Perfeccionismo paralisante"],
+    challengesEn: ["Excessive isolation", "Difficulty sharing process", "Paralyzing perfectionism"],
+    recommendations: ["Documente seu processo interno", "Crie rituais de imersão criativa", "Estabeleça pontos de compartilhamento"],
+    recommendationsEn: ["Document your internal process", "Create creative immersion rituals", "Establish sharing points"],
   },
   punk: {
     name: "PUNK (O Criador)",
@@ -99,6 +145,12 @@ const archetypes = {
     descriptionEn: "You are the impulsive revolutionary, who creates to destroy and rebuild. Your impulse comes from rejecting the establishment and the burning desire for radical transformation.",
     message: "Criar é quebrar. Toda obra verdadeira é um ato de rebelião.",
     messageEn: "To create is to break. Every true work is an act of rebellion.",
+    strengths: ["Coragem de inovar", "Energia transformadora", "Autenticidade bruta"],
+    strengthsEn: ["Courage to innovate", "Transformative energy", "Raw authenticity"],
+    challenges: ["Impaciência com processos", "Risco de autossabotagem", "Dificuldade com refinamento"],
+    challengesEn: ["Impatience with processes", "Risk of self-sabotage", "Difficulty with refinement"],
+    recommendations: ["Canalize urgência em projetos curtos", "Alterne entre destruição e construção", "Documente suas revoluções"],
+    recommendationsEn: ["Channel urgency into short projects", "Alternate between destruction and construction", "Document your revolutions"],
   },
   buddy: {
     name: "BUDDY (O Companheiro)",
@@ -107,6 +159,12 @@ const archetypes = {
     descriptionEn: "You are the connected collaborator, who finds strength in community and sharing. Your work is born from dialogue, exchange, collective energy.",
     message: "Sozinho vamos rápido. Juntos, criamos o impossível.",
     messageEn: "Alone we go fast. Together, we create the impossible.",
+    strengths: ["Empatia profunda", "Facilidade de colaboração", "Energia coletiva"],
+    strengthsEn: ["Deep empathy", "Collaboration facility", "Collective energy"],
+    challenges: ["Dependência de validação externa", "Dificuldade com solidão criativa", "Diluição de visão pessoal"],
+    challengesEn: ["Dependence on external validation", "Difficulty with creative solitude", "Dilution of personal vision"],
+    recommendations: ["Reserve tempo para trabalho solo", "Cultive sua voz autoral", "Escolha colaborações estratégicas"],
+    recommendationsEn: ["Reserve time for solo work", "Cultivate your authorial voice", "Choose strategic collaborations"],
   },
   gi: {
     name: "GI (A Presença)",
@@ -115,6 +173,12 @@ const archetypes = {
     descriptionEn: "You are the disciplined executor, who finds freedom in structure and mastery in repetition. Your path is technical excellence and full presence.",
     message: "A forma liberta. A disciplina é o caminho para a verdadeira expressão.",
     messageEn: "Form liberates. Discipline is the path to true expression.",
+    strengths: ["Disciplina consistente", "Maestria técnica", "Presença plena"],
+    strengthsEn: ["Consistent discipline", "Technical mastery", "Full presence"],
+    challenges: ["Rigidez excessiva", "Medo de experimentação", "Perfeccionismo técnico"],
+    challengesEn: ["Excessive rigidity", "Fear of experimentation", "Technical perfectionism"],
+    recommendations: ["Incorpore experimentação controlada", "Questione suas estruturas", "Permita imperfeições intencionais"],
+    recommendationsEn: ["Incorporate controlled experimentation", "Question your structures", "Allow intentional imperfections"],
   },
 };
 
@@ -167,6 +231,12 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
     return sorted[0][0];
   };
 
+  const getSecondaryArchetype = () => {
+    const entries = Object.entries(scores) as [keyof typeof archetypes, number][];
+    const sorted = entries.sort((a, b) => b[1] - a[1]);
+    return sorted[1]?.[0];
+  };
+
   const handleStart = () => {
     setStarted(true);
   };
@@ -178,7 +248,71 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
     setShowResults(false);
   };
 
-  const getProgressBar = (value: number, max: number = 18) => {
+  const handleExportPDF = () => {
+    const dominant = getDominantArchetype();
+    const secondary = getSecondaryArchetype();
+    const archetype = archetypes[dominant];
+    const secondaryArchetypeData = secondary ? archetypes[secondary] : null;
+    
+    const printContent = `
+CREATIVE_ORACLE::SCAN_RESULTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+THEVØIDN13 ARTISTIC MEMORIAL
+Shadow Interface Bible v13
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[DOMINANT_ARCHETYPE]
+${language === 'pt' ? archetype.name : archetype.nameEn}
+Score: ${scores[dominant]}/${questions.length * 3} pts
+
+[DESCRIPTION]
+${language === 'pt' ? archetype.description : archetype.descriptionEn}
+
+[MESSAGE]
+"${language === 'pt' ? archetype.message : archetype.messageEn}"
+
+${secondaryArchetypeData ? `
+[SECONDARY_ARCHETYPE]
+${language === 'pt' ? secondaryArchetypeData.name : secondaryArchetypeData.nameEn}
+Score: ${scores[secondary!]}/${questions.length * 3} pts
+` : ''}
+
+[SCORE_BREAKDOWN]
+├─ SHADOW: ${scores.shadow} pts
+├─ PUNK:   ${scores.punk} pts
+├─ BUDDY:  ${scores.buddy} pts
+└─ GI:     ${scores.gi} pts
+
+[STRENGTHS]
+${(language === 'pt' ? archetype.strengths : archetype.strengthsEn).map((s, i) => `├─ ${s}`).join('\n')}
+
+[CHALLENGES]
+${(language === 'pt' ? archetype.challenges : archetype.challengesEn).map((c, i) => `├─ ${c}`).join('\n')}
+
+[RECOMMENDATIONS]
+${(language === 'pt' ? archetype.recommendations : archetype.recommendationsEn).map((r, i) => `├─ ${r}`).join('\n')}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+THEVØIDN13.DEV
+Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US')}
+    `.trim();
+
+    // Create blob and download
+    const blob = new Blob([printContent], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `thevoidn13_oracle_${dominant}_${Date.now()}.txt`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
+  const getProgressBar = (value: number, max: number = 30) => {
     const filled = Math.round((value / max) * 16);
     return '█'.repeat(filled) + '░'.repeat(16 - filled);
   };
@@ -212,9 +346,9 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
                 <div className="text-muted-foreground">[DESCRIPTION]</div>
                 <div className="pl-4 space-y-2">
                   {language === "pt" ? (
-                    <p>Seis perguntas. Suas respostas revelam seu arquétipo criativo dominante: Shadow, Punk, Buddy ou GI. Cada um representa uma forma única de ver e transformar o mundo através da criatividade.</p>
+                    <p>Dez perguntas. Suas respostas revelam seu arquétipo criativo dominante e secundário: Shadow, Punk, Buddy ou GI. Cada um representa uma forma única de ver e transformar o mundo através da criatividade. Ao final, você receberá análise detalhada com forças, desafios e recomendações personalizadas.</p>
                   ) : (
-                    <p>Six questions. Your answers reveal your dominant creative archetype: Shadow, Punk, Buddy or GI. Each represents a unique way of seeing and transforming the world through creativity.</p>
+                    <p>Ten questions. Your answers reveal your dominant and secondary creative archetypes: Shadow, Punk, Buddy or GI. Each represents a unique way of seeing and transforming the world through creativity. At the end, you'll receive detailed analysis with strengths, challenges and personalized recommendations.</p>
                   )}
                 </div>
               </div>
@@ -245,7 +379,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
             <div className="space-y-8 animate-fade-in">
               <div className="flex items-center justify-between">
                 <div className="text-accent font-bold text-lg">
-                  CREATIVE_ORACLE::QUESTION_{currentQuestion + 1}/6
+                  CREATIVE_ORACLE::QUESTION_{currentQuestion + 1}/{questions.length}
                 </div>
                 <Button
                   variant="ghost"
@@ -287,7 +421,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
               </div>
 
               <div className="pt-4 space-y-2">
-                <div className="text-muted-foreground text-sm">[PROGRESS] {getProgressBar(currentQuestion + 1, 6)} {getProgressPercentage()}%</div>
+                <div className="text-muted-foreground text-sm">[PROGRESS] {getProgressBar(currentQuestion + 1, questions.length)} {getProgressPercentage()}%</div>
               </div>
             </div>
           )}
@@ -308,10 +442,26 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
                         : archetypes[getDominantArchetype()].nameEn}
                     </div>
                     <div className="text-muted-foreground text-sm">
-                      └─ Score: {scores[getDominantArchetype()]}/18 pts
+                      └─ Score: {scores[getDominantArchetype()]}/{questions.length * 3} pts
                     </div>
                   </div>
                 </div>
+
+                {getSecondaryArchetype() && (
+                  <div className="space-y-2">
+                    <div className="text-muted-foreground">[SECONDARY_ARCHETYPE]</div>
+                    <div className="pl-4 space-y-1">
+                      <div className="text-accent font-bold">
+                        {language === "pt" 
+                          ? archetypes[getSecondaryArchetype()!].name
+                          : archetypes[getSecondaryArchetype()!].nameEn}
+                      </div>
+                      <div className="text-muted-foreground text-sm">
+                        └─ Score: {scores[getSecondaryArchetype()!]}/{questions.length * 3} pts
+                      </div>
+                    </div>
+                  </div>
+                )}
 
                 <div className="space-y-2">
                   <div className="text-muted-foreground">[DESCRIPTION]</div>
@@ -340,9 +490,53 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
                     <div>└─ GI:     {getProgressBar(scores.gi)} {scores.gi} pts</div>
                   </div>
                 </div>
+
+                <div className="space-y-3">
+                  <div className="text-muted-foreground">[STRENGTHS]</div>
+                  <div className="pl-4 space-y-1 text-sm">
+                    {(language === 'pt' 
+                      ? archetypes[getDominantArchetype()].strengths 
+                      : archetypes[getDominantArchetype()].strengthsEn
+                    ).map((strength, idx) => (
+                      <div key={idx} className="text-foreground">├─ {strength}</div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  <div className="text-muted-foreground">[CHALLENGES]</div>
+                  <div className="pl-4 space-y-1 text-sm">
+                    {(language === 'pt' 
+                      ? archetypes[getDominantArchetype()].challenges 
+                      : archetypes[getDominantArchetype()].challengesEn
+                    ).map((challenge, idx) => (
+                      <div key={idx} className="text-foreground">├─ {challenge}</div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="space-y-3">
+                  <div className="text-muted-foreground">[RECOMMENDATIONS]</div>
+                  <div className="pl-4 space-y-1 text-sm">
+                    {(language === 'pt' 
+                      ? archetypes[getDominantArchetype()].recommendations 
+                      : archetypes[getDominantArchetype()].recommendationsEn
+                    ).map((rec, idx) => (
+                      <div key={idx} className="text-primary">├─ {rec}</div>
+                    ))}
+                  </div>
+                </div>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-3 pt-4">
+                <Button
+                  onClick={handleExportPDF}
+                  variant="outline"
+                  className="gap-2"
+                >
+                  <Download className="h-4 w-4" />
+                  &gt; EXPORT_RESULTS()
+                </Button>
                 <Button
                   onClick={handleReset}
                   variant="outline"
