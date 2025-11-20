@@ -677,9 +677,15 @@ DaVinci Resolve"
                 />
               </div>
 
-              <p className="bible-body mt-12 text-center italic text-primary">
-                Este memorial não guarda o que passou. Guarda o que ainda pulsa.
-              </p>
+              <div className="max-w-4xl mx-auto mt-12">
+                <Card className="bg-black/90 border-l-4 border-primary">
+                  <CardContent className="p-6">
+                    <p className="font-mono text-sm text-primary text-center">
+                      Este memorial não guarda o que passou. Guarda o que ainda pulsa.
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
 
             <div className="lang-en">
@@ -715,9 +721,15 @@ DaVinci Resolve"
                 />
               </div>
 
-              <p className="bible-body mt-12 text-center italic text-primary">
-                This memorial doesn't keep what has passed. It keeps what still pulses.
-              </p>
+              <div className="max-w-4xl mx-auto mt-12">
+                <Card className="bg-black/90 border-l-4 border-primary">
+                  <CardContent className="p-6">
+                    <p className="font-mono text-sm text-primary text-center">
+                      This memorial doesn't keep what has passed. It keeps what still pulses.
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
           </div>
         </BilingualSection>
@@ -841,11 +853,9 @@ DaVinci Resolve"
           <div className="bible-block">
             <div className="lang-pt">
               <h2 className="bible-title">DOCUMENTAÇÃO</h2>
-              <h3 className="bible-subtitle mt-2">DOCUMENTOS DE PESQUISA</h3>
             </div>
             <div className="lang-en">
               <h2 className="bible-title">DOCUMENTATION</h2>
-              <h3 className="bible-subtitle mt-2">RESEARCH DOCUMENTS</h3>
             </div>
           </div>
 
@@ -865,71 +875,52 @@ DaVinci Resolve"
             </div>
 
             <div className="pt-8 border-t border-border">
-              <h3 className="bible-subtitle mb-6">Portfolio & Links</h3>
+              <h3 className="bible-subtitle mb-6 lang-pt">Portfolio & Links</h3>
+              <h3 className="bible-subtitle mb-6 lang-en">Portfolio & Links</h3>
               
-              <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
-                <div className="group bg-card/80 border border-primary/30 rounded-lg p-6 hover:border-primary/50 transition-colors">
-                  <div className="flex justify-between items-start mb-4">
-                    <h3 className="font-mono text-accent font-bold">SITE</h3>
-                    <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                  <div className="text-sm whitespace-nowrap">
-                    <a 
-                      href="https://castropizzano.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bible-link hover:text-primary transition-colors"
-                    >
-                      castropizzano.com
-                    </a>
-                  </div>
-                </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <a 
+                  href="https://castropizzano.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <SkillCard 
+                    title="SITE"
+                    content="castropizzano.com"
+                  />
+                </a>
 
                 <a 
                   href="http://lattes.cnpq.br/5523516994010198"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group bg-card/80 border border-primary/30 rounded-lg p-6 hover:border-primary/50 transition-colors"
                 >
-                  <div className="flex justify-between items-start mb-4">
-                    <h3 className="font-mono text-accent font-bold">LATTES</h3>
-                    <svg className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                  <p className="bible-link">@castropizzano</p>
+                  <SkillCard 
+                    title="LATTES"
+                    content="@castropizzano"
+                  />
                 </a>
 
                 <a 
                   href="https://www.behance.net/castropizzano"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group bg-card/80 border border-primary/30 rounded-lg p-6 hover:border-primary/50 transition-colors"
                 >
-                  <div className="flex justify-between items-start mb-4">
-                    <h3 className="font-mono text-accent font-bold">BEHANCE</h3>
-                    <svg className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                  <p className="bible-link">@castropizzano</p>
+                  <SkillCard 
+                    title="BEHANCE"
+                    content="@castropizzano"
+                  />
                 </a>
 
                 <a 
                   href="https://vimeo.com/castropizzano"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group bg-card/80 border border-primary/30 rounded-lg p-6 hover:border-primary/50 transition-colors"
                 >
-                  <div className="flex justify-between items-start mb-4">
-                    <h3 className="font-mono text-accent font-bold">VIMEO</h3>
-                    <svg className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </div>
-                  <p className="bible-link">@castropizzano</p>
+                  <SkillCard 
+                    title="VIMEO"
+                    content="@castropizzano"
+                  />
                 </a>
               </div>
             </div>
