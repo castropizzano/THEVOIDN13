@@ -348,7 +348,7 @@ DaVinci Resolve"
                 onClick={() => setShowGuidelinePT(true)}
               />
             </div>
-            <div className="lang-en mb-1">
+            <div className="lang-en">
               <img 
                 src={castroGuidelineEN} 
                 alt="ЦАСТРО™ Anti-Brand Guideline — English"
@@ -356,7 +356,7 @@ DaVinci Resolve"
                 loading="lazy"
                 onClick={() => setShowGuidelineEN(true)}
               />
-          </div>
+            </div>
         </div>
 
         <div className="bible-bilingual-grid bible-block">
