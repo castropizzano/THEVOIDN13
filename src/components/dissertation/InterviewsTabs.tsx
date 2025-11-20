@@ -109,14 +109,13 @@ const InterviewCard = ({
           )}
 
           {/* PDF Button */}
-          <div className="flex justify-center pt-4">
+          <div className="pt-4">
             <Button
               onClick={() => setShowPDF(true)}
               variant="outline"
               size="lg"
-              className="gap-2 hover:bg-primary/10 hover:border-primary transition-all hover-scale"
+              className="w-full hover:bg-primary/10 hover:border-primary transition-all hover-scale"
             >
-              <FileText className="h-5 w-5" />
               <span className="bible-body font-semibold">
                 <span className="lang-pt">Transcrição Completa</span>
                 <span className="lang-en">Full Transcription</span>
