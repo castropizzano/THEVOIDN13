@@ -53,7 +53,7 @@ export const VideoCard = ({ video, language, categoryLabel }: VideoCardProps) =>
         className="group relative cursor-pointer overflow-hidden rounded-lg bg-background border border-border transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/20"
       >
         {/* Thumbnail */}
-        <div className="relative aspect-video w-full overflow-hidden bg-muted">
+        <div className="relative aspect-[21/9] w-full overflow-hidden bg-black">
           <img
             src={getThumbnailUrl()}
             alt={title}
