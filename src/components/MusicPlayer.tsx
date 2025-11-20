@@ -11,7 +11,10 @@ export const MusicPlayer = () => {
           <Dialog>
             <DialogTrigger asChild>
               <Button variant="outline" className="w-full justify-start bible-media">
-                <span className="text-sm">Sobre a Assinatura Sonora / About the Sound Signature</span>
+                <span className="text-sm">
+                  <span className="lang-pt">Sobre a Assinatura Sonora</span>
+                  <span className="lang-en">About the Sound Signature</span>
+                </span>
               </Button>
             </DialogTrigger>
             <DialogContent className="max-w-2xl">
@@ -41,7 +44,8 @@ export const MusicPlayer = () => {
             <div className="space-y-2">
               <h3 className="text-lg font-bold text-primary">Like Rats on Hostile Paths</h3>
               <p className="text-sm text-muted-foreground">
-                Album instrumental das cenas cinematográficas / Instrumental album for cinematic scenes
+                <span className="lang-pt">Album instrumental das cenas cinematográficas</span>
+                <span className="lang-en">Instrumental album for cinematic scenes</span>
               </p>
               <p className="text-xs text-muted-foreground/70">
                 Composição: Dan Guinski (Non-Grata) & Raphael Carvalho (Relvi)
@@ -66,7 +70,8 @@ export const MusicPlayer = () => {
             <div className="space-y-2">
               <h3 className="text-lg font-bold text-primary">Lowbyrinth EP</h3>
               <p className="text-sm text-muted-foreground">
-                Album das VideoPartes / VideoParts soundtrack album
+                <span className="lang-pt">Album das VideoPartes</span>
+                <span className="lang-en">VideoParts soundtrack album</span>
               </p>
               <p className="text-xs text-muted-foreground/70">
                 Composição: Dan Guinski (Non-Grata) & Raphael Carvalho (Relvi)
