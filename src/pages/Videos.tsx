@@ -5,7 +5,8 @@ import { SEO } from "@/components/SEO";
 import { VideoCard } from "@/components/VideoCard";
 import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
 import { useLanguage } from "@/contexts/LanguageContext";
-import coverVideos from "@/assets/cover-videos.png";
+import coverVideosPt from "@/assets/cover-videos-pt.png";
+import coverVideosEn from "@/assets/cover-videos-en.png";
 
 interface CuratedVideo {
   source: "vimeo" | "internet-archive" | "youtube";
@@ -53,7 +54,7 @@ const Videos = () => {
       <main>
         <section className="w-full min-h-screen flex items-center justify-center overflow-hidden bg-black pt-16 sm:pt-20 md:pt-24">
           <img 
-            src={coverVideos} 
+            src={language === "pt" ? coverVideosPt : coverVideosEn} 
             alt={language === "pt" ? "Alguns Projetos" : "Some Projects"}
             className="w-full h-full object-cover object-center"
             loading="eager"
