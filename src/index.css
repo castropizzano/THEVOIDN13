@@ -456,6 +456,25 @@
     display: none !important;
   }
 
+  /* CORREÇÃO CRÍTICA: Garantir espaçamento idêntico entre .lang-pt e .lang-en */
+  .lang-pt,
+  .lang-en {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Resetar margin-top do primeiro elemento dentro de .lang-pt e .lang-en */
+  .lang-pt > *:first-child,
+  .lang-en > *:first-child {
+    margin-top: 0 !important;
+  }
+
+  /* Garantir que elementos dentro de .bible-block com .lang-pt/.lang-en tenham espaçamento consistente */
+  .bible-block .lang-pt,
+  .bible-block .lang-en {
+    display: block;
+  }
+
   /* Legacy headings (manter compatibilidade) */
   .heading-hero {
     @apply text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1];
