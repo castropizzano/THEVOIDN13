@@ -595,13 +595,6 @@ const Dissertacao = () => {
               <span className="lang-en">DOCUMENTATION</span>
             </h2>
           </div>
-          
-          <div className="bible-block">
-            <h3 className="bible-subtitle">
-              <span className="lang-pt">DOCUMENTOS DE PESQUISA</span>
-              <span className="lang-en">RESEARCH DOCUMENTS</span>
-            </h3>
-          </div>
 
           <div className="bible-block">
             {/* Brandbooks */}
