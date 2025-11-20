@@ -10,6 +10,8 @@ import { ProcessAnalysis } from "./CreativeOracle/ProcessAnalysis";
 import { ProcessTimeline } from "./CreativeOracle/ProcessTimeline";
 import { CompatibilityMatrix } from "./CreativeOracle/CompatibilityMatrix";
 import { HybridArchetypeReveal } from "./CreativeOracle/HybridArchetypeReveal";
+import { ContextualQuote } from "./CreativeOracle/ContextualQuote";
+import { PersonalizedAdvice } from "./CreativeOracle/PersonalizedAdvice";
 import { contextualizedQuestions } from "./CreativeOracle/data/contextualizedQuestions";
 import { hybridArchetypes } from "./CreativeOracle/data/hybridArchetypes";
 
@@ -336,6 +338,8 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
                   </div>
                 </div>
 
+                <ContextualQuote questionIndex={currentQuestion} />
+
                 <div className="space-y-2 pb-4 border-b border-primary/20">
                   <div className="text-foreground font-semibold text-lg">
                     [Q] {language === "pt" ? contextualizedQuestions[currentQuestion].text : contextualizedQuestions[currentQuestion].textEn}
@@ -556,6 +560,11 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
               <CompatibilityMatrix />
 
               <ProcessAnalysis processScores={processScores} dominantArchetype={getDominantArchetype()} />
+              
+              <PersonalizedAdvice 
+                dominantArchetype={getDominantArchetype()}
+                weakestStage={Object.entries(processScores).sort((a, b) => a[1] - b[1])[0][0]}
+              />
             </div>
           )}
             </div>
