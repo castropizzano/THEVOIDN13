@@ -672,6 +672,7 @@ DaVinci Resolve"
                   role="Fundador"
                   description="Laboratório criativo independente. Transita entre produção autoral e comercial, conectando design gráfico, audiovisual e experimentação."
                   tags={["Design", "Audiovisual", "Laboratório"]}
+                  highlight
                 />
               </div>
 
@@ -711,6 +712,7 @@ DaVinci Resolve"
                   role="Founder"
                   description="Independent creative laboratory. Transits between authorial and commercial production, connecting graphic design, audiovisual and experimentation."
                   tags={["Design", "Audiovisual", "Laboratory"]}
+                  highlight
                 />
               </div>
 
