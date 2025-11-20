@@ -4,6 +4,7 @@ import { SEO, breadcrumbSchema } from "@/components/SEO";
 import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
 import { BackToTop } from "@/components/BackToTop";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 import { VideoEmbed } from "@/components/VideoEmbed";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -239,90 +240,101 @@ const Videos = () => {
       
       <div className="min-h-screen bg-background">
         <Header />
+        <BackToTop />
         
         <main>
           {/* ========================================
-              TÍTULO PRINCIPAL
+              HERO IMAGE FULLSCREEN
               ======================================== */}
-          <BilingualSection className="bible-section pt-32 md:pt-40">
+          <section className="w-full min-h-screen flex items-center justify-center overflow-hidden bg-black pt-16 sm:pt-20 md:pt-24">
+            <div className="w-full h-full flex items-center justify-center">
+              <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold text-white tracking-tighter">
+                PORTFOLIO<br />AUDIOVISUAL
+              </h1>
+            </div>
+          </section>
+
+          {/* ========================================
+              TÍTULO E SUBTÍTULO
+              ======================================== */}
+          <BilingualSection className="bible-section">
             <BilingualContent
               portugueseContent={
-                <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-8 tracking-tight">
-                  PORTFOLIO<br />AUDIOVISUAL
-                </h1>
+                <div className="bible-block">
+                  <h2 className="bible-title">PORTFOLIO AUDIOVISUAL</h2>
+                  <p className="bible-body text-muted-foreground">
+                    Registro de uma prática audiovisual em trânsito
+                  </p>
+                </div>
               }
               englishContent={
-                <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-8 tracking-tight">
-                  AUDIOVISUAL<br />PORTFOLIO
-                </h1>
+                <div className="bible-block">
+                  <h2 className="bible-title">AUDIOVISUAL PORTFOLIO</h2>
+                  <p className="bible-body text-muted-foreground">
+                    Record of an audiovisual practice in transit
+                  </p>
+                </div>
               }
             />
           </BilingualSection>
+
+          <Separator className="bg-border/30" />
 
           {/* ========================================
               SEÇÃO CONCEITUAL: MULTIDISCIPLINARIDADE
               ======================================== */}
           <BilingualSection className="bible-section">
-            <BilingualContent
-              portugueseContent={
-                <div className="prose prose-invert max-w-none">
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6 tracking-tight">
-                    PORTFOLIO AUDIOVISUAL: MULTIDISCIPLINARIDADE CRIATIVA
-                  </h2>
-                  
-                  <div className="space-y-4 text-lg leading-relaxed text-muted-foreground">
-                    <p>
-                      Este é o registro de uma prática audiovisual em trânsito — entre direção, 
-                      fotografia, design, edição e pós-produção.
-                    </p>
-                    
-                    <p>
-                      Cada trabalho aqui apresentado é um fragmento de um processo onde as funções 
-                      se dissolvem e a autoria emerge do gesto completo: do conceito à finalização, 
-                      da luz ao corte final.
-                    </p>
-                    
-                    <p>
-                      São curtas-metragens, documentários, videoperformances e experimentos visuais 
-                      que respiram a mesma ética: o compromisso com a imagem bruta, a recusa do 
-                      polimento corporativo, a verdade do processo.
-                    </p>
-                  </div>
-                </div>
-              }
-              englishContent={
-                <div className="prose prose-invert max-w-none">
-                  <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6 tracking-tight">
-                    AUDIOVISUAL PORTFOLIO: CREATIVE MULTIDISCIPLINARITY
-                  </h2>
-                  
-                  <div className="space-y-4 text-lg leading-relaxed text-muted-foreground">
-                    <p>
-                      This is the record of an audiovisual practice in transit — between direction, 
-                      photography, design, editing and post-production.
-                    </p>
-                    
-                    <p>
-                      Each work presented here is a fragment of a process where functions dissolve 
-                      and authorship emerges from the complete gesture: from concept to finalization, 
-                      from light to final cut.
-                    </p>
-                    
-                    <p>
-                      These are short films, documentaries, video performances and visual experiments 
-                      that breathe the same ethic: commitment to raw image, refusal of corporate 
-                      polish, the truth of process.
-                    </p>
-                  </div>
-                </div>
-              }
-            />
+            <div className="bible-bilingual-grid bible-block">
+              <div>
+                <h2 className="bible-title">MULTIDISCIPLINARIDADE CRIATIVA</h2>
+              </div>
+              <div>
+                <h2 className="bible-title">CREATIVE MULTIDISCIPLINARITY</h2>
+              </div>
+            </div>
+
+            <div className="bible-bilingual-grid bible-block">
+              <div>
+                <p className="bible-body text-justify">
+                  Este é o registro de uma prática audiovisual em trânsito — entre direção, 
+                  fotografia, design, edição e pós-produção.
+                </p>
+                <p className="bible-body text-justify">
+                  Cada trabalho aqui apresentado é um fragmento de um processo onde as funções 
+                  se dissolvem e a autoria emerge do gesto completo: do conceito à finalização, 
+                  da luz ao corte final.
+                </p>
+                <p className="bible-body text-justify">
+                  São curtas-metragens, documentários, videoperformances e experimentos visuais 
+                  que respiram a mesma ética: o compromisso com a imagem bruta, a recusa do 
+                  polimento corporativo, a verdade do processo.
+                </p>
+              </div>
+              <div>
+                <p className="bible-body text-justify">
+                  This is the record of an audiovisual practice in transit — between direction, 
+                  photography, design, editing and post-production.
+                </p>
+                <p className="bible-body text-justify">
+                  Each work presented here is a fragment of a process where functions dissolve 
+                  and authorship emerges from the complete gesture: from concept to finalization, 
+                  from light to final cut.
+                </p>
+                <p className="bible-body text-justify">
+                  These are short films, documentaries, video performances and visual experiments 
+                  that breathe the same ethic: commitment to raw image, refusal of corporate 
+                  polish, the truth of process.
+                </p>
+              </div>
+            </div>
           </BilingualSection>
+
+          <Separator className="bg-border/30" />
 
           {/* ========================================
               GRID DE VÍDEOS
               ======================================== */}
-          <BilingualSection className="bible-section pb-32">
+          <BilingualSection className="bible-section">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {curatedVideos.map((video, index) => (
                 <Card 
@@ -359,47 +371,44 @@ const Videos = () => {
             </div>
           </BilingualSection>
 
+          <Separator className="bg-border/30" />
+
           {/* ========================================
               RODAPÉ: LINK PARA VIMEO
               ======================================== */}
-          <BilingualSection className="bible-section pb-32">
-            <BilingualContent
-              portugueseContent={
-                <div className="text-center space-y-4">
-                  <p className="text-lg text-muted-foreground">
-                    Para visualizar o portfolio completo, visite:
-                  </p>
-                  <a
-                    href="https://vimeo.com/user123456789" // SUBSTITUIR com seu username real do Vimeo
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block text-2xl font-bold text-primary hover:text-primary/80 transition-colors underline decoration-2 underline-offset-4"
-                  >
-                    vimeo.com/user123456789
-                  </a>
-                </div>
-              }
-              englishContent={
-                <div className="text-center space-y-4">
-                  <p className="text-lg text-muted-foreground">
-                    To view the complete portfolio, visit:
-                  </p>
-                  <a
-                    href="https://vimeo.com/user123456789" // SUBSTITUIR com seu username real do Vimeo
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block text-2xl font-bold text-primary hover:text-primary/80 transition-colors underline decoration-2 underline-offset-4"
-                  >
-                    vimeo.com/user123456789
-                  </a>
-                </div>
-              }
-            />
+          <BilingualSection className="bible-section">
+            <div className="bible-bilingual-grid bible-block">
+              <div className="text-center">
+                <p className="bible-body mb-4">
+                  Para visualizar o portfolio completo, visite:
+                </p>
+                <a
+                  href="https://vimeo.com/user123456789" // SUBSTITUIR com seu username real do Vimeo
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block text-2xl font-bold text-primary hover:text-primary/80 transition-colors underline decoration-2 underline-offset-4"
+                >
+                  vimeo.com/user123456789
+                </a>
+              </div>
+              <div className="text-center">
+                <p className="bible-body mb-4">
+                  To view the complete portfolio, visit:
+                </p>
+                <a
+                  href="https://vimeo.com/user123456789" // SUBSTITUIR com seu username real do Vimeo
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block text-2xl font-bold text-primary hover:text-primary/80 transition-colors underline decoration-2 underline-offset-4"
+                >
+                  vimeo.com/user123456789
+                </a>
+              </div>
+            </div>
           </BilingualSection>
         </main>
 
         <Footer />
-        <BackToTop />
       </div>
     </>
   );
