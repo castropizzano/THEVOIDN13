@@ -12,11 +12,9 @@ export const VideoEmbed = ({ source, videoId, title }: VideoEmbedProps) => {
       case "vimeo":
         return `https://player.vimeo.com/video/${videoId}?title=0&byline=0&portrait=0`;
       case "internet-archive":
-        // If videoId contains "/" it's a full path, otherwise use as ID
-        if (videoId.includes("/")) {
-          return `https://archive.org/embed/${videoId}`;
-        }
-        return `https://archive.org/embed/${videoId}`;
+        // Extract the item ID (before the first /) for Internet Archive embeds
+        const itemId = videoId.includes("/") ? videoId.split("/")[0] : videoId;
+        return `https://archive.org/embed/${itemId}`;
       case "youtube":
         return `https://www.youtube.com/embed/${videoId}`;
     }
