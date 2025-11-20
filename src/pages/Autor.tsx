@@ -381,8 +381,8 @@ DaVinci Resolve"
                 
                 <p className="bible-body">A anti-marca ЦАСТРО™ não busca legibilidade comercial, mas reconhecimento conceitual. Quem entende o código, entende o autor. Quem não entende, permanece fora do campo — e isso é parte do design.</p>
                 
-                <div className="space-y-4 bg-primary/5 border border-primary/20 rounded-lg p-6 bible-media">
-                  <h3 className="bible-subtitle">A Obra como Protagonista</h3>
+                <div className="space-y-4 bg-primary/5 border border-primary/20 p-6 bible-media">
+                  <h3 className="bible-title">A Obra como Protagonista</h3>
                   <p className="bible-body">A proposta central é o anonimato como ética criativa. Num mundo saturado de criadores-influencers, a ideia é inverter a equação: não se trata de vender a imagem do artista, mas de expandir o campo simbólico do que ele cria.</p>
                   <p className="bible-body">Assim, "ЦАСТРО™" torna-se um agente conceitual, não uma pessoa. Uma entidade de linguagem, um selo de pensamento, uma assinatura invisível.</p>
                   <div className="bible-media">
@@ -465,8 +465,8 @@ DaVinci Resolve"
                   </div>
                 </div>
 
-                <div className="my-8 p-6 bg-black/50 border border-primary/20 rounded-lg">
-                  <h4 className="bible-subtitle mb-6">AS TRÊS FAIXAS</h4>
+                <div className="my-8 p-6 bg-black/50 border border-primary/20">
+                  <h2 className="bible-title mb-6">AS TRÊS FAIXAS</h2>
                   <p className="bible-body mb-6 italic">Este selo não certifica. Ele posiciona em três frequências simultâneas — como se o mesmo corpo pudesse tocar três instrumentos ao mesmo tempo:</p>
                   
                   <div className="space-y-6">
@@ -514,8 +514,8 @@ DaVinci Resolve"
                 
                 <p className="bible-body">The ЦАСТРО™ anti-brand doesn't seek commercial legibility, but conceptual recognition. Those who understand the code understand the author. Those who don't remain outside the field — and that's part of the design.</p>
                 
-                <div className="space-y-4 bg-primary/5 border border-primary/20 rounded-lg p-6">
-                  <h3 className="bible-subtitle">The Work as Protagonist</h3>
+                <div className="space-y-4 bg-primary/5 border border-primary/20 p-6">
+                  <h3 className="bible-title">The Work as Protagonist</h3>
                   <p className="bible-body">The central proposition is anonymity as creative ethics. In a world saturated with creator-influencers, the idea is to reverse the equation: it's not about selling the artist's image, but expanding the symbolic field of what they create.</p>
                   <p className="bible-body">Thus, "ЦАСТРО™" becomes a conceptual agent, not a person. A language entity, a thought seal, an invisible signature.</p>
                   <div className="my-4 py-4">
@@ -598,8 +598,8 @@ DaVinci Resolve"
                   </div>
                 </div>
 
-                <div className="my-8 p-6 bg-black/50 border border-primary/20 rounded-lg">
-                  <h4 className="bible-subtitle mb-6">THE THREE BANDS</h4>
+                <div className="my-8 p-6 bg-black/50 border border-primary/20">
+                  <h2 className="bible-title mb-6">THE THREE BANDS</h2>
                   <p className="bible-body mb-6 italic">This seal doesn't certify. It positions on three simultaneous frequencies — as if the same body could play three instruments at once:</p>
                   
                   <div className="space-y-6">
@@ -661,7 +661,7 @@ DaVinci Resolve"
                   title="LOWPRESSURE™"
                   period="2020-atual"
                   role="Membro Fundador"
-                  description="Coletivo de skatistas-artistas nas interseções entre rua, vídeo e cultura. Dois membros representaram o Brasil nas Olimpíadas de Paris 2024."
+                  description="Coletivo de skatistas-artistas nas interseções entre rua, vídeo e cultura. Dois membros representaram o Brasil nas Olimpíadas de Paris 2024: Luigi Cini e Augusto Akio 'Japinha'."
                   tags={["Skate", "Cultura Visual", "Coletivo"]}
                   highlight
                 />
@@ -699,7 +699,7 @@ DaVinci Resolve"
                   title="LOWPRESSURE™"
                   period="2020-present"
                   role="Founding Member"
-                  description="Collective of skater-artists at intersections between street, video and culture. Two members represented Brazil at Paris 2024 Olympics."
+                  description="Collective of skater-artists at intersections between street, video and culture. Two members represented Brazil at Paris 2024 Olympics: Luigi Cini and Augusto Akio 'Japinha'."
                   tags={["Skate", "Visual Culture", "Collective"]}
                   highlight
                 />
