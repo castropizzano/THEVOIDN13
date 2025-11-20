@@ -23,7 +23,7 @@ const Transparency = () => {
       <div className="min-h-screen flex flex-col bg-background">
         <Header />
         
-        <main className="flex-1">
+        <main className="flex-1 pt-24">
           {/* Architecture Overview */}
           <BilingualSection className="bible-section">
             <div className="lang-pt">
