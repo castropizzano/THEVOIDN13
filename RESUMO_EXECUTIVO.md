@@ -36,7 +36,7 @@ O THEVØIDN13 foi transformado de uma aplicação web com backend completo, anal
 - ✅ Analytics e tracking removidos (Google Analytics, pixels)
 - ✅ Autenticação e formulários removidos
 - ✅ Backend reduzido drasticamente (-95%)
-- ✅ Edge function opcional mantida (Comic Generator)
+- ✅ Geração de imagens migrada para Pollinations.AI (100% client-side)
 - ✅ Componentes majoritariamente estáticos
 - ✅ Código limpo e documentado
 
@@ -45,7 +45,7 @@ O THEVØIDN13 foi transformado de uma aplicação web com backend completo, anal
 - ✅ **ZERO COOKIES**: Navegação sem cookies
 - ✅ **ZERO DATA COLLECTION**: Sem coleta de dados pessoais
 - ✅ **sessionStorage mínimo**: Apenas para banner (UX, não persiste dados sensíveis)
-- ✅ **Feature IA opcional**: Comic Generator usa edge function (requer Lovable AI)
+- ✅ **Feature IA opcional**: Comic Generator 100% client-side via Pollinations.AI (zero autenticação, zero backend)
 - ✅ Política de privacidade honesta e atualizada (PT/EN)
 - ✅ 100% conformidade LGPD/GDPR
 
@@ -82,8 +82,8 @@ React Router 6.x
 
 ### Arquitetura
 ```
-95% Frontend Estático
-5% Backend Opcional (1 Edge Function para IA)
+99.5% Frontend Estático + Client-Side AI
+0.5% Backend Mínimo (1 tabela read-only: prompts)
 ZERO Tracking
 ZERO Cookies
 ZERO Analytics
@@ -118,9 +118,36 @@ sessionStorage mínimo (banner UX)
 - ✅ Design responsivo
 
 ### Features Opcionais/Externas
-- ⚡ **Gerador de Stills**: Feature experimental com IA (usa Lovable AI)
+- ⚡ **Gerador de Stills**: Feature experimental 100% client-side (Pollinations.AI FLUX, zero auth)
 - ℹ️ **Biblioteca de Prompts**: Mensagem informativa (sem banco)
 - 🔗 **Portfolio Vídeos**: Redirecionamento para Vimeo
+
+### Gerador de Stills Cinematográficos (Detalhes Técnicos)
+
+**Implementação:** Pollinations.AI (migrado de Puter.js em Nov 2025)  
+**Modelo:** FLUX by Black Forest Labs  
+**Arquitetura:** 100% Client-Side
+
+**Fluxo de Funcionamento:**
+1. Usuário digita prompt (10-500 caracteres)
+2. Frontend valida input localmente
+3. Constrói prompt detalhado (estilo THEVØIDN13)
+4. Chama API pública do Pollinations.AI (zero auth)
+5. Imagem gerada (1024x1024, modelo FLUX)
+6. Marca d'água aplicada localmente via canvas
+7. Download opcional para o usuário
+
+**Características:**
+- ✅ Gratuito e ilimitado
+- ✅ Zero autenticação (vs. Puter.js que exigia login)
+- ✅ Zero backend
+- ✅ Zero coleta de dados
+- ✅ Rate limiting client-side (contornável, mas sem impacto)
+- ✅ Processa no navegador do usuário
+- ✅ UX instantânea e sem fricção
+
+**Por que mudamos de Puter.js para Pollinations.AI:**
+Puter.js exigia login obrigatório (popup modal), contradizendo a filosofia "privacy by architecture". Pollinations.AI oferece a mesma qualidade (modelo FLUX) sem nenhuma autenticação ou fricção de UX.
 
 ---
 

@@ -172,7 +172,7 @@ if (userPrompt.length < MIN_LENGTH || userPrompt.length > MAX_LENGTH) {
 ### Transparency
 - All code is open source and auditable
 - Full technical documentation available at `/transparency`
-- Honest disclosure about Puter.js client-side processing
+- Honest disclosure about Pollinations.AI client-side processing
 - Clear explanation of sessionStorage usage
 
 ---

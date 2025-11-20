@@ -21,19 +21,20 @@ THEVØIDN13's architecture embodies its anti-surveillance philosophy through **r
 │  │              │         │              │                 │
 │  │  • React     │         │  • Supabase  │                 │
 │  │  • Vite      │         │  • 1 Table   │                 │
-│  │  • Tailwind  │         │  • 1 Edge Fn │                 │
+│  │  • Tailwind  │         │  (prompts)   │                 │
+│  │  • Pollinations.AI     │              │                 │
 │  └──────────────┘         └──────────────┘                 │
 │         │                        │                          │
 │         └────────────────────────┘                          │
 │              sessionStorage                                 │
-│        (banner visibility only)                             │
+│        (banner + rate limiting)                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### **Architecture Ratio: 98% Static / 2% Backend**
+### **Architecture Ratio: 99.5% Static / 0.5% Backend**
 
-- **Frontend**: 98% (Static pages, components, assets)
-- **Backend**: 2% (Prompts library + optional AI feature)
+- **Frontend**: 99.5% (Static pages, components, assets, client-side AI)
+- **Backend**: 0.5% (Prompts library only - 1 read-only table)
 
 ---
 
@@ -82,20 +83,65 @@ ON prompts FOR SELECT
 USING (is_active = true);
 ```
 
-#### 3. **Edge Function: `generate-cinematic-still`**
-- **Purpose**: Optional AI image generation
+#### 3. **Client-Side Image Generation (Pollinations.AI)**
+- **Purpose**: Optional AI cinematic still generator
+- **Architecture**: 100% client-side (zero backend)
+- **API**: Pollinations.AI public endpoint (https://image.pollinations.ai/)
+- **Model**: FLUX by Black Forest Labs
 - **Input**: User prompt (validated, 10-500 characters)
-- **Output**: Generated image (not stored)
-- **Storage**: None (images generated on-demand, discarded after)
+- **Output**: Generated image (1024x1024, displayed instantly)
+- **Storage**: None (images generated on-demand, not stored)
 - **Tracking**: None
 - **Authentication**: None required
 
 ```typescript
-// Validation implemented (Nov 2025)
+// Implementation (ComicGenerator.tsx)
+const pollinationsUrl = new URL(
+  'https://image.pollinations.ai/prompt/' + encodeURIComponent(detailedPrompt)
+);
+pollinationsUrl.searchParams.set('width', '1024');
+pollinationsUrl.searchParams.set('height', '1024');
+pollinationsUrl.searchParams.set('model', 'flux');
+pollinationsUrl.searchParams.set('nologo', 'true');
+pollinationsUrl.searchParams.set('enhance', 'false'); // Full style control
+
+const response = await fetch(pollinationsUrl.toString());
+const imageBlob = await response.blob();
+```
+
+**Input Validation (Client-Side):**
+```typescript
 const MAX_PROMPT_LENGTH = 500;
 const MIN_PROMPT_LENGTH = 10;
-const FORBIDDEN_PATTERNS = [/<script[^>]*>.*?<\/script>/gi, ...];
+
+// Validation
+if (trimmedPrompt.length < MIN_PROMPT_LENGTH) {
+  throw new Error('Prompt too short');
+}
+if (trimmedPrompt.length > MAX_PROMPT_LENGTH) {
+  throw new Error('Prompt too long');
+}
 ```
+
+**Rate Limiting (Client-Side):**
+```typescript
+// 10-second cooldown via sessionStorage
+const lastGenTime = sessionStorage.getItem('lastImageGeneration');
+const COOLDOWN_MS = 10000;
+
+if (lastGenTime && Date.now() - parseInt(lastGenTime) < COOLDOWN_MS) {
+  throw new Error('Please wait before generating again');
+}
+
+sessionStorage.setItem('lastImageGeneration', Date.now().toString());
+```
+
+**Security Considerations:**
+- ✅ Client-side rate limiting is bypassable, but harmless (users only consume their own resources)
+- ✅ No backend = no server costs or abuse potential
+- ✅ Pollinations.AI processes on user's machine
+- ✅ Zero data collection or tracking
+- ✅ Perfectly aligned with "privacy by architecture" philosophy
 
 ### **What was DELETED (November 2025)**
 

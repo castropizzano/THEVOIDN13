@@ -162,7 +162,7 @@ const Transparency = () => {
                   <p className="font-bold text-primary text-base">✅ O que mantive:</p>
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• prompts - Biblioteca de prompts de IA (somente leitura pública)</li>
-                    <li>• generate-cinematic-still - Edge function para geração de imagens (com validação de input)</li>
+                    <li>• Pollinations.AI - Geração de imagens 100% client-side (modelo FLUX, sem autenticação)</li>
                   </ul>
                 </div>
 
@@ -285,7 +285,7 @@ const Transparency = () => {
                 <CollectiveCard
                   title="Gerador de Still Cinemático"
                   period="2025"
-                  description="Única feature dinâmica do site. Envia prompt para edge function Lovable Cloud (Supabase) → Lovable AI Gateway → Google Gemini API. Não coleto nem armazeno dados pessoais."
+                  description="Única feature interativa do site. Processa prompt 100% no navegador do usuário → Pollinations.AI API (modelo FLUX) → Imagem gerada instantaneamente. Zero backend, zero autenticação. Marca d'água aplicada localmente via canvas. Não armazena prompts ou imagens. Rate limiting de 10 segundos (via sessionStorage, contornável). Feature opcional—site funciona sem ela."
                   highlight
                 />
                 
@@ -317,7 +317,7 @@ const Transparency = () => {
                 <CollectiveCard
                   title="Cinematic Still Generator"
                   period="2025"
-                  description="Only dynamic feature on the site. Sends prompt to Lovable Cloud edge function (Supabase) → Lovable AI Gateway → Google Gemini API. I do not collect or store personal data."
+                  description="Site's only interactive feature. Processes prompt 100% in user's browser → Pollinations.AI API (FLUX model) → Image generated instantly. Zero backend, zero authentication. Watermark applied locally via canvas. Does not store prompts or images. 10-second rate limiting (via sessionStorage, bypassable). Optional feature—site works without it."
                   highlight
                 />
                 

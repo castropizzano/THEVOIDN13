@@ -231,7 +231,7 @@ Veja [TECH_STACK.md](./docs/TECH_STACK.md) para detalhes completos.
 ## MÉTODO HÍBRIDO (HUMAN × MACHINE)  
 ───────────────────────────────────────────────────────────────
 
-O desenvolvimento deste memorial utiliza co-criação com IA (Lovable AI, Gemini, Claude).
+O desenvolvimento deste memorial utiliza co-criação com IA (Lovable AI, Gemini, Claude para desenvolvimento; Pollinations.AI para geração de stills pelos usuários).
 
 **Ciclo de Criação:**
 1. **Observação** — análise do fluxo criativo e documentação de padrões
