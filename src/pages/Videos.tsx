@@ -297,15 +297,9 @@ const Videos = () => {
               <div>
                 <p className="bible-body text-justify">
                   Este é o registro de uma prática audiovisual em trânsito — entre direção, 
-                  fotografia, design, edição e pós-produção.
-                </p>
-                <p className="bible-body text-justify">
-                  Cada trabalho aqui apresentado é um fragmento de um processo onde as funções 
+                  fotografia, design, edição e pós-produção. Cada trabalho aqui apresentado é um fragmento de um processo onde as funções 
                   se dissolvem e a autoria emerge do gesto completo: do conceito à finalização, 
-                  da luz ao corte final.
-                </p>
-                <p className="bible-body text-justify">
-                  São curtas-metragens, documentários, videoperformances e experimentos visuais 
+                  da luz ao corte final. São curtas-metragens, documentários, videoperformances e experimentos visuais 
                   que respiram a mesma ética: o compromisso com a imagem bruta, a recusa do 
                   polimento corporativo, a verdade do processo.
                 </p>
@@ -313,15 +307,9 @@ const Videos = () => {
               <div>
                 <p className="bible-body text-justify">
                   This is the record of an audiovisual practice in transit — between direction, 
-                  photography, design, editing and post-production.
-                </p>
-                <p className="bible-body text-justify">
-                  Each work presented here is a fragment of a process where functions dissolve 
+                  photography, design, editing and post-production. Each work presented here is a fragment of a process where functions dissolve 
                   and authorship emerges from the complete gesture: from concept to finalization, 
-                  from light to final cut.
-                </p>
-                <p className="bible-body text-justify">
-                  These are short films, documentaries, video performances and visual experiments 
+                  from light to final cut. These are short films, documentaries, video performances and visual experiments 
                   that breathe the same ethic: commitment to raw image, refusal of corporate 
                   polish, the truth of process.
                 </p>
