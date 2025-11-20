@@ -59,7 +59,7 @@ export const VideoCard = ({ video, language, categoryLabel }: VideoCardProps) =>
             src={getThumbnailUrl()}
             alt={title}
             loading="lazy"
-            className="h-full w-full object-cover transition-all duration-500 grayscale group-hover:grayscale-0 scale-110"
+            className="h-full w-full object-cover transition-all duration-500 grayscale group-hover:grayscale-0 scale-125"
             style={{ objectPosition: video.objectPosition || 'center' }}
           />
           
