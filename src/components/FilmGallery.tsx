@@ -241,7 +241,8 @@ const FilmGallery = () => {
 
           <div className="bible-media p-6 bg-secondary/10 rounded-lg border border-primary/10">
             <p className="text-sm text-center text-muted-foreground leading-relaxed">
-              Essas 15 obras cinematográficas formam a base conceitual e estética do universo THEVOIDN13.
+              <span className="lang-pt">Essas 15 obras cinematográficas formam a base conceitual e estética do universo THEVOIDN13.</span>
+              <span className="lang-en">These 15 cinematic works form the conceptual and aesthetic foundation of the THEVOIDN13 universe.</span>
             </p>
           </div>
         </Card>
