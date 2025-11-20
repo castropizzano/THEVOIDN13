@@ -504,11 +504,6 @@ const Dissertacao = () => {
 
         <Separator className="bg-border/30" />
 
-        {/* LowMovie as Device */}
-        <LowMovieBlock />
-
-        <Separator className="bg-border/30" />
-
         {/* Informação Acadêmica */}
         <BilingualSection className="bible-section">
           <div className="bible-block">
