@@ -151,6 +151,7 @@ export const InterviewsTabs = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [direction, setDirection] = useState<'next' | 'prev'>('next');
+  const [lightboxOpen, setLightboxOpen] = useState(false);
 
   const zineImages = [
     zine01, zine02, zine03, zine04, zine05, 
@@ -380,8 +381,11 @@ export const InterviewsTabs = () => {
             <CardContent>
               {/* Galeria com navegação por indicadores */}
               <div className="w-full">
-                {/* Imagem com animação de transição */}
-                <div className="w-full bg-black/5 rounded-lg overflow-hidden border border-border/50 flex items-center justify-center min-h-[400px]">
+                {/* Imagem com animação de transição - clicável para abrir lightbox */}
+                <div 
+                  className="w-full bg-black/5 rounded-lg overflow-hidden border border-border/50 flex items-center justify-center min-h-[400px] cursor-pointer hover:border-primary/50 transition-all"
+                  onClick={() => setLightboxOpen(true)}
+                >
                   <img
                     src={zineImages[currentImageIndex]}
                     alt={`LowZine página ${currentImageIndex + 1}`}
@@ -432,6 +436,73 @@ export const InterviewsTabs = () => {
                   </span>
                 </div>
               </div>
+
+              {/* Lightbox em tela cheia */}
+              <Dialog open={lightboxOpen} onOpenChange={setLightboxOpen}>
+                <DialogContent className="max-w-[100vw] h-screen w-screen p-0 bg-black/95 border-none">
+                  <div className="relative w-full h-full flex items-center justify-center">
+                    {/* Botão Fechar */}
+                    <Button
+                      onClick={() => setLightboxOpen(false)}
+                      variant="ghost"
+                      size="icon"
+                      className="absolute top-4 right-4 z-20 h-10 w-10 text-white hover:bg-white/10"
+                    >
+                      <span className="text-2xl">×</span>
+                    </Button>
+
+                    {/* Seta Anterior - sem caixa */}
+                    {currentImageIndex > 0 && (
+                      <button
+                        onClick={prevImage}
+                        disabled={isTransitioning}
+                        className="absolute left-4 top-1/2 -translate-y-1/2 z-10 
+                                   text-white hover:text-primary
+                                   transition-all duration-200
+                                   disabled:opacity-30 disabled:cursor-not-allowed
+                                   hover:scale-125"
+                        aria-label="Página anterior"
+                      >
+                        <ChevronLeft className="h-12 w-12" strokeWidth={1.5} />
+                      </button>
+                    )}
+
+                    {/* Imagem em tela cheia */}
+                    <img
+                      src={zineImages[currentImageIndex]}
+                      alt={`LowZine página ${currentImageIndex + 1}`}
+                      className={`max-w-[90vw] max-h-[90vh] object-contain
+                                  ${isTransitioning 
+                                    ? 'animate-[fadeOut_150ms_ease-out]' 
+                                    : 'animate-[fadeIn_300ms_ease-in]'
+                                  }`}
+                    />
+
+                    {/* Seta Próxima - sem caixa */}
+                    {currentImageIndex < zineImages.length - 1 && (
+                      <button
+                        onClick={nextImage}
+                        disabled={isTransitioning}
+                        className="absolute right-4 top-1/2 -translate-y-1/2 z-10 
+                                   text-white hover:text-primary
+                                   transition-all duration-200
+                                   disabled:opacity-30 disabled:cursor-not-allowed
+                                   hover:scale-125"
+                        aria-label="Próxima página"
+                      >
+                        <ChevronRight className="h-12 w-12" strokeWidth={1.5} />
+                      </button>
+                    )}
+
+                    {/* Contador no lightbox */}
+                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2">
+                      <span className="text-white/70 text-sm">
+                        {currentImageIndex + 1} / {zineImages.length}
+                      </span>
+                    </div>
+                  </div>
+                </DialogContent>
+              </Dialog>
             </CardContent>
           </Card>
 
