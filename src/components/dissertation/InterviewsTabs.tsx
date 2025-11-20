@@ -47,10 +47,10 @@ const InterviewCard = ({
   pdfTitleEn,
 }: InterviewCardProps) => {
   const [showPDF, setShowPDF] = useState(false);
-  const [videoLoaded, setVideoLoaded] = useState(false);
 
   return (
-    <>
+    <div className="space-y-6">
+      {/* Card 1: Texto descritivo + botão de transcrição */}
       <Card className="overflow-hidden border-border/50 shadow-lg shadow-primary/5 animate-fade-in">
         <CardHeader className="space-y-4">
           <div>
@@ -70,59 +70,41 @@ const InterviewCard = ({
           </p>
         </CardHeader>
 
-        <CardContent className="space-y-6">
-          {/* Video - only show if youtubeId is provided */}
-          {youtubeId && (
-            <div 
-              onClick={() => !videoLoaded && setVideoLoaded(true)}
-              className={`relative aspect-video w-full rounded-lg overflow-hidden border border-border/50 shadow-lg shadow-primary/10 transition-all duration-300 ${!videoLoaded ? 'cursor-pointer hover:border-primary' : ''}`}
-            >
-              {!videoLoaded ? (
-                <>
-                  <img 
-                    src={`https://img.youtube.com/vi/${youtubeId}/maxresdefault.jpg`}
-                    alt={titleEn}
-                    className="w-full h-full object-cover grayscale"
-                  />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-20 h-20 rounded-full bg-primary/20 backdrop-blur-sm border-2 border-primary flex items-center justify-center hover:scale-110 hover:bg-primary/30 transition-all duration-300">
-                      <svg className="w-10 h-10 text-primary ml-1" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M8 5v14l11-7z"/>
-                      </svg>
-                    </div>
-                  </div>
-                </>
-              ) : (
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src={`https://www.youtube.com/embed/${youtubeId}?autoplay=1`}
-                  title={titleEn}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="w-full h-full"
-                />
-              )}
-            </div>
-          )}
-
+        <CardContent>
           {/* PDF Button */}
-          <div className="pt-4">
-            <Button
-              onClick={() => setShowPDF(true)}
-              variant="outline"
-              size="lg"
-              className="w-full hover:bg-primary/10 hover:border-primary transition-all hover-scale"
-            >
-              <span className="bible-body font-semibold">
-                <span className="lang-pt">Transcrição Completa</span>
-                <span className="lang-en">Full Transcription</span>
-              </span>
-            </Button>
-          </div>
+          <Button
+            onClick={() => setShowPDF(true)}
+            variant="outline"
+            size="lg"
+            className="w-full hover:bg-primary/10 hover:border-primary transition-all hover-scale"
+          >
+            <span className="bible-body font-semibold">
+              <span className="lang-pt">Transcrição Completa</span>
+              <span className="lang-en">Full Transcription</span>
+            </span>
+          </Button>
         </CardContent>
       </Card>
+
+      {/* Card 2: Player de vídeo - only show if youtubeId is provided */}
+      {youtubeId && (
+        <Card className="overflow-hidden border-border/50 shadow-lg shadow-primary/5 animate-fade-in">
+          <CardContent className="p-0">
+            <div className="aspect-video w-full">
+              <iframe
+                width="100%"
+                height="100%"
+                src={`https://www.youtube.com/embed/${youtubeId}`}
+                title={titleEn}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
+          </CardContent>
+        </Card>
+      )}
 
       {/* PDF Dialog */}
       <Dialog open={showPDF} onOpenChange={setShowPDF}>
@@ -141,7 +123,7 @@ const InterviewCard = ({
           </div>
         </DialogContent>
       </Dialog>
-    </>
+    </div>
   );
 };
 
