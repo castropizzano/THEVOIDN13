@@ -13,6 +13,7 @@ import { HybridArchetypeReveal } from "./CreativeOracle/HybridArchetypeReveal";
 import { ContextualQuote } from "./CreativeOracle/ContextualQuote";
 import { PersonalizedAdvice } from "./CreativeOracle/PersonalizedAdvice";
 import { EvolutionAnalysis } from "./CreativeOracle/EvolutionAnalysis";
+import { OracleMindMapIntegration } from "./CreativeOracle/OracleMindMapIntegration";
 import { contextualizedQuestions } from "./CreativeOracle/data/contextualizedQuestions";
 import { hybridArchetypes } from "./CreativeOracle/data/hybridArchetypes";
 import { useOracleHistory } from "@/hooks/useOracleHistory";
@@ -95,7 +96,7 @@ const archetypes = {
 export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
   const { language } = useLanguage();
   const { scans, saveScan, deleteScan, clearHistory, hasHistory } = useOracleHistory();
-  const [mode, setMode] = useState<"learn" | "scan" | "evolution" | "goals">("scan");
+  const [mode, setMode] = useState<"learn" | "scan" | "evolution" | "goals" | "mindmap">("scan");
   const [started, setStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<number[]>([]);
@@ -300,11 +301,14 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
         </DialogHeader>
 
         <Tabs value={mode} onValueChange={(v) => setMode(v as typeof mode)} className="w-full">
-          <TabsList className="grid w-full grid-cols-4 mb-6">
+          <TabsList className="grid w-full grid-cols-5 mb-6">
             <TabsTrigger value="scan">{language === "pt" ? "SCAN" : "SCAN"}</TabsTrigger>
             <TabsTrigger value="learn">{language === "pt" ? "LEARN" : "LEARN"}</TabsTrigger>
             <TabsTrigger value="evolution" disabled={!hasHistory}>
               {language === "pt" ? "EVOLUÇÃO" : "EVOLUTION"}
+            </TabsTrigger>
+            <TabsTrigger value="mindmap" disabled={!showResults}>
+              {language === "pt" ? "MIND MAP" : "MIND MAP"}
             </TabsTrigger>
             <TabsTrigger value="goals" disabled={!showResults}>
               {language === "pt" ? "METAS" : "GOALS"}
@@ -624,6 +628,14 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
             </div>
           )}
             </div>
+          </TabsContent>
+
+          <TabsContent value="mindmap">
+            <OracleMindMapIntegration
+              archetypeScores={scores}
+              processScores={processScores}
+              dominantArchetype={getDominantArchetype()}
+            />
           </TabsContent>
 
           <TabsContent value="goals">
