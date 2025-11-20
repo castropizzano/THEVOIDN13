@@ -135,7 +135,7 @@ const Transparency = () => {
           {/* Deleted Infrastructure */}
           <BilingualSection className="bible-section">
             <div className="lang-pt">
-              <h2 className="bible-section-title mb-8">🗑️ INFRAESTRUTURA DELETADA (NOVEMBRO 2025)</h2>
+              <h2 className="bible-section-title mb-8">INFRAESTRUTURA DELETADA (NOVEMBRO 2025)</h2>
               
               <div className="bible-block">
                 <CollectiveCard
@@ -181,7 +181,7 @@ const Transparency = () => {
             </div>
             
             <div className="lang-en">
-              <h2 className="bible-section-title mb-8">🗑️ DELETED INFRASTRUCTURE (NOVEMBER 2025)</h2>
+              <h2 className="bible-section-title mb-8">DELETED INFRASTRUCTURE (NOVEMBER 2025)</h2>
               
               <div className="bible-block">
                 <CollectiveCard
