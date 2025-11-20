@@ -390,10 +390,10 @@ DaVinci Resolve"
                 <p className="bible-body">O uso de tipografia em corpo alto, tons frios (rosa-pálido sobre preto), e elementos de arquivo como "1984" e o símbolo ™ cria uma tensão entre o institucional e o subversivo. Essa ironia visual ecoa Orwell, glitch estético e ruído pós-soviético — um statement sobre o branding em colapso.</p>
                 
                 <div className="bible-media border-y border-primary/20 text-center">
-                  <p className="bible-body font-bold italic text-primary">"O branding morreu quando começou a se explicar demais."</p>
+                  <p className="bible-body font-bold italic text-primary">"A linguagem que precisa se justificar já perdeu o silêncio."</p>
                 </div>
                 
-                <p className="bible-body">A anti-marca ЦАСТРО™ não busca legibilidade comercial, mas reconhecimento conceitual. Quem entende o código, entende o autor. Quem não entende, está fora da tribo — e tudo bem.</p>
+                <p className="bible-body">A anti-marca ЦАСТРО™ não busca legibilidade comercial, mas reconhecimento conceitual. Quem entende o código, entende o autor. Quem não entende, permanece fora do campo — e isso é parte do design.</p>
                 
                 <div className="space-y-4 bg-primary/5 border border-primary/20 rounded-lg p-6 bible-media">
                   <h3 className="bible-subtitle">Conheçam o Trabalho, Não o Rosto</h3>
@@ -542,10 +542,10 @@ DaVinci Resolve"
                 <p className="bible-body">The use of large typography, cool tones (pale pink on black), and archival elements like "1984" and the ™ symbol creates tension between institutional and subversive. This visual irony echoes Orwell, aesthetic glitch, and post-Soviet noise — a statement about branding in collapse.</p>
                 
                 <div className="my-6 py-6 border-y border-primary/20 text-center">
-                  <p className="bible-body font-bold italic text-primary">"Branding died when it began to over-explain itself."</p>
+                  <p className="bible-body font-bold italic text-primary">"Language that needs justification has already lost its silence."</p>
                 </div>
                 
-                <p className="bible-body">The ЦАСТРО™ anti-brand doesn't seek commercial legibility, but conceptual recognition. Those who understand the code understand the author.</p>
+                <p className="bible-body">The ЦАСТРО™ anti-brand doesn't seek commercial legibility, but conceptual recognition. Those who understand the code understand the author. Those who don't remain outside the field — and that's part of the design.</p>
                 
                 <div className="space-y-4 bg-primary/5 border border-primary/20 rounded-lg p-6">
                   <h3 className="bible-subtitle">Know the Work, Not the Face</h3>
