@@ -5,9 +5,19 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { FeatureCard } from "@/components/FeatureCard";
-import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
 import { LoadingSpinner } from "@/components/LoadingSpinner";
+
+// Declare Puter.js types
+declare const puter: {
+  ai: {
+    txt2img(prompt: string, options?: {
+      model?: string;
+      width?: number;
+      height?: number;
+    }): Promise<Blob>;
+  };
+};
 
 export const ComicGenerator = () => {
   const { language } = useLanguage();
@@ -124,23 +134,39 @@ export const ComicGenerator = () => {
   const handleGenerate = async () => {
     const trimmedPrompt = customPrompt.trim();
     
+    // Validation
     if (trimmedPrompt.length < 10) {
       toast({
-        title: language === "pt" ? "Erro" : "Error",
+        title: language === "pt" ? "Prompt muito curto" : "Prompt too short",
         description: language === "pt" 
-          ? "O prompt deve ter pelo menos 10 caracteres" 
-          : "Prompt must be at least 10 characters",
+          ? "Digite pelo menos 10 caracteres para descrever a cena"
+          : "Enter at least 10 characters to describe the scene",
         variant: "destructive",
       });
       return;
     }
-    
+
     if (trimmedPrompt.length > 500) {
       toast({
-        title: language === "pt" ? "Erro" : "Error",
-        description: language === "pt" 
-          ? "O prompt deve ter menos de 500 caracteres" 
-          : "Prompt must be less than 500 characters",
+        title: language === "pt" ? "Prompt muito longo" : "Prompt too long",
+        description: language === "pt"
+          ? "Máximo 500 caracteres. Seja mais conciso."
+          : "Maximum 500 characters. Be more concise.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    // Local rate limiting (10 seconds cooldown)
+    const COOLDOWN_MS = 10000;
+    const lastGenTime = sessionStorage.getItem('lastGeneration');
+    if (lastGenTime && Date.now() - parseInt(lastGenTime) < COOLDOWN_MS) {
+      const waitSeconds = Math.ceil((parseInt(lastGenTime) + COOLDOWN_MS - Date.now()) / 1000);
+      toast({
+        title: language === "pt" ? "Aguarde..." : "Wait...",
+        description: language === "pt"
+          ? `Aguarde ${waitSeconds} segundos antes de gerar outra imagem`
+          : `Wait ${waitSeconds} seconds before generating another image`,
         variant: "destructive",
       });
       return;
@@ -150,70 +176,61 @@ export const ComicGenerator = () => {
     setGeneratedImage(null);
 
     try {
-      const { data, error } = await supabase.functions.invoke('generate-cinematic-still', {
-        body: { prompt: customPrompt }
+      // THEVØIDN13 Shadow Interface Bible v13 - Cinematic Prompt
+      const THEVOIDN13_STYLE = `Cinematic still, ultra-detailed 8K photography, noir aesthetic with Brazilian urban decay, inspired by Blade Runner, Matrix, Akira cinematography. Dark atmosphere, high contrast, dramatic lighting with strong shadows. Neo-noir color palette: deep blacks (#000000), blood red accents (#ff0000), cold grays (#2a2a2a). Analog film grain texture, 35mm cinematic look. Widescreen composition 2.39:1 aspect ratio. Moody volumetric fog, neon reflections on wet surfaces. Gritty urban environment with brutalist architecture. Professional color grading, cinematic depth of field, atmospheric perspective. Masterpiece quality, award-winning cinematography.`;
+      
+      const detailedPrompt = `${THEVOIDN13_STYLE}\n\nScene: ${trimmedPrompt}`;
+
+      // Generate image with Puter.js (FREE & UNLIMITED)
+      const imageBlob = await puter.ai.txt2img(detailedPrompt, {
+        model: 'flux.1-schnell',
+        width: 1024,
+        height: 1024
       });
 
-      if (error) {
-        // Handle 429 rate limit
-        if (error.message?.includes('Rate limit exceeded')) {
-          const match = error.message.match(/wait (\d+) seconds/);
-          const retryAfter = match ? parseInt(match[1]) : 60;
-          toast({
-            title: language === "pt" ? "Limite Excedido" : "Rate Limit Exceeded",
-            description: language === "pt" 
-              ? `Muitas requisições. Aguarde ${retryAfter} segundos.`
-              : `Too many requests. Please wait ${retryAfter} seconds.`,
-            variant: "destructive",
-          });
-          return;
+      // Convert blob to base64
+      const reader = new FileReader();
+      reader.onloadend = async () => {
+        const base64Image = reader.result as string;
+        
+        // Apply watermark
+        try {
+          const watermarkUrl = '/images/thevoidn13-watermark.png';
+          const watermarkedImage = await applyWatermark(base64Image, watermarkUrl);
+          setGeneratedImage(watermarkedImage);
+        } catch (watermarkError) {
+          console.warn('Watermark failed, using original image:', watermarkError);
+          setGeneratedImage(base64Image);
         }
-        if (error.message?.includes('rate_limit')) {
-          toast({
-            title: language === "pt" ? "Limite Excedido" : "Rate Limit Exceeded",
-            description: language === "pt" 
-              ? "Muitas requisições. Aguarde um momento."
-              : "Too many requests. Please wait a moment.",
-            variant: "destructive",
-          });
-          return;
-        }
-        if (error.message?.includes('insufficient_credits')) {
-          toast({
-            title: language === "pt" ? "Créditos Insuficientes" : "Insufficient Credits",
-            description: language === "pt" 
-              ? "Sem créditos disponíveis para geração."
-              : "No credits available for generation.",
-            variant: "destructive",
-          });
-          return;
-        }
-        throw error;
-      }
 
-      if (data.image) {
-        let finalImage = data.image;
-        
-        if (data.watermark) {
-          finalImage = await applyWatermark(data.image, data.watermark);
-        }
-        
-        setGeneratedImage(finalImage);
+        // Update rate limit
+        sessionStorage.setItem('lastGeneration', Date.now().toString());
+
         toast({
-          title: language === "pt" ? "Sucesso!" : "Success!",
-          description: language === "pt" ? "Imagem gerada com marca d'água" : "Image generated with watermark",
+          title: language === "pt" ? "Imagem Gerada!" : "Image Generated!",
+          description: language === "pt" 
+            ? "Still cinematográfico criado com sucesso"
+            : "Cinematic still created successfully",
         });
-      } else {
-        throw new Error('No image URL returned');
-      }
-    } catch (error) {
-      console.error('Error generating image:', error);
+
+        setIsGenerating(false);
+      };
+
+      reader.onerror = () => {
+        throw new Error('Failed to read image blob');
+      };
+
+      reader.readAsDataURL(imageBlob);
+
+    } catch (error: any) {
+      console.error('Generation error:', error);
       toast({
-        title: language === "pt" ? "Erro" : "Error",
-        description: language === "pt" ? "Erro ao gerar imagem" : "Error generating image",
+        title: language === "pt" ? "Erro na Geração" : "Generation Error",
+        description: error.message || (language === "pt"
+          ? "Falha ao gerar imagem. Tente novamente."
+          : "Failed to generate image. Try again."),
         variant: "destructive",
       });
-    } finally {
       setIsGenerating(false);
     }
   };
