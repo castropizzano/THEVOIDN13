@@ -75,29 +75,13 @@ const Autor = () => {
           <div className="bible-block">
             <div className="lang-pt">
               <div>
-                <p className="bible-body text-justify">Profissional criativo multidisciplinar, atuo entre as artes visuais, o design e a produção audiovisual. Minha trajetória é guiada pela criação de identidades visuais e narrativas semióticas.</p>
-                
-                <p className="bible-body text-justify">Mestrando em Cinema e Artes do Vídeo (Unespar/FAP), linha de pesquisa em Processos de Criação. Integro o CineCriare – Cinema: Criação e Reflexão (Unespar/CNPq).</p>
-                
-                <p className="bible-body text-justify">Graduado em Publicidade e Propaganda (UTP, 2010), pós-graduado em Direção de Arte e Estratégias Criativas (Unicuritiba, 2016).</p>
-                
-                <p className="bible-body text-justify">Membro do <span className="font-bold text-primary">LowPressure™</span>, fundador da <span className="font-bold text-primary">CasaTrezeStudio®</span>, criador do <span className="font-bold text-primary">LowMovie™</span>.</p>
-                
-                <p className="bible-body text-justify">Construo <span className="font-bold text-primary">ЦАСТРО™</span> como exercício de negação criativa — design como linguagem viva, manifesto silencioso, resistência sem bandeira.</p>
+                <p className="bible-body text-justify">Atuo entre as artes visuais, o design e a produção audiovisual, guiado pela criação de identidades visuais e narrativas semióticas. Mestrando em Cinema e Artes do Vídeo (Unespar/FAP), linha de pesquisa em Processos de Criação, integro o CineCriare – Cinema: Criação e Reflexão (Unespar/CNPq). Graduado em Publicidade e Propaganda (UTP, 2010), pós-graduado em Direção de Arte e Estratégias Criativas (Unicuritiba, 2016). Membro do <span className="font-bold text-primary">LowPressure™</span>, fundador da <span className="font-bold text-primary">CasaTrezeStudio®</span>, criador do <span className="font-bold text-primary">LowMovie™</span>. Construo <span className="font-bold text-primary">ЦАСТРО™</span> como exercício de negação criativa — design como linguagem viva, manifesto silencioso, resistência sem bandeira.</p>
               </div>
             </div>
 
             <div className="lang-en">
               <div>
-                <p className="bible-body text-justify">Multidisciplinary creative professional working between visual arts, design and audiovisual production. My trajectory is guided by creating visual identities and semiotic narratives.</p>
-                
-                <p className="bible-body text-justify">Master's student in Cinema and Video Arts (Unespar/FAP), research line on Creation Processes. Member of CineCriare – Cinema: Creation and Reflection (Unespar/CNPq).</p>
-                
-                <p className="bible-body text-justify">Graduate in Advertising (UTP, 2010), postgraduate in Art Direction and Creative Strategies (Unicuritiba, 2016).</p>
-                
-                <p className="bible-body text-justify">Member of <span className="font-bold text-primary">LowPressure™</span>, founder of <span className="font-bold text-primary">CasaTrezeStudio®</span>, creator of <span className="font-bold text-primary">LowMovie™</span>.</p>
-                
-                <p className="bible-body text-justify">I build <span className="font-bold text-primary">ЦАСТРО™</span> as exercise in creative negation — design as living language, silent manifesto, resistance without flag.</p>
+                <p className="bible-body text-justify">Work between visual arts, design and audiovisual production, guided by creating visual identities and semiotic narratives. Master's student in Cinema and Video Arts (Unespar/FAP), research line on Creation Processes, member of CineCriare – Cinema: Creation and Reflection (Unespar/CNPq). Graduate in Advertising (UTP, 2010), postgraduate in Art Direction and Creative Strategies (Unicuritiba, 2016). Member of <span className="font-bold text-primary">LowPressure™</span>, founder of <span className="font-bold text-primary">CasaTrezeStudio®</span>, creator of <span className="font-bold text-primary">LowMovie™</span>. Build <span className="font-bold text-primary">ЦАСТРО™</span> as exercise in creative negation — design as living language, silent manifesto, resistance without flag.</p>
               </div>
             </div>
           </div>
@@ -280,7 +264,7 @@ DaVinci Resolve"
 
           <div className="bible-block">
             <div className="lang-pt">
-              <p className="bible-body mb-6">Castro Pizzano (цастро™): Da publicidade ao cinema experimental, da rua ao museu, da prática à pesquisa. Uma linha do tempo que não é linear, mas espiral.</p>
+              <p className="bible-body mb-6">Da publicidade ao cinema experimental, da rua ao museu, da prática à pesquisa. Uma linha do tempo que não é linear, mas espiral.</p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <SkillCard 
@@ -311,7 +295,7 @@ DaVinci Resolve"
             </div>
 
             <div className="lang-en">
-              <p className="bible-body mb-6">Castro Pizzano (цастро™): From advertising to experimental cinema, from street to museum, from practice to research. A timeline that is not linear, but spiral.</p>
+              <p className="bible-body mb-6">From advertising to experimental cinema, from street to museum, from practice to research. A timeline that is not linear, but spiral.</p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <SkillCard 
@@ -384,7 +368,7 @@ DaVinci Resolve"
                 <h3 className="bible-subtitle text-primary">Uma identidade que rejeita a lógica publicitária e se afirma como linguagem, não logotipo.</h3>
                 
                 <h3 className="bible-subtitle">O Contexto: Uma Recusa ao Branding Tradicional</h3>
-                <p className="bible-body">Vivemos na era do excesso de identidade. Marcas falam mais de si do que de seus propósitos, buscam reconhecimento pelo algoritmo e não pela substância. Como criador de branding, minha resposta foi criar uma anti-marca — uma identidade que rejeita a lógica publicitária e se afirma como linguagem, não logotipo.</p>
+                <p className="bible-body">Vivemos na era do excesso de identidade. Marcas falam mais de si do que de seus propósitos, buscam reconhecimento pelo algoritmo e não pela substância. A resposta foi criar uma anti-marca — uma identidade que rejeita a lógica publicitária e se afirma como linguagem, não logotipo.</p>
                 
                 <p className="bible-body">Ao contrário de um símbolo que busca reconhecimento imediato, o projeto ЦАСТРО (transliteração cirílica de CASTRO) propõe o anonimato como força estética. A ausência de identificação direta — o nome distorcido, o alfabeto estrangeiro, a paleta contida — é uma crítica à cultura do ego-branding.</p>
                 
@@ -498,8 +482,8 @@ DaVinci Resolve"
                 </div>
 
                 <div className="-mx-6 px-6 py-8 rounded-lg bible-block">
-                  <p className="bible-body mb-4">Construo ЦАСТРО como exercício de negação criativa. Como avesso do branding — para relembrar o que design sempre foi: linguagem viva, manifesto silencioso, resistência sem bandeira.</p>
-                  <p className="bible-body mb-4">Não busco rito visual de validação. Não ergo selo-cosmos para reconhecimento. A máscara existe para revelar o que já estava lá. O nome respira porque desobedece à lógica da explicação.</p>
+                  <p className="bible-body mb-4">ЦАСТРО como exercício de negação criativa. Como avesso do branding — para relembrar o que design sempre foi: linguagem viva, manifesto silencioso, resistência sem bandeira.</p>
+                  <p className="bible-body mb-4">A máscara existe para revelar o que já estava lá. O nome respira porque desobedece à lógica da explicação.</p>
                   <p className="bible-body font-bold text-primary">ЦАСТРО™ — 1984 → ETERNO EM PROCESSO.</p>
                 </div>
               </div>
@@ -510,7 +494,7 @@ DaVinci Resolve"
                 <h3 className="bible-subtitle text-primary">An identity that rejects the advertising logic of self-promotion, asserting itself as language, not logo.</h3>
                 
                 <h3 className="bible-subtitle">The Context: A Refusal of Traditional Branding</h3>
-                <p className="bible-body">We live in the era of identity excess. Brands talk more about themselves than their purposes, seeking algorithm recognition rather than substance. As a branding creator, my response was to create an anti-brand — an identity that rejects the advertising logic of self-promotion, asserting itself as language, not logo.</p>
+                <p className="bible-body">We live in the era of identity excess. Brands talk more about themselves than their purposes, seeking algorithm recognition rather than substance. The response was to create an anti-brand — an identity that rejects the advertising logic of self-promotion, asserting itself as language, not logo.</p>
                 
                 <p className="bible-body">Unlike a symbol seeking immediate recognition, the ЦАСТРО project (Cyrillic transliteration of CASTRO) proposes anonymity as aesthetic force. The absence of direct identification — the distorted name, foreign alphabet, restrained palette — is a critique of ego-branding culture.</p>
                 
@@ -624,8 +608,8 @@ DaVinci Resolve"
                 </div>
 
                 <div className="-mx-6 px-6 py-8 rounded-lg">
-                  <p className="bible-body mb-4">I build ЦАСТРО as an exercise in creative negation. As the reverse of branding — to remember what design always was: living language, silent manifesto, resistance without flag.</p>
-                  <p className="bible-body mb-4">I don't seek visual ritual for validation. I don't raise seal-cosmos for recognition. The mask exists to reveal what was already there. The name breathes because it disobeys the logic of explanation.</p>
+                  <p className="bible-body mb-4">ЦАСТРО as exercise in creative negation. As reverse of branding — to remember what design always was: living language, silent manifesto, resistance without flag.</p>
+                  <p className="bible-body mb-4">The mask exists to reveal what was already there. The name breathes because it disobeys the logic of explanation.</p>
                   <p className="bible-body font-bold text-primary">ЦАСТРО™ — 1984 → ETERNALLY IN PROCESS.</p>
                 </div>
               </div>
@@ -751,9 +735,9 @@ DaVinci Resolve"
                 <p className="bible-body">O que começou como uma necessidade de apresentar LowMovie™ ao programa de mestrado em Cinema e Artes do Vídeo transformou-se em laboratório vivo. Durante a escrita da dissertação e a pesquisa sobre os próprios processos criativos, THEVØIDN13 emergiu como experimentação — uma extensão que surgiu do mergulho metodológico. Cada seção, cada componente interativo — o gerador de HQs, a biblioteca de prompts, o mapa mental creative-ops — opera como registro metodológico e experimento estético simultâneo.</p>
                 
                 <h3 className="bible-subtitle">Desmistificar a Máquina, Amplificar o Humano</h3>
-                <p className="bible-body">Havia medo. Medo de perder autoria, medo de diluir o gesto criativo, medo de que a inteligência artificial substituísse o que há de singular no ato de criar. Mas o processo me ensinou o contrário: a IA não substitui — ela revela. Revela padrões que eu não via, expande horizontes conceituais que eu não alcançaria sozinho, questiona minhas certezas estéticas.</p>
+                <p className="bible-body">Havia medo. Medo de perder autoria, medo de diluir o gesto criativo, medo de que a inteligência artificial substituísse o que há de singular no ato de criar. Mas o processo ensinou o contrário: a IA não substitui — ela revela. Revela padrões invisíveis, expande horizontes conceituais inalcançáveis sozinho, questiona certezas estéticas.</p>
                 
-                <p className="bible-body">Trabalhar com Claude, Gemini, Midjourney, GPT não foi abrir mão do controle criativo. Foi descobrir que controle criativo nunca foi sobre fazer tudo sozinho. Foi aprender a <span className="font-bold">orquestrar vozes</span> — humanas e não-humanas — em um diálogo onde a autoria se distribui sem se dissolver. A máquina não pensa por mim; ela pensa <span className="italic">comigo</span>.</p>
+                <p className="bible-body">Trabalhar com Claude, Gemini, Midjourney, GPT não foi abrir mão do controle criativo. Foi descobrir que controle criativo nunca foi sobre fazer tudo sozinho. Foi aprender a <span className="font-bold">orquestrar vozes</span> — humanas e não-humanas — em um diálogo onde a autoria se distribui sem se dissolver. A máquina não pensa por nós; ela pensa <span className="italic">conosco</span>.</p>
                 
                 <h3 className="bible-subtitle">Do Personagem ao Universo ao Código</h3>
                 <p className="bible-body">THEVØIDN13 começou como um corpo mascarado. Depois virou conceito. Depois virou universo transmídia. Depois virou metodologia de pesquisa. E agora é também código, interface, plataforma. Cada camada não substitui a anterior — todas coexistem, todas se informam.</p>
@@ -775,7 +759,7 @@ DaVinci Resolve"
                 <h3 className="bible-subtitle">Experimentação Permanente</h3>
                 <p className="bible-body">Este não é um trabalho concluído. Este é um trabalho <span className="italic">que não se fecha</span>. O portal será atualizado. Novos prompts serão testados. Novos capítulos do universo THEVØIDN13 surgirão. A metodologia será refinada enquanto permanece aberta.</p>
                 
-                <p className="bible-body">Aprendi neste processo que a verdadeira inteligência — humana ou artificial — não está em chegar a respostas definitivas. Está em continuar fazendo perguntas melhores. E fazer perguntas melhores exige coragem para experimentar, falhar, tentar de novo.</p>
+                <p className="bible-body">Aprendemos neste processo que a verdadeira inteligência — humana ou artificial — não está em chegar a respostas definitivas. Está em continuar fazendo perguntas melhores. E fazer perguntas melhores exige coragem para experimentar, falhar, tentar de novo.</p>
                 
                 <p className="bible-body font-semibold mt-8 p-6 bg-primary/5 rounded-lg border-l-4 border-primary">O portal está vivo. A pesquisa está em movimento. O futuro está sendo criado agora — um prompt, uma imagem, um commit de cada vez.</p>
                 
@@ -791,9 +775,9 @@ DaVinci Resolve"
                 <p className="bible-body">What began as a need to present LowMovie™ to the Master's program in Cinema and Video Arts transformed into a living laboratory. During the dissertation writing and research into creative processes themselves, THEVØIDN13 emerged as experimentation — an extension that arose from the methodological dive. Each section, each interactive component — the comic generator, the prompt library, the creative-ops mind map — operates as both methodological record and aesthetic experiment simultaneously.</p>
                 
                 <h3 className="bible-subtitle">Demystify the Machine, Amplify the Human</h3>
-                <p className="bible-body">There was fear. Fear of losing authorship, fear of diluting the creative gesture, fear that artificial intelligence would replace what is singular in the act of creating. But the process taught me the opposite: AI doesn't replace — it reveals. It reveals patterns I didn't see, expands conceptual horizons I wouldn't reach alone, questions my aesthetic certainties.</p>
+                <p className="bible-body">There was fear. Fear of losing authorship, fear of diluting the creative gesture, fear that artificial intelligence would replace what is singular in the act of creating. But the process taught the opposite: AI doesn't replace — it reveals. It reveals invisible patterns, expands unreachable conceptual horizons alone, questions aesthetic certainties.</p>
                 
-                <p className="bible-body">Working with Claude, Gemini, Midjourney, GPT was not giving up creative control. It was discovering that creative control was never about doing everything alone. It was learning to <span className="font-bold">orchestrate voices</span> — human and non-human — in a dialogue where authorship is distributed without dissolving. The machine doesn't think for me; it thinks <span className="italic">with</span> me.</p>
+                <p className="bible-body">Working with Claude, Gemini, Midjourney, GPT was not giving up creative control. It was discovering that creative control was never about doing everything alone. It was learning to <span className="font-bold">orchestrate voices</span> — human and non-human — in a dialogue where authorship is distributed without dissolving. The machine doesn't think for us; it thinks <span className="italic">with</span> us.</p>
                 
                 <h3 className="bible-subtitle">From Character to Universe to Code</h3>
                 <p className="bible-body">THEVØIDN13 began as a masked body. Then it became a concept. Then it became a transmedia universe. Then it became research methodology. And now it's also code, interface, platform. Each layer doesn't replace the previous one — all coexist, all inform each other.</p>
@@ -815,7 +799,7 @@ DaVinci Resolve"
                 <h3 className="bible-subtitle">Permanent Experimentation</h3>
                 <p className="bible-body">This is not a finished work. This is a work <span className="italic">that doesn't close</span>. The portal will be updated. New prompts will be tested. New chapters of the THEVØIDN13 universe will emerge. The methodology will be refined while remaining open.</p>
                 
-                <p className="bible-body">Because what I learned in this process is that true intelligence — human or artificial — is not in reaching definitive answers. It's in continuing to ask better questions. And asking better questions requires courage to experiment, fail, try again.</p>
+                <p className="bible-body">Because what we learned in this process is that true intelligence — human or artificial — is not in reaching definitive answers. It's in continuing to ask better questions. And asking better questions requires courage to experiment, fail, try again.</p>
                 
                 <p className="bible-body font-semibold mt-8 p-6 bg-primary/5 rounded-lg border-l-4 border-primary">The portal is alive. Research is in motion. The future is being created now — one prompt, one image, one commit at a time.</p>
                 
