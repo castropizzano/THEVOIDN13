@@ -1,3 +1,14 @@
+---
+> ⚠️ **DOCUMENTO HISTÓRICO**  
+> Este relatório reflete o estado do projeto em **02 de Novembro de 2025**.  
+> 
+> **Para informações atualizadas, consulte:**
+> - [MIGRATION_POLLINATIONS.md](./MIGRATION_POLLINATIONS.md) — Migração v2.1 (Nov 2025)
+> - [AUDITORIA_POLLINATIONS_COMPLETA.md](./AUDITORIA_POLLINATIONS_COMPLETA.md) — Certificação v2.1
+> - [CHANGELOG.md](./CHANGELOG.md) — Histórico completo de mudanças
+> - [RESUMO_EXECUTIVO.md](./RESUMO_EXECUTIVO.md) — Status atual do projeto
+---
+
 # 🔍 AUDITORIA COMPLETA FINAL — THEVØIDN13
 **Data:** 02/11/2025  
 **Versão:** Final 100/100  
