@@ -452,7 +452,6 @@ DaVinci Resolve"
                 
                 <div className="my-8 p-6 border-2 border-primary/30 rounded-lg bg-background">
                   <h3 className="bible-subtitle">O DEVICE OF IDENTITY</h3>
-                  <p className="bible-body">Este badge não respira currículo. <span className="font-bold text-primary">Respira mito.</span></p>
                   
                   <div className="my-4 space-y-2 text-sm leading-relaxed">
                     <p className="bible-link">É cartela de abertura.</p>
@@ -604,7 +603,6 @@ DaVinci Resolve"
                 
                 <div className="my-8 p-6 border-2 border-primary/30 rounded-lg bg-background">
                   <h3 className="bible-subtitle">THE DEVICE OF IDENTITY</h3>
-                  <p className="bible-body">This badge doesn't breathe curriculum. <span className="font-bold text-primary">It breathes myth.</span></p>
                   
                   <div className="my-4 space-y-2 text-sm leading-relaxed">
                     <p className="bible-link">It's an opening title card.</p>
