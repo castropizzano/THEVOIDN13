@@ -5,6 +5,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { Button } from "@/components/ui/button";
 import { PDFViewer } from "@/components/PDFViewer";
 import { FileText, ChevronLeft, ChevronRight } from "lucide-react";
+import zine01 from "@/assets/zine/zine_01.png";
 import zine02 from "@/assets/zine/zine_02.png";
 import zine03 from "@/assets/zine/zine_03.png";
 import zine04 from "@/assets/zine/zine_04.png";
@@ -150,7 +151,7 @@ export const InterviewsTabs = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const zineImages = [
-    zine02, zine03, zine04, zine05, 
+    zine01, zine02, zine03, zine04, zine05, 
     zine06, zine07, zine08, zine09, zine10,
     zine11, zine12, zine13, zine14, zine15, zine16
   ];
@@ -345,12 +346,6 @@ export const InterviewsTabs = () => {
             <CardContent>
               {/* Slider de página única */}
               <div className="relative w-full">
-                {/* Contador de páginas */}
-                <div className="absolute top-4 left-1/2 -translate-x-1/2 z-10 text-white bible-body font-semibold bg-black/70 px-4 py-2 rounded-lg">
-                  <span className="lang-pt">Página {currentImageIndex + 2} de 16</span>
-                  <span className="lang-en">Page {currentImageIndex + 2} of 16</span>
-                </div>
-
                 {/* Botão Anterior */}
                 <Button
                   onClick={prevImage}
@@ -366,7 +361,7 @@ export const InterviewsTabs = () => {
                 <div className="w-full aspect-[3/4] bg-black/5 rounded-lg overflow-hidden border border-border/50">
                   <img
                     src={zineImages[currentImageIndex]}
-                    alt={`LowZine página ${currentImageIndex + 2}`}
+                    alt={`LowZine página ${currentImageIndex + 1}`}
                     className="w-full h-full object-contain grayscale hover:grayscale-0 transition-all duration-500"
                   />
                 </div>
@@ -393,7 +388,7 @@ export const InterviewsTabs = () => {
                           ? 'w-8 bg-primary' 
                           : 'w-2 bg-border/50 hover:bg-border'
                       }`}
-                      aria-label={`Ir para página ${index + 2}`}
+                      aria-label={`Ir para página ${index + 1}`}
                     />
                   ))}
                 </div>
