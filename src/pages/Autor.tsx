@@ -63,13 +63,11 @@ const Autor = () => {
 
         {/* Quem Fala e De Onde Falo */}
         <BilingualSection className="bible-section">
-          <div className="bible-bilingual-grid bible-block">
-            <div>
-              <h2 className="bible-title">QUEM FALA E DE ONDE FALO</h2>
-            </div>
-            <div>
-              <h2 className="bible-title">WHO SPEAKS AND FROM WHERE I SPEAK</h2>
-            </div>
+          <div className="bible-block">
+            <h2 className="bible-title">
+              <span className="lang-pt">QUEM FALA E DE ONDE FALO</span>
+              <span className="lang-en">WHO SPEAKS AND FROM WHERE I SPEAK</span>
+            </h2>
           </div>
 
           <div className="bible-bilingual-grid bible-block">
