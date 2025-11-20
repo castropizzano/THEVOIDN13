@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  /* ZERO CANTOS ARREDONDADOS - BRUTALISMO TOTAL */
+  * {
+    border-radius: 0 !important;
+  }
+}
+
 /* ============================================
    SISTEMA TIPOGRÁFICO PADRONIZADO
    ============================================ */
@@ -260,7 +267,6 @@
   .tvn-image {
     width: 100%;
     height: auto;
-    border-radius: 0.5rem;
     @apply my-8;
   }
 
