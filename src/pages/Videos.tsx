@@ -16,9 +16,9 @@ interface CuratedVideo {
 }
 
 const curatedVideos: CuratedVideo[] = [
-  { source: "vimeo", videoId: "819353942", title: { pt: "Projeto 01", en: "Project 01" }, year: "2024", category: "curta-metragem" },
-  { source: "vimeo", videoId: "938890093", title: { pt: "Mãe Natureza", en: "Mother Nature" }, year: "2024", category: "curta-metragem" },
-  { source: "vimeo", videoId: "1113340788", title: { pt: "Projeto 03", en: "Project 03" }, year: "2024", category: "documentário" },
+  { source: "vimeo", videoId: "819353942", title: { pt: "LOWMOVIE", en: "LOWMOVIE" }, year: "2024", category: "skate-video" },
+  { source: "vimeo", videoId: "938890093", title: { pt: "MÃE NATUREZA", en: "MOTHER NATURE" }, year: "2024", category: "videoart" },
+  { source: "vimeo", videoId: "1113340788", title: { pt: "ANIMA", en: "ANIMA" }, year: "2024", category: "curta-metragem" },
   { source: "vimeo", videoId: "1009245969", title: { pt: "Projeto 04", en: "Project 04" }, year: "2024", category: "comercial" },
   { source: "vimeo", videoId: "647030152", title: { pt: "Projeto 05", en: "Project 05" }, year: "2023", category: "videoperformance" },
   { source: "vimeo", videoId: "1011149512", title: { pt: "Projeto 06", en: "Project 06" }, year: "2024", category: "curta-metragem" },
@@ -61,10 +61,12 @@ const curatedVideos: CuratedVideo[] = [
 const Videos = () => {
   const { language } = useLanguage();
   const categoryLabels: Record<string, { pt: string; en: string }> = {
-    "curta-metragem": { pt: "Curta-Metragem", en: "Short Film" },
-    "documentário": { pt: "Documentário", en: "Documentary" },
-    "comercial": { pt: "Comercial", en: "Commercial" },
-    "videoperformance": { pt: "Videoperformance", en: "Video Performance" }
+    "curta-metragem": { pt: "SHORT FILM", en: "SHORT FILM" },
+    "documentário": { pt: "DOCUMENTÁRIO", en: "DOCUMENTARY" },
+    "comercial": { pt: "COMERCIAL", en: "COMMERCIAL" },
+    "videoperformance": { pt: "VIDEOPERFORMANCE", en: "VIDEO PERFORMANCE" },
+    "skate-video": { pt: "SKATE FULLVIDEO", en: "SKATE FULLVIDEO" },
+    "videoart": { pt: "VIDEOART", en: "VIDEOART" }
   };
 
   return (
