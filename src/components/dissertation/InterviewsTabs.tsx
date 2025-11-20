@@ -367,12 +367,19 @@ export const InterviewsTabs = () => {
                   />
                 </div>
                 
-                {/* Texto indicativo */}
-                <div className="text-center mt-4">
-                  <span className="bible-caption text-muted-foreground">
-                    <span className="lang-pt">Clique para visualizar em tela cheia</span>
-                    <span className="lang-en">Click to view fullscreen</span>
-                  </span>
+                {/* Botão para abrir lightbox */}
+                <div className="mt-4">
+                  <Button
+                    onClick={() => setLightboxOpen(true)}
+                    variant="outline"
+                    size="lg"
+                    className="w-full hover:bg-primary/10 hover:border-primary transition-all hover-scale"
+                  >
+                    <span className="bible-body font-semibold">
+                      <span className="lang-pt">Clique para visualizar em tela cheia</span>
+                      <span className="lang-en">Click to view fullscreen</span>
+                    </span>
+                  </Button>
                 </div>
               </div>
 
