@@ -6,6 +6,7 @@ Curitiba, Brasil — 2025
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-grey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-grey)]()
 [![Mestrado](https://img.shields.io/badge/Mestrado-Pós--Qualificação-grey)]()
+[![Powered by Pollinations.AI](https://img.shields.io/badge/Powered%20by-Pollinations.AI-8b5cf6?style=flat&logo=artifacthub&logoColor=white)](https://pollinations.ai/)
 
 ### 🔍 AUDIT STATUS
 [![Production](https://img.shields.io/badge/Production-APPROVED-00d26a?style=for-the-badge&logo=checkmarx&logoColor=white)](AUDIT_REPORT_2025.md)

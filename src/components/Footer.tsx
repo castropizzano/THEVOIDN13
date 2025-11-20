@@ -14,8 +14,18 @@ const Footer = () => {
             <p className="text-xs sm:text-sm text-muted-foreground h-[1.5rem] flex items-center">
               {t("artisticMemorial")}
             </p>
-            <div className="flex justify-start">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-start items-start sm:items-center">
               <SurveillanceFreeBadge size="sm" />
+              <a 
+                href="https://pollinations.ai/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-purple-500/10 hover:bg-purple-500/20 transition-colors border border-purple-500/20 hover:border-purple-500/30"
+              >
+                <span className="text-[10px] sm:text-xs font-medium text-purple-400">
+                  Powered by Pollinations.AI
+                </span>
+              </a>
             </div>
           </div>
           <div className="text-left md:text-right space-y-2">
