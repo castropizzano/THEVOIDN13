@@ -270,12 +270,6 @@ type TranslationKey =
   | "insufficientCredits"
   | "errorGeneratingStill"
   | "promptLoaded"
-  // CookieConsent translations
-  | "cookiePolicyTitle"
-  | "cookiePolicyDescription"
-  | "acceptButton"
-  | "declineButton"
-  | "privacyPolicyButton"
   // AntiSurveillanceBanner translations
   | "antiSurveillanceBannerTitle"
   | "antiSurveillanceBannerLine1"
@@ -553,13 +547,6 @@ const translations: Record<TranslationKey, { pt: string; en: string }> = {
   insufficientCredits: { pt: "Créditos insuficientes. Adicione créditos ao workspace.", en: "Insufficient credits. Add credits to workspace." },
   errorGeneratingStill: { pt: "Erro ao gerar still", en: "Error generating still" },
   promptLoaded: { pt: "Prompt carregado", en: "Prompt loaded" },
-  
-  // CookieConsent translations
-  cookiePolicyTitle: { pt: "POLÍTICA DE COOKIES", en: "COOKIE POLICY" },
-  cookiePolicyDescription: { pt: "Este site utiliza cookies essenciais para garantir funcionalidade básica e armazenamento local para melhorar sua experiência de navegação. Não coletamos dados pessoais além do necessário para o cadastro, respeitando sua privacidade e segurança em cada etapa do processo.", en: "This site uses essential cookies to ensure basic functionality and local storage to improve your browsing experience. We do not collect personal data beyond what is necessary for registration, respecting your privacy and security at every step of the process." },
-  acceptButton: { pt: "Aceitar", en: "Accept" },
-  declineButton: { pt: "Recusar", en: "Decline" },
-  privacyPolicyButton: { pt: "Política de Privacidade", en: "Privacy Policy" },
   
   // AntiSurveillanceBanner translations
   antiSurveillanceBannerTitle: {
