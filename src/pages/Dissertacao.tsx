@@ -617,7 +617,7 @@ const Dissertacao = () => {
                 <span className="lang-pt">[DISSERTAÇÃO_DE_MESTRADO]</span>
                 <span className="lang-en">[MASTER'S_DISSERTATION]</span>
               </h4>
-              <p className="bible-body text-muted-foreground">
+              <p className="font-mono text-sm text-muted-foreground">
                 <span className="lang-pt">Depósito da dissertação de mestrado em breve.</span>
                 <span className="lang-en">Master's dissertation deposit coming soon.</span>
               </p>
