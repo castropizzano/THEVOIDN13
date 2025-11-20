@@ -356,11 +356,10 @@ DaVinci Resolve"
                 loading="lazy"
                 onClick={() => setShowGuidelineEN(true)}
               />
-            </div>
           </div>
+        </div>
 
-
-          <div className="bible-bilingual-grid bible-block">
+        <div className="bible-bilingual-grid bible-block">
             <div>
               <div>
                 <div className="my-6">
