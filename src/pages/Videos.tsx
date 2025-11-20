@@ -1,5 +1,5 @@
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { BackToTop } from "@/components/BackToTop";
 import { SEO } from "@/components/SEO";
 import { VideoCard } from "@/components/VideoCard";
