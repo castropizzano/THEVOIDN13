@@ -130,7 +130,7 @@ const Dissertacao = () => {
                 <p className="bible-body">Coletivo Criativo fundado em 2008. Estúdio pós-contemporâneo de design e vídeo. Associação de produtores criativos independentes que opera como laboratório de criação autoral, cultural e comercial, conectando pessoas, ideias e projetos.</p>
                 
                 <h3 className="bible-subtitle">Conceito</h3>
-                <p className="bible-body">CasaTrezeStudio não é empresa. É organismo vivo. Laboratório onde criadores independentes se encontram para transformar ideias em matéria. Nasceu da necessidade de criar fora dos sistemas tradicionais, construindo sua própria infraestrutura criativa. 17 anos de resistência e reinvenção.</p>
+                <p className="bible-body">CasaTrezeStudio não é empresa. É organismo vivo. Laboratório onde criadores independentes se encontram para transformar ideias em matéria. Nasceu da necessidade de criar fora dos sistemas tradicionais, construindo sua própria infraestrutura criativa.</p>
                 
                 <h3 className="bible-subtitle">Serviços</h3>
                 <p className="bible-body"><span className="font-semibold">Design Gráfico:</span> Identidades visuais, branding, editorial</p>
