@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { FeatureCard } from "@/components/FeatureCard";
 import { useTranslation } from "@/hooks/useTranslation";
-import { ChevronRight, ChevronLeft, Network } from "lucide-react";
+import { ChevronRight, ChevronLeft, Network, LayoutList } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 type ProcessStep = {
   id: string;
@@ -246,6 +247,8 @@ export const MindMap = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentStep, setCurrentStep] = useState(0);
   const [showConnections, setShowConnections] = useState(false);
+  const [viewMode, setViewMode] = useState<'step' | 'timeline'>('step');
+  const timelineRef = useRef<HTMLDivElement>(null);
   const { t, language } = useTranslation();
 
   const handleNext = () => {
@@ -263,6 +266,21 @@ export const MindMap = () => {
   const handleReset = () => {
     setCurrentStep(0);
   };
+
+  const scrollToStep = (stepIndex: number) => {
+    if (timelineRef.current) {
+      const stepElement = timelineRef.current.children[stepIndex] as HTMLElement;
+      if (stepElement) {
+        stepElement.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+      }
+    }
+  };
+
+  useEffect(() => {
+    if (viewMode === 'timeline' && currentStep !== undefined) {
+      scrollToStep(currentStep);
+    }
+  }, [currentStep, viewMode]);
 
   const getProgressBar = () => {
     const filled = currentStep + 1;
@@ -305,21 +323,38 @@ export const MindMap = () => {
 
       <Dialog open={isOpen} onOpenChange={(open) => {
         setIsOpen(open);
-        if (!open) handleReset();
+        if (!open) {
+          handleReset();
+          setViewMode('step');
+        }
       }}>
-        <DialogContent className="max-w-6xl mx-auto max-h-[90vh] overflow-y-auto bg-background/95 backdrop-blur-sm p-6 sm:p-8">
-          <DialogHeader className="border-b border-primary/30 pb-4 mb-6">
-            <DialogTitle className="text-primary text-xl font-mono font-bold">
-              CREATIVE_OPS::PROCESS_MAP <span className="text-muted-foreground text-sm">// PT / EN</span>
-            </DialogTitle>
-            <DialogDescription className="text-muted-foreground font-mono text-sm">
-              {language === 'pt' 
-                ? '// Processo completo de criação do Memorial Artístico THEVØIDN13' 
-                : '// Complete creation process of THEVØIDN13 Artistic Memorial'}
-            </DialogDescription>
+        <DialogContent className="max-w-7xl mx-auto max-h-[90vh] overflow-hidden bg-background/95 backdrop-blur-sm p-6 sm:p-8 flex flex-col">
+          <DialogHeader className="border-b border-primary/30 pb-4 mb-4 flex-shrink-0">
+            <div className="flex items-center justify-between">
+              <div>
+                <DialogTitle className="text-primary text-xl font-mono font-bold">
+                  CREATIVE_OPS::PROCESS_MAP <span className="text-muted-foreground text-sm">// PT / EN</span>
+                </DialogTitle>
+                <DialogDescription className="text-muted-foreground font-mono text-sm">
+                  {language === 'pt' 
+                    ? '// Processo completo de criação do Memorial Artístico THEVØIDN13' 
+                    : '// Complete creation process of THEVØIDN13 Artistic Memorial'}
+                </DialogDescription>
+              </div>
+              <Button
+                onClick={() => setViewMode(viewMode === 'step' ? 'timeline' : 'step')}
+                variant="outline"
+                size="sm"
+                className="gap-2"
+              >
+                <LayoutList className="h-4 w-4" />
+                {viewMode === 'step' ? 'TIMELINE' : 'STEP'} VIEW
+              </Button>
+            </div>
           </DialogHeader>
 
-          <div className="bg-black/90 border border-primary/30 rounded-lg p-6 sm:p-8 font-mono space-y-6">
+          {viewMode === 'step' ? (
+            <div className="bg-black/90 border border-primary/30 rounded-lg p-6 sm:p-8 font-mono space-y-6 overflow-y-auto flex-1">
             {/* Progress */}
             <div className="space-y-2 pb-4 border-b border-primary/20">
               <div className="flex items-center justify-between">
@@ -456,9 +491,133 @@ export const MindMap = () => {
               >
                 {language === 'pt' ? 'REINICIAR' : 'RESTART'}
               </Button>
+              </div>
             </div>
           </div>
-        </div>
+          ) : (
+            /* Timeline View */
+            <div className="flex-1 overflow-hidden flex flex-col">
+              <div className="text-muted-foreground text-xs mb-3 px-2">
+                [TIMELINE_MODE] {language === 'pt' ? 'Role horizontalmente ou clique nas etapas' : 'Scroll horizontally or click on steps'}
+              </div>
+              
+              <div 
+                ref={timelineRef}
+                className="flex gap-4 overflow-x-auto pb-4 px-2 scroll-smooth"
+                style={{ scrollbarWidth: 'thin' }}
+              >
+                {processSteps.map((step, idx) => (
+                  <div
+                    key={step.id}
+                    onClick={() => setCurrentStep(idx)}
+                    className={cn(
+                      "flex-shrink-0 w-[400px] bg-black/90 border rounded-lg p-6 font-mono cursor-pointer transition-all hover:scale-105",
+                      currentStep === idx 
+                        ? "border-primary shadow-lg shadow-primary/20" 
+                        : "border-primary/30 hover:border-primary/50"
+                    )}
+                  >
+                    {/* Step Header */}
+                    <div className="space-y-2 mb-4 pb-3 border-b border-primary/20">
+                      <div className="text-accent font-bold text-sm">
+                        {language === 'pt' ? step.titlePt : step.titleEn}
+                      </div>
+                      <div className="text-muted-foreground text-xs">
+                        STEP {idx + 1}/{processSteps.length}
+                      </div>
+                    </div>
+
+                    {/* Step Content Preview */}
+                    <div className="space-y-3">
+                      <div className="text-foreground text-xs line-clamp-4">
+                        {(language === 'pt' ? step.contentPt : step.contentEn)[0]}
+                      </div>
+
+                      {/* Code Block Preview */}
+                      <div className="bg-black border border-primary/20 rounded p-3">
+                        <pre className="text-primary text-[10px] overflow-hidden line-clamp-4">
+                          {language === 'pt' ? step.codePt : step.codeEn}
+                        </pre>
+                      </div>
+
+                      {/* Connections Preview */}
+                      {step.connections.length > 0 && (
+                        <div className="flex items-center gap-2 text-[10px] text-muted-foreground">
+                          <Network className="h-3 w-3" />
+                          {step.connections.length} {language === 'pt' ? 'conexões' : 'connections'}
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Visual Connection Indicator */}
+                    {idx < processSteps.length - 1 && (
+                      <div className="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 text-primary">
+                        <ChevronRight className="h-6 w-6" />
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              {/* Selected Step Details */}
+              {currentStep !== null && (
+                <div className="bg-black/90 border border-primary/30 rounded-lg p-6 mt-4 font-mono space-y-4 overflow-y-auto max-h-[300px]">
+                  <div className="text-accent font-bold">
+                    [DETAILS] {language === 'pt' ? processSteps[currentStep].titlePt : processSteps[currentStep].titleEn}
+                  </div>
+                  
+                  <div className="space-y-3 text-foreground text-sm">
+                    {(language === 'pt' 
+                      ? processSteps[currentStep].contentPt 
+                      : processSteps[currentStep].contentEn
+                    ).map((paragraph, idx) => (
+                      <p key={idx} className="leading-relaxed">
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
+
+                  {/* Connections in Timeline Mode */}
+                  {showConnections && processSteps[currentStep].connections.length > 0 && (
+                    <div className="space-y-2 pt-3 border-t border-primary/20">
+                      <div className="flex items-center gap-2 text-accent text-xs font-bold">
+                        <Network className="h-3 w-3" />
+                        [CONNECTIONS] {getConnectionLabel(processSteps[currentStep].connectionType)}
+                      </div>
+                      <div className="pl-4 space-y-1">
+                        {processSteps[currentStep].connections.map((connIdx) => (
+                          <div 
+                            key={connIdx}
+                            className="text-xs text-muted-foreground hover:text-primary transition-colors cursor-pointer flex items-center gap-2 group"
+                            onClick={() => setCurrentStep(connIdx)}
+                          >
+                            <span className="text-primary group-hover:animate-pulse">→</span>
+                            <span className="group-hover:underline">
+                              {language === 'pt' 
+                                ? processSteps[connIdx].titlePt 
+                                : processSteps[connIdx].titleEn}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  <div className="flex gap-2 pt-3 border-t border-primary/20">
+                    <Button
+                      onClick={() => setShowConnections(!showConnections)}
+                      variant="ghost"
+                      size="sm"
+                      className="gap-2 text-xs"
+                    >
+                      <Network className="h-3 w-3" />
+                      {language === 'pt' ? 'CONEXÕES' : 'CONNECTIONS'} [{showConnections ? 'ON' : 'OFF'}]
+                    </Button>
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
         </DialogContent>
       </Dialog>
     </>

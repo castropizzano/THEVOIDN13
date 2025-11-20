@@ -1,8 +1,9 @@
 import { useState, useEffect, useRef } from "react";
-import { Volume2, VolumeX, Download, Share2 } from "lucide-react";
+import { Volume2, VolumeX, Download } from "lucide-react";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, ResponsiveContainer } from "recharts";
 
 interface CreativeOracleProps {
   open: boolean;
@@ -430,6 +431,60 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
             <div className="space-y-8 animate-fade-in">
               <div className="text-accent font-bold text-lg">
                 CREATIVE_ORACLE::SCAN_COMPLETE
+              </div>
+
+              {/* Radar Chart Visualization */}
+              <div className="space-y-3 bg-black/50 border border-primary/30 rounded-lg p-6">
+                <div className="text-muted-foreground text-sm mb-4">
+                  [ARCHETYPE_DISTRIBUTION_CHART]
+                </div>
+                <ResponsiveContainer width="100%" height={300}>
+                  <RadarChart data={[
+                    {
+                      archetype: 'SHADOW',
+                      score: scores.shadow,
+                      fullMark: questions.length * 3,
+                    },
+                    {
+                      archetype: 'PUNK',
+                      score: scores.punk,
+                      fullMark: questions.length * 3,
+                    },
+                    {
+                      archetype: 'BUDDY',
+                      score: scores.buddy,
+                      fullMark: questions.length * 3,
+                    },
+                    {
+                      archetype: 'GI',
+                      score: scores.gi,
+                      fullMark: questions.length * 3,
+                    },
+                  ]}>
+                    <PolarGrid stroke="hsl(var(--primary) / 0.3)" />
+                    <PolarAngleAxis 
+                      dataKey="archetype" 
+                      tick={{ fill: 'hsl(var(--muted-foreground))', fontSize: 12, fontFamily: 'monospace' }}
+                    />
+                    <PolarRadiusAxis 
+                      angle={90} 
+                      domain={[0, questions.length * 3]}
+                      tick={{ fill: 'hsl(var(--muted-foreground))', fontSize: 10 }}
+                    />
+                    <Radar 
+                      name="Score" 
+                      dataKey="score" 
+                      stroke="hsl(var(--primary))" 
+                      fill="hsl(var(--primary))" 
+                      fillOpacity={0.6}
+                    />
+                  </RadarChart>
+                </ResponsiveContainer>
+                <div className="text-center text-xs text-muted-foreground pt-2">
+                  {language === 'pt' 
+                    ? 'Distribuição visual dos scores entre arquétipos' 
+                    : 'Visual distribution of scores across archetypes'}
+                </div>
               </div>
 
               <div className="space-y-6">
