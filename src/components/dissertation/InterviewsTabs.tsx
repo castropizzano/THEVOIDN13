@@ -225,11 +225,9 @@ export const InterviewsTabs = () => {
           <div className="bible-bilingual-grid bible-block mb-12">
             <div>
               <h2 className="bible-title">ENTREVISTAS & REGISTROS</h2>
-              <p className="bible-subtitle text-primary mt-2">Processos e Conversas</p>
             </div>
             <div>
               <h2 className="bible-title">INTERVIEWS & RECORDS</h2>
-              <p className="bible-subtitle text-primary mt-2">Processes and Conversations</p>
             </div>
           </div>
 
