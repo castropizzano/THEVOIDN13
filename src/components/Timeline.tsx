@@ -1,4 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface TimelineEvent {
   year: string;
@@ -88,6 +89,8 @@ const timelineEvents: TimelineEvent[] = [
 ];
 
 export const Timeline = () => {
+  const { language } = useLanguage();
+  
   return (
     <Card className="bg-card/80 border-primary/30">
       <CardHeader>
@@ -137,21 +140,18 @@ export const Timeline = () => {
                     <h3 className="text-xl font-bold text-primary">{event.year}</h3>
                     {event.highlight && (
                       <span className="text-xs uppercase tracking-wide text-primary font-medium">
-                        Marco / Milestone
+                        <span className="lang-pt">Marco</span>
+                        <span className="lang-en">Milestone</span>
                       </span>
                     )}
                   </div>
                   <div className="space-y-3">
                     <div>
-                      <h4 className="text-lg font-semibold mb-1">{event.title}</h4>
+                      <h4 className="text-lg font-semibold mb-1">
+                        {language === "pt" ? event.title : event.titleEn}
+                      </h4>
                       <p className="text-sm text-muted-foreground">
-                        {event.description}
-                      </p>
-                    </div>
-                    <div className="pt-2 border-t border-border/50">
-                      <h4 className="text-lg font-semibold mb-1">{event.titleEn}</h4>
-                      <p className="text-sm text-muted-foreground">
-                        {event.descriptionEn}
+                        {language === "pt" ? event.description : event.descriptionEn}
                       </p>
                     </div>
                   </div>
@@ -166,28 +166,32 @@ export const Timeline = () => {
           <div className="flex items-center gap-6 flex-wrap text-sm">
             <div className="flex items-center gap-2">
               <div className="w-4 h-4 rounded-full bg-primary" />
-              <span className="text-muted-foreground">Marcos principais / Key milestones</span>
+              <span className="text-muted-foreground">
+                <span className="lang-pt">Marcos principais</span>
+                <span className="lang-en">Key milestones</span>
+              </span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-4 h-4 rounded-full border-2 border-primary/30" />
-              <span className="text-muted-foreground">Eventos contextuais / Contextual events</span>
+              <span className="text-muted-foreground">
+                <span className="lang-pt">Eventos contextuais</span>
+                <span className="lang-en">Contextual events</span>
+              </span>
             </div>
           </div>
         </div>
 
         <div className="mt-6 p-4 bg-primary/5 rounded-lg border-l-4 border-primary">
-          <div className="space-y-2">
-            <p className="text-sm text-muted-foreground italic">
-              <span className="font-bold text-foreground">Lowbyrinth™:</span> Um percurso não-linear, 
-              espiralado, onde cada dobra revela novas camadas de sentido. 
-              A timeline não é sequência — é constelação de experiências que vibram juntas.
-            </p>
-            <p className="text-sm text-muted-foreground italic">
-              <span className="font-bold text-foreground">Lowbyrinth™:</span> A non-linear path, 
-              spiraling, where each fold reveals new layers of meaning. 
-              The timeline is not a sequence — it is a constellation of experiences that vibrate together.
-            </p>
-          </div>
+          <p className="text-sm text-muted-foreground italic lang-pt">
+            <span className="font-bold text-foreground">Lowbyrinth™:</span> Um percurso não-linear, 
+            espiralado, onde cada dobra revela novas camadas de sentido. 
+            A timeline não é sequência — é constelação de experiências que vibram juntas.
+          </p>
+          <p className="text-sm text-muted-foreground italic lang-en">
+            <span className="font-bold text-foreground">Lowbyrinth™:</span> A non-linear path, 
+            spiraling, where each fold reveals new layers of meaning. 
+            The timeline is not a sequence — it is a constellation of experiences that vibrate together.
+          </p>
         </div>
       </CardContent>
     </Card>
