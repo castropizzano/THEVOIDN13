@@ -29,9 +29,15 @@ const Footer = () => {
         {/* Badges em linha horizontal */}
         <div className="mt-6 pt-4 border-t border-border/30">
           <div className="flex flex-wrap gap-2 sm:gap-3 justify-start items-center">
-            <SurveillanceFreeBadge size="sm" />
-            <PollinationsAIBadge size="sm" />
-            <TechnicalTransparencyBadge size="sm" />
+            <div className="flex items-center">
+              <SurveillanceFreeBadge size="sm" />
+            </div>
+            <div className="flex items-center">
+              <PollinationsAIBadge size="sm" />
+            </div>
+            <div className="flex items-center">
+              <TechnicalTransparencyBadge size="sm" />
+            </div>
           </div>
         </div>
       </div>
