@@ -1,10 +1,9 @@
 import { useTranslation } from "@/hooks/useTranslation";
 import { SurveillanceFreeBadge } from "@/components/SurveillanceFreeBadge";
-import { useLanguage } from "@/contexts/LanguageContext";
+import { TechnicalTransparencyBadge } from "@/components/TechnicalTransparencyBadge";
 
 const Footer = () => {
   const { t } = useTranslation();
-  const { language } = useLanguage();
   
   return (
     <footer className="bg-card border-t border-border bible-section">
@@ -24,12 +23,7 @@ const Footer = () => {
             <p className="text-xs sm:text-sm text-muted-foreground">
               Licensed under CC BY-NC-SA 4.0
             </p>
-            <a 
-              href="/transparency" 
-              className="text-xs sm:text-sm text-primary hover:underline block"
-            >
-              {language === "pt" ? "Transparência Técnica" : "Technical Transparency"}
-            </a>
+            <TechnicalTransparencyBadge size="sm" />
           </div>
         </div>
       </div>
