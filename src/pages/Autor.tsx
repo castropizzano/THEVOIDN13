@@ -387,7 +387,7 @@ DaVinci Resolve"
                 <p className="bible-body">Ao contrário de um símbolo que busca reconhecimento imediato, o projeto ЦАСТРО (transliteração cirílica de CASTRO) propõe o anonimato como força estética. A ausência de identificação direta — o nome distorcido, o alfabeto estrangeiro, a paleta contida — é uma crítica à cultura do ego-branding.</p>
                 
                 <h3 className="bible-subtitle">A Linguagem Visual como Resistência</h3>
-                <p className="bible-body">O uso de tipografia em corpo alto, tons frios (rosa-pálido sobre preto), e elementos de arquivo como "1984" e o símbolo ™ cria uma tensão entre o institucional e o subversivo. Essa ironia visual ecoa Orwell, glitch estético e ruído pós-soviético — um statement sobre o branding em colapso.</p>
+                <p className="bible-body">O uso de tipografia em corpo alto, tons frios (preto e branco), e elementos de arquivo como "1984" e o símbolo ™ cria uma tensão entre o institucional e o subversivo. Essa ironia visual ecoa Orwell, glitch estético e ruído pós-soviético — um statement sobre o branding em colapso.</p>
                 
                 <div className="bible-media border-y border-primary/20 text-center">
                   <p className="bible-body font-bold italic text-primary">"A linguagem que precisa se justificar já perdeu o silêncio."</p>
@@ -396,7 +396,7 @@ DaVinci Resolve"
                 <p className="bible-body">A anti-marca ЦАСТРО™ não busca legibilidade comercial, mas reconhecimento conceitual. Quem entende o código, entende o autor. Quem não entende, permanece fora do campo — e isso é parte do design.</p>
                 
                 <div className="space-y-4 bg-primary/5 border border-primary/20 rounded-lg p-6 bible-media">
-                  <h3 className="bible-subtitle">Conheçam o Trabalho, Não o Rosto</h3>
+                  <h3 className="bible-subtitle">A Obra como Protagonista</h3>
                   <p className="bible-body">A proposta central é o anonimato como ética criativa. Num mundo saturado de criadores-influencers, a ideia é inverter a equação: não se trata de vender a imagem do artista, mas de expandir o campo simbólico do que ele cria.</p>
                   <p className="bible-body">Assim, "ЦАСТРО™" torna-se um agente conceitual, não uma pessoa. Uma entidade de linguagem, um selo de pensamento, uma assinatura invisível.</p>
                   <div className="bible-media">
@@ -422,7 +422,7 @@ DaVinci Resolve"
                   </div>
                   <div className="border-l-2 border-primary pl-4">
                     <h4 className="bible-link font-bold uppercase">Paleta</h4>
-                    <p className="bible-link">Preto e rosa-pálido = choque entre dureza e sensibilidade; brutalismo afetivo</p>
+                    <p className="bible-link">Preto e branco = choque entre dureza e clareza; brutalismo minimalista</p>
                   </div>
                 </div>
 
@@ -539,7 +539,7 @@ DaVinci Resolve"
                 <p className="bible-body">Unlike a symbol seeking immediate recognition, the ЦАСТРО project (Cyrillic transliteration of CASTRO) proposes anonymity as aesthetic force. The absence of direct identification — the distorted name, foreign alphabet, restrained palette — is a critique of ego-branding culture.</p>
                 
                 <h3 className="bible-subtitle">Visual Language as Resistance</h3>
-                <p className="bible-body">The use of large typography, cool tones (pale pink on black), and archival elements like "1984" and the ™ symbol creates tension between institutional and subversive. This visual irony echoes Orwell, aesthetic glitch, and post-Soviet noise — a statement about branding in collapse.</p>
+                <p className="bible-body">The use of large typography, cool tones (black and white), and archival elements like "1984" and the ™ symbol creates tension between institutional and subversive. This visual irony echoes Orwell, aesthetic glitch, and post-Soviet noise — a statement about branding in collapse.</p>
                 
                 <div className="my-6 py-6 border-y border-primary/20 text-center">
                   <p className="bible-body font-bold italic text-primary">"Language that needs justification has already lost its silence."</p>
@@ -548,7 +548,7 @@ DaVinci Resolve"
                 <p className="bible-body">The ЦАСТРО™ anti-brand doesn't seek commercial legibility, but conceptual recognition. Those who understand the code understand the author. Those who don't remain outside the field — and that's part of the design.</p>
                 
                 <div className="space-y-4 bg-primary/5 border border-primary/20 rounded-lg p-6">
-                  <h3 className="bible-subtitle">Know the Work, Not the Face</h3>
+                  <h3 className="bible-subtitle">The Work as Protagonist</h3>
                   <p className="bible-body">The central proposition is anonymity as creative ethics. In a world saturated with creator-influencers, the idea is to reverse the equation: it's not about selling the artist's image, but expanding the symbolic field of what they create.</p>
                   <p className="bible-body">Thus, "ЦАСТРО™" becomes a conceptual agent, not a person. A language entity, a thought seal, an invisible signature.</p>
                   <div className="my-4 py-4">
@@ -574,7 +574,7 @@ DaVinci Resolve"
                   </div>
                   <div className="border-l-2 border-primary pl-4">
                     <h4 className="bible-link font-bold uppercase mb-2">Palette</h4>
-                    <p className="bible-link">Black and pale pink = clash between hardness and sensitivity; affective brutalism</p>
+                    <p className="bible-link">Black and white = clash between hardness and clarity; minimalist brutalism</p>
                   </div>
                 </div>
 
