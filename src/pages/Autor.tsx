@@ -805,27 +805,6 @@ DaVinci Resolve"
 
         <Separator className="bg-border/30" />
 
-        {/* Alguns Projetos */}
-        <BilingualSection className="bible-section">
-          <div className="bible-block">
-            <h2 className="bible-title">
-              <span className="lang-pt">ALGUNS PROJETOS</span>
-              <span className="lang-en">SOME PROJECTS</span>
-            </h2>
-          </div>
-
-          <div className="bible-block">
-            <div className="lang-pt">
-              <p className="bible-body text-justify">Uma seleção condensada dos projetos em que atuo. Em cada um deles, transito entre conceito, design, direção de arte, direção de fotografia, edição e pós-produção, sempre de acordo com o que a obra pede. Cada projeto tem sua própria identidade, mas todos orbitam o mesmo eixo estético que define o meu trabalho. Para ver outros projetos coletivos, autorais, comerciais, culturais, musicais, documentais e experimentais, acesse os portfólios completos no Vimeo e no Behance.</p>
-            </div>
-            <div className="lang-en">
-              <p className="bible-body text-justify">A condensed selection of the projects I work on. In each of them, I move between concept, design, art direction, cinematography, editing and post-production, always according to what the work demands. Each project has its own identity, but all orbit the same aesthetic axis that defines my work. To see other collective, authorial, commercial, cultural, musical, documentary and experimental projects, access the complete portfolios on Vimeo and Behance.</p>
-            </div>
-          </div>
-        </BilingualSection>
-
-        <Separator className="bg-border/30" />
-
         {/* Documentation */}
         <BilingualSection className="bible-section">
           <div className="bible-block">
