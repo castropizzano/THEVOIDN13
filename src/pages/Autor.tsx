@@ -496,9 +496,8 @@ DaVinci Resolve"
                 </div>
 
                 <div className="-mx-6 px-6 py-8 rounded-lg bible-block">
-                  <h3 className="bible-subtitle">Conclusão</h3>
-                  <p className="bible-body">A identidade ЦАСТРО é um exercício de negação criativa. É o avesso do branding para relembrar o que o design pode ser: linguagem, manifesto, resistência.</p>
-                  <p className="bible-body">Este é o teu rito visual. O teu selo-cosmos. A máscara que revela. O nome que respira. A anti-brand que desobedece.</p>
+                  <p className="bible-body mb-4">Construo ЦАСТРО como exercício de negação criativa. Como avesso do branding — para relembrar o que design sempre foi: linguagem viva, manifesto silencioso, resistência sem bandeira.</p>
+                  <p className="bible-body mb-4">Não busco rito visual de validação. Não ergo selo-cosmos para reconhecimento. A máscara existe para revelar o que já estava lá. O nome respira porque desobedece à lógica da explicação.</p>
                   <p className="bible-body font-bold text-primary">ЦАСТРО™ — 1984 → ETERNO EM PROCESSO.</p>
                 </div>
               </div>
@@ -623,9 +622,8 @@ DaVinci Resolve"
                 </div>
 
                 <div className="-mx-6 px-6 py-8 rounded-lg">
-                  <h3 className="bible-subtitle mb-4">Conclusion</h3>
-                  <p className="bible-body mb-4">The ЦАСТРО identity is an exercise in creative negation. It's the reverse of branding to remind us what design can be: language, manifesto, resistance.</p>
-                  <p className="bible-body mb-4">This is your visual ritual. Your seal-cosmos. The mask that reveals. The name that breathes. The anti-brand that disobeys.</p>
+                  <p className="bible-body mb-4">I build ЦАСТРО as an exercise in creative negation. As the reverse of branding — to remember what design always was: living language, silent manifesto, resistance without flag.</p>
+                  <p className="bible-body mb-4">I don't seek visual ritual for validation. I don't raise seal-cosmos for recognition. The mask exists to reveal what was already there. The name breathes because it disobeys the logic of explanation.</p>
                   <p className="bible-body font-bold text-primary">ЦАСТРО™ — 1984 → ETERNALLY IN PROCESS.</p>
                 </div>
               </div>
@@ -740,7 +738,7 @@ DaVinci Resolve"
                 
                 <p className="bible-body">Criar o portal foi perceber que não há mais separação entre o pensar, o fazer e o documentar. Escrever o texto, gerar a imagem e programar a interface são gestos contínuos de um mesmo fluxo criativo. O GitHub vira caderno de campo. O commit vira diário. A build vira performance.</p>
                 
-                <p className="bible-body">E quando você lê este texto, não está apenas consumindo uma obra — está testemunhando um método. Um método que não separa arte de ciência, intuição de algoritmo, subjetividade de processamento.</p>
+                <p className="bible-body">E quando este texto é lido, não se trata apenas de consumir uma obra — trata-se de testemunhar um método. Método que não separa arte de ciência, intuição de algoritmo, subjetividade de processamento.</p>
                 
                 <h3 className="bible-subtitle">Futuro Distópico, Prática Utópica</h3>
                 <p className="bible-body">Vivemos tempos estranhos. Distópicos em muitos sentidos — vigilância algorítmica, erosão das certezas, aceleração sem direção. Mas também tempos de potência inédita. Nunca foi tão possível criar universos complexos sozinho-mas-não-sozinho. Nunca foi tão viável pensar o impossível e materializá-lo em horas.</p>
@@ -759,7 +757,7 @@ DaVinci Resolve"
                 
                 <p className="bible-body font-semibold mt-8 p-6 bg-primary/5 rounded-lg border-l-4 border-primary">O portal está vivo. A pesquisa está em movimento. O futuro está sendo criado agora — um prompt, uma imagem, um commit de cada vez.</p>
                 
-                <p className="bible-body text-muted-foreground mt-6">E quando você fecha esta página, o processo continua. Porque este não é o fim. É apenas o próximo começo.</p>
+                <p className="bible-body text-muted-foreground mt-6">E quando esta página fecha, o processo continua. Porque este não é o fim. É apenas o próximo começo.</p>
                 
                 <div className="pt-12 text-center">
                   <p className="bible-link">[continua...]</p>
@@ -784,7 +782,7 @@ DaVinci Resolve"
                 
                 <p className="bible-body">Creating the portal was realizing there's no longer separation between thinking, making and documenting. Writing text, generating images and programming the interface are continuous gestures of the same creative flow. GitHub becomes field notebook. Commit becomes diary. Build becomes performance.</p>
                 
-                <p className="bible-body">And when you read this text, you're not just consuming a work — you're witnessing a method. A method that doesn't separate art from science, intuition from algorithm, subjectivity from processing.</p>
+                <p className="bible-body">And when this text is read, it's not just about consuming a work — it's about witnessing a method. A method that doesn't separate art from science, intuition from algorithm, subjectivity from processing.</p>
                 
                 <h3 className="bible-subtitle">Dystopian Future, Utopian Practice</h3>
                 <p className="bible-body">We live in strange times. Dystopian in many senses — algorithmic surveillance, erosion of certainties, directionless acceleration. But also times of unprecedented power. Never has it been so possible to create complex universes alone-but-not-alone. Never has it been so viable to think the impossible and materialize it in hours.</p>
@@ -803,7 +801,7 @@ DaVinci Resolve"
                 
                 <p className="bible-body font-semibold mt-8 p-6 bg-primary/5 rounded-lg border-l-4 border-primary">The portal is alive. Research is in motion. The future is being created now — one prompt, one image, one commit at a time.</p>
                 
-                <p className="bible-body text-muted-foreground mt-6">And when you close this page, the process continues. Because this isn't the end. It's just the next beginning.</p>
+                <p className="bible-body text-muted-foreground mt-6">And when this page closes, the process continues. Because this isn't the end. It's just the next beginning.</p>
                 
                 <div className="pt-12 text-center">
                   <p className="bible-link">[to be continued...]</p>
