@@ -7,6 +7,9 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, ResponsiveContainer } from "recharts";
 import { LearnMode } from "./CreativeOracle/LearnMode";
 import { ProcessAnalysis } from "./CreativeOracle/ProcessAnalysis";
+import { ProcessTimeline } from "./CreativeOracle/ProcessTimeline";
+import { CompatibilityMatrix } from "./CreativeOracle/CompatibilityMatrix";
+import { HybridArchetypeReveal } from "./CreativeOracle/HybridArchetypeReveal";
 import { contextualizedQuestions } from "./CreativeOracle/data/contextualizedQuestions";
 import { hybridArchetypes } from "./CreativeOracle/data/hybridArchetypes";
 
@@ -422,6 +425,13 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
                 </div>
               </div>
 
+              <HybridArchetypeReveal 
+                dominantArchetype={getDominantArchetype()}
+                secondaryArchetype={getSecondaryArchetype()!}
+                dominantScore={scores[getDominantArchetype()]}
+                secondaryScore={scores[getSecondaryArchetype()!]}
+              />
+
               <div className="space-y-6">
                 <div className="space-y-2">
                   <div className="text-muted-foreground">[DOMINANT_ARCHETYPE]</div>
@@ -540,6 +550,10 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
                   &gt; CLOSE()
                 </Button>
               </div>
+
+              <ProcessTimeline processScores={processScores} />
+              
+              <CompatibilityMatrix />
 
               <ProcessAnalysis processScores={processScores} dominantArchetype={getDominantArchetype()} />
             </div>
