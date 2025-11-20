@@ -275,7 +275,7 @@ ABSOLUTE COMIC REQUIREMENTS:
       pollinationsUrl.searchParams.set('model', 'flux');
       pollinationsUrl.searchParams.set('nologo', 'true');
       pollinationsUrl.searchParams.set('enhance', 'false'); // Disable to maintain comic style control
-      pollinationsUrl.searchParams.set('negative_prompt', 'photorealistic, 3D render, photograph, camera, lens, bokeh, realistic lighting, CGI, digital art smooth gradients, airbrush, anime style, manga shading, bright colors, cheerful, happy, daylight, smiling, facial features on mask, eyes on mask, clean environment, futuristic technology');
+      pollinationsUrl.searchParams.set('negative_prompt', 'photorealistic, 3D render, photograph, photography, camera, lens, DSLR, bokeh, depth of field blur, realistic lighting, ray tracing, CGI, digital art, smooth gradients, airbrush, soft shading, anime style, manga shading, bright colors, cheerful, happy, daylight, smiling, facial features on mask, eyes on mask, mouth on mask, clean environment, futuristic technology, sci-fi, neon cyberpunk, vibrant colors, saturated, HDR, lens flare, cinematic color grading, film grain, 35mm photography, Kodak Portra, digital noise, ARRI Alexa, RED camera');
 
       const response = await fetch(pollinationsUrl.toString());
 
@@ -361,8 +361,8 @@ ABSOLUTE COMIC REQUIREMENTS:
           </DialogTitle>
           <DialogDescription className="text-muted-foreground font-mono text-sm">
             {language === "pt" 
-              ? "// Gerador de painéis de graphic novel estilo THEVØIDN13 x Watchmen" 
-              : "// THEVØIDN13 x Watchmen style graphic novel panel generator"}
+              ? "// Gerador experimental de painéis de graphic novel" 
+              : "// Experimental graphic novel panel generator"}
           </DialogDescription>
         </DialogHeader>
 
@@ -372,17 +372,17 @@ ABSOLUTE COMIC REQUIREMENTS:
               <Sparkles className="h-4 w-4 text-accent mt-1 flex-shrink-0" />
               <div className="space-y-2 text-sm">
                 <p className="text-foreground font-bold">
-                  {language === "pt" ? "[GRAPHIC NOVEL] Estilo quadrinhos THEVØIDN13 x Watchmen" : "[GRAPHIC NOVEL] THEVØIDN13 x Watchmen comic book style"}
+                  {language === "pt" ? "[GERADOR EXPERIMENTAL DE STILL]" : "[EXPERIMENTAL STILL GENERATOR]"}
                 </p>
                 <p className="text-muted-foreground">
                   {language === "pt"
-                    ? "Todas as imagens incluem marca d'água THEVØIDN13 (80% opacidade, inferior direito). Estilo: Graphic novel com linhas de tinta e cel-shading."
-                    : "All images include THEVØIDN13 watermark (80% opacity, bottom right). Style: Graphic novel with ink linework and cel-shading."}
+                    ? "Co-criação humano-máquina em tempo real. Propulsado por flux.1-schnell via Pollinations.AI, o gerador traduz ruído em painel de HQ — onde a máquina sonha o que o criador intui. Laboratório experimental para testar, tensionar e expandir a estética THEVØIDN13. Cada imagem é única, irreplicável e marcada com a assinatura digital do projeto."
+                    : "Real-time human-machine co-creation. Powered by flux.1-schnell via Pollinations.AI, the generator translates noise into comic panels — where the machine dreams what the creator intuits. Experimental lab to test, tension and expand the THEVØIDN13 aesthetic. Each image is unique, unrepeatable and marked with the project's digital signature."}
                 </p>
                 <p className="text-xs text-muted-foreground">
                   {language === "pt"
-                    ? "Parâmetros: 1024x1024 | modelo flux.1-schnell via Pollinations.AI | Estilo: Western comic book (Watchmen-inspired)"
-                    : "Parameters: 1024x1024 | flux.1-schnell model via Pollinations.AI | Style: Western comic book (Watchmen-inspired)"}
+                    ? "Parâmetros: 1024x1024 | flux.1-schnell via Pollinations.AI | Marca d'água: 80% opacidade"
+                    : "Parameters: 1024x1024 | flux.1-schnell via Pollinations.AI | Watermark: 80% opacity"}
                 </p>
               </div>
             </div>

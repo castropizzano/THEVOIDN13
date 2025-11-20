@@ -133,11 +133,12 @@ const Index = () => {
           {/* VIDEO */}
           <div className="bible-media">
             <video 
-              className="w-full aspect-video bg-black rounded-lg overflow-hidden"
+              className="w-full aspect-video bg-black rounded-lg overflow-hidden [&::-webkit-media-controls-panel]:!pointer-events-auto"
               controls
               playsInline
               preload="metadata"
               poster={voidStreetThumbnail}
+              style={{ pointerEvents: 'auto' }}
             >
               <source src="/videos/intro.mp4" type="video/mp4" />
             </video>
