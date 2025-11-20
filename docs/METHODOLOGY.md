@@ -115,7 +115,8 @@ Returning learning to the world through art, code or methodology.
 **Inteligência Artificial**  
 Google Gemini (texto, análise)  
 Claude / ChatGPT (escrita, código)  
-Midjourney / Adobe Firefly (imagens)  
+Midjourney / Adobe Firefly (imagens para desenvolvimento)  
+Pollinations.AI (geração de stills pelos usuários - 100% client-side)  
 OpenAI Codex (código complexo)  
 Google AI Studio (apps)  
 Google Notebook LM (organização)  
@@ -150,7 +151,8 @@ Vimeo (hospedagem vídeos)
 **Artificial Intelligence**  
 Google Gemini (text, analysis)  
 Claude / ChatGPT (writing, code)  
-Midjourney / Adobe Firefly (images)  
+Midjourney / Adobe Firefly (images for development)  
+Pollinations.AI (user still generation - 100% client-side)  
 OpenAI Codex (complex code)  
 Google AI Studio (apps)  
 Google Notebook LM (organization)  
@@ -209,6 +211,6 @@ Consulte o arquivo completo de referências bibliográficas:
 **Projeto THEVØIDN13** — Memorial Artístico e Práxis Híbrida  
 **Licença:** Creative Commons BY-NC-SA 4.0
 
-Última atualização: Janeiro 2025
+Última atualização: 20 de Novembro de 2025
 
 ───────────────────────────────────────────────────────────────
