@@ -47,6 +47,7 @@ const InterviewCard = ({
   pdfTitleEn,
 }: InterviewCardProps) => {
   const [showPDF, setShowPDF] = useState(false);
+  const [videoLoaded, setVideoLoaded] = useState(false);
 
   return (
     <>
@@ -76,17 +77,37 @@ const InterviewCard = ({
         <CardContent className="space-y-6">
           {/* Video - only show if youtubeId is provided */}
           {youtubeId && (
-            <div className="aspect-video w-full rounded-lg overflow-hidden border border-border/50 shadow-lg shadow-primary/10 hover-scale transition-all duration-300">
-              <iframe
-                width="100%"
-                height="100%"
-                src={`https://www.youtube.com/embed/${youtubeId}`}
-                title={titleEn}
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-full"
-              />
+            <div 
+              onClick={() => !videoLoaded && setVideoLoaded(true)}
+              className={`relative aspect-video w-full rounded-lg overflow-hidden border border-border/50 shadow-lg shadow-primary/10 transition-all duration-300 ${!videoLoaded ? 'cursor-pointer hover:border-primary' : ''}`}
+            >
+              {!videoLoaded ? (
+                <>
+                  <img 
+                    src={`https://img.youtube.com/vi/${youtubeId}/maxresdefault.jpg`}
+                    alt={titleEn}
+                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <div className="w-20 h-20 rounded-full bg-primary/20 backdrop-blur-sm border-2 border-primary flex items-center justify-center hover:scale-110 transition-transform">
+                      <svg className="w-10 h-10 text-primary ml-1" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </>
+              ) : (
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src={`https://www.youtube.com/embed/${youtubeId}?autoplay=1`}
+                  title={titleEn}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              )}
             </div>
           )}
 
@@ -310,7 +331,7 @@ export const InterviewsTabs = () => {
             descriptionPt="Fanzine colaborativo com entrevista sobre o processo criativo do LowMovie™ e a filosofia do coletivo LowPressure™. Publicação independente que documenta os bastidores da produção. Galeria de páginas do fanzine abaixo."
             descriptionEn="Collaborative fanzine featuring an interview about the creative process of LowMovie™ and the philosophy of the LowPressure™ collective. Independent publication documenting the production backstage. Fanzine pages gallery below."
             youtubeId=""
-            pdfPath="/documents/LowZine_LowMovie_Interview.pdf"
+            pdfPath="/documents/Entrevista-Transcrita_PIZZANO_Castro_LEITE_Rafael_Auto_Rafao_VM_METRI_Caio_LowZine_LowMovie_LowPressure.pdf"
             pdfTitlePt="Transcrição: LowZine"
             pdfTitleEn="Transcription: LowZine"
           />
@@ -324,17 +345,17 @@ export const InterviewsTabs = () => {
               </div>
             </CardHeader>
             <CardContent>
-              <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 [direction:rtl]">
                 {zineImages.map((image, index) => (
                 <div
                   key={index}
                   onClick={() => openLightbox(index)}
-                  className="break-inside-avoid rounded-lg overflow-hidden border border-border/50 shadow-md hover:shadow-xl hover:shadow-primary/10 transition-all cursor-pointer group relative"
+                  className="aspect-[3/4] rounded-lg overflow-hidden border border-border/50 shadow-md hover:shadow-xl hover:shadow-primary/10 transition-all cursor-pointer group relative [direction:ltr]"
                 >
                   <img
                     src={image}
                     alt={`LowZine página ${index + 2}`}
-                    className="w-full h-auto grayscale group-hover:grayscale-0 transition-all duration-500"
+                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                   />
                     <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                       <ZoomIn className="w-8 h-8 text-white" />

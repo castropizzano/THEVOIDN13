@@ -251,13 +251,13 @@ const Dissertacao = () => {
                 <p className="bible-body">Full Video da crew LowPressure. Um filme-processo que documenta as vivências e o legado de uma crew de skatistas pelos spots de Curitiba. Obra produzida de maneira totalmente autoral, através de vídeo, design e trilhas sonoras únicas. Objeto central da pesquisa de mestrado em Cinema e Artes do Vídeo.</p>
                 
                 <h3 className="bible-subtitle">Conceito</h3>
-                <p className="bible-body">LowMovie não é só um vídeo de skate. É um artefato cultural que cristaliza memória, identidade e resistência subcultural. Um documento vivo que captura o ethos de uma crew que fez do skate um modo de existir. Produzido entre 2019-2022, estreou em abril de 2023 no Cine Passeio em Curitiba.</p>
+                <p className="bible-body">LowMovie não é só um vídeo de skate. É um artefato cultural que cristaliza memória, identidade e resistência subcultural. Um documento vivo que captura o ethos de uma crew que fez do skate um modo de existir. Produzido entre 2019-2022.</p>
                 
                 <h3 className="bible-subtitle">Simbolismo</h3>
                 <p className="bible-body">O filme opera como labirinto criativo onde subjetividade e subcultura se encontram. Cada manobra é gesto simbólico. Cada spot é território de afeto. A estética DIY não é limitação — é escolha ética. LowMovie materializa a filosofia punk do "faça você mesmo" aplicada ao cinema de skate.</p>
                 
                 <h3 className="bible-subtitle">Premiére</h3>
-                <p className="bible-body">07 de abril de 2023. Cine Passeio, Curitiba. Sessão lotada. Skatistas, amigos, família, pesquisadores. Do underground ao cinema. Da margem ao centro simbólico da cidade. Um momento de reconhecimento sem domesticação. A crew permanece crew, mas agora habita também a tela grande.</p>
+                <p className="bible-body">16 de dezembro de 2022. Vila Ida, Curitiba. Evento presencial que resgatou a essência do skate e seu universo. Encontro multicultural com exibição de skate videos, pocket show, exposição de fotografias, feira de produtos e galeria de arte. A estreia do LowMovie™ finalizou em uma celebração SkateParty. Do underground ao evento cultural. Da margem ao centro simbólico da cidade. Um momento de reconhecimento sem domesticação. A crew permanece crew, mas agora habita também a tela grande.</p>
                 
                 <h3 className="bible-subtitle">Lowbyrinth™</h3>
                 <p className="bible-body">O símbolo central de LowMovie. Um labirinto inspirado em geometria sagrada e princípios herméticos. Baseado na filosofia de Hermes Trismegistus, o Lowbyrinth™ materializa a ideia de que princípios organizam toda vida e criação no universo.</p>
@@ -270,13 +270,13 @@ const Dissertacao = () => {
                 <p className="bible-body">LowPressure crew's Full Video. A process-film documenting the experiences and legacy of a skate crew through Curitiba's spots. Work produced entirely independently, through video, design and unique soundtracks. Central object of master's research in Cinema and Video Arts.</p>
                 
                 <h3 className="bible-subtitle">Concept</h3>
-                <p className="bible-body">LowMovie isn't just a skate video. It's a cultural artifact that crystallizes memory, identity and subcultural resistance. A living document that captures the ethos of a crew that made skateboarding a way of existing. Produced between 2019-2022, premiered in April 2023 at Cine Passeio in Curitiba.</p>
+                <p className="bible-body">LowMovie isn't just a skate video. It's a cultural artifact that crystallizes memory, identity and subcultural resistance. A living document that captures the ethos of a crew that made skateboarding a way of existing. Produced between 2019-2022.</p>
                 
                 <h3 className="bible-subtitle">Symbolism</h3>
                 <p className="bible-body">The film operates as a creative labyrinth where subjectivity and subculture meet. Each trick is symbolic gesture. Each spot is a territory of affection. The DIY aesthetic isn't a limitation — it's an ethical choice. LowMovie materializes the punk philosophy of "do it yourself" applied to skate cinema.</p>
                 
                 <h3 className="bible-subtitle">Premiere</h3>
-                <p className="bible-body">April 7, 2023. Cine Passeio, Curitiba. Sold-out session. Skaters, friends, family, researchers. From underground to cinema. From margin to the symbolic center of the city. A moment of recognition without domestication. The crew remains a crew, but now also inhabits the big screen.</p>
+                <p className="bible-body">December 16, 2022. Vila Ida, Curitiba. In-person event that rescued the essence of skateboarding and its universe. Multicultural gathering featuring skate video screenings, pocket show, photo exhibition, product fair and art gallery. The LowMovie™ premiere culminated in a SkateParty celebration. From underground to cultural event. From margin to the symbolic center of the city. A moment of recognition without domestication. The crew remains a crew, but now also inhabits the big screen.</p>
                 
                 <h3 className="bible-subtitle">Lowbyrinth™</h3>
                 <p className="bible-body">The central symbol of LowMovie. A labyrinth inspired by sacred geometry and hermetic principles. Based on Hermes Trismegistus' philosophy, the Lowbyrinth™ materializes the idea that principles organize all life and creation in the universe.</p>
