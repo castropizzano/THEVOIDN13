@@ -192,7 +192,10 @@ export const InterviewsTabs = () => {
           <Dialog>
             <DialogTrigger asChild>
               <Button variant="outline" className="w-full justify-start bible-media">
-                <span className="text-sm">Sobre as Entrevistas / About the Interviews</span>
+                <span className="text-sm">
+                  <span className="lang-pt">Sobre as Entrevistas</span>
+                  <span className="lang-en">About the Interviews</span>
+                </span>
               </Button>
             </DialogTrigger>
             <DialogContent className="max-w-2xl">

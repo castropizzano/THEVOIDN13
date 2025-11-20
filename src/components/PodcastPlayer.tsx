@@ -9,7 +9,8 @@ export const PodcastPlayer = () => {
           Skate Punk — Processos Criativos
         </CardTitle>
         <CardDescription className="bible-body">
-          Entrevista sobre o LowMovie™ e processos de criação / Interview about creative processes
+          <span className="lang-pt">Entrevista sobre o LowMovie™ e processos de criação</span>
+          <span className="lang-en">Interview about creative processes</span>
         </CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
