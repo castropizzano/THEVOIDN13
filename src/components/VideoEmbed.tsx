@@ -12,10 +12,10 @@ export const VideoEmbed = ({ source, videoId, title }: VideoEmbedProps) => {
       case "vimeo":
         return `https://player.vimeo.com/video/${videoId}?title=0&byline=0&portrait=0`;
       case "internet-archive":
-        // For Internet Archive videos - return download URL for direct video element
+        // For Internet Archive videos - use embed URL with proper format
         if (videoId.includes("/")) {
-          const [itemId, filename] = videoId.split("/");
-          return `https://archive.org/download/${itemId}/${filename}`;
+          const [itemId] = videoId.split("/");
+          return `https://archive.org/embed/${itemId}`;
         }
         return `https://archive.org/embed/${videoId}`;
       case "youtube":
@@ -27,26 +27,14 @@ export const VideoEmbed = ({ source, videoId, title }: VideoEmbedProps) => {
     <div className="relative w-full">
       {/* 16:9 Aspect Ratio Container */}
       <div className="relative w-full pb-[56.25%] bg-black">
-        {source === "internet-archive" && videoId.includes("/") ? (
-          <video
-            src={getEmbedUrl()}
-            title={title}
-            className="absolute top-0 left-0 w-full h-full"
-            controls
-            preload="metadata"
-          >
-            Your browser does not support the video tag.
-          </video>
-        ) : (
-          <iframe
-            src={getEmbedUrl()}
-            title={title}
-            className="absolute top-0 left-0 w-full h-full border-0"
-            allow="autoplay; fullscreen; picture-in-picture"
-            allowFullScreen
-            loading="lazy"
-          />
-        )}
+        <iframe
+          src={getEmbedUrl()}
+          title={title}
+          className="absolute top-0 left-0 w-full h-full border-0"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowFullScreen
+          loading="lazy"
+        />
       </div>
     </div>
   );
