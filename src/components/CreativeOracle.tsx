@@ -1,8 +1,14 @@
 import { useState, useEffect, useRef } from "react";
-import { Volume2, VolumeX, Download } from "lucide-react";
+import { Volume2, VolumeX, Download, Info } from "lucide-react";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { 
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, ResponsiveContainer } from "recharts";
 import { LearnMode } from "./CreativeOracle/LearnMode";
@@ -12,7 +18,6 @@ import { CompatibilityMatrix } from "./CreativeOracle/CompatibilityMatrix";
 import { HybridArchetypeReveal } from "./CreativeOracle/HybridArchetypeReveal";
 import { ContextualQuote } from "./CreativeOracle/ContextualQuote";
 import { PersonalizedAdvice } from "./CreativeOracle/PersonalizedAdvice";
-import { OracleMindMapIntegration } from "./CreativeOracle/OracleMindMapIntegration";
 import { contextualizedQuestions } from "./CreativeOracle/data/contextualizedQuestions";
 import { hybridArchetypes } from "./CreativeOracle/data/hybridArchetypes";
 
@@ -89,6 +94,37 @@ const archetypes = {
     recommendations: ["Incorpore experimentação controlada", "Questione suas estruturas", "Permita imperfeições intencionais"],
     recommendationsEn: ["Incorporate controlled experimentation", "Question your structures", "Allow intentional imperfections"],
   },
+};
+
+const SectionHeader = ({ 
+  title, 
+  tooltipPt, 
+  tooltipEn 
+}: { 
+  title: string; 
+  tooltipPt: string; 
+  tooltipEn: string;
+}) => {
+  const { language } = useLanguage();
+  
+  return (
+    <div className="flex items-center gap-2 text-accent font-bold text-lg">
+      <span>{title}</span>
+      <TooltipProvider>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Info className="h-4 w-4 text-primary/60 hover:text-primary cursor-help" />
+          </TooltipTrigger>
+          <TooltipContent 
+            className="max-w-xs bg-black/95 border-primary/30 text-sm font-mono"
+            side="right"
+          >
+            <p>{language === 'pt' ? tooltipPt : tooltipEn}</p>
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
+    </div>
+  );
 };
 
 export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
@@ -422,9 +458,11 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
               
               {/* Radar Chart Visualization */}
               <div className="space-y-3 bg-black/50 border border-primary/30 rounded-lg p-6">
-                <div className="text-muted-foreground text-sm mb-4">
-                  [ARCHETYPE_DISTRIBUTION_CHART]
-                </div>
+                <SectionHeader 
+                  title={language === "pt" ? "[DISTRIBUIÇÃO_ARQUÉTIPOS]" : "[ARCHETYPE_DISTRIBUTION]"}
+                  tooltipPt="Visualização gráfica da sua distribuição entre os 4 arquétipos criativos. Quanto maior a área em cada ponta, mais forte é aquele arquétipo em você."
+                  tooltipEn="Graphic visualization of your distribution across 4 creative archetypes. The larger the area at each corner, the stronger that archetype is in you."
+                />
                 <ResponsiveContainer width="100%" height={300}>
                   <RadarChart data={[
                     {
@@ -577,56 +615,92 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-3 pt-4">
-                <Button
-                  onClick={handleExportPDF}
-                  variant="outline"
-                  className="gap-2"
-                >
-                  <Download className="h-4 w-4" />
-                  &gt; EXPORT_RESULTS()
-                </Button>
-                <Button
-                  onClick={handleReset}
-                  variant="outline"
-                >
-                  &gt; RESTART_SCAN()
-                </Button>
-                <Button
-                  onClick={() => setMode('knowledge')}
-                  variant="outline"
-                >
-                  &gt; VER_CONHECIMENTO()
-                </Button>
-                <Button
-                  onClick={() => onOpenChange(false)}
-                  variant="outline"
-                >
-                  &gt; CLOSE()
-                </Button>
+              {/* Process Timeline */}
+              <div className="space-y-3 pt-8 border-t border-primary/30">
+                <SectionHeader 
+                  title={language === "pt" ? "[LINHA_TEMPORAL_PROCESSO]" : "[PROCESS_TIMELINE]"}
+                  tooltipPt="Linha do tempo das 5 etapas do processo criativo THEVØIDN13. Mostra em qual etapa você é mais forte e onde pode crescer."
+                  tooltipEn="Timeline of the 5 stages of THEVØIDN13 creative process. Shows which stage you're strongest at and where you can grow."
+                />
+                <ProcessTimeline processScores={processScores} />
+              </div>
+              
+              {/* Compatibility Matrix */}
+              <div className="space-y-3">
+                <SectionHeader 
+                  title={language === "pt" ? "[MATRIZ_COMPATIBILIDADE]" : "[COMPATIBILITY_MATRIX]"}
+                  tooltipPt="Matriz de compatibilidade entre arquétipos. Mostra como seu arquétipo se relaciona com outros perfis criativos em trabalhos colaborativos."
+                  tooltipEn="Compatibility matrix between archetypes. Shows how your archetype relates to other creative profiles in collaborative work."
+                />
+                <CompatibilityMatrix />
               </div>
 
-              <ProcessTimeline processScores={processScores} />
-              
-              <CompatibilityMatrix />
-
-              <ProcessAnalysis processScores={processScores} dominantArchetype={getDominantArchetype()} />
-              
-              <PersonalizedAdvice 
-                dominantArchetype={getDominantArchetype()}
-                weakestStage={Object.entries(processScores).sort((a, b) => a[1] - b[1])[0][0]}
-              />
-
-              {/* Mind Map Integration */}
-              <div className="space-y-6 pt-8 border-t border-primary/30">
-                <div className="text-accent font-bold text-lg">
-                  [{language === "pt" ? "MAPA MENTAL PERSONALIZADO" : "PERSONALIZED MIND MAP"}]
-                </div>
-                <OracleMindMapIntegration
-                  archetypeScores={scores}
-                  processScores={processScores}
-                  dominantArchetype={getDominantArchetype()}
+              {/* Process Analysis */}
+              <div className="space-y-3">
+                <SectionHeader 
+                  title={language === "pt" ? "[ANÁLISE_PROCESSO]" : "[PROCESS_ANALYSIS]"}
+                  tooltipPt="Análise detalhada do seu desempenho em cada etapa do processo criativo. Identifica padrões e tendências no seu workflow."
+                  tooltipEn="Detailed analysis of your performance at each stage of the creative process. Identifies patterns and trends in your workflow."
                 />
+                <ProcessAnalysis processScores={processScores} dominantArchetype={getDominantArchetype()} />
+              </div>
+              
+              {/* Personalized Advice */}
+              <div className="space-y-3">
+                <SectionHeader 
+                  title={language === "pt" ? "[CONSELHO_PERSONALIZADO]" : "[PERSONALIZED_ADVICE]"}
+                  tooltipPt="Conselhos personalizados baseados no seu arquétipo dominante e na sua etapa mais fraca. Dicas práticas para equilibrar seu processo criativo."
+                  tooltipEn="Personalized advice based on your dominant archetype and weakest stage. Practical tips to balance your creative process."
+                />
+                <PersonalizedAdvice 
+                  dominantArchetype={getDominantArchetype()}
+                  weakestStage={Object.entries(processScores).sort((a, b) => a[1] - b[1])[0][0]}
+                />
+              </div>
+
+              {/* Action Buttons - Final da jornada */}
+              <div className="space-y-4 pt-8 border-t-2 border-primary/50">
+                <div className="text-center text-muted-foreground text-sm font-mono">
+                  {language === 'pt' 
+                    ? '// Fim da análise. Escolha sua próxima ação:'
+                    : '// Analysis complete. Choose your next action:'}
+                </div>
+                
+                <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                  <Button
+                    onClick={handleExportPDF}
+                    variant="outline"
+                    className="gap-2 font-mono"
+                    size="lg"
+                  >
+                    <Download className="h-4 w-4" />
+                    &gt; EXPORT_RESULTS()
+                  </Button>
+                  <Button
+                    onClick={handleReset}
+                    variant="outline"
+                    className="font-mono"
+                    size="lg"
+                  >
+                    &gt; RESTART_SCAN()
+                  </Button>
+                  <Button
+                    onClick={() => setMode('knowledge')}
+                    variant="outline"
+                    className="font-mono"
+                    size="lg"
+                  >
+                    &gt; VER_CONHECIMENTO()
+                  </Button>
+                  <Button
+                    onClick={() => onOpenChange(false)}
+                    variant="default"
+                    className="font-mono"
+                    size="lg"
+                  >
+                    &gt; CLOSE()
+                  </Button>
+                </div>
               </div>
             </div>
           )}
