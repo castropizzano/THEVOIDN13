@@ -322,10 +322,14 @@ Render the above scene as a GRAPHIC NOVEL PANEL maintaining:
       console.log('Prompt length:', detailedPrompt.length, 'chars');
 
       // Generate comic book style image using Pollinations.AI
+      // CRITICAL: Use random seed to ensure variation between generations
+      const randomSeed = Math.floor(Math.random() * 1000000);
+      
       const pollinationsUrl = new URL('https://image.pollinations.ai/prompt/' + encodeURIComponent(detailedPrompt));
       pollinationsUrl.searchParams.set('width', '1024');
       pollinationsUrl.searchParams.set('height', '1024');
       pollinationsUrl.searchParams.set('model', 'flux');
+      pollinationsUrl.searchParams.set('seed', randomSeed.toString()); // Random seed for variation
       pollinationsUrl.searchParams.set('nologo', 'true');
       pollinationsUrl.searchParams.set('enhance', 'false');
       pollinationsUrl.searchParams.set('negative_prompt', 
