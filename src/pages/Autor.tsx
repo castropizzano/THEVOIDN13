@@ -132,22 +132,23 @@ const Autor = () => {
                   content="Premiere / After Effects / DaVinci Resolve"
                 />
                 <SkillCard 
-                  title="3D & Experimental"
-                  content="Blender / Ultimaker Cura / UCreality 3D"
+                  title="3D / Motion"
+                  content="Blender / Runway ML
+DaVinci Resolve"
                 />
-                <SkillCard 
-                  title="IA & Digital"
-                  content="GPT / Claude / Gemini / DeepSeek / ChatGPT / Lovable / ElevenLabs"
-                />
-                <SkillCard 
-                  title="Idiomas"
-                  content="PT nativo / ES intermediário / EN intermediário"
-                />
+              <SkillCard
+                title="IA & Digital"
+                content="Claude / Gemini / ChatGPT / ElevenLabs / Lovable"
+              />
+              <SkillCard
+                title="Idiomas"
+                content="PT nativo / ES-EN intermediário"
+              />
               </div>
               <div className="mt-6">
                 <SkillCard 
                   title="Referências"
-                  content="Minimalismo / Experimentação / Futurismo / Construtivismo / Cibercultura / Semiótica / Tipografia / Infografismos / Economia Criativa / Underground / Op-Art"
+                  content="Experimentação / Minimalismo / Futurismo / Construtivismo / Cibercultura / Underground / Economia Criativa"
                   className="w-full"
                 />
               </div>
@@ -168,22 +169,23 @@ const Autor = () => {
                   content="Premiere / After Effects / DaVinci Resolve"
                 />
                 <SkillCard 
-                  title="3D & Experimental"
-                  content="Blender / Ultimaker Cura / UCreality 3D"
+                  title="3D / Motion"
+                  content="Blender / Runway ML
+DaVinci Resolve"
                 />
-                <SkillCard 
-                  title="AI & Digital"
-                  content="GPT / Claude / Gemini / DeepSeek / ChatGPT / Lovable / ElevenLabs"
-                />
-                <SkillCard 
-                  title="Languages"
-                  content="PT native / ES intermediate / EN intermediate"
-                />
+              <SkillCard
+                title="AI & Digital"
+                content="Claude / Gemini / ChatGPT / ElevenLabs / Lovable"
+              />
+              <SkillCard
+                title="Languages"
+                content="PT native / ES-EN intermediate"
+              />
               </div>
               <div className="mt-6">
                 <SkillCard 
                   title="References"
-                  content="Minimalism / Experimentation / Futurism / Constructivism / Cyberculture / Semiotics / Typography / Infographics / Creative Economy / Underground / Op-Art"
+                  content="Experimentation / Minimalism / Futurism / Constructivism / Cyberculture / Underground / Creative Economy"
                   className="w-full"
                 />
               </div>
@@ -308,7 +310,7 @@ const Autor = () => {
                   content="Videoarte + documentário + cinema experimental sobre o skate como linguagem estética. Estreia no Cine Passeio em 2023"
                 />
                 <SkillCard 
-                  title="THEVØIDN13 | 2024-2025"
+                  title="MESTRADO / THEVØIDN13 | 2024-2025"
                   content="Mestrado em Cinema e Artes do Vídeo (UNESPAR). A anti-marca que condensa tudo que veio antes. Prática vira pesquisa"
                 />
               </div>
@@ -339,7 +341,7 @@ const Autor = () => {
                   content="Video art + documentary + experimental cinema about skating as aesthetic language. Premiere at Cine Passeio in 2023"
                 />
                 <SkillCard 
-                  title="THEVØIDN13 | 2024-2025"
+                  title="MASTER'S DEGREE / THEVØIDN13 | 2024-2025"
                   content="Master's in Cinema and Video Arts (UNESPAR). The anti-brand that condenses everything that came before. Practice becomes research"
                 />
               </div>
@@ -349,115 +351,6 @@ const Autor = () => {
 
         <Separator className="bg-border/30" />
 
-        {/* Formação Acadêmica */}
-        <BilingualSection className="bible-section">
-          <div className="bible-bilingual-grid bible-block">
-            <div>
-              <h2 className="bible-title">FORMAÇÃO ACADÊMICA</h2>
-            </div>
-            <div>
-              <h2 className="bible-title">ACADEMIC BACKGROUND</h2>
-            </div>
-          </div>
-
-          <div className="bible-bilingual-grid bible-block">
-            <div>
-              <div className="grid grid-cols-1 gap-6 mb-8">
-                <SkillCard 
-                  title="Mestrado em Cinema e Artes do Vídeo | 2023-atual"
-                  content="PPG-CINEAV — UNESPAR | Linha de Pesquisa: Processos de Criação no Cinema e nas Artes do Vídeo | Grupo CineCriare (CNPq)"
-                />
-                <SkillCard 
-                  title="Pós-Graduação | 2016"
-                  content="Direção de Arte e Estratégias Criativas — Unicuritiba"
-                />
-                <SkillCard 
-                  title="Graduação | 2010"
-                  content="Comunicação Social — Publicidade e Propaganda — UTP - Universidade Tuiuti do Paraná"
-                />
-              </div>
-
-              <div className="border-t border-border/30 pt-8">
-                <h3 className="bible-subtitle mb-6">Formação Complementar</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <SkillCard 
-                    title="Design Gráfico | 1999"
-                    content="Técnico em Design Gráfico — CEFET-PR"
-                  />
-                  <SkillCard 
-                    title="Cinema | 2004"
-                    content="Direção de Arte em Cinema — AIC - Academia Internacional de Cinema"
-                  />
-                  <SkillCard 
-                    title="Adobe Expert | 2004"
-                    content="Graphic Journey Expert — Adobe Systems"
-                  />
-                  <SkillCard 
-                    title="Educação | 2004"
-                    content="Princípios e Ações para o Educador — CEJA"
-                  />
-                  <SkillCard 
-                    title="Adobe Journey | 2008"
-                    content="Jornada de Design Gráfico — Adobe Eng-DTP e Multimídia"
-                  />
-                  <SkillCard 
-                    title="Design 5.0 | 2009"
-                    content="Design 5.0 — Lemon School"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <div className="grid grid-cols-1 gap-6 mb-8">
-                <SkillCard 
-                  title="Master's in Cinema and Video Arts | 2023-present"
-                  content="PPG-CINEAV — UNESPAR | Research Line: Creation Processes in Cinema and Video Arts | CineCriare Group (CNPq)"
-                />
-                <SkillCard 
-                  title="Postgraduate | 2016"
-                  content="Art Direction and Creative Strategies — Unicuritiba"
-                />
-                <SkillCard 
-                  title="Bachelor's Degree | 2010"
-                  content="Social Communication — Advertising and Propaganda — UTP - Tuiuti University of Paraná"
-                />
-              </div>
-
-              <div className="border-t border-border/30 pt-8">
-                <h3 className="bible-subtitle mb-6">Complementary Education</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <SkillCard 
-                    title="Graphic Design | 1999"
-                    content="Technical in Graphic Design — CEFET-PR"
-                  />
-                  <SkillCard 
-                    title="Cinema | 2004"
-                    content="Art Direction in Cinema — AIC - International Film Academy"
-                  />
-                  <SkillCard 
-                    title="Adobe Expert | 2004"
-                    content="Graphic Journey Expert — Adobe Systems"
-                  />
-                  <SkillCard 
-                    title="Education | 2004"
-                    content="Principles and Actions for the Educator — CEJA"
-                  />
-                  <SkillCard 
-                    title="Adobe Journey | 2008"
-                    content="Graphic Design Journey — Adobe Eng-DTP and Multimedia"
-                  />
-                  <SkillCard 
-                    title="Design 5.0 | 2009"
-                    content="Design 5.0 — Lemon School"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </BilingualSection>
-
-        <Separator className="bg-border/30" />
 
         {/* ЦАСТРО™ como Anti-Brand */}
         <BilingualSection className="bible-section">
