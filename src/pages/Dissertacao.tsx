@@ -115,7 +115,7 @@ const Dissertacao = () => {
         <BilingualSection className="bible-section">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Card Principal */}
-            <Card className="md:col-span-2 bg-black border-2 border-primary hover:border-primary transition-all duration-300 font-mono">
+            <Card className="md:col-span-2 bg-[#2a2a2a] border-2 border-primary hover:border-primary transition-all duration-300 font-mono">
               <CardHeader>
                 <CardTitle className="text-2xl md:text-3xl font-bold text-primary uppercase tracking-tight">CASATREZESTUDIO®</CardTitle>
                 <p className="text-sm text-muted-foreground/80 mt-2">
@@ -136,7 +136,7 @@ const Dissertacao = () => {
             </Card>
 
             {/* Card Concept */}
-            <Card className="bg-black border-2 border-primary/50 hover:border-primary transition-all duration-300 font-mono">
+            <Card className="bg-[#2a2a2a] border-2 border-primary/50 hover:border-primary transition-all duration-300 font-mono">
               <CardHeader>
                 <CardTitle className="text-lg font-bold text-primary uppercase tracking-tight">
                   <span className="lang-pt">Conceito</span>
@@ -152,7 +152,7 @@ const Dissertacao = () => {
             </Card>
 
             {/* Card Philosophy */}
-            <Card className="bg-black border-2 border-primary/50 hover:border-primary transition-all duration-300 font-mono">
+            <Card className="bg-[#2a2a2a] border-2 border-primary/50 hover:border-primary transition-all duration-300 font-mono">
               <CardHeader>
                 <CardTitle className="text-lg font-bold text-primary uppercase tracking-tight">
                   <span className="lang-pt">Filosofia</span>
@@ -168,7 +168,7 @@ const Dissertacao = () => {
             </Card>
 
             {/* Card Realization */}
-            <Card className="md:col-span-2 bg-black border-2 border-primary/50 hover:border-primary transition-all duration-300 font-mono">
+            <Card className="md:col-span-2 bg-[#2a2a2a] border-2 border-primary/50 hover:border-primary transition-all duration-300 font-mono">
               <CardHeader>
                 <CardTitle className="text-lg font-bold text-primary uppercase tracking-tight">
                   <span className="lang-pt">Realização</span>
@@ -199,7 +199,7 @@ const Dissertacao = () => {
         <BilingualSection className="bible-section">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Card Principal */}
-            <Card className="md:col-span-2 bg-black border-2 border-primary hover:border-primary transition-all duration-300 font-mono">
+            <Card className="md:col-span-2 bg-[#2a2a2a] border-2 border-primary hover:border-primary transition-all duration-300 font-mono">
               <CardHeader>
                 <CardTitle className="text-2xl md:text-3xl font-bold text-primary uppercase tracking-tight">LOWPRESSURE™</CardTitle>
                 <p className="text-sm text-muted-foreground/80 mt-2">
@@ -220,7 +220,7 @@ const Dissertacao = () => {
             </Card>
 
             {/* Card Concept */}
-            <Card className="bg-black border-2 border-primary/50 hover:border-primary transition-all duration-300 font-mono">
+            <Card className="bg-[#2a2a2a] border-2 border-primary/50 hover:border-primary transition-all duration-300 font-mono">
               <CardHeader>
                 <CardTitle className="text-lg font-bold text-primary uppercase tracking-tight">
                   <span className="lang-pt">Conceito</span>
@@ -236,7 +236,7 @@ const Dissertacao = () => {
             </Card>
 
             {/* Card Philosophy */}
-            <Card className="bg-black border-2 border-primary/50 hover:border-primary transition-all duration-300 font-mono">
+            <Card className="bg-[#2a2a2a] border-2 border-primary/50 hover:border-primary transition-all duration-300 font-mono">
               <CardHeader>
                 <CardTitle className="text-lg font-bold text-primary uppercase tracking-tight">
                   <span className="lang-pt">Filosofia</span>
@@ -252,7 +252,7 @@ const Dissertacao = () => {
             </Card>
 
             {/* Card Realization */}
-            <Card className="md:col-span-2 bg-black border-2 border-primary/50 hover:border-primary transition-all duration-300 font-mono">
+            <Card className="md:col-span-2 bg-[#2a2a2a] border-2 border-primary/50 hover:border-primary transition-all duration-300 font-mono">
               <CardHeader>
                 <CardTitle className="text-lg font-bold text-primary uppercase tracking-tight">
                   <span className="lang-pt">Realização</span>
@@ -275,7 +275,7 @@ const Dissertacao = () => {
         <BilingualSection className="bible-section">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Card Principal */}
-            <Card className="md:col-span-2 bg-black border-2 border-primary hover:border-primary transition-all duration-300 font-mono">
+            <Card className="md:col-span-2 bg-[#2a2a2a] border-2 border-primary hover:border-primary transition-all duration-300 font-mono">
               <CardHeader>
                 <CardTitle className="text-2xl md:text-3xl font-bold text-primary uppercase tracking-tight">LOWMOVIE™</CardTitle>
                 <p className="text-sm text-muted-foreground/80 mt-2">
@@ -296,7 +296,7 @@ const Dissertacao = () => {
             </Card>
 
             {/* Card Concept */}
-            <Card className="bg-black border-2 border-primary/50 hover:border-primary transition-all duration-300 font-mono">
+            <Card className="bg-[#2a2a2a] border-2 border-primary/50 hover:border-primary transition-all duration-300 font-mono">
               <CardHeader>
                 <CardTitle className="text-lg font-bold text-primary uppercase tracking-tight">
                   <span className="lang-pt">Conceito</span>
@@ -312,7 +312,7 @@ const Dissertacao = () => {
             </Card>
 
             {/* Card Symbolism -> Philosophy */}
-            <Card className="bg-black border-2 border-primary/50 hover:border-primary transition-all duration-300 font-mono">
+            <Card className="bg-[#2a2a2a] border-2 border-primary/50 hover:border-primary transition-all duration-300 font-mono">
               <CardHeader>
                 <CardTitle className="text-lg font-bold text-primary uppercase tracking-tight">
                   <span className="lang-pt">Filosofia</span>
@@ -328,7 +328,7 @@ const Dissertacao = () => {
             </Card>
 
             {/* Card Premiere/Lowbyrinth -> Realization */}
-            <Card className="md:col-span-2 bg-black border-2 border-primary/50 hover:border-primary transition-all duration-300 font-mono">
+            <Card className="md:col-span-2 bg-[#2a2a2a] border-2 border-primary/50 hover:border-primary transition-all duration-300 font-mono">
               <CardHeader>
                 <CardTitle className="text-lg font-bold text-primary uppercase tracking-tight">
                   <span className="lang-pt">Realização</span>
