@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { FeatureCard } from "@/components/FeatureCard";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { useTranslation } from "@/hooks/useTranslation";
 import { ChevronRight, ChevronLeft, Network, LayoutList } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -443,15 +444,34 @@ export const MindMap = () => {
             {/* Navigation */}
             <div className="flex flex-col gap-3 pt-4 border-t border-primary/20">
               <div className="flex items-center justify-between">
-                <Button
-                  onClick={() => setShowConnections(!showConnections)}
-                  variant="ghost"
-                  size="sm"
-                  className="gap-2"
-                >
-                  <Network className="h-4 w-4" />
-                  {language === 'pt' ? 'CONEXÕES' : 'CONNECTIONS'} [{showConnections ? 'ON' : 'OFF'}]
-                </Button>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <Button
+                        onClick={() => setShowConnections(!showConnections)}
+                        variant="ghost"
+                        size="sm"
+                        className={cn(
+                          "gap-2 transition-all",
+                          showConnections && "bg-primary/10 text-primary border border-primary/30"
+                        )}
+                      >
+                        <Network className={cn("h-4 w-4", showConnections && "animate-pulse")} />
+                        {language === 'pt' ? 'CONEXÕES' : 'CONNECTIONS'} [{showConnections ? 'ON' : 'OFF'}]
+                      </Button>
+                    </TooltipTrigger>
+                    <TooltipContent className="max-w-xs font-mono text-xs bg-background/95 border-primary/30">
+                      <p className="font-bold text-primary mb-1">
+                        {language === 'pt' ? '// VISUALIZAR CONEXÕES' : '// VIEW CONNECTIONS'}
+                      </p>
+                      <p className="text-muted-foreground">
+                        {language === 'pt' 
+                          ? 'Mostra como esta etapa se relaciona e alimenta outras etapas do processo criativo'
+                          : 'Shows how this step relates to and feeds other steps of the creative process'}
+                      </p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
               </div>
               
               <div className="flex flex-col sm:flex-row gap-3">
@@ -604,15 +624,34 @@ export const MindMap = () => {
                   )}
 
                   <div className="flex gap-2 pt-3 border-t border-primary/20">
-                    <Button
-                      onClick={() => setShowConnections(!showConnections)}
-                      variant="ghost"
-                      size="sm"
-                      className="gap-2 text-xs"
-                    >
-                      <Network className="h-3 w-3" />
-                      {language === 'pt' ? 'CONEXÕES' : 'CONNECTIONS'} [{showConnections ? 'ON' : 'OFF'}]
-                    </Button>
+                    <TooltipProvider>
+                      <Tooltip>
+                        <TooltipTrigger asChild>
+                          <Button
+                            onClick={() => setShowConnections(!showConnections)}
+                            variant="ghost"
+                            size="sm"
+                            className={cn(
+                              "gap-2 text-xs transition-all",
+                              showConnections && "bg-primary/10 text-primary border border-primary/30"
+                            )}
+                          >
+                            <Network className={cn("h-3 w-3", showConnections && "animate-pulse")} />
+                            {language === 'pt' ? 'CONEXÕES' : 'CONNECTIONS'} [{showConnections ? 'ON' : 'OFF'}]
+                          </Button>
+                        </TooltipTrigger>
+                        <TooltipContent className="max-w-xs font-mono text-xs bg-background/95 border-primary/30">
+                          <p className="font-bold text-primary mb-1">
+                            {language === 'pt' ? '// VISUALIZAR CONEXÕES' : '// VIEW CONNECTIONS'}
+                          </p>
+                          <p className="text-muted-foreground">
+                            {language === 'pt' 
+                              ? 'Mostra como esta etapa se relaciona e alimenta outras etapas do processo criativo'
+                              : 'Shows how this step relates to and feeds other steps of the creative process'}
+                          </p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
                   </div>
                 </div>
               )}
