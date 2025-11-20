@@ -117,7 +117,7 @@ export const VideoCard = ({ video, language, categoryLabel }: VideoCardProps) =>
                   href={video.specialLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-mono text-sm uppercase tracking-wider hover:bg-primary/90 transition-colors w-full"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-mono text-sm uppercase tracking-wider hover:bg-muted hover:text-foreground transition-colors w-full"
                 >
                   {language === "pt" ? "ASSISTIR VÍDEO COMPLETO" : "WATCH FULL VIDEO"}
                 </a>
