@@ -378,31 +378,8 @@ export const InterviewsTabs = () => {
               </div>
             </CardHeader>
             <CardContent>
-              {/* Slider de página única */}
-              <div className="relative w-full">
-                {/* Botão Anterior */}
-                {currentImageIndex > 0 && (
-                  <Button
-                    onClick={prevImage}
-                    disabled={isTransitioning}
-                    variant="ghost"
-                    size="icon"
-                    className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-10 
-                               h-12 w-12
-                               bg-black/70 hover:bg-black/90 
-                               border-2 border-white/20 hover:border-white/40
-                               shadow-xl hover:shadow-2xl
-                               backdrop-blur-sm
-                               transition-all duration-300 ease-out
-                               hover:scale-105 active:scale-95
-                               disabled:opacity-50 disabled:cursor-not-allowed
-                               group"
-                    aria-label="Página anterior"
-                  >
-                    <ChevronLeft className="h-6 w-6 text-white group-hover:translate-x-[-2px] transition-transform" />
-                  </Button>
-                )}
-
+              {/* Galeria com navegação por indicadores */}
+              <div className="w-full">
                 {/* Imagem com animação de transição */}
                 <div className="w-full bg-black/5 rounded-lg overflow-hidden border border-border/50 flex items-center justify-center min-h-[400px]">
                   <img
@@ -419,29 +396,6 @@ export const InterviewsTabs = () => {
                                 }`}
                   />
                 </div>
-
-                {/* Botão Próximo */}
-                {currentImageIndex < zineImages.length - 1 && (
-                  <Button
-                    onClick={nextImage}
-                    disabled={isTransitioning}
-                    variant="ghost"
-                    size="icon"
-                    className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-10 
-                               h-12 w-12
-                               bg-black/70 hover:bg-black/90 
-                               border-2 border-white/20 hover:border-white/40
-                               shadow-xl hover:shadow-2xl
-                               backdrop-blur-sm
-                               transition-all duration-300 ease-out
-                               hover:scale-105 active:scale-95
-                               disabled:opacity-50 disabled:cursor-not-allowed
-                               group"
-                    aria-label="Próxima página"
-                  >
-                    <ChevronRight className="h-6 w-6 text-white group-hover:translate-x-[2px] transition-transform" />
-                  </Button>
-                )}
 
                 {/* Indicadores de progresso melhorados */}
                 <div className="flex justify-center gap-2 mt-6">
