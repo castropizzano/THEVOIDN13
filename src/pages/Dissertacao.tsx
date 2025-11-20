@@ -187,7 +187,7 @@ const Dissertacao = () => {
               </CardHeader>
               <CardContent>
                 <p className="bible-body text-muted-foreground leading-relaxed">
-                  <span className="lang-pt">A casa número 13 como símbolo de resistência ao convencional. <span className="text-primary font-semibold">O azar transformado em potência criativa</span>. O estúdio opera na fronteira entre o comercial e o experimental, sem hierarquia entre ambos. Cada projeto — seja uma identidade visual para um cliente ou um filme autoral — recebe o mesmo rigor criativo.</span>
+                  <span className="lang-pt">A casa número 13 como símbolo de resistência ao convencional. <span className="text-primary font-semibold">O estigma transformado em potência criativa</span>. O estúdio opera na fronteira entre o comercial e o experimental, sem hierarquia entre ambos. Cada projeto — seja uma identidade visual para um cliente ou um filme autoral — recebe o mesmo rigor criativo.</span>
                   <span className="lang-en">House number 13 as a symbol of resistance to the conventional. <span className="text-primary font-semibold">The stigma transformed into creative power</span>. The studio operates on the border between commercial and experimental, without hierarchy between them. Each project — whether a visual identity for a client or an authorial film — receives the same creative rigor.</span>
                 </p>
               </CardContent>
