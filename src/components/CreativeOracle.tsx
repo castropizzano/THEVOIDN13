@@ -12,8 +12,10 @@ import { CompatibilityMatrix } from "./CreativeOracle/CompatibilityMatrix";
 import { HybridArchetypeReveal } from "./CreativeOracle/HybridArchetypeReveal";
 import { ContextualQuote } from "./CreativeOracle/ContextualQuote";
 import { PersonalizedAdvice } from "./CreativeOracle/PersonalizedAdvice";
+import { EvolutionAnalysis } from "./CreativeOracle/EvolutionAnalysis";
 import { contextualizedQuestions } from "./CreativeOracle/data/contextualizedQuestions";
 import { hybridArchetypes } from "./CreativeOracle/data/hybridArchetypes";
+import { useOracleHistory } from "@/hooks/useOracleHistory";
 
 interface CreativeOracleProps {
   open: boolean;
@@ -92,9 +94,11 @@ const archetypes = {
 
 export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
   const { language } = useLanguage();
-  const [mode, setMode] = useState<"learn" | "scan">("scan");
+  const { scans, saveScan, deleteScan, clearHistory, hasHistory } = useOracleHistory();
+  const [mode, setMode] = useState<"learn" | "scan" | "evolution">("scan");
   const [started, setStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [answers, setAnswers] = useState<number[]>([]);
   const [scores, setScores] = useState({ shadow: 0, punk: 0, buddy: 0, gi: 0 });
   const [processScores, setProcessScores] = useState({ observation: 0, cocreation: 0, documentation: 0, reflection: 0, expansion: 0 });
   const [showResults, setShowResults] = useState(false);
@@ -105,7 +109,9 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
     if (!open) {
       setStarted(false);
       setCurrentQuestion(0);
+      setAnswers([]);
       setScores({ shadow: 0, punk: 0, buddy: 0, gi: 0 });
+      setProcessScores({ observation: 0, cocreation: 0, documentation: 0, reflection: 0, expansion: 0 });
       setShowResults(false);
       audio.pause();
       audio.currentTime = 0;
@@ -123,6 +129,9 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
   }, [started, isMuted, audio]);
 
   const handleAnswer = (archetype: string, value: number, processWeight?: any) => {
+    const newAnswers = [...answers, value];
+    setAnswers(newAnswers);
+    
     setScores(prev => ({
       ...prev,
       [archetype]: prev[archetype as keyof typeof prev] + value
@@ -157,6 +166,38 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
     return sorted[1]?.[0];
   };
 
+  // Salvar scan automaticamente quando mostrar resultados
+  useEffect(() => {
+    if (showResults && scores.shadow > 0) {
+      const dominantArchetype = getDominantArchetype();
+      const archetypeMapping: Record<string, string> = {
+        shadow: 'Visionário',
+        punk: 'Provocador',
+        buddy: 'Artesão',
+        gi: 'Alquimista'
+      };
+      
+      saveScan({
+        archetypeScores: {
+          'Visionário': scores.shadow,
+          'Artesão': scores.buddy,
+          'Alquimista': scores.gi,
+          'Contador de Histórias': 0, // Placeholder
+          'Provocador': scores.punk,
+        },
+        processScores: {
+          'Observação': processScores.observation,
+          'Cocriação': processScores.cocreation,
+          'Documentação': processScores.documentation,
+          'Reflexão': processScores.reflection,
+          'Expansão': processScores.expansion,
+        },
+        dominantArchetype: archetypeMapping[dominantArchetype] || 'Visionário',
+        answers,
+      });
+    }
+  }, [showResults, scores, processScores, answers]);
+
   const handleStart = () => {
     setStarted(true);
   };
@@ -164,6 +205,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
   const handleReset = () => {
     setStarted(false);
     setCurrentQuestion(0);
+    setAnswers([]);
     setScores({ shadow: 0, punk: 0, buddy: 0, gi: 0 });
     setProcessScores({ observation: 0, cocreation: 0, documentation: 0, reflection: 0, expansion: 0 });
     setShowResults(false);
@@ -257,14 +299,25 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
           </DialogDescription>
         </DialogHeader>
 
-        <Tabs value={mode} onValueChange={(v) => setMode(v as "learn" | "scan")} className="w-full">
-          <TabsList className="grid w-full grid-cols-2 mb-6">
+        <Tabs value={mode} onValueChange={(v) => setMode(v as "learn" | "scan" | "evolution")} className="w-full">
+          <TabsList className="grid w-full grid-cols-3 mb-6">
             <TabsTrigger value="scan">{language === "pt" ? "SCAN" : "SCAN"}</TabsTrigger>
             <TabsTrigger value="learn">{language === "pt" ? "LEARN" : "LEARN"}</TabsTrigger>
+            <TabsTrigger value="evolution" disabled={!hasHistory}>
+              {language === "pt" ? "EVOLUÇÃO" : "EVOLUTION"}
+            </TabsTrigger>
           </TabsList>
 
           <TabsContent value="learn">
             <LearnMode />
+          </TabsContent>
+
+          <TabsContent value="evolution">
+            <EvolutionAnalysis 
+              scans={scans}
+              onDeleteScan={deleteScan}
+              onClearHistory={clearHistory}
+            />
           </TabsContent>
 
           <TabsContent value="scan">
