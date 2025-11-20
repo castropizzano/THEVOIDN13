@@ -24,24 +24,6 @@ const Transparency = () => {
         <Header />
         
         <main className="flex-1">
-          {/* Hero Section */}
-          <BilingualSection className="bible-section">
-            <div className="lang-pt text-center">
-              <h1 className="bible-title mb-4">TRANSPARÊNCIA TÉCNICA</h1>
-              <p className="bible-subtitle text-muted-foreground max-w-2xl mx-auto">
-                Documentação completa de como este site funciona—nada escondido, tudo verificável
-              </p>
-            </div>
-            <div className="lang-en text-center">
-              <h1 className="bible-title mb-4">TECHNICAL TRANSPARENCY</h1>
-              <p className="bible-subtitle text-muted-foreground max-w-2xl mx-auto">
-                Complete documentation of how this site works—nothing hidden, everything verifiable
-              </p>
-            </div>
-          </BilingualSection>
-
-          <Separator className="my-0" />
-
           {/* Architecture Overview */}
           <BilingualSection className="bible-section">
             <div className="lang-pt">
@@ -51,13 +33,13 @@ const Transparency = () => {
                 <CollectiveCard
                   title="Stack Tecnológico"
                   period="2025"
-                  description="Frontend: React 18.3.1 + TypeScript, Vite, Tailwind CSS, Radix UI. Backend (Opcional): Lovable Cloud, Edge Function (Deno), Lovable AI Gateway."
+                  description="Frontend: React 18.3.1 + TypeScript, Vite, Tailwind CSS, Radix UI. Backend opcional: Lovable Cloud, Edge Function (Deno), Lovable AI Gateway."
                 />
                 
                 <CollectiveCard
                   title="Proporção de Dados"
                   period="2025"
-                  description="95% estático (HTML/CSS/JS), 5% dinâmico opcional (apenas feature AI). Nenhum dado pessoal permanente armazenado."
+                  description="95% estático (HTML/CSS/JS), 5% dinâmico opcional (apenas feature AI). Não armazeno dados pessoais permanentes."
                 />
               </div>
             </div>
@@ -69,13 +51,13 @@ const Transparency = () => {
                 <CollectiveCard
                   title="Technology Stack"
                   period="2025"
-                  description="Frontend: React 18.3.1 + TypeScript, Vite, Tailwind CSS, Radix UI. Backend (Optional): Lovable Cloud, Edge Function (Deno), Lovable AI Gateway."
+                  description="Frontend: React 18.3.1 + TypeScript, Vite, Tailwind CSS, Radix UI. Optional backend: Lovable Cloud, Edge Function (Deno), Lovable AI Gateway."
                 />
                 
                 <CollectiveCard
                   title="Data Proportion"
                   period="2025"
-                  description="95% static (HTML/CSS/JS), 5% optional dynamic (AI feature only). No permanent personal data stored."
+                  description="95% static (HTML/CSS/JS), 5% optional dynamic (AI feature only). I do not store permanent personal data."
                 />
               </div>
             </div>
@@ -159,11 +141,11 @@ const Transparency = () => {
                 <CollectiveCard
                   title="De 13 Tabelas para 1 Tabela"
                   period="Novembro 2025"
-                  description="Descobrimos uma contradição crítica entre nossa filosofia e nossa arquitetura. A documentação prometia 'zero vigilância', mas a infraestrutura tinha tabelas ativas."
+                  description="Descobri uma contradição crítica entre a filosofia e a arquitetura. A documentação prometia 'zero vigilância', mas a infraestrutura tinha tabelas ativas."
                   highlight
                 />
                 
-                <div className="bg-destructive/10 border border-destructive/30 p-6 font-mono text-sm space-y-4">
+                <div className="bg-destructive/10 border-2 border-destructive/50 p-6 font-mono text-sm space-y-4">
                   <p className="font-bold text-destructive text-base">❌ Tabelas Deletadas:</p>
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• page_views - Rastreamento de visitas</li>
@@ -176,8 +158,8 @@ const Transparency = () => {
                   </ul>
                 </div>
 
-                <div className="bg-muted/50 p-6 font-mono text-sm space-y-4">
-                  <p className="font-bold text-primary text-base">✅ O que mantivemos:</p>
+                <div className="bg-muted/50 border-2 border-primary/50 p-6 font-mono text-sm space-y-4">
+                  <p className="font-bold text-primary text-base">✅ O que mantive:</p>
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• prompts - Biblioteca de prompts de IA (somente leitura pública)</li>
                     <li>• generate-cinematic-still - Edge function para geração de imagens (com validação de input)</li>
@@ -187,13 +169,13 @@ const Transparency = () => {
                 <CollectiveCard
                   title="O Problema"
                   period="2025"
-                  description="Essas tabelas tinham políticas RLS que permitiam inserção pública de dados. Como as credenciais do Supabase estão no código-fonte (public), qualquer pessoa poderia usar essas tabelas para rastrear usuários—mesmo que nunca as usássemos."
+                  description="Essas tabelas tinham políticas RLS que permitiam inserção pública de dados. Como as credenciais do Supabase estão no código-fonte (public), qualquer pessoa poderia usar essas tabelas para rastrear usuários—mesmo que eu nunca as usasse."
                 />
 
                 <CollectiveCard
                   title="A Solução"
                   period="2025"
-                  description="Deletamos todas as tabelas de rastreamento e autenticação. O site agora funciona 100% estático (exceto pela feature opcional de geração de imagens, que usa validação de input)."
+                  description="Deletei todas as tabelas de rastreamento e autenticação. O site agora funciona 100% estático (exceto pela feature opcional de geração de imagens, que usa validação de input)."
                 />
               </div>
             </div>
@@ -205,11 +187,11 @@ const Transparency = () => {
                 <CollectiveCard
                   title="From 13 Tables to 1 Table"
                   period="November 2025"
-                  description="We discovered a critical contradiction between our philosophy and our architecture. The documentation promised 'zero surveillance,' but the infrastructure had active tables."
+                  description="I discovered a critical contradiction between philosophy and architecture. The documentation promised 'zero surveillance,' but the infrastructure had active tables."
                   highlight
                 />
                 
-                <div className="bg-destructive/10 border border-destructive/30 p-6 font-mono text-sm space-y-4">
+                <div className="bg-destructive/10 border-2 border-destructive/50 p-6 font-mono text-sm space-y-4">
                   <p className="font-bold text-destructive text-base">❌ Deleted Tables:</p>
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• page_views - Page visit tracking</li>
@@ -222,8 +204,8 @@ const Transparency = () => {
                   </ul>
                 </div>
 
-                <div className="bg-muted/50 p-6 font-mono text-sm space-y-4">
-                  <p className="font-bold text-primary text-base">✅ What we kept:</p>
+                <div className="bg-muted/50 border-2 border-primary/50 p-6 font-mono text-sm space-y-4">
+                  <p className="font-bold text-primary text-base">✅ What I kept:</p>
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• prompts - AI prompt library (public read-only)</li>
                     <li>• generate-cinematic-still - Edge function for image generation (with input validation)</li>
@@ -233,13 +215,13 @@ const Transparency = () => {
                 <CollectiveCard
                   title="The Problem"
                   period="2025"
-                  description="These tables had RLS policies that allowed public data insertion. Since Supabase credentials are in the source code (public), anyone could use these tables to track users—even though we never used them."
+                  description="These tables had RLS policies that allowed public data insertion. Since Supabase credentials are in the source code (public), anyone could use these tables to track users—even though I never used them."
                 />
 
                 <CollectiveCard
                   title="The Solution"
                   period="2025"
-                  description="We deleted all tracking and authentication tables. The site now works 100% static (except for the optional image generation feature, which uses input validation)."
+                  description="I deleted all tracking and authentication tables. The site now works 100% static (except for the optional image generation feature, which uses input validation)."
                 />
               </div>
             </div>
@@ -259,9 +241,9 @@ const Transparency = () => {
                   description="Usado apenas para preferência de idioma (PT/EN). Expira quando você fecha o navegador. Nenhum cookie, nenhum localStorage permanente."
                 />
                 
-                <div className="bg-muted/50 p-6 font-mono text-sm">
-                  <p className="font-bold text-primary mb-3">O que armazenamos:</p>
-                  <code className="text-muted-foreground">sessionStorage.setItem('language', 'pt' | 'en')</code>
+                <div className="bg-muted/50 border-2 border-primary/50 p-6 font-mono text-sm">
+                  <p className="font-bold text-primary mb-3">O que armazeno:</p>
+                  <code className="text-muted-foreground">sessionStorage.setItem(&apos;language&apos;, &apos;pt&apos; | &apos;en&apos;)</code>
                 </div>
               </div>
             </div>
@@ -276,9 +258,9 @@ const Transparency = () => {
                   description="Used only for language preference (PT/EN). Expires when you close the browser. No cookies, no permanent localStorage."
                 />
                 
-                <div className="bg-muted/50 p-6 font-mono text-sm">
-                  <p className="font-bold text-primary mb-3">What we store:</p>
-                  <code className="text-muted-foreground">sessionStorage.setItem('language', 'pt' | 'en')</code>
+                <div className="bg-muted/50 border-2 border-primary/50 p-6 font-mono text-sm">
+                  <p className="font-bold text-primary mb-3">What I store:</p>
+                  <code className="text-muted-foreground">sessionStorage.setItem(&apos;language&apos;, &apos;pt&apos; | &apos;en&apos;)</code>
                 </div>
               </div>
             </div>
@@ -295,7 +277,7 @@ const Transparency = () => {
                 <CollectiveCard
                   title="Gerador de Still Cinemático"
                   period="2025"
-                  description="Única feature dinâmica do site. Envia prompt para edge function Lovable Cloud (Supabase) → Lovable AI Gateway → Google Gemini API. Nenhum dado pessoal coletado ou armazenado."
+                  description="Única feature dinâmica do site. Envia prompt para edge function Lovable Cloud (Supabase) → Lovable AI Gateway → Google Gemini API. Não coleto nem armazeno dados pessoais."
                   highlight
                 />
                 
@@ -327,7 +309,7 @@ const Transparency = () => {
                 <CollectiveCard
                   title="Cinematic Still Generator"
                   period="2025"
-                  description="Only dynamic feature on the site. Sends prompt to Lovable Cloud edge function (Supabase) → Lovable AI Gateway → Google Gemini API. No personal data collected or stored."
+                  description="Only dynamic feature on the site. Sends prompt to Lovable Cloud edge function (Supabase) → Lovable AI Gateway → Google Gemini API. I do not collect or store personal data."
                   highlight
                 />
                 
@@ -364,13 +346,13 @@ const Transparency = () => {
                 <CollectiveCard
                   title="1. Navegação Normal"
                   period="2025"
-                  description="Usuário acessa site → HTML/CSS/JS estático carregado do Lovable CDN → Nenhum dado enviado para servidores → Preferência de idioma salva em sessionStorage (local)."
+                  description="Você acessa o site → HTML/CSS/JS estático carregado do Lovable CDN → Nenhum dado enviado para servidores → Preferência de idioma salva em sessionStorage (local)."
                 />
                 
                 <CollectiveCard
                   title="2. Feature AI (Opcional)"
                   period="2025"
-                  description="Usuário digita prompt → Frontend valida input → Envia para edge function Lovable Cloud → Edge function envia para Lovable AI Gateway → Lovable AI chama Google Gemini → Imagem gerada retorna → Exibida no frontend → Nenhum dado armazenado permanentemente."
+                  description="Você digita prompt → Frontend valida input → Envia para edge function Lovable Cloud → Edge function envia para Lovable AI Gateway → Lovable AI chama Google Gemini → Imagem gerada retorna → Exibida no frontend → Nenhum dado armazenado permanentemente."
                 />
               </div>
             </div>
@@ -382,13 +364,13 @@ const Transparency = () => {
                 <CollectiveCard
                   title="1. Normal Navigation"
                   period="2025"
-                  description="User accesses site → Static HTML/CSS/JS loaded from Lovable CDN → No data sent to servers → Language preference saved in sessionStorage (local)."
+                  description="You access the site → Static HTML/CSS/JS loaded from Lovable CDN → No data sent to servers → Language preference saved in sessionStorage (local)."
                 />
                 
                 <CollectiveCard
                   title="2. AI Feature (Optional)"
                   period="2025"
-                  description="User types prompt → Frontend validates input → Sends to Lovable Cloud edge function → Edge function sends to Lovable AI Gateway → Lovable AI calls Google Gemini → Generated image returns → Displayed in frontend → No data stored permanently."
+                  description="You type prompt → Frontend validates input → Sends to Lovable Cloud edge function → Edge function sends to Lovable AI Gateway → Lovable AI calls Google Gemini → Generated image returns → Displayed in frontend → No data stored permanently."
                 />
               </div>
             </div>
@@ -522,7 +504,7 @@ const Transparency = () => {
                 <CollectiveCard
                   title="Privacy by Design"
                   period="2025"
-                  description="Not collecting data is not a feature — it's the default architecture. The best way to protect user data is to simply not have it."
+                  description="Not collecting data is not a feature — it is the default architecture. The best way to protect user data is to simply not have it."
                   highlight
                 />
                 
