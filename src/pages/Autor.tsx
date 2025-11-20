@@ -348,7 +348,7 @@ DaVinci Resolve"
                 onClick={() => setShowGuidelinePT(true)}
               />
             </div>
-            <div className="lang-en mb-4">
+            <div className="lang-en mb-1">
               <img 
                 src={castroGuidelineEN} 
                 alt="ЦАСТРО™ Anti-Brand Guideline — English"
