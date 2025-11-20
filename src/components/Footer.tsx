@@ -15,10 +15,6 @@ const Footer = () => {
             <p className="text-xs sm:text-sm text-muted-foreground h-[1.5rem] flex items-center">
               {t("artisticMemorial")}
             </p>
-            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-start items-start sm:items-center">
-              <SurveillanceFreeBadge size="sm" />
-              <PollinationsAIBadge size="sm" />
-            </div>
           </div>
           <div className="text-left md:text-right space-y-2">
             <p className="text-xs sm:text-sm text-muted-foreground h-[1.5rem] flex items-center md:justify-end">
@@ -27,9 +23,15 @@ const Footer = () => {
             <p className="text-xs sm:text-sm text-muted-foreground h-[1.5rem] flex items-center md:justify-end">
               Licensed under CC BY-NC-SA 4.0
             </p>
-            <div className="flex justify-start md:justify-end">
-              <TechnicalTransparencyBadge size="sm" />
-            </div>
+          </div>
+        </div>
+        
+        {/* Badges em linha horizontal */}
+        <div className="mt-6 pt-4 border-t border-border/30">
+          <div className="flex flex-wrap gap-2 sm:gap-3 justify-start items-center">
+            <SurveillanceFreeBadge size="sm" />
+            <PollinationsAIBadge size="sm" />
+            <TechnicalTransparencyBadge size="sm" />
           </div>
         </div>
       </div>
