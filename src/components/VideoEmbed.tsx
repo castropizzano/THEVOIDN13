@@ -12,8 +12,10 @@ export const VideoEmbed = ({ source, videoId, title }: VideoEmbedProps) => {
       case "vimeo":
         return `https://player.vimeo.com/video/${videoId}?title=0&byline=0&portrait=0`;
       case "internet-archive":
-        // Extract the item ID (before the first /) for Internet Archive embeds
+        // For Internet Archive videos
+        // videoId format: "collection-id/filename.mp4" or just "collection-id"
         const itemId = videoId.includes("/") ? videoId.split("/")[0] : videoId;
+        // Use proper Internet Archive embed with autoplay disabled
         return `https://archive.org/embed/${itemId}`;
       case "youtube":
         return `https://www.youtube.com/embed/${videoId}`;

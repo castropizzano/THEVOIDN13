@@ -5,6 +5,7 @@ import {
   Dialog,
   DialogContent,
   DialogTitle,
+  DialogDescription,
 } from "@/components/ui/dialog";
 import { VideoEmbed } from "./VideoEmbed";
 
@@ -91,6 +92,9 @@ export const VideoCard = ({ video, language, categoryLabel }: VideoCardProps) =>
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <DialogContent className="max-w-6xl w-[95vw] p-0 overflow-hidden">
           <DialogTitle className="sr-only">{title}</DialogTitle>
+          <DialogDescription className="sr-only">
+            {subtitle ? `${title} - ${subtitle}` : title}
+          </DialogDescription>
           <div className="relative w-full">
             <VideoEmbed
               source={video.source}
