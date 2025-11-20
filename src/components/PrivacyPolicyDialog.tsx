@@ -60,6 +60,45 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
               </div>
 
               <div className="space-y-4">
+                <h3 className="bible-subtitle">3. ZERO RASTREAMENTO</h3>
+                <p className="bible-body text-sm">
+                  Sem Google Analytics, Facebook Pixel ou quaisquer ferramentas de rastreamento 
+                  de terceiros. A navegação é completamente privada e anônima.
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <h3 className="bible-subtitle">4. RECURSO EXPERIMENTAL DE IA (OPCIONAL)</h3>
+                <p className="bible-body text-sm">
+                  O site inclui um recurso experimental: <strong>Gerador de Cenas Cinematográficas</strong>.
+                </p>
+                <p className="bible-body text-sm font-semibold">
+                  Como funciona:
+                </p>
+                <ul className="bible-body text-sm space-y-1 ml-6">
+                  <li>• Você escreve um prompt de texto</li>
+                  <li>• O prompt é enviado para uma edge function (backend)</li>
+                  <li>• A edge function usa Lovable AI (google/gemini-2.5-flash-image-preview)</li>
+                  <li>• Uma imagem é gerada e retornada para você</li>
+                </ul>
+                <p className="bible-body text-sm font-semibold text-destructive">
+                  O que NÃO é feito:
+                </p>
+                <ul className="bible-body text-sm space-y-1 ml-6">
+                  <li>❌ Prompts não são armazenados</li>
+                  <li>❌ Prompts não são associados a usuários (sem autenticação)</li>
+                  <li>❌ Prompts não são vendidos ou compartilhados</li>
+                </ul>
+                <p className="bible-body text-sm">
+                  <strong>Limitação</strong>: Este recurso usa os créditos de IA do desenvolvedor, 
+                  portanto pode haver limites de uso ou indisponibilidade temporária.
+                </p>
+                <p className="bible-body text-sm">
+                  <strong>É opcional</strong>: Você pode navegar 95% do site sem usar este recurso.
+                </p>
+              </div>
+
+              <div className="space-y-4">
                 <h3 className="bible-subtitle">5. NATUREZA DO PROJETO</h3>
                 <p className="bible-body text-sm">
                   Este é um memorial artístico acadêmico desenvolvido como parte de pesquisa 
