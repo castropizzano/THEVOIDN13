@@ -710,13 +710,6 @@ DaVinci Resolve"
 
         {/* Conclusão em Processo */}
         <BilingualSection className="bible-section">
-          <div className="bible-block">
-            <h2 className="bible-title">
-              <span className="lang-pt">CONCLUSÃO EM PROCESSO</span>
-              <span className="lang-en">CONCLUSION IN PROCESS</span>
-            </h2>
-          </div>
-
           <div className="bible-bilingual-grid bible-block">
             <div>
               <div>
