@@ -2030,16 +2030,14 @@ const Index = () => {
               portugueseContent={
                 <div>
                   <p className="bible-body">
-                    Um aplicativo de autodescoberta guiado pelos fundamentos conceituais de THEVØIDN13. Seis perguntas filosóficas sobre criação, sombra e ruído revelam o arquétipo que habita o processo de quem atravessa o percurso.
-                    O Oráculo transforma metodologia em experiência: o pensamento vira travessia, e não apenas leitura.
+                    Uma jornada de seis perguntas sobre seu processo criativo. Reflita sobre como você cria, colabora e transforma ideias. Descubra seu arquétipo criativo dominante e receba insights personalizados sobre suas forças, desafios e caminhos de desenvolvimento.
                   </p>
                 </div>
               }
               englishContent={
                 <div>
                   <p className="bible-body">
-                    A self-discovery application guided by THEVØIDN13's conceptual foundations. Six philosophical questions about creation, shadow, and noise reveal the archetype dwelling within the process of those who traverse the path.
-                    The Oracle transforms methodology into experience: thought becomes crossing, not merely reading.
+                    A journey of six questions about your creative process. Reflect on how you create, collaborate and transform ideas. Discover your dominant creative archetype and receive personalized insights about your strengths, challenges and development paths.
                   </p>
                 </div>
               }
