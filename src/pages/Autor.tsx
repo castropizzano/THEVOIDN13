@@ -9,6 +9,7 @@ import { PDFViewer } from "@/components/PDFViewer";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Minimize2 } from "lucide-react";
+import { SkillCard } from "@/components/SkillCard";
 import heroImage from "@/assets/cover-author.png";
 import castroGuidelinePT from "@/assets/castro-guideline-pt.png";
 import castroGuidelineEN from "@/assets/castro-guideline-en.png";
@@ -117,102 +118,74 @@ const Autor = () => {
 
           <div className="bible-bilingual-grid bible-block">
             <div>
-              <div>
-                <h3 className="bible-subtitle">[DESIGN & ARTE]</h3>
-                <ul className="space-y-2">
-                  <li className="bible-body">• Adobe Illustrator</li>
-                  <li className="bible-body">• Adobe InDesign</li>
-                  <li className="bible-body">• Adobe Fresco</li>
-                  <li className="bible-body">• Procreate</li>
-                </ul>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <SkillCard 
+                  title="Design & Arte"
+                  content="Procreate / Illustrator / InDesign"
+                />
+                <SkillCard 
+                  title="Foto & Edição"
+                  content="Lightroom / Photoshop"
+                />
+                <SkillCard 
+                  title="Vídeo & Pós"
+                  content="Premiere / After Effects / DaVinci Resolve"
+                />
+                <SkillCard 
+                  title="3D & Experimental"
+                  content="Blender / Ultimaker Cura / UCreality 3D"
+                />
+                <SkillCard 
+                  title="IA & Digital"
+                  content="GPT / Claude / Gemini / DeepSeek / ChatGPT / Lovable / ElevenLabs"
+                />
+                <SkillCard 
+                  title="Idiomas"
+                  content="PT nativo / ES intermediário / EN intermediário"
+                />
               </div>
-
-              <div>
-                <h3 className="bible-subtitle">[FOTO & EDIÇÃO]</h3>
-                <ul className="space-y-2">
-                  <li className="bible-body">• Adobe Photoshop</li>
-                  <li className="bible-body">• Adobe Lightroom</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="bible-subtitle">[VÍDEO & PÓS PRODUÇÃO]</h3>
-                <ul className="space-y-2">
-                  <li className="bible-body">• Blender</li>
-                  <li className="bible-body">• Adobe Premiere Pro</li>
-                  <li className="bible-body">• Adobe After Effects</li>
-                  <li className="bible-body">• DaVinci Resolve</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="bible-subtitle">[EXPERIMENTAL]</h3>
-                <ul className="space-y-2">
-                  <li className="bible-body">• Ultimaker Cura</li>
-                  <li className="bible-body">• UCreality 3D</li>
-                  <li className="bible-body">• Figma</li>
-                  <li className="bible-body">• AI Tools: Claude, Gemini, Midjourney, ChatGPT, Lovable</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="bible-subtitle">[IDIOMAS]</h3>
-                <p className="bible-body">Português (nativo) • Espanhol (intermediário) • Inglês (intermediário)</p>
-              </div>
-
-              <div>
-                <h3 className="bible-subtitle">[REFERENCES]</h3>
-                <p className="bible-body">Minimalista/Experimentação • Futurista/Construtivismo • Cibercultura/Semiótica • Tipografia/Infografismos • Economia Criativa • Underground • Op-Art</p>
+              <div className="mt-6">
+                <SkillCard 
+                  title="Referências"
+                  content="Minimalismo / Experimentação / Futurismo / Construtivismo / Cibercultura / Semiótica / Tipografia / Infografismos / Economia Criativa / Underground / Op-Art"
+                  className="w-full"
+                />
               </div>
             </div>
 
             <div>
-              <div>
-                <h3 className="bible-subtitle">[DESIGN & ART]</h3>
-                <ul className="space-y-2">
-                  <li className="bible-body">• Adobe Illustrator</li>
-                  <li className="bible-body">• Adobe InDesign</li>
-                  <li className="bible-body">• Adobe Fresco</li>
-                  <li className="bible-body">• Procreate</li>
-                </ul>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <SkillCard 
+                  title="Design & Art"
+                  content="Procreate / Illustrator / InDesign"
+                />
+                <SkillCard 
+                  title="Photo & Editing"
+                  content="Lightroom / Photoshop"
+                />
+                <SkillCard 
+                  title="Video & Post"
+                  content="Premiere / After Effects / DaVinci Resolve"
+                />
+                <SkillCard 
+                  title="3D & Experimental"
+                  content="Blender / Ultimaker Cura / UCreality 3D"
+                />
+                <SkillCard 
+                  title="AI & Digital"
+                  content="GPT / Claude / Gemini / DeepSeek / ChatGPT / Lovable / ElevenLabs"
+                />
+                <SkillCard 
+                  title="Languages"
+                  content="PT native / ES intermediate / EN intermediate"
+                />
               </div>
-
-              <div>
-                <h3 className="bible-subtitle">[PHOTO & EDITING]</h3>
-                <ul className="space-y-2">
-                  <li className="bible-body">• Adobe Photoshop</li>
-                  <li className="bible-body">• Adobe Lightroom</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="bible-subtitle">[VIDEO & POST PRODUCTION]</h3>
-                <ul className="space-y-2">
-                  <li className="bible-body">• Blender</li>
-                  <li className="bible-body">• Adobe Premiere Pro</li>
-                  <li className="bible-body">• Adobe After Effects</li>
-                  <li className="bible-body">• DaVinci Resolve</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="bible-subtitle">[EXPERIMENTAL]</h3>
-                <ul className="space-y-2">
-                  <li className="bible-body">• Ultimaker Cura</li>
-                  <li className="bible-body">• UCreality 3D</li>
-                  <li className="bible-body">• Figma</li>
-                  <li className="bible-body">• AI Tools: Claude, Gemini, Midjourney, ChatGPT, Lovable</li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="bible-subtitle">[LANGUAGES]</h3>
-                <p className="bible-body">Portuguese (native) • Spanish (intermediate) • English (intermediate)</p>
-              </div>
-
-              <div>
-                <h3 className="bible-subtitle">[REFERENCES]</h3>
-                <p className="bible-body">Minimalist/Experimentation • Futurist/Constructivism • Cyberculture/Semiotics • Typography/Infographics • Creative Economy • Underground • Op-Art</p>
+              <div className="mt-6">
+                <SkillCard 
+                  title="References"
+                  content="Minimalism / Experimentation / Futurism / Constructivism / Cyberculture / Semiotics / Typography / Infographics / Creative Economy / Underground / Op-Art"
+                  className="w-full"
+                />
               </div>
             </div>
           </div>
@@ -233,27 +206,65 @@ const Autor = () => {
 
           <div className="bible-bilingual-grid bible-block">
             <div>
-              <p className="bible-body">Metodologia processual, experimental e reflexiva do projeto THEVØIDN13. Um ciclo contínuo de cinco etapas:</p>
+              <p className="bible-body mb-6">Metodologia processual, experimental e reflexiva do projeto THEVØIDN13. Um ciclo contínuo de cinco etapas:</p>
               
-              <p className="bible-body"><span className="font-semibold">Observação:</span> Análise do fluxo criativo e documentação de padrões.</p>
-              <p className="bible-body"><span className="font-semibold">Cocriação:</span> Interação com IAs (Claude, Gemini, Midjourney) como extensões simbólicas.</p>
-              <p className="bible-body"><span className="font-semibold">Documentação:</span> Registro contínuo de camadas, decisões e estados mentais.</p>
-              <p className="bible-body"><span className="font-semibold">Reflexão:</span> Transformação dos registros em narrativas estéticas, filosóficas e técnicas.</p>
-              <p className="bible-body"><span className="font-semibold">Expansão:</span> Compartilhamento de aprendizados através de arte, código e metodologia.</p>
-              
-              <p className="bible-body">Transparência radical. Autoria compartilhada mas assinada. Pesquisa como criação.</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <SkillCard 
+                  title="Observação"
+                  content="Análise do fluxo criativo e documentação de padrões"
+                />
+                <SkillCard 
+                  title="Cocriação"
+                  content="Interação com IAs (Claude, Gemini, Midjourney) como extensões simbólicas"
+                />
+                <SkillCard 
+                  title="Documentação"
+                  content="Registro contínuo de camadas, decisões e estados mentais"
+                />
+                <SkillCard 
+                  title="Reflexão"
+                  content="Transformação dos registros em narrativas estéticas, filosóficas e técnicas"
+                />
+                <SkillCard 
+                  title="Expansão"
+                  content="Compartilhamento de aprendizados através de arte, código e metodologia"
+                />
+                <SkillCard 
+                  title="Princípios"
+                  content="Transparência radical. Autoria compartilhada mas assinada. Pesquisa como criação"
+                />
+              </div>
             </div>
 
             <div>
-              <p className="bible-body">Processual, experimental and reflexive methodology of the THEVØIDN13 project. A continuous cycle of five stages:</p>
+              <p className="bible-body mb-6">Processual, experimental and reflexive methodology of the THEVØIDN13 project. A continuous cycle of five stages:</p>
               
-              <p className="bible-body"><span className="font-semibold">Observation:</span> Analysis of creative flow and pattern documentation.</p>
-              <p className="bible-body"><span className="font-semibold">Co-creation:</span> Interaction with AIs (Claude, Gemini, Midjourney) as symbolic extensions.</p>
-              <p className="bible-body"><span className="font-semibold">Documentation:</span> Continuous recording of layers, decisions and mental states.</p>
-              <p className="bible-body"><span className="font-semibold">Reflection:</span> Transformation of records into aesthetic, philosophical and technical narratives.</p>
-              <p className="bible-body"><span className="font-semibold">Expansion:</span> Sharing learnings through art, code and methodology.</p>
-              
-              <p className="bible-body">Radical transparency. Shared but signed authorship. Research as creation.</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <SkillCard 
+                  title="Observation"
+                  content="Analysis of creative flow and pattern documentation"
+                />
+                <SkillCard 
+                  title="Co-creation"
+                  content="Interaction with AIs (Claude, Gemini, Midjourney) as symbolic extensions"
+                />
+                <SkillCard 
+                  title="Documentation"
+                  content="Continuous recording of layers, decisions and mental states"
+                />
+                <SkillCard 
+                  title="Reflection"
+                  content="Transformation of records into aesthetic, philosophical and technical narratives"
+                />
+                <SkillCard 
+                  title="Expansion"
+                  content="Sharing learnings through art, code and methodology"
+                />
+                <SkillCard 
+                  title="Principles"
+                  content="Radical transparency. Shared but signed authorship. Research as creation"
+                />
+              </div>
             </div>
           </div>
         </BilingualSection>
@@ -273,22 +284,64 @@ const Autor = () => {
 
           <div className="bible-bilingual-grid bible-block">
             <div>
-              <div>
-                <p className="bible-body">A jornada começa no skate. Não como esporte, mas como modo de habitar o mundo. O corpo em movimento pelo espaço urbano. A apropriação criativa da cidade. Das manobras na rua às manobras no vídeo. Da câmera VHS à edição digital.</p>
-                
-                <p className="bible-body">2008: Funda CasaTrezeStudio. Começa a construir sua própria infraestrutura criativa. Design, vídeo, direção de arte. O coletivo como espaço de experimentação. 2014-2016: UDNFS no MuMA — primeira exposição institucional, democratização audiovisual DIY. 2019: Subtropikal Festival — criação de ID Visual do zero aplicando processos criativos ao vivo. 2020: LowPressure crew se formaliza. O skate ganha forma de movimento cultural. 2019-2022: Produção de LowMovie. O processo como obra.</p>
-                
-                <p className="bible-body">2023: Estreia de LowMovie no Cine Passeio. Do underground à tela grande. Ingresso no mestrado em Cinema e Artes do Vídeo (UNESPAR). A prática vira pesquisa. A pesquisa alimenta a prática. 2024: ⊂ødx — videoarte e instalação urbana sobre resistência e apagamento. 2024-2025: THEVØIDN13 emerge. A anti-marca que condensa tudo que veio antes.</p>
+              <p className="bible-body mb-6">Castro Pizzano (цастро™): Da publicidade ao cinema experimental, da rua ao museu, da prática à pesquisa. Uma linha do tempo que não é linear, mas espiral.</p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <SkillCard 
+                  title="CasaTrezeStudio® | 2008-atual"
+                  content="Fundação do laboratório criativo independente. Transita entre produção autoral e comercial, conectando design gráfico, audiovisual e experimentação"
+                />
+                <SkillCard 
+                  title="Formação | 2010-2016"
+                  content="Graduação em Publicidade e Propaganda. Trabalho em agências, produtoras e coletivos de rua. Direção de arte comercial e autoral"
+                />
+                <SkillCard 
+                  title="Pós & Docência | 2017-2020"
+                  content="Pós-graduação em Direção de Arte e Estratégias Criativas. Docência em Economia Criativa na Universidade Positivo"
+                />
+                <SkillCard 
+                  title="LowPressure™ | 2020-atual"
+                  content="Montagem do crew com skatistas-produtores. Laboratório de práticas visuais, estéticas em movimento e processos coletivos"
+                />
+                <SkillCard 
+                  title="LowMovie™ | 2019-2023"
+                  content="Videoarte + documentário + cinema experimental sobre o skate como linguagem estética. Estreia no Cine Passeio em 2023"
+                />
+                <SkillCard 
+                  title="THEVØIDN13 | 2024-2025"
+                  content="Mestrado em Cinema e Artes do Vídeo (UNESPAR). A anti-marca que condensa tudo que veio antes. Prática vira pesquisa"
+                />
               </div>
             </div>
 
             <div>
-              <div>
-                <p className="bible-body">The journey begins with skateboarding. Not as a sport, but as a way of inhabiting the world. The body moving through urban space. The creative appropriation of the city. From tricks on the street to tricks in video. From VHS camera to digital editing.</p>
-                
-                <p className="bible-body">2008: Founds CasaTrezeStudio. Begins building his own creative infrastructure. Design, video, art direction. The collective as experimentation space. 2014-2016: UDNFS at MuMA — first institutional exhibition, DIY audiovisual democratization. 2019: Subtropikal Festival — creating visual identity from scratch applying live creative processes. 2020: LowPressure crew formalizes. Skateboarding takes shape as cultural movement. 2019-2022: LowMovie production. Process as work.</p>
-                
-                <p className="bible-body">2023: LowMovie premiere at Cine Passeio. From underground to the big screen. Enrollment in Master's in Cinema and Video Arts (UNESPAR). Practice becomes research. Research feeds practice. 2024: ⊂ødx — video art and urban installation about resistance and erasure. 2024-2025: THEVØIDN13 emerges. The anti-brand that condenses everything that came before.</p>
+              <p className="bible-body mb-6">Castro Pizzano (цастро™): From advertising to experimental cinema, from street to museum, from practice to research. A timeline that is not linear, but spiral.</p>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <SkillCard 
+                  title="CasaTrezeStudio® | 2008-present"
+                  content="Foundation of independent creative laboratory. Transits between authorial and commercial production, connecting graphic design, audiovisual and experimentation"
+                />
+                <SkillCard 
+                  title="Education | 2010-2016"
+                  content="Degree in Advertising and Propaganda. Work in agencies, production companies and street collectives. Commercial and authorial art direction"
+                />
+                <SkillCard 
+                  title="Postgrad & Teaching | 2017-2020"
+                  content="Postgraduate in Art Direction and Creative Strategies. Teaching in Creative Economy at Universidade Positivo"
+                />
+                <SkillCard 
+                  title="LowPressure™ | 2020-present"
+                  content="Assembly of crew with skater-producers. Laboratory for visual practices, aesthetics in motion and collective processes"
+                />
+                <SkillCard 
+                  title="LowMovie™ | 2019-2023"
+                  content="Video art + documentary + experimental cinema about skating as aesthetic language. Premiere at Cine Passeio in 2023"
+                />
+                <SkillCard 
+                  title="THEVØIDN13 | 2024-2025"
+                  content="Master's in Cinema and Video Arts (UNESPAR). The anti-brand that condenses everything that came before. Practice becomes research"
+                />
               </div>
             </div>
           </div>
@@ -309,91 +362,95 @@ const Autor = () => {
 
           <div className="bible-bilingual-grid bible-block">
             <div>
-              <div>
-                <div className="border-l-2 border-primary pl-6 bible-block">
-                  <p className="bible-body text-muted-foreground">2023-2025 (em curso)</p>
-                  <h3 className="bible-body font-bold">Mestrado em Cinema e Artes do Vídeo</h3>
-                  <p className="bible-body">UNESPAR - Universidade Estadual do Paraná</p>
-                  <p className="bible-body text-muted-foreground">
-                    Pesquisa: Processos criativos colaborativos, subcultura do skate, cinema documental
-                  </p>
-                  
-                  <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 bible-media">
-                    <p className="bible-body font-semibold">QUALIFICAÇÃO APROVADA</p>
-                    <p className="bible-link">11 de julho de 2025 — PPG-CINEAV/UNESPAR</p>
-                    <p className="bible-link">
-                      Título: "LowMovie™ e o Labirinto Criativo: Subjetividade, Subcultura e a Construção de uma Estética em Movimento no Coletivo LowPressure™"
-                    </p>
-                  </div>
-                </div>
+              <div className="grid grid-cols-1 gap-6 mb-8">
+                <SkillCard 
+                  title="Mestrado em Cinema e Artes do Vídeo | 2023-atual"
+                  content="PPG-CINEAV — UNESPAR | Linha de Pesquisa: Processos de Criação no Cinema e nas Artes do Vídeo | Grupo CineCriare (CNPq)"
+                />
+                <SkillCard 
+                  title="Pós-Graduação | 2016"
+                  content="Direção de Arte e Estratégias Criativas — Unicuritiba"
+                />
+                <SkillCard 
+                  title="Graduação | 2010"
+                  content="Comunicação Social — Publicidade e Propaganda — UTP - Universidade Tuiuti do Paraná"
+                />
+              </div>
 
-                <div className="border-l-2 border-muted pl-6 bible-block">
-                  <p className="bible-body text-muted-foreground">2014</p>
-                  <h3 className="bible-body font-bold">Pós-Graduado em Direção de Arte e Estratégias Criativas</h3>
-                  <p className="bible-body">Unicuritiba</p>
-                </div>
-
-                <div className="border-l-2 border-muted pl-6 bible-block">
-                  <p className="bible-body text-muted-foreground">2005</p>
-                  <h3 className="bible-body font-bold">Graduado em Comunicação Social — Publicidade e Propaganda</h3>
-                  <p className="bible-body">UTP - Universidade Tuiuti do Paraná</p>
-                </div>
-
-                <div className="bible-block border-t border-border pt-8">
-                  <h4 className="bible-subtitle">Formação Complementar</h4>
-                  <div className="space-y-2">
-                    <p className="bible-link">• Técnico em Design Gráfico — CEFET-PR [1999]</p>
-                    <p className="bible-link">• Dir. de Arte em Cinema — AIC - Academia Internacional de Cinema [2004]</p>
-                    <p className="bible-link">• Graphic Journey Expert — Adobe Systems [2004]</p>
-                    <p className="bible-link">• Princípios e Ações para o Educador — CEJA [2004]</p>
-                    <p className="bible-link">• Jornada de Design Gráfico — Adobe Eng-DTP e Multimídia [2008]</p>
-                    <p className="bible-link">• Design 5.0 — Lemon School [2009]</p>
-                  </div>
+              <div className="border-t border-border/30 pt-8">
+                <h3 className="bible-subtitle mb-6">Formação Complementar</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <SkillCard 
+                    title="Design Gráfico | 1999"
+                    content="Técnico em Design Gráfico — CEFET-PR"
+                  />
+                  <SkillCard 
+                    title="Cinema | 2004"
+                    content="Direção de Arte em Cinema — AIC - Academia Internacional de Cinema"
+                  />
+                  <SkillCard 
+                    title="Adobe Expert | 2004"
+                    content="Graphic Journey Expert — Adobe Systems"
+                  />
+                  <SkillCard 
+                    title="Educação | 2004"
+                    content="Princípios e Ações para o Educador — CEJA"
+                  />
+                  <SkillCard 
+                    title="Adobe Journey | 2008"
+                    content="Jornada de Design Gráfico — Adobe Eng-DTP e Multimídia"
+                  />
+                  <SkillCard 
+                    title="Design 5.0 | 2009"
+                    content="Design 5.0 — Lemon School"
+                  />
                 </div>
               </div>
             </div>
 
             <div>
-              <div>
-                <div className="border-l-2 border-primary pl-6 bible-block">
-                  <p className="bible-body text-muted-foreground">2023-2025 (ongoing)</p>
-                  <h3 className="bible-body font-bold">Master's Degree in Cinema and Video Arts</h3>
-                  <p className="bible-body">UNESPAR - State University of Paraná</p>
-                  <p className="bible-body text-muted-foreground">
-                    Research: Collaborative creative processes, skateboarding subculture, documentary cinema
-                  </p>
-                  
-                  <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 bible-media">
-                    <p className="bible-body font-semibold">QUALIFICATION APPROVED</p>
-                    <p className="bible-link">July 11, 2025 — PPG-CINEAV/UNESPAR</p>
-                    <p className="bible-link">
-                      Title: "LowMovie™ and the Creative Labyrinth: Subjectivity, Subculture and the Construction of an Aesthetic in Motion in the LowPressure™ Collective"
-                    </p>
-                  </div>
-                </div>
+              <div className="grid grid-cols-1 gap-6 mb-8">
+                <SkillCard 
+                  title="Master's in Cinema and Video Arts | 2023-present"
+                  content="PPG-CINEAV — UNESPAR | Research Line: Creation Processes in Cinema and Video Arts | CineCriare Group (CNPq)"
+                />
+                <SkillCard 
+                  title="Postgraduate | 2016"
+                  content="Art Direction and Creative Strategies — Unicuritiba"
+                />
+                <SkillCard 
+                  title="Bachelor's Degree | 2010"
+                  content="Social Communication — Advertising and Propaganda — UTP - Tuiuti University of Paraná"
+                />
+              </div>
 
-                <div className="border-l-2 border-muted pl-6 bible-block">
-                  <p className="bible-body text-muted-foreground">2014</p>
-                  <h3 className="bible-body font-bold">Postgraduate Degree in Art Dir. and Creative Strategies</h3>
-                  <p className="bible-body">Unicuritiba</p>
-                </div>
-
-                <div className="border-l-2 border-muted pl-6 bible-block">
-                  <p className="bible-body text-muted-foreground">2005</p>
-                  <h3 className="bible-body font-bold">Bachelor's Degree in Social Communication — Advertising and Propaganda</h3>
-                  <p className="bible-body">UTP - Tuiuti University of Paraná</p>
-                </div>
-
-                <div className="bible-block border-t border-border pt-8">
-                  <h4 className="bible-subtitle">Additional Training</h4>
-                  <div className="space-y-2">
-                    <p className="bible-link">• Technical Degree in Graphic Design — CEFET-PR [1999]</p>
-                    <p className="bible-link">• Art Direction in Cinema — AIC - International Cinema Academy [2004]</p>
-                    <p className="bible-link">• Graphic Journey Expert — Adobe Systems [2004]</p>
-                    <p className="bible-link">• Principles and Actions for Educators — CEJA [2004]</p>
-                    <p className="bible-link">• Graphic Design Journey — Adobe Eng-DTP and Multimedia [2008]</p>
-                    <p className="bible-link">• Design 5.0 — Lemon School [2009]</p>
-                  </div>
+              <div className="border-t border-border/30 pt-8">
+                <h3 className="bible-subtitle mb-6">Complementary Education</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <SkillCard 
+                    title="Graphic Design | 1999"
+                    content="Technical in Graphic Design — CEFET-PR"
+                  />
+                  <SkillCard 
+                    title="Cinema | 2004"
+                    content="Art Direction in Cinema — AIC - International Film Academy"
+                  />
+                  <SkillCard 
+                    title="Adobe Expert | 2004"
+                    content="Graphic Journey Expert — Adobe Systems"
+                  />
+                  <SkillCard 
+                    title="Education | 2004"
+                    content="Principles and Actions for the Educator — CEJA"
+                  />
+                  <SkillCard 
+                    title="Adobe Journey | 2008"
+                    content="Graphic Design Journey — Adobe Eng-DTP and Multimedia"
+                  />
+                  <SkillCard 
+                    title="Design 5.0 | 2009"
+                    content="Design 5.0 — Lemon School"
+                  />
                 </div>
               </div>
             </div>
