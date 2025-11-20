@@ -137,11 +137,7 @@ const Videos = () => {
             portugueseContent={
               <div className="text-center bible-block space-y-6 mb-12">
                 <p className="bible-body max-w-3xl mx-auto">
-                  Esta é uma seleção essencial dos meus projetos — uma amostra das experimentações visuais que conduzem meu trabalho.
-                  Cada filme, peça ou estudo aqui apresentado carrega sua própria linguagem, ritmo e atmosfera, mas todos compartilham o mesmo DNA criativo que atravessa minhas obras.
-                </p>
-                <p className="bible-body max-w-3xl mx-auto">
-                  Para conhecer mais projetos — coletivos, autorais, comerciais, culturais, musicais, documentais e experimentais — explore também os portfólios completos nos botões para Vimeo e Behance.
+                  Uma seleção condensada dos projetos em que atuo. Em cada um deles, transito entre conceito, design, direção de arte, direção de fotografia, edição e pós-produção, sempre de acordo com o que a obra pede. Cada projeto tem sua própria identidade, mas todos orbitam o mesmo eixo estético que define o meu trabalho. Para ver outros projetos coletivos, autorais, comerciais, culturais, musicais, documentais e experimentais, acesse os portfólios completos no Vimeo e no Behance.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
                   <Button
@@ -184,11 +180,7 @@ const Videos = () => {
             englishContent={
               <div className="text-center bible-block space-y-6 mb-12">
                 <p className="bible-body max-w-3xl mx-auto">
-                  This is an essential selection of my projects — a sample of the visual experiments that drive my work.
-                  Each film, piece or study presented here carries its own language, rhythm and atmosphere, but all share the same creative DNA that runs through my works.
-                </p>
-                <p className="bible-body max-w-3xl mx-auto">
-                  To discover more projects — collective, authorial, commercial, cultural, musical, documentary and experimental — also explore the complete portfolios via the buttons for Vimeo and Behance.
+                  A condensed selection of the projects I work on. In each one, I move between concept, design, art direction, cinematography, editing and post-production, always according to what the work demands. Each project has its own identity, but they all orbit the same aesthetic axis that defines my work. To see other collective, authorial, commercial, cultural, musical, documentary and experimental projects, access the complete portfolios on Vimeo and Behance.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
                   <Button
