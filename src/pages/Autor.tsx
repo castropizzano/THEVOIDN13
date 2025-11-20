@@ -9,8 +9,7 @@ import { PDFViewer } from "@/components/PDFViewer";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Minimize2 } from "lucide-react";
-import heroImage from "@/assets/author-hero.png";
-import heroImageMobile from "@/assets/author-hero-mobile.png";
+import heroImage from "@/assets/cover-author.png";
 import castroGuidelinePT from "@/assets/castro-guideline-pt.png";
 import castroGuidelineEN from "@/assets/castro-guideline-en.png";
 
@@ -43,16 +42,12 @@ const Autor = () => {
       <main>
         {/* Hero Image */}
         <section className="w-full min-h-screen flex items-center justify-center overflow-hidden bg-black pt-16 sm:pt-20 md:pt-24">
-          <picture className="w-full h-full">
-            <source media="(max-width: 768px)" srcSet={heroImageMobile} />
-            <source media="(min-width: 769px)" srcSet={heroImage} />
-            <img 
-              src={heroImage} 
-              alt="CASTRO PIZZANO" 
-              className="w-full h-full object-cover md:object-contain"
-              loading="eager"
-            />
-          </picture>
+          <img 
+            src={heroImage} 
+            alt="CASTRO PIZZANO" 
+            className="w-full h-full object-cover object-center"
+            loading="eager"
+          />
         </section>
 
         {/* Nome */}
