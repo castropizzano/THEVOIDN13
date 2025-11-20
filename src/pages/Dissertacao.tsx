@@ -596,8 +596,10 @@ const Dissertacao = () => {
             </div>
 
             {/* Case Studies and Videos */}
-            <div className="bg-card/80 border border-primary/30 rounded-lg p-6 hover:border-primary/50 transition-colors">
-              <h4 className="font-mono text-accent font-bold mb-4">[LOWPRESSURE™]</h4>
+            <div className="bg-card/80 border-2 border-primary/30 rounded-lg p-8 hover:border-primary/50 transition-colors">
+              <h4 className="font-mono text-primary font-bold mb-4">
+                [LOWPRESSURE™]
+              </h4>
               <a 
                 href="https://castropizzano.com/lowpressure" 
                 target="_blank" 
@@ -610,7 +612,7 @@ const Dissertacao = () => {
             </div>
 
             {/* Dissertação - Coming Soon */}
-            <div className="bg-card/80 border-2 border-primary/30 rounded-lg p-8">
+            <div className="bg-card/80 border-2 border-primary/30 rounded-lg p-8 hover:border-primary/50 transition-colors">
               <h4 className="font-mono text-primary font-bold mb-4">
                 <span className="lang-pt">[DISSERTAÇÃO_DE_MESTRADO]</span>
                 <span className="lang-en">[MASTER'S_DISSERTATION]</span>
