@@ -39,18 +39,27 @@ Curitiba, Brazil — 2025
 **Technical Stack:**
 - React 18 + TypeScript + Vite
 - Tailwind CSS + shadcn/ui components
-- Lovable Cloud backend (Supabase)
+- Mostly static architecture (95% frontend)
+- Optional AI feature via Lovable Cloud (5%)
 - Vimeo API integration for video portfolio
 - SEO optimized with structured data
 - Performance optimized with lazy loading
 - Responsive design for all devices
+- Zero tracking, zero analytics, zero cookies
 
 **Interactive Tools:**
 - Creative Oracle — AI-powered artistic guidance
-- Comic Generator — Transform ideas into visual narratives
+- Comic Generator — Optional AI feature (experimental)
 - Mind Map — Visual exploration of project concepts
-- Prompt Library — Collection of creative prompts
+- Prompt Library — Static collection of creative prompts
 - Audio narration — Multilingual conceptual content
+
+**Privacy & Transparency:**
+- Zero tracking, zero analytics, zero cookies
+- Minimal sessionStorage (banner UX only)
+- No personal data collection
+- Honest documentation about what's used
+- LGPD/GDPR compliant by design
 
 **Security:**
 - 95/100 security score
