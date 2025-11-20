@@ -131,7 +131,7 @@ const Dissertacao = () => {
                 <p className="bible-body">Coletivo Criativo fundado em 2008. Estúdio pós-contemporâneo de design e vídeo. Associação de produtores criativos independentes que opera como laboratório de criação autoral, cultural e comercial, conectando pessoas, ideias e projetos.</p>
                 
                 <h3 className="bible-subtitle">Conceito</h3>
-                <p className="bible-body">CasaTrezeStudio não é empresa. É organismo vivo. Laboratório onde criadores independentes se encontram para transformar ideias em matéria. Nasceu da necessidade de criar fora dos sistemas tradicionais, construindo sua própria infraestrutura criativa.</p>
+                <p className="bible-body">CasaTrezeStudio não é empresa. É organismo vivo. Laboratório onde criadores independentes se encontram para transformar ideias em matéria. Nasceu da necessidade de criar fora dos sistemas tradicionais, construindo infraestrutura criativa própria. 17 anos de resistência e reinvenção.</p>
                 
                 <h3 className="bible-subtitle">Serviços</h3>
                 <p className="bible-body"><span className="font-semibold">Design Gráfico:</span> Identidades visuais, branding, editorial</p>
@@ -377,10 +377,10 @@ const Dissertacao = () => {
                 </div>
                 
                 <h3 className="bible-subtitle">Escuta como Operação Epistemológica</h3>
-                <p className="bible-body">A metodologia ancora-se na escuta como operação epistemológica e no afeto como vibração criadora. Uma presença encarnada que produz conhecimento em relação. Os afetos atuam como forças relacionais e mobilizadoras, deslocam certezas, ativam perguntas, redesenham caminhos. É o ser afetado que move a pesquisa, emergindo na vulnerabilidade partilhada, na escuta que acolhe o outro e o espaço.</p>
+                <p className="bible-body">A metodologia ancora-se na escuta como operação epistemológica e no afeto como vibração criadora. Uma presença encarnada que produz conhecimento em relação. Os afetos atuam como forças relacionais e mobilizadoras, deslocam certezas, ativam perguntas, redesenham caminhos. O ser afetado move a pesquisa, emergindo na vulnerabilidade partilhada, na escuta que acolhe o outro e o espaço.</p>
                 
                 <h3 className="bible-subtitle">Criação como Pesquisa</h3>
-                <p className="bible-body">Toda ação praticada numa experiência modifica quem a pratica e quem a sofre. Pesquisar arte é também um momento de criação. O LowMovie™ atua como força propulsora, convocando outra escuta, outro modo de olhar, escrever e intervir. Um gesto comprometido com o risco, com o desconhecido e com as intensidades que apenas o encontro ativa. Pesquisa e criação acontecem em simultaneidade, como modos de olhar, agir e transformar o mundo.</p>
+                <p className="bible-body">Toda ação praticada numa experiência modifica quem a pratica e quem a sofre. Pesquisar arte é também um momento de criação. LowMovie™ atua como força propulsora, convocando outra escuta, outro modo de olhar, escrever e intervir. Um gesto comprometido com o risco, com o desconhecido e com as intensidades que apenas o encontro ativa. Pesquisa e criação acontecem em simultaneidade, como modos de olhar, agir e transformar o mundo.</p>
               </div>
             </div>
 
@@ -492,15 +492,15 @@ const Dissertacao = () => {
           <div className="bible-block">
             <div className="lang-pt">
               <div>
-                <p className="bible-body">A pesquisa de mestrado investiga processos criativos colaborativos a partir da produção de LowMovie. Como uma crew de skate se torna coletivo criativo? Como a subcultura do skate gera modos específicos de fazer cinema? Como documentar sem domesticar?</p>
-                <p className="bible-body">Metodologia autoetnográfica. Análise fílmica. Entrevistas em profundidade. Diário de campo. Mas também: skate sessions como coleta de dados. Edição de vídeo como análise.</p>
+                <p className="bible-body">A pesquisa investiga processos criativos colaborativos a partir da produção de LowMovie. Como uma crew de skate se torna coletivo criativo? Como a subcultura do skate gera modos específicos de fazer cinema? Como documentar sem domesticar?</p>
+                <p className="bible-body">Metodologia autoetnográfica. Análise fílmica. Entrevistas em profundidade. Diário de campo. Skate sessions como coleta de dados. Edição de vídeo como análise.</p>
               </div>
             </div>
 
             <div className="lang-en">
               <div>
-                <p className="bible-body">The master's research investigates collaborative creative processes from LowMovie's production. How does a skate crew become a creative collective? How does skate subculture generate specific ways of making cinema? How to document without domesticating?</p>
-                <p className="bible-body">Autoethnographic methodology. Film analysis. In-depth interviews. Field diary. But also: skate sessions as data collection. Video editing as analysis.</p>
+                <p className="bible-body">The research investigates collaborative creative processes from LowMovie's production. How does a skate crew become a creative collective? How does skate subculture generate specific ways of making cinema? How to document without domesticating?</p>
+                <p className="bible-body">Autoethnographic methodology. Film analysis. In-depth interviews. Field diary. Skate sessions as data collection. Video editing as analysis.</p>
               </div>
             </div>
           </div>
