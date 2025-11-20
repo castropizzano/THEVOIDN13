@@ -24,6 +24,7 @@ interface VideoCardProps {
     year: string;
     category: string;
     specialLink?: string;
+    objectPosition?: string;
   };
   language: "pt" | "en";
   categoryLabel: string;
@@ -58,13 +59,14 @@ export const VideoCard = ({ video, language, categoryLabel }: VideoCardProps) =>
             src={getThumbnailUrl()}
             alt={title}
             loading="lazy"
-            className="h-full w-full object-cover object-center transition-all duration-500 grayscale group-hover:grayscale-0"
+            className="h-full w-full object-cover transition-all duration-500 grayscale group-hover:grayscale-0"
+            style={{ objectPosition: video.objectPosition || 'center' }}
           />
           
           {/* Letterbox Overlay - Barras Horizontais */}
           <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-0 left-0 right-0 h-[10%] bg-black" />
-            <div className="absolute bottom-0 left-0 right-0 h-[10%] bg-black" />
+            <div className="absolute top-0 left-0 right-0 h-[12%] bg-black" />
+            <div className="absolute bottom-0 left-0 right-0 h-[12%] bg-black" />
           </div>
           
           {/* Category Badge - No Rounded, Top Position */}

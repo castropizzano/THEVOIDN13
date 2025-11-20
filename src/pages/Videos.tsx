@@ -17,6 +17,7 @@ interface CuratedVideo {
   year: string;
   category: string;
   specialLink?: string;
+  objectPosition?: string;
 }
 
 const curatedVideos: CuratedVideo[] = [
@@ -59,7 +60,8 @@ const curatedVideos: CuratedVideo[] = [
     title: { pt: "DIGITAL PURGE", en: "DIGITAL PURGE" },
     subtitle: { pt: "NON-GRATA", en: "NON-GRATA" },
     year: "2022", 
-    category: "music-video" 
+    category: "music-video",
+    objectPosition: "center 45%"
   },
   { 
     source: "vimeo", 
@@ -67,7 +69,8 @@ const curatedVideos: CuratedVideo[] = [
     title: { pt: "MOLOTOV", en: "MOLOTOV" },
     subtitle: { pt: "NON-GRATA", en: "NON-GRATA" },
     year: "2022", 
-    category: "music-video" 
+    category: "music-video",
+    objectPosition: "center 45%"
   },
   { 
     source: "vimeo", 
@@ -83,7 +86,8 @@ const curatedVideos: CuratedVideo[] = [
     title: { pt: "NRB X TSTRW", en: "NRB X TSTRW" },
     subtitle: { pt: "PROD. TRAUMATOPIA", en: "PROD. TRAUMATOPIA" },
     year: "2020", 
-    category: "music-video" 
+    category: "music-video",
+    objectPosition: "center 40%"
   },
   { 
     source: "vimeo", 
@@ -91,7 +95,8 @@ const curatedVideos: CuratedVideo[] = [
     title: { pt: "CURITOWN", en: "CURITOWN" },
     subtitle: { pt: "FCC", en: "FCC" },
     year: "2019", 
-    category: "documentário" 
+    category: "documentário",
+    objectPosition: "center 40%"
   }
 ];
 
