@@ -602,6 +602,36 @@ const Dissertacao = () => {
 
         <Separator className="bg-border/30" />
 
+        {/* ASSISTIR LOWMOVIE - SEÇÃO ANTES DA DOCUMENTAÇÃO */}
+        <BilingualSection className="bible-section">
+          <div className="bilingual-grid bible-block">
+            <div className="bilingual-col">
+              <h2 className="bible-title">ASSISTIR LOWMOVIE™</h2>
+            </div>
+            <div className="bilingual-col">
+              <h2 className="bible-title">WATCH LOWMOVIE™</h2>
+            </div>
+          </div>
+
+          <div className="bible-block">
+            <div className="relative w-full">
+              {/* 16:9 Aspect Ratio Container */}
+              <div className="relative w-full pb-[56.25%] bg-black rounded-lg overflow-hidden border border-primary/30">
+                <iframe
+                  src="https://player.vimeo.com/video/819353942?title=0&byline=0&portrait=0"
+                  title="LOWMOVIE™ Full Video"
+                  className="absolute top-0 left-0 w-full h-full border-0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </BilingualSection>
+
+        <Separator className="bg-border/30" />
+
         {/* Documentation - ÚLTIMA SEÇÃO */}
         <BilingualSection className="bible-section">
           <div className="bilingual-grid bible-block">
@@ -652,17 +682,6 @@ const Dissertacao = () => {
                 </a>
               </div>
 
-              <div className="bg-card/80 border border-primary/30 rounded-lg p-6 hover:border-primary/50 transition-colors">
-                <h4 className="font-mono text-accent font-bold mb-4">[LOWMOVIE™]</h4>
-                <a 
-                  href="https://youtu.be/wcYBh6_DqO8" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="bible-link hover:underline block font-mono text-sm"
-                >
-                  // Vídeo Completo LowMovie™ (2023) / Full Video LowMovie™ (2023)
-                </a>
-              </div>
             </div>
 
             {/* Dissertação - Coming Soon */}
