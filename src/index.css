@@ -442,12 +442,12 @@
 
   /* Esconder conteúdo PT quando idioma é EN */
   [data-language="en"] .lang-pt {
-    display: none;
+    display: none !important;
   }
 
   /* Esconder conteúdo EN quando idioma é PT */
   [data-language="pt"] .lang-en {
-    display: none;
+    display: none !important;
   }
 
   /* Legacy headings (manter compatibilidade) */
