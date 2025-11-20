@@ -11,8 +11,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Minimize2 } from "lucide-react";
 import { SkillCard } from "@/components/SkillCard";
-import { CollectiveCard } from "@/components/CollectiveCard";
-import { Film, Users, Building2, Clapperboard } from "lucide-react";
 import heroImage from "@/assets/cover-author.png";
 import castroGuidelinePT from "@/assets/castro-guideline-pt.png";
 import castroGuidelineEN from "@/assets/castro-guideline-en.png";
@@ -638,32 +636,20 @@ DaVinci Resolve"
               <h3 className="bible-subtitle mb-6">PROJETOS MATRICIAIS</h3>
               <p className="bible-body mb-8">Três projetos funcionam como órgãos do mesmo organismo criativo:</p>
               
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <CollectiveCard
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <SkillCard 
                   title="LOWMOVIE™"
-                  period="2019-2023"
-                  role="Criador / Diretor"
-                  description="Filme-manifesto sobre skateboarding, subculturas e processos colaborativos. Estreou no Vila Ida (16/12/2022) e tornou-se objeto central da pesquisa de mestrado."
-                  tags={["Videoarte", "Documentário", "Cine Experimental"]}
-                  highlight
+                  content="2019-2023 | Criador / Diretor | Filme-manifesto sobre skateboarding, subculturas e processos colaborativos. Videoarte · Documentário · Cine Experimental"
                 />
                 
-                <CollectiveCard
+                <SkillCard 
                   title="LOWPRESSURE™"
-                  period="2020-atual"
-                  role="Membro Fundador"
-                  description="Coletivo de skatistas-artistas nas interseções entre rua, vídeo e cultura. Dois membros representaram o Brasil nas Olimpíadas de Paris 2024: Luigi Cini e Augusto Akio 'Japinha'."
-                  tags={["Skate", "Cultura Visual", "Coletivo"]}
-                  highlight
+                  content="2020-atual | Membro Fundador | Coletivo de skatistas-artistas. Dois membros nas Olimpíadas Paris 2024: Luigi Cini e Augusto Akio 'Japinha'. Skate · Cultura Visual · Coletivo"
                 />
                 
-                <CollectiveCard
+                <SkillCard 
                   title="CASATREZESTUDIO®"
-                  period="2008-atual"
-                  role="Fundador"
-                  description="Laboratório criativo independente. Transita entre produção autoral e comercial, conectando design gráfico, audiovisual e experimentação."
-                  tags={["Design", "Audiovisual", "Laboratório"]}
-                  highlight
+                  content="2008-atual | Fundador | Laboratório criativo independente entre autoral e comercial. Design · Audiovisual · Laboratório"
                 />
               </div>
 
@@ -682,32 +668,20 @@ DaVinci Resolve"
               <h3 className="bible-subtitle mb-6">MATRIX PROJECTS</h3>
               <p className="bible-body mb-8">Three projects function as organs of the same creative organism:</p>
               
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <CollectiveCard
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <SkillCard 
                   title="LOWMOVIE™"
-                  period="2019-2023"
-                  role="Creator / Director"
-                  description="Manifesto-film about skateboarding, subcultures and collaborative processes. Premiered at Vila Ida (12/16/2022) and became central object of master's research."
-                  tags={["Video Art", "Documentary", "Exp. Cinema"]}
-                  highlight
+                  content="2019-2023 | Creator / Director | Manifesto-film about skateboarding, subcultures and collaborative processes. Video Art · Documentary · Exp. Cinema"
                 />
                 
-                <CollectiveCard
+                <SkillCard 
                   title="LOWPRESSURE™"
-                  period="2020-present"
-                  role="Founding Member"
-                  description="Collective of skater-artists at intersections between street, video and culture. Two members represented Brazil at Paris 2024 Olympics: Luigi Cini and Augusto Akio 'Japinha'."
-                  tags={["Skate", "Visual Culture", "Collective"]}
-                  highlight
+                  content="2020-present | Founding Member | Collective of skater-artists. Two members at Paris 2024 Olympics: Luigi Cini and Augusto Akio 'Japinha'. Skate · Visual Culture · Collective"
                 />
                 
-                <CollectiveCard
+                <SkillCard 
                   title="CASATREZESTUDIO®"
-                  period="2008-present"
-                  role="Founder"
-                  description="Independent creative laboratory. Transits between authorial and commercial production, connecting graphic design, audiovisual and experimentation."
-                  tags={["Design", "Audiovisual", "Laboratory"]}
-                  highlight
+                  content="2008-present | Founder | Independent creative laboratory between authorial and commercial. Design · Audiovisual · Laboratory"
                 />
               </div>
 
