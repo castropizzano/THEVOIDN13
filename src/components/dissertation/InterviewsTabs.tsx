@@ -4,8 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { PDFViewer } from "@/components/PDFViewer";
-import { FileText, ChevronLeft, ChevronRight } from "lucide-react";
-import zine01 from "@/assets/zine/zine_01.png";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import zine02 from "@/assets/zine/zine_02.png";
 import zine03 from "@/assets/zine/zine_03.png";
 import zine04 from "@/assets/zine/zine_04.png";
@@ -153,9 +152,9 @@ export const InterviewsTabs = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
 
   const zineImages = [
-    zine01, zine02, zine03, zine04, zine05, 
+    zine16, zine02, zine03, zine04, zine05, 
     zine06, zine07, zine08, zine09, zine10,
-    zine11, zine12, zine13, zine14, zine15, zine16
+    zine11, zine12, zine13, zine14, zine15
   ];
 
   const nextImage = () => {
