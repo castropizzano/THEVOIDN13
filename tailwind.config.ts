@@ -15,6 +15,8 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Manrope', 'sans-serif'],
+        mono: ['Courier Prime', 'Courier New', 'monospace'],
+        serif: ['Crimson Text', 'Georgia', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",

@@ -117,8 +117,8 @@ const Dissertacao = () => {
             {/* Card Principal */}
             <Card className="md:col-span-2 bg-card/50 border-2 border-primary hover:border-primary/80 transition-all duration-300">
               <CardHeader>
-                <CardTitle className="bible-title text-primary">CASATREZESTUDIO®</CardTitle>
-                <p className="bible-subtitle text-muted-foreground mt-2">
+                <CardTitle className="bible-title text-primary font-mono uppercase tracking-wider">CASATREZESTUDIO®</CardTitle>
+                <p className="bible-subtitle text-muted-foreground mt-2 font-mono">
                   <span className="lang-pt">2008-Presente</span>
                   <span className="lang-en">2008-Present</span>
                 </p>
@@ -128,7 +128,7 @@ const Dissertacao = () => {
                 </p>
               </CardHeader>
               <CardContent>
-                <p className="bible-body text-muted-foreground">
+                <p className="bible-body text-muted-foreground font-serif leading-relaxed">
                   <span className="lang-pt">Coletivo Criativo fundado em 2008. Estúdio pós-contemporâneo de design e vídeo. Associação de produtores criativos independentes que opera como <span className="text-primary font-semibold">laboratório de criação autoral, cultural e comercial</span>, conectando pessoas, ideias e projetos.</span>
                   <span className="lang-en">Creative Collective founded in 2008. Post-contemporary studio of design and video. Association of independent creative producers operating as a <span className="text-primary font-semibold">laboratory of authorial, cultural and commercial creation</span>, connecting people, ideas and projects.</span>
                 </p>
@@ -138,13 +138,13 @@ const Dissertacao = () => {
             {/* Card Concept */}
             <Card className="bg-card/50 border-2 border-primary/50 hover:border-primary transition-all duration-300">
               <CardHeader>
-                <CardTitle className="bible-subtitle text-primary uppercase">
+                <CardTitle className="bible-subtitle text-primary uppercase font-mono tracking-wider">
                   <span className="lang-pt">Conceito</span>
                   <span className="lang-en">Concept</span>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="bible-body text-muted-foreground leading-relaxed">
+                <p className="bible-body text-muted-foreground leading-relaxed font-serif">
                   <span className="lang-pt">CasaTrezeStudio não é empresa. É <span className="text-primary font-semibold">organismo vivo</span>. Laboratório onde criadores independentes se encontram para transformar ideias em matéria. Nasceu da necessidade de criar fora dos sistemas tradicionais, construindo infraestrutura criativa própria. <span className="text-primary font-semibold">17 anos de resistência e reinvenção</span>.</span>
                   <span className="lang-en">CasaTrezeStudio isn't a company. It's a <span className="text-primary font-semibold">living organism</span>. Laboratory where independent creators meet to transform ideas into matter. Born from the need to create outside traditional systems, building its own creative infrastructure. <span className="text-primary font-semibold">17 years of resistance and reinvention</span>.</span>
                 </p>
@@ -154,13 +154,13 @@ const Dissertacao = () => {
             {/* Card Philosophy */}
             <Card className="bg-card/50 border-2 border-primary/50 hover:border-primary transition-all duration-300">
               <CardHeader>
-                <CardTitle className="bible-subtitle text-primary uppercase">
+                <CardTitle className="bible-subtitle text-primary uppercase font-mono tracking-wider">
                   <span className="lang-pt">Filosofia</span>
                   <span className="lang-en">Philosophy</span>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="bible-body text-muted-foreground leading-relaxed">
+                <p className="bible-body text-muted-foreground leading-relaxed font-serif">
                   <span className="lang-pt">A casa número 13 como símbolo de resistência ao convencional. <span className="text-primary font-semibold">O estigma transformado em potência criativa</span>. O estúdio opera na fronteira entre o comercial e o experimental, sem hierarquia entre ambos. Cada projeto recebe o mesmo rigor criativo.</span>
                   <span className="lang-en">House number 13 as a symbol of resistance to the conventional. <span className="text-primary font-semibold">The stigma transformed into creative power</span>. The studio operates on the border between commercial and experimental, without hierarchy between them. Each project receives the same creative rigor.</span>
                 </p>
@@ -170,20 +170,20 @@ const Dissertacao = () => {
             {/* Card Realization */}
             <Card className="md:col-span-2 bg-card/50 border-2 border-primary/50 hover:border-primary transition-all duration-300">
               <CardHeader>
-                <CardTitle className="bible-subtitle text-primary uppercase">
+                <CardTitle className="bible-subtitle text-primary uppercase font-mono tracking-wider">
                   <span className="lang-pt">Realização</span>
                   <span className="lang-en">Realization</span>
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="lang-pt">
+                  <div className="lang-pt font-serif">
                     <p className="bible-body text-muted-foreground"><span className="text-primary font-semibold">Design Gráfico:</span> Identidades visuais, branding, editorial</p>
                     <p className="bible-body text-muted-foreground"><span className="text-primary font-semibold">Vídeo:</span> Documentários, videoclipes, conteúdo digital</p>
                     <p className="bible-body text-muted-foreground"><span className="text-primary font-semibold">Direção de Arte:</span> Projetos culturais, campanhas, eventos</p>
                     <p className="bible-body text-muted-foreground"><span className="text-primary font-semibold">Curadoria:</span> Projetos experimentais e autorais</p>
                   </div>
-                  <div className="lang-en">
+                  <div className="lang-en font-serif">
                     <p className="bible-body text-muted-foreground"><span className="text-primary font-semibold">Graphic Design:</span> Visual identities, branding, editorial</p>
                     <p className="bible-body text-muted-foreground"><span className="text-primary font-semibold">Video:</span> Documentaries, music videos, digital content</p>
                     <p className="bible-body text-muted-foreground"><span className="text-primary font-semibold">Art Direction:</span> Cultural projects, campaigns, events</p>
