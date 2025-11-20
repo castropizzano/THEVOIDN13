@@ -1,190 +1,265 @@
 # 🤖 GitHub Actions - Automação THEVØIDN13
 
-Este workflow automatiza o deploy, arquivamento e release do projeto.
+Este diretório contém workflows automatizados para o projeto THEVØIDN13.
 
-## 📋 O que o workflow faz
+## 📋 Workflows Disponíveis
 
-### A cada push na branch `main`:
+### 1. Deploy & Archive (`deploy.yml`)
+**Trigger:** Push na branch `main`  
+**Propósito:** Deploy automático e arquivamento no Wayback Machine
+
+**Etapas:**
 1. ✅ Instala dependências com Bun
 2. 🏗️ Gera build estático (Vite)
 3. 📦 Envia snapshot para Wayback Machine
 4. 💾 Salva artifacts do build (30 dias)
 5. 📊 Gera summary do deployment
 
-### Quando você cria uma release (tag):
-1. 📥 Baixa o build gerado
-2. 📦 Cria arquivos `.tar.gz` e `.zip`
-3. 🚀 Publica assets na release do GitHub
-4. 📊 Gera summary da release
+### 2. Version Bump & Release (`version-bump.yml`)
+**Trigger:** Manual dispatch  
+**Propósito:** Automatiza versionamento semântico e criação de releases
 
-## ⚙️ Configuração necessária
+**Inputs:**
+- `version_type`: patch | minor | major
+- `release_notes`: Resumo opcional
 
-### 1. Adicionar secrets no GitHub (IMPORTANTE!)
+**Etapas:**
+1. Lê versão atual do arquivo `VERSION`
+2. Calcula nova versão baseado no tipo
+3. Atualiza `VERSION`, `CITATION.cff`, `README.md`
+4. Gera release notes do histórico git
+5. Adiciona ao `RELEASE_NOTES.md`
+6. Cria tag git
+7. Cria GitHub Release
 
-Vá em: **Settings → Secrets and variables → Actions → New repository secret**
+**Uso:**
+```bash
+# Via GitHub UI:
+Actions → Version Bump & Release → Run workflow
 
-Adicione os seguintes secrets:
+# Selecione o tipo:
+- patch: Correções (2.1.0 → 2.1.1)
+- minor: Novas features (2.1.0 → 2.2.0)
+- major: Breaking changes (2.1.0 → 3.0.0)
+```
+
+**Exemplo:**
+```
+Version type: minor
+Release notes: Integração Creative Oracle com Mind Map
+
+Resultado:
+- VERSION atualizado: 2.1.0 → 2.2.0
+- Tag criada: v2.2.0
+- RELEASE_NOTES.md atualizado
+- GitHub Release criada
+```
+
+## 📊 Versionamento Semântico
+
+THEVØIDN13 segue SemVer 2.0.0:
+
+**MAJOR.MINOR.PATCH**
+
+- **MAJOR (3.0.0):** Breaking changes
+  - Mudanças no schema do banco
+  - Breaking changes na API
+  - Mudanças arquiteturais importantes
+
+- **MINOR (2.2.0):** Novas features
+  - Novos componentes
+  - Novas páginas
+  - Funcionalidades aprimoradas
+  - Adições não-breaking
+
+- **PATCH (2.1.1):** Correções
+  - Bug fixes
+  - Atualizações de documentação
+  - Melhorias de performance
+  - Patches de segurança
+
+## ⚙️ Configuração Necessária
+
+### Secrets do GitHub
+Vá em: **Settings → Secrets and variables → Actions**
 
 ```
 VITE_SUPABASE_URL=https://mkigpkfahuqkqxocsyjn.supabase.co
-VITE_SUPABASE_PUBLISHABLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1raWdwa2ZhaHVxa3F4b2NzeWpuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE1ODI4NTcsImV4cCI6MjA3NzE1ODg1N30.bHx3qYVWRaNz3f87WxaAGF352xdsAwgvoh97eCozLnQ
+VITE_SUPABASE_PUBLISHABLE_KEY=[sua chave anon]
 VITE_SUPABASE_PROJECT_ID=mkigpkfahuqkqxocsyjn
 ```
 
-⚠️ **IMPORTANTE:** O `GITHUB_TOKEN` já existe automaticamente, não precisa criar.
+⚠️ **GITHUB_TOKEN** é fornecido automaticamente.
 
-### 2. Ajustar URLs do Wayback Machine (opcional)
+### Permissões
+Settings → Actions → General → Workflow permissions:
+- ✅ "Read and write permissions"
 
-No arquivo `deploy.yml`, linha 39-45, atualize as URLs para o seu domínio customizado (se tiver):
+## 🚀 Como Usar
 
-```bash
-URLS=(
-  "https://thevoidn13.com"  # Se tiver domínio próprio
-  "https://thevoidn13.com/autor"
-  # ... etc
-)
-```
-
-## 🚀 Como usar
-
-### Deployment automático (push na main)
-
+### Deploy Automático
 ```bash
 git add .
 git commit -m "feat: nova funcionalidade"
-git push origin main
+git push origin main  # Workflow roda automaticamente
 ```
 
-O workflow roda automaticamente! Acompanhe em: **Actions → Deploy & Archive**
-
-### Criar release
-
-#### Opção 1: Via GitHub Interface
-1. Vá em **Releases → Create a new release**
-2. Crie uma tag (exemplo: `v1.0.0`)
-3. Título: "THEVØIDN13 v1.0.0"
-4. Descrição: Changelog das mudanças
-5. Click **Publish release**
-
-#### Opção 2: Via linha de comando
+### Criar Release (Manual Alternativo)
 ```bash
-# Criar tag
-git tag -a v1.0.0 -m "Release version 1.0.0"
-git push origin v1.0.0
+# 1. Atualizar VERSION
+echo "2.1.1" > VERSION
 
-# Criar release via GitHub CLI
-gh release create v1.0.0 \
-  --title "THEVØIDN13 v1.0.0" \
-  --notes "Changelog aqui"
+# 2. Atualizar CITATION.cff
+# Editar manualmente: version e date-released
+
+# 3. Atualizar badges no README.md
+# Substituir Version-2.1.0- por Version-2.1.1-
+
+# 4. Adicionar release notes ao RELEASE_NOTES.md
+# Inserir nova seção de release no topo
+
+# 5. Commit e tag
+git add VERSION CITATION.cff README.md RELEASE_NOTES.md
+git commit -m "chore: bump version to 2.1.1"
+git tag -a v2.1.1 -m "Release v2.1.1"
+git push origin main
+git push origin v2.1.1
 ```
 
 ## 📦 Wayback Machine
 
-O workflow arquiva automaticamente estas páginas:
+Páginas arquivadas automaticamente:
 - Home (`/`)
 - Autor (`/autor`)
 - Dissertação (`/dissertacao`)
 - Vídeos (`/videos`)
-- LowMovie (`/lowmovie`)
 
-Você pode verificar os snapshots em: https://web.archive.org/web/*/seu-site.lovable.app
+Verificar snapshots: https://web.archive.org/web/*/thevoidn13.com
 
 ## 🔍 Monitoramento
 
-### Ver logs do workflow
-1. Vá em **Actions**
-2. Clique no workflow executado
-3. Clique no job para ver logs detalhados
+### Ver Logs
+1. Actions → Workflow executado → Job → Logs
 
-### Ver artifacts gerados
-1. Vá em **Actions**
-2. Clique no workflow executado
-3. Scroll até **Artifacts**
-4. Baixe o `dist-{SHA}` se precisar
+### Ver Artifacts
+1. Actions → Workflow executado → Artifacts → Download
 
-### Ver release assets
-1. Vá em **Releases**
-2. Clique na release
-3. Baixe os arquivos `.tar.gz` ou `.zip`
-
-## 🎯 Exemplos de uso
-
-### Versionamento semântico recomendado:
-
-- `v1.0.0` - Major release (breaking changes)
-- `v1.1.0` - Minor release (new features)
-- `v1.1.1` - Patch release (bug fixes)
-
-### Workflow de desenvolvimento:
-
-```bash
-# 1. Desenvolver feature
-git checkout -b feature/nova-funcionalidade
-# ... fazer mudanças ...
-git commit -m "feat: adiciona nova funcionalidade"
-
-# 2. Merge na main (via PR ou direto)
-git checkout main
-git merge feature/nova-funcionalidade
-git push origin main
-# → Workflow roda automaticamente (build + archive)
-
-# 3. Quando pronto para release
-git tag -a v1.1.0 -m "Release v1.1.0"
-git push origin v1.1.0
-gh release create v1.1.0 --title "v1.1.0" --notes "Changelog"
-# → Workflow de release roda (cria assets)
-```
+### Ver Releases
+1. Releases → Selecionar release → Assets
 
 ## 🛠️ Troubleshooting
 
-### Erro: "VITE_SUPABASE_URL not found"
-→ Adicione o secret no GitHub (veja seção Configuração)
+| Erro | Solução |
+|------|---------|
+| "VITE_SUPABASE_URL not found" | Adicionar secret no GitHub |
+| "Permission denied" | Ativar "Read and write permissions" |
+| Wayback falhou | Normal, tentar manualmente em web.archive.org/save |
+| Build falhou | Verificar logs no Actions |
 
-### Erro: "Permission denied" ao fazer release
-→ Verifique se o `GITHUB_TOKEN` tem permissão de escrita em releases:
-- Settings → Actions → General → Workflow permissions → "Read and write permissions"
+## 📚 Recursos
 
-### Wayback Machine não arquivou
-→ Normal! Às vezes demora ou falha. Você pode arquivar manualmente em: https://web.archive.org/save/
-
-### Build falhou
-→ Verifique os logs no Actions para ver o erro específico
-
-## 📝 Customizações possíveis
-
-### Adicionar mais páginas ao Wayback Machine
-Edite o array `URLS` em `deploy.yml`:
-
-```bash
-URLS=(
-  "https://seu-site.lovable.app"
-  "https://seu-site.lovable.app/nova-pagina"
-)
-```
-
-### Mudar retenção dos artifacts (padrão: 30 dias)
-```yaml
-retention-days: 90  # Manter por 90 dias
-```
-
-### Adicionar notificações (Discord, Slack, etc.)
-Adicione step no final do workflow:
-
-```yaml
-- name: Notify Discord
-  uses: sarisia/actions-status-discord@v1
-  with:
-    webhook: ${{ secrets.DISCORD_WEBHOOK }}
-```
-
-## 📚 Recursos úteis
-
-- [GitHub Actions Documentation](https://docs.github.com/en/actions)
-- [Wayback Machine Save API](https://archive.org/help/wayback_api.php)
+- [GitHub Actions Docs](https://docs.github.com/en/actions)
+- [Wayback Machine API](https://archive.org/help/wayback_api.php)
 - [Semantic Versioning](https://semver.org/)
 - [GitHub CLI](https://cli.github.com/)
 
 ---
 
-**Nota:** Este workflow foi configurado especificamente para o projeto THEVØIDN13 e usa Bun + Vite + Supabase.
+*Last Updated: November 20, 2025*  
+*THEVØIDN13 — Memorial Artístico e Práxis Híbrida*
+
+## ⚙️ Configuração Necessária
+
+### Secrets do GitHub
+Vá em: **Settings → Secrets and variables → Actions**
+
+```
+VITE_SUPABASE_URL=https://mkigpkfahuqkqxocsyjn.supabase.co
+VITE_SUPABASE_PUBLISHABLE_KEY=[sua chave anon]
+VITE_SUPABASE_PROJECT_ID=mkigpkfahuqkqxocsyjn
+```
+
+⚠️ **GITHUB_TOKEN** é fornecido automaticamente.
+
+### Permissões
+Settings → Actions → General → Workflow permissions:
+- ✅ "Read and write permissions"
+
+## 🚀 Como Usar
+
+### Deploy Automático
+```bash
+git add .
+git commit -m "feat: nova funcionalidade"
+git push origin main  # Workflow roda automaticamente
+```
+
+### Versionamento Automático (Workflow)
+```bash
+# Via GitHub UI:
+Actions → Version Bump & Release → Run workflow
+
+# Selecione o tipo:
+- patch: Bug fixes (2.1.0 → 2.1.1)
+- minor: New features (2.1.0 → 2.2.0)
+- major: Breaking changes (2.1.0 → 3.0.0)
+```
+
+### Versionamento Manual (Alternativo)
+```bash
+# 1. Atualizar VERSION
+echo "2.1.1" > VERSION
+
+# 2. Atualizar CITATION.cff
+# Editar: version e date-released
+
+# 3. Atualizar badges no README.md
+# Substituir Version-2.1.0- por Version-2.1.1-
+
+# 4. Adicionar release notes
+# Inserir no topo do RELEASE_NOTES.md
+
+# 5. Commit e tag
+git add VERSION CITATION.cff README.md RELEASE_NOTES.md
+git commit -m "chore: bump version to 2.1.1"
+git tag -a v2.1.1 -m "Release v2.1.1"
+git push origin main
+git push origin v2.1.1
+```
+
+## 📦 Wayback Machine
+
+Páginas arquivadas automaticamente:
+- Home (`/`)
+- Autor (`/autor`)
+- Dissertação (`/dissertacao`)
+- Vídeos (`/videos`)
+
+Verificar: https://web.archive.org/web/*/thevoidn13.com
+
+## 🔍 Monitoramento
+
+**Ver Logs:** Actions → Workflow → Job → Logs  
+**Ver Artifacts:** Actions → Workflow → Artifacts  
+**Ver Releases:** Releases → Selecionar → Assets
+
+## 🛠️ Troubleshooting
+
+| Erro | Solução |
+|------|---------|
+| "VITE_SUPABASE_URL not found" | Adicionar secret no GitHub |
+| "Permission denied" na release | Ativar "Read and write permissions" |
+| Wayback falhou | Normal, arquivar manualmente em web.archive.org/save |
+| Build falhou | Ver logs no Actions para detalhes |
+
+## 📚 Recursos
+
+- [GitHub Actions Documentation](https://docs.github.com/en/actions)
+- [Wayback Machine API](https://archive.org/help/wayback_api.php)
+- [Semantic Versioning](https://semver.org/)
+- [GitHub CLI](https://cli.github.com/)
+
+---
+
+*Last Updated: November 20, 2025*  
+*THEVØIDN13 — Memorial Artístico e Práxis Híbrida*
