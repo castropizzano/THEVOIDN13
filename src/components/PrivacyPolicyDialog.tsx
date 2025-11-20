@@ -46,7 +46,7 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
                   Este site <strong>NÃO UTILIZA COOKIES</strong>. 
                 </p>
                 <p className="bible-body text-sm">
-                  Usamos <strong>sessionStorage</strong> apenas para melhorar a experiência do usuário (UX):
+                  <strong>sessionStorage</strong> usado apenas para melhorar a experiência do usuário (UX):
                 </p>
                 <ul className="bible-body text-sm space-y-1 ml-6">
                   <li><strong>Key</strong>: "antiSurveillanceBannerSeen"</li>
@@ -80,25 +80,24 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
               <div className="space-y-4">
                 <h3 className="bible-subtitle">7. POR QUE ESTE BANNER EXISTE?</h3>
                 <p className="bible-body text-sm">
-                  Acreditamos em <strong>transparência radical</strong>. Você tem o direito de saber que não está 
-                  sendo vigiado. Este banner não é uma obrigação legal burocrática—é uma <strong>declaração 
-                  política e artística</strong>. É o site afirmando: "Este é um espaço ético."
+                  Transparência radical. Direito de saber que não há vigilância. Este banner não é obrigação legal burocrática—é <strong>declaração 
+                  política e artística</strong>. Afirmação: "Este é um espaço ético."
                 </p>
                 <p className="bible-body text-sm">
-                  O banner reaparece a cada nova sessão <strong>porque usamos sessionStorage 
-                  (não cookies)</strong>. Escolhemos sessionStorage porque ele é mais transparente 
-                  e efêmero—apaga ao fechar o navegador.
+                  O banner reaparece a cada nova sessão <strong>porque sessionStorage é usado 
+                  (não cookies)</strong>. Escolha por sessionStorage pela transparência 
+                  e efemeridade—apaga ao fechar o navegador.
                 </p>
                 <p className="bible-body text-sm">
-                  Não guardamos preferências permanentes porque respeitamos sua privacidade.
+                  Sem preferências permanentes por respeito à privacidade.
                 </p>
               </div>
 
               <div className="space-y-4">
                 <h3 className="bible-subtitle">8. DOCUMENTAÇÃO TÉCNICA COMPLETA</h3>
                 <p className="bible-body text-sm">
-                  Para uma explicação técnica detalhada de como este site funciona, 
-                  incluindo código-fonte e diagramas de fluxo de dados, visite nossa página de transparência:
+                  Para explicação técnica detalhada de como este site funciona, 
+                  incluindo código-fonte e diagramas de fluxo de dados, acesse a página de transparência:
                 </p>
                 <p className="bible-body text-sm">
                   <a href="/transparency" className="text-primary hover:underline font-semibold">
@@ -127,7 +126,7 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
                   This website <strong>DOES NOT USE COOKIES</strong>. 
                 </p>
                 <p className="bible-body text-sm">
-                  We use <strong>sessionStorage</strong> only to improve user experience (UX):
+                  <strong>sessionStorage</strong> used only to improve user experience (UX):
                 </p>
                 <ul className="bible-body text-sm space-y-1 ml-6">
                   <li><strong>Key</strong>: "antiSurveillanceBannerSeen"</li>
@@ -143,8 +142,8 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
               <div className="space-y-4">
                 <h3 className="bible-subtitle">3. ZERO TRACKING</h3>
                 <p className="bible-body text-sm">
-                  We do not use Google Analytics, Facebook Pixel, or any third-party tracking 
-                  tools. Your navigation is completely private and anonymous.
+                  No Google Analytics, Facebook Pixel, or any third-party tracking 
+                  tools. Navigation is completely private and anonymous.
                 </p>
               </div>
 
@@ -163,12 +162,12 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
                   <li>• An image is generated and returned to you</li>
                 </ul>
                 <p className="bible-body text-sm font-semibold text-destructive">
-                  What we DON'T do:
+                  What NOT done:
                 </p>
                 <ul className="bible-body text-sm space-y-1 ml-6">
-                  <li>❌ We don't store your prompts</li>
-                  <li>❌ We don't associate prompts with users (no authentication)</li>
-                  <li>❌ We don't sell or share your prompts</li>
+                  <li>❌ Prompts not stored</li>
+                  <li>❌ Prompts not associated with users (no authentication)</li>
+                  <li>❌ Prompts not sold or shared</li>
                 </ul>
                 <p className="bible-body text-sm">
                   <strong>Limitation</strong>: This feature uses the developer's AI credits, 
@@ -200,25 +199,24 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
               <div className="space-y-4">
                 <h3 className="bible-subtitle">7. WHY DOES THIS BANNER EXIST?</h3>
                 <p className="bible-body text-sm">
-                  We believe in <strong>radical transparency</strong>. You have the right to know you're not being 
-                  surveilled. This banner is not a bureaucratic legal obligation—it's a <strong>political 
-                  and artistic statement</strong>. It's the site affirming: "This is an ethical space."
+                  Radical transparency. Right to know there's no surveillance. This banner is not a bureaucratic legal obligation—it's a <strong>political 
+                  and artistic statement</strong>. Affirmation: "This is an ethical space."
                 </p>
                 <p className="bible-body text-sm">
-                  The banner reappears with each new session <strong>because we use sessionStorage 
-                  (not cookies)</strong>. We chose sessionStorage because it's more transparent 
-                  and ephemeral—it deletes when you close the browser.
+                  Banner reappears with each new session <strong>because sessionStorage is used 
+                  (not cookies)</strong>. Choice for sessionStorage for transparency 
+                  and ephemerality—deletes when browser closes.
                 </p>
                 <p className="bible-body text-sm">
-                  We don't save permanent preferences because we respect your privacy.
+                  No permanent preferences out of respect for privacy.
                 </p>
               </div>
 
               <div className="space-y-4">
                 <h3 className="bible-subtitle">8. COMPLETE TECHNICAL DOCUMENTATION</h3>
                 <p className="bible-body text-sm">
-                  For a detailed technical explanation of how this site works, 
-                  including source code and data flow diagrams, visit our transparency page:
+                  For detailed technical explanation of how this site works, 
+                  including source code and data flow diagrams, access the transparency page:
                 </p>
                 <p className="bible-body text-sm">
                   <a href="/transparency" className="text-primary hover:underline font-semibold">
