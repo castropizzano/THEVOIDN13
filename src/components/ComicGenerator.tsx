@@ -122,10 +122,25 @@ export const ComicGenerator = () => {
   };
 
   const handleGenerate = async () => {
-    if (!customPrompt.trim()) {
+    const trimmedPrompt = customPrompt.trim();
+    
+    if (trimmedPrompt.length < 10) {
       toast({
         title: language === "pt" ? "Erro" : "Error",
-        description: language === "pt" ? "Digite um prompt primeiro" : "Enter a prompt first",
+        description: language === "pt" 
+          ? "O prompt deve ter pelo menos 10 caracteres" 
+          : "Prompt must be at least 10 characters",
+        variant: "destructive",
+      });
+      return;
+    }
+    
+    if (trimmedPrompt.length > 500) {
+      toast({
+        title: language === "pt" ? "Erro" : "Error",
+        description: language === "pt" 
+          ? "O prompt deve ter menos de 500 caracteres" 
+          : "Prompt must be less than 500 characters",
         variant: "destructive",
       });
       return;
@@ -253,12 +268,16 @@ export const ComicGenerator = () => {
             <Textarea
               value={customPrompt}
               onChange={(e) => setCustomPrompt(e.target.value)}
+              maxLength={500}
               placeholder={language === "pt" 
                 ? "Descreva a cena cinematográfica que você quer gerar..."
                 : "Describe the cinematic scene you want to generate..."}
               className="min-h-[200px] font-mono text-sm bg-background/50 border-primary/30 focus:border-primary resize-none"
               disabled={isGenerating}
             />
+            <p className="text-xs text-muted-foreground font-mono">
+              {customPrompt.length}/500 {language === "pt" ? "caracteres" : "characters"}
+            </p>
           </div>
 
           <Button

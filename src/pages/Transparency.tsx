@@ -133,13 +133,96 @@ const Transparency = () => {
 
           <Separator />
 
-          {/* What Exists (Minimal Storage) */}
+          {/* What Exists (Infrastructure Deletion Section) */}
           <section className="bible-section">
             <div className="max-w-4xl mx-auto px-4 sm:px-6">
               <div className="flex items-center gap-3 mb-8">
                 <Database className="h-8 w-8 text-primary" />
                 <h2 className="bible-section-title">
-                  {language === "pt" ? "ARMAZENAMENTO MÍNIMO (O QUE EXISTE)" : "MINIMAL STORAGE (WHAT EXISTS)"}
+                  {language === "pt" ? "🗑️ INFRAESTRUTURA DELETADA (NOVEMBRO 2025)" : "🗑️ DELETED INFRASTRUCTURE (NOVEMBER 2025)"}
+                </h2>
+              </div>
+
+              <Card className="border-primary/50 mb-6">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2 text-lg">
+                    <ShieldOff className="h-6 w-6 text-primary" />
+                    {language === "pt" ? "De 13 Tabelas para 1 Tabela" : "From 13 Tables to 1 Table"}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-6 bible-body text-sm">
+                  <div className="space-y-4">
+                    <p className="text-foreground font-bold">
+                      {language === "pt" 
+                        ? "Por que deletamos 12 tabelas do banco de dados?"
+                        : "Why did we delete 12 database tables?"}
+                    </p>
+                    
+                    <p className="text-muted-foreground">
+                      {language === "pt"
+                        ? "Descobrimos uma contradição crítica entre nossa filosofia e nossa arquitetura. A documentação prometia 'zero vigilância', mas a infraestrutura tinha tabelas ativas para:"
+                        : "We discovered a critical contradiction between our philosophy and our architecture. The documentation promised 'zero surveillance,' but the infrastructure had active tables for:"}
+                    </p>
+
+                    <div className="bg-destructive/10 border border-destructive/30 p-4 rounded-md space-y-2">
+                      <p className="font-semibold text-destructive">❌ {language === "pt" ? "Tabelas Deletadas:" : "Deleted Tables:"}</p>
+                      <ul className="space-y-1 ml-4 text-muted-foreground">
+                        <li>• <code>page_views</code> - {language === "pt" ? "Rastreamento de visitas" : "Page visit tracking"}</li>
+                        <li>• <code>search_queries</code> - {language === "pt" ? "Rastreamento de buscas" : "Search tracking"}</li>
+                        <li>• <code>section_engagement</code> - {language === "pt" ? "Rastreamento de comportamento" : "Behavior tracking"}</li>
+                        <li>• <code>contact_messages</code> - {language === "pt" ? "Coleta de mensagens" : "Message collection"}</li>
+                        <li>• <code>newsletter_subscribers</code> - {language === "pt" ? "Coleta de emails" : "Email collection"}</li>
+                        <li>• <code>profiles</code> + <code>user_roles</code> - {language === "pt" ? "Sistema de autenticação" : "Authentication system"}</li>
+                        <li>• <code>content_settings</code>, <code>media_assets</code>, <code>page_sections</code>, <code>section_contents</code>, <code>video_settings</code> - {language === "pt" ? "Sistema CMS não utilizado" : "Unused CMS system"}</li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-muted/50 p-4 rounded-md space-y-2">
+                      <p className="font-semibold text-primary">✅ {language === "pt" ? "O que mantivemos:" : "What we kept:"}</p>
+                      <ul className="space-y-1 ml-4 text-muted-foreground">
+                        <li>• <code>prompts</code> - {language === "pt" ? "Biblioteca de prompts de IA (somente leitura pública)" : "AI prompt library (public read-only)"}</li>
+                        <li>• <code>generate-cinematic-still</code> - {language === "pt" ? "Edge function para geração de imagens (com validação de input)" : "Edge function for image generation (with input validation)"}</li>
+                      </ul>
+                    </div>
+
+                    <p className="text-foreground font-bold mt-4">
+                      {language === "pt" ? "O Problema:" : "The Problem:"}
+                    </p>
+                    <p className="text-muted-foreground">
+                      {language === "pt"
+                        ? "Essas tabelas tinham políticas RLS que permitiam inserção pública de dados. Como as credenciais do Supabase estão no código-fonte (public), qualquer pessoa poderia usar essas tabelas para rastrear usuários—mesmo que nunca as usássemos."
+                        : "These tables had RLS policies that allowed public data insertion. Since Supabase credentials are in the source code (public), anyone could use these tables to track users—even though we never used them."}
+                    </p>
+
+                    <p className="text-foreground font-bold mt-4">
+                      {language === "pt" ? "A Solução:" : "The Solution:"}
+                    </p>
+                    <p className="text-muted-foreground">
+                      {language === "pt"
+                        ? "Deletamos tudo que contradizia nossa filosofia anti-vigilância. Verdadeiro minimalismo não é 'não usar' infraestrutura—é removê-la completamente."
+                        : "We deleted everything that contradicted our anti-surveillance philosophy. True minimalism isn't 'not using' infrastructure—it's removing it completely."}
+                    </p>
+
+                    <blockquote className="border-l-4 border-primary pl-4 italic text-muted-foreground mt-4">
+                      {language === "pt"
+                        ? '"O vazio não é falta, é incubação de forma" — arquitetura sem rastreamento cria espaço para contemplação sem vigilância.'
+                        : '"The void is not lack, it is the incubation of form" — architecture without tracking creates space for contemplation without surveillance.'}
+                    </blockquote>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </section>
+
+          <Separator />
+
+          {/* Minimal Storage */}
+          <section className="bible-section">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6">
+              <div className="flex items-center gap-3 mb-8">
+                <Database className="h-8 w-8 text-primary" />
+                <h2 className="bible-section-title">
+                  {language === "pt" ? "ARMAZENAMENTO MÍNIMO" : "MINIMAL STORAGE"}
                 </h2>
               </div>
 
