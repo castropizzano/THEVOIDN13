@@ -208,7 +208,7 @@ const Transparency = () => {
                   <p className="font-bold text-primary text-base">✅ What I kept:</p>
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• prompts - AI prompt library (public read-only)</li>
-                    <li>• generate-cinematic-still - Edge function for image generation (with input validation)</li>
+                    <li>• Puter.js - Client-side image generation (100% free, unlimited, runs in your browser)</li>
                   </ul>
                 </div>
 
@@ -238,12 +238,16 @@ const Transparency = () => {
                 <CollectiveCard
                   title="sessionStorage Apenas"
                   period="2025"
-                  description="Usado apenas para preferência de idioma (PT/EN). Expira quando você fecha o navegador. Nenhum cookie, nenhum localStorage permanente."
+                  description="Usado para: (1) preferência de idioma PT/EN, (2) controle de banner anti-vigilância, (3) rate limiting do Comic Generator (cooldown de 10s). Expira quando você fecha o navegador. Nenhum cookie, nenhum localStorage permanente."
                 />
                 
                 <div className="bg-muted/50 border-2 border-primary/50 p-6 font-mono text-sm">
                   <p className="font-bold text-primary mb-3">O que armazeno:</p>
-                  <code className="text-muted-foreground">sessionStorage.setItem(&apos;language&apos;, &apos;pt&apos; | &apos;en&apos;)</code>
+                  <div className="space-y-2">
+                    <code className="block text-muted-foreground">sessionStorage.setItem(&apos;language&apos;, &apos;pt&apos; | &apos;en&apos;)</code>
+                    <code className="block text-muted-foreground">sessionStorage.setItem(&apos;antiSurveillanceBannerDismissed&apos;, &apos;true&apos;)</code>
+                    <code className="block text-muted-foreground">sessionStorage.setItem(&apos;lastImageGeneration&apos;, timestamp)</code>
+                  </div>
                 </div>
               </div>
             </div>
@@ -255,12 +259,16 @@ const Transparency = () => {
                 <CollectiveCard
                   title="sessionStorage Only"
                   period="2025"
-                  description="Used only for language preference (PT/EN). Expires when you close the browser. No cookies, no permanent localStorage."
+                  description="Used for: (1) language preference PT/EN, (2) anti-surveillance banner control, (3) Comic Generator rate limiting (10s cooldown). Expires when you close the browser. No cookies, no permanent localStorage."
                 />
                 
                 <div className="bg-muted/50 border-2 border-primary/50 p-6 font-mono text-sm">
                   <p className="font-bold text-primary mb-3">What I store:</p>
-                  <code className="text-muted-foreground">sessionStorage.setItem(&apos;language&apos;, &apos;pt&apos; | &apos;en&apos;)</code>
+                  <div className="space-y-2">
+                    <code className="block text-muted-foreground">sessionStorage.setItem(&apos;language&apos;, &apos;pt&apos; | &apos;en&apos;)</code>
+                    <code className="block text-muted-foreground">sessionStorage.setItem(&apos;antiSurveillanceBannerDismissed&apos;, &apos;true&apos;)</code>
+                    <code className="block text-muted-foreground">sessionStorage.setItem(&apos;lastImageGeneration&apos;, timestamp)</code>
+                  </div>
                 </div>
               </div>
             </div>
