@@ -12,11 +12,9 @@ import { CompatibilityMatrix } from "./CreativeOracle/CompatibilityMatrix";
 import { HybridArchetypeReveal } from "./CreativeOracle/HybridArchetypeReveal";
 import { ContextualQuote } from "./CreativeOracle/ContextualQuote";
 import { PersonalizedAdvice } from "./CreativeOracle/PersonalizedAdvice";
-import { EvolutionAnalysis } from "./CreativeOracle/EvolutionAnalysis";
 import { OracleMindMapIntegration } from "./CreativeOracle/OracleMindMapIntegration";
 import { contextualizedQuestions } from "./CreativeOracle/data/contextualizedQuestions";
 import { hybridArchetypes } from "./CreativeOracle/data/hybridArchetypes";
-import { useOracleHistory } from "@/hooks/useOracleHistory";
 
 interface CreativeOracleProps {
   open: boolean;
@@ -95,7 +93,6 @@ const archetypes = {
 
 export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
   const { language } = useLanguage();
-  const { scans, saveScan, deleteScan, clearHistory, hasHistory } = useOracleHistory();
   const [mode, setMode] = useState<"journey" | "knowledge">("journey");
   const [started, setStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -172,38 +169,6 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
     const sorted = entries.sort((a, b) => b[1] - a[1]);
     return sorted[1]?.[0];
   };
-
-  // Salvar scan automaticamente quando mostrar resultados
-  useEffect(() => {
-    if (showResults && scores.shadow > 0) {
-      const dominantArchetype = getDominantArchetype();
-      const archetypeMapping: Record<string, string> = {
-        shadow: 'Visionário',
-        punk: 'Provocador',
-        buddy: 'Artesão',
-        gi: 'Alquimista'
-      };
-      
-      saveScan({
-        archetypeScores: {
-          'Visionário': scores.shadow,
-          'Artesão': scores.buddy,
-          'Alquimista': scores.gi,
-          'Contador de Histórias': 0, // Placeholder
-          'Provocador': scores.punk,
-        },
-        processScores: {
-          'Observação': processScores.observation,
-          'Cocriação': processScores.cocreation,
-          'Documentação': processScores.documentation,
-          'Reflexão': processScores.reflection,
-          'Expansão': processScores.expansion,
-        },
-        dominantArchetype: archetypeMapping[dominantArchetype] || 'Visionário',
-        answers,
-      });
-    }
-  }, [showResults, scores, processScores, answers]);
 
   const handleStart = () => {
     setStarted(true);
@@ -455,32 +420,6 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
                 CREATIVE_ORACLE::SCAN_COMPLETE
               </div>
               
-              {scans.length === 1 && (
-                <div className="bg-primary/10 border border-primary/30 rounded-lg p-4 text-sm">
-                  <div className="text-primary font-bold mb-2">
-                    [{language === 'pt' ? 'PRIMEIRO SCAN' : 'FIRST SCAN'}]
-                  </div>
-                  <div className="text-muted-foreground">
-                    {language === 'pt' 
-                      ? 'Este é seu primeiro scan! Seus resultados foram salvos automaticamente. Refaça a jornada no futuro para ver sua evolução criativa.'
-                      : 'This is your first scan! Your results have been saved automatically. Retake the journey in the future to see your creative evolution.'}
-                  </div>
-                </div>
-              )}
-
-              {scans.length > 1 && (
-                <div className="bg-accent/10 border border-accent/30 rounded-lg p-4 text-sm">
-                  <div className="text-accent font-bold mb-2">
-                    [{language === 'pt' ? 'NOVO SCAN COMPLETO' : 'NEW SCAN COMPLETE'}]
-                  </div>
-                  <div className="text-muted-foreground">
-                    {language === 'pt' 
-                      ? 'Novo scan completo! Role para baixo para ver sua evolução ao longo do tempo.'
-                      : 'New scan complete! Scroll down to see your evolution over time.'}
-                  </div>
-                </div>
-              )}
-
               {/* Radar Chart Visualization */}
               <div className="space-y-3 bg-black/50 border border-primary/30 rounded-lg p-6">
                 <div className="text-muted-foreground text-sm mb-4">
@@ -689,20 +628,6 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
                   dominantArchetype={getDominantArchetype()}
                 />
               </div>
-
-              {/* Evolution Analysis if history exists */}
-              {hasHistory && scans.length > 1 && (
-                <div className="space-y-6 pt-8 border-t border-primary/30">
-                  <div className="text-accent font-bold text-lg">
-                    [{language === "pt" ? "SUA EVOLUÇÃO CRIATIVA" : "YOUR CREATIVE EVOLUTION"}]
-                  </div>
-                  <EvolutionAnalysis 
-                    scans={scans}
-                    onDeleteScan={deleteScan}
-                    onClearHistory={clearHistory}
-                  />
-                </div>
-              )}
             </div>
           )}
             </div>
