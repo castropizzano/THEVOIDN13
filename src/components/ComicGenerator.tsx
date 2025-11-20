@@ -8,17 +8,6 @@ import { FeatureCard } from "@/components/FeatureCard";
 import { toast } from "@/hooks/use-toast";
 import { LoadingSpinner } from "@/components/LoadingSpinner";
 
-// Declare Puter.js types
-declare const puter: {
-  ai: {
-    txt2img(prompt: string, options?: {
-      model?: string;
-      width?: number;
-      height?: number;
-    }): Promise<Blob>;
-  };
-};
-
 export const ComicGenerator = () => {
   const { language } = useLanguage();
   const [open, setOpen] = useState(false);
@@ -177,16 +166,33 @@ export const ComicGenerator = () => {
 
     try {
       // THEVØIDN13 Shadow Interface Bible v13 - Cinematic Prompt
-      const THEVOIDN13_STYLE = `Cinematic still, ultra-detailed 8K photography, noir aesthetic with Brazilian urban decay, inspired by Blade Runner, Matrix, Akira cinematography. Dark atmosphere, high contrast, dramatic lighting with strong shadows. Neo-noir color palette: deep blacks (#000000), blood red accents (#ff0000), cold grays (#2a2a2a). Analog film grain texture, 35mm cinematic look. Widescreen composition 2.39:1 aspect ratio. Moody volumetric fog, neon reflections on wet surfaces. Gritty urban environment with brutalist architecture. Professional color grading, cinematic depth of field, atmospheric perspective. Masterpiece quality, award-winning cinematography.`;
+      const THEVOIDN13_STYLE = `THEVØIDN13 CINEMATIC STILL — Shadow Interface Bible v13 Protocol:
+
+Style: Dark cinematic realism with urban decay. Expressionless white plastic mask (flat, featureless, no emotion). Character wears oversized olive-green parka (hood up) or black/charcoal tactical outfit. Wet concrete streets, dim blue neon, red/orange backlighting, high-contrast shadows. 
+Mood: Dystopian, noir, melancholic. Composition: Rule of thirds, off-center subject, deep focus. Grading: Desaturated, teal-orange color science, slight grain. 
+Reference: Blade Runner 2049 + Akira + Christiane F. lighting. Ensure mask has NO facial features, NO eyes, NO expression—just smooth white surface.
+Format: Ultra high resolution 1024x1024 digital still.`;
       
       const detailedPrompt = `${THEVOIDN13_STYLE}\n\nScene: ${trimmedPrompt}`;
 
-      // Generate image with Puter.js (FREE & UNLIMITED)
-      const imageBlob = await puter.ai.txt2img(detailedPrompt, {
-        model: 'flux.1-schnell',
-        width: 1024,
-        height: 1024
-      });
+      console.log('Generating image with Pollinations.AI FLUX...');
+      console.log('Prompt length:', detailedPrompt.length, 'chars');
+
+      // Generate image using Pollinations.AI (free, unlimited, no login)
+      const pollinationsUrl = new URL('https://image.pollinations.ai/prompt/' + encodeURIComponent(detailedPrompt));
+      pollinationsUrl.searchParams.set('width', '1024');
+      pollinationsUrl.searchParams.set('height', '1024');
+      pollinationsUrl.searchParams.set('model', 'flux');
+      pollinationsUrl.searchParams.set('nologo', 'true');
+      pollinationsUrl.searchParams.set('enhance', 'true');
+
+      const response = await fetch(pollinationsUrl.toString());
+
+      if (!response.ok) {
+        throw new Error(`Pollinations API error: ${response.status}`);
+      }
+
+      const imageBlob = await response.blob();
 
       // Convert blob to base64
       const reader = new FileReader();

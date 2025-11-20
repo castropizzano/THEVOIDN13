@@ -27,7 +27,7 @@ This project follows a **"privacy by architecture"** approach where 100% of the 
 - ✅ **No user data collection** — No data breach exposure
 - ✅ **No cookies** — No cookie poisoning or CSRF attacks
 - ✅ **Single read-only database table** — Minimal database attack vectors
-- ✅ **Client-side AI processing** — Puter.js runs in user's browser
+- ✅ **Client-side AI processing** — Pollinations.AI runs in user's browser (zero auth)
 
 ### 2. Database Security (Excellent)
 - ✅ Row Level Security (RLS) enabled on all tables
@@ -38,7 +38,7 @@ This project follows a **"privacy by architecture"** approach where 100% of the 
 ### 3. Input Validation (Good)
 - ✅ ComicGenerator validates user prompts (10-500 character limit)
 - ✅ Input trimming prevents whitespace attacks
-- ✅ User input never reaches database (only goes to client-side Puter.js)
+- ✅ User input never reaches database (only goes to client-side Pollinations.AI)
 - ✅ React's automatic escaping prevents XSS attacks
 
 ### 4. Client-Side Security (Excellent)
@@ -50,7 +50,7 @@ This project follows a **"privacy by architecture"** approach where 100% of the 
 ### 5. Secrets Management (Excellent)
 - ✅ `VITE_SUPABASE_PUBLISHABLE_KEY` in `.env` is acceptable (public/anon key)
 - ✅ No private API keys exposed in client code
-- ✅ Puter.js requires zero API keys (completely free and unlimited)
+- ✅ Pollinations.AI requires zero API keys (completely free, unlimited, no authentication)
 
 ---
 
@@ -63,7 +63,7 @@ The following were **intentionally removed** on November 20, 2025 to align with 
 - User tracking (page_views, search_queries, section_engagement)
 - Data collection (newsletter_subscribers, contact_messages)
 - Admin infrastructure (profiles, user_roles, content_settings)
-- Edge functions (migrated to client-side Puter.js)
+- Edge functions (migrated to client-side Pollinations.AI)
 
 ### ❌ Never Implemented
 - Cookies
@@ -91,7 +91,7 @@ The following were **intentionally removed** on November 20, 2025 to align with 
 
 **Total: 98/100**
 
-*\*Minor deduction: Client-side rate limiting can be bypassed, but since Puter.js runs on the user's own machine, this poses zero risk to infrastructure or other users.*
+*\*Minor deduction: Client-side rate limiting can be bypassed, but since Pollinations.AI processes on the user's own machine, this poses zero risk to infrastructure or other users.*
 
 ---
 
