@@ -209,8 +209,14 @@ const Dissertacao = () => {
         <BilingualSection className="bible-section">
           <div className="bible-block border-l-4 border-primary pl-6">
             <h2 className="bible-title">LOWMOVIE™</h2>
-            <p className="bible-subtitle text-muted-foreground mt-2">2019-Presente / 2019-Present</p>
-            <p className="bible-subtitle text-primary mt-2">Full Video / Filme-Processo</p>
+            <p className="bible-subtitle text-muted-foreground mt-2">
+              <span className="lang-pt">2019-PRESENTE</span>
+              <span className="lang-en">2019-PRESENT</span>
+            </p>
+            <p className="bible-subtitle text-primary mt-2">
+              <span className="lang-pt">FILME-PROCESSO</span>
+              <span className="lang-en">FULL VIDEO</span>
+            </p>
           </div>
 
           <div className="bible-bilingual-grid bible-block">
