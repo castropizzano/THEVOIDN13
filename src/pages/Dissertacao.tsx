@@ -11,6 +11,7 @@ import { PDFViewer } from "@/components/PDFViewer";
 import { CasaTrezeBlock } from "@/components/dissertation/CasaTrezeBlock";
 import { LowPressureBlock } from "@/components/dissertation/LowPressureBlock";
 import { InterviewsTabs } from "@/components/dissertation/InterviewsTabs";
+import { VideoPlayer } from "@/components/VideoPlayer";
 import { LowMovieBlock } from "@/components/dissertation/LowMovieBlock";
 import heroImage from "@/assets/cover-lowmovie.png";
 
@@ -164,16 +165,10 @@ const Dissertacao = () => {
 
           {/* Vimeo Reel */}
           <div className="bible-media w-full">
-            <div className="aspect-video w-full">
-              <iframe 
-                src="https://player.vimeo.com/video/698870212?title=0&byline=0&portrait=0" 
-                className="w-full h-full" 
-                frameBorder="0" 
-                allow="autoplay; fullscreen; picture-in-picture" 
-                allowFullScreen 
-                title="CasaTrezeStudio Reel"
-              />
-            </div>
+            <VideoPlayer 
+              vimeoId="698870212"
+              title="CasaTrezeStudio Reel"
+            />
           </div>
         </BilingualSection>
 
@@ -554,19 +549,10 @@ const Dissertacao = () => {
           </div>
 
           <div className="bible-block">
-            <div className="relative w-full">
-              {/* 16:9 Aspect Ratio Container */}
-              <div className="relative w-full pb-[56.25%] bg-black rounded-lg overflow-hidden border border-primary/30">
-                <iframe
-                  src="https://player.vimeo.com/video/819353942?title=0&byline=0&portrait=0"
-                  title="LOWMOVIE™ Full Video"
-                  className="absolute top-0 left-0 w-full h-full border-0"
-                  allow="autoplay; fullscreen; picture-in-picture"
-                  allowFullScreen
-                  loading="lazy"
-                />
-              </div>
-            </div>
+            <VideoPlayer 
+              vimeoId="819353942"
+              title="LOWMOVIE™ Full Video"
+            />
           </div>
         </BilingualSection>
 
