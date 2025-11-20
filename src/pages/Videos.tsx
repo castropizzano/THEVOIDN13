@@ -160,7 +160,7 @@ const Videos = () => {
                     </a>
                   </Button>
                   <Button
-                    variant="outline"
+                    variant="default"
                     size="lg"
                     asChild
                   >
@@ -197,7 +197,7 @@ const Videos = () => {
                     </a>
                   </Button>
                   <Button
-                    variant="outline"
+                    variant="default"
                     size="lg"
                     asChild
                   >
