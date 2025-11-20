@@ -495,7 +495,7 @@ DaVinci Resolve"
                 <div className="my-6">
                   <SkillCard
                     title="ЦАСТРО™ — 1984 → ETERNO EM PROCESSO."
-                    content="A máscara existe para revelar o que já estava lá. O nome respira porque desobedece à lógica da explicação."
+                    content=""
                   />
                 </div>
               </div>
@@ -635,7 +635,7 @@ DaVinci Resolve"
                 <div className="my-6">
                   <SkillCard
                     title="ЦАСТРО™ — 1984 → ETERNALLY IN PROCESS."
-                    content="The mask exists to reveal what was already there. The name breathes because it disobeys the logic of explanation."
+                    content=""
                   />
                 </div>
               </div>
