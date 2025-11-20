@@ -5,6 +5,40 @@ const corsHeaders = {
   'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
 };
 
+// Validation constants
+const MAX_PROMPT_LENGTH = 500;
+const MIN_PROMPT_LENGTH = 10;
+const FORBIDDEN_PATTERNS = [
+  /<script[^>]*>.*?<\/script>/gi,
+  /javascript:/gi,
+  /data:text\/html/gi
+];
+
+function validatePrompt(prompt: string): { valid: boolean; error?: string } {
+  if (typeof prompt !== 'string') {
+    return { valid: false, error: 'Prompt must be a string' };
+  }
+  
+  const trimmedPrompt = prompt.trim();
+  
+  if (trimmedPrompt.length < MIN_PROMPT_LENGTH) {
+    return { valid: false, error: `Prompt must be at least ${MIN_PROMPT_LENGTH} characters` };
+  }
+  
+  if (trimmedPrompt.length > MAX_PROMPT_LENGTH) {
+    return { valid: false, error: `Prompt must be less than ${MAX_PROMPT_LENGTH} characters` };
+  }
+  
+  // Check for suspicious patterns
+  for (const pattern of FORBIDDEN_PATTERNS) {
+    if (pattern.test(trimmedPrompt)) {
+      return { valid: false, error: 'Prompt contains invalid characters or patterns' };
+    }
+  }
+  
+  return { valid: true };
+}
+
 serve(async (req) => {
   if (req.method === 'OPTIONS') {
     return new Response(null, { headers: corsHeaders });
@@ -12,7 +46,21 @@ serve(async (req) => {
 
   try {
     const { prompt } = await req.json();
-    console.log('Generating still with prompt:', prompt);
+    
+    // Validate input FIRST
+    const validation = validatePrompt(prompt);
+    if (!validation.valid) {
+      console.warn('Invalid prompt rejected:', validation.error);
+      return new Response(
+        JSON.stringify({ error: validation.error }),
+        { 
+          status: 400, 
+          headers: { ...corsHeaders, 'Content-Type': 'application/json' } 
+        }
+      );
+    }
+    
+    console.log('Generating still with validated prompt');
 
     const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY");
     if (!LOVABLE_API_KEY) {
