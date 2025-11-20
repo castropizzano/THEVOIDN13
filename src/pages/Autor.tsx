@@ -524,25 +524,23 @@ DaVinci Resolve"
                 </div>
                 
                 <h3 className="bible-subtitle">The Semiotics of the Symbol</h3>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-link font-bold uppercase mb-2">ЦАСТРО</h4>
-                    <p className="bible-link">Transliteration that creates noise and denies immediate reading — an aesthetic mask</p>
-                  </div>
-                  <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-link font-bold uppercase mb-2">©1984 ЦАСТРО™</h4>
-                    <p className="bible-link">1984 as Orwell — surveillance, anti-brand, rupture</p>
-                    <p className="bible-link">1984 as birth — flesh, time, existential mark</p>
-                    <p className="bible-link italic text-primary mt-2">Fiction + real life + brand critique + archive protocol</p>
-                  </div>
-                  <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-link font-bold uppercase mb-2">™</h4>
-                    <p className="bible-link">Irony: the market symbol applied to an anti-brand</p>
-                  </div>
-                  <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-link font-bold uppercase mb-2">Palette</h4>
-                    <p className="bible-link">Black and white = clash between hardness and clarity; minimalist brutalism</p>
-                  </div>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <SkillCard
+                    title="ЦАСТРО"
+                    content="Transliteration that creates noise and denies immediate reading — an aesthetic mask"
+                  />
+                  <SkillCard
+                    title="©1984 ЦАСТРО™"
+                    content="1984 as Orwell — surveillance, anti-brand, rupture. 1984 as birth — flesh, time, existential mark. Fiction + real life + brand critique + archive protocol"
+                  />
+                  <SkillCard
+                    title="™"
+                    content="Irony: the market symbol applied to an anti-brand"
+                  />
+                  <SkillCard
+                    title="Palette"
+                    content="Black and white = clash between hardness and clarity; minimalist brutalism"
+                  />
                 </div>
 
                 <div className="my-8 p-6 bg-primary/5 border border-primary/20 rounded-lg">
@@ -569,25 +567,34 @@ DaVinci Resolve"
                   </div>
                 </div>
                 
-                <div className="my-8 p-6 border-2 border-primary/30 rounded-lg bg-background">
-                  <h3 className="bible-subtitle">THE DEVICE OF IDENTITY</h3>
+                <div className="my-8">
+                  <h3 className="bible-subtitle mb-6">THE DEVICE OF IDENTITY</h3>
                   
-                  <div className="my-4 space-y-3 text-sm leading-relaxed">
-                    <p className="bible-body">Opening title card in a film with no projector. Soviet plaque torn from the wall of an abandoned cinema — still alive. Leaked document from a future that refuses to arrive. Constructivist manifesto reimagined by those who never belonged to the vanguard.</p>
-                    <p className="bible-body">Relic of a portal where the human gives up and the machine gropes in the dark.</p>
-                  </div>
-
-                  <div className="my-4 p-4 bg-primary/5 border-l-4 border-primary">
-                    <p className="bible-body italic">Ritual without altar. Gesture without audience. Presence that asks no permission.</p>
-                  </div>
-
-                  <p className="bible-body mt-6">For the first time, all layers align on the same axis — not by design, but by inevitability:</p>
-                  
-                  <div className="my-4 space-y-3 pl-4 border-l-2 border-primary/30">
-                    <p className="bible-body"><span className="font-bold text-primary">ЦАСТРО™</span> — the author who disappears so the work can breathe alone.</p>
-                    <p className="bible-body"><span className="font-bold text-primary">THEVØIDN13</span> — the entity-framework, the operating system of shadow.</p>
-                    <p className="bible-body"><span className="font-bold text-primary">LowPressure & CasaTreze</span> — the material body and concrete ground where everything anchors.</p>
-                    <p className="bible-body"><span className="font-bold text-primary">The icons</span> — end credits of a film that never stops rolling.</p>
+                  <div className="grid md:grid-cols-2 gap-6 mb-6">
+                    <SkillCard
+                      title="Opening Title Card"
+                      content="Soviet plaque torn from the wall of an abandoned cinema — still alive. Leaked document from a future that refuses to arrive"
+                    />
+                    <SkillCard
+                      title="Portal Relic"
+                      content="Ritual without altar. Gesture without audience. Presence that asks no permission"
+                    />
+                    <SkillCard
+                      title="ЦАСТРО™"
+                      content="The author who disappears so the work can breathe alone"
+                    />
+                    <SkillCard
+                      title="THEVØIDN13"
+                      content="The entity-framework, the operating system of shadow"
+                    />
+                    <SkillCard
+                      title="LowPressure & CasaTreze"
+                      content="The material body and concrete ground where everything anchors"
+                    />
+                    <SkillCard
+                      title="The Icons"
+                      content="End credits of a film that never stops rolling"
+                    />
                   </div>
                 </div>
 
