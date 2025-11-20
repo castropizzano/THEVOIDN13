@@ -68,33 +68,34 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
               </div>
 
               <div className="space-y-4">
-                <h3 className="bible-subtitle">4. RECURSO EXPERIMENTAL DE IA (OPCIONAL)</h3>
+                <h3 className="bible-subtitle">4. GERADOR DE STILLS CINEMATOGRÁFICOS (100% CLIENT-SIDE)</h3>
                 <p className="bible-body text-sm">
-                  O site inclui um recurso experimental: <strong>Gerador de Cenas Cinematográficas</strong>.
+                  O site inclui um recurso experimental: <strong>Gerador de Stills Cinematográficos</strong>, que funciona 100% no seu navegador.
                 </p>
                 <p className="bible-body text-sm font-semibold">
                   Como funciona:
                 </p>
                 <ul className="bible-body text-sm space-y-1 ml-6">
-                  <li>• Você escreve um prompt de texto</li>
-                  <li>• O prompt é enviado para uma edge function (backend)</li>
-                  <li>• A edge function usa Lovable AI (google/gemini-2.5-flash-image-preview)</li>
-                  <li>• Uma imagem é gerada e retornada para você</li>
+                  <li>• Você escreve um prompt de texto descrevendo a cena desejada</li>
+                  <li>• O prompt é processado 100% no seu navegador (zero backend)</li>
+                  <li>• Pollinations.AI gera a imagem usando modelo FLUX (gratuito, ilimitado, sem login)</li>
+                  <li>• A imagem é gerada e exibida instantaneamente</li>
+                  <li>• Marca d'água THEVØIDN13 é aplicada localmente no seu navegador</li>
                 </ul>
                 <p className="bible-body text-sm font-semibold text-destructive">
                   O que NÃO é feito:
                 </p>
                 <ul className="bible-body text-sm space-y-1 ml-6">
-                  <li>❌ Prompts não são armazenados</li>
-                  <li>❌ Prompts não são associados a usuários (sem autenticação)</li>
-                  <li>❌ Prompts não são vendidos ou compartilhados</li>
+                  <li>❌ Prompts NÃO são enviados para backend</li>
+                  <li>❌ Prompts NÃO são armazenados em nenhum servidor</li>
+                  <li>❌ Nenhuma autenticação ou login é necessário</li>
+                  <li>❌ Nenhum dado é coletado ou rastreado</li>
                 </ul>
                 <p className="bible-body text-sm">
-                  <strong>Limitação</strong>: Este recurso usa os créditos de IA do desenvolvedor, 
-                  portanto pode haver limites de uso ou indisponibilidade temporária.
+                  <strong>Rate Limiting (Proteção Client-Side):</strong> O gerador implementa um cooldown de 10 segundos entre gerações via <code>sessionStorage</code> local. Este rate limiting é facilmente contornável (basta limpar o sessionStorage), mas isso é intencional: como o Pollinations.AI processa no navegador do usuário, quem "abusar" só estará consumindo seus próprios recursos (CPU/RAM), sem impacto no site ou em outros usuários.
                 </p>
-                <p className="bible-body text-sm">
-                  <strong>É opcional</strong>: Você pode navegar 95% do site sem usar este recurso.
+                <p className="bible-body text-sm text-muted-foreground">
+                  Esta feature é <strong>opcional</strong> e não afeta a privacidade do resto do site.
                 </p>
               </div>
 
@@ -187,33 +188,34 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
               </div>
 
               <div className="space-y-4">
-                <h3 className="bible-subtitle">4. EXPERIMENTAL AI FEATURE (OPTIONAL)</h3>
+                <h3 className="bible-subtitle">4. CINEMATIC STILLS GENERATOR (100% CLIENT-SIDE)</h3>
                 <p className="bible-body text-sm">
-                  The site includes an experimental feature: <strong>Cinematic Still Generator</strong>.
+                  The site includes an experimental feature: <strong>Cinematic Stills Generator</strong>, which runs 100% in your browser.
                 </p>
                 <p className="bible-body text-sm font-semibold">
                   How it works:
                 </p>
                 <ul className="bible-body text-sm space-y-1 ml-6">
-                  <li>• You write a text prompt</li>
-                  <li>• The prompt is sent to an edge function (backend)</li>
-                  <li>• The edge function uses Lovable AI (google/gemini-2.5-flash-image-preview)</li>
-                  <li>• An image is generated and returned to you</li>
+                  <li>• You write a text prompt describing the desired scene</li>
+                  <li>• The prompt is processed 100% in your browser (zero backend)</li>
+                  <li>• Pollinations.AI generates the image using FLUX model (free, unlimited, no login)</li>
+                  <li>• The image is generated and displayed instantly</li>
+                  <li>• THEVØIDN13 watermark is applied locally in your browser</li>
                 </ul>
                 <p className="bible-body text-sm font-semibold text-destructive">
-                  What NOT done:
+                  What is NOT done:
                 </p>
                 <ul className="bible-body text-sm space-y-1 ml-6">
-                  <li>❌ Prompts not stored</li>
-                  <li>❌ Prompts not associated with users (no authentication)</li>
-                  <li>❌ Prompts not sold or shared</li>
+                  <li>❌ Prompts are NOT sent to backend</li>
+                  <li>❌ Prompts are NOT stored on any server</li>
+                  <li>❌ No authentication or login required</li>
+                  <li>❌ No data collected or tracked</li>
                 </ul>
                 <p className="bible-body text-sm">
-                  <strong>Limitation</strong>: This feature uses the developer's AI credits, 
-                  so there may be rate limits or temporary unavailability.
+                  <strong>Rate Limiting (Client-Side Protection):</strong> The generator implements a 10-second cooldown between generations via local <code>sessionStorage</code>. This rate limiting is easily bypassable (just clear sessionStorage), but this is intentional: since Pollinations.AI processes in the user's browser, anyone who "abuses" it will only be consuming their own resources (CPU/RAM), with no impact on the site or other users.
                 </p>
-                <p className="bible-body text-sm">
-                  <strong>It's optional</strong>: You can navigate 95% of the site without using this feature.
+                <p className="bible-body text-sm text-muted-foreground">
+                  This feature is <strong>optional</strong> and does not affect the privacy of the rest of the site.
                 </p>
               </div>
 

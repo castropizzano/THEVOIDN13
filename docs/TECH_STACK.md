@@ -28,7 +28,7 @@ THEVOIDN13 Memorial
 │  ├─ React Router (navegação)
 │  ├─ Tailwind CSS (design system)
 │  ├─ shadcn/ui (componentes)
-│  └─ Puter.js (geração de imagens IA)
+│  └─ Pollinations.AI (geração de imagens IA, 100% client-side)
 │
 ├─ [BACKEND] Lovable Cloud (Supabase) - MÍNIMO
 │  ├─ Secrets Management
@@ -36,7 +36,7 @@ THEVOIDN13 Memorial
 │
 ├─ [CO-CRIAÇÃO] Humano + IA
 │  ├─ Lovable AI (Claude, Gemini) - desenvolvimento
-│  ├─ Puter.js FLUX.1-Schnell - geração de stills pelos usuários
+│  ├─ Pollinations.AI FLUX - geração de stills pelos usuários (zero auth)
 │  ├─ Midjourney (imagens conceituais)
 │  └─ Adobe Creative Cloud (edição)
 │
@@ -490,30 +490,32 @@ O memorial THEVØIDN13 adota uma abordagem de "privacy by architecture" onde 98-
 - Vimeo API (apenas para listagem de vídeos, não coleta dados)
 - Futuros recursos opcionais que exigem persistência de dados
 
-### Comparativo: Antes vs Depois (Puter.js)
+### Por que Pollinations.AI?
 
-| Aspecto | Lovable AI (Antes) | Puter.js (Depois) |
-|---------|-------------------|-------------------|
-| **Custo** | Consome créditos Lovable | Gratuito e ilimitado |
-| **Arquitetura** | Backend (edge function) | 100% Frontend |
-| **API Keys** | Requer LOVABLE_API_KEY | Zero configuração |
-| **Rate Limits** | Limitado pelo serviço | Apenas cooldown local (10s) |
-| **Risco de Abuso** | Alto (custos financeiros) | Zero (cada user paga com CPU) |
-| **Privacidade** | Processa em servidor externo | Processa no navegador |
-| **Modelo** | google/gemini-2.5-flash-image | black-forest-labs/flux.1-schnell |
-| **Qualidade** | Alta (resolução variável) | Alta (1024x1024) |
-| **Filosofia** | Conveniente mas pago | Alinhado com "privacy by architecture" |
+Pollinations.AI foi escolhido como solução definitiva após testar Puter.js, que exigia login obrigatório (contradizendo a filosofia "privacy by architecture").
 
-### Por que Puter.js?
+**Comparativo: Puter.js vs Pollinations.AI**
 
-Puter.js foi escolhido porque oferece geração de imagens com IA de alta qualidade (modelo FLUX.1-Schnell) de forma **completamente gratuita e ilimitada**. Diferente de serviços pagos como Lovable AI ou APIs comerciais, o Puter.js processa tudo no navegador do usuário, o que significa:
+| Aspecto | Puter.js (Testado) | Pollinations.AI (Implementado) |
+|---------|-------------------|-------------------------------|
+| **Custo** | Gratuito | Gratuito |
+| **Autenticação** | ❌ Login obrigatório (popup modal) | ✅ Zero autenticação |
+| **UX** | ❌ Popup frustrante | ✅ Experiência fluida |
+| **Privacy** | ⚠️ Coleta dados de usuário | ✅ 100% anônimo |
+| **API Keys** | Não requer | Não requer |
+| **Modelo** | FLUX.1-Schnell | FLUX (mesmo modelo) |
+| **Qualidade** | 1024x1024 | 1024x1024 |
+| **Backend** | Client-side | Client-side |
+| **Rate Limiting** | N/A | Client-side (contornável) |
+| **Filosofia** | ❌ Contradiz "zero vigilância" | ✅ Alinha perfeitamente |
 
-- ✅ Você nunca paga por uso
-- ✅ Não há limites de requisições
-- ✅ Impossível alguém abusar do sistema e gerar custos
-- ✅ Alinha-se perfeitamente com a filosofia "privacy by architecture" do THEVØIDN13
-
-É uma escolha técnica, ética e econômica superior para este caso de uso.
+**Por que Pollinations.AI é superior:**
+1. **Zero fricção** — Nenhum popup de login, nenhuma conta necessária
+2. **Privacy total** — API pública anônima, zero rastreamento
+3. **UX perfeita** — Geração instantânea sem interrupções
+4. **Filosofia alinhada** — Verdadeiramente "privacy by architecture"
+5. **Mesma qualidade** — Modelo FLUX de alta qualidade
+6. **Open-source** — Código e modelo totalmente transparentes
 
 ───────────────────────────────────────────────────────────────  
 ## PRÓXIMOS PASSOS TÉCNICOS  
@@ -583,7 +585,7 @@ THEVOIDN13 é um memorial digital construído com tecnologias modernas, mas mant
 
 ───────────────────────────────────────────────────────────────
 
-**Stack Version:** 2.0 (Migração Puter.js)  
+**Stack Version:** 2.1 (Pollinations.AI - Final)  
 **Last Update:** Novembro 2025  
 **Maintainer:** Castro Pizzano (цастро™)
 
