@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 
 interface CollectiveCardProps {
   title: string;
@@ -24,56 +23,49 @@ export const CollectiveCard = ({
   return (
     <Card 
       className={`
-        group relative overflow-hidden
-        bg-card/80 backdrop-blur-sm
-        border-primary/30 hover:border-primary
-        transition-all duration-300
-        hover:shadow-lg hover:shadow-primary/20
-        hover:-translate-y-1
-        ${highlight ? 'ring-2 ring-primary/50' : ''}
+        relative overflow-hidden
+        bg-black/90 border-l-4 border-primary
+        ${highlight ? 'border-primary' : 'border-primary/50'}
       `}
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-      
       <CardHeader className="relative">
         <div className="flex items-start justify-between gap-4">
           <div className="flex-1">
-            <CardTitle className="bible-subtitle text-primary group-hover:text-primary/90 transition-colors">
+            <CardTitle className="bible-subtitle text-primary uppercase">
               {title}
             </CardTitle>
-            <CardDescription className="bible-caption text-muted-foreground mt-1">
+            <CardDescription className="font-mono text-xs text-muted-foreground mt-1">
               {period}
             </CardDescription>
           </div>
           {icon && (
-            <div className="text-primary/60 group-hover:text-primary transition-colors">
+            <div className="text-primary/60">
               {icon}
             </div>
           )}
         </div>
         
         {role && (
-          <Badge variant="outline" className="w-fit mt-2 text-xs">
+          <p className="font-mono text-xs text-muted-foreground mt-2">
             {role}
-          </Badge>
+          </p>
         )}
       </CardHeader>
       
       <CardContent className="relative">
-        <p className="bible-body text-foreground/90 leading-relaxed">
+        <p className="font-mono text-sm text-muted-foreground leading-relaxed">
           {description}
         </p>
         
         {tags && tags.length > 0 && (
           <div className="flex flex-wrap gap-2 mt-4">
             {tags.map((tag, index) => (
-              <Badge 
+              <span 
                 key={index} 
-                variant="secondary" 
-                className="text-xs font-normal"
+                className="font-mono text-xs text-muted-foreground"
               >
                 {tag}
-              </Badge>
+              </span>
             ))}
           </div>
         )}

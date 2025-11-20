@@ -654,7 +654,7 @@ DaVinci Resolve"
                   period="2019-2023"
                   role="Criador / Diretor"
                   description="Filme-manifesto sobre skateboarding, subculturas e processos colaborativos. Estreou no Vila Ida (16/12/2022) e tornou-se objeto central da pesquisa de mestrado."
-                  tags={["Videoarte", "Documentário", "Cinema Experimental"]}
+                  tags={["Videoarte", "Documentário", "Cine Experimental"]}
                   highlight
                 />
                 
@@ -692,7 +692,7 @@ DaVinci Resolve"
                   period="2019-2023"
                   role="Creator / Director"
                   description="Manifesto-film about skateboarding, subcultures and collaborative processes. Premiered at Vila Ida (12/16/2022) and became central object of master's research."
-                  tags={["Video Art", "Documentary", "Experimental Cinema"]}
+                  tags={["Video Art", "Documentary", "Exp. Cinema"]}
                   highlight
                 />
                 
