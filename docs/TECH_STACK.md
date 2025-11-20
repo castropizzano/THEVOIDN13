@@ -13,7 +13,7 @@ Curitiba — 2025
 
 ## INTRODUÇÃO
 
-Este documento descreve a infraestrutura técnica do memorial THEVOIDN13.
+Este documento descreve a infraestrutura técnica do memorial THEVØIDN13.
 
 **Público:** Banca de defesa, desenvolvedores, futuros colaboradores.
 
@@ -21,17 +21,16 @@ Este documento descreve a infraestrutura técnica do memorial THEVOIDN13.
 ## VISÃO GERAL DA ARQUITETURA  
 ───────────────────────────────────────────────────────────────
 ```
-THEVOIDN13 Memorial
+THEVØIDN13 Memorial
 │
-├─ [FRONTEND] React + TypeScript (100% Estático)
+├─ [FRONTEND] React + TypeScript (98% Estático)
 │  ├─ Vite (build tool)
 │  ├─ React Router (navegação)
 │  ├─ Tailwind CSS (design system)
 │  └─ shadcn/ui (componentes)
 │
-├─ [BACKEND] Lovable Cloud (Supabase) - MÍNIMO
-│  ├─ Secrets Management
-│  └─ Vimeo API Integration
+├─ [BACKEND] Lovable Cloud (Supabase) - MÍNIMO (2%)
+│  └─ 1 Tabela: prompts (biblioteca pública)
 │
 ├─ [CO-CRIAÇÃO] Humano + IA
 │  ├─ Lovable AI (Claude, Gemini) - desenvolvimento
@@ -117,12 +116,13 @@ Fonte: Manrope (peso variável)
 ├── Index.tsx          → Página inicial (hero + intro)
 ├── Dissertacao.tsx    → LowMovie™ e metodologia
 ├── Autor.tsx          → Castro Pizzano (autor)
-└── Videos.tsx         → Portfolio audiovisual
+├── Videos.tsx         → Portfolio audiovisual
+└── Transparency.tsx   → Transparência técnica
 ```
 
 **Componentes Compartilhados:**
 - `Header.tsx` → Navegação fixa
-- `Footer.tsx` → Rodapé com links
+- `Footer.tsx` → Rodapé com badges
 - `BilingualSection.tsx` → Seções PT/EN
 
 ───────────────────────────────────────────────────────────────  
@@ -134,33 +134,48 @@ Fonte: Manrope (peso variável)
 **Project ID:** mkigpkfahuqkqxocsyjn
 
 **Recursos Utilizados:**
-- Edge Functions (serverless Deno)
+- PostgreSQL Database (1 tabela apenas)
 - Secrets Management
 - Environment Variables
 
-### Edge Functions
+### Database: Tabela `prompts`
 
-**Function:** `vimeo-videos`  
-**Runtime:** Deno  
-**Purpose:** Buscar vídeos da API do Vimeo
+**Purpose:** Biblioteca pública de prompts criativos  
+**Access:** Read-only (público)  
+**Data:** Prompts pré-configurados para uso criativo
 
-**Workflow:**
-1. Frontend invoca função via Supabase client
-2. Edge function usa `VIMEO_ACCESS_TOKEN` (secret)
-3. Fetch à API do Vimeo (`/me/videos`)
-4. Transformação de dados
-5. Retorno JSON otimizado
+```sql
+CREATE TABLE prompts (
+  id uuid PRIMARY KEY,
+  title text NOT NULL,
+  category text NOT NULL,
+  prompt_text text NOT NULL,
+  description text,
+  tags text[],
+  parameters jsonb,
+  is_active boolean DEFAULT true,
+  display_order integer DEFAULT 0,
+  created_at timestamptz DEFAULT now(),
+  updated_at timestamptz DEFAULT now()
+);
+
+-- Policy: Apenas leitura pública
+CREATE POLICY "Anyone can view active prompts" 
+ON prompts FOR SELECT 
+USING (is_active = true);
+```
 
 **Segurança:**
-- Token armazenado como secret
-- CORS habilitado
-- Rate limiting via Vimeo API
+- Nenhum dado pessoal armazenado
+- Apenas leitura pública (no INSERT/UPDATE/DELETE)
+- Zero tracking
+- Zero data collection
 
 ### Secrets
 
 Configurados via Lovable Cloud:
-- `VIMEO_ACCESS_TOKEN` → API do Vimeo
-- `SUPABASE_*` → Auto-configurados
+- `SUPABASE_URL` → Auto-configurado
+- `SUPABASE_PUBLISHABLE_KEY` → Auto-configurado (público)
 
 ───────────────────────────────────────────────────────────────  
 ## CAMADA 3: CO-CRIAÇÃO COM IA
@@ -172,19 +187,20 @@ Configurados via Lovable Cloud:
 **Modelos:**
 - `google/gemini-2.5-flash` (default)
 - `google/gemini-2.5-pro` (tarefas complexas)
-- `openai/gpt-5-mini` (quando necessário)
+- `anthropic/claude-3.5-sonnet` (quando necessário)
 
 **Uso no Projeto:**
 - Geração de textos conceituais
 - Estruturação de documentação
-- Prompts para Midjourney
+- Prompts criativos
 - Co-autoria metodológica
+- Desenvolvimento de código
 
 **Declaração:** Textos gerados com IA são sempre revisados e contextualizados pelo autor.
 
 ### Midjourney / Adobe Firefly
 
-**Função:** Geração de imagens (estética THEVOIDN13)
+**Função:** Geração de imagens (estética THEVØIDN13)
 
 **Workflow:**
 1. Captura de referência real
@@ -217,7 +233,7 @@ wet concrete, cinematic grain, high contrast
 
 ### Vídeos (Vimeo)
 
-**Estratégia:** Hospedagem externa + embedding
+**Estratégia:** Hospedagem externa + API integration
 
 **Workflow:**
 1. Edição final (Premiere Pro)
@@ -229,8 +245,8 @@ wet concrete, cinematic grain, high contrast
 **Vantagens:**
 - Sem limitação de tamanho no repo
 - Streaming otimizado
-- Analytics do Vimeo
 - Thumbnails automáticos
+- CDN global
 
 ### Imagens
 
@@ -257,7 +273,7 @@ import heroImage from "@/assets/hero-concept-art.png";
 
 **Acesso direto:**
 ```
-/documents/THEVOIDN13_ShadowInterfaceBible_v1.3.pdf
+/documents/THEVOIDN13_ShadowInterfaceBible_v13.pdf
 ```
 
 ───────────────────────────────────────────────────────────────  
@@ -266,8 +282,7 @@ import heroImage from "@/assets/hero-concept-art.png";
 
 ### Lovable Platform
 
-**URL Sandbox:**  
-`https://77991fba-1759-4282-b7d4-1a8f89499483.lovableproject.com`
+**URL Production:** `https://thevoidn13.com`
 
 **Processo:**
 1. Código commitado via Lovable
@@ -279,7 +294,7 @@ import heroImage from "@/assets/hero-concept-art.png";
 - Zero-config deployment
 - HTTPS automático
 - Hot reload durante dev
-- Domain customizável (futuro)
+- Custom domain (thevoidn13.com)
 
 ### Build
 
@@ -405,7 +420,6 @@ else if (name.includes('videoperformance'))
 
 **Backend:**
 - @supabase/supabase-js: ^2.76.1
-- @tanstack/react-query: ^5.83.0
 
 ### Browser Support
 
@@ -423,117 +437,69 @@ else if (name.includes('videoperformance'))
 ## FILOSOFIA ARQUITETURAL: PRIVACY BY ARCHITECTURE  
 ───────────────────────────────────────────────────────────────
 
-### Princípio: 100% Frontend Estático
+### Princípio: 98% Frontend Estático
 
-O memorial THEVØIDN13 adota uma abordagem de "privacy by architecture" onde 98-100% da aplicação é puramente frontend estático. Esta escolha arquitetural:
+O memorial THEVØIDN13 adota uma abordagem de "privacy by architecture" onde 98% da aplicação é puramente frontend estático. Esta escolha arquitetural:
 
-1. **Elimina vetores de ataque:** Sem backend = sem APIs vulneráveis a exploração
-2. **Zero custo operacional:** Processamento distribuído nos navegadores dos usuários
+1. **Elimina vetores de ataque:** Sem backend complexo = sem APIs vulneráveis
+2. **Zero custo operacional:** Processamento distribuído nos navegadores
 3. **Transparência total:** Todo código é inspecionável e auditável
-4. **Impossível abuso:** Cada usuário consome seus próprios recursos (CPU/RAM)
+4. **Impossível abuso:** Cada usuário consome seus próprios recursos
 5. **Alinhamento ético:** Coerente com a filosofia anti-vigilância do projeto
 
-**Exceções justificadas:**
-- Vimeo API (apenas para listagem de vídeos, não coleta dados)
-- Futuros recursos opcionais que exigem persistência de dados
+### Armazenamento Mínimo
 
-### Por que Pollinations.AI?
+**sessionStorage** (único mecanismo usado):
+- `language` → Preferência de idioma (PT/EN)
+- `antiSurveillanceBannerSeen` → Estado do banner (boolean)
 
-Pollinations.AI foi escolhido como solução definitiva após testar Puter.js, que exigia login obrigatório (contradizendo a filosofia "privacy by architecture").
-
-**Comparativo: Puter.js vs Pollinations.AI**
-
-| Aspecto | Puter.js (Testado) | Pollinations.AI (Implementado) |
-|---------|-------------------|-------------------------------|
-| **Custo** | Gratuito | Gratuito |
-| **Autenticação** | ❌ Login obrigatório (popup modal) | ✅ Zero autenticação |
-| **UX** | ❌ Popup frustrante | ✅ Experiência fluida |
-| **Privacy** | ⚠️ Coleta dados de usuário | ✅ 100% anônimo |
-| **API Keys** | Não requer | Não requer |
-| **Modelo** | FLUX.1-Schnell | FLUX (mesmo modelo) |
-| **Qualidade** | 1024x1024 | 1024x1024 |
-| **Backend** | Client-side | Client-side |
-| **Rate Limiting** | N/A | Client-side (contornável) |
-| **Filosofia** | ❌ Contradiz "zero vigilância" | ✅ Alinha perfeitamente |
-
-**Por que Pollinations.AI é superior:**
-1. **Zero fricção** — Nenhum popup de login, nenhuma conta necessária
-2. **Privacy total** — API pública anônima, zero rastreamento
-3. **UX perfeita** — Geração instantânea sem interrupções
-4. **Filosofia alinhada** — Verdadeiramente "privacy by architecture"
-5. **Mesma qualidade** — Modelo FLUX de alta qualidade
-6. **Open-source** — Código e modelo totalmente transparentes
+**Características:**
+- Expira ao fechar navegador
+- Local apenas (não enviado a servidores)
+- Não contém dados pessoais
+- Zero cookies
+- Zero tracking
 
 ───────────────────────────────────────────────────────────────  
 ## PRÓXIMOS PASSOS TÉCNICOS  
 ───────────────────────────────────────────────────────────────
 
-### Fase Atual (MVP)
+### Fase Atual (Production)
 
 - ✅ Estrutura de páginas
-- ✅ Design system base
+- ✅ Design system Bible v13
 - ✅ Integração Vimeo
 - ✅ Deploy funcional
-- ✅ Hierarquia tipográfica
-- ✅ Categorização de vídeos
+- ✅ SEO optimization
+- ✅ Privacy by architecture
+- ✅ Documentação completa
 
 ### Fase 2 (Refinamento)
 
-- [ ] SEO optimization (meta tags, sitemap)
-- [ ] Performance audit (Lighthouse)
+- [ ] Performance audit continuado
 - [ ] Accessibility review (WCAG)
-- [ ] Analytics (opcional)
+- [ ] PWA enhancements
 
-### Fase 3 (Expansão)
+### Filosofia de Desenvolvimento
 
-- [ ] Search dentro do portfolio
-- [ ] Filtros por categoria
-- [ ] Playlists customizadas
-- [ ] Domain customizado
+**Prioridades:**
+1. Privacy acima de features
+2. Simplicidade acima de complexidade
+3. Transparência acima de conveniência
+4. Arte acima de métricas
 
-### Fase 4 (Defesa)
-
-- [ ] Documentação técnica completa
-- [ ] Case study do processo
-- [ ] Backup de todos assets
-- [ ] Preparação de apresentação
-
-───────────────────────────────────────────────────────────────  
-## CONSIDERAÇÕES FINAIS  
-───────────────────────────────────────────────────────────────
-
-### Princípios Técnicos
-
-**1. AI-First Development**  
-Lovable AI como co-criador técnico
-
-**2. Simplicidade sobre complexidade**  
-React + TypeScript sem over-engineering
-
-**3. Design System rigoroso**  
-Hierarquia tipográfica consistente
-
-**4. Assets otimizados**  
-Vimeo para vídeos, /assets para imagens
-
-**5. Transparência metodológica**  
-Documentação como parte da obra
-
-### Limitações Conhecidas
-
-- Dependência de Vimeo API
-- Sem backend database próprio
-- Categorização manual de vídeos
-- Sem versão mobile-first (ainda)
-
-### Conclusão Técnica
-
-THEVOIDN13 é um memorial digital construído com tecnologias modernas, mas mantendo foco na essência: arte, filosofia e processo criativo. A stack técnica serve ao conceito, não o contrário.
+**Nunca adicionar:**
+- ❌ Analytics/tracking
+- ❌ Autenticação de usuários
+- ❌ Coleta de dados pessoais
+- ❌ Cookies desnecessários
 
 ───────────────────────────────────────────────────────────────
 
-**Stack Version:** 2.1.1 (Documentation Cleanup)  
-**Last Update:** November 2025  
-**Maintainer:** Castro Pizzano (цастро™)
+**© 2025 Castro Pizzano (цастро™)**  
+**Projeto THEVØIDN13** — Memorial Artístico e Práxis Híbrida  
+**Licença:** Creative Commons BY-NC-SA 4.0
+
+Última atualização: 20 de Novembro de 2025
 
 ───────────────────────────────────────────────────────────────

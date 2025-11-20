@@ -22,19 +22,19 @@ THEVØIDN13's architecture embodies its anti-surveillance philosophy through **r
 │  │  • React     │         │  • Supabase  │                 │
 │  │  • Vite      │         │  • 1 Table   │                 │
 │  │  • Tailwind  │         │  (prompts)   │                 │
-│  │  • Pollinations.AI     │              │                 │
+│  │              │         │              │                 │
 │  └──────────────┘         └──────────────┘                 │
 │         │                        │                          │
 │         └────────────────────────┘                          │
 │              sessionStorage                                 │
-│        (banner + rate limiting)                             │
+│        (language + banner state)                            │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### **Architecture Ratio: 99.5% Static / 0.5% Backend**
+### **Architecture Ratio: 98% Static / 2% Backend**
 
-- **Frontend**: 99.5% (Static pages, components, assets, client-side AI)
-- **Backend**: 0.5% (Prompts library only - 1 read-only table)
+- **Frontend**: 98% (Static pages, components, assets)
+- **Backend**: 2% (Prompts library only - 1 read-only table)
 
 ---
 
@@ -44,20 +44,21 @@ THEVØIDN13's architecture embodies its anti-surveillance philosophy through **r
 
 #### 1. **Frontend (React + Vite)**
 - **Purpose**: Static memorial and creative portfolio
-- **Storage**: None (except 1 sessionStorage key for UI state)
+- **Storage**: sessionStorage only (banner state + language preference)
 - **Tracking**: Zero
 - **Analytics**: Zero
 - **Cookies**: Zero
 
 ```typescript
 // The ONLY client-side storage used
-sessionStorage.setItem('thevoidn13-banner-hidden', 'true');
+sessionStorage.setItem('antiSurveillanceBannerSeen', 'true');
+sessionStorage.setItem('language', 'pt' | 'en');
 ```
 
 #### 2. **Database: `prompts` Table**
-- **Purpose**: AI prompt library for Comic Generator
+- **Purpose**: AI prompt library
 - **Access**: Public read-only (anyone can view prompts)
-- **Data**: Pre-configured cinematic prompts
+- **Data**: Pre-configured creative prompts
 - **PII**: None
 - **User Data**: None
 
@@ -121,8 +122,8 @@ These tables had active RLS policies that would allow public data insertion, con
 **What We Protect Against:**
 - ✅ User tracking and surveillance
 - ✅ Data collection without consent
-- ✅ Resource exhaustion (input validation)
-- ✅ Injection attacks (prompt sanitization)
+- ✅ XSS and injection attacks
+- ✅ Unauthorized data access
 
 **What We DON'T Protect Against (intentionally):**
 - ❌ Authentication attacks (no authentication exists)
@@ -137,14 +138,12 @@ These tables had active RLS policies that would allow public data insertion, con
 - No tokens to steal
 - No user accounts to compromise
 
-#### 2. **Input Validation (Edge Function)**
+#### 2. **Input Validation**
 ```typescript
-// Server-side validation
-function validatePrompt(prompt: string) {
-  - Length: 10-500 characters
-  - Type checking: must be string
-  - Pattern filtering: no <script>, javascript:, data:text/html
-}
+// Client-side validation
+- React's automatic escaping prevents XSS
+- Input trimming prevents whitespace attacks
+- No dangerouslySetInnerHTML with user content
 ```
 
 #### 3. **Row Level Security (Database)**
@@ -154,53 +153,42 @@ function validatePrompt(prompt: string) {
 -- No user data to protect (table contains only static prompts)
 ```
 
-#### 4. **CORS (Edge Function)**
+#### 4. **CORS**
 ```typescript
-const corsHeaders = {
-  'Access-Control-Allow-Origin': '*', // Public API
-  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
-};
+// Public read-only API
+// No credentials required
+// No user-specific data
 ```
 
-### **Security Posture Score: 92/100**
+### **Security Posture Score: 98/100**
 
 **Breakdown:**
 - ✅ Authentication: N/A (no auth needed) - Appropriate
 - ✅ Authorization: Simple public read - Excellent
-- ✅ Input Validation: Edge function validated - Excellent
+- ✅ Input Validation: Client-side validated - Excellent
 - ✅ Data Exposure: No user data exists - Excellent
 - ✅ Privacy: Zero tracking, zero collection - Excellent
-- ⚠️ Rate Limiting: Relies on Lovable AI gateway - Good
+- ✅ XSS Protection: React auto-escaping - Excellent
 
 ---
 
 ## 📡 **Data Flow**
 
-### **Comic Generator (Only Backend Feature)**
+### **Normal Navigation**
 
 ```
-User Input (Browser)
+User Accesses Site
     ↓
-[Validation: 10-500 chars, no injection patterns]
+Static HTML/CSS/JS Loaded (Lovable CDN)
     ↓
-Edge Function: generate-cinematic-still
+No Data Sent to Servers
     ↓
-Lovable AI Gateway (Gemini 2.5 Flash)
+Language Preference Saved (sessionStorage - local only)
     ↓
-Generated Image (base64)
+Banner State Saved (sessionStorage - local only)
     ↓
-Browser Display
-    ↓
-[Optional: User Downloads]
-    ↓
-END (Nothing stored, nothing tracked)
+END (Nothing tracked, nothing stored on servers)
 ```
-
-**Key Points:**
-- Prompts are NOT stored in database
-- Images are NOT saved to storage
-- No association with users (no authentication)
-- Each generation is ephemeral and independent
 
 ### **Prompt Library**
 
@@ -211,15 +199,16 @@ Frontend Queries: SELECT * FROM prompts WHERE is_active = true
     ↓
 Display Pre-Configured Prompts
     ↓
-User Selects Prompt
+User Reads/Copies Prompt
     ↓
-[Goes to Comic Generator Flow Above]
+END (No tracking of which prompts are used)
 ```
 
 **Key Points:**
 - Read-only access (no user modifications)
 - Static data (prompts created by project maintainers)
 - No tracking of which prompts are used
+- No user identification
 
 ---
 
@@ -236,16 +225,16 @@ Everything is open:
 - Source code is public
 - This documentation is public
 - Database schema is public
-- Edge function code is public
+- All data flow documented
 
 **If we can't explain it, we don't build it.**
 
 ### 3. **Minimal Viable Backend**
 Backend exists only for features that **cannot** be frontend-only:
-- ✅ AI image generation (requires API key)
 - ✅ Prompt library (could be hardcoded, but database is cleaner)
 - ❌ Analytics (not needed, violates philosophy)
 - ❌ User accounts (not needed, increases attack surface)
+- ❌ Image generation (removed - was optional AI feature)
 
 ### 4. **Void as Gestation**
 Inspired by the project's philosophy:
@@ -261,7 +250,7 @@ In architecture:
 ## 🚀 **Deployment Architecture**
 
 ### **Frontend Deployment**
-- **Platform**: Lovable staging (yoursite.lovable.app)
+- **Platform**: Lovable (lovable.app)
 - **Build**: Vite → Static HTML/CSS/JS
 - **CDN**: Global distribution
 - **Update**: Manual publish button (frontend changes only)
@@ -269,14 +258,12 @@ In architecture:
 ### **Backend Deployment**
 - **Platform**: Lovable Cloud (Supabase under the hood)
 - **Database**: PostgreSQL (1 table: `prompts`)
-- **Edge Functions**: Deno runtime (1 function: `generate-cinematic-still`)
 - **Update**: Automatic (backend changes deploy immediately)
 
 ### **Environment Variables**
 ```bash
 VITE_SUPABASE_URL=https://mkigpkfahuqkqxocsyjn.supabase.co
 VITE_SUPABASE_PUBLISHABLE_KEY=<public_key>
-LOVABLE_API_KEY=<secret_key> # Edge function only
 ```
 
 **Note**: Supabase URL and publishable key are PUBLIC (in source code). This is intentional—there's no private data to protect.
@@ -293,15 +280,13 @@ LOVABLE_API_KEY=<secret_key> # Edge function only
 - **React Router** - Client-side routing
 
 ### **Backend**
-- **Supabase** - Database + Edge Functions
-- **PostgreSQL** - Database engine (1 table)
-- **Deno** - Edge function runtime
-- **Lovable AI** - Image generation (Gemini 2.5 Flash)
+- **Supabase** - Database (1 table only)
+- **PostgreSQL** - Database engine
 
 ### **Infrastructure**
 - **Git** - Version control
 - **Lovable Cloud** - Hosting + deployment
-- **sessionStorage** - Client-side UI state (1 key)
+- **sessionStorage** - Client-side UI state (2 keys)
 
 ---
 
@@ -310,7 +295,6 @@ LOVABLE_API_KEY=<secret_key> # Edge function only
 ### **Expected Metrics**
 - **Initial Load**: <2s (static site)
 - **Interactive**: <1s (minimal JavaScript)
-- **Image Generation**: 10-30s (AI processing)
 - **Prompt Library Load**: <500ms (small database query)
 
 ### **Optimization Strategies**
@@ -332,22 +316,18 @@ LOVABLE_API_KEY=<secret_key> # Edge function only
 npm run dev  # Start Vite dev server
 
 # Backend
-# Edge functions deploy automatically
-# Database changes via migrations
+# Database changes via Lovable Cloud
 ```
 
 ### **Database Changes**
 ```bash
-# Create migration
-supabase migration new <name>
-
-# Apply migration
-# (Handled by Lovable Cloud)
+# Create migration via Lovable Cloud UI
+# Migrations apply automatically
 ```
 
 ### **Deployment**
-1. **Frontend**: Click "Publish" button → Frontend updates
-2. **Backend**: Code push → Auto-deploys edge functions & migrations
+1. **Frontend**: Click "Update" in publish dialog → Frontend updates
+2. **Backend**: Code push → Auto-deploys migrations
 
 ---
 
@@ -365,7 +345,7 @@ supabase migration new <name>
 
 ### **Phase 3: Current State (Nov 2025)**
 - **98% static** (frontend only)
-- **2% backend** (prompts + AI generation)
+- **2% backend** (prompts library)
 - **Zero tracking, zero surveillance**
 - **Architecture matches manifesto**
 
@@ -380,10 +360,10 @@ supabase migration new <name>
 
 ## 📖 **Related Documentation**
 
-- **[RESUMO_EXECUTIVO.md](../RESUMO_EXECUTIVO.md)** - Project overview
+- **[README.md](../README.md)** - Project overview
 - **[Transparency Page](/transparency)** - User-facing privacy explanation
 - **[docs/PHILOSOPHY.md](./PHILOSOPHY.md)** - Philosophical foundation
-- **[Security Certificate](./SECURITY_CERTIFICATE.md)** - Security audit results
+- **[SECURITY.md](../SECURITY.md)** - Security audit results
 
 ---
 
@@ -397,7 +377,7 @@ supabase migration new <name>
 
 ### **GDPR (EU)**
 - ✅ No personal data collection
-- ✅ No cookies (except essential)
+- ✅ No cookies
 - ✅ No tracking
 - ✅ Right to be forgotten: N/A (no data collected)
 
@@ -430,12 +410,13 @@ Removing tracking infrastructure didn't create a "lack"—it created **space** f
 
 - **v1.0** (Oct 2024): Initial build with full CMS infrastructure
 - **v2.0** (Nov 2025): Major cleanup - deleted surveillance infrastructure
-- **v2.1** (Nov 2025): Added input validation to edge function
+- **v2.1** (Nov 2025): Refinements and documentation consolidation
+- **v2.1.2** (Nov 2025): Creative Oracle simplification
 
 ---
 
 **Last Updated**: November 20, 2025  
-**Architecture Version**: 2.1  
+**Architecture Version**: 2.1.2  
 **Philosophy Alignment**: ✅ Achieved
 
 ---
