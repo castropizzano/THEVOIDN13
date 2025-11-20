@@ -436,6 +436,20 @@
     margin-top: 0 !important;
   }
 
+  /* ===============================================
+     LANGUAGE SELECTOR CLASSES
+     =============================================== */
+
+  /* Esconder conteúdo PT quando idioma é EN */
+  [data-language="en"] .lang-pt {
+    display: none;
+  }
+
+  /* Esconder conteúdo EN quando idioma é PT */
+  [data-language="pt"] .lang-en {
+    display: none;
+  }
+
   /* Legacy headings (manter compatibilidade) */
   .heading-hero {
     @apply text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1];
