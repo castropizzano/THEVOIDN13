@@ -164,35 +164,41 @@ Configurados via Lovable Cloud:
 - `VIMEO_ACCESS_TOKEN` → API do Vimeo
 - `SUPABASE_*` → Auto-configurados
 
-### Geração de Imagens com IA (Puter.js)
+### Geração de Imagens com IA (Pollinations.AI)
 
-**Plataforma:** Puter.js  
-**Modelo:** FLUX.1-Schnell  
-**Arquitetura:** 100% Client-side (zero backend)
+**Plataforma:** Pollinations.AI  
+**Modelo:** FLUX (Black Forest Labs)  
+**Arquitetura:** 100% Client-side (zero backend, zero autenticação)
 
 **Características:**
 - ✅ Gratuito e ilimitado
+- ✅ **Zero autenticação** - sem login ou cadastro necessário
 - ✅ Zero configuração (sem API keys)
 - ✅ Processamento no navegador do usuário
 - ✅ Impossível abuso de quota (cada usuário usa seus próprios recursos)
 - ✅ Open-source e transparente
+- ✅ UX instantânea e sem fricção
 
 **Implementação:**
 ```typescript
 // Frontend-only (ComicGenerator.tsx)
-const imageBlob = await puter.ai.txt2img(detailedPrompt, {
-  model: 'flux.1-schnell',
-  width: 1024,
-  height: 1024
-});
+const pollinationsUrl = new URL('https://image.pollinations.ai/prompt/' + encodeURIComponent(detailedPrompt));
+pollinationsUrl.searchParams.set('width', '1024');
+pollinationsUrl.searchParams.set('height', '1024');
+pollinationsUrl.searchParams.set('model', 'flux');
+pollinationsUrl.searchParams.set('nologo', 'true');
+pollinationsUrl.searchParams.set('enhance', 'true');
+
+const response = await fetch(pollinationsUrl.toString());
+const imageBlob = await response.blob();
 ```
 
 **Prompt Style (Shadow Interface Bible v13):**
 O gerador utiliza um prompt cinematográfico detalhado baseado no Shadow Interface Bible v13:
-- Estética noir brasileira inspirada em Blade Runner, Matrix, Akira
-- Paleta canônica: preto #000000, vermelho #ff0000, cinza #2a2a2a
-- Grain cinematográfico, alto contraste, iluminação dramática
-- Composição widescreen com profundidade de campo cinemática
+- Estética cinematic dark realism com urban decay
+- Máscara branca expressionless, parka verde oliva, iluminação neon azul/vermelho
+- Composição cinematográfica, profundidade de campo, grain
+- Referências: Blade Runner 2049, Akira, Christiane F.
 
 **Marca d'água:**
 Todas as imagens incluem marca d'água THEVØIDN13 (80% opacidade, vermelho #c40000, inferior direito) aplicada via canvas manipulation no frontend.
@@ -201,12 +207,13 @@ Todas as imagens incluem marca d'água THEVØIDN13 (80% opacidade, vermelho #c40
 Implementação client-side com `sessionStorage` (cooldown de 10 segundos entre gerações).
 
 **Escolha Estratégica:**
-Puter.js foi escolhido em substituição ao Lovable AI Gateway por:
-- Ser completamente gratuito e ilimitado (vs. consumo de créditos)
-- Processar no cliente (vs. backend/edge function)
-- Usar modelo open-source FLUX.1-Schnell
+Pollinations.AI foi escolhido por:
+- Ser completamente gratuito e ilimitado (sem API keys ou cadastro)
+- **Zero autenticação** - usuários não precisam criar conta ou fazer login (vs. Puter.js que exigia login)
+- Processar no cliente (zero backend)
+- Usar modelo open-source FLUX de alta qualidade
 - Alinhar-se perfeitamente com "privacy by architecture"
-- Eliminar riscos de abuso que gerariam custos financeiros
+- UX instantânea sem popups ou fricções
 
 ───────────────────────────────────────────────────────────────  
 ## CAMADA 3: CO-CRIAÇÃO COM IA
