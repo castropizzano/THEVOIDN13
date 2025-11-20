@@ -95,7 +95,7 @@ const archetypes = {
 export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
   const { language } = useLanguage();
   const { scans, saveScan, deleteScan, clearHistory, hasHistory } = useOracleHistory();
-  const [mode, setMode] = useState<"learn" | "scan" | "evolution">("scan");
+  const [mode, setMode] = useState<"learn" | "scan" | "evolution" | "goals">("scan");
   const [started, setStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<number[]>([]);
@@ -299,12 +299,15 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
           </DialogDescription>
         </DialogHeader>
 
-        <Tabs value={mode} onValueChange={(v) => setMode(v as "learn" | "scan" | "evolution")} className="w-full">
-          <TabsList className="grid w-full grid-cols-3 mb-6">
+        <Tabs value={mode} onValueChange={(v) => setMode(v as typeof mode)} className="w-full">
+          <TabsList className="grid w-full grid-cols-4 mb-6">
             <TabsTrigger value="scan">{language === "pt" ? "SCAN" : "SCAN"}</TabsTrigger>
             <TabsTrigger value="learn">{language === "pt" ? "LEARN" : "LEARN"}</TabsTrigger>
             <TabsTrigger value="evolution" disabled={!hasHistory}>
               {language === "pt" ? "EVOLUÇÃO" : "EVOLUTION"}
+            </TabsTrigger>
+            <TabsTrigger value="goals" disabled={!showResults}>
+              {language === "pt" ? "METAS" : "GOALS"}
             </TabsTrigger>
           </TabsList>
 
@@ -620,6 +623,32 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
               />
             </div>
           )}
+            </div>
+          </TabsContent>
+
+          <TabsContent value="goals">
+            <div className="space-y-6">
+              <div className="text-center py-12 bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg">
+                <h3 className="text-2xl font-bold mb-4">
+                  {language === "pt" ? "Sistema de Metas Criativas" : "Creative Goals System"}
+                </h3>
+                <p className="text-muted-foreground mb-6">
+                  {language === "pt"
+                    ? "Em breve: sistema completo de objetivos e tracking de progresso baseado no seu arquétipo criativo"
+                    : "Coming soon: complete goals and progress tracking system based on your creative archetype"}
+                </p>
+                <Button
+                  onClick={() => {
+                    const link = document.createElement('a');
+                    link.href = 'https://thevoidn13.dev';
+                    link.target = '_blank';
+                    link.click();
+                  }}
+                  variant="outline"
+                >
+                  {language === "pt" ? "Saiba Mais" : "Learn More"}
+                </Button>
+              </div>
             </div>
           </TabsContent>
         </Tabs>
