@@ -58,7 +58,7 @@ export const VideoCard = ({ video, language, categoryLabel }: VideoCardProps) =>
             src={getThumbnailUrl()}
             alt={title}
             loading="lazy"
-            className="h-full w-full object-cover object-center transition-all duration-500 grayscale group-hover:grayscale-0"
+            className="h-full w-full object-contain transition-all duration-500 grayscale group-hover:grayscale-0"
           />
           
           {/* Category Badge - No Rounded, Top Position */}
