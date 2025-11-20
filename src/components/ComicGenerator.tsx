@@ -1,12 +1,77 @@
 import { useState, useRef } from "react";
-import { Download, Sparkles } from "lucide-react";
+import { Download, Sparkles, BookOpen } from "lucide-react";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { FeatureCard } from "@/components/FeatureCard";
 import { toast } from "@/hooks/use-toast";
 import { LoadingSpinner } from "@/components/LoadingSpinner";
+
+// Example prompts library organized by category
+const PROMPT_LIBRARY = {
+  pt: {
+    solo: [
+      "Skatista deslizando em corrimão de escadaria urbana",
+      "Motociclista parado sob viaduto observando a cidade",
+      "Grafiteiro pintando mural em parede de concreto",
+      "Figura mascarada caminhando sob chuva neon",
+      "Punk sentado em banco de praça abandonada"
+    ],
+    group: [
+      "Pessoas em roda ao redor de fogueira em terreno baldio",
+      "Grupo de amigos conversando em bar de esquina",
+      "Skatistas reunidos na base de rampa de concreto",
+      "Banda tocando em palco improvisado de rua",
+      "Crew de graffiti planejando próxima intervenção"
+    ],
+    urban: [
+      "Rua vazia com poças refletindo neon vermelho",
+      "Beco estreito com graffiti e lixo acumulado",
+      "Viaduto com concreto rachado e pichações",
+      "Terminal de ônibus abandonado à noite",
+      "Estacionamento vazio sob luz de poste quebrado"
+    ],
+    action: [
+      "Skate no ar durante ollie sobre escada",
+      "Moto derrubando durante manobra radical",
+      "Corrida entre becos estreitos da periferia",
+      "Briga em frente a bar decadente",
+      "Fuga pulando cerca de terreno abandonado"
+    ]
+  },
+  en: {
+    solo: [
+      "Skater grinding on urban staircase handrail",
+      "Motorcyclist stopped under overpass watching the city",
+      "Graffiti artist painting mural on concrete wall",
+      "Masked figure walking under neon rain",
+      "Punk sitting on abandoned park bench"
+    ],
+    group: [
+      "People in circle around bonfire in vacant lot",
+      "Group of friends talking at corner bar",
+      "Skaters gathered at concrete ramp base",
+      "Band playing on improvised street stage",
+      "Graffiti crew planning next intervention"
+    ],
+    urban: [
+      "Empty street with puddles reflecting red neon",
+      "Narrow alley with graffiti and accumulated trash",
+      "Overpass with cracked concrete and tags",
+      "Abandoned bus terminal at night",
+      "Empty parking lot under broken streetlight"
+    ],
+    action: [
+      "Skateboard in air during ollie over stairs",
+      "Motorcycle crashing during radical maneuver",
+      "Chase through narrow suburban alleys",
+      "Fight in front of decayed bar",
+      "Escape jumping fence of abandoned lot"
+    ]
+  }
+};
 
 export const ComicGenerator = () => {
   const { language } = useLanguage();
@@ -14,6 +79,7 @@ export const ComicGenerator = () => {
   const [customPrompt, setCustomPrompt] = useState("");
   const [generatedImage, setGeneratedImage] = useState<string | null>(null);
   const [isGenerating, setIsGenerating] = useState(false);
+  const [showPromptLibrary, setShowPromptLibrary] = useState(false);
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   const applyWatermark = (imageDataUrl: string, watermarkDataUrl: string): Promise<string> => {
@@ -375,6 +441,108 @@ Render the above scene as a GRAPHIC NOVEL PANEL maintaining:
                 </p>
               </div>
             </div>
+          </div>
+
+          {/* PROMPT LIBRARY */}
+          <div className="space-y-3">
+            <Button
+              onClick={() => setShowPromptLibrary(!showPromptLibrary)}
+              variant="outline"
+              size="sm"
+              className="w-full font-mono border-primary/30 hover:bg-primary/10 text-xs"
+            >
+              <BookOpen className="w-3 h-3 mr-2" />
+              {language === "pt" 
+                ? (showPromptLibrary ? "[ OCULTAR BIBLIOTECA DE PROMPTS ]" : "[ MOSTRAR BIBLIOTECA DE PROMPTS ]")
+                : (showPromptLibrary ? "[ HIDE PROMPT LIBRARY ]" : "[ SHOW PROMPT LIBRARY ]")}
+            </Button>
+
+            {showPromptLibrary && (
+              <div className="border border-primary/30 rounded-lg p-4 bg-background/30">
+                <p className="text-xs text-muted-foreground font-mono mb-3">
+                  {language === "pt" 
+                    ? "// Clique em um prompt para preenchê-lo automaticamente"
+                    : "// Click on a prompt to auto-fill it"}
+                </p>
+                
+                <Tabs defaultValue="solo" className="w-full">
+                  <TabsList className="grid w-full grid-cols-4 bg-background/50">
+                    <TabsTrigger value="solo" className="text-xs font-mono">
+                      {language === "pt" ? "Solo" : "Solo"}
+                    </TabsTrigger>
+                    <TabsTrigger value="group" className="text-xs font-mono">
+                      {language === "pt" ? "Grupo" : "Group"}
+                    </TabsTrigger>
+                    <TabsTrigger value="urban" className="text-xs font-mono">
+                      {language === "pt" ? "Urbano" : "Urban"}
+                    </TabsTrigger>
+                    <TabsTrigger value="action" className="text-xs font-mono">
+                      {language === "pt" ? "Ação" : "Action"}
+                    </TabsTrigger>
+                  </TabsList>
+
+                  <TabsContent value="solo" className="space-y-2 mt-3">
+                    {PROMPT_LIBRARY[language].solo.map((prompt, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => {
+                          setCustomPrompt(prompt);
+                          setShowPromptLibrary(false);
+                        }}
+                        className="w-full text-left text-xs font-mono p-2 rounded border border-primary/20 hover:bg-primary/10 hover:border-primary/50 transition-colors"
+                      >
+                        {prompt}
+                      </button>
+                    ))}
+                  </TabsContent>
+
+                  <TabsContent value="group" className="space-y-2 mt-3">
+                    {PROMPT_LIBRARY[language].group.map((prompt, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => {
+                          setCustomPrompt(prompt);
+                          setShowPromptLibrary(false);
+                        }}
+                        className="w-full text-left text-xs font-mono p-2 rounded border border-primary/20 hover:bg-primary/10 hover:border-primary/50 transition-colors"
+                      >
+                        {prompt}
+                      </button>
+                    ))}
+                  </TabsContent>
+
+                  <TabsContent value="urban" className="space-y-2 mt-3">
+                    {PROMPT_LIBRARY[language].urban.map((prompt, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => {
+                          setCustomPrompt(prompt);
+                          setShowPromptLibrary(false);
+                        }}
+                        className="w-full text-left text-xs font-mono p-2 rounded border border-primary/20 hover:bg-primary/10 hover:border-primary/50 transition-colors"
+                      >
+                        {prompt}
+                      </button>
+                    ))}
+                  </TabsContent>
+
+                  <TabsContent value="action" className="space-y-2 mt-3">
+                    {PROMPT_LIBRARY[language].action.map((prompt, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => {
+                          setCustomPrompt(prompt);
+                          setShowPromptLibrary(false);
+                        }}
+                        className="w-full text-left text-xs font-mono p-2 rounded border border-primary/20 hover:bg-primary/10 hover:border-primary/50 transition-colors"
+                      >
+                        {prompt}
+                      </button>
+                    ))}
+                  </TabsContent>
+                </Tabs>
+              </div>
+            )}
           </div>
 
           <div className="space-y-4">
