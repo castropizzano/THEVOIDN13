@@ -379,7 +379,7 @@ DaVinci Resolve"
           <div className="bible-bilingual-grid bible-block">
             <div>
               <div>
-                <p className="bible-body italic text-muted-foreground">Uma identidade que rejeita a lógica publicitária e se afirma como linguagem, não logotipo.</p>
+                <h3 className="bible-subtitle text-primary">Uma identidade que rejeita a lógica publicitária e se afirma como linguagem, não logotipo.</h3>
                 
                 <h3 className="bible-subtitle">O Contexto: Uma Recusa ao Branding Tradicional</h3>
                 <p className="bible-body">Vivemos na era do excesso de identidade. Marcas falam mais de si do que de seus propósitos, buscam reconhecimento pelo algoritmo e não pela substância. Como criador de branding, minha resposta foi criar uma anti-marca — uma identidade que rejeita a lógica publicitária e se afirma como linguagem, não logotipo.</p>
@@ -531,7 +531,7 @@ DaVinci Resolve"
 
             <div>
               <div>
-                <p className="bible-body italic text-muted-foreground">An identity that rejects the advertising logic of self-promotion, asserting itself as language, not logo.</p>
+                <h3 className="bible-subtitle text-primary">An identity that rejects the advertising logic of self-promotion, asserting itself as language, not logo.</h3>
                 
                 <h3 className="bible-subtitle">The Context: A Refusal of Traditional Branding</h3>
                 <p className="bible-body">We live in the era of identity excess. Brands talk more about themselves than their purposes, seeking algorithm recognition rather than substance. As a branding creator, my response was to create an anti-brand — an identity that rejects the advertising logic of self-promotion, asserting itself as language, not logo.</p>
