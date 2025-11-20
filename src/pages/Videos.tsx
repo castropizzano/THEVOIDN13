@@ -146,7 +146,7 @@ const Videos = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <Button
-                    variant="default"
+                    variant="outline"
                     size="lg"
                     asChild
                   >
@@ -160,7 +160,7 @@ const Videos = () => {
                     </a>
                   </Button>
                   <Button
-                    variant="default"
+                    variant="outline"
                     size="lg"
                     asChild
                   >
@@ -183,7 +183,7 @@ const Videos = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <Button
-                    variant="default"
+                    variant="outline"
                     size="lg"
                     asChild
                   >
@@ -197,7 +197,7 @@ const Videos = () => {
                     </a>
                   </Button>
                   <Button
-                    variant="default"
+                    variant="outline"
                     size="lg"
                     asChild
                   >
