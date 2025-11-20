@@ -20,6 +20,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { FeatureCard } from "@/components/FeatureCard";
 import { Separator } from "@/components/ui/separator";
 import { useTranslation } from "@/hooks/useTranslation";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { Link } from "react-router-dom";
+import { Shield, ShieldOff, Database, Sparkles } from "lucide-react";
 import heroImage from "@/assets/hero-rain-wide.png";
 import heroMobile from "@/assets/hero-mobile.png";
 import voidCityFront from "@/assets/void-city-front.png";
@@ -78,6 +81,7 @@ const Index = () => {
   const [oracleOpen, setOracleOpen] = useState(false);
   const [prototypeDialogOpen, setPrototypeDialogOpen] = useState(false);
   const { t } = useTranslation();
+  const { language } = useLanguage();
   
   const schemaData = {
     "@context": "https://schema.org",
@@ -109,6 +113,94 @@ const Index = () => {
             />
           </picture>
         </section>
+
+        {/* ===== TRANSPARENCY SECTION ===== */}
+        <section className="py-12 sm:py-16 bg-muted/30">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6">
+            <div className="flex items-center gap-4 mb-8 justify-center">
+              <Shield className="h-6 w-6 sm:h-8 sm:w-8 text-primary" />
+              <h2 className="bible-subtitle text-sm sm:text-base md:text-lg text-center">
+                {language === "pt" 
+                  ? "PRIVACIDADE POR DESIGN / PRIVACY BY DESIGN" 
+                  : "PRIVACY BY DESIGN / PRIVACIDADE POR DESIGN"}
+              </h2>
+            </div>
+
+            <div className="grid sm:grid-cols-3 gap-4 sm:gap-6 mb-6">
+              {/* Card 1: Zero Vigilância */}
+              <Card className="border-primary/50">
+                <CardHeader className="pb-3">
+                  <div className="flex items-center gap-2 mb-2">
+                    <ShieldOff className="h-5 w-5 text-primary" />
+                    <CardTitle className="text-base sm:text-lg">
+                      {language === "pt" ? "Zero Vigilância" : "Zero Surveillance"}
+                    </CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <ul className="text-xs sm:text-sm space-y-1 bible-body">
+                    <li>✓ {language === "pt" ? "Sem Analytics" : "No Analytics"}</li>
+                    <li>✓ {language === "pt" ? "Sem Tracking" : "No Tracking"}</li>
+                    <li>✓ {language === "pt" ? "Sem Cookies" : "No Cookies"}</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Card 2: Armazenamento Mínimo */}
+              <Card className="border-primary/50">
+                <CardHeader className="pb-3">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Database className="h-5 w-5 text-primary" />
+                    <CardTitle className="text-base sm:text-lg">
+                      {language === "pt" ? "Armazenamento Honesto" : "Honest Storage"}
+                    </CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-xs sm:text-sm bible-body">
+                    <strong>sessionStorage {language === "pt" ? "mínimo" : "minimal"}</strong>: {language === "pt" 
+                      ? "apenas para UX do banner (não persiste dados sensíveis)." 
+                      : "only for banner UX (doesn't persist sensitive data)."}
+                  </p>
+                </CardContent>
+              </Card>
+
+              {/* Card 3: IA Opcional */}
+              <Card className="border-primary/50">
+                <CardHeader className="pb-3">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Sparkles className="h-5 w-5 text-primary" />
+                    <CardTitle className="text-base sm:text-lg">
+                      {language === "pt" ? "IA Experimental" : "Experimental AI"}
+                    </CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-xs sm:text-sm bible-body">
+                    {language === "pt" 
+                      ? "Feature opcional de geração de imagens." 
+                      : "Optional image generation feature."}
+                    {" "}<strong>{language === "pt" 
+                      ? "Prompts não são armazenados." 
+                      : "Prompts are not stored."}</strong>
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="text-center">
+              <Button variant="outline" asChild>
+                <Link to="/transparency">
+                  {language === "pt" 
+                    ? "Ver Documentação Técnica Completa →" 
+                    : "View Complete Technical Documentation →"}
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        <Separator className="bg-border/30" />
 
         {/* ===== SUBTITLE + VIDEO ===== */}
         <BilingualSection className="bible-section">

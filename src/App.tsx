@@ -13,6 +13,7 @@ import Dissertacao from "./pages/Dissertacao";
 import Autor from "./pages/Autor";
 import Videos from "./pages/Videos";
 import StyleGuide from "./pages/StyleGuide";
+import Transparency from "./pages/Transparency";
 import NotFound from "./pages/NotFound";
 
 // Static site - no query client needed
@@ -29,6 +30,8 @@ const AppContent = () => {
         <Route path="/galeria" element={<Videos />} />
         <Route path="/videos" element={<Videos />} />
         <Route path="/style-guide" element={<StyleGuide />} />
+        <Route path="/transparency" element={<Transparency />} />
+        <Route path="/transparencia" element={<Transparency />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
