@@ -604,13 +604,11 @@ const Dissertacao = () => {
 
         {/* ASSISTIR LOWMOVIE - SEÇÃO ANTES DA DOCUMENTAÇÃO */}
         <BilingualSection className="bible-section">
-          <div className="bilingual-grid bible-block">
-            <div className="bilingual-col">
-              <h2 className="bible-title">ASSISTIR LOWMOVIE™</h2>
-            </div>
-            <div className="bilingual-col">
-              <h2 className="bible-title">WATCH LOWMOVIE™</h2>
-            </div>
+          <div className="bible-block">
+            <h2 className="bible-title">
+              <span className="lang-pt">ASSISTIR LOWMOVIE™</span>
+              <span className="lang-en">WATCH LOWMOVIE™</span>
+            </h2>
           </div>
 
           <div className="bible-block">
@@ -634,22 +632,18 @@ const Dissertacao = () => {
 
         {/* Documentation - ÚLTIMA SEÇÃO */}
         <BilingualSection className="bible-section">
-          <div className="bilingual-grid bible-block">
-            <div className="bilingual-col">
-              <h2 className="bible-title">DOCUMENTAÇÃO</h2>
-            </div>
-            <div className="bilingual-col">
-              <h2 className="bible-title">DOCUMENTATION</h2>
-            </div>
+          <div className="bible-block">
+            <h2 className="bible-title">
+              <span className="lang-pt">DOCUMENTAÇÃO</span>
+              <span className="lang-en">DOCUMENTATION</span>
+            </h2>
           </div>
           
-          <div className="bilingual-grid">
-            <div className="bilingual-col">
-              <h3 className="bible-subtitle">DOCUMENTOS DE PESQUISA</h3>
-            </div>
-            <div className="bilingual-col">
-              <h3 className="bible-subtitle">RESEARCH DOCUMENTS</h3>
-            </div>
+          <div className="bible-block">
+            <h3 className="bible-subtitle">
+              <span className="lang-pt">DOCUMENTOS DE PESQUISA</span>
+              <span className="lang-en">RESEARCH DOCUMENTS</span>
+            </h3>
           </div>
 
           <div className="bible-block">

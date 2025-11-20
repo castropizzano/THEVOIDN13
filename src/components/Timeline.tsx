@@ -92,10 +92,12 @@ export const Timeline = () => {
     <Card className="bg-card/80 border-primary/30">
       <CardHeader>
         <CardTitle className="text-2xl font-bold text-primary">
-          Timeline Criativa / Creative Timeline
+          <span className="lang-pt">Timeline Criativa</span>
+          <span className="lang-en">Creative Timeline</span>
         </CardTitle>
         <CardDescription className="text-base">
-          Percurso entre a rua e a pesquisa / Journey between street and research
+          <span className="lang-pt">Percurso entre a rua e a pesquisa</span>
+          <span className="lang-en">Journey between street and research</span>
         </CardDescription>
       </CardHeader>
       <CardContent>
