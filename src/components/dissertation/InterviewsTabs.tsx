@@ -379,60 +379,25 @@ export const InterviewsTabs = () => {
               </div>
             </CardHeader>
             <CardContent>
-              {/* Galeria com navegação por indicadores */}
+              {/* Galeria - clique para abrir lightbox */}
               <div className="w-full">
-                {/* Imagem com animação de transição - clicável para abrir lightbox */}
+                {/* Imagem clicável para abrir lightbox */}
                 <div 
-                  className="w-full bg-black/5 rounded-lg overflow-hidden border border-border/50 flex items-center justify-center min-h-[400px] cursor-pointer hover:border-primary/50 transition-all"
+                  className="w-full bg-black/5 rounded-lg overflow-hidden border border-border/50 flex items-center justify-center min-h-[400px] cursor-pointer hover:border-primary/50 transition-all group"
                   onClick={() => setLightboxOpen(true)}
                 >
                   <img
                     src={zineImages[currentImageIndex]}
                     alt={`LowZine página ${currentImageIndex + 1}`}
-                    className={`w-full h-auto object-contain 
-                                grayscale hover:grayscale-0 
-                                transition-all duration-300
-                                ${isTransitioning 
-                                  ? direction === 'next' 
-                                    ? 'animate-[fadeOut_150ms_ease-out]' 
-                                    : 'animate-[fadeOut_150ms_ease-out]'
-                                  : 'animate-[fadeIn_300ms_ease-in]'
-                                }`}
+                    className="w-full h-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-300"
                   />
                 </div>
-
-                {/* Indicadores de progresso melhorados */}
-                <div className="flex justify-center gap-2 mt-6">
-                  {zineImages.map((_, index) => (
-                    <button
-                      key={index}
-                      onClick={() => {
-                        if (!isTransitioning && index !== currentImageIndex) {
-                          setIsTransitioning(true);
-                          setDirection(index > currentImageIndex ? 'next' : 'prev');
-                          setTimeout(() => {
-                            setCurrentImageIndex(index);
-                            setIsTransitioning(false);
-                          }, 150);
-                        }
-                      }}
-                      disabled={isTransitioning}
-                      className={`rounded-full transition-all duration-300 ease-out
-                                  ${index === currentImageIndex 
-                                    ? 'w-10 h-3 bg-primary shadow-lg' 
-                                    : 'w-3 h-3 bg-border/50 hover:bg-primary/50 hover:scale-125'
-                                  }
-                                  disabled:cursor-not-allowed`}
-                      aria-label={`Ir para página ${index + 1}`}
-                      aria-current={index === currentImageIndex ? 'true' : 'false'}
-                    />
-                  ))}
-                </div>
-
-                {/* Contador de páginas (pequeno e discreto) */}
+                
+                {/* Texto indicativo */}
                 <div className="text-center mt-4">
                   <span className="bible-caption text-muted-foreground">
-                    {currentImageIndex + 1} / {zineImages.length}
+                    <span className="lang-pt">Clique para visualizar em tela cheia</span>
+                    <span className="lang-en">Click to view fullscreen</span>
                   </span>
                 </div>
               </div>
@@ -493,6 +458,34 @@ export const InterviewsTabs = () => {
                         <ChevronRight className="h-12 w-12" strokeWidth={1.5} />
                       </button>
                     )}
+
+                    {/* Indicadores de progresso no lightbox */}
+                    <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex gap-2">
+                      {zineImages.map((_, index) => (
+                        <button
+                          key={index}
+                          onClick={() => {
+                            if (!isTransitioning && index !== currentImageIndex) {
+                              setIsTransitioning(true);
+                              setDirection(index > currentImageIndex ? 'next' : 'prev');
+                              setTimeout(() => {
+                                setCurrentImageIndex(index);
+                                setIsTransitioning(false);
+                              }, 150);
+                            }
+                          }}
+                          disabled={isTransitioning}
+                          className={`rounded-full transition-all duration-300 ease-out
+                                      ${index === currentImageIndex 
+                                        ? 'w-10 h-3 bg-primary shadow-lg' 
+                                        : 'w-3 h-3 bg-white/30 hover:bg-primary/70 hover:scale-125'
+                                      }
+                                      disabled:cursor-not-allowed`}
+                          aria-label={`Ir para página ${index + 1}`}
+                          aria-current={index === currentImageIndex ? 'true' : 'false'}
+                        />
+                      ))}
+                    </div>
 
                     {/* Contador no lightbox */}
                     <div className="absolute bottom-4 left-1/2 -translate-x-1/2">
