@@ -347,15 +347,16 @@ export const InterviewsTabs = () => {
               {/* Slider de página única */}
               <div className="relative w-full">
                 {/* Botão Anterior */}
-                <Button
-                  onClick={prevImage}
-                  variant="ghost"
-                  size="icon"
-                  className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white bg-black/50 hover:bg-black/70 h-12 w-12"
-                  disabled={currentImageIndex === 0}
-                >
-                  <ChevronLeft className="h-8 w-8" />
-                </Button>
+                {currentImageIndex > 0 && (
+                  <Button
+                    onClick={prevImage}
+                    variant="ghost"
+                    size="icon"
+                    className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white bg-black/50 hover:bg-black/70 h-12 w-12"
+                  >
+                    <ChevronLeft className="h-8 w-8" />
+                  </Button>
+                )}
 
                 {/* Imagem em proporção real */}
                 <div className="w-full bg-black/5 rounded-lg overflow-hidden border border-border/50 flex items-center justify-center">
@@ -367,15 +368,16 @@ export const InterviewsTabs = () => {
                 </div>
 
                 {/* Botão Próximo */}
-                <Button
-                  onClick={nextImage}
-                  variant="ghost"
-                  size="icon"
-                  className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white bg-black/50 hover:bg-black/70 h-12 w-12"
-                  disabled={currentImageIndex === zineImages.length - 1}
-                >
-                  <ChevronRight className="h-8 w-8" />
-                </Button>
+                {currentImageIndex < zineImages.length - 1 && (
+                  <Button
+                    onClick={nextImage}
+                    variant="ghost"
+                    size="icon"
+                    className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white bg-black/50 hover:bg-black/70 h-12 w-12"
+                  >
+                    <ChevronRight className="h-8 w-8" />
+                  </Button>
+                )}
 
                 {/* Indicadores de progresso */}
                 <div className="flex justify-center gap-1 mt-4">
