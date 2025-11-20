@@ -385,7 +385,7 @@ export const InterviewsTabs = () => {
 
               {/* Lightbox em tela cheia */}
               <Dialog open={lightboxOpen} onOpenChange={setLightboxOpen}>
-                <DialogContent className="max-w-[100vw] h-screen w-screen p-0 bg-black/95 border-none">
+                <DialogContent className="max-w-[100vw] h-screen w-screen p-0 bg-black/95 border-none [&>button]:hidden">
                   <div className="relative w-full h-full flex items-center justify-center">
                     {/* Botão Fechar */}
                     <Button

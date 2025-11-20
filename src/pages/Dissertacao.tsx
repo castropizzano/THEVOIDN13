@@ -14,6 +14,7 @@ import { InterviewsTabs } from "@/components/dissertation/InterviewsTabs";
 import { VideoPlayer } from "@/components/VideoPlayer";
 import { LowMovieBlock } from "@/components/dissertation/LowMovieBlock";
 import { SkillCard } from "@/components/SkillCard";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import heroImage from "@/assets/cover-lowmovie.png";
 
 const Dissertacao = () => {
@@ -112,56 +113,85 @@ const Dissertacao = () => {
 
         {/* CasaTrezeStudio */}
         <BilingualSection className="bible-section">
-          <div className="bible-block">
-            <div className="border-l-4 border-primary pl-6">
-              <h2 className="bible-title">CASATREZESTUDIO®</h2>
-              <p className="bible-subtitle text-muted-foreground mt-2">
-                <span className="lang-pt">2008-Presente</span>
-                <span className="lang-en">2008-Present</span>
-              </p>
-              <p className="bible-subtitle text-primary mt-2">
-                <span className="lang-pt">Coletivo Criativo</span>
-                <span className="lang-en">Creative Lab</span>
-              </p>
-            </div>
-          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Card Principal */}
+            <Card className="md:col-span-2 bg-card/50 border-2 border-primary hover:border-primary/80 transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="bible-title text-primary">CASATREZESTUDIO®</CardTitle>
+                <p className="bible-subtitle text-muted-foreground mt-2">
+                  <span className="lang-pt">2008-Presente</span>
+                  <span className="lang-en">2008-Present</span>
+                </p>
+                <p className="bible-subtitle text-primary mt-2 uppercase tracking-wide font-mono text-sm">
+                  <span className="lang-pt">Coletivo Criativo</span>
+                  <span className="lang-en">Creative Lab</span>
+                </p>
+              </CardHeader>
+              <CardContent>
+                <p className="bible-body text-muted-foreground">
+                  <span className="lang-pt">Coletivo Criativo fundado em 2008. Estúdio pós-contemporâneo de design e vídeo. Associação de produtores criativos independentes que opera como laboratório de criação autoral, cultural e comercial, conectando pessoas, ideias e projetos.</span>
+                  <span className="lang-en">Creative Collective founded in 2008. Post-contemporary studio of design and video. Association of independent creative producers operating as a laboratory of authorial, cultural and commercial creation, connecting people, ideas and projects.</span>
+                </p>
+              </CardContent>
+            </Card>
 
-          <div className="bible-block">
-            <div className="lang-pt">
-              <div>
-                <p className="bible-body">Coletivo Criativo fundado em 2008. Estúdio pós-contemporâneo de design e vídeo. Associação de produtores criativos independentes que opera como laboratório de criação autoral, cultural e comercial, conectando pessoas, ideias e projetos.</p>
-                
-                <h3 className="bible-subtitle">Conceito</h3>
-                <p className="bible-body">CasaTrezeStudio não é empresa. É organismo vivo. Laboratório onde criadores independentes se encontram para transformar ideias em matéria. Nasceu da necessidade de criar fora dos sistemas tradicionais, construindo infraestrutura criativa própria. 17 anos de resistência e reinvenção.</p>
-                
-                <h3 className="bible-subtitle">Serviços</h3>
-                <p className="bible-body"><span className="font-semibold">Design Gráfico:</span> Identidades visuais, branding, editorial</p>
-                <p className="bible-body"><span className="font-semibold">Vídeo:</span> Documentários, videoclipes, conteúdo digital</p>
-                <p className="bible-body"><span className="font-semibold">Direção de Arte:</span> Projetos culturais, campanhas, eventos</p>
-                <p className="bible-body"><span className="font-semibold">Curadoria:</span> Projetos experimentais e autorais</p>
-                
-                <h3 className="bible-subtitle">Filosofia</h3>
-                <p className="bible-body">A casa número 13 como símbolo de resistência ao convencional. O azar transformado em potência criativa. O estúdio opera na fronteira entre o comercial e o experimental, sem hierarquia entre ambos. Cada projeto — seja uma identidade visual para um cliente ou um filme autoral — recebe o mesmo rigor criativo.</p>
-              </div>
-            </div>
+            {/* Card Concept */}
+            <Card className="bg-card/50 border-2 border-primary/50 hover:border-primary transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="bible-subtitle text-primary uppercase">
+                  <span className="lang-pt">Conceito</span>
+                  <span className="lang-en">Concept</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="bible-body text-muted-foreground leading-relaxed">
+                  <span className="lang-pt">CasaTrezeStudio não é empresa. É <span className="text-primary font-semibold">organismo vivo</span>. Laboratório onde criadores independentes se encontram para transformar ideias em matéria. Nasceu da necessidade de criar fora dos sistemas tradicionais, construindo infraestrutura criativa própria. <span className="text-primary font-semibold">17 anos de resistência e reinvenção</span>.</span>
+                  <span className="lang-en">CasaTrezeStudio isn't a company. It's a <span className="text-primary font-semibold">living organism</span>. Laboratory where independent creators meet to transform ideas into matter. Born from the need to create outside traditional systems, building its own creative infrastructure. <span className="text-primary font-semibold">17 years of resistance and reinvention</span>.</span>
+                </p>
+              </CardContent>
+            </Card>
 
-            <div className="lang-en">
-              <div>
-                <p className="bible-body">Creative Collective founded in 2008. Post-contemporary studio of design and video. Association of independent creative producers operating as a laboratory of authorial, cultural and commercial creation, connecting people, ideas and projects.</p>
-                
-                <h3 className="bible-subtitle">Concept</h3>
-                <p className="bible-body">CasaTrezeStudio isn't a company. It's a living organism. Laboratory where independent creators meet to transform ideas into matter. Born from the need to create outside traditional systems, building its own creative infrastructure. 17 years of resistance and reinvention.</p>
-                
-                <h3 className="bible-subtitle">Services</h3>
-                <p className="bible-body"><span className="font-semibold">Graphic Design:</span> Visual identities, branding, editorial</p>
-                <p className="bible-body"><span className="font-semibold">Video:</span> Documentaries, music videos, digital content</p>
-                <p className="bible-body"><span className="font-semibold">Art Direction:</span> Cultural projects, campaigns, events</p>
-                <p className="bible-body"><span className="font-semibold">Curation:</span> Experimental and authorial projects</p>
-                
-                <h3 className="bible-subtitle">Philosophy</h3>
-                <p className="bible-body">House number 13 as a symbol of resistance to the conventional. Bad luck transformed into creative power. The studio operates on the border between commercial and experimental, without hierarchy between them. Each project — whether a visual identity for a client or an authorial film — receives the same creative rigor.</p>
-              </div>
-            </div>
+            {/* Card Services */}
+            <Card className="bg-card/50 border-2 border-primary/50 hover:border-primary transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="bible-subtitle text-primary uppercase">
+                  <span className="lang-pt">Serviços</span>
+                  <span className="lang-en">Services</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3">
+                  <div className="lang-pt">
+                    <p className="bible-body text-muted-foreground"><span className="text-primary font-semibold">Design Gráfico:</span> Identidades visuais, branding, editorial</p>
+                    <p className="bible-body text-muted-foreground"><span className="text-primary font-semibold">Vídeo:</span> Documentários, videoclipes, conteúdo digital</p>
+                    <p className="bible-body text-muted-foreground"><span className="text-primary font-semibold">Direção de Arte:</span> Projetos culturais, campanhas, eventos</p>
+                    <p className="bible-body text-muted-foreground"><span className="text-primary font-semibold">Curadoria:</span> Projetos experimentais e autorais</p>
+                  </div>
+                  <div className="lang-en">
+                    <p className="bible-body text-muted-foreground"><span className="text-primary font-semibold">Graphic Design:</span> Visual identities, branding, editorial</p>
+                    <p className="bible-body text-muted-foreground"><span className="text-primary font-semibold">Video:</span> Documentaries, music videos, digital content</p>
+                    <p className="bible-body text-muted-foreground"><span className="text-primary font-semibold">Art Direction:</span> Cultural projects, campaigns, events</p>
+                    <p className="bible-body text-muted-foreground"><span className="text-primary font-semibold">Curation:</span> Experimental and authorial projects</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Card Philosophy */}
+            <Card className="md:col-span-2 bg-card/50 border-2 border-primary/50 hover:border-primary transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="bible-subtitle text-primary uppercase">
+                  <span className="lang-pt">Filosofia</span>
+                  <span className="lang-en">Philosophy</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="bible-body text-muted-foreground leading-relaxed">
+                  <span className="lang-pt">A casa número 13 como símbolo de resistência ao convencional. <span className="text-primary font-semibold">O azar transformado em potência criativa</span>. O estúdio opera na fronteira entre o comercial e o experimental, sem hierarquia entre ambos. Cada projeto — seja uma identidade visual para um cliente ou um filme autoral — recebe o mesmo rigor criativo.</span>
+                  <span className="lang-en">House number 13 as a symbol of resistance to the conventional. <span className="text-primary font-semibold">Bad luck transformed into creative power</span>. The studio operates on the border between commercial and experimental, without hierarchy between them. Each project — whether a visual identity for a client or an authorial film — receives the same creative rigor.</span>
+                </p>
+              </CardContent>
+            </Card>
           </div>
 
           {/* Vimeo Reel */}
