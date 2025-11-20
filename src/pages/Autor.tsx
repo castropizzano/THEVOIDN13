@@ -644,12 +644,12 @@ DaVinci Resolve"
 
           <div className="bible-block">
             <div className="lang-pt">
-              <h3 className="bible-subtitle mb-6">Projetos Matriciais</h3>
+              <h3 className="bible-subtitle mb-6">PROJETOS MATRICIAIS</h3>
               <p className="bible-body mb-8">Três projetos funcionam como órgãos do mesmo organismo criativo:</p>
               
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <CollectiveCard
-                  title="LowMovie™"
+                  title="LOWMOVIE™"
                   period="2019-2023"
                   role="Criador / Diretor"
                   description="Filme-manifesto sobre skateboarding, subculturas e processos colaborativos. Estreou no Vila Ida (16/12/2022) e tornou-se objeto central da pesquisa de mestrado."
@@ -658,7 +658,7 @@ DaVinci Resolve"
                 />
                 
                 <CollectiveCard
-                  title="LowPressure™"
+                  title="LOWPRESSURE™"
                   period="2020-atual"
                   role="Membro Fundador"
                   description="Coletivo de skatistas-artistas nas interseções entre rua, vídeo e cultura. Dois membros representaram o Brasil nas Olimpíadas de Paris 2024."
@@ -667,7 +667,7 @@ DaVinci Resolve"
                 />
                 
                 <CollectiveCard
-                  title="CasaTrezeStudio®"
+                  title="CASATREZESTUDIO®"
                   period="2008-atual"
                   role="Fundador"
                   description="Laboratório criativo independente. Transita entre produção autoral e comercial, conectando design gráfico, audiovisual e experimentação."
@@ -676,20 +676,18 @@ DaVinci Resolve"
                 />
               </div>
 
-              <div className="max-w-4xl mx-auto mt-12 p-6 border-l-4 border-primary/50">
-                <p className="bible-body italic text-muted-foreground">
-                  Este memorial não guarda o que passou. Guarda o que ainda pulsa.
-                </p>
-              </div>
+              <p className="bible-body mt-12 text-center italic text-primary">
+                Este memorial não guarda o que passou. Guarda o que ainda pulsa.
+              </p>
             </div>
 
             <div className="lang-en">
-              <h3 className="bible-subtitle mb-6">Matrix Projects</h3>
+              <h3 className="bible-subtitle mb-6">MATRIX PROJECTS</h3>
               <p className="bible-body mb-8">Three projects function as organs of the same creative organism:</p>
               
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <CollectiveCard
-                  title="LowMovie™"
+                  title="LOWMOVIE™"
                   period="2019-2023"
                   role="Creator / Director"
                   description="Manifesto-film about skateboarding, subcultures and collaborative processes. Premiered at Vila Ida (12/16/2022) and became central object of master's research."
@@ -698,16 +696,16 @@ DaVinci Resolve"
                 />
                 
                 <CollectiveCard
-                  title="LowPressure™"
+                  title="LOWPRESSURE™"
                   period="2020-present"
                   role="Founding Member"
                   description="Collective of skater-artists at intersections between street, video and culture. Two members represented Brazil at Paris 2024 Olympics."
-                  tags={["Skateboarding", "Visual Culture", "Collective"]}
+                  tags={["Skate", "Visual Culture", "Collective"]}
                   highlight
                 />
                 
                 <CollectiveCard
-                  title="CasaTrezeStudio®"
+                  title="CASATREZESTUDIO®"
                   period="2008-present"
                   role="Founder"
                   description="Independent creative laboratory. Transits between authorial and commercial production, connecting graphic design, audiovisual and experimentation."
@@ -716,11 +714,9 @@ DaVinci Resolve"
                 />
               </div>
 
-              <div className="max-w-4xl mx-auto mt-12 p-6 border-l-4 border-primary/50">
-                <p className="bible-body italic text-muted-foreground">
-                  This memorial doesn't keep what passed. It keeps what still pulses.
-                </p>
-              </div>
+              <p className="bible-body mt-12 text-center italic text-primary">
+                This memorial doesn't keep what has passed. It keeps what still pulses.
+              </p>
             </div>
           </div>
         </BilingualSection>
