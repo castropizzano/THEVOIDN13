@@ -5,6 +5,7 @@ type TranslationKey =
   | "lowmovie"
   | "author"
   | "videos"
+  | "someProjects"
   | "admin"
   | "search"
   | "searchPlaceholder"
@@ -290,6 +291,7 @@ const translations: Record<TranslationKey, { pt: string; en: string }> = {
   lowmovie: { pt: "LOWMOVIE™", en: "LOWMOVIE™" },
   author: { pt: "AUTOR", en: "AUTHOR" },
   videos: { pt: "PORTFÓLIO DE VÍDEOS", en: "VIDEO PORTFOLIO" },
+  someProjects: { pt: "ALGUNS PROJETOS", en: "SOME PROJECTS" },
   admin: { pt: "ADMIN", en: "ADMIN" },
   search: { pt: "Buscar", en: "Search" },
   searchPlaceholder: { pt: "Buscar no site...", en: "Search site..." },
