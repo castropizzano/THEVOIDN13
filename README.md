@@ -15,7 +15,7 @@ Curitiba, Brasil — 2025
 [![TypeScript](https://img.shields.io/badge/TypeScript-Zero_Errors-3178c6?style=for-the-badge&logo=typescript&logoColor=white)](#)
 
 ### 🔒 SECURITY STATUS
-[![Security Score](https://img.shields.io/badge/Security-95%2F100-success?style=for-the-badge&logo=shield&logoColor=white)](./docs/SECURITY_CERTIFICATE.md)
+[![Security Score](https://img.shields.io/badge/Security-98%2F100-success?style=for-the-badge&logo=shield&logoColor=white)](./SECURITY.md)
 [![Production Ready](https://img.shields.io/badge/Status-Production%20Ready-success?style=for-the-badge)](./docs/SECURITY_CERTIFICATE.md)
 [![RLS Enabled](https://img.shields.io/badge/RLS-100%25%20Coverage-success?style=for-the-badge)](./docs/SECURITY_CERTIFICATE.md)
 [![OWASP](https://img.shields.io/badge/OWASP%20Top%2010-Protected-success?style=for-the-badge)](./docs/SECURITY_CERTIFICATE.md)
@@ -62,10 +62,11 @@ Curitiba, Brazil — 2025
 - LGPD/GDPR compliant by design
 
 **Security:**
-- 95/100 security score
+- 98/100 security score
 - 100% RLS coverage on database
 - OWASP Top 10 protected
 - Production-ready infrastructure
+- Privacy by architecture approach
 
 **Experience the portal:** [thevoidn13.com](https://thevoidn13.com)
 
