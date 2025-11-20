@@ -22,7 +22,7 @@ interface CuratedVideo {
 const curatedVideos: CuratedVideo[] = [
   { 
     source: "internet-archive", 
-    videoId: "nyx-post-porn-2024/01_NYX-POST-PORN_Trailer_(Brasil,_2024).mp4", 
+    videoId: "nyx-post-porn-2024/01_NYX-POST-PORN_Trailer_(Brasil,_2024).ia.mp4", 
     title: { pt: "NYX — POST PORN", en: "NYX — POST PORN" },
     subtitle: { pt: "COM FLÁVIA MASSALI", en: "WITH FLÁVIA MASSALI" },
     year: "2025", 
