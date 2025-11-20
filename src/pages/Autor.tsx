@@ -10,6 +10,8 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Button } from "@/components/ui/button";
 import { Minimize2 } from "lucide-react";
 import { SkillCard } from "@/components/SkillCard";
+import { CollectiveCard } from "@/components/CollectiveCard";
+import { Film, Users, Building2, Clapperboard } from "lucide-react";
 import heroImage from "@/assets/cover-author.png";
 import castroGuidelinePT from "@/assets/castro-guideline-pt.png";
 import castroGuidelineEN from "@/assets/castro-guideline-en.png";
@@ -73,29 +75,29 @@ const Autor = () => {
           <div className="bible-block">
             <div className="lang-pt">
               <div>
-                <p className="bible-body text-justify">Profissional criativo multidisciplinar, atuo entre as artes visuais, o design e a produção audiovisual. Minha trajetória é guiada pela criação de identidades visuais e narrativas semióticas, explorando linguagens como design gráfico, fotografia, vídeo e multiartes digitais. Transito entre processos individuais e colaborações coletivas, com base em laboratórios criativos, imersões referenciais e desenvolvimento conceitual.</p>
+                <p className="bible-body text-justify">Profissional criativo multidisciplinar, atuo entre as artes visuais, o design e a produção audiovisual. Minha trajetória é guiada pela criação de identidades visuais e narrativas semióticas.</p>
                 
-                <p className="bible-body text-justify">Atualmente, mestrando em Cinema e Artes do Vídeo pelo PPG-CINEAV da Universidade Estadual do Paraná (Unespar – Curitiba II/FAP), na linha de pesquisa em Processos de Criação no Cinema e nas Artes do Vídeo. Integro o grupo de pesquisa CineCriare – Cinema: Criação e Reflexão (Unespar/CNPq).</p>
+                <p className="bible-body text-justify">Mestrando em Cinema e Artes do Vídeo (Unespar/FAP), linha de pesquisa em Processos de Criação. Integro o CineCriare – Cinema: Criação e Reflexão (Unespar/CNPq).</p>
                 
-                <p className="bible-body text-justify">Graduado em Publicidade e Propaganda (Universidade Tuiuti do Paraná, 2010) e pós-graduado em Direção de Arte e Estratégias Criativas (Unicuritiba, 2016).</p>
+                <p className="bible-body text-justify">Graduado em Publicidade e Propaganda (UTP, 2010), pós-graduado em Direção de Arte e Estratégias Criativas (Unicuritiba, 2016).</p>
                 
-                <p className="bible-body text-justify">Fundador da CasaTrezeStudio® (2008), coletivo criativo que funciona como laboratório independente de produção cultural, autoral e comercial, conectando pessoas, ideias e projetos. Entre 2017 e 2020, professor de Economia Criativa na Universidade Positivo; atualmente, docente nas disciplinas de Branding e Produção Audiovisual na Universidade Isulpar.</p>
+                <p className="bible-body text-justify">Membro do <span className="font-bold text-primary">LowPressure™</span>, fundador da <span className="font-bold text-primary">CasaTrezeStudio®</span>, criador do <span className="font-bold text-primary">LowMovie™</span>.</p>
                 
-                <p className="bible-body text-justify">Membro do LowPressure™, coletivo de skatistas e produtores criativos que atuam nas interseções entre skate, cinema e videoarte contemporânea. Também colaboro com o TheWorkspace™, voltado à produção audiovisual colaborativa e independente. Navego por repertórios diversos, fluxos criativos múltiplos e práticas interdisciplinares, construindo minha bagagem intelectual a partir da prática, da escuta e da troca.</p>
+                <p className="bible-body text-justify">Construo <span className="font-bold text-primary">ЦАСТРО™</span> como exercício de negação criativa — design como linguagem viva, manifesto silencioso, resistência sem bandeira.</p>
               </div>
             </div>
 
             <div className="lang-en">
               <div>
-                <p className="bible-body text-justify">Multidisciplinary creative professional, I work between visual arts, design and audiovisual production. My trajectory is guided by the creation of visual identities and semiotic narratives, exploring languages such as graphic design, photography, video and digital multi-arts. I transit between individual processes and collective collaborations, based on creative laboratories, referential immersions and conceptual development.</p>
+                <p className="bible-body text-justify">Multidisciplinary creative professional working between visual arts, design and audiovisual production. My trajectory is guided by creating visual identities and semiotic narratives.</p>
                 
-                <p className="bible-body text-justify">Currently, Master's student in Cinema and Video Arts at PPG-CINEAV of the State University of Paraná (Unespar – Curitiba II/FAP), in the research line on Creation Processes in Cinema and Video Arts. I am part of the CineCriare research group – Cinema: Creation and Reflection (Unespar/CNPq).</p>
+                <p className="bible-body text-justify">Master's student in Cinema and Video Arts (Unespar/FAP), research line on Creation Processes. Member of CineCriare – Cinema: Creation and Reflection (Unespar/CNPq).</p>
                 
-                <p className="bible-body text-justify">Bachelor's degree in Advertising and Propaganda (Universidade Tuiuti do Paraná, 2010) and postgraduate degree in Art Direction and Creative Strategies (Unicuritiba, 2016).</p>
+                <p className="bible-body text-justify">Graduate in Advertising (UTP, 2010), postgraduate in Art Direction and Creative Strategies (Unicuritiba, 2016).</p>
                 
-                <p className="bible-body text-justify">Founder of CasaTrezeStudio® (2008), a creative collective that functions as an independent laboratory for cultural, authorial and commercial production, connecting people, ideas and projects. Between 2017 and 2020, professor of Creative Economy at Universidade Positivo; currently, lecturer in Branding and Audiovisual Production disciplines at Universidade Isulpar.</p>
+                <p className="bible-body text-justify">Member of <span className="font-bold text-primary">LowPressure™</span>, founder of <span className="font-bold text-primary">CasaTrezeStudio®</span>, creator of <span className="font-bold text-primary">LowMovie™</span>.</p>
                 
-                <p className="bible-body text-justify">Member of LowPressure™, a collective of skaters and creative producers working at the intersections between skateboarding, cinema and contemporary video art. I also collaborate with TheWorkspace™, focused on collaborative and independent audiovisual production. I navigate diverse repertoires, multiple creative flows and interdisciplinary practices, building my intellectual baggage from practice, listening and exchange.</p>
+                <p className="bible-body text-justify">I build <span className="font-bold text-primary">ЦАСТРО™</span> as exercise in creative negation — design as living language, silent manifesto, resistance without flag.</p>
               </div>
             </div>
           </div>
@@ -642,68 +644,88 @@ DaVinci Resolve"
             </h2>
           </div>
 
-          <div className="bible-bilingual-grid bible-block">
-            <div>
-              <div>
-                <h3 className="bible-subtitle">Projetos Matriciais</h3>
-                <p className="bible-body">Três projetos funcionam como órgãos do mesmo organismo criativo. Cada um respira de forma autônoma, mas todos compartilham o mesmo sangue simbólico:</p>
+          <div className="bible-block">
+            <div className="lang-pt">
+              <h3 className="bible-subtitle mb-6">Projetos Matriciais</h3>
+              <p className="bible-body mb-8">Três projetos funcionam como órgãos do mesmo organismo criativo:</p>
+              
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <CollectiveCard
+                  title="LowMovie™"
+                  period="2019-2023"
+                  role="Criador / Diretor"
+                  description="Filme-manifesto sobre skateboarding, subculturas e processos colaborativos. Estreou no Vila Ida (16/12/2022) e tornou-se objeto central da pesquisa de mestrado."
+                  tags={["Videoarte", "Documentário", "Cinema Experimental"]}
+                  icon={<Film className="w-6 h-6" />}
+                  highlight
+                />
                 
-                <div className="space-y-4">
-                  <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-body font-bold mb-2">LowMovie™ (2019-2023)</h4>
-                    <p className="bible-body">Filme-manifesto sobre skateboarding, subculturas e processos colaborativos. Estreou no Vila Ida em 16 de dezembro de 2022 e tornou-se objeto central da pesquisa de mestrado. Integra videoarte, documentário e cinema experimental.</p>
-                  </div>
-                  
-                  <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-body font-bold mb-2">LowPressure™ (2020-atual)</h4>
-                    <p className="bible-body">Coletivo de skatistas-artistas que opera nas interseções entre rua, vídeo e cultura. Funciona como laboratório de práticas visuais, estéticas em movimento e processos coletivos. Dois membros — Luigi Cini e Augusto Akio "Japinha" — representaram o Brasil nas Olimpíadas de Paris 2024, levando a contracultura como bactéria positiva do sistema.</p>
-                  </div>
-                  
-                  <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-body font-bold mb-2">CasaTrezeStudio® (2008-atual)</h4>
-                    <p className="bible-body">Laboratório criativo independente. Transita entre produção autoral e comercial, conectando design gráfico, audiovisual, direção de arte e experimentação. Espaço de resistência e criação coletiva.</p>
-                  </div>
-                </div>
+                <CollectiveCard
+                  title="LowPressure™"
+                  period="2020-atual"
+                  role="Membro Fundador"
+                  description="Coletivo de skatistas-artistas nas interseções entre rua, vídeo e cultura. Dois membros representaram o Brasil nas Olimpíadas de Paris 2024."
+                  tags={["Skate", "Cultura Visual", "Coletivo"]}
+                  icon={<Users className="w-6 h-6" />}
+                  highlight
+                />
+                
+                <CollectiveCard
+                  title="CasaTrezeStudio®"
+                  period="2008-atual"
+                  role="Fundador"
+                  description="Laboratório criativo independente. Transita entre produção autoral e comercial, conectando design gráfico, audiovisual e experimentação."
+                  tags={["Design", "Audiovisual", "Laboratório"]}
+                  icon={<Building2 className="w-6 h-6" />}
+                />
+              </div>
 
-                <div className="max-w-6xl mx-auto py-12">
-                  <blockquote className="bible-body text-left">
-                    <p className="bible-body mb-6">Este memorial não guarda o que passou.</p>
-                    <p className="bible-body mb-6">Guarda o que ainda pulsa.</p>
-                    <p className="bible-body"><span className="font-bold">LowMovie™</span>, <span className="font-bold">LowPressure™</span>, <span className="font-bold">CasaTrezeStudio®</span> — três projetos matriciais que funcionam como órgãos do mesmo organismo criativo. Cada um respira de forma autônoma, mas todos compartilham o mesmo sangue simbólico.</p>
-                  </blockquote>
-                </div>
+              <div className="max-w-4xl mx-auto mt-12 p-6 border-l-4 border-primary/50">
+                <p className="bible-body italic text-muted-foreground">
+                  Este memorial não guarda o que passou. Guarda o que ainda pulsa.
+                </p>
               </div>
             </div>
 
-            <div>
-              <div>
-                <h3 className="bible-subtitle">Matrix Projects</h3>
-                <p className="bible-body">Three projects function as organs of the same creative organism. Each breathes autonomously, but all share the same symbolic blood:</p>
+            <div className="lang-en">
+              <h3 className="bible-subtitle mb-6">Matrix Projects</h3>
+              <p className="bible-body mb-8">Three projects function as organs of the same creative organism:</p>
+              
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <CollectiveCard
+                  title="LowMovie™"
+                  period="2019-2023"
+                  role="Creator / Director"
+                  description="Manifesto-film about skateboarding, subcultures and collaborative processes. Premiered at Vila Ida (12/16/2022) and became central object of master's research."
+                  tags={["Video Art", "Documentary", "Experimental Cinema"]}
+                  icon={<Film className="w-6 h-6" />}
+                  highlight
+                />
                 
-                <div className="space-y-4">
-                  <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-body font-bold mb-2">LowMovie™ (2019-2023)</h4>
-                    <p className="bible-body">Manifesto-film about skateboarding, subcultures and collaborative processes. Premiered at Vila Ida on December 16, 2022 and became central object of master's research. Integrates video art, documentary and experimental cinema.</p>
-                  </div>
-                  
-                  <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-body font-bold mb-2">LowPressure™ (2020-present)</h4>
-                    <p className="bible-body">Collective of skater-artists operating at intersections between street, video and culture. Functions as laboratory for visual practices, aesthetics in motion and collective processes. Two members — Luigi Cini and Augusto Akio "Japinha" — represented Brazil at the Paris 2024 Olympics, bringing counterculture as positive bacteria into the system.</p>
-                  </div>
-                  
-                  <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-body font-bold mb-2">CasaTrezeStudio® (2008-present)</h4>
-                    <p className="bible-body">Independent creative laboratory. Transits between authorial and commercial production, connecting graphic design, audiovisual, art direction and experimentation. Space of resistance and collective creation.</p>
-                  </div>
-                </div>
+                <CollectiveCard
+                  title="LowPressure™"
+                  period="2020-present"
+                  role="Founding Member"
+                  description="Collective of skater-artists at intersections between street, video and culture. Two members represented Brazil at Paris 2024 Olympics."
+                  tags={["Skateboarding", "Visual Culture", "Collective"]}
+                  icon={<Users className="w-6 h-6" />}
+                  highlight
+                />
+                
+                <CollectiveCard
+                  title="CasaTrezeStudio®"
+                  period="2008-present"
+                  role="Founder"
+                  description="Independent creative laboratory. Transits between authorial and commercial production, connecting graphic design, audiovisual and experimentation."
+                  tags={["Design", "Audiovisual", "Laboratory"]}
+                  icon={<Building2 className="w-6 h-6" />}
+                />
+              </div>
 
-                <div className="max-w-6xl mx-auto py-12">
-                  <blockquote className="bible-body text-left">
-                    <p className="bible-body mb-6">This memorial does not keep what has passed.</p>
-                    <p className="bible-body mb-6">It keeps what still pulses.</p>
-                    <p className="bible-body"><span className="font-bold">LowMovie™</span>, <span className="font-bold">LowPressure™</span>, <span className="font-bold">CasaTrezeStudio®</span> — three matrix projects that function as organs of the same creative organism. Each breathes autonomously, but all share the same symbolic blood.</p>
-                  </blockquote>
-                </div>
+              <div className="max-w-4xl mx-auto mt-12 p-6 border-l-4 border-primary/50">
+                <p className="bible-body italic text-muted-foreground">
+                  This memorial doesn't keep what passed. It keeps what still pulses.
+                </p>
               </div>
             </div>
           </div>
