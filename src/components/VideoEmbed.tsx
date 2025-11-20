@@ -12,11 +12,16 @@ export const VideoEmbed = ({ source, videoId, title }: VideoEmbedProps) => {
       case "vimeo":
         return `https://player.vimeo.com/video/${videoId}?title=0&byline=0&portrait=0`;
       case "internet-archive":
-        // For Internet Archive videos
+        // For Internet Archive videos - use direct file embed for player controls
         // videoId format: "collection-id/filename.mp4" or just "collection-id"
-        const itemId = videoId.includes("/") ? videoId.split("/")[0] : videoId;
-        // Use details page for better player controls visibility
-        return `https://archive.org/details/${itemId}`;
+        if (videoId.includes("/")) {
+          const [itemId, filename] = videoId.split("/");
+          // Encode filename to handle special characters
+          const encodedFilename = encodeURIComponent(filename);
+          return `https://archive.org/embed/${itemId}/${encodedFilename}`;
+        }
+        // Fallback for just itemId
+        return `https://archive.org/embed/${videoId}`;
       case "youtube":
         return `https://www.youtube.com/embed/${videoId}`;
     }
