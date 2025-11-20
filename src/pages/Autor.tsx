@@ -361,8 +361,7 @@ DaVinci Resolve"
 
         <div className="bible-bilingual-grid bible-block">
           <div>
-            <div>
-              <div className="my-6">
+            <div className="my-6">
                 <SkillCard
                   title="LINGUAGEM, NÃO LOGOTIPO."
                   content="Processo, não produto."
@@ -497,12 +496,10 @@ DaVinci Resolve"
                     content=""
                   />
                 </div>
-              </div>
             </div>
 
           <div>
-            <div>
-              <div className="my-6">
+            <div className="my-6">
                 <SkillCard
                   title="LANGUAGE, NOT LOGO."
                   content="Process, not product."
@@ -637,7 +634,6 @@ DaVinci Resolve"
                     content=""
                   />
                 </div>
-              </div>
             </div>
           </div>
         </BilingualSection>
