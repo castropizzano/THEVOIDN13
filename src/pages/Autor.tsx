@@ -656,7 +656,7 @@ DaVinci Resolve"
                   
                   <div className="border-l-2 border-primary pl-4">
                     <h4 className="bible-body font-bold mb-2">LowPressure™ (2020-atual)</h4>
-                    <p className="bible-body">Coletivo de skatistas-artistas que opera nas interseções entre rua, vídeo e cultura. Funciona como laboratório de práticas visuais, estéticas em movimento e processos coletivos. Representantes olímpicos do Brasil em Paris 2024.</p>
+                    <p className="bible-body">Coletivo de skatistas-artistas que opera nas interseções entre rua, vídeo e cultura. Funciona como laboratório de práticas visuais, estéticas em movimento e processos coletivos. Dois membros — Luigi Cini e Augusto Akio "Japinha" — representaram o Brasil nas Olimpíadas de Paris 2024, levando a contracultura como bactéria positiva do sistema.</p>
                   </div>
                   
                   <div className="border-l-2 border-primary pl-4">
@@ -688,7 +688,7 @@ DaVinci Resolve"
                   
                   <div className="border-l-2 border-primary pl-4">
                     <h4 className="bible-body font-bold mb-2">LowPressure™ (2020-present)</h4>
-                    <p className="bible-body">Collective of skater-artists operating at intersections between street, video and culture. Functions as laboratory for visual practices, aesthetics in motion and collective processes. Olympic representatives of Brazil in Paris 2024.</p>
+                    <p className="bible-body">Collective of skater-artists operating at intersections between street, video and culture. Functions as laboratory for visual practices, aesthetics in motion and collective processes. Two members — Luigi Cini and Augusto Akio "Japinha" — represented Brazil at the Paris 2024 Olympics, bringing counterculture as positive bacteria into the system.</p>
                   </div>
                   
                   <div className="border-l-2 border-primary pl-4">
