@@ -4,7 +4,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { PDFViewer } from "@/components/PDFViewer";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import zine02 from "@/assets/zine/zine_02.png";
 import zine03 from "@/assets/zine/zine_03.png";
 import zine04 from "@/assets/zine/zine_04.png";
@@ -392,9 +392,9 @@ export const InterviewsTabs = () => {
                       onClick={() => setLightboxOpen(false)}
                       variant="ghost"
                       size="icon"
-                      className="absolute top-4 right-4 z-20 h-10 w-10 text-white hover:bg-white/10"
+                      className="absolute top-4 right-4 z-20 h-10 w-10 text-white hover:bg-white/10 hover:text-primary transition-all"
                     >
-                      <span className="text-2xl">×</span>
+                      <X className="h-6 w-6" />
                     </Button>
 
                     {/* Seta Anterior - sem caixa */}
