@@ -136,7 +136,7 @@ const Videos = () => {
           <BilingualContent
             portugueseContent={
               <div className="text-center bible-block space-y-6 mb-12">
-                <p className="bible-body max-w-3xl mx-auto">
+                <p className="bible-body max-w-2xl mx-auto">
                   Uma seleção condensada dos projetos em que atuo. Em cada um deles, transito entre conceito, design, direção de arte, direção de fotografia, edição e pós-produção, sempre de acordo com o que a obra pede. Cada projeto tem sua própria identidade, mas todos orbitam o mesmo eixo estético que define o meu trabalho. Para ver outros projetos coletivos, autorais, comerciais, culturais, musicais, documentais e experimentais, acesse os portfólios completos no Vimeo e no Behance.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
@@ -179,7 +179,7 @@ const Videos = () => {
             }
             englishContent={
               <div className="text-center bible-block space-y-6 mb-12">
-                <p className="bible-body max-w-3xl mx-auto">
+                <p className="bible-body max-w-2xl mx-auto">
                   A condensed selection of the projects I work on. In each one, I move between concept, design, art direction, cinematography, editing and post-production, always according to what the work demands. Each project has its own identity, but they all orbit the same aesthetic axis that defines my work. To see other collective, authorial, commercial, cultural, musical, documentary and experimental projects, access the complete portfolios on Vimeo and Behance.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
