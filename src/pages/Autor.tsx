@@ -474,7 +474,7 @@ DaVinci Resolve"
 
                 <div className="my-8 p-6 bg-black/50 border border-primary/20 rounded-lg">
                   <h4 className="bible-subtitle mb-6">AS TRÊS FAIXAS</h4>
-                  <p className="bible-body mb-6 italic">Este selo não te certifica. Ele te posiciona em três frequências simultâneas — como se o mesmo corpo pudesse tocar três instrumentos ao mesmo tempo:</p>
+                  <p className="bible-body mb-6 italic">Este selo não certifica. Ele posiciona em três frequências simultâneas — como se o mesmo corpo pudesse tocar três instrumentos ao mesmo tempo:</p>
                   
                   <div className="space-y-6">
                     <div className="border-l-4 border-primary/50 pl-4">
@@ -493,9 +493,6 @@ DaVinci Resolve"
                     </div>
                   </div>
 
-                  <div className="mt-6 pt-6 border-t border-primary/20">
-                    <p className="bible-body font-bold italic text-primary text-center">Não existe outro badge igual no Brasil. Porque isso não é um badge: é um dispositivo de identidade em frequência tripla.</p>
-                  </div>
                 </div>
 
                 <div className="-mx-6 px-6 py-8 rounded-lg bible-block">
@@ -604,7 +601,7 @@ DaVinci Resolve"
 
                 <div className="my-8 p-6 bg-black/50 border border-primary/20 rounded-lg">
                   <h4 className="bible-subtitle mb-6">THE THREE BANDS</h4>
-                  <p className="bible-body mb-6 italic">This seal doesn't certify you. It positions you on three simultaneous frequencies — as if the same body could play three instruments at once:</p>
+                  <p className="bible-body mb-6 italic">This seal doesn't certify. It positions on three simultaneous frequencies — as if the same body could play three instruments at once:</p>
                   
                   <div className="space-y-6">
                     <div className="border-l-4 border-primary/50 pl-4">
@@ -623,9 +620,6 @@ DaVinci Resolve"
                     </div>
                   </div>
 
-                  <div className="mt-6 pt-6 border-t border-primary/20">
-                    <p className="bible-body font-bold italic text-primary text-center">There is no other badge like this in Brazil. Because this is not a badge: it's an identity device on triple frequency.</p>
-                  </div>
                 </div>
 
                 <div className="-mx-6 px-6 py-8 rounded-lg">
