@@ -120,32 +120,30 @@ const Videos = () => {
           />
         </section>
         <BilingualSection className="bible-section">
-          <div className="bilingual-grid bible-block mb-8">
-            <div className="bilingual-col">
-              <h1 className="bible-title">ALGUNS PROJETOS</h1>
-            </div>
-            <div className="bilingual-col">
-              <h1 className="bible-title">SOME PROJECTS</h1>
-            </div>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {curatedVideos.map((video, index) => (
-              <VideoCard key={index} video={video} language={language} categoryLabel={categoryLabels[video.category][language]} />
-            ))}
-          </div>
-        </BilingualSection>
-        <BilingualSection className="bible-section">
           <BilingualContent
             portugueseContent={
-              <div className="text-center bible-block space-y-6">
+              <div className="bible-block mb-12">
+                <h1 className="bible-title mb-8">ALGUNS PROJETOS</h1>
+              </div>
+            }
+            englishContent={
+              <div className="bible-block mb-12">
+                <h1 className="bible-title mb-8">SOME PROJECTS</h1>
+              </div>
+            }
+          />
+          
+          <BilingualContent
+            portugueseContent={
+              <div className="text-center bible-block space-y-6 mb-12">
                 <p className="bible-body max-w-3xl mx-auto">
-                  Esta é uma seleção de projetos que explora diferentes facetas 
-                  do audiovisual: trabalhos <strong>autorais</strong>, <strong>comerciais</strong>, 
-                  <strong>culturais</strong>, <strong>musicais</strong>, <strong>documentais</strong> e 
-                  <strong>experimentais</strong>. Cada projeto carrega sua própria linguagem visual, 
-                  mas todos conectados pelo mesmo DNA criativo.
+                  Esta é uma seleção essencial dos meus projetos — uma amostra das experimentações visuais que conduzem meu trabalho.
+                  Cada filme, peça ou estudo aqui apresentado carrega sua própria linguagem, ritmo e atmosfera, mas todos compartilham o mesmo DNA criativo que atravessa minhas obras.
                 </p>
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <p className="bible-body max-w-3xl mx-auto">
+                  Para conhecer mais projetos — coletivos, autorais, comerciais, culturais, musicais, documentais e experimentais — explore também os portfólios completos nos botões para Vimeo e Behance.
+                </p>
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
                   <Button
                     variant="default"
                     size="lg"
@@ -184,15 +182,15 @@ const Videos = () => {
               </div>
             }
             englishContent={
-              <div className="text-center bible-block space-y-6">
+              <div className="text-center bible-block space-y-6 mb-12">
                 <p className="bible-body max-w-3xl mx-auto">
-                  This is a selection of projects exploring different facets 
-                  of audiovisual: <strong>authorial</strong>, <strong>commercial</strong>, 
-                  <strong>cultural</strong>, <strong>musical</strong>, <strong>documentary</strong> and 
-                  <strong>experimental</strong> work. Each project carries its own visual language, 
-                  but all connected by the same creative DNA.
+                  This is an essential selection of my projects — a sample of the visual experiments that drive my work.
+                  Each film, piece or study presented here carries its own language, rhythm and atmosphere, but all share the same creative DNA that runs through my works.
                 </p>
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <p className="bible-body max-w-3xl mx-auto">
+                  To discover more projects — collective, authorial, commercial, cultural, musical, documentary and experimental — also explore the complete portfolios via the buttons for Vimeo and Behance.
+                </p>
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
                   <Button
                     variant="default"
                     size="lg"
@@ -231,6 +229,12 @@ const Videos = () => {
               </div>
             }
           />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {curatedVideos.map((video, index) => (
+              <VideoCard key={index} video={video} language={language} categoryLabel={categoryLabels[video.category][language]} />
+            ))}
+          </div>
         </BilingualSection>
       </main>
       <Footer />
