@@ -380,7 +380,7 @@ export const InterviewsTabs = () => {
             <CardContent>
               {/* Slider de página única */}
               <div className="relative w-full">
-                {/* Botão Anterior - Design melhorado */}
+                {/* Botão Anterior */}
                 {currentImageIndex > 0 && (
                   <Button
                     onClick={prevImage}
@@ -388,18 +388,18 @@ export const InterviewsTabs = () => {
                     variant="ghost"
                     size="icon"
                     className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-10 
-                               h-14 w-14 rounded-full
+                               h-12 w-12
                                bg-black/70 hover:bg-black/90 
                                border-2 border-white/20 hover:border-white/40
                                shadow-xl hover:shadow-2xl
                                backdrop-blur-sm
                                transition-all duration-300 ease-out
-                               hover:scale-110 active:scale-95
+                               hover:scale-105 active:scale-95
                                disabled:opacity-50 disabled:cursor-not-allowed
                                group"
                     aria-label="Página anterior"
                   >
-                    <ChevronLeft className="h-8 w-8 text-white group-hover:translate-x-[-2px] transition-transform" />
+                    <ChevronLeft className="h-6 w-6 text-white group-hover:translate-x-[-2px] transition-transform" />
                   </Button>
                 )}
 
@@ -420,7 +420,7 @@ export const InterviewsTabs = () => {
                   />
                 </div>
 
-                {/* Botão Próximo - Design melhorado */}
+                {/* Botão Próximo */}
                 {currentImageIndex < zineImages.length - 1 && (
                   <Button
                     onClick={nextImage}
@@ -428,18 +428,18 @@ export const InterviewsTabs = () => {
                     variant="ghost"
                     size="icon"
                     className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-10 
-                               h-14 w-14 rounded-full
+                               h-12 w-12
                                bg-black/70 hover:bg-black/90 
                                border-2 border-white/20 hover:border-white/40
                                shadow-xl hover:shadow-2xl
                                backdrop-blur-sm
                                transition-all duration-300 ease-out
-                               hover:scale-110 active:scale-95
+                               hover:scale-105 active:scale-95
                                disabled:opacity-50 disabled:cursor-not-allowed
                                group"
                     aria-label="Próxima página"
                   >
-                    <ChevronRight className="h-8 w-8 text-white group-hover:translate-x-[2px] transition-transform" />
+                    <ChevronRight className="h-6 w-6 text-white group-hover:translate-x-[2px] transition-transform" />
                   </Button>
                 )}
 
