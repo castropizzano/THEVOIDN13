@@ -1613,7 +1613,10 @@ const Index = () => {
 
           {/* THEVØIDN13 STUDY */}
           <div>
-            <h3 className="bible-subtitle text-left">THEVØIDN13 (ESTUDO INICIAL | EXPLORATORY STUDY)</h3>
+            <h3 className="bible-subtitle text-left">
+              <span className="lang-pt">THEVØIDN13 (ESTUDO INICIAL)</span>
+              <span className="lang-en">THEVØIDN13 (EXPLORATORY STUDY)</span>
+            </h3>
             <div className="bible-media">
               <img 
                 src={charactersStudyInitial} 
@@ -1776,7 +1779,10 @@ const Index = () => {
             <Dialog>
               <DialogTrigger asChild>
                 <Button variant="outline" className="w-full justify-start bible-media mb-6">
-                  <span className="text-sm">Protótipo Nº13 / Prototype Nº13</span>
+                  <span className="text-sm">
+                    <span className="lang-pt">Protótipo Nº13</span>
+                    <span className="lang-en">Prototype Nº13</span>
+                  </span>
                 </Button>
               </DialogTrigger>
               <DialogContent className="max-w-2xl">
