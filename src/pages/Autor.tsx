@@ -364,7 +364,7 @@ DaVinci Resolve"
           <div className="bible-bilingual-grid bible-block">
             <div>
               <div>
-                <h3 className="bible-subtitle text-primary">Uma identidade que rejeita a lógica publicitária e se afirma como linguagem, não logotipo.</h3>
+                <h3 className="bible-subtitle text-primary">Linguagem, não logotipo. Processo, não produto.</h3>
                 
                 <h3 className="bible-subtitle">O Contexto: Uma Recusa ao Branding Tradicional</h3>
                 <p className="bible-body">A era é de excesso de identidade. Marcas falam mais de si do que de seus propósitos, buscam reconhecimento pelo algoritmo e não pela substância. A resposta foi criar uma anti-marca — uma identidade que rejeita a lógica publicitária e se afirma como linguagem, não logotipo.</p>
