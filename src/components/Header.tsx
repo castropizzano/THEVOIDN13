@@ -17,7 +17,7 @@ const Header = () => {
   const navItems = [
     { path: "/dissertacao", labelKey: "lowmovie" },
     { path: "/autor", labelKey: "author" },
-    { path: "/videos", labelKey: "videos" },
+    { path: "/videos", labelKey: "someProjects" },
   ];
   
   return (

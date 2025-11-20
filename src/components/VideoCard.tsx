@@ -16,6 +16,10 @@ interface VideoCardProps {
       pt: string;
       en: string;
     };
+    subtitle?: {
+      pt: string;
+      en: string;
+    };
     year: string;
     category: string;
     specialLink?: string;
@@ -39,6 +43,7 @@ export const VideoCard = ({ video, language, categoryLabel }: VideoCardProps) =>
   };
 
   const title = language === "pt" ? video.title.pt : video.title.en;
+  const subtitle = video.subtitle ? (language === "pt" ? video.subtitle.pt : video.subtitle.en) : null;
 
   return (
     <>
@@ -52,7 +57,7 @@ export const VideoCard = ({ video, language, categoryLabel }: VideoCardProps) =>
             src={getThumbnailUrl()}
             alt={title}
             loading="lazy"
-            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+            className="h-full w-full object-cover transition-all duration-500 group-hover:scale-110 grayscale group-hover:grayscale-0"
           />
           
           {/* Category Badge - No Rounded, Top Position */}
@@ -67,13 +72,17 @@ export const VideoCard = ({ video, language, categoryLabel }: VideoCardProps) =>
         </div>
 
         {/* Card Content */}
-        <div className="p-4">
-          {/* Title and Year - Side by Side */}
-          <div className="flex justify-between items-start gap-3">
-            <h3 className="bible-h3 text-foreground line-clamp-2 flex-1">
-              {title}
-            </h3>
-            <p className="text-sm text-muted-foreground font-mono whitespace-nowrap">{video.year}</p>
+        <div className="p-4 space-y-2">
+          <h3 className="bible-h3 text-foreground line-clamp-2">
+            {title}
+          </h3>
+          {subtitle && (
+            <p className="text-xs text-muted-foreground uppercase tracking-wider">
+              {subtitle}
+            </p>
+          )}
+          <div className="flex justify-between items-center">
+            <p className="text-sm text-muted-foreground font-mono">{video.year}</p>
           </div>
         </div>
       </div>
