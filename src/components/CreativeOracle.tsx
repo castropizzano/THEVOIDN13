@@ -1,9 +1,14 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { Volume2, VolumeX, Download } from "lucide-react";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, ResponsiveContainer } from "recharts";
+import { LearnMode } from "./CreativeOracle/LearnMode";
+import { ProcessAnalysis } from "./CreativeOracle/ProcessAnalysis";
+import { contextualizedQuestions } from "./CreativeOracle/data/contextualizedQuestions";
+import { hybridArchetypes } from "./CreativeOracle/data/hybridArchetypes";
 
 interface CreativeOracleProps {
   open: boolean;
@@ -185,9 +190,11 @@ const archetypes = {
 
 export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
   const { language } = useLanguage();
+  const [mode, setMode] = useState<"learn" | "scan">("scan");
   const [started, setStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [scores, setScores] = useState({ shadow: 0, punk: 0, buddy: 0, gi: 0 });
+  const [processScores, setProcessScores] = useState({ observation: 0, cocreation: 0, documentation: 0, reflection: 0, expansion: 0 });
   const [showResults, setShowResults] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
   const [audio] = useState(() => new Audio("/audio/Shadow_In_The_Dark.mp3"));
@@ -213,13 +220,23 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
     }
   }, [started, isMuted, audio]);
 
-  const handleAnswer = (archetype: string, value: number) => {
+  const handleAnswer = (archetype: string, value: number, processWeight?: any) => {
     setScores(prev => ({
       ...prev,
       [archetype]: prev[archetype as keyof typeof prev] + value
     }));
 
-    if (currentQuestion < questions.length - 1) {
+    if (processWeight) {
+      setProcessScores(prev => ({
+        observation: prev.observation + (processWeight.observation || 0),
+        cocreation: prev.cocreation + (processWeight.cocreation || 0),
+        documentation: prev.documentation + (processWeight.documentation || 0),
+        reflection: prev.reflection + (processWeight.reflection || 0),
+        expansion: prev.expansion + (processWeight.expansion || 0),
+      }));
+    }
+
+    if (currentQuestion < contextualizedQuestions.length - 1) {
       setCurrentQuestion(prev => prev + 1);
     } else {
       setShowResults(true);
@@ -246,7 +263,9 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
     setStarted(false);
     setCurrentQuestion(0);
     setScores({ shadow: 0, punk: 0, buddy: 0, gi: 0 });
+    setProcessScores({ observation: 0, cocreation: 0, documentation: 0, reflection: 0, expansion: 0 });
     setShowResults(false);
+    setMode("scan");
   };
 
   const handleExportPDF = () => {
@@ -336,8 +355,19 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
           </DialogDescription>
         </DialogHeader>
 
-        <div className="bg-black/90 border border-primary/30 rounded-lg p-6 sm:p-8 font-mono space-y-6">
-          {!started && !showResults && (
+        <Tabs value={mode} onValueChange={(v) => setMode(v as "learn" | "scan")} className="w-full">
+          <TabsList className="grid w-full grid-cols-2 mb-6">
+            <TabsTrigger value="scan">{language === "pt" ? "SCAN" : "SCAN"}</TabsTrigger>
+            <TabsTrigger value="learn">{language === "pt" ? "LEARN" : "LEARN"}</TabsTrigger>
+          </TabsList>
+
+          <TabsContent value="learn">
+            <LearnMode />
+          </TabsContent>
+
+          <TabsContent value="scan">
+            <div className="bg-black/90 border border-primary/30 rounded-lg p-6 sm:p-8 font-mono space-y-6">
+              {!started && !showResults && (
             <div className="space-y-8">
               <div className="text-accent font-bold text-lg">
                 [STATUS] INITIALIZING...
@@ -605,9 +635,13 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
                   &gt; CLOSE()
                 </Button>
               </div>
+
+              <ProcessAnalysis processScores={processScores} dominantArchetype={getDominantArchetype()} />
             </div>
           )}
-        </div>
+            </div>
+          </TabsContent>
+        </Tabs>
       </DialogContent>
     </Dialog>
   );
