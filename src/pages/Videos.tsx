@@ -154,7 +154,7 @@ const Videos = () => {
                       href="https://vimeo.com/castropizzano" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="w-full sm:flex-1"
+                      className="w-full sm:flex-1 hover:bg-muted hover:text-foreground transition-colors"
                     >
                       VIMEO PORTFOLIO
                     </a>
@@ -168,7 +168,7 @@ const Videos = () => {
                       href="https://www.behance.net/castropizzano" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="w-full sm:flex-1"
+                      className="w-full sm:flex-1 hover:bg-muted hover:text-foreground transition-colors"
                     >
                       BEHANCE PORTFOLIO
                     </a>
@@ -191,7 +191,7 @@ const Videos = () => {
                       href="https://vimeo.com/castropizzano" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="w-full sm:flex-1"
+                      className="w-full sm:flex-1 hover:bg-muted hover:text-foreground transition-colors"
                     >
                       VIMEO PORTFOLIO
                     </a>
@@ -205,7 +205,7 @@ const Videos = () => {
                       href="https://www.behance.net/castropizzano" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="w-full sm:flex-1"
+                      className="w-full sm:flex-1 hover:bg-muted hover:text-foreground transition-colors"
                     >
                       BEHANCE PORTFOLIO
                     </a>
