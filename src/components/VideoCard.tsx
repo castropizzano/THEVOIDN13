@@ -65,8 +65,8 @@ export const VideoCard = ({ video, language, categoryLabel }: VideoCardProps) =>
           
           {/* Letterbox Overlay - Barras Horizontais */}
           <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-0 left-0 right-0 h-[12%] bg-black" />
-            <div className="absolute bottom-0 left-0 right-0 h-[12%] bg-black" />
+            <div className="absolute top-0 left-0 right-0 h-[22%] bg-black" />
+            <div className="absolute bottom-0 left-0 right-0 h-[22%] bg-black" />
           </div>
           
           {/* Category Badge - No Rounded, Top Position */}

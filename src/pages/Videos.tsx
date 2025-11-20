@@ -61,7 +61,7 @@ const curatedVideos: CuratedVideo[] = [
     subtitle: { pt: "NON-GRATA", en: "NON-GRATA" },
     year: "2022", 
     category: "music-video",
-    objectPosition: "center 45%"
+    objectPosition: "center 50%"
   },
   { 
     source: "vimeo", 
@@ -70,7 +70,7 @@ const curatedVideos: CuratedVideo[] = [
     subtitle: { pt: "NON-GRATA", en: "NON-GRATA" },
     year: "2022", 
     category: "music-video",
-    objectPosition: "center 45%"
+    objectPosition: "center 50%"
   },
   { 
     source: "vimeo", 
@@ -87,7 +87,7 @@ const curatedVideos: CuratedVideo[] = [
     subtitle: { pt: "PROD. TRAUMATOPIA", en: "PROD. TRAUMATOPIA" },
     year: "2020", 
     category: "music-video",
-    objectPosition: "center 40%"
+    objectPosition: "center 50%"
   },
   { 
     source: "vimeo", 
@@ -96,7 +96,7 @@ const curatedVideos: CuratedVideo[] = [
     subtitle: { pt: "FCC", en: "FCC" },
     year: "2019", 
     category: "documentário",
-    objectPosition: "center 40%"
+    objectPosition: "center 50%"
   }
 ];
 
