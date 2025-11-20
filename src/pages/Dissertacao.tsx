@@ -76,7 +76,7 @@ const Dissertacao = () => {
               </p>
             </div>
             <div>
-              <h1 className="bible-title">LOWMOVIE™ E O LABIRINTO CRIATIVO</h1>
+              <h1 className="bible-title">LOWMOVIE™ AND THE CREATIVE LABYRINTH</h1>
               <p className="bible-body">
                 Subjectivity, Subculture and the Construction of an Aesthetic in Motion in the LowPressure™ Collective
               </p>
