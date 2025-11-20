@@ -13,6 +13,7 @@ import { LowPressureBlock } from "@/components/dissertation/LowPressureBlock";
 import { InterviewsTabs } from "@/components/dissertation/InterviewsTabs";
 import { VideoPlayer } from "@/components/VideoPlayer";
 import { LowMovieBlock } from "@/components/dissertation/LowMovieBlock";
+import { SkillCard } from "@/components/SkillCard";
 import heroImage from "@/assets/cover-lowmovie.png";
 
 const Dissertacao = () => {
@@ -432,6 +433,66 @@ const Dissertacao = () => {
                 <h3 className="bible-subtitle">Creation as Research</h3>
                 <p className="bible-body">Every action practiced in an experience modifies both practitioner and sufferer. Researching art is also a moment of creation. LowMovie™ acts as driving force, summoning another listening, another way of looking, writing and intervening. A gesture committed to risk, to the unknown and to intensities that only encounter activates. Research and creation happen simultaneously, as ways of seeing, acting and transforming the world.</p>
               </div>
+            </div>
+          </div>
+        </BilingualSection>
+
+        <Separator className="bg-border/30" />
+
+        {/* Conceitos-Chave */}
+        <BilingualSection className="bible-section">
+          <div className="bible-block">
+            <h2 className="bible-title">
+              <span className="lang-pt">CONCEITOS-CHAVE</span>
+              <span className="lang-en">KEY CONCEPTS</span>
+            </h2>
+          </div>
+
+          <div className="bible-block">
+            <div className="lang-pt grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <SkillCard
+                title="CINE-TRANSE"
+                content="Montagem rítmica que dissolve narrativa linear em experiência sensorial. O filme como portal de imersão no universo LowPressure™."
+              />
+              <SkillCard
+                title="ESTÉTICA RELACIONAL"
+                content="Arte como encontro e produção de vínculos. Processos criativos que emergem da convivência, do afeto e da colaboração entre corpos em movimento."
+              />
+              <SkillCard
+                title="ARQUIVO VIVO"
+                content="Memória em constante transformação. Registros audiovisuais que não apenas documentam, mas ativam e recriam experiências coletivas."
+              />
+              <SkillCard
+                title="VIDEOPARTE"
+                content="Linguagem híbrida: documentário experimental + filme de skate. Cada skatista é protagonista de sua própria narrativa visual."
+              />
+              <SkillCard
+                title="LOWBYRINTH™ — O LABIRINTO CRIATIVO"
+                content="LowMovie™ materializa o conceito de Lowbyrinth™: percursos criativos não-lineares, processos em deriva, método como wandering. O filme é o eixo sensível da defesa—não ilustração da teoria, mas teoria incorporada."
+              />
+            </div>
+
+            <div className="lang-en grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <SkillCard
+                title="CINE-TRANCE"
+                content="Rhythmic montage that dissolves linear narrative into sensorial experience. The film as an immersion portal into the LowPressure™ universe."
+              />
+              <SkillCard
+                title="RELATIONAL AESTHETICS"
+                content="Art as encounter and bond production. Creative processes that emerge from coexistence, affection and collaboration between bodies in movement."
+              />
+              <SkillCard
+                title="LIVING ARCHIVE"
+                content="Memory in constant transformation. Audiovisual records that not only document, but activate and recreate collective experiences."
+              />
+              <SkillCard
+                title="VIDEOPART"
+                content="Hybrid language: experimental documentary + skate film. Each skater is the protagonist of their own visual narrative."
+              />
+              <SkillCard
+                title="LOWBYRINTH™ — THE CREATIVE LABYRINTH"
+                content="LowMovie™ materializes the concept of Lowbyrinth™: non-linear creative paths, processes in drift, method as wandering. The film is the sensitive axis of the defense—not theory illustration, but embodied theory."
+              />
             </div>
           </div>
         </BilingualSection>
