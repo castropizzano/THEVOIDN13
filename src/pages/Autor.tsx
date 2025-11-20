@@ -338,7 +338,7 @@ DaVinci Resolve"
           </div>
 
           {/* Anti-Brand Guideline Images */}
-          <div className="bible-block">
+          <div>
             <div className="lang-pt">
               <img 
                 src={castroGuidelinePT} 
