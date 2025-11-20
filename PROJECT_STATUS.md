@@ -13,7 +13,7 @@ Curitiba, Brazil — 2025
 
 ## 📊 CURRENT STATUS
 
-**Version:** 2.1.0  
+**Version:** 2.1.1  
 **Status:** Production Ready  
 **Last Updated:** November 20, 2025  
 **Environment:** https://thevoidn13.com
@@ -41,7 +41,6 @@ Curitiba, Brazil — 2025
 - ✅ Creative Oracle — Artistic archetype analysis
 - ✅ Mind Map — Creative process visualization
 - ✅ Prompt Library — AI prompts collection
-- ✅ Cinematic Stills Generator — Pollinations.AI (client-side)
 - ✅ Global Search — Unified content search
 - ✅ Audio Players — Multilingual manifestos
 - ✅ PDF Viewers — Academic documents
@@ -116,7 +115,6 @@ COMMIT_GUIDE.md      — Git commit conventions
 - ✅ Deleted 37 temporary audit files
 - ✅ Consolidated status into single document
 - ✅ Updated all timestamps to November 20, 2025
-- ✅ Fixed inconsistencies (Puter.js → Pollinations.AI)
 - ✅ Standardized dates across all docs
 
 ### Privacy & Transparency
@@ -200,7 +198,6 @@ COMMIT_GUIDE.md      — Git commit conventions
 
 ### Assets & Media
 - Vimeo API (video portfolio)
-- Pollinations.AI (client-side image generation)
 - Local assets in /src/assets and /public
 
 ### Deployment
@@ -266,7 +263,7 @@ This memorial prioritizes **simplicity, privacy, and artistic integrity** over f
 ## 📜 CERTIFICATION
 
 **Status Date:** November 20, 2025  
-**Version:** 2.1.0  
+**Version:** 2.1.1  
 **Security:** 98/100  
 **Privacy:** LGPD/GDPR Compliant  
 **Production:** Ready  

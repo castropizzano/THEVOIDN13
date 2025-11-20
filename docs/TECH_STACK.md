@@ -27,8 +27,7 @@ THEVOIDN13 Memorial
 │  ├─ Vite (build tool)
 │  ├─ React Router (navegação)
 │  ├─ Tailwind CSS (design system)
-│  ├─ shadcn/ui (componentes)
-│  └─ Pollinations.AI (geração de imagens IA, 100% client-side)
+│  └─ shadcn/ui (componentes)
 │
 ├─ [BACKEND] Lovable Cloud (Supabase) - MÍNIMO
 │  ├─ Secrets Management
@@ -36,7 +35,6 @@ THEVOIDN13 Memorial
 │
 ├─ [CO-CRIAÇÃO] Humano + IA
 │  ├─ Lovable AI (Claude, Gemini) - desenvolvimento
-│  ├─ Pollinations.AI FLUX - geração de stills pelos usuários (zero auth)
 │  ├─ Midjourney (imagens conceituais)
 │  └─ Adobe Creative Cloud (edição)
 │
@@ -163,57 +161,6 @@ Fonte: Manrope (peso variável)
 Configurados via Lovable Cloud:
 - `VIMEO_ACCESS_TOKEN` → API do Vimeo
 - `SUPABASE_*` → Auto-configurados
-
-### Geração de Imagens com IA (Pollinations.AI)
-
-**Plataforma:** Pollinations.AI  
-**Modelo:** FLUX (Black Forest Labs)  
-**Arquitetura:** 100% Client-side (zero backend, zero autenticação)
-
-**Características:**
-- ✅ Gratuito e ilimitado
-- ✅ **Zero autenticação** - sem login ou cadastro necessário
-- ✅ Zero configuração (sem API keys)
-- ✅ Processamento no navegador do usuário
-- ✅ Impossível abuso de quota (cada usuário usa seus próprios recursos)
-- ✅ Open-source e transparente
-- ✅ UX instantânea e sem fricção
-
-**Implementação:**
-```typescript
-// Frontend-only (ComicGenerator.tsx)
-const pollinationsUrl = new URL('https://image.pollinations.ai/prompt/' + encodeURIComponent(detailedPrompt));
-pollinationsUrl.searchParams.set('width', '1024');
-pollinationsUrl.searchParams.set('height', '1024');
-pollinationsUrl.searchParams.set('model', 'flux');
-pollinationsUrl.searchParams.set('nologo', 'true');
-pollinationsUrl.searchParams.set('enhance', 'true');
-
-const response = await fetch(pollinationsUrl.toString());
-const imageBlob = await response.blob();
-```
-
-**Prompt Style (Shadow Interface Bible v13):**
-O gerador utiliza um prompt cinematográfico detalhado baseado no Shadow Interface Bible v13:
-- Estética cinematic dark realism com urban decay
-- Máscara branca expressionless, parka verde oliva, iluminação neon azul/vermelho
-- Composição cinematográfica, profundidade de campo, grain
-- Referências: Blade Runner 2049, Akira, Christiane F.
-
-**Marca d'água:**
-Todas as imagens incluem marca d'água THEVØIDN13 (80% opacidade, vermelho #c40000, inferior direito) aplicada via canvas manipulation no frontend.
-
-**Rate Limiting:**
-Implementação client-side com `sessionStorage` (cooldown de 10 segundos entre gerações).
-
-**Escolha Estratégica:**
-Pollinations.AI foi escolhido por:
-- Ser completamente gratuito e ilimitado (sem API keys ou cadastro)
-- **Zero autenticação** - usuários não precisam criar conta ou fazer login (vs. Puter.js que exigia login)
-- Processar no cliente (zero backend)
-- Usar modelo open-source FLUX de alta qualidade
-- Alinhar-se perfeitamente com "privacy by architecture"
-- UX instantânea sem popups ou fricções
 
 ───────────────────────────────────────────────────────────────  
 ## CAMADA 3: CO-CRIAÇÃO COM IA
@@ -585,8 +532,8 @@ THEVOIDN13 é um memorial digital construído com tecnologias modernas, mas mant
 
 ───────────────────────────────────────────────────────────────
 
-**Stack Version:** 2.1 (Pollinations.AI - Final)  
-**Last Update:** Novembro 2025  
+**Stack Version:** 2.1.1 (Documentation Cleanup)  
+**Last Update:** November 2025  
 **Maintainer:** Castro Pizzano (цастро™)
 
 ───────────────────────────────────────────────────────────────

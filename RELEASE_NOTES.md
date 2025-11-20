@@ -4,6 +4,27 @@ por Castro Pizzano (цастро™)
 
 ───────────────────────────────────────────────────────────────
 
+## v2.1.1 — Documentation Cleanup (2025-11-20)
+
+### 🧹 Removed
+- ❌ All Pollinations.AI references (feature was removed, documentation cleanup)
+- ❌ PollinationsAIBadge component (obsolete)
+- ❌ Cinematic Stills Generator documentation (feature deleted)
+- ❌ 186+ false documentation references across 13 files
+
+### 🔄 Changed
+- Privacy Policy Dialog updated (removed Section 4 about still generator)
+- Transparency page cleaned (removed false AI claims)
+- Footer badges cleaned (removed non-functional AI badge)
+- Translation keys cleaned (removed unused still generator keys)
+
+### 📝 Technical Debt Eliminated
+- ✅ Removed all false documentation references
+- ✅ Aligned documentation with actual codebase (zero AI image generation)
+- ✅ Maintained project integrity and technical transparency
+
+───────────────────────────────────────────────────────────────
+
 ## v2.1.0 — Privacy Consolidation (2025-11-20)
 
 ### 🔒 Privacy & Security
@@ -27,7 +48,6 @@ por Castro Pizzano (цастро™)
 - ✅ Mind Map personalization based on archetype
 
 ### 🛠️ Technical
-- ✅ Pollinations.AI integration (client-side, FLUX model)
 - ✅ Complete bilingual system (PT-BR / EN-US)
 - ✅ Performance optimization (lazy loading, code splitting)
 - ✅ Bible v13 typography system fully implemented
@@ -46,7 +66,6 @@ Deleted:
 - Obsolete documentation files
 
 Fixed:
-- Transparency page references to Pollinations.AI
 - Date consistency across all documents
 - Privacy Policy accuracy
 ```
@@ -57,7 +76,6 @@ Fixed:
 No breaking changes for end users. For developers:
 - Database tables removed (if you had custom queries to deleted tables, they will fail)
 - All tracking infrastructure removed
-- Pollinations.AI is now the only AI integration (client-side only)
 
 ───────────────────────────────────────────────────────────────
 
@@ -140,5 +158,5 @@ We prioritize **simplicity, privacy, and artistic integrity** over feature accum
 ───────────────────────────────────────────────────────────────
 
 *Last Updated: November 20, 2025*  
-*Current Version: 2.1.0*  
+*Current Version: 2.1.1*  
 *License: CC BY-NC-SA 4.0*

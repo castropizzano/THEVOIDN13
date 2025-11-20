@@ -1,7 +1,6 @@
 import { useTranslation } from "@/hooks/useTranslation";
 import { SurveillanceFreeBadge } from "@/components/SurveillanceFreeBadge";
 import { TechnicalTransparencyBadge } from "@/components/TechnicalTransparencyBadge";
-import { PollinationsAIBadge } from "@/components/PollinationsAIBadge";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -30,7 +29,6 @@ const Footer = () => {
         <div className="mt-6 pt-4 border-t border-border/30">
           <div className="flex flex-wrap gap-2 sm:gap-3 items-baseline">
             <SurveillanceFreeBadge size="sm" />
-            <PollinationsAIBadge size="sm" />
             <TechnicalTransparencyBadge size="sm" />
           </div>
         </div>

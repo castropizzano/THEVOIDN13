@@ -3,7 +3,7 @@ MEMORIAL ARTÍSTICO E PRÁXIS HÍBRIDA (HUMANO + MÁQUINA)
 por Castro Pizzano (цастро™)  
 Curitiba, Brasil — 2025
 
-[![Version](https://img.shields.io/badge/Version-2.1.0-A32424?style=for-the-badge&logo=git&logoColor=white)](PROJECT_STATUS.md)
+[![Version](https://img.shields.io/badge/Version-2.1.1-A32424?style=for-the-badge&logo=git&logoColor=white)](PROJECT_STATUS.md)
 [![License](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-A32424?style=for-the-badge&logo=creativecommons&logoColor=white)](LICENSE.md)
 [![Status](https://img.shields.io/badge/Status-Production_Ready-00d26a?style=for-the-badge&logo=rocket&logoColor=white)](PROJECT_STATUS.md)
 [![Mestrado](https://img.shields.io/badge/Mestrado-Pós--Qualificação-323A46?style=for-the-badge&logo=graduationcap&logoColor=white)]()
@@ -26,7 +26,6 @@ Curitiba, Brasil — 2025
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org)
 [![Vite](https://img.shields.io/badge/Vite-5.x-646cff?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.x-38bdf8?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
-[![Pollinations.AI](https://img.shields.io/badge/Pollinations.AI-FLUX_Model-8b5cf6?style=for-the-badge&logo=openai&logoColor=white)](https://pollinations.ai/)
 
 ───────────────────────────────────────────────────────────────
 (EN)  
@@ -48,7 +47,6 @@ Curitiba, Brazil — 2025
 - React 18 + TypeScript + Vite
 - Tailwind CSS + shadcn/ui components
 - Mostly static architecture (99.5% frontend)
-- Optional AI feature via Pollinations.AI (100% client-side)
 - Vimeo API integration for video portfolio
 - SEO optimized with structured data
 - Performance optimized with lazy loading
@@ -57,7 +55,6 @@ Curitiba, Brazil — 2025
 
 **Interactive Tools:**
 - Creative Oracle — AI-powered artistic guidance
-- Cinematic Stills Generator — Optional AI feature (100% client-side via Pollinations.AI)
 - Mind Map — Visual exploration of project concepts
 - Prompt Library — Static collection of creative prompts
 - Audio narration — Multilingual conceptual content
@@ -239,7 +236,7 @@ Veja [TECH_STACK.md](./docs/TECH_STACK.md) para detalhes completos.
 ## MÉTODO HÍBRIDO (HUMAN × MACHINE)  
 ───────────────────────────────────────────────────────────────
 
-O desenvolvimento deste memorial utiliza co-criação com IA (Lovable AI, Gemini, Claude para desenvolvimento; Pollinations.AI para geração de stills pelos usuários).
+O desenvolvimento deste memorial utiliza co-criação com IA (Lovable AI, Gemini, Claude para desenvolvimento).
 
 **Ciclo de Criação:**
 1. **Observação** — análise do fluxo criativo e documentação de padrões

@@ -103,10 +103,6 @@ type TranslationKey =
   | "oracleDescription"
   | "expandOracle"
   | "conceptualNarration"
-  | "stillGenerator"
-  | "stillGeneratorDesc"
-  | "clickToGenerate"
-  | "experimentalGenerator"
   | "library"
   | "custom"
   | "selectBasePrompt"
@@ -383,10 +379,6 @@ const translations: Record<TranslationKey, { pt: string; en: string }> = {
   oracleDescription: { pt: "Uma jornada interativa de autodescoberta guiada por THEVØIDN13. Seis perguntas filosóficas sobre criação e ruído revelam o arquétipo que habita seu processo.", en: "An interactive journey of self-discovery guided by THEVØIDN13. Six philosophical questions on creation and noise reveal the archetype dwelling within your process." },
   expandOracle: { pt: "EXPANDIR ORÁCULO", en: "EXPAND ORACLE" },
   conceptualNarration: { pt: "Narração conceitual do projeto", en: "Conceptual project narration" },
-  stillGenerator: { pt: "GERADOR EXPERIMENTAL DE STILL", en: "EXPERIMENTAL STILL GENERATOR" },
-  stillGeneratorDesc: { pt: "Propulsado por flux.1-schnell via Pollinations.AI, o gerador experimental traduz ruído em painel de HQ — onde a máquina sonha o que o criador intui.", en: "Powered by flux.1-schnell via Pollinations.AI, the experimental generator translates noise into comic panels — where the machine dreams what the creator intuits." },
-  clickToGenerate: { pt: "GERAR STILL", en: "GENERATE STILL" },
-  experimentalGenerator: { pt: "GERADOR EXPERIMENTAL DE STILL", en: "EXPERIMENTAL STILL GENERATOR" },
   library: { pt: "Biblioteca", en: "Library" },
   custom: { pt: "Personalizado", en: "Custom" },
   selectBasePrompt: { pt: "Selecionar Prompt Base", en: "Select Base Prompt" },
