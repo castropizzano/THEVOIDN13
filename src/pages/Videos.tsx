@@ -17,6 +17,7 @@ interface CuratedVideo {
 
 const curatedVideos: CuratedVideo[] = [
   { source: "vimeo", videoId: "819353942", title: { pt: "Projeto 01", en: "Project 01" }, year: "2024", category: "curta-metragem" },
+  { source: "vimeo", videoId: "938890093", title: { pt: "Mãe Natureza", en: "Mother Nature" }, year: "2024", category: "curta-metragem" },
   { source: "vimeo", videoId: "1113340788", title: { pt: "Projeto 03", en: "Project 03" }, year: "2024", category: "documentário" },
   { source: "vimeo", videoId: "1009245969", title: { pt: "Projeto 04", en: "Project 04" }, year: "2024", category: "comercial" },
   { source: "vimeo", videoId: "647030152", title: { pt: "Projeto 05", en: "Project 05" }, year: "2023", category: "videoperformance" },
@@ -46,6 +47,7 @@ const curatedVideos: CuratedVideo[] = [
   { source: "vimeo", videoId: "474411083", title: { pt: "Projeto 29", en: "Project 29" }, year: "2023", category: "videoperformance" },
   { source: "vimeo", videoId: "406868847", title: { pt: "Projeto 30", en: "Project 30" }, year: "2023", category: "curta-metragem" },
   { source: "vimeo", videoId: "349830611", title: { pt: "Projeto 31", en: "Project 31" }, year: "2023", category: "documentário" },
+  { source: "vimeo", videoId: "171656069", title: { pt: "UDNFS", en: "UDNFS" }, year: "2023", category: "comercial" },
   { source: "vimeo", videoId: "163004144", title: { pt: "Projeto 34", en: "Project 34" }, year: "2022", category: "comercial" },
   { source: "vimeo", videoId: "1007121923", title: { pt: "Projeto 35", en: "Project 35" }, year: "2024", category: "videoperformance" },
   { source: "vimeo", videoId: "195199575", title: { pt: "Projeto 36", en: "Project 36" }, year: "2022", category: "curta-metragem" },
@@ -71,16 +73,13 @@ const Videos = () => {
       <Header />
       <BackToTop />
       <main>
-        <section className="relative min-h-screen flex items-center justify-center bg-background overflow-hidden">
-          <div className="absolute inset-0">
-            <img src={coverVideos} alt={language === "pt" ? "Projetos" : "Work"} className="w-full h-full object-cover object-center" />
-            <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/40 to-background" />
-          </div>
-          <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
-            <h1 className="bible-h1 text-6xl sm:text-7xl md:text-8xl mb-8 animate-fade-in">
-              {language === "pt" ? "PROJETOS" : "WORK"}
-            </h1>
-          </div>
+        <section className="w-full min-h-screen flex items-center justify-center overflow-hidden bg-black pt-16 sm:pt-20 md:pt-24">
+          <img 
+            src={coverVideos} 
+            alt={language === "pt" ? "Projetos" : "Work"}
+            className="w-full h-full object-cover object-center"
+            loading="eager"
+          />
         </section>
         <BilingualSection className="bible-section">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
