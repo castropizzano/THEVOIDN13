@@ -104,7 +104,7 @@ export const AudioPlayer = ({ src, title, description }: AudioPlayerProps) => {
             max={duration || 100}
             step={0.1}
             onValueChange={handleSeek}
-            className="cursor-pointer hover:opacity-80 transition-opacity"
+            className="cursor-pointer hover:opacity-80 transition-opacity [&_*]:pointer-events-auto"
           />
           <div className="flex justify-between text-xs text-muted-foreground">
             <span>{formatTime(currentTime)}</span>
@@ -147,7 +147,7 @@ export const AudioPlayer = ({ src, title, description }: AudioPlayerProps) => {
               max={1}
               step={0.01}
               onValueChange={handleVolumeChange}
-              className="w-24 cursor-pointer"
+              className="w-24 cursor-pointer [&_*]:pointer-events-auto"
             />
           </div>
         </div>
