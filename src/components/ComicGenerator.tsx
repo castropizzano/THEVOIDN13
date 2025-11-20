@@ -165,6 +165,32 @@ export const ComicGenerator = () => {
     setGeneratedImage(null);
 
     try {
+      // SEMANTIC VALIDATION: Detect if user wants multiple characters or non-THEVØIDN13 scenes
+      const detectMultipleCharacters = (prompt: string): boolean => {
+        const lowerPrompt = prompt.toLowerCase();
+        
+        // Keywords indicating multiple people
+        const multipleCharactersKeywords = [
+          'pessoas', 'grupo', 'roda', 'multidão', 'turma', 'galera', 'gente',
+          'people', 'group', 'circle', 'crowd', 'gang', 'folks', 'characters',
+          'dois', 'três', 'quatro', 'cinco', 'vários', 'muitos', 'alguns',
+          'two', 'three', 'four', 'five', 'several', 'many', 'some', 'multiple'
+        ];
+        
+        // Keywords for specific scenes without masked character
+        const sceneKeywords = [
+          'fogueira', 'bonfire', 'fire', 'festa', 'party', 'celebração', 'celebration',
+          'reunião', 'meeting', 'encontro', 'gathering', 'conversa', 'conversation'
+        ];
+        
+        const hasMultipleKeyword = multipleCharactersKeywords.some(keyword => lowerPrompt.includes(keyword));
+        const hasSceneKeyword = sceneKeywords.some(keyword => lowerPrompt.includes(keyword));
+        
+        return hasMultipleKeyword || hasSceneKeyword;
+      };
+
+      const isMultipleCharactersScene = detectMultipleCharacters(trimmedPrompt);
+
       // CRITICAL: COMIC BOOK / GRAPHIC NOVEL STYLE OVERRIDE
       const COMIC_STYLE_OVERRIDE = `[ABSOLUTE PRIORITY — GRAPHIC NOVEL / COMIC BOOK AESTHETIC]
 CRITICAL: This MUST be a COMIC BOOK / GRAPHIC NOVEL illustration, NOT a photograph, NOT realistic.
@@ -187,8 +213,37 @@ ARTISTIC REFERENCES FOR COMIC STYLE:
 - Akira manga panels (Katsuhiro Otomo) — detailed urban decay illustrations
 - The Killing Joke — atmospheric comic book lighting`;
 
-      // HERO VISUAL REINFORCEMENT - Match hero-rain-wide.png aesthetic in COMIC STYLE
-      const HERO_VISUAL_REINFORCEMENT = `[MATCH hero-rain-wide.png BUT AS COMIC BOOK ILLUSTRATION]
+      // CONDITIONAL CHARACTER RULES: Apply THEVØIDN13 character ONLY if single character scene
+      const CHARACTER_RULES = isMultipleCharactersScene 
+        ? `[FLEXIBLE CHARACTER COMPOSITION]
+- PRIORITIZE user's scene description over default character
+- If user requests multiple people, draw MULTIPLE CHARACTERS as comic book illustrations
+- Each character should have distinct features, poses, and clothing in Western comic book style
+- Characters can be generic (no masks required) unless specifically requested
+- Focus on group dynamics, interactions, and scene composition
+- Maintain noir/urban aesthetic but allow character variety`
+        : `THEVØIDN13 UNIVERSE — Shadow Interface Bible v13 COMIC BOOK PROTOCOL:
+
+CRITICAL OVERRIDE: THIS IS A GRAPHIC NOVEL / COMIC BOOK ILLUSTRATION, NOT A PHOTOGRAPH.
+
+MANDATORY CHARACTER (COMIC STYLE):
+- White expressionless mask with bold black ink outlines (completely smooth, NO eyes, NO mouth, pure matte white)
+- Oversized olive-green military parka with hood up, drawn with heavy ink lines and hatching for texture
+- OR black/charcoal tactical wear with weathered fabric illustrated with cross-hatching
+
+ABSOLUTE COMIC REQUIREMENTS:
+- Mask MUST be completely featureless (no eyes, no expression) with bold black outline
+- MUST feel like Watchmen urban panel — lonely, isolated, noir`;
+
+      // VISUAL REINFORCEMENT: Apply hero reference ONLY for single character scenes
+      const VISUAL_REINFORCEMENT = isMultipleCharactersScene
+        ? `[SCENE-FOCUSED COMPOSITION]
+- Dynamic group composition with comic book panel framing
+- Visible interactions between characters (gestures, eye contact, body language)
+- Atmospheric lighting that serves the scene (firelight, urban glow, shadows)
+- Comic book depth with foreground/background separation using line weight
+- Noir atmosphere but adapted to scene context (warm if fire scene, cold if urban night)`
+        : `[MATCH hero-rain-wide.png BUT AS COMIC BOOK ILLUSTRATION]
 - Mask finish: MATTE white in comic book style (bold black outlines defining edges)
 - Hood texture: Illustrated olive-green military fabric with ink hatching for wrinkles
 - Neon intensity: DIM atmospheric glow rendered as comic book light effects (30-40% luminosity)
@@ -200,17 +255,8 @@ ARTISTIC REFERENCES FOR COMIC STYLE:
 - Mood: Lonely urban scene as GRAPHIC NOVEL panel — Watchmen meets THEVØIDN13
 - Linework: Visible black ink outlines on ALL elements (character, buildings, rain, puddles)`;
 
-      // THEVØIDN13 Shadow Interface Bible v13 - COMIC BOOK VERSION
-      const THEVOIDN13_STYLE = `THEVØIDN13 UNIVERSE — Shadow Interface Bible v13 COMIC BOOK PROTOCOL:
-
-CRITICAL OVERRIDE: THIS IS A GRAPHIC NOVEL / COMIC BOOK ILLUSTRATION, NOT A PHOTOGRAPH.
-
-MANDATORY CHARACTER (COMIC STYLE):
-- White expressionless mask with bold black ink outlines (completely smooth, NO eyes, NO mouth, pure matte white)
-- Oversized olive-green military parka with hood up, drawn with heavy ink lines and hatching for texture
-- OR black/charcoal tactical wear with weathered fabric illustrated with cross-hatching
-
-CANONICAL COLOR PALETTE (CEL-SHADED COMIC STYLE):
+      // CORE VISUAL STYLE (always applied)
+      const CORE_STYLE = `CANONICAL COLOR PALETTE (CEL-SHADED COMIC STYLE):
 - Background: Deep shadow black #1A1A1A (solid ink blacks with Ben-day dots in midtones)
 - Highlights: Void white #FFFFFF (stark white areas, no gradients)
 - Midtones: Ghost gray #E6E6E6 (flat color blocks with halftone patterns)
@@ -255,17 +301,16 @@ ABSOLUTE COMIC REQUIREMENTS:
 - MUST look like a graphic novel panel (NOT a photograph)
 - MUST have visible black ink outlines defining all shapes
 - MUST use flat color blocks with cel-shading (NO photorealistic gradients)
-- Mask MUST be completely featureless (no eyes, no expression) with bold black outline
 - Neon MUST be illustrated glow effects (NOT photographic light)
 - MUST include illustrated wet surfaces with comic book reflections
-- MUST feel like Watchmen urban panel — lonely, isolated, noir
 - NO photorealism, NO 3D rendering, NO photography aesthetic
 - NO bright cheerful colors except dramatic red accent
 - NO anime style, NO manga shading (Western comic book style only)`;
       
-      const detailedPrompt = `${COMIC_STYLE_OVERRIDE}\n\n${THEVOIDN13_STYLE}\n\n${HERO_VISUAL_REINFORCEMENT}\n\nSCENE DESCRIPTION: ${trimmedPrompt}\n\n[FINAL REINFORCEMENT: This is a COMIC BOOK / GRAPHIC NOVEL illustration with visible ink linework and cel-shading. NOT a photograph. Style reference: Watchmen graphic novel meets THEVØIDN13 aesthetic.]`;
+      const detailedPrompt = `${COMIC_STYLE_OVERRIDE}\n\n${CHARACTER_RULES}\n\n${CORE_STYLE}\n\n${VISUAL_REINFORCEMENT}\n\nSCENE DESCRIPTION: ${trimmedPrompt}\n\n[FINAL REINFORCEMENT: This is a COMIC BOOK / GRAPHIC NOVEL illustration with visible ink linework and cel-shading. NOT a photograph. Style reference: Watchmen graphic novel meets THEVØIDN13 aesthetic. ${isMultipleCharactersScene ? 'PRIORITIZE the user scene description over default character.' : ''}]`;
 
       console.log('Generating THEVØIDN13 comic book panel with graphic novel style...');
+      console.log('Multiple characters scene detected:', isMultipleCharactersScene);
       console.log('Prompt length:', detailedPrompt.length, 'chars');
 
       // Generate comic book style image using Pollinations.AI
