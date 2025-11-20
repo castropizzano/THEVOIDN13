@@ -5,7 +5,6 @@ import { SEO, creativeWorkSchema, personSchema, organizationSchema } from "@/com
 import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
 import { PromptLibrary } from "@/components/PromptLibrary";
 import { BilingualAudioPlayer } from "@/components/BilingualAudioPlayer";
-import { ComicGenerator } from "@/components/ComicGenerator";
 import { MindMap } from "@/components/MindMap";
 import { CreativeOracle } from "@/components/CreativeOracle";
 import { BackToTop } from "@/components/BackToTop";
@@ -14,7 +13,6 @@ import SpotifyPlaylist from "@/components/SpotifyPlaylist";
 import FilmGallery from "@/components/FilmGallery";
 import ComicsShowcase from "@/components/ComicsShowcase";
 import PhilosophyShowcase from "@/components/PhilosophyShowcase";
-import VibeCodingPlayground from "@/components/VibeCodingPlayground";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { FeatureCard } from "@/components/FeatureCard";
@@ -1345,12 +1343,6 @@ const Index = () => {
           </div>
         </BilingualSection>
 
-        <Separator className="bg-border/30" />
-
-        {/* ===== VIBE CODING PLAYGROUND ===== */}
-        <VibeCodingPlayground />
-
-        <Separator className="bg-border/30" />
 
         {/* ===== A METODOLOGIA ===== */}
         <BilingualSection className="bible-section">
@@ -2019,39 +2011,6 @@ const Index = () => {
           </div>
 
           {/* GERADOR EXPERIMENTAL */}
-          <div>
-            <BilingualContent
-              portugueseContent={
-                <>
-                  <h3 className="bible-subtitle">GERADOR EXPERIMENTAL DE STILL</h3>
-                </>
-              }
-              englishContent={
-                <>
-                  <h3 className="bible-subtitle">EXPERIMENTAL STILL GENERATOR</h3>
-                </>
-              }
-            />
-            <BilingualContent
-              portugueseContent={
-                <div>
-                  <p className="bible-body">
-                    Co-criação humano-máquina em tempo real. Propulsado por flux.1-schnell via Pollinations.AI, o gerador traduz ruído em painel de HQ — onde a máquina sonha o que o criador intui. Laboratório experimental para testar, tensionar e expandir a estética THEVØIDN13. Cada imagem é única, irreplicável e marcada com a assinatura digital do projeto.
-                  </p>
-                </div>
-              }
-              englishContent={
-                <div>
-                  <p className="bible-body">
-                    Real-time human-machine co-creation. Powered by flux.1-schnell via Pollinations.AI, the generator translates noise into comic panels — where the machine dreams what the creator intuits. Experimental lab to test, tension and expand the THEVØIDN13 aesthetic. Each image is unique, unrepeatable and marked with the project's digital signature.
-                  </p>
-                </div>
-              }
-            />
-            <div className="bible-media">
-              <ComicGenerator />
-            </div>
-          </div>
 
           {/* ORÁCULO: JORNADA INTERATIVA */}
           <div>
