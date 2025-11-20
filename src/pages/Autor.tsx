@@ -359,7 +359,7 @@ DaVinci Resolve"
             </div>
         </div>
 
-        <div className="bible-bilingual-grid bible-block">
+        <div className="bible-bilingual-grid">
           <div>
             <SkillCard
               title="LINGUAGEM, NÃO LOGOTIPO."
