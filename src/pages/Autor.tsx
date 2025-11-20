@@ -369,7 +369,7 @@ DaVinci Resolve"
                 <h3 className="bible-subtitle text-primary">Uma identidade que rejeita a lógica publicitária e se afirma como linguagem, não logotipo.</h3>
                 
                 <h3 className="bible-subtitle">O Contexto: Uma Recusa ao Branding Tradicional</h3>
-                <p className="bible-body">Vivemos na era do excesso de identidade. Marcas falam mais de si do que de seus propósitos, buscam reconhecimento pelo algoritmo e não pela substância. A resposta foi criar uma anti-marca — uma identidade que rejeita a lógica publicitária e se afirma como linguagem, não logotipo.</p>
+                <p className="bible-body">A era é de excesso de identidade. Marcas falam mais de si do que de seus propósitos, buscam reconhecimento pelo algoritmo e não pela substância. A resposta foi criar uma anti-marca — uma identidade que rejeita a lógica publicitária e se afirma como linguagem, não logotipo.</p>
                 
                 <p className="bible-body">Ao contrário de um símbolo que busca reconhecimento imediato, o projeto ЦАСТРО (transliteração cirílica de CASTRO) propõe o anonimato como força estética. A ausência de identificação direta — o nome distorcido, o alfabeto estrangeiro, a paleta contida — é uma crítica à cultura do ego-branding.</p>
                 
@@ -502,7 +502,7 @@ DaVinci Resolve"
                 <h3 className="bible-subtitle text-primary">An identity that rejects the advertising logic of self-promotion, asserting itself as language, not logo.</h3>
                 
                 <h3 className="bible-subtitle">The Context: A Refusal of Traditional Branding</h3>
-                <p className="bible-body">We live in the era of identity excess. Brands talk more about themselves than their purposes, seeking algorithm recognition rather than substance. The response was to create an anti-brand — an identity that rejects the advertising logic of self-promotion, asserting itself as language, not logo.</p>
+                <p className="bible-body">The era is one of identity excess. Brands talk more about themselves than their purposes, seeking algorithm recognition rather than substance. The response was to create an anti-brand — an identity that rejects the advertising logic of self-promotion, asserting itself as language, not logo.</p>
                 
                 <p className="bible-body">Unlike a symbol seeking immediate recognition, the ЦАСТРО project (Cyrillic transliteration of CASTRO) proposes anonymity as aesthetic force. The absence of direct identification — the distorted name, foreign alphabet, restrained palette — is a critique of ego-branding culture.</p>
                 
@@ -754,10 +754,10 @@ DaVinci Resolve"
                 <p className="bible-body">E quando este texto é lido, não se trata apenas de consumir uma obra — trata-se de testemunhar um método. Método que não separa arte de ciência, intuição de algoritmo, subjetividade de processamento.</p>
                 
                 <h3 className="bible-subtitle">Futuro Distópico, Prática Utópica</h3>
-                <p className="bible-body">Vivemos tempos estranhos. Distópicos em muitos sentidos — vigilância algorítmica, erosão das certezas, aceleração sem direção. Mas também tempos de potência inédita. Nunca foi tão possível criar universos complexos sozinho-mas-não-sozinho. Nunca foi tão viável pensar o impossível e materializá-lo em horas.</p>
+                <p className="bible-body">Estes são tempos estranhos. Distópicos em muitos sentidos — vigilância algorítmica, erosão das certezas, aceleração sem direção. Mas também tempos de potência inédita. Nunca foi tão possível criar universos complexos sozinho-mas-não-sozinho. Nunca foi tão viável pensar o impossível e materializá-lo em horas.</p>
                 
-                <p className="bible-body">Este projeto é uma aposta. A aposta de que a colaboração humano-máquina não precisa ser uma rendição à automação, mas pode ser uma <span className="font-bold">insurgência criativa</span>. Que podemos usar as ferramentas do futuro sem abrir mão da ética do presente. Que podemos programar sem deixar de poetizar. Que podemos render frames sem perder o gesto.</p>
-                
+                <p className="bible-body">Este projeto é uma aposta. A aposta de que a colaboração humano-máquina não precisa ser uma rendição à automação, mas pode ser uma <span className="font-bold">insurgência criativa</span>. Que é possível usar as ferramentas do futuro sem abrir mão da ética do presente. Que é possível programar sem deixar de poetizar. Que é possível render frames sem perder o gesto.</p>
+
                 <h3 className="bible-subtitle">Relevância do Processo</h3>
                 <p className="bible-body">Este memorial visual importa porque ele não apenas <span className="italic">documenta</span> o processo — ele <span className="italic">performa</span> o processo. Cada visitante que navega por estas páginas não está lendo sobre co-criação: está experienciando co-criação. Não está aprendendo teoria: está vendo a teoria aplicada.</p>
                 
@@ -766,7 +766,7 @@ DaVinci Resolve"
                 <h3 className="bible-subtitle">Experimentação Permanente</h3>
                 <p className="bible-body">Este não é um trabalho concluído. Este é um trabalho <span className="italic">que não se fecha</span>. O portal será atualizado. Novos prompts serão testados. Novos capítulos do universo THEVØIDN13 surgirão. A metodologia será refinada enquanto permanece aberta.</p>
                 
-                <p className="bible-body">Aprendemos neste processo que a verdadeira inteligência — humana ou artificial — não está em chegar a respostas definitivas. Está em continuar fazendo perguntas melhores. E fazer perguntas melhores exige coragem para experimentar, falhar, tentar de novo.</p>
+                <p className="bible-body">Este processo revelou que a verdadeira inteligência — humana ou artificial — não está em chegar a respostas definitivas. Está em continuar fazendo perguntas melhores. E fazer perguntas melhores exige coragem para experimentar, falhar, tentar de novo.</p>
                 
                 <Card className="mt-8 bg-black/80 border-primary/50 border-2">
                   <CardContent className="p-8">
@@ -803,10 +803,10 @@ DaVinci Resolve"
                 <p className="bible-body">And when this text is read, it's not just about consuming a work — it's about witnessing a method. A method that doesn't separate art from science, intuition from algorithm, subjectivity from processing.</p>
                 
                 <h3 className="bible-subtitle">Dystopian Future, Utopian Practice</h3>
-                <p className="bible-body">We live in strange times. Dystopian in many senses — algorithmic surveillance, erosion of certainties, directionless acceleration. But also times of unprecedented power. Never has it been so possible to create complex universes alone-but-not-alone. Never has it been so viable to think the impossible and materialize it in hours.</p>
+                <p className="bible-body">These are strange times. Dystopian in many senses — algorithmic surveillance, erosion of certainties, directionless acceleration. But also times of unprecedented power. Never has it been so possible to create complex universes alone-but-not-alone. Never has it been so viable to think the impossible and materialize it in hours.</p>
                 
-                <p className="bible-body">This project is a bet. The bet that human-machine collaboration need not be a surrender to automation, but can be a <span className="font-bold">creative insurgency</span>. That we can use the tools of the future without abandoning the ethics of the present. That we can program without ceasing to poetize. That we can render frames without losing the gesture.</p>
-                
+                <p className="bible-body">This project is a bet. The bet that human-machine collaboration need not be a surrender to automation, but can be a <span className="font-bold">creative insurgency</span>. That it's possible to use the tools of the future without abandoning the ethics of the present. That it's possible to program without ceasing to poetize. That it's possible to render frames without losing the gesture.</p>
+
                 <h3 className="bible-subtitle">Relevance of the Process</h3>
                 <p className="bible-body">This visual memorial matters because it doesn't just <span className="italic">document</span> the process — it <span className="italic">performs</span> the process. Each visitor navigating these pages is not reading about co-creation: they are experiencing co-creation. They are not learning theory: they are seeing theory applied.</p>
                 
@@ -815,7 +815,7 @@ DaVinci Resolve"
                 <h3 className="bible-subtitle">Permanent Experimentation</h3>
                 <p className="bible-body">This is not a finished work. This is a work <span className="italic">that doesn't close</span>. The portal will be updated. New prompts will be tested. New chapters of the THEVØIDN13 universe will emerge. The methodology will be refined while remaining open.</p>
                 
-                <p className="bible-body">Because what we learned in this process is that true intelligence — human or artificial — is not in reaching definitive answers. It's in continuing to ask better questions. And asking better questions requires courage to experiment, fail, try again.</p>
+                <p className="bible-body">This process revealed that true intelligence — human or artificial — is not in reaching definitive answers. It's in continuing to ask better questions. And asking better questions requires courage to experiment, fail, try again.</p>
                 
                 <Card className="mt-8 bg-black/80 border-primary/50 border-2">
                   <CardContent className="p-8">
