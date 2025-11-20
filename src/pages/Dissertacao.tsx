@@ -129,8 +129,8 @@ const Dissertacao = () => {
               </CardHeader>
               <CardContent>
                 <p className="bible-body text-muted-foreground">
-                  <span className="lang-pt">Coletivo Criativo fundado em 2008. Estúdio pós-contemporâneo de design e vídeo. Associação de produtores criativos independentes que opera como laboratório de criação autoral, cultural e comercial, conectando pessoas, ideias e projetos.</span>
-                  <span className="lang-en">Creative Collective founded in 2008. Post-contemporary studio of design and video. Association of independent creative producers operating as a laboratory of authorial, cultural and commercial creation, connecting people, ideas and projects.</span>
+                  <span className="lang-pt">Coletivo Criativo fundado em 2008. Estúdio pós-contemporâneo de design e vídeo. Associação de produtores criativos independentes que opera como <span className="text-primary font-semibold">laboratório de criação autoral, cultural e comercial</span>, conectando pessoas, ideias e projetos.</span>
+                  <span className="lang-en">Creative Collective founded in 2008. Post-contemporary studio of design and video. Association of independent creative producers operating as a <span className="text-primary font-semibold">laboratory of authorial, cultural and commercial creation</span>, connecting people, ideas and projects.</span>
                 </p>
               </CardContent>
             </Card>
@@ -151,16 +151,32 @@ const Dissertacao = () => {
               </CardContent>
             </Card>
 
-            {/* Card Services */}
+            {/* Card Philosophy */}
             <Card className="bg-card/50 border-2 border-primary/50 hover:border-primary transition-all duration-300">
               <CardHeader>
                 <CardTitle className="bible-subtitle text-primary uppercase">
-                  <span className="lang-pt">Serviços</span>
-                  <span className="lang-en">Services</span>
+                  <span className="lang-pt">Filosofia</span>
+                  <span className="lang-en">Philosophy</span>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="space-y-3">
+                <p className="bible-body text-muted-foreground leading-relaxed">
+                  <span className="lang-pt">A casa número 13 como símbolo de resistência ao convencional. <span className="text-primary font-semibold">O estigma transformado em potência criativa</span>. O estúdio opera na fronteira entre o comercial e o experimental, sem hierarquia entre ambos. Cada projeto recebe o mesmo rigor criativo.</span>
+                  <span className="lang-en">House number 13 as a symbol of resistance to the conventional. <span className="text-primary font-semibold">The stigma transformed into creative power</span>. The studio operates on the border between commercial and experimental, without hierarchy between them. Each project receives the same creative rigor.</span>
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Card Realization */}
+            <Card className="md:col-span-2 bg-card/50 border-2 border-primary/50 hover:border-primary transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="bible-subtitle text-primary uppercase">
+                  <span className="lang-pt">Realização</span>
+                  <span className="lang-en">Realization</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="lang-pt">
                     <p className="bible-body text-muted-foreground"><span className="text-primary font-semibold">Design Gráfico:</span> Identidades visuais, branding, editorial</p>
                     <p className="bible-body text-muted-foreground"><span className="text-primary font-semibold">Vídeo:</span> Documentários, videoclipes, conteúdo digital</p>
@@ -174,22 +190,6 @@ const Dissertacao = () => {
                     <p className="bible-body text-muted-foreground"><span className="text-primary font-semibold">Curation:</span> Experimental and authorial projects</p>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
-
-            {/* Card Philosophy */}
-            <Card className="md:col-span-2 bg-card/50 border-2 border-primary/50 hover:border-primary transition-all duration-300">
-              <CardHeader>
-                <CardTitle className="bible-subtitle text-primary uppercase">
-                  <span className="lang-pt">Filosofia</span>
-                  <span className="lang-en">Philosophy</span>
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="bible-body text-muted-foreground leading-relaxed">
-                  <span className="lang-pt">A casa número 13 como símbolo de resistência ao convencional. <span className="text-primary font-semibold">O estigma transformado em potência criativa</span>. O estúdio opera na fronteira entre o comercial e o experimental, sem hierarquia entre ambos. Cada projeto — seja uma identidade visual para um cliente ou um filme autoral — recebe o mesmo rigor criativo.</span>
-                  <span className="lang-en">House number 13 as a symbol of resistance to the conventional. <span className="text-primary font-semibold">The stigma transformed into creative power</span>. The studio operates on the border between commercial and experimental, without hierarchy between them. Each project — whether a visual identity for a client or an authorial film — receives the same creative rigor.</span>
-                </p>
               </CardContent>
             </Card>
           </div>
@@ -223,24 +223,56 @@ const Dissertacao = () => {
               </CardHeader>
               <CardContent>
                 <p className="bible-body text-muted-foreground">
-                  <span className="lang-pt">Crew de skate @lowpressure.fam estabelecida nas transições e ruas de Curitiba. Movimento que valoriza o skateboard e seu universo cultural. Uma crew de skatistas, músicos e artistas com diferentes visões e um mesmo ideal. <span className="text-primary font-semibold">A ética do subterrâneo. O pensamento que nasce da margem.</span></span>
-                  <span className="lang-en">Skate crew @lowpressure.fam established in the transitions and streets of Curitiba. Movement that values skateboarding and its cultural universe. A crew of skaters, musicians and artists with different visions and the same ideal. <span className="text-primary font-semibold">The ethics of the underground. Thought that rises from the margin.</span></span>
+                  <span className="lang-pt">Crew de skate @lowpressure.fam estabelecida nas transições e ruas de Curitiba. <span className="text-primary font-semibold">Movimento que valoriza o skateboard e seu universo cultural</span>. Uma crew de skatistas, músicos e artistas com diferentes visões e um mesmo ideal.</span>
+                  <span className="lang-en">Skate crew @lowpressure.fam established in the transitions and streets of Curitiba. <span className="text-primary font-semibold">Movement that values skateboarding and its cultural universe</span>. A crew of skaters, musicians and artists with different visions and the same ideal.</span>
                 </p>
               </CardContent>
             </Card>
 
-            {/* Card Purpose */}
-            <Card className="md:col-span-2 bg-card/50 border-2 border-primary/50 hover:border-primary transition-all duration-300">
+            {/* Card Concept */}
+            <Card className="bg-card/50 border-2 border-primary/50 hover:border-primary transition-all duration-300">
               <CardHeader>
                 <CardTitle className="bible-subtitle text-primary uppercase">
-                  <span className="lang-pt">Propósito</span>
-                  <span className="lang-en">Purpose</span>
+                  <span className="lang-pt">Conceito</span>
+                  <span className="lang-en">Concept</span>
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="bible-body text-muted-foreground leading-relaxed">
-                  <span className="lang-pt">Não é sobre patrocínio. Não é sobre likes. É sobre <span className="text-primary font-semibold">manter viva a chama do skate como expressão genuína</span>. Resistir à espetacularização. Preservar a autonomia criativa. Ser crew é ser família escolhida. É saber que, não importa o spot, sempre tem alguém que vai te buscar quando você cair.</span>
-                  <span className="lang-en">It's not about sponsorship. It's not about likes. It's about <span className="text-primary font-semibold">keeping alive the flame of skateboarding as genuine expression</span>. Resisting spectacularization. Preserving creative autonomy. Being crew is being chosen family. It's knowing that, no matter the spot, there's always someone who'll pick you up when you fall.</span>
+                  <span className="lang-pt"><span className="text-primary font-semibold">A ética do subterrâneo. O pensamento que nasce da margem.</span> Uma crew de skatistas que fez do skate um modo de existir. Resistir à espetacularização. Preservar a autonomia criativa e a expressão genuína.</span>
+                  <span className="lang-en"><span className="text-primary font-semibold">The ethics of the underground. Thought that rises from the margin.</span> A crew of skaters that made skateboarding a way of existing. Resisting spectacularization. Preserving creative autonomy and genuine expression.</span>
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Card Philosophy */}
+            <Card className="bg-card/50 border-2 border-primary/50 hover:border-primary transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="bible-subtitle text-primary uppercase">
+                  <span className="lang-pt">Filosofia</span>
+                  <span className="lang-en">Philosophy</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="bible-body text-muted-foreground leading-relaxed">
+                  <span className="lang-pt">Não é sobre patrocínio. Não é sobre likes. É sobre <span className="text-primary font-semibold">manter viva a chama do skate como expressão genuína</span>. Resistir à espetacularização. Preservar a autonomia criativa.</span>
+                  <span className="lang-en">It's not about sponsorship. It's not about likes. It's about <span className="text-primary font-semibold">keeping alive the flame of skateboarding as genuine expression</span>. Resisting spectacularization. Preserving creative autonomy.</span>
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Card Realization */}
+            <Card className="md:col-span-2 bg-card/50 border-2 border-primary/50 hover:border-primary transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="bible-subtitle text-primary uppercase">
+                  <span className="lang-pt">Realização</span>
+                  <span className="lang-en">Realization</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="bible-body text-muted-foreground leading-relaxed">
+                  <span className="lang-pt">Ser crew é <span className="text-primary font-semibold">ser família escolhida</span>. É saber que, não importa o spot, sempre tem alguém que vai te buscar quando você cair. Uma rede de pertencimento que se inscreve nos gestos, nas imagens e nos vínculos forjados em movimento. Do underground ao reconhecimento cultural, mantendo a essência intacta.</span>
+                  <span className="lang-en">Being crew is <span className="text-primary font-semibold">being chosen family</span>. It's knowing that, no matter the spot, there's always someone who'll pick you up when you fall. A network of belonging inscribed in gestures, images and bonds forged in movement. From underground to cultural recognition, keeping the essence intact.</span>
                 </p>
               </CardContent>
             </Card>
@@ -289,52 +321,39 @@ const Dissertacao = () => {
               </CardContent>
             </Card>
 
-            {/* Card Symbolism */}
+            {/* Card Symbolism -> Philosophy */}
             <Card className="bg-card/50 border-2 border-primary/50 hover:border-primary transition-all duration-300">
               <CardHeader>
                 <CardTitle className="bible-subtitle text-primary uppercase">
-                  <span className="lang-pt">Simbolismo</span>
-                  <span className="lang-en">Symbolism</span>
+                  <span className="lang-pt">Filosofia</span>
+                  <span className="lang-en">Philosophy</span>
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="bible-body text-muted-foreground leading-relaxed">
-                  <span className="lang-pt">O filme opera como <span className="text-primary font-semibold">labirinto criativo</span> onde subjetividade e subcultura se encontram. Cada manobra é gesto simbólico. Cada spot é território de afeto. A estética DIY não é limitação — <span className="text-primary font-semibold">é escolha ética</span>. LowMovie materializa a filosofia punk do "faça você mesmo" aplicada ao cinema de skate.</span>
-                  <span className="lang-en">The film operates as a <span className="text-primary font-semibold">creative labyrinth</span> where subjectivity and subculture meet. Each trick is symbolic gesture. Each spot is a territory of affection. The DIY aesthetic isn't a limitation — <span className="text-primary font-semibold">it's an ethical choice</span>. LowMovie materializes the punk philosophy of "do it yourself" applied to skate cinema.</span>
+                  <span className="lang-pt">O filme opera como <span className="text-primary font-semibold">labirinto criativo</span> onde subjetividade e subcultura se encontram. Cada manobra é gesto simbólico. Cada spot é território de afeto. A estética DIY não é limitação — <span className="text-primary font-semibold">é escolha ética</span>.</span>
+                  <span className="lang-en">The film operates as a <span className="text-primary font-semibold">creative labyrinth</span> where subjectivity and subculture meet. Each trick is symbolic gesture. Each spot is a territory of affection. The DIY aesthetic isn't a limitation — <span className="text-primary font-semibold">it's an ethical choice</span>.</span>
                 </p>
               </CardContent>
             </Card>
 
-            {/* Card Premiere */}
-            <Card className="bg-card/50 border-2 border-primary/50 hover:border-primary transition-all duration-300">
+            {/* Card Realization (Premiere + Lowbyrinth) */}
+            <Card className="md:col-span-2 bg-card/50 border-2 border-primary/50 hover:border-primary transition-all duration-300">
               <CardHeader>
                 <CardTitle className="bible-subtitle text-primary uppercase">
-                  <span className="lang-pt">Premiére</span>
-                  <span className="lang-en">Premiere</span>
+                  <span className="lang-pt">Realização</span>
+                  <span className="lang-en">Realization</span>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="bible-body text-muted-foreground leading-relaxed">
-                  <span className="lang-pt"><span className="text-primary font-semibold">16 de dezembro de 2022. Vila Ida, Curitiba.</span> Evento presencial que resgatou a essência do skate e seu universo. Encontro multicultural com exibição de skate videos, pocket show, exposição de fotografias, feira de produtos e galeria de arte. A estreia do LowMovie™ finalizou em uma celebração SkateParty. <span className="text-primary font-semibold">Do underground ao evento cultural. Da margem ao centro simbólico da cidade.</span></span>
-                  <span className="lang-en"><span className="text-primary font-semibold">December 16, 2022. Vila Ida, Curitiba.</span> In-person event that rescued the essence of skateboarding and its universe. Multicultural gathering featuring skate video screenings, pocket show, photo exhibition, product fair and art gallery. The LowMovie™ premiere culminated in a SkateParty celebration. <span className="text-primary font-semibold">From underground to cultural event. From margin to the symbolic center of the city.</span></span>
-                </p>
-              </CardContent>
-            </Card>
-
-            {/* Card Lowbyrinth */}
-            <Card className="bg-card/50 border-2 border-primary/50 hover:border-primary transition-all duration-300">
-              <CardHeader>
-                <CardTitle className="bible-subtitle text-primary uppercase">Lowbyrinth™</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
+                <div className="space-y-4">
                   <p className="bible-body text-muted-foreground leading-relaxed">
-                    <span className="lang-pt">O símbolo central de LowMovie. Um labirinto inspirado em <span className="text-primary font-semibold">geometria sagrada e princípios herméticos</span>. Baseado na filosofia de Hermes Trismegistus, o Lowbyrinth™ materializa a ideia de que princípios organizam toda vida e criação no universo.</span>
-                    <span className="lang-en">The central symbol of LowMovie. A labyrinth inspired by <span className="text-primary font-semibold">sacred geometry and hermetic principles</span>. Based on Hermes Trismegistus' philosophy, the Lowbyrinth™ materializes the idea that principles organize all life and creation in the universe.</span>
+                    <span className="lang-pt"><span className="text-primary font-semibold">16 de dezembro de 2022. Vila Ida, Curitiba.</span> Evento presencial que resgatou a essência do skate. Encontro multicultural com exibição de skate videos, pocket show, exposição de fotografias, feira de produtos e galeria de arte. <span className="text-primary font-semibold">Do underground ao evento cultural. Da margem ao centro simbólico da cidade.</span></span>
+                    <span className="lang-en"><span className="text-primary font-semibold">December 16, 2022. Vila Ida, Curitiba.</span> In-person event that rescued the essence of skateboarding. Multicultural gathering featuring skate video screenings, pocket show, photo exhibition, product fair and art gallery. <span className="text-primary font-semibold">From underground to cultural event. From margin to the symbolic center of the city.</span></span>
                   </p>
                   <p className="bible-body text-muted-foreground leading-relaxed">
-                    <span className="lang-pt">O labirinto é a vida em seus encontros, transformações e realizações. <span className="text-primary font-semibold">Percursos colaborativos, improvisados e não-lineares.</span> Cada volta representa a jornada da crew pelos picos de Curitiba. Cada linha é uma manobra, um gesto compartilhado. O centro é o encontro — onde todos os caminhos convergem.</span>
-                    <span className="lang-en">The labyrinth is life in its encounters, transformations, and realizations. <span className="text-primary font-semibold">Collaborative, improvised, and non-linear paths.</span> Each turn represents the crew's journey through Curitiba's spots. Each line is a trick, a shared gesture. The center is the meeting point — where all paths converge.</span>
+                    <span className="lang-pt"><span className="text-primary font-semibold">Lowbyrinth™:</span> O símbolo central do filme. Um labirinto inspirado em geometria sagrada e princípios herméticos. Percursos colaborativos, improvisados e não-lineares. Cada linha é uma manobra, um gesto compartilhado. O centro é o encontro — onde todos os caminhos convergem.</span>
+                    <span className="lang-en"><span className="text-primary font-semibold">Lowbyrinth™:</span> The central symbol of the film. A labyrinth inspired by sacred geometry and hermetic principles. Collaborative, improvised, and non-linear paths. Each line is a trick, a shared gesture. The center is the meeting point — where all paths converge.</span>
                   </p>
                 </div>
               </CardContent>
