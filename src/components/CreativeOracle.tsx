@@ -26,109 +26,6 @@ type Question = {
   }>;
 };
 
-const questions: Question[] = [
-  {
-    text: "Quando você cria, de onde vem o impulso inicial?",
-    textEn: "When you create, where does the initial impulse come from?",
-    options: [
-      { text: "Do vazio interior, da sombra", textEn: "From the inner void, the shadow", archetype: "shadow", value: 3 },
-      { text: "Da necessidade urgente de quebrar o sistema", textEn: "From urgent need to break the system", archetype: "punk", value: 2 },
-      { text: "Do desejo de conectar com outros", textEn: "From desire to connect with others", archetype: "buddy", value: 1 },
-      { text: "De um método técnico estabelecido", textEn: "From an established technical method", archetype: "gi", value: 0 },
-    ],
-  },
-  {
-    text: "Como você encara o erro no processo criativo?",
-    textEn: "How do you face mistakes in the creative process?",
-    options: [
-      { text: "Como parte da exploração do desconhecido", textEn: "As part of exploring the unknown", archetype: "shadow", value: 3 },
-      { text: "Como combustível para algo novo", textEn: "As fuel for something new", archetype: "punk", value: 2 },
-      { text: "Como oportunidade de aprender junto", textEn: "As opportunity to learn together", archetype: "buddy", value: 1 },
-      { text: "Como algo a ser evitado com planejamento", textEn: "As something to avoid with planning", archetype: "gi", value: 0 },
-    ],
-  },
-  {
-    text: "O que te motiva a continuar criando?",
-    textEn: "What motivates you to keep creating?",
-    options: [
-      { text: "A busca por autenticidade profunda", textEn: "The search for deep authenticity", archetype: "shadow", value: 3 },
-      { text: "O desejo de transformar a cultura", textEn: "The desire to transform culture", archetype: "punk", value: 2 },
-      { text: "A alegria da colaboração", textEn: "The joy of collaboration", archetype: "buddy", value: 1 },
-      { text: "A satisfação da execução perfeita", textEn: "The satisfaction of perfect execution", archetype: "gi", value: 0 },
-    ],
-  },
-  {
-    text: "Como você lida com a solidão criativa?",
-    textEn: "How do you deal with creative solitude?",
-    options: [
-      { text: "É onde encontro clareza", textEn: "It's where I find clarity", archetype: "shadow", value: 3 },
-      { text: "É um sacrifício necessário", textEn: "It's a necessary sacrifice", archetype: "punk", value: 2 },
-      { text: "Prefiro criar em comunidade", textEn: "I prefer to create in community", archetype: "buddy", value: 1 },
-      { text: "É parte da disciplina", textEn: "It's part of discipline", archetype: "gi", value: 0 },
-    ],
-  },
-  {
-    text: "Qual é sua relação com o tempo?",
-    textEn: "What's your relationship with time?",
-    options: [
-      { text: "Flui quando estou imerso", textEn: "It flows when I'm immersed", archetype: "shadow", value: 3 },
-      { text: "É sempre urgente, sempre agora", textEn: "It's always urgent, always now", archetype: "punk", value: 2 },
-      { text: "É compartilhado com outros", textEn: "It's shared with others", archetype: "buddy", value: 1 },
-      { text: "É estruturado e otimizado", textEn: "It's structured and optimized", archetype: "gi", value: 0 },
-    ],
-  },
-  {
-    text: "O que você busca no seu trabalho criativo?",
-    textEn: "What do you seek in your creative work?",
-    options: [
-      { text: "Verdade interior e expressão autêntica", textEn: "Inner truth and authentic expression", archetype: "shadow", value: 3 },
-      { text: "Impacto cultural e mudança social", textEn: "Cultural impact and social change", archetype: "punk", value: 2 },
-      { text: "Conexão humana e empatia", textEn: "Human connection and empathy", archetype: "buddy", value: 1 },
-      { text: "Excelência técnica e maestria", textEn: "Technical excellence and mastery", archetype: "gi", value: 0 },
-    ],
-  },
-  {
-    text: "Como você se relaciona com referências e influências?",
-    textEn: "How do you relate to references and influences?",
-    options: [
-      { text: "Absorvo e transformo em algo pessoal", textEn: "I absorb and transform into something personal", archetype: "shadow", value: 3 },
-      { text: "Uso para subverter e ressignificar", textEn: "I use to subvert and reframe", archetype: "punk", value: 2 },
-      { text: "Compartilho e discuto com outros", textEn: "I share and discuss with others", archetype: "buddy", value: 1 },
-      { text: "Estudo metodicamente para dominar", textEn: "I study methodically to master", archetype: "gi", value: 0 },
-    ],
-  },
-  {
-    text: "O que significa 'sucesso' no seu processo criativo?",
-    textEn: "What does 'success' mean in your creative process?",
-    options: [
-      { text: "Alcançar um estado de verdade pessoal", textEn: "Reaching a state of personal truth", archetype: "shadow", value: 3 },
-      { text: "Provocar mudança ou reação intensa", textEn: "Provoking change or intense reaction", archetype: "punk", value: 2 },
-      { text: "Criar algo que ressoe com outros", textEn: "Creating something that resonates with others", archetype: "buddy", value: 1 },
-      { text: "Atingir perfeição técnica visível", textEn: "Achieving visible technical perfection", archetype: "gi", value: 0 },
-    ],
-  },
-  {
-    text: "Como você lida com bloqueios criativos?",
-    textEn: "How do you deal with creative blocks?",
-    options: [
-      { text: "Mergulho mais fundo no silêncio", textEn: "I dive deeper into silence", archetype: "shadow", value: 3 },
-      { text: "Quebro a rotina radicalmente", textEn: "I break the routine radically", archetype: "punk", value: 2 },
-      { text: "Busco conversas e novas perspectivas", textEn: "I seek conversations and new perspectives", archetype: "buddy", value: 1 },
-      { text: "Retorno aos fundamentos e técnicas", textEn: "I return to fundamentals and techniques", archetype: "gi", value: 0 },
-    ],
-  },
-  {
-    text: "Qual sua relação com o imperfeito e o inacabado?",
-    textEn: "What's your relationship with the imperfect and unfinished?",
-    options: [
-      { text: "É onde a verdade realmente vive", textEn: "It's where truth really lives", archetype: "shadow", value: 3 },
-      { text: "É mais autêntico que o polido", textEn: "It's more authentic than polished", archetype: "punk", value: 2 },
-      { text: "É parte da jornada compartilhada", textEn: "It's part of the shared journey", archetype: "buddy", value: 1 },
-      { text: "É um estágio a ser superado", textEn: "It's a stage to be overcome", archetype: "gi", value: 0 },
-    ],
-  },
-];
-
 const archetypes = {
   shadow: {
     name: "SHADOW (A Sombra)",
@@ -276,7 +173,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
     
     const printContent = `
 CREATIVE_ORACLE::SCAN_RESULTS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 THEVØIDN13 ARTISTIC MEMORIAL
 Shadow Interface Bible v13
@@ -285,7 +182,7 @@ Shadow Interface Bible v13
 
 [DOMINANT_ARCHETYPE]
 ${language === 'pt' ? archetype.name : archetype.nameEn}
-Score: ${scores[dominant]}/${questions.length * 3} pts
+Score: ${scores[dominant]}/${contextualizedQuestions.length * 3} pts
 
 [DESCRIPTION]
 ${language === 'pt' ? archetype.description : archetype.descriptionEn}
@@ -296,7 +193,7 @@ ${language === 'pt' ? archetype.description : archetype.descriptionEn}
 ${secondaryArchetypeData ? `
 [SECONDARY_ARCHETYPE]
 ${language === 'pt' ? secondaryArchetypeData.name : secondaryArchetypeData.nameEn}
-Score: ${scores[secondary!]}/${questions.length * 3} pts
+Score: ${scores[secondary!]}/${contextualizedQuestions.length * 3} pts
 ` : ''}
 
 [SCORE_BREAKDOWN]
@@ -338,7 +235,7 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
   };
 
   const getProgressPercentage = () => {
-    return Math.round(((currentQuestion + 1) / questions.length) * 100);
+    return Math.round(((currentQuestion + 1) / contextualizedQuestions.length) * 100);
   };
 
   return (
@@ -410,7 +307,7 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
             <div className="space-y-8 animate-fade-in">
               <div className="flex items-center justify-between">
                 <div className="text-accent font-bold text-lg">
-                  CREATIVE_ORACLE::QUESTION_{currentQuestion + 1}/{questions.length}
+                  CREATIVE_ORACLE::QUESTION_{currentQuestion + 1}/{contextualizedQuestions.length}
                 </div>
                 <Button
                   variant="ghost"
@@ -423,27 +320,35 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
                 </Button>
               </div>
 
-              <div className="space-y-4">
-                <div className="space-y-2 pb-4 border-b border-primary/20">
-                  <div className="text-foreground font-semibold">
-                    [Q] {questions[currentQuestion].text}
+              <div className="space-y-6">
+                <div className="border border-primary/20 rounded-lg p-4 bg-background/30 space-y-3">
+                  <div className="text-accent text-sm font-bold">
+                    [{language === "pt" ? contextualizedQuestions[currentQuestion].pedagogicalContext.concept : contextualizedQuestions[currentQuestion].pedagogicalContext.conceptEn}]
                   </div>
-                  <div className="text-muted-foreground text-sm">
-                    [Q] {questions[currentQuestion].textEn}
+                  <div className="text-foreground/70 text-sm leading-relaxed">
+                    {language === "pt" ? contextualizedQuestions[currentQuestion].pedagogicalContext.explanation : contextualizedQuestions[currentQuestion].pedagogicalContext.explanationEn}
+                  </div>
+                  <div className="text-muted-foreground text-xs italic border-l-2 border-primary/40 pl-3">
+                    {language === "pt" ? contextualizedQuestions[currentQuestion].pedagogicalContext.theoreticalRef : contextualizedQuestions[currentQuestion].pedagogicalContext.theoreticalRefEn}
+                  </div>
+                </div>
+
+                <div className="space-y-2 pb-4 border-b border-primary/20">
+                  <div className="text-foreground font-semibold text-lg">
+                    [Q] {language === "pt" ? contextualizedQuestions[currentQuestion].text : contextualizedQuestions[currentQuestion].textEn}
                   </div>
                 </div>
 
                 <div className="space-y-3 pl-4">
-                  {questions[currentQuestion].options.map((option, idx) => (
+                  {contextualizedQuestions[currentQuestion].options.map((option, idx) => (
                     <div key={idx}>
                       <Button
                         variant="outline"
                         className="w-full justify-start text-left h-auto py-3"
-                        onClick={() => handleAnswer(option.archetype, option.value)}
+                        onClick={() => handleAnswer(option.archetype, option.value, option.processWeight)}
                       >
                         <div className="space-y-1">
-                          <div>├─ [{String.fromCharCode(65 + idx)}] {option.text} → {option.archetype.toUpperCase()} (+{option.value})</div>
-                          <div className="text-muted-foreground text-xs pl-6">{option.textEn}</div>
+                          <div>├─ [{String.fromCharCode(65 + idx)}] {language === "pt" ? option.text : option.textEn}</div>
                         </div>
                       </Button>
                     </div>
@@ -452,7 +357,7 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
               </div>
 
               <div className="pt-4 space-y-2">
-                <div className="text-muted-foreground text-sm">[PROGRESS] {getProgressBar(currentQuestion + 1, questions.length)} {getProgressPercentage()}%</div>
+                <div className="text-muted-foreground text-sm">[PROGRESS] {getProgressBar(currentQuestion + 1, contextualizedQuestions.length)} {getProgressPercentage()}%</div>
               </div>
             </div>
           )}
@@ -473,22 +378,22 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
                     {
                       archetype: 'SHADOW',
                       score: scores.shadow,
-                      fullMark: questions.length * 3,
+                      fullMark: contextualizedQuestions.length * 3,
                     },
                     {
                       archetype: 'PUNK',
                       score: scores.punk,
-                      fullMark: questions.length * 3,
+                      fullMark: contextualizedQuestions.length * 3,
                     },
                     {
                       archetype: 'BUDDY',
                       score: scores.buddy,
-                      fullMark: questions.length * 3,
+                      fullMark: contextualizedQuestions.length * 3,
                     },
                     {
                       archetype: 'GI',
                       score: scores.gi,
-                      fullMark: questions.length * 3,
+                      fullMark: contextualizedQuestions.length * 3,
                     },
                   ]}>
                     <PolarGrid stroke="hsl(var(--primary) / 0.3)" />
@@ -498,7 +403,7 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
                     />
                     <PolarRadiusAxis 
                       angle={90} 
-                      domain={[0, questions.length * 3]}
+                      domain={[0, contextualizedQuestions.length * 3]}
                       tick={{ fill: 'hsl(var(--muted-foreground))', fontSize: 10 }}
                     />
                     <Radar 
@@ -527,7 +432,7 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
                         : archetypes[getDominantArchetype()].nameEn}
                     </div>
                     <div className="text-muted-foreground text-sm">
-                      └─ Score: {scores[getDominantArchetype()]}/{questions.length * 3} pts
+                      └─ Score: {scores[getDominantArchetype()]}/{contextualizedQuestions.length * 3} pts
                     </div>
                   </div>
                 </div>
@@ -542,7 +447,7 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
                           : archetypes[getSecondaryArchetype()!].nameEn}
                       </div>
                       <div className="text-muted-foreground text-sm">
-                        └─ Score: {scores[getSecondaryArchetype()!]}/{questions.length * 3} pts
+                        └─ Score: {scores[getSecondaryArchetype()!]}/{contextualizedQuestions.length * 3} pts
                       </div>
                     </div>
                   </div>
