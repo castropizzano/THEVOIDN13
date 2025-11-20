@@ -155,6 +155,19 @@ export const ComicGenerator = () => {
       });
 
       if (error) {
+        // Handle 429 rate limit
+        if (error.message?.includes('Rate limit exceeded')) {
+          const match = error.message.match(/wait (\d+) seconds/);
+          const retryAfter = match ? parseInt(match[1]) : 60;
+          toast({
+            title: language === "pt" ? "Limite Excedido" : "Rate Limit Exceeded",
+            description: language === "pt" 
+              ? `Muitas requisições. Aguarde ${retryAfter} segundos.`
+              : `Too many requests. Please wait ${retryAfter} seconds.`,
+            variant: "destructive",
+          });
+          return;
+        }
         if (error.message?.includes('rate_limit')) {
           toast({
             title: language === "pt" ? "Limite Excedido" : "Rate Limit Exceeded",
