@@ -12,15 +12,11 @@ export const VideoEmbed = ({ source, videoId, title }: VideoEmbedProps) => {
       case "vimeo":
         return `https://player.vimeo.com/video/${videoId}?title=0&byline=0&portrait=0`;
       case "internet-archive":
-        // For Internet Archive videos - use direct file embed for player controls
-        // videoId format: "collection-id/filename.mp4" or just "collection-id"
+        // For Internet Archive videos - return download URL for direct video element
         if (videoId.includes("/")) {
           const [itemId, filename] = videoId.split("/");
-          // Encode filename to handle special characters
-          const encodedFilename = encodeURIComponent(filename);
-          return `https://archive.org/embed/${itemId}/${encodedFilename}`;
+          return `https://archive.org/download/${itemId}/${filename}`;
         }
-        // Fallback for just itemId
         return `https://archive.org/embed/${videoId}`;
       case "youtube":
         return `https://www.youtube.com/embed/${videoId}`;
@@ -31,14 +27,26 @@ export const VideoEmbed = ({ source, videoId, title }: VideoEmbedProps) => {
     <div className="relative w-full">
       {/* 16:9 Aspect Ratio Container */}
       <div className="relative w-full pb-[56.25%] bg-black">
-        <iframe
-          src={getEmbedUrl()}
-          title={title}
-          className="absolute top-0 left-0 w-full h-full border-0"
-          allow="autoplay; fullscreen; picture-in-picture"
-          allowFullScreen
-          loading="lazy"
-        />
+        {source === "internet-archive" && videoId.includes("/") ? (
+          <video
+            src={getEmbedUrl()}
+            title={title}
+            className="absolute top-0 left-0 w-full h-full"
+            controls
+            preload="metadata"
+          >
+            Your browser does not support the video tag.
+          </video>
+        ) : (
+          <iframe
+            src={getEmbedUrl()}
+            title={title}
+            className="absolute top-0 left-0 w-full h-full border-0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowFullScreen
+            loading="lazy"
+          />
+        )}
       </div>
     </div>
   );
