@@ -24,17 +24,18 @@ export const CollectiveCard = ({
     <Card 
       className={`
         relative overflow-hidden
-        bg-black/90 border-l-4 border-primary
+        bg-card/50 border-2
         ${highlight ? 'border-primary' : 'border-primary/50'}
+        hover:border-primary transition-all duration-300
       `}
     >
-      <CardHeader className="relative">
+      <CardHeader className="relative pb-3">
         <div className="flex items-start justify-between gap-4">
           <div className="flex-1">
             <CardTitle className="bible-subtitle text-primary uppercase">
               {title}
             </CardTitle>
-            <CardDescription className="font-mono text-xs text-muted-foreground mt-1">
+            <CardDescription className="font-mono text-xs text-muted-foreground mt-2">
               {period}
             </CardDescription>
           </div>
