@@ -433,7 +433,7 @@ DaVinci Resolve"
               </div>
 
               <div className="mt-4 pt-4 border-t border-primary/20">
-                <p className="bible-link italic">Os selos no rodapé — MAD Habit, THEVOID, CasaTreze, LowMovie, LowPressure — não são logos: são <span className="font-bold">alfabetos, runas de um organismo criativo</span> que vive entre o estúdio japonês dos anos 90, o brutalismo Bauhaus e a liturgia punk. Formam uma constelação. Um idioma de sombra. Um campo magnético.</p>
+                <p className="text-xs font-mono text-muted-foreground leading-snug">Os selos no rodapé — MAD Habit, THEVOID, CasaTreze, LowMovie, LowPressure — não são logos: são <span className="font-bold">alfabetos, runas de um organismo criativo</span> que vive entre o estúdio japonês dos anos 90, o brutalismo Bauhaus e a liturgia punk. Formam uma constelação. Um idioma de sombra. Um campo magnético.</p>
               </div>
             </div>
             
@@ -569,7 +569,7 @@ DaVinci Resolve"
               </div>
 
               <div className="mt-4 pt-4 border-t border-primary/20">
-                <p className="bible-link italic">The seals in the footer — MAD Habit, THEVOID, CasaTreze, LowMovie, LowPressure — are not logos: they are <span className="font-bold">alphabets, runes of a creative organism</span> that lives between the Japanese studio of the 90s, Bauhaus brutalism, and punk liturgy. They form a constellation. A shadow language. A magnetic field.</p>
+                <p className="text-xs font-mono text-muted-foreground leading-snug">The seals in the footer — MAD Habit, THEVOID, CasaTreze, LowMovie, LowPressure — are not logos: they are <span className="font-bold">alphabets, runes of a creative organism</span> that lives between the Japanese studio of the 90s, Bauhaus brutalism, and punk liturgy. They form a constellation. A shadow language. A magnetic field.</p>
               </div>
             </div>
             
