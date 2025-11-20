@@ -27,7 +27,6 @@ This project follows a **"privacy by architecture"** approach where 100% of the 
 - ✅ **No user data collection** — No data breach exposure
 - ✅ **No cookies** — No cookie poisoning or CSRF attacks
 - ✅ **Single read-only database table** — Minimal database attack vectors
-- ✅ **Client-side AI processing** — Pollinations.AI runs in user's browser (zero auth)
 
 ### 2. Database Security (Excellent)
 - ✅ Row Level Security (RLS) enabled on all tables
@@ -36,10 +35,8 @@ This project follows a **"privacy by architecture"** approach where 100% of the 
 - ✅ Only one table exists: `prompts` (all surveillance infrastructure removed)
 
 ### 3. Input Validation (Good)
-- ✅ ComicGenerator validates user prompts (10-500 character limit)
-- ✅ Input trimming prevents whitespace attacks
-- ✅ User input never reaches database (only goes to client-side Pollinations.AI)
 - ✅ React's automatic escaping prevents XSS attacks
+- ✅ Input trimming prevents whitespace attacks
 
 ### 4. Client-Side Security (Excellent)
 - ✅ No `dangerouslySetInnerHTML` with user content
@@ -50,7 +47,6 @@ This project follows a **"privacy by architecture"** approach where 100% of the 
 ### 5. Secrets Management (Excellent)
 - ✅ `VITE_SUPABASE_PUBLISHABLE_KEY` in `.env` is acceptable (public/anon key)
 - ✅ No private API keys exposed in client code
-- ✅ Pollinations.AI requires zero API keys (completely free, unlimited, no authentication)
 
 ---
 
@@ -63,7 +59,7 @@ The following were **intentionally removed** on November 20, 2025 to align with 
 - User tracking (page_views, search_queries, section_engagement)
 - Data collection (newsletter_subscribers, contact_messages)
 - Admin infrastructure (profiles, user_roles, content_settings)
-- Edge functions (migrated to client-side Pollinations.AI)
+- Edge functions (deleted - not needed for static memorial)
 
 ### ❌ Never Implemented
 - Cookies
@@ -87,11 +83,9 @@ The following were **intentionally removed** on November 20, 2025 to align with 
 | **Secret Management** | 10/10 | Properly handled |
 | **Client Storage** | 10/10 | Only non-sensitive UX data |
 | **Architecture** | 10/10 | Privacy-first, minimal attack surface |
-| **Rate Limiting** | 8/10 | Client-side only (easily bypassable)* |
+| **Rate Limiting** | 10/10 | N/A (no backend services) |
 
 **Total: 98/100**
-
-*\*Minor deduction: Client-side rate limiting can be bypassed, but since Pollinations.AI processes on the user's own machine, this poses zero risk to infrastructure or other users.*
 
 ---
 
@@ -131,32 +125,6 @@ ON prompts FOR SELECT
 USING (is_active = true);
 ```
 
-### Client-Side Rate Limiting
-```typescript
-// ComicGenerator.tsx - Prevents spam (bypassable, but harmless)
-const lastGeneration = sessionStorage.getItem('lastImageGeneration');
-const cooldown = 10000; // 10 seconds
-
-if (lastGeneration && Date.now() - parseInt(lastGeneration) < cooldown) {
-  // Show cooldown message
-  return;
-}
-
-sessionStorage.setItem('lastImageGeneration', Date.now().toString());
-```
-
-### Input Validation
-```typescript
-// ComicGenerator.tsx
-const MIN_LENGTH = 10;
-const MAX_LENGTH = 500;
-
-if (userPrompt.length < MIN_LENGTH || userPrompt.length > MAX_LENGTH) {
-  toast.error("Prompt must be between 10-500 characters");
-  return;
-}
-```
-
 ---
 
 ## 📝 Privacy Compliance
@@ -172,7 +140,6 @@ if (userPrompt.length < MIN_LENGTH || userPrompt.length > MAX_LENGTH) {
 ### Transparency
 - All code is open source and auditable
 - Full technical documentation available at `/transparency`
-- Honest disclosure about Pollinations.AI client-side processing
 - Clear explanation of sessionStorage usage
 
 ---

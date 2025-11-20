@@ -68,39 +68,7 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
               </div>
 
               <div className="space-y-4">
-                <h3 className="bible-subtitle">4. GERADOR DE STILLS CINEMATOGRÁFICOS (100% CLIENT-SIDE)</h3>
-                <p className="bible-body text-sm">
-                  O site inclui um recurso experimental: <strong>Gerador de Stills Cinematográficos</strong>, que funciona 100% no seu navegador.
-                </p>
-                <p className="bible-body text-sm font-semibold">
-                  Como funciona:
-                </p>
-                <ul className="bible-body text-sm space-y-1 ml-6">
-                  <li>• Você escreve um prompt de texto descrevendo a cena desejada</li>
-                  <li>• O prompt é processado 100% no seu navegador (zero backend)</li>
-                  <li>• Pollinations.AI gera a imagem usando modelo FLUX (gratuito, ilimitado, sem login)</li>
-                  <li>• A imagem é gerada e exibida instantaneamente</li>
-                  <li>• Marca d'água THEVØIDN13 é aplicada localmente no seu navegador</li>
-                </ul>
-                <p className="bible-body text-sm font-semibold text-destructive">
-                  O que NÃO é feito:
-                </p>
-                <ul className="bible-body text-sm space-y-1 ml-6">
-                  <li>❌ Prompts NÃO são enviados para backend</li>
-                  <li>❌ Prompts NÃO são armazenados em nenhum servidor</li>
-                  <li>❌ Nenhuma autenticação ou login é necessário</li>
-                  <li>❌ Nenhum dado é coletado ou rastreado</li>
-                </ul>
-                <p className="bible-body text-sm">
-                  <strong>Rate Limiting (Proteção Client-Side):</strong> O gerador implementa um cooldown de 10 segundos entre gerações via <code>sessionStorage</code> local. Este rate limiting é facilmente contornável (basta limpar o sessionStorage), mas isso é intencional: como o Pollinations.AI processa no navegador do usuário, quem "abusar" só estará consumindo seus próprios recursos (CPU/RAM), sem impacto no site ou em outros usuários.
-                </p>
-                <p className="bible-body text-sm text-muted-foreground">
-                  Esta feature é <strong>opcional</strong> e não afeta a privacidade do resto do site.
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <h3 className="bible-subtitle">5. NATUREZA DO PROJETO</h3>
+                <h3 className="bible-subtitle">4. NATUREZA DO PROJETO</h3>
                 <p className="bible-body text-sm">
                   Este é um memorial artístico acadêmico desenvolvido como parte de pesquisa 
                   de mestrado em Cinema e Artes do Vídeo (PPG-CINEAV/UNESPAR). O site funciona 
@@ -110,7 +78,7 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
               </div>
 
               <div className="space-y-4">
-                <h3 className="bible-subtitle">6. CONTATO</h3>
+                <h3 className="bible-subtitle">5. CONTATO</h3>
                 <p className="bible-body text-sm">
                   Para questões sobre privacidade ou sobre o projeto, entre em contato através 
                   dos canais públicos listados na página do autor.
@@ -118,7 +86,7 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
               </div>
 
               <div className="space-y-4">
-                <h3 className="bible-subtitle">7. POR QUE ESTE BANNER EXISTE?</h3>
+                <h3 className="bible-subtitle">6. POR QUE ESTE BANNER EXISTE?</h3>
                 <p className="bible-body text-sm">
                   Transparência radical. Direito de saber que não há vigilância. Este banner não é obrigação legal burocrática—é <strong>declaração 
                   política e artística</strong>. Afirmação: "Este é um espaço ético."
@@ -134,7 +102,7 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
               </div>
 
               <div className="space-y-4">
-                <h3 className="bible-subtitle">8. DOCUMENTAÇÃO TÉCNICA COMPLETA</h3>
+                <h3 className="bible-subtitle">7. DOCUMENTAÇÃO TÉCNICA COMPLETA</h3>
                 <p className="bible-body text-sm">
                   Para explicação técnica detalhada de como este site funciona, 
                   incluindo código-fonte e diagramas de fluxo de dados, acesse a página de transparência:
@@ -188,39 +156,7 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
               </div>
 
               <div className="space-y-4">
-                <h3 className="bible-subtitle">4. CINEMATIC STILLS GENERATOR (100% CLIENT-SIDE)</h3>
-                <p className="bible-body text-sm">
-                  The site includes an experimental feature: <strong>Cinematic Stills Generator</strong>, which runs 100% in your browser.
-                </p>
-                <p className="bible-body text-sm font-semibold">
-                  How it works:
-                </p>
-                <ul className="bible-body text-sm space-y-1 ml-6">
-                  <li>• You write a text prompt describing the desired scene</li>
-                  <li>• The prompt is processed 100% in your browser (zero backend)</li>
-                  <li>• Pollinations.AI generates the image using FLUX model (free, unlimited, no login)</li>
-                  <li>• The image is generated and displayed instantly</li>
-                  <li>• THEVØIDN13 watermark is applied locally in your browser</li>
-                </ul>
-                <p className="bible-body text-sm font-semibold text-destructive">
-                  What is NOT done:
-                </p>
-                <ul className="bible-body text-sm space-y-1 ml-6">
-                  <li>❌ Prompts are NOT sent to backend</li>
-                  <li>❌ Prompts are NOT stored on any server</li>
-                  <li>❌ No authentication or login required</li>
-                  <li>❌ No data collected or tracked</li>
-                </ul>
-                <p className="bible-body text-sm">
-                  <strong>Rate Limiting (Client-Side Protection):</strong> The generator implements a 10-second cooldown between generations via local <code>sessionStorage</code>. This rate limiting is easily bypassable (just clear sessionStorage), but this is intentional: since Pollinations.AI processes in the user's browser, anyone who "abuses" it will only be consuming their own resources (CPU/RAM), with no impact on the site or other users.
-                </p>
-                <p className="bible-body text-sm text-muted-foreground">
-                  This feature is <strong>optional</strong> and does not affect the privacy of the rest of the site.
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <h3 className="bible-subtitle">5. PROJECT NATURE</h3>
+                <h3 className="bible-subtitle">4. PROJECT NATURE</h3>
                 <p className="bible-body text-sm">
                   This is an academic artistic memorial developed as part of a master's research 
                   in Cinema and Video Arts (PPG-CINEAV/UNESPAR). The website functions as a visual 
@@ -230,7 +166,7 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
               </div>
 
               <div className="space-y-4">
-                <h3 className="bible-subtitle">6. CONTACT</h3>
+                <h3 className="bible-subtitle">5. CONTACT</h3>
                 <p className="bible-body text-sm">
                   For privacy or project-related questions, please contact through the public 
                   channels listed on the author page.
@@ -238,7 +174,7 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
               </div>
 
               <div className="space-y-4">
-                <h3 className="bible-subtitle">7. WHY DOES THIS BANNER EXIST?</h3>
+                <h3 className="bible-subtitle">6. WHY DOES THIS BANNER EXIST?</h3>
                 <p className="bible-body text-sm">
                   Radical transparency. Right to know there's no surveillance. This banner is not a bureaucratic legal obligation—it's a <strong>political 
                   and artistic statement</strong>. Affirmation: "This is an ethical space."
@@ -254,7 +190,7 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
               </div>
 
               <div className="space-y-4">
-                <h3 className="bible-subtitle">8. COMPLETE TECHNICAL DOCUMENTATION</h3>
+                <h3 className="bible-subtitle">7. COMPLETE TECHNICAL DOCUMENTATION</h3>
                 <p className="bible-body text-sm">
                   For detailed technical explanation of how this site works, 
                   including source code and data flow diagrams, access the transparency page:
@@ -269,7 +205,7 @@ export const PrivacyPolicyDialog = ({ children }: PrivacyPolicyDialogProps) => {
 
             <div className="text-center pt-6 border-t border-border">
               <p className="bible-body text-xs text-muted-foreground">
-                Última atualização: 19 de novembro de 2025 / Last updated: November 19, 2025
+                Última atualização: 20 de novembro de 2025 / Last updated: November 20, 2025
               </p>
             </div>
           </div>

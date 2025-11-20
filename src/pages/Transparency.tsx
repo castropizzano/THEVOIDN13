@@ -162,7 +162,6 @@ const Transparency = () => {
                   <p className="font-bold text-primary text-base">✅ O que mantive:</p>
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• prompts - Biblioteca de prompts de IA (somente leitura pública)</li>
-                    <li>• Pollinations.AI - Geração de imagens 100% client-side (modelo FLUX, sem autenticação)</li>
                   </ul>
                 </div>
 
@@ -208,7 +207,6 @@ const Transparency = () => {
                   <p className="font-bold text-primary text-base">✅ What I kept:</p>
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• prompts - AI prompt library (public read-only)</li>
-                    <li>• Pollinations.AI - Client-side image generation (FLUX model, 100% free, unlimited, runs in your browser)</li>
                   </ul>
                 </div>
 
@@ -282,13 +280,6 @@ const Transparency = () => {
               <h2 className="bible-section-title mb-8">FEATURE AI OPCIONAL</h2>
               
               <div className="bible-block">
-                <CollectiveCard
-                  title="Gerador de Still Cinemático"
-                  period="2025"
-                  description="Única feature interativa do site. Processa prompt 100% no navegador do usuário → Pollinations.AI API (modelo FLUX) → Imagem gerada instantaneamente. Zero backend, zero autenticação. Marca d'água aplicada localmente via canvas. Não armazena prompts ou imagens. Rate limiting de 10 segundos (via sessionStorage, contornável). Feature opcional—site funciona sem ela."
-                  highlight
-                />
-                
                 <div className="grid md:grid-cols-2 gap-4">
                   <SkillCard
                     title="Input"
@@ -314,13 +305,6 @@ const Transparency = () => {
               <h2 className="bible-section-title mb-8">OPTIONAL AI FEATURE</h2>
               
               <div className="bible-block">
-                <CollectiveCard
-                  title="Cinematic Still Generator"
-                  period="2025"
-                  description="Site's only interactive feature. Processes prompt 100% in user's browser → Pollinations.AI API (FLUX model) → Image generated instantly. Zero backend, zero authentication. Watermark applied locally via canvas. Does not store prompts or images. 10-second rate limiting (via sessionStorage, bypassable). Optional feature—site works without it."
-                  highlight
-                />
-                
                 <div className="grid md:grid-cols-2 gap-4">
                   <SkillCard
                     title="Input"
