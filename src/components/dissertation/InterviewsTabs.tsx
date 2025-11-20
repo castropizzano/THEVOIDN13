@@ -53,25 +53,21 @@ const InterviewCard = ({
     <>
       <Card className="overflow-hidden border-border/50 shadow-lg shadow-primary/5 animate-fade-in">
         <CardHeader className="space-y-4">
-          <div className="bible-bilingual-grid">
-            <div>
-              <CardTitle className="bible-title">{titlePt}</CardTitle>
-              <CardDescription className="bible-subtitle text-primary mt-2">
-                {subtitlePt}
-              </CardDescription>
-            </div>
-            <div>
-              <CardTitle className="bible-title">{titleEn}</CardTitle>
-              <CardDescription className="bible-subtitle text-primary mt-2">
-                {subtitleEn}
-              </CardDescription>
-            </div>
+          <div>
+            <CardTitle className="bible-title">
+              <span className="lang-pt">{titlePt}</span>
+              <span className="lang-en">{titleEn}</span>
+            </CardTitle>
+            <CardDescription className="bible-subtitle text-primary mt-2">
+              <span className="lang-pt">{subtitlePt}</span>
+              <span className="lang-en">{subtitleEn}</span>
+            </CardDescription>
           </div>
 
-          <div className="bible-bilingual-grid bible-section-spacing">
-            <p className="bible-body">{descriptionPt}</p>
-            <p className="bible-body">{descriptionEn}</p>
-          </div>
+          <p className="bible-body">
+            <span className="lang-pt">{descriptionPt}</span>
+            <span className="lang-en">{descriptionEn}</span>
+          </p>
         </CardHeader>
 
         <CardContent className="space-y-6">
