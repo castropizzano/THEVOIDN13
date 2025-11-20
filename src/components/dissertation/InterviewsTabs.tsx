@@ -351,9 +351,9 @@ export const InterviewsTabs = () => {
           {/* Zine Gallery - Mosaico */}
           <Card className="overflow-hidden border-border/50 shadow-lg shadow-primary/5 animate-fade-in">
             <CardHeader>
-              <div className="bible-bilingual-grid">
-                <CardTitle className="bible-subtitle">Galeria LowZine</CardTitle>
-                <CardTitle className="bible-subtitle">LowZine Gallery</CardTitle>
+              <div>
+                <CardTitle className="lang-pt bible-subtitle">Galeria LowZine</CardTitle>
+                <CardTitle className="lang-en bible-subtitle">LowZine Gallery</CardTitle>
               </div>
             </CardHeader>
             <CardContent>
