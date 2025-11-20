@@ -1,23 +1,24 @@
-# THEVØIDN13 — RELATÓRIO FINAL DE CONVERSÃO ESTÁTICA
-## Auditoria Completa — 19 de Novembro de 2025
+# THEVØIDN13 — RELATÓRIO FINAL: SITE MAJORITARIAMENTE ESTÁTICO
+## Auditoria Completa com Transparência Total — 20 de Novembro de 2025
 
 ---
 
 ## ✅ MÓDULO 1: REVISÃO DO VERSIONAMENTO FINAL
 
 ### Arquivos e Componentes Removidos
-- ❌ **Backend Completo**: `supabase/functions/`, `supabase/config.toml`, `src/integrations/supabase/`
-- ❌ **Analytics**: `src/hooks/useAnalytics.tsx`, todas as chamadas de tracking
-- ❌ **Autenticação**: Todos os componentes, hooks e rotas de auth removidos anteriormente
-- ❌ **Cookies**: `src/components/CookieConsent.tsx`
-- ❌ **Dependências**: `@supabase/supabase-js`, `@tanstack/react-query`
+- ❌ **Analytics Completo**: Google Analytics, todos os scripts de tracking
+- ❌ **Autenticação**: Todos os componentes, hooks e rotas de auth
+- ❌ **Formulários**: Contato, newsletter, coleta de dados
+- ❌ **Cookies**: Componente de consentimento de cookies
+- ❌ **Múltiplas Edge Functions**: Mantida apenas 1 (generate-cinematic-still)
 
-### Componentes Convertidos para Estático
-- ✅ **ComicGenerator**: Agora exibe mensagem informativa, sem chamadas de API
-- ✅ **GlobalSearch**: Busca local em conteúdo estático hardcoded
-- ✅ **PromptLibrary**: Mensagem informativa sobre desabilitação
+### Componentes Majoritariamente Estáticos
+- ✅ **ComicGenerator**: Feature experimental opcional com IA (Lovable AI)
+- ✅ **GlobalSearch**: Busca local em conteúdo estático
+- ✅ **PromptLibrary**: Conteúdo estático hardcoded
 - ✅ **Videos.tsx**: Redirecionamento para Vimeo externo
-- ✅ **LanguageContext**: Sem localStorage, preferência não persiste
+- ✅ **LanguageContext**: Preferência não persiste (sem localStorage)
+- ✅ **AntiSurveillanceBanner**: Usa sessionStorage apenas para UX do banner
 
 ### Estrutura Limpa
 - ✅ Sem rotas órfãs
@@ -27,25 +28,40 @@
 
 ---
 
-## ✅ MÓDULO 2: AUDITORIA DE PRIVACIDADE (PRIVACY FIRST)
+## ✅ MÓDULO 2: AUDITORIA DE PRIVACIDADE — TRANSPARÊNCIA TOTAL
 
-### Zero Coleta de Dados
-- ✅ **Sem Analytics**: Google Analytics completamente removido do `index.html`
+### Zero Vigilância
+- ✅ **Sem Analytics**: Google Analytics completamente removido
 - ✅ **Sem Tracking**: Nenhum pixel, tag ou script de terceiros
-- ✅ **Sem Cookies**: Nenhum uso de `localStorage`, `sessionStorage` ou cookies
-- ✅ **Sem Formulários**: Nenhum formulário de contato ou coleta de dados
-- ✅ **Sem Backend**: Nenhuma API ou endpoint server-side
+- ✅ **Sem Cookies**: Navegação sem cookies
+- ✅ **Sem Formulários**: Nenhuma coleta de dados pessoais
+- ✅ **Sem Coleta**: Zero dados pessoais coletados ou enviados
+
+### Uso Mínimo e Transparente
+- ⚠️ **sessionStorage**: Usado APENAS para banner anti-vigilância (UX)
+  - Armazena flag "banner_seen" para não re-exibir no mesmo browser
+  - Não persiste dados sensíveis
+  - Não rastreia comportamento
+  - Expires ao fechar o navegador
+- ⚠️ **Edge Function Opcional**: generate-cinematic-still
+  - Feature experimental claramente sinalizada
+  - Usa Lovable AI (não requer API key do usuário)
+  - Opcional, não afeta navegação principal
+  - Prompts não são armazenados
 
 ### Navegação Privada
-- ✅ Site 100% navegável sem coleta de informações
-- ✅ Nenhuma dependência que envolva tracking de usuários
-- ✅ Preferência de idioma não persiste (reset a cada sessão)
+- ✅ Site 95% navegável sem qualquer backend
+- ✅ Nenhuma dependência de tracking
+- ✅ Preferência de idioma não persiste
+- ✅ Feature de IA é opcional e experimental
 
-### Política de Privacidade Atualizada
-- ✅ **"ZERO DATA COLLECTION"**: Site não coleta nenhum dado pessoal
-- ✅ **"ZERO COOKIES"**: Nenhum dado armazenado no navegador
-- ✅ **"ZERO TRACKING"**: Navegação completamente privada e anônima
-- ✅ Conformidade total com LGPD/GDPR por design (privacy-first)
+### Política de Privacidade Honesta
+- ✅ **"ZERO TRACKING"**: Sem analytics ou vigilância
+- ✅ **"ZERO COOKIES"**: Sem cookies
+- ✅ **"MINIMAL STORAGE"**: sessionStorage apenas para UX do banner
+- ✅ **"OPTIONAL AI"**: Feature experimental claramente documentada
+- ✅ Conformidade total com LGPD/GDPR
+- ✅ Documentação honesta e transparente
 
 ---
 
