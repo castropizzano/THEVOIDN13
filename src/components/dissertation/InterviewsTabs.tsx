@@ -122,7 +122,7 @@ const InterviewCard = ({
               <FileText className="h-5 w-5" />
               <span className="bible-body font-semibold">
                 <span className="lang-pt">Transcrição Completa</span>
-                <span className="lang-en"> / Full Transcription</span>
+                <span className="lang-en">Full Transcription</span>
               </span>
             </Button>
           </div>
