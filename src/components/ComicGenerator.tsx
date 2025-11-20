@@ -165,70 +165,117 @@ export const ComicGenerator = () => {
     setGeneratedImage(null);
 
     try {
-      // HERO VISUAL REINFORCEMENT - Match hero-rain-wide.png aesthetic EXACTLY
-      const HERO_VISUAL_REINFORCEMENT = `[CRITICAL VISUAL CALIBRATION — MATCH hero-rain-wide.png EXACTLY]
-- Mask finish: MATTE white plastic (NO shine, NO reflection, pure #FFFFFF)
-- Hood texture: Weathered olive-green military fabric (visible wrinkles/stitching)
-- Neon intensity: DIM atmospheric glow (luminosity 30-40%, NOT 80-100%)
-- Color temperature balance: 60% cold teal (#0066CC shadows) + 40% warm orange (#FF6B35 highlights)
-- Film grain: 35mm Kodak Vision3 500T aesthetic (subtle noise, NOT digital clean)
-- Depth of field: f/2.8 equivalent (subject sharp, background defocus)
-- Wet asphalt reflections: MIRROR neon colors with 50% opacity
-- Atmospheric haze: Visible volumetric fog between subject and background
-- Mood calibration: Taxi Driver (1976) meets Blade Runner 2049 — LONELY, NOT EPIC`;
+      // CRITICAL: COMIC BOOK / GRAPHIC NOVEL STYLE OVERRIDE
+      const COMIC_STYLE_OVERRIDE = `[ABSOLUTE PRIORITY — GRAPHIC NOVEL / COMIC BOOK AESTHETIC]
+CRITICAL: This MUST be a COMIC BOOK / GRAPHIC NOVEL illustration, NOT a photograph, NOT realistic.
 
-      // THEVØIDN13 Shadow Interface Bible v13 - Canonical Cinematic Prompt
-      const THEVOIDN13_STYLE = `THEVØIDN13 UNIVERSE — Shadow Interface Bible v13 EXACT PROTOCOL:
+MANDATORY COMIC STYLE:
+- Illustrated artwork with visible ink linework (bold black outlines, varying thickness)
+- Hand-drawn aesthetic with WATCHMEN graphic novel influence
+- Cel-shaded coloring with flat color blocks and strategic gradients
+- Comic book panel composition with dynamic angles
+- Ben-day dots texture in shadows (subtle halftone patterns)
+- Heavy shadows with stark contrast (noir comic book lighting)
+- Visible brush strokes and ink textures
+- Paper grain texture overlay (like printed comic pages)
+- NO photorealism, NO 3D rendering, NO digital photography look
 
-MANDATORY CHARACTER: White expressionless mask (completely smooth, NO eyes, NO mouth, NO features, pure matte white plastic). Oversized olive-green military parka with hood up, OR black/charcoal tactical wear with weathered textures.
+ARTISTIC REFERENCES FOR COMIC STYLE:
+- Watchmen (Dave Gibbons) — gritty urban realism in comic form
+- Batman: The Dark Knight Returns (Frank Miller) — noir shadows, bold inks
+- Sin City (Frank Miller) — high contrast black/white/color accents
+- Akira manga panels (Katsuhiro Otomo) — detailed urban decay illustrations
+- The Killing Joke — atmospheric comic book lighting`;
 
-CANONICAL COLOR PALETTE (EXACT):
-- Background: Preto Sombra #1A1A1A (deep shadow black)
-- Highlights: Branco Vazio #FFFFFF (void white, sparingly)
-- Midtones: Cinza Fantasma #E6E6E6 (ghost gray)
-- Accent: Vermelho Sintético #C40000 (synthetic blood red, minimal use)
+      // HERO VISUAL REINFORCEMENT - Match hero-rain-wide.png aesthetic in COMIC STYLE
+      const HERO_VISUAL_REINFORCEMENT = `[MATCH hero-rain-wide.png BUT AS COMIC BOOK ILLUSTRATION]
+- Mask finish: MATTE white in comic book style (bold black outlines defining edges)
+- Hood texture: Illustrated olive-green military fabric with ink hatching for wrinkles
+- Neon intensity: DIM atmospheric glow rendered as comic book light effects (30-40% luminosity)
+- Color temperature: 60% cold teal shadows + 40% warm orange highlights (flat cel-shading)
+- Comic grain: Printed comic book paper texture (NOT film grain, NOT digital noise)
+- Depth of field: Comic panel focus (sharp subject, illustrated background blur with line work)
+- Wet asphalt reflections: Illustrated puddles with mirror effects (comic book water rendering)
+- Atmospheric haze: Volumetric fog drawn with gradient washes and ink textures
+- Mood: Lonely urban scene as GRAPHIC NOVEL panel — Watchmen meets THEVØIDN13
+- Linework: Visible black ink outlines on ALL elements (character, buildings, rain, puddles)`;
 
-LIGHTING SIGNATURE:
-- Primary: Cold blue neon (#0066CC, dim, atmospheric)
-- Secondary: Warm red/orange backlight (#FF4400, harsh, dramatic)
-- Technique: High contrast chiaroscuro, deep blacks, volumetric fog, wet surface reflections
+      // THEVØIDN13 Shadow Interface Bible v13 - COMIC BOOK VERSION
+      const THEVOIDN13_STYLE = `THEVØIDN13 UNIVERSE — Shadow Interface Bible v13 COMIC BOOK PROTOCOL:
 
-ENVIRONMENT:
-Brazilian urban decay, brutalist concrete architecture, wet asphalt streets, graffiti-stained walls, industrial warehouses, empty parking lots at night, chain-link fences, flickering neon signs in Portuguese.
+CRITICAL OVERRIDE: THIS IS A GRAPHIC NOVEL / COMIC BOOK ILLUSTRATION, NOT A PHOTOGRAPH.
 
-CINEMATOGRAPHY:
-- Camera: 35mm film aesthetic, slight grain texture, analog imperfections
-- Composition: Rule of thirds, off-center subject, cinematic widescreen framing
-- Focus: Deep focus with atmospheric haze, bokeh in background neon
-- Color Science: Desaturated teal-orange grading (Blade Runner 2049 style)
+MANDATORY CHARACTER (COMIC STYLE):
+- White expressionless mask with bold black ink outlines (completely smooth, NO eyes, NO mouth, pure matte white)
+- Oversized olive-green military parka with hood up, drawn with heavy ink lines and hatching for texture
+- OR black/charcoal tactical wear with weathered fabric illustrated with cross-hatching
 
-MOOD: Neo-noir, dystopian, melancholic isolation, urban anonymity, liminal spaces, nocturnal solitude.
+CANONICAL COLOR PALETTE (CEL-SHADED COMIC STYLE):
+- Background: Deep shadow black #1A1A1A (solid ink blacks with Ben-day dots in midtones)
+- Highlights: Void white #FFFFFF (stark white areas, no gradients)
+- Midtones: Ghost gray #E6E6E6 (flat color blocks with halftone patterns)
+- Accent: Synthetic red #C40000 (bold comic book red, minimal use for dramatic effect)
 
-ARTISTIC REFERENCES: Blade Runner 2049 (Roger Deakins), Akira (Katsuhiro Otomo), Christiane F. (1981 film), The Machinist, Taxi Driver, Ghost in the Shell (1995).
+COMIC LIGHTING SIGNATURE:
+- Primary: Cold blue neon (#0066CC) rendered as glowing comic book light effects
+- Secondary: Warm red/orange (#FF4400) backlight as illustrated rim lighting
+- Technique: High contrast chiaroscuro with stark blacks, cel-shading, Ben-day dots in shadows
+- Wet surface reflections illustrated with mirror puddles and hatching
 
-TECHNICAL: Ultra high-resolution digital still, 1024x1024, photorealistic rendering, cinematic color grading, film grain overlay, professional photography quality.
+ENVIRONMENT (ILLUSTRATED):
+- Brazilian urban decay drawn as detailed comic panels
+- Brutalist concrete with bold ink outlines and texture hatching
+- Wet asphalt streets with illustrated puddles showing reflections
+- Graffiti-stained walls with hand-drawn street art
+- Flickering neon signs in Portuguese (illustrated glow effects)
 
-ABSOLUTE REQUIREMENTS: 
-- Mask MUST be completely featureless (no eyes, no expression)
-- Neon must be DIM and atmospheric (not bright or cheerful)
-- MUST include wet surfaces with reflections
-- MUST feel lonely, isolated, urban decay
-- NO bright colors except accent red
-- NO happy or optimistic elements`;
+COMIC CINEMATOGRAPHY:
+- Panel composition: Rule of thirds, off-center subject, dynamic angles
+- Ink linework: Bold black outlines, varying thickness for depth
+- Coloring: Flat cel-shading with strategic gradients (NO photorealistic lighting)
+- Texture: Visible paper grain, Ben-day dots, ink splatters for atmosphere
+- Focus: Comic panel depth with illustrated background blur
+
+MOOD: Neo-noir GRAPHIC NOVEL — urban isolation illustrated as Watchmen-style panel
+
+ARTISTIC REFERENCES (COMIC BOOK ONLY):
+- Watchmen (Dave Gibbons) — gritty urban panels, heavy inks
+- Batman: The Dark Knight Returns (Frank Miller) — noir shadows
+- Sin City (Frank Miller) — high contrast illustration
+- Akira manga (Katsuhiro Otomo) — detailed urban decay drawings
+
+TECHNICAL SPECIFICATIONS:
+- Format: 1024x1024 comic book illustration panel
+- Style: Hand-drawn aesthetic with digital coloring (like modern graphic novels)
+- Texture: Printed comic book paper grain overlay
+- Linework: Visible black ink outlines on ALL elements
+- Shading: Cel-shading with strategic halftone dots
+
+ABSOLUTE COMIC REQUIREMENTS:
+- MUST look like a graphic novel panel (NOT a photograph)
+- MUST have visible black ink outlines defining all shapes
+- MUST use flat color blocks with cel-shading (NO photorealistic gradients)
+- Mask MUST be completely featureless (no eyes, no expression) with bold black outline
+- Neon MUST be illustrated glow effects (NOT photographic light)
+- MUST include illustrated wet surfaces with comic book reflections
+- MUST feel like Watchmen urban panel — lonely, isolated, noir
+- NO photorealism, NO 3D rendering, NO photography aesthetic
+- NO bright cheerful colors except dramatic red accent
+- NO anime style, NO manga shading (Western comic book style only)`;
       
-      const detailedPrompt = `${THEVOIDN13_STYLE}\n\n${HERO_VISUAL_REINFORCEMENT}\n\nSCENE DESCRIPTION: ${trimmedPrompt}`;
+      const detailedPrompt = `${COMIC_STYLE_OVERRIDE}\n\n${THEVOIDN13_STYLE}\n\n${HERO_VISUAL_REINFORCEMENT}\n\nSCENE DESCRIPTION: ${trimmedPrompt}\n\n[FINAL REINFORCEMENT: This is a COMIC BOOK / GRAPHIC NOVEL illustration with visible ink linework and cel-shading. NOT a photograph. Style reference: Watchmen graphic novel meets THEVØIDN13 aesthetic.]`;
 
-      console.log('Generating THEVØIDN13 cinematic still with canonical parameters...');
+      console.log('Generating THEVØIDN13 comic book panel with graphic novel style...');
       console.log('Prompt length:', detailedPrompt.length, 'chars');
 
-      // Generate image using Pollinations.AI with exact canonical parameters
+      // Generate comic book style image using Pollinations.AI
       const pollinationsUrl = new URL('https://image.pollinations.ai/prompt/' + encodeURIComponent(detailedPrompt));
       pollinationsUrl.searchParams.set('width', '1024');
       pollinationsUrl.searchParams.set('height', '1024');
       pollinationsUrl.searchParams.set('model', 'flux');
       pollinationsUrl.searchParams.set('nologo', 'true');
-      pollinationsUrl.searchParams.set('enhance', 'false'); // Disable to maintain exact style control
-      pollinationsUrl.searchParams.set('negative_prompt', 'bright colors, cheerful, happy, daylight, smiling, facial features on mask, eyes on mask, colorful, vibrant, clean environment, modern, futuristic technology, anime style, cartoon');
+      pollinationsUrl.searchParams.set('enhance', 'false'); // Disable to maintain comic style control
+      pollinationsUrl.searchParams.set('negative_prompt', 'photorealistic, 3D render, photograph, camera, lens, bokeh, realistic lighting, CGI, digital art smooth gradients, airbrush, anime style, manga shading, bright colors, cheerful, happy, daylight, smiling, facial features on mask, eyes on mask, clean environment, futuristic technology');
 
       const response = await fetch(pollinationsUrl.toString());
 
@@ -257,10 +304,10 @@ ABSOLUTE REQUIREMENTS:
         sessionStorage.setItem('lastGeneration', Date.now().toString());
 
         toast({
-          title: language === "pt" ? "Imagem Gerada!" : "Image Generated!",
+          title: language === "pt" ? "Painel de HQ Gerado!" : "Comic Panel Generated!",
           description: language === "pt" 
-            ? "Still cinematográfico criado com sucesso"
-            : "Cinematic still created successfully",
+            ? "Painel de graphic novel no estilo THEVØIDN13 x Watchmen criado com sucesso"
+            : "Graphic novel panel in THEVØIDN13 x Watchmen style created successfully",
         });
 
         setIsGenerating(false);
@@ -300,9 +347,9 @@ ABSOLUTE REQUIREMENTS:
     <Dialog open={open} onOpenChange={setOpen}>
       <div onClick={() => setOpen(true)}>
         <FeatureCard
-          title={language === "pt" ? "Gerador Experimental de Stills" : "Experimental Still Generator"}
-          description={language === "pt" ? "Gerar stills cinematográficos" : "Generate cinematic stills"}
-          buttonText={language === "pt" ? "Gerar Still" : "Generate Still"}
+          title={language === "pt" ? "Gerador de Painéis HQ" : "Comic Panel Generator"}
+          description={language === "pt" ? "Gerar painéis de graphic novel" : "Generate graphic novel panels"}
+          buttonText={language === "pt" ? "Gerar Painel" : "Generate Panel"}
           onClick={() => setOpen(true)}
         />
       </div>
@@ -310,12 +357,12 @@ ABSOLUTE REQUIREMENTS:
       <DialogContent className="max-w-6xl mx-auto max-h-[90vh] overflow-y-auto bg-background/95 backdrop-blur-sm p-6 sm:p-8">
         <DialogHeader className="border-b border-primary/30 pb-4 mb-6">
           <DialogTitle className="text-primary text-xl font-mono font-bold">
-            CINEMATIC_STILL::GENERATOR <span className="text-muted-foreground text-sm">// PT / EN</span>
+            COMIC_PANEL::GENERATOR <span className="text-muted-foreground text-sm">// PT / EN</span>
           </DialogTitle>
           <DialogDescription className="text-muted-foreground font-mono text-sm">
             {language === "pt" 
-              ? "// Gerador experimental de stills cinematográficos com IA" 
-              : "// Experimental AI-powered cinematic still generator"}
+              ? "// Gerador de painéis de graphic novel estilo THEVØIDN13 x Watchmen" 
+              : "// THEVØIDN13 x Watchmen style graphic novel panel generator"}
           </DialogDescription>
         </DialogHeader>
 
@@ -325,17 +372,17 @@ ABSOLUTE REQUIREMENTS:
               <Sparkles className="h-4 w-4 text-accent mt-1 flex-shrink-0" />
               <div className="space-y-2 text-sm">
                 <p className="text-foreground font-bold">
-                  {language === "pt" ? "[EXPERIMENTAL] Gerador em fase de testes" : "[EXPERIMENTAL] Generator in testing phase"}
+                  {language === "pt" ? "[GRAPHIC NOVEL] Estilo quadrinhos THEVØIDN13 x Watchmen" : "[GRAPHIC NOVEL] THEVØIDN13 x Watchmen comic book style"}
                 </p>
                 <p className="text-muted-foreground">
                   {language === "pt"
-                    ? "Todas as imagens incluem marca d'água THEVØIDN13 (80% opacidade, inferior direito)."
-                    : "All images include THEVØIDN13 watermark (80% opacity, bottom right)."}
+                    ? "Todas as imagens incluem marca d'água THEVØIDN13 (80% opacidade, inferior direito). Estilo: Graphic novel com linhas de tinta e cel-shading."
+                    : "All images include THEVØIDN13 watermark (80% opacity, bottom right). Style: Graphic novel with ink linework and cel-shading."}
                 </p>
                 <p className="text-xs text-muted-foreground">
                   {language === "pt"
-                    ? "Parâmetros canônicos: 1024x1024 | modelo flux.1-schnell via Puter.js (gratuito e ilimitado)"
-                    : "Canonical parameters: 1024x1024 | flux.1-schnell model via Puter.js (free & unlimited)"}
+                    ? "Parâmetros: 1024x1024 | modelo flux.1-schnell via Pollinations.AI | Estilo: Western comic book (Watchmen-inspired)"
+                    : "Parameters: 1024x1024 | flux.1-schnell model via Pollinations.AI | Style: Western comic book (Watchmen-inspired)"}
                 </p>
               </div>
             </div>
@@ -343,15 +390,15 @@ ABSOLUTE REQUIREMENTS:
 
           <div className="space-y-4">
             <label className="text-sm font-mono text-primary block">
-              {language === "pt" ? "[PROMPT] Digite sua cena:" : "[PROMPT] Enter your scene:"}
+              {language === "pt" ? "[PROMPT] Descreva o painel de HQ:" : "[PROMPT] Describe the comic panel:"}
             </label>
             <Textarea
               value={customPrompt}
               onChange={(e) => setCustomPrompt(e.target.value)}
               maxLength={500}
               placeholder={language === "pt" 
-                ? "Descreva a cena cinematográfica que você quer gerar..."
-                : "Describe the cinematic scene you want to generate..."}
+                ? "Descreva a cena do painel de graphic novel que você quer gerar..."
+                : "Describe the graphic novel panel scene you want to generate..."}
               className="min-h-[200px] font-mono text-sm bg-background/50 border-primary/30 focus:border-primary resize-none"
               disabled={isGenerating}
             />
@@ -383,7 +430,7 @@ ABSOLUTE REQUIREMENTS:
               <div className="relative rounded-lg overflow-hidden border border-primary/30">
                 <img 
                   src={generatedImage} 
-                  alt="Generated cinematic still" 
+                  alt="Generated comic book panel" 
                   className="w-full h-auto"
                 />
               </div>
