@@ -200,13 +200,28 @@ export const InterviewsTabs = () => {
             </DialogTrigger>
             <DialogContent className="max-w-2xl">
               <DialogHeader>
-                <DialogTitle className="text-2xl font-bold">Documentação Etnográfica</DialogTitle>
+                <DialogTitle className="text-2xl font-bold">
+                  <span className="lang-pt">DOCUMENTAÇÃO ETNOGRÁFICA</span>
+                  <span className="lang-en">ETHNOGRAPHIC DOCUMENTATION</span>
+                </DialogTitle>
               </DialogHeader>
               <div className="bible-block text-sm leading-relaxed space-y-4">
-                <p>Este conjunto de entrevistas documenta a pesquisa de campo realizada entre 2017-2024, capturando vozes da cena underground brasileira.</p>
-                <p><strong>Metodologia:</strong> Conversas abertas gravadas em vídeo, transcritas e analisadas segundo princípios etnográficos, preservando a oralidade e contexto cultural dos entrevistados.</p>
-                <p><strong>Temas:</strong> Skate, punk, mídia independente, produção cultural marginal, resistência criativa e construção de identidades subculturais.</p>
-                <p className="text-xs text-muted-foreground">Pesquisa acadêmica vinculada ao Memorial "Ecos Criativos" (PUC-SP, 2024)</p>
+                <p>
+                  <span className="lang-pt">Este conjunto de entrevistas documenta a pesquisa de campo realizada entre 2024-2025, capturando vozes da cena underground brasileira.</span>
+                  <span className="lang-en">This set of interviews documents field research conducted between 2024-2025, capturing voices from the Brazilian underground scene.</span>
+                </p>
+                <p>
+                  <span className="lang-pt"><strong>Metodologia:</strong> Conversas abertas gravadas em vídeo, transcritas e analisadas segundo princípios etnográficos, preservando a oralidade e contexto cultural dos entrevistados.</span>
+                  <span className="lang-en"><strong>Methodology:</strong> Open conversations recorded on video, transcribed and analyzed according to ethnographic principles, preserving the orality and cultural context of the interviewees.</span>
+                </p>
+                <p>
+                  <span className="lang-pt"><strong>Temas:</strong> Skate, punk, mídia independente, produção cultural marginal, resistência criativa e construção de identidades subculturais.</span>
+                  <span className="lang-en"><strong>Themes:</strong> Skateboarding, punk, independent media, marginal cultural production, creative resistance and construction of subcultural identities.</span>
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  <span className="lang-pt">Pesquisa acadêmica vinculada à dissertação de mestrado "LowMovie™ e o Labirinto Criativo" (UNESPAR, 2025)</span>
+                  <span className="lang-en">Academic research linked to the master's thesis "LowMovie™ and the Creative Labyrinth" (UNESPAR, 2025)</span>
+                </p>
               </div>
             </DialogContent>
           </Dialog>
