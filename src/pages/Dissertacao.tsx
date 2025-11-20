@@ -535,8 +535,10 @@ const Dissertacao = () => {
 
         {/* Timeline */}
         <BilingualSection className="bible-section">
-          <div className="bible-media">
-            <Timeline />
+          <div className="max-w-6xl mx-auto">
+            <div className="bible-media">
+              <Timeline />
+            </div>
           </div>
         </BilingualSection>
 
