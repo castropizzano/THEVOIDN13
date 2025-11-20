@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
-import { Copy, Loader2 } from "lucide-react";
+import { Copy, Loader2, Eye, ChevronDown, ChevronUp } from "lucide-react";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { FeatureCard } from "@/components/FeatureCard";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
+import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 interface Prompt {
   id: string;
@@ -23,6 +25,7 @@ export const PromptLibrary = () => {
   const [prompts, setPrompts] = useState<Prompt[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [expandedPrompts, setExpandedPrompts] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     if (open) {
@@ -83,6 +86,18 @@ export const PromptLibrary = () => {
     return labels[category]?.[language] || category.toUpperCase();
   };
 
+  const togglePromptExpansion = (promptId: string) => {
+    setExpandedPrompts(prev => {
+      const newSet = new Set(prev);
+      if (newSet.has(promptId)) {
+        newSet.delete(promptId);
+      } else {
+        newSet.add(promptId);
+      }
+      return newSet;
+    });
+  };
+
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <div onClick={() => setOpen(true)}>
@@ -132,38 +147,95 @@ export const PromptLibrary = () => {
                     [{category.toUpperCase()}] {getCategoryLabel(category)}
                   </h3>
                   <div className="space-y-6 pl-4 border-l-2 border-primary/20">
-                    {categoryPrompts.map((prompt) => (
-                      <div key={prompt.id} className="space-y-2">
-                        <div className="text-foreground font-semibold">
-                          └─ {prompt.title}
-                        </div>
-                        {prompt.description && (
-                          <div className="text-muted-foreground text-sm pl-4">
-                            {prompt.description}
+                    {categoryPrompts.map((prompt) => {
+                      const isExpanded = expandedPrompts.has(prompt.id);
+                      return (
+                        <div key={prompt.id} className="space-y-2 border border-primary/10 rounded-lg p-4 bg-background/50 hover:bg-background/70 transition-colors">
+                          <div className="flex items-start justify-between gap-4">
+                            <div className="flex-1 space-y-2">
+                              <div className="text-foreground font-semibold flex items-center gap-2">
+                                └─ {prompt.title}
+                                <HoverCard>
+                                  <HoverCardTrigger asChild>
+                                    <Button variant="ghost" size="sm" className="h-5 w-5 p-0">
+                                      <Eye className="h-3 w-3 text-muted-foreground" />
+                                    </Button>
+                                  </HoverCardTrigger>
+                                  <HoverCardContent className="w-96 bg-background/95 backdrop-blur-sm border-primary/30">
+                                    <div className="space-y-2">
+                                      <p className="text-xs text-primary font-mono">
+                                        {language === 'pt' ? '// PREVIEW DO PROMPT' : '// PROMPT PREVIEW'}
+                                      </p>
+                                      <p className="text-xs text-muted-foreground font-mono leading-relaxed max-h-48 overflow-y-auto">
+                                        {prompt.prompt_text.substring(0, 300)}
+                                        {prompt.prompt_text.length > 300 && '...'}
+                                      </p>
+                                      <p className="text-xs text-muted-foreground">
+                                        {prompt.prompt_text.length} {language === 'pt' ? 'caracteres' : 'characters'}
+                                      </p>
+                                    </div>
+                                  </HoverCardContent>
+                                </HoverCard>
+                              </div>
+                              {prompt.description && (
+                                <div className="text-muted-foreground text-sm">
+                                  {prompt.description}
+                                </div>
+                              )}
+                              {prompt.tags && prompt.tags.length > 0 && (
+                                <div className="flex flex-wrap gap-2">
+                                  {prompt.tags.map((tag, idx) => (
+                                    <span key={idx} className="text-xs text-primary/70 bg-primary/10 px-2 py-1 rounded">
+                                      #{tag}
+                                    </span>
+                                  ))}
+                                </div>
+                              )}
+                            </div>
                           </div>
-                        )}
-                        {prompt.tags && prompt.tags.length > 0 && (
-                          <div className="flex flex-wrap gap-2 pl-4">
-                            {prompt.tags.map((tag, idx) => (
-                              <span key={idx} className="text-xs text-primary/70 bg-primary/10 px-2 py-1 rounded">
-                                #{tag}
-                              </span>
-                            ))}
+
+                          {/* Expandable prompt text */}
+                          <div className="pt-2">
+                            <Button
+                              variant="ghost"
+                              size="sm"
+                              onClick={() => togglePromptExpansion(prompt.id)}
+                              className="gap-2 text-xs text-muted-foreground hover:text-foreground"
+                            >
+                              {isExpanded ? <ChevronUp className="h-3 w-3" /> : <ChevronDown className="h-3 w-3" />}
+                              {language === 'pt' ? (isExpanded ? 'Ocultar Prompt' : 'Ver Prompt Completo') : (isExpanded ? 'Hide Prompt' : 'View Full Prompt')}
+                            </Button>
+                            
+                            {isExpanded && (
+                              <div className="mt-3 p-4 bg-black/40 border border-primary/20 rounded-lg">
+                                <p className="text-xs text-primary/70 font-mono mb-2">
+                                  {language === 'pt' ? '// TEXTO COMPLETO DO PROMPT:' : '// FULL PROMPT TEXT:'}
+                                </p>
+                                <p className="text-sm text-muted-foreground font-mono leading-relaxed whitespace-pre-wrap max-h-64 overflow-y-auto">
+                                  {prompt.prompt_text}
+                                </p>
+                                <p className="text-xs text-muted-foreground mt-2">
+                                  {prompt.prompt_text.length} {language === 'pt' ? 'caracteres' : 'characters'}
+                                </p>
+                              </div>
+                            )}
                           </div>
-                        )}
-                        <div className="pl-4 pt-2">
-                          <Button
-                            variant="outline"
-                            size="sm"
-                            onClick={() => copyToClipboard(prompt.prompt_text, prompt.title)}
-                            className="gap-2"
-                          >
-                            <Copy className="h-3 w-3" />
-                            {language === 'pt' ? '[Copiar Prompt]' : '[Copy Prompt]'}
-                          </Button>
+
+                          {/* Action buttons */}
+                          <div className="pt-2 flex gap-2">
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              onClick={() => copyToClipboard(prompt.prompt_text, prompt.title)}
+                              className="gap-2"
+                            >
+                              <Copy className="h-3 w-3" />
+                              {language === 'pt' ? '[Copiar]' : '[Copy]'}
+                            </Button>
+                          </div>
                         </div>
-                      </div>
-                    ))}
+                      );
+                    })}
                   </div>
                 </div>
               ))}
