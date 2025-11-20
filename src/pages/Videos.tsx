@@ -179,7 +179,7 @@ const Videos = () => {
             englishContent={
               <div className="bible-block space-y-6 mb-12">
                 <p className="bible-body text-justify">
-                  A condensed selection of the projects I work on. In each one, I move between concept, design, art direction, cinematography, editing and post-production, always according to what the work demands. Each project has its own identity, but they all orbit the same aesthetic axis that defines my work. To see other collective, authorial, commercial, cultural, musical, documentary and experimental projects, access the complete portfolios on Vimeo and Behance.
+                  A condensed selection of the projects I work on. In each one, I move between concept, design, art direction, cinematography, editing and post-production, always according to what the work demands. Each project has its own identity, but they all orbit the same aesthetic axis that defines my work. To see other collective, authorial, commercial, cultural, musical, documentary and experimental projects, access my complete portfolios on Vimeo and Behance.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
                   <Button
