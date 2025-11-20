@@ -1,6 +1,7 @@
 import { useTranslation } from "@/hooks/useTranslation";
 import { SurveillanceFreeBadge } from "@/components/SurveillanceFreeBadge";
 import { TechnicalTransparencyBadge } from "@/components/TechnicalTransparencyBadge";
+import { PollinationsAIBadge } from "@/components/PollinationsAIBadge";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -16,16 +17,7 @@ const Footer = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-start items-start sm:items-center">
               <SurveillanceFreeBadge size="sm" />
-              <a 
-                href="https://pollinations.ai/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-purple-500/10 hover:bg-purple-500/20 transition-colors border border-purple-500/20 hover:border-purple-500/30"
-              >
-                <span className="text-[10px] sm:text-xs font-medium text-purple-400">
-                  Powered by Pollinations.AI
-                </span>
-              </a>
+              <PollinationsAIBadge size="sm" />
             </div>
           </div>
           <div className="text-left md:text-right space-y-2">

@@ -2,7 +2,7 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SEO, personSchema, breadcrumbSchema } from "@/components/SEO";
-import { BilingualSection } from "@/components/BilingualSection";
+import { BilingualSection, BilingualContent } from "@/components/BilingualSection";
 import { BackToTop } from "@/components/BackToTop";
 import { Separator } from "@/components/ui/separator";
 import { PDFViewer } from "@/components/PDFViewer";
@@ -359,278 +359,226 @@ DaVinci Resolve"
             </div>
         </div>
 
-        <div className="bible-bilingual-grid">
-          <div>
-            <SkillCard
-              title="LINGUAGEM, NÃO LOGOTIPO."
-              content="Processo, não produto."
-            />
-            
-            <h3 className="bible-subtitle">O Contexto: Uma Recusa ao Branding Tradicional</h3>
-            <p className="bible-body">A era é de excesso de identidade. Marcas falam mais de si do que de seus propósitos, buscam reconhecimento pelo algoritmo e não pela substância. A resposta foi criar uma anti-marca — uma identidade que rejeita a lógica publicitária e se afirma como linguagem, não logotipo.</p>
-            
-            <p className="bible-body">Ao contrário de um símbolo que busca reconhecimento imediato, o projeto ЦАСТРО (transliteração cirílica de CASTRO) propõe o anonimato como força estética. A ausência de identificação direta — o nome distorcido, o alfabeto estrangeiro, a paleta contida — é uma crítica à cultura do ego-branding.</p>
-            
-            <h3 className="bible-subtitle">A Linguagem Visual como Resistência</h3>
-            <p className="bible-body">O uso de tipografia em corpo alto, tons frios (preto e branco), e elementos de arquivo como "1984" e o símbolo ™ cria uma tensão entre o institucional e o subversivo. Essa ironia visual ecoa Orwell, glitch estético e ruído pós-soviético — um statement sobre o branding em colapso.</p>
-            
-            <div className="my-6">
-              <SkillCard
-                title='"A LINGUAGEM QUE PRECISA SE JUSTIFICAR JÁ PERDEU O SILÊNCIO."'
-                content="— ЦАСТРО™"
-              />
-            </div>
-            
-            <p className="bible-body">A anti-marca ЦАСТРО™ não busca legibilidade comercial, mas reconhecimento conceitual. Quem entende o código, entende o autor. Quem não entende, permanece fora do campo — e isso é parte do design.</p>
-            
-            <h3 className="bible-title mt-8">A OBRA COMO PROTAGONISTA</h3>
-            <p className="bible-body mt-4">A proposta central é o anonimato como ética criativa. Num mundo saturado de criadores-influencers, a ideia é inverter a equação: não se trata de vender a imagem do artista, mas de expandir o campo simbólico do que ele cria.</p>
-            <p className="bible-body">Assim, "ЦАСТРО™" torna-se um agente conceitual, não uma pessoa. Uma entidade de linguagem, um selo de pensamento, uma assinatura invisível.</p>
-            <div className="my-4">
-              <SkillCard
-                title='"O CRIADOR DESAPARECE PARA QUE A OBRA FALE."'
-                content="— ЦАСТРО™"
-              />
-            </div>
-
-            <h3 className="bible-subtitle">A Semiótica do Símbolo</h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              <SkillCard
-                title="ЦАСТРО"
-                content="Transliteração que cria ruído e nega a leitura imediata — uma máscara estética"
-              />
-              <SkillCard
-                title="©1984 ЦАСТРО™"
-                content="1984 como Orwell — vigilância, anti-brand, ruptura. 1984 como nascimento — carne, tempo, marca existencial. Ficção + vida real + crítica à marca + protocolo de arquivo"
-              />
-              <SkillCard
-                title="™"
-                content="Ironia: o símbolo do mercado aplicado a uma anti-marca"
-              />
-              <SkillCard
-                title="Paleta"
-                content="Preto e branco = choque entre dureza e clareza; brutalismo minimalista"
-              />
-            </div>
-
-            <div className="my-8 p-6 bg-primary/5 border border-primary/20 rounded-lg">
-              <h4 className="bible-subtitle">A TRÍADE CRIATIVA</h4>
-              <p className="bible-body mb-4">Essas são as três colunas do mito. Os três andares do labirinto criativo:</p>
-              
-              <div className="space-y-3">
-                <div className="border-l-4 border-primary pl-4">
-                  <p className="bible-link font-bold uppercase text-primary">AUTOR</p>
-                  <p className="bible-link">Fundador do CasaTrezeStudio®</p>
+        <div className="bible-block">
+          <BilingualContent
+            alignTop
+            portugueseContent={
+              <>
+                <SkillCard
+                  title="LINGUAGEM, NÃO LOGOTIPO."
+                  content="Processo, não produto."
+                />
+                
+                <h3 className="bible-subtitle">O Contexto: Uma Recusa ao Branding Tradicional</h3>
+                <p className="bible-body">A era é de excesso de identidade. Marcas falam mais de si do que de seus propósitos, buscam reconhecimento pelo algoritmo e não pela substância. A resposta foi criar uma anti-marca — uma identidade que rejeita a lógica publicitária e se afirma como linguagem, não logotipo.</p>
+                
+                <p className="bible-body">Ao contrário de um símbolo que busca reconhecimento imediato, o projeto ЦАСТРО (transliteração cirílica de CASTRO) propõe o anonimato como força estética. A ausência de identificação direta — o nome distorcido, o alfabeto estrangeiro, a paleta contida — é uma crítica à cultura do ego-branding.</p>
+                
+                <h3 className="bible-subtitle">A Linguagem Visual como Resistência</h3>
+                <p className="bible-body">O uso de tipografia em corpo alto, tons frios (preto e branco), e elementos de arquivo como "1984" e o símbolo ™ cria uma tensão entre o institucional e o subversivo. Essa ironia visual ecoa Orwell, glitch estético e ruído pós-soviético — um statement sobre o branding em colapso.</p>
+                
+                <div className="my-6">
+                  <SkillCard
+                    title='"A LINGUAGEM QUE PRECISA SE JUSTIFICAR JÁ PERDEU O SILÊNCIO."'
+                    content="— ЦАСТРО™"
+                  />
                 </div>
-                <div className="border-l-4 border-primary pl-4">
-                  <p className="bible-link font-bold uppercase text-primary">COLETIVO</p>
-                  <p className="bible-link">Colaborador Criativo no LowPressure™</p>
+                
+                <p className="bible-body">A anti-marca ЦАСТРО™ não busca legibilidade comercial, mas reconhecimento conceitual. Quem entende o código, entende o autor. Quem não entende, permanece fora do campo — e isso é parte do design.</p>
+                
+                <h3 className="bible-title mt-8">A OBRA COMO PROTAGONISTA</h3>
+                <p className="bible-body mt-4">A proposta central é o anonimato como ética criativa. Num mundo saturado de criadores-influencers, a ideia é inverter a equação: não se trata de vender a imagem do artista, mas de expandir o campo simbólico do que ele cria.</p>
+                <p className="bible-body">Assim, "ЦАСТРО™" torna-se um agente conceitual, não uma pessoa. Uma entidade de linguagem, um selo de pensamento, uma assinatura invisível.</p>
+                <div className="my-4">
+                  <SkillCard
+                    title='"O CRIADOR DESAPARECE PARA QUE A OBRA FALE."'
+                    content="— ЦАСТРО™"
+                  />
                 </div>
-                <div className="border-l-4 border-primary pl-4">
-                  <p className="bible-link font-bold uppercase text-primary">ENTIDADE</p>
-                  <p className="bible-link">Arquiteto Visual do THEVØIDN13</p>
+
+                <h3 className="bible-subtitle">A Semiótica do Símbolo</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <SkillCard
+                    title="ЦАСТРО"
+                    content="Transliteração que cria ruído e nega a leitura imediata — uma máscara estética"
+                  />
+                  <SkillCard
+                    title="©1984 ЦАСТРО™"
+                    content="1984 como Orwell — vigilância, anti-brand, ruptura. 1984 como nascimento — carne, tempo, marca existencial. Ficção + vida real + crítica à marca + protocolo de arquivo"
+                  />
+                  <SkillCard
+                    title="™"
+                    content="Ironia: o símbolo do mercado aplicado a uma anti-marca"
+                  />
+                  <SkillCard
+                    title="Paleta"
+                    content="Preto e branco = choque entre dureza e clareza; brutalismo minimalista"
+                  />
                 </div>
-              </div>
 
-              <div className="mt-4 pt-4 border-t border-primary/20">
-                <p className="text-xs font-mono text-muted-foreground leading-snug">Os selos no rodapé — MAD Habit, THEVOID, CasaTreze, LowMovie, LowPressure — não são logos: são <span className="font-bold">alfabetos, runas de um organismo criativo</span> que vive entre o estúdio japonês dos anos 90, o brutalismo Bauhaus e a liturgia punk. Formam uma constelação. Um idioma de sombra. Um campo magnético.</p>
-              </div>
-            </div>
-            
-            <div className="my-8">
-              <h3 className="bible-subtitle mb-6">O DEVICE OF IDENTITY</h3>
-              
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
-                <SkillCard
-                  title="Cartela de Abertura"
-                  content="Placa soviética arrancada da parede de um cinema abandonado — ainda viva. Documento vazado de um futuro que se recusa a chegar"
-                />
-                <SkillCard
-                  title="Relíquia Portal"
-                  content="Rito sem altar. Gesto sem audiência. Presença que não pede permissão"
-                />
-                <SkillCard
-                  title="ЦАСТРО™"
-                  content="O autor que desaparece para que a obra respire sozinha"
-                />
-                <SkillCard
-                  title="THEVØIDN13"
-                  content="A entidade-framework, o sistema operacional da sombra"
-                />
-                <SkillCard
-                  title="LowPressure & CasaTreze"
-                  content="O corpo material e o chão concreto onde tudo se ancora"
-                />
-                <SkillCard
-                  title="Os Ícones"
-                  content="Créditos finais de um filme que nunca para de rodar"
-                />
-              </div>
-            </div>
+                <div className="my-8 p-6 bg-primary/5 border border-primary/20 rounded-lg">
+                  <h4 className="bible-subtitle">A TRÍADE CRIATIVA</h4>
+                  <p className="bible-body mb-4">Essas são as três colunas do mito. Os três andares do labirinto criativo:</p>
+                  
+                  <div className="space-y-3">
+                    <div className="border-l-4 border-primary pl-4">
+                      <p className="bible-link font-bold uppercase text-primary">AUTOR</p>
+                      <p className="bible-link">Fundador do CasaTrezeStudio®</p>
+                    </div>
+                    <div className="border-l-4 border-primary pl-4">
+                      <p className="bible-link font-bold uppercase text-primary">COLETIVO</p>
+                      <p className="bible-link">Colaborador Criativo no LowPressure™</p>
+                    </div>
+                    <div className="border-l-4 border-primary pl-4">
+                      <p className="bible-link font-bold uppercase text-primary">ENTIDADE</p>
+                      <p className="bible-link">Arquiteto Visual do THEVØIDN13</p>
+                    </div>
+                  </div>
 
-            <h2 className="bible-title mt-8 mb-6">AS TRÊS FAIXAS</h2>
-            <p className="bible-body mb-6 italic">Este selo não certifica. Ele posiciona em três frequências simultâneas — como se o mesmo corpo pudesse tocar três instrumentos ao mesmo tempo:</p>
-            
-            <div className="space-y-6">
-              <div className="border-l-4 border-primary/50 pl-4">
-                <h5 className="bible-link font-bold uppercase text-primary mb-3">FAIXA PROFISSIONAL</h5>
-                <p className="bible-body text-sm leading-relaxed">Pesquisa em artes que não separa teoria de prática. Direção de arte que redesenha o próprio conceito de autoria. Sistemas de marca que funcionam como linguagem viva, não vitrine morta. Cinema experimental onde cada frame é um manifesto silencioso. Arquitetura de universos que respiram sozinhos. Criação transdisciplinar — porque disciplina é prisão voluntária.</p>
-              </div>
-              
-              <div className="border-l-4 border-primary/50 pl-4">
-                <h5 className="bible-link font-bold uppercase text-primary mb-3">FAIXA AUTORAL</h5>
-                <p className="bible-body text-sm leading-relaxed">Anti-brand pós-soviética — a estética do colapso como ponto de partida. Sombra não como ausência de luz, mas como presença ativa. Hibridização humano–IA onde ninguém sabe mais onde termina um e começa o outro. Skate como ética de corpo, filosofia de movimento, resistência sem bandeira. Portal como obra — não o que se vê, mas o que atravessa.</p>
-              </div>
-              
-              <div className="border-l-4 border-primary/50 pl-4">
-                <h5 className="bible-link font-bold uppercase text-primary mb-3">FAIXA MITOLÓGICA</h5>
-                <p className="bible-body text-sm leading-relaxed"><span className="font-bold text-primary">ЦАСТРО™</span> — entidade autoral que opera fora do culto à personalidade. <span className="font-bold text-primary">THEVØIDN13</span> — sombra ativa, framework vivo, sistema operacional do invisível. <span className="font-bold text-primary">LowMovie / LowPressure</span> — corpo social, movimento coletivo sem líder. <span className="font-bold text-primary">CasaTreze</span> — templo vivo onde a criação acontece como ritual, não como produção.</p>
-              </div>
-            </div>
-
-            <div className="my-6">
-              <SkillCard
-                title="ЦАСТРО™ — 1984 → ETERNO EM PROCESSO."
-                content=""
-              />
-            </div>
-          </div>
-
-          <div>
-            <SkillCard
-              title="LANGUAGE, NOT LOGO."
-              content="Process, not product."
-            />
-            
-            <h3 className="bible-subtitle">The Context: A Refusal of Traditional Branding</h3>
-            <p className="bible-body">The era is one of identity excess. Brands talk more about themselves than their purposes, seeking algorithm recognition rather than substance. The response was to create an anti-brand — an identity that rejects the advertising logic of self-promotion, asserting itself as language, not logo.</p>
-            
-            <p className="bible-body">Unlike a symbol seeking immediate recognition, the ЦАСТРО project (Cyrillic transliteration of CASTRO) proposes anonymity as aesthetic force. The absence of direct identification — the distorted name, foreign alphabet, restrained palette — is a critique of ego-branding culture.</p>
-            
-            <h3 className="bible-subtitle">Visual Language as Resistance</h3>
-            <p className="bible-body">The use of large typography, cool tones (black and white), and archival elements like "1984" and the ™ symbol creates tension between institutional and subversive. This visual irony echoes Orwell, aesthetic glitch, and post-Soviet noise — a statement about branding in collapse.</p>
-            
-            <div className="my-6">
-              <SkillCard
-                title='"LANGUAGE THAT NEEDS JUSTIFICATION HAS ALREADY LOST ITS SILENCE."'
-                content="— ЦАСТРО™"
-              />
-            </div>
-            
-            <p className="bible-body">The ЦАСТРО™ anti-brand doesn't seek commercial legibility, but conceptual recognition. Those who understand the code understand the author. Those who don't remain outside the field — and that's part of the design.</p>
-            
-            <h3 className="bible-title mt-8">THE WORK AS PROTAGONIST</h3>
-            <p className="bible-body mt-4">The central proposition is anonymity as creative ethics. In a world saturated with creator-influencers, the idea is to reverse the equation: it's not about selling the artist's image, but expanding the symbolic field of what they create.</p>
-            <p className="bible-body">Thus, "ЦАСТРО™" becomes a conceptual agent, not a person. A language entity, a thought seal, an invisible signature.</p>
-            <div className="my-4">
-              <SkillCard
-                title='"THE CREATOR DISAPPEARS SO THE WORK CAN SPEAK."'
-                content="— ЦАСТРО™"
-              />
-            </div>
-
-            <h3 className="bible-subtitle">The Semiotics of the Symbol</h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              <SkillCard
-                title="ЦАСТРО"
-                content="Transliteration that creates noise and denies immediate reading — an aesthetic mask"
-              />
-              <SkillCard
-                title="©1984 ЦАСТРО™"
-                content="1984 as Orwell — surveillance, anti-brand, rupture. 1984 as birth — flesh, time, existential mark. Fiction + real life + brand critique + archive protocol"
-              />
-              <SkillCard
-                title="™"
-                content="Irony: the market symbol applied to an anti-brand"
-              />
-              <SkillCard
-                title="Palette"
-                content="Black and white = clash between hardness and clarity; minimalist brutalism"
-              />
-            </div>
-
-            <div className="my-8 p-6 bg-primary/5 border border-primary/20 rounded-lg">
-              <h4 className="bible-subtitle">THE CREATIVE TRIAD</h4>
-              <p className="bible-body mb-4">These are the three pillars of the myth. The three floors of the creative labyrinth:</p>
-              
-              <div className="space-y-3">
-                <div className="border-l-4 border-primary pl-4">
-                  <p className="bible-link font-bold uppercase text-primary">AUTHOR</p>
-                  <p className="bible-link">Founder of CasaTrezeStudio®</p>
+                  <div className="mt-4 pt-4 border-t border-primary/20">
+                    <p className="text-xs font-mono text-muted-foreground leading-snug">Os selos no rodapé — MAD Habit, THEVOID, CasaTreze, LowMovie, LowPressure — não são logos: são <span className="font-bold">alfabetos, runas de um organismo criativo</span> que vive entre o estúdio japonês dos anos 90, o brutalismo Bauhaus e a liturgia punk. Formam uma constelação. Um idioma de sombra. Um campo magnético.</p>
+                  </div>
                 </div>
-                <div className="border-l-4 border-primary pl-4">
-                  <p className="bible-link font-bold uppercase text-primary">COLLECTIVE</p>
-                  <p className="bible-link">Creative Collaborator at LowPressure™</p>
+                
+                <div className="my-8">
+                  <h3 className="bible-subtitle mb-6">O DEVICE OF IDENTITY</h3>
+                  
+                  <div className="grid md:grid-cols-2 gap-6 mb-6">
+                    <SkillCard
+                      title="Cartela de Abertura"
+                      content="Placa soviética arrancada da parede de um cinema abandonado — ainda viva. Documento vazado de um futuro que se recusa a chegar"
+                    />
+                    <SkillCard
+                      title="Relíquia Portal"
+                      content="Rito sem altar. Gesto sem audiência. Presença que não pede permissão"
+                    />
+                  </div>
+                  
+                  <p className="bible-body mb-4">Não é uma abertura corporativa — é um gesto de invocação. Não anuncia produto, convoca atmosfera.</p>
+                  
+                  <div className="border-l-4 border-primary/50 pl-4">
+                    <h5 className="bible-link font-bold uppercase text-primary mb-3">BANDA MITOLÓGICA</h5>
+                    <p className="bible-body text-sm leading-relaxed"><span className="font-bold text-primary">ЦАСТРО™</span> — entidade autoral que opera fora do culto à personalidade. <span className="font-bold text-primary">THEVØIDN13</span> — sombra ativa, framework vivo, sistema operacional do invisível. <span className="font-bold text-primary">LowMovie / LowPressure</span> — corpo social, movimento coletivo sem liderança. <span className="font-bold text-primary">CasaTreze</span> — templo vivo onde a criação acontece como ritual, não como produção.</p>
+                  </div>
                 </div>
-                <div className="border-l-4 border-primary pl-4">
-                  <p className="bible-link font-bold uppercase text-primary">ENTITY</p>
-                  <p className="bible-link">Visual Architect of THEVØIDN13</p>
+
+                <div className="my-6">
+                  <SkillCard
+                    title="ЦАСТРО™ — 1984 → ETERNAMENTE EM PROCESSO."
+                    content=""
+                  />
                 </div>
-              </div>
+              </>
+            }
+            englishContent={
+              <>
+                <SkillCard
+                  title="LANGUAGE, NOT LOGOTYPE."
+                  content="Process, not product."
+                />
+                
+                <h3 className="bible-subtitle">The Context: A Refusal of Traditional Branding</h3>
+                <p className="bible-body">The era is one of excess identity. Brands speak more of themselves than their purposes, seeking algorithmic recognition rather than substance. The response was to create an anti-brand — an identity that rejects advertising logic and affirms itself as language, not logo.</p>
+                
+                <p className="bible-body">Unlike a symbol seeking immediate recognition, the ЦАСТРО project (Cyrillic transliteration of CASTRO) proposes anonymity as aesthetic force. The absence of direct identification — the distorted name, foreign alphabet, contained palette — is a critique of ego-branding culture.</p>
+                
+                <h3 className="bible-subtitle">Visual Language as Resistance</h3>
+                <p className="bible-body">The use of uppercase typography, cold tones (black and white), and archival elements like "1984" and the ™ symbol creates tension between the institutional and the subversive. This visual irony echoes Orwell, aesthetic glitch and post-Soviet noise — a statement about branding in collapse.</p>
+                
+                <div className="my-6">
+                  <SkillCard
+                    title='"LANGUAGE THAT NEEDS JUSTIFICATION HAS ALREADY LOST SILENCE."'
+                    content="— ЦАСТРО™"
+                  />
+                </div>
+                
+                <p className="bible-body">The ЦАСТРО™ anti-brand doesn't seek commercial legibility, but conceptual recognition. Those who understand the code, understand the author. Those who don't, remain outside the field — and that's part of the design.</p>
+                
+                <h3 className="bible-title mt-8">THE WORK AS PROTAGONIST</h3>
+                <p className="bible-body mt-4">The central proposal is anonymity as creative ethics. In a world saturated with creator-influencers, the idea is to invert the equation: it's not about selling the artist's image, but expanding the symbolic field of what they create.</p>
+                <p className="bible-body">Thus, "ЦАСТРО™" becomes a conceptual agent, not a person. A language entity, a thought seal, an invisible signature.</p>
+                <div className="my-4">
+                  <SkillCard
+                    title='"THE CREATOR DISAPPEARS SO THE WORK CAN SPEAK."'
+                    content="— ЦАСТРО™"
+                  />
+                </div>
 
-              <div className="mt-4 pt-4 border-t border-primary/20">
-                <p className="text-xs font-mono text-muted-foreground leading-snug">The seals in the footer — MAD Habit, THEVOID, CasaTreze, LowMovie, LowPressure — are not logos: they are <span className="font-bold">alphabets, runes of a creative organism</span> that lives between the Japanese studio of the 90s, Bauhaus brutalism, and punk liturgy. They form a constellation. A shadow language. A magnetic field.</p>
-              </div>
-            </div>
-            
-            <div className="my-8">
-              <h3 className="bible-subtitle mb-6">THE DEVICE OF IDENTITY</h3>
-              
-              <div className="grid md:grid-cols-2 gap-6 mb-6">
-                <SkillCard
-                  title="Opening Title Card"
-                  content="Soviet plaque torn from the wall of an abandoned cinema — still alive. Leaked document from a future that refuses to arrive"
-                />
-                <SkillCard
-                  title="Portal Relic"
-                  content="Ritual without altar. Gesture without audience. Presence that asks no permission"
-                />
-                <SkillCard
-                  title="ЦАСТРО™"
-                  content="The author who disappears so the work can breathe alone"
-                />
-                <SkillCard
-                  title="THEVØIDN13"
-                  content="The entity-framework, the operating system of shadow"
-                />
-                <SkillCard
-                  title="LowPressure & CasaTreze"
-                  content="The material body and concrete ground where everything anchors"
-                />
-                <SkillCard
-                  title="The Icons"
-                  content="End credits of a film that never stops rolling"
-                />
-              </div>
-            </div>
+                <h3 className="bible-subtitle">The Semiotics of the Symbol</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <SkillCard
+                    title="ЦАСТРО"
+                    content="Transliteration that creates noise and denies immediate reading — an aesthetic mask"
+                  />
+                  <SkillCard
+                    title="©1984 ЦАСТРО™"
+                    content="1984 as Orwell — surveillance, anti-brand, rupture. 1984 as birth — flesh, time, existential mark. Fiction + real life + brand critique + archive protocol"
+                  />
+                  <SkillCard
+                    title="™"
+                    content="Irony: the market symbol applied to an anti-brand"
+                  />
+                  <SkillCard
+                    title="Palette"
+                    content="Black and white = clash between hardness and clarity; minimalist brutalism"
+                  />
+                </div>
 
-            <h2 className="bible-title mt-8 mb-6">THE THREE BANDS</h2>
-            <p className="bible-body mb-6 italic">This seal doesn't certify. It positions on three simultaneous frequencies — as if the same body could play three instruments at once:</p>
-            
-            <div className="space-y-6">
-              <div className="border-l-4 border-primary/50 pl-4">
-                <h5 className="bible-link font-bold uppercase text-primary mb-3">PROFESSIONAL BAND</h5>
-                <p className="bible-body text-sm leading-relaxed">Arts research that doesn't separate theory from practice. Art direction that redesigns the very concept of authorship. Brand systems that function as living language, not dead showcase. Experimental cinema where each frame is a silent manifesto. Universe architecture that breathes on its own. Transdisciplinary creation — because discipline is voluntary imprisonment.</p>
-              </div>
-              
-              <div className="border-l-4 border-primary/50 pl-4">
-                <h5 className="bible-link font-bold uppercase text-primary mb-3">AUTHORIAL BAND</h5>
-                <p className="bible-body text-sm leading-relaxed">Post-Soviet anti-brand — the aesthetics of collapse as starting point. Shadow not as absence of light, but as active presence. Human–AI hybridization where no one knows where one ends and the other begins. Skateboarding as body ethics, movement philosophy, resistance without flag. Portal as work — not what is seen, but what crosses through.</p>
-              </div>
-              
-              <div className="border-l-4 border-primary/50 pl-4">
-                <h5 className="bible-link font-bold uppercase text-primary mb-3">MYTHOLOGICAL BAND</h5>
-                <p className="bible-body text-sm leading-relaxed"><span className="font-bold text-primary">ЦАСТРО™</span> — authorial entity operating outside the cult of personality. <span className="font-bold text-primary">THEVØIDN13</span> — active shadow, living framework, operating system of the invisible. <span className="font-bold text-primary">LowMovie / LowPressure</span> — social body, leaderless collective movement. <span className="font-bold text-primary">CasaTreze</span> — living temple where creation happens as ritual, not production.</p>
-              </div>
-            </div>
+                <div className="my-8 p-6 bg-primary/5 border border-primary/20 rounded-lg">
+                  <h4 className="bible-subtitle">THE CREATIVE TRIAD</h4>
+                  <p className="bible-body mb-4">These are the three pillars of the myth. The three floors of the creative labyrinth:</p>
+                  
+                  <div className="space-y-3">
+                    <div className="border-l-4 border-primary pl-4">
+                      <p className="bible-link font-bold uppercase text-primary">AUTHOR</p>
+                      <p className="bible-link">Founder of CasaTrezeStudio®</p>
+                    </div>
+                    <div className="border-l-4 border-primary pl-4">
+                      <p className="bible-link font-bold uppercase text-primary">COLLECTIVE</p>
+                      <p className="bible-link">Creative Collaborator at LowPressure™</p>
+                    </div>
+                    <div className="border-l-4 border-primary pl-4">
+                      <p className="bible-link font-bold uppercase text-primary">ENTITY</p>
+                      <p className="bible-link">Visual Architect of THEVØIDN13</p>
+                    </div>
+                  </div>
 
-            <div className="my-6">
-              <SkillCard
-                title="ЦАСТРО™ — 1984 → ETERNALLY IN PROCESS."
-                content=""
-              />
-            </div>
-          </div>
+                  <div className="mt-4 pt-4 border-t border-primary/20">
+                    <p className="text-xs font-mono text-muted-foreground leading-snug">The footer seals — MAD Habit, THEVOID, CasaTreze, LowMovie, LowPressure — aren't logos: they are <span className="font-bold">alphabets, runes of a creative organism</span> that lives between 90s Japanese studio, Bauhaus brutalism and punk liturgy. They form a constellation. A shadow idiom. A magnetic field.</p>
+                  </div>
+                </div>
+                
+                <div className="my-8">
+                  <h3 className="bible-subtitle mb-6">THE DEVICE OF IDENTITY</h3>
+                  
+                  <div className="grid md:grid-cols-2 gap-6 mb-6">
+                    <SkillCard
+                      title="Opening Card"
+                      content="Soviet plaque ripped from an abandoned cinema wall — still alive. Leaked document from a future that refuses to arrive"
+                    />
+                    <SkillCard
+                      title="Portal Relic"
+                      content="Ritual without altar. Gesture without audience. Presence that doesn't ask permission"
+                    />
+                  </div>
+                  
+                  <p className="bible-body mb-4">It's not a corporate opening — it's an invocation gesture. It doesn't announce product, it summons atmosphere.</p>
+                  
+                  <div className="border-l-4 border-primary/50 pl-4">
+                    <h5 className="bible-link font-bold uppercase text-primary mb-3">MYTHOLOGICAL BAND</h5>
+                    <p className="bible-body text-sm leading-relaxed"><span className="font-bold text-primary">ЦАСТРО™</span> — authorial entity operating outside the cult of personality. <span className="font-bold text-primary">THEVØIDN13</span> — active shadow, living framework, operating system of the invisible. <span className="font-bold text-primary">LowMovie / LowPressure</span> — social body, leaderless collective movement. <span className="font-bold text-primary">CasaTreze</span> — living temple where creation happens as ritual, not production.</p>
+                  </div>
+                </div>
+
+                <div className="my-6">
+                  <SkillCard
+                    title="ЦАСТРО™ — 1984 → ETERNALLY IN PROCESS."
+                    content=""
+                  />
+                </div>
+              </>
+            }
+          />
         </div>
       </BilingualSection>
 

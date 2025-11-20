@@ -165,6 +165,18 @@ export const ComicGenerator = () => {
     setGeneratedImage(null);
 
     try {
+      // HERO VISUAL REINFORCEMENT - Match hero-rain-wide.png aesthetic EXACTLY
+      const HERO_VISUAL_REINFORCEMENT = `[CRITICAL VISUAL CALIBRATION — MATCH hero-rain-wide.png EXACTLY]
+- Mask finish: MATTE white plastic (NO shine, NO reflection, pure #FFFFFF)
+- Hood texture: Weathered olive-green military fabric (visible wrinkles/stitching)
+- Neon intensity: DIM atmospheric glow (luminosity 30-40%, NOT 80-100%)
+- Color temperature balance: 60% cold teal (#0066CC shadows) + 40% warm orange (#FF6B35 highlights)
+- Film grain: 35mm Kodak Vision3 500T aesthetic (subtle noise, NOT digital clean)
+- Depth of field: f/2.8 equivalent (subject sharp, background defocus)
+- Wet asphalt reflections: MIRROR neon colors with 50% opacity
+- Atmospheric haze: Visible volumetric fog between subject and background
+- Mood calibration: Taxi Driver (1976) meets Blade Runner 2049 — LONELY, NOT EPIC`;
+
       // THEVØIDN13 Shadow Interface Bible v13 - Canonical Cinematic Prompt
       const THEVOIDN13_STYLE = `THEVØIDN13 UNIVERSE — Shadow Interface Bible v13 EXACT PROTOCOL:
 
@@ -204,7 +216,7 @@ ABSOLUTE REQUIREMENTS:
 - NO bright colors except accent red
 - NO happy or optimistic elements`;
       
-      const detailedPrompt = `${THEVOIDN13_STYLE}\n\nSCENE DESCRIPTION: ${trimmedPrompt}`;
+      const detailedPrompt = `${THEVOIDN13_STYLE}\n\n${HERO_VISUAL_REINFORCEMENT}\n\nSCENE DESCRIPTION: ${trimmedPrompt}`;
 
       console.log('Generating THEVØIDN13 cinematic still with canonical parameters...');
       console.log('Prompt length:', detailedPrompt.length, 'chars');
