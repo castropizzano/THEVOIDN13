@@ -164,6 +164,6 @@ Email: fernando.pizzano@estudante.unespar.edu.br
 **Projeto THEVØIDN13** — Memorial Artístico e Práxis Híbrida  
 **Licença:** Creative Commons BY-NC-SA 4.0
 
-Última atualização: Janeiro 2025
+Última atualização: 20 de Novembro de 2025
 
 ───────────────────────────────────────────────────────────────

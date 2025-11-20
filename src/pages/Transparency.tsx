@@ -208,7 +208,7 @@ const Transparency = () => {
                   <p className="font-bold text-primary text-base">✅ What I kept:</p>
                   <ul className="space-y-2 text-muted-foreground">
                     <li>• prompts - AI prompt library (public read-only)</li>
-                    <li>• Puter.js - Client-side image generation (100% free, unlimited, runs in your browser)</li>
+                    <li>• Pollinations.AI - Client-side image generation (FLUX model, 100% free, unlimited, runs in your browser)</li>
                   </ul>
                 </div>
 
