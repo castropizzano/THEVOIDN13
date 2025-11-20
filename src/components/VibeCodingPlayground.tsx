@@ -2,9 +2,6 @@ import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Eye, Copy, Check } from "lucide-react";
 import { BilingualContent } from "./BilingualSection";
 import { useTranslation } from "@/hooks/useTranslation";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -62,8 +59,6 @@ export default function VibeCodingPlayground() {
   const [prompt, setPrompt] = useState("");
   const [output, setOutput] = useState("");
   const [isGenerating, setIsGenerating] = useState(false);
-  const [showPreview, setShowPreview] = useState(false);
-  const [copied, setCopied] = useState(false);
 
   const handleGenerate = () => {
     if (!prompt.trim()) return;
@@ -91,22 +86,6 @@ export default function VibeCodingPlayground() {
   const handleExampleClick = (example: typeof examplePrompts[0]) => {
     setPrompt(language === "pt" ? example.pt : example.en);
     setOutput(example.output);
-  };
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText(output);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-
-  // Convert JSX to HTML for iframe preview
-  const convertJSXtoHTML = (jsxCode: string): string => {
-    return jsxCode
-      .replace(/className=/g, 'class=')
-      .replace(/\/\/.*$/gm, '') // Remove single-line comments
-      .replace(/\{\/\*[\s\S]*?\*\/\}/g, '') // Remove JSX comments
-      .replace(/\{`([^`]*)`\}/g, '$1') // Remove template literal wrappers
-      .trim();
   };
 
   return (
@@ -209,19 +188,10 @@ export default function VibeCodingPlayground() {
               </code>
             </pre>
             {output && (
-              <div className="absolute top-2 right-2 flex gap-2">
+              <div className="absolute top-2 right-2">
                 <div className="bg-primary/20 text-primary text-xs px-2 py-1 rounded font-mono border border-primary/30">
                   {language === "pt" ? "// gerado" : "// generated"}
                 </div>
-                <Button
-                  size="sm"
-                  variant="outline"
-                  onClick={() => setShowPreview(true)}
-                  className="h-6 px-2 text-xs font-mono border-primary/30 hover:border-primary hover:bg-primary/10"
-                >
-                  <Eye className="w-3 h-3 mr-1" />
-                  {language === "pt" ? "VER PREVIEW" : "VIEW PREVIEW"}
-                </Button>
               </div>
             )}
           </div>
@@ -236,99 +206,6 @@ export default function VibeCodingPlayground() {
           </div>
         </Card>
       </div>
-
-      {/* Preview Dialog */}
-      <Dialog open={showPreview} onOpenChange={setShowPreview}>
-        <DialogContent className="max-w-5xl h-[85vh] flex flex-col bg-black/95 border-primary/30">
-          <DialogHeader className="flex flex-row items-center justify-between">
-            <div className="flex-1">
-              <DialogTitle className="font-mono text-primary">
-                {language === "pt" ? "[PREVIEW_VISUAL]" : "[VISUAL_PREVIEW]"}
-                <span className="text-muted-foreground text-xs ml-2">
-                  // {language === "pt" ? "Resultado" : "Result"}
-                </span>
-              </DialogTitle>
-              <DialogDescription className="text-muted-foreground text-xs font-mono mt-1">
-                {language === "pt" ? "// Visualize e copie o código gerado" : "// Preview and copy the generated code"}
-              </DialogDescription>
-            </div>
-            <Button
-              size="sm"
-              variant="outline"
-              onClick={handleCopy}
-              className="h-8 px-3 text-xs font-mono border-primary/30 hover:border-primary hover:bg-primary/10"
-            >
-              {copied ? (
-                <>
-                  <Check className="w-3 h-3 mr-1" />
-                  {language === "pt" ? "Copiado!" : "Copied!"}
-                </>
-              ) : (
-                <>
-                  <Copy className="w-3 h-3 mr-1" />
-                  {language === "pt" ? "Copiar" : "Copy"}
-                </>
-              )}
-            </Button>
-          </DialogHeader>
-
-          <Tabs defaultValue="preview" className="flex-1 flex flex-col">
-            <TabsList className="grid w-full max-w-md grid-cols-2 bg-black/50 border border-primary/30">
-              <TabsTrigger value="preview" className="font-mono text-xs data-[state=active]:bg-primary/20 data-[state=active]:text-primary">
-                {language === "pt" ? "PREVIEW" : "PREVIEW"}
-              </TabsTrigger>
-              <TabsTrigger value="code" className="font-mono text-xs data-[state=active]:bg-primary/20 data-[state=active]:text-primary">
-                {language === "pt" ? "CÓDIGO" : "CODE"}
-              </TabsTrigger>
-            </TabsList>
-
-            <TabsContent value="preview" className="flex-1 mt-4 overflow-hidden">
-              <div className="w-full h-full border border-primary/30 rounded-lg overflow-hidden bg-black">
-                <iframe
-                  srcDoc={`
-                    <!DOCTYPE html>
-                    <html>
-                      <head>
-                        <meta charset="UTF-8">
-                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                        <script src="https://cdn.tailwindcss.com"></script>
-                        <style>
-                          body {
-                            background: #000;
-                            padding: 2rem;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            min-height: 100vh;
-                            margin: 0;
-                          }
-                          * {
-                            font-family: system-ui, -apple-system, sans-serif;
-                          }
-                        </style>
-                       </head>
-                       <body>
-                         ${convertJSXtoHTML(output)}
-                       </body>
-                     </html>
-                   `}
-                  className="w-full h-full"
-                  title="Preview"
-                  sandbox="allow-scripts"
-                />
-              </div>
-            </TabsContent>
-
-            <TabsContent value="code" className="flex-1 mt-4 overflow-auto">
-              <pre className="bg-black/50 border border-primary/30 rounded-lg p-6 h-full overflow-auto">
-                <code className="text-sm font-mono text-foreground">
-                  {output}
-                </code>
-              </pre>
-            </TabsContent>
-          </Tabs>
-        </DialogContent>
-      </Dialog>
 
       {/* Philosophy Connection */}
       <Card className="p-8 bg-gradient-to-br from-background via-background to-primary/5 border-2 border-primary/20 section-title">
