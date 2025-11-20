@@ -312,7 +312,7 @@ export const MindMap = () => {
 
   return (
     <>
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto" data-mindmap>
         <FeatureCard
           title={t("creativeOpsMindMap")}
           description={t("completeEcosystem")}
