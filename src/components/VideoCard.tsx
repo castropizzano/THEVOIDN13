@@ -53,16 +53,22 @@ export const VideoCard = ({ video, language, categoryLabel }: VideoCardProps) =>
         className="group relative cursor-pointer overflow-hidden rounded-lg bg-background border border-border transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/20"
       >
         {/* Thumbnail */}
-        <div className="relative aspect-[21/9] w-full overflow-hidden bg-black">
+        <div className="relative aspect-video w-full overflow-hidden bg-black">
           <img
             src={getThumbnailUrl()}
             alt={title}
             loading="lazy"
-            className="h-full w-full object-contain transition-all duration-500 grayscale group-hover:grayscale-0"
+            className="h-full w-full object-cover object-center transition-all duration-500 grayscale group-hover:grayscale-0"
           />
           
+          {/* Letterbox Overlay - Barras Horizontais */}
+          <div className="absolute inset-0 pointer-events-none">
+            <div className="absolute top-0 left-0 right-0 h-[10%] bg-black" />
+            <div className="absolute bottom-0 left-0 right-0 h-[10%] bg-black" />
+          </div>
+          
           {/* Category Badge - No Rounded, Top Position */}
-          <Badge variant="secondary" className="absolute top-2 left-2 text-xs uppercase tracking-wider rounded-none">
+          <Badge variant="secondary" className="absolute top-2 left-2 text-xs uppercase tracking-wider rounded-none z-10">
             {categoryLabel}
           </Badge>
           
