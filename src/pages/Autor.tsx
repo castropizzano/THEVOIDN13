@@ -380,19 +380,11 @@ DaVinci Resolve"
             <div className="lang-pt">
               <h3 className="bible-subtitle">O SELO-COSMOS: MANDALA BRUTALISTA</h3>
               <p className="bible-body">O que antes era apenas um cluster tipográfico tornou-se agora um <span className="font-bold text-primary">selo–cosmos</span>: uma mandala brutalista de funções, narrativas e identidades orbitando ЦАСТРО™ como se a própria linguagem tivesse encontrado um corpo para respirar.</p>
-...
-                  <p className="bible-link font-bold uppercase">A base sela</p>
-                </div>
-              </div>
             </div>
 
             <div className="lang-en">
               <h3 className="bible-subtitle">THE SEAL-COSMOS: BRUTALIST MANDALA</h3>
               <p className="bible-body">What was once just a typographic cluster has now become a <span className="font-bold text-primary">seal–cosmos</span>: a brutalist mandala of functions, narratives, and identities orbiting ЦАСТРО™ as if language itself had found a body to breathe.</p>
-...
-                  <p className="bible-link font-bold uppercase">The base seals</p>
-                </div>
-              </div>
             </div>
           </div>
 
