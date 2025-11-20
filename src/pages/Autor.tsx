@@ -473,46 +473,28 @@ DaVinci Resolve"
                 </div>
 
                 <div className="my-8 p-6 bg-black/50 border border-primary/20 rounded-lg">
-                  <h4 className="bible-subtitle">AS TRÊS FAIXAS</h4>
-                  <p className="bible-body mb-4">Este selo te posiciona em três faixas impossíveis:</p>
+                  <h4 className="bible-subtitle mb-6">AS TRÊS FAIXAS</h4>
+                  <p className="bible-body mb-6 italic">Este selo não te certifica. Ele te posiciona em três frequências simultâneas — como se o mesmo corpo pudesse tocar três instrumentos ao mesmo tempo:</p>
                   
-                  <div className="grid md:grid-cols-3 gap-4">
-                    <div className="border border-primary/30 p-4 rounded">
-                      <h5 className="bible-link font-bold uppercase text-primary mb-2">FAIXA PROFISSIONAL</h5>
-                      <ul className="space-y-1 text-xs">
-                        <li className="bible-link">Pesquisa em artes</li>
-                        <li className="bible-link">Direção de arte</li>
-                        <li className="bible-link">Sistemas de marca</li>
-                        <li className="bible-link">Cinema experimental</li>
-                        <li className="bible-link">Arquitetura de universos</li>
-                        <li className="bible-link">Criação transdisciplinar</li>
-                      </ul>
+                  <div className="space-y-6">
+                    <div className="border-l-4 border-primary/50 pl-4">
+                      <h5 className="bible-link font-bold uppercase text-primary mb-3">FAIXA PROFISSIONAL</h5>
+                      <p className="bible-body text-sm leading-relaxed">Pesquisa em artes que não separa teoria de prática. Direção de arte que redesenha o próprio conceito de autoria. Sistemas de marca que funcionam como linguagem viva, não vitrine morta. Cinema experimental onde cada frame é um manifesto silencioso. Arquitetura de universos que respiram sozinhos. Criação transdisciplinar — porque disciplina é prisão voluntária.</p>
                     </div>
                     
-                    <div className="border border-primary/30 p-4 rounded">
-                      <h5 className="bible-link font-bold uppercase text-primary mb-2">FAIXA AUTORAL</h5>
-                      <ul className="space-y-1 text-xs">
-                        <li className="bible-link">Anti-brand pós-soviética</li>
-                        <li className="bible-link">Sombra como estética</li>
-                        <li className="bible-link">Hibridização humano–IA</li>
-                        <li className="bible-link">Skate como ética e corpo</li>
-                        <li className="bible-link">Portal como obra</li>
-                      </ul>
+                    <div className="border-l-4 border-primary/50 pl-4">
+                      <h5 className="bible-link font-bold uppercase text-primary mb-3">FAIXA AUTORAL</h5>
+                      <p className="bible-body text-sm leading-relaxed">Anti-brand pós-soviética — a estética do colapso como ponto de partida. Sombra não como ausência de luz, mas como presença ativa. Hibridização humano–IA onde ninguém sabe mais onde termina um e começa o outro. Skate como ética de corpo, filosofia de movimento, resistência sem bandeira. Portal como obra — não o que se vê, mas o que atravessa.</p>
                     </div>
                     
-                    <div className="border border-primary/30 p-4 rounded">
-                      <h5 className="bible-link font-bold uppercase text-primary mb-2">FAIXA MITOLÓGICA</h5>
-                      <ul className="space-y-1 text-xs">
-                        <li className="bible-link">ЦАСТРО™ — entidade autoral</li>
-                        <li className="bible-link">THEVØIDN13 — sombra ativa</li>
-                        <li className="bible-link">LowMovie / LowPressure — corpo social</li>
-                        <li className="bible-link">CasaTreze — templo vivo</li>
-                      </ul>
+                    <div className="border-l-4 border-primary/50 pl-4">
+                      <h5 className="bible-link font-bold uppercase text-primary mb-3">FAIXA MITOLÓGICA</h5>
+                      <p className="bible-body text-sm leading-relaxed"><span className="font-bold text-primary">ЦАСТРО™</span> — entidade autoral que opera fora do culto à personalidade. <span className="font-bold text-primary">THEVØIDN13</span> — sombra ativa, framework vivo, sistema operacional do invisível. <span className="font-bold text-primary">LowMovie / LowPressure</span> — corpo social, movimento coletivo sem líder. <span className="font-bold text-primary">CasaTreze</span> — templo vivo onde a criação acontece como ritual, não como produção.</p>
                     </div>
                   </div>
 
-                  <div className="mt-6 pt-6 border-t border-primary/20 text-center">
-                    <p className="bible-body font-bold italic text-primary">Não existe outro badge igual no Brasil. Porque isso não é um badge: É um Device of Identity.</p>
+                  <div className="mt-6 pt-6 border-t border-primary/20">
+                    <p className="bible-body font-bold italic text-primary text-center">Não existe outro badge igual no Brasil. Porque isso não é um badge: é um dispositivo de identidade em frequência tripla.</p>
                   </div>
                 </div>
 
@@ -621,46 +603,28 @@ DaVinci Resolve"
                 </div>
 
                 <div className="my-8 p-6 bg-black/50 border border-primary/20 rounded-lg">
-                  <h4 className="bible-subtitle">THE THREE BANDS</h4>
-                  <p className="bible-body mb-4">This seal positions you in three impossible bands:</p>
+                  <h4 className="bible-subtitle mb-6">THE THREE BANDS</h4>
+                  <p className="bible-body mb-6 italic">This seal doesn't certify you. It positions you on three simultaneous frequencies — as if the same body could play three instruments at once:</p>
                   
-                  <div className="grid md:grid-cols-3 gap-4">
-                    <div className="border border-primary/30 p-4 rounded">
-                      <h5 className="bible-link font-bold uppercase text-primary mb-2">PROFESSIONAL BAND</h5>
-                      <ul className="space-y-1 text-xs">
-                        <li className="bible-link">Arts research</li>
-                        <li className="bible-link">Art direction</li>
-                        <li className="bible-link">Brand systems</li>
-                        <li className="bible-link">Experimental cinema</li>
-                        <li className="bible-link">Universe architecture</li>
-                        <li className="bible-link">Transdisciplinary creation</li>
-                      </ul>
+                  <div className="space-y-6">
+                    <div className="border-l-4 border-primary/50 pl-4">
+                      <h5 className="bible-link font-bold uppercase text-primary mb-3">PROFESSIONAL BAND</h5>
+                      <p className="bible-body text-sm leading-relaxed">Arts research that doesn't separate theory from practice. Art direction that redesigns the very concept of authorship. Brand systems that function as living language, not dead showcase. Experimental cinema where each frame is a silent manifesto. Universe architecture that breathes on its own. Transdisciplinary creation — because discipline is voluntary imprisonment.</p>
                     </div>
                     
-                    <div className="border border-primary/30 p-4 rounded">
-                      <h5 className="bible-link font-bold uppercase text-primary mb-2">AUTHORIAL BAND</h5>
-                      <ul className="space-y-1 text-xs">
-                        <li className="bible-link">Post-Soviet anti-brand</li>
-                        <li className="bible-link">Shadow as aesthetics</li>
-                        <li className="bible-link">Human–AI hybridization</li>
-                        <li className="bible-link">Skateboarding as ethics and body</li>
-                        <li className="bible-link">Portal as artwork</li>
-                      </ul>
+                    <div className="border-l-4 border-primary/50 pl-4">
+                      <h5 className="bible-link font-bold uppercase text-primary mb-3">AUTHORIAL BAND</h5>
+                      <p className="bible-body text-sm leading-relaxed">Post-Soviet anti-brand — the aesthetics of collapse as starting point. Shadow not as absence of light, but as active presence. Human–AI hybridization where no one knows where one ends and the other begins. Skateboarding as body ethics, movement philosophy, resistance without flag. Portal as work — not what is seen, but what crosses through.</p>
                     </div>
                     
-                    <div className="border border-primary/30 p-4 rounded">
-                      <h5 className="bible-link font-bold uppercase text-primary mb-2">MYTHOLOGICAL BAND</h5>
-                      <ul className="space-y-1 text-xs">
-                        <li className="bible-link">ЦАСТРО™ — authorial entity</li>
-                        <li className="bible-link">THEVØIDN13 — active shadow</li>
-                        <li className="bible-link">LowMovie / LowPressure — social body</li>
-                        <li className="bible-link">CasaTreze — living temple</li>
-                      </ul>
+                    <div className="border-l-4 border-primary/50 pl-4">
+                      <h5 className="bible-link font-bold uppercase text-primary mb-3">MYTHOLOGICAL BAND</h5>
+                      <p className="bible-body text-sm leading-relaxed"><span className="font-bold text-primary">ЦАСТРО™</span> — authorial entity operating outside the cult of personality. <span className="font-bold text-primary">THEVØIDN13</span> — active shadow, living framework, operating system of the invisible. <span className="font-bold text-primary">LowMovie / LowPressure</span> — social body, leaderless collective movement. <span className="font-bold text-primary">CasaTreze</span> — living temple where creation happens as ritual, not production.</p>
                     </div>
                   </div>
 
-                  <div className="mt-6 pt-6 border-t border-primary/20 text-center">
-                    <p className="bible-body font-bold italic text-primary">There is no other badge like this in Brazil. Because this is not a badge: It is a Device of Identity.</p>
+                  <div className="mt-6 pt-6 border-t border-primary/20">
+                    <p className="bible-body font-bold italic text-primary text-center">There is no other badge like this in Brazil. Because this is not a badge: it's an identity device on triple frequency.</p>
                   </div>
                 </div>
 
