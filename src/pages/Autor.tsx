@@ -8,7 +8,6 @@ import { Separator } from "@/components/ui/separator";
 import { PDFViewer } from "@/components/PDFViewer";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { Minimize2 } from "lucide-react";
 import { SkillCard } from "@/components/SkillCard";
 import heroImage from "@/assets/cover-author.png";
@@ -374,8 +373,11 @@ DaVinci Resolve"
                 <h3 className="bible-subtitle">A Linguagem Visual como Resistência</h3>
                 <p className="bible-body">O uso de tipografia em corpo alto, tons frios (preto e branco), e elementos de arquivo como "1984" e o símbolo ™ cria uma tensão entre o institucional e o subversivo. Essa ironia visual ecoa Orwell, glitch estético e ruído pós-soviético — um statement sobre o branding em colapso.</p>
                 
-                <div className="bible-media border-y border-primary/20 text-center">
-                  <p className="bible-body font-bold italic text-primary">"A linguagem que precisa se justificar já perdeu o silêncio."</p>
+                <div className="my-6">
+                  <SkillCard
+                    title='"A LINGUAGEM QUE PRECISA SE JUSTIFICAR JÁ PERDEU O SILÊNCIO."'
+                    content="— ЦАСТРО™"
+                  />
                 </div>
                 
                 <p className="bible-body">A anti-marca ЦАСТРО™ não busca legibilidade comercial, mas reconhecimento conceitual. Quem entende o código, entende o autor. Quem não entende, permanece fora do campo — e isso é parte do design.</p>
@@ -383,8 +385,11 @@ DaVinci Resolve"
                 <h3 className="bible-title mt-8">A OBRA COMO PROTAGONISTA</h3>
                 <p className="bible-body mt-4">A proposta central é o anonimato como ética criativa. Num mundo saturado de criadores-influencers, a ideia é inverter a equação: não se trata de vender a imagem do artista, mas de expandir o campo simbólico do que ele cria.</p>
                 <p className="bible-body">Assim, "ЦАСТРО™" torna-se um agente conceitual, não uma pessoa. Uma entidade de linguagem, um selo de pensamento, uma assinatura invisível.</p>
-                <div className="bible-media">
-                  <p className="bible-body font-bold italic text-primary">"O criador desaparece para que a obra fale."</p>
+                <div className="my-4">
+                  <SkillCard
+                    title='"O CRIADOR DESAPARECE PARA QUE A OBRA FALE."'
+                    content="— ЦАСТРО™"
+                  />
                 </div>
 
                 <h3 className="bible-subtitle">A Semiótica do Símbolo</h3>
@@ -482,10 +487,11 @@ DaVinci Resolve"
                   </div>
                 </div>
 
-                <div className="-mx-6 px-6 py-8 rounded-lg bible-block">
-                  <p className="bible-body mb-4">ЦАСТРО como exercício de negação criativa. Como avesso do branding — para relembrar o que design sempre foi: linguagem viva, manifesto silencioso, resistência sem bandeira.</p>
-                  <p className="bible-body mb-4">A máscara existe para revelar o que já estava lá. O nome respira porque desobedece à lógica da explicação.</p>
-                  <p className="bible-body font-bold text-primary">ЦАСТРО™ — 1984 → ETERNO EM PROCESSO.</p>
+                <div className="my-6">
+                  <SkillCard
+                    title="ЦАСТРО™ — 1984 → ETERNO EM PROCESSO."
+                    content="A máscara existe para revelar o que já estava lá. O nome respira porque desobedece à lógica da explicação."
+                  />
                 </div>
               </div>
             </div>
@@ -502,8 +508,11 @@ DaVinci Resolve"
                 <h3 className="bible-subtitle">Visual Language as Resistance</h3>
                 <p className="bible-body">The use of large typography, cool tones (black and white), and archival elements like "1984" and the ™ symbol creates tension between institutional and subversive. This visual irony echoes Orwell, aesthetic glitch, and post-Soviet noise — a statement about branding in collapse.</p>
                 
-                <div className="my-6 py-6 border-y border-primary/20 text-center">
-                  <p className="bible-body font-bold italic text-primary">"Language that needs justification has already lost its silence."</p>
+                <div className="my-6">
+                  <SkillCard
+                    title='"LANGUAGE THAT NEEDS JUSTIFICATION HAS ALREADY LOST ITS SILENCE."'
+                    content="— ЦАСТРО™"
+                  />
                 </div>
                 
                 <p className="bible-body">The ЦАСТРО™ anti-brand doesn't seek commercial legibility, but conceptual recognition. Those who understand the code understand the author. Those who don't remain outside the field — and that's part of the design.</p>
@@ -511,8 +520,11 @@ DaVinci Resolve"
                 <h3 className="bible-title mt-8">THE WORK AS PROTAGONIST</h3>
                 <p className="bible-body mt-4">The central proposition is anonymity as creative ethics. In a world saturated with creator-influencers, the idea is to reverse the equation: it's not about selling the artist's image, but expanding the symbolic field of what they create.</p>
                 <p className="bible-body">Thus, "ЦАСТРО™" becomes a conceptual agent, not a person. A language entity, a thought seal, an invisible signature.</p>
-                <div className="my-4 py-4">
-                  <p className="bible-body font-bold italic text-primary">"The creator disappears so the work can speak."</p>
+                <div className="my-4">
+                  <SkillCard
+                    title='"THE CREATOR DISAPPEARS SO THE WORK CAN SPEAK."'
+                    content="— ЦАСТРО™"
+                  />
                 </div>
 
                 <h3 className="bible-subtitle">The Semiotics of the Symbol</h3>
@@ -610,10 +622,11 @@ DaVinci Resolve"
                   </div>
                 </div>
 
-                <div className="-mx-6 px-6 py-8 rounded-lg">
-                  <p className="bible-body mb-4">ЦАСТРО as exercise in creative negation. As reverse of branding — to remember what design always was: living language, silent manifesto, resistance without flag.</p>
-                  <p className="bible-body mb-4">The mask exists to reveal what was already there. The name breathes because it disobeys the logic of explanation.</p>
-                  <p className="bible-body font-bold text-primary">ЦАСТРО™ — 1984 → ETERNALLY IN PROCESS.</p>
+                <div className="my-6">
+                  <SkillCard
+                    title="ЦАСТРО™ — 1984 → ETERNALLY IN PROCESS."
+                    content="The mask exists to reveal what was already there. The name breathes because it disobeys the logic of explanation."
+                  />
                 </div>
               </div>
             </div>
@@ -653,14 +666,11 @@ DaVinci Resolve"
                 />
               </div>
 
-              <div className="max-w-4xl mx-auto mt-12">
-                <Card className="bg-black/90 border-l-4 border-primary">
-                  <CardContent className="p-6">
-                    <p className="font-mono text-sm text-primary text-center">
-                      Este memorial não guarda o que passou. Guarda o que ainda pulsa.
-                    </p>
-                  </CardContent>
-                </Card>
+              <div className="my-12">
+                <SkillCard
+                  title="ESTE MEMORIAL NÃO GUARDA O QUE PASSOU."
+                  content="Guarda o que ainda pulsa."
+                />
               </div>
             </div>
 
@@ -685,14 +695,11 @@ DaVinci Resolve"
                 />
               </div>
 
-              <div className="max-w-4xl mx-auto mt-12">
-                <Card className="bg-black/90 border-l-4 border-primary">
-                  <CardContent className="p-6">
-                    <p className="font-mono text-sm text-primary text-center">
-                      This memorial doesn't keep what has passed. It keeps what still pulses.
-                    </p>
-                  </CardContent>
-                </Card>
+              <div className="my-12">
+                <SkillCard
+                  title="THIS MEMORIAL DOESN'T KEEP WHAT HAS PASSED."
+                  content="It keeps what still pulses."
+                />
               </div>
             </div>
           </div>
