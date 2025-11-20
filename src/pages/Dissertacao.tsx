@@ -449,7 +449,7 @@ const Dissertacao = () => {
           </div>
 
           <div className="bible-block">
-            <div className="lang-pt grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="lang-pt grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <SkillCard
                 title="CINE-TRANSE"
                 content="Montagem rítmica que dissolve narrativa linear em experiência sensorial. O filme como portal de imersão no universo LowPressure™."
@@ -472,7 +472,7 @@ const Dissertacao = () => {
               />
             </div>
 
-            <div className="lang-en grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="lang-en grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <SkillCard
                 title="CINE-TRANCE"
                 content="Rhythmic montage that dissolves linear narrative into sensorial experience. The film as an immersion portal into the LowPressure™ universe."
