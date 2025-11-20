@@ -3,23 +3,30 @@ MEMORIAL ARTÍSTICO E PRÁXIS HÍBRIDA (HUMANO + MÁQUINA)
 por Castro Pizzano (цастро™)  
 Curitiba, Brasil — 2025
 
-[![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-grey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-[![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-grey)]()
-[![Mestrado](https://img.shields.io/badge/Mestrado-Pós--Qualificação-grey)]()
-[![Powered by Pollinations.AI](https://img.shields.io/badge/Powered%20by-Pollinations.AI-8b5cf6?style=flat&logo=artifacthub&logoColor=white)](https://pollinations.ai/)
+[![Version](https://img.shields.io/badge/Version-2.1.0-A32424?style=for-the-badge&logo=git&logoColor=white)](PROJECT_STATUS.md)
+[![License](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-A32424?style=for-the-badge&logo=creativecommons&logoColor=white)](LICENSE.md)
+[![Status](https://img.shields.io/badge/Status-Production_Ready-00d26a?style=for-the-badge&logo=rocket&logoColor=white)](PROJECT_STATUS.md)
+[![Mestrado](https://img.shields.io/badge/Mestrado-Pós--Qualificação-323A46?style=for-the-badge&logo=graduationcap&logoColor=white)]()
 
-### 🔍 AUDIT STATUS
-[![Production](https://img.shields.io/badge/Production-APPROVED-00d26a?style=for-the-badge&logo=checkmarx&logoColor=white)](AUDIT_REPORT_2025.md)
-[![Audit Score](https://img.shields.io/badge/Audit_Score-95%2F100-00d26a?style=for-the-badge&logo=codecov&logoColor=white)](AUDIT_REPORT_2025.md)
-[![Bible v13](https://img.shields.io/badge/Bible_v13-100%25-00d26a?style=for-the-badge&logo=react&logoColor=white)](TYPOGRAPHY_GUIDE.md)
-[![Code Quality](https://img.shields.io/badge/Code_Quality-CLEAN-00d26a?style=for-the-badge&logo=eslint&logoColor=white)](#)
+### 🔒 PRIVACY & SECURITY
+[![Zero Surveillance](https://img.shields.io/badge/🔒_Zero_Surveillance-No_Tracking-00d26a?style=for-the-badge)](SECURITY.md)
+[![Zero Cookies](https://img.shields.io/badge/🍪_Zero_Cookies-Privacy_First-00d26a?style=for-the-badge)](src/components/PrivacyPolicyDialog.tsx)
+[![Security Score](https://img.shields.io/badge/Security-98%2F100-00d26a?style=for-the-badge&logo=shield&logoColor=white)](SECURITY.md)
+[![LGPD Compliant](https://img.shields.io/badge/LGPD%2FGDPR-Compliant-00d26a?style=for-the-badge&logo=data&logoColor=white)](SECURITY.md)
+
+### 🎯 QUALITY & CERTIFICATION
+[![Production Ready](https://img.shields.io/badge/Production-CERTIFIED-00d26a?style=for-the-badge&logo=checkmarx&logoColor=white)](PROJECT_STATUS.md)
+[![RLS Coverage](https://img.shields.io/badge/RLS_Coverage-100%25-00d26a?style=for-the-badge&logo=database&logoColor=white)](SECURITY.md)
+[![OWASP Protected](https://img.shields.io/badge/OWASP_Top_10-Protected-00d26a?style=for-the-badge&logo=owasp&logoColor=white)](SECURITY.md)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Zero_Errors-3178c6?style=for-the-badge&logo=typescript&logoColor=white)](#)
+[![Bible v13](https://img.shields.io/badge/Bible_v13-100%25_Compliant-A32424?style=for-the-badge&logo=markdown&logoColor=white)](TYPOGRAPHY_GUIDE.md)
 
-### 🔒 SECURITY STATUS
-[![Security Score](https://img.shields.io/badge/Security-98%2F100-success?style=for-the-badge&logo=shield&logoColor=white)](./SECURITY.md)
-[![Production Ready](https://img.shields.io/badge/Status-Production%20Ready-success?style=for-the-badge)](./docs/SECURITY_CERTIFICATE.md)
-[![RLS Enabled](https://img.shields.io/badge/RLS-100%25%20Coverage-success?style=for-the-badge)](./docs/SECURITY_CERTIFICATE.md)
-[![OWASP](https://img.shields.io/badge/OWASP%20Top%2010-Protected-success?style=for-the-badge)](./docs/SECURITY_CERTIFICATE.md)
+### 🛠️ TECHNOLOGY
+[![React](https://img.shields.io/badge/React-18.3.1-61dafb?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org)
+[![Vite](https://img.shields.io/badge/Vite-5.x-646cff?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.x-38bdf8?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![Pollinations.AI](https://img.shields.io/badge/Pollinations.AI-FLUX_Model-8b5cf6?style=for-the-badge&logo=openai&logoColor=white)](https://pollinations.ai/)
 
 ───────────────────────────────────────────────────────────────
 (EN)  
