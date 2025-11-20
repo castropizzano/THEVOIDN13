@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
@@ -149,6 +149,8 @@ const InterviewCard = ({
 
 export const InterviewsTabs = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [direction, setDirection] = useState<'next' | 'prev'>('next');
 
   const zineImages = [
     zine01, zine02, zine03, zine04, zine05, 
@@ -157,16 +159,48 @@ export const InterviewsTabs = () => {
   ];
 
   const nextImage = () => {
-    if (currentImageIndex < zineImages.length - 1) {
-      setCurrentImageIndex(prev => prev + 1);
+    if (currentImageIndex < zineImages.length - 1 && !isTransitioning) {
+      setIsTransitioning(true);
+      setDirection('next');
+      setTimeout(() => {
+        setCurrentImageIndex(prev => prev + 1);
+        setIsTransitioning(false);
+      }, 150);
     }
   };
 
   const prevImage = () => {
-    if (currentImageIndex > 0) {
-      setCurrentImageIndex(prev => prev - 1);
+    if (currentImageIndex > 0 && !isTransitioning) {
+      setIsTransitioning(true);
+      setDirection('prev');
+      setTimeout(() => {
+        setCurrentImageIndex(prev => prev - 1);
+        setIsTransitioning(false);
+      }, 150);
     }
   };
+
+  // Navegação por teclado
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowLeft') {
+        prevImage();
+      } else if (e.key === 'ArrowRight') {
+        nextImage();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [currentImageIndex, isTransitioning]);
+
+  // Pré-carregar próxima imagem
+  useEffect(() => {
+    if (currentImageIndex < zineImages.length - 1) {
+      const img = new Image();
+      img.src = zineImages[currentImageIndex + 1];
+    }
+  }, [currentImageIndex]);
 
   return (
     <section className="w-full bible-section">
@@ -346,53 +380,102 @@ export const InterviewsTabs = () => {
             <CardContent>
               {/* Slider de página única */}
               <div className="relative w-full">
-                {/* Botão Anterior */}
+                {/* Botão Anterior - Design melhorado */}
                 {currentImageIndex > 0 && (
                   <Button
                     onClick={prevImage}
+                    disabled={isTransitioning}
                     variant="ghost"
                     size="icon"
-                    className="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white bg-black/50 hover:bg-black/70 h-12 w-12"
+                    className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-10 
+                               h-14 w-14 rounded-full
+                               bg-black/70 hover:bg-black/90 
+                               border-2 border-white/20 hover:border-white/40
+                               shadow-xl hover:shadow-2xl
+                               backdrop-blur-sm
+                               transition-all duration-300 ease-out
+                               hover:scale-110 active:scale-95
+                               disabled:opacity-50 disabled:cursor-not-allowed
+                               group"
+                    aria-label="Página anterior"
                   >
-                    <ChevronLeft className="h-8 w-8" />
+                    <ChevronLeft className="h-8 w-8 text-white group-hover:translate-x-[-2px] transition-transform" />
                   </Button>
                 )}
 
-                {/* Imagem em proporção real */}
-                <div className="w-full bg-black/5 rounded-lg overflow-hidden border border-border/50 flex items-center justify-center">
+                {/* Imagem com animação de transição */}
+                <div className="w-full bg-black/5 rounded-lg overflow-hidden border border-border/50 flex items-center justify-center min-h-[400px]">
                   <img
                     src={zineImages[currentImageIndex]}
                     alt={`LowZine página ${currentImageIndex + 1}`}
-                    className="w-full h-auto object-contain grayscale hover:grayscale-0 transition-all duration-500"
+                    className={`w-full h-auto object-contain 
+                                grayscale hover:grayscale-0 
+                                transition-all duration-300
+                                ${isTransitioning 
+                                  ? direction === 'next' 
+                                    ? 'animate-[fadeOut_150ms_ease-out]' 
+                                    : 'animate-[fadeOut_150ms_ease-out]'
+                                  : 'animate-[fadeIn_300ms_ease-in]'
+                                }`}
                   />
                 </div>
 
-                {/* Botão Próximo */}
+                {/* Botão Próximo - Design melhorado */}
                 {currentImageIndex < zineImages.length - 1 && (
                   <Button
                     onClick={nextImage}
+                    disabled={isTransitioning}
                     variant="ghost"
                     size="icon"
-                    className="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white bg-black/50 hover:bg-black/70 h-12 w-12"
+                    className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-10 
+                               h-14 w-14 rounded-full
+                               bg-black/70 hover:bg-black/90 
+                               border-2 border-white/20 hover:border-white/40
+                               shadow-xl hover:shadow-2xl
+                               backdrop-blur-sm
+                               transition-all duration-300 ease-out
+                               hover:scale-110 active:scale-95
+                               disabled:opacity-50 disabled:cursor-not-allowed
+                               group"
+                    aria-label="Próxima página"
                   >
-                    <ChevronRight className="h-8 w-8" />
+                    <ChevronRight className="h-8 w-8 text-white group-hover:translate-x-[2px] transition-transform" />
                   </Button>
                 )}
 
-                {/* Indicadores de progresso */}
-                <div className="flex justify-center gap-1 mt-4">
+                {/* Indicadores de progresso melhorados */}
+                <div className="flex justify-center gap-2 mt-6">
                   {zineImages.map((_, index) => (
                     <button
                       key={index}
-                      onClick={() => setCurrentImageIndex(index)}
-                      className={`h-2 rounded-full transition-all ${
-                        index === currentImageIndex 
-                          ? 'w-8 bg-primary' 
-                          : 'w-2 bg-border/50 hover:bg-border'
-                      }`}
+                      onClick={() => {
+                        if (!isTransitioning && index !== currentImageIndex) {
+                          setIsTransitioning(true);
+                          setDirection(index > currentImageIndex ? 'next' : 'prev');
+                          setTimeout(() => {
+                            setCurrentImageIndex(index);
+                            setIsTransitioning(false);
+                          }, 150);
+                        }
+                      }}
+                      disabled={isTransitioning}
+                      className={`rounded-full transition-all duration-300 ease-out
+                                  ${index === currentImageIndex 
+                                    ? 'w-10 h-3 bg-primary shadow-lg' 
+                                    : 'w-3 h-3 bg-border/50 hover:bg-primary/50 hover:scale-125'
+                                  }
+                                  disabled:cursor-not-allowed`}
                       aria-label={`Ir para página ${index + 1}`}
+                      aria-current={index === currentImageIndex ? 'true' : 'false'}
                     />
                   ))}
+                </div>
+
+                {/* Contador de páginas (pequeno e discreto) */}
+                <div className="text-center mt-4">
+                  <span className="bible-caption text-muted-foreground">
+                    {currentImageIndex + 1} / {zineImages.length}
+                  </span>
                 </div>
               </div>
             </CardContent>
