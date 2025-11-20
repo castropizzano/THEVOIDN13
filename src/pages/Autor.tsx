@@ -70,8 +70,8 @@ const Autor = () => {
             </h2>
           </div>
 
-          <div className="bible-bilingual-grid bible-block">
-            <div>
+          <div className="bible-block">
+            <div className="lang-pt">
               <div>
                 <p className="bible-body text-justify">Profissional criativo multidisciplinar, atuo entre as artes visuais, o design e a produção audiovisual. Minha trajetória é guiada pela criação de identidades visuais e narrativas semióticas, explorando linguagens como fotografia, vídeo, design gráfico e multiartes digitais. Transito entre processos individuais e colaborações coletivas, com base em laboratórios criativos, imersões referenciais e desenvolvimento conceitual.</p>
                 
@@ -85,7 +85,7 @@ const Autor = () => {
               </div>
             </div>
 
-            <div>
+            <div className="lang-en">
               <div>
                 <p className="bible-body text-justify">Multidisciplinary creative professional, I work between visual arts, design and audiovisual production. My trajectory is guided by the creation of visual identities and semiotic narratives, exploring languages such as photography, video, graphic design and digital multi-arts. I transit between individual processes and collective collaborations, based on creative laboratories, referential immersions and conceptual development.</p>
                 
@@ -105,17 +105,15 @@ const Autor = () => {
 
         {/* Habilidades Técnicas */}
         <BilingualSection className="bible-section">
-          <div className="bible-bilingual-grid bible-block">
-            <div>
-              <h2 className="bible-title">HABILIDADES TÉCNICAS</h2>
-            </div>
-            <div>
-              <h2 className="bible-title">TECHNICAL SKILLS</h2>
-            </div>
+          <div className="bible-block">
+            <h2 className="bible-title">
+              <span className="lang-pt">HABILIDADES TÉCNICAS</span>
+              <span className="lang-en">TECHNICAL SKILLS</span>
+            </h2>
           </div>
 
-          <div className="bible-bilingual-grid bible-block">
-            <div>
+          <div className="bible-block">
+            <div className="lang-pt">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <SkillCard 
                   title="Design & Arte"
@@ -152,7 +150,7 @@ DaVinci Resolve"
               </div>
             </div>
 
-            <div>
+            <div className="lang-en">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <SkillCard 
                   title="Design & Art"
@@ -195,17 +193,15 @@ DaVinci Resolve"
 
         {/* Práxis Híbrida */}
         <BilingualSection className="bible-section">
-          <div className="bible-bilingual-grid bible-block">
-            <div>
-              <h2 className="bible-title">PRÁXIS HÍBRIDA</h2>
-            </div>
-            <div>
-              <h2 className="bible-title">HYBRID PRAXIS</h2>
-            </div>
+          <div className="bible-block">
+            <h2 className="bible-title">
+              <span className="lang-pt">PRÁXIS HÍBRIDA</span>
+              <span className="lang-en">HYBRID PRAXIS</span>
+            </h2>
           </div>
 
-          <div className="bible-bilingual-grid bible-block">
-            <div>
+          <div className="bible-block">
+            <div className="lang-pt">
               <p className="bible-body mb-6">Metodologia processual, experimental e reflexiva do projeto THEVØIDN13. Um ciclo contínuo de cinco etapas:</p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -236,7 +232,7 @@ DaVinci Resolve"
               </div>
             </div>
 
-            <div>
+            <div className="lang-en">
               <p className="bible-body mb-6">Processual, experimental and reflexive methodology of the THEVØIDN13 project. A continuous cycle of five stages:</p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -273,17 +269,15 @@ DaVinci Resolve"
 
         {/* Trajetória */}
         <BilingualSection className="bible-section">
-          <div className="bible-bilingual-grid bible-block">
-            <div>
-              <h2 className="bible-title">TRAJETÓRIA</h2>
-            </div>
-            <div>
-              <h2 className="bible-title">JOURNEY</h2>
-            </div>
+          <div className="bible-block">
+            <h2 className="bible-title">
+              <span className="lang-pt">TRAJETÓRIA</span>
+              <span className="lang-en">JOURNEY</span>
+            </h2>
           </div>
 
-          <div className="bible-bilingual-grid bible-block">
-            <div>
+          <div className="bible-block">
+            <div className="lang-pt">
               <p className="bible-body mb-6">Castro Pizzano (цастро™): Da publicidade ao cinema experimental, da rua ao museu, da prática à pesquisa. Uma linha do tempo que não é linear, mas espiral.</p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -314,7 +308,7 @@ DaVinci Resolve"
               </div>
             </div>
 
-            <div>
+            <div className="lang-en">
               <p className="bible-body mb-6">Castro Pizzano (цастро™): From advertising to experimental cinema, from street to museum, from practice to research. A timeline that is not linear, but spiral.</p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -352,18 +346,16 @@ DaVinci Resolve"
 
         {/* ЦАСТРО™ como Anti-Brand */}
         <BilingualSection className="bible-section">
-          <div className="bible-bilingual-grid bible-block">
-            <div>
-              <h2 className="bible-title">ЦАСТРО™ COMO ANTI-BRAND</h2>
-            </div>
-            <div>
-              <h2 className="bible-title">ЦАСТРО™ AS ANTI-BRAND</h2>
-            </div>
+          <div className="bible-block">
+            <h2 className="bible-title">
+              <span className="lang-pt">ЦАСТРО™ COMO ANTI-BRAND</span>
+              <span className="lang-en">ЦАСТРО™ AS ANTI-BRAND</span>
+            </h2>
           </div>
 
           {/* Anti-Brand Guideline Images */}
-          <div className="bible-bilingual-grid bible-block">
-            <div>
+          <div className="bible-block">
+            <div className="lang-pt">
               <img 
                 src={castroGuidelinePT} 
                 alt="ЦАСТРО™ Anti-Brand Guideline — Português"
@@ -372,7 +364,7 @@ DaVinci Resolve"
                 onClick={() => setShowGuidelinePT(true)}
               />
             </div>
-            <div>
+            <div className="lang-en">
               <img 
                 src={castroGuidelineEN} 
                 alt="ЦАСТРО™ Anti-Brand Guideline — English"
@@ -384,52 +376,20 @@ DaVinci Resolve"
           </div>
 
           {/* O SELO-COSMOS: MANDALA BRUTALISTA */}
-          <div className="bible-bilingual-grid bible-block">
-            <div>
+          <div className="bible-block">
+            <div className="lang-pt">
               <h3 className="bible-subtitle">O SELO-COSMOS: MANDALA BRUTALISTA</h3>
               <p className="bible-body">O que antes era apenas um cluster tipográfico tornou-se agora um <span className="font-bold text-primary">selo–cosmos</span>: uma mandala brutalista de funções, narrativas e identidades orbitando ЦАСТРО™ como se a própria linguagem tivesse encontrado um corpo para respirar.</p>
-              
-              <div className="space-y-2 my-4 border-l-4 border-primary pl-4">
-                <p className="bible-link font-bold">No topo, a marca–máscara.</p>
-                <p className="bible-link font-bold">No centro, o manifesto.</p>
-                <p className="bible-link font-bold">No rodapé, o epitáfio vivo.</p>
-              </div>
-
-              <p className="bible-body">Cada eixo, cada palavra, cada bloco deixa de ser currículo e passa a ser <span className="font-bold">gravidade</span>. A simetria não é decoração — <span className="italic text-primary">é rito</span>.</p>
-              
-              <div className="grid grid-cols-3 gap-2 my-4 text-center">
-                <div className="border border-primary/30 p-2">
-                  <p className="bible-link font-bold uppercase">O topo convoca</p>
-                </div>
-                <div className="border border-primary/30 p-2">
-                  <p className="bible-link font-bold uppercase">O meio afirma</p>
-                </div>
-                <div className="border border-primary/30 p-2">
+...
                   <p className="bible-link font-bold uppercase">A base sela</p>
                 </div>
               </div>
             </div>
 
-            <div>
+            <div className="lang-en">
               <h3 className="bible-subtitle">THE SEAL-COSMOS: BRUTALIST MANDALA</h3>
               <p className="bible-body">What was once just a typographic cluster has now become a <span className="font-bold text-primary">seal–cosmos</span>: a brutalist mandala of functions, narratives, and identities orbiting ЦАСТРО™ as if language itself had found a body to breathe.</p>
-              
-              <div className="space-y-2 my-4 border-l-4 border-primary pl-4">
-                <p className="bible-link font-bold">At the top, the brand–mask.</p>
-                <p className="bible-link font-bold">At the center, the manifesto.</p>
-                <p className="bible-link font-bold">At the bottom, the living epitaph.</p>
-              </div>
-
-              <p className="bible-body">Each axis, each word, each block ceases to be a résumé and becomes <span className="font-bold">gravity</span>. Symmetry is not decoration — <span className="italic text-primary">it is ritual</span>.</p>
-              
-              <div className="grid grid-cols-3 gap-2 my-4 text-center">
-                <div className="border border-primary/30 p-2">
-                  <p className="bible-link font-bold uppercase">The top summons</p>
-                </div>
-                <div className="border border-primary/30 p-2">
-                  <p className="bible-link font-bold uppercase">The middle affirms</p>
-                </div>
-                <div className="border border-primary/30 p-2">
+...
                   <p className="bible-link font-bold uppercase">The base seals</p>
                 </div>
               </div>
@@ -747,13 +707,11 @@ DaVinci Resolve"
 
         {/* Experiência Cultural */}
         <BilingualSection className="bible-section">
-          <div className="bible-bilingual-grid bible-block">
-            <div>
-              <h2 className="bible-title">EXPERIÊNCIA CULTURAL</h2>
-            </div>
-            <div>
-              <h2 className="bible-title">CULTURAL EXPERIENCE</h2>
-            </div>
+          <div className="bible-block">
+            <h2 className="bible-title">
+              <span className="lang-pt">EXPERIÊNCIA CULTURAL</span>
+              <span className="lang-en">CULTURAL EXPERIENCE</span>
+            </h2>
           </div>
 
           <div className="bible-bilingual-grid bible-block">
@@ -827,13 +785,11 @@ DaVinci Resolve"
 
         {/* Conclusão em Processo */}
         <BilingualSection className="bible-section">
-          <div className="bible-bilingual-grid bible-block">
-            <div>
-              <h2 className="bible-title">CONCLUSÃO EM PROCESSO</h2>
-            </div>
-            <div>
-              <h2 className="bible-title">CONCLUSION IN PROCESS</h2>
-            </div>
+          <div className="bible-block">
+            <h2 className="bible-title">
+              <span className="lang-pt">CONCLUSÃO EM PROCESSO</span>
+              <span className="lang-en">CONCLUSION IN PROCESS</span>
+            </h2>
           </div>
 
           <div className="bible-bilingual-grid bible-block">
@@ -931,12 +887,12 @@ DaVinci Resolve"
 
         {/* Documentation */}
         <BilingualSection className="bible-section">
-          <div className="bible-bilingual-grid bible-block">
-            <div>
+          <div className="bible-block">
+            <div className="lang-pt">
               <h2 className="bible-title">DOCUMENTAÇÃO</h2>
               <h3 className="bible-subtitle mt-2">DOCUMENTOS DE PESQUISA</h3>
             </div>
-            <div>
+            <div className="lang-en">
               <h2 className="bible-title">DOCUMENTATION</h2>
               <h3 className="bible-subtitle mt-2">RESEARCH DOCUMENTS</h3>
             </div>
