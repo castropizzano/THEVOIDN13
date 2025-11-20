@@ -107,12 +107,6 @@ export const MusicPlayer = () => {
             </div>
           </TabsContent>
           </Tabs>
-
-          <div className="bible-media p-6 bg-secondary/10 rounded-lg border border-primary/10">
-            <p className="text-sm text-center text-muted-foreground leading-relaxed">
-              <strong className="text-foreground">Nota de Escuta:</strong> Acione o som antes da próxima respiração. Deixe as frequências guiarem sua atenção.
-            </p>
-          </div>
         </Card>
       </div>
     </section>
