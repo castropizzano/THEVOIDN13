@@ -14,6 +14,11 @@ const FORBIDDEN_PATTERNS = [
   /data:text\/html/gi
 ];
 
+// Rate limiting configuration
+const RATE_LIMIT_WINDOW_MS = 60000; // 1 minute
+const MAX_REQUESTS_PER_WINDOW = 5; // Max 5 requests per minute per IP
+const rateLimits = new Map<string, number[]>();
+
 function validatePrompt(prompt: string): { valid: boolean; error?: string } {
   if (typeof prompt !== 'string') {
     return { valid: false, error: 'Prompt must be a string' };
@@ -45,6 +50,45 @@ serve(async (req) => {
   }
 
   try {
+    // Rate limiting by IP address
+    const clientIP = req.headers.get('x-forwarded-for')?.split(',')[0].trim() || 
+                     req.headers.get('x-real-ip') || 
+                     'unknown';
+    
+    const now = Date.now();
+    const requests = rateLimits.get(clientIP) || [];
+    const recentRequests = requests.filter(time => now - time < RATE_LIMIT_WINDOW_MS);
+    
+    if (recentRequests.length >= MAX_REQUESTS_PER_WINDOW) {
+      console.warn(`Rate limit exceeded for IP: ${clientIP}`);
+      return new Response(
+        JSON.stringify({ 
+          error: 'Rate limit exceeded. Please wait before making another request.',
+          retryAfter: Math.ceil((recentRequests[0] + RATE_LIMIT_WINDOW_MS - now) / 1000)
+        }),
+        { 
+          status: 429, 
+          headers: { 
+            ...corsHeaders, 
+            'Content-Type': 'application/json',
+            'Retry-After': String(Math.ceil((recentRequests[0] + RATE_LIMIT_WINDOW_MS - now) / 1000))
+          } 
+        }
+      );
+    }
+    
+    // Update rate limit tracker
+    rateLimits.set(clientIP, [...recentRequests, now]);
+    
+    // Clean up old entries periodically (keep map size manageable)
+    if (rateLimits.size > 1000) {
+      for (const [ip, times] of rateLimits.entries()) {
+        if (times.every(t => now - t > RATE_LIMIT_WINDOW_MS)) {
+          rateLimits.delete(ip);
+        }
+      }
+    }
+
     const { prompt } = await req.json();
     
     // Validate input FIRST
