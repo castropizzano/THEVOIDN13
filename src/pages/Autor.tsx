@@ -751,7 +751,7 @@ DaVinci Resolve"
                 <p className="bible-body">A relevância está em provar que é possível fazer pesquisa acadêmica rigorosa sem abrir mão da experimentação radical. Que é possível ser metodologicamente sólido e esteticamente arriscado ao mesmo tempo. Que o mestrado pode ser dissertação <span className="font-bold">e</span> obra. Que o memorial pode ser texto <span className="font-bold">e</span> experiência.</p>
                 
                 <h3 className="bible-subtitle">Experimentação Permanente</h3>
-                <p className="bible-body">Este não é um trabalho concluído. Este é um trabalho <span className="italic">em conclusão perpétua</span>. O portal será atualizado. Novos prompts serão testados. Novos capítulos do universo THEVØIDN13 surgirão. A metodologia será refinada enquanto permanece aberta.</p>
+                <p className="bible-body">Este não é um trabalho concluído. Este é um trabalho <span className="italic">que não se fecha</span>. O portal será atualizado. Novos prompts serão testados. Novos capítulos do universo THEVØIDN13 surgirão. A metodologia será refinada enquanto permanece aberta.</p>
                 
                 <p className="bible-body">Aprendi neste processo que a verdadeira inteligência — humana ou artificial — não está em chegar a respostas definitivas. Está em continuar fazendo perguntas melhores. E fazer perguntas melhores exige coragem para experimentar, falhar, tentar de novo.</p>
                 
@@ -791,7 +791,7 @@ DaVinci Resolve"
                 <p className="bible-body">The relevance lies in proving that it's possible to do rigorous academic research without giving up radical experimentation. That it's possible to be methodologically solid and aesthetically risky at the same time. That the master's can be dissertation <span className="font-bold">and</span> work. That the memorial can be text <span className="font-bold">and</span> experience.</p>
                 
                 <h3 className="bible-subtitle">Permanent Experimentation</h3>
-                <p className="bible-body">This is not a finished work. This is a work <span className="italic">in perpetual conclusion</span>. The portal will be updated. New prompts will be tested. New chapters of the THEVØIDN13 universe will emerge. The methodology will be refined while remaining open.</p>
+                <p className="bible-body">This is not a finished work. This is a work <span className="italic">that doesn't close</span>. The portal will be updated. New prompts will be tested. New chapters of the THEVØIDN13 universe will emerge. The methodology will be refined while remaining open.</p>
                 
                 <p className="bible-body">Because what I learned in this process is that true intelligence — human or artificial — is not in reaching definitive answers. It's in continuing to ask better questions. And asking better questions requires courage to experiment, fail, try again.</p>
                 
