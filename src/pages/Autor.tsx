@@ -363,7 +363,12 @@ DaVinci Resolve"
           <div className="bible-bilingual-grid bible-block">
             <div>
               <div>
-                <h3 className="bible-subtitle text-primary">Linguagem, não logotipo. Processo, não produto.</h3>
+                <div className="my-6">
+                  <SkillCard
+                    title="LINGUAGEM, NÃO LOGOTIPO."
+                    content="Processo, não produto."
+                  />
+                </div>
                 
                 <h3 className="bible-subtitle">O Contexto: Uma Recusa ao Branding Tradicional</h3>
                 <p className="bible-body">A era é de excesso de identidade. Marcas falam mais de si do que de seus propósitos, buscam reconhecimento pelo algoritmo e não pela substância. A resposta foi criar uma anti-marca — uma identidade que rejeita a lógica publicitária e se afirma como linguagem, não logotipo.</p>
@@ -498,7 +503,12 @@ DaVinci Resolve"
 
             <div>
               <div>
-                <h3 className="bible-subtitle text-primary">Language, not logo. Process, not product.</h3>
+                <div className="my-6">
+                  <SkillCard
+                    title="LANGUAGE, NOT LOGO."
+                    content="Process, not product."
+                  />
+                </div>
                 
                 <h3 className="bible-subtitle">The Context: A Refusal of Traditional Branding</h3>
                 <p className="bible-body">The era is one of identity excess. Brands talk more about themselves than their purposes, seeking algorithm recognition rather than substance. The response was to create an anti-brand — an identity that rejects the advertising logic of self-promotion, asserting itself as language, not logo.</p>
