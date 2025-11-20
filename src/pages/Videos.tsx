@@ -96,7 +96,7 @@ const curatedVideos: CuratedVideo[] = [
     subtitle: { pt: "FCC", en: "FCC" },
     year: "2019", 
     category: "documentário",
-    objectPosition: "center 62%"
+    objectPosition: "center 68%"
   }
 ];
 
