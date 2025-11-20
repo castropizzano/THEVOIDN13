@@ -284,8 +284,8 @@ export const ComicGenerator = () => {
                 </p>
                 <p className="text-xs text-muted-foreground">
                   {language === "pt"
-                    ? "Parâmetros canônicos: 16:9 | modelo google/gemini-2.5-flash-image-preview"
-                    : "Canonical parameters: 16:9 | google/gemini-2.5-flash-image-preview model"}
+                    ? "Parâmetros canônicos: 1024x1024 | modelo flux.1-schnell via Puter.js (gratuito e ilimitado)"
+                    : "Canonical parameters: 1024x1024 | flux.1-schnell model via Puter.js (free & unlimited)"}
                 </p>
               </div>
             </div>

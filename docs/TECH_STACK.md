@@ -23,20 +23,21 @@ Este documento descreve a infraestrutura técnica do memorial THEVOIDN13.
 ```
 THEVOIDN13 Memorial
 │
-├─ [FRONTEND] React + TypeScript
+├─ [FRONTEND] React + TypeScript (100% Estático)
 │  ├─ Vite (build tool)
 │  ├─ React Router (navegação)
 │  ├─ Tailwind CSS (design system)
-│  └─ shadcn/ui (componentes)
+│  ├─ shadcn/ui (componentes)
+│  └─ Puter.js (geração de imagens IA)
 │
-├─ [BACKEND] Lovable Cloud (Supabase)
-│  ├─ Edge Functions (Deno)
+├─ [BACKEND] Lovable Cloud (Supabase) - MÍNIMO
 │  ├─ Secrets Management
 │  └─ Vimeo API Integration
 │
 ├─ [CO-CRIAÇÃO] Humano + IA
-│  ├─ Lovable AI (Claude, Gemini)
-│  ├─ Midjourney (imagens)
+│  ├─ Lovable AI (Claude, Gemini) - desenvolvimento
+│  ├─ Puter.js FLUX.1-Schnell - geração de stills pelos usuários
+│  ├─ Midjourney (imagens conceituais)
 │  └─ Adobe Creative Cloud (edição)
 │
 ├─ [HOSPEDAGEM] Lovable Platform
@@ -163,8 +164,52 @@ Configurados via Lovable Cloud:
 - `VIMEO_ACCESS_TOKEN` → API do Vimeo
 - `SUPABASE_*` → Auto-configurados
 
+### Geração de Imagens com IA (Puter.js)
+
+**Plataforma:** Puter.js  
+**Modelo:** FLUX.1-Schnell  
+**Arquitetura:** 100% Client-side (zero backend)
+
+**Características:**
+- ✅ Gratuito e ilimitado
+- ✅ Zero configuração (sem API keys)
+- ✅ Processamento no navegador do usuário
+- ✅ Impossível abuso de quota (cada usuário usa seus próprios recursos)
+- ✅ Open-source e transparente
+
+**Implementação:**
+```typescript
+// Frontend-only (ComicGenerator.tsx)
+const imageBlob = await puter.ai.txt2img(detailedPrompt, {
+  model: 'flux.1-schnell',
+  width: 1024,
+  height: 1024
+});
+```
+
+**Prompt Style (Shadow Interface Bible v13):**
+O gerador utiliza um prompt cinematográfico detalhado baseado no Shadow Interface Bible v13:
+- Estética noir brasileira inspirada em Blade Runner, Matrix, Akira
+- Paleta canônica: preto #000000, vermelho #ff0000, cinza #2a2a2a
+- Grain cinematográfico, alto contraste, iluminação dramática
+- Composição widescreen com profundidade de campo cinemática
+
+**Marca d'água:**
+Todas as imagens incluem marca d'água THEVØIDN13 (80% opacidade, vermelho #c40000, inferior direito) aplicada via canvas manipulation no frontend.
+
+**Rate Limiting:**
+Implementação client-side com `sessionStorage` (cooldown de 10 segundos entre gerações).
+
+**Escolha Estratégica:**
+Puter.js foi escolhido em substituição ao Lovable AI Gateway por:
+- Ser completamente gratuito e ilimitado (vs. consumo de créditos)
+- Processar no cliente (vs. backend/edge function)
+- Usar modelo open-source FLUX.1-Schnell
+- Alinhar-se perfeitamente com "privacy by architecture"
+- Eliminar riscos de abuso que gerariam custos financeiros
+
 ───────────────────────────────────────────────────────────────  
-## CAMADA 3: CO-CRIAÇÃO COM IA  
+## CAMADA 3: CO-CRIAÇÃO COM IA
 ───────────────────────────────────────────────────────────────
 
 ### Lovable AI
@@ -421,6 +466,49 @@ else if (name.includes('videoperformance'))
 - Web APIs modernas (Fetch, IntersectionObserver)
 
 ───────────────────────────────────────────────────────────────  
+## FILOSOFIA ARQUITETURAL: PRIVACY BY ARCHITECTURE  
+───────────────────────────────────────────────────────────────
+
+### Princípio: 100% Frontend Estático
+
+O memorial THEVØIDN13 adota uma abordagem de "privacy by architecture" onde 98-100% da aplicação é puramente frontend estático. Esta escolha arquitetural:
+
+1. **Elimina vetores de ataque:** Sem backend = sem APIs vulneráveis a exploração
+2. **Zero custo operacional:** Processamento distribuído nos navegadores dos usuários
+3. **Transparência total:** Todo código é inspecionável e auditável
+4. **Impossível abuso:** Cada usuário consome seus próprios recursos (CPU/RAM)
+5. **Alinhamento ético:** Coerente com a filosofia anti-vigilância do projeto
+
+**Exceções justificadas:**
+- Vimeo API (apenas para listagem de vídeos, não coleta dados)
+- Futuros recursos opcionais que exigem persistência de dados
+
+### Comparativo: Antes vs Depois (Puter.js)
+
+| Aspecto | Lovable AI (Antes) | Puter.js (Depois) |
+|---------|-------------------|-------------------|
+| **Custo** | Consome créditos Lovable | Gratuito e ilimitado |
+| **Arquitetura** | Backend (edge function) | 100% Frontend |
+| **API Keys** | Requer LOVABLE_API_KEY | Zero configuração |
+| **Rate Limits** | Limitado pelo serviço | Apenas cooldown local (10s) |
+| **Risco de Abuso** | Alto (custos financeiros) | Zero (cada user paga com CPU) |
+| **Privacidade** | Processa em servidor externo | Processa no navegador |
+| **Modelo** | google/gemini-2.5-flash-image | black-forest-labs/flux.1-schnell |
+| **Qualidade** | Alta (resolução variável) | Alta (1024x1024) |
+| **Filosofia** | Conveniente mas pago | Alinhado com "privacy by architecture" |
+
+### Por que Puter.js?
+
+Puter.js foi escolhido porque oferece geração de imagens com IA de alta qualidade (modelo FLUX.1-Schnell) de forma **completamente gratuita e ilimitada**. Diferente de serviços pagos como Lovable AI ou APIs comerciais, o Puter.js processa tudo no navegador do usuário, o que significa:
+
+- ✅ Você nunca paga por uso
+- ✅ Não há limites de requisições
+- ✅ Impossível alguém abusar do sistema e gerar custos
+- ✅ Alinha-se perfeitamente com a filosofia "privacy by architecture" do THEVØIDN13
+
+É uma escolha técnica, ética e econômica superior para este caso de uso.
+
+───────────────────────────────────────────────────────────────  
 ## PRÓXIMOS PASSOS TÉCNICOS  
 ───────────────────────────────────────────────────────────────
 
@@ -488,8 +576,8 @@ THEVOIDN13 é um memorial digital construído com tecnologias modernas, mas mant
 
 ───────────────────────────────────────────────────────────────
 
-**Stack Version:** 1.0  
-**Last Update:** Janeiro 2025  
+**Stack Version:** 2.0 (Migração Puter.js)  
+**Last Update:** Novembro 2025  
 **Maintainer:** Castro Pizzano (цастро™)
 
 ───────────────────────────────────────────────────────────────
