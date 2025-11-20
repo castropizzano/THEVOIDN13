@@ -68,19 +68,15 @@ const Dissertacao = () => {
 
         {/* Título */}
         <BilingualSection className="bible-section">
-          <div className="bible-bilingual-grid">
-            <div>
-              <h1 className="bible-title">LOWMOVIE™ E O LABIRINTO CRIATIVO</h1>
-              <p className="bible-body">
-                Subjetividade, Subcultura e a Construção de uma Estética em Movimento no Coletivo LowPressure™
-              </p>
-            </div>
-            <div>
-              <h1 className="bible-title">LOWMOVIE™ AND THE CREATIVE LABYRINTH</h1>
-              <p className="bible-body">
-                Subjectivity, Subculture and the Construction of an Aesthetic in Motion in the LowPressure™ Collective
-              </p>
-            </div>
+          <div className="bible-block">
+            <h1 className="bible-title">
+              <span className="lang-pt">LOWMOVIE™ E O LABIRINTO CRIATIVO</span>
+              <span className="lang-en">LOWMOVIE™ AND THE CREATIVE LABYRINTH</span>
+            </h1>
+            <p className="bible-body">
+              <span className="lang-pt">Subjetividade, Subcultura e a Construção de uma Estética em Movimento no Coletivo LowPressure™</span>
+              <span className="lang-en">Subjectivity, Subculture and the Construction of an Aesthetic in Motion in the LowPressure™ Collective</span>
+            </p>
           </div>
         </BilingualSection>
 
@@ -88,35 +84,25 @@ const Dissertacao = () => {
 
         {/* Processos Matriciais */}
         <BilingualSection className="bible-section">
-          <div className="bible-bilingual-grid bible-block">
-            <div>
-              <h2 className="bible-title">PROCESSOS MATRICIAIS</h2>
-            </div>
-            <div>
-              <h2 className="bible-title">MATRIX PROCESSES</h2>
-            </div>
+          <div className="bible-block">
+            <h2 className="bible-title">
+              <span className="lang-pt">PROCESSOS MATRICIAIS</span>
+              <span className="lang-en">MATRIX PROCESSES</span>
+            </h2>
           </div>
           
-          <div className="bible-bilingual-grid bible-block">
-            <div>
-              <p className="bible-subtitle">PROJETOS QUE ORIGINARAM ESTA DISSERTAÇÃO</p>
-            </div>
-            <div>
-              <p className="bible-subtitle">PROJECTS THAT ORIGINATED THIS DISSERTATION</p>
-            </div>
+          <div className="bible-block">
+            <p className="bible-subtitle">
+              <span className="lang-pt">PROJETOS QUE ORIGINARAM ESTA DISSERTAÇÃO</span>
+              <span className="lang-en">PROJECTS THAT ORIGINATED THIS DISSERTATION</span>
+            </p>
           </div>
 
-          <div className="bible-bilingual-grid bible-block">
-            <div>
-              <p className="bible-body text-muted-foreground">
-                Processos criativos que se entrelaçam e formam a base do Labirinto Criativo.
-              </p>
-            </div>
-            <div>
-              <p className="bible-body text-muted-foreground">
-                Creative processes that intertwine and form the basis of the Creative Labyrinth.
-              </p>
-            </div>
+          <div className="bible-block">
+            <p className="bible-body text-muted-foreground">
+              <span className="lang-pt">Processos criativos que se entrelaçam e formam a base do Labirinto Criativo.</span>
+              <span className="lang-en">Creative processes that intertwine and form the basis of the Creative Labyrinth.</span>
+            </p>
           </div>
         </BilingualSection>
 
@@ -124,21 +110,22 @@ const Dissertacao = () => {
 
         {/* CasaTrezeStudio */}
         <BilingualSection className="bible-section">
-          <div className="bible-bilingual-grid bible-block">
+          <div className="bible-block">
             <div className="border-l-4 border-primary pl-6">
               <h2 className="bible-title">CASATREZESTUDIO®</h2>
-              <p className="bible-subtitle text-muted-foreground mt-2">2008-Presente</p>
-              <p className="bible-subtitle text-primary mt-2">Coletivo Criativo</p>
-            </div>
-            <div className="border-l-4 border-primary pl-6">
-              <h2 className="bible-title">CASATREZESTUDIO®</h2>
-              <p className="bible-subtitle text-muted-foreground mt-2">2008-Present</p>
-              <p className="bible-subtitle text-primary mt-2">Creative Lab</p>
+              <p className="bible-subtitle text-muted-foreground mt-2">
+                <span className="lang-pt">2008-Presente</span>
+                <span className="lang-en">2008-Present</span>
+              </p>
+              <p className="bible-subtitle text-primary mt-2">
+                <span className="lang-pt">Coletivo Criativo</span>
+                <span className="lang-en">Creative Lab</span>
+              </p>
             </div>
           </div>
 
-          <div className="bible-bilingual-grid bible-block">
-            <div>
+          <div className="bible-block">
+            <div className="lang-pt">
               <div>
                 <p className="bible-body">Coletivo Criativo fundado em 2008. Estúdio pós-contemporâneo de design e vídeo. Associação de produtores criativos independentes que opera como laboratório de criação autoral, cultural e comercial, conectando pessoas, ideias e projetos.</p>
                 
@@ -156,7 +143,7 @@ const Dissertacao = () => {
               </div>
             </div>
 
-            <div>
+            <div className="lang-en">
               <div>
                 <p className="bible-body">Creative Collective founded in 2008. Post-contemporary studio of design and video. Association of independent creative producers operating as a laboratory of authorial, cultural and commercial creation, connecting people, ideas and projects.</p>
                 
@@ -200,34 +187,20 @@ const Dissertacao = () => {
             <p className="bible-subtitle text-primary mt-2">Skate Crew / Movimento Cultural</p>
           </div>
 
-          <div className="bible-bilingual-grid bible-block">
-            <div>
+          <div className="bible-block">
+            <div className="lang-pt">
               <div>
                 <p className="bible-body">Crew de skate @lowpressure.fam estabelecida nas transições e ruas de Curitiba. Movimento que valoriza o skateboard e seu universo cultural. Uma crew de skatistas, músicos e artistas com diferentes visões e um mesmo ideal. A ética do subterrâneo. O pensamento que nasce da margem.</p>
-                
-                <h3 className="bible-subtitle">Filosofia</h3>
-                <p className="bible-body"><span className="font-bold">LOW PRESSURE = BAIXA PRESSÃO.</span> Movimento atmosférico que precede tempestades. Instabilidade como potência. Tensão criativa que gera movimento. A crew não é grupo fechado — é campo de força que atrai quem vibra na mesma frequência.</p>
-                <p className="bible-body">Skatistas, músicos, artistas, videomakers. Diferentes visões, mesmo ideal: fazer do skate um modo de vida autêntico, sem concessões ao mercado, sem domesticação da rebeldia. Punk ethics aplicada ao concreto urbano.</p>
-                
-                <h3 className="bible-subtitle">História</h3>
-                <p className="bible-body">Fundada em 2020, mas suas raízes mergulham mais fundo. A crew cristaliza anos de sessões, amizades, quedas e quedas que viram manobras. Curitiba como território afetivo. Cada pico é memória viva. Cada sessão é ritual de pertencimento. O skate como linguagem que não precisa de tradução.</p>
-                
+...
                 <h3 className="bible-subtitle">Propósito</h3>
                 <p className="bible-body">Não é sobre patrocínio. Não é sobre likes. É sobre manter viva a chama do skate como expressão genuína. Resistir à espetacularização. Preservar a autonomia criativa. Ser crew é ser família escolhida. É saber que, não importa o spot, sempre tem alguém que vai te buscar quando você cair.</p>
               </div>
             </div>
 
-            <div>
+            <div className="lang-en">
               <div>
                 <p className="bible-body">Skate crew @lowpressure.fam established in the transitions and streets of Curitiba. Movement that values skateboarding and its cultural universe. A crew of skaters, musicians and artists with different visions and the same ideal. The ethics of the underground. Thought that rises from the margin.</p>
-                
-                <h3 className="bible-subtitle">Philosophy</h3>
-                <p className="bible-body"><span className="font-bold">LOW PRESSURE.</span> Atmospheric movement that precedes storms. Instability as power. Creative tension that generates movement. The crew isn't a closed group — it's a force field that attracts those who vibrate at the same frequency.</p>
-                <p className="bible-body">Skaters, musicians, artists, videomakers. Different visions, same ideal: making skateboarding an authentic way of life, without concessions to the market, without domestication of rebellion. Punk ethics applied to urban concrete.</p>
-                
-                <h3 className="bible-subtitle">History</h3>
-                <p className="bible-body">Founded in 2020, but its roots run deeper. The crew crystallizes years of sessions, friendships, falls and falls that become tricks. Curitiba as affective territory. Each spot is living memory. Each session is a ritual of belonging. Skateboarding as a language that needs no translation.</p>
-                
+...
                 <h3 className="bible-subtitle">Purpose</h3>
                 <p className="bible-body">It's not about sponsorship. It's not about likes. It's about keeping alive the flame of skateboarding as genuine expression. Resisting spectacularization. Preserving creative autonomy. Being crew is being chosen family. It's knowing that, no matter the spot, there's always someone who'll pick you up when you fall.</p>
               </div>
@@ -290,17 +263,15 @@ const Dissertacao = () => {
 
         {/* Introdução - Rastros nas Ruas */}
         <BilingualSection className="bible-section">
-          <div className="bible-bilingual-grid bible-block">
-            <div>
-              <h2 className="bible-title">INTRODUÇÃO — RASTROS NAS RUAS</h2>
-            </div>
-            <div>
-              <h2 className="bible-title">INTRODUCTION — TRACES IN THE STREETS</h2>
-            </div>
+          <div className="bible-block">
+            <h2 className="bible-title">
+              <span className="lang-pt">INTRODUÇÃO — RASTROS NAS RUAS</span>
+              <span className="lang-en">INTRODUCTION — TRACES IN THE STREETS</span>
+            </h2>
           </div>
 
-          <div className="bible-bilingual-grid bible-block">
-            <div>
+          <div className="bible-block">
+            <div className="lang-pt">
               <div>
                 <p className="bible-body">Esta pesquisa se constrói como travessia em primeira pessoa, um deslizamento entre o skate, o vídeo e a escrita, ativando formas de escuta, presença e invenção. O ato de escrever aqui é corpo em movimento, gesto que se arrisca, que se lança como quem dropa uma borda, um corrimão, uma escada. Drop é esse instante inaugural em que o skatista se projeta de um ponto mais alto e inicia o percurso com risco e intuição, abrindo caminho no concreto.</p>
                 
@@ -308,7 +279,7 @@ const Dissertacao = () => {
               </div>
             </div>
 
-            <div>
+            <div className="lang-en">
               <div>
                 <p className="bible-body">This research is constructed as a first-person journey, a drift between skateboarding, video and writing, activating forms of listening, presence and invention. The act of writing here is body in movement, gesture that takes risks, that launches itself like someone dropping a ledge, a handrail, a staircase. Drop is that inaugural instant in which the skater projects themselves from a higher point and begins the course with risk and intuition, opening a path in the concrete.</p>
                 
@@ -322,23 +293,21 @@ const Dissertacao = () => {
 
         {/* A VideoParte como Linguagem */}
         <BilingualSection className="bible-section">
-          <div className="bible-bilingual-grid bible-block">
-            <div>
-              <h2 className="bible-title">A VIDEOPARTE COMO LINGUAGEM</h2>
-            </div>
-            <div>
-              <h2 className="bible-title">THE VIDEOPART AS LANGUAGE</h2>
-            </div>
+          <div className="bible-block">
+            <h2 className="bible-title">
+              <span className="lang-pt">A VIDEOPARTE COMO LINGUAGEM</span>
+              <span className="lang-en">THE VIDEOPART AS LANGUAGE</span>
+            </h2>
           </div>
 
-          <div className="bible-bilingual-grid bible-block">
-            <div>
+          <div className="bible-block">
+            <div className="lang-pt">
               <div>
                 <p className="bible-body">Os vídeos de skate registram a evolução técnica e criativa dos skatistas e desempenham um papel central na construção de sua identidade cultural. A VideoParte destaca não apenas as habilidades dos skatistas, mas também a integração entre seus movimentos e o ambiente urbano. A VideoParte é linguagem estética em movimento, expressão que transforma a paisagem urbana em território simbólico.</p>
               </div>
             </div>
 
-            <div>
+            <div className="lang-en">
               <div>
                 <p className="bible-body">Skateboarding videos record the technical and creative evolution of skaters and play a central role in constructing their cultural identity. The VideoPart highlights not only the skaters' skills, but also the integration between their movements and the urban environment. The VideoPart is aesthetic language in movement, expression that transforms the urban landscape into symbolic territory.</p>
               </div>
@@ -350,13 +319,11 @@ const Dissertacao = () => {
 
         {/* Metodologia - Lowbyrinth™ como Método */}
         <BilingualSection className="bible-section">
-          <div className="bible-bilingual-grid bible-block">
-            <div>
-              <h2 className="bible-title">METODOLOGIA [LOWBYRINTH™ COMO MÉTODO]</h2>
-            </div>
-            <div>
-              <h2 className="bible-title">METHODOLOGY [LOWBYRINTH™ AS METHOD]</h2>
-            </div>
+          <div className="bible-block">
+            <h2 className="bible-title">
+              <span className="lang-pt">METODOLOGIA [LOWBYRINTH™ COMO MÉTODO]</span>
+              <span className="lang-en">METHODOLOGY [LOWBYRINTH™ AS METHOD]</span>
+            </h2>
           </div>
 
           <div className="bible-bilingual-grid bible-block">
@@ -476,13 +443,11 @@ const Dissertacao = () => {
 
         {/* Informação Acadêmica */}
         <BilingualSection className="bible-section">
-          <div className="bible-bilingual-grid bible-block">
-            <div>
-              <h2 className="bible-title">MESTRADO EM CINEMA E ARTES DO VÍDEO</h2>
-            </div>
-            <div>
-              <h2 className="bible-title">MASTER'S IN CINEMA AND VIDEO ARTS</h2>
-            </div>
+          <div className="bible-block">
+            <h2 className="bible-title">
+              <span className="lang-pt">MESTRADO EM CINEMA E ARTES DO VÍDEO</span>
+              <span className="lang-en">MASTER'S IN CINEMA AND VIDEO ARTS</span>
+            </h2>
           </div>
 
           <div className="bible-bilingual-grid bible-block">
@@ -510,13 +475,11 @@ const Dissertacao = () => {
 
         {/* Pesquisa Acadêmica */}
         <BilingualSection className="bible-section">
-          <div className="bible-bilingual-grid bible-block">
-            <div>
-              <h2 className="bible-title">PESQUISA ACADÊMICA</h2>
-            </div>
-            <div>
-              <h2 className="bible-title">ACADEMIC RESEARCH</h2>
-            </div>
+          <div className="bible-block">
+            <h2 className="bible-title">
+              <span className="lang-pt">PESQUISA ACADÊMICA</span>
+              <span className="lang-en">ACADEMIC RESEARCH</span>
+            </h2>
           </div>
 
           <div className="bible-bilingual-grid bible-block">
@@ -540,13 +503,11 @@ const Dissertacao = () => {
 
         {/* Colaboração e Coletivos */}
         <BilingualSection className="bible-section">
-          <div className="bible-bilingual-grid bible-block">
-            <div>
-              <h2 className="bible-title">COLABORAÇÃO E COLETIVOS</h2>
-            </div>
-            <div>
-              <h2 className="bible-title">COLLABORATION AND COLLECTIVES</h2>
-            </div>
+          <div className="bible-block">
+            <h2 className="bible-title">
+              <span className="lang-pt">COLABORAÇÃO E COLETIVOS</span>
+              <span className="lang-en">COLLABORATION AND COLLECTIVES</span>
+            </h2>
           </div>
 
           <div className="bible-bilingual-grid bible-block">
@@ -570,21 +531,17 @@ const Dissertacao = () => {
 
         {/* Documentação do Processo */}
         <BilingualSection className="bible-section">
-          <div className="bible-bilingual-grid bible-block">
-            <div>
-              <h2 className="bible-title">DOCUMENTAÇÃO DO PROCESSO</h2>
-            </div>
-            <div>
-              <h2 className="bible-title">PROCESS DOCUMENTATION</h2>
-            </div>
+          <div className="bible-block">
+            <h2 className="bible-title">
+              <span className="lang-pt">DOCUMENTAÇÃO DO PROCESSO</span>
+              <span className="lang-en">PROCESS DOCUMENTATION</span>
+            </h2>
           </div>
-          <div className="bilingual-grid">
-            <div className="bilingual-col">
-              <p className="bible-subtitle">TRILHAS SONORAS, LINHA DO TEMPO</p>
-            </div>
-            <div className="bilingual-col">
-              <p className="bible-subtitle">SOUNDTRACKS, TIMELINE</p>
-            </div>
+          <div className="bible-block">
+            <p className="bible-subtitle">
+              <span className="lang-pt">TRILHAS SONORAS, LINHA DO TEMPO</span>
+              <span className="lang-en">SOUNDTRACKS, TIMELINE</span>
+            </p>
           </div>
         </BilingualSection>
 
