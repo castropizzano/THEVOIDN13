@@ -165,26 +165,58 @@ export const ComicGenerator = () => {
     setGeneratedImage(null);
 
     try {
-      // THEVØIDN13 Shadow Interface Bible v13 - Cinematic Prompt
-      const THEVOIDN13_STYLE = `THEVØIDN13 CINEMATIC STILL — Shadow Interface Bible v13 Protocol:
+      // THEVØIDN13 Shadow Interface Bible v13 - Canonical Cinematic Prompt
+      const THEVOIDN13_STYLE = `THEVØIDN13 UNIVERSE — Shadow Interface Bible v13 EXACT PROTOCOL:
 
-Style: Dark cinematic realism with urban decay. Expressionless white plastic mask (flat, featureless, no emotion). Character wears oversized olive-green parka (hood up) or black/charcoal tactical outfit. Wet concrete streets, dim blue neon, red/orange backlighting, high-contrast shadows. 
-Mood: Dystopian, noir, melancholic. Composition: Rule of thirds, off-center subject, deep focus. Grading: Desaturated, teal-orange color science, slight grain. 
-Reference: Blade Runner 2049 + Akira + Christiane F. lighting. Ensure mask has NO facial features, NO eyes, NO expression—just smooth white surface.
-Format: Ultra high resolution 1024x1024 digital still.`;
+MANDATORY CHARACTER: White expressionless mask (completely smooth, NO eyes, NO mouth, NO features, pure matte white plastic). Oversized olive-green military parka with hood up, OR black/charcoal tactical wear with weathered textures.
+
+CANONICAL COLOR PALETTE (EXACT):
+- Background: Preto Sombra #1A1A1A (deep shadow black)
+- Highlights: Branco Vazio #FFFFFF (void white, sparingly)
+- Midtones: Cinza Fantasma #E6E6E6 (ghost gray)
+- Accent: Vermelho Sintético #C40000 (synthetic blood red, minimal use)
+
+LIGHTING SIGNATURE:
+- Primary: Cold blue neon (#0066CC, dim, atmospheric)
+- Secondary: Warm red/orange backlight (#FF4400, harsh, dramatic)
+- Technique: High contrast chiaroscuro, deep blacks, volumetric fog, wet surface reflections
+
+ENVIRONMENT:
+Brazilian urban decay, brutalist concrete architecture, wet asphalt streets, graffiti-stained walls, industrial warehouses, empty parking lots at night, chain-link fences, flickering neon signs in Portuguese.
+
+CINEMATOGRAPHY:
+- Camera: 35mm film aesthetic, slight grain texture, analog imperfections
+- Composition: Rule of thirds, off-center subject, cinematic widescreen framing
+- Focus: Deep focus with atmospheric haze, bokeh in background neon
+- Color Science: Desaturated teal-orange grading (Blade Runner 2049 style)
+
+MOOD: Neo-noir, dystopian, melancholic isolation, urban anonymity, liminal spaces, nocturnal solitude.
+
+ARTISTIC REFERENCES: Blade Runner 2049 (Roger Deakins), Akira (Katsuhiro Otomo), Christiane F. (1981 film), The Machinist, Taxi Driver, Ghost in the Shell (1995).
+
+TECHNICAL: Ultra high-resolution digital still, 1024x1024, photorealistic rendering, cinematic color grading, film grain overlay, professional photography quality.
+
+ABSOLUTE REQUIREMENTS: 
+- Mask MUST be completely featureless (no eyes, no expression)
+- Neon must be DIM and atmospheric (not bright or cheerful)
+- MUST include wet surfaces with reflections
+- MUST feel lonely, isolated, urban decay
+- NO bright colors except accent red
+- NO happy or optimistic elements`;
       
-      const detailedPrompt = `${THEVOIDN13_STYLE}\n\nScene: ${trimmedPrompt}`;
+      const detailedPrompt = `${THEVOIDN13_STYLE}\n\nSCENE DESCRIPTION: ${trimmedPrompt}`;
 
-      console.log('Generating image with Pollinations.AI FLUX...');
+      console.log('Generating THEVØIDN13 cinematic still with canonical parameters...');
       console.log('Prompt length:', detailedPrompt.length, 'chars');
 
-      // Generate image using Pollinations.AI (free, unlimited, no login)
+      // Generate image using Pollinations.AI with exact canonical parameters
       const pollinationsUrl = new URL('https://image.pollinations.ai/prompt/' + encodeURIComponent(detailedPrompt));
       pollinationsUrl.searchParams.set('width', '1024');
       pollinationsUrl.searchParams.set('height', '1024');
       pollinationsUrl.searchParams.set('model', 'flux');
       pollinationsUrl.searchParams.set('nologo', 'true');
-      pollinationsUrl.searchParams.set('enhance', 'true');
+      pollinationsUrl.searchParams.set('enhance', 'false'); // Disable to maintain exact style control
+      pollinationsUrl.searchParams.set('negative_prompt', 'bright colors, cheerful, happy, daylight, smiling, facial features on mask, eyes on mask, colorful, vibrant, clean environment, modern, futuristic technology, anime style, cartoon');
 
       const response = await fetch(pollinationsUrl.toString());
 
