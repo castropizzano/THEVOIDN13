@@ -19,7 +19,7 @@ export const VideoEmbed = ({ source, videoId, title }: VideoEmbedProps) => {
   };
 
   return (
-    <div className="relative w-full group">
+    <div className="relative w-full">
       {/* 16:9 Aspect Ratio Container */}
       <div className="relative w-full pb-[56.25%] bg-black">
         <iframe
@@ -30,11 +30,6 @@ export const VideoEmbed = ({ source, videoId, title }: VideoEmbedProps) => {
           allowFullScreen
           loading="lazy"
         />
-        
-        {/* Play Icon Overlay (visible on hover) */}
-        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-          <Play className="w-16 h-16 text-white/80" fill="currentColor" />
-        </div>
       </div>
     </div>
   );

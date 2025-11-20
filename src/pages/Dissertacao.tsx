@@ -12,8 +12,7 @@ import { CasaTrezeBlock } from "@/components/dissertation/CasaTrezeBlock";
 import { LowPressureBlock } from "@/components/dissertation/LowPressureBlock";
 import { InterviewsTabs } from "@/components/dissertation/InterviewsTabs";
 import { LowMovieBlock } from "@/components/dissertation/LowMovieBlock";
-import heroImage from "@/assets/lowmovie-hero.png";
-import heroImageMobile from "@/assets/lowmovie-hero-mobile.png";
+import heroImage from "@/assets/cover-lowmovie.png";
 
 const Dissertacao = () => {
   const thesisSchema = {
@@ -59,16 +58,12 @@ const Dissertacao = () => {
       <main>
         {/* Hero Image */}
         <section className="w-full min-h-screen flex items-center justify-center overflow-hidden bg-black pt-16 sm:pt-20 md:pt-24">
-          <picture className="w-full h-full">
-            <source media="(max-width: 768px)" srcSet={heroImageMobile} />
-            <source media="(min-width: 769px)" srcSet={heroImage} />
-            <img 
-              src={heroImage} 
-              alt="LOWMOVIE™ E O LABIRINTO CRIATIVO" 
-              className="w-full h-full object-cover md:object-contain"
-              loading="eager"
-            />
-          </picture>
+          <img 
+            src={heroImage} 
+            alt="LOWMOVIE™ E O LABIRINTO CRIATIVO" 
+            className="w-full h-full object-cover object-center"
+            loading="eager"
+          />
         </section>
 
         {/* Título */}
