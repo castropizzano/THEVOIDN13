@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Volume2, VolumeX, Download } from "lucide-react";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
@@ -96,7 +96,7 @@ const archetypes = {
 export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
   const { language } = useLanguage();
   const { scans, saveScan, deleteScan, clearHistory, hasHistory } = useOracleHistory();
-  const [mode, setMode] = useState<"learn" | "scan" | "evolution" | "goals" | "mindmap">("scan");
+  const [mode, setMode] = useState<"journey" | "knowledge">("journey");
   const [started, setStarted] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<number[]>([]);
@@ -105,6 +105,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
   const [showResults, setShowResults] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
   const [audio] = useState(() => new Audio("/audio/Shadow_In_The_Dark.mp3"));
+  const resultsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (!open) {
@@ -114,6 +115,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
       setScores({ shadow: 0, punk: 0, buddy: 0, gi: 0 });
       setProcessScores({ observation: 0, cocreation: 0, documentation: 0, reflection: 0, expansion: 0 });
       setShowResults(false);
+      setMode("journey");
       audio.pause();
       audio.currentTime = 0;
     }
@@ -152,6 +154,10 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
       setCurrentQuestion(prev => prev + 1);
     } else {
       setShowResults(true);
+      // Scroll to results after state update
+      setTimeout(() => {
+        resultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
     }
   };
 
@@ -210,7 +216,7 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
     setScores({ shadow: 0, punk: 0, buddy: 0, gi: 0 });
     setProcessScores({ observation: 0, cocreation: 0, documentation: 0, reflection: 0, expansion: 0 });
     setShowResults(false);
-    setMode("scan");
+    setMode("journey");
   };
 
   const handleExportPDF = () => {
@@ -286,6 +292,12 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
     return Math.round(((currentQuestion + 1) / contextualizedQuestions.length) * 100);
   };
 
+  const getBreadcrumb = () => {
+    if (!started && !showResults) return language === 'pt' ? 'INÍCIO' : 'START';
+    if (started && !showResults) return `${language === 'pt' ? 'EM PROGRESSO' : 'IN PROGRESS'} (${currentQuestion + 1}/${contextualizedQuestions.length})`;
+    return language === 'pt' ? 'RESULTADOS' : 'RESULTS';
+  };
+
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-6xl mx-auto max-h-[90vh] overflow-y-auto bg-background/95 backdrop-blur-sm p-6 sm:p-8">
@@ -298,36 +310,22 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
               ? "// Sistema de identificação de arquétipos criativos" 
               : "// Creative archetype identification system"}
           </DialogDescription>
+          <div className="text-accent text-sm font-mono font-bold mt-2">
+            [STATUS] {getBreadcrumb()}
+          </div>
         </DialogHeader>
 
         <Tabs value={mode} onValueChange={(v) => setMode(v as typeof mode)} className="w-full">
-          <TabsList className="grid w-full grid-cols-5 mb-6">
-            <TabsTrigger value="scan">{language === "pt" ? "SCAN" : "SCAN"}</TabsTrigger>
-            <TabsTrigger value="learn">{language === "pt" ? "LEARN" : "LEARN"}</TabsTrigger>
-            <TabsTrigger value="evolution" disabled={!hasHistory}>
-              {language === "pt" ? "EVOLUÇÃO" : "EVOLUTION"}
-            </TabsTrigger>
-            <TabsTrigger value="mindmap" disabled={!showResults}>
-              {language === "pt" ? "MIND MAP" : "MIND MAP"}
-            </TabsTrigger>
-            <TabsTrigger value="goals" disabled={!showResults}>
-              {language === "pt" ? "METAS" : "GOALS"}
-            </TabsTrigger>
+          <TabsList className="grid w-full grid-cols-2 mb-6">
+            <TabsTrigger value="journey">{language === "pt" ? "JORNADA" : "JOURNEY"}</TabsTrigger>
+            <TabsTrigger value="knowledge">{language === "pt" ? "CONHECIMENTO" : "KNOWLEDGE"}</TabsTrigger>
           </TabsList>
 
-          <TabsContent value="learn">
+          <TabsContent value="knowledge">
             <LearnMode />
           </TabsContent>
 
-          <TabsContent value="evolution">
-            <EvolutionAnalysis 
-              scans={scans}
-              onDeleteScan={deleteScan}
-              onClearHistory={clearHistory}
-            />
-          </TabsContent>
-
-          <TabsContent value="scan">
+          <TabsContent value="journey">
             <div className="bg-black/90 border border-primary/30 rounded-lg p-6 sm:p-8 font-mono space-y-6">
               {!started && !showResults && (
             <div className="space-y-8">
@@ -335,13 +333,35 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
                 [STATUS] INITIALIZING...
               </div>
 
-              <div className="space-y-4 text-foreground">
-                <div className="text-muted-foreground">[DESCRIPTION]</div>
-                <div className="pl-4 space-y-2">
+              <div className="space-y-4 text-foreground border-l-2 border-primary/40 pl-4 py-2">
+                <div className="text-primary font-bold">[{language === "pt" ? "SOBRE A JORNADA" : "ABOUT THE JOURNEY"}]</div>
+                <div className="space-y-3 text-sm leading-relaxed">
                   {language === "pt" ? (
-                    <p>Dez perguntas. Suas respostas revelam seu arquétipo criativo dominante e secundário: Shadow, Punk, Buddy ou GI. Cada um representa uma forma única de ver e transformar o mundo através da criatividade. Ao final, você receberá análise detalhada com forças, desafios e recomendações personalizadas.</p>
+                    <>
+                      <p>Este oráculo é uma ferramenta de autoconhecimento criativo baseada na metodologia THEVØIDN13.</p>
+                      <p>Você responderá <span className="text-primary font-bold">6 perguntas</span> sobre seu processo criativo. Não há respostas certas ou erradas — cada escolha revela algo sobre como você pensa, cria e transforma ideias.</p>
+                      <p className="text-muted-foreground italic">Ao final, você descobrirá:</p>
+                      <div className="pl-4 space-y-1 text-muted-foreground">
+                        <div>├─ Seu arquétipo criativo dominante (SHADOW, PUNK, BUDDY ou GI)</div>
+                        <div>├─ Análise personalizada com forças e desafios</div>
+                        <div>├─ Recomendações práticas para desenvolver seu processo</div>
+                        <div>└─ Mapeamento visual do seu perfil criativo</div>
+                      </div>
+                      <p className="text-accent text-xs pt-2">A jornada leva cerca de 3-5 minutos. Responda com honestidade e intuição.</p>
+                    </>
                   ) : (
-                    <p>Ten questions. Your answers reveal your dominant and secondary creative archetypes: Shadow, Punk, Buddy or GI. Each represents a unique way of seeing and transforming the world through creativity. At the end, you'll receive detailed analysis with strengths, challenges and personalized recommendations.</p>
+                    <>
+                      <p>This oracle is a creative self-knowledge tool based on THEVØIDN13 methodology.</p>
+                      <p>You'll answer <span className="text-primary font-bold">6 questions</span> about your creative process. There are no right or wrong answers — each choice reveals something about how you think, create and transform ideas.</p>
+                      <p className="text-muted-foreground italic">At the end, you'll discover:</p>
+                      <div className="pl-4 space-y-1 text-muted-foreground">
+                        <div>├─ Your dominant creative archetype (SHADOW, PUNK, BUDDY or GI)</div>
+                        <div>├─ Personalized analysis with strengths and challenges</div>
+                        <div>├─ Practical recommendations to develop your process</div>
+                        <div>└─ Visual mapping of your creative profile</div>
+                      </div>
+                      <p className="text-accent text-xs pt-2">The journey takes about 3-5 minutes. Answer honestly and intuitively.</p>
+                    </>
                   )}
                 </div>
               </div>
@@ -430,10 +450,36 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
           )}
 
           {showResults && (
-            <div className="space-y-8 animate-fade-in">
+            <div ref={resultsRef} className="space-y-8 animate-fade-in">
               <div className="text-accent font-bold text-lg">
                 CREATIVE_ORACLE::SCAN_COMPLETE
               </div>
+              
+              {scans.length === 1 && (
+                <div className="bg-primary/10 border border-primary/30 rounded-lg p-4 text-sm">
+                  <div className="text-primary font-bold mb-2">
+                    [{language === 'pt' ? 'PRIMEIRO SCAN' : 'FIRST SCAN'}]
+                  </div>
+                  <div className="text-muted-foreground">
+                    {language === 'pt' 
+                      ? 'Este é seu primeiro scan! Seus resultados foram salvos automaticamente. Refaça a jornada no futuro para ver sua evolução criativa.'
+                      : 'This is your first scan! Your results have been saved automatically. Retake the journey in the future to see your creative evolution.'}
+                  </div>
+                </div>
+              )}
+
+              {scans.length > 1 && (
+                <div className="bg-accent/10 border border-accent/30 rounded-lg p-4 text-sm">
+                  <div className="text-accent font-bold mb-2">
+                    [{language === 'pt' ? 'NOVO SCAN COMPLETO' : 'NEW SCAN COMPLETE'}]
+                  </div>
+                  <div className="text-muted-foreground">
+                    {language === 'pt' 
+                      ? 'Novo scan completo! Role para baixo para ver sua evolução ao longo do tempo.'
+                      : 'New scan complete! Scroll down to see your evolution over time.'}
+                  </div>
+                </div>
+              )}
 
               {/* Radar Chart Visualization */}
               <div className="space-y-3 bg-black/50 border border-primary/30 rounded-lg p-6">
@@ -608,6 +654,12 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
                   &gt; RESTART_SCAN()
                 </Button>
                 <Button
+                  onClick={() => setMode('knowledge')}
+                  variant="outline"
+                >
+                  &gt; VER_CONHECIMENTO()
+                </Button>
+                <Button
                   onClick={() => onOpenChange(false)}
                   variant="outline"
                 >
@@ -625,42 +677,34 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
                 dominantArchetype={getDominantArchetype()}
                 weakestStage={Object.entries(processScores).sort((a, b) => a[1] - b[1])[0][0]}
               />
+
+              {/* Mind Map Integration */}
+              <div className="space-y-6 pt-8 border-t border-primary/30">
+                <div className="text-accent font-bold text-lg">
+                  [{language === "pt" ? "MAPA MENTAL PERSONALIZADO" : "PERSONALIZED MIND MAP"}]
+                </div>
+                <OracleMindMapIntegration
+                  archetypeScores={scores}
+                  processScores={processScores}
+                  dominantArchetype={getDominantArchetype()}
+                />
+              </div>
+
+              {/* Evolution Analysis if history exists */}
+              {hasHistory && scans.length > 1 && (
+                <div className="space-y-6 pt-8 border-t border-primary/30">
+                  <div className="text-accent font-bold text-lg">
+                    [{language === "pt" ? "SUA EVOLUÇÃO CRIATIVA" : "YOUR CREATIVE EVOLUTION"}]
+                  </div>
+                  <EvolutionAnalysis 
+                    scans={scans}
+                    onDeleteScan={deleteScan}
+                    onClearHistory={clearHistory}
+                  />
+                </div>
+              )}
             </div>
           )}
-            </div>
-          </TabsContent>
-
-          <TabsContent value="mindmap">
-            <OracleMindMapIntegration
-              archetypeScores={scores}
-              processScores={processScores}
-              dominantArchetype={getDominantArchetype()}
-            />
-          </TabsContent>
-
-          <TabsContent value="goals">
-            <div className="space-y-6">
-              <div className="text-center py-12 bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg">
-                <h3 className="text-2xl font-bold mb-4">
-                  {language === "pt" ? "Sistema de Metas Criativas" : "Creative Goals System"}
-                </h3>
-                <p className="text-muted-foreground mb-6">
-                  {language === "pt"
-                    ? "Em breve: sistema completo de objetivos e tracking de progresso baseado no seu arquétipo criativo"
-                    : "Coming soon: complete goals and progress tracking system based on your creative archetype"}
-                </p>
-                <Button
-                  onClick={() => {
-                    const link = document.createElement('a');
-                    link.href = 'https://thevoidn13.dev';
-                    link.target = '_blank';
-                    link.click();
-                  }}
-                  variant="outline"
-                >
-                  {language === "pt" ? "Saiba Mais" : "Learn More"}
-                </Button>
-              </div>
             </div>
           </TabsContent>
         </Tabs>
