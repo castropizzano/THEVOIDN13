@@ -7,11 +7,9 @@ export const LowMovieBlock = () => {
       <div className="bible-bilingual-grid bible-block-spacing">
         <div>
           <h2 className="bible-title">LOWMOVIE™ COMO DISPOSITIVO</h2>
-          <p className="bible-subtitle text-primary mt-2">Obra + Pesquisa</p>
         </div>
         <div>
           <h2 className="bible-title">LOWMOVIE™ AS DEVICE</h2>
-          <p className="bible-subtitle text-primary mt-2">Work + Research</p>
         </div>
       </div>
 
