@@ -358,11 +358,11 @@ export const InterviewsTabs = () => {
                 </Button>
 
                 {/* Imagem em proporção real */}
-                <div className="w-full aspect-[3/4] bg-black/5 rounded-lg overflow-hidden border border-border/50">
+                <div className="w-full bg-black/5 rounded-lg overflow-hidden border border-border/50 flex items-center justify-center">
                   <img
                     src={zineImages[currentImageIndex]}
                     alt={`LowZine página ${currentImageIndex + 1}`}
-                    className="w-full h-full object-contain grayscale hover:grayscale-0 transition-all duration-500"
+                    className="w-full h-auto object-contain grayscale hover:grayscale-0 transition-all duration-500"
                   />
                 </div>
 
