@@ -3,7 +3,7 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } f
 import { Button } from "@/components/ui/button";
 import { FeatureCard } from "@/components/FeatureCard";
 import { useTranslation } from "@/hooks/useTranslation";
-import { ChevronRight, ChevronLeft } from "lucide-react";
+import { ChevronRight, ChevronLeft, Network } from "lucide-react";
 
 type ProcessStep = {
   id: string;
@@ -13,6 +13,8 @@ type ProcessStep = {
   contentEn: string[];
   codePt: string;
   codeEn: string;
+  connections: number[];  // indices of connected steps
+  connectionType: string; // type of connection
 };
 
 const processSteps: ProcessStep[] = [
@@ -31,7 +33,9 @@ const processSteps: ProcessStep[] = [
       "Each step represents a layer of transformation of material collected over 2 years of creative work."
     ],
     codePt: "├─ ETAPAS: 7 fases\n├─ TEMPO: 2 anos de coleta\n└─ OUTPUT: Memorial digital interativo",
-    codeEn: "├─ STEPS: 7 phases\n├─ TIME: 2 years of collection\n└─ OUTPUT: Interactive digital memorial"
+    codeEn: "├─ STEPS: 7 phases\n├─ TIME: 2 years of collection\n└─ OUTPUT: Interactive digital memorial",
+    connections: [1, 2, 3, 4, 5, 6],
+    connectionType: "feeds_into"
   },
   {
     id: "01_input",
@@ -58,7 +62,9 @@ const processSteps: ProcessStep[] = [
       "• Material from LowMovie, LowPressure, Casa Treze Studio projects"
     ],
     codePt: "INPUT::SOURCES {\n  diarios: 'memórias brutas',\n  projetos: 'LowMovie | LowPressure | C13',\n  entrevistas: 'colaboradores',\n  arquivos: 'RAW visual/audio',\n  dissertacao: 'teoria acadêmica'\n}",
-    codeEn: "INPUT::SOURCES {\n  journals: 'raw memories',\n  projects: 'LowMovie | LowPressure | C13',\n  interviews: 'collaborators',\n  files: 'RAW visual/audio',\n  thesis: 'academic theory'\n}"
+    codeEn: "INPUT::SOURCES {\n  journals: 'raw memories',\n  projects: 'LowMovie | LowPressure | C13',\n  interviews: 'collaborators',\n  files: 'RAW visual/audio',\n  thesis: 'academic theory'\n}",
+    connections: [2],
+    connectionType: "transforms_into"
   },
   {
     id: "02_process",
@@ -85,7 +91,9 @@ const processSteps: ProcessStep[] = [
       "• Establishment of non-linear connections between elements"
     ],
     codePt: "PROCESS::PIPELINE {\n  organize() → cronologia + tema,\n  crossReference() → projetos interligados,\n  translate() → bilinguismo total,\n  digitize() → conversão de formatos,\n  index() → sistema de busca,\n  connect() → relações não-lineares\n}",
-    codeEn: "PROCESS::PIPELINE {\n  organize() → chronology + theme,\n  crossReference() → interconnected projects,\n  translate() → total bilingualism,\n  digitize() → format conversion,\n  index() → search system,\n  connect() → non-linear relations\n}"
+    codeEn: "PROCESS::PIPELINE {\n  organize() → chronology + theme,\n  crossReference() → interconnected projects,\n  translate() → total bilingualism,\n  digitize() → format conversion,\n  index() → search system,\n  connect() → non-linear relations\n}",
+    connections: [3, 4],
+    connectionType: "enables"
   },
   {
     id: "03_map",
@@ -112,7 +120,9 @@ const processSteps: ProcessStep[] = [
       "• Structuring of transversal narratives"
     ],
     codePt: "MAP::STRUCTURE {\n  nodes: ['filmes', 'HQs', 'sites', 'zines'],\n  archetypes: ['shadow', 'punk', 'buddy', 'gi'],\n  influences: ['cinema', 'comics', 'philosophy'],\n  patterns: 'identificação de recorrências',\n  network: 'conexões transversais'\n}",
-    codeEn: "MAP::STRUCTURE {\n  nodes: ['films', 'comics', 'sites', 'zines'],\n  archetypes: ['shadow', 'punk', 'buddy', 'gi'],\n  influences: ['cinema', 'comics', 'philosophy'],\n  patterns: 'recurring identification',\n  network: 'transversal connections'\n}"
+    codeEn: "MAP::STRUCTURE {\n  nodes: ['films', 'comics', 'sites', 'zines'],\n  archetypes: ['shadow', 'punk', 'buddy', 'gi'],\n  influences: ['cinema', 'comics', 'philosophy'],\n  patterns: 'recurring identification',\n  network: 'transversal connections'\n}",
+    connections: [4, 5],
+    connectionType: "structures"
   },
   {
     id: "04_tools",
@@ -139,7 +149,9 @@ const processSteps: ProcessStep[] = [
       "• Interactive Timelines: project timelines"
     ],
     codePt: "TOOLS::INTERACTIVE {\n  oracle: 'arquétipos criativos',\n  library: 'prompts IA',\n  generator: 'stills cinematográficos',\n  search: 'busca global',\n  viewers: 'documentos + áudio',\n  timeline: 'cronologia visual'\n}",
-    codeEn: "TOOLS::INTERACTIVE {\n  oracle: 'creative archetypes',\n  library: 'AI prompts',\n  generator: 'cinematic stills',\n  search: 'global search',\n  viewers: 'documents + audio',\n  timeline: 'visual chronology'\n}"
+    codeEn: "TOOLS::INTERACTIVE {\n  oracle: 'creative archetypes',\n  library: 'AI prompts',\n  generator: 'cinematic stills',\n  search: 'global search',\n  viewers: 'documents + audio',\n  timeline: 'visual chronology'\n}",
+    connections: [5],
+    connectionType: "implements"
   },
   {
     id: "05_interface",
@@ -166,7 +178,9 @@ const processSteps: ProcessStep[] = [
       "• WCAG 2.1 AA accessibility"
     ],
     codePt: "INTERFACE::DESIGN {\n  style: 'code-like terminal',\n  typography: 'Bible v13',\n  colors: 'dark + red/green accents',\n  tech: 'React + TypeScript',\n  responsive: 'mobile-first',\n  a11y: 'WCAG 2.1 AA'\n}",
-    codeEn: "INTERFACE::DESIGN {\n  style: 'code-like terminal',\n  typography: 'Bible v13',\n  colors: 'dark + red/green accents',\n  tech: 'React + TypeScript',\n  responsive: 'mobile-first',\n  a11y: 'WCAG 2.1 AA'\n}"
+    codeEn: "INTERFACE::DESIGN {\n  style: 'code-like terminal',\n  typography: 'Bible v13',\n  colors: 'dark + red/green accents',\n  tech: 'React + TypeScript',\n  responsive: 'mobile-first',\n  a11y: 'WCAG 2.1 AA'\n}",
+    connections: [6],
+    connectionType: "outputs_to"
   },
   {
     id: "06_deploy",
@@ -193,7 +207,9 @@ const processSteps: ProcessStep[] = [
       "• Backup and versioning system"
     ],
     codePt: "DEPLOY::PRODUCTION {\n  host: 'Lovable Cloud',\n  backend: 'Supabase',\n  performance: 'Lighthouse 100',\n  seo: 'structured data',\n  pwa: 'offline ready',\n  analytics: 'engagement tracking'\n}",
-    codeEn: "DEPLOY::PRODUCTION {\n  host: 'Lovable Cloud',\n  backend: 'Supabase',\n  performance: 'Lighthouse 100',\n  seo: 'structured data',\n  pwa: 'offline ready',\n  analytics: 'engagement tracking'\n}"
+    codeEn: "DEPLOY::PRODUCTION {\n  host: 'Lovable Cloud',\n  backend: 'Supabase',\n  performance: 'Lighthouse 100',\n  seo: 'structured data',\n  pwa: 'offline ready',\n  analytics: 'engagement tracking'\n}",
+    connections: [7],
+    connectionType: "enables"
   },
   {
     id: "07_evolution",
@@ -220,13 +236,16 @@ const processSteps: ProcessStep[] = [
       "• THEVØIDN13 remains as interface between creator and work"
     ],
     codePt: "STATUS::LIVE {\n  state: 'em evolução contínua',\n  updates: 'novos projetos',\n  community: 'interação aberta',\n  experiments: 'documentação real-time',\n  transparency: 'processo público',\n  interface: 'THEVØIDN13 ativo'\n}",
-    codeEn: "STATUS::LIVE {\n  state: 'in continuous evolution',\n  updates: 'new projects',\n  community: 'open interaction',\n  experiments: 'real-time documentation',\n  transparency: 'public process',\n  interface: 'THEVØIDN13 active'\n}"
+    codeEn: "STATUS::LIVE {\n  state: 'in continuous evolution',\n  updates: 'new projects',\n  community: 'open interaction',\n  experiments: 'real-time documentation',\n  transparency: 'public process',\n  interface: 'THEVØIDN13 active'\n}",
+    connections: [1, 2, 3, 4, 5, 6],
+    connectionType: "loops_back"
   }
 ];
 
 export const MindMap = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentStep, setCurrentStep] = useState(0);
+  const [showConnections, setShowConnections] = useState(false);
   const { t, language } = useTranslation();
 
   const handleNext = () => {
@@ -259,6 +278,19 @@ export const MindMap = () => {
 
   const currentStepData = processSteps[currentStep];
   const progress = getProgressBar();
+
+  const getConnectionLabel = (type: string) => {
+    const labels: Record<string, { pt: string; en: string }> = {
+      feeds_into: { pt: "alimenta", en: "feeds into" },
+      transforms_into: { pt: "transforma em", en: "transforms into" },
+      enables: { pt: "habilita", en: "enables" },
+      structures: { pt: "estrutura", en: "structures" },
+      implements: { pt: "implementa", en: "implements" },
+      outputs_to: { pt: "produz", en: "outputs to" },
+      loops_back: { pt: "retorna para", en: "loops back to" },
+    };
+    return language === 'pt' ? labels[type]?.pt : labels[type]?.en;
+  };
 
   return (
     <>
@@ -296,8 +328,34 @@ export const MindMap = () => {
                 </div>
                 <div className="text-muted-foreground text-sm">
                   STEP {currentStep + 1}/{processSteps.length}
+              </div>
+            </div>
+
+            {/* Connections Visualization */}
+            {showConnections && currentStepData.connections.length > 0 && (
+              <div className="space-y-3 pb-4 border-b border-primary/20 animate-fade-in">
+                <div className="flex items-center gap-2 text-accent text-sm font-bold">
+                  <Network className="h-4 w-4" />
+                  [CONNECTIONS] {getConnectionLabel(currentStepData.connectionType)}
+                </div>
+                <div className="pl-4 space-y-2">
+                  {currentStepData.connections.map((connIdx) => (
+                    <div 
+                      key={connIdx}
+                      className="text-xs text-muted-foreground hover:text-primary transition-colors cursor-pointer flex items-center gap-2 group"
+                      onClick={() => setCurrentStep(connIdx)}
+                    >
+                      <span className="text-primary group-hover:animate-pulse">→</span>
+                      <span className="group-hover:underline">
+                        {language === 'pt' 
+                          ? processSteps[connIdx].titlePt 
+                          : processSteps[connIdx].titleEn}
+                      </span>
+                    </div>
+                  ))}
                 </div>
               </div>
+            )}
               <div className="text-muted-foreground text-sm">
                 [PROGRESS] {progress.bar} {progress.percentage}%
               </div>
@@ -321,8 +379,47 @@ export const MindMap = () => {
               </div>
             </div>
 
+            {/* Connections Visualization */}
+            {showConnections && currentStepData.connections.length > 0 && (
+              <div className="space-y-3 pb-4 border-b border-primary/20 animate-fade-in">
+                <div className="flex items-center gap-2 text-accent text-sm font-bold">
+                  <Network className="h-4 w-4" />
+                  [CONNECTIONS] {getConnectionLabel(currentStepData.connectionType)}
+                </div>
+                <div className="pl-4 space-y-2">
+                  {currentStepData.connections.map((connIdx) => (
+                    <div 
+                      key={connIdx}
+                      className="text-xs text-muted-foreground hover:text-primary transition-colors cursor-pointer flex items-center gap-2 group"
+                      onClick={() => setCurrentStep(connIdx)}
+                    >
+                      <span className="text-primary group-hover:animate-pulse">→</span>
+                      <span className="group-hover:underline">
+                        {language === 'pt' 
+                          ? processSteps[connIdx].titlePt 
+                          : processSteps[connIdx].titleEn}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* Navigation */}
-            <div className="flex flex-col sm:flex-row gap-3 pt-4 border-t border-primary/20">
+            <div className="flex flex-col gap-3 pt-4 border-t border-primary/20">
+              <div className="flex items-center justify-between">
+                <Button
+                  onClick={() => setShowConnections(!showConnections)}
+                  variant="ghost"
+                  size="sm"
+                  className="gap-2"
+                >
+                  <Network className="h-4 w-4" />
+                  {language === 'pt' ? 'CONEXÕES' : 'CONNECTIONS'} [{showConnections ? 'ON' : 'OFF'}]
+                </Button>
+              </div>
+              
+              <div className="flex flex-col sm:flex-row gap-3">
               <Button
                 onClick={handlePrevious}
                 disabled={currentStep === 0}
@@ -361,6 +458,7 @@ export const MindMap = () => {
               </Button>
             </div>
           </div>
+        </div>
         </DialogContent>
       </Dialog>
     </>
