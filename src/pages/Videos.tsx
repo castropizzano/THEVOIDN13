@@ -18,6 +18,7 @@ interface CuratedVideo {
   category: string;
   specialLink?: string;
   objectPosition?: string;
+  thumbnailScale?: string;
 }
 
 const curatedVideos: CuratedVideo[] = [
@@ -78,7 +79,8 @@ const curatedVideos: CuratedVideo[] = [
     title: { pt: "NO FIO DA ESPADA", en: "ON THE EDGE OF THE SWORD" },
     subtitle: { pt: "CARTA PRETA", en: "CARTA PRETA" },
     year: "2021", 
-    category: "music-video" 
+    category: "music-video",
+    thumbnailScale: "scale-125"
   },
   { 
     source: "vimeo", 

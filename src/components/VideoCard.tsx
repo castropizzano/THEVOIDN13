@@ -25,6 +25,7 @@ interface VideoCardProps {
     category: string;
     specialLink?: string;
     objectPosition?: string;
+    thumbnailScale?: string;
   };
   language: "pt" | "en";
   categoryLabel: string;
@@ -59,7 +60,7 @@ export const VideoCard = ({ video, language, categoryLabel }: VideoCardProps) =>
             src={getThumbnailUrl()}
             alt={title}
             loading="lazy"
-            className="h-full w-full object-cover transition-all duration-500 grayscale group-hover:grayscale-0 scale-125"
+            className={`h-full w-full object-cover transition-all duration-500 grayscale group-hover:grayscale-0 ${video.thumbnailScale || ''}`}
             style={{ objectPosition: video.objectPosition || 'center' }}
           />
           
