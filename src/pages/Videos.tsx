@@ -18,149 +18,46 @@ interface CuratedVideo {
 }
 
 const curatedVideos: CuratedVideo[] = [
-  // ========================================
-  // SLOT 1: VIMEO - CURTA-METRAGEM
-  // ========================================
-  {
-    source: "vimeo",
-    videoId: "000000001", // SUBSTITUIR: Cole aqui o ID do Vimeo (ex: vimeo.com/123456789 → 123456789)
-    title: { 
-      pt: "Título do Curta PT", 
-      en: "Short Film Title EN" 
-    },
-    description: { 
-      pt: "Descrição do trabalho em português. Contexto, técnica, conceito...", 
-      en: "Work description in English. Context, technique, concept..." 
-    },
-    year: "2024",
-    category: "curta-metragem"
-  },
-  
-  // ========================================
-  // SLOT 2: INTERNET ARCHIVE - DOCUMENTÁRIO
-  // ========================================
-  {
-    source: "internet-archive",
-    videoId: "seu-item-id-archive", // SUBSTITUIR: Cole aqui o identifier do Internet Archive (ex: archive.org/details/meu-video → meu-video)
-    title: { 
-      pt: "Título do Documentário PT", 
-      en: "Documentary Title EN" 
-    },
-    description: { 
-      pt: "Descrição do documentário em português...", 
-      en: "Documentary description in English..." 
-    },
-    year: "2023",
-    category: "documentário"
-  },
-  
-  // ========================================
-  // SLOT 3: VIMEO - VIDEOPERFORMANCE
-  // ========================================
-  {
-    source: "vimeo",
-    videoId: "000000003", // SUBSTITUIR
-    title: { 
-      pt: "Título da Videoperformance PT", 
-      en: "Video Performance Title EN" 
-    },
-    description: { 
-      pt: "Descrição da performance audiovisual...", 
-      en: "Audiovisual performance description..." 
-    },
-    year: "2023",
-    category: "videoperformance"
-  },
-  
-  // ========================================
-  // SLOT 4: INTERNET ARCHIVE - COMERCIAL
-  // ========================================
-  {
-    source: "internet-archive",
-    videoId: "seu-comercial-archive", // SUBSTITUIR
-    title: { 
-      pt: "Título do Comercial PT", 
-      en: "Commercial Title EN" 
-    },
-    description: { 
-      pt: "Descrição do trabalho comercial...", 
-      en: "Commercial work description..." 
-    },
-    year: "2022",
-    category: "comercial"
-  },
-  
-  // ========================================
-  // SLOT 5: VIMEO - CURTA-METRAGEM
-  // ========================================
-  {
-    source: "vimeo",
-    videoId: "000000005", // SUBSTITUIR
-    title: { 
-      pt: "Título do Curta 2 PT", 
-      en: "Short Film 2 Title EN" 
-    },
-    description: { 
-      pt: "Descrição do segundo curta-metragem...", 
-      en: "Second short film description..." 
-    },
-    year: "2022",
-    category: "curta-metragem"
-  },
-  
-  // ========================================
-  // SLOT 6: VIMEO - DOCUMENTÁRIO
-  // ========================================
-  {
-    source: "vimeo",
-    videoId: "000000006", // SUBSTITUIR
-    title: { 
-      pt: "Título do Doc 2 PT", 
-      en: "Documentary 2 Title EN" 
-    },
-    description: { 
-      pt: "Descrição do segundo documentário...", 
-      en: "Second documentary description..." 
-    },
-    year: "2021",
-    category: "documentário"
-  },
-  
-  // ========================================
-  // SLOT 7: YOUTUBE - VIDEOPERFORMANCE (OPCIONAL)
-  // ========================================
-  {
-    source: "youtube",
-    videoId: "dQw4w9WgXcQ", // SUBSTITUIR: Cole aqui o ID do YouTube (ex: youtube.com/watch?v=ABC123 → ABC123)
-    title: { 
-      pt: "Título da Performance YouTube PT", 
-      en: "YouTube Performance Title EN" 
-    },
-    description: { 
-      pt: "Descrição da videoperformance no YouTube...", 
-      en: "YouTube video performance description..." 
-    },
-    year: "2021",
-    category: "videoperformance"
-  },
-  
-  // ========================================
-  // SLOT 8: INTERNET ARCHIVE - CURTA-METRAGEM (OPCIONAL)
-  // ========================================
-  {
-    source: "internet-archive",
-    videoId: "seu-curta-archive", // SUBSTITUIR
-    title: { 
-      pt: "Título do Curta Archive PT", 
-      en: "Archive Short Film Title EN" 
-    },
-    description: { 
-      pt: "Descrição do curta no Internet Archive...", 
-      en: "Internet Archive short film description..." 
-    },
-    year: "2020",
-    category: "curta-metragem"
-  }
+  { source: "vimeo", videoId: "819353942", title: { pt: "Vídeo 01", en: "Video 01" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2024", category: "curta-metragem" },
+  { source: "vimeo", videoId: "castropizzano/maenatureza", title: { pt: "Mãe Natureza", en: "Mother Nature" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2024", category: "videoperformance" },
+  { source: "vimeo", videoId: "1113340788", title: { pt: "Vídeo 03", en: "Video 03" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2024", category: "curta-metragem" },
+  { source: "vimeo", videoId: "1009245969", title: { pt: "Vídeo 04", en: "Video 04" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2024", category: "documentário" },
+  { source: "vimeo", videoId: "647030152", title: { pt: "Vídeo 05", en: "Video 05" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2023", category: "curta-metragem" },
+  { source: "vimeo", videoId: "1011149512", title: { pt: "Vídeo 06", en: "Video 06" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2024", category: "videoperformance" },
+  { source: "vimeo", videoId: "647038633", title: { pt: "Vídeo 07", en: "Video 07" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2023", category: "comercial" },
+  { source: "vimeo", videoId: "205557108", title: { pt: "Vídeo 08", en: "Video 08" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2022", category: "curta-metragem" },
+  { source: "vimeo", videoId: "379505784", title: { pt: "Vídeo 09", en: "Video 09" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2022", category: "documentário" },
+  { source: "vimeo", videoId: "913360719", title: { pt: "Vídeo 10", en: "Video 10" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2023", category: "videoperformance" },
+  { source: "vimeo", videoId: "1113341670", title: { pt: "Vídeo 11", en: "Video 11" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2024", category: "curta-metragem" },
+  { source: "vimeo", videoId: "379505079", title: { pt: "Vídeo 12", en: "Video 12" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2022", category: "comercial" },
+  { source: "vimeo", videoId: "846675243", title: { pt: "Vídeo 13", en: "Video 13" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2023", category: "documentário" },
+  { source: "vimeo", videoId: "1007123356", title: { pt: "Vídeo 14", en: "Video 14" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2024", category: "videoperformance" },
+  { source: "vimeo", videoId: "647033555", title: { pt: "Vídeo 15", en: "Video 15" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2023", category: "curta-metragem" },
+  { source: "vimeo", videoId: "698852539", title: { pt: "Vídeo 16", en: "Video 16" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2023", category: "comercial" },
+  { source: "vimeo", videoId: "1031724488", title: { pt: "Vídeo 18", en: "Video 18" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2024", category: "documentário" },
+  { source: "vimeo", videoId: "534231958", title: { pt: "Vídeo 19", en: "Video 19" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2022", category: "curta-metragem" },
+  { source: "vimeo", videoId: "686144695", title: { pt: "Vídeo 20", en: "Video 20" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2023", category: "videoperformance" },
+  { source: "vimeo", videoId: "1007122683", title: { pt: "Vídeo 21", en: "Video 21" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2024", category: "comercial" },
+  { source: "vimeo", videoId: "1007120645", title: { pt: "Vídeo 22", en: "Video 22" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2024", category: "documentário" },
+  { source: "vimeo", videoId: "163004143", title: { pt: "Vídeo 23", en: "Video 23" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2021", category: "curta-metragem" },
+  { source: "vimeo", videoId: "686156639", title: { pt: "Vídeo 24", en: "Video 24" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2023", category: "videoperformance" },
+  { source: "vimeo", videoId: "819517648", title: { pt: "Vídeo 25", en: "Video 25" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2023", category: "comercial" },
+  { source: "vimeo", videoId: "349827062", title: { pt: "Vídeo 26", en: "Video 26" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2021", category: "documentário" },
+  { source: "vimeo", videoId: "406871732", title: { pt: "Vídeo 27", en: "Video 27" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2022", category: "curta-metragem" },
+  { source: "vimeo", videoId: "406871953", title: { pt: "Vídeo 28", en: "Video 28" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2022", category: "videoperformance" },
+  { source: "vimeo", videoId: "493604256", title: { pt: "Vídeo 29", en: "Video 29" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2022", category: "comercial" },
+  { source: "vimeo", videoId: "474411083", title: { pt: "Vídeo 30", en: "Video 30" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2022", category: "documentário" },
+  { source: "vimeo", videoId: "406868847", title: { pt: "Vídeo 31", en: "Video 31" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2022", category: "curta-metragem" },
+  { source: "vimeo", videoId: "349830611", title: { pt: "Vídeo 32", en: "Video 32" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2021", category: "videoperformance" },
+  { source: "vimeo", videoId: "castropizzano/udnfs", title: { pt: "UDNFS", en: "UDNFS" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2021", category: "comercial" },
+  { source: "vimeo", videoId: "163004144", title: { pt: "Vídeo 34", en: "Video 34" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2021", category: "documentário" },
+  { source: "vimeo", videoId: "1007121923", title: { pt: "Vídeo 35", en: "Video 35" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2024", category: "curta-metragem" },
+  { source: "vimeo", videoId: "195199575", title: { pt: "Vídeo 36", en: "Video 36" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2021", category: "videoperformance" },
+  { source: "vimeo", videoId: "349764052", title: { pt: "Vídeo 37", en: "Video 37" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2021", category: "comercial" },
+  { source: "vimeo", videoId: "163004137", title: { pt: "Vídeo 38", en: "Video 38" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2021", category: "documentário" },
+  { source: "vimeo", videoId: "349775160", title: { pt: "Vídeo 39", en: "Video 39" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2021", category: "curta-metragem" },
+  { source: "vimeo", videoId: "1031721731", title: { pt: "Vídeo 40", en: "Video 40" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2024", category: "videoperformance" },
+  { source: "internet-archive", videoId: "nyx-post-porn-2024", title: { pt: "Nyx Post Porn", en: "Nyx Post Porn" }, description: { pt: "Trabalho audiovisual", en: "Audiovisual work" }, year: "2024", category: "videoperformance" }
 ];
 
 const Videos = () => {
