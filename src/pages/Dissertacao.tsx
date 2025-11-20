@@ -663,39 +663,29 @@ const Dissertacao = () => {
             </div>
 
             {/* Case Studies and Videos */}
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-card/80 border border-primary/30 rounded-lg p-6 hover:border-primary/50 transition-colors">
-                <h4 className="font-mono text-accent font-bold mb-4">[LOWPRESSURE™]</h4>
-                <a 
-                  href="https://castropizzano.com/lowpressure" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="bible-link hover:underline block font-mono text-sm"
-                >
-                  // Estudo de Caso / Case Study
-                </a>
-              </div>
-
+            <div className="bg-card/80 border border-primary/30 rounded-lg p-6 hover:border-primary/50 transition-colors">
+              <h4 className="font-mono text-accent font-bold mb-4">[LOWPRESSURE™]</h4>
+              <a 
+                href="https://castropizzano.com/lowpressure" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bible-link hover:underline block font-mono text-sm"
+              >
+                <span className="lang-pt">// Estudo de Caso</span>
+                <span className="lang-en">// Case Study</span>
+              </a>
             </div>
 
             {/* Dissertação - Coming Soon */}
             <div className="bg-card/80 border-2 border-primary/30 rounded-lg p-8">
-              <div className="bilingual-grid mb-4">
-                <div className="bilingual-col">
-                  <h4 className="font-mono text-primary font-bold">[DISSERTAÇÃO_DE_MESTRADO]</h4>
-                </div>
-                <div className="bilingual-col">
-                  <h4 className="font-mono text-primary font-bold">[MASTER'S_DISSERTATION]</h4>
-                </div>
-              </div>
-              <div className="bible-bilingual-grid">
-                <div>
-                  <p className="bible-body text-muted-foreground">Depósito da dissertação de mestrado em breve.</p>
-                </div>
-                <div>
-                  <p className="bible-body text-muted-foreground">Master's dissertation deposit coming soon.</p>
-                </div>
-              </div>
+              <h4 className="font-mono text-primary font-bold mb-4">
+                <span className="lang-pt">[DISSERTAÇÃO_DE_MESTRADO]</span>
+                <span className="lang-en">[MASTER'S_DISSERTATION]</span>
+              </h4>
+              <p className="bible-body text-muted-foreground">
+                <span className="lang-pt">Depósito da dissertação de mestrado em breve.</span>
+                <span className="lang-en">Master's dissertation deposit coming soon.</span>
+              </p>
             </div>
           </div>
         </BilingualSection>
