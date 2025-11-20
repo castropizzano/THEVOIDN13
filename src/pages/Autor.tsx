@@ -453,25 +453,22 @@ DaVinci Resolve"
                 <div className="my-8 p-6 border-2 border-primary/30 rounded-lg bg-background">
                   <h3 className="bible-subtitle">O DEVICE OF IDENTITY</h3>
                   
-                  <div className="my-4 space-y-2 text-sm leading-relaxed">
-                    <p className="bible-link">É cartela de abertura.</p>
-                    <p className="bible-link">É placa soviética perdida num prédio abandonado.</p>
-                    <p className="bible-link">É documento de um futuro que ainda não aconteceu.</p>
-                    <p className="bible-link">É manifesto construtivista.</p>
-                    <p className="bible-link">É relíquia de um portal híbrido entre humano e máquina.</p>
+                  <div className="my-4 space-y-3 text-sm leading-relaxed">
+                    <p className="bible-body">Cartela de abertura num filme sem projetor. Placa soviética arrancada da parede de um cinema abandonado — ainda viva. Documento vazado de um futuro que se recusa a chegar. Manifesto construtivista reimaginado por quem nunca pertenceu à vanguarda.</p>
+                    <p className="bible-body">Relíquia de um portal onde o humano desiste e a máquina tateia o escuro.</p>
                   </div>
 
                   <div className="my-4 p-4 bg-primary/5 border-l-4 border-primary">
-                    <p className="bible-body italic">É rito, não crença. É gesto, não explicação. É presença, não vitrine.</p>
+                    <p className="bible-body italic">Rito sem altar. Gesto sem audiência. Presença que não pede permissão.</p>
                   </div>
 
-                  <p className="bible-body">Pela primeira vez, ЦАСТРО™ e THEVØIDN13 se encontram no mesmo eixo:</p>
+                  <p className="bible-body mt-6">Pela primeira vez, todas as camadas se alinham no mesmo eixo — não por design, mas por inevitabilidade:</p>
                   
-                  <div className="my-4 grid gap-2">
-                    <p className="bible-link"><span className="font-bold">ЦАСТРО™</span> — o autor que desaparece.</p>
-                    <p className="bible-link"><span className="font-bold">THEVØIDN13</span> — a entidade que respira.</p>
-                    <p className="bible-link"><span className="font-bold">LowPressure & CasaTreze</span> — o corpo e o chão.</p>
-                    <p className="bible-link"><span className="font-bold">Os ícones</span> — a assinatura fúnebre de um filme que nunca termina.</p>
+                  <div className="my-4 space-y-3 pl-4 border-l-2 border-primary/30">
+                    <p className="bible-body"><span className="font-bold text-primary">ЦАСТРО™</span> — o autor que desaparece para que a obra respire sozinha.</p>
+                    <p className="bible-body"><span className="font-bold text-primary">THEVØIDN13</span> — a entidade-framework, o sistema operacional da sombra.</p>
+                    <p className="bible-body"><span className="font-bold text-primary">LowPressure & CasaTreze</span> — o corpo material e o chão concreto onde tudo se ancora.</p>
+                    <p className="bible-body"><span className="font-bold text-primary">Os ícones</span> — créditos finais de um filme que nunca para de rodar.</p>
                   </div>
                 </div>
 
@@ -604,25 +601,22 @@ DaVinci Resolve"
                 <div className="my-8 p-6 border-2 border-primary/30 rounded-lg bg-background">
                   <h3 className="bible-subtitle">THE DEVICE OF IDENTITY</h3>
                   
-                  <div className="my-4 space-y-2 text-sm leading-relaxed">
-                    <p className="bible-link">It's an opening title card.</p>
-                    <p className="bible-link">It's a Soviet plaque lost in an abandoned building.</p>
-                    <p className="bible-link">It's a document from a future that hasn't happened yet.</p>
-                    <p className="bible-link">It's a constructivist manifesto.</p>
-                    <p className="bible-link">It's a relic of a hybrid portal between human and machine.</p>
+                  <div className="my-4 space-y-3 text-sm leading-relaxed">
+                    <p className="bible-body">Opening title card in a film with no projector. Soviet plaque torn from the wall of an abandoned cinema — still alive. Leaked document from a future that refuses to arrive. Constructivist manifesto reimagined by those who never belonged to the vanguard.</p>
+                    <p className="bible-body">Relic of a portal where the human gives up and the machine gropes in the dark.</p>
                   </div>
 
                   <div className="my-4 p-4 bg-primary/5 border-l-4 border-primary">
-                    <p className="bible-body italic">It is ritual, not belief. It is gesture, not explanation. It is presence, not showcase.</p>
+                    <p className="bible-body italic">Ritual without altar. Gesture without audience. Presence that asks no permission.</p>
                   </div>
 
-                  <p className="bible-body">For the first time, ЦАСТРО™ and THEVØIDN13 meet on the same axis:</p>
+                  <p className="bible-body mt-6">For the first time, all layers align on the same axis — not by design, but by inevitability:</p>
                   
-                  <div className="my-4 grid gap-2">
-                    <p className="bible-link"><span className="font-bold">ЦАСТРО™</span> — the author who disappears.</p>
-                    <p className="bible-link"><span className="font-bold">THEVØIDN13</span> — the entity that breathes.</p>
-                    <p className="bible-link"><span className="font-bold">LowPressure & CasaTreze</span> — the body and the ground.</p>
-                    <p className="bible-link"><span className="font-bold">The icons</span> — the funerary signature of a film that never ends.</p>
+                  <div className="my-4 space-y-3 pl-4 border-l-2 border-primary/30">
+                    <p className="bible-body"><span className="font-bold text-primary">ЦАСТРО™</span> — the author who disappears so the work can breathe alone.</p>
+                    <p className="bible-body"><span className="font-bold text-primary">THEVØIDN13</span> — the entity-framework, the operating system of shadow.</p>
+                    <p className="bible-body"><span className="font-bold text-primary">LowPressure & CasaTreze</span> — the material body and concrete ground where everything anchors.</p>
+                    <p className="bible-body"><span className="font-bold text-primary">The icons</span> — end credits of a film that never stops rolling.</p>
                   </div>
                 </div>
 
