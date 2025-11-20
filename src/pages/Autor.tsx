@@ -299,7 +299,7 @@ DaVinci Resolve"
                 />
                 <SkillCard 
                   title="LowMovie™ | 2019-2023"
-                  content="Videoarte + documentário + cinema experimental sobre o skate como linguagem estética. Estreia no Cine Passeio em 2023"
+                  content="Videoarte + documentário + cinema experimental sobre o skate como linguagem estética. Estreia no Vila Ida em dezembro de 2022"
                 />
                 <SkillCard 
                   title="MESTRADO / THEVØIDN13 | 2024-2025"
@@ -330,7 +330,7 @@ DaVinci Resolve"
                 />
                 <SkillCard 
                   title="LowMovie™ | 2019-2023"
-                  content="Video art + documentary + experimental cinema about skating as aesthetic language. Premiere at Cine Passeio in 2023"
+                  content="Video art + documentary + experimental cinema about skating as aesthetic language. Premiere at Vila Ida in December 2022"
                 />
                 <SkillCard 
                   title="MASTER'S DEGREE / THEVØIDN13 | 2024-2025"
@@ -651,7 +651,7 @@ DaVinci Resolve"
                 <div className="space-y-4">
                   <div className="border-l-2 border-primary pl-4">
                     <h4 className="bible-body font-bold mb-2">LowMovie™ (2019-2023)</h4>
-                    <p className="bible-body">Filme-manifesto sobre skateboarding, subculturas e processos colaborativos. Estreou no Cine Passeio em 2023 e tornou-se objeto central da pesquisa de mestrado. Integra videoarte, documentário e cinema experimental.</p>
+                    <p className="bible-body">Filme-manifesto sobre skateboarding, subculturas e processos colaborativos. Estreou no Vila Ida em 16 de dezembro de 2022 e tornou-se objeto central da pesquisa de mestrado. Integra videoarte, documentário e cinema experimental.</p>
                   </div>
                   
                   <div className="border-l-2 border-primary pl-4">
@@ -683,7 +683,7 @@ DaVinci Resolve"
                 <div className="space-y-4">
                   <div className="border-l-2 border-primary pl-4">
                     <h4 className="bible-body font-bold mb-2">LowMovie™ (2019-2023)</h4>
-                    <p className="bible-body">Manifesto-film about skateboarding, subcultures and collaborative processes. Premiered at Cine Passeio in 2023 and became central object of master's research. Integrates video art, documentary and experimental cinema.</p>
+                    <p className="bible-body">Manifesto-film about skateboarding, subcultures and collaborative processes. Premiered at Vila Ida on December 16, 2022 and became central object of master's research. Integrates video art, documentary and experimental cinema.</p>
                   </div>
                   
                   <div className="border-l-2 border-primary pl-4">
