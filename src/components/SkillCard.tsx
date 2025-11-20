@@ -16,13 +16,13 @@ export const SkillCard = ({ title, content, className }: SkillCardProps) => {
         className
       )}
     >
-      <CardHeader className="pb-3">
-        <CardTitle className="bible-subtitle text-primary">
+      <CardHeader className="pb-2">
+        <CardTitle className="text-sm font-mono font-bold text-primary uppercase tracking-wide">
           {title}
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <p className="bible-body text-muted-foreground leading-relaxed">
+        <p className="text-xs font-mono text-muted-foreground leading-snug">
           {content}
         </p>
       </CardContent>
