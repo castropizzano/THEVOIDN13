@@ -165,152 +165,94 @@ export const ComicGenerator = () => {
     setGeneratedImage(null);
 
     try {
-      // SEMANTIC VALIDATION: Detect if user wants multiple characters or non-THEVØIDN13 scenes
-      const detectMultipleCharacters = (prompt: string): boolean => {
-        const lowerPrompt = prompt.toLowerCase();
-        
-        // Keywords indicating multiple people
-        const multipleCharactersKeywords = [
-          'pessoas', 'grupo', 'roda', 'multidão', 'turma', 'galera', 'gente',
-          'people', 'group', 'circle', 'crowd', 'gang', 'folks', 'characters',
-          'dois', 'três', 'quatro', 'cinco', 'vários', 'muitos', 'alguns',
-          'two', 'three', 'four', 'five', 'several', 'many', 'some', 'multiple'
-        ];
-        
-        // Keywords for specific scenes without masked character
-        const sceneKeywords = [
-          'fogueira', 'bonfire', 'fire', 'festa', 'party', 'celebração', 'celebration',
-          'reunião', 'meeting', 'encontro', 'gathering', 'conversa', 'conversation'
-        ];
-        
-        const hasMultipleKeyword = multipleCharactersKeywords.some(keyword => lowerPrompt.includes(keyword));
-        const hasSceneKeyword = sceneKeywords.some(keyword => lowerPrompt.includes(keyword));
-        
-        return hasMultipleKeyword || hasSceneKeyword;
-      };
+      // ============= STYLE-FIRST FOUNDATION v2.1.1 =============
+      // LAYER 1: STYLE FOUNDATION (always applied)
+      const STYLE_FOUNDATION = `[GRAPHIC NOVEL ILLUSTRATION — MANDATORY STYLE]
+This is a COMIC BOOK / GRAPHIC NOVEL panel illustration, NOT a photograph.
 
-      const isMultipleCharactersScene = detectMultipleCharacters(trimmedPrompt);
+VISUAL STYLE REQUIREMENTS:
+- Hand-drawn aesthetic with visible black ink outlines on ALL elements
+- Bold cel-shading with flat color blocks (Western comic book style)
+- Heavy inks with varying line weight (thick outlines, thin details)
+- Ben-day dots and halftone patterns in midtones/shadows
+- Paper grain texture overlay (printed comic book aesthetic)
+- NO photorealism, NO 3D render, NO photography aesthetic whatsoever
 
-      // CRITICAL: COMIC BOOK / GRAPHIC NOVEL STYLE OVERRIDE
-      const COMIC_STYLE_OVERRIDE = `[ABSOLUTE PRIORITY — GRAPHIC NOVEL / COMIC BOOK AESTHETIC]
-CRITICAL: This MUST be a COMIC BOOK / GRAPHIC NOVEL illustration, NOT a photograph, NOT realistic.
-
-MANDATORY COMIC STYLE:
-- Illustrated artwork with visible ink linework (bold black outlines, varying thickness)
-- Hand-drawn aesthetic with WATCHMEN graphic novel influence
-- Cel-shaded coloring with flat color blocks and strategic gradients
-- Comic book panel composition with dynamic angles
-- Ben-day dots texture in shadows (subtle halftone patterns)
-- Heavy shadows with stark contrast (noir comic book lighting)
+LINEWORK SPECS:
+- Bold black ink outlines defining all shapes and forms
+- Varying thickness for depth (thick foreground, thin background)
 - Visible brush strokes and ink textures
-- Paper grain texture overlay (like printed comic pages)
-- NO photorealism, NO 3D rendering, NO digital photography look
+- Cross-hatching for shadows and texture depth`;
 
-ARTISTIC REFERENCES FOR COMIC STYLE:
-- Watchmen (Dave Gibbons) — gritty urban realism in comic form
-- Batman: The Dark Knight Returns (Frank Miller) — noir shadows, bold inks
-- Sin City (Frank Miller) — high contrast black/white/color accents
-- Akira manga panels (Katsuhiro Otomo) — detailed urban decay illustrations
-- The Killing Joke — atmospheric comic book lighting`;
-
-      // CONDITIONAL CHARACTER RULES: Apply THEVØIDN13 character ONLY if single character scene
-      const CHARACTER_RULES = isMultipleCharactersScene 
-        ? `[FLEXIBLE CHARACTER COMPOSITION]
-- PRIORITIZE user's scene description over default character
-- If user requests multiple people, draw MULTIPLE CHARACTERS as comic book illustrations
-- Each character should have distinct features, poses, and clothing in Western comic book style
-- Characters can be generic (no masks required) unless specifically requested
-- Focus on group dynamics, interactions, and scene composition
-- Maintain noir/urban aesthetic but allow character variety`
-        : `THEVØIDN13 UNIVERSE — Shadow Interface Bible v13 COMIC BOOK PROTOCOL:
-
-CRITICAL OVERRIDE: THIS IS A GRAPHIC NOVEL / COMIC BOOK ILLUSTRATION, NOT A PHOTOGRAPH.
-
-MANDATORY CHARACTER (COMIC STYLE):
-- White expressionless mask with bold black ink outlines (completely smooth, NO eyes, NO mouth, pure matte white)
-- Oversized olive-green military parka with hood up, drawn with heavy ink lines and hatching for texture
-- OR black/charcoal tactical wear with weathered fabric illustrated with cross-hatching
-
-ABSOLUTE COMIC REQUIREMENTS:
-- Mask MUST be completely featureless (no eyes, no expression) with bold black outline
-- MUST feel like Watchmen urban panel — lonely, isolated, noir`;
-
-      // VISUAL REINFORCEMENT: Apply hero reference ONLY for single character scenes
-      const VISUAL_REINFORCEMENT = isMultipleCharactersScene
-        ? `[SCENE-FOCUSED COMPOSITION]
-- Dynamic group composition with comic book panel framing
-- Visible interactions between characters (gestures, eye contact, body language)
-- Atmospheric lighting that serves the scene (firelight, urban glow, shadows)
-- Comic book depth with foreground/background separation using line weight
-- Noir atmosphere but adapted to scene context (warm if fire scene, cold if urban night)`
-        : `[MATCH hero-rain-wide.png BUT AS COMIC BOOK ILLUSTRATION]
-- Mask finish: MATTE white in comic book style (bold black outlines defining edges)
-- Hood texture: Illustrated olive-green military fabric with ink hatching for wrinkles
-- Neon intensity: DIM atmospheric glow rendered as comic book light effects (30-40% luminosity)
-- Color temperature: 60% cold teal shadows + 40% warm orange highlights (flat cel-shading)
-- Comic grain: Printed comic book paper texture (NOT film grain, NOT digital noise)
-- Depth of field: Comic panel focus (sharp subject, illustrated background blur with line work)
-- Wet asphalt reflections: Illustrated puddles with mirror effects (comic book water rendering)
-- Atmospheric haze: Volumetric fog drawn with gradient washes and ink textures
-- Mood: Lonely urban scene as GRAPHIC NOVEL panel — Watchmen meets THEVØIDN13
-- Linework: Visible black ink outlines on ALL elements (character, buildings, rain, puddles)`;
-
-      // CORE VISUAL STYLE (always applied)
-      const CORE_STYLE = `CANONICAL COLOR PALETTE (CEL-SHADED COMIC STYLE):
-- Background: Deep shadow black #1A1A1A (solid ink blacks with Ben-day dots in midtones)
-- Highlights: Void white #FFFFFF (stark white areas, no gradients)
-- Midtones: Ghost gray #E6E6E6 (flat color blocks with halftone patterns)
-- Accent: Synthetic red #C40000 (bold comic book red, minimal use for dramatic effect)
+      // LAYER 2: COLOR PALETTE (always applied)
+      const COLOR_PALETTE = `THEVØIDN13 NOIR PALETTE (CEL-SHADED):
+- Primary Black: #1A1A1A (solid ink blacks with Ben-day dots in midtones)
+- Ghost Gray: #E6E6E6 (flat color blocks with subtle halftone patterns)
+- Synthetic Red: #C40000 (bold comic book red for dramatic accents only)
+- Void White: #FFFFFF (stark white highlights, NO gradients)
 
 COMIC LIGHTING SIGNATURE:
-- Primary: Cold blue neon (#0066CC) rendered as glowing comic book light effects
-- Secondary: Warm red/orange (#FF4400) backlight as illustrated rim lighting
-- Technique: High contrast chiaroscuro with stark blacks, cel-shading, Ben-day dots in shadows
-- Wet surface reflections illustrated with mirror puddles and hatching
+- Cold neon: #0066CC (illustrated blue glow effects, NOT photographic)
+- Warm backlight: #FF4400 (illustrated orange rim lighting)
+- Technique: High contrast chiaroscuro with stark blacks
+- Reflections: Illustrated mirror puddles with hatching (comic book water rendering)`;
 
-ENVIRONMENT (ILLUSTRATED):
-- Brazilian urban decay drawn as detailed comic panels
+      // LAYER 3: ENVIRONMENT & MOOD (always applied)
+      const ENVIRONMENT_MOOD = `THEVØIDN13 VISUAL ATMOSPHERE (ILLUSTRATED):
+Brazilian urban decay setting drawn as comic book panels:
 - Brutalist concrete with bold ink outlines and texture hatching
 - Wet asphalt streets with illustrated puddles showing reflections
-- Graffiti-stained walls with hand-drawn street art
+- Graffiti-stained walls with hand-drawn street art details
 - Flickering neon signs in Portuguese (illustrated glow effects)
+- Rain/moisture: Comic book water rendering (NOT photorealistic)
 
-COMIC CINEMATOGRAPHY:
-- Panel composition: Rule of thirds, off-center subject, dynamic angles
-- Ink linework: Bold black outlines, varying thickness for depth
-- Coloring: Flat cel-shading with strategic gradients (NO photorealistic lighting)
-- Texture: Visible paper grain, Ben-day dots, ink splatters for atmosphere
-- Focus: Comic panel depth with illustrated background blur
+MOOD REQUIREMENTS:
+- Neo-noir isolation atmosphere (Watchmen-style urban panel)
+- Heavy shadows with stark contrast (noir comic lighting)
+- Urban decay aesthetic but NOT dystopian sci-fi
+- Wet surfaces with illustrated reflections (NOT photographic specular)
+- Atmospheric depth: Illustrated background blur with visible linework`;
 
-MOOD: Neo-noir GRAPHIC NOVEL — urban isolation illustrated as Watchmen-style panel
+      // LAYER 4: ARTISTIC REFERENCES (always applied)
+      const ARTISTIC_REFERENCES = `STYLE REFERENCES (COMIC BOOK ONLY):
+Match the visual aesthetic of these graphic novels:
+- Watchmen (Dave Gibbons) — gritty urban realism, heavy inks, noir mood
+- Batman: The Dark Knight Returns (Frank Miller) — bold shadows, stark contrast
+- Sin City (Frank Miller) — high contrast blacks/whites with color accents
+- Akira manga (Katsuhiro Otomo) — detailed urban decay illustrations
 
-ARTISTIC REFERENCES (COMIC BOOK ONLY):
-- Watchmen (Dave Gibbons) — gritty urban panels, heavy inks
-- Batman: The Dark Knight Returns (Frank Miller) — noir shadows
-- Sin City (Frank Miller) — high contrast illustration
-- Akira manga (Katsuhiro Otomo) — detailed urban decay drawings
+STYLE SYNTHESIS:
+Combine Watchmen's gritty panel composition + THEVØIDN13's noir aesthetic:
+- Heavy inks with visible linework on all elements
+- Flat cel-shading with strategic comic book gradients
+- Urban isolation mood with rain-soaked streets
+- Neon glow rendered as illustrated light effects (NOT lens flare)
+- Hand-drawn aesthetic with digital coloring (modern graphic novel standard)`;
 
-TECHNICAL SPECIFICATIONS:
-- Format: 1024x1024 comic book illustration panel
-- Style: Hand-drawn aesthetic with digital coloring (like modern graphic novels)
-- Texture: Printed comic book paper grain overlay
-- Linework: Visible black ink outlines on ALL elements
-- Shading: Cel-shading with strategic halftone dots
+      // ============= FINAL PROMPT STRUCTURE (LINEAR) =============
+      const detailedPrompt = `
+${STYLE_FOUNDATION}
 
-ABSOLUTE COMIC REQUIREMENTS:
-- MUST look like a graphic novel panel (NOT a photograph)
-- MUST have visible black ink outlines defining all shapes
-- MUST use flat color blocks with cel-shading (NO photorealistic gradients)
-- Neon MUST be illustrated glow effects (NOT photographic light)
-- MUST include illustrated wet surfaces with comic book reflections
+${COLOR_PALETTE}
+
+${ENVIRONMENT_MOOD}
+
+${ARTISTIC_REFERENCES}
+
+[USER SCENE DESCRIPTION — PRIMARY CONTENT]
+${trimmedPrompt}
+
+[FINAL STYLE ENFORCEMENT]
+Render the above scene as a GRAPHIC NOVEL PANEL maintaining:
+- THEVØIDN13 visual style (linework, noir palette, urban mood)
+- Bold ink outlines and cel-shading on all elements
+- Paper grain texture and comic book aesthetic
+- Allow ANY content the user described
+- Preserve noir/urban atmosphere regardless of scene subject
 - NO photorealism, NO 3D rendering, NO photography aesthetic
-- NO bright cheerful colors except dramatic red accent
-- NO anime style, NO manga shading (Western comic book style only)`;
-      
-      const detailedPrompt = `${COMIC_STYLE_OVERRIDE}\n\n${CHARACTER_RULES}\n\n${CORE_STYLE}\n\n${VISUAL_REINFORCEMENT}\n\nSCENE DESCRIPTION: ${trimmedPrompt}\n\n[FINAL REINFORCEMENT: This is a COMIC BOOK / GRAPHIC NOVEL illustration with visible ink linework and cel-shading. NOT a photograph. Style reference: Watchmen graphic novel meets THEVØIDN13 aesthetic. ${isMultipleCharactersScene ? 'PRIORITIZE the user scene description over default character.' : ''}]`;
+`;
 
-      console.log('Generating THEVØIDN13 comic book panel with graphic novel style...');
-      console.log('Multiple characters scene detected:', isMultipleCharactersScene);
+      console.log('Generating THEVØIDN13 comic book panel with STYLE-FIRST FOUNDATION v2.1.1...');
       console.log('Prompt length:', detailedPrompt.length, 'chars');
 
       // Generate comic book style image using Pollinations.AI
@@ -319,8 +261,10 @@ ABSOLUTE COMIC REQUIREMENTS:
       pollinationsUrl.searchParams.set('height', '1024');
       pollinationsUrl.searchParams.set('model', 'flux');
       pollinationsUrl.searchParams.set('nologo', 'true');
-      pollinationsUrl.searchParams.set('enhance', 'false'); // Disable to maintain comic style control
-      pollinationsUrl.searchParams.set('negative_prompt', 'photorealistic, 3D render, photograph, photography, camera, lens, DSLR, bokeh, depth of field blur, realistic lighting, ray tracing, CGI, digital art, smooth gradients, airbrush, soft shading, anime style, manga shading, bright colors, cheerful, happy, daylight, smiling, facial features on mask, eyes on mask, mouth on mask, clean environment, futuristic technology, sci-fi, neon cyberpunk, vibrant colors, saturated, HDR, lens flare, cinematic color grading, film grain, 35mm photography, Kodak Portra, digital noise, ARRI Alexa, RED camera');
+      pollinationsUrl.searchParams.set('enhance', 'false');
+      pollinationsUrl.searchParams.set('negative_prompt', 
+        'photorealistic, 3D render, photograph, photography, camera, lens, DSLR, Canon, Nikon, Sony, bokeh, depth of field blur, lens flare, chromatic aberration, realistic lighting, ray tracing, path tracing, global illumination, CGI, Unreal Engine, Blender, octane render, digital painting, smooth gradients, airbrush, soft shading, anime style, manga shading, kawaii, chibi, bright cheerful colors, vibrant saturated HDR, daylight sunny smiling, cinematic color grading, film grain photographic, 35mm photography, Kodak Portra, ARRI Alexa, RED camera, anamorphic, clean futuristic sci-fi, facial features on mask, eyes on mask, mouth on mask'
+      );
 
       const response = await fetch(pollinationsUrl.toString());
 
