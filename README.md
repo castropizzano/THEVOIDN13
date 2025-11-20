@@ -3,7 +3,7 @@ MEMORIAL ARTÍSTICO E PRÁXIS HÍBRIDA (HUMANO + MÁQUINA)
 por Castro Pizzano (цастро™)  
 Curitiba, Brasil — 2025
 
-[![Version](https://img.shields.io/badge/Version-2.1.1-A32424?style=for-the-badge&logo=git&logoColor=white)](PROJECT_STATUS.md)
+[![Version](https://img.shields.io/badge/Version-2.1.2-A32424?style=for-the-badge&logo=git&logoColor=white)](PROJECT_STATUS.md)
 [![License](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-A32424?style=for-the-badge&logo=creativecommons&logoColor=white)](LICENSE.md)
 [![Status](https://img.shields.io/badge/Status-Production_Ready-00d26a?style=for-the-badge&logo=rocket&logoColor=white)](PROJECT_STATUS.md)
 [![Mestrado](https://img.shields.io/badge/Mestrado-Pós--Qualificação-323A46?style=for-the-badge&logo=graduationcap&logoColor=white)]()
@@ -54,10 +54,10 @@ Curitiba, Brazil — 2025
 - Zero tracking, zero analytics, zero cookies
 
 **Interactive Tools:**
-- Creative Oracle — AI-powered artistic guidance
+- Creative Oracle — Archetype analysis and creative guidance
 - Mind Map — Visual exploration of project concepts
 - Prompt Library — Static collection of creative prompts
-- Audio narration — Multilingual conceptual content
+- Audio narration — Multilingual conceptual manifestos
 
 **Privacy & Transparency:**
 - Zero tracking, zero analytics, zero cookies

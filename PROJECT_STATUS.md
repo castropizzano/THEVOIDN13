@@ -13,9 +13,9 @@ Curitiba, Brazil — 2025
 
 ## 📊 CURRENT STATUS
 
-**Version:** 2.1.1  
+**Version:** 2.1.2  
 **Status:** Production Ready  
-**Last Updated:** November 20, 2025  
+**Last Updated:** November 20, 2025
 **Environment:** https://thevoidn13.com
 
 ───────────────────────────────────────────────────────────────
@@ -263,8 +263,8 @@ This memorial prioritizes **simplicity, privacy, and artistic integrity** over f
 ## 📜 CERTIFICATION
 
 **Status Date:** November 20, 2025  
-**Version:** 2.1.1  
-**Security:** 98/100  
+**Version:** 2.1.2  
+**Security:** 98/100
 **Privacy:** LGPD/GDPR Compliant  
 **Production:** Ready  
 **Academic:** Approved by research committee
