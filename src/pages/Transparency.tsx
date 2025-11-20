@@ -39,7 +39,7 @@ const Transparency = () => {
                 <CollectiveCard
                   title="Proporção de Dados"
                   period="2025"
-                  description="95% estático (HTML/CSS/JS), 5% dinâmico opcional (apenas feature AI). Não armazeno dados pessoais permanentes."
+                  description="98% estático (HTML/CSS/JS), 2% backend (apenas tabela 'prompts' somente leitura). Nenhum dado pessoal armazenado."
                 />
               </div>
             </div>
@@ -57,7 +57,7 @@ const Transparency = () => {
                 <CollectiveCard
                   title="Data Proportion"
                   period="2025"
-                  description="95% static (HTML/CSS/JS), 5% optional dynamic (AI feature only). I do not store permanent personal data."
+                  description="98% static (HTML/CSS/JS), 2% backend (only 'prompts' table read-only). No personal data stored."
                 />
               </div>
             </div>
@@ -174,7 +174,7 @@ const Transparency = () => {
                 <CollectiveCard
                   title="A Solução"
                   period="2025"
-                  description="Deletei todas as tabelas de rastreamento e autenticação. O site agora funciona 100% estático (exceto pela feature opcional de geração de imagens, que usa validação de input)."
+                  description="Deletei todas as tabelas de rastreamento e autenticação. O site agora funciona 100% estático."
                 />
               </div>
             </div>
@@ -219,7 +219,7 @@ const Transparency = () => {
                 <CollectiveCard
                   title="The Solution"
                   period="2025"
-                  description="I deleted all tracking and authentication tables. The site now works 100% static (except for the optional image generation feature, which uses input validation)."
+                  description="I deleted all tracking and authentication tables. The site now works 100% static."
                 />
               </div>
             </div>
@@ -236,7 +236,7 @@ const Transparency = () => {
                 <CollectiveCard
                   title="sessionStorage Apenas"
                   period="2025"
-                  description="Usado para: (1) preferência de idioma PT/EN, (2) controle de banner anti-vigilância, (3) rate limiting do Comic Generator (cooldown de 10s). Expira quando você fecha o navegador. Nenhum cookie, nenhum localStorage permanente."
+                  description="Usado para: (1) preferência de idioma PT/EN, (2) controle de banner anti-vigilância. Expira quando você fecha o navegador. Nenhum cookie, nenhum localStorage permanente."
                 />
                 
                 <div className="bg-muted/50 border-2 border-primary/50 p-6 font-mono text-sm">
@@ -244,7 +244,6 @@ const Transparency = () => {
                   <div className="space-y-2">
                     <code className="block text-muted-foreground">sessionStorage.setItem(&apos;language&apos;, &apos;pt&apos; | &apos;en&apos;)</code>
                     <code className="block text-muted-foreground">sessionStorage.setItem(&apos;antiSurveillanceBannerDismissed&apos;, &apos;true&apos;)</code>
-                    <code className="block text-muted-foreground">sessionStorage.setItem(&apos;lastImageGeneration&apos;, timestamp)</code>
                   </div>
                 </div>
               </div>
@@ -257,7 +256,7 @@ const Transparency = () => {
                 <CollectiveCard
                   title="sessionStorage Only"
                   period="2025"
-                  description="Used for: (1) language preference PT/EN, (2) anti-surveillance banner control, (3) Comic Generator rate limiting (10s cooldown). Expires when you close the browser. No cookies, no permanent localStorage."
+                  description="Used for: (1) language preference PT/EN, (2) anti-surveillance banner control. Expires when you close the browser. No cookies, no permanent localStorage."
                 />
                 
                 <div className="bg-muted/50 border-2 border-primary/50 p-6 font-mono text-sm">
@@ -265,105 +264,8 @@ const Transparency = () => {
                   <div className="space-y-2">
                     <code className="block text-muted-foreground">sessionStorage.setItem(&apos;language&apos;, &apos;pt&apos; | &apos;en&apos;)</code>
                     <code className="block text-muted-foreground">sessionStorage.setItem(&apos;antiSurveillanceBannerDismissed&apos;, &apos;true&apos;)</code>
-                    <code className="block text-muted-foreground">sessionStorage.setItem(&apos;lastImageGeneration&apos;, timestamp)</code>
                   </div>
                 </div>
-              </div>
-            </div>
-          </BilingualSection>
-
-          <Separator />
-
-          {/* Optional AI Feature */}
-          <BilingualSection className="bible-section">
-            <div className="lang-pt">
-              <h2 className="bible-section-title mb-8">FEATURE AI OPCIONAL</h2>
-              
-              <div className="bible-block">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <SkillCard
-                    title="Input"
-                    content="Prompt de texto do usuário (máx. 500 caracteres)"
-                  />
-                  <SkillCard
-                    title="Validação"
-                    content="Sanitização de input, rate limiting, timeout de 30s"
-                  />
-                  <SkillCard
-                    title="Output"
-                    content="URL temporária da imagem gerada (Google Cloud)"
-                  />
-                  <SkillCard
-                    title="Logs"
-                    content="Apenas erros técnicos (sem identificação de usuário)"
-                  />
-                </div>
-              </div>
-            </div>
-            
-            <div className="lang-en">
-              <h2 className="bible-section-title mb-8">OPTIONAL AI FEATURE</h2>
-              
-              <div className="bible-block">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <SkillCard
-                    title="Input"
-                    content="User text prompt (max 500 characters)"
-                  />
-                  <SkillCard
-                    title="Validation"
-                    content="Input sanitization, rate limiting, 30s timeout"
-                  />
-                  <SkillCard
-                    title="Output"
-                    content="Temporary image URL (Google Cloud)"
-                  />
-                  <SkillCard
-                    title="Logs"
-                    content="Only technical errors (no user identification)"
-                  />
-                </div>
-              </div>
-            </div>
-          </BilingualSection>
-
-          <Separator />
-
-          {/* Data Flow */}
-          <BilingualSection className="bible-section">
-            <div className="lang-pt">
-              <h2 className="bible-section-title mb-8">FLUXO DE DADOS COMPLETO</h2>
-              
-              <div className="bible-block">
-                <CollectiveCard
-                  title="1. Navegação Normal"
-                  period="2025"
-                  description="Você acessa o site → HTML/CSS/JS estático carregado do Lovable CDN → Nenhum dado enviado para servidores → Preferência de idioma salva em sessionStorage (local)."
-                />
-                
-                <CollectiveCard
-                  title="2. Feature AI (Opcional)"
-                  period="2025"
-                  description="Você digita prompt → Frontend valida input → Envia para edge function Lovable Cloud → Edge function envia para Lovable AI Gateway → Lovable AI chama Google Gemini → Imagem gerada retorna → Exibida no frontend → Nenhum dado armazenado permanentemente."
-                />
-              </div>
-            </div>
-            
-            <div className="lang-en">
-              <h2 className="bible-section-title mb-8">COMPLETE DATA FLOW</h2>
-              
-              <div className="bible-block">
-                <CollectiveCard
-                  title="1. Normal Navigation"
-                  period="2025"
-                  description="You access the site → Static HTML/CSS/JS loaded from Lovable CDN → No data sent to servers → Language preference saved in sessionStorage (local)."
-                />
-                
-                <CollectiveCard
-                  title="2. AI Feature (Optional)"
-                  period="2025"
-                  description="You type prompt → Frontend validates input → Sends to Lovable Cloud edge function → Edge function sends to Lovable AI Gateway → Lovable AI calls Google Gemini → Generated image returns → Displayed in frontend → No data stored permanently."
-                />
               </div>
             </div>
           </BilingualSection>
