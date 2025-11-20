@@ -4,6 +4,42 @@ por Castro Pizzano (цастро™)
 
 ───────────────────────────────────────────────────────────────
 
+## v2.1.2 — Creative Oracle Simplification (2025-11-20)
+
+### 🧹 Removed
+- ❌ OracleMindMapIntegration component (224 lines of unnecessary complexity)
+- ❌ Premature action buttons in middle of results section
+- ❌ Duplicate information display (ProcessTimeline already shows process connections)
+
+### ✨ Added
+- ✅ Section headers with explanatory tooltips for all result sections
+- ✅ Info icons (ℹ️) with contextual help in PT/EN for:
+  - Radar Chart (Archetype Distribution)
+  - Process Timeline
+  - Compatibility Matrix
+  - Process Analysis
+  - Personalized Advice
+- ✅ Action buttons relocated to END of journey with clear visual separator
+
+### 🔄 Changed
+- Simplified Creative Oracle for single-journey experience
+- Improved visual hierarchy: Read results → Take action (no distractions)
+- Enhanced button layout at end with contextual message and larger sizes
+- Reduced cognitive load (~34% code reduction in main component)
+
+### 📝 UX Improvements
+- ✅ Clearer information architecture for first-time users
+- ✅ Tooltips explain what each section represents (hover on Info icons)
+- ✅ Linear flow: Questions → Results → Actions
+- ✅ Better mobile responsiveness with improved button layouts
+
+### 📊 Impact
+- CreativeOracle.tsx: 639 → ~420 lines (34% reduction)
+- Deleted: OracleMindMapIntegration.tsx (224 lines)
+- Total: ~443 lines removed, cleaner codebase
+
+───────────────────────────────────────────────────────────────
+
 ## v2.1.1 — Documentation Cleanup (2025-11-20)
 
 ### 🧹 Removed
@@ -158,5 +194,5 @@ We prioritize **simplicity, privacy, and artistic integrity** over feature accum
 ───────────────────────────────────────────────────────────────
 
 *Last Updated: November 20, 2025*  
-*Current Version: 2.1.1*  
+*Current Version: 2.1.2*  
 *License: CC BY-NC-SA 4.0*
