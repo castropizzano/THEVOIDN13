@@ -492,7 +492,7 @@ DaVinci Resolve"
 
             <div>
               <div>
-                <h3 className="bible-subtitle text-primary">An identity that rejects the advertising logic of self-promotion, asserting itself as language, not logo.</h3>
+                <h3 className="bible-subtitle text-primary">Language, not logo. Process, not product.</h3>
                 
                 <h3 className="bible-subtitle">The Context: A Refusal of Traditional Branding</h3>
                 <p className="bible-body">The era is one of identity excess. Brands talk more about themselves than their purposes, seeking algorithm recognition rather than substance. The response was to create an anti-brand — an identity that rejects the advertising logic of self-promotion, asserting itself as language, not logo.</p>
