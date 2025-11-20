@@ -2036,18 +2036,14 @@ const Index = () => {
               portugueseContent={
                 <div>
                   <p className="bible-body">
-                    Co-desenvolvido entre o autor e a inteligência artificial, o gerador é um aplicativo experimental que traduz ruído em imagem e silêncio em cor.
-                    Propulsado por Nano Banana (Gemini 2.5 Flash Image), ele cria uma extensão sintética da visão: a máquina sonha com o que o criador apenas intui. É o laboratório de visualidade do THEVØIDN13, onde técnicas documentadas nos arquivos ganham corpo, textura e desvio.
-                    Uma ferramenta para testar, tensionar e expandir a estética do projeto em tempo real.
+                    Co-criação humano-máquina em tempo real. Propulsado por flux.1-schnell via Pollinations.AI, o gerador traduz ruído em painel de HQ — onde a máquina sonha o que o criador intui. Laboratório experimental para testar, tensionar e expandir a estética THEVØIDN13. Cada imagem é única, irreplicável e marcada com a assinatura digital do projeto.
                   </p>
                 </div>
               }
               englishContent={
                 <div>
                   <p className="bible-body">
-                    Co-developed between author and artificial intelligence, the generator is an experimental application that translates noise into image and silence into color.
-                    Powered by Nano Banana (Gemini 2.5 Flash Image), it creates a synthetic extension of vision: the machine dreams what the creator only intuits. It is THEVØIDN13's visual laboratory, where techniques documented in files gain body, texture, and deviation.
-                    A tool to test, tension, and expand the project's aesthetics in real time.
+                    Real-time human-machine co-creation. Powered by flux.1-schnell via Pollinations.AI, the generator translates noise into comic panels — where the machine dreams what the creator intuits. Experimental lab to test, tension and expand the THEVØIDN13 aesthetic. Each image is unique, unrepeatable and marked with the project's digital signature.
                   </p>
                 </div>
               }

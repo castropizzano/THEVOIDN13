@@ -347,9 +347,9 @@ ABSOLUTE COMIC REQUIREMENTS:
     <Dialog open={open} onOpenChange={setOpen}>
       <div onClick={() => setOpen(true)}>
         <FeatureCard
-          title={language === "pt" ? "Gerador de Painéis HQ" : "Comic Panel Generator"}
-          description={language === "pt" ? "Gerar painéis de graphic novel" : "Generate graphic novel panels"}
-          buttonText={language === "pt" ? "Gerar Painel" : "Generate Panel"}
+          title={language === "pt" ? "Gerador Experimental de Still" : "Experimental Still Generator"}
+          description={language === "pt" ? "Co-criação humano-máquina em tempo real" : "Real-time human-machine co-creation"}
+          buttonText={language === "pt" ? "Gerar Still" : "Generate Still"}
           onClick={() => setOpen(true)}
         />
       </div>
