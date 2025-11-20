@@ -18,6 +18,7 @@ interface VideoCardProps {
     };
     year: string;
     category: string;
+    specialLink?: string;
   };
   language: "pt" | "en";
   categoryLabel: string;
@@ -54,6 +55,11 @@ export const VideoCard = ({ video, language, categoryLabel }: VideoCardProps) =>
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
           />
           
+          {/* Category Badge - No Rounded, Top Position */}
+          <Badge variant="secondary" className="absolute top-2 left-2 text-xs uppercase tracking-wider rounded-none">
+            {categoryLabel}
+          </Badge>
+          
           {/* Play Overlay */}
           <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
             <Play className="h-16 w-16 text-white drop-shadow-lg" fill="currentColor" />
@@ -61,19 +67,14 @@ export const VideoCard = ({ video, language, categoryLabel }: VideoCardProps) =>
         </div>
 
         {/* Card Content */}
-        <div className="p-4 space-y-2">
-          {/* Category Badge */}
-          <Badge variant="secondary" className="text-xs uppercase tracking-wider">
-            {categoryLabel}
-          </Badge>
-
-          {/* Title */}
-          <h3 className="bible-h3 text-foreground line-clamp-2 min-h-[3rem]">
-            {title}
-          </h3>
-
-          {/* Year */}
-          <p className="text-sm text-muted-foreground font-mono">{video.year}</p>
+        <div className="p-4">
+          {/* Title and Year - Side by Side */}
+          <div className="flex justify-between items-start gap-3">
+            <h3 className="bible-h3 text-foreground line-clamp-2 flex-1">
+              {title}
+            </h3>
+            <p className="text-sm text-muted-foreground font-mono whitespace-nowrap">{video.year}</p>
+          </div>
         </div>
       </div>
 
@@ -87,6 +88,20 @@ export const VideoCard = ({ video, language, categoryLabel }: VideoCardProps) =>
               videoId={video.videoId}
               title={title}
             />
+            
+            {/* Special Link for Full Video (NYX) */}
+            {video.specialLink && (
+              <div className="p-4 bg-background border-t border-border">
+                <a
+                  href={video.specialLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-mono text-sm uppercase tracking-wider hover:bg-primary/90 transition-colors w-full"
+                >
+                  {language === "pt" ? "ASSISTIR VÍDEO COMPLETO" : "WATCH FULL VIDEO"}
+                </a>
+              </div>
+            )}
           </div>
         </DialogContent>
       </Dialog>
