@@ -39,8 +39,8 @@ Curitiba, Brazil — 2025
 **Technical Stack:**
 - React 18 + TypeScript + Vite
 - Tailwind CSS + shadcn/ui components
-- Mostly static architecture (95% frontend)
-- Optional AI feature via Lovable Cloud (5%)
+- Mostly static architecture (99.5% frontend)
+- Optional AI feature via Pollinations.AI (100% client-side)
 - Vimeo API integration for video portfolio
 - SEO optimized with structured data
 - Performance optimized with lazy loading
@@ -49,7 +49,7 @@ Curitiba, Brazil — 2025
 
 **Interactive Tools:**
 - Creative Oracle — AI-powered artistic guidance
-- Comic Generator — Optional AI feature (experimental)
+- Cinematic Stills Generator — Optional AI feature (100% client-side via Pollinations.AI)
 - Mind Map — Visual exploration of project concepts
 - Prompt Library — Static collection of creative prompts
 - Audio narration — Multilingual conceptual content
