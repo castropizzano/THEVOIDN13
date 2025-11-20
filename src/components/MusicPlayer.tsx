@@ -19,13 +19,28 @@ export const MusicPlayer = () => {
             </DialogTrigger>
             <DialogContent className="max-w-2xl">
               <DialogHeader>
-                <DialogTitle className="text-2xl font-bold">LowMovie™ Original Soundtrack</DialogTitle>
+                <DialogTitle className="text-2xl font-bold">
+                  <span className="lang-pt">LOWMOVIE™ ORIGINAL SOUNDTRACK</span>
+                  <span className="lang-en">LOWMOVIE™ ORIGINAL SOUNDTRACK</span>
+                </DialogTitle>
               </DialogHeader>
               <div className="bible-block text-sm leading-relaxed space-y-4">
-                <p>A assinatura sonora de THEVOIDN13 é composta por duas obras principais que exploram diferentes dimensões narrativas do universo.</p>
-                <p><strong>Like Rats on Hostile Paths:</strong> Álbum instrumental das cenas cinematográficas, criando atmosferas densas e contemplativas que dialogam com a estética visual do filme.</p>
-                <p><strong>Lowbyrinth EP:</strong> Trilha das VideoPartes, explorando texturas eletrônicas e experimentais que refletem a fragmentação narrativa do projeto.</p>
-                <p className="text-xs text-muted-foreground">Composição: Dan Guinski (Non-Grata) & Raphael Carvalho (Relvi)</p>
+                <p>
+                  <span className="lang-pt">A assinatura sonora de THEVOIDN13 é composta por duas obras principais que exploram diferentes dimensões narrativas do universo.</span>
+                  <span className="lang-en">THEVOIDN13's sonic signature consists of two main works that explore different narrative dimensions of the universe.</span>
+                </p>
+                <p>
+                  <span className="lang-pt"><strong>Lowbyrinth:</strong> Álbum instrumental das cenas cinematográficas, criando atmosferas densas e contemplativas que dialogam com a estética visual do filme.</span>
+                  <span className="lang-en"><strong>Lowbyrinth:</strong> Instrumental album for cinematic scenes, creating dense and contemplative atmospheres that dialogue with the film's visual aesthetic.</span>
+                </p>
+                <p>
+                  <span className="lang-pt"><strong>Like Rats on Hostile Paths:</strong> Trilha das VideoPartes, explorando texturas e estilos variados e experimentais que refletem a fragmentação narrativa do projeto.</span>
+                  <span className="lang-en"><strong>Like Rats on Hostile Paths:</strong> VideoParts soundtrack, exploring varied and experimental textures and styles that reflect the project's narrative fragmentation.</span>
+                </p>
+                <p className="text-xs text-muted-foreground">
+                  <span className="lang-pt">Composição: Dan Guinski (Non-Grata) & Raphael Carvalho (Relvi)</span>
+                  <span className="lang-en">Composition: Dan Guinski (Non-Grata) & Raphael Carvalho (Relvi)</span>
+                </p>
               </div>
             </DialogContent>
           </Dialog>
