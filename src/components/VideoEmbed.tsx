@@ -15,8 +15,8 @@ export const VideoEmbed = ({ source, videoId, title }: VideoEmbedProps) => {
         // For Internet Archive videos
         // videoId format: "collection-id/filename.mp4" or just "collection-id"
         const itemId = videoId.includes("/") ? videoId.split("/")[0] : videoId;
-        // Use proper Internet Archive embed with autoplay disabled
-        return `https://archive.org/embed/${itemId}`;
+        // Use details page for better player controls visibility
+        return `https://archive.org/details/${itemId}`;
       case "youtube":
         return `https://www.youtube.com/embed/${videoId}`;
     }
