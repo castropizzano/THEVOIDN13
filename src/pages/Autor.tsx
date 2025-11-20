@@ -382,15 +382,13 @@ DaVinci Resolve"
                 
                 <p className="bible-body">A anti-marca ЦАСТРО™ não busca legibilidade comercial, mas reconhecimento conceitual. Quem entende o código, entende o autor. Quem não entende, permanece fora do campo — e isso é parte do design.</p>
                 
-                <div className="space-y-4 bg-primary/5 border border-primary/20 p-6 bible-media">
-                  <h3 className="bible-title">A Obra como Protagonista</h3>
-                  <p className="bible-body">A proposta central é o anonimato como ética criativa. Num mundo saturado de criadores-influencers, a ideia é inverter a equação: não se trata de vender a imagem do artista, mas de expandir o campo simbólico do que ele cria.</p>
-                  <p className="bible-body">Assim, "ЦАСТРО™" torna-se um agente conceitual, não uma pessoa. Uma entidade de linguagem, um selo de pensamento, uma assinatura invisível.</p>
-                  <div className="bible-media">
-                    <p className="bible-body font-bold italic text-primary">"O criador desaparece para que a obra fale."</p>
-                  </div>
+                <h3 className="bible-title mt-8">A OBRA COMO PROTAGONISTA</h3>
+                <p className="bible-body mt-4">A proposta central é o anonimato como ética criativa. Num mundo saturado de criadores-influencers, a ideia é inverter a equação: não se trata de vender a imagem do artista, mas de expandir o campo simbólico do que ele cria.</p>
+                <p className="bible-body">Assim, "ЦАСТРО™" torna-se um agente conceitual, não uma pessoa. Uma entidade de linguagem, um selo de pensamento, uma assinatura invisível.</p>
+                <div className="bible-media">
+                  <p className="bible-body font-bold italic text-primary">"O criador desaparece para que a obra fale."</p>
                 </div>
-                
+
                 <h3 className="bible-subtitle">A Semiótica do Símbolo</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <SkillCard
@@ -466,27 +464,24 @@ DaVinci Resolve"
                   </div>
                 </div>
 
-                <div className="my-8 p-6 bg-black/50 border border-primary/20">
-                  <h2 className="bible-title mb-6">AS TRÊS FAIXAS</h2>
-                  <p className="bible-body mb-6 italic">Este selo não certifica. Ele posiciona em três frequências simultâneas — como se o mesmo corpo pudesse tocar três instrumentos ao mesmo tempo:</p>
-                  
-                  <div className="space-y-6">
-                    <div className="border-l-4 border-primary/50 pl-4">
-                      <h5 className="bible-link font-bold uppercase text-primary mb-3">FAIXA PROFISSIONAL</h5>
-                      <p className="bible-body text-sm leading-relaxed">Pesquisa em artes que não separa teoria de prática. Direção de arte que redesenha o próprio conceito de autoria. Sistemas de marca que funcionam como linguagem viva, não vitrine morta. Cinema experimental onde cada frame é um manifesto silencioso. Arquitetura de universos que respiram sozinhos. Criação transdisciplinar — porque disciplina é prisão voluntária.</p>
-                    </div>
-                    
-                    <div className="border-l-4 border-primary/50 pl-4">
-                      <h5 className="bible-link font-bold uppercase text-primary mb-3">FAIXA AUTORAL</h5>
-                      <p className="bible-body text-sm leading-relaxed">Anti-brand pós-soviética — a estética do colapso como ponto de partida. Sombra não como ausência de luz, mas como presença ativa. Hibridização humano–IA onde ninguém sabe mais onde termina um e começa o outro. Skate como ética de corpo, filosofia de movimento, resistência sem bandeira. Portal como obra — não o que se vê, mas o que atravessa.</p>
-                    </div>
-                    
-                    <div className="border-l-4 border-primary/50 pl-4">
-                      <h5 className="bible-link font-bold uppercase text-primary mb-3">FAIXA MITOLÓGICA</h5>
-                      <p className="bible-body text-sm leading-relaxed"><span className="font-bold text-primary">ЦАСТРО™</span> — entidade autoral que opera fora do culto à personalidade. <span className="font-bold text-primary">THEVØIDN13</span> — sombra ativa, framework vivo, sistema operacional do invisível. <span className="font-bold text-primary">LowMovie / LowPressure</span> — corpo social, movimento coletivo sem líder. <span className="font-bold text-primary">CasaTreze</span> — templo vivo onde a criação acontece como ritual, não como produção.</p>
-                    </div>
+                <h2 className="bible-title mt-8 mb-6">AS TRÊS FAIXAS</h2>
+                <p className="bible-body mb-6 italic">Este selo não certifica. Ele posiciona em três frequências simultâneas — como se o mesmo corpo pudesse tocar três instrumentos ao mesmo tempo:</p>
+                
+                <div className="space-y-6">
+                  <div className="border-l-4 border-primary/50 pl-4">
+                    <h5 className="bible-link font-bold uppercase text-primary mb-3">FAIXA PROFISSIONAL</h5>
+                    <p className="bible-body text-sm leading-relaxed">Pesquisa em artes que não separa teoria de prática. Direção de arte que redesenha o próprio conceito de autoria. Sistemas de marca que funcionam como linguagem viva, não vitrine morta. Cinema experimental onde cada frame é um manifesto silencioso. Arquitetura de universos que respiram sozinhos. Criação transdisciplinar — porque disciplina é prisão voluntária.</p>
                   </div>
-
+                  
+                  <div className="border-l-4 border-primary/50 pl-4">
+                    <h5 className="bible-link font-bold uppercase text-primary mb-3">FAIXA AUTORAL</h5>
+                    <p className="bible-body text-sm leading-relaxed">Anti-brand pós-soviética — a estética do colapso como ponto de partida. Sombra não como ausência de luz, mas como presença ativa. Hibridização humano–IA onde ninguém sabe mais onde termina um e começa o outro. Skate como ética de corpo, filosofia de movimento, resistência sem bandeira. Portal como obra — não o que se vê, mas o que atravessa.</p>
+                  </div>
+                  
+                  <div className="border-l-4 border-primary/50 pl-4">
+                    <h5 className="bible-link font-bold uppercase text-primary mb-3">FAIXA MITOLÓGICA</h5>
+                    <p className="bible-body text-sm leading-relaxed"><span className="font-bold text-primary">ЦАСТРО™</span> — entidade autoral que opera fora do culto à personalidade. <span className="font-bold text-primary">THEVØIDN13</span> — sombra ativa, framework vivo, sistema operacional do invisível. <span className="font-bold text-primary">LowMovie / LowPressure</span> — corpo social, movimento coletivo sem líder. <span className="font-bold text-primary">CasaTreze</span> — templo vivo onde a criação acontece como ritual, não como produção.</p>
+                  </div>
                 </div>
 
                 <div className="-mx-6 px-6 py-8 rounded-lg bible-block">
@@ -515,15 +510,13 @@ DaVinci Resolve"
                 
                 <p className="bible-body">The ЦАСТРО™ anti-brand doesn't seek commercial legibility, but conceptual recognition. Those who understand the code understand the author. Those who don't remain outside the field — and that's part of the design.</p>
                 
-                <div className="space-y-4 bg-primary/5 border border-primary/20 p-6">
-                  <h3 className="bible-title">The Work as Protagonist</h3>
-                  <p className="bible-body">The central proposition is anonymity as creative ethics. In a world saturated with creator-influencers, the idea is to reverse the equation: it's not about selling the artist's image, but expanding the symbolic field of what they create.</p>
-                  <p className="bible-body">Thus, "ЦАСТРО™" becomes a conceptual agent, not a person. A language entity, a thought seal, an invisible signature.</p>
-                  <div className="my-4 py-4">
-                    <p className="bible-body font-bold italic text-primary">"The creator disappears so the work can speak."</p>
-                  </div>
+                <h3 className="bible-title mt-8">THE WORK AS PROTAGONIST</h3>
+                <p className="bible-body mt-4">The central proposition is anonymity as creative ethics. In a world saturated with creator-influencers, the idea is to reverse the equation: it's not about selling the artist's image, but expanding the symbolic field of what they create.</p>
+                <p className="bible-body">Thus, "ЦАСТРО™" becomes a conceptual agent, not a person. A language entity, a thought seal, an invisible signature.</p>
+                <div className="my-4 py-4">
+                  <p className="bible-body font-bold italic text-primary">"The creator disappears so the work can speak."</p>
                 </div>
-                
+
                 <h3 className="bible-subtitle">The Semiotics of the Symbol</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <SkillCard
@@ -599,27 +592,24 @@ DaVinci Resolve"
                   </div>
                 </div>
 
-                <div className="my-8 p-6 bg-black/50 border border-primary/20">
-                  <h2 className="bible-title mb-6">THE THREE BANDS</h2>
-                  <p className="bible-body mb-6 italic">This seal doesn't certify. It positions on three simultaneous frequencies — as if the same body could play three instruments at once:</p>
-                  
-                  <div className="space-y-6">
-                    <div className="border-l-4 border-primary/50 pl-4">
-                      <h5 className="bible-link font-bold uppercase text-primary mb-3">PROFESSIONAL BAND</h5>
-                      <p className="bible-body text-sm leading-relaxed">Arts research that doesn't separate theory from practice. Art direction that redesigns the very concept of authorship. Brand systems that function as living language, not dead showcase. Experimental cinema where each frame is a silent manifesto. Universe architecture that breathes on its own. Transdisciplinary creation — because discipline is voluntary imprisonment.</p>
-                    </div>
-                    
-                    <div className="border-l-4 border-primary/50 pl-4">
-                      <h5 className="bible-link font-bold uppercase text-primary mb-3">AUTHORIAL BAND</h5>
-                      <p className="bible-body text-sm leading-relaxed">Post-Soviet anti-brand — the aesthetics of collapse as starting point. Shadow not as absence of light, but as active presence. Human–AI hybridization where no one knows where one ends and the other begins. Skateboarding as body ethics, movement philosophy, resistance without flag. Portal as work — not what is seen, but what crosses through.</p>
-                    </div>
-                    
-                    <div className="border-l-4 border-primary/50 pl-4">
-                      <h5 className="bible-link font-bold uppercase text-primary mb-3">MYTHOLOGICAL BAND</h5>
-                      <p className="bible-body text-sm leading-relaxed"><span className="font-bold text-primary">ЦАСТРО™</span> — authorial entity operating outside the cult of personality. <span className="font-bold text-primary">THEVØIDN13</span> — active shadow, living framework, operating system of the invisible. <span className="font-bold text-primary">LowMovie / LowPressure</span> — social body, leaderless collective movement. <span className="font-bold text-primary">CasaTreze</span> — living temple where creation happens as ritual, not production.</p>
-                    </div>
+                <h2 className="bible-title mt-8 mb-6">THE THREE BANDS</h2>
+                <p className="bible-body mb-6 italic">This seal doesn't certify. It positions on three simultaneous frequencies — as if the same body could play three instruments at once:</p>
+                
+                <div className="space-y-6">
+                  <div className="border-l-4 border-primary/50 pl-4">
+                    <h5 className="bible-link font-bold uppercase text-primary mb-3">PROFESSIONAL BAND</h5>
+                    <p className="bible-body text-sm leading-relaxed">Arts research that doesn't separate theory from practice. Art direction that redesigns the very concept of authorship. Brand systems that function as living language, not dead showcase. Experimental cinema where each frame is a silent manifesto. Universe architecture that breathes on its own. Transdisciplinary creation — because discipline is voluntary imprisonment.</p>
                   </div>
-
+                  
+                  <div className="border-l-4 border-primary/50 pl-4">
+                    <h5 className="bible-link font-bold uppercase text-primary mb-3">AUTHORIAL BAND</h5>
+                    <p className="bible-body text-sm leading-relaxed">Post-Soviet anti-brand — the aesthetics of collapse as starting point. Shadow not as absence of light, but as active presence. Human–AI hybridization where no one knows where one ends and the other begins. Skateboarding as body ethics, movement philosophy, resistance without flag. Portal as work — not what is seen, but what crosses through.</p>
+                  </div>
+                  
+                  <div className="border-l-4 border-primary/50 pl-4">
+                    <h5 className="bible-link font-bold uppercase text-primary mb-3">MYTHOLOGICAL BAND</h5>
+                    <p className="bible-body text-sm leading-relaxed"><span className="font-bold text-primary">ЦАСТРО™</span> — authorial entity operating outside the cult of personality. <span className="font-bold text-primary">THEVØIDN13</span> — active shadow, living framework, operating system of the invisible. <span className="font-bold text-primary">LowMovie / LowPressure</span> — social body, leaderless collective movement. <span className="font-bold text-primary">CasaTreze</span> — living temple where creation happens as ritual, not production.</p>
+                  </div>
                 </div>
 
                 <div className="-mx-6 px-6 py-8 rounded-lg">
