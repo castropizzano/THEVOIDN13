@@ -391,25 +391,23 @@ DaVinci Resolve"
                 </div>
                 
                 <h3 className="bible-subtitle">A Semiótica do Símbolo</h3>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-link font-bold uppercase">ЦАСТРО</h4>
-                    <p className="bible-link">Transliteração que cria ruído e nega a leitura imediata — uma máscara estética</p>
-                  </div>
-                  <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-link font-bold uppercase">©1984 ЦАСТРО™</h4>
-                    <p className="bible-link">1984 como Orwell — vigilância, anti-brand, ruptura</p>
-                    <p className="bible-link">1984 como nascimento — carne, tempo, marca existencial</p>
-                    <p className="bible-link italic text-primary mt-2">Ficção + vida real + crítica à marca + protocolo de arquivo</p>
-                  </div>
-                  <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-link font-bold uppercase">™</h4>
-                    <p className="bible-link">Ironia: o símbolo do mercado aplicado a uma anti-marca</p>
-                  </div>
-                  <div className="border-l-2 border-primary pl-4">
-                    <h4 className="bible-link font-bold uppercase">Paleta</h4>
-                    <p className="bible-link">Preto e branco = choque entre dureza e clareza; brutalismo minimalista</p>
-                  </div>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <SkillCard
+                    title="ЦАСТРО"
+                    content="Transliteração que cria ruído e nega a leitura imediata — uma máscara estética"
+                  />
+                  <SkillCard
+                    title="©1984 ЦАСТРО™"
+                    content="1984 como Orwell — vigilância, anti-brand, ruptura. 1984 como nascimento — carne, tempo, marca existencial. Ficção + vida real + crítica à marca + protocolo de arquivo"
+                  />
+                  <SkillCard
+                    title="™"
+                    content="Ironia: o símbolo do mercado aplicado a uma anti-marca"
+                  />
+                  <SkillCard
+                    title="Paleta"
+                    content="Preto e branco = choque entre dureza e clareza; brutalismo minimalista"
+                  />
                 </div>
 
                 <div className="my-8 p-6 bg-primary/5 border border-primary/20 rounded-lg">
@@ -436,25 +434,34 @@ DaVinci Resolve"
                   </div>
                 </div>
                 
-                <div className="my-8 p-6 border-2 border-primary/30 rounded-lg bg-background">
-                  <h3 className="bible-subtitle">O DEVICE OF IDENTITY</h3>
+                <div className="my-8">
+                  <h3 className="bible-subtitle mb-6">O DEVICE OF IDENTITY</h3>
                   
-                  <div className="my-4 space-y-3 text-sm leading-relaxed">
-                    <p className="bible-body">Cartela de abertura num filme sem projetor. Placa soviética arrancada da parede de um cinema abandonado — ainda viva. Documento vazado de um futuro que se recusa a chegar. Manifesto construtivista reimaginado por quem nunca pertenceu à vanguarda.</p>
-                    <p className="bible-body">Relíquia de um portal onde o humano desiste e a máquina tateia o escuro.</p>
-                  </div>
-
-                  <div className="my-4 p-4 bg-primary/5 border-l-4 border-primary">
-                    <p className="bible-body italic">Rito sem altar. Gesto sem audiência. Presença que não pede permissão.</p>
-                  </div>
-
-                  <p className="bible-body mt-6">Pela primeira vez, todas as camadas se alinham no mesmo eixo — não por design, mas por inevitabilidade:</p>
-                  
-                  <div className="my-4 space-y-3 pl-4 border-l-2 border-primary/30">
-                    <p className="bible-body"><span className="font-bold text-primary">ЦАСТРО™</span> — o autor que desaparece para que a obra respire sozinha.</p>
-                    <p className="bible-body"><span className="font-bold text-primary">THEVØIDN13</span> — a entidade-framework, o sistema operacional da sombra.</p>
-                    <p className="bible-body"><span className="font-bold text-primary">LowPressure & CasaTreze</span> — o corpo material e o chão concreto onde tudo se ancora.</p>
-                    <p className="bible-body"><span className="font-bold text-primary">Os ícones</span> — créditos finais de um filme que nunca para de rodar.</p>
+                  <div className="grid md:grid-cols-2 gap-6 mb-6">
+                    <SkillCard
+                      title="Cartela de Abertura"
+                      content="Placa soviética arrancada da parede de um cinema abandonado — ainda viva. Documento vazado de um futuro que se recusa a chegar"
+                    />
+                    <SkillCard
+                      title="Relíquia Portal"
+                      content="Rito sem altar. Gesto sem audiência. Presença que não pede permissão"
+                    />
+                    <SkillCard
+                      title="ЦАСТРО™"
+                      content="O autor que desaparece para que a obra respire sozinha"
+                    />
+                    <SkillCard
+                      title="THEVØIDN13"
+                      content="A entidade-framework, o sistema operacional da sombra"
+                    />
+                    <SkillCard
+                      title="LowPressure & CasaTreze"
+                      content="O corpo material e o chão concreto onde tudo se ancora"
+                    />
+                    <SkillCard
+                      title="Os Ícones"
+                      content="Créditos finais de um filme que nunca para de rodar"
+                    />
                   </div>
                 </div>
 
@@ -640,7 +647,6 @@ DaVinci Resolve"
                   role="Criador / Diretor"
                   description="Filme-manifesto sobre skateboarding, subculturas e processos colaborativos. Estreou no Vila Ida (16/12/2022) e tornou-se objeto central da pesquisa de mestrado."
                   tags={["Videoarte", "Documentário", "Cinema Experimental"]}
-                  icon={<Film className="w-6 h-6" />}
                   highlight
                 />
                 
@@ -650,7 +656,6 @@ DaVinci Resolve"
                   role="Membro Fundador"
                   description="Coletivo de skatistas-artistas nas interseções entre rua, vídeo e cultura. Dois membros representaram o Brasil nas Olimpíadas de Paris 2024."
                   tags={["Skate", "Cultura Visual", "Coletivo"]}
-                  icon={<Users className="w-6 h-6" />}
                   highlight
                 />
                 
@@ -660,7 +665,6 @@ DaVinci Resolve"
                   role="Fundador"
                   description="Laboratório criativo independente. Transita entre produção autoral e comercial, conectando design gráfico, audiovisual e experimentação."
                   tags={["Design", "Audiovisual", "Laboratório"]}
-                  icon={<Building2 className="w-6 h-6" />}
                 />
               </div>
 
@@ -682,7 +686,6 @@ DaVinci Resolve"
                   role="Creator / Director"
                   description="Manifesto-film about skateboarding, subcultures and collaborative processes. Premiered at Vila Ida (12/16/2022) and became central object of master's research."
                   tags={["Video Art", "Documentary", "Experimental Cinema"]}
-                  icon={<Film className="w-6 h-6" />}
                   highlight
                 />
                 
@@ -692,7 +695,6 @@ DaVinci Resolve"
                   role="Founding Member"
                   description="Collective of skater-artists at intersections between street, video and culture. Two members represented Brazil at Paris 2024 Olympics."
                   tags={["Skateboarding", "Visual Culture", "Collective"]}
-                  icon={<Users className="w-6 h-6" />}
                   highlight
                 />
                 
@@ -702,7 +704,6 @@ DaVinci Resolve"
                   role="Founder"
                   description="Independent creative laboratory. Transits between authorial and commercial production, connecting graphic design, audiovisual and experimentation."
                   tags={["Design", "Audiovisual", "Laboratory"]}
-                  icon={<Building2 className="w-6 h-6" />}
                 />
               </div>
 
