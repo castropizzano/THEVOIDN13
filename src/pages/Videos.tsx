@@ -47,19 +47,27 @@ const Videos = () => {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <SEO title={language === "pt" ? "Projetos | THEVØIDN13" : "Work | THEVØIDN13"} />
+      <SEO title={language === "pt" ? "Alguns Projetos | THEVØIDN13" : "Some Projects | THEVØIDN13"} />
       <Header />
       <BackToTop />
       <main>
         <section className="w-full min-h-screen flex items-center justify-center overflow-hidden bg-black pt-16 sm:pt-20 md:pt-24">
           <img 
             src={coverVideos} 
-            alt={language === "pt" ? "Projetos" : "Work"}
+            alt={language === "pt" ? "Alguns Projetos" : "Some Projects"}
             className="w-full h-full object-cover object-center"
             loading="eager"
           />
         </section>
         <BilingualSection className="bible-section">
+          <div className="bilingual-grid bible-block mb-8">
+            <div className="bilingual-col">
+              <h1 className="bible-title">ALGUNS PROJETOS</h1>
+            </div>
+            <div className="bilingual-col">
+              <h1 className="bible-title">SOME PROJECTS</h1>
+            </div>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {curatedVideos.map((video, index) => (
               <VideoCard key={index} video={video} language={language} categoryLabel={categoryLabels[video.category][language]} />
