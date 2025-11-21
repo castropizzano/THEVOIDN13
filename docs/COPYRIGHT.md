@@ -11,6 +11,57 @@ by Castro Pizzano (цастро™)
 Curitiba, Brazil — 2025
 ───────────────────────────────────────────────────────────────
 
+## 🌐 TL;DR (English Summary)
+
+**Copyright & AI Co-Creation Ethics Declaration**
+
+This document establishes authorship rights, AI tool transparency, and ethical principles for the THEVOIDN13 project.
+
+**Authorship Declaration:**
+All content is authored by Fernando Castro Pizzano (Castro Pizzano | цастро™), except when explicitly credited to third parties. Authorship means: conception, creative direction, content curation, final editing, and aesthetic/narrative decisions.
+
+**AI Co-Creation Transparency:**
+- **Tools used:** Claude (Anthropic), ChatGPT (OpenAI), Gemini (Google), Midjourney, Adobe Firefly
+- **Role:** Extensions of creative process, NOT independent authors
+- **Ethical principles:**
+  - Total transparency: All AI use is documented
+  - Human authorship: Final decisions always from human creator
+  - Curation as creation: Selecting/editing/contextualizing is creative act
+  - AI as mirror: Machine reflects, does not replace consciousness
+
+**Where AI is Used:**
+- Writing/editing: Text refinement, idea structuring
+- Code: Web development, scripts, automation
+- Images: Visual concept generation, renders, experiments
+- Research: Bibliography synthesis, pattern analysis
+- **Final decisions: NEVER. Always human curation.**
+
+**Licensing:**
+1. **Creative Commons BY-NC-SA 4.0:** Non-commercial use, adaptation, and sharing with attribution allowed
+2. **Specific Authorship Clause:** Third-party materials always credited, AI use documented, final authorship always Castro Pizzano
+
+**Rights Overview:**
+- **LowMovie™ (2023):** Intellectual property of LowPressure™ Skate collective and Castro Pizzano as director
+- **LowPressure™:** Collective holds rights to logo, brand, and member images (authorized for academic use)
+- **CasaTrezeStudio®:** Property of Castro Pizzano
+- **Music:** Dan Relvi - Composer/producer of *Like Rats on Hostile Paths* (authorized for academic documentation)
+
+**Academic Fair Use:**
+This master's thesis project qualifies for fair use principles: critical analysis, educational commentary, process documentation, and research citation.
+
+**Data Protection:**
+- NO personal data included: physical addresses, phone numbers, ID documents, banking info
+- Public data included: institutional email, social media links, artistic CV, published works
+
+**Ethical Commitment:**
+Transparency • Respect • Ethics • Integrity • Openness
+
+For commercial use or content removal requests: fernando.pizzano@estudante.unespar.edu.br
+
+**Legal Reference:** Brazilian Copyright Law (Lei 9.610/98), Creative Commons 4.0, Academic Research Ethics Code, Fair Use Principles
+
+───────────────────────────────────────────────────────────────
+
 ## DECLARAÇÃO DE AUTORIA
 
 Todo o conteúdo deste repositório é de autoria de Fernando Castro Pizzano (Castro Pizzano | цастро™), exceto quando explicitamente creditado a terceiros.
