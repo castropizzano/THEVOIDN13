@@ -11,6 +11,46 @@ by Castro Pizzano (цастро™)
 Curitiba — 2025  
 ───────────────────────────────────────────────────────────────
 
+## 🌐 TL;DR (English Summary)
+
+**THEVOIDN13 Technical Infrastructure Overview**
+
+This document details the complete technical stack and co-creation workflow of the THEVOIDN13 memorial project, a master's thesis in Cinema and Video Arts at UNESPAR, Brazil.
+
+**Key Technical Decisions:**
+- **98% Static Frontend:** React 18 + TypeScript + Vite + Tailwind CSS
+- **2% Backend:** Lovable Cloud (Supabase) with only 1 public read-only table for creative prompts
+- **Privacy by Architecture:** Zero tracking, zero cookies, zero data collection
+- **AI Co-Creation:** Lovable AI (Claude/Gemini), Midjourney, Adobe Creative Cloud
+- **Deployment:** Lovable Platform with automatic builds and custom domain
+- **Assets:** Videos hosted on Vimeo, images in `/src/assets/`, documents in `/public/documents/`
+
+**Design System (Shadow Interface Bible v13):**
+- Single font: Manrope (variable weight)
+- Canonical colors: Black Shadow (#1A1A1A), Empty White (#FFFFFF), Ghost Gray (#E6E6E6), Synthetic Red (#C40000)
+- Semantic tokens in HSL format via Tailwind CSS
+- Consistent typographic hierarchy across all interfaces
+
+**Human-Machine Workflow:**
+1. Planning & documentation review
+2. AI-assisted generation (text via Claude/Gemini, images via Midjourney)
+3. Human curation and selection
+4. Post-production in Adobe Creative Cloud
+5. Integration and deployment
+6. Documentation and version control
+
+**Philosophical Approach:**
+- Privacy over features
+- Simplicity over complexity
+- Transparency over convenience
+- Art over metrics
+
+The architecture eliminates most web vulnerabilities by design: no complex backend, no user authentication, no personal data storage, no vulnerable APIs. Processing is distributed to user browsers, making abuse impossible and maintaining perfect alignment with the project's anti-surveillance philosophy.
+
+For international contributors: All code is English, commits follow bilingual format (PT/EN), and this documentation provides complete technical context for collaboration.
+
+───────────────────────────────────────────────────────────────
+
 ## INTRODUÇÃO
 
 Este documento descreve a infraestrutura técnica do memorial THEVØIDN13.

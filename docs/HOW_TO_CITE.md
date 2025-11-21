@@ -11,6 +11,64 @@ by Castro Pizzano (цастро™)
 Curitiba, Brazil — 2025
 ───────────────────────────────────────────────────────────────
 
+## 🌐 TL;DR (English Summary)
+
+**Academic Citation Guide for THEVOIDN13 Project**
+
+This document provides standardized citation formats for the THEVOIDN13 memorial, LowMovie™ film, and related materials across multiple academic style systems.
+
+**Quick Reference - Main Project Citation:**
+
+**APA 7th Edition:**
+```
+Pizzano, F. C. (2025). THEVØIDN13: Memorial Artístico e Práxis Híbrida (Humano + Máquina) [GitHub repository]. Universidade Estadual do Paraná. https://github.com/castropizzano/THEVOIDN13
+```
+
+**Chicago Style:**
+```
+Pizzano, Fernando Castro (цастро™). "THEVØIDN13: Memorial Artístico e Práxis Híbrida (Humano + Máquina)." GitHub repository, 2025. https://github.com/castropizzano/THEVOIDN13.
+```
+
+**BibTeX:**
+```bibtex
+@misc{pizzano2025thevoidn13,
+  author = {Pizzano, Fernando Castro},
+  title = {THEVØIDN13: Memorial Artístico e Práxis Híbrida (Humano + Máquina)},
+  year = {2025},
+  publisher = {GitHub},
+  howpublished = {\url{https://github.com/castropizzano/THEVOIDN13}},
+  note = {Universidade Estadual do Paraná - Mestrado em Cinema e Artes do Vídeo}
+}
+```
+
+**What You Can Cite:**
+- Complete repository
+- LowMovie™ film (2023)
+- LowPressure™ collective projects
+- Specific documents (Manifesto, Methodology, etc.)
+- Master's dissertation (when completed)
+- Images and media assets
+
+**Important Note on AI Co-Creation:**
+When citing this work, acknowledge that part of the content was co-created with AI (Claude, ChatGPT, Gemini, Midjourney, Adobe Firefly) as extensions of the creative process. All final decisions, curation, and artistic direction are of human authorship. The hybrid human-machine methodology is central to this research.
+
+**Example acknowledgment for academic papers:**
+"This project uses AI tools as extensions of the creative process. The hybrid human-machine methodology is central to the research. See: PIZZANO (2025), Research Methodology."
+
+**Available Citation Formats:**
+- ABNT (Brazilian standard)
+- APA 7th Edition
+- Chicago Style
+- BibTeX
+
+This document provides complete formatting examples for all citation types. The full Portuguese document includes detailed formats for citing specific documents, images, the LowMovie™ film, the LowPressure™ collective, and the master's dissertation.
+
+**Citation Questions:** fernando.pizzano@estudante.unespar.edu.br
+
+**License:** Creative Commons BY-NC-SA 4.0
+
+───────────────────────────────────────────────────────────────
+
 ## CITAÇÃO GERAL DO PROJETO
 
 **ABNT (Norma Brasileira)**

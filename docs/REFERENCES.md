@@ -11,6 +11,52 @@ by Castro Pizzano (цастро™)
 Curitiba, Brazil — 2025
 ───────────────────────────────────────────────────────────────
 
+## 🌐 TL;DR (English Summary)
+
+**Key Bibliographic References for THEVOIDN13 Project**
+
+This document compiles the core academic and theoretical references underpinning the THEVOIDN13 memorial and LowMovie™ research project.
+
+**Main Theoretical Frameworks:**
+
+**Art & Technology:**
+- Lev Manovich - *The Language of New Media* (2001) - Digital media theory
+- Pierre Lévy - *Collective Intelligence* (1998) - Cyberspace anthropology
+- Vilém Flusser - *Philosophy of the Black Box* (2002) - Philosophy of photography
+
+**Cinema & Video Art:**
+- Bill Nichols - *Introduction to Documentary* (2005)
+- Jean-Louis Comolli - *Seeing and Power* (2008)
+- Chris Marker - *Sans Soleil* (1983) - Film essay reference
+
+**Psychoanalysis & Philosophy:**
+- Carl Jung - *Man and His Symbols* (2008) - Archetypal psychology
+- Deleuze & Guattari - *A Thousand Plateaus* (1995) - Rhizomatic thinking
+- Giorgio Agamben - *What is Contemporary?* (2009) - Contemporary theory
+
+**Culture & Subculture:**
+- Dick Hebdige - *Subculture: The Meaning of Style* (1979)
+- Stuart Hall - *Cultural Identity in Postmodernity* (2006)
+- Paul Virilio - *The Aesthetics of Disappearance* (2009)
+
+**Skate & Urban Culture:**
+- Leonardo Brandão - *The City and the Skater Tribe* (2011)
+- Giancarlo Machado - *"Let's Jump the Wall": Skate and Graffiti Culture* (2017)
+
+**Research Methodology:**
+- Cecília Almeida Salles - *Unfinished Gesture: Artistic Creation Process* (2011)
+- Jean Lancri - Methodology of research in visual arts (2002)
+
+**Digital Resources:**
+- Technical documentation: GitHub, React, Tailwind CSS
+- AI tools: Anthropic Claude, OpenAI ChatGPT, Google Gemini
+
+This interdisciplinary bibliography bridges street culture, cinema theory, creative process research, and digital art, reflecting the hybrid nature of the LowMovie™ methodology.
+
+For academic citations of this project, see [HOW_TO_CITE.md](./HOW_TO_CITE.md).
+
+───────────────────────────────────────────────────────────────
+
 ## BIBLIOGRAFIA COMPLETA (ABNT)
 
 **Arte e Tecnologia**
