@@ -1,3 +1,29 @@
+/**
+ * MusicPlayer Component
+ * 
+ * Displays LOWMOVIE™ original soundtrack albums with embedded Spotify players.
+ * Features two distinct albums: cinematic instrumental (Like Rats on Hostile Paths)
+ * and VideoParts soundtrack (Lowbyrinth EP).
+ * 
+ * Features:
+ * - Tabbed interface to switch between two albums
+ * - Embedded Spotify players for direct streaming
+ * - Dialog with contextual information about sound signature
+ * - Bilingual content support (PT/EN)
+ * - Information about composers and album themes
+ * 
+ * Albums:
+ * 1. Like Rats on Hostile Paths - Cinematic instrumental scenes
+ * 2. Lowbyrinth EP - VideoParts experimental soundtrack
+ * 
+ * Composers: Dan Guinski (Non-Grata) & Raphael Carvalho (Relvi)
+ * 
+ * @component
+ * @example
+ * ```tsx
+ * <MusicPlayer />
+ * ```
+ */
 import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
