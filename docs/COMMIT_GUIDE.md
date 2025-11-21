@@ -22,23 +22,49 @@ conceptual rigor as the manifesto (README.md). The commit log
 is, in itself, a work of process.
 
 ───────────────────────────────────────────────────────────────
-REGRA DE LINGUAGEM
+REGRA DE LINGUAGEM (BILÍNGUE)
 ───────────────────────────────────────────────────────────────
 
-Títulos (Commit message) e descrições (Extended description)
-DEVEM ser escritos em PORTUGUÊS.
+ATUALIZAÇÃO v2.1.3: Commits agora devem ser BILÍNGUES para
+facilitar colaboração global sem perder a identidade local.
 
-A linguagem deve ser direta, cirúrgica e em conformidade com o
-estilo autoral do projeto.
+FORMATO OBRIGATÓRIO:
+
+Título (Commit message):
+TIPO(ESCOPO): MENSAGEM PT // MESSAGE EN
+
+Descrição (Extended description):
+Texto em português explicando O QUÊ e PORQUÊ.
 
 (EN)
-LANGUAGE RULE
+English text explaining WHAT and WHY.
 
-Titles (Commit message) and descriptions (Extended description)
-MUST be written in PORTUGUESE.
+IMPORTANTE:
+- O título DEVE conter ambas as línguas separadas por " // "
+- A descrição DEVE ter seção PT seguida de seção EN
+- Mantenha clareza e concisão em ambas as versões
 
-The language must be direct, surgical, and consistent with the
-project’s authorial style.
+(EN)
+BILINGUAL LANGUAGE RULE
+
+UPDATE v2.1.3: Commits must now be BILINGUAL to facilitate
+global collaboration without losing local identity.
+
+MANDATORY FORMAT:
+
+Title (Commit message):
+TYPE(SCOPE): PT MESSAGE // EN MESSAGE
+
+Description (Extended description):
+Portuguese text explaining WHAT and WHY.
+
+(EN)
+English text explaining WHAT and WHY.
+
+IMPORTANT:
+- Title MUST contain both languages separated by " // "
+- Description MUST have PT section followed by EN section
+- Keep clarity and concision in both versions
 
 ───────────────────────────────────────────────────────────────
 FORMATO DO TÍTULO (COMMIT MESSAGE)
@@ -47,15 +73,15 @@ FORMATO DO TÍTULO (COMMIT MESSAGE)
 O título segue o padrão Conventional Commits, adaptado ao
 estilo deste projeto:
 
-TIPO(ESCOPO OPCIONAL): MENSAGEM EM CAIXA ALTA
+TIPO(ESCOPO OPCIONAL): MENSAGEM PT // MESSAGE EN
 
 (EN)
 TITLE FORMAT (COMMIT MESSAGE)
 
 The title follows the Conventional Commits pattern, adapted
-to this project’s style:
+to this project's style:
 
-TYPE(OPTIONAL SCOPE): MESSAGE IN ALL CAPS
+TYPE(OPTIONAL SCOPE): PT MESSAGE // EN MESSAGE
 
 ───────────────────────────────────────────────────────────────
 TIPOS DE COMMIT (TYPE)
@@ -138,7 +164,7 @@ DESCRIÇÃO (EXTENDED DESCRIPTION)
 Opcional, mas recomendada para commits complexos.
 
 Use a descrição para detalhar O QUÊ e o PORQUÊ da mudança.
-Mantenha o texto em português, limpo e direto.
+Sempre inclua versão PT seguida da versão EN.
 
 (EN)
 DESCRIPTION (EXTENDED DESCRIPTION)
@@ -146,27 +172,73 @@ DESCRIPTION (EXTENDED DESCRIPTION)
 Optional, but recommended for complex commits.
 
 Use the description to detail WHAT and WHY of the change.
-Keep the text in Portuguese, clean, and direct.
+Always include PT version followed by EN version.
 
 ───────────────────────────────────────────────────────────────
-EXEMPLO DE COMMIT
+EXEMPLOS DE COMMITS (FORMATO BILÍNGUE v2.1.3)
 ───────────────────────────────────────────────────────────────
+
+EXEMPLO 1:
 
 TÍTULO:
-docs(lowmovie): ADICIONAR ATA DE QUALIFICAÇÃO (PT/EN)
+docs(oracle): ADICIONAR JSDOC E DOCS TÉCNICAS // ADD JSDOC AND TECHNICAL DOCS
 
 DESCRIÇÃO:
-Inclui o documento oficial da banca de qualificação do mestrado.
-Define o status “pós-qualificação” do projeto.
-Adiciona resumo em inglês para contexto universal.
+Adiciona JSDoc completo aos componentes CreativeOracle e MindMap
+para facilitar compreensão da lógica interna.
+
+Cria docs/CREATIVE_ORACLE.md e docs/MINDMAP.md com:
+- Arquitetura do sistema
+- Estruturas de dados
+- Fluxo de funcionamento
+- Funções principais documentadas
+- Checklist de testes
+
+Atualiza COMMIT_GUIDE.md para exigir commits bilíngues (PT/EN).
 
 (EN)
-COMMIT EXAMPLE
+Adds complete JSDoc to CreativeOracle and MindMap components
+to facilitate understanding of internal logic.
 
-TITLE:
-docs(lowmovie): ADICIONAR ATA DE QUALIFICAÇÃO (PT/EN)
+Creates docs/CREATIVE_ORACLE.md and docs/MINDMAP.md with:
+- System architecture
+- Data structures
+- Operating flow
+- Main functions documented
+- Testing checklist
 
-DESCRIPTION:
-Includes the official document from the master's qualification board.
-Defines the project’s “post-qualification” status.
-Adds an English summary for universal context.
+Updates COMMIT_GUIDE.md to require bilingual commits (PT/EN).
+
+───────────────────────────────────────────────────────────────
+
+EXEMPLO 2:
+
+TÍTULO:
+feat(search): IMPLEMENTAR BUSCA GLOBAL // IMPLEMENT GLOBAL SEARCH
+
+DESCRIÇÃO:
+Adiciona componente GlobalSearch com indexação de todo conteúdo
+do memorial. Usa Fuse.js para busca fuzzy.
+
+Permite buscar em projetos, textos, imagens e documentos PDF.
+
+(EN)
+Adds GlobalSearch component with full memorial content indexing.
+Uses Fuse.js for fuzzy search.
+
+Allows searching across projects, texts, images and PDF documents.
+
+───────────────────────────────────────────────────────────────
+
+EXEMPLO 3:
+
+TÍTULO:
+fix(audio): CORRIGIR AUTOPLAY DO MANIFESTO // FIX MANIFESTO AUTOPLAY
+
+DESCRIÇÃO:
+Resolve erro de autoplay bloqueado por política do navegador.
+Agora exige interação do usuário antes de tocar áudio.
+
+(EN)
+Fixes autoplay error blocked by browser policy.
+Now requires user interaction before playing audio.

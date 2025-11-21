@@ -1,3 +1,23 @@
+/**
+ * MindMap Component
+ * 
+ * Visualizes the complete 7-stage creative process of THEVØIDN13 Artistic Memorial.
+ * Shows how raw memories transform into a living digital interface through:
+ * INPUT → PROCESS → MAP → TOOLS → INTERFACE → DEPLOY → EVOLUTION
+ * 
+ * Features:
+ * - Step-by-step navigation through the creative process
+ * - Timeline view showing all stages horizontally
+ * - Connection visualization between stages
+ * - Bilingual content (PT/EN)
+ * - Progress tracking
+ * 
+ * Data structure:
+ * - 7 ProcessSteps with titles, content, code snippets, and connections
+ * - Each step shows what happens, why, and how it connects to other steps
+ * 
+ * @see docs/MINDMAP.md for detailed technical documentation
+ */
 import { useState, useRef, useEffect } from "react";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
@@ -7,6 +27,10 @@ import { useTranslation } from "@/hooks/useTranslation";
 import { ChevronRight, ChevronLeft, Network, LayoutList } from "lucide-react";
 import { cn } from "@/lib/utils";
 
+/**
+ * ProcessStep type definition
+ * Each step represents a stage in the creative workflow
+ */
 type ProcessStep = {
   id: string;
   titlePt: string;
@@ -19,6 +43,25 @@ type ProcessStep = {
   connectionType: string; // type of connection
 };
 
+/**
+ * Process steps data
+ * Complete 7-stage workflow from raw input to continuous evolution:
+ * 
+ * 00: INTRO - Overview of the creative system
+ * 01: INPUT - Collection of raw materials (journals, interviews, media)
+ * 02: PROCESS - THEVØIDN13 acts as processing interface
+ * 03: MAP - Creation of creative operations network
+ * 04: TOOLS - Development of interactive features
+ * 05: INTERFACE - Web interface construction
+ * 06: DEPLOY - Production deployment
+ * 07: EVOLUTION - Continuous growth and updates
+ * 
+ * Each step includes:
+ * - Bilingual titles and content
+ * - Code-like descriptions of operations
+ * - Connection indices to other steps
+ * - Connection type labels (feeds_into, transforms_into, etc.)
+ */
 const processSteps: ProcessStep[] = [
   {
     id: "00_intro",
@@ -245,11 +288,12 @@ const processSteps: ProcessStep[] = [
 ];
 
 export const MindMap = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [currentStep, setCurrentStep] = useState(0);
-  const [showConnections, setShowConnections] = useState(false);
-  const [viewMode, setViewMode] = useState<'step' | 'timeline'>('step');
-  const timelineRef = useRef<HTMLDivElement>(null);
+  // UI state
+  const [isOpen, setIsOpen] = useState(false);                              // Dialog open/close
+  const [currentStep, setCurrentStep] = useState(0);                         // Current step index (0-7)
+  const [showConnections, setShowConnections] = useState(false);             // Toggle connection visualization
+  const [viewMode, setViewMode] = useState<'step' | 'timeline'>('step');    // View mode toggle
+  const timelineRef = useRef<HTMLDivElement>(null);                          // Ref for timeline scrolling
   const { t, language } = useTranslation();
 
   const handleNext = () => {
@@ -268,6 +312,10 @@ export const MindMap = () => {
     setCurrentStep(0);
   };
 
+  /**
+   * Scrolls timeline to specific step
+   * Used in timeline view to center the selected step
+   */
   const scrollToStep = (stepIndex: number) => {
     if (timelineRef.current) {
       const stepElement = timelineRef.current.children[stepIndex] as HTMLElement;
@@ -283,6 +331,10 @@ export const MindMap = () => {
     }
   }, [currentStep, viewMode]);
 
+  /**
+   * Generates ASCII progress bar
+   * Returns filled/empty blocks (█/░) and percentage
+   */
   const getProgressBar = () => {
     const filled = currentStep + 1;
     const total = processSteps.length;
@@ -298,6 +350,10 @@ export const MindMap = () => {
   const currentStepData = processSteps[currentStep];
   const progress = getProgressBar();
 
+  /**
+   * Translates connection type to human-readable label
+   * Maps technical keys to bilingual descriptions
+   */
   const getConnectionLabel = (type: string) => {
     const labels: Record<string, { pt: string; en: string }> = {
       feeds_into: { pt: "alimenta", en: "feeds into" },
