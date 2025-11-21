@@ -3,6 +3,26 @@
 > "O vazio não é falta, é incubação de forma"  
 > "The void is not lack, it is the incubation of form"
 
+---
+
+## 📖 **TL;DR (English Summary)**
+
+**THEVØIDN13** is a radical minimalist web application with a **98% static frontend** and **2% minimal backend**. The architecture embodies the project's anti-surveillance philosophy through design:
+
+- **Frontend**: Static React app (Vite + Tailwind) with zero tracking, zero cookies, zero analytics
+- **Backend**: Single read-only database table (`prompts`) for AI prompt library
+- **Storage**: Only `sessionStorage` for UI state (banner dismissal) - no user data persistence
+- **Security**: Privacy by architecture - no authentication, no user accounts, no data collection
+- **Compliance**: LGPD/GDPR compliant by design (no personal data collected)
+
+**Key Decision (Nov 2025)**: Deleted 12 database tables (analytics, CMS, authentication) that contradicted the "zero surveillance" manifesto. Architecture now perfectly aligns with project values.
+
+**Technology**: React 18, TypeScript, Vite, Tailwind CSS, Supabase (1 table), deployed on Lovable Cloud.
+
+For full technical details, continue reading below.
+
+---
+
 ## 🏗️ **Architectural Philosophy**
 
 THEVØIDN13's architecture embodies its anti-surveillance philosophy through **radical minimalism**. The infrastructure reflects the project's core values: silence as refusal, void as gestation, and privacy as architecture—not afterthought.

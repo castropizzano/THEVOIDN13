@@ -11,6 +11,31 @@ by Castro Pizzano (цастро™)
 Curitiba, Brazil — 2025
 ───────────────────────────────────────────────────────────────
 
+## 📖 **TL;DR (English Summary)**
+
+**Research Objective**: Investigate human-AI co-creation processes in visual arts, cinema, and video art, documenting a hybrid methodology through a performative artistic memorial.
+
+**Theoretical Foundation**:
+- **Art & Technology**: Manovich (new media), Lévy (collective intelligence), Flusser (philosophy of technique)
+- **Cinema & Video Art**: Nichols (documentary modes), Comolli (filmed body), Marker (filmic essay)
+- **Philosophy**: Jung (archetypes, shadow), Deleuze (rhizome), Agamben (apparatus)
+- **Subculture**: Hebdige (resistance), Hall (cultural studies), Virilio (aesthetics of disappearance)
+
+**5-Stage Hybrid Method**:
+1. **Observation**: Analyze creative flow, document patterns and insights
+2. **Co-Creation**: Interact with AIs (Claude, Gemini, Midjourney) as thought extensions
+3. **Documentation**: Continuous recording of process layers and mental states
+4. **Reflection**: Transform records into aesthetic, philosophical, technical narrative
+5. **Expansion**: Return learnings to the world through art, code, or methodology
+
+**Key Tools**: AI (Gemini, Claude, Midjourney, ElevenLabs), Design (Adobe Suite, Figma), Web Dev (Lovable, React, TypeScript, Supabase)
+
+**Academic Context**: Master's degree in Cinema and Video Arts (PPG-CINEAV), State University of Paraná (Unespar), Brazil.
+
+For full methodology details, continue reading below.
+
+───────────────────────────────────────────────────────────────
+
 ## OBJETIVO GERAL
 
 Investigar processos de co-criação entre humano e inteligência artificial no campo das artes visuais, cinema e videoarte, documentando uma metodologia híbrida através de memorial artístico performático.
