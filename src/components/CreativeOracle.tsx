@@ -1,3 +1,26 @@
+/**
+ * CreativeOracle Component
+ * 
+ * An interactive archetype identification system based on THEVØIDN13 methodology.
+ * Users answer 6 contextualized questions to discover their dominant creative archetype.
+ * 
+ * Features:
+ * - Multi-archetype scoring system (Shadow, Punk, Buddy, GI)
+ * - Process stage analysis (observation, cocreation, documentation, reflection, expansion)
+ * - Radar chart visualization
+ * - Hybrid archetype detection
+ * - PDF export of results
+ * - Bilingual support (PT/EN)
+ * - Background audio (Shadow in the Dark)
+ * 
+ * Architecture:
+ * - Questions are stored in contextualizedQuestions data file
+ * - Each answer updates archetype scores and process scores
+ * - Results show dominant/secondary archetypes with personalized advice
+ * - Learn mode provides archetype theory without taking the quiz
+ * 
+ * @see docs/CREATIVE_ORACLE.md for detailed technical documentation
+ */
 import { useState, useEffect, useRef } from "react";
 import { Volume2, VolumeX, Download, Info } from "lucide-react";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
@@ -21,22 +44,37 @@ import { PersonalizedAdvice } from "./CreativeOracle/PersonalizedAdvice";
 import { contextualizedQuestions } from "./CreativeOracle/data/contextualizedQuestions";
 import { hybridArchetypes } from "./CreativeOracle/data/hybridArchetypes";
 
+/**
+ * Props for CreativeOracle dialog component
+ */
 interface CreativeOracleProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
 }
 
+/**
+ * Question structure for the archetype quiz
+ * Each question has 4 options, each associated with an archetype and score value
+ */
 type Question = {
-  text: string;
-  textEn: string;
+  text: string;      // Portuguese text
+  textEn: string;    // English text
   options: Array<{
-    text: string;
-    textEn: string;
-    archetype: string;
-    value: number;
+    text: string;         // Portuguese option text
+    textEn: string;       // English option text
+    archetype: string;    // Associated archetype (shadow, punk, buddy, gi)
+    value: number;        // Score value (1-3)
   }>;
 };
 
+/**
+ * Archetype definitions
+ * Contains all data for the 4 creative archetypes used in THEVØIDN13 methodology:
+ * - SHADOW: Introspective creator, works alone, deep authenticity
+ * - PUNK: Impulsive revolutionary, breaks to rebuild, raw energy
+ * - BUDDY: Connected collaborator, finds strength in community
+ * - GI: Disciplined executor, masters technique through repetition
+ */
 const archetypes = {
   shadow: {
     name: "SHADOW (A Sombra)",
@@ -96,6 +134,11 @@ const archetypes = {
   },
 };
 
+/**
+ * SectionHeader Component
+ * Reusable header with title and tooltip for bilingual context
+ * Used throughout results display to explain sections
+ */
 const SectionHeader = ({ 
   title, 
   tooltipPt, 
@@ -129,13 +172,25 @@ const SectionHeader = ({
 
 export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
   const { language } = useLanguage();
-  const [mode, setMode] = useState<"journey" | "knowledge">("journey");
-  const [started, setStarted] = useState(false);
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [answers, setAnswers] = useState<number[]>([]);
-  const [scores, setScores] = useState({ shadow: 0, punk: 0, buddy: 0, gi: 0 });
-  const [processScores, setProcessScores] = useState({ observation: 0, cocreation: 0, documentation: 0, reflection: 0, expansion: 0 });
-  const [showResults, setShowResults] = useState(false);
+  
+  // UI state
+  const [mode, setMode] = useState<"journey" | "knowledge">("journey");  // Toggle between quiz and learn mode
+  const [started, setStarted] = useState(false);                         // Quiz started flag
+  const [currentQuestion, setCurrentQuestion] = useState(0);             // Current question index (0-5)
+  const [showResults, setShowResults] = useState(false);                 // Show results screen
+  
+  // Quiz data
+  const [answers, setAnswers] = useState<number[]>([]);                  // Array of answer values (1-3)
+  const [scores, setScores] = useState({ shadow: 0, punk: 0, buddy: 0, gi: 0 });  // Archetype scores
+  const [processScores, setProcessScores] = useState({                   // Process stage scores
+    observation: 0, 
+    cocreation: 0, 
+    documentation: 0, 
+    reflection: 0, 
+    expansion: 0 
+  });
+  
+  // Audio control
   const [isMuted, setIsMuted] = useState(false);
   const [audio] = useState(() => new Audio("/audio/Shadow_In_The_Dark.mp3"));
   const resultsRef = useRef<HTMLDivElement>(null);
@@ -164,6 +219,15 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
     }
   }, [started, isMuted, audio]);
 
+  /**
+   * Handles user answer selection
+   * Updates archetype scores, process scores, and advances to next question
+   * Shows results screen when all questions are answered
+   * 
+   * @param archetype - The archetype key (shadow, punk, buddy, gi)
+   * @param value - Score value (1-3)
+   * @param processWeight - Optional object with process stage weights
+   */
   const handleAnswer = (archetype: string, value: number, processWeight?: any) => {
     const newAnswers = [...answers, value];
     setAnswers(newAnswers);
@@ -194,12 +258,20 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
     }
   };
 
+  /**
+   * Returns the archetype with the highest score
+   * Used to determine primary creative archetype
+   */
   const getDominantArchetype = () => {
     const entries = Object.entries(scores) as [keyof typeof archetypes, number][];
     const sorted = entries.sort((a, b) => b[1] - a[1]);
     return sorted[0][0];
   };
 
+  /**
+   * Returns the archetype with the second highest score
+   * Used for hybrid archetype detection
+   */
   const getSecondaryArchetype = () => {
     const entries = Object.entries(scores) as [keyof typeof archetypes, number][];
     const sorted = entries.sort((a, b) => b[1] - a[1]);
@@ -220,6 +292,11 @@ export const CreativeOracle = ({ open, onOpenChange }: CreativeOracleProps) => {
     setMode("journey");
   };
 
+  /**
+   * Exports quiz results as a formatted text file
+   * Includes archetype info, scores, strengths, challenges, and recommendations
+   * Format: THEVØIDN13 ASCII-style with box drawing characters
+   */
   const handleExportPDF = () => {
     const dominant = getDominantArchetype();
     const secondary = getSecondaryArchetype();
