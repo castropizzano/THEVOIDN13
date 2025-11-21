@@ -1,31 +1,74 @@
+/**
+ * BilingualAudioPlayer Component
+ * 
+ * Audio player supporting Portuguese and English audio tracks with language switching.
+ * Synchronizes with global language context but allows independent language selection.
+ * 
+ * Features:
+ * - Dual audio sources (PT/EN) with language selector buttons
+ * - Automatic sync with global language context on mount
+ * - Full playback controls (play/pause, seek, volume)
+ * - Resets playback position when switching languages
+ * - Pauses audio when language is changed to prevent audio overlap
+ * 
+ * @component
+ * @example
+ * ```tsx
+ * <BilingualAudioPlayer 
+ *   srcPt="/audio/track-pt.mp3"
+ *   srcEn="/audio/track-en.mp3"
+ *   title="Bilingual Track"
+ *   description="Available in PT and EN"
+ * />
+ * ```
+ */
 import { useState, useRef, useEffect } from "react";
 import { Play, Pause, Volume2, VolumeX } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
 import { useLanguage } from "@/contexts/LanguageContext";
 
+/**
+ * Props for BilingualAudioPlayer component
+ */
 interface BilingualAudioPlayerProps {
+  /** URL or path to Portuguese audio file */
   srcPt: string;
+  /** URL or path to English audio file */
   srcEn: string;
+  /** Title displayed above the player */
   title: string;
+  /** Optional description text */
   description?: string;
 }
 
 export const BilingualAudioPlayer = ({ srcPt, srcEn, title, description }: BilingualAudioPlayerProps) => {
+  // Ref to access the native HTML audio element
   const audioRef = useRef<HTMLAudioElement>(null);
-  const { language } = useLanguage(); // Usa idioma global
+  
+  // Global language context
+  const { language } = useLanguage();
+  
+  // Selected language for audio playback (can differ from global language temporarily)
   const [selectedLang, setSelectedLang] = useState<"pt" | "en">(language);
+  
+  // Playback state
   const [isPlaying, setIsPlaying] = useState(false);
-  const [currentTime, setCurrentTime] = useState(0);
-  const [duration, setDuration] = useState(0);
-  const [volume, setVolume] = useState(1);
+  const [currentTime, setCurrentTime] = useState(0); // Current position in seconds
+  const [duration, setDuration] = useState(0); // Total duration in seconds
+  
+  // Volume state
+  const [volume, setVolume] = useState(1); // 0.0 to 1.0
   const [isMuted, setIsMuted] = useState(false);
 
-  // Sincronizar com idioma global
+  /**
+   * Sync selected language with global language context changes
+   */
   useEffect(() => {
     setSelectedLang(language);
   }, [language]);
 
+  // Determine current audio source based on selected language
   const currentSrc = selectedLang === "pt" ? srcPt : srcEn;
 
   useEffect(() => {
@@ -88,6 +131,11 @@ export const BilingualAudioPlayer = ({ srcPt, srcEn, title, description }: Bilin
     }
   };
 
+  /**
+   * Switch between Portuguese and English audio tracks
+   * Pauses playback and resets position to prevent audio overlap
+   * @param lang - Target language ("pt" or "en")
+   */
   const switchLanguage = (lang: "pt" | "en") => {
     const audio = audioRef.current;
     if (!audio) return;
@@ -102,6 +150,11 @@ export const BilingualAudioPlayer = ({ srcPt, srcEn, title, description }: Bilin
     setCurrentTime(0);
   };
 
+  /**
+   * Format seconds into MM:SS display format
+   * @param time - Time in seconds
+   * @returns Formatted string (e.g., "3:45")
+   */
   const formatTime = (time: number) => {
     if (isNaN(time)) return "0:00";
     const minutes = Math.floor(time / 60);

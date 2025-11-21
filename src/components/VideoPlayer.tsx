@@ -1,11 +1,39 @@
+/**
+ * VideoPlayer Component
+ * 
+ * Embeds a Vimeo video with interactive grayscale effect.
+ * Maintains 16:9 aspect ratio and applies grayscale filter until user interaction.
+ * 
+ * Features:
+ * - Responsive 16:9 aspect ratio container
+ * - Grayscale filter removed on hover or click (visual engagement cue)
+ * - Lazy loading for performance optimization
+ * - Clean Vimeo embed without title, byline, or portrait
+ * - Border styling consistent with project design system
+ * 
+ * @component
+ * @example
+ * ```tsx
+ * <VideoPlayer 
+ *   vimeoId="123456789"
+ *   title="Video Title"
+ * />
+ * ```
+ */
 import { useState } from "react";
 
+/**
+ * Props for VideoPlayer component
+ */
 interface VideoPlayerProps {
+  /** Vimeo video ID (numeric string from video URL) */
   vimeoId: string;
+  /** Accessible title for the iframe */
   title: string;
 }
 
 export const VideoPlayer = ({ vimeoId, title }: VideoPlayerProps) => {
+  // Track interaction state to toggle grayscale effect
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (

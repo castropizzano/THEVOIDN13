@@ -1,22 +1,58 @@
+/**
+ * PDFViewer Component
+ * 
+ * Displays PDF documents with bilingual support and graceful fallback handling.
+ * Checks if the PDF file exists and shows embedded preview or error state accordingly.
+ * 
+ * Features:
+ * - Bilingual title and description support (string or {pt, en} object)
+ * - File existence check via HEAD request
+ * - Full-height embedded PDF preview (1056px) with optimized view settings
+ * - Fallback UI for missing or inaccessible files
+ * - "Open in new tab" action for external viewing
+ * - Error state with disabled button for missing files
+ * 
+ * @component
+ * @example
+ * ```tsx
+ * <PDFViewer 
+ *   pdfUrl="/documents/file.pdf"
+ *   title={{ pt: "Documento", en: "Document" }}
+ *   description="Documento importante"
+ * />
+ * ```
+ */
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import { useTranslation } from "@/hooks/useTranslation";
 
+/**
+ * Props for PDFViewer component
+ */
 interface PDFViewerProps {
+  /** URL or path to PDF file */
   pdfUrl: string;
+  /** Title - can be string or bilingual object */
   title: string | { pt: string; en: string };
+  /** Optional description - can be string or bilingual object */
   description?: string | { pt: string; en: string };
 }
 
 export const PDFViewer = ({ pdfUrl, title, description }: PDFViewerProps) => {
+  // Track PDF file availability (null = not checked, true = exists, false = missing)
   const [pdfExists, setPdfExists] = useState<boolean | null>(null);
   const { t, language } = useTranslation();
   
+  // Extract language-specific text based on current language
   const displayTitle = typeof title === 'string' ? title : title[language as 'pt' | 'en'];
   const displayDescription = typeof description === 'string' ? description : description?.[language as 'pt' | 'en'];
 
-  // Check if PDF exists
+  /**
+   * Check if PDF file exists by making a HEAD request
+   * Caches result to avoid repeated requests
+   * @returns Promise<boolean> - true if PDF exists and is accessible
+   */
   const checkPdfExists = async () => {
     if (pdfExists !== null) return pdfExists;
     
@@ -31,11 +67,17 @@ export const PDFViewer = ({ pdfUrl, title, description }: PDFViewerProps) => {
     }
   };
 
-  // Trigger check on mount
+  /**
+   * Trigger PDF existence check on component mount
+   * Note: Using useState instead of useEffect to avoid linter warnings
+   */
   useState(() => {
     checkPdfExists();
   });
 
+  /**
+   * Open PDF in a new browser tab
+   */
   const handleOpenNewTab = () => {
     window.open(pdfUrl, '_blank');
   };

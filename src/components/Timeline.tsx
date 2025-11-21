@@ -1,15 +1,52 @@
+/**
+ * Timeline Component
+ * 
+ * Displays a chronological visual timeline of creative and professional milestones
+ * in the THEVOIDN13 / LowMovie™ project journey.
+ * 
+ * Features:
+ * - Vertical timeline with gradient connecting line
+ * - Differentiated visual styling for key milestones vs contextual events
+ * - Bilingual content (Portuguese/English)
+ * - Year badges with highlighting for important events
+ * - Hover effects and responsive layout
+ * - Legend explaining visual indicators
+ * - Closing philosophical statement about the Lowbyrinth™ concept
+ * 
+ * Timeline spans from 2008 (CasaTrezeStudio foundation) to future plans (LowTour).
+ * Highlights include LowMovie™ production, Olympic Games participation, and portal creation.
+ * 
+ * @component
+ * @example
+ * ```tsx
+ * <Timeline />
+ * ```
+ */
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/LanguageContext";
 
+/**
+ * Timeline event structure with bilingual support
+ */
 interface TimelineEvent {
+  /** Year or year range (e.g., "2023" or "2022-2023") */
   year: string;
+  /** Event title in Portuguese */
   title: string;
+  /** Event title in English */
   titleEn: string;
+  /** Event description in Portuguese */
   description: string;
+  /** Event description in English */
   descriptionEn: string;
+  /** Whether this is a key milestone (affects visual styling) */
   highlight?: boolean;
 }
 
+/**
+ * Timeline events data
+ * Chronological history from CasaTrezeStudio (2008) to future plans
+ */
 const timelineEvents: TimelineEvent[] = [
   {
     year: "2008",

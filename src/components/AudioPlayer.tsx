@@ -1,22 +1,60 @@
+/**
+ * AudioPlayer Component
+ * 
+ * A complete audio player with play/pause controls, seek functionality, 
+ * volume adjustment, and time display.
+ * 
+ * Features:
+ * - Play/pause toggle with visual feedback
+ * - Seekable progress bar showing current position
+ * - Volume control with mute/unmute functionality
+ * - Time display in MM:SS format (current/total)
+ * - Responsive design with hover effects
+ * 
+ * @component
+ * @example
+ * ```tsx
+ * <AudioPlayer 
+ *   src="/audio/track.mp3"
+ *   title="Track Title"
+ *   description="Track description"
+ * />
+ * ```
+ */
 import { useState, useRef, useEffect } from "react";
 import { Play, Pause, Volume2, VolumeX } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
 
+/**
+ * Props for AudioPlayer component
+ */
 interface AudioPlayerProps {
+  /** URL or path to the audio file */
   src: string;
+  /** Title displayed above the player */
   title: string;
+  /** Optional description text */
   description?: string;
 }
 
 export const AudioPlayer = ({ src, title, description }: AudioPlayerProps) => {
+  // Ref to access the native HTML audio element
   const audioRef = useRef<HTMLAudioElement>(null);
+  
+  // Playback state
   const [isPlaying, setIsPlaying] = useState(false);
-  const [currentTime, setCurrentTime] = useState(0);
-  const [duration, setDuration] = useState(0);
-  const [volume, setVolume] = useState(1);
+  const [currentTime, setCurrentTime] = useState(0); // Current playback position in seconds
+  const [duration, setDuration] = useState(0); // Total audio duration in seconds
+  
+  // Volume state
+  const [volume, setVolume] = useState(1); // 0.0 to 1.0
   const [isMuted, setIsMuted] = useState(false);
 
+  /**
+   * Setup audio event listeners on component mount
+   * Cleans up listeners on unmount to prevent memory leaks
+   */
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
@@ -36,6 +74,9 @@ export const AudioPlayer = ({ src, title, description }: AudioPlayerProps) => {
     };
   }, []);
 
+  /**
+   * Toggle between play and pause states
+   */
   const togglePlay = () => {
     const audio = audioRef.current;
     if (!audio) return;
@@ -48,6 +89,10 @@ export const AudioPlayer = ({ src, title, description }: AudioPlayerProps) => {
     setIsPlaying(!isPlaying);
   };
 
+  /**
+   * Handle seeking to a specific time position
+   * @param value - Array containing the new time position in seconds
+   */
   const handleSeek = (value: number[]) => {
     const audio = audioRef.current;
     if (!audio) return;
@@ -55,6 +100,11 @@ export const AudioPlayer = ({ src, title, description }: AudioPlayerProps) => {
     setCurrentTime(value[0]);
   };
 
+  /**
+   * Handle volume level changes
+   * Automatically unmutes if volume is increased from 0
+   * @param value - Array containing the new volume (0.0 to 1.0)
+   */
   const handleVolumeChange = (value: number[]) => {
     const audio = audioRef.current;
     if (!audio) return;
@@ -64,6 +114,10 @@ export const AudioPlayer = ({ src, title, description }: AudioPlayerProps) => {
     setIsMuted(newVolume === 0);
   };
 
+  /**
+   * Toggle mute state
+   * Restores previous volume level when unmuting (or defaults to 0.5)
+   */
   const toggleMute = () => {
     const audio = audioRef.current;
     if (!audio) return;
@@ -77,6 +131,11 @@ export const AudioPlayer = ({ src, title, description }: AudioPlayerProps) => {
     }
   };
 
+  /**
+   * Format seconds into MM:SS display format
+   * @param time - Time in seconds
+   * @returns Formatted string (e.g., "3:45")
+   */
   const formatTime = (time: number) => {
     if (isNaN(time)) return "0:00";
     const minutes = Math.floor(time / 60);
