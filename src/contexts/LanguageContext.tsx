@@ -11,7 +11,9 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  // Default language based on browser, no persistence
+  // Default language: PT (Brazilian academic context)
+  // No persistence - language choice resets each session (anti-surveillance philosophy)
+  // User can toggle PT/EN, but choice is ephemeral (not stored anywhere)
   const [language, setLanguageState] = useState<Language>("pt");
 
   // Update body data-language attribute when language changes

@@ -236,14 +236,14 @@ const Transparency = () => {
                 <CollectiveCard
                   title="sessionStorage Apenas"
                   period="2025"
-                  description="Usado para: (1) preferência de idioma PT/EN, (2) controle de banner anti-vigilância. Expira quando você fecha o navegador. Nenhum cookie, nenhum localStorage permanente."
+                  description="Usado para: controle de banner anti-vigilância. Expira quando você fecha o navegador. Idioma é escolhido a cada sessão (sem persistência)."
                 />
                 
                 <div className="bg-muted/50 border-2 border-primary/50 p-6 font-mono text-sm">
                   <p className="font-bold text-primary mb-3">O que armazeno:</p>
                   <div className="space-y-2">
-                    <code className="block text-muted-foreground">sessionStorage.setItem(&apos;language&apos;, &apos;pt&apos; | &apos;en&apos;)</code>
                     <code className="block text-muted-foreground">sessionStorage.setItem(&apos;antiSurveillanceBannerDismissed&apos;, &apos;true&apos;)</code>
+                    <code className="block text-muted-foreground">// language: escolha a cada sessão (não armazenado)</code>
                   </div>
                 </div>
               </div>
@@ -256,14 +256,14 @@ const Transparency = () => {
                 <CollectiveCard
                   title="sessionStorage Only"
                   period="2025"
-                  description="Used for: (1) language preference PT/EN, (2) anti-surveillance banner control. Expires when you close the browser. No cookies, no permanent localStorage."
+                  description="Used for: anti-surveillance banner control. Expires when you close the browser. Language is chosen each session (no persistence)."
                 />
                 
                 <div className="bg-muted/50 border-2 border-primary/50 p-6 font-mono text-sm">
                   <p className="font-bold text-primary mb-3">What I store:</p>
                   <div className="space-y-2">
-                    <code className="block text-muted-foreground">sessionStorage.setItem(&apos;language&apos;, &apos;pt&apos; | &apos;en&apos;)</code>
                     <code className="block text-muted-foreground">sessionStorage.setItem(&apos;antiSurveillanceBannerDismissed&apos;, &apos;true&apos;)</code>
+                    <code className="block text-muted-foreground">// language: chosen each session (not stored)</code>
                   </div>
                 </div>
               </div>

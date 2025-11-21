@@ -7,6 +7,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.1.3] - 2025-11-21
+
+### Philosophy
+- **Language without persistence**: Documented radical choice to NOT store language preference
+- Language always defaults to PT, user can toggle to EN each session
+- Choice resets when browser closes - zero sessionStorage for language
+- Added CHOICE 6 to PHILOSOPHY.md explaining philosophical justification
+
+### Fixed
+- **CRITICAL**: Removed false claims in Transparency.tsx about `sessionStorage.setItem('language')`
+- Updated ARCHITECTURE.md to reflect ephemeral language choice (not stored)
+- Aligned all documentation with actual code behavior
+- Improved LanguageContext.tsx comments for clarity
+
+### Security
+- Reduced storage footprint: Only `antiSurveillanceBannerDismissed` in sessionStorage
+- Language toggle is now 100% in-memory (React state only)
+- Zero language tracking across sessions
+
+### Technical Details
+- **Files Modified**: 5 (`Transparency.tsx`, `ARCHITECTURE.md`, `PHILOSOPHY.md`, `LanguageContext.tsx`, `VERSION`, `CHANGELOG.md`)
+- **Lines Changed**: ~100 (documentation alignment)
+- **Storage Reduction**: 1 sessionStorage key eliminated
+
+---
+
 ## [2.1.2] - 2025-11-20
 
 ### Removed

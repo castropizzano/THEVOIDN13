@@ -44,7 +44,7 @@ THEVØIDN13's architecture embodies its anti-surveillance philosophy through **r
 
 #### 1. **Frontend (React + Vite)**
 - **Purpose**: Static memorial and creative portfolio
-- **Storage**: sessionStorage only (banner state + language preference)
+- **Storage**: sessionStorage only (banner state only)
 - **Tracking**: Zero
 - **Analytics**: Zero
 - **Cookies**: Zero
@@ -52,7 +52,7 @@ THEVØIDN13's architecture embodies its anti-surveillance philosophy through **r
 ```typescript
 // The ONLY client-side storage used
 sessionStorage.setItem('antiSurveillanceBannerSeen', 'true');
-sessionStorage.setItem('language', 'pt' | 'en');
+// language: in-memory React state only (resets each session)
 ```
 
 #### 2. **Database: `prompts` Table**
@@ -183,9 +183,9 @@ Static HTML/CSS/JS Loaded (Lovable CDN)
     ↓
 No Data Sent to Servers
     ↓
-Language Preference Saved (sessionStorage - local only)
+Language Choice (ephemeral - defaults to PT, user can toggle, resets on close)
     ↓
-Banner State Saved (sessionStorage - local only)
+Banner State Saved (sessionStorage.antiSurveillanceBannerDismissed - local only)
     ↓
 END (Nothing tracked, nothing stored on servers)
 ```

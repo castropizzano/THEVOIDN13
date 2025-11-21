@@ -274,6 +274,95 @@ A linguagem híbrida atende ambos.
 
 ───────────────────────────────────────────────────────────────
 
+## ESCOLHA 6: IDIOMA SEM PERSISTÊNCIA
+
+**O Que É**
+
+O site sempre inicia em português (PT).  
+O usuário pode alternar para inglês (EN) usando o toggle no header.  
+Ao fechar o navegador, a escolha é **esquecida**.
+
+**Por Que Parece "Errado"**
+
+Boas práticas de UX recomendam:  
+- Salvar preferência de idioma (localStorage ou sessionStorage)  
+- Detectar idioma do navegador (navigator.language)  
+- Lembrar da escolha do usuário
+
+**Por Que É Certo (Para Este Projeto)**
+
+**Vigilância Através do Conforto**  
+Toda persistência é vigilância.  
+Mesmo sessionStorage cria um "perfil efêmero" do visitante.
+
+A pergunta "qual seu idioma?" pode parecer inocente,  
+mas é o início de toda rastreabilidade.
+
+**Escolha Consciente A Cada Sessão**  
+Não lembrar é um gesto de respeito radical.  
+Cada visita é um novo começo.  
+Sem histórico. Sem memória. Sem sombra digital.
+
+**Precedente Filosófico**  
+Budismo: Impermanência (anicca)  
+Taoísmo: Não-ação (wu-wei)  
+Estoicismo: Aceitação do efêmero
+
+**Compromisso Adotado**
+
+Idioma padrão: Português (contexto brasileiro do mestrado)  
+Toggle disponível: Inglês (acessibilidade internacional)  
+Persistência: Zero (filosofia anti-vigilância)
+
+Se o usuário fecha o navegador e retorna, começa em PT novamente.  
+Isso não é bug — é a feature.
+
+───────────────────────────────────────────────────────────────  
+(EN) CHOICE 6: LANGUAGE WITHOUT PERSISTENCE
+
+**What It Is**
+
+The site always starts in Portuguese (PT).  
+Users can toggle to English (EN) using the header toggle.  
+When closing the browser, the choice is **forgotten**.
+
+**Why It Seems "Wrong"**
+
+UX best practices recommend:  
+- Save language preference (localStorage or sessionStorage)  
+- Detect browser language (navigator.language)  
+- Remember user choice
+
+**Why It's Right (For This Project)**
+
+**Surveillance Through Comfort**  
+All persistence is surveillance.  
+Even sessionStorage creates an "ephemeral profile" of the visitor.
+
+The question "what's your language?" may seem innocent,  
+but it's the beginning of all traceability.
+
+**Conscious Choice Each Session**  
+Not remembering is a gesture of radical respect.  
+Each visit is a new beginning.  
+No history. No memory. No digital shadow.
+
+**Philosophical Precedent**  
+Buddhism: Impermanence (anicca)  
+Taoism: Non-action (wu-wei)  
+Stoicism: Acceptance of the ephemeral
+
+**Adopted Commitment**
+
+Default language: Portuguese (Brazilian master's context)  
+Toggle available: English (international accessibility)  
+Persistence: Zero (anti-surveillance philosophy)
+
+If the user closes the browser and returns, it starts in PT again.  
+This is not a bug — it's the feature.
+
+───────────────────────────────────────────────────────────────
+
 ## PARA A BANCA: COMO AVALIAR ESTE PROJETO
 
 **Critérios Técnicos Tradicionais NÃO Se Aplicam Totalmente**
