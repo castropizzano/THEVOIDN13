@@ -11,6 +11,27 @@ by Castro Pizzano (цастро™)
 Curitiba, Brazil — 2025
 ───────────────────────────────────────────────────────────────
 
+## 📖 **TL;DR (English Summary)**
+
+**THEVØIDN13** is not a conventional technical repository—it's a **performative artistic memorial** where code is body, structure is poetry, and technical choices are conceptual gestures.
+
+**Core Principle**: **Functional Subversion** - challenging conventions without breaking functionality.
+
+**Key "Unconventional" Choices (All Intentional)**:
+1. **Long file headers** (25 lines): Artistic performance, radical authorship affirmation
+2. **Portuguese commits**: Linguistic resistance, authenticity of authorial voice
+3. **Poetic documentation**: The README is part of the artwork, not just a description
+4. **Non-linear structure**: Inspired by hypertext (Ted Nelson) and Borges' labyrinths
+5. **No language persistence**: Privacy philosophy - each session is a new beginning
+
+**For Evaluators**: This is a master's degree artistic project, not a software engineering exercise. Evaluate for conceptual coherence, preserved functionality, methodological originality, and symbolic impact—not just "clean code" standards.
+
+**Philosophical Foundation**: Code as body, silence as refusal, void as gestation. The project exists at the threshold between engineering and poetry.
+
+For full philosophical justifications, continue reading below.
+
+───────────────────────────────────────────────────────────────
+
 ## PREÂMBULO
 
 Este documento existe para evitar mal-entendidos.
