@@ -29,7 +29,7 @@ const curatedVideos: CuratedVideo[] = [
     subtitle: { pt: "COM FLÁVIA MASSALI", en: "WITH FLÁVIA MASSALI" },
     year: "2025", 
     category: "experimental",
-    specialLink: "https://nyx-post-porn.vercel.app/"
+    specialLink: "https://nyx-project.lovable.app"
   },
   { 
     source: "vimeo", 
