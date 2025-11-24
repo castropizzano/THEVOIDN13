@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Minimize2 } from "lucide-react";
 import { SkillCard } from "@/components/SkillCard";
 import heroImage from "@/assets/cover-author.png";
+import heroImageMobile from "@/assets/author-hero-vertical.png";
 import castroGuidelinePT from "@/assets/castro-guideline-pt.png";
 import castroGuidelineEN from "@/assets/castro-guideline-en.png";
 
@@ -43,10 +44,18 @@ const Autor = () => {
       <main>
         {/* Hero Image */}
         <section className="w-full min-h-screen flex items-center justify-center overflow-hidden bg-black pt-16 sm:pt-20 md:pt-24">
+          {/* Mobile - Vertical Portrait */}
+          <img 
+            src={heroImageMobile} 
+            alt="CASTRO PIZZANO" 
+            className="md:hidden w-full h-full object-cover object-center"
+            loading="eager"
+          />
+          {/* Desktop - Horizontal Portrait */}
           <img 
             src={heroImage} 
             alt="CASTRO PIZZANO" 
-            className="w-full h-full object-cover object-center"
+            className="hidden md:block w-full h-full object-cover object-center"
             loading="eager"
           />
         </section>
