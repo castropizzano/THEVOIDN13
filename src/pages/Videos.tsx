@@ -8,6 +8,8 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "@/components/ui/button";
 import coverVideosPt from "@/assets/cover-videos-pt.png";
 import coverVideosEn from "@/assets/cover-videos-en.png";
+import coverVideosPtMobile from "@/assets/videos-hero-vertical-pt.png";
+import coverVideosEnMobile from "@/assets/videos-hero-vertical-en.png";
 
 interface CuratedVideo {
   source: "vimeo" | "internet-archive" | "youtube";
@@ -119,10 +121,18 @@ const Videos = () => {
       <BackToTop />
       <main>
         <section className="w-full min-h-screen flex items-center justify-center overflow-hidden bg-black pt-16 sm:pt-20 md:pt-24">
+          {/* Mobile - Vertical Hero (Language-specific) */}
+          <img 
+            src={language === "pt" ? coverVideosPtMobile : coverVideosEnMobile} 
+            alt={language === "pt" ? "Alguns Projetos" : "Some Projects"}
+            className="md:hidden w-full h-full object-cover object-center"
+            loading="eager"
+          />
+          {/* Desktop - Horizontal Hero (Language-specific) */}
           <img 
             src={language === "pt" ? coverVideosPt : coverVideosEn} 
             alt={language === "pt" ? "Alguns Projetos" : "Some Projects"}
-            className="w-full h-full object-cover object-center"
+            className="hidden md:block w-full h-full object-cover object-center"
             loading="eager"
           />
         </section>
