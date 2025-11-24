@@ -16,6 +16,7 @@ import { LowMovieBlock } from "@/components/dissertation/LowMovieBlock";
 import { SkillCard } from "@/components/SkillCard";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import heroImage from "@/assets/cover-lowmovie.png";
+import heroImageMobile from "@/assets/lowmovie-hero-vertical.png";
 
 const Dissertacao = () => {
   const thesisSchema = {
@@ -61,10 +62,18 @@ const Dissertacao = () => {
       <main>
         {/* Hero Image */}
         <section className="w-full min-h-screen flex items-center justify-center overflow-hidden bg-black pt-16 sm:pt-20 md:pt-24">
+          {/* Mobile - Vertical Poster */}
+          <img 
+            src={heroImageMobile} 
+            alt="LOWMOVIE™ E O LABIRINTO CRIATIVO" 
+            className="md:hidden w-full h-full object-cover object-center"
+            loading="eager"
+          />
+          {/* Desktop - Horizontal Poster */}
           <img 
             src={heroImage} 
             alt="LOWMOVIE™ E O LABIRINTO CRIATIVO" 
-            className="w-full h-full object-cover object-center"
+            className="hidden md:block w-full h-full object-cover object-center"
             loading="eager"
           />
         </section>
