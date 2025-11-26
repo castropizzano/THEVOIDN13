@@ -43,6 +43,7 @@ import { ContextualQuote } from "./CreativeOracle/ContextualQuote";
 import { PersonalizedAdvice } from "./CreativeOracle/PersonalizedAdvice";
 import { contextualizedQuestions } from "./CreativeOracle/data/contextualizedQuestions";
 import { hybridArchetypes } from "./CreativeOracle/data/hybridArchetypes";
+import roughsOriginal from "@/assets/roughs-000.png";
 
 /**
  * Props for CreativeOracle dialog component
@@ -394,10 +395,110 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
         </DialogHeader>
 
         <Tabs value={mode} onValueChange={(v) => setMode(v as typeof mode)} className="w-full">
-          <TabsList className="grid w-full grid-cols-2 mb-6">
+          <TabsList className="grid w-full grid-cols-3 mb-6">
             <TabsTrigger value="journey">{language === "pt" ? "JORNADA" : "JOURNEY"}</TabsTrigger>
+            <TabsTrigger value="genesis">{language === "pt" ? "GÊNESE" : "GENESIS"}</TabsTrigger>
             <TabsTrigger value="knowledge">{language === "pt" ? "CONHECIMENTO" : "KNOWLEDGE"}</TabsTrigger>
           </TabsList>
+
+          <TabsContent value="genesis">
+            <div className="space-y-8 bg-black/90 border border-primary/30 rounded-lg p-6 sm:p-8 font-mono">
+              <div className="space-y-4">
+                <div className="text-primary font-bold text-xl">
+                  [{language === "pt" ? "GÊNESE DO ORÁCULO" : "ORACLE GENESIS"}]
+                </div>
+                <div className="text-accent text-sm">
+                  {language === "pt" 
+                    ? "// O rascunho original que deu origem aos arquétipos criativos" 
+                    : "// The original draft that gave birth to the creative archetypes"}
+                </div>
+              </div>
+
+              <div className="space-y-6 border-l-2 border-primary/40 pl-6">
+                <div className="space-y-4 text-foreground leading-relaxed text-sm">
+                  {language === "pt" ? (
+                    <>
+                      <p>
+                        Antes de se tornar um sistema interativo, o Creative Oracle nasceu de um único rascunho — 
+                        uma tentativa de mapear os diferentes modos como criadores pensam, sentem e transformam ideias em realidade.
+                      </p>
+                      <p>
+                        Este sketch original captura a essência dos quatro arquétipos criativos: 
+                        <span className="text-primary"> SHADOW</span> (a introspecção profunda),
+                        <span className="text-primary"> PUNK</span> (a revolução impulsiva),
+                        <span className="text-primary"> BUDDY</span> (a colaboração natural), e
+                        <span className="text-primary"> GI</span> (a disciplina técnica).
+                      </p>
+                      <p className="text-muted-foreground italic">
+                        O desenho bruto preserva a intuição original: não existe um único caminho criativo. 
+                        Cada arquétipo é uma porta de entrada válida para o processo de criação.
+                      </p>
+                    </>
+                  ) : (
+                    <>
+                      <p>
+                        Before becoming an interactive system, the Creative Oracle was born from a single draft — 
+                        an attempt to map the different ways creators think, feel and transform ideas into reality.
+                      </p>
+                      <p>
+                        This original sketch captures the essence of the four creative archetypes: 
+                        <span className="text-primary"> SHADOW</span> (deep introspection),
+                        <span className="text-primary"> PUNK</span> (impulsive revolution),
+                        <span className="text-primary"> BUDDY</span> (natural collaboration), and
+                        <span className="text-primary"> GI</span> (technical discipline).
+                      </p>
+                      <p className="text-muted-foreground italic">
+                        The raw drawing preserves the original intuition: there is no single creative path. 
+                        Each archetype is a valid entry point to the creative process.
+                      </p>
+                    </>
+                  )}
+                </div>
+
+                <div className="rounded-lg overflow-hidden border border-primary/20 bg-background/50">
+                  <img 
+                    src={roughsOriginal} 
+                    alt={language === "pt" ? "Rascunho original dos arquétipos" : "Original archetypes sketch"}
+                    className="w-full h-auto"
+                  />
+                  <div className="p-3 bg-black/60 text-xs text-muted-foreground text-center font-mono">
+                    [ORIGINAL_SKETCH::2024] {language === "pt" ? "Primeira visualização dos arquétipos" : "First visualization of the archetypes"}
+                  </div>
+                </div>
+
+                <div className="space-y-3 pt-4">
+                  <div className="text-accent font-bold text-sm">
+                    [{language === "pt" ? "DA INTUIÇÃO À METODOLOGIA" : "FROM INTUITION TO METHODOLOGY"}]
+                  </div>
+                  <div className="text-foreground/80 text-sm leading-relaxed space-y-2">
+                    {language === "pt" ? (
+                      <>
+                        <p>
+                          Este rascunho evoluiu para um sistema completo de identificação de perfis criativos, 
+                          integrando teoria das cores, análise de processo e recomendações personalizadas.
+                        </p>
+                        <p className="text-muted-foreground">
+                          O Oracle preserva a simplicidade do esboço original enquanto oferece profundidade analítica — 
+                          uma ferramenta que respeita tanto a intuição quanto a reflexão estruturada.
+                        </p>
+                      </>
+                    ) : (
+                      <>
+                        <p>
+                          This sketch evolved into a complete creative profile identification system, 
+                          integrating color theory, process analysis and personalized recommendations.
+                        </p>
+                        <p className="text-muted-foreground">
+                          The Oracle preserves the simplicity of the original sketch while offering analytical depth — 
+                          a tool that respects both intuition and structured reflection.
+                        </p>
+                      </>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </TabsContent>
 
           <TabsContent value="knowledge">
             <LearnMode />
