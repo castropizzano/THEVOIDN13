@@ -43,7 +43,7 @@ import { ContextualQuote } from "./CreativeOracle/ContextualQuote";
 import { PersonalizedAdvice } from "./CreativeOracle/PersonalizedAdvice";
 import { contextualizedQuestions } from "./CreativeOracle/data/contextualizedQuestions";
 import { hybridArchetypes } from "./CreativeOracle/data/hybridArchetypes";
-import roughsOriginal from "@/assets/roughs-000.png";
+import genesisSketch from "@/assets/genesis-sketch-2025.png";
 
 /**
  * Props for CreativeOracle dialog component
@@ -457,12 +457,12 @@ Generated: ${new Date().toLocaleDateString(language === 'pt' ? 'pt-BR' : 'en-US'
 
                 <div className="rounded-lg overflow-hidden border border-primary/20 bg-background/50">
                   <img 
-                    src={roughsOriginal} 
+                    src={genesisSketch} 
                     alt={language === "pt" ? "Rascunho original dos arquétipos" : "Original archetypes sketch"}
                     className="w-full h-auto"
                   />
                   <div className="p-3 bg-black/60 text-xs text-muted-foreground text-center font-mono">
-                    [ORIGINAL_SKETCH::2024] {language === "pt" ? "Primeira visualização dos arquétipos" : "First visualization of the archetypes"}
+                    [ORIGINAL_SKETCH::2025] {language === "pt" ? "Primeira visualização dos arquétipos" : "First visualization of the archetypes"}
                   </div>
                 </div>
 
