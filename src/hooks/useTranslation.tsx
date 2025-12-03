@@ -214,6 +214,10 @@ type TranslationKey =
   | "darkCityDesc"
   | "nirvanaDesc"
   | "johnnyMnemonicDesc"
+  | "ghostInTheShellDesc"
+  | "piDesc"
+  | "donnieDarkoDesc"
+  | "mrNobodyDesc"
   | "essentialFilms"
   | "promptLibraryPrompts"
   | "promptsAccess"
@@ -495,7 +499,11 @@ const translations: Record<TranslationKey, { pt: string; en: string }> = {
   darkCityDesc: { pt: "Memória manufaturada", en: "Manufactured memory" },
   nirvanaDesc: { pt: "Consciência digital", en: "Digital consciousness" },
   johnnyMnemonicDesc: { pt: "Dados como mercadoria", en: "Data as commodity" },
-  essentialFilms: { pt: "Vinte filmes essenciais", en: "Twenty essential films" },
+  ghostInTheShellDesc: { pt: "Identidade e cibercorpo", en: "Identity and cyberbody" },
+  piDesc: { pt: "Obsessão e padrões", en: "Obsession and patterns" },
+  donnieDarkoDesc: { pt: "Linhas temporais e destino", en: "Timelines and fate" },
+  mrNobodyDesc: { pt: "Escolhas e vidas paralelas", en: "Choices and parallel lives" },
+  essentialFilms: { pt: "Vinte e quatro filmes essenciais", en: "Twenty-four essential films" },
   systemPrompts: { pt: "System", en: "System" },
   characterPrompts: { pt: "Personagens", en: "Characters" },
   scenePrompts: { pt: "Cenas", en: "Scenes" },
