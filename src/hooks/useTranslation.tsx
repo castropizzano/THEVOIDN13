@@ -213,6 +213,7 @@ type TranslationKey =
   | "thirteenthFloorDesc"
   | "darkCityDesc"
   | "nirvanaDesc"
+  | "johnnyMnemonicDesc"
   | "essentialFilms"
   | "promptLibraryPrompts"
   | "promptsAccess"
@@ -493,7 +494,8 @@ const translations: Record<TranslationKey, { pt: string; en: string }> = {
   thirteenthFloorDesc: { pt: "Simulação e identidade", en: "Simulation and identity" },
   darkCityDesc: { pt: "Memória manufaturada", en: "Manufactured memory" },
   nirvanaDesc: { pt: "Consciência digital", en: "Digital consciousness" },
-  essentialFilms: { pt: "Dezenove filmes essenciais", en: "Nineteen essential films" },
+  johnnyMnemonicDesc: { pt: "Dados como mercadoria", en: "Data as commodity" },
+  essentialFilms: { pt: "Vinte filmes essenciais", en: "Twenty essential films" },
   systemPrompts: { pt: "System", en: "System" },
   characterPrompts: { pt: "Personagens", en: "Characters" },
   scenePrompts: { pt: "Cenas", en: "Scenes" },
