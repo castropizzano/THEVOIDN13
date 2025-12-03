@@ -21,6 +21,10 @@ import thirteenthFloorPoster from "@/assets/posters/thirteenth-floor.jpg";
 import darkCityPoster from "@/assets/posters/dark-city.jpg";
 import nirvanaPoster from "@/assets/posters/nirvana.jpg";
 import johnnyMnemonicPoster from "@/assets/posters/johnny-mnemonic.webp";
+import ghostInTheShellPoster from "@/assets/posters/ghost-in-the-shell.jpg";
+import piPoster from "@/assets/posters/pi.png";
+import donnieDarkoPoster from "@/assets/posters/donnie-darko.jpg";
+import mrNobodyPoster from "@/assets/posters/mr-nobody.jpg";
 import { useTranslation } from "@/hooks/useTranslation";
 import {
   Dialog,
@@ -80,6 +84,14 @@ const FilmGallery = () => {
           descriptionKey: "akiraDesc"
         },
         {
+          title: "Ghost in the Shell",
+          director: "Mamoru Oshii",
+          year: 1995,
+          imdbId: "tt0113568",
+          posterUrl: ghostInTheShellPoster,
+          descriptionKey: "ghostInTheShellDesc"
+        },
+        {
           title: "Johnny Mnemonic",
           director: "Robert Longo",
           year: 1995,
@@ -94,6 +106,14 @@ const FilmGallery = () => {
           imdbId: "tt0119794",
           posterUrl: nirvanaPoster,
           descriptionKey: "nirvanaDesc"
+        },
+        {
+          title: "Pi",
+          director: "Darren Aronofsky",
+          year: 1998,
+          imdbId: "tt0138704",
+          posterUrl: piPoster,
+          descriptionKey: "piDesc"
         },
         {
           title: "Dark City",
@@ -240,6 +260,22 @@ const FilmGallery = () => {
           imdbId: "tt0099088",
           posterUrl: backToTheFuture3Poster,
           descriptionKey: "backToFutureDesc"
+        },
+        {
+          title: "Donnie Darko",
+          director: "Richard Kelly",
+          year: 2001,
+          imdbId: "tt0246578",
+          posterUrl: donnieDarkoPoster,
+          descriptionKey: "donnieDarkoDesc"
+        },
+        {
+          title: "Mr. Nobody",
+          director: "Jaco Van Dormael",
+          year: 2009,
+          imdbId: "tt0485947",
+          posterUrl: mrNobodyPoster,
+          descriptionKey: "mrNobodyDesc"
         },
         {
           title: "Perfect Days",
