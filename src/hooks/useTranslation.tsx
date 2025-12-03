@@ -209,6 +209,10 @@ type TranslationKey =
   | "christianeFDesc"
   | "perfectDaysDesc"
   | "backToFutureDesc"
+  | "existenzDesc"
+  | "thirteenthFloorDesc"
+  | "darkCityDesc"
+  | "nirvanaDesc"
   | "essentialFilms"
   | "promptLibraryPrompts"
   | "promptsAccess"
@@ -485,7 +489,11 @@ const translations: Record<TranslationKey, { pt: string; en: string }> = {
   christianeFDesc: { pt: "Queda adolescente", en: "Adolescent fall" },
   perfectDaysDesc: { pt: "Contemplação e rotina", en: "Contemplation and routine" },
   backToFutureDesc: { pt: "Nostalgia e tempo", en: "Nostalgia and time" },
-  essentialFilms: { pt: "Quinze filmes essenciais", en: "Fifteen essential films" },
+  existenzDesc: { pt: "Realidade virtual orgânica", en: "Organic virtual reality" },
+  thirteenthFloorDesc: { pt: "Simulação e identidade", en: "Simulation and identity" },
+  darkCityDesc: { pt: "Memória manufaturada", en: "Manufactured memory" },
+  nirvanaDesc: { pt: "Consciência digital", en: "Digital consciousness" },
+  essentialFilms: { pt: "Dezenove filmes essenciais", en: "Nineteen essential films" },
   systemPrompts: { pt: "System", en: "System" },
   characterPrompts: { pt: "Personagens", en: "Characters" },
   scenePrompts: { pt: "Cenas", en: "Scenes" },

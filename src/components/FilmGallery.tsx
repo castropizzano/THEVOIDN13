@@ -16,6 +16,10 @@ import perfectDaysPoster from "@/assets/posters/perfect-days.jpg";
 import backToTheFuturePoster from "@/assets/posters/back-to-the-future.jpg";
 import backToTheFuture2Poster from "@/assets/posters/back-to-the-future-2.jpg";
 import backToTheFuture3Poster from "@/assets/posters/back-to-the-future-3.jpg";
+import existenzPoster from "@/assets/posters/existenz.webp";
+import thirteenthFloorPoster from "@/assets/posters/thirteenth-floor.jpg";
+import darkCityPoster from "@/assets/posters/dark-city.jpg";
+import nirvanaPoster from "@/assets/posters/nirvana.jpg";
 import { useTranslation } from "@/hooks/useTranslation";
 import {
   Dialog,
@@ -170,6 +174,38 @@ const FilmGallery = () => {
       imdbId: "tt0099088",
       posterUrl: backToTheFuture3Poster,
       descriptionKey: "backToFutureDesc"
+    },
+    {
+      title: "eXistenZ",
+      director: "David Cronenberg",
+      year: 1999,
+      imdbId: "tt0120907",
+      posterUrl: existenzPoster,
+      descriptionKey: "existenzDesc"
+    },
+    {
+      title: "The Thirteenth Floor",
+      director: "Josef Rusnak",
+      year: 1999,
+      imdbId: "tt0139809",
+      posterUrl: thirteenthFloorPoster,
+      descriptionKey: "thirteenthFloorDesc"
+    },
+    {
+      title: "Dark City",
+      director: "Alex Proyas",
+      year: 1998,
+      imdbId: "tt0118929",
+      posterUrl: darkCityPoster,
+      descriptionKey: "darkCityDesc"
+    },
+    {
+      title: "Nirvana",
+      director: "Gabriele Salvatores",
+      year: 1997,
+      imdbId: "tt0119794",
+      posterUrl: nirvanaPoster,
+      descriptionKey: "nirvanaDesc"
     }
   ];
 
@@ -241,8 +277,8 @@ const FilmGallery = () => {
 
           <div className="bible-media p-6 bg-secondary/10 rounded-lg border border-primary/10">
             <p className="text-sm text-center text-muted-foreground leading-relaxed">
-              <span className="lang-pt">Essas 15 obras cinematográficas formam a base conceitual e estética do universo THEVOIDN13.</span>
-              <span className="lang-en">These 15 cinematic works form the conceptual and aesthetic foundation of the THEVOIDN13 universe.</span>
+              <span className="lang-pt">Essas 19 obras cinematográficas formam a base conceitual e estética do universo THEVOIDN13.</span>
+              <span className="lang-en">These 19 cinematic works form the conceptual and aesthetic foundation of the THEVOIDN13 universe.</span>
             </p>
           </div>
         </Card>
