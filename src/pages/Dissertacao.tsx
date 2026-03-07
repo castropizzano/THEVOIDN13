@@ -783,7 +783,7 @@ const Dissertacao = () => {
                 <span className="lang-pt">→ Abrir PDF</span>
                 <span className="lang-en">→ Open PDF</span>
               </p>
-            </div>
+            </a>
           </div>
         </BilingualSection>
       </main>
