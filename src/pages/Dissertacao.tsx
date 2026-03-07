@@ -193,12 +193,18 @@ const Dissertacao = () => {
             </Card>
           </div>
 
-          {/* Vimeo Reel */}
+          {/* CasaTrezeStudio Reel */}
           <div className="bible-media w-full">
-            <VideoPlayer 
-              vimeoId="698870212"
-              title="CasaTrezeStudio Reel"
-            />
+            <div className="relative w-full pb-[56.25%] bg-black overflow-hidden border-2 border-primary/30 rounded-lg">
+              <iframe
+                src="https://www.youtube.com/embed/rdVF6RuOr7k"
+                title="CasaTrezeStudio Reel"
+                className="absolute top-0 left-0 w-full h-full border-0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                loading="lazy"
+              />
+            </div>
           </div>
         </BilingualSection>
 
