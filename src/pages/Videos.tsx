@@ -42,8 +42,8 @@ const curatedVideos: CuratedVideo[] = [
     category: "curta-metragem" 
   },
   { 
-    source: "vimeo", 
-    videoId: "938890093", 
+    source: "youtube", 
+    videoId: "7NOVttVgPnU", 
     title: { pt: "MÃE NATUREZA", en: "MOTHER NATURE" },
     subtitle: { pt: "COM LUANA NERY", en: "WITH LUANA NERY" },
     year: "2024", 
