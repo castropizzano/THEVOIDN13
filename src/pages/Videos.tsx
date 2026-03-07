@@ -94,8 +94,8 @@ const curatedVideos: CuratedVideo[] = [
     objectPosition: "center 50%"
   },
   { 
-    source: "vimeo", 
-    videoId: "349830611", 
+    source: "youtube", 
+    videoId: "djSQgE8Fnkk", 
     title: { pt: "CURITOWN", en: "CURITOWN" },
     subtitle: { pt: "FCC", en: "FCC" },
     year: "2019", 
