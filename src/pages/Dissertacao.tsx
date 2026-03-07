@@ -765,16 +765,25 @@ const Dissertacao = () => {
             </div>
 
             {/* Dissertação - Coming Soon */}
-            <div className="bg-card/80 border-2 border-primary/30 rounded-lg p-8 hover:border-primary/50 transition-colors">
+            <a 
+              href="/documents/PIZZANO_Castro_LowMovie_Dissertacao_Mestrado_2026.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block bg-card/80 border-2 border-primary/30 rounded-lg p-8 hover:border-primary/50 transition-colors group"
+            >
               <h4 className="font-mono text-primary font-bold mb-4">
                 <span className="lang-pt">[DISSERTAÇÃO_DE_MESTRADO]</span>
                 <span className="lang-en">[MASTER'S_DISSERTATION]</span>
               </h4>
               <p className="font-mono text-sm text-muted-foreground">
-                <span className="lang-pt">Depósito da dissertação de mestrado em breve.</span>
-                <span className="lang-en">Master's dissertation deposit coming soon.</span>
+                <span className="lang-pt">PIZZANO, Castro. <em>LowMovie e o Labirinto Criativo — Subjetividade, Subcultura e a Poética em Movimento do Coletivo LowPressure</em>. 2026.</span>
+                <span className="lang-en">PIZZANO, Castro. <em>LowMovie and the Creative Labyrinth — Subjectivity, Subculture and the Poetics in Motion of LowPressure Collective</em>. 2026.</span>
               </p>
-            </div>
+              <p className="font-mono text-xs text-primary/60 mt-3 group-hover:text-primary transition-colors">
+                <span className="lang-pt">→ Abrir PDF</span>
+                <span className="lang-en">→ Open PDF</span>
+              </p>
+            </a>
           </div>
         </BilingualSection>
       </main>
