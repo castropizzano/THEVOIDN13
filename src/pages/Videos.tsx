@@ -96,10 +96,10 @@ const curatedVideos: CuratedVideo[] = [
   { 
     source: "youtube", 
     videoId: "djSQgE8Fnkk", 
-    title: { pt: "CURITOWN", en: "CURITOWN" },
-    subtitle: { pt: "FCC", en: "FCC" },
-    year: "2019", 
-    category: "documentário",
+    title: { pt: "XIRÊ URBANO", en: "XIRÊ URBANO" },
+    subtitle: { pt: "CASATREZESTUDIO®", en: "CASATREZESTUDIO®" },
+    year: "2024", 
+    category: "videoart",
     objectPosition: "center 75%"
   }
 ];
